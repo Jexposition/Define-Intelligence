@@ -1,0 +1,21 @@
+# Independent intermediate axiom probe
+# Date: 2026-09-22
+# Toolchain: leanprover/lean4:v4.34.0-rc2
+# Probe: NavierStokesReview/src/probes/IntermediateAxiomProbe.lean
+# Command:
+#   C:\Users\Admin\.elan\bin\elan.exe run leanprover/lean4:v4.34.0-rc2 lake env lean NavierStokesReview/src/probes/IntermediateAxiomProbe.lean
+
+'NavierStokesR3.WholeSpaceUniqueness.classical_uniqueness_on_Icc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'NavierStokesR3.WholeSpaceComparisonClosure.eq_of_pressure_flux_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'NavierStokesR3.PressureRecovery.gradient_recovery' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NavierStokesR3.PressureFlux.exists_uniform_actual_pressure_flux_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+Interpretation: these four already-built intermediate declarations have only
+the standard foundational axiom footprint. This does not establish the
+headline candidate or Comparator exports, which require separate output.

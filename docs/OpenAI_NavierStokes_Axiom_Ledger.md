@@ -75,6 +75,14 @@ stopped without producing `NavierStokes.ComparatorSolution.olean`. No axiom
 output is inferred from this partial build. The exact command and result are
 recorded in `NavierStokesReview/results/BUILD_AND_AXIOM_EXTRACTION_LOG_2026-09-22.md`.
 
+An independent probe was nevertheless run against the already-built analytic
+comparison layer. `classical_uniqueness_on_Icc`, the pressure-flux closure,
+pressure recovery, and the actual pressure-flux bound each report only
+`propext`, `Classical.choice`, and `Quot.sound`. This is positive evidence for
+that intermediate layer only; it is not substituted for the missing headline
+export output. See
+`NavierStokesReview/results/INTERMEDIATE_AXIOMS_4_34_RC2.txt`.
+
 ## Pressure-flux dependency update: 2026-09-22
 
 The source-level pressure-flux route was traced through

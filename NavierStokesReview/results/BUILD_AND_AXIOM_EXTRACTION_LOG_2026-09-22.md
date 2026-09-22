@@ -47,3 +47,20 @@ Lake target. The exported Navier-Stokes solution imports
 challenge file's four intentional `sorry` declarations were not found in the
 source import scan. This source result still does not replace transitive
 kernel output.
+
+## Headline probe retry
+
+The independent probe
+`NavierStokesReview/src/probes/HeadlineAxiomProbe.lean` was run with:
+
+```text
+C:\Users\Admin\.elan\bin\elan.exe run leanprover/lean4:v4.34.0-rc2 lake env lean NavierStokesReview/src/probes/HeadlineAxiomProbe.lean
+```
+
+It failed at import resolution because
+`.lake/build/lib/lean/NavierStokes/ComparatorSolution.olean` did not exist.
+This is the missing-interface condition, not a theorem failure. A fresh
+bounded `lake build NavierStokes.ComparatorSolution` then ran for 60 seconds
+and timed out while compiling dependencies. The process inventory showed
+dependency workers still active; no headline axiom output is recorded until
+the build emits the interface.
