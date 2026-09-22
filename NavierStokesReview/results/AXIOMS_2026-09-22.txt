@@ -1,4 +1,4 @@
-# Kernel axiom probe status: PENDING
+# Historical kernel axiom probe status: SUPERSEDED
 # Date: 2026-09-22
 # Toolchain: leanprover/lean4:v4.34.0-rc2
 # Requested package cache: D:\Research Lab\V-lab-Equipment\.lake\packages-4.32
@@ -7,10 +7,12 @@
 #   elan run leanprover/lean4:v4.34.0-rc2 lake env lean NavierStokesReview/src/probes/AxiomProbe.lean
 #
 # Result:
-#   The probe could not resolve NavierStokes.ComparatorSolution because the
-#   targeted dependency build was stopped before emitting
-#   .lake/build/lib/lean/NavierStokes/ComparatorSolution.olean.
+#   This early attempt could not resolve NavierStokes.ComparatorSolution
+#   because the targeted dependency build was stopped before emitting its
+#   interface. It is retained as a historical failed attempt only.
 #
-# Interpretation:
-#   No #print axioms result is asserted by this file. This is an incomplete
-#   dependency-interface check, not evidence of a source theorem failure.
+# Current reports superseding this file:
+#   HEADLINE_AXIOMS_4_34_RC2.txt
+#   EULER_AXIOMS_4_34_RC2.txt
+#   PREEXPORT_AXIOMS_4_34_RC2.txt
+#   INTERMEDIATE_AXIOMS_4_34_RC2.txt

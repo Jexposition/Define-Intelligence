@@ -172,3 +172,18 @@ No `sorryAx`, native-evaluation axiom, or project-specific axiom appears in
 these four reports. This closes the Navier–Stokes formal-trust row, but not
 the CMI semantic or human-acceptance rows. Raw output is in
 `NavierStokesReview/results/HEADLINE_AXIOMS_4_34_RC2.txt` as `AUD-048`.
+
+## Euler headline kernel evidence: 2026-09-22
+
+The independent Euler probe was run after the resumable direct closure supplied
+the `Euler.Solution` interface. Both exported Euler declarations report only
+`propext`, `Classical.choice`, and `Quot.sound`:
+
+- `Euler.euler_breakdown_R3`;
+- `Euler.exists_compact_smooth_euler_singularity`.
+
+No `sorryAx`, native-evaluation axiom, or project-specific axiom appears in
+the reports. The raw output is preserved in
+`NavierStokesReview/results/EULER_AXIOMS_4_34_RC2.txt` as `AUD-050`. This
+closes the repository's headline formal-trust inventory under the declared
+toolchain; it does not close the CMI semantic or procedural gates.

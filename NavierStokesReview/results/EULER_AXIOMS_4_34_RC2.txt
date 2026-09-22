@@ -1,0 +1,7 @@
+Command:
+C:\Users\Admin\.elan\bin\elan.exe run leanprover/lean4:v4.34.0-rc2 lake env lean NavierStokesReview/src/probes/EulerAxiomProbe.lean
+
+Exit code: 0
+
+'Euler.euler_breakdown_R3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Euler.exists_compact_smooth_euler_singularity' depends on axioms: [propext, Classical.choice, Quot.sound]

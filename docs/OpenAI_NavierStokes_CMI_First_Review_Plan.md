@@ -73,10 +73,14 @@ Each finding must contain: source snapshot, exact file and line, proposition or 
 
 ## 7. Immediate next actions
 
-1. Complete the 4.32 harness and a separate 4.34 repository build.
-2. Capture `#print axioms` for `NavierStokesR3.theorem_1_1`, `NavierStokesR3.breakdownStatement`, periodic theorem exports, and the public Comparator adapters.
-3. Fill the first CMI quantifier table from `R3/ProblemStatement.lean` and `PeriodicPaperTheorem.lean`.
-4. Reconcile the existing critique notes with source-backed findings in the audit tracker.
+1. Complete the proof-relevant map of derived filters used by residual-rate
+   consumers, including any `Filter.inf` and principal restrictions.
+2. Resolve the semantic correspondence between the repository's half-space
+   `ContDiffOn`/`iteratedFDerivWithin` predicates and the CMI boundary convention.
+3. Verify the common physical-domain and premise provenance links from the
+   inverse/correction constructions to the selected R3 witness.
+4. Obtain independent PDE peer review of the remaining analytic lemmas; keep
+   this separate from the completed kernel axiom reports.
 
 ## 8. Source-draft disposition
 
@@ -118,4 +122,4 @@ The current clone contains 2,659 project Lean files and 173 project files not pr
 
 The public CMI question is not rejected merely because the construction uses forcing. The official CMI statement explicitly permits smooth forcing in alternatives C and D. The decisive audit therefore remains: do the exported theorems prove the stated PDE, regularity, support/decay, initial-data, and no-global-solution clauses, and do their kernel-reported dependencies contain only accepted foundations? The separate Euler result is not itself one of the Clay prize alternatives.
 
-The current source census finds four actual `sorry` lines, all in the intentionally separate `ComparatorChallenges` files. It finds no `sorry` in the main exported result path by lexical source scan, but this is not yet a kernel verdict. The census also records declaration-level-looking `axiom`/`opaque` lexical hits requiring classification; comments and prose account for some hits. The next mandatory step is an independent `#print axioms` probe for the four exported declarations under the declared toolchain.
+The current source census finds four actual `sorry` lines, all in the intentionally separate `ComparatorChallenges` files. The independent headline probes now report only `propext`, `Classical.choice`, and `Quot.sound` for all four Navier–Stokes declarations and both Euler declarations. The CMI quantifier probe also elaborates the whole-space and periodic exported statements. These results close the formal-trust inventory, while the half-space semantic correspondence, derived-filter map, common-domain coverage, and human PDE review remain open as recorded in `NavierStokesReview/results/COMPLETION_AUDIT_2026-09-22.md`.

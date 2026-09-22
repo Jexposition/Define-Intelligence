@@ -62,8 +62,8 @@ not an independent kernel report.
 |---|---|---|
 | C1-C5 source predicate mapping | Source-level mapped; final equivalence audit open | `docs/OpenAI_NavierStokes_Peer_Review_v1.md` |
 | Periodic D mapping | Source-level mapped; final equivalence audit open | `NavierStokes/PeriodicPaperTheorem.lean`, `PeriodicComparatorSolution.lean` |
-| Challenge placeholder isolation | Four lexical `sorry` lines isolated; transitive reachability pending | `docs/OpenAI_NavierStokes_Axiom_Ledger.md` |
-| Transitive kernel axioms | Navier–Stokes headline exports and intermediate bridge declarations report only standard axioms; Euler exports pending | `HEADLINE_AXIOMS_4_34_RC2.txt`; `PREEXPORT_AXIOMS_4_34_RC2.txt` |
+| Challenge placeholder isolation | Four lexical `sorry` lines isolated in the separate challenge target; none appears in the audited Navier–Stokes or Euler headline axiom reports | `docs/OpenAI_NavierStokes_Axiom_Ledger.md`; headline reports |
+| Transitive kernel axioms | All four Navier–Stokes and both Euler headline declarations report only standard axioms | `HEADLINE_AXIOMS_4_34_RC2.txt`; `PREEXPORT_AXIOMS_4_34_RC2.txt`; `EULER_AXIOMS_4_34_RC2.txt` |
 | Human PDE peer review | Not established by Lean or repository metadata | CMI rules and independent literature review |
 | CMI procedural acceptance | Not established | Official CMI rules |
 

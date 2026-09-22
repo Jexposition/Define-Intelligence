@@ -1,0 +1,23 @@
+# Independent CMI quantifier probe
+# Date: 2026-09-22
+# Toolchain: leanprover/lean4:v4.34.0-rc2
+# Probe: NavierStokesReview/src/probes/CMIQuantifierProbe.lean
+# Final command:
+#   C:\Users\Admin\.elan\bin\elan.exe run leanprover/lean4:v4.34.0-rc2 lake env lean NavierStokesReview/src/probes/CMIQuantifierProbe.lean
+# Environment: ELAN_HOME=C:\Users\Admin\.elan; GIT_CONFIG_GLOBAL=.codex-gitconfig-navier
+# Output: exit code 0, no diagnostics
+
+The probe's two examples elaborate successfully. The displayed declarations
+have exactly the CMI-facing whole-space and periodic existential quantifiers:
+
+NavierStokes.Comparator.navier_stokes_breakdown_R3 (nu : ℝ) (hnu : nu > 0) :
+  ∃ u₀ f,
+    NavierStokes.Comparator.InitialVelocityConditionDecay u₀ ∧
+      NavierStokes.Comparator.ForceConditionDecay f ∧
+        ¬∃ v p, NavierStokes.Comparator.NavierStokesExistenceAndSmoothnessRn nu u₀ f v p
+
+NavierStokes.Comparator.navier_stokes_breakdown_periodic (nu : ℝ) (hnu : nu > 0) :
+  ∃ u₀ f,
+    NavierStokes.Comparator.InitialVelocityConditionPeriodic u₀ ∧
+      NavierStokes.Comparator.ForceConditionPeriodic f ∧
+        ¬∃ v p, NavierStokes.Comparator.NavierStokesExistenceAndSmoothnessPeriodic nu u₀ f v p

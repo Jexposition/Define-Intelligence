@@ -73,3 +73,32 @@ exit code 0. Its four reports are preserved verbatim in
 only `propext`, `Classical.choice`, and `Quot.sound`. This closes the
 Navier–Stokes portion of the formal trust gate, subject to the separate CMI
 semantic and human-review gates. Euler exports remain to be probed.
+
+## Independent CMI alias probe
+
+The zero-sorry `CMIQuantifierProbe` initially encountered a missing cached
+Mathlib interface. Building `Mathlib.Computability.PartrecCode` restored that
+interface; a subsequent sandbox-identity change required a local
+`GIT_CONFIG_GLOBAL` safe-directory file for the cached package repositories.
+The final probe then completed with exit code 0 and displayed both exact
+whole-space and periodic CMI-facing proposition shapes. Raw disposition is in
+`NavierStokesReview/results/CMI_QUANTIFIER_PROBE_4_34_RC2.txt`.
+
+## Direct Euler closure and headline probe
+
+The ordinary Lake closure for `Euler.Solution` generated approximately 7 GB
+of intermediate IR before the volume filled and therefore was not used as the
+review method. The intermediate IR was removed only after an absolute-path
+check; ignored build outputs and all source files were preserved.
+
+The independent resumable direct Lean closure
+`NavierStokesReview/src/audit/direct_lean_closure.ps1` then compiled the
+1,829-module project closure using only `.olean`/`.ilean` outputs. It finished
+with all modules available, including `Euler.Solution`. This was an interface
+precondition, not a mathematical validation criterion.
+
+The zero-sorry `EulerAxiomProbe` then completed with exit code 0. Both Euler
+exports report only `propext`, `Classical.choice`, and `Quot.sound`; neither
+report contains `sorryAx`, a native-evaluation axiom, or a project-specific
+axiom. Raw output is preserved in
+`NavierStokesReview/results/EULER_AXIOMS_4_34_RC2.txt`.
