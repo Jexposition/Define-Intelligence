@@ -145,6 +145,16 @@ These are not objections merely because they are difficult. They are the obligat
 
 One potentially serious-looking objection was checked at source level. `CandidateProperties.not_global_agreement` in `NavierStokes/R3/CandidateBreakdown.lean:17-40` does not infer a pointwise bound from finite energy. It restricts the global smooth comparator to the compact spacetime set `Icc 0 1 × K`, obtains a continuous-on-compact bound, and then contradicts `SpeedUnboundedAtOne`. The generic `L²` versus `L∞` objection therefore does not apply to this particular bridge.
 
+## Finite-stage and derivative-rate audit
+
+The apparent conflict between periodic fields and the R3 compact-support type is not a defect in the current source. The construction has an explicit localisation layer: a top-level periodic candidate is converted by `R3CompactCandidate` to local compact fields, then `R3/ActualCandidate` packages those fields with a compact positive-time force. The conversion is supported by local equality lemmas and is followed by a separate force-localisation step.
+
+The finite-stage chain is materially stronger than a wrapper around the desired conclusion. `MixedCandidateAssembly.StageEstimates` requires smoothness of all raw families, gain monotonicity and divergence, raw bounds for each family, finite background jet rates, and finite residual jet rates. `GluedStageEstimates.actualStageEstimates` constructs these fields from concrete run data, field representations, coherence, and `PhysicalData`; `ActualCandidateAssembly.estimates` supplies those objects from the actual cycle and physical-prefix theorems. The source audit found no hidden target theorem, `axiom`, or challenge `sorry` in that chain.
+
+There is one formalisation-quality concern. `DiagonalResidual.JetRate` is only an eventual inequality involving `iteratedFDeriv`; its definition does not itself require smoothness or differentiability. A rate can therefore be mistaken for a regularity certificate if consumed in isolation. In the current final construction, `StageEstimates` separately supplies `ContDiffOn` for the raw fields, so this is not yet a CMI mismatch. It is a required follow-up: every extension and final smoothness lemma must be shown to use the explicit smoothness fields rather than the rate predicate alone.
+
+This pass therefore adds a review issue but no proof failure. The decisive unresolved lanes remain the transitive kernel axiom footprint, the analytic pressure-flux/whole-space uniqueness chain, and the exact force and solution-class correspondence with CMI.
+
 ## What would count as a positive result
 
 The review can classify the Navier–Stokes R3 claim as formally established for the stated CMI alternative only if all of the following are recorded:

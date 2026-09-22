@@ -45,7 +45,13 @@ scaling guards, and independent kernel output.
 
 ## Current extraction state: 2026-09-22
 
-`elan` is installed at `C:\Users\Admin\.elan\bin`, and the repository-declared `leanprover/lean4:v4.34.0-rc2` toolchain is installed. The broad all-project build was stopped because compilation is not the review criterion. A targeted `NavierStokes.ComparatorSolution` dependency build is running to generate the interfaces needed by the independent probe. No transitive axiom set is asserted here until the probe captures compiler output for each exported declaration, including whether `sorryAx` is reachable.
+`elan` is installed at `C:\Users\Admin\.elan\bin`, and the repository-declared `leanprover/lean4:v4.34.0-rc2` toolchain is installed. The broad all-project build was stopped because compilation is not the review criterion. A targeted `NavierStokes.ComparatorSolution` dependency build was attempted and stopped before emitting the target interface needed by the independent probe. No transitive axiom set is asserted here until the probe captures compiler output for each exported declaration, including whether `sorryAx` is reachable.
+
+## Source audit update: 2026-09-22
+
+The finite-stage path was inspected through `StateRealization`, `PhysicalFields`, `ActualCycleResidualBounds.Invariant.residual_jetRate`, `GluedStageEstimates.actualStageEstimates`, and `ActualCandidateAssembly.estimates`. The source-level result is that the residual-rate input is derived from explicit physical germ, exterior, invariant, and representation premises. No declaration-level `axiom` or `sorry` was found in this path. The independent kernel footprint remains pending because the target `.olean` interface was not produced.
+
+`DiagonalResidual.JetRate` is separately logged as a specification concern: it is a bound on `iteratedFDeriv` and does not bundle smoothness. This does not currently contaminate the final candidate path because `StageEstimates` separately requires `ContDiffOn` for each raw field, but every consumer that uses a rate as a regularity statement must be checked.
 
 The requested shared package root at `D:\Research Lab\V-lab-Equipment\.lake\packages-4.32` contains `mathlib` but no `Comparator` package. It is therefore not the dependency tree for this fork's declared 4.34.0-rc2 project and is tracked as a compatibility lane rather than substituted into the main audit.
 # Current-snapshot update: 2026-09-22

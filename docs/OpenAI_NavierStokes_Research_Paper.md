@@ -50,6 +50,10 @@ The first machine census found 2,659 project Lean files and 173 files added rela
 
 One suspected bridge failure was also checked and not found at source level: `CandidateProperties.not_global_agreement` bounds a global smooth comparator on the candidate's fixed compact spacetime support and uses that bound against the candidate's unbounded speed. It does not claim that a uniform finite-energy bound alone implies an `L∞` bound.
 
+The finite-stage construction was then audited at its load-bearing interfaces. `StageEstimates` explicitly carries raw smoothness, growth, field bounds, background rates, and residual rates. The actual constructor obtains these from concrete cycle data, representations, coherence, and physical-field data. The source path does not expose a missing residual estimate disguised as a theorem conclusion. A related specification concern remains: `JetRate` is only an eventual inequality for `iteratedFDeriv` and does not itself bundle smoothness. Because the stage record separately requires `ContDiffOn` for the raw fields, this is not currently a CMI failure, but it must be checked at every consumer that forms an endpoint extension or a smooth final solution.
+
+The periodic-to-compact transition is also deliberate rather than contradictory. The periodic candidate layer is localised by `R3CompactCandidate`, and `R3/ActualCandidate` packages the resulting compact fields and positive-time compact force into the whole-space statement. The audit records this as a tested non-failure and keeps the pressure-flux and kernel dependency checks open.
+
 ## References
 
 1. Charles L. Fefferman, [Existence and Smoothness of the Navier–Stokes Equation, official CMI problem statement](https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf).
