@@ -1,0 +1,17 @@
+{
+    "generated_utc":  "2026-09-22T12:33:34.4387822Z",
+    "local_root":  "D:\\Research Lab\\Jexposition\\Define Intelligence\\NavierStokesAndEuler-main-open Ais solution",
+    "current_root":  "D:\\Research Lab\\Jexposition\\Define Intelligence\\NavierStokesReview\\src\\upstream-current",
+    "local_file_count":  2493,
+    "current_file_count":  2666,
+    "unchanged_count":  0,
+    "changed_count":  2493,
+    "added_current_count":  173,
+    "only_local_count":  0,
+    "lexical_tag_counts":  {
+                               "local_sorry":  2,
+                               "current_sorry":  2,
+                               "local_axiom_declarations":  0,
+                               "current_axiom_declarations":  0
+                           }
+}

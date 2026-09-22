@@ -1,1 +1,10 @@
 .lake/
+build/
+*.olean
+*.ilean
+*.c
+__pycache__/
+.venv/
+.pytest_cache/
+.mypy_cache/
+NavierStokesReview/results/BUILD_*.txt

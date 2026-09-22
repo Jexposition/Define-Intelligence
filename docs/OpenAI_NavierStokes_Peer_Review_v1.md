@@ -1,0 +1,187 @@
+# Independent peer review of the OpenAI Navier–Stokes and Euler formalisation
+
+Status: working review, current public snapshot pinned to commit `f9e8bc5b38b6e212696e8a30e3e91517af887bbd`.
+
+This review is conducted in `NavierStokesReview`. The downloaded directory and the public source repository are not edited. The review distinguishes four questions that must not be conflated:
+
+1. Does the Lean source compile?
+2. Does the Lean kernel accept the exported theorem without `sorryAx` or an unreviewed project axiom?
+3. Does the theorem statement match the claimed Navier–Stokes problem, including its quantifiers and function classes?
+4. Does the mathematical construction establish the theorem rather than merely package the desired properties into an assumed interface?
+
+The first two are formal verification questions. The last two are mathematical peer-review questions.
+
+## Executive finding
+
+The current evidence does **not** justify either “the proof is false” or “the Millennium problem is solved”. The downloaded copy is stale relative to the public repository, and the public repository contains a substantially newer formal development. The official CMI statement permits the forced alternatives (C) and (D), so the presence of a smooth external force is not by itself a defect. The decisive audit is therefore whether the exported forced-breakdown theorems are kernel-checked from explicitly constructed witnesses and whether their global-solution negations use exactly the CMI admissible class.
+
+The source census found five raw `sorry` tokens in `ComparatorChallenges`, which the repository documents as intentionally separate challenge files. This is not yet evidence that the exported result theorems depend on `sorryAx`; that must be settled by compiling the project and recording `#print axioms` for each exported declaration. The repository’s `formalization.yaml` is a self-assessment and cannot substitute for that independent check.
+
+## Snapshot and provenance
+
+The public repository is:
+
+`https://github.com/openai/NavierStokesAndEuler`
+
+The reviewed public snapshot is commit `f9e8bc5b38b6e212696e8a30e3e91517af887bbd`, dated 10 September 2026. The downloaded directory contains 2,496 project files; the current public clone contains 2,669 project files, including 2,659 Lean files. There are 173 project files in the public snapshot that are absent from the downloaded copy. Every common file has changed hash, so conclusions drawn only from the downloaded copy are not current conclusions about the public repository.
+
+The review census excludes `.lake` dependencies and records file hashes separately. It is stored in:
+
+`NavierStokesReview/results/UPSTREAM_SOURCE_CENSUS.md`
+
+The source-to-result map is stored in:
+
+`NavierStokesReview/results/UPSTREAM_PROOF_PATH_MAP.md`
+
+## CMI criterion used in this review
+
+The official Clay statement is the controlling specification:
+
+`https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf`
+
+It asks for one of four alternatives. Alternatives (A) and (B) concern the unforced problem. Alternatives (C) and (D) explicitly concern forced problems. Accordingly, a forced construction can be relevant to the CMI problem; the review must test the exact hypotheses rather than reject it because it is forced.
+
+For a forced alternative, the review checks:
+
+| Requirement | Review question |
+|---|---|
+| viscosity | Is the theorem quantified for every `ν > 0`? |
+| domain | Is the result on `R³` or the periodic torus as claimed? |
+| data | Is the initial velocity smooth, divergence-free, and in the required decay or periodicity class? |
+| force | Is the force smooth and in the required spatial and temporal class? |
+| solution class | Are velocity and pressure globally smooth in the precise sense required by CMI? |
+| conclusion | Is there finite-time breakdown or failure of a global smooth bounded-energy solution, with the correct quantifier over global solutions? |
+
+The official statement is authoritative for the CMI wording. The paper’s informal description is evidence about intent, not a replacement for that statement.
+
+## What the current source visibly claims
+
+The exported Navier–Stokes declarations are:
+
+```text
+NavierStokes.Comparator.navier_stokes_breakdown_R3
+NavierStokes.Comparator.navier_stokes_breakdown_periodic
+```
+
+The exported Euler declarations are:
+
+```text
+Euler.euler_breakdown_R3
+Euler.exists_compact_smooth_euler_singularity
+```
+
+The Euler results are separate from the CMI Navier–Stokes prize problem. They may be mathematically interesting, but they cannot by themselves establish a CMI alternative.
+
+The R3 theorem visibly has the shape
+
+```text
+∀ ν > 0,
+  ∃ u₀ f,
+    InitialVelocityConditionDecay u₀ ∧
+    ForceConditionDecay f ∧
+    ¬ (∃ v p, NavierStokesExistenceAndSmoothnessRn ν u₀ f v p)
+```
+
+The periodic theorem has an analogous comparator shape. The internal R3 construction provides a candidate velocity, pressure, force, compact set, smoothness, divergence-free condition, PDE identity before the singular time, bounded kinetic energy before the singular time, and unbounded speed as the singular time is approached.
+
+## Main proof path found in the source
+
+The R3 path is not a single opaque theorem. It is routed through the following layers:
+
+1. `NavierStokes/R3/ProblemStatement.lean` defines the candidate and global-solution predicates.
+2. `NavierStokes/R3/ActualCandidate.lean` assembles the compactly supported candidate and transfers its properties.
+3. `NavierStokes/ComparatorR3Theorem.lean` converts the candidate properties into the comparator theorem.
+4. `NavierStokes/ComparatorR3Bridge.lean` defines the global-solution class and the normalisation/contradiction bridge.
+5. `NavierStokes/ComparatorSolution.lean` exports the public theorem and prints its axiom dependencies.
+
+The periodic path uses `PeriodicPaperTheorem.lean` and `PeriodicPaperComparator.lean`, including compression, scaling, and periodisation. That path needs its own audit; it should not be inferred automatically from the R3 path.
+
+## Preliminary formal findings
+
+### Compilation status
+
+The public project pins Lean `4.34.0-rc2`, Mathlib at the matching revision, and the Comparator package at the matching revision. A clean build is being run from the independent review clone. A final build exit code is required before the review can label any declaration “compiled”.
+
+### Raw placeholders
+
+The source census found intentional `sorry` placeholders in:
+
+```text
+ComparatorChallenges/NavierStokes.lean
+ComparatorChallenges/Euler.lean
+```
+
+These files are not automatically disqualifying if they are not imported by the exported result declarations. They are disqualifying for any theorem that depends on them. The dependency and axiom report is therefore the decisive test, not the repository-wide raw token count alone.
+
+### Project axioms
+
+The repository reports the standard Lean axioms `propext`, `Classical.choice`, and `Quot.sound` for its headline results. These are ordinary axioms used by Lean and Mathlib and are not equivalent to an unproved Navier–Stokes assumption. This report will independently confirm the transitive axiom sets with `#print axioms` after the clean build.
+
+The audit specifically searches for:
+
+- `sorryAx` or `admitAx` in an exported result;
+- project-level `axiom` or `opaque` declarations in the result dependency graph;
+- imported challenge files containing `sorry`;
+- declarations whose names suggest a theorem but whose body is only a wrapper around an assumed property;
+- circular use of a target theorem or of a proposition definition that already contains the desired conclusion.
+
+## CMI alignment questions still requiring closure
+
+The formal statement appears structurally aimed at forced alternatives (C) and (D), which is legitimate. The remaining questions are exact and testable:
+
+1. Does `InitialVelocityConditionDecay` imply the full CMI initial-data requirement, not merely decay?
+2. Does `ForceConditionDecay` imply the complete smooth force condition on the entire future time domain?
+3. Does the global-solution predicate quantify over the same solution regularity, domain, pressure, divergence, initial condition, and kinetic-energy bound required by CMI?
+4. Is the statement’s finite-time conclusion about a genuine solution on the maximal pre-singular interval, rather than only a field satisfying the equation on an arbitrarily selected subinterval?
+5. Is the force independent of the candidate solution and fixed before the global-solution contradiction is formed?
+6. In the periodic route, are the velocity, pressure, force, and all required derivatives genuinely periodic after periodisation?
+7. Are the scaling and compression maps proved to preserve the exact PDE, viscosity, initial data, and energy hypotheses rather than only a weaker surrogate?
+
+These are not objections merely because they are difficult. They are the obligations that determine whether the Lean theorem is a formal proof of the CMI alternative or a formally verified theorem about a weaker custom predicate.
+
+## What would count as a positive result
+
+The review can classify the Navier–Stokes R3 claim as formally established for the stated CMI alternative only if all of the following are recorded:
+
+- the clean pinned build exits successfully;
+- every exported theorem has an independent `#print axioms` report with no `sorryAx` or unreviewed project axiom;
+- the challenge files are absent from the dependency graph of the exported theorems;
+- the exact source predicates are shown to imply the official CMI hypotheses;
+- the candidate construction is traced from definitions to the exported witness without an assumed target property;
+- the global-solution negation is proved for the same class of solutions CMI quantifies over;
+- the R3 and periodic routes are reported separately.
+
+Even then, “formal proof accepted by Lean” and “mathematical exposition independently understood by referees” remain separate standards. The former establishes kernel-level derivability; the latter requires a human-readable proof audit of the construction and its analytic estimates.
+
+## Current classification
+
+| Item | Status |
+|---|---|
+| Current public revision identified | VERIFIED |
+| Downloaded copy current | NOT CURRENT |
+| CMI forced alternatives allowed | VERIFIED from official CMI statement |
+| R3 theorem shape mapped | VERIFIED at source level |
+| Periodic theorem shape mapped | VERIFIED at source level; semantic audit pending |
+| Challenge `sorry` files isolated | VERIFIED by source/import inspection; dependency proof pending |
+| Exported theorem axiom sets | PENDING clean build and independent probe |
+| Full CMI hypothesis equivalence | PENDING semantic audit |
+| Independent claim that the Millennium problem is solved | NOT ESTABLISHED |
+
+## Review rule
+
+Until the pending rows are closed, the accurate description is:
+
+> The repository contains a substantial Lean formalisation whose current public snapshot targets forced CMI alternatives (C) and (D). Its headline theorem may be formally strong, but the independent review must still verify the kernel dependency graph and the exact correspondence between the custom solution predicates and the official Clay hypotheses.
+
+That is a narrower and more defensible statement than either dismissing the work because it uses forcing or accepting the repository’s self-assessed completion flag as an independent proof review.
+
+## Review artefacts
+
+- Plan: `docs/OpenAI_NavierStokes_CMI_First_Review_Plan.md`
+- Axiom ledger: `docs/OpenAI_NavierStokes_Axiom_Ledger.md`
+- Audit tracker: `docs/OpenAI_NavierStokes_Audit_Tracker.md`
+- Source census: `NavierStokesReview/results/UPSTREAM_SOURCE_CENSUS.md`
+- Proof-path map: `NavierStokesReview/results/UPSTREAM_PROOF_PATH_MAP.md`
+- Kernel probe: `NavierStokesReview/src/probes/AxiomProbe.lean`
+- Build log: `NavierStokesReview/results/BUILD_CURRENT_4_34_RC2_clean.txt`
+

@@ -1,0 +1,12 @@
+name = "NavierStokesReviewLean32Preflight"
+version = "0.1.0"
+defaultTargets = ["Preflight"]
+
+[[require]]
+name = "mathlib"
+path = "D:/Research Lab/V-lab-Equipment/.lake/packages-4.32/mathlib"
+
+[[lean_exe]]
+name = "Preflight"
+root = "Main"
+

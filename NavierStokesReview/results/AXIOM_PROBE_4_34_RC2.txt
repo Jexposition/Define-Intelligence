@@ -1,0 +1,17 @@
+D:\Research Lab\Jexposition\Define Intelligence\NavierStokesReview\src\probes\AxiomProbe.lean:1:0: error: unknown module prefix 'NavierStokes'
+
+No directory 'NavierStokes' or file 'NavierStokes.olean' in the search path entries:
+D:\Research Lab\Jexposition\Define Intelligence\NavierStokesReview\src\upstream-current\.lake\packages\Cli\.lake\build\lib\lean
+D:\Research Lab\Jexposition\Define Intelligence\NavierStokesReview\src\upstream-current\.lake\packages\batteries\.lake\build\lib\lean
+D:\Research Lab\Jexposition\Define Intelligence\NavierStokesReview\src\upstream-current\.lake\packages\Qq\.lake\build\lib\lean
+D:\Research Lab\Jexposition\Define Intelligence\NavierStokesReview\src\upstream-current\.lake\packages\aesop\.lake\build\lib\lean
+D:\Research Lab\Jexposition\Define Intelligence\NavierStokesReview\src\upstream-current\.lake\packages\proofwidgets\.lake\build\lib\lean
+D:\Research Lab\Jexposition\Define Intelligence\NavierStokesReview\src\upstream-current\.lake\packages\importGraph\.lake\build\lib\lean
+D:\Research Lab\Jexposition\Define Intelligence\NavierStokesReview\src\upstream-current\.lake\packages\LeanSearchClient\.lake\build\lib\lean
+D:\Research Lab\Jexposition\Define Intelligence\NavierStokesReview\src\upstream-current\.lake\packages\plausible\.lake\build\lib\lean
+D:\Research Lab\Jexposition\Define Intelligence\NavierStokesReview\src\upstream-current\.lake\packages\lean4export\.lake\build\lib\lean
+D:\Research Lab\Jexposition\Define Intelligence\NavierStokesReview\src\upstream-current\.lake\packages\mathlib\.lake\build\lib\lean
+D:\Research Lab\Jexposition\Define Intelligence\NavierStokesReview\src\upstream-current\.lake\packages\Comparator\.lake\build\lib\lean
+D:\Research Lab\Jexposition\Define Intelligence\NavierStokesReview\src\upstream-current\.lake\build\lib\lean
+c:\Users\Admin\.elan\toolchains\leanprover--lean4---v4.34.0-rc2\lib\lean
+c:\Users\Admin\.elan\toolchains\leanprover--lean4---v4.34.0-rc2\lib\lean
