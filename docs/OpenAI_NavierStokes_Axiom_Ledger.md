@@ -15,7 +15,7 @@ Status: initial census; all dependency claims remain pending kernel extraction u
 | AX-009 | Selected witness construction | `NavierStokes/ActualCandidateAssembly.lean`, `GermCandidateAssembly.lean` | Derived from finite-stage estimates and an existence theorem; not a source-level axiom | CONFIRMED source-level |
 | AX-010 | A-posteriori force | `GermCandidateAssembly.exists_candidate_witness_of_finite_stages` | Existentially produced after candidate fields and residual data; audit its CMI force class separately | CONFIRMED interpretation |
 | AX-011 | Challenge placeholders | `ComparatorChallenges/NavierStokes.lean`, `ComparatorChallenges/Euler.lean` | Four intentional `sorry` lines in separate challenge files; reachability to exported results is OPEN | CONFIRMED lexical |
-| AX-012 | Kernel extraction | `elan`, `lake`, and `#print axioms` | No `elan` or `lake` executable is currently on this shell's PATH; exact transitive output remains pending | OPEN environment |
+| AX-012 | Kernel extraction | `C:\Users\Admin\.elan\bin\elan.exe`; declared 4.34.0-rc2 cache; `#print axioms` | Cache retrieval completed, but the bounded target build did not emit `ComparatorSolution.olean`; exact transitive output remains pending | OPEN environment |
 | AX-013 | Supplied-report axiom protocol | Technical audit report and backup audit | Adopted: transitive footprint must be measured, not inferred from `sorry_count` | CONFIRMED protocol |
 | AX-014 | Input corpus provenance | `NavierStokesReview/evidence/input_documents_manifest.json` | Technical report, four backup documents, paper, ZIP, root critiques, and fork review docs are hash-recorded | CONFIRMED |
 
@@ -59,6 +59,21 @@ The isolated Lean 4.32 preflight is wired to that shared Mathlib path. Its
 first run reported a stale compiled Lake configuration; the bounded `-R`
 reconfiguration run did not return within 60 seconds. This is recorded as
 `AUD-040` and is not used to classify the OpenAI theorem.
+
+The formal-trust boundary is now recorded separately in
+`NavierStokesReview/results/TRUST_AND_CMI_COMPLETION_CRITERIA_2026-09-22.md`.
+It follows Lean's official guidance that `#print axioms` is transitive,
+`sorryAx` is disqualifying for a completed proof, and repository metadata is
+not an independent kernel certificate. This ledger therefore keeps the
+transitive extraction pending until the target interface is available.
+
+## Targeted extraction update: 2026-09-22
+
+The repository's declared 4.34.0-rc2 cache retrieval restored 3,311 cached
+Mathlib files successfully. A targeted build then exceeded 120 seconds and was
+stopped without producing `NavierStokes.ComparatorSolution.olean`. No axiom
+output is inferred from this partial build. The exact command and result are
+recorded in `NavierStokesReview/results/BUILD_AND_AXIOM_EXTRACTION_LOG_2026-09-22.md`.
 
 ## Pressure-flux dependency update: 2026-09-22
 

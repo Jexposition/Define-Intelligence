@@ -56,6 +56,15 @@ For a forced alternative, the review checks:
 
 The official statement is authoritative for the CMI wording. The paper’s informal description is evidence about intent, not a replacement for that statement.
 
+The review now separates the CMI mathematical/procedural gate from Lean's
+formal-trust gate. The official CMI statement requires the exact PDE,
+divergence-free smooth initial data, the stated whole-space or periodic force
+conditions, and nonexistence in the matching smooth solution class. Official
+Lean guidance requires a transitive `#print axioms` audit and treats
+`sorryAx` or unreviewed custom axioms as unresolved trust failures. Neither
+repository metadata nor successful compilation closes the human peer-review
+and CMI acceptance requirements.
+
 ## What the current source visibly claims
 
 The exported Navier–Stokes declarations are:
@@ -117,7 +126,7 @@ These files are not automatically disqualifying if they are not imported by the 
 
 ### Project axioms
 
-The repository reports the standard Lean axioms `propext`, `Classical.choice`, and `Quot.sound` for its headline results. These are ordinary axioms used by Lean and Mathlib and are not equivalent to an unproved Navier–Stokes assumption. Independent transitive confirmation with `#print axioms` remains pending because the targeted dependency build did not emit the required project interface. The status record does not substitute the repository’s self-report with an invented result.
+The repository's self-assessment metadata reports the standard Lean axioms `propext`, `Classical.choice`, and `Quot.sound` for its headline results. These are ordinary axioms used by Lean and Mathlib and are not equivalent to an unproved Navier–Stokes assumption. Independent transitive confirmation with `#print axioms` remains pending because the targeted dependency build did not emit the required project interface. The status record does not substitute the repository's self-report with an invented result.
 
 The audit specifically searches for:
 
