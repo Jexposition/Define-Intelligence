@@ -1,0 +1,10 @@
+Command:
+$env:GIT_CONFIG_GLOBAL='D:\Research Lab\Jexposition\.codex-gitconfig-navier'; $env:ELAN_HOME='C:\Users\Admin\.elan'; & 'C:\Users\Admin\.elan\bin\elan.exe' run leanprover/lean4:v4.34.0-rc2 lake env lean 'NavierStokesReview\src\probes\DerivedFilterAudit.lean'
+
+Exit code: 0
+Output: none
+
+The zero-sorry probe establishes:
+- `⊤` is nontrivial;
+- `⊤ ⊓ principal (univᶜ)` is not nontrivial;
+- `⊥` is not nontrivial.

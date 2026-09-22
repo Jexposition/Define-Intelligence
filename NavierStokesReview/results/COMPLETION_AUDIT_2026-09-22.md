@@ -48,11 +48,17 @@ interface: its arbitrary-filter form admits vacuous proofs on `⊥`. The
 principal endpoint used by the audited base-error path is nontrivial, so this
 finding is not currently a disproof of the exported Navier–Stokes theorem.
 
+The new derived-filter probe makes the scope precise: `NeBot originPast` does
+not imply `NeBot (originPast ⊓ 𝓟 activeᶜ)`. The selected-rate consumer still
+has a valid two-branch proof, so the open item is whether the actual exterior
+branch is frequent and quantitatively substantive, not whether Lean accepts a
+bottom-filter theorem in the abstract.
+
 ## Review disposition
 
 Current disposition: `FORMAL TRUST PASS; CMI PREDICATE MATCH CONFIRMED AT LEAN
-INTERFACE LEVEL; HUMAN PDE PEER REVIEW OPEN; NO NEGATIVE CMI FINDING
-ESTABLISHED`.
+INTERFACE LEVEL; CMI PROCEDURAL GATE NOT ESTABLISHED; HUMAN PDE PEER REVIEW
+OPEN; NO NEGATIVE CMI MATHEMATICAL FINDING ESTABLISHED`.
 
 The appropriate next peer-review action is to discharge the three remaining
 semantic items with explicit theorem-to-CMI correspondence proofs or an

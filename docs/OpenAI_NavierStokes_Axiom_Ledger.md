@@ -18,6 +18,7 @@ Status: current ledger; headline and intermediate transitive kernel reports are 
 | AX-012 | Kernel extraction | `C:\Users\Admin\.elan\bin\elan.exe`; declared 4.34.0-rc2 cache; `#print axioms` | Resumable direct closure supplied interfaces; six headline reports captured | CONFIRMED |
 | AX-013 | Supplied-report axiom protocol | Technical audit report and backup audit | Adopted: transitive footprint must be measured, not inferred from `sorry_count` | CONFIRMED protocol |
 | AX-014 | Input corpus provenance | `NavierStokesReview/evidence/input_documents_manifest.json` | Technical report, four backup documents, paper, ZIP, root critiques, and fork review docs are hash-recorded | CONFIRMED |
+| AX-015 | Derived-filter rate API | `NavierStokesReview/src/probes/DerivedFilterAudit.lean`; `DERIVED_FILTER_AUDIT_2026-09-22.md` | `JetRate` permits bottom-filter proofs; this is a specification hazard, not a kernel axiom or demonstrated CMI mismatch | CONFIRMED hazard; main-path impact OPEN |
 
 ## Rules
 
@@ -185,3 +186,7 @@ the reports. The raw output is preserved in
 `NavierStokesReview/results/EULER_AXIOMS_4_34_RC2.txt` as `AUD-050`. This
 closes the repository's headline formal-trust inventory under the declared
 toolchain; it does not close the CMI semantic or procedural gates.
+
+The CMI procedural gate is tracked separately: formal axiom cleanliness does
+not establish publication in a Qualifying Outlet, two years since publication,
+or general mathematical acceptance.

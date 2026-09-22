@@ -142,6 +142,17 @@ nontrivial, so the generic issue is recorded as an API risk, not as a negative
 finding against the exported theorem. The full disposition and evidence map
 are in `NavierStokesReview/results/COMPLETION_AUDIT_2026-09-22.md`.
 
+## 9. Procedural CMI boundary
+
+The CMI prize rules impose a separate procedural condition. Before CMI will
+consider a proposed solution, it must be published in a Qualifying Outlet, at
+least two years must have passed, and it must have received general acceptance
+in the global mathematics community. The public OpenAI announcement and GitHub
+repository establish a public release and a formalisation claim, but do not by
+themselves establish those three conditions. The audit therefore records a
+formal-trust pass and CMI-interface match, while leaving analytic peer review
+and CMI procedural eligibility open.
+
 ## References
 
 1. Charles L. Fefferman, [Existence and Smoothness of the Navier–Stokes Equation, official CMI problem statement](https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf).

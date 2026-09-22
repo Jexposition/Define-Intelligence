@@ -33,11 +33,16 @@ directional inverse and must not be conflated with its derivative-loss ledger.
 
 The source shows a coherent local-domain pattern: the torus inverse accepts a
 set `S`, the gauge layer specialises it to one `fiberShell`, and the radial
-iteration preserves the same interval and fibre. No concrete empty-domain
-failure was found in this pass; the actual use of `a ≤ b`, nonempty fibres,
-and the bridge from these local domains to the physical correction region
-still needs to be traced through the final selected witness. Therefore the
-external common-domain lead is narrowed, not closed.
+iteration preserves the same interval and fibre. The load-bearing compact-alias
+call at `GaugeAliasDecay.lean:294-295` obtains `0 < c`, `c < e`, and the
+support-side inequalities from `qLength_reference_bounds` before invoking
+`physicalTotal_finiteJets_local`; the inverse/transport interface therefore
+does not silently run on an unproved empty radial interval.
+
+No concrete empty-domain failure was found. The remaining open item is not the
+local inverse hypothesis but the analytic provenance from these local domains
+through the correction construction to the final selected physical witness.
+That question remains separate from the CMI predicate match.
 
 ## Reproduction searches
 
