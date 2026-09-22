@@ -157,6 +157,18 @@ The pressure-flux route was then traced. `WholeSpaceComparisonClosure.eq_of_pres
 
 An independent semantic-coverage audit supplies three useful next tests: one common positive domain for all inverses and differentiated inverses; term-by-term closure of every nonlinear residual, pressure, mean, support, and normalisation contribution; and a derivative-loss bound uniform in correction stage. Our source pass has checked explicit smoothness at the principal residual-rate consumers, but it has not yet closed these broader correspondence tests. They are recorded as `AUD-037`, not as proof failures.
 
+The follow-up semantic pass partially resolved those leads. The inverse layer
+explicitly proves a five-derivative loss, the physical residual theorem
+enumerates source, mean, base, Gaussian, alias, and excluded terms, the
+derivative-loss accounting is carried through the correction-index quantifier
+without visibly depending on stage, and the inspected endpoint adapter
+separately proves the required smooth extensions. The result is
+`PARTIALLY VERIFIED / OPEN`: common-domain coverage, provenance of the large
+invariant and `PhysicalData` premises, and the torus-to-R3 correspondence
+remain unresolved. `JetRate` remains a specification caution because its
+definition does not itself bundle smoothness, although no inspected endpoint
+consumer used it alone as a regularity certificate.
+
 This pass therefore adds review issues but no proof failure. The decisive unresolved lanes remain the transitive kernel axiom footprint, independent mathematical checking of the analytic pressure-flux chain, and the exact force and solution-class correspondence with CMI.
 
 ## What would count as a positive result

@@ -56,6 +56,17 @@ The pressure-flux uniqueness route was also traced. The localized closure theore
 
 An independent September 2026 semantic-coverage preprint identifies three further source-level tests: a common positive domain for every inverse and differentiated inverse, term-by-term residual closure through curl, self-interaction, pressure, mean, support, and normalisation terms, and derivative-loss bounds independent of correction stage. The present audit records these as open leads. They sharpen the review method without establishing a defect: a zero-sorry kernel proof can validate an abstraction while leaving the paper-to-abstraction correspondence underexamined.
 
+The subsequent source pass partially resolved those leads. `SmoothFamilyTorusInverse.inverse_finiteJets` explicitly fixes a five-derivative loss, `PhysicalResidualJetBounds` expands the residual into source, mean, base, Gaussian, alias, and excluded contributions, `ActualCycleResidualBounds` carries a derivative-order loss through all correction indices, and the endpoint adapter derives smooth extensions from `OneSidedExtension`, joint limits, and `PhysicalJets.of_rawStage`. These checks are meaningful positive evidence against an under-specified residual ledger. They do not by themselves establish one common inverse domain, prove the analytic provenance of every invariant and `PhysicalData` premise, or identify the torus candidate with the whole-space CMI witness. The semantic status therefore remains partially verified and open.
+
+The inverse call-site map narrows the common-domain concern. The universal
+torus estimate is specialised to a fixed `fiberShell a b s`; the radial
+source-jet induction preserves that same fibre and support interval; and the
+mixed-jet and real-complexification interfaces retain one slow parameter set.
+No empty-domain failure was found. The unresolved question is whether the
+conditions guaranteeing `a ≤ b`, nonempty fibres, and physical-domain
+coverage are visibly connected to the final selected witness and its R3
+localisation.
+
 The periodic-to-compact transition is also deliberate rather than contradictory. The periodic candidate layer is localised by `R3CompactCandidate`, and `R3/ActualCandidate` packages the resulting compact fields and positive-time compact force into the whole-space statement. The audit records this as a tested non-failure and keeps the pressure-flux and kernel dependency checks open.
 
 ## References

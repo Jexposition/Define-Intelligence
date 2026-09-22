@@ -55,6 +55,11 @@ The finite-stage path was inspected through `StateRealization`, `PhysicalFields`
 
 The requested shared package root at `D:\Research Lab\V-lab-Equipment\.lake\packages-4.32` contains `mathlib` but no `Comparator` package. It is therefore not the dependency tree for this fork's declared 4.34.0-rc2 project and is tracked as a compatibility lane rather than substituted into the main audit.
 
+The isolated Lean 4.32 preflight is wired to that shared Mathlib path. Its
+first run reported a stale compiled Lake configuration; the bounded `-R`
+reconfiguration run did not return within 60 seconds. This is recorded as
+`AUD-040` and is not used to classify the OpenAI theorem.
+
 ## Pressure-flux dependency update: 2026-09-22
 
 The source-level pressure-flux route was traced through
@@ -70,6 +75,26 @@ assumption was found. The result is recorded in
 This does not settle the independent analytic validity of the imported proof
 terms or their transitive kernel axiom set. The latter remains pending because
 the targeted build did not emit `ComparatorSolution.olean`.
+
+## Semantic coverage update: 2026-09-22
+
+The source-level semantic pass found positive evidence for three previously
+open obligations. `SmoothFamilyTorusInverse.inverse_finiteJets` fixes a
+five-derivative inverse loss; `PhysicalResidualJetBounds` decomposes and bounds
+the source, mean, base, Gaussian, alias, and excluded residual terms; and the
+native residual path carries a derivative-order loss independently of the
+correction index. These findings are recorded as `AUD-038` in the audit
+tracker. They do not close common-domain coverage, premise provenance, or the
+independent transitive axiom report. The endpoint path itself is source-level
+verified through `OneSidedExtension`, joint-limit smoothness, and
+`PhysicalJets.of_rawStage`; its transitive kernel and analytic provenance are
+still pending.
+
+The corrected probe invocation is now recorded in
+`NavierStokesReview/results/AXIOM_PROBE_4_34_RC2.txt`. It was run from the
+fork root and reached the real missing `ComparatorSolution.olean` interface;
+the prior wrong-root module-prefix error is retained only as provenance. No
+`#print axioms` output is asserted until the interface is emitted.
 # Current-snapshot update: 2026-09-22
 
 ## Source-level dependency inventory

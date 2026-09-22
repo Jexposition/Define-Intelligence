@@ -1,17 +1,16 @@
-D:\Research Lab\Jexposition\Define Intelligence\NavierStokesReview\src\probes\AxiomProbe.lean:1:0: error: unknown module prefix 'NavierStokes'
-
-No directory 'NavierStokes' or file 'NavierStokes.olean' in the search path entries:
-D:\Research Lab\Jexposition\Define Intelligence\NavierStokesReview\src\upstream-current\.lake\packages\Cli\.lake\build\lib\lean
-D:\Research Lab\Jexposition\Define Intelligence\NavierStokesReview\src\upstream-current\.lake\packages\batteries\.lake\build\lib\lean
-D:\Research Lab\Jexposition\Define Intelligence\NavierStokesReview\src\upstream-current\.lake\packages\Qq\.lake\build\lib\lean
-D:\Research Lab\Jexposition\Define Intelligence\NavierStokesReview\src\upstream-current\.lake\packages\aesop\.lake\build\lib\lean
-D:\Research Lab\Jexposition\Define Intelligence\NavierStokesReview\src\upstream-current\.lake\packages\proofwidgets\.lake\build\lib\lean
-D:\Research Lab\Jexposition\Define Intelligence\NavierStokesReview\src\upstream-current\.lake\packages\importGraph\.lake\build\lib\lean
-D:\Research Lab\Jexposition\Define Intelligence\NavierStokesReview\src\upstream-current\.lake\packages\LeanSearchClient\.lake\build\lib\lean
-D:\Research Lab\Jexposition\Define Intelligence\NavierStokesReview\src\upstream-current\.lake\packages\plausible\.lake\build\lib\lean
-D:\Research Lab\Jexposition\Define Intelligence\NavierStokesReview\src\upstream-current\.lake\packages\lean4export\.lake\build\lib\lean
-D:\Research Lab\Jexposition\Define Intelligence\NavierStokesReview\src\upstream-current\.lake\packages\mathlib\.lake\build\lib\lean
-D:\Research Lab\Jexposition\Define Intelligence\NavierStokesReview\src\upstream-current\.lake\packages\Comparator\.lake\build\lib\lean
-D:\Research Lab\Jexposition\Define Intelligence\NavierStokesReview\src\upstream-current\.lake\build\lib\lean
-c:\Users\Admin\.elan\toolchains\leanprover--lean4---v4.34.0-rc2\lib\lean
-c:\Users\Admin\.elan\toolchains\leanprover--lean4---v4.34.0-rc2\lib\lean
+# Correct probe invocation from the fork root
+# Date: 2026-09-22
+# Toolchain: leanprover/lean4:v4.34.0-rc2
+# Command:
+#   elan run leanprover/lean4:v4.34.0-rc2 lake env lean NavierStokesReview/src/probes/AxiomProbe.lean
+#
+# Result:
+#   error: object file
+#   '.lake/build/lib/lean/NavierStokes/ComparatorSolution.olean' ... does not exist
+#
+# The prior output came from the stale probe context
+# 'NavierStokesReview/src/upstream-current'. It searched the wrong Lake root
+# and therefore did not test the fork's dependency graph. The corrected fork
+# root was used for the command above. A bounded build of
+# NavierStokes.ComparatorSolution was then attempted, but it was stopped
+# before emitting ComparatorSolution.olean. No #print axioms result is claimed.
