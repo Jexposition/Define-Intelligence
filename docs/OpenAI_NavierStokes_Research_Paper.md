@@ -48,6 +48,8 @@ The central peer-review question is narrower and more testable: whether the Lean
 
 The first machine census found 2,659 project Lean files and 173 files added relative to the downloaded copy. It found no lexical `sorry` in the four exported result files, but source cleanliness is only a preliminary result. The remaining formal-integrity item is independently captured `#print axioms` output from the elaborated project interface, followed by the line-by-line semantic comparison with the official CMI alternatives. Until those checks are complete, the appropriate status is preliminary review, not validation and not refutation. The stopped dependency build is an environment limitation, not evidence of a theorem failure.
 
+One suspected bridge failure was also checked and not found at source level: `CandidateProperties.not_global_agreement` bounds a global smooth comparator on the candidate's fixed compact spacetime support and uses that bound against the candidate's unbounded speed. It does not claim that a uniform finite-energy bound alone implies an `L∞` bound.
+
 ## References
 
 1. Charles L. Fefferman, [Existence and Smoothness of the Navier–Stokes Equation, official CMI problem statement](https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf).

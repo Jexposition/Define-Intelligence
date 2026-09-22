@@ -141,6 +141,10 @@ The formal statement appears structurally aimed at forced alternatives (C) and (
 
 These are not objections merely because they are difficult. They are the obligations that determine whether the Lean theorem is a formal proof of the CMI alternative or a formally verified theorem about a weaker custom predicate.
 
+## Tested non-failure: compact-support contradiction
+
+One potentially serious-looking objection was checked at source level. `CandidateProperties.not_global_agreement` in `NavierStokes/R3/CandidateBreakdown.lean:17-40` does not infer a pointwise bound from finite energy. It restricts the global smooth comparator to the compact spacetime set `Icc 0 1 × K`, obtains a continuous-on-compact bound, and then contradicts `SpeedUnboundedAtOne`. The generic `L²` versus `L∞` objection therefore does not apply to this particular bridge.
+
 ## What would count as a positive result
 
 The review can classify the Navier–Stokes R3 claim as formally established for the stated CMI alternative only if all of the following are recorded:
