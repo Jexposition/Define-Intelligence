@@ -6,12 +6,16 @@ Status: initial census; all dependency claims remain pending kernel extraction u
 |---|---|---|---|---|
 | AX-001 | `#print axioms` commands for whole-space adapters | `NavierStokes/ComparatorSolution.lean:31-32` | Measurement hook, not an axiom | CONFIRMED |
 | AX-002 | `sorry` in Comparator challenge files | `ComparatorChallenges/NavierStokes.lean`, `ComparatorChallenges/Euler.lean` | Intentional challenge placeholders; test whether reachable from exported theorem | CONFIRMED lexical hits; dependency OPEN |
-| AX-003 | `axiom` declarations in main source | Repository-wide lexical search | Must be distinguished from comments and `#print axioms` text | OPEN |
+| AX-003 | `axiom` declarations in main source | Repository-wide lexical search | No declaration-level `axiom` was found in the reviewed main result path; comments and text still require classification | CONFIRMED source-level |
 | AX-004 | `sorryAx` in exported theorem dependencies | Lean `#print axioms <name>` under pinned build | Disqualifying if it supports the mathematical conclusion | PENDING |
 | AX-005 | `Classical.choice`, `propext`, `Quot.sound` | Lean axiom output | Foundation-level logical/classical dependencies; not automatically a mathematical gap | PENDING |
 | AX-006 | Opaque or noncomputable definitions | Source search for `opaque`, `noncomputable` | Review interface theorem and construction, not the keyword alone | PENDING |
 | AX-007 | Imported mathlib/Comparator declarations | `lake-manifest.json`, import graph | Dependency provenance and version pin | PENDING |
 | AX-008 | Trusted compiler/kernel boundary | Lean version, Lake version, cache origin | Reproducibility condition | PENDING |
+| AX-009 | Selected witness construction | `NavierStokes/ActualCandidateAssembly.lean`, `GermCandidateAssembly.lean` | Derived from finite-stage estimates and an existence theorem; not a source-level axiom | CONFIRMED source-level |
+| AX-010 | A-posteriori force | `GermCandidateAssembly.exists_candidate_witness_of_finite_stages` | Existentially produced after candidate fields and residual data; audit its CMI force class separately | CONFIRMED interpretation |
+| AX-011 | Challenge placeholders | `ComparatorChallenges/NavierStokes.lean`, `ComparatorChallenges/Euler.lean` | Four intentional `sorry` lines in separate challenge files; reachability to exported results is OPEN | CONFIRMED lexical |
+| AX-012 | Kernel extraction | `elan`, `lake`, and `#print axioms` | No `elan` or `lake` executable is currently on this shell's PATH; exact transitive output remains pending | OPEN environment |
 
 ## Rules
 
@@ -33,7 +37,7 @@ The exact qualified names may change between the downloaded snapshot and the pub
 
 ## Current extraction state: 2026-09-22
 
-The public commit build is still running under the declared Lean 4.34.0-rc2 toolchain. The review probe has not yet produced a valid final `#print axioms` transcript, so no transitive axiom set is asserted here beyond the source metadata. The next valid ledger entry must include compiler output for each exported declaration, including whether `sorryAx` is reachable.
+The current shell does not expose `elan` or `lake`, so the review probe has not produced a valid final `#print axioms` transcript. No transitive axiom set is asserted here beyond source metadata. The next valid ledger entry must include compiler output for each exported declaration, including whether `sorryAx` is reachable.
 # Current-snapshot update: 2026-09-22
 
 ## Source-level dependency inventory

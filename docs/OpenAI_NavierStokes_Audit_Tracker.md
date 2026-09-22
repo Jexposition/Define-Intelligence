@@ -5,7 +5,7 @@ Statuses: `CONFIRMED`, `PENDING`, `OPEN`, `NOT_TESTED_THOROUGHLY`. No negative s
 | ID | Area | Finding or test | Evidence | Status | Next action |
 |---|---|---|---|---|---|
 | AUD-001 | Provenance | Local extraction is not a Git checkout; no remote or commit metadata is present. | Local root census, 2026-09-22 | CONFIRMED | Preserve the local path and hash its manifests and theorem files. |
-| AUD-002 | Version drift | Public `main` is commit `f9e8bc5b38b6e212696e8a30e3e91517af887bbd`, dated 2026-09-10; it has 2,659 Lean files versus 2,486 locally and adds the `PaperResults` entry import. | `NavierStokesReview/src/upstream-current`, local extraction | CONFIRMED | Produce a path-level and normalized-content diff. |
+| AUD-002 | Version drift | Public `main` is commit `f9e8bc5b38b6e212696e8a30e3e91517af887bbd`, dated 2026-09-10; it has 2,659 Lean files versus 2,486 locally and adds the `PaperResults` entry import. | Repository root on this branch, downloaded extraction | CONFIRMED | Produce a path-level and normalized-content diff. |
 | AUD-003 | CMI statement | CMI permits smooth external forcing in alternatives C and D; forcing alone is not a mismatch. | Official CMI PDF, equations (1)-(11), alternatives C-D | CONFIRMED | Audit force decay/support and periodicity exactly. |
 | AUD-004 | Main theorem | Whole-space `theorem_1_1` quantifies over every positive viscosity and returns candidate properties plus no global finite-energy solution. | `NavierStokes/R3/Theorem.lean:26-62` | CONFIRMED at source level | Kernel-check theorem and transitive axioms. |
 | AUD-005 | CMI bridge | `comparator_of_breakdown` turns candidate nonexistence into the Comparator C statement by translating a comparator solution into `GlobalFiniteEnergySolution`. | `NavierStokes/R3/ComparatorBridge.lean:47-88` | CONFIRMED at source level | Check all conversion lemmas and PDE conventions. |
@@ -42,13 +42,13 @@ For every new item, record: snapshot/commit, exact file and line, proposition, c
 
 ## Build observation: 2026-09-22
 
-The pinned public checkout was launched with:
+The pinned public checkout was intended for:
 
 ```text
 elan run leanprover/lean4:v4.34.0-rc2 lake build
 ```
 
-The process remained active after approximately fifteen minutes and had emitted one project `.olean` under `.lake/build/lib/lean`. No final exit code or theorem-level axiom output was available at this update. This is an environment/build-state observation, not evidence for or against the mathematical theorem. The exported declarations therefore remain `PENDING` for kernel-level confirmation.
+The current shell has no `elan` or `lake` executable on `PATH`, so no build or theorem-level axiom output was produced in this session. The exported declarations therefore remain `PENDING` for kernel-level confirmation. This entry records tool availability only; it is not a compilation result.
 
 ## Scope correction
 
@@ -60,4 +60,4 @@ The main R3 path now has a more precise map. `ActualCandidateAssembly.selected_w
 
 This makes the finite-stage estimate chain and the whole-space pressure-flux comparison the two principal mathematical audit lanes. The a-posteriori definition of the force is recorded as an interpretation/relevance issue, not a CMI mismatch, because CMI alternatives C and D explicitly permit forcing. Hyperviscosity and Ladyzhenskaya objections change the PDE and therefore cannot refute a theorem about the classical Newtonian equation without an additional robustness claim.
 
-The current environment does not expose `elan` or `lake` on `PATH`; therefore exact kernel-generated `#print axioms` output remains pending. This is an environment limitation, not evidence against the theorem and not a reason to re-test obvious compilation.
+The current environment does not expose `elan` or `lake` on `PATH`; therefore exact kernel-generated `#print axioms` output remains pending. The next audit action is to run the existing probe with the declared toolchain and write only its output into `NavierStokesReview/results/`.

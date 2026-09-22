@@ -10,7 +10,7 @@ Does the public Lean development prove one of the four statements in the Clay Ma
 2. What proposition is actually proved, including all quantifiers, domains, regularity, support, viscosity, and energy clauses?
 3. Does that proposition imply CMI alternative (C) or (D) without an unproved bridge, hidden axiom, `sorryAx`, or semantic mismatch?
 
-The local downloaded extraction is never edited. The independent review checkout is `NavierStokesReview/src/upstream-current/`; it is pinned to public commit `f9e8bc5b38b6e212696e8a30e3e91517af887bbd` until a later snapshot is deliberately recorded.
+The local downloaded extraction is never edited. In this fork branch, the public review checkout is the repository root, pinned to public commit `f9e8bc5b38b6e212696e8a30e3e91517af887bbd`; review harnesses remain under `NavierStokesReview/src/`.
 
 ## 2. CMI acceptance criteria
 
@@ -105,11 +105,11 @@ The finite-stage construction is also load-bearing. The selected witness uses a 
 The review now distinguishes three artefacts that must not be conflated:
 
 1. the downloaded, non-Git checkout at `NavierStokesAndEuler-main-open Ais solution`;
-2. the current public clone at `NavierStokesReview/src/upstream-current`, pinned to commit `f9e8bc5b38b6e212696e8a30e3e91517af887bbd`;
+2. the current public clone at the repository root of this fork branch, pinned to commit `f9e8bc5b38b6e212696e8a30e3e91517af887bbd`;
 3. the independent review workspace under `NavierStokesReview`, which contains the census, probes, logs, and reports.
 
 The current clone contains 2,659 project Lean files and 173 project files not present in the downloaded copy. All 2,496 common files have different SHA-256 hashes, so the local checkout cannot be treated as the current upstream source. The machine-readable census is `NavierStokesReview/results/UPSTREAM_SOURCE_CENSUS.json` and its human-readable companion is `UPSTREAM_SOURCE_CENSUS.md`.
 
 The public CMI question is not rejected merely because the construction uses forcing. The official CMI statement explicitly permits smooth forcing in alternatives C and D. The decisive audit therefore remains: do the exported theorems prove the stated PDE, regularity, support/decay, initial-data, and no-global-solution clauses, and do their kernel-reported dependencies contain only accepted foundations? The separate Euler result is not itself one of the Clay prize alternatives.
 
-The current source census finds five actual `sorry` tokens, all in the intentionally separate `ComparatorChallenges` files. It finds no `sorry` in the main exported result path by lexical source scan, but this is not yet a kernel verdict. The census also records eleven declaration-level-looking `axiom`/`opaque` lexical hits requiring classification; comments and prose account for some hits. The next mandatory step is a completed current-toolchain build followed by an independent `#print axioms` probe for the four exported declarations.
+The current source census finds four actual `sorry` lines, all in the intentionally separate `ComparatorChallenges` files. It finds no `sorry` in the main exported result path by lexical source scan, but this is not yet a kernel verdict. The census also records declaration-level-looking `axiom`/`opaque` lexical hits requiring classification; comments and prose account for some hits. The next mandatory step is an independent `#print axioms` probe for the four exported declarations under the declared toolchain.
