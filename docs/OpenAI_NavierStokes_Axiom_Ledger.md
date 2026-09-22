@@ -54,6 +54,22 @@ The finite-stage path was inspected through `StateRealization`, `PhysicalFields`
 `DiagonalResidual.JetRate` is separately logged as a specification concern: it is a bound on `iteratedFDeriv` and does not bundle smoothness. This does not currently contaminate the final candidate path because `StageEstimates` separately requires `ContDiffOn` for each raw field, but every consumer that uses a rate as a regularity statement must be checked.
 
 The requested shared package root at `D:\Research Lab\V-lab-Equipment\.lake\packages-4.32` contains `mathlib` but no `Comparator` package. It is therefore not the dependency tree for this fork's declared 4.34.0-rc2 project and is tracked as a compatibility lane rather than substituted into the main audit.
+
+## Pressure-flux dependency update: 2026-09-22
+
+The source-level pressure-flux route was traced through
+`WholeSpaceComparisonClosure.eq_of_pressure_flux_bound`,
+`PressureRecovery.gradient_recovery`, `ActualPressureFlux`, and
+`PressureFlux.exists_uniform_actual_pressure_flux_bound`. The closure's flux
+estimate is an explicit premise, but the uniqueness theorem derives it from
+the comparison equations, divergence, smoothness, uniform finite energy, and
+compact-candidate bounds. No new source-level axiom or circular agreement
+assumption was found. The result is recorded in
+`NavierStokesReview/results/PRESSURE_FLUX_AUDIT_2026-09-22.md` as `AUD-036`.
+
+This does not settle the independent analytic validity of the imported proof
+terms or their transitive kernel axiom set. The latter remains pending because
+the targeted build did not emit `ComparatorSolution.olean`.
 # Current-snapshot update: 2026-09-22
 
 ## Source-level dependency inventory
