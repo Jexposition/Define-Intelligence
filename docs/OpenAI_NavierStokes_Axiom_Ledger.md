@@ -143,3 +143,13 @@ These challenge files are not assumed to be imported by the exported result path
 ## Independence rule
 
 `formalization.yaml` is project metadata and is marked self-assessed. It is useful provenance, not an independent certificate. The review ledger therefore treats the official Git commit, compiler invocation, exact theorem statements, source imports, and kernel output as the load-bearing evidence.
+
+## JetRate specification finding: 2026-09-22
+
+`DiagonalResidual.JetRate` is an eventual inequality over an arbitrary
+`Filter D`. A zero-sorry independent probe proves that the proposition is
+automatically true for the bottom filter, regardless of the function or its
+iterated derivatives. This does not show that the selected candidate uses a
+bottom filter, but it requires explicit nontrivial-domain evidence at each
+load-bearing call site. The result is recorded as `AUD-046` with raw output
+in `NavierStokesReview/results/JET_RATE_VACUITY_4_34_RC2.txt`.

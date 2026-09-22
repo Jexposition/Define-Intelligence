@@ -1,0 +1,15 @@
+# JetRate vacuity probe
+# Date: 2026-09-22
+# Toolchain: leanprover/lean4:v4.34.0-rc2
+# Probe: NavierStokesReview/src/probes/JetRateVacuityProbe.lean
+# Command:
+#   C:\Users\Admin\.elan\bin\elan.exe run leanprover/lean4:v4.34.0-rc2 lake env lean NavierStokesReview/src/probes/JetRateVacuityProbe.lean
+# Output: exit code 0, no diagnostics
+
+The probe proves that for arbitrary types, rate function, field, derivative
+order, and exponent, `JetRate (⊥ : Filter D) q f m r` holds. The reason is
+that `JetRate` asks only for an eventual inequality and every proposition is
+eventual on the bottom filter. This is a real specification weakness. It is
+not by itself a defect in the CMI result: the principal construction uses
+named approach filters, and the next audit must verify their nontriviality at
+every load-bearing use.
