@@ -92,3 +92,16 @@ The appropriate next peer-review action is to discharge the three remaining
 semantic items with explicit theorem-to-CMI correspondence proofs or an
 independent mathematician's line-by-line verification. Compilation is not a
 review result and is recorded only as the means of obtaining kernel evidence.
+
+## Binary claim classification update
+
+The formal-trust result and the public headline are now separated explicitly:
+
+- **YES:** the audited Lean exports formally establish the forced CMI
+  Alternative C/D-shaped theorem.
+- **NO:** the repository does not establish the unforced three-dimensional
+  Navier–Stokes blow-up claim.
+- **OPEN:** complete human verification of every analytic certificate in the
+  paper remains a separate peer-review task.
+
+See `NavierStokesReview/results/FINAL_CLAIM_CLASSIFICATION_2026-09-22.md`.

@@ -223,3 +223,11 @@ pressure/energy comparison, or exact CMI correspondence of those premises.
 
 The final review therefore records **claim not established, not theorem
 refuted**. See `NavierStokesReview/results/FINAL_PEER_REVIEW_VERDICT_2026-09-22.md`.
+
+## Claim split recorded on 2026-09-22
+
+The formal theorem is positive for the forced CMI alternatives C and D: the
+audited exports have standard-only kernel axioms and the CMI-facing force and
+nonexistence predicates are present. This must not be restated as a proof of
+the unforced three-dimensional problem. The unforced answer remains **no**;
+the complete analytic paper review remains **open**.

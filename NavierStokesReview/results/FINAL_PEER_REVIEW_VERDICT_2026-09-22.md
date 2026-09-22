@@ -8,6 +8,23 @@ Review branch: `review/cmi-first-navier-stokes-2026-09-22`
 
 **No: the claim has not been established as a completed CMI mathematical proof by this peer review.**
 
+### Required claim split
+
+This headline “no” must not be read as saying that the Lean theorem fails.
+The audited source does formally prove the forced CMI Alternative C/D-shaped
+theorem. The direct binary classification is:
+
+- **Yes**, for the forced CMI alternative actually exported by Lean: a smooth
+  positive-time force and zero initial datum are constructed and every global
+  smooth finite-energy solution with that same force is excluded.
+- **No**, for the unforced claim that arbitrary three-dimensional Navier–Stokes
+  data develop a singularity or that the unforced Millennium problem is solved.
+- **Not yet certified**, for a complete human line-by-line verification of all
+  analytic lemmas in the paper.
+
+The force being defined from a residual is not itself a CMI failure. CMI
+Alternatives C and D explicitly permit smooth external forcing.
+
 The precise finding is:
 
 > **Lean-formal theorem: yes. CMI-facing proposition shape: yes. Independently verified Navier–Stokes proof: not yet established.**
@@ -38,6 +55,10 @@ Until these gates are discharged, the repository is evidence of a kernel-checked
 The verdict changes to **yes** only after an independent line-by-line mathematical review, supported by formal correspondence lemmas where needed, closes the five gates above and confirms that the selected witness satisfies the exact CMI Alternative C or D hypotheses and conclusion. A future discovery that a bottom or unverified derived filter reaches the selected residual closure would instead provide a proof-relevant formal defect.
 
 The present audit found no such confirmed fatal counterexample. Accordingly, the correct status is **claim not proven/accepted**, not **the theorem refuted**.
+
+For the unforced interpretation, this is the final no. For the forced formal
+CMI-alternative interpretation, see
+`NavierStokesReview/results/FINAL_CLAIM_CLASSIFICATION_2026-09-22.md`.
 
 ## Evidence
 

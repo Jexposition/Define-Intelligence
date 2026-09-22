@@ -176,6 +176,22 @@ The complete disposition, evidence links, and conditions for changing the
 verdict are recorded in
 `NavierStokesReview/results/FINAL_PEER_REVIEW_VERDICT_2026-09-22.md`.
 
+## 13. Binary claim classification: 2026-09-22
+
+The review must distinguish the formal claim from the broader public reading
+of “proof of blow-up”. The answer is **yes** at the Lean formal-theorem level
+for the forced CMI Alternative C/D-shaped result. The exported theorem
+constructs a smooth positive-time force, uses zero initial velocity, and
+excludes every global smooth finite-energy solution with that same force. The
+CMI statement expressly permits such a force in Alternatives C and D.
+
+The answer is **no** for the unforced Navier–Stokes problem. The development
+does not prove that arbitrary unforced three-dimensional data blow up. The
+answer is also **not yet certified** for a complete human line-by-line review
+of every analytic certificate in the paper. This is a review boundary, not a
+Lean compilation objection and not a claim that a fatal formal counterexample
+was found.
+
 ## 9. Procedural CMI boundary
 
 The CMI prize rules impose a separate procedural condition. Before CMI will
