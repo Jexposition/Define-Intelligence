@@ -1,7 +1,7 @@
 # Load-bearing semantic audit
 
-Date: 2026-09-22  
-Source commit: `f9e8bc5b38b6e212696e8a30e3e91517af887bbd`  
+Date: 2026-09-22
+Source commit: `f9e8bc5b38b6e212696e8a30e3e91517af887bbd`
 Review scope: whole-space R3 route, pressure recovery, comparison closure,
 viscosity scaling, force bridge, and endpoint-rate filters.
 

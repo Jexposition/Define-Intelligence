@@ -1,7 +1,7 @@
 # Concrete open-past filter audit
 
-Date: 2026-09-22  
-Toolchain: `leanprover/lean4:v4.34.0-rc2` via `C:\Users\Admin\.elan\bin\elan.exe`  
+Date: 2026-09-22
+Toolchain: `leanprover/lean4:v4.34.0-rc2` via `C:\Users\Admin\.elan\bin\elan.exe`
 Probe: `NavierStokesReview/src/probes/OpenPastNeBotProbe.lean`
 
 ## Question
