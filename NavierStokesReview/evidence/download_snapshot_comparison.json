@@ -1,0 +1,28 @@
+{
+  "schema": "navier-stokes-review-snapshot-comparison/v1",
+  "archive": "D:\\Research Lab\\Jexposition\\Define Intelligence\\NavierStokesAndEuler-main.zip",
+  "repository": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Define-Intelligence-github",
+  "archive_text_entries": 2493,
+  "equal_after_line_ending_normalisation": 2478,
+  "changed": 15,
+  "missing_in_repository": 0,
+  "changed_paths": [
+    "NavierStokes.lean",
+    "NavierStokes/ActivationCone.lean",
+    "NavierStokes/ActivationContinuation.lean",
+    "NavierStokes/ActiveAnnulusWeight.lean",
+    "NavierStokes/ComparatorR3Theorem.lean",
+    "NavierStokes/ComparatorTheorem.lean",
+    "NavierStokes/LeadingStressWeights.lean",
+    "NavierStokes/NaturalAxisCoefficients.lean",
+    "NavierStokes/NaturalCore.lean",
+    "NavierStokes/NaturalEntrance.lean",
+    "NavierStokes/NaturalProfile.lean",
+    "NavierStokes/NominalProfile.lean",
+    "NavierStokes/ReferenceBounds.lean",
+    "README.md",
+    "formalization.yaml"
+  ],
+  "missing_paths": [],
+  "archive_text_sha256": "765808d19d52c4a72b001b8b7084f504a69b59edbc9ded16fdefe54b576b2dbc"
+}

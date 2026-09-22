@@ -1,0 +1,104 @@
+{
+  "repository_root": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Define-Intelligence-github",
+  "kind": "static-source-audit",
+  "note": "Marker presence is evidence for review navigation, not semantic validation.",
+  "files": [
+    {
+      "key": "comparator_definitions",
+      "path": "NavierStokes/ComparatorDefinitions.lean",
+      "sha256": "84f819f2ea817980209587ee3181dcba05e94c6a9836f7ad28779cfab19d7189",
+      "line_count": 245,
+      "markers": {
+        "InitialVelocityConditionDecay": true,
+        "ForceConditionDecay": true,
+        "NavierStokesExistenceAndSmoothnessRn": true,
+        "globally_bounded_energy": true
+      }
+    },
+    {
+      "key": "r3_problem",
+      "path": "NavierStokes/R3/ProblemStatement.lean",
+      "sha256": "479f669e7e787e1da94481d6c2a449a5393c160dcc069ee391640f0724bc689f",
+      "line_count": 222,
+      "markers": {
+        "CandidateProperties": true,
+        "GlobalFiniteEnergySolution": true,
+        "energy_bounded": true,
+        "speed_unbounded": true
+      }
+    },
+    {
+      "key": "r3_bridge",
+      "path": "NavierStokes/R3/ComparatorBridge.lean",
+      "sha256": "aa86ab42b1ce3a5f70ec3c01c2074afb98f4ca2aa6197b5f95ea58aedf469d3e",
+      "line_count": 90,
+      "markers": {
+        "forceConditionDecay_of_compact": true,
+        "globalSolutionOfComparator": true,
+        "comparator_of_breakdown": true
+      }
+    },
+    {
+      "key": "r3_uniqueness",
+      "path": "NavierStokes/R3/WholeSpaceUniqueness.lean",
+      "sha256": "5bc35108959603aab10d2056e90a4a9257e56e838e96285cd998b1722da313b3",
+      "line_count": 119,
+      "markers": {
+        "candidate_global_agrees_before_one": true,
+        "No growth, decay, support or derivative bound": true
+      }
+    },
+    {
+      "key": "compact_force_decay",
+      "path": "NavierStokes/CompactSpatialForceDecay.lean",
+      "sha256": "411679593c9df40194bb89ec89755e4833fab7b297b36db6f873a3c1cdc8ce8b",
+      "line_count": 97,
+      "markers": {
+        "iteratedFDerivWithin": true,
+        "futureDomain": true,
+        "forceConditionDecay": true
+      }
+    },
+    {
+      "key": "exported_solution",
+      "path": "NavierStokes/ComparatorSolution.lean",
+      "sha256": "a13d3534019132e5e70c62a87406c0c565aa9420b317abd793e36a997b828c7b",
+      "line_count": 32,
+      "markers": {
+        "navier_stokes_breakdown_R3": true,
+        "navier_stokes_breakdown_periodic": true,
+        "#print axioms": true
+      }
+    },
+    {
+      "key": "periodic_solution",
+      "path": "NavierStokes/PeriodicPaperComparator.lean",
+      "sha256": "5bb49cf01727df927810c2179bdb050625e4b27120bed8665d007d2f9c90f682",
+      "line_count": 54,
+      "markers": {
+        "GlobalSmoothSolution": true,
+        "forceConditionPeriodic": true
+      }
+    },
+    {
+      "key": "periodic_statement",
+      "path": "NavierStokes/PeriodicPaperTheorem.lean",
+      "sha256": "c4adafaf50cb99e8fbd29cd6a7d43c06c6aa5d675ab4bb4a34000aabfd526573",
+      "line_count": 164,
+      "markers": {
+        "GlobalSmoothSolution": true,
+        "pressure_periodic": true
+      }
+    },
+    {
+      "key": "periodic_adapter",
+      "path": "NavierStokes/PeriodicComparatorSolution.lean",
+      "sha256": "becc81790437f662208022cca5fbccb9ffcfde622cc954b87ae6f12c30219e65",
+      "line_count": 43,
+      "markers": {
+        "pressure_periodic :=": true,
+        "NavierStokesExistenceAndSmoothnessPeriodic": true
+      }
+    }
+  ]
+}

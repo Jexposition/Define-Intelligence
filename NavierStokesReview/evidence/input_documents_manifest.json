@@ -1,0 +1,603 @@
+{
+  "schema": "navier-stokes-review-input-inventory/v1",
+  "generated_from": {
+    "repository": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Define-Intelligence-github",
+    "git_revision": "9b9a7092a42c5f376bb7e4bfed84200c528360d5",
+    "input_root": "D:\\Research Lab\\Jexposition\\Define Intelligence",
+    "backup_root": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Objective Reveiw of Finite Time Blowup for the Navier-Stokes Equations-backup-2026-09-22_12-57"
+  },
+  "count": 17,
+  "records": [
+    {
+      "label": "supplied-root",
+      "path": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Technical Audit Report_ Evaluating the Validity and Mathematical Utility of the OpenAI Astra Proof Certificates.md",
+      "name": "Technical Audit Report_ Evaluating the Validity and Mathematical Utility of the OpenAI Astra Proof Certificates.md",
+      "extension": ".md",
+      "size_bytes": 12107,
+      "sha256": "30e303283cb85b6d3df927652b569fb1d3ddacdd7d5cce28b47568d52ceb4940",
+      "text": {
+        "line_count": 99,
+        "headings": [
+          "### Technical Audit Report: Evaluating the Validity and Mathematical Utility of the OpenAI Astra Proof Certificates",
+          "#### 1\\. Contextual Framework: The Rise of Proof Inflation in Automated Theorem Proving",
+          "#### 2\\. Audit of the \"Ten Advances\": Deconstructing Axiomatized Shortcuts",
+          "##### Verification Profile of the Astra Ten-Proof Release",
+          "##### The Erdős-Simonovits Gaps (Erdős \\#146 and \\#180)",
+          "#### 3\\. Navier-Stokes Singularity Evaluation: CMI Criteria vs. Formal Implementation",
+          "##### Compliance Audit: OpenAI Formalization vs. CMI Fefferman Specifications",
+          "##### The \"Hypo-Dissipation Gap\" and Premise Leakage",
+          "#### 4\\. Procedural Integrity and the \"Conjecture Sniping\" Phenomenon",
+          "#### 5\\. Technical Verification Protocol and Forensic Roadmap",
+          "##### The \"Chapter 6 PDF Extraction Trap\"",
+          "#### 6\\. Strategic Conclusions: Distinguishing Answers from Solutions",
+          "##### Auditor’s Verdict"
+        ],
+        "keyword_line_counts": {
+          "axiom": 9,
+          "sorry": 2,
+          "CMI": 4,
+          "Clay": 1,
+          "Alternative C": 0,
+          "Alternative D": 0,
+          "Navier": 11,
+          "force": 3,
+          "scaling": 2,
+          "pressure": 2,
+          "smooth": 5,
+          "energy": 2,
+          "zero division": 0
+        }
+      }
+    },
+    {
+      "label": "supplied-root",
+      "path": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Navier-Stokes Research Paper Refinement.md",
+      "name": "Navier-Stokes Research Paper Refinement.md",
+      "extension": ".md",
+      "size_bytes": 28520,
+      "sha256": "f4c8bc3314359983156e2d19b29779bc99d597d85b5b848bc8a3725975536cc8",
+      "text": {
+        "line_count": 329,
+        "headings": [
+          "# **Finite-Time Singularity Formation in the Three-Dimensional Incompressible Navier-Stokes Equations via Oscillatory Reynolds Stress Cancellation**",
+          "# **Front Matter**",
+          "## **Abstract**",
+          "## **Declaration of Originality**",
+          "## **Nomenclature and Notation Framework**",
+          "# **1\\. Introduction**",
+          "## **Main Theorem Statement**",
+          "# **2\\. Literature Review and Theoretical Foundations**",
+          "## **2.1 Historical Precedents and Weak Solution Theories**",
+          "## **2.2 Convex Integration, Instability, and Singular Forcing**",
+          "## **2.3 Wave Mechanics and Oscillatory Stress Cancellation**",
+          "# **3\\. Mathematical Methodology and Analytical Derivations**",
+          "## **3.1 Scaling Architecture and Similarity Coordinates**",
+          "## **3.2 Radial Incompressibility and Centrifugal Pressure Integration**",
+          "## **3.3 Tangential Residual and Physical Stress Formulation**",
+          "## **3.4 Preservation of Exterior Matching: Cumulative Radial Integrals**",
+          "# **4\\. Results and the Singular Mechanism**",
+          "## **4.1 Admissible Stress Cone Geometry**",
+          "## **4.2 Oscillatory Wave Realization and Inductive Correction Cycle**",
+          "## **4.3 Convergence and Flatness of the Remainder**",
+          "## **4.4 Localization and Smooth Extension Across the Singular Horizon**",
+          "## **4.5 Kinetic Energy Boundedness and Norm Divergence**",
+          "# **5\\. Discussion and Critical Evaluation**",
+          "## **5.1 Physical Critique: Forcing Mechanism versus Autonomous Dynamics**",
+          "## **5.2 Comparative Analysis of Singular Frameworks**",
+          "## **5.3 Implications for the Unforced Clay Millennium Problem**",
+          "# **6\\. Conclusion and Future Directions**",
+          "## **6.1 Summary of Main Contributions**",
+          "## **6.2 Open Research Problems**",
+          "# **Sources** {#sources}"
+        ],
+        "keyword_line_counts": {
+          "axiom": 0,
+          "sorry": 0,
+          "CMI": 0,
+          "Clay": 6,
+          "Alternative C": 0,
+          "Alternative D": 0,
+          "Navier": 19,
+          "force": 13,
+          "scaling": 2,
+          "pressure": 10,
+          "smooth": 23,
+          "energy": 22,
+          "zero division": 0
+        }
+      }
+    },
+    {
+      "label": "supplied-root",
+      "path": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Note on the Logical Inconsistencies in the Formalised Navier-Stokes Blowup Construction.md",
+      "name": "Note on the Logical Inconsistencies in the Formalised Navier-Stokes Blowup Construction.md",
+      "extension": ".md",
+      "size_bytes": 51282,
+      "sha256": "9d234a15249639fd886a2336880c0df0a0abe22eb75c9feeddb1ae22c3465e2d",
+      "text": {
+        "line_count": 150,
+        "headings": [
+          "# Note on the Logical Inconsistencies in the Formalised Navier-Stokes Blowup Construction  **Author:** JΣXP CROW",
+          "#",
+          "# Abstract",
+          "# Independently Motivated Review & Physical Contextualization of the Claimed Finite-Time Blowup for Forced Navier-Stokes Equations",
+          "# Introduction and Executive Summary",
+          "# Prior Exploitation and Novelty Audit",
+          "# Literature Alignment and Historical Context",
+          "# Manuscript Revision",
+          "# Dissecting the Mathematical Architecture: Synthetic Isolation of the Forcing Function",
+          "# The Structural Fragility of Adversarial Cancellation",
+          "# Non-Newtonian Perturbation and the Breakdown of Adversarial Equilibrium",
+          "# The Historical Context of Navier-Stokes Regularity",
+          "# Dissecting the Mathematical Architecture of the Blowup",
+          "# Intellectual Property and Academic Provenance",
+          "# Conclusion",
+          "# Section 5: Epistemological Audit and the Provenance of Automated Discovery",
+          "# 8\\. References"
+        ],
+        "keyword_line_counts": {
+          "axiom": 1,
+          "sorry": 1,
+          "CMI": 0,
+          "Clay": 8,
+          "Alternative C": 0,
+          "Alternative D": 0,
+          "Navier": 33,
+          "force": 34,
+          "scaling": 4,
+          "pressure": 3,
+          "smooth": 18,
+          "energy": 11,
+          "zero division": 0
+        }
+      }
+    },
+    {
+      "label": "supplied-root",
+      "path": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Note on the Logical Inconsistencies in the Formalised Navier-Stokes Blowup Construction (1).md",
+      "name": "Note on the Logical Inconsistencies in the Formalised Navier-Stokes Blowup Construction (1).md",
+      "extension": ".md",
+      "size_bytes": 64334,
+      "sha256": "aa8bdd2655d81ca7106db2638ec2f60a4ec6205615cd23e9cd3b94a8b7008214",
+      "text": {
+        "line_count": 364,
+        "headings": [
+          "# **Epistemological Vacuity and Structural Instability in Automated Blowup Constructions for the 3D Navier-Stokes Equations**",
+          "# 1\\. Introduction",
+          "# Note on the Logical Inconsistencies in the Formalised Navier-Stokes Blowup Construction  **Author:** JΣXP CROW",
+          "#",
+          "# Abstract",
+          "# Independently Motivated Review & Physical Contextualization of the Claimed Finite-Time Blowup for Forced Navier-Stokes Equations",
+          "# Introduction and Executive Summary",
+          "# Prior Exploitation and Novelty Audit",
+          "# Literature Alignment and Historical Context",
+          "### Dissecting the Mathematical Architecture: Synthetic Isolation of the Forcing Function",
+          "# The Structural Fragility of Adversarial Cancellation",
+          "# Non-Newtonian Perturbation and the Breakdown of Adversarial Equilibrium",
+          "# The Historical Context of Navier-Stokes Regularity",
+          "# Dissecting the Mathematical Architecture of the Blowup",
+          "# Intellectual Property and Academic Provenance",
+          "# Conclusion",
+          "# Section 5: Epistemological Audit and the Provenance of Automated Discovery",
+          "# 8\\. References"
+        ],
+        "keyword_line_counts": {
+          "axiom": 1,
+          "sorry": 1,
+          "CMI": 0,
+          "Clay": 10,
+          "Alternative C": 0,
+          "Alternative D": 0,
+          "Navier": 39,
+          "force": 44,
+          "scaling": 5,
+          "pressure": 3,
+          "smooth": 24,
+          "energy": 15,
+          "zero division": 0
+        }
+      }
+    },
+    {
+      "label": "supplied-root",
+      "path": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Note on the Logical Inconsistencies in the Formalised Navier-Stokes Blowup Construction (2).md",
+      "name": "Note on the Logical Inconsistencies in the Formalised Navier-Stokes Blowup Construction (2).md",
+      "extension": ".md",
+      "size_bytes": 64879,
+      "sha256": "de61b4688c8f84df6dae8baf1d04f99a880acb060ea5a37b61374d64df1ff40f",
+      "text": {
+        "line_count": 366,
+        "headings": [
+          "# **Epistemological Vacuity and Structural Instability in Automated Blowup Constructions for the 3D Navier-Stokes Equations**",
+          "# 1\\. Introduction",
+          "# Note on the Logical Inconsistencies in the Formalised Navier-Stokes Blowup Construction  **Author:** JΣXP CROW",
+          "#",
+          "# Abstract",
+          "# Independently Motivated Review & Physical Contextualization of the Claimed Finite-Time Blowup for Forced Navier-Stokes Equations",
+          "# Introduction and Executive Summary",
+          "# Prior Exploitation and Novelty Audit",
+          "# Literature Alignment and Historical Context",
+          "### Dissecting the Mathematical Architecture: Synthetic Isolation of the Forcing Function",
+          "# The Structural Fragility of Adversarial Cancellation",
+          "# Non-Newtonian Perturbation and the Breakdown of Adversarial Equilibrium",
+          "# The Historical Context of Navier-Stokes Regularity",
+          "# Dissecting the Mathematical Architecture of the Blowup",
+          "# Intellectual Property and Academic Provenance",
+          "# Conclusion",
+          "# Section 5: Epistemological Audit and the Provenance of Automated Discovery",
+          "# 8\\. References"
+        ],
+        "keyword_line_counts": {
+          "axiom": 1,
+          "sorry": 1,
+          "CMI": 0,
+          "Clay": 10,
+          "Alternative C": 0,
+          "Alternative D": 0,
+          "Navier": 39,
+          "force": 44,
+          "scaling": 6,
+          "pressure": 3,
+          "smooth": 25,
+          "energy": 15,
+          "zero division": 0
+        }
+      }
+    },
+    {
+      "label": "supplied-root",
+      "path": "D:\\Research Lab\\Jexposition\\Define Intelligence\\navier-stokes.pdf",
+      "name": "navier-stokes.pdf",
+      "extension": ".pdf",
+      "size_bytes": 2959204,
+      "sha256": "0e779481c4da40bd28d1e642e1d8ca57447d129610df28dfa5a11e9af8ae228f"
+    },
+    {
+      "label": "supplied-root",
+      "path": "D:\\Research Lab\\Jexposition\\Define Intelligence\\NavierStokesAndEuler-main.zip",
+      "name": "NavierStokesAndEuler-main.zip",
+      "extension": ".zip",
+      "size_bytes": 8050571,
+      "sha256": "c100569cf160c932009bb4da0b9864decefc81db01c7bbb0ac51a799e6428035"
+    },
+    {
+      "label": "supplied-backup",
+      "path": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Objective Reveiw of Finite Time Blowup for the Navier-Stokes Equations-backup-2026-09-22_12-57\\01-Comprehensive Audit of OpenAI's Astra Theorem Proving Claims- Strategic Logic Enhancements and Mathe.md",
+      "name": "01-Comprehensive Audit of OpenAI's Astra Theorem Proving Claims- Strategic Logic Enhancements and Mathe.md",
+      "extension": ".md",
+      "size_bytes": 17914,
+      "sha256": "3aad50d82a90c8b94e890c0a642998b75f82563e8d3ef0d4241bc0f02e828245",
+      "text": {
+        "line_count": 85,
+        "headings": [],
+        "keyword_line_counts": {
+          "axiom": 12,
+          "sorry": 1,
+          "CMI": 0,
+          "Clay": 0,
+          "Alternative C": 0,
+          "Alternative D": 0,
+          "Navier": 10,
+          "force": 2,
+          "scaling": 1,
+          "pressure": 0,
+          "smooth": 3,
+          "energy": 0,
+          "zero division": 0
+        }
+      }
+    },
+    {
+      "label": "supplied-backup",
+      "path": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Objective Reveiw of Finite Time Blowup for the Navier-Stokes Equations-backup-2026-09-22_12-57\\02-Navier-Stokes Research Paper Refinement.md.md",
+      "name": "02-Navier-Stokes Research Paper Refinement.md.md",
+      "extension": ".md",
+      "size_bytes": 22964,
+      "sha256": "d3d24bae389eac40b5d1e8451a0e56e43f64a30f8a495d1217925f4f1c118b95",
+      "text": {
+        "line_count": 167,
+        "headings": [],
+        "keyword_line_counts": {
+          "axiom": 0,
+          "sorry": 0,
+          "CMI": 0,
+          "Clay": 6,
+          "Alternative C": 0,
+          "Alternative D": 0,
+          "Navier": 16,
+          "force": 10,
+          "scaling": 2,
+          "pressure": 9,
+          "smooth": 20,
+          "energy": 20,
+          "zero division": 0
+        }
+      }
+    },
+    {
+      "label": "supplied-backup",
+      "path": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Objective Reveiw of Finite Time Blowup for the Navier-Stokes Equations-backup-2026-09-22_12-57\\03-Note on the Logical Inconsistencies in the Formalised Navier-Stokes Blowup Construction (2).md.md",
+      "name": "03-Note on the Logical Inconsistencies in the Formalised Navier-Stokes Blowup Construction (2).md.md",
+      "extension": ".md",
+      "size_bytes": 62852,
+      "sha256": "6f004c0818e68c975849ebe69e1090a67dff6a0f18466c58ba87c452fc8d59ca",
+      "text": {
+        "line_count": 189,
+        "headings": [],
+        "keyword_line_counts": {
+          "axiom": 1,
+          "sorry": 1,
+          "CMI": 0,
+          "Clay": 10,
+          "Alternative C": 0,
+          "Alternative D": 0,
+          "Navier": 39,
+          "force": 44,
+          "scaling": 6,
+          "pressure": 3,
+          "smooth": 24,
+          "energy": 15,
+          "zero division": 0
+        }
+      }
+    },
+    {
+      "label": "supplied-backup",
+      "path": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Objective Reveiw of Finite Time Blowup for the Navier-Stokes Equations-backup-2026-09-22_12-57\\04-navier-stokes.pdf.md",
+      "name": "04-navier-stokes.pdf.md",
+      "extension": ".md",
+      "size_bytes": 508583,
+      "sha256": "cfa1336b742341e92ef2b3a1f6d471264cac7943a605c94de0bccd05b8f3a872",
+      "text": {
+        "line_count": 4871,
+        "headings": [
+          "#(Z2/J∆ g Z2) = |det Jg|∆ = 14∆.",
+          "#{γ ∈ Γ : (r, z, t) ∈ Kγ} ≤ C.",
+          "#{(ℓ, a, σ) ∈ Γ : Bℓ,a ∩ B ̸= ∅} ≤ CBS9 ℓ ,",
+          "#{(ℓ, a, σ) ∈ Γ : Bℓ,a ∩ (IR × {Z} × {T}) ̸= ∅} ≤ CIR S3 ℓ ."
+        ],
+        "keyword_line_counts": {
+          "axiom": 0,
+          "sorry": 0,
+          "CMI": 0,
+          "Clay": 1,
+          "Alternative C": 0,
+          "Alternative D": 0,
+          "Navier": 103,
+          "force": 60,
+          "scaling": 12,
+          "pressure": 211,
+          "smooth": 287,
+          "energy": 26,
+          "zero division": 0
+        }
+      }
+    },
+    {
+      "label": "fork-review-document",
+      "path": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Define-Intelligence-github\\docs\\OpenAI_NavierStokes_CMI_First_Review_Plan.md",
+      "name": "OpenAI_NavierStokes_CMI_First_Review_Plan.md",
+      "extension": ".md",
+      "size_bytes": 12806,
+      "sha256": "45451d599e956d0041e65af13c6b1cd56fdb6444f19ab082e112cc9e2f3716aa",
+      "text": {
+        "line_count": 115,
+        "headings": [
+          "# OpenAI Navier–Stokes Lean Review: CMI-First Plan",
+          "## 1. Review question",
+          "## 2. CMI acceptance criteria",
+          "## 3. Current source map",
+          "## 4. Review workflow",
+          "## 5. Highest-value potential failure modes",
+          "## 6. Evidence policy",
+          "## 7. Immediate next actions",
+          "## 8. Source-draft disposition",
+          "## 9. Current load-bearing proof path",
+          "# Snapshot update: 2026-09-22"
+        ],
+        "keyword_line_counts": {
+          "axiom": 8,
+          "sorry": 7,
+          "CMI": 21,
+          "Clay": 3,
+          "Alternative C": 0,
+          "Alternative D": 0,
+          "Navier": 17,
+          "force": 10,
+          "scaling": 3,
+          "pressure": 3,
+          "smooth": 8,
+          "energy": 7,
+          "zero division": 0
+        }
+      }
+    },
+    {
+      "label": "fork-review-document",
+      "path": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Define-Intelligence-github\\docs\\OpenAI_NavierStokes_Audit_Tracker.md",
+      "name": "OpenAI_NavierStokes_Audit_Tracker.md",
+      "extension": ".md",
+      "size_bytes": 10734,
+      "sha256": "1b0d9ac8107f2e3164b1ecec22bc2b72f75306f5af24ab16bceca4feb7dc974f",
+      "text": {
+        "line_count": 63,
+        "headings": [
+          "# OpenAI Navier–Stokes Audit Tracker",
+          "## Finding format",
+          "# Execution update: 2026-09-22",
+          "## Build observation: 2026-09-22",
+          "## Scope correction",
+          "## Source-backed update: 2026-09-22"
+        ],
+        "keyword_line_counts": {
+          "axiom": 8,
+          "sorry": 3,
+          "CMI": 11,
+          "Clay": 0,
+          "Alternative C": 0,
+          "Alternative D": 0,
+          "Navier": 13,
+          "force": 8,
+          "scaling": 1,
+          "pressure": 5,
+          "smooth": 4,
+          "energy": 4,
+          "zero division": 0
+        }
+      }
+    },
+    {
+      "label": "fork-review-document",
+      "path": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Define-Intelligence-github\\docs\\OpenAI_NavierStokes_Axiom_Ledger.md",
+      "name": "OpenAI_NavierStokes_Axiom_Ledger.md",
+      "extension": ".md",
+      "size_bytes": 5538,
+      "sha256": "00162b8a58f05de01246f0044162b92417994cdf8bd05814a1c799fb3f3684a9",
+      "text": {
+        "line_count": 65,
+        "headings": [
+          "# OpenAI Navier–Stokes Lean Axiom Ledger",
+          "## Rules",
+          "## Required captures",
+          "#print axioms NavierStokesR3.theorem_1_1",
+          "#print axioms NavierStokesR3.breakdownStatement",
+          "#print axioms NavierStokes.Comparator.navier_stokes_breakdown_R3",
+          "#print axioms NavierStokes.Comparator.navier_stokes_breakdown_periodic",
+          "## Current extraction state: 2026-09-22",
+          "# Current-snapshot update: 2026-09-22",
+          "## Source-level dependency inventory",
+          "## Lexical findings requiring classification",
+          "## Independence rule"
+        ],
+        "keyword_line_counts": {
+          "axiom": 16,
+          "sorry": 7,
+          "CMI": 1,
+          "Clay": 0,
+          "Alternative C": 0,
+          "Alternative D": 0,
+          "Navier": 13,
+          "force": 1,
+          "scaling": 0,
+          "pressure": 0,
+          "smooth": 1,
+          "energy": 0,
+          "zero division": 0
+        }
+      }
+    },
+    {
+      "label": "fork-review-document",
+      "path": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Define-Intelligence-github\\docs\\OpenAI_NavierStokes_Research_Paper.md",
+      "name": "OpenAI_NavierStokes_Research_Paper.md",
+      "extension": ".md",
+      "size_bytes": 7042,
+      "sha256": "ce112235fce3ab2486de445221816e791b4d9fa4b1c549a40ce3a00d92c4da37",
+      "text": {
+        "line_count": 46,
+        "headings": [
+          "# A CMI-First Peer-Review Protocol for the OpenAI Navier–Stokes Lean Development",
+          "## Abstract",
+          "## 1. Scope and standard",
+          "## 2. Reproducibility boundary",
+          "## 3. Formal claim map",
+          "## 4. Review hypotheses",
+          "## 5. Methods",
+          "## 6. Preliminary result",
+          "## 7. Planned findings structure",
+          "## References",
+          "# Current review position: 2026-09-22"
+        ],
+        "keyword_line_counts": {
+          "axiom": 4,
+          "sorry": 3,
+          "CMI": 8,
+          "Clay": 4,
+          "Alternative C": 0,
+          "Alternative D": 0,
+          "Navier": 6,
+          "force": 5,
+          "scaling": 2,
+          "pressure": 1,
+          "smooth": 3,
+          "energy": 2,
+          "zero division": 0
+        }
+      }
+    },
+    {
+      "label": "fork-review-document",
+      "path": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Define-Intelligence-github\\docs\\OpenAI_NavierStokes_Peer_Review_v1.md",
+      "name": "OpenAI_NavierStokes_Peer_Review_v1.md",
+      "extension": ".md",
+      "size_bytes": 11982,
+      "sha256": "c3a3d93e76bc495f90ea97dc52d04a88333b3332c0174e12b1f01e7cee5ed535",
+      "text": {
+        "line_count": 187,
+        "headings": [
+          "# Independent peer review of the OpenAI Navier–Stokes and Euler formalisation",
+          "## Executive finding",
+          "## Snapshot and provenance",
+          "## CMI criterion used in this review",
+          "## What the current source visibly claims",
+          "## Main proof path found in the source",
+          "## Preliminary formal findings",
+          "### Compilation status",
+          "### Raw placeholders",
+          "### Project axioms",
+          "## CMI alignment questions still requiring closure",
+          "## What would count as a positive result",
+          "## Current classification",
+          "## Review rule",
+          "## Review artefacts"
+        ],
+        "keyword_line_counts": {
+          "axiom": 11,
+          "sorry": 7,
+          "CMI": 17,
+          "Clay": 3,
+          "Alternative C": 0,
+          "Alternative D": 0,
+          "Navier": 27,
+          "force": 12,
+          "scaling": 2,
+          "pressure": 4,
+          "smooth": 9,
+          "energy": 4,
+          "zero division": 0
+        }
+      }
+    },
+    {
+      "label": "fork-review-document",
+      "path": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Define-Intelligence-github\\NavierStokesReview\\README.md",
+      "name": "README.md",
+      "extension": ".md",
+      "size_bytes": 1094,
+      "sha256": "4604b1b319f175a25918b5a137385a39571005337b1ab0d6b2753942ff335a50",
+      "text": {
+        "line_count": 25,
+        "headings": [
+          "# Navier–Stokes CMI review lane",
+          "## Git snapshot",
+          "## Layout"
+        ],
+        "keyword_line_counts": {
+          "axiom": 2,
+          "sorry": 0,
+          "CMI": 3,
+          "Clay": 0,
+          "Alternative C": 0,
+          "Alternative D": 0,
+          "Navier": 4,
+          "force": 0,
+          "scaling": 0,
+          "pressure": 0,
+          "smooth": 0,
+          "energy": 0,
+          "zero division": 0
+        }
+      }
+    }
+  ]
+}

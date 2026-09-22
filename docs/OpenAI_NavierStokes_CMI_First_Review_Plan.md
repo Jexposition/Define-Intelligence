@@ -25,6 +25,12 @@ The CMI document explicitly permits an external force in the problem statement. 
 
 Primary reference: [Fefferman, official CMI problem statement](https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf), especially equations (1)–(11) and alternatives (A)–(D).
 
+### CMI prize-procedure gate
+
+The mathematical statement and the prize procedure are separate tests. CMI's current rules require qualifying publication, at least two years since publication, and general acceptance in the global mathematics community before CMI considers a proposed solution. CMI does not accept direct unsolicited submissions. Its 11 September 2026 announcement describes the Navier–Stokes claim as apparently settled and says the work is being analysed; it is not a prize determination.
+
+Primary procedural references: [CMI rules](https://www.claymath.org/millennium-problems/rules/) and [CMI Navier–Stokes announcement](https://www.claymath.org/news/navier-stokes-announcement/).
+
 ## 3. Current source map
 
 | Layer | Current public path | Review purpose |
@@ -43,7 +49,7 @@ The local extraction dated 2026-09-08 has 2,486 Lean files and imports only `Nav
 ## 4. Review workflow
 
 1. **Freeze provenance.** Record source path, public URL, commit, file counts, SHA-256 hashes for manifests and theorem files, and whether the local zip matches the extracted tree.
-2. **Reproduce builds.** First test the requested Lean 4.32 environment using `D:\Research Lab\V-lab-Equipment\.lake\packages-4.32`. Separately test the repository-declared Lean 4.34.0-rc2 environment. Do not call a 4.32 failure a source failure until the dependency/toolchain mismatch is isolated.
+2. **Reproduce builds.** Inventory the requested Lean 4.32 environment using `D:\Research Lab\V-lab-Equipment\.lake\packages-4.32`, then separately test the repository-declared Lean 4.34.0-rc2 environment. The 4.32 cache currently contains `mathlib` but no `Comparator`, while this repository declares matching 4.34.0-rc2 revisions. Do not call that incompatibility a source failure.
 3. **Kernel and axiom audit.** Build the main targets, collect `#print axioms` for every exported theorem, and search for `sorry`, `admit`, `axiom`, `opaque`, `unsafe`, and imported declarations that introduce `sorryAx`.
 4. **Statement audit.** Expand every definition in the CMI path and produce a quantifier/domain table. Check viscosity scaling, time domain, initial condition, spatial decay/support, periodicity, pressure sign, Laplacian, divergence, and energy quantifiers.
 5. **Bridge audit.** Trace the exact dependency chain from the selected witness to `ComparatorSolution`. Check that each conversion preserves the same `nu`, `u0`, `f`, PDE convention, smoothness domain, and energy bound.
@@ -108,7 +114,7 @@ The review now distinguishes three artefacts that must not be conflated:
 2. the current public clone at the repository root of this fork branch, pinned to commit `f9e8bc5b38b6e212696e8a30e3e91517af887bbd`;
 3. the independent review workspace under `NavierStokesReview`, which contains the census, probes, logs, and reports.
 
-The current clone contains 2,659 project Lean files and 173 project files not present in the downloaded copy. All 2,496 common files have different SHA-256 hashes, so the local checkout cannot be treated as the current upstream source. The machine-readable census is `NavierStokesReview/results/UPSTREAM_SOURCE_CENSUS.json` and its human-readable companion is `UPSTREAM_SOURCE_CENSUS.md`.
+The current clone contains 2,659 project Lean files and 173 project files not present in the downloaded copy. The downloaded ZIP and current fork share 2,493 comparable text/source entries: 2,478 are identical after line-ending normalisation and 15 changed. The machine-readable comparison is `NavierStokesReview/evidence/download_snapshot_comparison.json`; the local checkout must still be pinned to the public commit for current conclusions.
 
 The public CMI question is not rejected merely because the construction uses forcing. The official CMI statement explicitly permits smooth forcing in alternatives C and D. The decisive audit therefore remains: do the exported theorems prove the stated PDE, regularity, support/decay, initial-data, and no-global-solution clauses, and do their kernel-reported dependencies contain only accepted foundations? The separate Euler result is not itself one of the Clay prize alternatives.
 

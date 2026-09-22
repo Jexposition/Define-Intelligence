@@ -1,0 +1,16 @@
+# Kernel axiom probe status: PENDING
+# Date: 2026-09-22
+# Toolchain: leanprover/lean4:v4.34.0-rc2
+# Requested package cache: D:\Research Lab\V-lab-Equipment\.lake\packages-4.32
+#
+# Command attempted:
+#   elan run leanprover/lean4:v4.34.0-rc2 lake env lean NavierStokesReview/src/probes/AxiomProbe.lean
+#
+# Result:
+#   The probe could not resolve NavierStokes.ComparatorSolution because the
+#   targeted dependency build was stopped before emitting
+#   .lake/build/lib/lean/NavierStokes/ComparatorSolution.olean.
+#
+# Interpretation:
+#   No #print axioms result is asserted by this file. This is an incomplete
+#   dependency-interface check, not evidence of a source theorem failure.

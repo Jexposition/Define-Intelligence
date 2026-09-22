@@ -32,15 +32,24 @@ The preliminary result is a review status, not a mathematical verdict. The publi
 
 Each finding will state the snapshot, exact declaration, CMI criterion, proof dependency, reproduction command, observed result, severity, and remediation or rebuttal. Numerical experiments, prose concerns, and failed builds caused solely by using the wrong toolchain will remain labelled as review evidence rather than proof failures.
 
-## References
+## 8. Current evidence update
 
-1. Charles L. Fefferman, [Existence and Smoothness of the Navier–Stokes Equation, official CMI problem statement](https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf).
-2. OpenAI, [On the Navier–Stokes Millennium Prize Problem](https://openai.com/index/navier-stokes-solution/).
-3. OpenAI, [NavierStokesAndEuler repository](https://github.com/openai/NavierStokesAndEuler).
+The downloaded ZIP is not simply an unrelated tree: all 2,493 comparable source/text entries are present in the public fork, with 2,478 unchanged after line-ending normalisation and 15 changed. The review therefore pins the public commit and treats the ZIP as a comparison snapshot rather than silently substituting it for current source.
+
+The source audit confirms four actual `sorry` declarations, all in the separately named `ComparatorChallenges` files. The reviewed Navier–Stokes and Euler result modules do not import those challenge files lexically. The periodic route also explicitly declares pressure periodicity in `PeriodicPaperTheorem` and supplies it in `PeriodicComparatorSolution`, correcting the older supplied criticism that this condition was absent.
+
+No concrete CMI statement mismatch has been demonstrated in the source-level pass. The R3 adapter has the forced-C shape required by the official Clay statement, and the force is existentially constructed after the candidate fields. That a-posteriori construction is a legitimate peer-review question, but not a CMI violation unless the resulting force or bridge fails the official hypotheses. The transitive `#print axioms` report remains the final formal-integrity gate. The targeted dependency build was attempted only to obtain the required project interface, but it stopped before emitting `ComparatorSolution.olean`; no axiom set is claimed from that incomplete run.
+
 # Current review position: 2026-09-22
 
 The current public snapshot is materially newer than the downloaded directory. The review therefore uses the public Git clone as the primary source and preserves the downloaded directory as a comparison snapshot. The latest public README claims forced breakdown alternatives in whole-space and periodic settings, while also presenting a separate unforced Euler result. The official Clay statement permits smooth forcing in its C and D alternatives, so the presence of forcing is not, by itself, a failure to address the Millennium problem.
 
 The central peer-review question is narrower and more testable: whether the Lean theorem chain establishes the exact Clay quantifiers and analytic conditions, rather than a proposition with similar vocabulary. In particular, the review follows the chain from the exported adapters through `ComparatorR3Theorem`, the R3 candidate construction, the periodic compression and periodisation route, and the global-solution definitions. It also separates the challenge files, which contain intentional placeholders, from the main result path until the import graph proves otherwise.
 
-The first machine census found 2,659 project Lean files and 173 files added relative to the downloaded copy. It found no lexical `sorry` in the four exported result files, but source cleanliness is only a preliminary result. Completion requires a successful current-toolchain build, independently captured `#print axioms`, and a line-by-line semantic comparison with the official CMI alternatives. Until those checks are complete, the appropriate status is preliminary review, not validation and not refutation.
+The first machine census found 2,659 project Lean files and 173 files added relative to the downloaded copy. It found no lexical `sorry` in the four exported result files, but source cleanliness is only a preliminary result. The remaining formal-integrity item is independently captured `#print axioms` output from the elaborated project interface, followed by the line-by-line semantic comparison with the official CMI alternatives. Until those checks are complete, the appropriate status is preliminary review, not validation and not refutation. The stopped dependency build is an environment limitation, not evidence of a theorem failure.
+
+## References
+
+1. Charles L. Fefferman, [Existence and Smoothness of the Navier–Stokes Equation, official CMI problem statement](https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf).
+2. OpenAI, [On the Navier–Stokes Millennium Prize Problem](https://openai.com/index/navier-stokes-solution/).
+3. OpenAI, [NavierStokesAndEuler repository](https://github.com/openai/NavierStokesAndEuler).

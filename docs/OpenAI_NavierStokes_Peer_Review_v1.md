@@ -15,7 +15,9 @@ The first two are formal verification questions. The last two are mathematical p
 
 The current evidence does **not** justify either “the proof is false” or “the Millennium problem is solved”. The downloaded copy is stale relative to the public repository, and the public repository contains a substantially newer formal development. The official CMI statement permits the forced alternatives (C) and (D), so the presence of a smooth external force is not by itself a defect. The decisive audit is therefore whether the exported forced-breakdown theorems are kernel-checked from explicitly constructed witnesses and whether their global-solution negations use exactly the CMI admissible class.
 
-The source census found five raw `sorry` tokens in `ComparatorChallenges`, which the repository documents as intentionally separate challenge files. This is not yet evidence that the exported result theorems depend on `sorryAx`; that must be settled by compiling the project and recording `#print axioms` for each exported declaration. The repository’s `formalization.yaml` is a self-assessment and cannot substitute for that independent check.
+The current repository-wide Lean scan finds four actual `sorry` lines in `ComparatorChallenges`, which the repository documents as intentionally separate challenge files. This is not yet evidence that the exported result theorems depend on `sorryAx`; that must be settled by recording `#print axioms` for each exported declaration. The repository’s `formalization.yaml` is a self-assessment and cannot substitute for that independent check.
+
+There is also a procedural CMI distinction. CMI's rules require publication in a qualifying outlet, two years of rigorous examination, and general acceptance before CMI considers a proposed solution. CMI's 11 September 2026 announcement says the Navier–Stokes problem has apparently been settled and that the work is being analysed; it is not a prize decision. This review reports mathematical and formal evidence separately from CMI recognition status.
 
 ## Snapshot and provenance
 
@@ -23,7 +25,7 @@ The public repository is:
 
 `https://github.com/openai/NavierStokesAndEuler`
 
-The reviewed public snapshot is commit `f9e8bc5b38b6e212696e8a30e3e91517af887bbd`, dated 10 September 2026. The downloaded directory contains 2,496 project files; the current public clone contains 2,669 project files, including 2,659 Lean files. There are 173 project files in the public snapshot that are absent from the downloaded copy. Every common file has changed hash, so conclusions drawn only from the downloaded copy are not current conclusions about the public repository.
+The reviewed public snapshot is commit `f9e8bc5b38b6e212696e8a30e3e91517af887bbd`, dated 10 September 2026. The downloaded ZIP contains 2,493 comparable text/source entries. The current public clone contains all 2,493; 2,478 are identical after line-ending normalisation and 15 changed, including the theorem-facing and metadata files listed in `NavierStokesReview/evidence/download_snapshot_comparison.json`. Conclusions drawn only from the downloaded copy therefore require a changed-file check.
 
 The review census excludes `.lake` dependencies and records file hashes separately. It is stored in:
 
@@ -100,11 +102,11 @@ The periodic path uses `PeriodicPaperTheorem.lean` and `PeriodicPaperComparator.
 
 ### Compilation status
 
-The public project pins Lean `4.34.0-rc2`, Mathlib at the matching revision, and the Comparator package at the matching revision. A clean build is being run from the independent review clone. A final build exit code is required before the review can label any declaration “compiled”.
+The public project pins Lean `4.34.0-rc2`, Mathlib at the matching revision, and the Comparator package at the matching revision. The requested V-lab 4.32 package cache has `mathlib` but no Comparator package, so it cannot be substituted for the declared project dependency tree. The broad all-project build was stopped because compilation is not the CMI criterion. A targeted `NavierStokes.ComparatorSolution` dependency build was attempted only to obtain project interfaces and kernel axiom output, but stopped before emitting `ComparatorSolution.olean`.
 
 ### Raw placeholders
 
-The source census found intentional `sorry` placeholders in:
+The current repository-wide Lean scan finds four actual `sorry` lines, all intentional challenge placeholders in:
 
 ```text
 ComparatorChallenges/NavierStokes.lean
@@ -115,7 +117,7 @@ These files are not automatically disqualifying if they are not imported by the 
 
 ### Project axioms
 
-The repository reports the standard Lean axioms `propext`, `Classical.choice`, and `Quot.sound` for its headline results. These are ordinary axioms used by Lean and Mathlib and are not equivalent to an unproved Navier–Stokes assumption. This report will independently confirm the transitive axiom sets with `#print axioms` after the clean build.
+The repository reports the standard Lean axioms `propext`, `Classical.choice`, and `Quot.sound` for its headline results. These are ordinary axioms used by Lean and Mathlib and are not equivalent to an unproved Navier–Stokes assumption. Independent transitive confirmation with `#print axioms` remains pending because the targeted dependency build did not emit the required project interface. The status record does not substitute the repository’s self-report with an invented result.
 
 The audit specifically searches for:
 
@@ -143,7 +145,7 @@ These are not objections merely because they are difficult. They are the obligat
 
 The review can classify the Navier–Stokes R3 claim as formally established for the stated CMI alternative only if all of the following are recorded:
 
-- the clean pinned build exits successfully;
+- the pinned project interfaces are available for independent kernel inspection;
 - every exported theorem has an independent `#print axioms` report with no `sorryAx` or unreviewed project axiom;
 - the challenge files are absent from the dependency graph of the exported theorems;
 - the exact source predicates are shown to imply the official CMI hypotheses;
@@ -163,7 +165,7 @@ Even then, “formal proof accepted by Lean” and “mathematical exposition in
 | R3 theorem shape mapped | VERIFIED at source level |
 | Periodic theorem shape mapped | VERIFIED at source level; semantic audit pending |
 | Challenge `sorry` files isolated | VERIFIED by source/import inspection; dependency proof pending |
-| Exported theorem axiom sets | PENDING clean build and independent probe |
+| Exported theorem axiom sets | PENDING targeted dependency build and independent probe |
 | Full CMI hypothesis equivalence | PENDING semantic audit |
 | Independent claim that the Millennium problem is solved | NOT ESTABLISHED |
 
@@ -183,5 +185,4 @@ That is a narrower and more defensible statement than either dismissing the work
 - Source census: `NavierStokesReview/results/UPSTREAM_SOURCE_CENSUS.md`
 - Proof-path map: `NavierStokesReview/results/UPSTREAM_PROOF_PATH_MAP.md`
 - Kernel probe: `NavierStokesReview/src/probes/AxiomProbe.lean`
-- Build log: `NavierStokesReview/results/BUILD_CURRENT_4_34_RC2_clean.txt`
-
+- Kernel output: `NavierStokesReview/results/AXIOMS_2026-09-22.txt`

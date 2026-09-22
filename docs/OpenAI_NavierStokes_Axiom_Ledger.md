@@ -16,6 +16,8 @@ Status: initial census; all dependency claims remain pending kernel extraction u
 | AX-010 | A-posteriori force | `GermCandidateAssembly.exists_candidate_witness_of_finite_stages` | Existentially produced after candidate fields and residual data; audit its CMI force class separately | CONFIRMED interpretation |
 | AX-011 | Challenge placeholders | `ComparatorChallenges/NavierStokes.lean`, `ComparatorChallenges/Euler.lean` | Four intentional `sorry` lines in separate challenge files; reachability to exported results is OPEN | CONFIRMED lexical |
 | AX-012 | Kernel extraction | `elan`, `lake`, and `#print axioms` | No `elan` or `lake` executable is currently on this shell's PATH; exact transitive output remains pending | OPEN environment |
+| AX-013 | Supplied-report axiom protocol | Technical audit report and backup audit | Adopted: transitive footprint must be measured, not inferred from `sorry_count` | CONFIRMED protocol |
+| AX-014 | Input corpus provenance | `NavierStokesReview/evidence/input_documents_manifest.json` | Technical report, four backup documents, paper, ZIP, root critiques, and fork review docs are hash-recorded | CONFIRMED |
 
 ## Rules
 
@@ -35,9 +37,17 @@ Status: initial census; all dependency claims remain pending kernel extraction u
 
 The exact qualified names may change between the downloaded snapshot and the public commit; record the compiler’s resolution rather than guessing a name.
 
+The supplied technical audit report is explicitly incorporated. Its claims
+about other Astra proofs are not imported into this ledger unless the current
+Navier–Stokes exported declarations depend on those files. Its Navier–Stokes
+tests remain active: challenge-file reachability, CMI predicate matching,
+scaling guards, and independent kernel output.
+
 ## Current extraction state: 2026-09-22
 
-The current shell does not expose `elan` or `lake`, so the review probe has not produced a valid final `#print axioms` transcript. No transitive axiom set is asserted here beyond source metadata. The next valid ledger entry must include compiler output for each exported declaration, including whether `sorryAx` is reachable.
+`elan` is installed at `C:\Users\Admin\.elan\bin`, and the repository-declared `leanprover/lean4:v4.34.0-rc2` toolchain is installed. The broad all-project build was stopped because compilation is not the review criterion. A targeted `NavierStokes.ComparatorSolution` dependency build is running to generate the interfaces needed by the independent probe. No transitive axiom set is asserted here until the probe captures compiler output for each exported declaration, including whether `sorryAx` is reachable.
+
+The requested shared package root at `D:\Research Lab\V-lab-Equipment\.lake\packages-4.32` contains `mathlib` but no `Comparator` package. It is therefore not the dependency tree for this fork's declared 4.34.0-rc2 project and is tracked as a compatibility lane rather than substituted into the main audit.
 # Current-snapshot update: 2026-09-22
 
 ## Source-level dependency inventory
@@ -52,11 +62,11 @@ The current shell does not expose `elan` or `lake`, so the review probe has not 
 
 ## Lexical findings requiring classification
 
-The project-only census excludes `.lake` dependencies and reports five `sorry` occurrences, all in:
+The project-only census excludes `.lake` dependencies and reports four actual `sorry` declarations, all in:
 
 - `ComparatorChallenges/NavierStokes.lean` at lines 277 and 284;
 - `ComparatorChallenges/Euler.lean` at lines 88 and 184;
-- one additional documentation/comment occurrence is counted by the raw lexical report.
+- comments and metadata are excluded from the declaration count.
 
 These challenge files are not assumed to be imported by the exported result path. The review will verify this with the import graph and kernel output. Raw occurrences of `axiom`, `opaque`, and `noncomputable` are not automatically axioms: each must be classified by declaration syntax and, where relevant, by `#print axioms`.
 
