@@ -210,3 +210,16 @@ toolchain; it does not close the CMI semantic or procedural gates.
 The CMI procedural gate is tracked separately: formal axiom cleanliness does
 not establish publication in a Qualifying Outlet, two years since publication,
 or general mathematical acceptance.
+
+## Final peer-review interpretation: 2026-09-22
+
+The audited headline declarations have a standard-only kernel footprint:
+`propext`, `Classical.choice`, and `Quot.sound`. No project-specific axiom or
+`sorryAx` was found in those reports. This closes the formal-trust inventory,
+but it does not close the mathematical proof review. Standard-only axioms mean
+that Lean checked the formal derivation from its supplied premises; they do not
+independently certify the analytic provenance, common domains, residual closure,
+pressure/energy comparison, or exact CMI correspondence of those premises.
+
+The final review therefore records **claim not established, not theorem
+refuted**. See `NavierStokesReview/results/FINAL_PEER_REVIEW_VERDICT_2026-09-22.md`.

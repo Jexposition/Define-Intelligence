@@ -151,6 +151,31 @@ or local-correction filter used by a rate consumer must still be shown
 nontrivial or shown to carry the required domain coverage. This narrows, but
 does not eliminate, the formalisation-quality finding.
 
+## 12. Final peer-review disposition: 2026-09-22
+
+**Verdict: no, the OpenAI claim is not established as a completed CMI
+mathematical proof by this review.**
+
+The repository does establish a different and important result: the audited
+Navier–Stokes and Euler exports are kernel-checked Lean theorems, and their
+CMI-facing proposition shapes match the whole-space and periodic alternatives
+at the Lean-interface level. That answers the formal-trust question positively.
+It does not answer the mathematical peer-review question positively, because
+kernel checking validates the supplied formal premises and derivation, not the
+independent analytic truth or CMI correspondence of every imported premise.
+
+The final unresolved gates are construction-premise provenance, common-domain
+coverage for all inverse and correction operations, proof-relevant nontriviality
+of every derived filter, term-by-term residual and endpoint-force closure,
+independent pressure/energy comparison, and equivalence of the half-space
+smoothness convention to the CMI convention. No confirmed fatal counterexample
+was found in the audited bridge lanes. The correct classification is therefore
+`CLAIM NOT ESTABLISHED`, not `THEOREM REFUTED`.
+
+The complete disposition, evidence links, and conditions for changing the
+verdict are recorded in
+`NavierStokesReview/results/FINAL_PEER_REVIEW_VERDICT_2026-09-22.md`.
+
 ## 9. Procedural CMI boundary
 
 The CMI prize rules impose a separate procedural condition. Before CMI will

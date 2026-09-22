@@ -70,9 +70,23 @@ See `NavierStokesReview/results/SEMANTIC_LOAD_BEARING_AUDIT_2026-09-22.md`.
 
 ## Review disposition
 
-Current disposition: `FORMAL TRUST PASS; CMI PREDICATE MATCH CONFIRMED AT LEAN
-INTERFACE LEVEL; CMI PROCEDURAL GATE NOT ESTABLISHED; HUMAN PDE PEER REVIEW
-OPEN; NO NEGATIVE CMI MATHEMATICAL FINDING ESTABLISHED`.
+Current disposition: `NO COMPLETED CMI PROOF ESTABLISHED BY PEER REVIEW;
+FORMAL TRUST PASS; CMI PREDICATE MATCH CONFIRMED AT LEAN INTERFACE LEVEL;
+NO CONFIRMED FORMAL COUNTEREXAMPLE`.
+
+This is the final review answer to the question whether OpenAI has proved the
+Clay problem: **no, not on the evidence required for an independently verified
+mathematical proof**. The repository does contain a kernel-checked proof of its
+formalised theorem. That is a positive formal result, but it does not close the
+analytic correspondence burden. The unresolved gates are construction-premise
+provenance, common-domain coverage for every inverse and derived filter,
+term-by-term residual closure, whole-space pressure/energy comparison, and
+equivalence of the half-space smoothness convention to the CMI convention.
+
+The absence of a confirmed counterexample is recorded separately. The present
+status is therefore `CLAIM NOT ESTABLISHED`, not `THEOREM REFUTED`. The complete
+decision and flip conditions are in
+`NavierStokesReview/results/FINAL_PEER_REVIEW_VERDICT_2026-09-22.md`.
 
 The appropriate next peer-review action is to discharge the three remaining
 semantic items with explicit theorem-to-CMI correspondence proofs or an
