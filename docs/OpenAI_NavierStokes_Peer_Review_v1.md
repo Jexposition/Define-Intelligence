@@ -13,9 +13,9 @@ The first two are formal verification questions. The last two are mathematical p
 
 ## Executive finding
 
-The current evidence does **not** justify either “the proof is false” or “the Millennium problem is solved”. The downloaded copy is stale relative to the public repository, and the public repository contains a substantially newer formal development. The official CMI statement permits the forced alternatives (C) and (D), so the presence of a smooth external force is not by itself a defect. The decisive audit is therefore whether the exported forced-breakdown theorems are kernel-checked from explicitly constructed witnesses and whether their global-solution negations use exactly the CMI admissible class.
+The current evidence does **not** justify either “the proof is false” or “the Millennium problem is solved”. The downloaded copy is stale relative to the public repository, and the public repository contains a substantially newer formal development. The official CMI statement permits the forced alternatives (C) and (D), so the presence of a smooth external force is not by itself a defect. Independent kernel reports now pass for the six audited exports, and the CMI-facing predicate mapping passes at the Lean-interface level. The remaining question is the ordinary mathematical peer review of the imported analytic certificates.
 
-The current repository-wide Lean scan finds four actual `sorry` lines in `ComparatorChallenges`, which the repository documents as intentionally separate challenge files. This is not yet evidence that the exported result theorems depend on `sorryAx`; that must be settled by recording `#print axioms` for each exported declaration. The repository’s `formalization.yaml` is a self-assessment and cannot substitute for that independent check.
+The current repository-wide Lean scan finds four actual `sorry` lines in `ComparatorChallenges`, which the repository documents as intentionally separate challenge files. Independent `#print axioms` reports for the exported declarations contain no `sorryAx`; the reports contain only `propext`, `Classical.choice`, and `Quot.sound`. The repository’s `formalization.yaml` was not used as a substitute for that independent check.
 
 There is also a procedural CMI distinction. CMI's rules require publication in a qualifying outlet, two years of rigorous examination, and general acceptance before CMI considers a proposed solution. CMI's 11 September 2026 announcement says the Navier–Stokes problem has apparently been settled and that the work is being analysed; it is not a prize decision. This review reports mathematical and formal evidence separately from CMI recognition status.
 
@@ -105,13 +105,13 @@ The R3 path is not a single opaque theorem. It is routed through the following l
 4. `NavierStokes/ComparatorR3Bridge.lean` defines the global-solution class and the normalisation/contradiction bridge.
 5. `NavierStokes/ComparatorSolution.lean` exports the public theorem and prints its axiom dependencies.
 
-The periodic path uses `PeriodicPaperTheorem.lean` and `PeriodicPaperComparator.lean`, including compression, scaling, and periodisation. That path needs its own audit; it should not be inferred automatically from the R3 path.
+The periodic path uses `PeriodicPaperTheorem.lean` and `PeriodicPaperComparator.lean`, including compression, scaling, and periodisation. It has now been audited separately and must not be inferred automatically from the R3 path.
 
 ## Preliminary formal findings
 
 ### Compilation status
 
-The public project pins Lean `4.34.0-rc2`, Mathlib at the matching revision, and the Comparator package at the matching revision. The requested V-lab 4.32 package cache has `mathlib` but no Comparator package, so it cannot be substituted for the declared project dependency tree. The broad all-project build was stopped because compilation is not the CMI criterion. A targeted `NavierStokes.ComparatorSolution` dependency build was attempted only to obtain project interfaces and kernel axiom output, but stopped before emitting `ComparatorSolution.olean`.
+The public project pins Lean `4.34.0-rc2`, Mathlib at the matching revision, and the Comparator package at the matching revision. The requested V-lab 4.32 package cache has `mathlib` but no Comparator package, so it is retained for compatibility probes rather than substituted for the declared project tree. A resumable direct closure supplied the project interfaces needed for the independent kernel probes. Compilation is not treated as the mathematical review criterion.
 
 ### Raw placeholders
 
@@ -126,7 +126,7 @@ These files are not automatically disqualifying if they are not imported by the 
 
 ### Project axioms
 
-The repository's self-assessment metadata reports the standard Lean axioms `propext`, `Classical.choice`, and `Quot.sound` for its headline results. These are ordinary axioms used by Lean and Mathlib and are not equivalent to an unproved Navier–Stokes assumption. Independent transitive confirmation with `#print axioms` remains pending because the targeted dependency build did not emit the required project interface. The status record does not substitute the repository's self-report with an invented result.
+Independent transitive `#print axioms` probes report only `propext`, `Classical.choice`, and `Quot.sound` for all four Navier–Stokes headline/theorem declarations and both Euler headline declarations. These are ordinary Lean and Mathlib foundations, not an unproved Navier–Stokes assumption. No `sorryAx`, native-evaluation axiom, or project-specific axiom appears in those reports.
 
 The audit specifically searches for:
 
@@ -136,19 +136,18 @@ The audit specifically searches for:
 - declarations whose names suggest a theorem but whose body is only a wrapper around an assumed property;
 - circular use of a target theorem or of a proposition definition that already contains the desired conclusion.
 
-## CMI alignment questions still requiring closure
+## CMI alignment result
 
-The formal statement appears structurally aimed at forced alternatives (C) and (D), which is legitimate. The remaining questions are exact and testable:
+The formal statement is aimed at forced alternatives (C) and (D), which is legitimate. The requirement matrix and independent probes now close the Lean-interface questions:
 
-1. Does `InitialVelocityConditionDecay` imply the full CMI initial-data requirement, not merely decay?
-2. Does `ForceConditionDecay` imply the complete smooth force condition on the entire future time domain?
-3. Does the global-solution predicate quantify over the same solution regularity, domain, pressure, divergence, initial condition, and kinetic-energy bound required by CMI?
-4. Is the statement’s finite-time conclusion about a genuine solution on the maximal pre-singular interval, rather than only a field satisfying the equation on an arbitrarily selected subinterval?
-5. Is the force independent of the candidate solution and fixed before the global-solution contradiction is formed?
-6. In the periodic route, are the velocity, pressure, force, and all required derivatives genuinely periodic after periodisation?
-7. Are the scaling and compression maps proved to preserve the exact PDE, viscosity, initial data, and energy hypotheses rather than only a weaker surrogate?
+1. `InitialVelocityConditionDecay` contains smoothness, divergence-free data, and all derivative decay; the selected datum is the zero field.
+2. `ForceConditionDecay` contains relative smoothness and all mixed one-sided space-time derivative decay; the compact-force bridge was independently elaborated.
+3. The global-solution predicate contains the CMI domain, PDE, divergence, initial, smoothness, square-integrability, and uniform energy clauses.
+4. The whole-space contradiction uses the exact same force and zero datum and excludes every global Comparator solution in the exported statement.
+5. The periodic route separately carries velocity, pressure, force, and comparator periodicity, including pressure periodicity from the CMI erratum.
+6. The classical Laplacian, positive viscosity, scaling, compression, and force maps are on the audited theorem path.
 
-These are not objections merely because they are difficult. They are the obligations that determine whether the Lean theorem is a formal proof of the CMI alternative or a formally verified theorem about a weaker custom predicate.
+The remaining issue is not a discovered CMI predicate mismatch. It is the independent mathematical verification of the imported analytic estimates, especially common inverse domains, residual-term closure, and certificate provenance.
 
 ## Tested non-failure: compact-support contradiction
 
@@ -162,7 +161,7 @@ The finite-stage chain is materially stronger than a wrapper around the desired 
 
 There is one formalisation-quality concern. `DiagonalResidual.JetRate` is only an eventual inequality involving `iteratedFDeriv`; its definition does not itself require smoothness or differentiability. A rate can therefore be mistaken for a regularity certificate if consumed in isolation. In the current final construction, `StageEstimates` separately supplies `ContDiffOn` for the raw fields, and the inspected residual-stability consumers also require explicit `ContDiffOn` hypotheses. This is not yet a CMI mismatch, but endpoint-extension and final-smoothness consumers still need a complete audit.
 
-The pressure-flux route was then traced. `WholeSpaceComparisonClosure.eq_of_pressure_flux_bound` takes the flux estimate explicitly, while `WholeSpaceUniqueness.classical_uniqueness_on_Icc` obtains it through `PressureRecovery`, `ActualPressureFlux`, canonical pairing bounds, and compact-candidate estimates. No source-level circular agreement assumption was found. This is a structural result only: the imported analytic proof terms and transitive kernel axiom footprint remain pending.
+The pressure-flux route was then traced. `WholeSpaceComparisonClosure.eq_of_pressure_flux_bound` takes the flux estimate explicitly, while `WholeSpaceUniqueness.classical_uniqueness_on_Icc` obtains it through `PressureRecovery`, `ActualPressureFlux`, canonical pairing bounds, and compact-candidate estimates. No source-level circular agreement assumption was found. The transitive kernel reports for the analytic bridge contain only standard foundations.
 
 An independent semantic-coverage audit supplies three useful next tests: one common positive domain for all inverses and differentiated inverses; term-by-term closure of every nonlinear residual, pressure, mean, support, and normalisation contribution; and a derivative-loss bound uniform in correction stage. Our source pass has checked explicit smoothness at the principal residual-rate consumers, but it has not yet closed these broader correspondence tests. They are recorded as `AUD-037`, not as proof failures.
 
@@ -174,11 +173,11 @@ without visibly depending on stage, and the inspected endpoint adapter
 separately proves the required smooth extensions. The result is
 `PARTIALLY VERIFIED / OPEN`: common-domain coverage, provenance of the large
 invariant and `PhysicalData` premises, and the torus-to-R3 correspondence
-remain unresolved. `JetRate` remains a specification caution because its
+remain the open analytic peer-review lane. `JetRate` remains a specification caution because its
 definition does not itself bundle smoothness, although no inspected endpoint
 consumer used it alone as a regularity certificate.
 
-This pass therefore adds review issues but no proof failure. The decisive unresolved lanes remain the transitive kernel axiom footprint, independent mathematical checking of the analytic pressure-flux chain, and the exact force and solution-class correspondence with CMI.
+This pass therefore records one formalisation-quality issue but no proof failure and no negative CMI finding. The decisive unresolved lane is independent mathematical checking of the analytic construction and its certificate provenance, not compilation or the basic CMI predicate interface.
 
 ## What would count as a positive result
 
@@ -202,17 +201,17 @@ Even then, “formal proof accepted by Lean” and “mathematical exposition in
 | Downloaded copy current | NOT CURRENT |
 | CMI forced alternatives allowed | VERIFIED from official CMI statement |
 | R3 theorem shape mapped | VERIFIED at source level |
-| Periodic theorem shape mapped | VERIFIED at source level; semantic audit pending |
-| Challenge `sorry` files isolated | VERIFIED by source/import inspection; dependency proof pending |
-| Exported theorem axiom sets | PENDING targeted dependency build and independent probe |
-| Full CMI hypothesis equivalence | PENDING semantic audit |
+| Periodic theorem shape mapped | VERIFIED at proposition and source level |
+| Challenge `sorry` files isolated | VERIFIED for audited exports by independent axiom reports |
+| Exported theorem axiom sets | VERIFIED: standard foundations only |
+| Full CMI hypothesis equivalence | CONFIRMED at Lean-interface level; textbook boundary equivalence and analytic validity remain open |
 | Independent claim that the Millennium problem is solved | NOT ESTABLISHED |
 
 ## Review rule
 
-Until the pending rows are closed, the accurate description is:
+Until the analytic peer-review lane is closed, the accurate description is:
 
-> The repository contains a substantial Lean formalisation whose current public snapshot targets forced CMI alternatives (C) and (D). Its headline theorem may be formally strong, but the independent review must still verify the kernel dependency graph and the exact correspondence between the custom solution predicates and the official Clay hypotheses.
+> The repository contains a substantial Lean formalisation whose current public snapshot targets forced CMI alternatives (C) and (D). Independent kernel evidence and the Lean-level CMI predicate mapping pass. The remaining question is whether the many imported analytic certificates are mathematically sound and complete under ordinary peer review.
 
 That is a narrower and more defensible statement than either dismissing the work because it uses forcing or accepting the repository’s self-assessed completion flag as an independent proof review.
 

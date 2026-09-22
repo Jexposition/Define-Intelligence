@@ -1,21 +1,21 @@
 # OpenAI Navier–Stokes Lean Axiom Ledger
 
-Status: initial census; all dependency claims remain pending kernel extraction unless marked confirmed.
+Status: current ledger; headline and intermediate transitive kernel reports are captured under Lean 4.34.0-rc2.
 
 | ID | Item | Location or command | Classification | Status |
 |---|---|---|---|---|
 | AX-001 | `#print axioms` commands for whole-space adapters | `NavierStokes/ComparatorSolution.lean:31-32` | Measurement hook, not an axiom | CONFIRMED |
-| AX-002 | `sorry` in Comparator challenge files | `ComparatorChallenges/NavierStokes.lean`, `ComparatorChallenges/Euler.lean` | Intentional challenge placeholders; test whether reachable from exported theorem | CONFIRMED lexical hits; dependency OPEN |
+| AX-002 | `sorry` in Comparator challenge files | `ComparatorChallenges/NavierStokes.lean`, `ComparatorChallenges/Euler.lean` | Intentional challenge placeholders; test whether reachable from exported theorem | CONFIRMED lexical hits; not present in audited export reports |
 | AX-003 | `axiom` declarations in main source | Repository-wide lexical search | No declaration-level `axiom` was found in the reviewed main result path; comments and text still require classification | CONFIRMED source-level |
-| AX-004 | `sorryAx` in exported theorem dependencies | Lean `#print axioms <name>` under pinned build | Disqualifying if it supports the mathematical conclusion | PENDING |
-| AX-005 | `Classical.choice`, `propext`, `Quot.sound` | Lean axiom output | Foundation-level logical/classical dependencies; not automatically a mathematical gap | PENDING |
-| AX-006 | Opaque or noncomputable definitions | Source search for `opaque`, `noncomputable` | Review interface theorem and construction, not the keyword alone | PENDING |
-| AX-007 | Imported mathlib/Comparator declarations | `lake-manifest.json`, import graph | Dependency provenance and version pin | PENDING |
-| AX-008 | Trusted compiler/kernel boundary | Lean version, Lake version, cache origin | Reproducibility condition | PENDING |
+| AX-004 | `sorryAx` in exported theorem dependencies | Lean `#print axioms <name>` under pinned build | Disqualifying if it supports the mathematical conclusion | CONFIRMED absent from six audited exports |
+| AX-005 | `Classical.choice`, `propext`, `Quot.sound` | Lean axiom output | Foundation-level logical/classical dependencies; not automatically a mathematical gap | CONFIRMED as the complete headline footprint |
+| AX-006 | Opaque or noncomputable definitions | Source search for `opaque`, `noncomputable` | Review interface theorem and construction, not the keyword alone | OPEN review-quality lane; no headline axiom anomaly |
+| AX-007 | Imported mathlib/Comparator declarations | `lake-manifest.json`, import graph | Dependency provenance and version pin | CONFIRMED pinned 4.34.0-rc2 revisions |
+| AX-008 | Trusted compiler/kernel boundary | Lean version, Lake version, cache origin | Reproducibility condition | CONFIRMED for the declared toolchain; 4.32 retained as compatibility lane |
 | AX-009 | Selected witness construction | `NavierStokes/ActualCandidateAssembly.lean`, `GermCandidateAssembly.lean` | Derived from finite-stage estimates and an existence theorem; not a source-level axiom | CONFIRMED source-level |
 | AX-010 | A-posteriori force | `GermCandidateAssembly.exists_candidate_witness_of_finite_stages` | Existentially produced after candidate fields and residual data; audit its CMI force class separately | CONFIRMED interpretation |
 | AX-011 | Challenge placeholders | `ComparatorChallenges/NavierStokes.lean`, `ComparatorChallenges/Euler.lean` | Four intentional `sorry` lines in separate challenge files; reachability to exported results is OPEN | CONFIRMED lexical |
-| AX-012 | Kernel extraction | `C:\Users\Admin\.elan\bin\elan.exe`; declared 4.34.0-rc2 cache; `#print axioms` | Cache retrieval completed, but the bounded target build did not emit `ComparatorSolution.olean`; exact transitive output remains pending | OPEN environment |
+| AX-012 | Kernel extraction | `C:\Users\Admin\.elan\bin\elan.exe`; declared 4.34.0-rc2 cache; `#print axioms` | Resumable direct closure supplied interfaces; six headline reports captured | CONFIRMED |
 | AX-013 | Supplied-report axiom protocol | Technical audit report and backup audit | Adopted: transitive footprint must be measured, not inferred from `sorry_count` | CONFIRMED protocol |
 | AX-014 | Input corpus provenance | `NavierStokesReview/evidence/input_documents_manifest.json` | Technical report, four backup documents, paper, ZIP, root critiques, and fork review docs are hash-recorded | CONFIRMED |
 
@@ -45,11 +45,11 @@ scaling guards, and independent kernel output.
 
 ## Current extraction state: 2026-09-22
 
-`elan` is installed at `C:\Users\Admin\.elan\bin`, and the repository-declared `leanprover/lean4:v4.34.0-rc2` toolchain is installed. The broad all-project build was stopped because compilation is not the review criterion. A targeted `NavierStokes.ComparatorSolution` dependency build was attempted and stopped before emitting the target interface needed by the independent probe. No transitive axiom set is asserted here until the probe captures compiler output for each exported declaration, including whether `sorryAx` is reachable.
+`elan` is installed at `C:\Users\Admin\.elan\bin`, and the repository-declared `leanprover/lean4:v4.34.0-rc2` toolchain is installed. The broad all-project build was stopped because compilation is not the review criterion. The earlier targeted timeout was superseded by a resumable direct closure. The resulting independent reports capture the transitive axiom output for each exported declaration.
 
 ## Source audit update: 2026-09-22
 
-The finite-stage path was inspected through `StateRealization`, `PhysicalFields`, `ActualCycleResidualBounds.Invariant.residual_jetRate`, `GluedStageEstimates.actualStageEstimates`, and `ActualCandidateAssembly.estimates`. The source-level result is that the residual-rate input is derived from explicit physical germ, exterior, invariant, and representation premises. No declaration-level `axiom` or `sorry` was found in this path. The independent kernel footprint remains pending because the target `.olean` interface was not produced.
+The finite-stage path was inspected through `StateRealization`, `PhysicalFields`, `ActualCycleResidualBounds.Invariant.residual_jetRate`, `GluedStageEstimates.actualStageEstimates`, and `ActualCandidateAssembly.estimates`. The source-level result is that the residual-rate input is derived from explicit physical germ, exterior, invariant, and representation premises. No declaration-level `axiom` or `sorry` was found in this path. The independent headline and intermediate kernel reports contain only standard foundations.
 
 `DiagonalResidual.JetRate` is separately logged as a specification concern: it is a bound on `iteratedFDeriv` and does not bundle smoothness. This does not currently contaminate the final candidate path because `StageEstimates` separately requires `ContDiffOn` for each raw field, but every consumer that uses a rate as a regularity statement must be checked.
 
@@ -64,8 +64,9 @@ The formal-trust boundary is now recorded separately in
 `NavierStokesReview/results/TRUST_AND_CMI_COMPLETION_CRITERIA_2026-09-22.md`.
 It follows Lean's official guidance that `#print axioms` is transitive,
 `sorryAx` is disqualifying for a completed proof, and repository metadata is
-not an independent kernel certificate. This ledger therefore keeps the
-transitive extraction pending until the target interface is available.
+not an independent kernel certificate. The transitive extraction is closed for
+the six audited exports; analytic mathematical validity remains a separate
+peer-review question.
 
 ## Targeted extraction update: 2026-09-22
 
@@ -83,7 +84,7 @@ that intermediate layer only; it is not substituted for the missing headline
 export output. See
 `NavierStokesReview/results/INTERMEDIATE_AXIOMS_4_34_RC2.txt`.
 
-## Pressure-flux dependency update: 2026-09-22
+## Pressure-flux dependency update: 2026-09-22, source-history note
 
 The source-level pressure-flux route was traced through
 `WholeSpaceComparisonClosure.eq_of_pressure_flux_bound`,
@@ -96,8 +97,8 @@ assumption was found. The result is recorded in
 `NavierStokesReview/results/PRESSURE_FLUX_AUDIT_2026-09-22.md` as `AUD-036`.
 
 This does not settle the independent analytic validity of the imported proof
-terms or their transitive kernel axiom set. The latter remains pending because
-the targeted build did not emit `ComparatorSolution.olean`.
+terms. Their transitive kernel footprint is now covered by the later headline
+and intermediate reports below.
 
 ## Semantic coverage update: 2026-09-22
 
@@ -107,17 +108,14 @@ five-derivative inverse loss; `PhysicalResidualJetBounds` decomposes and bounds
 the source, mean, base, Gaussian, alias, and excluded residual terms; and the
 native residual path carries a derivative-order loss independently of the
 correction index. These findings are recorded as `AUD-038` in the audit
-tracker. They do not close common-domain coverage, premise provenance, or the
-independent transitive axiom report. The endpoint path itself is source-level
-verified through `OneSidedExtension`, joint-limit smoothness, and
-`PhysicalJets.of_rawStage`; its transitive kernel and analytic provenance are
-still pending.
+tracker. They do not close common-domain coverage or premise provenance. The
+endpoint path itself is source-level verified through `OneSidedExtension`,
+joint-limit smoothness, and `PhysicalJets.of_rawStage`; its transitive kernel
+trust is covered by the later reports, while analytic provenance remains open.
 
-The corrected probe invocation is now recorded in
-`NavierStokesReview/results/AXIOM_PROBE_4_34_RC2.txt`. It was run from the
-fork root and reached the real missing `ComparatorSolution.olean` interface;
-the prior wrong-root module-prefix error is retained only as provenance. No
-`#print axioms` output is asserted until the interface is emitted.
+The corrected probe invocation and completed reports are recorded under
+`NavierStokesReview/results/`. The earlier wrong-root and missing-interface
+errors are retained only as provenance.
 # Current-snapshot update: 2026-09-22
 
 ## Source-level dependency inventory

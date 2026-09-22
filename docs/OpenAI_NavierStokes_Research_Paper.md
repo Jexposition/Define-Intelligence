@@ -24,9 +24,9 @@ The main risks are not the existence of many files by itself. They are: an expor
 
 The review uses two toolchain lanes. The first is the requested Lean 4.32 environment with packages under `D:\Research Lab\V-lab-Equipment\.lake\packages-4.32`, used for compatibility and independent checks. The second is the repository-declared Lean 4.34.0-rc2 environment with mathlib and Comparator at their declared revisions, used to reproduce the public source. For each lane, the review records exact commands, compiler output, imported modules, and `#print axioms` results. Source files in the downloaded OpenAI extraction are not edited.
 
-## 6. Preliminary result
+## 6. Formal and CMI-interface result
 
-The preliminary result is a review status, not a mathematical verdict. The public source has a concrete CMI-oriented theorem and bridge, while the downloaded snapshot is stale relative to `main`. The current lexical scan finds four intentional `sorry` placeholders in Comparator challenge files. This establishes what must be tested, but does not establish that the exported theorem depends on them. The first high-value deliverable is the kernel-derived axiom set for the whole-space and periodic exported claims.
+The public source has a concrete CMI-oriented theorem and bridge, while the downloaded snapshot is stale relative to `main`. The current lexical scan finds four intentional `sorry` placeholders in Comparator challenge files. Independent transitive reports for the six audited headline exports now contain only `propext`, `Classical.choice`, and `Quot.sound`; no `sorryAx`, native-evaluation axiom, or project-specific axiom appears. The formal-trust gate is therefore closed for those exports, while analytic peer review remains separate.
 
 ## 7. Planned findings structure
 
@@ -38,7 +38,7 @@ The downloaded ZIP is not simply an unrelated tree: all 2,493 comparable source/
 
 The source audit confirms four actual `sorry` declarations, all in the separately named `ComparatorChallenges` files. The reviewed Navier–Stokes and Euler result modules do not import those challenge files lexically. The periodic route also explicitly declares pressure periodicity in `PeriodicPaperTheorem` and supplies it in `PeriodicComparatorSolution`, correcting the older supplied criticism that this condition was absent.
 
-No concrete CMI statement mismatch has been demonstrated in the source-level pass. The R3 adapter has the forced-C shape required by the official Clay statement, and the force is existentially constructed after the candidate fields. That a-posteriori construction is a legitimate peer-review question, but not a CMI violation unless the resulting force or bridge fails the official hypotheses. The transitive `#print axioms` report remains the final formal-integrity gate. The targeted dependency build was attempted only to obtain the required project interface, but it stopped before emitting `ComparatorSolution.olean`; no axiom set is claimed from that incomplete run.
+No concrete CMI statement mismatch has been demonstrated in the source-level pass. The R3 adapter has the forced-C shape required by the official Clay statement, and the force is existentially constructed after the candidate fields. That a-posteriori construction is a legitimate peer-review question, but not a CMI violation unless the resulting force or bridge fails the official hypotheses. The completed `#print axioms` reports close the formal-integrity gate for the audited exports. An independent zero-sorry force-bridge probe also elaborates the implication from compact smooth positive-time support to the full Comparator force-decay predicate.
 
 # Current review position: 2026-09-22
 
@@ -46,7 +46,7 @@ The current public snapshot is materially newer than the downloaded directory. T
 
 The central peer-review question is narrower and more testable: whether the Lean theorem chain establishes the exact Clay quantifiers and analytic conditions, rather than a proposition with similar vocabulary. In particular, the review follows the chain from the exported adapters through `ComparatorR3Theorem`, the R3 candidate construction, the periodic compression and periodisation route, and the global-solution definitions. It also separates the challenge files, which contain intentional placeholders, from the main result path until the import graph proves otherwise.
 
-The first machine census found 2,659 project Lean files and 173 files added relative to the downloaded copy. It found no lexical `sorry` in the four exported result files, but source cleanliness is only a preliminary result. The remaining formal-integrity item is independently captured `#print axioms` output from the elaborated project interface, followed by the line-by-line semantic comparison with the official CMI alternatives. Until those checks are complete, the appropriate status is preliminary review, not validation and not refutation. The stopped dependency build is an environment limitation, not evidence of a theorem failure.
+The first machine census found 2,659 project Lean files and 173 files added relative to the downloaded copy. It found no lexical `sorry` in the four exported result files. The independent reports now confirm the formal-trust status, and the CMI quantifier and force-bridge probes confirm the Lean-level statement mapping. The appropriate status is therefore a formal-trust pass with analytic peer review still open. The stopped dependency build was an environment limitation, not evidence of a theorem failure.
 
 One suspected bridge failure was also checked and not found at source level: `CandidateProperties.not_global_agreement` bounds a global smooth comparator on the candidate's fixed compact spacetime support and uses that bound against the candidate's unbounded speed. It does not claim that a uniform finite-energy bound alone implies an `L∞` bound.
 
@@ -126,14 +126,14 @@ collection mechanism only. It avoided the large intermediate IR footprint of
 the ordinary Lake closure and produced ignored interface files; successful
 elaboration was not used as a mathematical verdict.
 
-The CMI gate is not fully closed. The public statements elaborate with the
+The CMI Lean-interface gate passes. The public statements elaborate with the
 expected whole-space and periodic quantifier shapes, and the source mapping
 covers the official PDE, force, decay/periodicity, pressure, and energy
-clauses. Three semantic items remain for independent PDE review: equivalence of
-the half-space `ContDiffOn` and within-derivative predicates to the CMI boundary
-convention, proof-relevant nontriviality of every derived filter used by the
-residual-rate path, and explicit common-domain/premise provenance from the
-inverse/correction construction to the selected R3 witness.
+clauses. Three items remain for independent PDE review: textbook equivalence
+of the half-space `ContDiffOn` and within-derivative convention, proof-relevant
+nontriviality of every derived filter used by the residual-rate path, and
+explicit common-domain/premise provenance from the inverse/correction
+construction to the selected R3 witness.
 
 The strongest concrete formalisation issue found is generic rather than yet
 route-breaking: `DiagonalResidual.JetRate` is vacuous on the bottom filter.

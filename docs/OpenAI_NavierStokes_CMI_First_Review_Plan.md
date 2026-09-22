@@ -1,6 +1,6 @@
 # OpenAI Navier–Stokes Lean Review: CMI-First Plan
 
-Status: review scaffold created 2026-09-22. No final mathematical verdict has been issued.
+Status: active peer review. Formal trust and Lean-level CMI predicate matching pass; analytic peer review remains open. No negative CMI finding has been issued.
 
 ## 1. Review question
 
@@ -10,7 +10,7 @@ Does the public Lean development prove one of the four statements in the Clay Ma
 2. What proposition is actually proved, including all quantifiers, domains, regularity, support, viscosity, and energy clauses?
 3. Does that proposition imply CMI alternative (C) or (D) without an unproved bridge, hidden axiom, `sorryAx`, or semantic mismatch?
 
-The local downloaded extraction is never edited. In this fork branch, the public review checkout is the repository root, pinned to public commit `f9e8bc5b38b6e212696e8a30e3e91517af887bbd`; review harnesses remain under `NavierStokesReview/src/`.
+The local downloaded extraction is never edited. In this fork branch, the public review checkout is the repository root, with source commit `f9e8bc5b38b6e212696e8a30e3e91517af887bbd` and review commit `d22a07e66928213ecec94baa3165857431b13869`; review harnesses remain under `NavierStokesReview/src/`.
 
 ## 2. CMI acceptance criteria
 
@@ -75,8 +75,8 @@ Each finding must contain: source snapshot, exact file and line, proposition or 
 
 1. Complete the proof-relevant map of derived filters used by residual-rate
    consumers, including any `Filter.inf` and principal restrictions.
-2. Resolve the semantic correspondence between the repository's half-space
-   `ContDiffOn`/`iteratedFDerivWithin` predicates and the CMI boundary convention.
+2. State the one-sided `ContDiffOn`/`iteratedFDerivWithin` convention explicitly
+   and obtain a textbook-equivalence review for the CMI boundary notation.
 3. Verify the common physical-domain and premise provenance links from the
    inverse/correction constructions to the selected R3 witness.
 4. Obtain independent PDE peer review of the remaining analytic lemmas; keep
@@ -91,7 +91,7 @@ The supplied drafts were read as review hypotheses, not as established findings.
 | A forced construction cannot satisfy CMI | Incorrect as a general objection. CMI alternatives (C) and (D) explicitly include smooth forcing. | Test the exact force class, domain, decay, and quantifiers instead. |
 | The force is chosen a posteriori from the residual | Substantively accurate as a construction description: the main candidate witness existentially produces `forcing` after the candidate fields and residual estimates. | Treat as an interpretation/relevance concern, not a CMI failure unless the force class or quantifiers fail. |
 | Hyperviscosity or Ladyzhenskaya viscosity destroys the construction | This changes the PDE. It does not refute a theorem about the classical Newtonian `nu * Delta u` equation. | Keep as a robustness/physical-model question; do not use it as a counterexample to the stated CMI problem. |
-| The main result contains `sorry` or an assumed blowup axiom | Current lexical scan finds four intentional `sorry` lines in two challenge files and no source-level `axiom` declaration in the main result tree. | Require transitive `#print axioms` and declaration-graph evidence before any conclusion. |
+| The main result contains `sorry` or an assumed blowup axiom | Current lexical scan finds four intentional `sorry` lines in two challenge files and no source-level `axiom` declaration in the main result tree. Independent headline reports contain only standard foundations and no `sorryAx`. | Keep the challenge files isolated; do not treat their lexical placeholders as dependencies of the exported results. |
 | Lean compilation establishes the mathematical claim | Incorrect standard. Compilation only shows elaboration and kernel acceptance under a toolchain. | Use compilation only to obtain reproducible theorem and axiom evidence; perform the CMI and PDE audit separately. |
 | The candidate is merely an interface carrying the desired properties | Not established. `ActualCandidateAssembly.selected_witness` is obtained from `GermCandidateAssembly.exists_candidate_witness_of_finite_stages`, using `StageEstimates`, support, endpoint, cone, and residual inputs. | Audit those finite-stage estimates and their dependencies line by line. |
 
