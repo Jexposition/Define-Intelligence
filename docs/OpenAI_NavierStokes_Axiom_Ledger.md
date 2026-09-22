@@ -153,3 +153,22 @@ iterated derivatives. This does not show that the selected candidate uses a
 bottom filter, but it requires explicit nontrivial-domain evidence at each
 load-bearing call site. The result is recorded as `AUD-046` with raw output
 in `NavierStokesReview/results/JET_RATE_VACUITY_4_34_RC2.txt`.
+
+## Pre-export kernel evidence: 2026-09-22
+
+The direct R3 theorem, periodic paper theorem, and periodic comparator bridge
+were independently probed under the declared 4.34.0-rc2 toolchain. All three
+report only `propext`, `Classical.choice`, and `Quot.sound`. This is positive
+evidence for the pre-export layer, not yet the final wrapper or Euler export
+gate. Raw output is in
+`NavierStokesReview/results/PREEXPORT_AXIOMS_4_34_RC2.txt` as `AUD-047`.
+
+## Navier–Stokes headline kernel evidence: 2026-09-22
+
+The independent headline probe now has a completed interface. The whole-space
+and periodic Comparator exports, the underlying R3 theorem, and the periodic
+corollary each report only `propext`, `Classical.choice`, and `Quot.sound`.
+No `sorryAx`, native-evaluation axiom, or project-specific axiom appears in
+these four reports. This closes the Navier–Stokes formal-trust row, but not
+the CMI semantic or human-acceptance rows. Raw output is in
+`NavierStokesReview/results/HEADLINE_AXIOMS_4_34_RC2.txt` as `AUD-048`.

@@ -95,6 +95,21 @@ independent, the finding remains a reusable API warning rather than a CMI
 mismatch. If a bottom or unverified filter can reach the selected witness's
 residual closure, it becomes a proof-relevant defect.
 
+The principal `GlobalBaseError.originPast` filter has now been independently
+proved `NeBot`, clearing this concern for that endpoint. Derived intersections
+and local correction filters remain to be checked individually.
+
+The kernel audit meanwhile reached the direct pre-export layer. The R3 bridge,
+periodic paper theorem, and periodic comparator bridge each report only
+`propext`, `Classical.choice`, and `Quot.sound`. The final public Navier–Stokes
+wrappers and Euler exports remain the required formal-integrity gate.
+
+The Navier–Stokes part of that gate is now closed at the kernel level: the
+whole-space and periodic public exports, the R3 theorem, and the periodic
+corollary all report only the standard foundational axioms. The Euler exports
+remain a separate pending row, and this formal result still does not establish
+the exact CMI analytic correspondence or CMI procedural acceptance.
+
 ## References
 
 1. Charles L. Fefferman, [Existence and Smoothness of the Navier–Stokes Equation, official CMI problem statement](https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf).

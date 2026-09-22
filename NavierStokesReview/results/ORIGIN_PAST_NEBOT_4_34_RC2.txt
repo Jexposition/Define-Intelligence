@@ -1,0 +1,12 @@
+# Principal endpoint filter probe
+# Date: 2026-09-22
+# Toolchain: leanprover/lean4:v4.34.0-rc2
+# Probe: NavierStokesReview/src/probes/OriginPastNeBotProbe.lean
+# Command:
+#   C:\Users\Admin\.elan\bin\elan.exe run leanprover/lean4:v4.34.0-rc2 lake env lean NavierStokesReview/src/probes/OriginPastNeBotProbe.lean
+# Output: exit code 0, no diagnostics
+
+The named `GlobalBaseError.originPast` filter is proved `NeBot` by reducing it
+to `JointResidualLimits.past_filter_neBot`. This closes the bottom-filter
+vacuity concern for that principal endpoint filter, but not for every derived
+intersection or local correction filter.

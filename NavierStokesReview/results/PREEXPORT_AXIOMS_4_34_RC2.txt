@@ -1,0 +1,15 @@
+# Independent pre-export axiom probe
+# Date: 2026-09-22
+# Toolchain: leanprover/lean4:v4.34.0-rc2
+# Probe: NavierStokesReview/src/probes/PreExportAxiomProbe.lean
+# Command:
+#   C:\Users\Admin\.elan\bin\elan.exe run leanprover/lean4:v4.34.0-rc2 lake env lean NavierStokesReview/src/probes/PreExportAxiomProbe.lean
+
+'NavierStokes.ComparatorBridge.navier_stokes_breakdown_R3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NavierStokes.PeriodicPaper.periodic_corollary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NavierStokes.ComparatorBridge.option_D_of_paper_candidate' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+The first probe attempt also tested an unavailable declaration name and
+reported an unknown identifier. The import was corrected to
+`NavierStokes.PeriodicPaperComparator`; the output above is from the clean
+rerun with exit code 0.

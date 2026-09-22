@@ -64,3 +64,12 @@ bounded `lake build NavierStokes.ComparatorSolution` then ran for 60 seconds
 and timed out while compiling dependencies. The process inventory showed
 dependency workers still active; no headline axiom output is recorded until
 the build emits the interface.
+
+## Completed Navier–Stokes headline probe
+
+After the target emitted its interfaces, the independent probe completed with
+exit code 0. Its four reports are preserved verbatim in
+`NavierStokesReview/results/HEADLINE_AXIOMS_4_34_RC2.txt`. All four report
+only `propext`, `Classical.choice`, and `Quot.sound`. This closes the
+Navier–Stokes portion of the formal trust gate, subject to the separate CMI
+semantic and human-review gates. Euler exports remain to be probed.
