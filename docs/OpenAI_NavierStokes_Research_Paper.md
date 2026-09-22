@@ -54,6 +54,8 @@ The finite-stage construction was then audited at its load-bearing interfaces. `
 
 The pressure-flux uniqueness route was also traced. The localized closure theorem receives an explicit pressure-flux inequality, but the R3 uniqueness theorem derives that inequality through pressure-gradient recovery from the comparison equations and finite-energy hypotheses, then through canonical Riesz pairing and cutoff estimates. Compact support supplies the reference-field bounds; the competing global solution supplies smoothness and uniform finite energy. No source-level circular assumption of global agreement was found. This remains a structural source result rather than an independent validation of the analytic proof terms or their kernel axiom footprint.
 
+An independent September 2026 semantic-coverage preprint identifies three further source-level tests: a common positive domain for every inverse and differentiated inverse, term-by-term residual closure through curl, self-interaction, pressure, mean, support, and normalisation terms, and derivative-loss bounds independent of correction stage. The present audit records these as open leads. They sharpen the review method without establishing a defect: a zero-sorry kernel proof can validate an abstraction while leaving the paper-to-abstraction correspondence underexamined.
+
 The periodic-to-compact transition is also deliberate rather than contradictory. The periodic candidate layer is localised by `R3CompactCandidate`, and `R3/ActualCandidate` packages the resulting compact fields and positive-time compact force into the whole-space statement. The audit records this as a tested non-failure and keeps the pressure-flux and kernel dependency checks open.
 
 ## References

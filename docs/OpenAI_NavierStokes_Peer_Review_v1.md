@@ -155,6 +155,8 @@ There is one formalisation-quality concern. `DiagonalResidual.JetRate` is only a
 
 The pressure-flux route was then traced. `WholeSpaceComparisonClosure.eq_of_pressure_flux_bound` takes the flux estimate explicitly, while `WholeSpaceUniqueness.classical_uniqueness_on_Icc` obtains it through `PressureRecovery`, `ActualPressureFlux`, canonical pairing bounds, and compact-candidate estimates. No source-level circular agreement assumption was found. This is a structural result only: the imported analytic proof terms and transitive kernel axiom footprint remain pending.
 
+An independent semantic-coverage audit supplies three useful next tests: one common positive domain for all inverses and differentiated inverses; term-by-term closure of every nonlinear residual, pressure, mean, support, and normalisation contribution; and a derivative-loss bound uniform in correction stage. Our source pass has checked explicit smoothness at the principal residual-rate consumers, but it has not yet closed these broader correspondence tests. They are recorded as `AUD-037`, not as proof failures.
+
 This pass therefore adds review issues but no proof failure. The decisive unresolved lanes remain the transitive kernel axiom footprint, independent mathematical checking of the analytic pressure-flux chain, and the exact force and solution-class correspondence with CMI.
 
 ## What would count as a positive result
