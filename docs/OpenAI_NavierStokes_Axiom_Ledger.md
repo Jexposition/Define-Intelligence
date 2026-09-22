@@ -56,6 +56,26 @@ The finite-stage path was inspected through `StateRealization`, `PhysicalFields`
 
 The requested shared package root at `D:\Research Lab\V-lab-Equipment\.lake\packages-4.32` contains `mathlib` but no `Comparator` package. It is therefore not the dependency tree for this fork's declared 4.34.0-rc2 project and is tracked as a compatibility lane rather than substituted into the main audit.
 
+## Concrete endpoint-filter update: 2026-09-22
+
+The selected diagonal schedule's exact open-past endpoint has now been checked
+independently. `SpacetimeEndpoint.openPast 1` is `Iio 1 ×ˢ univ`, and
+`OpenPastNeBotProbe.lean` proves that its neighbourhood-within filter at
+`(1, 0)` is `NeBot`. This removes a possible bottom-filter objection at that
+specific endpoint. It does not add a `NeBot` premise to the generic
+`DiagonalResidual.JetRate` interface, so every derived rate filter still needs
+its own proof or an explicit domain-coverage argument.
+
+Raw output is recorded in
+`NavierStokesReview/results/OPEN_PAST_NEBOT_4_34_RC2.txt`; the interpretation
+is recorded in `OPEN_PAST_FILTER_AUDIT_2026-09-22.md`.
+
+The related source audit found no new declaration-level axiom in the inspected
+pressure-recovery, pressure-flux, comparison-closure, viscosity-scaling, or
+force-bridge interfaces. These are positive dependency observations only; the
+analytic premises remain subject to independent PDE review. The evidence map
+is `NavierStokesReview/results/SEMANTIC_LOAD_BEARING_AUDIT_2026-09-22.md`.
+
 The isolated Lean 4.32 preflight is wired to that shared Mathlib path. Its
 first run reported a stale compiled Lake configuration; the bounded `-R`
 reconfiguration run did not return within 60 seconds. This is recorded as

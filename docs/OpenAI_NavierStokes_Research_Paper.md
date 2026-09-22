@@ -142,6 +142,15 @@ nontrivial, so the generic issue is recorded as an API risk, not as a negative
 finding against the exported theorem. The full disposition and evidence map
 are in `NavierStokesReview/results/COMPLETION_AUDIT_2026-09-22.md`.
 
+The exact endpoint check was then strengthened. `SpacetimeEndpoint.openPast 1`
+is the explicit set `Iio 1 ×ˢ univ`, and a zero-sorry Lean probe proves that
+`nhdsWithin (1, 0) (openPast 1)` is `NeBot`. Thus the selected endpoint is not
+an instance of the bottom-filter vacuity. The generic interface remains weaker
+than the semantic claim it is intended to represent: any derived intersection
+or local-correction filter used by a rate consumer must still be shown
+nontrivial or shown to carry the required domain coverage. This narrows, but
+does not eliminate, the formalisation-quality finding.
+
 ## 9. Procedural CMI boundary
 
 The CMI prize rules impose a separate procedural condition. Before CMI will

@@ -2,7 +2,7 @@
 
 Date: 2026-09-22
 Audited source commit: `f9e8bc5b38b6e212696e8a30e3e91517af887bbd`
-Review branch commit: `d22a07e66928213ecec94baa3165857431b13869`
+Review branch baseline before this update: `a7f65e2`
 Declared toolchain: `leanprover/lean4:v4.34.0-rc2`
 
 ## Gate results
@@ -15,7 +15,7 @@ Declared toolchain: `leanprover/lean4:v4.34.0-rc2`
 | Navier–Stokes kernel trust | CONFIRMED | Four headline declarations report only `propext`, `Classical.choice`, and `Quot.sound`. |
 | Euler kernel trust | CONFIRMED | Two headline declarations report only `propext`, `Classical.choice`, and `Quot.sound`. |
 | Challenge placeholder reachability | CLOSED for audited exports | Four lexical `sorry` lines remain in the separate challenge files; no audited headline report contains `sorryAx`. |
-| Generic residual-rate API | ISSUE RECORDED, not a CMI mismatch | `JetRate` is true on the bottom filter for arbitrary data. The selected `originPast` endpoint is independently `NeBot`, and the final theorem returns a rate on that endpoint. Derived premise-filter nontriviality remains a formalisation-quality review item. |
+| Generic residual-rate API | ISSUE RECORDED, not a CMI mismatch | `JetRate` is true on the bottom filter for arbitrary data. The selected `originPast` endpoint and the exact open-past endpoint at `(1, 0)` are independently `NeBot`. Derived premise-filter nontriviality remains a formalisation-quality review item. |
 | CMI procedural acceptance | NOT ESTABLISHED | Kernel output cannot substitute for publication, two-year examination, or general community acceptance under CMI rules. |
 
 ## What this audit establishes
@@ -48,11 +48,25 @@ interface: its arbitrary-filter form admits vacuous proofs on `⊥`. The
 principal endpoint used by the audited base-error path is nontrivial, so this
 finding is not currently a disproof of the exported Navier–Stokes theorem.
 
-The new derived-filter probe makes the scope precise: `NeBot originPast` does
-not imply `NeBot (originPast ⊓ 𝓟 activeᶜ)`. The selected-rate consumer still
-has a valid two-branch proof, so the open item is whether the actual exterior
-branch is frequent and quantitatively substantive, not whether Lean accepts a
-bottom-filter theorem in the abstract.
+The derived-filter probe makes the scope precise: `NeBot originPast` does not
+imply `NeBot (originPast ⊓ 𝓟 activeᶜ)`. The selected-rate consumer still has a
+valid two-branch proof, so the open item is whether the actual exterior branch
+is frequent and quantitatively substantive, not whether Lean accepts a
+bottom-filter theorem in the abstract. A separate probe now proves the exact
+selected open-past endpoint at `(1, 0)` is `NeBot`; that positive result must
+not be generalised to the derived branch without another proof.
+
+The raw endpoint evidence is in
+`NavierStokesReview/results/OPEN_PAST_NEBOT_4_34_RC2.txt`, with the source-level
+interpretation in `OPEN_PAST_FILTER_AUDIT_2026-09-22.md`.
+
+The accompanying load-bearing semantic audit records positive source evidence
+for pressure recovery, pressure-flux closure, viscosity scaling, and the force
+bridge. It found no concrete CMI-interface mismatch in those lanes. The report
+does not substitute source inspection for an independent PDE verification of
+the imported analytic lemmas.
+
+See `NavierStokesReview/results/SEMANTIC_LOAD_BEARING_AUDIT_2026-09-22.md`.
 
 ## Review disposition
 

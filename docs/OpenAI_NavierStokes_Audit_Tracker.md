@@ -107,3 +107,15 @@ The main R3 path now has a more precise map. `ActualCandidateAssembly.selected_w
 This makes the finite-stage estimate chain and the whole-space pressure-flux comparison the two principal mathematical audit lanes. The a-posteriori definition of the force is recorded as an interpretation/relevance issue, not a CMI mismatch, because CMI alternatives C and D explicitly permit forcing. Hyperviscosity and Ladyzhenskaya objections change the PDE and therefore cannot refute a theorem about the classical Newtonian equation without an additional robustness claim.
 
 The current environment does not expose `elan` or `lake` on `PATH` because of the shell profile, but the installed executables are available through `C:\Users\Admin\.elan\bin`. Exact kernel-generated `#print axioms` output is now recorded in `NavierStokesReview/results/`; the remaining work is semantic and analytic review rather than another build.
+
+## Concrete endpoint update: 2026-09-22
+
+| ID | Area | Finding or test | Evidence | Status | Next action |
+|---|---|---|---|---|---|
+| AUD-059 | Selected endpoint filter | The exact open-past filter used at `(1, 0)` is nontrivial. A zero-sorry probe proves `NeBot (nhdsWithin ((1 : ℝ), (0 : Space)) (Iio 1 ×ˢ univ))` by constructing a point below time `1` inside every metric neighbourhood. | `NavierStokesReview/src/probes/OpenPastNeBotProbe.lean`; `NavierStokesReview/results/OPEN_PAST_NEBOT_4_34_RC2.txt`; `NavierStokes/SpacetimeEndpoint.lean:24-25` | CONFIRMED concrete endpoint; generic API hazard remains | Audit each derived intersection or local correction filter separately; do not infer its `NeBot` status from this endpoint proof. |
+| AUD-060 | Load-bearing semantic interfaces | Pressure recovery derives a pressure-gradient distribution and removes the harmonic remainder; comparison closure consumes an explicit pressure-flux bound; the inspected viscosity scaling preserves the PDE interface; the force bridge matches the forced CMI predicate. No concrete mismatch was found in these interfaces. | `NavierStokesReview/results/SEMANTIC_LOAD_BEARING_AUDIT_2026-09-22.md`; R3 pressure, scaling, and bridge sources | POSITIVE SOURCE EVIDENCE; analytic validity OPEN | Continue common-domain and premise-provenance review independently of compilation. |
+
+This supersedes the earlier wording that left the principal open-past endpoint
+itself unchecked. The generic `JetRate` bottom-filter issue remains a valid
+specification finding, but the selected endpoint is not bottom on the evidence
+above.

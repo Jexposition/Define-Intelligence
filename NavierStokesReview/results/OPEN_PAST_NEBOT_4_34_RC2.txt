@@ -1,0 +1,15 @@
+Command:
+  $env:ELAN_HOME='C:\Users\Admin\.elan'; $env:GIT_CONFIG_GLOBAL='D:\Research Lab\Jexposition\.codex-gitconfig-navier'; & 'C:\Users\Admin\.elan\bin\elan.exe' run leanprover/lean4:v4.34.0-rc2 lake env lean 'NavierStokesReview/src/probes/OpenPastNeBotProbe.lean'
+
+Exit code: 0
+
+Result:
+  The concrete selected endpoint filter
+    nhdsWithin ((1 : ℝ), (0 : Space)) (Iio 1 ×ˢ univ)
+  is proved NeBot by exhibiting a point in every neighbourhood of (1, 0)
+  whose time coordinate is strictly below 1.
+
+Interpretation:
+  This discharges the nontriviality check for the explicit open-past endpoint
+  used by the selected diagonal schedule. It does not discharge nontriviality
+  for every derived filter appearing in the generic JetRate API.
