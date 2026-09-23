@@ -23,7 +23,7 @@ or lower-dimensionality theorem.
 The headline theorem unpacks `selected_witness`, which is instantiated by `witness B N0 hN`. The underlying `Witness` type explicitly consumes properties of `potentialSum`, `directStages`, and abstract `AwayExtensions`. To satisfy the bounds, `witness` passes `estimates`, which consumes `physicalData`. 
 The exact type signature consumed is:
 `∀ J, ActualCycleResidualBounds.PhysicalData B (ActualCandidateConstruction.residualBand B N0) (ActualCandidateConstruction.cycle B N0 J).state ...`
-This unfolds to `PhysicalFields`, mapping straight back to `PhysicalResidualJetBounds.lean` and `CorrectionStep.lean`. The witness natively consumes pure geometric PDE residual decay bounds (`NativeBounds`), NOT algebraic moment ranks.
+This unfolds to `PhysicalFields`, mapping straight back to `PhysicalResidualJetBounds.lean` and `CorrectionStep.lean`. The witness directly consumes geometric PDE residual decay bounds (`NativeBounds`). Upstream construction modules also contain moment/rank machinery, but the selected residual interface does not expose a theorem identifying those arrays with `(M, I, J, S, C_p)`.
 
 ## 2. The Ghost Moment Drift Severing
 **Point of Divergence:** `PhysicalResidualJetBounds.lean` (Line 721 - `def residual`)

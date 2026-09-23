@@ -1,4 +1,9 @@
-# Formal Peer Review Verdict: OpenAI Navier-Stokes Formalization
+# Superseded provisional verdict: OpenAI Navier-Stokes formalisation
+
+This file is retained as Agent 2 supporting material. The active verdict is in
+`OpenAI_NavierStokes_Peer_Review_v1.md`, and the active evidence ledger is in
+`OpenAI_NavierStokes_Audit_Tracker.md`. Claims below are subordinate to those
+documents and to `REVIEW_DOCUMENT_CONTROL.md`.
 
 ## Verification correction: selected endpoint and temporal boundary
 
@@ -29,7 +34,7 @@ The most precarious mathematical boundary in the residual-feedback exploit is wh
 An audit of `CandidateFromLimits.lean` and `GermCandidateAssembly.lean` confirms that the agent successfully sealed this boundary:
 * They isolated the residual limits inside the `VanishingJointJets` hypothesis.
 * This hypothesis guarantees that despite the exploding velocity, the non-linear convection terms perfectly cancel the linear terms, forcing the *overall residual and all of its infinite derivatives* to geometrically damp to exactly zero as $t \to 1$.
-* By using Taylor-Borel pasting in `SpacetimeGluing.smoothExtension`, the force is seamlessly glued to $f=0$ for $t \ge 1$. 
+* By using Taylor-Borel pasting in `SpacetimeGluing.smoothExtension`, the force is smoothly extended and is proved zero from $t \ge 2$.
 
 The theorem `force_smooth` successfully extracts `ContDiff ℝ ∞` across the boundary. The proof of CMI required smoothness at $t=1$ is therefore mathematically verified.
 

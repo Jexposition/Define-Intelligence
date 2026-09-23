@@ -20,6 +20,13 @@ the inspected result does not carry force equality or the paper's five-moment
 tuple into `selected_candidate`. This is a missing transport assertion, not a
 new axiom or a kernel inconsistency.
 
+**AX-036.** The selected whole-space comparison does not treat pressure-flux
+or scalar rate bounds as opaque endpoint axioms. `PressureFlux` and
+`ComparisonRateBound` construct them from their displayed hypotheses, while
+`PressureRecovery` supplies the compact-test gradient identity. Compact
+pressure support therefore remains a rejected standalone attack, not a
+demonstrated trivialisation theorem. This finding does not close CTR-005.
+
 ## Purpose
 
 This ledger separates logical foundations, project-level premises, formal definitions, and physical requirements. A standard Lean axiom is not treated as a defect. A proposition imported as a premise, or a definition that is weaker than the paper's object, is a separate audit target.

@@ -24,6 +24,25 @@ whole-space solution. The earlier stronger statement that the five-moment
 module is dead code is withdrawn: the local layer consumes the selected
 aliases, and a genuine five-component repair theorem exists upstream.
 
+## 19. Pressure support and the whole-space comparison closure
+
+The R³ specification gives compact support to each pre-singular pressure
+slice, which makes pressure localisation a legitimate attack surface. The
+source does not, however, use compact support as a shortcut that sets pressure
+or velocity to zero. `PressureRecovery` derives the pressure-gradient identity
+in compact-test form from the two residual equations and divergence-free
+fields. `ActualPressureFlux` converts that identity to the cutoff flux pairing,
+and `PressureFlux` constructs the uniform bound used by
+`WholeSpaceUniqueness`. The scalar rate constant is likewise constructed in
+`WholeSpaceComparisonClosure` through `ComparisonRateBound`.
+
+The corresponding zero-sorry probe finds only standard Lean foundations for
+these intermediate theorems. The compact-pressure trivialisation attack is
+therefore rejected as a standalone counterexample. It does not cure the
+decisive paper-to-code defect: no inspected selected-path theorem transports
+the paper's `(M, I, J, S, C_p)` tuple and the same force into
+`selected_candidate`. The claimed correspondence remains unestablished.
+
 ## Abstract
 
 This paper reports an independent formal review of the public Lean development associated with OpenAI's claim of finite-time breakdown for the three-dimensional incompressible Navier–Stokes equations. The review asks a narrower question than whether the repository compiles: does the exported formal theorem establish the mathematical construction described in the accompanying paper, and does that construction meet the exact alternatives in Charles Fefferman's Clay Mathematics Institute problem statement?

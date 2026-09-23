@@ -32,6 +32,22 @@ the fork's documents.
 `dependency_closure_validation.md` and the Agent 2 diagnostic notes are
 supporting material. They are not independent verdicts.
 
+## Alignment check: 2026-09-24
+
+The tracker names **CTR-005**, the missing selected-path transport of the
+paper's `(M, I, J, S, C_p)` data and force, as the headline load-bearing
+objection. The pure-axial/pure-swirl collapse hypothesis is explicitly marked
+as a cleared and rejected attack surface in the tracker and in the supporting
+solenoidal ledger. The pressure-trivialisation route is also recorded as
+rejected as a standalone counterexample after the pressure/uniqueness closure
+audit.
+
+The six core documents above are synchronised to that authority map. The
+pressure result is sourced to
+`NavierStokesReview/evidence/pressure_uniqueness_closure_audit_2026-09-24.md`;
+the argument is in the peer review and research paper, while the plan and
+tracker retain only compact status entries.
+
 ## Agent 2 documents: disposition
 
 | Document | Disposition | What survives |

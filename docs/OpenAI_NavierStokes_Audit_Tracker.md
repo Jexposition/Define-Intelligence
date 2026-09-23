@@ -8,6 +8,12 @@ This document is the working ledger for the counter-paper. It records evidence, 
 
 Evidence: `NavierStokesReview/evidence/base_profile_core_asymptotics_audit_2026-09-23.md`.
 
+**Cleared attack surface:** the pure-axial/pure-swirl collapse hypothesis is
+rejected. `finalPotential` has three Cartesian components before spatial curl,
+and the selected path has a divergence-free assembled field. The radial-anchor
+zero is not a global component-vanishing theorem. The discarded collapse note
+is not evidence against the claim.
+
 ## Scope
 
 - Upstream source under review: OpenAI Navier–Stokes repository, snapshot recorded as `f9e8bc5`.
@@ -24,6 +30,25 @@ system has not been shown by a selected-path theorem to be the same moment
 data transported into the production debt, residual estimates, and public
 `selected_witness`. This is the active counter-paper objection. It is a
 correspondence failure under review, not yet a kernel-level contradiction.
+
+## Pressure and uniqueness closure audit: 2026-09-24
+
+The compact-pressure trivialisation attack is rejected as a standalone
+counterexample. `PressureRecovery.gradient_recovery` derives the compact-test
+pressure-gradient identity from the residual equations; `ActualPressureFlux`
+transports it to the cutoff flux; `PressureFlux` constructs the uniform bound;
+and `WholeSpaceUniqueness` consumes that bound in the competitor comparison.
+The scalar rate bound is constructed internally rather than inserted as an
+unproved endpoint premise.
+
+This does not rescue the paper's claim. The selected exported candidate still
+has no inspected theorem identifying its fields, residual, and force with the
+paper's named moment tuple `(M, I, J, S, C_p)`. That unproved identification is
+the load-bearing correspondence failure recorded as CTR-005.
+
+Evidence: `NavierStokesReview/evidence/pressure_uniqueness_closure_audit_2026-09-24.md`,
+`NavierStokesReview/src/probes/IntermediateAxiomProbe.lean`, and
+`NavierStokesReview/src/probes/R3ComparisonPremiseProbe.lean`.
 
 ## Evidence register
 

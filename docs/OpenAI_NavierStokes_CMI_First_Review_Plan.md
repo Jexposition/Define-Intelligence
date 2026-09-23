@@ -18,6 +18,8 @@
 | BP-06 | Has a zero-sorry contradiction been obtained? | [ ] | None yet. Do not label the claim refuted without a selected-path contradiction. |
 | BP-07 | Are the local paper fields, selected raw stages, force, and exported R³ candidate identified as one object? | [~] | Local velocity/pressure agreement is present, but force and five-moment transport are not exposed in one theorem. |
 | BP-08 | Were prior probes themselves checked for overclaiming? | [x] | The isolation probe was corrected; “PositiveOrderMoments is dead code” is withdrawn. |
+| BP-09 | Does compact pressure support force the selected velocity to vanish? | [x] | Rejected as a standalone counterexample; the comparison path derives pressure flux from the residual equation. |
+| BP-10 | Is the pressure/rate premise merely injected at the final comparison theorem? | [x] | Rejected for the inspected endpoint; `PressureFlux` and `ComparisonRateBound` construct the constants internally. |
 
 Evidence: `NavierStokesReview/evidence/base_profile_core_asymptotics_audit_2026-09-23.md` and `NavierStokesReview/src/probes/BaseProfileCoreAsymptoticsProbe.lean`.
 

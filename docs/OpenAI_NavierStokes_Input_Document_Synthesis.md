@@ -44,6 +44,14 @@ The source review now supports a sharper synthesis than the initial critique set
 
 The moment-system material also requires a two-sided account. `FiveProfileMoments` is paper-shaped and reproduces the stated normalised exponent vectors. `PositiveOrderMoments` proves an exact five-coordinate repair used by the recursive slow-profile construction. `FiveRowRank` is a separate physical-rank interface with a three-coordinate debt and two fixed constraints. The direct correspondence probe proves that the first and third declarations cannot be identified row by row. This is a genuine formalisation gap unless an explicit change of variables or stage-separation theorem is supplied. It is not evidence that all five-equation repair code is absent.
 
+The pressure attack is likewise narrower than the supplied criticism claimed.
+Compact pressure slices are present, but the selected comparison path derives
+the pressure-gradient identity from the residual equations and constructs the
+pressure-flux and scalar-rate bounds internally. No source-level or zero-sorry
+probe proves that compact pressure support trivialises the velocity. That route
+is rejected as a standalone counterexample; it does not repair the missing
+selected-path identification of the paper's moments and force.
+
 The resulting counter-paper position is deliberately tiered:
 
 - kernel acceptance is established for the inspected endpoints;

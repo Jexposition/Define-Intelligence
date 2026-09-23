@@ -25,6 +25,23 @@ object used by the CMI endpoint.
 This strengthens CTR-005 as a source-level correspondence objection. It does
 not refute `selected_candidate` by itself.
 
+## Finding 21: the compact-pressure attack does not replace the correspondence failure
+
+The R³ candidate imposes compact support on each pre-singular pressure slice.
+That condition is an adversarial audit target, but the inspected comparison
+path does not simply set pressure to zero. `PressureRecovery` derives the
+differentiated Poisson identity against compact tests from the residual
+equations; `ActualPressureFlux` and `PressureFlux` turn it into the uniform
+cutoff flux bound; and `WholeSpaceComparisonClosure` constructs the scalar rate
+estimate internally. The intermediate axiom probe reports only standard Lean
+foundations for these endpoints.
+
+The claim that compact pressure support forces the candidate velocity to vanish
+is therefore rejected as a standalone counterexample. It does not answer the
+load-bearing objection: the selected-path theorem still does not identify the
+paper's named moments and force with the fields consumed by the exported R³
+endpoint. That correspondence claim remains unestablished.
+
 ## Recommendation
 
 **Major revision.** The public Lean development contains a substantial formal endpoint for a forced whole-space breakdown statement, but the accompanying mathematical narrative is not yet shown to correspond to the actual source implementation. The most concrete issue is the mismatch between the paper's five cumulative moments and the repository's `FiveRowRank` debt system.

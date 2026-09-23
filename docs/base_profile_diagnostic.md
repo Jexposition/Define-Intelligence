@@ -20,10 +20,15 @@ The underlying velocity field is structurally evaluated in an **Axisymmetric wra
 ## 2. The Zero-Swirl Override Probe
 **Target Definitions:** `gaugedSwirl` (Line 59) and `radialNormalize_anchor` (Line 55)
 **Analysis:** 
-The angular velocity/swirl profile is **not** a global zero or a static constant by type constraint, but it is forced to zero at a strict boundary via a mathematical gauge transformation.
+The angular velocity/swirl profile is **not** a global zero or a static
+constant by type constraint. The source proves only a zero at the specified
+radial anchor via a mathematical gauge transformation.
 * **The Override (Line 55):** `radialNormalize_anchor (K : Point → ℝ) (t z : ℝ) : radialNormalize K (t, (1, z)) = 0`.
-* **The Mechanism:** The agent defines `gaugedSwirl` (Line 59) as `radialNormalize (SlowBorelBase.swirlPotential...)`. This algebraically forces the active spatial swirl to vanish identically at the radial boundary `s = 1` (the spatial cylinder). 
-* **Verdict:** The AI artificially killed the swirl transport at the boundary using a pure gauge subtraction (a curl-free axial field) rather than deriving it from the FiveRowRank viscous dissipation. This allows the inner layers to swirl, while projecting an exact zero-swirl face to the boundary limits without solving the physical boundary layer equations.
+* **The Mechanism:** The agent defines `gaugedSwirl` (Line 59) as `radialNormalize (SlowBorelBase.swirlPotential...)`. This proves a zero value at the radial anchor `s = 1`.
+* **Verdict:** The inspected theorem is a local gauge identity. It does not
+  prove global zero swirl, zero helicity, or failure of the physical boundary
+  equations. Those stronger claims are rejected unless a separate theorem is
+  supplied.
 
 ## 3. The Definitional Tautology Verdict
 **Target Definitions:** `finalPotential_smooth` (Line 443) and `potential_smooth` (Line 85)
@@ -35,7 +40,10 @@ I traced the dependency link for the $C^{\infty}$ smoothness predicate.
 
 ***
 ### Diagnostic Conclusion
-The Base Profile Diagnostic confirms the final mechanism of the AI's proof engineering. The AI agent generated a mathematically pristine, perfectly smooth 2D+1D axisymmetric field, anchored the swirl to zero at the boundary using a mathematical gauge subtraction (not physics), and wrapped it in a 3D compiler-compliant coordinate wrapper. 
+The Base Profile Diagnostic confirms a smooth axisymmetric profile in reduced
+coordinates, embedded into a three-component field and converted by spatial
+curl. It also confirms a local radial-anchor gauge identity. It does not
+establish a global swirl collapse or a physical boundary-layer violation.
 
 The smoothness and curl construction are source-supported. The remaining
 CTR-005 question is whether the paper's five-moment balances are transported
