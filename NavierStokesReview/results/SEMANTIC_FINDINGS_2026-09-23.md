@@ -215,3 +215,21 @@ two-moment axial repair jointly establish five rows, with the first two rows
 preserving mass and the final three rows cancelling the named debt components.
 The row-cancellation chain is used in the actual rank-stage estimate. This
 does not establish the full PDE residual or CMI conclusion.
+
+## F-015 — Concrete `Filter.bot` risk remains an interface audit item, not a proved disproof
+
+The generic `DiagonalResidual.JetRate` definition still has no `NeBot`
+hypothesis, so its bottom-filter vacuity is real at the API level. The actual
+derived filter in `ActualCycleResidualBounds.base_exterior_jetRate` is based on
+the complement of an active annulus in the coordinate `X = radialEnergy / q`,
+not on the small parameter `q` itself. Therefore `q → 0` does not prove that
+the derived filter is non-bottom: paths can approach the endpoint while
+keeping `X` in the active band. No Lean proof of non-bottom was added, and no
+Lean proof that the filter is bottom was found.
+
+This is not yet a contradiction in the exported theorem. The downstream
+`selected_residual_jetRate` theorem explicitly splits into the active set and
+its complement. The active branch uses a local residual bound; the complement
+branch uses the derived-filter estimate. Thus the generic API hazard must be
+audited against those branches, but it does not by itself refute the
+top-level C/D-shaped proposition.
