@@ -186,3 +186,32 @@ failure.
 
 The six-question disposition and required follow-up checks are collected in
 `NavierStokesReview/results/SIX_QUESTION_SOURCE_AUDIT_2026-09-23.md`.
+
+## F-014 — The zero-angular attachment over-specifies the source row semantics
+
+Status: `CONFIRMED description/provenance correction; no local cancellation failure found`
+
+Evidence:
+
+- `NavierStokes/FiveRowRank.lean:93-107` defines `angularDebt` and `axialDebt`
+  separately. The angular repair has three generalized-power moments, while
+  the axial repair has two.
+- `NavierStokes/FiveRowRank.lean:240-246` defines `FiveRows` as five clauses:
+  two exact mass constraints, followed by three defect rows for the debt order
+  `(P, Jθ, Jz)`.
+- `NavierStokes/LocalizedMomentRepair.lean:87-115,164-180` constructs the
+  compactly supported bump matrix and proves exact moments from its nonzero
+  determinant. The source does not define a named `A_theta` or use the
+  attachment's explicit `μ_p e_j^{dp}` matrix notation.
+- `NavierStokes/DefectIncrementBounds.lean:635-724,789-825` proves that the
+  first two rows preserve the relevant masses and that the final three rows
+  solve the linear defects; `rankStage_defectBounds` then consumes that result.
+
+Conclusion: the attachment correctly identifies a real local repair and an
+exact zero-mass constraint, but its statement that the source itself exposes a
+three-by-three `M_theta, -P_q, -J_z,q` block is not a literal source map. The
+closest source-level statement is: a three-moment angular repair plus a
+two-moment axial repair jointly establish five rows, with the first two rows
+preserving mass and the final three rows cancelling the named debt components.
+The row-cancellation chain is used in the actual rank-stage estimate. This
+does not establish the full PDE residual or CMI conclusion.

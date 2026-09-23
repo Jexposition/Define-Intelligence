@@ -19,7 +19,7 @@ The supplied summary is directionally correct as a description of the current au
 
 The local algebraic core is present. `PositiveOrderMoments.lean:142-181` defines a three-component `angularDebt` and proves exact angular repair moments. `FiveProfileMoments.lean:202-222` proves the generalized power-moment matrix is invertible for injective exponents, and `:274-285` supplies the three angular exponents and their injectivity. `:356-374` proves the normalized linear-plus-quadratic map identity, with later existence machinery solving the local repair problem.
 
-Therefore the attachment identifies a real three-parameter local repair mechanism, and the actual call path now confirms its use in the final base. The source's exact `FiveRows` order is `(P, Jθ, Jz)`, with two preceding zero-mass constraints, so the attachment's labels `M_theta`, `-P_q`, and `-J_z,q` still need a declaration-level mapping. The five-row theorem also remains only one interface in the full Navier–Stokes residual argument.
+Therefore the attachment identifies a real three-parameter local repair mechanism, and the actual call path now confirms its use in the final base. The source constructs this through `LocalizedMomentRepair.matrix` and a proved nonzero determinant, rather than through a source declaration literally named `A_theta` with entries `μ_p e_j^{dp}`. Its exact `FiveRows` order is `(P, Jθ, Jz)`, with two preceding zero-mass constraints, so the attachment's labels `M_theta`, `-P_q`, and `-J_z,q` still need a declaration-level mapping. The five-row theorem is genuinely consumed by the rank-stage defect estimate, but remains only one interface in the full Navier–Stokes residual argument.
 
 ## Review conclusion
 
