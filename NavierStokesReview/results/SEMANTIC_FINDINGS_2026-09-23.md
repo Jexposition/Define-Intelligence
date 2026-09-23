@@ -255,3 +255,12 @@ pin then failed because the local 4.34/toolchain and Mathlib cache lack several
 finding, not a mathematical disproof and not evidence that the source theorem
 is false. A clean pinned build is required before treating a fresh `#print
 axioms` report as current.
+## F-018 — The finite-stage residual rate is an interface obligation, but the selected path supplies it
+
+The audit must distinguish a conditional consumer from an assumed final candidate. `MixedCandidateAssembly.StageEstimates` contains `finite_background` and `finite_residual` `JetRate` fields, so the generic finite-stage theorem is conditional on quantitative residual estimates. However, in the selected construction `GluedStageEstimates.actualStageEstimates` constructs the record from `ActualCycleResidualBounds.PhysicalData`; it does not receive `CandidateProperties` or a completed infinite candidate as an input. The residual field is then obtained through `ActualCycleResidualBounds.Invariant.residual_jetRate`, which uses the invariant, the native residual bound, and local/exterior field-germ data. No hidden field equivalent to the final candidate was found in this trace.
+
+This corrects an earlier possible overclaim: the presence of rate fields in the generic interface is not by itself a proof that the headline theorem assumes its conclusion. The mathematical adequacy of the invariant-to-rate derivation remains a substantive review question.
+
+## F-019 — The actual derived-filter audit remains unresolved, not disproved
+
+`DiagonalResidual.JetRate` has no `NeBot` parameter, and the selected residual path invokes it on `GlobalBaseError.originPast ⊓ 𝓟 activeᶜ` before lifting the estimate to `originPast`. The source proves the generic `Filter.bot` vacuity probe, but does not prove that this particular derived filter is non-bottom or bottom. Because `active` is defined through a rescaled Cartesian radial coordinate, the fact that the physical spatial point tends to the origin does not immediately settle the filter question. This is therefore a required proof obligation for the independent review, not a source-confirmed falsification.

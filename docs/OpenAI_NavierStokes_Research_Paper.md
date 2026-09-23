@@ -296,3 +296,8 @@ repository pin encounters missing private toolchain and Mathlib object files.
 This is recorded as an environment reproducibility issue, not as a proof
 failure. The next report must identify the exact clean toolchain and package
 snapshot used for every independent axiom transcript.
+### Finite-stage obligations and the filter boundary
+
+The finite-stage interface is a real conditional boundary, but it is not accurate to say that the selected theorem merely assumes the completed candidate. `StageEstimates` requires finite background and residual `JetRate` bounds. In the selected path, these are assembled by `GluedStageEstimates.actualStageEstimates` from `PhysicalData`, and `Invariant.residual_jetRate` derives the residual rate from the cycle invariant, a native residual bound, and local/exterior germs. The source trace did not expose a field equivalent to the final `CandidateProperties` record as an input.
+
+There is nevertheless a separate non-vacuity obligation. `JetRate` is defined over an arbitrary filter and is automatically true on `Filter.bot`. The selected residual proof uses the derived filter `originPast ⊓ 𝓟 activeᶜ`, but the audited source does not establish a `NeBot` fact for that derived filter. Since `active` is expressed in a rescaled Cartesian radial coordinate, this cannot be settled merely from physical position tending to the origin. The correct verdict is an unresolved audit gap until that filter is shown nontrivial or a concrete bottom-filter derivation is exhibited.
