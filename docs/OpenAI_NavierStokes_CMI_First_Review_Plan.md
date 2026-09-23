@@ -85,6 +85,8 @@ The plan now has two live proof-bearing lanes and three closed or bounded lanes.
 
 The next falsification threshold is therefore explicit: a selected-path theorem must contradict one required CMI predicate, or the source must expose a mandatory interface whose assumptions cannot be proved. Until then the paper reports a failure of demonstrated correspondence, not a fabricated theorem refutation.
 
+The empty-index branch audit has been added to the reachability lane. `ActualParticularStageControls.raw_jets` uses a valid `Nonempty (ActivePair)` split: the empty branch proves the control patch empty from its own membership predicate, while the nonempty branch uses an explicit countable surjection. The next test is not to label this `False.elim`, but to determine whether the selected endpoint depends on an inhabited active subtype and whether that subtype is proved inhabited. Without that dependency, the branch is not a refutation.
+
 Use “formal disproof” only after a zero-sorry contradiction or a false mandatory premise has been proved. Use “formal correspondence failure” when the code and paper are not connected by a required theorem. Do not escalate a semantic criticism into a theorem-level verdict.
 
 ## Current adjudication: pressure and uniqueness

@@ -53,6 +53,7 @@ This closes the specific claim that the endpoint consumes a free scalar rate bou
 - `NavierStokesReview/src/probes/FiveRowsStructureProbe.lean`: compiled source-structure check for the three-coordinate `FiveRows` debt and its two fixed zero rows.
 - `NavierStokesReview/src/probes/MomentInitializationProbe.lean`: compiled zero-sorry check that the selected initial state satisfies the two preserved zero-mass rows.
 - `NavierStokesReview/src/probes/R3ComparisonPremiseProbe.lean`: compiled zero-sorry source-level audit showing that the scalar comparison rate is constructed inside the R³ closure rather than passed into the endpoint as an unproved hypothesis; its endpoint `#print axioms` output contains only `propext`, `Classical.choice`, and `Quot.sound`.
+- `NavierStokesReview/src/probes/ActivePairEmptyBranchProbe.lean`: compiled zero-sorry proof that the negative `Nonempty (ActivePair)` branch makes each `controlPatch` empty.
 
 Positive source evidence audited directly:
 
@@ -75,6 +76,8 @@ Use “formal disproof” only for a zero-sorry contradiction or a demonstrated 
 | CTR-018 | The two fixed physical-rank rows preserve a nonzero initial mass. | Rejected on the selected witness | `ActualInitialization.initial_zeroMasses` proves the selected initial state has the relevant zero masses; the temporal and rank-stage correction interfaces preserve `ZeroMassesOn`. `MomentInitializationProbe.lean` compiles this source theorem without an added assumption. This closes the initialization attack, but not the cross-layer correspondence gap. |
 
 The paper therefore reports two separate conclusions: active residual forcing is a proved property of the selected candidate, while the moment-interface result is a formal correspondence objection. Neither is promoted to a refutation of the final C/D existential theorem without a reachable false premise.
+
+| CTR-021 | The `ActualParticularStageControls.raw_jets` empty branch proves arbitrary physical estimates by ex falso on a nonempty domain. | Source inspection: the branch derives `False` only from `z ∈ controlPatch`, whose first component is `Active l n` and therefore constructs an `ActivePair`; the nonempty branch uses an explicit surjection over active pairs. | Local objection not established | Audit whether the selected endpoint requires `Nonempty (ActivePair B N0)` and whether that requirement is proved. Do not call the branch a theorem-level contradiction without that reachability result. |
 
 The new `FiveRowsStructureProbe.lean` result narrows the moment objection further. It corrects the review narrative's description of a generic five-by-five solve: the physical-rank file explicitly separates two zero constraints from three debt-controlled rows. The remaining audit target is the proof that those fixed constraints and the three debt rows preserve the paper's five named moments across the selected construction.
 

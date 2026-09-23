@@ -114,6 +114,12 @@ Only the third is a formal correspondence obstruction. None of the three, standi
 
 No custom axiom has been found at the inspected headline or selected-witness interfaces. A zero-sorry formal obstruction has been found to a direct identification of the nominal five-coordinate interface with the physical three-debt interface, but a separate exact five-coordinate `PositiveOrderMoments` repair is present and load-bearing. The outstanding question is whether the repository proves the required maps and staging relations among all three layers. Until answered, the claim of complete direct formal verification must be reported as not established.
 
+## 9a. Empty active-pair branch audit
+
+`ActualParticularStageControls.raw_jets` splits on `Nonempty (ActivePair B N0)`. Its negative branch does not obtain a contradiction from an arbitrary proposition. Instead, it proves `False` only after receiving `hz : z ∈ controlPatch l n k`; the first component of `hz` is an `Active l n` witness and therefore constructs the forbidden active pair. The control patch is consequently empty in that branch, and the estimates are vacuous over that empty support.
+
+The positive branch uses `exists_surjective_nat (ActivePair B N0)` and an explicit reindexing. This audit removes a tempting but invalid claim that the source uses `False.elim` to prove arbitrary estimates on a nonempty physical patch. It does not yet prove that the selected active subtype is inhabited, so the endpoint-level reachability of the empty branch remains a live but narrower question.
+
 ## 9. Exact shape of the physical five-row predicate
 
 The source-level declaration `FiveRowRank.FiveRows` must be read literally. It takes `Debt := Fin 3 → ℝ`, not a five-coordinate debt. Its conjunction is structured as two fixed zero-moment equations followed by three equations whose right-hand sides are `-(d 0)`, `-(d 1)`, and `-(d 2)`. `FiveRowsStructureProbe.lean` compiles these projections without assumptions beyond the declaration itself.
