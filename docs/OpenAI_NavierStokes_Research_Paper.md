@@ -1,128 +1,97 @@
-# What the OpenAI Navier–Stokes Formalisation Establishes
+# Against the Claim of a Verified Navier–Stokes Blow-Up Proof
 
 ## Abstract
 
-This paper examines the public Lean 4 formalisation released with OpenAI’s claimed finite-time Navier–Stokes breakdown construction. The central question is not whether the repository compiles. It is whether the propositions accepted by Lean, together with their definitions and interfaces, establish the mathematical claim made about the Clay Mathematics Institute problem.
+OpenAI's Navier–Stokes release presents a Lean 4 theorem intended to realise alternatives (C) and (D) of the Clay Mathematics Institute formulation. The repository does contain a substantial whole-space formal statement: it quantifies over smooth velocity, pressure, and force fields on R³, includes compact support and finite-energy conditions, and concludes finite-time unbounded speed. The theorem is not a periodic toy, and its exported proof currently reports only Lean's standard foundational axioms.
 
-The audit finds a substantial formal development whose theorem shape is directed at forced alternatives C and D of the written Fefferman formulation. Existing independent Lean 4.34.0-rc2 reports support the theorem-level formal claim for those forced exports under standard kernel axioms. The construction defines the external force from the momentum residual of a selected collapsing field and keeps that force active through the approach to the singular time. This is materially different from an autonomous, unforced blow-up argument, although residual-defined forcing is not automatically disallowed by alternatives C and D. The source also contains a genuine asymptotic-specification hazard: `JetRate` has no non-vacuity condition and is true on the bottom filter. The selected endpoint filter is nontrivial, but the derived filter used by the residual path remains to be audited.
+That result does not settle whether the Lean development formalises the analytic construction described in the accompanying paper. This paper develops an adverse but evidence-led finding. The repository contains both a `FiveProfileMoments` system whose normalised exponent vectors match the paper's Appendix A and a distinct `FiveRowRank` system whose vectors differ. The selected construction uses both families of modules. A zero-sorry Lean probe proves that the two source-level power-vector declarations are not definitionally equal. The unresolved load-bearing question is whether a proved bridge identifies their debts, rows, coefficients, and parameter normalisation along the selected witness path.
 
-The five-row moment-repair and pressure infrastructures are present; no row-drop or missing-pressure conclusion has been established. Conversely, the current review has not completed the analytic bridge from those modules to every required global condition. The responsible conclusion is therefore **claim not established**, not **formalisation refuted**.
+The immediate conclusion is therefore precise. The claim that the repository mechanically verifies the paper's Appendix A construction is not established, and the stronger claim of direct formal correspondence is contradicted by the checked coordinate declarations unless an additional change-of-variables theorem is supplied. This is a formal correspondence failure, not yet a contradiction of the final existential proposition itself. The paper also distinguishes genuine objections from arguments that do not work: an a posteriori force is allowed by alternatives (C) and (D), and a local `Filter.bot` hazard is not a global refutation unless it reaches the selected witness.
 
-## 1. Research question
+## 1. What must be shown
 
-OpenAI’s release is presented as a formal proof of finite-time breakdown for the three-dimensional Navier–Stokes equations. A peer review must answer two different questions:
+The relevant question is not whether Lean compiles. Compilation establishes that the kernel accepts a term of the declared type. The research question is whether the declared type and every load-bearing interface mean what the official paper says they mean.
 
-1. What theorem does the Lean source actually prove?
-2. Does that theorem satisfy the written CMI criteria and the mathematical meaning attributed to it?
+For a counter-paper, a valid adverse result must take one of three forms:
 
-These questions cannot be answered by compilation alone. Lean checks a proof term against a type. It does not decide whether a definition faithfully captures a PDE concept, whether a supplied interface premise has been established from the construction, or whether a force selected from a solution is physically independent of that solution.
+1. a zero-sorry Lean theorem proving that a required correspondence is impossible;
+2. a reachable premise that is false, admitted, or weaker than the published construction requires; or
+3. a direct contradiction between a formal definition used by the selected witness and a required mathematical identity in the paper.
 
-## 2. Scope and source
+A physical objection alone is not enough. Non-Newtonian regularisation, hypo-dissipation, or a preference for an autonomous force may be relevant scientific criticism, but they are not internal failures of an alternative (C) or (D) proof unless those requirements are part of the stated theorem.
 
-The audited upstream snapshot is commit `f9e8bc5b38b6e212696e8a30e3e91517af887bbd`. The independent review is maintained on branch `review/cmi-first-navier-stokes-2026-09-22` in the companion repository. The source is reviewed directly rather than through extracted PDF text or early filenames from secondary notes.
+## 2. The official claim and the Lean endpoint
 
-The main source areas are:
+The accompanying paper states a smooth compactly supported force, a smooth divergence-free velocity and pressure on R³ before time one, zero initial velocity, uniformly bounded kinetic energy, and unbounded velocity as time approaches one. It then argues that no global smooth finite-energy solution with the same force can exist. The force is constructed as a residual of the chosen flow and is intended to extend smoothly through the singular time.
 
-- `ComparatorDefinitions.lean` and `ComparatorSolution.lean` for the formal target;
-- `NavierStokes/R3/Theorem.lean` and `NavierStokes/R3/ComparatorBridge.lean` for the whole-space route;
-- `ActualCandidateAssembly.lean`, `GermCandidateAssembly.lean`, and `ActualCycleResidualBounds.lean` for candidate construction;
-- `CandidateFromLimits.lean` for the force and endpoint construction;
-- `DiagonalResidual.lean`, `FiveProfileMoments.lean`, `LocalizedMomentRepair.lean`, `FiveRowRank.lean`, and the pressure hierarchy for the load-bearing interfaces.
+The Lean R³ modules mirror this outer shape. `NavierStokes/R3/ProblemStatement.lean` defines `CandidateProperties`, including smoothness, compact positive-time support for the force, zero initial velocity, incompressibility, the Navier–Stokes equation on the pre-singular interval, finite energy, and `SpeedUnboundedAtOne`. `NavierStokes/R3/Theorem.lean` exports `theorem_1_1` and the initial-rest variant. This inspection rules out two earlier overstatements: the source is not merely periodic, and continuous forcing is not automatically disallowed by the C/D wording.
 
-## 3. The CMI alternatives and the formal target
+The endpoint still depends on the integrity of the construction below that interface. A well-typed existential theorem can be valid as a proposition while failing to be the formalisation claimed in prose if an intermediate coordinate system, analytic bridge, or physical identity is missing.
 
-The unforced alternatives A and B concern global regularity for `f = 0`, respectively on Euclidean space and the periodic domain. The forced alternatives C and D permit a smooth external force subject to the stated decay and domain conditions. A theorem about a forced construction must therefore be classified as C or D unless the source separately proves that the force is identically zero.
+## 3. Two five-row systems and the missing bridge
 
-The inspected comparator definitions encode smoothness, the Navier–Stokes equations, incompressibility, initial data, integrability, and energy conditions. The whole-space theorem quantifies over positive viscosity and is translated into a forced comparator statement. The periodic route is represented separately and cannot be inferred from the whole-space route.
+Appendix A of the official paper describes five cumulative radial moments `(M, I, J, S, C_p)`. At the intermediate parameterisation, it records the normalised blocks
 
-This establishes the correct formal target: the release is not an A/B proof merely because the velocity becomes unbounded. The relevant question is whether its C/D theorem is complete and correctly connected to the construction.
-
-## 4. The force is an a posteriori residual
-
-In `CandidateFromLimits.lean`, the force is obtained through a smooth extension of the traced momentum residual:
-
-\[
- f = \operatorname{smoothExtension}\bigl(\operatorname{tracedResidual}(u,p,L)\bigr).
-\]
-
-On the active interval `0 ≤ t < 1`, the source identifies the force with the activated residual of the selected fields. The source proves that the force is zero for `t ≤ 0` and `t ≥ 2`; it does not prove that the force is switched off on an interval before the singular time `t = 1`.
-
-This has two consequences. First, the construction is a tracking-force construction: the forcing is selected after the candidate velocity and pressure have been specified so that the residual is supplied as the external term. It does not prove autonomous singularity formation. Second, the fact that the force is engineered is not, by itself, a formal violation of C or D, because those written alternatives allow an external force. The decisive internal test is whether the resulting force satisfies every smoothness, support, and derivative-decay condition in the comparator predicate.
-
-The formal predicates inspected in `ComparatorDefinitions.lean` do not include a causal-independence condition requiring `f` to be chosen independently of `u`. That omission limits the physical interpretation of the result, even if the literal forced alternative is eventually verified.
-
-## 5. From finite-stage data to the candidate
-
-The generic assembly uses a `StageEstimates` interface containing finite background and residual rate bounds. It would be an overclaim to say that the final result simply assumes the desired conclusion: the selected path constructs `actualStageEstimates` from `ActualCycleResidualBounds.PhysicalData`. The residual rate is then derived from the invariant, native residual bound, and local/exterior field germs.
-
-This does not remove the audit obligation. It relocates it. The review must verify that the invariant-to-rate derivation supplies all derivative orders, domains, and asymptotic exponents required by the candidate assembly. A structure field named “physical data” is not itself a proof that the intended PDE estimates hold globally.
-
-The relevant distinction is between a conditional construction theorem and a completed application of that theorem. The source contains evidence for the latter’s dependency chain, but the independent audit has not yet discharged every analytic interface.
-
-## 6. The filter non-vacuity problem
-
-The asymptotic predicate `JetRate` is defined in `DiagonalResidual.lean` by an eventual derivative bound:
-
-```lean
-∃ C, 0 ≤ C ∧ ∀ᶠ x in l,
-  ‖iteratedFDeriv ℝ m f x‖ ≤ C * q x ^ r
+```text
+U block: (0, -λ)
+E block: (1/2, -1/2 - λ, -3/2 - λ).
 ```
 
-There is no `NeBot l` hypothesis. In Lean’s filter semantics, `Filter.bot` represents an empty eventuality context. Every eventual proposition holds on that filter. A zero-sorry probe in the review repository proves that arbitrary `JetRate` claims can therefore be constructed when `l = Filter.bot`.
+The repository has a paper-shaped declaration in `NavierStokes/FiveProfileMoments.lean`:
 
-This result is mathematically specific and should not be overstated. It proves a local specification hazard. It does not prove that the headline theorem is vacuous, because the selected endpoint filter `originPast` has separately been shown nontrivial. The remaining load-bearing object is the derived filter used by the residual path,
+```lean
+axialPowers b   := ![0, b + 1 / 2]
+angularPowers b := ![1 / 2, b, b - 1]
+```
 
-\[
-  \texttt{GlobalBaseError.originPast}\;\sqcap\;\mathcal{P}(\texttt{active}^{c}).
-\]
+With `b = -1/2 - λ`, these are exactly the Appendix A blocks. That is positive evidence which the earlier version of this paper omitted.
 
-The current source does not yet provide the required direct proof that this exact filter is non-bottom, nor does it establish that the headline theorem is independent of a potentially vacuous branch. This is the strongest current formal audit target. A final negative conclusion requires either a checked bottomness result on the selected path or a proof that the main theorem consumes a vacuous rate proposition.
+The separate physical rank declaration in `NavierStokes/FiveRowRank.lean` is
 
-## 7. Moment repair and the distinction between stress and velocity
+```lean
+def angularPowers (lam : ℝ) : Fin 3 → ℝ := ![2, -2 - 2 * lam, -2 * lam]
+def axialPowers   (lam : ℝ) : Fin 2 → ℝ := ![1, 1 - 2 * lam]
+```
 
-The five-row moment infrastructure is present in the actual source path. `FiveProfileMoments.lean`, `LocalizedMomentRepair.lean`, and `FiveRowRank.lean` implement and analyse a five-dimensional repair map. The rows include two normalisation or constraint conditions, a pressure row, an angular row, and an axial row. Determinant and rank results support local invertibility.
+The rank file defines `Debt := Fin 3 → ℝ` and `FiveRows` as five integral equations: two mass-zero constraints and three residual rows involving `V`, `G`, `dv`, `ga`. It proves smooth compactly supported repair functions satisfying those rows. `MeanRankUpdate.physical_five_rows`, `prescribed_five_rows`, and `reserved_five_rows` transport this rank interface into the actual candidate pipeline. Other branches, including `ModulatedHistories` and `ReservedPatches`, consume `FiveProfileMoments` directly.
 
-The implementation should be described using its actual row definitions. In particular, the paper must not identify the entire system with a single informal phrase such as “zero angular momentum” unless an explicit equivalence is proved. Nor does invertibility alone establish that an exact nonlinear velocity field realises the target covariance while all higher-order PDE residuals vanish.
+The review probe `NavierStokesReview/src/probes/MomentCoordinateMismatchProbe.lean` proves, with no `sorry`,
 
-This is the difference between two levels of claim:
+```lean
+FiveRowRank.angularPowers lam ≠
+  FiveProfileMoments.angularPowers (-1 / 2 - lam)
+FiveRowRank.axialPowers lam ≠
+  FiveProfileMoments.axialPowers (-1 / 2 - lam)
+```
 
-- **Level A:** the target stress or moment data lie in an admissible finite-dimensional repair system;
-- **Level B:** the repaired data are realised by a global smooth velocity and pressure satisfying the exact nonlinear PDE and all endpoint estimates.
+The proof is elementary: evaluation at the first finite index reduces the first equality to `2 = (1/2 : ℝ)` for the angular vector and `1 = 0` for the axial vector. Lean checks this contradiction directly.
 
-The Lean modules provide evidence for a Level A mechanism and interfaces toward Level B. The independent review must not silently treat the former as the latter.
+This does not show that a rescaling could never relate the two systems. It shows that no such relation is definitional. To claim that the combined pipeline verifies one coherent Appendix A system, the project must expose and prove the missing bridge, including the mapping of all five rows, the debt coordinates, the bump coefficients, and the parameter normalisation. The existence of `FiveProfileMoments` prevents the stronger claim that the paper-shaped system is absent. The adverse result is instead that the source contains two non-identical moment interfaces and the selected witness path has not yet been shown to preserve their meaning when it moves between modules.
 
-## 8. Pressure and source-tree corrections
+## 4. Why other proposed objections are insufficient by themselves
 
-Early review drafts referred to files such as `Forcing/Smoothness.lean`, `Pressure/LerayProjection.lean`, `Scaling/SingularLimits.lean`, and `EnergyDefect.lean`. Those paths are not present in the audited commit. Their absence is not a proof of missing functionality. The actual source contains pressure recovery, pressure flux, Riesz, whole-space uniqueness, and comparison-closure modules.
+The force is deliberately defined from the residual and remains active up to the singular time. That is a legitimate criticism of physical interpretation, but alternatives (C) and (D) explicitly allow a smooth external force. It therefore does not refute the stated C/D proposition.
 
-The correct question is whether those actual modules have the hypotheses required for the claimed conclusion: whole-space domains, pressure normalisation, energy bounds, comparison fields, and all relevant regularity assumptions. A filename discrepancy is a documentation error and has been recorded as such in the audit tracker.
+The repository contains a `JetRate` abstraction without an explicit `NeBot` parameter. The review probe `JetRateVacuityProbe.lean` proves that a generic limit predicate over `Filter.bot` can be discharged vacuously. This identifies a real proof-engineering hazard. The selected path, however, uses the concrete `GlobalBaseError.originPast` filter and non-vacuous local neighbourhood lemmas. A fatal result requires tracing a bot filter into a mandatory premise of `selected_witness` or `theorem_1_1`; that reachability has not yet been proved.
 
-## 9. Axiom and build status
+Similarly, omitted Ladyzhenskaya stress laws and fractional dissipation are not contradictions to a Newtonian C/D theorem. They matter to claims of physical robustness, not to literal compliance with the stated Newtonian problem.
 
-The ordinary Lean foundations reported for the project are `propext`, `Classical.choice`, and `Quot.sound`. Existing independent reports for the headline exports contain only these standard axioms. These are standard foundations, not evidence that the Navier–Stokes mathematics is correct. The public source also contains four intentional `sorry` occurrences in Comparator challenge files. Their lexical presence does not show that they are imported into the headline theorem; import reachability must be checked.
+## 5. Axioms and kernel evidence
 
-The repository pins Lean 4.34.0-rc2, while the shared package directory requested for auxiliary work is based on 4.32. The review archive contains independent 4.34.0-rc2 axiom reports for the headline exports, while a clean rebuild and recapture from the current environment remains an explicit reproducibility task. The reports support formal trust of the exported declarations; they do not establish the analytic truth of every imported premise.
+`#print axioms` on `theorem_1_1`, `theorem_1_1_with_initial_rest`, and `ProblemStatement.breakdownStatement` reports only `propext`, `Classical.choice`, and `Quot.sound`. This rules out the claim that the headline R³ endpoint visibly depends on a custom axiom. It does not prove that every analytic assertion in the source corresponds to the paper's intended mathematics. Foundational consistency and semantic correspondence are separate obligations.
 
-## 10. Discussion
+## 6. Conclusion
 
-Several proposed objections are valuable but have different logical status. Ladyzhenskaya non-Newtonian stress, hypo-dissipative exponents, and physical stability tests examine robustness under altered equations. They are not counterexamples to a theorem whose statement contains only the Newtonian Laplacian. They may nevertheless show that the construction should not be described as a physically universal mechanism.
+The honest adverse conclusion is not “Lean cannot prove this” and not “the force is illegal”. The checked evidence supports a narrower and stronger statement:
 
-Similarly, the absence of a causal-independence predicate does not falsify a literal forced C/D proposition. It does show that the proposition is weaker than a claim of spontaneous blow-up and that the force must be described as an engineered external input rather than an emergent physical driver.
+> The repository has a formally accepted C/D-shaped R³ endpoint, and it contains a paper-shaped `FiveProfileMoments` module. However, the claim that the complete selected witness formally verifies one coherent Appendix A construction is not established. The source also contains a distinct load-bearing `FiveRowRank` coordinate system, and the required bridge between the two systems has not yet been found.
 
-The filter issue is different: it concerns the truth conditions of a Lean predicate itself. That is why it is a formal audit target. Yet even here, the correct conclusion depends on the selected filter’s reachability and non-vacuity. A local vacuity theorem is not automatically a global refutation.
+That is already a valid counter-result against the stronger public claim of direct formal verification. The next decisive task is to either locate the missing bridge or prove that the selected witness depends on the mismatched coordinates without any valid conversion. Only the latter would justify escalating from “formal correspondence failure” to “the final theorem is false or unproved”.
 
-## 11. Conclusion
+## Reproducibility record
 
-The OpenAI release contains a serious Lean development aimed at a forced Navier–Stokes breakdown theorem. The inspected source does not establish an unforced A/B result. Its force is defined a posteriori from the momentum residual and remains active through the approach to the singular time. The five-row moment and pressure infrastructures are present, and no confirmed row-drop or missing-pressure defect has been found.
-
-The outstanding proof-relevant issues are the exact force-class bridge, the invariant-to-rate construction, the non-vacuity of the selected derived filter, the reachability of admitted challenge declarations, and the complete analytic closure of the pressure and uniqueness interfaces. Until those obligations are resolved, the appropriate scientific statement is:
-
-> **At theorem level, the forced C/D-shaped exports are formally supported. The claim of a verified Clay solution is not established by the present independent audit, and no formal contradiction of the headline Lean theorem has yet been demonstrated.**
-
-This conclusion is deliberately narrower than a rejection of the entire formalisation and stronger than a compilation report. It identifies precisely what is established, what is not, and what would be required for the verdict to change.
-
-## References
-
-1. OpenAI source snapshot, `f9e8bc5b38b6e212696e8a30e3e91517af887bbd`.
-2. Clay Mathematics Institute, *Existence and Smoothness of the Navier–Stokes Equation*, official problem statement: <https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf>.
-3. Review repository documents: `OpenAI_NavierStokes_Audit_Tracker.md`, `OpenAI_NavierStokes_Axiom_Ledger.md`, and `OpenAI_NavierStokes_Peer_Review_v1.md`.
+- Source snapshot under review: OpenAI Navier–Stokes repository, commit `f9e8bc5` as recorded in the review materials.
+- Review branch: `review/cmi-first-navier-stokes-2026-09-22`.
+- Kernel environment: Lean 4.32 via `C:\Users\Admin\.elan\bin\lake.exe`.
+- New zero-sorry probes: `NavierStokesReview/src/probes/MomentCoordinateMismatchProbe.lean` and the corrected `MainAxiomProbe.lean`.
+- No source file in the OpenAI construction was edited.

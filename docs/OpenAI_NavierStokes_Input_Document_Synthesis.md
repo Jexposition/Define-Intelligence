@@ -1,55 +1,41 @@
-# Input-document synthesis for the Navier–Stokes peer review
+# Input Document Synthesis for the Navier–Stokes Counter-Paper
 
-Status: incorporated into the audit corpus on 2026-09-22. The exact paths,
-sizes, line counts, and SHA-256 hashes are recorded in
-`NavierStokesReview/evidence/input_documents_manifest.json`. The source files
-remain outside the fork; the review branch records their provenance rather
-than duplicating the PDF and ZIP.
+## Purpose
 
-## Reading rule
+The supplied reports and notes are treated as proposed adverse hypotheses. They are not treated as evidence merely because they are detailed. Each proposition is compared with the official paper and then tested against the actual Lean source tree.
 
-The supplied documents are hypotheses and audit proposals, not authorities.
-Each claim is tested against the current fork at commit
-`9b9a7092a42c5f376bb7e4bfed84200c528360d5`, the official Clay statement, and
-the exported Lean declarations. A proposal is retained when it identifies a
-checkable dependency; it is not promoted to a finding merely because it is
-phrased as a verdict.
+## Official paper claim
 
-## Disposition of every supplied input
+The local official PDF, `navier-stokes.pdf`, states a whole-space construction with a smooth compactly supported force, smooth velocity and pressure before time one, zero initial velocity, bounded kinetic energy, and unbounded velocity approaching time one. It then claims that a same-force global finite-energy solution cannot exist. Section 2 explicitly describes the force as the momentum residual of a chosen flow, and Appendix A presents a five-moment repair mechanism.
 
-| Input | Main contribution | Disposition in this review |
-|---|---|---|
-| `Technical Audit Report_ Evaluating the Validity and Mathematical Utility of the OpenAI Astra Proof Certificates.md` | Calls for transitive axiom extraction, isolation of challenge `sorry`s, semantic CMI checks, guarded scaling/zero-division review, and independent kernel verification. It also argues that forced C/D is physically less central than A/B and raises a hypo-dissipative concern. | The audit protocol and the axiom/placeholder tests are adopted. The forced-versus-unforced point is recorded as scope, not a CMI defect, because the official CMI statement explicitly includes alternatives C and D. The hypo-dissipative point is not a refutation of a classical Newtonian result: changing the dissipation exponent changes the PDE. |
-| `01-Comprehensive Audit ... Mathe.md` | Extends the same “proof inflation” and hidden-axiom concerns to the wider Astra release, and proposes checking the Navier–Stokes scaling and singular-limit files. | The wider-ten-proofs allegations are out of scope for this repository-specific review unless a dependency enters the exported Navier–Stokes theorem. Its proposed Navier–Stokes checks are retained as audit items. |
-| `02-Navier-Stokes Research Paper Refinement.md.md` | Supplies a paper-oriented reconstruction of the candidate, residual/force, scaling, and regularity narrative. | Used as an interpretive cross-check against the Lean definitions. Claims are treated as hypotheses until tied to exact definitions or proved declarations. |
-| `03-Note on the Logical Inconsistencies in the Formalised Navier-Stokes Blowup Construction (2).md.md` | Focuses on possible gaps between a finite-time local candidate and the global CMI solution class, including endpoint smoothness, pressure, energy, and the force construction. | Converted into the load-bearing audit lanes: candidate-to-global uniqueness, pressure-flux comparison, force decay/support, and the exact energy predicate. |
-| `04-navier-stokes.pdf.md` | Text extraction of the supplied paper, including construction stages, scaling parameters, residuals, support, and regularity claims. | Used only as a searchable research aid. The raw `navier-stokes.pdf` and Lean source control the mathematical audit because extraction can alter notation or polarity. |
-| `Navier-Stokes Research Paper Refinement.md` | Earlier paper refinement and exposition of the proposed mechanism. | Cross-referenced; not treated as proof evidence. |
-| `Note on the Logical Inconsistencies in the Formalised Navier-Stokes Blowup Construction*.md` | Earlier critique variants concerning logical bridges and formalised blow-up. | Consolidated with the backup critique; duplicate or superseded wording is retained in the manifest but does not create separate findings. |
-| `navier-stokes.pdf` | Primary supplied manuscript. | Preserved by path and hash; raw source and CMI statement take precedence over PDF text extraction for formal claims. |
-| `NavierStokesAndEuler-main.zip` | User’s downloaded repository snapshot. | Used for provenance and version-drift comparison only; it is not the authoritative current source after the fork sync. |
+This matters because two common objections are too broad. First, residual forcing is not automatically forbidden by alternatives (C) and (D). Second, the repository's R³ endpoint is not merely a periodic declaration. The counter-paper must therefore attack the construction's interfaces.
 
-## Immediate review consequences
+## Adverse hypotheses and adjudication
 
-1. “It compiles” is not the question. The critical question is whether the
-   exported theorem has the CMI quantifiers and whether its nonexistence proof
-   is supported by proved analytic bridges rather than hidden assumptions.
-2. Smooth forcing is not automatically disqualifying. It must be checked
-   against the exact CMI derivative-decay predicates, and the CMI alternative
-   being claimed must be identified.
-3. An a-posteriori force is mathematically relevant to interpretation, but it
-   is not by itself a statement mismatch for C/D. The audit must test whether
-   that force is smooth, positive-time supported, and mapped to the official
-   force class.
-4. The wider Astra claims and any altered-dissipation claims are not silently
-   imported into the Navier–Stokes verdict. They become relevant only if the
-   current repository’s exported theorem depends on them.
-5. The backup material correctly identifies the need for `#print axioms`, but
-   a repository-wide `sorry` count is insufficient. Challenge placeholders
-   must be separated from the exported theorem dependency graph.
+| Input hypothesis | Source test | Present assessment |
+| --- | --- | --- |
+| The force remains active until blow-up. | Read the paper's residual construction and R³ force support definitions. | Supported. It is a physical autonomy criticism, not alone a C/D contradiction. |
+| A force defined from the residual may absorb errors. | Inspect force definition and residual-smoothing obligations. | Valid concern. Requires checking that the residual is genuinely smooth and decaying, not assuming that residual definition proves it. |
+| The five-equation system repairs `(M,I,J,S,C_p)`. | Compare Appendix A with `FiveProfileMoments`, `FiveRowRank`, and `MeanRankUpdate`. | `FiveProfileMoments` matches the paper's normalised vectors, but the physical pipeline also uses a distinct `FiveRowRank` system. The zero-sorry probe establishes a mixed-interface bridge requirement. |
+| `JetRate` may be vacuous over `Filter.bot`. | Compile `JetRateVacuityProbe.lean`; trace selected witness filters. | Generic hazard confirmed. Global failure remains unproved because concrete origin-past filters have non-vacuity witnesses. |
+| Pressure, Leray projection, and whole-space bounds are absent. | Search actual source paths and inspect `WholeSpaceUniqueness`, pressure recovery, and breakdown modules. | Earlier filename-based criticism is unreliable. Actual modules exist; their analytic interfaces still require correspondence audit. |
+| Division by zero invalidates the singular limit. | Search actual source for the claimed file and guarded denominators. | No division-by-zero failure has been established in the current snapshot. Do not repeat the old claim. |
+| Ladyzhenskaya stress or fractional dissipation defeats the construction. | Compare those equations with the official Newtonian statement. | A robustness objection, not an internal contradiction of the stated C/D theorem. |
+| Level A stress covariance is not Level B exact PDE realisation. | Trace both moment systems into the selected candidate and force residual. | Correct audit distinction. The missing bridge between the paper-shaped and physical rank interfaces is a concrete Level A to Level B correspondence target. |
 
-## Current status
+## Source-to-paper map
 
-The document corpus is inventoried and incorporated. The remaining decisive
-lanes are the exact transitive axiom output, independent quantifier probes,
-and source-level inspection of the pressure/energy/force bridges.
+| Paper object | Lean location | Review question |
+| --- | --- | --- |
+| C/D endpoint | `NavierStokes/R3/ProblemStatement.lean`, `R3/Theorem.lean` | Does the endpoint state the intended whole-space proposition? |
+| Five cumulative moments | Official PDF Appendix A; `NavierStokes/FiveRowRank.lean` | Are the rows and coordinates identical or related by a proved map? |
+| Mean-patch repair | `NavierStokes/MeanRankUpdate.lean` | Are the physical rows the paper's rows? |
+| Selected witness | `NavierStokes/ActualCandidateAssembly.lean` | Does the selected witness consume the same repaired fields? |
+| Pressure and comparison | `NavierStokes/R3/WholeSpaceUniqueness.lean`, pressure modules | Are the comparison premises derived from the candidate? |
+| Rate and germ limits | `NavierStokes/ActualCycleResidualBounds.lean`, `JetRate` uses | Are all filters non-vacuous on the selected path? |
+
+## Synthesis
+
+The notes correctly insist that compilation is not semantic validation and that Level A stress matching is not Level B exact PDE realisation. They overreach when they treat force activity, missing physical regularisations, or a generic `Filter.bot` possibility as immediate refutations of alternatives (C) and (D). The paper's strongest current counterclaim is narrower: the repository contains a paper-shaped moment module and a separate physical rank module, but the selected mixed pipeline is not yet shown to preserve their common mathematical meaning. Their exponent vectors are formally unequal, so a bridge theorem is required.
+
+That finding is now carried consistently into the plan, ledger, tracker, peer review, and research paper.
