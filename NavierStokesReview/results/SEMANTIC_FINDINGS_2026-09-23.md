@@ -233,3 +233,25 @@ its complement. The active branch uses a local residual bound; the complement
 branch uses the derived-filter estimate. Thus the generic API hazard must be
 audited against those branches, but it does not by itself refute the
 top-level C/D-shaped proposition.
+
+## F-016 — Force causality objection is not a formal C/D contradiction
+
+The source defines the force from the candidate residual and does not include a
+predicate expressing causal independence of `f` from `u`. That is a legitimate
+physical and methodological criticism of an a-posteriori tracking force, but it
+is not by itself a refutation of the written C/D existential statement. The
+Clay statement quantifies over a smooth force satisfying decay bounds; it does
+not add a formal causal-independence condition. The correct conclusion is that
+the repository does not establish A/B or autonomous unforced blow-up, not that
+residual-defined forcing automatically fails C/D.
+
+## F-017 — Kernel-probe reproducibility is currently environment-blocked
+
+The review worktree pins `leanprover/lean4:v4.34.0-rc2`, while the requested
+external package cache is `packages-4.32`. Existing cached objects first gave
+an incompatible-header error under Lean 4.32. Rebuilding under the repository
+pin then failed because the local 4.34/toolchain and Mathlib cache lack several
+`.olean`/`.olean.private` files. This is a reproducibility/audit-environment
+finding, not a mathematical disproof and not evidence that the source theorem
+is false. A clean pinned build is required before treating a fresh `#print
+axioms` report as current.

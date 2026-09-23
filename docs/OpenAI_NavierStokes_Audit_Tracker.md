@@ -67,6 +67,30 @@ Statuses: `CONFIRMED`, `PENDING`, `OPEN`, `NOT_TESTED_THOROUGHLY`. No negative s
 
 For every new item, record: snapshot/commit, exact file and line, proposition, command, output, affected CMI criterion, and whether the item is a proof failure, a statement mismatch, an environment issue, or merely a review question.
 
+## AUD-082 — A-posteriori force and C/D causality
+
+- Question: Does the residual-defined force formally violate C/D because it is
+  not declared independent of the velocity?
+- Evidence: `NavierStokes/R3/ProblemStatement.lean` requires a smooth compact
+  positive-time force and the PDE residual equation; no independence predicate
+  occurs. Clay's written C/D alternatives require a smooth decaying force, but
+  do not state a formal causal-independence condition.
+- Finding: this is a physical/methodological criticism and defeats claims of
+  autonomous unforced blow-up, but it is not an internal contradiction of the
+  literal C/D existential target.
+- Status: resolved as an overclaim correction; retain as a semantic limitation.
+
+## AUD-083 — Fresh kernel-probe environment
+
+- Question: Can current kernel-axiom probes be treated as fresh evidence?
+- Evidence: repository `lean-toolchain` is `leanprover/lean4:v4.34.0-rc2`,
+  whereas the requested external cache is 4.32. Lean 4.32 reports incompatible
+  cached headers; a rebuild with the repository pin reports missing
+  `.olean`/`.olean.private` files in the local toolchain/package cache.
+- Finding: current environment does not support a fresh transitive axiom report.
+  This is an audit reproducibility issue, not a proof failure.
+- Status: open environment item; do not use as mathematical evidence.
+
 ## Source audit update: 2026-09-22
 
 The apparent periodic-versus-compact contradiction was resolved as an intentional two-layer construction. The top-level periodic candidate is localised by `R3CompactCandidate` and then adapted by `R3/ActualCandidate` into the compact whole-space candidate. The conversion uses explicit local equalities, compact support, and a force localisation operation; it is not a type mismatch.

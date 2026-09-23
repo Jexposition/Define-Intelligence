@@ -278,3 +278,21 @@ verified mathematical CMI proof**, while no `[REFUTED]` finding has yet been
 proved. The next decisive work is theorem-by-theorem provenance for endpoint
 limits, derived-filter non-vacuity, pressure flux, and the global comparison
 interface.
+
+## 16. Causality and audit-environment correction: 2026-09-23
+
+The a-posteriori residual definition of the force is a serious physical
+interpretation issue, but it is not a formal contradiction of Alternatives C
+or D as written. The Clay statement requires a smooth force with decay bounds;
+it does not encode a causal-independence predicate between force and velocity.
+Accordingly, this review rejects any claim that the construction proves an
+autonomous or unforced singularity, while retaining C/D as the literal target
+if the construction and its analytic interfaces are valid.
+
+The current workspace also cannot produce a fresh kernel axiom report. The
+repository pins Lean 4.34.0-rc2, whereas the requested external cache is
+4.32; cached headers are incompatible under 4.32, and a rebuild under the
+repository pin encounters missing private toolchain and Mathlib object files.
+This is recorded as an environment reproducibility issue, not as a proof
+failure. The next report must identify the exact clean toolchain and package
+snapshot used for every independent axiom transcript.
