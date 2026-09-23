@@ -44,4 +44,6 @@ selected-path theorem that identifies the paper's boundary variables with the
 `FiveRowRank` debt and carries that identification through the residual bounds.
 The source does establish a three-component potential and a curl-generated,
 divergence-free endpoint, so this note does not prove a disconnected or
-tautological fluid.
+tautological fluid. The pressure comparison probe adds a separate limitation:
+comparison identities do not, by themselves, establish an absolute global
+pressure-Poisson representative for the selected pressure.

@@ -1,48 +1,5 @@
 # A Counter-Paper on OpenAI's Navier–Stokes Blow-Up Claim
 
-## 17. Base profile and core-asymptotics finding
-
-The core profile is axisymmetric in reduced variables `(t, s, z)`, but its potential is embedded in three Cartesian directions and converted to velocity by spatial curl. The source therefore supports a three-component axisymmetric field, not a globally one-dimensional or globally zero-swirl field. The radial-anchor zero is a local normalisation.
-
-Five-moment repair algebra exists upstream. The unresolved issue is transport into the selected endpoint: the generic finite-stage summation theorem does not itself identify the final fields with `(M, I, J, S, C_p)`. Base smoothness follows from coefficient regularity, while force smoothness depends on residual-jet limits and away extensions. The `WholeDomain*` family is disconnected from `selected_witness` but not globally unused. No zero-sorry contradiction has yet been established.
-
-## 18. The composition gap between the local construction and the exported endpoint
-
-The source separates the local paper construction from the exported R³
-candidate. `LocalResidualFlatness` selects a schedule for the raw-stage aliases,
-and `LocalPaperTheorem` proves the local properties for that schedule.
-`ActualCandidateAssembly.selected_witness` exposes an existential assembly
-containing a schedule, away extensions, a force, generic candidate properties,
-and asymptotic consequences. `PaperLocalization` connects these layers by
-proving local velocity and pressure agreement at late times, but its result does
-not state force equality or carry the paper's five named moments `(M, I, J, S,
-C_p)` into the final R³ comparator.
-
-That omission is not a Lean compilation error. It is a missing semantic
-transport theorem at the point where a local construction becomes the claimed
-whole-space solution. The earlier stronger statement that the five-moment
-module is dead code is withdrawn: the local layer consumes the selected
-aliases, and a genuine five-component repair theorem exists upstream.
-
-## 19. Pressure support and the whole-space comparison closure
-
-The R³ specification gives compact support to each pre-singular pressure
-slice, which makes pressure localisation a legitimate attack surface. The
-source does not, however, use compact support as a shortcut that sets pressure
-or velocity to zero. `PressureRecovery` derives the pressure-gradient identity
-in compact-test form from the two residual equations and divergence-free
-fields. `ActualPressureFlux` converts that identity to the cutoff flux pairing,
-and `PressureFlux` constructs the uniform bound used by
-`WholeSpaceUniqueness`. The scalar rate constant is likewise constructed in
-`WholeSpaceComparisonClosure` through `ComparisonRateBound`.
-
-The corresponding zero-sorry probe finds only standard Lean foundations for
-these intermediate theorems. The compact-pressure trivialisation attack is
-therefore rejected as a standalone counterexample. It does not cure the
-decisive paper-to-code defect: no inspected selected-path theorem transports
-the paper's `(M, I, J, S, C_p)` tuple and the same force into
-`selected_candidate`. The claimed correspondence remains unestablished.
-
 ## Abstract
 
 This paper reports an independent formal review of the public Lean development associated with OpenAI's claim of finite-time breakdown for the three-dimensional incompressible Navier–Stokes equations. The review asks a narrower question than whether the repository compiles: does the exported formal theorem establish the mathematical construction described in the accompanying paper, and does that construction meet the exact alternatives in Charles Fefferman's Clay Mathematics Institute problem statement?
@@ -246,10 +203,14 @@ identities all compile. This changes the precise research question. The issue
 is not whether pressure analysis exists: `WholeSpaceUniqueness.classical_uniqueness_on_Icc`
 constructs the pressure-recovery hypotheses and obtains the actual pressure-
 flux bound, while `candidate_unique_on_Icc` supplies the selected candidate.
-The remaining question is whether the analytic estimates have the claimed
-whole-space meaning. Their compilation is evidence of a formal derivation,
-not by itself a mathematical validation. This lane is therefore an analytic
-inspection target, not a current formal disproof.
+But that chain is a comparison result for pressure differences. The zero-sorry
+`PressureRecoveryAbsolutePremiseProbe.lean` instantiates the comparison record
+with identical zero velocities and any common smooth pressure. Thus it does not,
+by its type alone, verify an absolute global Poisson representative or
+normalisation for the selected pressure. The selected `pressure_germ`,
+`base_equation`, and residual-limit premises still require a paper-linked global
+pressure bridge. This lane remains an analytic inspection target and a live
+correspondence objection, not a current formal disproof.
 
 ## 14. Energy balance and temporal gluing
 
@@ -292,9 +253,9 @@ Independently, the repository contains a five-coordinate positive-order
 moment repair with exact integral identities. A zero-sorry Lean probe proves
 that the production repair is recovered from the explicit promotion
 
-\[
+$$
 (P,J_\theta,J_z)\longmapsto(0,0,-P,-J_\theta,-J_z).
-\]
+$$
 
 This means that a simple dimension-mismatch refutation would overstate the
 evidence. The unresolved issue is the semantic bridge: the source audit has
@@ -324,8 +285,20 @@ recovery/Poisson bridge if the paper relies on one. A generic non-locality
 argument cannot be upgraded to a formal disproof while the force term remains
 unrestricted by the candidate predicate.
 
+The comparison interface has a second limitation. `PressureRecovery.Hypotheses`
+contains two pressures and equal-residual assumptions, but no absolute
+pressure-Poisson representative or normalisation. The zero-sorry
+`PressureRecoveryAbsolutePremiseProbe` instantiates it with identical zero
+velocities and any common smooth pressure. Therefore pressure-difference
+recovery cannot, by its type alone, certify the global semantics of the
+selected pressure. The selected `pressure_germ`, `base_equation`, and residual
+limits remain the decisive bridge to test.
+
 Evidence for Sections 15–16 is collected in
 `NavierStokesReview/evidence/semantic_transport_pressure_audit_2026-09-23.md`.
+
+The selected residual dependency trace is recorded in
+`NavierStokesReview/evidence/selected_residual_endpoint_trace_2026-09-24.md`.
 
 ## 17. The generic stage contract has a zero-field countermodel
 

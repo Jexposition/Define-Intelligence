@@ -13,11 +13,17 @@ Likewise, `finalPotential_smooth` is derived from smooth coefficient data, and `
 
 ## 1. Executive Summary
 
-The OpenAI repository presents a mathematically valid, hyper-engineered exploit of the Clay Mathematics Institute (CMI) Alternative C. It does not solve the Navier-Stokes equations in a traditional physical sense; rather, it uses a **Residual-Feedback Exploit** to legally bypass standard physical constraints (such as the Ladyzhenskaya-Prodi-Serrin (LPS) bounds, the CKN theorem, and Axisymmetric No-Swirl invariants).
+The source establishes a residual-based forced-candidate architecture, but this
+supporting note does not certify the complete CMI claim. The force is defined
+from supplied fields and can be smooth only after the residual-jet and
+extension hypotheses are established for those same selected fields. Calling
+this a “valid exploit” would overstate what the inspected interfaces prove.
 
 The construction is a tautological engineering feat: the velocity field $u(x,t)$ is explicitly designed to blow up, and the external force $f(x,t)$ is *defined* to be exactly equal to the Navier-Stokes residual of that field. This satisfies the literal CMI requirements for a forced blow-up, even though it occupies a "contrived, nonanalytic forced branch" (as corroborated by Constantin, Ignatova, and Vicol). 
 
-However, the peer review has uncovered a critical specification and traceability gap between the human-readable paper and the Lean 4 formalization regarding moment transport.
+The peer review has uncovered a critical specification and traceability gap
+between the human-readable paper and the Lean 4 formalisation regarding
+moment transport, together with a narrower pressure-semantic gap.
 
 ## 2 Blow-Up Mechanism (Audit of `PeriodicSobolev.lean`)
 
@@ -31,12 +37,18 @@ Then, `PeriodicSobolev.lean` uses coordinate-wise Fundamental Theorem of Calculu
 
 The most precarious mathematical boundary in the residual-feedback exploit is whether the artificially defined force $f(x,t)$ remains smooth ($C^\infty$) at the exact temporal interface $t=1$. Since the velocity and its derivatives are exploding, the residual components $(\partial_t u + u \cdot \nabla u - \Delta u)$ are individually blowing up.
 
-An audit of `CandidateFromLimits.lean` and `GermCandidateAssembly.lean` confirms that the agent successfully sealed this boundary:
-* They isolated the residual limits inside the `VanishingJointJets` hypothesis.
-* This hypothesis guarantees that despite the exploding velocity, the non-linear convection terms perfectly cancel the linear terms, forcing the *overall residual and all of its infinite derivatives* to geometrically damp to exactly zero as $t \to 1$.
-* By using Taylor-Borel pasting in `SpacetimeGluing.smoothExtension`, the force is smoothly extended and is proved zero from $t \ge 2$.
+The source isolates the endpoint requirement in the `VanishingJointJets`
+hypothesis and uses `SpacetimeGluing.smoothExtension`. The generic theorem
+then derives `ContDiff ℝ ∞` and the zero branch from `t ≥ 2`. This is a
+conditional construction: it does not, by itself, prove that the selected
+fields satisfy the required residual limits or that their pressure has the
+paper's global semantics.
 
-The theorem `force_smooth` successfully extracts `ContDiff ℝ ∞` across the boundary. The proof of CMI required smoothness at $t=1$ is therefore mathematically verified.
+The zero-sorry probe
+`PressureRecoveryAbsolutePremiseProbe.lean` adds a separate limitation. The
+comparison hypotheses accept identical zero velocities and any common smooth
+pressure, so the comparison chain establishes pressure differences but does
+not encode an absolute pressure-Poisson representative.
 
 ## 4. Critical Defect: Missing Moment Transport Glue
 

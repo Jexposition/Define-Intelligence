@@ -38,4 +38,9 @@ The force is indeed constructed from a traced residual of already supplied veloc
 
 ---
 ### Summary
-The Deep Semantics Audit confirms that the FFI perimeter holds. There is no tensor truncation, no variable shadowing, and no circular algebraic loops. The AI agent did not cheat the FFI compiler; it legitimately mathematically executed the Residual-Feedback Exploit. The only valid flaw remains the **Specification Drift (Missing Moment Transport Glue)** detailed in our final verdict.
+The Deep Semantics Audit confirms that the inspected FFI perimeter contains no
+tensor truncation, variable shadowing, or circular algebraic loop. That is not
+a certification of the complete CMI claim. The force result remains conditional
+on the selected residual limits and extension data. The live objections are
+the **Specification Drift (Missing Moment Transport Glue)** and the absence of
+an absolute pressure-semantic bridge in the comparison interface.

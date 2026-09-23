@@ -35,7 +35,10 @@ radial anchor via a mathematical gauge transformation.
 I traced the dependency link for the $C^{\infty}$ smoothness predicate. 
 * **The Proof (Line 85):** `potential_smooth` invokes `AxisymmetricFields.contDiffOn_potential`, which rigorously composes the smoothness of the underlying `streamFactor` and `gaugedSwirl`. 
 * **Tautology Check:** The agent did **not** declare smoothness as an `opaque` mapping, nor did it assume it as an unproven axiom. The smoothness is legitimately built up from basic 1D and 2D smooth components in Lean's mathlib. 
-* **Verdict:** There is no tautological bypass. The base field is genuinely $C^{\infty}$ smooth by construction. The agent successfully used this mathematically proven smoothness to seed the boundary loop (`VanishingJointJets`) without triggering the compiler's FFI defenses.
+* **Verdict:** There is no tautological smoothness bypass in this module. The
+  base field is genuinely $C^{\infty}$ smooth by construction. That fact is
+  only one input to the later residual-limit construction; it does not prove
+  the selected `VanishingJointJets` premise or the force endpoint by itself.
 
 ***
 ### Diagnostic Conclusion
@@ -46,5 +49,6 @@ establish a global swirl collapse or a physical boundary-layer violation.
 
 The smoothness and curl construction are source-supported. The remaining
 CTR-005 question is whether the paper's five-moment balances are transported
-into the selected residual estimates; this note does not establish that the
+into the selected residual estimates. The pressure comparison interface also
+needs an absolute semantic bridge. This note does not establish that the
 endpoint is a physical phantom.

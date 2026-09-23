@@ -46,11 +46,15 @@ The moment-system material also requires a two-sided account. `FiveProfileMoment
 
 The pressure attack is likewise narrower than the supplied criticism claimed.
 Compact pressure slices are present, but the selected comparison path derives
-the pressure-gradient identity from the residual equations and constructs the
-pressure-flux and scalar-rate bounds internally. No source-level or zero-sorry
-probe proves that compact pressure support trivialises the velocity. That route
-is rejected as a standalone counterexample; it does not repair the missing
-selected-path identification of the paper's moments and force.
+compact-test pressure-gradient identities from equal-residual comparison
+hypotheses and constructs pressure-flux bounds internally. No source-level or
+zero-sorry probe proves that compact pressure support trivialises the velocity.
+That narrow route is rejected. Separately, `PressureRecovery.Hypotheses` has no
+absolute pressure-Poisson representative or normalisation; the zero-sorry
+comparison probe accepts identical zero velocities and any common smooth
+pressure. The selected `pressure_germ`, `base_equation`, and residual-limit
+chain must therefore be connected to the paper's global pressure semantics
+before this lane can be closed.
 
 The resulting counter-paper position is deliberately tiered:
 

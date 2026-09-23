@@ -34,12 +34,14 @@ correspondence failure under review, not yet a kernel-level contradiction.
 ## Pressure and uniqueness closure audit: 2026-09-24
 
 The compact-pressure trivialisation attack is rejected as a standalone
-counterexample. `PressureRecovery.gradient_recovery` derives the compact-test
-pressure-gradient identity from the residual equations; `ActualPressureFlux`
-transports it to the cutoff flux; `PressureFlux` constructs the uniform bound;
-and `WholeSpaceUniqueness` consumes that bound in the competitor comparison.
-The scalar rate bound is constructed internally rather than inserted as an
-unproved endpoint premise.
+counterexample, but the earlier wording “pressure chain cleared” was too broad.
+`PressureRecovery.gradient_recovery` derives a compact-test identity for the
+difference `p - q` under equal-residual comparison hypotheses;
+`ActualPressureFlux` transports that difference identity to a cutoff flux;
+`PressureFlux` constructs the uniform bound; and `WholeSpaceUniqueness`
+consumes that bound in competitor comparison. This is a real comparison chain,
+not an absolute verification of the selected pressure's global Poisson
+representative or normalisation.
 
 This does not rescue the paper's claim. The selected exported candidate still
 has no inspected theorem identifying its fields, residual, and force with the
@@ -184,6 +186,8 @@ The counter-paper therefore makes two distinct claims. First, the repository is 
 | --- | --- | --- | --- |
 | CTR-033 | `SelectedImportClosureProbe.lean`, importing `NavierStokes.R3.Theorem`, resolves both `PositiveOrderMoments.Debt` and `FiveRowRank.Debt`. | Confirmed zero-sorry probe | The selected theorem's import closure contains both moment layers. Module availability is not evidence that the paper's five named moments are identified with the endpoint's debt or consumed by its residual estimates. |
 | CTR-034 | Direct inspection of `ActualCandidateAssembly.selected_witness` shows the endpoint is assembled through the actual stage-estimate and germ-witness chain, but no named theorem was found there equating `(M,I,J,S,Cp)` with the promoted debt and carrying that equality into `CandidateProperties`. | Open load-bearing correspondence obligation | The correct criticism is missing endpoint transport, not absence of five-moment code. A contradiction has not been proved. |
+| CTR-039 | The pressure comparison chain itself verifies absolute selected-pressure semantics. | `PressureRecoveryAbsolutePremiseProbe.lean` compiles with no `sorry`: identical zero velocities and any common smooth pressure satisfy `PressureRecovery.Hypotheses`. | Comparison limitation confirmed; selected-path contradiction not yet proved | Trace `pressure_germ` and `base_equation` into an absolute global Poisson/normalisation theorem, or derive a contradiction from the actual selected residual limits. |
+| CTR-040 | The selected residual-limit route is independent of the paper's five named moments. | `selected_residual_endpoint_trace_2026-09-24.md` traces `StageEstimates.exists_schedule`, `physical_vanishingJointJets`, `GermCandidateAssembly`, and `selected_witness`; none exposes a five-moment realisation field. | Selected-path transport remains unestablished; no contradiction yet | Attempt a zero-sorry theorem connecting the named moments to `VanishingJointJets`, `haxis`, and `StateRealization.chartIdentity`, or exhibit a false selected premise. |
 | CTR-035 | The proposed initial-face smoothness counterexample is invalid. `preSingularDomain = Ico 0 1 × univ` includes `t = 0`, and `ContDiffOn` is relative to that half-domain. | Withdrawn | The review must not claim that the formal candidate is only smooth for `0 < t < 1`; the source explicitly includes relative right-smoothness at the initial face. |
 
 The active falsification lane therefore remains the semantic transport from the paper's moment names to the selected residual construction. The import probe strengthens the audit map but does not turn an unproved bridge into a contradiction.
@@ -422,7 +426,30 @@ the field to vanish” is cleared/rejected. This does **not** validate the
 authors' global pressure interpretation. The selected source still needs a
 paper-linked theorem connecting its compactly localised pressure, the local
 `StateRealization`/`chartIdentity` identities, and the claimed global pressure
-semantics. The load-bearing formal target remains CTR-038, the selected-path
-five-moment transport into the residual endpoint.
+semantics. The load-bearing formal target remains CTR-005/CTR-038, the
+selected-path five-moment transport into the residual endpoint.
 
 Evidence: `NavierStokesReview/evidence/pressure_recovery_chain_audit_2026-09-24.md`.
+
+The new zero-sorry comparison-interface probe changes the pressure conclusion's
+scope. `PressureRecoveryAbsolutePremiseProbe.lean` proves that the comparison
+record accepts identical zero velocities and any common smooth pressure. Thus
+the recovery chain can establish identities for pressure differences without
+establishing an absolute global Poisson representative for the selected
+pressure. This is a live selected-path limitation, not yet a contradiction,
+because the endpoint may supply stronger information through `pressure_germ`,
+`base_equation`, and the residual-limit construction. Those links must be
+ proved before the pressure chain can be called closed.
+
+Evidence: `NavierStokesReview/evidence/physical_transport_bridge_spec_extraction_2026-09-24.md`,
+`NavierStokesReview/src/probes/PressureRecoveryAbsolutePremiseProbe.lean`.
+
+The selected residual trace records the complementary endpoint fact:
+`StageEstimates.exists_schedule` derives `VanishingJointJets` from rate
+estimates, and `selected_witness` consumes that result, but the public chain
+does not expose the paper's five named moments as premises of that residual
+limit. This strengthens CTR-005 as a selected-path correspondence objection;
+it does not permit a formal-contradiction label without a false selected
+premise.
+
+Evidence: `NavierStokesReview/evidence/selected_residual_endpoint_trace_2026-09-24.md`.

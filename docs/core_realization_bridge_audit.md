@@ -49,5 +49,7 @@ correspondence is not established by the selected public interface. The
 five-moment machinery exists upstream, but its transport into the final
 theorem bounds is not exhibited. The review can require an explicit
 moment-realisation theorem and its transport through the residual estimates.
-It must not call the five-moment machinery dead code or claim that the
-selected fields are decoupled from 3D geometry without a further theorem.
+The pressure comparison interface has the same shape limitation: it compares
+pressure gradients under hypotheses but does not state an absolute selected
+pressure-Poisson representative. Neither gap alone is a formal contradiction
+until a selected-path premise is shown false.

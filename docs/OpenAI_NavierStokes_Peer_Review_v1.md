@@ -299,7 +299,12 @@ predicate.
 ## Technical Discrepancies
 
 ### The Semantic Firewall and the Orphaned Moment Specification
-The repository achieves a flawlessly valid Lean 4 compilation by constructing a robust semantic firewall between the physical PDE evaluation and the algebraic moment constraints. The foundational modules, including the base profile (`TailGaugePotential`) and the residual bounds (`PhysicalResidualJetBounds`), contain mathematically sound, genuine 3D spatial evaluations. The theorem does not rely on dimension-dropping tricks or 'fake' 2D math; the underlying vectors interact dynamically in full 3D space, and the `radialNormalize_anchor` only regulates swirl on a precise line rather than annihilating the entire global 3D structure.
+The repository compiles on the inspected Lean path, and the source contains
+three-component spatial evaluations. That is not a certification of the full
+mathematical claim. The base profile (`TailGaugePotential`) and residual bounds
+(`PhysicalResidualJetBounds`) do not support the stronger pure-axial or fake-2D
+allegation; `radialNormalize_anchor` regulates a precise line rather than
+annihilating the global field.
 
 However, a critical divergence occurs at the final assembly boundary (`ActualCandidateAssembly.selected_witness`). The proof evaluates PDE correctness through direct geometric jet decay bounds (`NativeBounds` in `PhysicalResidualJetBounds.lean`). The selected assembly's transitive import closure does contain `FiveProfileMoments`, `FiveRowRank`, and `PositiveOrderMoments` through upstream construction modules, but the residual-realisation theorems inspected here do not expose those five-coordinate moment arrays $(M, I, J, S, C_p)$ as semantic premises or prove their identification with the selected residual.
 
@@ -323,14 +328,42 @@ explicit comparison hypotheses, while `ActualPressureFlux` converts those
 pairings into the cutoff flux used by `WholeSpaceUniqueness`. The zero-sorry
 pressure probe proves that compact support does not imply a slice is zero.
 
-This route is therefore closed only as a standalone contradiction. That is not
-an acceptance of the pressure construction. The selected endpoint still lacks
+This route is therefore closed only as the narrow implication that compact
+support forces a slice to vanish. That is not an acceptance of the pressure
+construction. The selected endpoint still lacks
 an inspected theorem connecting its compactly localised pressure and local
 `StateRealization`/`chartIdentity` identities to the paper's global pressure
 semantics. The adverse finding that remains is narrower and stronger: the
 selected endpoint also has no inspected theorem transporting the paper's five
 named moments into the selected residual and force construction. Evidence:
 `NavierStokesReview/evidence/pressure_recovery_chain_audit_2026-09-24.md`.
+
+### Finding 22: comparison recovery is not absolute pressure verification
+
+The pressure conclusion must not be over-cleared. `PressureRecovery.Hypotheses`
+contains smoothness, divergence-free velocity, equal residuals, and finite
+energy for a pair `(u,p)` and `(v,q)`. It has no absolute pressure-Poisson
+representative or pressure-normalisation field. The zero-sorry
+`PressureRecoveryAbsolutePremiseProbe.lean` instantiates it with identical zero
+velocities and any common smooth pressure. Consequently, the recovery theorem
+can certify a pressure-difference identity while saying nothing by itself about
+whether the selected pressure has the global semantics asserted in the paper.
+
+This is a formally demonstrated limitation of the comparison interface, not yet
+a contradiction to `selected_witness`. The remaining decisive test is to show
+that `PhysicalFields.pressure_germ`, `StateRealization.base_equation`, and the
+selected `VanishingJointJets` premise jointly imply the required absolute
+global pressure relation, or else to derive a contradiction from those actual
+premises. Evidence:
+`NavierStokesReview/evidence/physical_transport_bridge_spec_extraction_2026-09-24.md`.
+
+The selected residual trace shows where the live endpoint obligation enters:
+`StageEstimates.exists_schedule` derives `VanishingJointJets` from rate
+estimates, and `ActualCandidateAssembly.selected_witness` consumes it through
+the generic germ theorem. The public interface does not expose the five named
+moments as premises of that limit. This is the current CTR-005 transport
+objection, not yet a zero-sorry contradiction to the selected theorem.
+Evidence: `NavierStokesReview/evidence/selected_residual_endpoint_trace_2026-09-24.md`.
 
 ## Editorial control
 

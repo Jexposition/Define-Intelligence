@@ -52,7 +52,9 @@ A review of the repository's git commit timestamps confirms a deliberate archite
 ***
 ### Dependency Validation Summary
 The validated conclusion is narrower: the final public witness does not expose
-the paper's five-moment realisation as a selected-path theorem. This is a
-material paper-to-code correspondence objection. It is not an irrefutable
-formal disproof, and it does not establish that the endpoint contains no 3D
+the paper's five-moment realisation as a selected-path theorem. Its pressure
+comparison infrastructure likewise does not expose an absolute global
+Poisson representative for the selected pressure. These are material
+paper-to-code correspondence objections. They are not irrefutable formal
+disproofs, and they do not establish that the endpoint contains no 3D
 Navier–Stokes fields.

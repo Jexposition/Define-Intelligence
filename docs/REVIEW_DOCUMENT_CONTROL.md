@@ -38,13 +38,17 @@ The tracker names **CTR-005**, the missing selected-path transport of the
 paper's `(M, I, J, S, C_p)` data and force, as the headline load-bearing
 objection. The pure-axial/pure-swirl collapse hypothesis is explicitly marked
 as a cleared and rejected attack surface in the tracker and in the supporting
-solenoidal ledger. The pressure-trivialisation route is also recorded as
-rejected as a standalone counterexample after the pressure/uniqueness closure
-audit.
+solenoidal ledger. The pressure-trivialisation route is rejected only in its
+narrow form: compact support alone does not imply a zero pressure slice. The
+comparison-interface probe leaves a separate live objection because the
+recovery chain is comparative and does not, by its type, establish an
+absolute global Poisson representative for the selected pressure.
 
 The six core documents above are synchronised to that authority map. The
 pressure result is sourced to
-`NavierStokesReview/evidence/pressure_uniqueness_closure_audit_2026-09-24.md`;
+`NavierStokesReview/evidence/pressure_uniqueness_closure_audit_2026-09-24.md`
+and
+`NavierStokesReview/src/probes/PressureRecoveryAbsolutePremiseProbe.lean`;
 the argument is in the peer review and research paper, while the plan and
 tracker retain only compact status entries.
 
@@ -88,6 +92,8 @@ The following claims are currently **not established** as disproofs:
 
 - that the selected final velocity is non-solenoidal;
 - that compact pressure support alone forces pressure or velocity to vanish;
+- that the comparative pressure-recovery chain proves an absolute global
+  Poisson representative for the selected pressure;
 - that the selected endpoint exploits `Filter.bot` vacuity;
 - that the force is nonsmooth merely because it is residual-defined;
 - that the whole `WholeDomain*` branch is dead code globally;
@@ -118,9 +124,9 @@ evidence that the term has the intended Navier–Stokes semantics.
   the selected endpoint still lacks an explicit theorem transporting the
   paper's named five moments into the selected field, residual, pressure, and
   force chain.
-- [x] The pure-axial, zero-helicity, and automatic pressure-trivialisation
-  hypotheses are cleared as attack surfaces and remain quarantined as
-  rejected supporting notes, not active verdicts.
+- [x] The pure-axial and zero-helicity hypotheses are cleared as attack
+  surfaces. Compact-support trivialisation is rejected only in its narrow
+  form; absolute pressure semantics remain active under CTR-039.
 - [x] The six core documents are present under this `docs/` authority map:
   plan, tracker, axiom ledger, input synthesis, peer review, and research
   paper. Each points back to this control file.

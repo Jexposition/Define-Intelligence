@@ -109,11 +109,16 @@ local velocity/pressure agreement, not this complete identity.
 | TRN-03 | Verify the explicit promotion `(P,Jθ,Jz) ↦ (0,0,-P,-Jθ,-Jz)`. | [x] | `FiveRowPositiveOrderBridgeProbe.lean` compiles with no `sorry`. |
 | TRN-04 | Trace promotion into `StateRealization.chartIdentity`. | [~] | Search for a theorem that identifies paper moments with promoted debt and is consumed by `StateRealization`; current source shows local residual/germ inputs only. |
 | TRN-05 | Trace promotion into `CandidateConsequences` and `selected_witness`. | [~] | Public consequence bundle contains no moment-realisation field; prove a selected-path contradiction only if an actual mandatory premise fails. |
+| TRN-06 | Extract the exact five-row target specification and runtime update laws. | [x] | `physical_transport_bridge_spec_extraction_2026-09-24.md` records the raw row densities, repair theorems, `scaleDebt`, `next_mean`, and `next_preserve_masses`. |
+| TRN-07 | Do not invent a recursive stability theorem in `PositiveOrderMoments`. | [x] | The file proves one exact repair step; recursive cycle induction is elsewhere. The selected-path transport theorem remains absent from the inspected declarations. |
+| TRN-08 | Separate the extracted 5D target from the selected residual proof. | [x] | `physical_transport_bridge_spec_extraction_2026-09-24.md` records the target and runtime laws; it is an audit specification, not a theorem supplied by the authors. |
 | PRS-03 | Keep R³ and periodic-lift domains separate. | [x] | R³ `CandidateProperties` uses Euclidean compact support; periodic endpoint uses lifted periodicity. Do not transfer torus support arguments to R³. |
 | PRS-04 | Print the exact meaning of `pressure_support`. | [x] | It is `tsupport(slice p) ⊆ K` with `IsCompact K`, not a pressure-Poisson axiom. |
 | PRS-05 | Trace `PressureRecovery` and `ActualPressureFlux`. | [x] | `candidate_unique_on_Icc` supplies the selected candidate; `classical_uniqueness_on_Icc` constructs the recovery hypotheses and pressure-flux bound. |
 | PRS-06 | Test the compact-pressure trivialisation inference. | [x] | Zero-sorry probe proves compact support does not imply a scalar slice is zero. |
-| PRS-07 | Seek a genuine selected-path pressure contradiction. | [ ] | Must derive a Poisson/normalisation/decay premise from the endpoint and contradict the selected pressure; generic compact-support intuition is insufficient. |
+| PRS-07 | Test whether comparison recovery verifies absolute selected pressure semantics. | [x] | `PressureRecoveryAbsolutePremiseProbe.lean` compiles: identical zero velocities and any common smooth pressure satisfy the comparison record. This exposes a limitation of the comparison interface, not yet a selected-endpoint contradiction. |
+| PRS-08 | Seek a genuine selected-path pressure contradiction. | [~] | Must connect the selected `pressure_germ`/`base_equation` to an absolute global Poisson or normalisation theorem, then contradict the selected pressure if possible. |
+| PRS-09 | Do not treat the comparison probe as a selected-field refutation. | [x] | The probe proves an interface limitation only. A formal disproof still requires a false selected premise or a contradiction with the selected residual limits. |
 
 Evidence for this block:
 `NavierStokesReview/evidence/semantic_transport_pressure_audit_2026-09-23.md`,
@@ -138,10 +143,10 @@ Do not use `sorry`, an arbitrary existential witness, a generic countermodel dis
 
 | Priority | Next bounded action | Output |
 |---:|---|---|
-| 1 | Trace `VanishingJointJets` and `AwayExtensions` into `selected_witness`. | Source-linked dependency note and probe. |
-| 2 | Search for the five-moment transport theorem on the selected import closure. | Theorem citation or exact absence report. |
-| 3 | Test the strongest actual selected obligation in Lean without `sorry`. | Compiled probes now cover divergence, pressure support, force smoothness, and energy exposure. |
-| 4 | Update tracker, axiom ledger, synthesis, peer review, and paper. | Human-readable findings are being integrated; preserve counter-paper framing. |
+| 1 | Trace `VanishingJointJets` and `AwayExtensions` into `selected_witness`. | Source-linked dependency note and probe; attack the selected `hlim`, not a generic force. |
+| 2 | Search for the five-moment transport theorem on the selected import closure. | Theorem citation or exact absence report; use the extracted 5D target as the acceptance specification. |
+| 3 | Test the strongest actual selected obligation in Lean without `sorry`. | Seek a contradiction between selected residual limits, pressure semantics, and origin blow-up. |
+| 4 | Update tracker, axiom ledger, synthesis, peer review, and paper. | Human-readable counter-paper prose, not a chronological audit log. |
 
 ## External literature lane
 
@@ -217,6 +222,9 @@ Evidence: `NavierStokesReview/evidence/stage_estimates_moment_blindness_2026-09-
 | CTR-037 | Generic `StageEstimates` encodes physical blow-up | [x] | Zero-sorry zero-field countermodel; interface is insufficient. |
 | CTR-038 | Selected five-moment transport into residual endpoint | [ ] | Locate a theorem linking `(M,I,J,S,C_p)` to selected fields, `chartIdentity`, and `VanishingJointJets`, or prove a contradiction from its premises. |
 | PRS-08 | Compact pressure support forces trivialisation | [x] (route rejected) | Generic implication formally disproved; this does not validate the selected pressure semantics. |
-| PRS-09 | Selected pressure has the paper's global semantics | [ ] | Local `StateRealization`/compact-test recovery exists, but no paper-linked global pressure bridge has been proved. |
+| PRS-09 | Selected pressure has the paper's global semantics | [~] | The comparison interface has no absolute pressure-Poisson premise; selected local `pressure_germ` and `base_equation` still need to be connected to a global pressure theorem. |
+| PRS-10 | Pressure comparison chain was over-cleared | [x] | Corrected: the chain is real for differences and flux bounds, but cannot be cited as an absolute selected-pressure verification. |
 
-Evidence: `NavierStokesReview/evidence/pressure_recovery_chain_audit_2026-09-24.md`.
+Evidence: `NavierStokesReview/evidence/pressure_recovery_chain_audit_2026-09-24.md`,
+`NavierStokesReview/evidence/physical_transport_bridge_spec_extraction_2026-09-24.md`,
+and `NavierStokesReview/src/probes/PressureRecoveryAbsolutePremiseProbe.lean`.

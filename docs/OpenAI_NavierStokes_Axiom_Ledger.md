@@ -390,13 +390,53 @@ comparison theorems with equal-residual, smoothness, divergence, and energy
 hypotheses. The zero-sorry probe proves compact support alone does not imply a
 scalar field is zero.
 
-**Status:** **generic pressure-trivialisation objection disproved; selected comparison instantiation confirmed**.
+**Status:** **generic pressure-trivialisation objection disproved; selected comparison instantiation confirmed, absolute selected-pressure semantics still open**.
 
 This status is deliberately limited. It confirms only that the comparison
 wrapper is present; it does not confirm the paper's global pressure semantics.
 The selected source still lacks a single paper-linked theorem connecting the
 local `StateRealization`/`chartIdentity` identities to the global pressure
 object asserted in the narrative.
+
+## AX-030: comparison pressure recovery is not absolute pressure verification
+
+**Source:** `NavierStokes/R3/PressureRecovery.lean:31-44,419-438`;
+`NavierStokes/R3/ConservativeDifference.lean:428-469`;
+`NavierStokesReview/src/probes/PressureRecoveryAbsolutePremiseProbe.lean`.
+
+`PressureRecovery.Hypotheses` is parameterised by two velocities and two
+pressures and requires equality of their Navier--Stokes residuals. It does not
+require a pressure-Poisson representative or a pressure normalisation for
+either pressure. The zero-sorry probe constructs the record with both
+velocities identically zero and with the same arbitrary smooth pressure on both
+sides. The residual equality and divergence obligations then close
+definitionally or by zero calculation.
+
+This does not show that the selected pressure is false. It does show that the
+comparison recovery and flux chain cannot, by its type alone, be cited as an
+absolute semantic verification of that pressure. The unresolved obligation is
+to connect `PhysicalFields.pressure_germ`, `StateRealization.base_equation`,
+and the selected residual limits to a global pressure equation or equivalent
+normalisation for the actual selected field.
+
+**Status:** **comparison limitation machine-checked; selected-path contradiction not established**.
+
+## AX-031: selected residual limits are rate-derived but moment-untransported
+
+**Source:** `NavierStokes/MixedCandidateAssembly.lean:29-91`;
+`NavierStokes/MixedDiagonalResidual.lean:168-195`;
+`NavierStokes/GermCandidateAssembly.lean:223-271`;
+`NavierStokes/ActualCandidateAssembly.lean:1153-1181`;
+`NavierStokesReview/evidence/selected_residual_endpoint_trace_2026-09-24.md`.
+
+The selected schedule derives `VanishingJointJets` from finite stage JetRates
+and consumes the result in the generic force-consequence theorem. The public
+selected-witness interface does not expose the five named moments as premises
+of that limit or identify them with the selected residual. This is a semantic
+transport gap, not proof that the residual limits are false.
+
+**Status:** **selected-path moment transport unestablished; no formal
+contradiction obtained**.
 
 ## Document-control note
 
