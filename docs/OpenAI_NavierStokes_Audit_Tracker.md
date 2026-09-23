@@ -30,6 +30,8 @@ The repository contains a genuine R³ C/D-shaped endpoint and the headline theor
 | CTR-011 | The repository lacks an exact five-equation repair. | `PositiveOrderMoments.weighted_moments_exact`, `moments_repair_target`, and `exists_smooth_exact_repair` prove exact five-component repair; `GlobalSlowProfiles.profiles_moments` carries it into the recursive sequence. | Rejected by source inspection | Do not repeat the obsolete “three-equation approximation” claim. Audit cross-layer correspondence instead. |
 | CTR-012 | The exported whole-space endpoint is disconnected from the selected construction. | `R3/Theorem.lean` obtains its fields from `ActualCandidateAssembly.selected_witness`, localises them through `R3/ActualCandidate.of_localized_fields`, proves the compact energy estimate, and transports viscosity by `R3/ViscosityScaling`. | Closed as an objection | Treat the R³ endpoint as connected to the selected witness; keep the adverse case focused on the missing moment correspondence. |
 
+| CTR-016 | The whole-space comparison theorem imports an unproved scalar rate bound as an endpoint premise. | `R3/WholeSpaceComparisonClosure.lean` constructs the rate bound internally through `ComparisonRateBound.exists_uniform_rate_bound`. `R3/WholeSpaceUniqueness.lean` constructs the pressure-flux estimate through `PressureFlux.exists_uniform_actual_pressure_flux_bound`. `R3ComparisonPremiseProbe.lean` records the internal rate-bound construction. | Withdrawn as stated | The rate-bound interface is not an external premise. The remaining audit target is whether the pressure-recovery and localised PDE estimates prove their stated hypotheses with the intended whole-space meaning. |
+
 ## Formal artefacts
 
 - `NavierStokesReview/src/probes/MomentCoordinateMismatchProbe.lean`: zero-sorry vector inequalities.
@@ -41,6 +43,7 @@ The repository contains a genuine R³ C/D-shaped endpoint and the headline theor
 - `NavierStokesReview/src/probes/OpenPastNeBotProbe.lean`: non-vacuity of a concrete open-past filter.
 - `NavierStokesReview/src/probes/ForceActivityProbe.lean`: compiled force-activity consequence from `CandidateConsequences.consequences_of_candidate`.
 - `NavierStokesReview/src/probes/FiveRowsStructureProbe.lean`: compiled source-structure check for the three-coordinate `FiveRows` debt and its two fixed zero rows.
+- `NavierStokesReview/src/probes/R3ComparisonPremiseProbe.lean`: compiled zero-sorry source-level audit showing that the scalar comparison rate is constructed inside the R³ closure rather than passed into the endpoint as an unproved hypothesis; its endpoint `#print axioms` output contains only `propext`, `Classical.choice`, and `Quot.sound`.
 
 Positive source evidence audited directly:
 

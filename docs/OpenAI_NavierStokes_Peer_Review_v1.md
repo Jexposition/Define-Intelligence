@@ -88,6 +88,12 @@ The declaration-level audit also corrects the description of the physical rank f
 
 The earlier periodic-endpoint objection is withdrawn. The repository does contain a periodic D-shaped endpoint, so absence of a named theorem is not evidence of failure. Likewise, the pressure-chain and bottom-filter concerns remain open review obligations unless a concrete false premise is shown to reach the exported endpoint.
 
+## Finding 7: the imported-rate-bound objection is withdrawn
+
+The whole-space comparison chain was checked against the stronger allegation that the final scalar rate estimate is simply accepted as an unproved premise. That allegation is not supported by the source. `WholeSpaceComparisonClosure.eq_of_pressure_flux_bound` constructs the rate bound internally through `ComparisonRateBound.exists_uniform_rate_bound`. Before that call, `WholeSpaceUniqueness.classical_uniqueness_on_Icc` constructs the pressure-flux estimate through `PressureFlux.exists_uniform_actual_pressure_flux_bound`, using a `PressureRecovery.Hypotheses` record assembled from smoothness, divergence, equation equality, and finite-energy assumptions.
+
+This is a material correction to the adverse case. The comparison theorem still contains substantial analytic claims requiring mathematical review, especially pressure recovery on the whole space and the localised energy identities. However, the source does not expose the rate estimate as a free endpoint assumption. `R3ComparisonPremiseProbe.lean` records the internal construction. The correct status is “derivation under analytic review”, not “missing rate-bound premise”.
+
 Recommendation: major revision of the formalisation claim and its explanatory paper. The code should expose the cross-layer maps, preserve the physical meaning of all five moments across those maps, and include a dependency-level proof that no vacuous filter enters a mandatory estimate. The current evidence does not justify calling the final C/D proposition disproved, but it does justify rejecting the stronger claim that compilation alone demonstrates faithful formalisation of the published construction.
 
 The release is evidence of a machine-checked proposition. It is not yet evidence that the official analytic proof has been faithfully formalised. The five-row coordinate mismatch supplies an honest counter-result to the stronger correspondence claim. The final C/D proposition remains unresolved until the missing bridge is either supplied or shown impossible along the selected witness path.

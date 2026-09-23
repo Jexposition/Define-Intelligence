@@ -46,7 +46,7 @@ Verify smoothness, compact support, positive-time support, decay, and extension 
 
 ### Lane 4: whole-space closure
 
-Trace the pressure recovery, pressure flux, uniqueness, energy, and compact-support interfaces into `CandidateBreakdown`. Look for an imported rate bound or other premise that is not derived from the candidate fields.
+Trace the pressure recovery, pressure flux, uniqueness, energy, and compact-support interfaces into `CandidateBreakdown`. The imported-rate-bound suspicion has now been checked and withdrawn: `WholeSpaceComparisonClosure` constructs the scalar rate bound internally, while `WholeSpaceUniqueness` constructs the pressure-flux constant from its comparison hypotheses. Continue by testing the mathematical validity and exact hypotheses of those derivations, not by treating the rate bound as an external premise.
 
 ### Lane 5: discarded objections
 
@@ -80,6 +80,8 @@ The plan now has two live proof-bearing lanes and three closed or bounded lanes.
 5. The pressure and energy objection remains an interface audit, not a proved failure. The `Filter.bot` issue remains a generic vacuity hazard until a bottom filter is shown to feed a mandatory endpoint premise.
 
 6. The whole-space provenance objection is closed at source level. `R3/Theorem.lean` extracts the candidate from `ActualCandidateAssembly.selected_witness`, and the R³ localisation, energy, and viscosity-scaling modules carry that witness to the exported endpoint. This removes an attractive but unsupported claim that the endpoint is a disconnected wrapper.
+
+7. The comparison-premise audit corrected the earlier interface criticism. The scalar rate bound is constructed internally by `WholeSpaceComparisonClosure` and recorded by the compiled zero-sorry `R3ComparisonPremiseProbe.lean`; the pressure-flux constant is also derived inside the uniqueness chain. Pressure recovery and localised PDE estimates remain load-bearing analytic targets, but the obsolete “unproved imported rate bound” formulation is closed.
 
 The next falsification threshold is therefore explicit: a selected-path theorem must contradict one required CMI predicate, or the source must expose a mandatory interface whose assumptions cannot be proved. Until then the paper reports a failure of demonstrated correspondence, not a fabricated theorem refutation.
 

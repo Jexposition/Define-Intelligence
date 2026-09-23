@@ -110,6 +110,8 @@ The force is deliberately defined from the residual and remains active up to the
 
 The repository contains a `JetRate` abstraction without an explicit `NeBot` parameter. The review probe `JetRateVacuityProbe.lean` proves that a generic limit predicate over `Filter.bot` can be discharged vacuously. This identifies a real proof-engineering hazard. The selected path, however, uses the concrete `GlobalBaseError.originPast` filter and non-vacuous local neighbourhood lemmas. A fatal result requires tracing a bot filter into a mandatory premise of `selected_witness` or `theorem_1_1`; that reachability has not yet been proved.
 
+The whole-space comparison chain also required a correction during the audit. It is not accurate to say that the final scalar rate inequality is passed into the endpoint as an unproved hypothesis. `WholeSpaceComparisonClosure.eq_of_pressure_flux_bound` constructs the rate bound through `ComparisonRateBound.exists_uniform_rate_bound`. In the preceding uniqueness chain, `PressureFlux.exists_uniform_actual_pressure_flux_bound` constructs the pressure-flux constant from the `PressureRecovery.Hypotheses` record and the associated energy and integrability estimates. This removes one proposed formal interface failure. It does not make the pressure reconstruction or localised energy argument automatically valid: those remain load-bearing analytic derivations whose hypotheses and whole-space interpretation require review.
+
 Similarly, omitted Ladyzhenskaya stress laws and fractional dissipation are not contradictions to a Newtonian C/D theorem. They matter to claims of physical robustness, not to literal compliance with the stated Newtonian problem.
 
 ## 6. Axioms and kernel evidence
@@ -136,6 +138,8 @@ This result matters because it rules out an interpretation of the witness as an 
 
 The counter-paper's strongest formal result remains the moment-interface obstruction. The repository has three relevant layers: paper-shaped profile moments, an exact positive-order five-coordinate repair, and a physical rank interface with a three-coordinate residual debt. The checked direct bridge between the nominal and physical declarations is impossible, while the positive-order repair is exact within its own coordinates. Consequently, the public claim that the full Lean development verifies one coherent Appendix A construction is not established by the current source map. This is a failure of demonstrated formal correspondence, not yet a contradiction of the final C/D existential theorem.
 
+The comparison-premise correction narrows that conclusion. The adverse report must not claim that a free scalar rate bound is smuggled into the endpoint. The remaining criticism is more demanding: the source derives the rate estimate, but the review must still determine whether the pressure recovery, flux control, and localised energy estimates actually prove the mathematical statements they assert for the selected fields.
+
 The distinction is essential. Kernel acceptance establishes the declared proposition. It does not supply a missing change of variables, prove that differently indexed debts have the same physical meaning, or convert a residual-defined force into an autonomous evolution. A future revision could close the gap by exposing those maps and proving their preservation properties. Until then, the appropriate scientific verdict is that the repository contains a substantial formal C/D-shaped result but has not demonstrated the stronger claim made for the complete paper-to-code correspondence.
 
 ## Reproducibility record
@@ -143,5 +147,5 @@ The distinction is essential. Kernel acceptance establishes the declared proposi
 - Source snapshot under review: OpenAI Navier–Stokes repository, commit `f9e8bc5` as recorded in the review materials.
 - Review branch: `review/cmi-first-navier-stokes-2026-09-22`.
 - Kernel environment: the repository-declared Lean `4.34.0-rc2` via `C:\Users\Admin\.elan\bin\lake.exe`; the separate V-lab `packages-4.32` cache was not used for this source snapshot because its manifest pins Lean 4.34.0-rc2.
-- New zero-sorry probes: `NavierStokesReview/src/probes/MomentCoordinateMismatchProbe.lean`, `MomentBridgeObstructionProbe.lean`, `FiveRowsStructureProbe.lean`, `SelectedDependencyAxiomProbe.lean`, the corrected `MainAxiomProbe.lean`, and the compiled `ForceActivityProbe.lean`.
+- New zero-sorry probes: `NavierStokesReview/src/probes/MomentCoordinateMismatchProbe.lean`, `MomentBridgeObstructionProbe.lean`, `FiveRowsStructureProbe.lean`, `SelectedDependencyAxiomProbe.lean`, the corrected `MainAxiomProbe.lean`, the compiled `ForceActivityProbe.lean`, and the compiled `R3ComparisonPremiseProbe.lean`.
 - No source file in the OpenAI construction was edited.

@@ -60,3 +60,6 @@ The declaration-level audit adds an important qualification. `FiveRowRank.FiveRo
 That finding is now carried consistently into the plan, ledger, tracker, peer review, and research paper.
 
 The latest provenance check narrows the adverse case further. The R³ endpoint is source-connected to `ActualCandidateAssembly.selected_witness`; it is not a disconnected formal wrapper. The remaining formal objection is therefore not endpoint provenance but semantic transport: the selected path must explain how the several moment systems encode the same five published quantities.
+## Comparison-premise correction
+
+The whole-space comparison audit supplies a further correction. The scalar rate bound is not merely inserted at the final endpoint: `WholeSpaceComparisonClosure` derives it from `ComparisonRateBound.exists_uniform_rate_bound`, and `WholeSpaceUniqueness` derives the pressure-flux bound from the pressure-recovery hypotheses. This closes the specific objection that a free rate-bound premise is being consumed by the endpoint. The review must now test the pressure reconstruction and localised energy estimates themselves, with their exact hypotheses, rather than treating the rate-bound interface as missing.
