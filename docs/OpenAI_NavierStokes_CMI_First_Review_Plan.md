@@ -26,15 +26,15 @@ The CMI publication and review process is separate from the mathematical audit. 
 | D | The public paper's direct formal-verification claim is justified. | All load-bearing bridges must be present and valid. |
 | E | The result proves spontaneous physical blow-up under altered constitutive laws. | Separate mathematics, not implied by C/D. |
 
-The current evidence supports A and B, rejects the old “periodic toy” objection, and does not establish C or D as a faithful formalisation of the published construction. The zero-sorry moment probes supply a formal obstruction to direct coordinate identification, while the dependency axiom probe finds no custom axiom at the selected witness interfaces. E is outside the literal Newtonian endpoint.
+The current evidence supports A and B, rejects the old “periodic toy” objection, and does not establish C or D as a faithful formalisation of the published construction. The zero-sorry moment probes supply a formal obstruction to direct coordinate identification, but `PositiveOrderMoments` supplies a genuine exact five-row repair and prevents the mismatch probe from being treated as a final refutation. The dependency axiom probe finds no custom axiom at the selected witness interfaces. E is outside the literal Newtonian endpoint.
 
 ## Falsification lanes
 
 ### Lane 1: moment correspondence
 
-Compare the paper's `(M, I, J, S, C_p)` system with both `FiveProfileMoments` and `FiveRowRank`. The former contains matching normalised vectors; the latter is a distinct physical rank interface. Trace `physical_five_rows`, `prescribed_five_rows`, `reserved_five_rows`, the `ModulatedHistories` consumers, and the selected witness. The direct-bridge probe is complete and rules out a row-by-row identification. The remaining decisive test is whether a nontrivial conversion exists and is actually consumed by the selected witness.
+Compare the paper's `(M, I, J, S, C_p)` system with `FiveProfileMoments`, `PositiveOrderMoments`, and `FiveRowRank`. The first contains matching normalised vectors; the second proves exact five-coordinate repair in the recursive slow-profile layer; the third is a distinct physical rank interface. Trace `physical_five_rows`, `prescribed_five_rows`, `reserved_five_rows`, `exists_repaired_order`, `profiles_moments`, the `ModulatedHistories` consumers, and the selected witness. The direct-bridge probe rules out only a naïve row-by-row identification. The decisive test is now whether the repository states and proves the staging maps among all three systems.
 
-The probe also rules out a full linear equivalence between the three-coordinate `FiveRowRank.Debt` and the five-coordinate `FiveProfileMoments.Debt`. The next correspondence test must therefore distinguish a constrained embedding or a deliberate stage separation from a claimed identity of the two debt spaces.
+The probe also rules out a full linear equivalence between the three-coordinate `FiveRowRank.Debt` and the five-coordinate `FiveProfileMoments.Debt`. The next correspondence test must therefore distinguish a constrained embedding or a deliberate stage separation from a claimed identity of the two debt spaces. The positive-order five-coordinate layer must be included before treating this as evidence against the endpoint.
 
 ### Lane 2: filter non-vacuity
 

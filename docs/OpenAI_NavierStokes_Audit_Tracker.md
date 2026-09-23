@@ -11,7 +11,7 @@ This document is the working ledger for the counter-paper. It records evidence, 
 
 ## Current position
 
-The repository contains a genuine R³ C/D-shaped endpoint and the headline theorem reports only standard Lean axioms. The strongest adverse result is a formal correspondence failure: the selected repair pipeline uses `FiveRowRank`, whose declared exponent vectors differ from the vectors stated in the official paper's Appendix A, while other selected branches use `FiveProfileMoments`. A zero-sorry theorem now rules out a direct row-by-row bridge for arbitrary parameters. The final theorem is not labelled refuted until a nontrivial bridge is shown impossible or its absence is shown to invalidate a mandatory witness premise.
+The repository contains a genuine R³ C/D-shaped endpoint and the headline theorem reports only standard Lean axioms. The strongest adverse result is a cross-layer correspondence gap, not a proof that no five-row repair exists. `FiveProfileMoments` matches the paper-shaped normalisation, `PositiveOrderMoments` proves an exact five-component recursive repair, and `FiveRowRank` supplies a distinct three-debt physical rank interface. A zero-sorry theorem rules out a direct row-by-row bridge between the first and third interfaces, but that probe is not by itself a refutation because the positive-order layer may be an intended intermediate representation. The final theorem is not labelled refuted until a false mandatory premise or an impossible selected-path correspondence is proved.
 
 ## Evidence register
 
@@ -21,12 +21,13 @@ The repository contains a genuine R³ C/D-shaped endpoint and the headline theor
 | CTR-002 | The force is active and residual-defined. | Official paper Section 2 and the R³ force definitions construct the force from the momentum residual through the collapse. | Confirmed semantic criticism, not C/D refutation | Audit smooth extension and decay directly. |
 | CTR-003 | The endpoint hides custom axioms. | `MainAxiomProbe.lean` reports `propext`, `Classical.choice`, and `Quot.sound` only. | Closed for the inspected endpoints | Continue premise and correspondence inspection. |
 | CTR-004 | Generic `JetRate` can be vacuous. | `JetRateVacuityProbe.lean` proves a `Filter.bot` limit can discharge the generic predicate. | Live hazard, not yet endpoint failure | Trace a non-bottom proof into every selected rate premise. |
-| CTR-005 | The complete Lean pipeline is one coherent implementation of the paper's five-moment system. | `FiveProfileMoments.lean` contains the paper-shaped vectors, while `FiveRowRank.lean` declares `(2, -2 - 2λ, -2λ)` and `(1, 1 - 2λ)`. The zero-sorry probe proves the two source vectors are not definitionally equal. | Formal correspondence gap unless a bridge exists | Locate or formalise the bridge between the two systems. |
-| CTR-006 | Both moment interfaces reach the selected construction. | `MeanRankUpdate` consumes `FiveRowRank`; `ModulatedHistories` and `ReservedPatches` consume `FiveProfileMoments`; actual candidate modules import both branches. | Confirmed mixed path | Map every row, debt, coefficient, and scaling between branches. |
+| CTR-005 | The complete Lean pipeline is one coherent implementation of the paper's five-moment system. | `FiveProfileMoments.lean` matches the paper-shaped vectors; `PositiveOrderMoments.lean` proves exact five-component repair; `FiveRowRank.lean` declares a distinct three-debt interface. | Cross-layer correspondence not established | Identify the explicit staging maps and verify that the selected witness preserves all five named moments. |
+| CTR-006 | The moment interfaces are accidentally being treated as the same object. | `MeanRankUpdate` consumes `FiveRowRank`; `ModulatedHistories` and `ReservedPatches` consume `FiveProfileMoments`; `GlobalSlowProfiles` consumes `PositiveOrderMoments`. | Direct-identification objection supported; endpoint refutation not established | Keep the direct obstruction, but audit the positive-order and nominal-to-physical maps before escalation. |
 | CTR-007 | Non-Newtonian regularisation disproves the Newtonian theorem. | The published endpoint is Newtonian and C/D allows smooth force. | Rejected as internal refutation | Retain only as a physical robustness limitation. |
 | CTR-008 | The two moment declarations may be treated as the same system by direct identification. | `MomentBridgeObstructionProbe.lean` proves `¬ DirectMomentBridge lam b` for all real `lam` and `b`, by evaluating the first axial coordinate. | Formally disproved at the direct-correspondence level | Require an explicit nontrivial change-of-variables theorem. |
 | CTR-009 | The selected witness hides a custom axiom at the stage-estimate interface. | `SelectedDependencyAxiomProbe.lean` reports only `propext`, `Classical.choice`, and `Quot.sound` for `selected_witness`, `physicalData`, `actualStageEstimates`, and `Invariant.residual_jetRate`. | Closed for custom-axiom suspicion | Continue semantic and interface audit; do not treat standard axioms as defects. |
 | CTR-010 | The two debt interfaces admit a direct full linear identification. | `MomentBridgeObstructionProbe.lean` proves `¬ Nonempty (FiveRowRank.Debt ≃ₗ[ℝ] FiveProfileMoments.Debt)` by finite-dimensional rank. | Formally disproved for full linear identification | Require an explicit constrained embedding or stage-separation theorem. |
+| CTR-011 | The repository lacks an exact five-equation repair. | `PositiveOrderMoments.weighted_moments_exact`, `moments_repair_target`, and `exists_smooth_exact_repair` prove exact five-component repair; `GlobalSlowProfiles.profiles_moments` carries it into the recursive sequence. | Rejected by source inspection | Do not repeat the obsolete “three-equation approximation” claim. Audit cross-layer correspondence instead. |
 
 ## Formal artefacts
 
@@ -37,6 +38,11 @@ The repository contains a genuine R³ C/D-shaped endpoint and the headline theor
 - `NavierStokesReview/src/probes/JetRateVacuityProbe.lean`: generic filter-vacuity witness.
 - `NavierStokesReview/src/probes/OriginPastNeBotProbe.lean`: non-vacuity of the concrete origin-past filter.
 - `NavierStokesReview/src/probes/OpenPastNeBotProbe.lean`: non-vacuity of a concrete open-past filter.
+
+Positive source evidence audited directly:
+
+- `NavierStokes/PositiveOrderMoments.lean`: exact five-coordinate repair and arbitrary target theorem.
+- `NavierStokes/GlobalSlowProfiles.lean`: recursive use of the five-row repair and zero-moment theorem.
 
 ## Decision rule
 

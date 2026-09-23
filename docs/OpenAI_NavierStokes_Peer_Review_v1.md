@@ -2,7 +2,7 @@
 
 ## Recommendation
 
-The public claim should be narrowed. The repository contains a substantial Lean theorem with the outer shape of alternatives (C) and (D), but the claim that the code verifies the analytic construction in the official paper is not established. The strongest formal adverse finding is a missing correspondence at the load-bearing five-moment repair interface.
+The public claim should be narrowed. The repository contains a substantial Lean theorem with the outer shape of alternatives (C) and (D), but the claim that the code verifies the analytic construction in the official paper is not established. The strongest formal adverse finding is a missing cross-layer correspondence at the load-bearing moment-repair interfaces. The source does contain an exact five-coordinate positive-order repair, so a direct coordinate mismatch is not by itself a refutation.
 
 This review does not call the final existential proposition false merely because the force is residual-defined, because C/D permit smooth forcing. It also does not call the theorem invalid merely because a generic filter abstraction can be vacuous. Those arguments require stronger reachability proofs than are presently available.
 
@@ -34,15 +34,15 @@ angularPowers lam := ![2, -2 - 2 * lam, -2 * lam]
 axialPowers lam   := ![1, 1 - 2 * lam]
 ```
 
-It defines `Debt` abstractly and proves five integral rows for localised increments. The actual assembly consumes those rows through `MeanRankUpdate`, including `physical_five_rows`, `prescribed_five_rows`, and `reserved_five_rows`. Other construction modules consume `FiveProfileMoments` directly. The review issue is therefore not absence of the paper-shaped system, but the semantic connection between two non-identical systems used across the construction.
+It defines `Debt` abstractly and proves five integral rows for localised increments. The actual assembly consumes those rows through `MeanRankUpdate`, including `physical_five_rows`, `prescribed_five_rows`, and `reserved_five_rows`. Other construction modules consume `FiveProfileMoments` directly. In addition, `PositiveOrderMoments` proves exact five-component repairs for the recursively constructed slow profiles, and `GlobalSlowProfiles.profiles_moments` proves their vanishing five-row moments. The review issue is therefore not absence of a five-row repair, but the semantic connection among these non-identical systems and the selected final fields.
 
 `MomentCoordinateMismatchProbe.lean` proves both vector inequalities between `FiveRowRank` and `FiveProfileMoments` in Lean without admitted steps. The stronger `MomentBridgeObstructionProbe.lean` proves that no direct row-by-row bridge exists for any pair of real parameters. Thus the declarations are not definitionally the same. A valid rescaling might still exist, but no theorem mapping all five rows, debt coordinates, parameter choices, and coefficient normalisations was found in the inspected dependency path.
 
 The same probe proves that `FiveRowRank.Debt` and `FiveProfileMoments.Debt` admit no linear equivalence: the former has three coordinates and the latter five. This rules out a full linear identification of the debt spaces. It does not rule out a constrained subspace, an embedding, or a deliberate separation of construction stages. Those alternatives must be made explicit and proved if they are the intended bridge.
 
-The selected-witness trace is concrete. `ActualCandidateAssembly.selected_witness` consumes `estimates`; those estimates are constructed by `GluedStageEstimates.actualStageEstimates` from a `PhysicalData` family. The physical prefix and reserved-patch route uses `MeanRankUpdate` and `FiveRowRank`, while the nominal and modulation route uses `NominalProfile`, `ModulatedHistories`, `ReservedPatches`, and `FiveProfileMoments`. `SelectedDependencyAxiomProbe.lean` shows that these interfaces are kernel-accepted using only standard axioms. That result removes custom-axiom speculation, but it does not supply the absent semantic bridge.
+The selected-witness trace is concrete. `ActualCandidateAssembly.selected_witness` consumes `estimates`; those estimates are constructed by `GluedStageEstimates.actualStageEstimates` from a `PhysicalData` family. The physical prefix and reserved-patch route uses `MeanRankUpdate` and `FiveRowRank`; the nominal and modulation route uses `NominalProfile`, `ModulatedHistories`, `ReservedPatches`, and `FiveProfileMoments`; and the recursive slow-profile route uses `PositiveOrderMoments` through `GlobalSlowProfiles`. `SelectedDependencyAxiomProbe.lean` shows that the inspected interfaces are kernel-accepted using only standard axioms. That result removes custom-axiom speculation, but it does not supply a single theorem explaining the cross-layer correspondence.
 
-This is a direct correspondence gap. It invalidates the sentence “the complete Lean pipeline verifies the paper's Appendix A moment system” unless the authors supply the missing bridge. It does not by itself disprove the abstract Lean endpoint, and it does not justify saying that the paper-shaped `FiveProfileMoments` module is absent.
+This is a cross-layer correspondence gap. It invalidates the sentence “the complete Lean pipeline verifies the paper's Appendix A moment system” unless the authors supply the staging and correspondence account. It does not by itself disprove the abstract Lean endpoint, and it does not justify saying that the repository lacks an exact five-equation repair.
 
 ## Finding 3: kernel axioms do not expose a custom assumption
 
