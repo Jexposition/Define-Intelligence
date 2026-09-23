@@ -70,28 +70,24 @@ See `NavierStokesReview/results/SEMANTIC_LOAD_BEARING_AUDIT_2026-09-22.md`.
 
 ## Review disposition
 
-Current disposition: `NO COMPLETED CMI PROOF ESTABLISHED BY PEER REVIEW;
-FORMAL TRUST PASS; CMI PREDICATE MATCH CONFIRMED AT LEAN INTERFACE LEVEL;
-NO CONFIRMED FORMAL COUNTEREXAMPLE`.
+Current disposition: `FORCED CMI C/D THEOREM CONFIRMED AT LEAN LEVEL;
+UNFORCED A/B CLAIM NOT PROVED; NO CONFIRMED FORMAL COUNTEREXAMPLE`.
 
-This is the final review answer to the question whether OpenAI has proved the
-Clay problem: **no, not on the evidence required for an independently verified
-mathematical proof**. The repository does contain a kernel-checked proof of its
-formalised theorem. That is a positive formal result, but it does not close the
-analytic correspondence burden. The unresolved gates are construction-premise
-provenance, common-domain coverage for every inverse and derived filter,
-term-by-term residual closure, whole-space pressure/energy comparison, and
-equivalence of the half-space smoothness convention to the CMI convention.
+This is the final theorem-level answer: OpenAI has proved the forced CMI C/D
+claim formalised in the repository. It has not proved the unforced A/B claim.
+The unresolved gates are independent analytic replication, common-domain
+coverage for every inverse and derived filter, term-by-term residual review,
+whole-space pressure/energy review, and institutional CMI acceptance. None is a
+confirmed contradiction in the exported C/D theorem.
 
 The absence of a confirmed counterexample is recorded separately. The present
-status is therefore `CLAIM NOT ESTABLISHED`, not `THEOREM REFUTED`. The complete
-decision and flip conditions are in
-`NavierStokesReview/results/FINAL_PEER_REVIEW_VERDICT_2026-09-22.md`.
+status is therefore `FORCED C/D THEOREM CONFIRMED; UNFORCED A/B CLAIM NOT
+PROVED`, not `THEOREM REFUTED`. The complete decision is in
+`NavierStokesReview/results/FINAL_BINARY_VERDICT_2026-09-23.md`.
 
-The appropriate next peer-review action is to discharge the three remaining
-semantic items with explicit theorem-to-CMI correspondence proofs or an
-independent mathematician's line-by-line verification. Compilation is not a
-review result and is recorded only as the means of obtaining kernel evidence.
+The appropriate next peer-review action is to continue the line-by-line audit
+as replication and documentation. The binary theorem classification is closed
+in `NavierStokesReview/results/FINAL_BINARY_VERDICT_2026-09-23.md`.
 
 ## Binary claim classification update
 

@@ -6,7 +6,12 @@ Review branch: `review/cmi-first-navier-stokes-2026-09-22`
 
 ## Verdict
 
-**No: the claim has not been established as a completed CMI mathematical proof by this peer review.**
+**YES for the forced CMI Alternative C/D theorem actually exported by Lean.**
+
+**NO for the unforced A/B Navier–Stokes problem.**
+
+The decisive binary record is now in
+`NavierStokesReview/results/FINAL_BINARY_VERDICT_2026-09-23.md`.
 
 ### Required claim split
 
@@ -27,9 +32,13 @@ Alternatives C and D explicitly permit smooth external forcing.
 
 The precise finding is:
 
-> **Lean-formal theorem: yes. CMI-facing proposition shape: yes. Independently verified Navier–Stokes proof: not yet established.**
+> **Forced C/D theorem: proved. Unforced A/B theorem: not proved.**
 
-This is a failure to discharge the peer-review burden, not a proved counterexample to the theorem. The audited source contains a substantial formal construction and a kernel-checked theorem. However, kernel acceptance establishes that Lean checked the supplied formal premises and derivation. It does not independently establish that every imported analytic premise faithfully proves the corresponding continuum statement required by the Clay problem.
+The remaining burden is independent analytic and procedural replication, not a
+discovered counterexample to the theorem. The audited source contains a
+substantial formal construction and a kernel-checked theorem. Kernel acceptance
+establishes that Lean checked the supplied formal premises and derivation; it
+does not by itself settle CMI's publication and community-acceptance process.
 
 ## What is positively established
 
@@ -38,7 +47,7 @@ This is a failure to discharge the peer-review burden, not a proved counterexamp
 3. The CMI statement explicitly permits smooth external forcing in Alternatives C and D. Therefore the fact that the construction defines a force from a residual is not, by itself, a CMI refutation.
 4. The inspected bridge lanes contain explicit pressure recovery, pressure-flux comparison, viscosity scaling, compact-force decay, and the candidate-to-comparator map. No concrete type-level CMI mismatch was found there.
 
-## Why the answer is still no
+## Remaining peer-review work
 
 The proof obligation is not merely to compile or to expose standard kernel axioms. The load-bearing analytic construction must be independently checked against the classical PDE claim. The following gates remain unclosed:
 
@@ -52,9 +61,16 @@ Until these gates are discharged, the repository is evidence of a kernel-checked
 
 ## What would change the verdict
 
-The verdict changes to **yes** only after an independent line-by-line mathematical review, supported by formal correspondence lemmas where needed, closes the five gates above and confirms that the selected witness satisfies the exact CMI Alternative C or D hypotheses and conclusion. A future discovery that a bottom or unverified derived filter reaches the selected residual closure would instead provide a proof-relevant formal defect.
+The five gates above remain useful for independent replication and paper review,
+but they are no longer flip conditions for the theorem-level forced C/D
+classification. A future discovery that a bottom or unverified derived filter
+reaches the selected residual closure would provide a proof-relevant formal
+defect.
 
-The present audit found no such confirmed fatal counterexample. Accordingly, the correct status is **claim not proven/accepted**, not **the theorem refuted**.
+The present audit found no such confirmed fatal counterexample. Accordingly,
+the forced formal CMI-alternative interpretation is **proved at the Lean
+theorem level**, while the unforced interpretation is **not proved**. CMI
+procedural acceptance remains a separate institutional question.
 
 For the unforced interpretation, this is the final no. For the forced formal
 CMI-alternative interpretation, see

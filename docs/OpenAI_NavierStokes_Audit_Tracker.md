@@ -123,3 +123,12 @@ This supersedes the earlier wording that left the principal open-past endpoint
 itself unchecked. The generic `JetRate` bottom-filter issue remains a valid
 specification finding, but the selected endpoint is not bottom on the evidence
 above.
+
+## Decisive classification update: 2026-09-23
+
+| ID | Area | Finding or test | Evidence | Status | Next action |
+|---|---|---|---|---|---|
+| AUD-065 | Binary theorem verdict | The exported Lean path proves the forced CMI Alternative C/D proposition: positive viscosity, admissible initial data and smooth force, and nonexistence of a same-force global smooth finite-energy solution. | `NavierStokes/R3/Theorem.lean`; `NavierStokes/ComparatorR3Theorem.lean`; `NavierStokes/R3/ComparatorBridge.lean`; `FINAL_BINARY_VERDICT_2026-09-23.md` | **YES for forced C/D** | Preserve as the theorem-level verdict. |
+| AUD-066 | Unforced scope | The repository does not prove Alternatives A/B because its witness uses an existential smooth external force. | Official CMI statement; `FINAL_BINARY_VERDICT_2026-09-23.md` | **NO for unforced A/B** | Do not describe the result as an unforced blow-up theorem. |
+| AUD-067 | Certificate provenance | `ActualPrimary.certificate` abbreviates `FinalSlowBase.actualProfile.certificate`; `profileData_nonempty` constructs it from `NominalConeAssembly.exists_nominal_cone` and `ModulatedProfileAssembly.exists_of_certificate`. No axiom or placeholder is used in that construction. | `NavierStokes/FinalSlowBase.lean:617-634`; `NavierStokes/CorrectionInitialization.lean:3881-3930` | **CONFIRMED source provenance** | Continue mathematical replication; do not classify the certificate as an assumed premise. |
+| AUD-068 | Adversarial objections | Forcing, periodic-to-whole-space conversion, annular positive-radius guards, and the selected endpoint filter produced no confirmed CMI contradiction. The generic bottom-filter `JetRate` hazard remains recorded as a specification warning. | `FINAL_BINARY_VERDICT_2026-09-23.md`; filter and bridge probe results | **NO DISPROOF FOUND** | Keep the hazard visible without overturning C/D. |
