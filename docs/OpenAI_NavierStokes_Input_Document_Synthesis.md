@@ -36,6 +36,20 @@ This matters because two common objections are too broad. First, residual forcin
 
 ## Synthesis
 
+The source review now supports a sharper synthesis than the initial critique set. The official paper does not claim that the force is switched off before the singularity. Its stated construction defines the force from the momentum residual and aims to extend it smoothly through the endpoint. The Lean consequence that the force is nonzero at some time in `(0,1)` therefore confirms the residual-driven mechanism, but does not violate alternatives (C) or (D).
+
+The moment-system material also requires a two-sided account. `FiveProfileMoments` is paper-shaped and reproduces the stated normalised exponent vectors. `PositiveOrderMoments` proves an exact five-coordinate repair used by the recursive slow-profile construction. `FiveRowRank` is a separate physical-rank interface with a three-coordinate debt and two fixed constraints. The direct correspondence probe proves that the first and third declarations cannot be identified row by row. This is a genuine formalisation gap unless an explicit change of variables or stage-separation theorem is supplied. It is not evidence that all five-equation repair code is absent.
+
+The resulting counter-paper position is deliberately tiered:
+
+- kernel acceptance is established for the inspected endpoints;
+- the C/D outer proposition is present in both whole-space and periodic routes;
+- active forcing is formally established for the selected candidate;
+- exact moment repair exists in at least one internal layer;
+- the cross-layer physical meaning required by the public narrative remains unproved.
+
+This synthesis is the boundary between evidence and conclusion. It prevents a true local objection from being inflated into a false claim that the final existential theorem has already been contradicted.
+
 The notes correctly insist that compilation is not semantic validation and that Level A stress matching is not Level B exact PDE realisation. They overreach when they treat force activity, missing physical regularisations, or a generic `Filter.bot` possibility as immediate refutations of alternatives (C) and (D). The paper's strongest current counterclaim is narrower and formally supported: the repository contains a paper-shaped nominal module, an exact positive-order five-row repair, and a separate physical rank module. A zero-sorry Lean theorem rules out direct identification of the nominal and physical-rank exponent vectors, but the positive-order layer means this is not by itself a failure of the selected construction. The selected dependency axiom probe finds no custom axiom that would independently explain the interfaces. The remaining issue is whether the published claim is backed by explicit cross-layer staging and correspondence theorems.
 
 The debt types sharpen the same point. The physical rank route exposes `Fin 3 → ℝ`, while the profile route exposes `Fin 5 → ℝ`; Lean proves that no linear equivalence exists between them. This does not establish that the construction is false, because a constrained embedding or stage distinction could be intended. It does establish that the published claim cannot be supported by silently treating the two debt interfaces as one full linear system.

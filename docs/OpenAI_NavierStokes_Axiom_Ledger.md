@@ -87,4 +87,29 @@ Each requires its own theorem or counterexample. None follows merely from the pr
 
 ## 6. Ledger conclusion
 
+The standard kernel report is not the end of the audit. The selected candidate also carries a substantive, non-axiomatic consequence: its force is nonzero at some time strictly before one. This belongs in the semantic ledger because it describes the witness actually constructed, not an additional axiom.
+
+## 7. Selected-witness force consequence
+
+`NavierStokes/CandidateConsequences.lean` proves
+
+```lean
+CandidateProperties u p f →
+  ∃ t ∈ Set.Ioo (0 : ℝ) 1, ∃ x, f (t, x) ≠ 0
+```
+
+The review probe is `NavierStokesReview/src/probes/ForceActivityProbe.lean`. The proposition is compatible with alternatives (C) and (D), which permit a smooth time-dependent force. It does, however, rule out describing this witness as an autonomous collapse after the force has been removed. That is a semantic correction to the physical narrative, not a new kernel axiom and not, by itself, a CMI contradiction.
+
+The command `lake env lean NavierStokesReview/src/probes/ForceActivityProbe.lean` succeeds, and `#print axioms force_nonzero_before_one_probe` reports only `propext`, `Classical.choice`, and `Quot.sound`.
+
+## 8. Correspondence status
+
+The ledger now distinguishes three claims that must not be conflated:
+
+1. `#print axioms` reports only Lean's standard foundations on the inspected endpoints.
+2. The selected force remains active before the singular time.
+3. The direct row-by-row identification of the nominal and physical moment declarations is impossible without an additional transformation theorem.
+
+Only the third is a formal correspondence obstruction. None of the three, standing alone, proves that the final C/D proposition is false.
+
 No custom axiom has been found at the inspected headline or selected-witness interfaces. A zero-sorry formal obstruction has been found to a direct identification of the nominal five-coordinate interface with the physical three-debt interface, but a separate exact five-coordinate `PositiveOrderMoments` repair is present and load-bearing. The outstanding question is whether the repository proves the required maps and staging relations among all three layers. Until answered, the claim of complete direct formal verification must be reported as not established.

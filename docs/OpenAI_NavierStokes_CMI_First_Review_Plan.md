@@ -67,4 +67,18 @@ Write the smallest zero-sorry probe that tests a load-bearing statement. Do not 
 
 ## Escalation rule
 
+The counter-paper may state that OpenAI's stronger claim of faithful formalisation is not established when a required bridge is absent or a selected-path premise is false. It may state “formal disproof” only after a zero-sorry Lean theorem proves the contradiction or a false premise is shown to be mandatory. A physical objection, a missing regularisation, active forcing, or a generic filter hazard must remain in its own category until it reaches the C/D endpoint.
+
+## Active work update: 2026-09-23
+
+The plan now has two live proof-bearing lanes and three closed or bounded lanes.
+
+1. The force lane has a concrete endpoint consequence: every candidate has nonzero force at some `0 < t < 1`. `ForceActivityProbe.lean` now compiles cleanly, and the result is recorded as active forcing rather than autonomous blow-up.
+2. The moment lane has a zero-sorry direct-correspondence obstruction, but `PositiveOrderMoments` proves an exact five-coordinate repair internally. The required action is to search for the missing change-of-variables or staging theorem before escalating the finding.
+3. The periodic-endpoint absence objection is closed because `PeriodicPaperTheorem.lean` exports the D-shaped endpoint.
+4. The pressure and energy objection remains an interface audit, not a proved failure.
+5. The `Filter.bot` issue remains a generic vacuity hazard until a bottom filter is shown to feed a mandatory endpoint premise.
+
+The next falsification threshold is therefore explicit: a selected-path theorem must contradict one required CMI predicate, or the source must expose a mandatory interface whose assumptions cannot be proved. Until then the paper reports a failure of demonstrated correspondence, not a fabricated theorem refutation.
+
 Use “formal disproof” only after a zero-sorry contradiction or a false mandatory premise has been proved. Use “formal correspondence failure” when the code and paper are not connected by a required theorem. Do not escalate a semantic criticism into a theorem-level verdict.

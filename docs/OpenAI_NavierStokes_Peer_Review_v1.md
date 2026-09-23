@@ -74,4 +74,12 @@ Until that appendix exists, the defensible answer is: the repository proves a C/
 
 ## Final assessment
 
+The review has two formal findings and one important correction. First, the force activity probe establishes that every candidate force is nonzero at some time before one. The construction is therefore forced throughout the approach to the singular time. This is relevant to interpretation, but the CMI C/D statement allows a smooth external force, so it is not a rejection criterion by itself.
+
+Second, the moment audit establishes a narrower correspondence problem. The source contains a genuine paper-shaped five-moment layer and a genuine exact five-coordinate repair layer, but the physical rank interface is not directly equal to them. The zero-sorry bridge probe proves that the direct row-by-row identification is impossible. The authors must provide the missing transformation or explain the stage separation. Without that explanation, the stronger statement that the Lean tree formalises one coherent Appendix A construction remains unestablished.
+
+The earlier periodic-endpoint objection is withdrawn. The repository does contain a periodic D-shaped endpoint, so absence of a named theorem is not evidence of failure. Likewise, the pressure-chain and bottom-filter concerns remain open review obligations unless a concrete false premise is shown to reach the exported endpoint.
+
+Recommendation: major revision of the formalisation claim and its explanatory paper. The code should expose the cross-layer maps, preserve the physical meaning of all five moments across those maps, and include a dependency-level proof that no vacuous filter enters a mandatory estimate. The current evidence does not justify calling the final C/D proposition disproved, but it does justify rejecting the stronger claim that compilation alone demonstrates faithful formalisation of the published construction.
+
 The release is evidence of a machine-checked proposition. It is not yet evidence that the official analytic proof has been faithfully formalised. The five-row coordinate mismatch supplies an honest counter-result to the stronger correspondence claim. The final C/D proposition remains unresolved until the missing bridge is either supplied or shown impossible along the selected witness path.

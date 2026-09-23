@@ -38,6 +38,7 @@ The repository contains a genuine R³ C/D-shaped endpoint and the headline theor
 - `NavierStokesReview/src/probes/JetRateVacuityProbe.lean`: generic filter-vacuity witness.
 - `NavierStokesReview/src/probes/OriginPastNeBotProbe.lean`: non-vacuity of the concrete origin-past filter.
 - `NavierStokesReview/src/probes/OpenPastNeBotProbe.lean`: non-vacuity of a concrete open-past filter.
+- `NavierStokesReview/src/probes/ForceActivityProbe.lean`: compiled force-activity consequence from `CandidateConsequences.consequences_of_candidate`.
 
 Positive source evidence audited directly:
 
@@ -47,3 +48,13 @@ Positive source evidence audited directly:
 ## Decision rule
 
 Use “formal disproof” only for a zero-sorry contradiction or a demonstrated false premise on the selected witness path. Use “correspondence failure” when the code proves a different proposition or leaves a required bridge absent. Use “semantic criticism” for physical objections that are outside the literal C/D statement.
+
+## Current evidence update: 2026-09-23
+
+| ID | New result | Status | Interpretation |
+| --- | --- | --- | --- |
+| CTR-012 | `(CandidateConsequences.consequences_of_candidate h).force_nonzero` yields a time `t ∈ (0,1)` and point `x` with `f (t,x) ≠ 0` for every `CandidateProperties` witness. | Compiled zero-sorry review probe; endpoint interpretation confirmed | The selected construction is continuously forced before the singular time. This is not a C/D refutation because the official C/D alternatives permit smooth forcing. |
+| CTR-013 | The earlier suggestion that the repository lacked a periodic D endpoint was checked against `PeriodicPaperTheorem.lean` and withdrawn. | Corrected | The repository exports both whole-space and periodic C/D-shaped endpoints. The review must attack a false premise or correspondence, not a missing filename. |
+| CTR-014 | The five-moment criticism was narrowed after inspection of `PositiveOrderMoments.lean`. | Corrected | The repository does contain an exact five-coordinate repair in that layer. The remaining adverse issue is the absence of an explicit bridge among nominal, positive-order, and physical-rank layers. |
+
+The paper therefore reports two separate conclusions: active residual forcing is a proved property of the selected candidate, while the moment-interface result is a formal correspondence objection. Neither is promoted to a refutation of the final C/D existential theorem without a reachable false premise.
