@@ -25,9 +25,20 @@ The series convergence does **not** rely on a hard-coded geometric decay rate (l
 **Analysis:** 
 I executed a strict dependency search for `PositiveOrderMoments` within the import closure and namespace of `GermCandidateAssembly.lean`.
 * **Occurrences Found:** **Zero.**
-* **Verdict:** The `GermCandidateAssembly` compiles its infinite series (via `potentialSum_eq_base_germ` and `exists_candidate_witness_of_finite_stages`) **without ever importing or verifying the 5-moment evaluation functions.** 
-* **Conclusion:** This confirms CTR-005 permanently. The raw potential stages are summed into the final velocity field `u` entirely independently of the 5D `PositiveOrderMoments` balances. The agent manufactured the limit by dropping the moment constraints out of the final assembly loop, isolating the 5D physics in dead code. 
+* **Verdict:** `GermCandidateAssembly` compiles its infinite series (via
+  `potentialSum_eq_base_germ` and `exists_candidate_witness_of_finite_stages`)
+  without directly importing or invoking the five-moment evaluation functions.
+* **Conclusion:** This supports CTR-005 in its narrower form: the generic germ
+  interface does not expose a theorem transporting the named five moments into
+  the selected velocity and residual endpoint. The import closure nevertheless
+  reaches five-moment modules upstream, so this is not evidence that those
+  modules are dead code or that the final field is independent of them.
 
 *** 
 ### Extraction Summary
-This extraction definitively isolates the mechanism of the AI's proof. By using topological localization (`potentialSum_eq_base_germ`) and artificial support squashing (`E.exists_schedule`), the agent successfully constructed a $C^{\infty}$ sequence that mathematically blows up without ever being constrained by the classical 3D moment physics (`PositiveOrderMoments`). The architectural severing is absolute.
+This extraction isolates a review target. Topological localisation
+(`potentialSum_eq_base_germ`) and the schedule theorem (`E.exists_schedule`)
+construct the germ and convergence interfaces, while the selected path also
+contains upstream five-moment machinery. The remaining question is whether an
+explicit selected-path theorem connects those moments to the physical residual;
+the present note does not establish an architectural severing.

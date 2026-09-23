@@ -40,13 +40,14 @@ dead code.
 *(To be inserted into `OpenAI_NavierStokes_Peer_Review_v1.md` under 'Technical Discrepancies')*
 
 **The Semantic Firewall and the Orphaned Moment Specification**
-The repository achieves a flawlessly valid Lean 4 compilation by constructing a robust semantic firewall between the physical PDE evaluation and the algebraic moment constraints. The foundational modules, including the base profile (`TailGaugePotential`) and the residual bounds (`PhysicalResidualJetBounds`), contain mathematically sound, genuine 3D spatial evaluations. The theorem does not rely on dimension-dropping tricks or 'fake' 2D math; the underlying vectors interact dynamically in full 3D space. 
+The repository achieves a Lean 4 compilation with a boundary between the physical PDE evaluation and the algebraic moment constraints. The foundational modules, including the base profile (`TailGaugePotential`) and the residual bounds (`PhysicalResidualJetBounds`), contain three-component spatial evaluations. The theorem does not rely on the pure-axial or fake-two-dimensional premise; the underlying field construction is genuinely three-component.
 
-However, a critical divergence occurs at the final assembly boundary (`ActualCandidateAssembly.selected_witness`). The proof satisfies the CMI type checker by evaluating PDE correctness exclusively through direct geometric jet decay bounds (`NativeBounds`). The 5-coordinate moment arrays $(M, I, J, S, C_p)$ discussed heavily in the accompanying paper—and structurally formalized in `FiveRowRank` and `PositiveOrderMoments`—are never actually imported into the residual realization chain. 
+However, a critical divergence occurs at the final assembly boundary (`ActualCandidateAssembly.selected_witness`). The proof evaluates PDE correctness through direct geometric jet decay bounds (`NativeBounds`). The selected assembly's transitive import closure does contain `FiveProfileMoments`, `FiveRowRank`, and `PositiveOrderMoments` through upstream construction modules, but the residual-realisation chain does not expose those five-coordinate arrays $(M, I, J, S, C_p)$ as semantic premises or prove their identification with the selected residual.
 
 Consequently, while the repository's modules compile, the paper-to-code
 correspondence is not established by the selected public interface. The
-review can require an explicit moment-realisation theorem and its transport
-through the residual estimates. It must not call the five-moment narrative
-dead code or claim that the selected fields are decoupled from 3D geometry
-without a further theorem.
+five-moment machinery exists upstream, but its transport into the final
+theorem bounds is not exhibited. The review can require an explicit
+moment-realisation theorem and its transport through the residual estimates.
+It must not call the five-moment machinery dead code or claim that the
+selected fields are decoupled from 3D geometry without a further theorem.

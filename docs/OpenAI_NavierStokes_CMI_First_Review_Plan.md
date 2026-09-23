@@ -160,7 +160,7 @@ References: [CMI problem statement](https://www.claymath.org/wp-content/uploads/
 - `NavierStokesReview/results/semantic_transport_pressure_probe_2026-09-23.txt`
 - `NavierStokesReview/evidence/pressure_recovery_selected_instantiation_2026-09-23.md`
 
-**Last updated:** 2026-09-23
+**Last updated:** 2026-09-24
 **Owner:** CMI-first formal review
 ## 4c. Analytic-objection adjudication
 

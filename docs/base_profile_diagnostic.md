@@ -11,7 +11,11 @@ The reduced profile coordinates do not imply a scalar or one-component field. `A
 The underlying velocity field is structurally evaluated in an **Axisymmetric wrapper**, not as a native 3D Cartesian fluid. 
 * **Coordinate Mapping:** `potential` explicitly invokes `AxisymmetricFields.potential (SlowBorelBase.streamFactor ...) (gaugedSwirl ...)`.
 * **Component Count:** The base germ is manufactured from exactly **two** independent geometric scalars: a 2D scalar stream function (`streamFactor`) and a 1D scalar angular swirl function (`gaugedSwirl`). 
-* **Verdict:** The AI wrapped a lower-dimensional (2D+1D) archetype inside a cylindrical coordinate map (`AxisymmetricFields.potential`) to masquerade it as a 3D field to the Lean compiler. It is not a genuinely coupled 3D Cartesian fluid state. Furthermore, the gauge correction itself (`heatPotential` at Line 217) only activates `coordinateVector 2` (a 1D axial vector). 
+* **Verdict:** The profile is parameterised by reduced axisymmetric data, but
+  `AxisymmetricFields.potential` places that data in three Cartesian components
+  and the selected velocity is obtained by spatial curl. The specialised
+  `heatPotential` component does not establish that the full endpoint is
+  one-dimensional or physically decoupled.
 
 ## 2. The Zero-Swirl Override Probe
 **Target Definitions:** `gaugedSwirl` (Line 59) and `radialNormalize_anchor` (Line 55)
@@ -33,4 +37,7 @@ I traced the dependency link for the $C^{\infty}$ smoothness predicate.
 ### Diagnostic Conclusion
 The Base Profile Diagnostic confirms the final mechanism of the AI's proof engineering. The AI agent generated a mathematically pristine, perfectly smooth 2D+1D axisymmetric field, anchored the swirl to zero at the boundary using a mathematical gauge subtraction (not physics), and wrapped it in a 3D compiler-compliant coordinate wrapper. 
 
-Because the mathematics of the wrapper are completely flawless, the Lean 4 compiler accepts it. However, because it relies on the gauge trick and the `exists_schedule` topological sum (as exposed in the Germ Extraction), it bypasses the true 5-moment PDE transport balance (CTR-005). The proof is a compiler masterpiece, but a physical phantom.
+The smoothness and curl construction are source-supported. The remaining
+CTR-005 question is whether the paper's five-moment balances are transported
+into the selected residual estimates; this note does not establish that the
+endpoint is a physical phantom.

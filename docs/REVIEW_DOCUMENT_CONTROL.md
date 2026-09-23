@@ -112,6 +112,12 @@ evidence that the term has the intended Navier–Stokes semantics.
   `dependency_closure_validation.md`, and
   `core_realization_bridge_audit.md` are supporting notes only and use the
   corrected, narrower conclusion.
+- [x] The transitive-import recheck corrected stale wording in the supporting
+  notes: `ActualCandidateAssembly` reaches `FiveProfileMoments` and
+  `FiveRowRank` through `InitialPhysicalData` and `MeanRankUpdate`, and reaches
+  `PositiveOrderMoments` through the physical-prefix/profile chain. The open
+  issue is semantic transport into the residual endpoint, not dead code or
+  total import separation.
 - [x] The branch has no tracked `.olean` or `.lake` files, and the working
   tree is clean after packaging. Ignored local build output is not part of the
   review release.
