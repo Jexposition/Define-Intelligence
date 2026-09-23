@@ -167,7 +167,7 @@ This closes one proposed contradiction. It does not close the correspondence pro
 - Source snapshot under review: OpenAI Navier–Stokes repository, commit `f9e8bc5` as recorded in the review materials.
 - Review branch: `review/cmi-first-navier-stokes-2026-09-22`.
 - Kernel environment: the repository-declared Lean `4.34.0-rc2` via `C:\Users\Admin\.elan\bin\lake.exe`; the separate V-lab `packages-4.32` cache was not used for this source snapshot because its manifest pins Lean 4.34.0-rc2.
-- New zero-sorry probes: `NavierStokesReview/src/probes/MomentCoordinateMismatchProbe.lean`, `MomentBridgeObstructionProbe.lean`, `FiveRowsStructureProbe.lean`, `MomentInitializationProbe.lean`, `SelectedDependencyAxiomProbe.lean`, the corrected `MainAxiomProbe.lean`, the compiled `ForceActivityProbe.lean`, and the compiled `R3ComparisonPremiseProbe.lean`.
+- New zero-sorry probes: `NavierStokesReview/src/probes/MomentCoordinateMismatchProbe.lean`, `MomentBridgeObstructionProbe.lean`, `FiveRowsStructureProbe.lean`, `MomentInitializationProbe.lean`, `SelectedDependencyAxiomProbe.lean`, the corrected `MainAxiomProbe.lean`, the compiled `ForceActivityProbe.lean`, the compiled `R3ComparisonPremiseProbe.lean`, and `MovingFieldRowNonImplicationProbe.lean`.
 - No source file in the OpenAI construction was edited.
 
 ## 13. Source-scope qualification
@@ -191,3 +191,17 @@ The import graph requires a more careful statement than either “the physical c
 The cross-use in `ReservedPatches` is nevertheless limited in the inspected declarations. `momentPatch` and `five_row_updates_supported` use `FiveProfileMoments` to describe the support of local bump functions. `radial_heated_fields` and its witness variants identify the heated outgoing field with a `FiveRowRank.background` profile on reserved radial windows. Those theorems establish support and background agreement. They do not state that the five `FiveProfileMoments.physicalMoments` rows equal the five entries of `FiveRowRank.FiveRows`, nor do they transport the debt coordinates or coefficient normalisation between the two systems.
 
 This distinction matters because `MeanRankUpdate` proves the physical-row identities entirely in terms of `FiveRowRank.Debt`, `FiveRowRank.FiveRows`, and a three-coordinate rescaling. The selected closure therefore contains both representations and several valid local identities, but the inspected source still lacks a named theorem carrying all five published quantities `(M, I, J, S, C_p)` through the nominal, positive-order, and physical-rank hand-offs. The result is a correspondence failure in the claimed paper-to-code narrative, not a contradiction of the exported C/D existential proposition. A definitive refutation would require proving that this transport is a mandatory false premise, rather than merely observing that it has not been stated.
+
+## 16. Regularity assumptions do not carry the moment equations
+
+There is a second, more precise interface distinction. The actual cycle repeatedly uses `GaugeMomentBalances.MovingField` to express smoothness, radial support, and periodicity of moving fields. Those properties are analytically important, but they are not moment identities. This can be checked constructively in Lean rather than inferred from a source reading.
+
+The zero-sorry probe `MovingFieldRowNonImplicationProbe.lean` takes the zero moving field, which satisfies `MovingField` for any admissible moving region and radial bounds. It then chooses zero background fields and zero increments with a constant nonzero three-coordinate debt. The third row of `FiveRowRank.FiveRows` reduces to `0 = -1`; hence the five-row predicate is false. The result is a formal countermodel to the implication
+
+```text
+MovingField regularity  →  FiveRowRank.FiveRows.
+```
+
+This result does not refute OpenAI's selected C/D endpoint. The selected physical rank path supplies a stronger theorem, `LocalRankDefect.RankGeometry.fiveRows`, which derives the row identities from the rank background, nonzero coefficients and velocities, interval geometry, and debt data. The correct criticism is therefore not that the repository contains no row solve. It is that the publication must show how the five paper quantities `(M, I, J, S, C_p)` become the concrete data consumed by that stronger rank-geometry theorem. A generic regularity premise cannot fill that semantic gap.
+
+This strengthens the counter-paper's central distinction. The code can contain a valid physical row repair and a valid paper-shaped five-moment repair while still lacking a proved theorem that they describe the same stage and the same quantities. Until that transport theorem is supplied and traced into `selected_witness`, the broad claim of faithful formalisation remains unestablished, even though the abstract C/D proposition remains formally unresolved.

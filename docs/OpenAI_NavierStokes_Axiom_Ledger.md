@@ -114,6 +114,18 @@ Only the third is a formal correspondence obstruction. None of the three, standi
 
 No custom axiom has been found at the inspected headline or selected-witness interfaces. A zero-sorry formal obstruction has been found to a direct identification of the nominal five-coordinate interface with the physical three-debt interface, but a separate exact five-coordinate `PositiveOrderMoments` repair is present and load-bearing. The outstanding question is whether the repository proves the required maps and staging relations among all three layers. Until answered, the claim of complete direct formal verification must be reported as not established.
 
+## 9c. Regularity does not entail the physical rows
+
+The distinction between an analytic interface and a moment equation is now formalised. `GaugeMomentBalances.MovingField` contains only `smooth`, `supported`, and `periodic` fields. The zero-sorry probe `MovingFieldRowNonImplicationProbe.lean` constructs the zero moving field and pairs it with zero backgrounds, zero increments, and a constant nonzero debt. The moving-field predicate is satisfied, while the third physical row becomes
+
+```text
+0 = -1
+```
+
+and is therefore false.
+
+This is not evidence that the selected physical rank stage lacks a row solve. `LocalRankDefect.RankGeometry.fiveRows` supplies `FiveRowRank.FiveRows` through the stronger rank-geometry assumptions and `CorrectionState.rank_rows_on_patch`. The formal conclusion is narrower and useful: generic smoothness, support, and periodicity premises cannot be cited as if they already carried the five moment identities. The missing review obligation is the transport of the paper's five named quantities into the stronger rank-geometry data actually consumed by the selected path.
+
 ## 9a. Empty active-pair branch audit
 
 `ActualParticularStageControls.raw_jets` splits on `Nonempty (ActivePair B N0)`. Its negative branch does not obtain a contradiction from an arbitrary proposition. Instead, it proves `False` only after receiving `hz : z ∈ controlPatch l n k`; the first component of `hz` is an `Active l n` witness and therefore constructs the forbidden active pair. The control patch is consequently empty in that branch, and the estimates are vacuous over that empty support.

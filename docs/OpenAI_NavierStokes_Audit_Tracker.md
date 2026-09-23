@@ -54,6 +54,7 @@ This closes the specific claim that the endpoint consumes a free scalar rate bou
 - `NavierStokesReview/src/probes/MomentInitializationProbe.lean`: compiled zero-sorry check that the selected initial state satisfies the two preserved zero-mass rows.
 - `NavierStokesReview/src/probes/R3ComparisonPremiseProbe.lean`: compiled zero-sorry source-level audit showing that the scalar comparison rate is constructed inside the R³ closure rather than passed into the endpoint as an unproved hypothesis; its endpoint `#print axioms` output contains only `propext`, `Classical.choice`, and `Quot.sound`.
 - `NavierStokesReview/src/probes/ActivePairEmptyBranchProbe.lean`: compiled zero-sorry proof that the negative `Nonempty (ActivePair)` branch makes each `controlPatch` empty.
+- `NavierStokesReview/src/probes/MovingFieldRowNonImplicationProbe.lean`: compiled zero-sorry countermodel showing that generic moving-field regularity does not entail the physical five-row equations.
 
 Positive source evidence audited directly:
 
@@ -91,3 +92,11 @@ The new `FiveRowsStructureProbe.lean` result narrows the moment objection furthe
 | CTR-020 | `ActualCandidateAssembly.selected_witness` feeds `GluedStageEstimates.actualStageEstimates`, which consumes `ActualCycleResidualBounds.PhysicalData`; `ActualPhysicalPrefixFields.physicalFields_all` derives that data from smoothness, local germs, and exterior equality. | Positive provenance evidence | The R³ endpoint is not a disconnected wrapper. The live adverse lane remains the unproved semantic correspondence among the three moment systems. |
 
 The source-scope correction changes the wording of the paper and peer review: the exported path is standard-axiom-only in the inspected reports, but the repository contains an unused challenge module with admitted theorem bodies. The two claims must not be conflated.
+
+## 2026-09-23 regularity-versus-row audit
+
+| ID | New result | Status | Interpretation |
+| --- | --- | --- | --- |
+| CTR-024 | `MovingFieldRowNonImplicationProbe.lean` proves that `GaugeMomentBalances.MovingField` can hold for the zero field while `FiveRowRank.FiveRows` fails for a nonzero debt, because the third row then reduces to `0 = -1`. | Confirmed zero-sorry interface countermodel | Smoothness, support, and periodicity are not themselves the five moment equations. The selected rank path is stronger because `LocalRankDefect.RankGeometry.fiveRows` derives the physical rows from its background, coefficient, length, velocity, and debt hypotheses. This is a proof-obligation distinction, not a refutation of the selected C/D endpoint. |
+
+The review therefore separates two interfaces that had been too easy to conflate. Generic `MovingField` premises preserve analytic regularity and support, while `RankGeometry.fiveRows` is the theorem that supplies the physical moment identities. Any paper-to-code claim must identify where the nominal quantities `(M, I, J, S, C_p)` enter that stronger rank geometry and how their values are preserved. The new probe does not justify calling the selected rank solve absent; it rules out treating regularity alone as evidence of the solve.
