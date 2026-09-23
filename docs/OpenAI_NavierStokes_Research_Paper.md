@@ -63,6 +63,8 @@ The source also contains an important intermediate construction which must be cr
 
 The relationship among the three layers is nevertheless not automatic. `FiveRowRank` is a three-debt interface with two rows fixed to zero; `PositiveOrderMoments` is a five-debt interface whose first two components are repaired rather than fixed; and `FiveProfileMoments` is the nominal physical-density system. The source proves exactness within each relevant layer, but the inspected tree does not expose one theorem identifying the nominal physical-density debt with the positive-order debt and then with the later physical-rank inputs. If the layers are deliberately staged, the authors need to state that staging and its maps. If they are claimed to represent one literal Appendix A system, those cross-layer equalities are load-bearing.
 
+The physical-rank declaration deserves a precise qualification. `FiveRowRank.FiveRows` has five displayed rows, but its adjustable debt is `Fin 3 → ℝ`. The first two rows are independent zero-moment constraints, while the final three rows use the three debt coordinates. The zero-sorry probe `FiveRowsStructureProbe.lean` verifies this decomposition directly from the source definition. This does not show that the construction fails: an invariant can legitimately be fixed rather than solved for. It does show that the code cannot be described as a generic five-equation, five-unknown inverse without an additional explanation. The load-bearing question becomes whether the two fixed constraints and three debt rows preserve the five paper moments, and whether the selected witness consumes exactly those preserved quantities.
+
 The review probe `NavierStokesReview/src/probes/MomentCoordinateMismatchProbe.lean` proves, with no `sorry`,
 
 ```lean
@@ -135,5 +137,5 @@ The distinction is essential. Kernel acceptance establishes the declared proposi
 - Source snapshot under review: OpenAI Navier–Stokes repository, commit `f9e8bc5` as recorded in the review materials.
 - Review branch: `review/cmi-first-navier-stokes-2026-09-22`.
 - Kernel environment: the repository-declared Lean `4.34.0-rc2` via `C:\Users\Admin\.elan\bin\lake.exe`; the separate V-lab `packages-4.32` cache was not used for this source snapshot because its manifest pins Lean 4.34.0-rc2.
-- New zero-sorry probes: `NavierStokesReview/src/probes/MomentCoordinateMismatchProbe.lean`, `MomentBridgeObstructionProbe.lean`, `SelectedDependencyAxiomProbe.lean`, the corrected `MainAxiomProbe.lean`, and the compiled `ForceActivityProbe.lean`.
+- New zero-sorry probes: `NavierStokesReview/src/probes/MomentCoordinateMismatchProbe.lean`, `MomentBridgeObstructionProbe.lean`, `FiveRowsStructureProbe.lean`, `SelectedDependencyAxiomProbe.lean`, the corrected `MainAxiomProbe.lean`, and the compiled `ForceActivityProbe.lean`.
 - No source file in the OpenAI construction was edited.

@@ -75,9 +75,9 @@ The plan now has two live proof-bearing lanes and three closed or bounded lanes.
 
 1. The force lane has a concrete endpoint consequence: every candidate has nonzero force at some `0 < t < 1`. `ForceActivityProbe.lean` now compiles cleanly, and the result is recorded as active forcing rather than autonomous blow-up.
 2. The moment lane has a zero-sorry direct-correspondence obstruction, but `PositiveOrderMoments` proves an exact five-coordinate repair internally. The required action is to search for the missing change-of-variables or staging theorem before escalating the finding.
-3. The periodic-endpoint absence objection is closed because `PeriodicPaperTheorem.lean` exports the D-shaped endpoint.
-4. The pressure and energy objection remains an interface audit, not a proved failure.
-5. The `Filter.bot` issue remains a generic vacuity hazard until a bottom filter is shown to feed a mandatory endpoint premise.
+3. The physical-rank predicate was inspected at declaration level. `FiveRowsStructureProbe.lean` confirms three debt coordinates plus two fixed zero rows, so the review must not call it a generic five-by-five inversion. The next test is whether the fixed rows and the three debt rows jointly preserve the paper's five named moments along the selected witness.
+4. The periodic-endpoint absence objection is closed because `PeriodicPaperTheorem.lean` exports the D-shaped endpoint.
+5. The pressure and energy objection remains an interface audit, not a proved failure. The `Filter.bot` issue remains a generic vacuity hazard until a bottom filter is shown to feed a mandatory endpoint premise.
 
 The next falsification threshold is therefore explicit: a selected-path theorem must contradict one required CMI predicate, or the source must expose a mandatory interface whose assumptions cannot be proved. Until then the paper reports a failure of demonstrated correspondence, not a fabricated theorem refutation.
 

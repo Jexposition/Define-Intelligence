@@ -54,4 +54,6 @@ The notes correctly insist that compilation is not semantic validation and that 
 
 The debt types sharpen the same point. The physical rank route exposes `Fin 3 → ℝ`, while the profile route exposes `Fin 5 → ℝ`; Lean proves that no linear equivalence exists between them. This does not establish that the construction is false, because a constrained embedding or stage distinction could be intended. It does establish that the published claim cannot be supported by silently treating the two debt interfaces as one full linear system.
 
+The declaration-level audit adds an important qualification. `FiveRowRank.FiveRows` contains five displayed integral identities, but only its final three rows are debt-controlled. The first two are explicit zero constraints on the increment fields. `FiveRowsStructureProbe.lean` verifies this structure directly. Thus the honest criticism is not that Lean attempted an impossible arbitrary five-by-five solve; it is that the publication must explain how the two fixed invariants and three debt-controlled rows represent the paper's five named moments and how that representation is connected to the other two moment layers.
+
 That finding is now carried consistently into the plan, ledger, tracker, peer review, and research paper.
