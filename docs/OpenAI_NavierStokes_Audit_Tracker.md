@@ -118,3 +118,11 @@ These findings narrow the counter-paper. The remaining formal correspondence obj
 | CTR-029 | The R3 endpoint remains standard-axiom-only in the inspected reports, while the force stays active through the singular interval. | Confirmed | The endpoint is forced and C/D-shaped; it is not established as autonomous or force-free. CMI C/D permits smooth forcing. |
 
 The present review classification is **major revision**. A stronger `[FORMALLY REFUTED]` label is reserved for a zero-sorry contradiction or a false premise proved on the selected endpoint path.
+
+## 2026-09-23 bridge correction
+
+| ID | New result | Status | Interpretation |
+| --- | --- | --- | --- |
+| CTR-030 | `FiveRowPositiveOrderBridgeProbe.lean` proves that `PositiveOrderMoments.repairU` and `repairE` equal `FiveRowRank.gamma` and `deltaV` after promoting debt `(P,Jθ,Jz)` to `(0,0,-P,-Jθ,-Jz)`. | Confirmed zero-sorry constructive bridge | The direct dimension mismatch is not a repair contradiction. The remaining target is the selected-path transport of the paper's named moments into this promoted interface. |
+
+This entry supersedes any interpretation of CTR-027 as a standalone refutation. CTR-027 remains a proof that direct row identification is impossible. CTR-030 proves the natural constrained reduced form. The live falsification threshold is now a false equality or false mandatory premise on the selected endpoint path.

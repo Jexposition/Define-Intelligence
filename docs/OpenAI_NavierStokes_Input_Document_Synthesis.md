@@ -116,3 +116,9 @@ The remaining claims are classified as follows:
 - division-by-zero failure: not supported by the inspected source.
 
 The human-readable research paper and referee report now state these distinctions as arguments and findings rather than as a chronological work log.
+
+## Correction: the reduced-form repair bridge
+
+The previous synthesis treated the five-versus-three interface difference as the strongest adverse result. That interpretation is now narrowed. `FiveRowPositiveOrderBridgeProbe.lean` proves, with no `sorry`, that the physical repair functions are exactly the positive-order repair functions after promoting the three debts to `(0,0,-P,-Jθ,-Jz)`, and that the five weighted moments are exact for this promoted target.
+
+The honest remaining criticism is therefore not that the repository has incompatible repair machinery. It is that the selected endpoint has not yet displayed the theorem connecting the paper's five named quantities to the promoted physical debt and showing that the correspondence is preserved through the actual witness and residual estimates.

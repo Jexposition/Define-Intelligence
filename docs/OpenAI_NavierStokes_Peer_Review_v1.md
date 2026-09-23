@@ -63,7 +63,7 @@ Non-Newtonian viscosity and hypo-dissipation are different equations. They are a
 
 ## Final assessment
 
-The formal endpoint should not be dismissed as a mere compile illusion. Conversely, a clean endpoint axiom report does not verify the paper's construction line by line. The current evidence supports a **major-revision** decision: the authors have a formal C/D-shaped endpoint and substantial construction machinery, but the paper's central five-moment correspondence is unproved at the source level. The review does not yet possess a zero-sorry theorem showing that the exported endpoint is false.
+The formal endpoint should not be dismissed as a mere compile illusion. Conversely, a clean endpoint axiom report does not verify the paper's construction line by line. The current evidence supports a **major-revision** decision: the authors have a formal C/D-shaped endpoint and substantial construction machinery, while the paper's endpoint-level five-moment transport remains unproved at the source level. The review does not yet possess a zero-sorry theorem showing that the exported endpoint is false.
 
 ## Review artefacts
 
@@ -73,3 +73,9 @@ The formal endpoint should not be dismissed as a mere compile illusion. Converse
 - `NavierStokesReview/src/probes/ForceActivityProbe.lean`
 - `NavierStokesReview/src/probes/OriginPastNeBotProbe.lean`
 - `OpenAI_NavierStokes_Axiom_Ledger.md`
+
+## Correction to the moment finding
+
+The initial wording treated the dimension and exponent mismatch as the strongest adverse result. That wording was too strong. `FiveRowPositiveOrderBridgeProbe.lean` now proves, without `sorry`, that the positive-order repair and the physical-rank repair agree after promoting `(P, Jθ, Jz)` to `(0, 0, -P, -Jθ, -Jz)`. The probe also proves the exact five weighted moments for that promoted repair.
+
+The review therefore withdraws any suggestion that `FiveRowRank` is inconsistent with the five-row repair. The remaining major-revision issue is endpoint transport: the source must show that `CorrectionState.debt`, `ZeroMasses`, and `RankGeometry.fiveRows` carry the paper's named `(M, I, J, S, C_p)` quantities into the actual selected witness and residual estimates. Without that theorem, the public paper-to-code correspondence remains unestablished. This is narrower than a formal refutation.

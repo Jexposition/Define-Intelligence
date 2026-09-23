@@ -211,3 +211,9 @@ The generic specification hazard is confirmed, but selected endpoint vacuity is 
 | AX-014 | Challenge `sorry` declarations contaminate headline R3 endpoint | Source and selected dependency reports do not place them on the path | NOT SUPPORTED |
 
 The ledger distinguishes a proved adverse correspondence result from an unproved assertion that the exported endpoint is false. Standard foundational axioms are recorded transparently and are not counted as project-specific assumptions.
+
+## AX-015: constructive correction to the moment objection
+
+`FiveRowPositiveOrderBridgeProbe.lean` proves that the positive-order five-coordinate repair reduces exactly to the `FiveRowRank` repair under the promotion `(P,Jθ,Jz) ↦ (0,0,-P,-Jθ,-Jz)`. It also proves the exact positive-order weighted moments for the promoted physical repair. Status: **confirmed constructive bridge**.
+
+This supersedes the stronger reading of AX-009. AX-009 proves that literal row-by-row identification and a full linear equivalence of the two debt spaces are impossible. It does not prove that the repair formulas are inconsistent. AX-011 remains open: the selected endpoint still needs a theorem transporting the paper's five named moment defects into the promoted physical interface.

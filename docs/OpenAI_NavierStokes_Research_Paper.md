@@ -81,7 +81,7 @@ Ladyzhenskaya stresses, hypo-dissipation, and other regularisations change the e
 |---|---|---|
 | The public endpoint has a C/D-shaped forced nonexistence statement | Supported by source and zero-sorry endpoint probes | CONFIRMED at the formal interface |
 | The endpoint is autonomous or force-free | The force remains active near the singular time | NOT ESTABLISHED; stronger claim contradicted by source |
-| The paper's Appendix-A five moments are the `FiveRowRank` rows | Direct equality and linear identification are impossible | ADVERSE CORRESPONDENCE FINDING |
+| The paper's Appendix-A five moments are transported through the selected repair | Direct equality is impossible, while the promoted positive-order repair agrees with `FiveRowRank` | ENDPOINT TRANSPORT OPEN |
 | A separate exact five-row repair exists in the repository | `PositiveOrderMoments` proves a five-dimensional exact repair | CONFIRMED as a separate module |
 | The separate repair is proved to be the paper's repair and is consumed by the endpoint | No such identification theorem was found in the inspected endpoint path | OPEN, load-bearing |
 | The endpoint is vacuous because of `Filter.bot` | Generic risk confirmed; selected non-bottom path checked | NOT DEMONSTRATED |
@@ -98,3 +98,13 @@ Accordingly, the review recommendation is **major revision**. The authors must s
 1. Charles L. Fefferman, [Existence and Smoothness of the Navier–Stokes Equation](https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf).
 2. Clay Mathematics Institute, [Millennium Prize Problem rules](https://www.claymath.org/millennium-problems/rules/).
 3. OpenAI, [NavierStokesAndEuler repository](https://github.com/openai/NavierStokesAndEuler).
+
+## Revision statement: the moment objection is narrowed
+
+The direct mismatch between the paper-shaped five-coordinate interface and `FiveRowRank` remains a proved type-level fact, but it is not a proof that the repair mechanism fails. `FiveRowPositiveOrderBridgeProbe.lean` is a zero-sorry construction showing that the positive-order repair reduces exactly to the physical-rank repair under the promotion
+
+```text
+(P, Jθ, Jz) ↦ (0, 0, -P, -Jθ, -Jz).
+```
+
+The probe proves equality of the repair fields and exactness of the five weighted moments for the promoted target. This supersedes any claim that the three-debt interface is, by itself, inconsistent with the five-row repair. The remaining adverse result is an endpoint-level correspondence question: the selected witness must identify `CorrectionState.debt` and `ZeroMasses` with the paper's named quantities and must carry that identification into the residual estimates. Until that theorem is exhibited, the paper-to-code claim remains unestablished. A formal refutation still requires a zero-sorry contradiction on the selected witness path.

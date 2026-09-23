@@ -138,3 +138,13 @@ This does not close the entire CMI endpoint against the repository because `Posi
 4. if the map is absent, classify the paper-to-code claim as unestablished rather than claiming the endpoint is false.
 
 The current gate is **major revision**. Escalation to formal disproof requires a zero-sorry contradiction or a false mandatory premise on the selected witness path.
+
+## 2026-09-23 correction to the moment lane
+
+`MomentBridgeObstructionProbe.lean` proves that the nominal five-coordinate interface cannot be directly identified with `FiveRowRank`. `FiveRowPositiveOrderBridgeProbe.lean` now proves the natural constrained promotion and exact repair identity:
+
+```text
+(P, Jθ, Jz) ↦ (0, 0, -P, -Jθ, -Jz)
+```
+
+Therefore the dimension difference is not, by itself, a contradiction. The next decisive test is the selected-path transport theorem. It must identify `CorrectionState.debt` and `ZeroMasses` with the paper's five moment data, show that `RankGeometry.fiveRows` is consumed by the actual residual estimates, and carry the map into `ActualCandidateAssembly.selected_witness`. If the map is absent, the paper-to-code claim remains unestablished. If a required equality is false, formalise that exact failure in Lean and promote it to formal disproof.
