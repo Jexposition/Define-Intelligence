@@ -231,3 +231,14 @@ audited exports have standard-only kernel axioms and the CMI-facing force and
 nonexistence predicates are present. This must not be restated as a proof of
 the unforced three-dimensional problem. The unforced answer remains **no**;
 the complete analytic paper review remains **open**.
+
+## Current semantic-composition update: 2026-09-23
+
+The independent Clay bridge has now been compiled against the current public
+OpenAI source closure `f9e8bc5b38b6e212696e8a30e3e91517af887bbd`. The final
+adapter reports only `propext`, `Classical.choice`, and `Quot.sound` for both
+forced Clay alternatives C and D. Therefore the theorem-level formal result
+and its independent CMI statement mapping are confirmed. The older wording
+above remains a historical snapshot; it must not be read as a current negative
+verdict. The unforced A/B answer remains **no**, and institutional CMI
+acceptance remains a separate procedural matter.

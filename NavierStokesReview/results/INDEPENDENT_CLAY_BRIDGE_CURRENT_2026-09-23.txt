@@ -1,0 +1,46 @@
+# Independent Comparator-to-Clay bridge against current OpenAI source
+
+Date: 2026-09-23
+OpenAI source closure: `f9e8bc5b38b6e212696e8a30e3e91517af887bbd`
+Lean toolchain: `leanprover/lean4:v4.34.0-rc2`
+Independent bridge source: `francescoantoniodeluca/navier-stokes-formal-audit`
+Independent bridge checkout: `c2e4f438f7af8bbf222a59801696aca2c3c15b6f`
+
+## Procedure
+
+The independent files `ClaySpec.lean`, `Gap.lean`, and `Adapter.lean` were
+compiled without importing OpenAI source into `ClaySpec` or `Gap`. The final
+`Adapter.lean` was then compiled with the current OpenAI build directory on
+the Lean search path, so its OpenAI import resolves to the current public
+source closure rather than the audit repository's older pinned checkout.
+
+The source-level separation is:
+
+```text
+ClaySpec.lean  -> Mathlib only
+Gap.lean       -> ClaySpec + NavierStokes.ComparatorDefinitions
+Adapter.lean   -> Gap + NavierStokes.ComparatorSolution
+```
+
+## Output
+
+```text
+'SemanticGap.ComparatorOptionC_to_ClayOptionC' depends on axioms:
+  [propext, Classical.choice, Quot.sound]
+'SemanticGap.ComparatorOptionD_to_ClayOptionD' depends on axioms:
+  [propext, Classical.choice, Quot.sound]
+'SemanticGapAdapter.openAI_to_ClayOptionC' depends on axioms:
+  [propext, Classical.choice, Quot.sound]
+'SemanticGapAdapter.openAI_to_ClayOptionD' depends on axioms:
+  [propext, Classical.choice, Quot.sound]
+```
+
+No `sorryAx`, native-evaluation axiom, or project-specific axiom appears.
+
+## Finding
+
+The current OpenAI declarations do not merely prove their own Comparator
+definitions. At the checked Lean level, they compose with an independent
+Clay/Fefferman transcription to establish the whole-space and periodic
+forced breakdown propositions C and D. This does not change the separate
+scope result: the development still does not prove the unforced A/B claim.

@@ -43,3 +43,13 @@ The remaining independent peer-review obligation is not compilation. It is a lin
 Current classification: `FORMAL TRUST PASS; CMI PREDICATE MATCH CONFIRMED AT LEAN INTERFACE LEVEL; ANALYTIC PEER REVIEW OPEN; NO NEGATIVE CMI FINDING ESTABLISHED`.
 
 This classification does not imply CMI prize recognition. [CMI rules](https://www.claymath.org/millennium-problems/rules/) require a qualifying publication, at least two years of rigorous examination, and general acceptance before CMI considers a proposed solution.
+
+## Superseding semantic-composition update: 2026-09-23
+
+An independently written `ClaySpec.lean` was compiled against the current public source closure at commit `f9e8bc5b38b6e212696e8a30e3e91517af887bbd`. The independent chain is `ClaySpec` (Mathlib only), `Gap` (Clay specification plus Comparator definitions), and `Adapter` (the current OpenAI Comparator solution). It checks the PDE signs, divergence, initial data, decay, energy, periodicity including pressure, and the logical direction of the forced alternatives.
+
+The bridge proved both directions required for the semantic audit: Comparator C/D imply the independently written Clay C/D specifications, and the current OpenAI headline theorems compose into those Clay statements. The resulting declarations depend only on Lean's standard `propext`, `Classical.choice`, and `Quot.sound`; no `sorryAx`, native-evaluation axiom, or project-specific axiom was present. Transcript: `NavierStokesReview/results/INDEPENDENT_CLAY_BRIDGE_CURRENT_2026-09-23.txt`.
+
+Superseding classification: `FORMAL TRUST PASS; INDEPENDENT CMI SEMANTIC COMPOSITION CONFIRMED FOR FORCED C/D; UNFORCED A/B NOT PROVED; NO NEGATIVE CMI FINDING ESTABLISHED`.
+
+The generic bottom-filter weakness and the closed-half-space boundary convention remain specification-quality and exposition review items. They are not, on the evidence collected, a counterexample to the exported forced C/D theorem.

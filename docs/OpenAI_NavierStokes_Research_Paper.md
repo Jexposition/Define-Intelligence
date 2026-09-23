@@ -192,6 +192,31 @@ of every analytic certificate in the paper. This is a review boundary, not a
 Lean compilation objection and not a claim that a fatal formal counterexample
 was found.
 
+## 14. Independent semantic composition: 2026-09-23
+
+The semantic question was strengthened beyond matching OpenAI's own
+Comparator definitions. An independent audit repository supplies a separate
+Clay/Fefferman transcription, a Comparator-to-Clay bridge, and an end-to-end
+adapter. We compiled those three layers against the current public OpenAI
+source closure `f9e8bc5b38b6e212696e8a30e3e91517af887bbd`.
+
+The resulting declarations were:
+
+```text
+SemanticGap.ComparatorOptionC_to_ClayOptionC
+SemanticGap.ComparatorOptionD_to_ClayOptionD
+SemanticGapAdapter.openAI_to_ClayOptionC
+SemanticGapAdapter.openAI_to_ClayOptionD
+```
+
+All four report only `propext`, `Classical.choice`, and `Quot.sound`. The
+bridge checks equation conventions, divergence, decay predicates,
+periodicity, the energy condition, and the contradiction direction for global
+solutions. This is positive evidence that the current formal result has the
+right forced CMI meaning. It does not convert the forced result into an
+unforced A/B theorem. The raw transcript is in
+`NavierStokesReview/results/INDEPENDENT_CLAY_BRIDGE_CURRENT_2026-09-23.txt`.
+
 ## 9. Procedural CMI boundary
 
 The CMI prize rules impose a separate procedural condition. Before CMI will

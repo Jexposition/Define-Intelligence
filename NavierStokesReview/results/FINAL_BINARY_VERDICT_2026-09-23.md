@@ -32,6 +32,9 @@ solution exists for that same data and force.
    native-evaluation axiom, or project-specific axiom.
 5. The independent quantifier probe elaborates the exact CMI-facing
    existential and same-force negated-global-solution shape.
+6. An independent `ClaySpec`/`Gap`/`Adapter` chain compiles against the
+   current source closure and composes the OpenAI exports into independently
+   written Clay C and D propositions, with the same standard-only axiom set.
 
 The construction's force is residual-engineered. That is a design choice, not
 a CMI violation, because C and D ask for existence of a smooth admissible
@@ -53,6 +56,11 @@ regularity guards. The generic `JetRate` API admits vacuous bottom-filter
 proofs, but the selected endpoint used by the audited path was separately
 proved nontrivial; this is a specification-quality warning, not a disproof of
 the exported theorem.
+
+The independent semantic bridge is now also checked against the current
+public source, not only the earlier audit snapshot. Its final adapter proves
+the current OpenAI exports imply independently written Clay C and D
+statements. See `INDEPENDENT_CLAY_BRIDGE_CURRENT_2026-09-23.txt`.
 
 ## CMI status versus theorem status
 

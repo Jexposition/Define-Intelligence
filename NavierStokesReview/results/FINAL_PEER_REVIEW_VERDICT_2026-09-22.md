@@ -46,6 +46,10 @@ does not by itself settle CMI's publication and community-acceptance process.
 2. The whole-space route elaborates with the CMI Alternative C existential and same-force negated-global-solution shape. The periodic route separately elaborates with the Alternative D periodic data, forcing, velocity, pressure, and energy structure.
 3. The CMI statement explicitly permits smooth external forcing in Alternatives C and D. Therefore the fact that the construction defines a force from a residual is not, by itself, a CMI refutation.
 4. The inspected bridge lanes contain explicit pressure recovery, pressure-flux comparison, viscosity scaling, compact-force decay, and the candidate-to-comparator map. No concrete type-level CMI mismatch was found there.
+5. An independent Clay specification, Comparator-to-Clay bridge, and final
+   adapter were compiled against the current source closure. The resulting C
+   and D declarations report only `propext`, `Classical.choice`, and
+   `Quot.sound`.
 
 ## Remaining peer-review work
 
@@ -83,5 +87,7 @@ CMI-alternative interpretation, see
 - Load-bearing semantic interfaces: `NavierStokesReview/results/SEMANTIC_LOAD_BEARING_AUDIT_2026-09-22.md`.
 - Filter specification finding: `NavierStokesReview/results/DERIVED_FILTER_AUDIT_2026-09-22.md`.
 - Kernel reports: `NavierStokesReview/results/HEADLINE_AXIOMS_4_34_RC2.txt` and `EULER_AXIOMS_4_34_RC2.txt`.
+- Independent current-source semantic transcript:
+  `NavierStokesReview/results/INDEPENDENT_CLAY_BRIDGE_CURRENT_2026-09-23.txt`.
 
 The external target is Fefferman's official [Clay Mathematics Institute problem statement](https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf). The claimed result and source are the [OpenAI announcement](https://openai.com/index/navier-stokes-solution/) and the [OpenAI repository](https://github.com/openai/NavierStokesAndEuler).
