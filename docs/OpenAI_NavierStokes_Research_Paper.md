@@ -142,6 +142,18 @@ The comparison-premise correction narrows that conclusion. The adverse report mu
 
 The distinction is essential. Kernel acceptance establishes the declared proposition. It does not supply a missing change of variables, prove that differently indexed debts have the same physical meaning, or convert a residual-defined force into an autonomous evolution. A future revision could close the gap by exposing those maps and proving their preservation properties. Until then, the appropriate scientific verdict is that the repository contains a substantial formal C/D-shaped result but has not demonstrated the stronger claim made for the complete paper-to-code correspondence.
 
+## 10. Pressure recovery does not presently supply a contradiction
+
+The whole-space uniqueness argument deserves separate treatment because its pressure estimates are where a formally accepted proof could most easily acquire an unintended meaning. The source does not simply posit a pressure bound at infinity. It proceeds in three stages.
+
+First, the equation and divergence identities are tested against compact spatial functions and compact temporal cutoffs. `TemporalTestUniqueness.eq_zero_on_Ioo_of_setIntegral_tests` converts the resulting integral identities into pointwise equality on the interior time interval using continuity and the integral fundamental lemma. This is a genuine test argument in the inspected path, not a `Filter.bot` shortcut.
+
+Second, the difference between the physical pressure-gradient functional and the canonical Riesz functional is shown to vanish on compact Laplacian tests. `HarmonicTestFunctionals.eq_zero_of_compact_harmonic` supplies the extension step through an explicit Fourier Sobolev bound and a weighted `L²` representative. The selected dependency probe found no custom axiom at this interface.
+
+Third, `ActualPressureFlux.pressure_flux_eq_canonical` converts the recovered compact pairings into the pressure flux used by the localised energy identity. `WholeSpaceComparisonClosure.eq_of_pressure_flux_bound` then constructs the scalar rate bound internally through `ComparisonRateBound.exists_uniform_rate_bound`.
+
+This audit closes one proposed failure mode. The rate estimate is not an unexplained premise passed into the endpoint. It does not, however, turn kernel acceptance into independent mathematical validation. The pressure reconstruction, Riesz estimates, and localised energy balance remain load-bearing analytic claims that require expert verification. At present they provide no zero-sorry contradiction. The counter-paper therefore retains its principal finding: the public claim of one coherent formalisation of the paper's moment construction is not established, while the final C/D existential proposition has not yet been formally refuted.
+
 ## Reproducibility record
 
 - Source snapshot under review: OpenAI Navier–Stokes repository, commit `f9e8bc5` as recorded in the review materials.

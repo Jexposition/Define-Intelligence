@@ -86,3 +86,9 @@ The plan now has two live proof-bearing lanes and three closed or bounded lanes.
 The next falsification threshold is therefore explicit: a selected-path theorem must contradict one required CMI predicate, or the source must expose a mandatory interface whose assumptions cannot be proved. Until then the paper reports a failure of demonstrated correspondence, not a fabricated theorem refutation.
 
 Use “formal disproof” only after a zero-sorry contradiction or a false mandatory premise has been proved. Use “formal correspondence failure” when the code and paper are not connected by a required theorem. Do not escalate a semantic criticism into a theorem-level verdict.
+
+## Current adjudication: pressure and uniqueness
+
+The pressure/uniqueness chain has now been inspected beyond its exported theorem names. The temporal recovery theorem uses compact temporal tests and continuity to obtain interior-time equality. The spatial step uses an explicit Fourier Sobolev bound and a weighted `L²` representative to eliminate compactly harmonic functionals. The comparison closure constructs its scalar rate bound internally, while the pressure-flux constant is constructed from the pressure-recovery hypotheses.
+
+This lane does not presently yield a formal disproof. Its status is “analytically load-bearing, no checked contradiction”. The review must not describe the rate bound as an imported premise or describe the pressure route as absent. The decisive remaining routes are the cross-layer moment bridge, a selected-path filter-collapse proof, or a concrete false identity in the pressure/energy estimates.

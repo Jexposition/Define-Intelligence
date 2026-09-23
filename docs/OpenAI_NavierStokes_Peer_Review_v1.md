@@ -96,4 +96,10 @@ This is a material correction to the adverse case. The comparison theorem still 
 
 Recommendation: major revision of the formalisation claim and its explanatory paper. The code should expose the cross-layer maps, preserve the physical meaning of all five moments across those maps, and include a dependency-level proof that no vacuous filter enters a mandatory estimate. The current evidence does not justify calling the final C/D proposition disproved, but it does justify rejecting the stronger claim that compilation alone demonstrates faithful formalisation of the published construction.
 
+## Finding 8: pressure recovery remains analytically load-bearing
+
+The pressure route was inspected as a possible hidden-premise failure. `PressureRecovery.gradient_recovery_complex` obtains pointwise interior-time pressure-gradient identities from compact temporal tests and continuity. `HarmonicTestFunctionals.eq_zero_of_compact_harmonic` then uses an explicit Fourier Sobolev bound and weighted `L²` representation to eliminate the compactly harmonic remainder. `ActualPressureFlux` converts the recovered pairings into the cutoff pressure flux used by the energy estimate.
+
+This inspection did not produce a zero-sorry contradiction or a custom-axiom defect. It also confirms that the scalar rate bound is constructed internally by `WholeSpaceComparisonClosure`, rather than being handed to the endpoint as a free premise. These are positive findings about the source structure, not independent validation of every analytic estimate. The pressure reconstruction and localised energy identity remain appropriate targets for specialist review, but they must not be described as absent or vacuous without further evidence.
+
 The release is evidence of a machine-checked proposition. It is not yet evidence that the official analytic proof has been faithfully formalised. The five-row coordinate mismatch supplies an honest counter-result to the stronger correspondence claim. The final C/D proposition remains unresolved until the missing bridge is either supplied or shown impossible along the selected witness path.

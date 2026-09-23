@@ -32,6 +32,14 @@ The repository contains a genuine R³ C/D-shaped endpoint and the headline theor
 
 | CTR-016 | The whole-space comparison theorem imports an unproved scalar rate bound as an endpoint premise. | `R3/WholeSpaceComparisonClosure.lean` constructs the rate bound internally through `ComparisonRateBound.exists_uniform_rate_bound`. `R3/WholeSpaceUniqueness.lean` constructs the pressure-flux estimate through `PressureFlux.exists_uniform_actual_pressure_flux_bound`. `R3ComparisonPremiseProbe.lean` records the internal rate-bound construction. | Withdrawn as stated | The rate-bound interface is not an external premise. The remaining audit target is whether the pressure-recovery and localised PDE estimates prove their stated hypotheses with the intended whole-space meaning. |
 
+| CTR-017 | The pressure/uniqueness chain may hide a vacuous or imported comparison premise. | `PressureRecovery.gradient_recovery_complex` uses explicit compact temporal tests; `HarmonicTestFunctionals.eq_zero_of_compact_harmonic` uses a Fourier Sobolev bound; `WholeSpaceComparisonClosure` constructs the scalar rate bound; selected-path axiom probes report only standard axioms. | Not substantiated in the inspected path | Preserve the pressure chain as a live mathematical audit target, but do not call it a formal failure without a concrete false identity or mandatory unprovable premise. |
+
+## 2026-09-23 pressure-chain adjudication
+
+The pressure and comparison audit was completed at source level. The generic `Filter.bot` warning remains real, but the inspected pressure-recovery path does not use an empty-filter shortcut: compact temporal tests are converted to pointwise equality on `Ioo 0 T` by continuity and an integral fundamental lemma. The harmonic-functional step is bounded by an explicit Fourier Sobolev norm before compact harmonicity is extended to the full Schwartz test space.
+
+This closes the specific claim that the endpoint consumes a free scalar rate bound. The comparison closure constructs it internally, and the pressure-flux constant is constructed upstream from the pressure-recovery hypotheses. The chain remains analytically load-bearing, but no zero-sorry contradiction has yet been found in it.
+
 ## Formal artefacts
 
 - `NavierStokesReview/src/probes/MomentCoordinateMismatchProbe.lean`: zero-sorry vector inequalities.

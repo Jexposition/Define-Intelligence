@@ -131,3 +131,7 @@ This closes a separate provenance objection: the R³ theorem is connected to the
 An earlier audit formulation treated the final scalar rate inequality as an unproved hypothesis consumed by the whole-space endpoint. The source does not support that description. `WholeSpaceComparisonClosure.eq_of_pressure_flux_bound` calls `ComparisonRateBound.exists_uniform_rate_bound` internally after constructing constants from comparison norms. The pressure-flux constant is likewise produced inside `WholeSpaceUniqueness.classical_uniqueness_on_Icc` by `PressureFlux.exists_uniform_actual_pressure_flux_bound`, using `PressureRecovery.Hypotheses` assembled from smoothness, divergence, residual equality, and finite-energy bounds.
 
 This correction removes a proposed interface-premise failure. It does not certify the analytic validity of pressure recovery or localised energy estimates. Those remain load-bearing and must be checked for correct hypotheses and whole-space meaning. Status: no external rate-bound assumption found at this endpoint; analytic derivation remains under review.
+
+## 12. Pressure-chain axiom adjudication
+
+The inspected pressure path uses compact temporal tests, continuity, a Fourier Sobolev bound, and weighted `L²` representation before producing the cutoff flux. The selected dependency probes found no custom axiom at these interfaces. The generic `Filter.bot` risk remains a valid audit question for other modules, but it was not shown to enter this pressure chain. No new axiom defect is therefore recorded.
