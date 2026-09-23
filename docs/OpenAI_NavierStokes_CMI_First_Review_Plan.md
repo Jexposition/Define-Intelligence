@@ -87,6 +87,8 @@ The next falsification threshold is therefore explicit: a selected-path theorem 
 
 The empty-index branch audit has been added to the reachability lane. `ActualParticularStageControls.raw_jets` uses a valid `Nonempty (ActivePair)` split: the empty branch proves the control patch empty from its own membership predicate, while the nonempty branch uses an explicit countable surjection. The next test is not to label this `False.elim`, but to determine whether the selected endpoint depends on an inhabited active subtype and whether that subtype is proved inhabited. Without that dependency, the branch is not a refutation.
 
+The moment lane now has a source-map test in addition to the type-level probes. `MeanRankUpdate.lean` imports `FiveProfileMoments.lean` but defines its operative interface entirely through `FiveRowRank`; an import-only edge is not a bridge. The next correspondence search must locate a theorem that explicitly transports the five paper moments into the three-debt physical rank update. If no such theorem reaches `selected_witness`, this supports a formal correspondence failure, not merely a stylistic complaint.
+
 Use “formal disproof” only after a zero-sorry contradiction or a false mandatory premise has been proved. Use “formal correspondence failure” when the code and paper are not connected by a required theorem. Do not escalate a semantic criticism into a theorem-level verdict.
 
 ## Current adjudication: pressure and uniqueness

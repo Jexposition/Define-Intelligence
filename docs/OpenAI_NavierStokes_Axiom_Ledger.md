@@ -120,6 +120,10 @@ No custom axiom has been found at the inspected headline or selected-witness int
 
 The positive branch uses `exists_surjective_nat (ActivePair B N0)` and an explicit reindexing. This audit removes a tempting but invalid claim that the source uses `False.elim` to prove arbitrary estimates on a nonempty physical patch. It does not yet prove that the selected active subtype is inhabited, so the endpoint-level reachability of the empty branch remains a live but narrower question.
 
+## 9b. Import graph versus semantic bridge
+
+The import edge from `MeanRankUpdate.lean` to `FiveProfileMoments.lean` does not itself transport any proposition or data. A source census of `MeanRankUpdate.lean` finds its operative definitions in `FiveRowRank`: `Debt` is abbreviated to `FiveRowRank.Debt`, the rows are `FiveRowRank.FiveRows`, and `scaleDebt` has three coordinates. No theorem in that file invokes a `FiveProfileMoments` declaration. The ledger therefore records the edge as library availability, not as evidence of a nominal-to-physical moment correspondence.
+
 ## 9. Exact shape of the physical five-row predicate
 
 The source-level declaration `FiveRowRank.FiveRows` must be read literally. It takes `Debt := Fin 3 → ℝ`, not a five-coordinate debt. Its conjunction is structured as two fixed zero-moment equations followed by three equations whose right-hand sides are `-(d 0)`, `-(d 1)`, and `-(d 2)`. `FiveRowsStructureProbe.lean` compiles these projections without assumptions beyond the declaration itself.
