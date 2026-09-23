@@ -26,13 +26,13 @@ The CMI publication and review process is separate from the mathematical audit. 
 | D | The public paper's direct formal-verification claim is justified. | All load-bearing bridges must be present and valid. |
 | E | The result proves spontaneous physical blow-up under altered constitutive laws. | Separate mathematics, not implied by C/D. |
 
-The current evidence supports A and B, rejects the old “periodic toy” objection, and does not establish C or D. The zero-sorry moment probe supplies a counter-result against a direct coordinate identification. E is outside the literal Newtonian endpoint.
+The current evidence supports A and B, rejects the old “periodic toy” objection, and does not establish C or D as a faithful formalisation of the published construction. The zero-sorry moment probes supply a formal obstruction to direct coordinate identification, while the dependency axiom probe finds no custom axiom at the selected witness interfaces. E is outside the literal Newtonian endpoint.
 
 ## Falsification lanes
 
 ### Lane 1: moment correspondence
 
-Compare the paper's `(M, I, J, S, C_p)` system with both `FiveProfileMoments` and `FiveRowRank`. The former contains matching normalised vectors; the latter is a distinct physical rank interface. Trace `physical_five_rows`, `prescribed_five_rows`, `reserved_five_rows`, the `ModulatedHistories` consumers, and the selected witness. A successful contradiction must show that the selected witness moves between these systems without a valid conversion, not merely that the two declarations differ.
+Compare the paper's `(M, I, J, S, C_p)` system with both `FiveProfileMoments` and `FiveRowRank`. The former contains matching normalised vectors; the latter is a distinct physical rank interface. Trace `physical_five_rows`, `prescribed_five_rows`, `reserved_five_rows`, the `ModulatedHistories` consumers, and the selected witness. The direct-bridge probe is complete and rules out a row-by-row identification. The remaining decisive test is whether a nontrivial conversion exists and is actually consumed by the selected witness.
 
 ### Lane 2: filter non-vacuity
 
@@ -52,7 +52,7 @@ Keep non-Newtonian regularisation, hypo-dissipation, and physical autonomy as ro
 
 ## Lean work rule
 
-Write the smallest zero-sorry probe that tests a load-bearing statement. Do not add code merely to restate a suspicion. Every probe must record its import path, theorem name, exit status, and whether it attacks the endpoint, an interface, or only a semantic interpretation.
+Write the smallest zero-sorry probe that tests a load-bearing statement. Do not add code merely to restate a suspicion. Every probe must record its import path, theorem name, exit status, and whether it attacks the endpoint, an interface, or only a semantic interpretation. The completed direct-bridge probe attacks an interface; the selected dependency probe audits kernel assumptions without treating standard axioms as a defect.
 
 ## Deliverables
 

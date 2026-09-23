@@ -39,7 +39,7 @@ These declarations are materially closer to the official C/D statement than a pe
 | `MeanRankUpdate.physical_five_rows` | Scaled repair functions satisfy `FiveRows` | Formally checked, but only for the Lean row system. |
 | `GlobalBaseError.originPast` | A concrete past-neighbourhood filter | Non-vacuity has a probe; downstream derived-filter audit remains open. |
 | `JetRate` | A filter-based rate predicate | No `NeBot` parameter; generic `Filter.bot` vacuity is formally demonstrated. |
-| `ActualCandidateAssembly.selected_witness` | Selected finite-stage data yield the candidate | Kernel accepted; load-bearing correspondence beneath it remains under review. |
+| `ActualCandidateAssembly.selected_witness` | Selected finite-stage data yield the candidate | Kernel accepted with standard axioms; load-bearing correspondence beneath it remains under review. |
 
 ## 4. The coordinate-level contradiction
 
@@ -66,7 +66,9 @@ axialPowers lam   := ![1, 1 - 2 * lam]
 
 `MomentCoordinateMismatchProbe.lean` proves the vector inequalities between these two source systems for every real `lam` by evaluating at index zero. This is a genuine zero-sorry theorem. It establishes that the code does not identify the two interfaces by definitional equality, even though one of them matches the paper's normalised blocks.
 
-The correct conclusion is a missing bridge, not an automatic refutation of every possible rescaling. The authors must prove the change of variables, preserve all five rows, and show that the transformed rows are the ones consumed by the selected witness. Without that proof, the public claim that the complete mixed pipeline directly verifies one coherent Appendix A system is unsupported.
+`MomentBridgeObstructionProbe.lean` strengthens this result. Its `DirectMomentBridge` structure requires both source power vectors to be equal, and `no_direct_moment_bridge` proves that structure impossible for arbitrary `lam` and `b`. The obstruction is therefore not a special-feature failure caused by the paper's substitution; it rules out the direct row-by-row reading of the declarations.
+
+The correct conclusion is a missing bridge, not an automatic refutation of every possible rescaling. The authors must prove the change of variables, preserve all five rows, and show that the transformed rows are the ones consumed by the selected witness. `SelectedDependencyAxiomProbe.lean` confirms that the selected witness and stage-estimate interfaces do not rely on a visible custom axiom, so the remaining adverse target is semantic correspondence rather than kernel admission. Without that proof, the public claim that the complete mixed pipeline directly verifies one coherent Appendix A system is unsupported.
 
 ## 5. Physical requirements that are not kernel axioms
 
@@ -83,4 +85,4 @@ Each requires its own theorem or counterexample. None follows merely from the pr
 
 ## 6. Ledger conclusion
 
-No custom axiom has been found at the inspected headline endpoints. A zero-sorry formal mismatch has been found between two moment interfaces used in the construction, while one of those interfaces matches the paper's named coordinates. The outstanding question is whether a valid, reachable change-of-variables theorem connects the interfaces. Until answered, the claim of complete direct formal verification must be reported as not established.
+No custom axiom has been found at the inspected headline or selected-witness interfaces. A zero-sorry formal obstruction has been found to a direct identification of two moment interfaces used in the construction, while one of those interfaces matches the paper's named coordinates. The outstanding question is whether a valid, reachable change-of-variables theorem connects the interfaces. Until answered, the claim of complete direct formal verification must be reported as not established.

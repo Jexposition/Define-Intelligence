@@ -36,7 +36,9 @@ axialPowers lam   := ![1, 1 - 2 * lam]
 
 It defines `Debt` abstractly and proves five integral rows for localised increments. The actual assembly consumes those rows through `MeanRankUpdate`, including `physical_five_rows`, `prescribed_five_rows`, and `reserved_five_rows`. Other construction modules consume `FiveProfileMoments` directly. The review issue is therefore not absence of the paper-shaped system, but the semantic connection between two non-identical systems used across the construction.
 
-`MomentCoordinateMismatchProbe.lean` proves both vector inequalities between `FiveRowRank` and `FiveProfileMoments` in Lean without admitted steps. Thus the declarations are not definitionally the same. A valid rescaling might still exist, but no theorem mapping all five rows, debt coordinates, parameter choices, and coefficient normalisations was found in the inspected dependency path.
+`MomentCoordinateMismatchProbe.lean` proves both vector inequalities between `FiveRowRank` and `FiveProfileMoments` in Lean without admitted steps. The stronger `MomentBridgeObstructionProbe.lean` proves that no direct row-by-row bridge exists for any pair of real parameters. Thus the declarations are not definitionally the same. A valid rescaling might still exist, but no theorem mapping all five rows, debt coordinates, parameter choices, and coefficient normalisations was found in the inspected dependency path.
+
+The selected-witness trace is concrete. `ActualCandidateAssembly.selected_witness` consumes `estimates`; those estimates are constructed by `GluedStageEstimates.actualStageEstimates` from a `PhysicalData` family. The physical prefix and reserved-patch route uses `MeanRankUpdate` and `FiveRowRank`, while the nominal and modulation route uses `NominalProfile`, `ModulatedHistories`, `ReservedPatches`, and `FiveProfileMoments`. `SelectedDependencyAxiomProbe.lean` shows that these interfaces are kernel-accepted using only standard axioms. That result removes custom-axiom speculation, but it does not supply the absent semantic bridge.
 
 This is a direct correspondence gap. It invalidates the sentence “the complete Lean pipeline verifies the paper's Appendix A moment system” unless the authors supply the missing bridge. It does not by itself disprove the abstract Lean endpoint, and it does not justify saying that the paper-shaped `FiveProfileMoments` module is absent.
 
@@ -65,6 +67,8 @@ The authors should publish a correspondence appendix containing:
 3. the proof that all bump functions and moment equations are preserved by that map;
 4. a theorem showing that the mapped rows are consumed by the selected whole-space witness; and
 5. `#print axioms` and dependency output for those bridge theorems.
+
+Until that appendix exists, the defensible answer is: the repository proves a C/D-shaped Lean proposition, but the claimed proof of the published construction has not been demonstrated.
 
 ## Final assessment
 

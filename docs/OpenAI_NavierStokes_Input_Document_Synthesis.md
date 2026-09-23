@@ -16,7 +16,7 @@ This matters because two common objections are too broad. First, residual forcin
 | --- | --- | --- |
 | The force remains active until blow-up. | Read the paper's residual construction and R³ force support definitions. | Supported. It is a physical autonomy criticism, not alone a C/D contradiction. |
 | A force defined from the residual may absorb errors. | Inspect force definition and residual-smoothing obligations. | Valid concern. Requires checking that the residual is genuinely smooth and decaying, not assuming that residual definition proves it. |
-| The five-equation system repairs `(M,I,J,S,C_p)`. | Compare Appendix A with `FiveProfileMoments`, `FiveRowRank`, and `MeanRankUpdate`. | `FiveProfileMoments` matches the paper's normalised vectors, but the physical pipeline also uses a distinct `FiveRowRank` system. The zero-sorry probe establishes a mixed-interface bridge requirement. |
+| The five-equation system repairs `(M,I,J,S,C_p)`. | Compare Appendix A with `FiveProfileMoments`, `FiveRowRank`, and `MeanRankUpdate`. | `FiveProfileMoments` matches the paper's normalised vectors, but the physical pipeline also uses a distinct `FiveRowRank` system. `MomentBridgeObstructionProbe.lean` formally rules out a direct row-by-row identification and establishes a mixed-interface bridge requirement. |
 | `JetRate` may be vacuous over `Filter.bot`. | Compile `JetRateVacuityProbe.lean`; trace selected witness filters. | Generic hazard confirmed. Global failure remains unproved because concrete origin-past filters have non-vacuity witnesses. |
 | Pressure, Leray projection, and whole-space bounds are absent. | Search actual source paths and inspect `WholeSpaceUniqueness`, pressure recovery, and breakdown modules. | Earlier filename-based criticism is unreliable. Actual modules exist; their analytic interfaces still require correspondence audit. |
 | Division by zero invalidates the singular limit. | Search actual source for the claimed file and guarded denominators. | No division-by-zero failure has been established in the current snapshot. Do not repeat the old claim. |
@@ -28,7 +28,7 @@ This matters because two common objections are too broad. First, residual forcin
 | Paper object | Lean location | Review question |
 | --- | --- | --- |
 | C/D endpoint | `NavierStokes/R3/ProblemStatement.lean`, `R3/Theorem.lean` | Does the endpoint state the intended whole-space proposition? |
-| Five cumulative moments | Official PDF Appendix A; `NavierStokes/FiveRowRank.lean` | Are the rows and coordinates identical or related by a proved map? |
+| Five cumulative moments | Official PDF Appendix A; `NavierStokes/FiveProfileMoments.lean`, `FiveRowRank.lean`, `MeanRankUpdate.lean` | Are the rows and coordinates identical or related by a proved map? Direct equality is formally impossible; a nontrivial map remains unproved. |
 | Mean-patch repair | `NavierStokes/MeanRankUpdate.lean` | Are the physical rows the paper's rows? |
 | Selected witness | `NavierStokes/ActualCandidateAssembly.lean` | Does the selected witness consume the same repaired fields? |
 | Pressure and comparison | `NavierStokes/R3/WholeSpaceUniqueness.lean`, pressure modules | Are the comparison premises derived from the candidate? |
@@ -36,6 +36,6 @@ This matters because two common objections are too broad. First, residual forcin
 
 ## Synthesis
 
-The notes correctly insist that compilation is not semantic validation and that Level A stress matching is not Level B exact PDE realisation. They overreach when they treat force activity, missing physical regularisations, or a generic `Filter.bot` possibility as immediate refutations of alternatives (C) and (D). The paper's strongest current counterclaim is narrower: the repository contains a paper-shaped moment module and a separate physical rank module, but the selected mixed pipeline is not yet shown to preserve their common mathematical meaning. Their exponent vectors are formally unequal, so a bridge theorem is required.
+The notes correctly insist that compilation is not semantic validation and that Level A stress matching is not Level B exact PDE realisation. They overreach when they treat force activity, missing physical regularisations, or a generic `Filter.bot` possibility as immediate refutations of alternatives (C) and (D). The paper's strongest current counterclaim is narrower and formally supported: the repository contains a paper-shaped moment module and a separate physical rank module, the selected path consumes both, and a zero-sorry Lean theorem rules out direct identification of their exponent vectors. Their exponent vectors are formally unequal, so a nontrivial bridge theorem is required. The selected dependency axiom probe finds no custom axiom that would independently explain the mismatch.
 
 That finding is now carried consistently into the plan, ledger, tracker, peer review, and research paper.

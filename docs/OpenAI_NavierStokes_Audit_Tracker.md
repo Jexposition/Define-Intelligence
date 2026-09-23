@@ -11,7 +11,7 @@ This document is the working ledger for the counter-paper. It records evidence, 
 
 ## Current position
 
-The repository contains a genuine R³ C/D-shaped endpoint and the headline theorem reports only standard Lean axioms. The strongest adverse result is a formal correspondence failure: the selected repair pipeline uses `FiveRowRank`, whose declared exponent vectors differ from the vectors stated in the official paper's Appendix A. The final theorem is not labelled refuted until the missing bridge is shown impossible or its absence is shown to invalidate a mandatory witness premise.
+The repository contains a genuine R³ C/D-shaped endpoint and the headline theorem reports only standard Lean axioms. The strongest adverse result is a formal correspondence failure: the selected repair pipeline uses `FiveRowRank`, whose declared exponent vectors differ from the vectors stated in the official paper's Appendix A, while other selected branches use `FiveProfileMoments`. A zero-sorry theorem now rules out a direct row-by-row bridge for arbitrary parameters. The final theorem is not labelled refuted until a nontrivial bridge is shown impossible or its absence is shown to invalidate a mandatory witness premise.
 
 ## Evidence register
 
@@ -24,11 +24,15 @@ The repository contains a genuine R³ C/D-shaped endpoint and the headline theor
 | CTR-005 | The complete Lean pipeline is one coherent implementation of the paper's five-moment system. | `FiveProfileMoments.lean` contains the paper-shaped vectors, while `FiveRowRank.lean` declares `(2, -2 - 2λ, -2λ)` and `(1, 1 - 2λ)`. The zero-sorry probe proves the two source vectors are not definitionally equal. | Formal correspondence gap unless a bridge exists | Locate or formalise the bridge between the two systems. |
 | CTR-006 | Both moment interfaces reach the selected construction. | `MeanRankUpdate` consumes `FiveRowRank`; `ModulatedHistories` and `ReservedPatches` consume `FiveProfileMoments`; actual candidate modules import both branches. | Confirmed mixed path | Map every row, debt, coefficient, and scaling between branches. |
 | CTR-007 | Non-Newtonian regularisation disproves the Newtonian theorem. | The published endpoint is Newtonian and C/D allows smooth force. | Rejected as internal refutation | Retain only as a physical robustness limitation. |
+| CTR-008 | The two moment declarations may be treated as the same system by direct identification. | `MomentBridgeObstructionProbe.lean` proves `¬ DirectMomentBridge lam b` for all real `lam` and `b`, by evaluating the first axial coordinate. | Formally disproved at the direct-correspondence level | Require an explicit nontrivial change-of-variables theorem. |
+| CTR-009 | The selected witness hides a custom axiom at the stage-estimate interface. | `SelectedDependencyAxiomProbe.lean` reports only `propext`, `Classical.choice`, and `Quot.sound` for `selected_witness`, `physicalData`, `actualStageEstimates`, and `Invariant.residual_jetRate`. | Closed for custom-axiom suspicion | Continue semantic and interface audit; do not treat standard axioms as defects. |
 
 ## Formal artefacts
 
 - `NavierStokesReview/src/probes/MomentCoordinateMismatchProbe.lean`: zero-sorry vector inequalities.
+- `NavierStokesReview/src/probes/MomentBridgeObstructionProbe.lean`: zero-sorry impossibility of a direct row-by-row bridge.
 - `NavierStokesReview/src/probes/MainAxiomProbe.lean`: endpoint axiom report.
+- `NavierStokesReview/src/probes/SelectedDependencyAxiomProbe.lean`: selected-path interface axiom report.
 - `NavierStokesReview/src/probes/JetRateVacuityProbe.lean`: generic filter-vacuity witness.
 - `NavierStokesReview/src/probes/OriginPastNeBotProbe.lean`: non-vacuity of the concrete origin-past filter.
 - `NavierStokesReview/src/probes/OpenPastNeBotProbe.lean`: non-vacuity of a concrete open-past filter.

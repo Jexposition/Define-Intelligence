@@ -8,6 +8,10 @@ That result does not settle whether the Lean development formalises the analytic
 
 The immediate conclusion is therefore precise. The claim that the repository mechanically verifies the paper's Appendix A construction is not established, and the stronger claim of direct formal correspondence is contradicted by the checked coordinate declarations unless an additional change-of-variables theorem is supplied. This is a formal correspondence failure, not yet a contradiction of the final existential proposition itself. The paper also distinguishes genuine objections from arguments that do not work: an a posteriori force is allowed by alternatives (C) and (D), and a local `Filter.bot` hazard is not a global refutation unless it reaches the selected witness.
 
+## Audit verdict
+
+The answer is split. Yes, the repository contains a Lean-checked theorem with the outer shape of alternatives (C) and (D). No, the inspected source does not establish that this theorem is a faithful formalisation of the official paper's five-moment construction. The direct row-by-row identification is formally impossible; only a separately proved nontrivial change of variables could close that gap.
+
 ## 1. What must be shown
 
 The relevant question is not whether Lean compiles. Compilation establishes that the kernel accepts a term of the declared type. The research question is whether the declared type and every load-bearing interface mean what the official paper says they mean.
@@ -68,6 +72,17 @@ The proof is elementary: evaluation at the first finite index reduces the first 
 
 This does not show that a rescaling could never relate the two systems. It shows that no such relation is definitional. To claim that the combined pipeline verifies one coherent Appendix A system, the project must expose and prove the missing bridge, including the mapping of all five rows, the debt coordinates, the bump coefficients, and the parameter normalisation. The existence of `FiveProfileMoments` prevents the stronger claim that the paper-shaped system is absent. The adverse result is instead that the source contains two non-identical moment interfaces and the selected witness path has not yet been shown to preserve their meaning when it moves between modules.
 
+The stronger `NavierStokesReview/src/probes/MomentBridgeObstructionProbe.lean` packages the proposed direct correspondence as a Lean structure and proves
+
+```lean
+theorem no_direct_moment_bridge (lam b : ℝ) :
+  ¬ DirectMomentBridge lam b
+```
+
+for arbitrary `lam` and `b`, not only for the paper's substitution. This is a formal obstruction to treating the two declarations as the same five-row system. It does not rule out a nontrivial analytic transformation, but that transformation must be stated and proved rather than inferred from compilation.
+
+The dependency trace is load-bearing: `ActualCandidateAssembly.selected_witness` consumes `estimates`, which is constructed by `GluedStageEstimates.actualStageEstimates` from `ActualCycleResidualBounds.PhysicalData`. The physical prefix and reserved-patch route uses `MeanRankUpdate` and `FiveRowRank`, while the nominal and modulation route uses `NominalProfile`, `ModulatedHistories`, `ReservedPatches`, and `FiveProfileMoments`. The missing bridge is therefore a selected-path obligation, not merely a comparison of unused declarations.
+
 ## 4. Why other proposed objections are insufficient by themselves
 
 The force is deliberately defined from the residual and remains active up to the singular time. That is a legitimate criticism of physical interpretation, but alternatives (C) and (D) explicitly allow a smooth external force. It therefore does not refute the stated C/D proposition.
@@ -79,6 +94,8 @@ Similarly, omitted Ladyzhenskaya stress laws and fractional dissipation are not 
 ## 5. Axioms and kernel evidence
 
 `#print axioms` on `theorem_1_1`, `theorem_1_1_with_initial_rest`, and `ProblemStatement.breakdownStatement` reports only `propext`, `Classical.choice`, and `Quot.sound`. This rules out the claim that the headline R³ endpoint visibly depends on a custom axiom. It does not prove that every analytic assertion in the source corresponds to the paper's intended mathematics. Foundational consistency and semantic correspondence are separate obligations.
+
+The follow-up `SelectedDependencyAxiomProbe.lean` reports the same three standard axioms for `ActualCandidateAssembly.selected_witness`, `ActualCandidateAssembly.physicalData`, `GluedStageEstimates.actualStageEstimates`, and `ActualCycleResidualBounds.Invariant.residual_jetRate`. This is negative evidence against a hidden custom axiom at those interfaces. It is also why the adverse finding is stated as a missing correspondence theorem rather than as a claim that the kernel accepted an explicit `axiom` or `sorry`.
 
 ## 6. Conclusion
 
@@ -93,5 +110,5 @@ That is already a valid counter-result against the stronger public claim of dire
 - Source snapshot under review: OpenAI Navier–Stokes repository, commit `f9e8bc5` as recorded in the review materials.
 - Review branch: `review/cmi-first-navier-stokes-2026-09-22`.
 - Kernel environment: Lean 4.32 via `C:\Users\Admin\.elan\bin\lake.exe`.
-- New zero-sorry probes: `NavierStokesReview/src/probes/MomentCoordinateMismatchProbe.lean` and the corrected `MainAxiomProbe.lean`.
+- New zero-sorry probes: `NavierStokesReview/src/probes/MomentCoordinateMismatchProbe.lean`, `MomentBridgeObstructionProbe.lean`, `SelectedDependencyAxiomProbe.lean`, and the corrected `MainAxiomProbe.lean`.
 - No source file in the OpenAI construction was edited.
