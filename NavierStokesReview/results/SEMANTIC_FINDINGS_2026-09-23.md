@@ -103,6 +103,18 @@ The present evidence supports this narrower statement:
 
 No `[REFUTED]` seal is issued here. F-002 is a confirmed correction to the claim description. F-003 and F-007 remain open proof-content audits, while F-005 is now narrowed to a confirmed overstatement rather than an alleged missing energy derivation.
 
+## F-012 — Zero-angular repair claim is locally supported but physically overinterpreted
+
+Status: `CONFIRMED local algebra; downstream semantic identification OPEN`
+
+Evidence:
+
+- `NavierStokes/PositiveOrderMoments.lean:142-181` defines the three-component `angularDebt` target and proves exact moments for `repairE` under positivity, ordering, and exponent hypotheses.
+- `NavierStokes/FiveProfileMoments.lean:202-222` proves invertibility of the generalized power-moment matrix for injective exponents; `:274-285` proves injectivity of the three angular exponents.
+- `NavierStokes/FiveProfileMoments.lean:356-374` proves the normalized linear-plus-quadratic moment identity, with later local existence machinery solving the repair equation.
+
+Conclusion: the supplied zero-angular attachment correctly describes a substantive three-equation local repair mechanism, subject to its hypotheses. It does not, from these declarations alone, establish that the three coordinates are exactly the physical quantities labelled `M_theta`, `-P_q`, and `-J_z,q`, nor that local repair completes the full Navier–Stokes residual cancellation. The appropriate finding is a semantic mapping obligation, not an absent-code finding.
+
 ## F-008 — Five-moment repair is present, but local algebra is not the whole PDE proof
 
 Status: `CONFIRMED source correction; downstream consequence OPEN`
