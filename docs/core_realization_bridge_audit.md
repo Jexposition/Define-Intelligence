@@ -1,4 +1,4 @@
-# The Core Realization Bridge Audit
+#   Bridge Audit
 **Target Modules:** `ActualCandidateAssembly.lean`, `ActualCycleResidualBounds.lean`, `PhysicalResidualJetBounds.lean`
 
 ## Verification correction: absence of a direct moment import is not a PDE disproof
@@ -12,7 +12,7 @@ selected velocity is obtained through the spatial curl. The correct result is
 therefore a missing selected-path moment-realisation theorem, not a fake-field
 or lower-dimensionality theorem.
 
-## 1. The Compiling Witness Interface Specification
+## 1.   Compiling Witness Interface Specification
 **Target Exact Lines:** 
 * `selected_witness` instantiation (`ActualCandidateAssembly.lean`, Line 1177)
 * `Witness` type definition (`ActualCandidateAssembly.lean`, Line 1121)
@@ -25,7 +25,7 @@ The exact type signature consumed is:
 `∀ J, ActualCycleResidualBounds.PhysicalData B (ActualCandidateConstruction.residualBand B N0) (ActualCandidateConstruction.cycle B N0 J).state ...`
 This unfolds to `PhysicalFields`, mapping straight back to `PhysicalResidualJetBounds.lean` and `CorrectionStep.lean`. The witness directly consumes geometric PDE residual decay bounds (`NativeBounds`). Upstream construction modules also contain moment/rank machinery, but the selected residual interface does not expose a theorem identifying those arrays with `(M, I, J, S, C_p)`.
 
-## 2. The Ghost Moment Drift Severing
+## 2.   Ghost Moment Drift Severing
 **Point of Divergence:** `PhysicalResidualJetBounds.lean` (Line 721 - `def residual`)
 **Analysis:**
 The PDE correctness is evaluated directly on the physical vector field using `residual u p` in `PhysicalResidualJetBounds.lean`. The compiler bounds the PDE by tracking spatial decay rates (`StateRealization.chartIdentity` and `residual_jetRate`). 

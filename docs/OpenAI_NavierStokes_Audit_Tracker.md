@@ -383,3 +383,46 @@ The transitive-import recheck also corrected stale supporting-note language:
 through the physical-prefix/profile chain. This is a packaging and source-map
 correction, not a new mathematical contradiction. `CTR-005` remains open
 pending an explicit selected-path moment-realisation theorem.
+
+## Confirmed interface countermodel: 2026-09-24
+
+`StageEstimates` is now formally shown to be blind to the paper's physical
+content. The zero-sorry probe
+`NavierStokesReview/src/probes/StageEstimatesMomentBlindnessProbe.lean`
+constructs a nonempty `StageEstimates` instance with identically zero velocity
+and pressure stages, zero losses and residuals, and a divergent scalar gain. The
+same probe proves that the resulting zero velocity is not
+`SpeedUnboundedAtOne`.
+
+This confirms an interface-level failure: the generic rate-contract structure
+does not encode the five named moments or blow-up. It does not by itself refute
+the selected endpoint, because `selected_witness` adds separate physical-data,
+base-profile, axis-preservation, and origin-growth premises. The headline
+`CTR-005` therefore strengthens from “missing exposed transport” to “the
+generic StageEstimates interface admits a machine-checked zero-field
+countermodel”; the full selected-path five-moment transport remains
+unestablished.
+
+Evidence: `NavierStokesReview/evidence/stage_estimates_moment_blindness_2026-09-24.md`.
+
+## Pressure-chain verification: 2026-09-24
+
+The requested pressure-trivialisation proof was attempted against the actual
+R3 closure path. It does not go through. `CandidateProperties.pressure_support`
+is only a compact support inclusion; `PressureRecovery` and
+`ActualPressureFlux` recover compact-test pressure-gradient/flux identities
+from equal-residual, divergence-free, smooth, finite-energy comparison
+hypotheses. `WholeSpaceUniqueness.classical_uniqueness_on_Icc` constructs those
+hypotheses for the candidate comparison. No source theorem makes compact
+pressure support imply zero, and the existing zero-sorry probe proves that
+generic implication false using the repository's own nonzero cutoff.
+
+Disposition: only the standalone implication “compact pressure support forces
+the field to vanish” is cleared/rejected. This does **not** validate the
+authors' global pressure interpretation. The selected source still needs a
+paper-linked theorem connecting its compactly localised pressure, the local
+`StateRealization`/`chartIdentity` identities, and the claimed global pressure
+semantics. The load-bearing formal target remains CTR-038, the selected-path
+five-moment transport into the residual endpoint.
+
+Evidence: `NavierStokesReview/evidence/pressure_recovery_chain_audit_2026-09-24.md`.

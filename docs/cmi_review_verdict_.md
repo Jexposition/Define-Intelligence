@@ -19,7 +19,7 @@ The construction is a tautological engineering feat: the velocity field $u(x,t)$
 
 However, the peer review has uncovered a critical specification and traceability gap between the human-readable paper and the Lean 4 formalization regarding moment transport.
 
-## 2. The Blow-Up Mechanism (Audit of `PeriodicSobolev.lean`)
+## 2 Blow-Up Mechanism (Audit of `PeriodicSobolev.lean`)
 
 A deep dive into `PeriodicSobolev.lean` reveals exactly how the codebase sidesteps the LPS regularity firewalls. The authors do not accidentally trap themselves in an LPS-compliant bounded space. 
 
@@ -38,7 +38,7 @@ An audit of `CandidateFromLimits.lean` and `GermCandidateAssembly.lean` confirms
 
 The theorem `force_smooth` successfully extracts `ContDiff ℝ ∞` across the boundary. The proof of CMI required smoothness at $t=1$ is therefore mathematically verified.
 
-## 4. The Critical Defect: Missing Moment Transport Glue
+## 4. Critical Defect: Missing Moment Transport Glue
 
 While the topological and spacetime mechanics are functionally sound, the codebase contains a massive **specification drift** regarding the 5-moment structural defect.
 

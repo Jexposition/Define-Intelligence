@@ -1,11 +1,10 @@
-# The Base Profile Diagnostic Ledger
+# Base Profile Diagnostic Ledger
 **Target Module:** `TailGaugePotential.lean`
-
 ## Verification correction: what the source actually proves
 
 The reduced profile coordinates do not imply a scalar or one-component field. `AxisymmetricFields.potential` uses the profile in the three Cartesian basis directions, and `velocity` is obtained by `SpatialCurl.spatialCurl`. The gauge subtraction proves zero only on the radial anchor through `radialNormalize_anchor`; it does not globally kill swirl. The diagnostic therefore supports an axisymmetric three-component construction with a local gauge boundary, not a global zero-swirl collapse.
 
-## 1. The Component Matrix Envelope
+## 1. Component Matrix Envelope
 **Target Definitions:** `potential` (Line 66) and `heatPotential` (Line 217)
 **Analysis:** 
 The underlying velocity field is structurally evaluated in an **Axisymmetric wrapper**, not as a native 3D Cartesian fluid. 
@@ -17,20 +16,20 @@ The underlying velocity field is structurally evaluated in an **Axisymmetric wra
   `heatPotential` component does not establish that the full endpoint is
   one-dimensional or physically decoupled.
 
-## 2. The Zero-Swirl Override Probe
+## 2.  Zero-Swirl Override Probe
 **Target Definitions:** `gaugedSwirl` (Line 59) and `radialNormalize_anchor` (Line 55)
 **Analysis:** 
 The angular velocity/swirl profile is **not** a global zero or a static
 constant by type constraint. The source proves only a zero at the specified
 radial anchor via a mathematical gauge transformation.
-* **The Override (Line 55):** `radialNormalize_anchor (K : Point → ℝ) (t z : ℝ) : radialNormalize K (t, (1, z)) = 0`.
-* **The Mechanism:** The agent defines `gaugedSwirl` (Line 59) as `radialNormalize (SlowBorelBase.swirlPotential...)`. This proves a zero value at the radial anchor `s = 1`.
+* **Override (Line 55):** `radialNormalize_anchor (K : Point → ℝ) (t z : ℝ) : radialNormalize K (t, (1, z)) = 0`.
+* **Mechanism:** The agent defines `gaugedSwirl` (Line 59) as `radialNormalize (SlowBorelBase.swirlPotential...)`. This proves a zero value at the radial anchor `s = 1`.
 * **Verdict:** The inspected theorem is a local gauge identity. It does not
   prove global zero swirl, zero helicity, or failure of the physical boundary
   equations. Those stronger claims are rejected unless a separate theorem is
   supplied.
 
-## 3. The Definitional Tautology Verdict
+## 3.   Definitional Tautology Verdict
 **Target Definitions:** `finalPotential_smooth` (Line 443) and `potential_smooth` (Line 85)
 **Analysis:** 
 I traced the dependency link for the $C^{\infty}$ smoothness predicate. 

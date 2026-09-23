@@ -267,7 +267,10 @@ support inclusion in R³. `PressureRecovery` and `ActualPressureFlux` provide
 comparison-level compact-test identities, and `WholeSpaceUniqueness` does
 instantiate them for the selected candidate in the uniqueness comparison. A
 zero-sorry probe proves compact support is not itself a zero-pressure
-condition. The counter-paper should inspect the analytic estimates, while
+condition. This does not accept the authors' global pressure semantics: the
+selected source still lacks a single paper-linked theorem connecting local
+`StateRealization`/`chartIdentity` recovery to the global pressure object used
+in the narrative. The counter-paper should inspect that bridge, while
 avoiding the false statement that support alone trivialises pressure.
 
 Evidence: `NavierStokesReview/evidence/semantic_transport_pressure_audit_2026-09-23.md`.
@@ -284,3 +287,15 @@ transport as an open, load-bearing objection, while rejecting the stronger
 claims that the final field is globally pure axial, that compact pressure
 support alone proves triviality, or that generic filter and force hazards have
 already invalidated the selected theorem.
+
+## Formal strengthening of the moment objection
+
+The generic stage-estimate layer has now been tested by a zero-sorry
+countermodel. `StageEstimates` admits identically zero velocity and pressure
+stages with zero residual-rate data, while the same zero velocity is formally
+not unbounded near time one. Thus the layer cannot be treated as a formal
+encoding of the paper's five-moment repair or blow-up mechanism. This is a
+confirmed interface failure, not yet a contradiction to the selected endpoint,
+which supplies additional physical-data and origin-growth premises.
+
+Evidence: `NavierStokesReview/evidence/stage_estimates_moment_blindness_2026-09-24.md`.

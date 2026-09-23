@@ -327,6 +327,48 @@ unrestricted by the candidate predicate.
 Evidence for Sections 15–16 is collected in
 `NavierStokesReview/evidence/semantic_transport_pressure_audit_2026-09-23.md`.
 
+## 17. The generic stage contract has a zero-field countermodel
+
+The paper-to-code objection can be formalised at the stage interface. A
+zero-sorry Lean probe constructs a nonempty `StageEstimates` instance with all
+velocity and pressure stages identically zero, zero losses, and zero residuals.
+The gain sequence still tends to infinity, so every purely rate-theoretic field
+of the interface is satisfied. The same probe proves that the resulting zero
+velocity cannot satisfy the claimed unbounded-speed condition.
+
+This establishes a precise negative result: `StageEstimates` is an analytic
+contract for estimates, not a formalisation of the paper's five physical
+moments or its blow-up mechanism. Any conclusion that the generic stage
+contract itself verifies those physical claims is false. The result stops short
+of refuting the selected endpoint, because the endpoint adds independent
+physical-data, base-profile, and origin-growth premises. The unresolved
+question is whether those premises ever receive an explicit theorem carrying
+the paper's $(M,I,J,S,C_p)$ identities into the selected fields and residual.
+
+Evidence: `NavierStokesReview/evidence/stage_estimates_moment_blindness_2026-09-24.md`.
+
+## 18. Pressure support is not a zero-field theorem
+
+The R3 construction multiplies pressure by a smooth spatial cutoff and then
+records compact support for each pre-singular slice. That is a material
+paper-to-code interface choice, but it is not itself a contradiction. The
+candidate predicate permits an external force defined by the residual, so a
+pressure-gradient contribution may be carried by that force. The repository's
+pressure-recovery modules establish compact-test comparison identities under
+smoothness, incompressibility, equal-residual, and finite-energy hypotheses;
+they do not assert that compact pressure support implies a zero pressure.
+
+A zero-sorry probe confirms the generic non-implication using the source's own
+nonzero compact cutoff. This only rejects that one shortcut; it does not
+accept the authors' pressure semantics. The selected source still needs a
+paper-linked theorem connecting compact localisation, the local
+`StateRealization`/`chartIdentity` identities, and the global pressure meaning
+used in the claim. The counter-paper's live objection remains the missing
+selected-path transport of the paper's five named moments into the residual
+endpoint.
+
+Evidence: `NavierStokesReview/evidence/pressure_recovery_chain_audit_2026-09-24.md`.
+
 ## Editorial control
 
 This paper is the active explanatory account of the review. The fork document

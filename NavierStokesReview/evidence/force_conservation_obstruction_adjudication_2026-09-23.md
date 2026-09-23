@@ -55,3 +55,13 @@ hypotheses or from a separately justified physical admissibility condition.
 
 **Classification:** physical-realizability concern and provenance issue; not a
 formal CMI refutation.
+
+## Explicit status correction
+
+The proposed live target has **not** been proved. There is currently no
+zero-sorry theorem showing that the selected residual fails its endpoint limits,
+fails `CandidateProperties`, or cannot supply the smooth force used by the
+selected endpoint. The later
+`StageEstimatesMomentBlindnessProbe.lean` is a different, interface-level
+countermodel: it shows that the generic `StageEstimates` contract admits zero
+fields, but it does not instantiate or contradict the selected residual.

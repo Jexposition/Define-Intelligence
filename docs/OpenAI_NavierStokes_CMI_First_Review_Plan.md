@@ -200,3 +200,23 @@ after source inspection or a recorded zero-sorry probe.
 | DOC-03 | Maintain one human-readable peer review and one research paper | [x] | Narrative documents point to tracker/evidence rather than functioning as logs. |
 | DOC-04 | Resolve the selected five-moment transport objection | [ ] | Find or refute the theorem transporting the named moments through the selected endpoint. |
 | DOC-05 | Verify final authority-map packaging | [x] | Control map, tracker, six core documents, and Agent 2 dispositions agree; no tracked build artefacts. |
+
+## New formal countermodel
+
+| ID | Target | Status | Result |
+|---|---|---:|---|
+| CTR-037 | `MixedCandidateAssembly.StageEstimates` physical content | [x] | Zero-sorry probe constructs the interface with zero velocity/pressure stages and proves zero velocity is not blow-up. |
+| CTR-038 | Selected-path five-moment transport | [ ] | The generic interface failure does not yet refute the additional selected physical-data and origin-growth premises. |
+
+Evidence: `NavierStokesReview/evidence/stage_estimates_moment_blindness_2026-09-24.md`.
+
+## Current proof board: 2026-09-24
+
+| ID | Target | Status | Decisive evidence |
+|---|---|---:|---|
+| CTR-037 | Generic `StageEstimates` encodes physical blow-up | [x] | Zero-sorry zero-field countermodel; interface is insufficient. |
+| CTR-038 | Selected five-moment transport into residual endpoint | [ ] | Locate a theorem linking `(M,I,J,S,C_p)` to selected fields, `chartIdentity`, and `VanishingJointJets`, or prove a contradiction from its premises. |
+| PRS-08 | Compact pressure support forces trivialisation | [x] (route rejected) | Generic implication formally disproved; this does not validate the selected pressure semantics. |
+| PRS-09 | Selected pressure has the paper's global semantics | [ ] | Local `StateRealization`/compact-test recovery exists, but no paper-linked global pressure bridge has been proved. |
+
+Evidence: `NavierStokesReview/evidence/pressure_recovery_chain_audit_2026-09-24.md`.

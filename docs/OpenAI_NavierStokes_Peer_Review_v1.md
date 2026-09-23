@@ -305,6 +305,33 @@ However, a critical divergence occurs at the final assembly boundary (`ActualCan
 
 Consequently, while the repository's modules are internally valid and satisfy the mechanical requirements of the type checker, the existential abstraction boundary leaves the paper's primary physical proof strategy semantically unconnected on the inspected endpoint. The five-moment machinery exists upstream, but the final theorem does not visibly transport the paper's named quantities through `StateRealization`, the residual estimates, and `selected_witness`. The claimed paper-to-code correspondence is therefore not established by the inspected source.
 
+### A machine-checked countermodel to the generic stage interface
+
+The objection is stronger than a missing-name search. A zero-sorry Lean probe constructs a nonempty `StageEstimates` object whose potential, direct, and pressure stages are all zero. Its finite background and residual rate obligations also hold, while a separate theorem proves that the corresponding zero velocity is not unbounded at time one. The generic stage interface therefore admits a static field and cannot itself encode either the five named moments or the blow-up conclusion.
+
+This is a formal refutation of the interface-level implication claimed by any reading that identifies `StageEstimates` with the paper's physical repair system. It is not a formal refutation of `selected_witness`, because the selected endpoint adds further premises for the actual base, physical realization, axis preservation, and origin growth. The remaining load-bearing failure is that no theorem inspected so far transports the paper's five moments through all of those additional premises into the exported candidate.
+
+Evidence: `NavierStokesReview/evidence/stage_estimates_moment_blindness_2026-09-24.md`.
+
+## Pressure-chain finding
+
+The compact-pressure objection does not currently refute the selected C/D
+predicate. The exact R3 source records compact pressure support, but the force
+is an unrestricted smooth external field and may carry the pressure-gradient
+part of the residual. `PressureRecovery` derives gradient pairings only under
+explicit comparison hypotheses, while `ActualPressureFlux` converts those
+pairings into the cutoff flux used by `WholeSpaceUniqueness`. The zero-sorry
+pressure probe proves that compact support does not imply a slice is zero.
+
+This route is therefore closed only as a standalone contradiction. That is not
+an acceptance of the pressure construction. The selected endpoint still lacks
+an inspected theorem connecting its compactly localised pressure and local
+`StateRealization`/`chartIdentity` identities to the paper's global pressure
+semantics. The adverse finding that remains is narrower and stronger: the
+selected endpoint also has no inspected theorem transporting the paper's five
+named moments into the selected residual and force construction. Evidence:
+`NavierStokesReview/evidence/pressure_recovery_chain_audit_2026-09-24.md`.
+
 ## Editorial control
 
 This is the active human-readable review. Its evidence boundary and the status

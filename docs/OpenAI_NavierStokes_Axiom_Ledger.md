@@ -392,6 +392,12 @@ scalar field is zero.
 
 **Status:** **generic pressure-trivialisation objection disproved; selected comparison instantiation confirmed**.
 
+This status is deliberately limited. It confirms only that the comparison
+wrapper is present; it does not confirm the paper's global pressure semantics.
+The selected source still lacks a single paper-linked theorem connecting the
+local `StateRealization`/`chartIdentity` identities to the global pressure
+object asserted in the narrative.
+
 ## Document-control note
 
 This ledger is active only in the fork. See
@@ -400,3 +406,14 @@ parent copies and Agent 2 notes. A source file being imported in some
 paper-result module is not enough to show that it is on the selected endpoint
 path, and a source file not imported by `GermCandidateAssembly` is not enough
 to show that its entire upstream construction is absent.
+
+## Interface countermodel entry: 2026-09-24
+
+The probe `StageEstimatesMomentBlindnessProbe.lean` adds no axiom and contains
+no `sorry`. It proves a `Nonempty StageEstimates` instance for zero velocity and
+pressure stages and separately proves that the zero velocity is not
+`SpeedUnboundedAtOne`. The result is evidence about the weakness of the
+interface, not an additional assumption used by the official endpoint.
+
+**Status:** **confirmed interface-level countermodel; selected endpoint not
+formally refuted by this probe alone**.
