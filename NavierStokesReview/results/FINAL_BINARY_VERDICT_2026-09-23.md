@@ -6,70 +6,55 @@ Review branch: `review/cmi-first-navier-stokes-2026-09-22`
 
 ## Answer
 
-**YES, for the claim OpenAI actually formalised: a forced counterexample to
-CMI Alternative C, and likewise Alternative D.**
+**NO: this review has not verified OpenAI's claim as a valid mathematical
+proof.**
 
-**NO, for the unforced Navier–Stokes problem in Alternatives A or B.**
+The source does compile and it exports a forced, C/D-shaped proposition. That
+is not the same as completing peer review of the analytic construction. The
+current evidence supports the narrower statement that Lean checks the stated
+formal dependencies. It does not yet justify the stronger statement that the
+repository has established a genuine CMI solution.
 
-This is not a split-the-difference answer. The CMI statement itself permits a
-smooth external force in C and D. OpenAI's exported theorem quantifies over a
-positive viscosity, produces initial data and a force satisfying the
-Comparator decay predicates, and proves that no global smooth finite-energy
-solution exists for that same data and force.
+**NO, for Alternatives A or B.** Those alternatives require `f = 0`, whereas
+the audited construction makes the force an active residual of the candidate
+flow on every pre-singular time `0 < t < 1`.
 
-## Why the forced verdict is positive
+## What is established and what is not
 
-1. `NavierStokes.R3.Theorem.theorem_1_1` produces the candidate fields,
-   smooth positive-time force, finite-energy bound, finite-time unbounded speed,
-   and negation of the global finite-energy solution predicate.
-2. `NavierStokes.ComparatorR3Theorem.navier_stokes_breakdown_R3` maps that
-   candidate to the exact whole-space Comparator proposition.
-3. `NavierStokes.R3.ComparatorBridge` preserves the viscosity, initial datum,
-   force, PDE, divergence-free condition, and energy bound in the
-   candidate-to-comparator direction.
-4. The independent headline report contains only
-   `propext`, `Classical.choice`, and `Quot.sound`; it contains no `sorryAx`,
-   native-evaluation axiom, or project-specific axiom.
-5. The independent quantifier probe elaborates the exact CMI-facing
-   existential and same-force negated-global-solution shape.
-6. An independent `ClaySpec`/`Gap`/`Adapter` chain compiles against the
-   current source closure and composes the OpenAI exports into independently
-   written Clay C and D propositions, with the same standard-only axiom set.
+1. `NavierStokes.R3.Theorem.theorem_1_1` and the comparator bridge encode a
+   forced existential breakdown shape. CMI C/D do permit an external force,
+   so residual construction is not by itself a formal CMI contradiction.
+2. `CandidateFromLimits.force` is defined through
+   `SpacetimeGluing.smoothExtension` of `tracedResidual`. The source proves
+   equality with that residual for `t < 1` and proves force zero only for
+   `t ≤ 0` or `t ≥ 2`; it does **not** turn the force off before `t = 1`.
+3. The pressure/energy route is not merely an unexamined top-level oracle:
+   `WholeSpaceComparisonClosure` assembles localized balance, pressure-flux,
+   Sobolev, cutoff, and rate estimates. However, the final scalar limit
+   theorem consumes a rate premise, and the semantic strength of the
+   solution interfaces and derived-filter conditions remains under audit.
+4. The generic `JetRate` definition permits bottom-filter proofs without a
+   `NeBot` premise. The principal endpoint is separately shown nontrivial,
+   but non-vacuity of every derived filter used by the construction is not
+   yet closed.
+5. Several claims in the supplied drafts cite source paths that are absent
+   from this snapshot, including `EnergyDefect.lean`,
+   `Forcing/Smoothness.lean`, `Pressure/LerayProjection.lean`, and
+   `Scaling/SingularLimits.lean`. Those claims cannot be treated as source
+   evidence. The cited zero-division failure is likewise not confirmed by the
+   analogous guarded divisions actually inspected.
 
-The construction's force is residual-engineered. That is a design choice, not
-a CMI violation, because C and D ask for existence of a smooth admissible
-force rather than `f = 0`.
-
-## What is not proved
-
-The repository does not establish A or B, which require zero force. It also
-does not turn the result into a theorem that arbitrary unforced three-
-dimensional data blow up. Critiques aimed at that stronger statement are
-correctly scoped as objections to an unforced interpretation, not as
-refutations of C or D.
-
-## Adversarial findings
-
-No confirmed formal counterexample was found in the audited bridge, pressure
-comparison, viscosity scaling, force-decay map, endpoint filter, or annular
-regularity guards. The generic `JetRate` API admits vacuous bottom-filter
-proofs, but the selected endpoint used by the audited path was separately
-proved nontrivial; this is a specification-quality warning, not a disproof of
-the exported theorem.
-
-The independent semantic bridge is now also checked against the current
-public source, not only the earlier audit snapshot. Its final adapter proves
-the current OpenAI exports imply independently written Clay C and D
-statements. See `INDEPENDENT_CLAY_BRIDGE_CURRENT_2026-09-23.txt`.
+Accordingly, the correct peer-review status is **NOT ESTABLISHED**, not
+“proved” and not yet “formally refuted.” The confirmed result is a set of
+semantic corrections and unresolved load-bearing audit obligations.
 
 ## CMI status versus theorem status
 
-This report answers whether the formalised mathematical claim is proved in the
-repository. CMI prize recognition is a separate institutional process. The
-official problem statement identifies C and D as valid alternatives, while
-the CMI acceptance process requires publication, rigorous examination, and
-general acceptance. That procedural status does not change the theorem-level
-answer above.
+This report separates proposition shape from mathematical validity. The
+official problem statement identifies C and D as valid alternatives, but that
+does not certify this particular formal construction. Publication and CMI
+procedure are separate questions and are not used here to decide whether the
+analytic proof obligations have actually been discharged.
 
 ## Evidence
 
@@ -79,4 +64,6 @@ answer above.
 - `NavierStokesReview/results/HEADLINE_AXIOMS_4_34_RC2.txt`
 - `NavierStokesReview/results/CMI_QUANTIFIER_PROBE_4_34_RC2.txt`
 - `NavierStokesReview/results/OPEN_PAST_NEBOT_4_34_RC2.txt`
+- `NavierStokesReview/results/SEMANTIC_FINDINGS_2026-09-23.md`
+- `NavierStokesReview/results/PRESSURE_ENERGY_CHAIN_2026-09-23.md`
 - `docs/OpenAI_NavierStokes_Axiom_Ledger.md`

@@ -233,3 +233,44 @@ and CMI procedural eligibility open.
 1. Charles L. Fefferman, [Existence and Smoothness of the Navier–Stokes Equation, official CMI problem statement](https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf).
 2. OpenAI, [On the Navier–Stokes Millennium Prize Problem](https://openai.com/index/navier-stokes-solution/).
 3. OpenAI, [NavierStokesAndEuler repository](https://github.com/openai/NavierStokesAndEuler).
+
+## 15. Six-question semantic audit: 2026-09-23
+
+The targeted source audit does not currently produce a fatal Lean error, but
+it does narrow the public claim. The force is constructed a posteriori from
+the candidate residual and remains active for the full pre-singular interval;
+the source proves only the stated past and future cutoffs. This supports a
+forced C/D-shaped existential statement, not an autonomous physical
+instability and not an A/B theorem.
+
+The force-smoothness route is more substantive than a simple cutoff argument:
+`SpacetimeGluing.smoothExtension` consumes normal-jet matching, while the
+candidate trace consumes derivative recurrences and endpoint limits. Those
+upstream analytic premises remain load-bearing review obligations.
+
+Two supplied objections are scope tests rather than refutations. No theorem
+for Ladyzhenskaya stress with `p ≥ 3` or hypodissipation `α < 1` was found, so
+the repository makes no formal robustness claim for those altered equations.
+Similarly, the cited singular-limit file is absent; the actual origin formula
+uses a guarded `t < 1` hypothesis and `(1-t)^(-A)`, so the proposed Lean
+`x / 0 = 0` failure is not source-confirmed.
+
+The five-moment repair machinery is present, imported into the candidate
+construction, and contains genuine determinant, inverse, moment, support, and
+jet lemmas. The pressure Fourier module is also real. However, the direct
+headline pressure route runs through the R3 Riesz-test, pressure-recovery,
+and pressure-flux hierarchy, so the supplied file-level attribution must be
+corrected. Local moment or pressure lemmas cannot be treated as the full PDE
+conclusion without tracing their downstream interfaces.
+
+One specification hazard remains active: `DiagonalResidual.JetRate` has no
+`NeBot` premise. The selected endpoint filter is nontrivial, but each derived
+intersection filter in the residual chain still requires an explicit
+non-vacuity proof. The full six-question disposition is recorded in
+`NavierStokesReview/results/SIX_QUESTION_SOURCE_AUDIT_2026-09-23.md`.
+
+The resulting classification is **NOT ESTABLISHED as an independently
+verified mathematical CMI proof**, while no `[REFUTED]` finding has yet been
+proved. The next decisive work is theorem-by-theorem provenance for endpoint
+limits, derived-filter non-vacuity, pressure flux, and the global comparison
+interface.
