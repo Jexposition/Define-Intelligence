@@ -1,0 +1,15 @@
+Probe: NavierStokesReview/src/probes/PressureRecoveryInfrastructureProbe.lean
+Lean: leanprover/lean4:v4.34.0-rc2
+Command: elan run leanprover/lean4:v4.34.0-rc2 lake env lean NavierStokesReview/src/probes/PressureRecoveryInfrastructureProbe.lean
+Exit code: 0
+
+The compiler resolved:
+- NavierStokesR3.ConservativeDifference.weak_pressure_poisson
+- NavierStokesR3.PressureRecovery.gradient_recovery
+- NavierStokesR3.PressureRecovery.pressure_gradient_recovery
+- NavierStokesR3.RieszTestOperators.pressurePair_laplacianCLM
+- NavierStokesR3.RieszTestOperators.laplacian_rieszTest
+
+Interpretation: pressure-recovery infrastructure is present and typechecks. The
+probe intentionally does not assert that the selected candidate instantiates
+these comparison-level interfaces.

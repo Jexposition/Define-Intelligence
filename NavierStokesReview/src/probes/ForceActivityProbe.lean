@@ -1,26 +1,47 @@
-import NavierStokes.CandidateConsequences
+import NavierStokes.R3.ActualCandidate
+import NavierStokes.R3.PositiveTimeForce
 
 /-!
-# Force activity before the asserted singular time
+# Positive-time force activity audit
 
-This is a zero-sorry semantic probe.  It records the strongest conclusion
-available from the repository's own candidate interface: a candidate force
-cannot vanish throughout `(0,1)`.  The result is relevant to causal or
-autonomous interpretations, but it is not a refutation of Fefferman C/D,
-which allow a smooth external force.
+This probe tests the actual cutoff used by the R³ assembly.  It does not try
+to prove a norm divergence from an unproved `sorry` proposition.
 -/
 
-namespace NavierStokesReview
-
 open Set
-open NavierStokes
-open NavierStokes.ProblemStatement
+open Filter
+open scoped Topology ContDiff
 
-theorem force_nonzero_before_one_probe {u : VelocityField} {p : PressureField} {f : VelocityField}
-    (h : CandidateProperties u p f) :
-    ∃ t ∈ Ioo (0 : ℝ) 1, ∃ x : Space, f (t, x) ≠ 0 := by
-  exact (CandidateConsequences.consequences_of_candidate h).force_nonzero
+namespace NavierStokesR3.ForceActivityProbe
 
-#print axioms force_nonzero_before_one_probe
+open NavierStokesR3 ProblemStatement PositiveTimeForce
 
-end NavierStokesReview
+#check PositiveTimeForce.timeCutoff
+#check PositiveTimeForce.timeCutoff_contDiff
+#check PositiveTimeForce.timeCutoff_eq_one
+#check PositiveTimeForce.timeCutoff_eq_zero
+#check PositiveTimeForce.force_contDiff
+#check PositiveTimeForce.force_eq
+#check NavierStokesR3.ActualCandidate.of_localized_fields
+
+theorem cutoff_is_active_at_singular_time :
+    PositiveTimeForce.timeCutoff 1 = 1 := by
+  apply PositiveTimeForce.timeCutoff_eq_one
+  norm_num
+
+theorem force_is_active_at_singular_time {f : VelocityField} (x : Space) :
+    PositiveTimeForce.force f (1, x) = f (1, x) := by
+  apply PositiveTimeForce.force_eq
+  constructor <;> norm_num
+
+theorem smooth_force_has_finite_pointwise_limit {f : VelocityField}
+    (hf : ContDiff ℝ ∞ f) (x : Space) :
+    Tendsto (fun t : ℝ => PositiveTimeForce.force f (t, x)) (𝓝 1)
+      (𝓝 (PositiveTimeForce.force f (1, x))) := by
+  have hcont : Continuous (PositiveTimeForce.force f) :=
+    (PositiveTimeForce.force_contDiff hf).continuous
+  have hcurve : Continuous (fun t : ℝ => PositiveTimeForce.force f (t, x)) :=
+    hcont.comp (continuous_id.prodMk continuous_const)
+  exact hcurve.continuousAt
+
+end NavierStokesR3.ForceActivityProbe

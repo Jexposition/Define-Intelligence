@@ -1,0 +1,23 @@
+Targeted source scan: pressure support and whole-space pressure recovery
+Date: 2026-09-23
+
+Command:
+rg -n "def cutPressure|localized_pressure_tsupport|pressure_support|Leray|Poisson|poisson|pressurePoisson" NavierStokes/SpatialLocalization.lean NavierStokes/R3/ActualCandidate.lean NavierStokes/R3/ProblemStatement.lean NavierStokes/CandidateFromLimits.lean NavierStokes/R3 --glob '*.lean'
+
+Positive hits:
+- NavierStokes/SpatialLocalization.lean:168 defines cutPressure as spatialCutoff z.2 * p z.
+- NavierStokes/R3/ActualCandidate.lean:59 defines localized_pressure_tsupport.
+- NavierStokes/R3/ProblemStatement.lean:99 requires pressure_support for each pre-singular time.
+- NavierStokes/R3/ConservativeDifference.lean:431 defines weak_pressure_poisson.
+- NavierStokes/R3/PressureRecoveryHelpers.lean:116 defines gradient_poisson_test.
+- NavierStokes/R3/PressureRecovery.lean:188, 391, 419 provide averaged pressure/gradient recovery theorems.
+- NavierStokes/R3/RieszTestOperators.lean:277, 284 provide compact-test pressure and Riesz identities.
+
+Interpretation:
+The compact pressure support is explicit in the selected construction, but the repository also contains nontrivial compact-test pressure identities. The present scan does not show that the selected candidate invokes those recovery results to establish a canonical whole-space pressure equation for its cutPressure field. Conversely, it does not prove that the cut pressure violates the forced Navier--Stokes specification: the residual force is allowed to absorb the pressure-gradient difference unless an independent pressure equation or force restriction is imposed.
+
+Audit status:
+LIVE BRIDGE TEST, not a formal disproof.
+
+Decisive follow-up:
+Attempt a zero-sorry instantiation of the pressure-recovery hypotheses on the selected candidate. If the required equal-residual comparison or pressure-Poisson premise cannot be supplied, record the exact missing bridge; if it can, inspect whether it conflicts with compact pressure support.

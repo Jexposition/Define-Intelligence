@@ -1,166 +1,189 @@
-# CMI-First Counter-Paper Review Plan
-
-*Research protocol. The tracker records execution; this document defines the method and escalation rules.*
-
-## Objective
-
-Write an evidence-based paper that tests the official OpenAI claim against the mathematical statement it purports to formalise. The goal is an honest disproof where the source permits one, not a compilation report and not a physical objection substituted for a theorem.
-
-## CMI criteria used in this review
-
-The relevant alternatives are the forced whole-space and periodic breakdown alternatives. The review therefore checks:
-
-1. the exact domain, time interval, initial data, force class, decay, and smoothness;
-2. the PDE, incompressibility, finite-energy, and blow-up clauses;
-3. the comparison statement ruling out a same-force global finite-energy solution;
-4. the proof that the constructed fields satisfy the published analytic construction; and
-5. whether any required bridge is assumed, vacuous, or weaker than the paper's statement.
-
-The CMI publication and review process is separate from the mathematical audit. This document focuses first on whether the claimed proof proves the claimed proposition.
-
-## Claim hierarchy
-
-| Level | Claim | Required result |
-| --- | --- | --- |
-| A | Lean accepts a term of the endpoint type. | Compilation and `#print axioms`. |
-| B | The endpoint type has the C/D outer shape. | Source-level definition comparison. |
-| C | The selected witness satisfies the paper's intermediate construction. | File-by-file dependency and correspondence proof. |
-| D | The public paper's direct formal-verification claim is justified. | All load-bearing bridges must be present and valid. |
-| E | The result proves spontaneous physical blow-up under altered constitutive laws. | Separate mathematics, not implied by C/D. |
-
-The current evidence supports A and B, rejects the old “periodic toy” objection, and does not establish C or D as a faithful formalisation of the published construction. The zero-sorry moment probes supply a formal obstruction to direct coordinate identification, but `PositiveOrderMoments` supplies a genuine exact five-row repair and prevents the mismatch probe from being treated as a final refutation. The dependency axiom probe finds no custom axiom at the selected witness interfaces. E is outside the literal Newtonian endpoint.
-
-## Falsification lanes
-
-### Lane 1: moment correspondence
-
-Compare the paper's `(M, I, J, S, C_p)` system with `FiveProfileMoments`, `PositiveOrderMoments`, and `FiveRowRank`. The first contains matching normalised vectors; the second proves exact five-coordinate repair in the recursive slow-profile layer; the third is a distinct physical rank interface. Trace `physical_five_rows`, `prescribed_five_rows`, `reserved_five_rows`, `exists_repaired_order`, `profiles_moments`, the `ModulatedHistories` consumers, and the selected witness. The direct-bridge probe rules out only a naïve row-by-row identification. The decisive test is now whether the repository states and proves the staging maps among all three systems.
-
-The probe also rules out a full linear equivalence between the three-coordinate `FiveRowRank.Debt` and the five-coordinate `FiveProfileMoments.Debt`. The next correspondence test must therefore distinguish a constrained embedding or a deliberate stage separation from a claimed identity of the two debt spaces. The positive-order five-coordinate layer must be included before treating this as evidence against the endpoint.
-
-### Lane 2: filter non-vacuity
-
-Audit every `JetRate`, frequency-shell, germ, and limit obligation consumed by the selected candidate. Prove `NeBot` for each derived filter or prove that the target statement is independent of that filter. The existing generic `Filter.bot` probe is a warning, not yet a headline refutation.
-
-### Lane 3: force specification
-
-Verify smoothness, compact support, positive-time support, decay, and extension through time one. Separately record that the force is residual-defined and active through collapse. Do not treat force activity alone as a C/D violation.
-
-### Lane 4: whole-space closure
-
-Trace the pressure recovery, pressure flux, uniqueness, energy, and compact-support interfaces into `CandidateBreakdown`. The imported-rate-bound suspicion has now been checked and withdrawn: `WholeSpaceComparisonClosure` constructs the scalar rate bound internally, while `WholeSpaceUniqueness` constructs the pressure-flux constant from its comparison hypotheses. Continue by testing the mathematical validity and exact hypotheses of those derivations, not by treating the rate bound as an external premise.
-
-### Lane 5: discarded objections
-
-Keep non-Newtonian regularisation, hypo-dissipation, and physical autonomy as robustness questions. They become formal refutations only if the official endpoint claims those stronger properties.
-
-## Lean work rule
-
-Write the smallest zero-sorry probe that tests a load-bearing statement. Do not add code merely to restate a suspicion. Every probe must record its import path, theorem name, exit status, and whether it attacks the endpoint, an interface, or only a semantic interpretation. The completed direct-bridge probe attacks an interface; the selected dependency probe audits kernel assumptions without treating standard axioms as a defect.
-
-## Deliverables
-
-- the coherent paper in `OpenAI_NavierStokes_Research_Paper.md`;
-- the adverse referee report in `OpenAI_NavierStokes_Peer_Review_v1.md`;
-- the axiom and premise ledger in `OpenAI_NavierStokes_Axiom_Ledger.md`;
-- this plan as the review protocol;
-- a tracker containing only evidence-backed status changes; and
-- independent Lean probes under `NavierStokesReview/src/probes`.
-
-## Escalation rule
-
-The counter-paper may state that OpenAI's stronger claim of faithful formalisation is not established when a required bridge is absent or a selected-path premise is false. It may state “formal disproof” only after a zero-sorry Lean theorem proves the contradiction or a false premise is shown to be mandatory. A physical objection, a missing regularisation, active forcing, or a generic filter hazard must remain in its own category until it reaches the C/D endpoint.
-
-## Current protocol position
-
-The plan now has two live proof-bearing lanes and three closed or bounded lanes.
-
-1. The force lane has a concrete endpoint consequence: every candidate has nonzero force at some `0 < t < 1`. `ForceActivityProbe.lean` now compiles cleanly, and the result is recorded as active forcing rather than autonomous blow-up.
-2. The moment lane has a zero-sorry direct-correspondence obstruction, but `PositiveOrderMoments` proves an exact five-coordinate repair internally. The required action is to search for the missing change-of-variables or staging theorem before escalating the finding.
-3. The physical-rank predicate was inspected at declaration level. `FiveRowsStructureProbe.lean` confirms three debt coordinates plus two fixed zero rows, so the review must not call it a generic five-by-five inversion. The next test is whether the fixed rows and the three debt rows jointly preserve the paper's five named moments along the selected witness.
-4. The periodic-endpoint absence objection is closed because `PeriodicPaperTheorem.lean` exports the D-shaped endpoint.
-5. The pressure and energy objection remains an interface audit, not a proved failure. The `Filter.bot` issue remains a generic vacuity hazard until a bottom filter is shown to feed a mandatory endpoint premise.
-
-6. The whole-space provenance objection is closed at source level. `R3/Theorem.lean` extracts the candidate from `ActualCandidateAssembly.selected_witness`, and the R³ localisation, energy, and viscosity-scaling modules carry that witness to the exported endpoint. This removes an attractive but unsupported claim that the endpoint is a disconnected wrapper.
-
-7. The comparison-premise audit corrected the earlier interface criticism. The scalar rate bound is constructed internally by `WholeSpaceComparisonClosure` and recorded by the compiled zero-sorry `R3ComparisonPremiseProbe.lean`; the pressure-flux constant is also derived inside the uniqueness chain. Pressure recovery and localised PDE estimates remain load-bearing analytic targets, but the obsolete “unproved imported rate bound” formulation is closed.
-
-The next falsification threshold is therefore explicit: a selected-path theorem must contradict one required CMI predicate, or the source must expose a mandatory interface whose assumptions cannot be proved. Until then the paper reports a failure of demonstrated correspondence, not a fabricated theorem refutation.
-
-The empty-index branch audit has been added to the reachability lane. `ActualParticularStageControls.raw_jets` uses a valid `Nonempty (ActivePair)` split: the empty branch proves the control patch empty from its own membership predicate, while the nonempty branch uses an explicit countable surjection. The next test is not to label this `False.elim`, but to determine whether the selected endpoint depends on an inhabited active subtype and whether that subtype is proved inhabited. Without that dependency, the branch is not a refutation.
-
-The moment lane now has a source-map test in addition to the type-level probes. `MeanRankUpdate.lean` imports `FiveProfileMoments.lean` but defines its operative interface entirely through `FiveRowRank`; an import-only edge is not a bridge. The next correspondence search must locate a theorem that explicitly transports the five paper moments into the three-debt physical rank update. If no such theorem reaches `selected_witness`, this supports a formal correspondence failure, not merely a stylistic complaint.
-
-Use “formal disproof” only after a zero-sorry contradiction or a false mandatory premise has been proved. Use “formal correspondence failure” when the code and paper are not connected by a required theorem. Do not escalate a semantic criticism into a theorem-level verdict.
-
-### Pressure and uniqueness
-
-The pressure/uniqueness chain has now been inspected beyond its exported theorem names. The temporal recovery theorem uses compact temporal tests and continuity to obtain interior-time equality. The spatial step uses an explicit Fourier Sobolev bound and a weighted `L²` representative to eliminate compactly harmonic functionals. The comparison closure constructs its scalar rate bound internally, while the pressure-flux constant is constructed from the pressure-recovery hypotheses.
-
-This lane does not presently yield a formal disproof. Its status is “analytically load-bearing, no checked contradiction”. The review must not describe the rate bound as an imported premise or describe the pressure route as absent. The decisive remaining routes are the cross-layer moment bridge, a selected-path filter-collapse proof, or a concrete false identity in the pressure/energy estimates.
-
-### Fixed moment rows
-
-The preserved-mass lane was tested against the selected witness and closed as a route to contradiction. The initial state is explicitly tagged with `ActualInitialization.initial_zeroMasses`, and the temporal and rank corrections preserve that invariant. `MomentInitializationProbe.lean` compiles the relevant theorem with no added assumptions.
-
-The next decisive moment test is therefore not whether the fixed rows start at zero. It is whether the source proves a cross-layer map from those rows and the three debt coordinates to the five published quantities `(M, I, J, S, C_p)`, and whether that map is preserved through the selected construction.
-
-### Source-scope correction
-
-The zero-sorry test must be scoped to the exported proof path. Direct compilation of `ComparatorChallenges/NavierStokes.lean` emits two `sorry` warnings, but `NavierStokes/ComparatorSolution.lean` does not import that challenge module. The headline endpoint remains standard-axiom-only in its own dependency report. The review therefore records a repository-level metadata defect without misclassifying it as a contradiction of the selected C/D theorem.
-
-The selected-stage trace is explicit: `ActualCandidateAssembly.selected_witness` feeds `GluedStageEstimates.actualStageEstimates`; the latter consumes `ActualCycleResidualBounds.PhysicalData`; and `ActualPhysicalPrefixFields.physicalFields_all` derives that data from smoothness, local germ identities, pressure-germ identities, and exterior equality. This closes endpoint-disconnection as a route. The live proof-bearing lane remains the cross-layer map among `FiveProfileMoments`, `PositiveOrderMoments`, and `FiveRowRank`.
-
-The latest import-closure census refines that lane. The selected closure contains real `FiveProfileMoments` uses in `NominalProfile`, `ModulatedHistories`, `ModulatedCone`, `ModulatedProfileAssembly`, `MatchingDebtBounds`, `RepairConeBounds`, and `ReservedPatches`. In `ReservedPatches`, the identified cross-use proves support of nominal bump edits and agreement of heated fields with a `FiveRowRank.background`; it does not transport the five nominal moment rows into `FiveRowRank.FiveRows`. The next decisive test is therefore a theorem search for the full row, debt, and coefficient map, not a search for whether the nominal module is imported at all.
-
-### Regularity and row equations
-
-`MovingFieldRowNonImplicationProbe.lean` now supplies a zero-sorry countermodel to the weaker implication that generic moving-field regularity entails the physical row equations. The zero moving field meets `MovingField` for every admissible region and bounds, but a constant nonzero debt makes the third `FiveRows` identity false. This probe is not a selected-endpoint refutation: the actual rank path invokes `LocalRankDefect.RankGeometry.fiveRows`, which derives the rows from a stronger background/rank model.
-
-The plan is therefore updated with a precise obligation. Trace the paper's five quantities into `RankGeometry` and show that the values used by `rank_rows_on_patch` are the same values repaired by the nominal or positive-order layers. A generic regularity theorem cannot discharge that obligation. Escalation to “formal disproof” still requires a contradiction or a false mandatory premise on the selected witness path.
-## Actual-field recomputation audit
-
-The selected endpoint contains an actual-field reconstruction path. `PhysicalFields` supplies local velocity and pressure germs, `StateRealization` carries them into the residual stage, and `StateRealization.chartIdentity` identifies the resulting residual in Cartesian coordinates. The paper's requirement that each correction be recomputed from the updated field is therefore represented on the selected path. This attack line is closed unless a false premise is found inside those declarations.
-
-The generic `JetRate` definition remains unsafe in isolation because it accepts `Filter.bot`. The selected endpoint uses `GlobalBaseError.originPast`, with a proved pre-singular neighbourhood relation and positive scale-factor behaviour. The filter-vacuity attack is retained as an API-audit item, but it is not currently a theorem-level contradiction.
-
-The live formal target is now precise: locate a zero-sorry theorem identifying `(M, I, J, S, C_p)` with the nominal, positive-order, and physical-rank interfaces used by the selected witness. If the identification is false, formalise that contradiction against the exact selected premises. If it is true, record the theorem and remove the correspondence objection.
-
-## Current decision gate: 2026-09-23
-
-The first high-value falsification attempt produced a precise correspondence obstruction. The paper's Appendix A presents five named cumulative moments, whereas `FiveRowRank` uses a three-dimensional debt together with two fixed zero-moment rows. `MomentBridgeObstructionProbe.lean` proves, without `sorry`, that the exponent vectors do not match directly and that the two debt spaces cannot be linearly equivalent.
-
-This does not close the entire CMI endpoint against the repository because `PositiveOrderMoments.lean` contains a separate five-dimensional exact repair theorem. The next decisive audit is therefore:
-
-1. identify the exact module and theorem supplying the rows used by the selected candidate;
-2. locate a theorem mapping those rows to `(M, I, J, S, C_p)`;
-3. verify that the repaired actual field, not only a nominal profile, is passed into the residual and endpoint estimates;
-4. if the map is absent, classify the paper-to-code claim as unestablished rather than claiming the endpoint is false.
-
-The current gate is **major revision**. Escalation to formal disproof requires a zero-sorry contradiction or a false mandatory premise on the selected witness path.
-
-## Selected import closure and endpoint transport
-
-The new `SelectedImportClosureProbe.lean` imports `NavierStokes.R3.Theorem` and resolves both the positive-order and physical-rank debt types. This prevents a simplistic claim that the five-moment machinery is absent. It does not answer the substantive question: where does the selected witness identify the paper's five quantities `(M,I,J,S,Cp)` with the promoted debt `(0,0,-P,-Jθ,-Jz)` and then use that identity in the actual PDE residual estimates?
-
-The next required artefact is a source-linked transport theorem or a zero-sorry countermodel showing that the claimed identification cannot hold for the selected fields. Until one exists, classify the paper-to-endpoint correspondence as **OPEN**, not **REFUTED**.
-
-## Rejected attack line: initial-face regularity
-
-The proposed objection that `ContDiffOn` excludes `t = 0` is withdrawn. The formal domain is `Ico 0 1 × univ`, which includes `t = 0`, and the smoothness statement is relative to that half-domain. Future reviews must not reuse this criticism.
-
-## Repository-scope integrity lane
-
-The review also maintains a separate source-integrity lane. A repository-wide census found four `sorry` declarations: two in the Navier–Stokes challenge file and two in the Euler challenge file. This lane answers the question “is every source file fully derived?” It does not answer the narrower question “does the selected C/D endpoint depend on those declarations?”
-
-The endpoint question is answered only by dependency inspection and `#print axioms` reports. The current reports for the exported theorem and selected construction show only Lean's standard foundations. The challenge placeholders therefore remain a verified repository defect and an overclaim risk, but not a formal disproof of the selected endpoint. The counter-paper must retain this distinction in its verdict.
-
-## 2026-09-23 correction to the moment lane
-
-`MomentBridgeObstructionProbe.lean` proves that the nominal five-coordinate interface cannot be directly identified with `FiveRowRank`. `FiveRowPositiveOrderBridgeProbe.lean` now proves the natural constrained promotion and exact repair identity:
-
-```text
-(P, Jθ, Jz) ↦ (0, 0, -P, -Jθ, -Jz)
-```
-
-Therefore the dimension difference is not, by itself, a contradiction. The next decisive test is the selected-path transport theorem. It must identify `CorrectionState.debt` and `ZeroMasses` with the paper's five moment data, show that `RankGeometry.fiveRows` is consumed by the actual residual estimates, and carry the map into `ActualCandidateAssembly.selected_witness`. If the map is absent, the paper-to-code claim remains unestablished. If a required equality is false, formalise that exact failure in Lean and promote it to formal disproof.
+# CMI-first review map: OpenAI Navier–Stokes claim
+
+**Working verdict:** `NOT ESTABLISHED AS A CMI SOLUTION` until the selected endpoint is independently checked. This document is a compact work plan, not the research log. Evidence belongs under `NavierStokesReview/evidence/`; completed arguments belong in the peer review and paper.
+
+## Status key
+
+`[x]` checked and closed as an attack route  ·  `[~]` active review  ·  `[ ]` not yet checked  ·  `[!]` formal failure found
+
+## Agent 2 verification board: 2026-09-23
+
+| ID | Question | Status | Evidence / next action |
+|---|---|---|---|
+| BP-01 | Does `finalPotential` define a genuinely three-component field? | [x] | Reduced `(t, s, z)` profile is embedded in three Cartesian components and spatially curled. |
+| BP-02 | Is the base field globally swirl-free? | CORRECTED | Only the radial gauge anchor is zero; no global angular-component-zero theorem was found. |
+| BP-03 | Are the paper's five moments transported into the selected endpoint? | [~] | Upstream five-moment machinery exists, but no selected-path transport theorem was found through the generic germ/sum interface. |
+| BP-04 | Is smooth forcing derived or injected? | [~] | `force_smooth` consumes residual-jet limits and away extensions; verify those premises for the selected fields. |
+| BP-05 | Is `WholeDomain*` dead code? | CORRECTED | Unreachable from `selected_witness`, but reachable through paper-result modules. |
+| BP-06 | Has a zero-sorry contradiction been obtained? | [ ] | None yet. Do not label the claim refuted without a selected-path contradiction. |
+
+Evidence: `NavierStokesReview/evidence/base_profile_core_asymptotics_audit_2026-09-23.md` and `NavierStokesReview/src/probes/BaseProfileCoreAsymptoticsProbe.lean`.
+
+## 1. Target and admissibility gate
+
+| ID | Question | Status | Evidence / next action |
+|---|---|---:|---|
+| CMI-01 | Which Fefferman alternative is claimed? | [x] | R³ forced breakdown, matching the repository `CandidateProperties` shape. |
+| CMI-02 | Is the force globally smooth, rapidly decaying in time, and supported at positive time? | [~] | `ProblemStatement.lean`, `CandidateFromLimits.lean`; verify selected endpoint predicates. |
+| CMI-03 | Is the velocity smooth before the singular time and finite-energy as required? | [~] | Trace `CandidateConsequences` to the selected velocity; audit exact norm statements. |
+| CMI-04 | Does the code prove the PDE on the required domain, rather than only define a residual? | [~] | Match `navierStokesResidual = forcing` against the selected candidate fields. |
+
+CMI does not impose the additional conditions `∫ f dx = 0` or `∇ · f = 0` on the external force. Those are possible physical diagnostics, not automatic CMI disproofs. A conservation-law attack becomes decisive only after deriving the relevant identity from the stated hypotheses and showing that the selected force violates it.
+
+## 2. Selected endpoint trace
+
+| ID | Task | Status | Required result |
+|---|---|---:|---|
+| END-01 | Trace `selected_witness` into `GermCandidateAssembly.exists_candidate_witness_of_finite_stages`. | [x] | Selected witness consumes actual stage estimates, endpoint extensions, and axis conditions. |
+| END-02 | Check whether residual rate bounds are inserted or derived. | [x] | `ActualCycleResidualBounds.native_residual` derives the full residual bound from component estimates. |
+| END-03 | Check whether `VanishingJointJets` and `AwayExtensions` are derived on the selected path. | [~] | Inspect the exact theorem chain and compile a zero-sorry dependency probe. |
+| END-04 | Run `#print axioms` on the exported R³ endpoint and selected witness. | [x] | Current reports show only `propext`, `Classical.choice`, and `Quot.sound`. |
+| END-05 | Audit `selectedBudget = 0` and selected stage aliases. | [x] | Zero is an input parameter; stage families remain indexed by `ℕ`; no `sorry` found. |
+
+## 3. Force and endpoint regularity
+
+| ID | Task | Status | Escalation test |
+|---|---|---:|---|
+| FORCE-01 | Inspect `PositiveTimeForce.timeCutoff`. | [x] | Smooth bump; active on `[3/8,1]`; no step discontinuity. |
+| FORCE-02 | Locate pressure in the force residual. | [x] | Pressure enters `navierStokesResidual` in `CandidateFromLimits`; `PositiveTimeForce.force` is only a wrapper. |
+| FORCE-03 | Check residual provenance. | [x] | Before `t=1`, `CandidateFromLimits.force` equals the activated residual; endpoint uses smooth extension. |
+| FORCE-04 | Prove or refute selected residual endpoint limits. | [~] | Write a zero-sorry probe against actual `hlim`, not an arbitrary force norm. |
+| FORCE-05 | Prove force-norm divergence, failed support, failed decay, or failed `ContDiff`. | [ ] | Any one exact selected-path failure upgrades this lane to `[!]`. |
+
+## 4. Moment and physical-correspondence lane
+
+| ID | Task | Status | Required result |
+|---|---|---:|---|
+| MOM-01 | Inspect `FiveRowRank.FiveRows`. | [x] | Five explicit radial integral rows; first two are proved zero rows, not type axioms. |
+| MOM-02 | Inspect `PositiveOrderMoments`. | [x] | Genuine five-coordinate integral repair exists. |
+| MOM-03 | Find the transport theorem from `(M,I,J,S,C_p)` to selected physical debt. | [~] | No selected-endpoint theorem exhibited yet; search import closure and theorem applications. |
+| MOM-04 | Test whether selected fields can satisfy endpoint claims without that transport. | [~] | Construct a zero-sorry countermodel or locate the missing mandatory premise. |
+| MOM-05 | Do not infer a CMI failure from non-Newtonian regularisations. | [x] | Such models are external stability tests, not the classical forced equation. |
+
+## 4a. Incompressibility lane
+
+| ID | Task | Status | Finding |
+|---|---|---:|---|
+| DIV-01 | Distinguish raw potential stages from the final velocity. | [x] | `selectedPotentialStages` are intermediate potentials, not the field in `CandidateProperties`. |
+| DIV-02 | Trace the final velocity divergence theorem. | [x] | `SolenoidalDiagonal.divergence_velocitySum_on` proves the curl-generated velocity is divergence-free under its hypotheses. |
+| DIV-03 | Extract the selected endpoint property without `sorry`. | [x] | `SelectedDivergenceAudit.lean` compiles and returns `hc.divergence_free`. |
+| DIV-04 | Find a false divergence premise on the selected path. | [ ] | No such failure found; keep endpoint residual and moment audits active. |
+
+## 4b. Energy, pressure, and temporal-gluing lane
+
+| ID | Task | Status | Finding / escalation test |
+|---|---|---:|---|
+| ENG-01 | Locate the exact Newtonian energy identity. | [x] | `R3/ViscousEnergyBalance.lean` proves forcing work minus viscous dissipation. |
+| ENG-02 | Check the selected endpoint exposes finite energy. | [x] | `AnalyticObjectionsProbe.lean` extracts `hc.energy_bounded`. |
+| ENG-03 | Prove a selected-field energy mismatch. | [ ] | Requires an exact contradiction, not a scaling suspicion. |
+| PRS-01 | Check whether pressure is compactly supported in the selected R³ candidate. | [x] | `CandidateProperties.pressure_support` and `R3CompactCandidate.pressure_supported` make this explicit. |
+| PRS-02 | Derive a pressure-tail contradiction from the actual force. | [ ] | Only valid after proving the extra force-divergence or independence premise needed for a force-free Poisson argument. |
+| GLU-01 | Trace temporal gluing and endpoint jets. | [~] | `SpacetimeGluing.smoothExtension` proves the interface form; verify selected residual-limit inputs. |
+
+## 4d. Advanced structural lanes
+
+| ID | Task | Status | Decisive evidence |
+|---|---|---:|---|
+| ADV-01 | Energy-dissipation mismatch | [~] | The exact forced energy identity is present. Instantiate it on the selected fields; do not infer a mismatch from the five-row architecture alone. |
+| ADV-02 | Temporal stage-interface regularity | [~] | Smooth gluing and endpoint jets are present. Trace the concrete `hlim`, `L`, and `VanishingJointJets` premises into `selected_witness`. |
+| ADV-03 | Pressure support versus whole-space recovery | [~] | Compact pressure support is explicit, while compact-test Poisson/recovery theorems also exist. Determine whether the selected construction invokes the recovery bridge or leaves it unconnected. |
+
+## 4e. Current counter-paper deep dive: transport and pressure
+
+| ID | Bounded action | Status | Acceptance test |
+|---|---|---:|---|
+| TRN-01 | Record the production debt type and exact five-row equations. | [x] | `FiveRowRank.Debt = Fin 3 → ℝ`; first two rows are explicit zero constraints; last three consume all debt coordinates. |
+| TRN-02 | Record the independent positive-order five-moment system. | [x] | `PositiveOrderMoments.Debt = Fin 5 → ℝ`; exact weighted moment theorem compiles. |
+| TRN-03 | Verify the explicit promotion `(P,Jθ,Jz) ↦ (0,0,-P,-Jθ,-Jz)`. | [x] | `FiveRowPositiveOrderBridgeProbe.lean` compiles with no `sorry`. |
+| TRN-04 | Trace promotion into `StateRealization.chartIdentity`. | [~] | Search for a theorem that identifies paper moments with promoted debt and is consumed by `StateRealization`; current source shows local residual/germ inputs only. |
+| TRN-05 | Trace promotion into `CandidateConsequences` and `selected_witness`. | [~] | Public consequence bundle contains no moment-realisation field; prove a selected-path contradiction only if an actual mandatory premise fails. |
+| PRS-03 | Keep R³ and periodic-lift domains separate. | [x] | R³ `CandidateProperties` uses Euclidean compact support; periodic endpoint uses lifted periodicity. Do not transfer torus support arguments to R³. |
+| PRS-04 | Print the exact meaning of `pressure_support`. | [x] | It is `tsupport(slice p) ⊆ K` with `IsCompact K`, not a pressure-Poisson axiom. |
+| PRS-05 | Trace `PressureRecovery` and `ActualPressureFlux`. | [x] | `candidate_unique_on_Icc` supplies the selected candidate; `classical_uniqueness_on_Icc` constructs the recovery hypotheses and pressure-flux bound. |
+| PRS-06 | Test the compact-pressure trivialisation inference. | [x] | Zero-sorry probe proves compact support does not imply a scalar slice is zero. |
+| PRS-07 | Seek a genuine selected-path pressure contradiction. | [ ] | Must derive a Poisson/normalisation/decay premise from the endpoint and contradict the selected pressure; generic compact-support intuition is insufficient. |
+
+Evidence for this block:
+`NavierStokesReview/evidence/semantic_transport_pressure_audit_2026-09-23.md`,
+`NavierStokesReview/src/probes/SemanticTransportPressureProbe.lean`.
+
+### Advanced-lane rule
+
+These lanes may produce a formal disproof only through a zero-sorry theorem on the selected dependency path. A generic theorem about another pair of fields, an arbitrary pressure-tail intuition, or a physical regularisation outside the stated forced equation is not enough.
+
+## 5. Formal-disproof threshold
+
+Escalate from “correspondence defect” to **formal disproof** only when a zero-sorry Lean artefact proves one of these on the selected dependency path:
+
+1. a required premise is false or inconsistent;
+2. the selected force cannot satisfy global smoothness, positive-time support, or rapid derivative decay;
+3. the selected velocity/pressure pair fails the stated Navier–Stokes equation or finite-energy predicate;
+4. a claimed paper-to-code identity is contradicted for the actual selected fields.
+
+Do not use `sorry`, an arbitrary existential witness, a generic countermodel disconnected from `selected_witness`, or the mere presence of a residual-defined force as a disproof.
+
+## 6. Current work queue
+
+| Priority | Next bounded action | Output |
+|---:|---|---|
+| 1 | Trace `VanishingJointJets` and `AwayExtensions` into `selected_witness`. | Source-linked dependency note and probe. |
+| 2 | Search for the five-moment transport theorem on the selected import closure. | Theorem citation or exact absence report. |
+| 3 | Test the strongest actual selected obligation in Lean without `sorry`. | Compiled probes now cover divergence, pressure support, force smoothness, and energy exposure. |
+| 4 | Update tracker, axiom ledger, synthesis, peer review, and paper. | Human-readable findings are being integrated; preserve counter-paper framing. |
+
+## External literature lane
+
+| ID | Result | Status | Interpretation |
+|---|---|---:|---|
+| EXT-01 | Constantin–Ignatova–Vicol, arXiv:2609.20803 | [x] | Analytic forcing plus the reported anisotropic bounds and exact axisymmetric core implies regularity. |
+| EXT-02 | Their corollary under bounded `C²` force | [x] | The force cannot both be analytic or vanish near the singular point; this is compatible with a compactly supported smooth nonanalytic force. |
+| EXT-03 | Scientific American report | [x] | Independent expert criticism supports “contrived forced branch”, but reporting is not a formal contradiction. |
+| EXT-04 | Convert external theorem into a Lean failure | [ ] | Only possible if the repository claims analyticity or a forbidden force property. Current source does not. |
+
+References: [CMI problem statement](https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf), [Scientific American analysis](https://www.scientificamerican.com/article/did-openai-solve-the-wrong-navier-stokes-problem/), [Constantin–Ignatova–Vicol](https://arxiv.org/html/2609.20803v1).
+
+## Evidence index
+
+- `NavierStokesReview/evidence/force_cutoff_activity_audit_2026-09-23.md`
+- `NavierStokesReview/evidence/selected_moment_bridge_audit_2026-09-23.md`
+- `NavierStokesReview/evidence/force_conservation_obstruction_adjudication_2026-09-23.md`
+- `NavierStokesReview/evidence/selected_divergence_audit_2026-09-23.md`
+- `NavierStokesReview/src/probes/ForceActivityProbe.lean`
+- `NavierStokesReview/src/probes/SelectedMomentBridgeAudit.lean`
+- `NavierStokesReview/src/probes/SelectedDivergenceAudit.lean`
+- `NavierStokesReview/src/probes/AnalyticObjectionsProbe.lean`
+- `NavierStokesReview/results/pressure_support_scan_2026-09-23.txt`
+- `NavierStokesReview/src/probes/PressureRecoveryInfrastructureProbe.lean`
+- `NavierStokesReview/results/pressure_recovery_infrastructure_probe_2026-09-23.txt`
+- `NavierStokesReview/evidence/semantic_transport_pressure_audit_2026-09-23.md`
+- `NavierStokesReview/src/probes/SemanticTransportPressureProbe.lean`
+- `NavierStokesReview/results/semantic_transport_pressure_probe_2026-09-23.txt`
+- `NavierStokesReview/evidence/pressure_recovery_selected_instantiation_2026-09-23.md`
+
+**Last updated:** 2026-09-23
+**Owner:** CMI-first formal review
+## 4c. Analytic-objection adjudication
+
+| Lane | Status | Working conclusion | Next decisive test |
+|---|---:|---|---|
+| Final incompressibility | [x] | The selected final velocity is divergence-free; raw potential stages are not the endpoint field. | Find a false premise in the selected divergence theorem. |
+| Energy balance | [x] | An exact forced Newtonian energy identity and a finite-energy endpoint theorem are present. | Instantiate the identity on the selected fields and compare every hypothesis. |
+| Pressure localisation | [~] | Compact pressure support is explicit in the selected construction. It is a serious PDE/paper correspondence question, not by itself a CMI contradiction under arbitrary forcing. | Find a proved pressure Poisson/Leray relation that conflicts with the compact support claim. |
+| Temporal gluing | [~] | Smooth extension and endpoint-jet interfaces are explicit. The load-bearing issue is whether the residual-limit inputs are actually derived for the selected fields. | Trace `hlim`, `L`, and `VanishingJointJets` to their concrete premises. |
+| Filter non-vacuity | [x] | The generic `JetRate` definition omits a `NeBot` parameter, but the selected endpoint filter has an explicit `past_filter_neBot` theorem and a zero-sorry probe. | Audit any later restriction/comap filters individually. |
+
+Evidence: `NavierStokesReview/evidence/analytic_objections_adjudication_2026-09-23.md`.
+
+## Document control
+
+This fork is the active review corpus. See
+[`REVIEW_DOCUMENT_CONTROL.md`](REVIEW_DOCUMENT_CONTROL.md) before using any
+parent-directory copy or Agent 2 diagnostic note. A claim enters this plan only
+after source inspection or a recorded zero-sorry probe.
+
+| ID | Control task | Status | Decisive condition |
+|---|---|---:|---|
+| DOC-01 | Quarantine stale parent verdicts and unsupported pure-axial claims | [x] | The control map identifies active, supporting, archival, and rejected notes. |
+| DOC-02 | Reconcile Agent 2 notes with current source paths | [x] | `finalPotential`, selected imports, force gluing, and pressure support are corrected in the active corpus. |
+| DOC-03 | Maintain one human-readable peer review and one research paper | [x] | Narrative documents point to tracker/evidence rather than functioning as logs. |
+| DOC-04 | Resolve the selected five-moment transport objection | [ ] | Find or refute the theorem transporting the named moments through the selected endpoint. |

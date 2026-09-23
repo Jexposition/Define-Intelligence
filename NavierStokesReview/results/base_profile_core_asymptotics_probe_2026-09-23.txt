@@ -1,0 +1,67 @@
+NavierStokes.TailGaugePotential.finalPotential {F : OutgoingProfile.Profile} {W : NominalProfile.Witness F}
+  (H : NominalConeAssembly.Certificate W) {ld : ModulatedProfileAssembly.LoopData W}
+  (v : ModulatedProfileAssembly.Witness ld) (upper : ℝ) (B : ℕ) : VelocityField
+NavierStokes.TailGaugePotential.finalPotential_eq_sub_gauge {F : OutgoingProfile.Profile} {W : NominalProfile.Witness F}
+  (H : NominalConeAssembly.Certificate W) {ld : ModulatedProfileAssembly.LoopData W}
+  (v : ModulatedProfileAssembly.Witness ld) (upper : ℝ) (B : ℕ) (w : SpaceTime) :
+  TailGaugePotential.finalPotential H v upper B w =
+    FinalSlowBase.vectorPotential H v upper B w -
+      SlowBorelBase.swirlPotential (FinalSlowBase.scales H v upper B) F.data.h W.axis.normalization
+          (FinalSlowBase.coefficients H v) (w.1, 1, w.2.ofLp 2) •
+        coordinateVector 2
+NavierStokes.TailGaugePotential.finalPotential_smooth {F : OutgoingProfile.Profile} {W : NominalProfile.Witness F}
+  (H : NominalConeAssembly.Certificate W) {ld : ModulatedProfileAssembly.LoopData W}
+  (v : ModulatedProfileAssembly.Witness ld) (upper : ℝ) (B : ℕ) :
+  ContDiffOn ℝ ∞ (TailGaugePotential.finalPotential H v upper B) BaseResidual.past
+NavierStokes.TailGaugePotential.finalPotential_sameCurl {F : OutgoingProfile.Profile} {W : NominalProfile.Witness F}
+  (H : NominalConeAssembly.Certificate W) {ld : ModulatedProfileAssembly.LoopData W}
+  (v : ModulatedProfileAssembly.Witness ld) (upper : ℝ) (B : ℕ) {w : SpaceTime} (ht : w.1 < 1) :
+  SpatialCurl.spatialCurl (TailGaugePotential.finalPotential H v upper B) w = FinalSlowBase.velocity H v upper B w
+NavierStokes.TailGaugePotential.radialNormalize_anchor (K : TailGaugePotential.Point → ℝ) (t z : ℝ) :
+  TailGaugePotential.radialNormalize K (t, 1, z) = 0
+NavierStokes.TailGaugePotential.gaugedSwirl (a : ℕ → ℕ) (h C : ℝ) (d : SlowBorelBase.Coefficients) :
+  TailGaugePotential.Point → ℝ
+NavierStokes.AxisymmetricFields.potential (H K : AxisymmetricFields.Profile) : VelocityField
+NavierStokes.AxisymmetricFields.velocity_zero (H K : AxisymmetricFields.Profile) (t : ℝ) (x : Space)
+  (hH : DifferentiableAt ℝ H (AxisymmetricFields.profilePoint t x))
+  (hK : DifferentiableAt ℝ K (AxisymmetricFields.profilePoint t x)) :
+  (AxisymmetricFields.velocity H K (t, x)).ofLp 0 =
+    -x.ofLp 0 * AxisymmetricFields.partialZ H (AxisymmetricFields.profilePoint t x) / 2 +
+      x.ofLp 1 * AxisymmetricFields.partialS K (AxisymmetricFields.profilePoint t x)
+NavierStokes.AxisymmetricFields.velocity_one (H K : AxisymmetricFields.Profile) (t : ℝ) (x : Space)
+  (hH : DifferentiableAt ℝ H (AxisymmetricFields.profilePoint t x))
+  (hK : DifferentiableAt ℝ K (AxisymmetricFields.profilePoint t x)) :
+  (AxisymmetricFields.velocity H K (t, x)).ofLp 1 =
+    -x.ofLp 1 * AxisymmetricFields.partialZ H (AxisymmetricFields.profilePoint t x) / 2 -
+      x.ofLp 0 * AxisymmetricFields.partialS K (AxisymmetricFields.profilePoint t x)
+NavierStokes.AxisymmetricFields.velocity_two (H K : AxisymmetricFields.Profile) (t : ℝ) (x : Space)
+  (hH : DifferentiableAt ℝ H (AxisymmetricFields.profilePoint t x))
+  (hK : DifferentiableAt ℝ K (AxisymmetricFields.profilePoint t x)) :
+  (AxisymmetricFields.velocity H K (t, x)).ofLp 2 =
+    H (AxisymmetricFields.profilePoint t x) +
+      AxisymmetricFields.radialEnergy x * AxisymmetricFields.partialS H (AxisymmetricFields.profilePoint t x)
+NavierStokes.FinalSlowBase.origin {F : OutgoingProfile.Profile} {W : NominalProfile.Witness F}
+  (H : NominalConeAssembly.Certificate W) {ld : ModulatedProfileAssembly.LoopData W}
+  (v : ModulatedProfileAssembly.Witness ld) (upper : ℝ) (B : ℕ) {t : ℝ} (ht : t < 1) :
+  FinalSlowBase.velocity H v upper B (t, 0) =
+    ((1 - t) ^ (-CoordinateAlgebra.A F.data.h) * W.axis.j) • coordinateVector 2
+NavierStokes.FinalSlowBase.axis_tendsto {F : OutgoingProfile.Profile} {W : NominalProfile.Witness F}
+  (H : NominalConeAssembly.Certificate W) {ld : ModulatedProfileAssembly.LoopData W}
+  (v : ModulatedProfileAssembly.Witness ld) (upper : ℝ) (B : ℕ) :
+  Filter.Tendsto (fun t => ‖FinalSlowBase.velocity H v upper B (t, 0)‖) (nhdsWithin 1 (Set.Iio 1)) Filter.atTop
+NavierStokes.CandidateFromLimits.tracedResidual_smooth (u : VelocityField) (p : PressureField)
+  (hu : ContDiffOn ℝ ∞ u preSingularDomain) (hp : ContDiffOn ℝ ∞ p preSingularDomain)
+  (L : Space → FormalMultilinearSeries ℝ SpaceTime Space)
+  (hlim :
+    ∀ (n : ℕ),
+      TendstoLocallyUniformly (fun t x => iteratedFDeriv ℝ n (fun z => navierStokesResidual u p z.1 z.2) (t, x))
+        (fun x => L x n) (nhdsWithin 1 (Set.Iio 1))) :
+  ContDiffOn ℝ ∞ (CandidateFromLimits.tracedResidual u p L) (SpacetimeEndpoint.closedPast 1)
+NavierStokes.CandidateFromLimits.force_smooth (u : VelocityField) (p : PressureField)
+  (hu : ContDiffOn ℝ ∞ u preSingularDomain) (hp : ContDiffOn ℝ ∞ p preSingularDomain)
+  (L : Space → FormalMultilinearSeries ℝ SpaceTime Space)
+  (hlim :
+    ∀ (n : ℕ),
+      TendstoLocallyUniformly (fun t x => iteratedFDeriv ℝ n (fun z => navierStokesResidual u p z.1 z.2) (t, x))
+        (fun x => L x n) (nhdsWithin 1 (Set.Iio 1))) :
+  ContDiff ℝ ∞ (CandidateFromLimits.force u p hu hp L hlim)

@@ -2,6 +2,18 @@
 
 *Evidence ledger. Source snapshot: OpenAI Navier–Stokes repository, commit `f9e8bc5`.*
 
+## AX-030 to AX-034: base-profile verification
+
+**AX-030.** `finalPotential` uses reduced axisymmetric coordinates but produces a three-component Cartesian field through `spatialCurl`.
+
+**AX-031.** `radialNormalize_anchor` is a local gauge identity. It does not prove global zero swirl.
+
+**AX-032.** Five-moment repair machinery exists upstream, but the selected generic germ/sum interface does not expose a theorem identifying its output with `(M, I, J, S, C_p)`.
+
+**AX-033.** `CandidateFromLimits.force_smooth` depends on residual-jet limits and away extensions. Those premises require independent selected-path verification.
+
+**AX-034.** `WholeDomain*` is unreachable from `ActualCandidateAssembly.selected_witness` but reachable from paper-result modules. The precise finding is selected-endpoint disconnection, not global dead code.
+
 ## Purpose
 
 This ledger separates logical foundations, project-level premises, formal definitions, and physical requirements. A standard Lean axiom is not treated as a defect. A proposition imported as a premise, or a definition that is weaker than the paper's object, is a separate audit target.
@@ -234,4 +246,144 @@ A direct source census on 2026-09-23 found four admitted declarations under `Com
 
 Status: **CONFIRMED REPOSITORY-SCOPE DEFECT; ENDPOINT CONTAMINATION NOT SHOWN**.
 
+## AX-017: selected construction-interface provenance
+
+The selected witness does not take an infinite residual-flatness assertion as an isolated axiom. `StageEstimates` contains finite-prefix smoothness and jet-rate obligations. `ActualCycleResidualBounds.finite_residual_rates` derives those obligations from the actual cycle invariant and physical-field data. `StageEstimates.exists_schedule` derives the diagonal schedule and vanishing joint residual jets. The force and candidate consequences are then constructed by `CandidateConsequences.mixed_exists_force_with_consequences`.
+
+The localisation and cone interfaces are similarly connected to constructions: the velocity localisation is curl-generated with a proved divergence-free property, and the modulated repair coefficient bound is derived before cone preservation is invoked. These declarations introduce no new project-specific axiom in the selected endpoint reports.
+
+Status: **SELECTED INTERFACE DERIVATION CONFIRMED; EXTERNAL ANALYTIC ADEQUACY STILL OPEN**.
+
+This entry narrows the counter-paper's adverse claim. A missing human-readable bridge from the paper's named moments to the selected promoted debt remains a correspondence defect, but the inspected source does not show that the final endpoint assumes convergence or incompressibility as its own conclusion.
+
 The precise axiom claim is therefore limited. The inspected headline and selected-witness dependency reports are standard-axiom-only. The repository as a whole is not a zero-sorry corpus. Any public statement using the latter as evidence for the former is invalid until the challenge files are excluded explicitly.
+## AX-018: selected stage aliases and zero budget
+
+**Source:** `NavierStokes/ActualCandidateConstruction.lean:205-210`; `NavierStokes/ActualCandidateAssembly.lean:1163-1181`.
+
+`selectedBudget` is a noncomputable definition with value `0`. `selectedThreshold_geometry` is a proved inequality, not an axiom. The three selected-stage names are definitions, and `selected_witness` is the theorem that applies the witness construction to those selected parameters. `noncomputable` controls executable reduction; it does not introduce a proof hole.
+
+The selected budget does not truncate the stage index: the raw stage functions remain functions of `j : ℕ`. The zero-sorry `SelectedBudgetProbe.lean` verifies the literal value and the threshold inequality. No custom axiom or `sorry` was found in this alias block. The unresolved review question is whether the paper imposes an additional positive-budget condition that is absent from the formal interface; that would require a source-linked comparison, not an accusation that the aliases themselves are admitted proofs.
+## AX-020: five-row integrals versus selected endpoint transport
+
+**Sources:** `NavierStokes/FiveRowRank.lean:241-310`; `NavierStokes/CorrectionState.lean:462-476`; `NavierStokes/DefectIncrementBounds.lean:775-813`; `NavierStokes/PositiveOrderMoments.lean:23,916-960`; `NavierStokes/ActualCandidateAssembly.lean:1121-1185`.
+
+The first two rows of `FiveRowRank.FiveRows` are not type-level axioms. They are explicit radial integrals and are proved by the repair theorems. The rank subsystem also has source-level bridges from actual slow base fields to those rows. Separately, `PositiveOrderMoments` defines a genuine five-coordinate debt from radial integrals and proves exact repair.
+
+## AX-021: active smooth cutoff and residual-derived force
+
+**Sources:** `NavierStokes/R3/PositiveTimeForce.lean:21-67`; `NavierStokes/CandidateFromLimits.lean:28-147`; `NavierStokes/ActualCandidateAssembly.lean:1121-1185`; `NavierStokesReview/src/probes/ForceActivityProbe.lean`.
+
+`PositiveTimeForce.timeCutoff` is a globally smooth rescaled bump. It equals one at `t = 1`, so the wrapper does not switch the force off before the singular time. The compiled probe proves this and proves continuity of the wrapped force at the endpoint for every smooth input field. Thus “active at the singular time” is confirmed, while “non-smooth cutoff” is rejected.
+
+The wrapper is not the residual definition. `CandidateFromLimits.force` glues the past residual to a smooth extension, and `force_eq_activated_residual` proves residual equality for `0 ≤ t < 1`. The global smoothness conclusion depends on locally uniform residual limits `hlim` and endpoint jets `L`, which are constructed upstream in `PeriodicResidualLimits.exists_candidate_force`. This records a genuine residual-feedback concern without converting it into an unsupported claim that the force must diverge.
+
+**Status:** active smooth forcing confirmed; residual-driven construction confirmed; no zero-sorry force singularity or failed C/D premise established.
+
+The selected endpoint still lacks an exposed theorem identifying its selected raw stage fields with either moment construction, or identifying those constructions with the paper tuple `(M, I, J, S, C_p)`. This is a missing transport obligation, not a newly discovered axiom. No formal contradiction is entered here.
+
+Status: **EXPLICIT REPAIR PROVED; SELECTED TRANSPORT UNVERIFIED**.
+
+## AX-019: native residual estimate is derived from invariant fields
+
+**Source:** `NavierStokes/CorrectionStep.lean:9408-9460`; `NavierStokes/ActualCycleResidualBounds.lean:248-261, 845-884, 1158-1172`.
+
+The residual estimate used by the selected endpoint is not a field named `native_residual` inserted into `CycleAnalyticInvariant`. The invariant carries analytic component bounds and an exact residual decomposition. The theorem `native_residual` derives the full native estimate from those components, then `residual_jetRate` restricts and combines it with the state-realisation and exterior estimates.
+
+Status: **CLEARED AS A HIDDEN-FINAL-PREMISE OBJECTION; ANALYTIC ADEQUACY AND PAPER CORRESPONDENCE REMAIN OPEN**.
+
+## AX-022: force-conservation proposal is not a CMI premise
+
+**Sources:** `NavierStokes/R3/ProblemStatement.lean`; `NavierStokes/R3/PositiveTimeForce.lean`; `NavierStokes/CandidateFromLimits.lean`.
+
+The proposed obstruction used `∫ f dx = 0` and `∇ · f = 0` as if they were mandatory CMI conditions. They are not present in the repository's forced C/D predicate. `PositiveTimeForce.force` is a smooth scalar time-cutoff wrapper, while the pressure gradient appears in the upstream `navierStokesResidual` used by `CandidateFromLimits.force`. A nonzero external momentum input therefore is not a contradiction to the formal statement.
+
+## AX-024: selected incompressibility is attached to the final velocity
+
+`ActualCandidateAssembly.selectedPotentialStages` are raw potential stages. The
+selected witness does not use their individual divergence as the CMI condition.
+The final velocity is assembled through the solenoidal construction, and
+`SolenoidalDiagonal.divergence_velocitySum_on` proves its spatial divergence is
+zero under the actual smoothness and schedule hypotheses. The zero-sorry
+`SelectedDivergenceAudit.lean` probe extracts `hc.divergence_free` from the
+selected endpoint.
+
+This closes a category error, not the whole review. It does not prove the
+endpoint residual limits, global force regularity, or paper-to-code moment
+transport. Evidence:
+`NavierStokesReview/evidence/selected_divergence_audit_2026-09-23.md`.
+
+This lane is classified as **physical-realizability concern, not formal disproof**. It becomes decisive only if a separately justified admissibility axiom is added, or if the selected force is shown to fail one of the explicit smoothness, support, decay, PDE, or energy predicates.
+
+## AX-023: external analytic-forcing regularity theorem
+
+**Source:** [Constantin–Ignatova–Vicol, arXiv:2609.20803](https://arxiv.org/html/2609.20803v1), Theorem 1.1 and the discussion at lines 49–51 and 70–80.
+
+The paper proves regularity under real-analytic forcing together with the anisotropic angular-mean bounds and exact axisymmetric core attributed to the OpenAI construction. It also states that, with a force bounded in `C²` up to the singular time, such a force cannot be analytic or vanish identically near the singular point. The reported OpenAI force is smooth and compactly supported, hence nonanalytic, so the theorem does not contradict the CMI forced predicate.
+
+Status: **independent method limitation confirmed; selected Lean theorem not refuted**.
+
+## AX-025: analytic-objection adjudication
+
+**Evidence:** `NavierStokesReview/evidence/analytic_objections_adjudication_2026-09-23.md`; `AnalyticObjectionsProbe.lean`; `SelectedDivergenceAudit.lean`.
+
+The selected endpoint exposes four distinct facts that must not be conflated: final-velocity incompressibility, an exact forced energy identity, compact pressure localisation, and smooth temporal gluing. The first two have positive source-level support. The latter two are live correspondence targets: compact pressure must be reconciled with any claimed whole-space pressure equation, and smooth gluing must be traced back to the concrete residual-limit and endpoint-jet premises. None of these observations alone is a formal disproof.
+
+**Status:** **three analytic lanes remain open; raw-stage divergence objection closed**.
+
+## AX-026: selected residual filter is non-vacuous
+
+**Source:** `NavierStokes/DiagonalResidual.lean:33-34`; `NavierStokes/JointResidualLimits.lean:84-90,162-165`; `NavierStokesReview/src/probes/FilterNonVacuityAudit.lean`.
+
+The generic `JetRate` predicate is defined without a `NeBot` typeclass, so generic lemmas using it should not be treated as self-validating limit statements. On the selected path, however, the residual filter is `𝓝[SpacetimeEndpoint.openPast 1] (1, x)`, and the repository proves it is non-vacuous by rewriting it as `(𝓝[<] 1) ×ˢ 𝓝 x`. The zero-sorry probe instantiates this theorem at the selected origin.
+
+This closes the claim that the selected endpoint is already proved only through `Filter.bot`. It does not automatically clear every restricted filter used elsewhere; those must be checked when they become premises of the endpoint.
+
+**Status:** **selected endpoint filter non-vacuity confirmed; generic API hazard remains**.
+
+## AX-027: selected pressure-recovery comparison is instantiated
+
+**Source:** `NavierStokes/R3/ConservativeDifference.lean:431`; `PressureRecoveryHelpers.lean:116`; `PressureRecovery.lean:188,391,419`; `RieszTestOperators.lean:277,284`; compiler probe `PressureRecoveryInfrastructureProbe.lean`.
+
+The repository contains typechecked compact-test pressure/Poisson and Riesz identities. These are not axioms or an automatic bridge from `cutPressure` alone. The selected path does instantiate the comparison chain: `WholeSpaceUniqueness.classical_uniqueness_on_Icc` constructs `PressureRecovery.Hypotheses` and obtains the actual pressure-flux bound, while `candidate_unique_on_Icc` supplies the selected candidate properties. The remaining question is analytic validity of the estimates, not whether the pressure modules are disconnected.
+
+**Status:** **selected comparison instantiation confirmed; analytic estimates remain review targets**.
+
+## AX-028: explicit three-to-five repair promotion
+
+**Source:** `NavierStokes/FiveRowRank.lean:21-22,241-246`; `NavierStokes/PositiveOrderMoments.lean:21-23,192-228`; `NavierStokesReview/src/probes/FiveRowPositiveOrderBridgeProbe.lean:22-51`.
+
+The production rank debt has three coordinates. Its five-row predicate fixes
+the first two correction moments to zero and uses the final three rows for the
+three defects. A separate positive-order module has five actual integrated
+moments. The zero-sorry probe proves that the explicit promoted vector
+`(0,0,-P,-Jθ,-Jz)` makes the positive-order repair equal to the production
+repair and satisfies the five weighted identities.
+
+This is a proved algebraic bridge, not an axiom. It does not prove that the
+paper's named `(M,I,J,S,C_p)` variables are the same quantities, nor that the
+bridge is transported into the selected endpoint.
+
+**Status:** **algebraic promotion proved; paper-to-selected semantic transport remains open**.
+
+## AX-029: compact pressure support is not a zero theorem
+
+**Source:** `NavierStokes/R3/ProblemStatement.lean:92-109`; `NavierStokes/R3/ActualCandidate.lean:59-108`; `NavierStokes/R3/PressureRecovery.lean:33-44,407-438`; `NavierStokes/R3/ActualPressureFlux.lean:28-45`; `NavierStokesReview/src/probes/SemanticTransportPressureProbe.lean:37-50`.
+
+The R³ candidate requires each pre-singular pressure slice's topological
+support to lie in a compact set. The property does not include a pressure
+Poisson equation or a pressure normalisation. The recovery modules are
+comparison theorems with equal-residual, smoothness, divergence, and energy
+hypotheses. The zero-sorry probe proves compact support alone does not imply a
+scalar field is zero.
+
+**Status:** **generic pressure-trivialisation objection disproved; selected comparison instantiation confirmed**.
+
+## Document-control note
+
+This ledger is active only in the fork. See
+[`REVIEW_DOCUMENT_CONTROL.md`](REVIEW_DOCUMENT_CONTROL.md) for the status of
+parent copies and Agent 2 notes. A source file being imported in some
+paper-result module is not enough to show that it is on the selected endpoint
+path, and a source file not imported by `GermCandidateAssembly` is not enough
+to show that its entire upstream construction is absent.

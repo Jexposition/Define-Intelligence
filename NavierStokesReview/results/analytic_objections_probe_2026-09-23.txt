@@ -1,0 +1,47 @@
+NavierStokesR3.CompactEnergy.energy_balance_viscosity {ν : ℝ} {u f : NavierStokes.ProblemStatement.VelocityField}
+  {p : NavierStokes.ProblemStatement.PressureField} {t : ℝ} (hu : ContDiff ℝ ∞ fun x => u (t, x))
+  (hp : ContDiff ℝ ∞ fun x => p (t, x)) (hf : Continuous fun x => f (t, x)) (hcu : HasCompactSupport fun x => u (t, x))
+  (hdiv : ∀ (x : NavierStokes.ProblemStatement.Space), NavierStokes.ProblemStatement.spatialDivergence u t x = 0)
+  (hNS : ∀ (x : Space), navierStokesResidual ν u p t x = f (t, x)) :
+  CompactEnergy.energyRate u t =
+    -2 * ν * CompactEnergy.dissipation u t +
+      2 * ∫ (x : NavierStokes.ProblemStatement.Space), inner ℝ (u (t, x)) (f (t, x))
+NavierStokesR3.CompactEnergy.hasDerivAt_energy_balance_viscosity {ν a b t : ℝ}
+  {u f : NavierStokes.ProblemStatement.VelocityField} {p : NavierStokes.ProblemStatement.PressureField}
+  {K : Set NavierStokes.ProblemStatement.Space} (hK : IsCompact K)
+  (hu : ContDiffOn ℝ ∞ u (NavierStokes.PeriodicUniqueness.slab a b))
+  (hp : ContDiffOn ℝ ∞ p (NavierStokes.PeriodicUniqueness.slab a b)) (hf : Continuous fun x => f (t, x))
+  (hsupp : ∀ r ∈ Icc a b, (tsupport fun x => u (r, x)) ⊆ K) (ht : t ∈ Ioo a b)
+  (hdiv : ∀ (x : NavierStokes.ProblemStatement.Space), NavierStokes.ProblemStatement.spatialDivergence u t x = 0)
+  (hNS : ∀ (x : Space), navierStokesResidual ν u p t x = f (t, x)) :
+  HasDerivAt (CompactEnergy.l2Sq u)
+    (-2 * ν * CompactEnergy.dissipation u t +
+      2 * ∫ (x : NavierStokes.ProblemStatement.Space), inner ℝ (u (t, x)) (f (t, x)))
+    t
+NavierStokes.CandidateFromLimits.force_smooth (u : NavierStokes.ProblemStatement.VelocityField)
+  (p : NavierStokes.ProblemStatement.PressureField)
+  (hu : ContDiffOn ℝ ∞ u NavierStokes.ProblemStatement.preSingularDomain)
+  (hp : ContDiffOn ℝ ∞ p NavierStokes.ProblemStatement.preSingularDomain)
+  (L :
+    NavierStokes.ProblemStatement.Space →
+      FormalMultilinearSeries ℝ NavierStokes.ProblemStatement.SpaceTime NavierStokes.ProblemStatement.Space)
+  (hlim :
+    ∀ (n : ℕ),
+      TendstoLocallyUniformly
+        (fun t x => iteratedFDeriv ℝ n (fun z => NavierStokes.ProblemStatement.navierStokesResidual u p z.1 z.2) (t, x))
+        (fun x => L x n) (nhdsWithin 1 (Iio 1))) :
+  ContDiff ℝ ∞ (NavierStokes.CandidateFromLimits.force u p hu hp L hlim)
+NavierStokes.CandidateFromLimits.force_boundary_jets (u : NavierStokes.ProblemStatement.VelocityField)
+  (p : NavierStokes.ProblemStatement.PressureField)
+  (hu : ContDiffOn ℝ ∞ u NavierStokes.ProblemStatement.preSingularDomain)
+  (hp : ContDiffOn ℝ ∞ p NavierStokes.ProblemStatement.preSingularDomain)
+  (L :
+    NavierStokes.ProblemStatement.Space →
+      FormalMultilinearSeries ℝ NavierStokes.ProblemStatement.SpaceTime NavierStokes.ProblemStatement.Space)
+  (hlim :
+    ∀ (n : ℕ),
+      TendstoLocallyUniformly
+        (fun t x => iteratedFDeriv ℝ n (fun z => NavierStokes.ProblemStatement.navierStokesResidual u p z.1 z.2) (t, x))
+        (fun x => L x n) (nhdsWithin 1 (Iio 1)))
+  (n : ℕ) (x : NavierStokes.ProblemStatement.Space) :
+  iteratedFDeriv ℝ n (NavierStokes.CandidateFromLimits.force u p hu hp L hlim) (1, x) = L x n

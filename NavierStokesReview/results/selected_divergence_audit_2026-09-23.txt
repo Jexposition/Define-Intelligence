@@ -1,0 +1,11 @@
+NavierStokes.ActualCandidateAssembly.selectedPotentialStages : ℕ → NavierStokes.ProblemStatement.VelocityField
+NavierStokes.SolenoidalDiagonal.divergence_velocitySum_on {a : ℕ → ℝ} (ha : Filter.Tendsto a Filter.atTop Filter.atTop)
+  {q : NavierStokes.ProblemStatement.SpaceTime → ℝ} {A : ℕ → NavierStokes.ProblemStatement.VelocityField}
+  {U : Set NavierStokes.ProblemStatement.SpaceTime} (hU : IsOpen U) (hqpos : ∀ z ∈ U, 0 < q z)
+  (hq : ContDiffOn ℝ (↑⊤) q U) (hA : ∀ (j : ℕ), ContDiffOn ℝ (↑⊤) (A j) U)
+  (z : NavierStokes.ProblemStatement.SpaceTime) :
+  z ∈ U →
+    NavierStokes.ProblemStatement.spatialDivergence (NavierStokes.SolenoidalDiagonal.velocitySum a q A) z.1 z.2 = 0
+NavierStokesR3.ActualCandidate.selected_candidate_one_with_early_zero :
+  ∃ u p f K,
+    CandidateProperties 1 u p f K ∧ ∀ (t : ℝ), |t| ≤ 3 / 8 → ∀ (x : NavierStokes.ProblemStatement.Space), u (t, x) = 0

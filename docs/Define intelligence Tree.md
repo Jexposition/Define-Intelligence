@@ -2513,3 +2513,13 @@
 ├── 📄 Technical Audit Report_ Evaluating the Validity and Mathematical Utility of the OpenAI Astra Proof Certificates.md
 └── 📄 navier-stokes.pdf
 ```
+
+## Review-corpus control
+
+The active review documents live in this fork's `docs/` directory. Start with
+[`REVIEW_DOCUMENT_CONTROL.md`](REVIEW_DOCUMENT_CONTROL.md), then use
+`OpenAI_NavierStokes_CMI_First_Review_Plan.md` for tasks,
+`OpenAI_NavierStokes_Audit_Tracker.md` for evidence, and
+`OpenAI_NavierStokes_Peer_Review_v1.md` / `OpenAI_NavierStokes_Research_Paper.md`
+for human-readable conclusions. The parent `Define Intelligence/docs` tree is
+archival/staging and must not be treated as a competing active verdict.

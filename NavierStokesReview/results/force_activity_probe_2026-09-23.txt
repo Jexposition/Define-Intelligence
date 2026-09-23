@@ -1,0 +1,10 @@
+
+NavierStokesR3.PositiveTimeForce.timeCutoff (t : ℝ) : ℝ
+NavierStokesR3.PositiveTimeForce.timeCutoff_contDiff : ContDiff ℝ ∞ timeCutoff
+NavierStokesR3.PositiveTimeForce.timeCutoff_eq_one {t : ℝ} (ht : t ∈ Icc (3 / 8) 1) : timeCutoff t = 1
+NavierStokesR3.PositiveTimeForce.timeCutoff_eq_zero {t : ℝ} (ht : t ∉ Icc (1 / 16) (21 / 16)) : timeCutoff t = 0
+NavierStokesR3.PositiveTimeForce.force_contDiff {f : VelocityField} (hf : ContDiff ℝ ∞ f) : ContDiff ℝ ∞ (force f)
+NavierStokesR3.PositiveTimeForce.force_eq {f : VelocityField} {t : ℝ} (ht : t ∈ Icc (3 / 8) 1) (x : Space) :
+NavierStokesReview/src/probes/ForceActivityProbe.lean:38:4: error: Function expected at
+  (fun t : ℝ => PositiveTimeForce.force f (t, x))
+

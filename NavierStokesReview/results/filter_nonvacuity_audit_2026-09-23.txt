@@ -1,0 +1,10 @@
+FilterNonVacuityAudit.lean
+Lean: leanprover/lean4:v4.34.0-rc2
+Result: exit code 0
+
+Checked:
+- DiagonalResidual.JetRate has no generic NeBot parameter.
+- JointResidualLimits.past_filter_neBot proves the selected endpoint filter is non-vacuous.
+- The probe instantiates that theorem at the selected spatial origin.
+
+Interpretation: generic Filter.bot risk remains an API-audit concern, but selected-endpoint vacuity is not shown.

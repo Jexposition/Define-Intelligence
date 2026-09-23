@@ -1,0 +1,17 @@
+Command:
+  elan run leanprover/lean4:v4.34.0-rc2 lake env lean NavierStokesReview/src/probes/SemanticTransportPressureProbe.lean
+
+Result:
+  exit code 0
+  no warnings or errors
+
+Proved without `sorry`:
+  - `FiveRows` exposes its first two zero correction rows.
+  - `FiveRows` exposes all three debt-coordinate equations.
+  - compact support does not imply a scalar field is identically zero,
+    witnessed by the repository's nonzero smooth spatial cutoff.
+
+Interpretation:
+  This is a source-level audit probe. It does not prove that the selected
+  OpenAI endpoint fails the Navier--Stokes claim, and it does not instantiate
+  pressure recovery for the selected candidate.

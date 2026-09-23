@@ -1,0 +1,38 @@
+NavierStokes.ActualCandidateAssembly.selected_witness :
+  ActualCandidateAssembly.Witness ActualCandidateConstruction.selectedBudget
+    ActualCandidateConstruction.selectedThreshold ActualCandidateConstruction.selectedThreshold_geometry
+NavierStokes.ActualCandidateAssembly.selectedPotentialStages : ℕ → ProblemStatement.VelocityField
+NavierStokes.ActualCandidateAssembly.selectedDirectStages : ℕ → ProblemStatement.VelocityField
+NavierStokes.ActualCandidateAssembly.selectedPressureStages : ℕ → ProblemStatement.PressureField
+NavierStokes.ActualCandidateAssembly.endpoints (B N0 : ℕ) (hN : ActualCarrierGeometry.geometricThreshold ≤ N0) :
+  ActualEndpointInputs.EndpointInputs CorrectionInitialization.ActualPrimary.h (ActualCandidateConstruction.qbig B N0)
+    (ActualCandidateAssembly.potentialStages B N0 hN) (ActualCandidateAssembly.directStages B N0 hN)
+    (ActualCandidateAssembly.pressureStages B N0 hN)
+NavierStokes.FiveRowRank.FiveRows (V G : ℝ → ℝ) (d : FiveRowRank.Debt) (dv ga : ℝ → ℝ) : Prop
+NavierStokes.FiveRowRank.five_rows (lam C a b : ℝ) (d : FiveRowRank.Debt) (hlam : 0 < lam) (hC : C ≠ 0) (ha : 0 < a)
+  (hab : a < b) :
+  FiveRowRank.FiveRows (FiveRowRank.background lam C) (fun x => 0) d (FiveRowRank.deltaV lam C a b d)
+    (FiveRowRank.gamma lam C a b d)
+NavierStokes.PositiveOrderMoments.moments (n : ℕ) (u e : PositiveOrderMoments.History)
+  (omega : PositiveOrderMoments.Profile) : PositiveOrderMoments.Debt
+NavierStokes.PositiveOrderMoments.exists_parameterized_exact_repair (lam a b : ℝ) (hlam : 0 < lam) (ha : 0 < a)
+  (hab : a < b) {S : Set ℝ} (hS : IsOpen S) {n : ℕ} (hn : 0 < n) (u e : PositiveOrderMoments.JointHistory)
+  (omega : PositiveOrderMoments.JointProfile) (A : ℝ → ℝ) (hA : ContDiffOn ℝ (↑⊤) A S) (hAn : ∀ eta ∈ S, A eta ≠ 0)
+  (hU₀ : ∀ eta ∈ S, ∀ R ∈ Set.Ioo a b, u 0 (R, eta) = 0)
+  (hE₀ : ∀ eta ∈ S, ∀ R ∈ Set.Ioo a b, e 0 (R, eta) = FiveRowRank.background lam (A eta) R)
+  (hd :
+    ∀ (i : Fin 5), ContDiffOn ℝ (↑⊤) (fun w => PositiveOrderMoments.jointRowDensity n u e omega w i) (Set.univ ×ˢ S))
+  {B : ℝ} (hB : 0 ≤ B)
+  (hs : ∀ eta ∈ S, ∀ (R : ℝ), B ≤ R → PositiveOrderMoments.jointRowDensity n u e omega (R, eta) = 0) :
+  ∃ du de,
+    ContDiffOn ℝ (↑⊤) du (Set.univ ×ˢ S) ∧
+      ContDiffOn ℝ (↑⊤) de (Set.univ ×ˢ S) ∧
+        (∀ (eta : ℝ), (tsupport fun R => du (R, eta)) ⊆ Set.Ioo a b) ∧
+          (∀ (eta : ℝ), (tsupport fun R => de (R, eta)) ⊆ Set.Ioo a b) ∧
+            ∀ eta ∈ S,
+              (PositiveOrderMoments.moments n
+                  (PositiveOrderMoments.increment (PositiveOrderMoments.slice u eta) n fun R => du (R, eta))
+                  (PositiveOrderMoments.increment (PositiveOrderMoments.slice e eta) n fun R => de (R, eta)) fun R =>
+                  omega (R, eta)) =
+                0
+NavierStokes.ActualCandidateAssembly.Witness (B N0 : ℕ) (hN : ActualCarrierGeometry.geometricThreshold ≤ N0) : Prop
