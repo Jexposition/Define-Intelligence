@@ -165,3 +165,11 @@ The defensible statement is therefore “the exported theorem path is standard-a
 ## 15. Selected-stage provenance
 
 `ActualCandidateAssembly.selected_witness` feeds the R³ endpoint through `GluedStageEstimates.actualStageEstimates`. The estimate constructor consumes `ActualCycleResidualBounds.PhysicalData`; `ActualPhysicalPrefixFields.physicalFields_all` derives that record from actual smoothness, local physical germ agreement, pressure-germ agreement, and exterior equality. This closes the disconnected-wrapper suspicion at source level. It does not resolve whether the several moment systems passed through those fields have the common five-moment meaning claimed in the paper.
+
+## 16. Selected-closure moment census
+
+The selected import closure does contain the nominal moment layer. `NominalProfile`, `ModulatedHistories`, `ModulatedCone`, `ModulatedProfileAssembly`, `MatchingDebtBounds`, `RepairConeBounds`, and `ReservedPatches` contain substantive references to `FiveProfileMoments`. The adverse claim must therefore not be phrased as absence of nominal five-moment code.
+
+The inspected `ReservedPatches` cross-use is not a transport theorem. `momentPatch` and `five_row_updates_supported` establish support for the nominal bump functions, while `radial_heated_fields` identifies the heated outgoing field with a `FiveRowRank.background` profile. No inspected declaration there equates `FiveProfileMoments.physicalMoments` with `FiveRowRank.FiveRows` or converts the nominal five-coordinate debt into the physical three-coordinate debt used by `MeanRankUpdate`.
+
+Ledger status: both representations are present; local support and background identities are proved; a complete five-row transport theorem remains unidentified. This supports a correspondence objection to the public narrative, not a kernel-level refutation of the C/D endpoint.
