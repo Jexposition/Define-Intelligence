@@ -98,3 +98,9 @@ This lane does not presently yield a formal disproof. Its status is “analytica
 The preserved-mass lane was tested against the selected witness and closed as a route to contradiction. The initial state is explicitly tagged with `ActualInitialization.initial_zeroMasses`, and the temporal and rank corrections preserve that invariant. `MomentInitializationProbe.lean` compiles the relevant theorem with no added assumptions.
 
 The next decisive moment test is therefore not whether the fixed rows start at zero. It is whether the source proves a cross-layer map from those rows and the three debt coordinates to the five published quantities `(M, I, J, S, C_p)`, and whether that map is preserved through the selected construction.
+
+## Source-scope correction
+
+The zero-sorry test must be scoped to the exported proof path. Direct compilation of `ComparatorChallenges/NavierStokes.lean` emits two `sorry` warnings, but `NavierStokes/ComparatorSolution.lean` does not import that challenge module. The headline endpoint remains standard-axiom-only in its own dependency report. The review therefore records a repository-level metadata defect without misclassifying it as a contradiction of the selected C/D theorem.
+
+The selected-stage trace is explicit: `ActualCandidateAssembly.selected_witness` feeds `GluedStageEstimates.actualStageEstimates`; the latter consumes `ActualCycleResidualBounds.PhysicalData`; and `ActualPhysicalPrefixFields.physicalFields_all` derives that data from smoothness, local germ identities, pressure-germ identities, and exterior equality. This closes endpoint-disconnection as a route. The live proof-bearing lane remains the cross-layer map among `FiveProfileMoments`, `PositiveOrderMoments`, and `FiveRowRank`.

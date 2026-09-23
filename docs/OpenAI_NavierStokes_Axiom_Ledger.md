@@ -139,3 +139,19 @@ The inspected pressure path uses compact temporal tests, continuity, a Fourier S
 ## 13. Preserved-mass check
 
 The fixed zero rows in `FiveRowRank.FiveRows` were tested against the possibility that the selected initial state had nonzero invariants. `ActualInitialization.initial_zeroMasses` proves zero angular and axial masses for `initialState B N0`; the correction-stage theorems preserve `ZeroMassesOn`; and `MomentInitializationProbe.lean` compiles the initialization theorem without adding an axiom. This is positive source evidence and removes the proposed invariant failure. It does not create a bridge between the nominal, positive-order, and physical-rank moment layers.
+
+## 14. Source-tree admitted declarations
+
+The selected endpoint and the archived challenge module must be reported separately. Direct compilation of `ComparatorChallenges/NavierStokes.lean` emits two warnings that theorem declarations use `sorry`, at the whole-space and periodic challenge theorem bodies. `NavierStokes/ComparatorSolution.lean` does not import that module, so those placeholders do not appear in the axiom dependency report for the exported solution.
+
+Ledger status:
+
+- exported headline and selected-witness paths: no visible custom axiom or `sorry` dependency in the inspected reports;
+- `ComparatorChallenges/NavierStokes.lean`: two admitted challenge declarations remain in the source tree;
+- interpretation: this is a repository-scope metadata defect, not a demonstrated defect in the selected C/D endpoint.
+
+The defensible statement is therefore “the exported theorem path is standard-axiom-only,” not “every Lean file in the repository is zero-sorry.”
+
+## 15. Selected-stage provenance
+
+`ActualCandidateAssembly.selected_witness` feeds the R³ endpoint through `GluedStageEstimates.actualStageEstimates`. The estimate constructor consumes `ActualCycleResidualBounds.PhysicalData`; `ActualPhysicalPrefixFields.physicalFields_all` derives that record from actual smoothness, local physical germ agreement, pressure-germ agreement, and exterior equality. This closes the disconnected-wrapper suspicion at source level. It does not resolve whether the several moment systems passed through those fields have the common five-moment meaning claimed in the paper.

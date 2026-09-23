@@ -167,3 +167,11 @@ This closes one proposed contradiction. It does not close the correspondence pro
 - Kernel environment: the repository-declared Lean `4.34.0-rc2` via `C:\Users\Admin\.elan\bin\lake.exe`; the separate V-lab `packages-4.32` cache was not used for this source snapshot because its manifest pins Lean 4.34.0-rc2.
 - New zero-sorry probes: `NavierStokesReview/src/probes/MomentCoordinateMismatchProbe.lean`, `MomentBridgeObstructionProbe.lean`, `FiveRowsStructureProbe.lean`, `MomentInitializationProbe.lean`, `SelectedDependencyAxiomProbe.lean`, the corrected `MainAxiomProbe.lean`, the compiled `ForceActivityProbe.lean`, and the compiled `R3ComparisonPremiseProbe.lean`.
 - No source file in the OpenAI construction was edited.
+
+## 13. Source-scope qualification
+
+The source tree requires one further qualification. Direct compilation of `ComparatorChallenges/NavierStokes.lean` emits two Lean warnings because the whole-space and periodic challenge theorem bodies are `sorry`. That module is not imported by `NavierStokes/ComparatorSolution.lean`; the exported endpoint instead imports the independent comparator definitions and the project’s own bridge theorems. The headline endpoint therefore remains standard-axiom-only in its own report.
+
+The warnings nevertheless contradict a blanket repository-level statement that every theorem-bearing Lean file is free of admitted gaps. The accurate claim is narrower: the selected exported endpoints are compiled without a visible custom axiom or `sorry` dependency, while an unused challenge module in the same source tree still contains admitted declarations.
+
+The selected witness is not a disconnected endpoint wrapper. `ActualCandidateAssembly.selected_witness` supplies the data consumed by the R³ theorem, and `GluedStageEstimates.actualStageEstimates` derives finite-stage residual rates from `ActualCycleResidualBounds.PhysicalData`. `ActualPhysicalPrefixFields.physicalFields_all` constructs that data from smooth stage realisations, local germ identities, pressure-germ identities, and exterior equality. This closes the provenance objection while leaving the cross-layer moment correspondence as the decisive unresolved claim.
