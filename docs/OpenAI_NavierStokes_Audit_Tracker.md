@@ -28,6 +28,7 @@ The repository contains a genuine R³ C/D-shaped endpoint and the headline theor
 | CTR-009 | The selected witness hides a custom axiom at the stage-estimate interface. | `SelectedDependencyAxiomProbe.lean` reports only `propext`, `Classical.choice`, and `Quot.sound` for `selected_witness`, `physicalData`, `actualStageEstimates`, and `Invariant.residual_jetRate`. | Closed for custom-axiom suspicion | Continue semantic and interface audit; do not treat standard axioms as defects. |
 | CTR-010 | The two debt interfaces admit a direct full linear identification. | `MomentBridgeObstructionProbe.lean` proves `¬ Nonempty (FiveRowRank.Debt ≃ₗ[ℝ] FiveProfileMoments.Debt)` by finite-dimensional rank. | Formally disproved for full linear identification | Require an explicit constrained embedding or stage-separation theorem. |
 | CTR-011 | The repository lacks an exact five-equation repair. | `PositiveOrderMoments.weighted_moments_exact`, `moments_repair_target`, and `exists_smooth_exact_repair` prove exact five-component repair; `GlobalSlowProfiles.profiles_moments` carries it into the recursive sequence. | Rejected by source inspection | Do not repeat the obsolete “three-equation approximation” claim. Audit cross-layer correspondence instead. |
+| CTR-012 | The exported whole-space endpoint is disconnected from the selected construction. | `R3/Theorem.lean` obtains its fields from `ActualCandidateAssembly.selected_witness`, localises them through `R3/ActualCandidate.of_localized_fields`, proves the compact energy estimate, and transports viscosity by `R3/ViscosityScaling`. | Closed as an objection | Treat the R³ endpoint as connected to the selected witness; keep the adverse case focused on the missing moment correspondence. |
 
 ## Formal artefacts
 
@@ -45,6 +46,7 @@ Positive source evidence audited directly:
 
 - `NavierStokes/PositiveOrderMoments.lean`: exact five-coordinate repair and arbitrary target theorem.
 - `NavierStokes/GlobalSlowProfiles.lean`: recursive use of the five-row repair and zero-moment theorem.
+- `NavierStokes/R3/Theorem.lean`, `NavierStokes/R3/ActualCandidate.lean`, and `NavierStokes/R3/ViscosityScaling.lean`: selected-witness extraction, compact whole-space closure, and positive-viscosity scaling.
 
 ## Decision rule
 

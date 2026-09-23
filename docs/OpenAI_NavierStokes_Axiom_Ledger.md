@@ -119,3 +119,9 @@ No custom axiom has been found at the inspected headline or selected-witness int
 The source-level declaration `FiveRowRank.FiveRows` must be read literally. It takes `Debt := Fin 3 → ℝ`, not a five-coordinate debt. Its conjunction is structured as two fixed zero-moment equations followed by three equations whose right-hand sides are `-(d 0)`, `-(d 1)`, and `-(d 2)`. `FiveRowsStructureProbe.lean` compiles these projections without assumptions beyond the declaration itself.
 
 This is not a contradiction: the first two rows can be invariants established independently, and the source proves them for the constructed bumps. It is, however, a correction to any statement that this declaration alone implements an arbitrary five-equation, five-unknown inverse. The ledger therefore records the issue as a specification and correspondence obligation, not as a final C/D refutation.
+
+## 10. Whole-space endpoint provenance
+
+The whole-space endpoint is not an isolated wrapper around an unrelated witness. `NavierStokes/R3/Theorem.lean` obtains the viscosity-one candidate from `ActualCandidateAssembly.selected_witness`. `NavierStokes/R3/ActualCandidate.lean` then applies the proved spatial localisation, positive-time force cutoff, and compact-support energy estimate. `NavierStokes/R3/ViscosityScaling.lean` transports the candidate from viscosity one to every positive viscosity and proves the residual scaling identity.
+
+This closes a separate provenance objection: the R³ theorem is connected to the selected construction at source level. It does not close the moment objection. The endpoint provenance passes through interfaces whose physical meaning still depends on the missing correspondence account among `FiveProfileMoments`, `PositiveOrderMoments`, and `FiveRowRank`.

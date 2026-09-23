@@ -32,7 +32,13 @@ The Lean R³ modules mirror this outer shape. `NavierStokes/R3/ProblemStatement.
 
 The endpoint still depends on the integrity of the construction below that interface. A well-typed existential theorem can be valid as a proposition while failing to be the formalisation claimed in prose if an intermediate coordinate system, analytic bridge, or physical identity is missing.
 
-## 3. Two five-row systems and the missing bridge
+## 3. Provenance of the whole-space endpoint
+
+The source trace closes an important alternative explanation. The whole-space theorem is not an unrelated wrapper around a toy existential statement. `NavierStokes/R3/Theorem.lean` extracts its viscosity-one fields from `ActualCandidateAssembly.selected_witness`. `NavierStokes/R3/ActualCandidate.lean` applies spatial localisation and a smooth positive-time force cutoff, proves the compact-support energy estimate, and preserves the pre-singular speed assertion. `NavierStokes/R3/ViscosityScaling.lean` proves the residual scaling identity and transports the construction to every positive viscosity.
+
+This is positive evidence for endpoint provenance. It also changes the adverse question. The review cannot reject the claim merely because the R³ theorem is disconnected from the selected construction. The remaining issue is semantic transport inside that construction: the selected witness uses several moment interfaces, and the source must prove that the interface consumed by the endpoint preserves the five physical quantities named in the paper.
+
+## 4. Three moment layers and the missing bridge
 
 Appendix A of the official paper describes five cumulative radial moments `(M, I, J, S, C_p)`. At the intermediate parameterisation, it records the normalised blocks
 
@@ -98,7 +104,7 @@ Here the physical rank interface exposes three free residual-debt coordinates, w
 
 The dependency trace is load-bearing: `ActualCandidateAssembly.selected_witness` consumes `estimates`, which is constructed by `GluedStageEstimates.actualStageEstimates` from `ActualCycleResidualBounds.PhysicalData`. The actual candidate correction route uses `MeanRankUpdate` and `FiveRowRank`. The nominal and modulation route uses `NominalProfile`, `ModulatedHistories`, `ReservedPatches`, and `FiveProfileMoments`; the recursive positive-order route uses `PositiveOrderMoments` through `GlobalSlowProfiles`. The remaining audit obligation is therefore not merely a comparison of unused declarations. It is to show that these routes are intentionally staged and that the fields and debts handed from one route to the next preserve the published five-moment meaning.
 
-## 4. Why other proposed objections are insufficient by themselves
+## 5. Why other proposed objections are insufficient by themselves
 
 The force is deliberately defined from the residual and remains active up to the singular time. That is a legitimate criticism of physical interpretation, but alternatives (C) and (D) explicitly allow a smooth external force. It therefore does not refute the stated C/D proposition.
 
@@ -106,13 +112,13 @@ The repository contains a `JetRate` abstraction without an explicit `NeBot` para
 
 Similarly, omitted Ladyzhenskaya stress laws and fractional dissipation are not contradictions to a Newtonian C/D theorem. They matter to claims of physical robustness, not to literal compliance with the stated Newtonian problem.
 
-## 5. Axioms and kernel evidence
+## 6. Axioms and kernel evidence
 
 `#print axioms` on `theorem_1_1`, `theorem_1_1_with_initial_rest`, and `ProblemStatement.breakdownStatement` reports only `propext`, `Classical.choice`, and `Quot.sound`. This rules out the claim that the headline R³ endpoint visibly depends on a custom axiom. It does not prove that every analytic assertion in the source corresponds to the paper's intended mathematics. Foundational consistency and semantic correspondence are separate obligations.
 
 The follow-up `SelectedDependencyAxiomProbe.lean` reports the same three standard axioms for `ActualCandidateAssembly.selected_witness`, `ActualCandidateAssembly.physicalData`, `GluedStageEstimates.actualStageEstimates`, and `ActualCycleResidualBounds.Invariant.residual_jetRate`. This is negative evidence against a hidden custom axiom at those interfaces. It is also why the adverse finding is stated as a missing correspondence theorem rather than as a claim that the kernel accepted an explicit `axiom` or `sorry`.
 
-## 6. Conclusion
+## 7. Conclusion
 
 The honest adverse conclusion is not “Lean cannot prove this” and not “the force is illegal”. The checked evidence supports a narrower and stronger statement:
 
@@ -120,13 +126,13 @@ The honest adverse conclusion is not “Lean cannot prove this” and not “the
 
 That is already a valid counter-result against the stronger public claim of direct formal verification. The next decisive task is to either locate the missing bridge or prove that the selected witness depends on the mismatched coordinates without any valid conversion. Only the latter would justify escalating from “formal correspondence failure” to “the final theorem is false or unproved”.
 
-## 7. A formal consequence of the selected force construction
+## 8. A formal consequence of the selected force construction
 
 The source-level review yields an additional proposition that clarifies the nature of the claimed singularity. `CandidateConsequences.lean` derives, from `CandidateProperties u p f`, the existence of a time `t` with `0 < t < 1` and a spatial point `x` at which `f (t,x) ≠ 0`. The review probe `ForceActivityProbe.lean` restates this implication independently at the candidate interface.
 
 This result matters because it rules out an interpretation of the witness as an autonomous collapse occurring after an external driver has been removed. The force is active during the pre-singular interval. It is nevertheless not a contradiction of alternatives (C) or (D): the official formulation permits a smooth external force, and the accompanying paper itself defines the force from the momentum residual of the constructed fields. The correct conclusion is therefore semantic and mechanistic. The construction is continuously forced; it is not an unforced Navier–Stokes blow-up proof.
 
-## 8. Status of the adverse result
+## 9. Status of the adverse result
 
 The counter-paper's strongest formal result remains the moment-interface obstruction. The repository has three relevant layers: paper-shaped profile moments, an exact positive-order five-coordinate repair, and a physical rank interface with a three-coordinate residual debt. The checked direct bridge between the nominal and physical declarations is impossible, while the positive-order repair is exact within its own coordinates. Consequently, the public claim that the full Lean development verifies one coherent Appendix A construction is not established by the current source map. This is a failure of demonstrated formal correspondence, not yet a contradiction of the final C/D existential theorem.
 

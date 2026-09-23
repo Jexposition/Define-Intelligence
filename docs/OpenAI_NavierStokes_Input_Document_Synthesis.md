@@ -31,6 +31,7 @@ This matters because two common objections are too broad. First, residual forcin
 | Five cumulative moments | Official PDF Appendix A; `NavierStokes/FiveProfileMoments.lean`, `PositiveOrderMoments.lean`, `FiveRowRank.lean`, `MeanRankUpdate.lean` | Does one explicit staging map preserve the rows and coordinates? Direct equality of two interfaces is formally impossible; exact repair exists in the positive-order layer, but the complete cross-layer map remains unproved in the inspected source. |
 | Mean-patch repair | `NavierStokes/MeanRankUpdate.lean` | Are the physical rows the paper's rows? |
 | Selected witness | `NavierStokes/ActualCandidateAssembly.lean` | Does the selected witness consume the same repaired fields? |
+| Whole-space endpoint provenance | `NavierStokes/R3/Theorem.lean`, `R3/ActualCandidate.lean`, `R3/ViscosityScaling.lean` | Is the R³ theorem connected to the selected witness, localisation, energy estimate, and viscosity scaling? Source inspection answers yes. |
 | Pressure and comparison | `NavierStokes/R3/WholeSpaceUniqueness.lean`, pressure modules | Are the comparison premises derived from the candidate? |
 | Rate and germ limits | `NavierStokes/ActualCycleResidualBounds.lean`, `JetRate` uses | Are all filters non-vacuous on the selected path? |
 
@@ -57,3 +58,5 @@ The debt types sharpen the same point. The physical rank route exposes `Fin 3 �
 The declaration-level audit adds an important qualification. `FiveRowRank.FiveRows` contains five displayed integral identities, but only its final three rows are debt-controlled. The first two are explicit zero constraints on the increment fields. `FiveRowsStructureProbe.lean` verifies this structure directly. Thus the honest criticism is not that Lean attempted an impossible arbitrary five-by-five solve; it is that the publication must explain how the two fixed invariants and three debt-controlled rows represent the paper's five named moments and how that representation is connected to the other two moment layers.
 
 That finding is now carried consistently into the plan, ledger, tracker, peer review, and research paper.
+
+The latest provenance check narrows the adverse case further. The R³ endpoint is source-connected to `ActualCandidateAssembly.selected_witness`; it is not a disconnected formal wrapper. The remaining formal objection is therefore not endpoint provenance but semantic transport: the selected path must explain how the several moment systems encode the same five published quantities.

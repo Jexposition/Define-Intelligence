@@ -23,7 +23,13 @@ The source tree defines a genuine whole-space type in `NavierStokes/R3/ProblemSt
 
 This finding defeats the earlier objection that the release merely compiles a periodic toy. The adverse case must therefore attack the construction or an interface premise, not the existence of the R³ declaration.
 
-## Finding 2: the source contains two five-moment interfaces
+## Finding 2: the R³ endpoint is connected to the selected witness
+
+The source trace closes a second possible objection. `NavierStokes/R3/Theorem.lean` obtains the viscosity-one fields from `ActualCandidateAssembly.selected_witness`. `R3/ActualCandidate.lean` applies the proved spatial localisation and positive-time force cutoff, then discharges the whole-space finite-energy bound with `CompactEnergy.uniform_finite_energy`. `R3/ViscosityScaling.lean` proves the residual transformation and transports the result to every positive viscosity.
+
+Accordingly, the review cannot honestly describe the whole-space theorem as an unrelated wrapper. This positive result strengthens the remaining adverse finding: the question is whether the selected witness's internal moment interfaces have the physical meaning claimed in the paper, not whether the R³ endpoint is attached to the construction at all.
+
+## Finding 3: the source contains three moment layers
 
 The official paper's Appendix A uses five named cumulative moments `(M, I, J, S, C_p)` and gives normalised power blocks `(0, -λ)` and `(1/2, -1/2 - λ, -3/2 - λ)`. The repository contains a matching declaration in `NavierStokes/FiveProfileMoments.lean`, where `b = -1/2 - λ` gives exactly those blocks. This is positive evidence and must be credited.
 
@@ -44,15 +50,15 @@ The selected-witness trace is concrete. `ActualCandidateAssembly.selected_witnes
 
 This is a cross-layer correspondence gap. It invalidates the sentence “the complete Lean pipeline verifies the paper's Appendix A moment system” unless the authors supply the staging and correspondence account. It does not by itself disprove the abstract Lean endpoint, and it does not justify saying that the repository lacks an exact five-equation repair.
 
-## Finding 3: kernel axioms do not expose a custom assumption
+## Finding 4: kernel axioms do not expose a custom assumption
 
 The corrected `MainAxiomProbe.lean` prints axioms for the headline theorem, the initial-rest theorem, and the endpoint proposition. Each reports only `propext`, `Classical.choice`, and `Quot.sound`. The result is important in both directions: it rules out a visible custom axiom at the endpoint, but it cannot establish that the formal definitions carry the intended PDE meaning.
 
-## Finding 4: filter degeneration is a live hazard, not yet a fatal result
+## Finding 5: filter degeneration is a live hazard, not yet a fatal result
 
 `JetRate` does not require `NeBot`, and `JetRateVacuityProbe.lean` formally demonstrates the generic `Filter.bot` vacuity. This warrants an audit of all rate obligations. The selected base-error path uses `GlobalBaseError.originPast` and concrete neighbourhood lemmas, so a global refutation requires proving that a bot filter reaches a mandatory premise of `selected_witness` or the exported theorem. The current evidence supports “hazard requiring a reachability audit”, not “headline theorem refuted”.
 
-## Finding 5: force timing is a semantic criticism, not a C/D contradiction
+## Finding 6: force timing is a semantic criticism, not a C/D contradiction
 
 The force is constructed a posteriori as a residual and remains active through the collapse. This undermines any description of the event as an autonomous or spontaneous blow-up. It does not violate the literal C/D alternatives if the force is smooth, compactly supported in the required sense, and decays as stipulated. The review must therefore separate the following claims:
 
