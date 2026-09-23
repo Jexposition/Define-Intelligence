@@ -100,3 +100,19 @@ The official construction requires each correction to be recomputed from the upd
 ## Filter adjudication
 
 The generic `JetRate` interface remains vacuous on `Filter.bot` because it lacks a `NeBot` condition. The selected endpoint uses `GlobalBaseError.originPast`, a neighbourhood-within filter with explicit pre-singular and scale-limit lemmas. The selected rate proof is therefore not shown to be vacuous. The synthesis retains the generic API hazard while withdrawing any claim that it already refutes the endpoint.
+
+## Formal synthesis update: 2026-09-23
+
+The central adverse result is now formal rather than rhetorical. The paper's five-coordinate moment system and the repository's `FiveRowRank` system cannot be the same system under direct row identification: their exponent vectors differ, and their debt spaces have dimensions five and three. This is proved by `MomentBridgeObstructionProbe.lean` with no `sorry`.
+
+The source also contains `PositiveOrderMoments.lean`, which proves an exact five-dimensional repair for a separate physical row system. That positive result prevents an overstatement in the opposite direction. The review has not shown that the endpoint lacks all five-row repair machinery; it has shown that the paper has not yet supplied the theorem connecting its named moments to the rows actually used by the selected endpoint.
+
+The remaining claims are classified as follows:
+
+- residual-defined forcing active through the singular interval: source-confirmed, but permitted by CMI alternatives (C) and (D);
+- `JetRate` without a generic `NeBot`: a genuine interface vacuity hazard, not a demonstrated top-level exploit;
+- challenge-file `sorry`: confirmed lexical facts, not endpoint dependencies;
+- non-Newtonian or hypo-dissipative robustness: external physical scope, not a contradiction to the classical Newtonian theorem;
+- division-by-zero failure: not supported by the inspected source.
+
+The human-readable research paper and referee report now state these distinctions as arguments and findings rather than as a chronological work log.

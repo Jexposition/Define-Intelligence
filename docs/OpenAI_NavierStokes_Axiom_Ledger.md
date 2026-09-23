@@ -198,3 +198,16 @@ No contradiction was found in the stale-background attack on the selected path. 
 `DiagonalResidual.JetRate` has the generic form `∃ C, 0 ≤ C ∧ ∀ᶠ x in l, ...`; it has no `NeBot l` premise and is therefore vacuous at `Filter.bot`. The selected consumer is more specific. Its base filter is `GlobalBaseError.originPast`, defined as a neighbourhood-within filter at the endpoint, and the proof uses `originPast_before`, `originPast_tendsto`, and `originPast_q_tendsto_zero` before splitting on the selected region.
 
 The generic specification hazard is confirmed, but selected endpoint vacuity is not demonstrated. A future audit must census every other `JetRate` consumer rather than generalising this local result.
+
+## 22. Current formal adjudication: 2026-09-23
+
+| ID | Proposition or interface | Evidence | Classification |
+|---|---|---|---|
+| AX-009 | Direct identification of paper moments with `FiveRowRank` | `MomentBridgeObstructionProbe.lean` proves incompatible exponent vectors and no linear equivalence of debt spaces | PROVED ADVERSE |
+| AX-010 | Separate exact five-dimensional repair | `PositiveOrderMoments.lean` proves exact repair for a distinct physical row system | CONFIRMED, BUT DISTINCT |
+| AX-011 | Paper moments are identified with the actual five-row repair and consumed by the selected endpoint | No inspected correspondence theorem in the R3 endpoint path | OPEN, LOAD-BEARING |
+| AX-012 | Force-free or autonomous blow-up | `PositiveTimeForce.lean` keeps the residual-driven force active through the singular interval | NOT ESTABLISHED; stronger interpretation contradicted |
+| AX-013 | Generic `JetRate` is safe without non-vacuity | Definition has no `NeBot`; selected `originPast` path separately checked | INTERFACE HAZARD, ENDPOINT EXPLOIT NOT DEMONSTRATED |
+| AX-014 | Challenge `sorry` declarations contaminate headline R3 endpoint | Source and selected dependency reports do not place them on the path | NOT SUPPORTED |
+
+The ledger distinguishes a proved adverse correspondence result from an unproved assertion that the exported endpoint is false. Standard foundational axioms are recorded transparently and are not counted as project-specific assumptions.

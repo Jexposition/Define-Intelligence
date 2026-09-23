@@ -108,3 +108,13 @@ The review therefore separates two interfaces that had been too easy to conflate
 | CTR-026 | The selected `JetRate` consumer uses `GlobalBaseError.originPast`, with `originPast_before`, `originPast_tendsto`, and `originPast_q_tendsto_zero`; it is not shown to use `Filter.bot`. | Confirmed path-level result | The generic missing-`NeBot` condition remains an API hazard, but it is not a demonstrated vacuous proof of the selected endpoint. |
 
 These findings narrow the counter-paper. The remaining formal correspondence objection is the absence of a displayed transport theorem from the published five quantities `(M, I, J, S, C_p)` into the selected physical-rank data. That objection is not to be promoted to “formal disproof” unless a zero-sorry contradiction or false mandatory premise is established.
+
+## 2026-09-23 formal adjudication
+
+| ID | New result | Status | Interpretation |
+| --- | --- | --- | --- |
+| CTR-027 | `MomentBridgeObstructionProbe.lean` proves that the paper-shaped exponent vectors cannot be directly identified with `FiveRowRank`, and that the associated debt spaces have no linear equivalence. | Confirmed zero-sorry adverse result | The direct Appendix-A-to-`FiveRowRank` reading is impossible. This is a paper-to-code correspondence failure, not yet a refutation of the exported endpoint. |
+| CTR-028 | `PositiveOrderMoments.lean` contains a separate five-dimensional exact repair theorem. | Confirmed positive evidence | The repository has serious five-row machinery, so the correct issue is the missing identification and endpoint-use theorem, not absence of all five-row repair. |
+| CTR-029 | The R3 endpoint remains standard-axiom-only in the inspected reports, while the force stays active through the singular interval. | Confirmed | The endpoint is forced and C/D-shaped; it is not established as autonomous or force-free. CMI C/D permits smooth forcing. |
+
+The present review classification is **major revision**. A stronger `[FORMALLY REFUTED]` label is reserved for a zero-sorry contradiction or a false premise proved on the selected endpoint path.

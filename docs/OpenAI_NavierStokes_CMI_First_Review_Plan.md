@@ -125,3 +125,16 @@ The selected endpoint contains an actual-field reconstruction path. `PhysicalFie
 The generic `JetRate` definition remains unsafe in isolation because it accepts `Filter.bot`. The selected endpoint uses `GlobalBaseError.originPast`, with a proved pre-singular neighbourhood relation and positive scale-factor behaviour. The filter-vacuity attack is retained as an API-audit item, but it is not currently a theorem-level contradiction.
 
 The live formal target is now precise: locate a zero-sorry theorem identifying `(M, I, J, S, C_p)` with the nominal, positive-order, and physical-rank interfaces used by the selected witness. If the identification is false, formalise that contradiction against the exact selected premises. If it is true, record the theorem and remove the correspondence objection.
+
+## Current decision gate: 2026-09-23
+
+The first high-value falsification attempt produced a precise correspondence obstruction. The paper's Appendix A presents five named cumulative moments, whereas `FiveRowRank` uses a three-dimensional debt together with two fixed zero-moment rows. `MomentBridgeObstructionProbe.lean` proves, without `sorry`, that the exponent vectors do not match directly and that the two debt spaces cannot be linearly equivalent.
+
+This does not close the entire CMI endpoint against the repository because `PositiveOrderMoments.lean` contains a separate five-dimensional exact repair theorem. The next decisive audit is therefore:
+
+1. identify the exact module and theorem supplying the rows used by the selected candidate;
+2. locate a theorem mapping those rows to `(M, I, J, S, C_p)`;
+3. verify that the repaired actual field, not only a nominal profile, is passed into the residual and endpoint estimates;
+4. if the map is absent, classify the paper-to-code claim as unestablished rather than claiming the endpoint is false.
+
+The current gate is **major revision**. Escalation to formal disproof requires a zero-sorry contradiction or a false mandatory premise on the selected witness path.
