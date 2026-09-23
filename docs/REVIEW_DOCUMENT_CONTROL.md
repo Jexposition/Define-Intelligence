@@ -1,7 +1,7 @@
 # Navier–Stokes review document control
 
 **Status:** active source-of-truth map  
-**Updated:** 2026-09-23  
+**Updated:** 2026-09-24
 **Review root:** `Define-Intelligence-github`
 
 ## Authority
@@ -95,3 +95,23 @@ Every active claim must point to at least one of:
 
 Compilation is evidence that Lean accepted a term. It is not, by itself,
 evidence that the term has the intended Navier–Stokes semantics.
+
+## Final authority-map verification: 2026-09-24
+
+- [x] `CTR-005` remains the headline, load-bearing finding in the tracker:
+  the selected endpoint still lacks an explicit theorem transporting the
+  paper's named five moments into the selected field, residual, pressure, and
+  force chain.
+- [x] The pure-axial, zero-helicity, and automatic pressure-trivialisation
+  hypotheses are cleared as attack surfaces and remain quarantined as
+  rejected supporting notes, not active verdicts.
+- [x] The six core documents are present under this `docs/` authority map:
+  plan, tracker, axiom ledger, input synthesis, peer review, and research
+  paper. Each points back to this control file.
+- [x] Agent 2's `solenoidal_assembly_collapse.md`,
+  `dependency_closure_validation.md`, and
+  `core_realization_bridge_audit.md` are supporting notes only and use the
+  corrected, narrower conclusion.
+- [x] The branch has no tracked `.olean` or `.lake` files, and the working
+  tree is clean after packaging. Ignored local build output is not part of the
+  review release.

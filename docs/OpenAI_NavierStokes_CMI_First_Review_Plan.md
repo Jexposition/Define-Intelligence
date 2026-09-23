@@ -187,3 +187,4 @@ after source inspection or a recorded zero-sorry probe.
 | DOC-02 | Reconcile Agent 2 notes with current source paths | [x] | `finalPotential`, selected imports, force gluing, and pressure support are corrected in the active corpus. |
 | DOC-03 | Maintain one human-readable peer review and one research paper | [x] | Narrative documents point to tracker/evidence rather than functioning as logs. |
 | DOC-04 | Resolve the selected five-moment transport objection | [ ] | Find or refute the theorem transporting the named moments through the selected endpoint. |
+| DOC-05 | Verify final authority-map packaging | [x] | Control map, tracker, six core documents, and Agent 2 dispositions agree; no tracked build artefacts. |
