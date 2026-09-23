@@ -14,6 +14,12 @@
 
 **AX-034.** `WholeDomain*` is unreachable from `ActualCandidateAssembly.selected_witness` but reachable from paper-result modules. The precise finding is selected-endpoint disconnection, not global dead code.
 
+**AX-035.** The local paper schedule and exported R³ candidate expose different
+interfaces. `PaperLocalization` states local velocity/pressure agreement, but
+the inspected result does not carry force equality or the paper's five-moment
+tuple into `selected_candidate`. This is a missing transport assertion, not a
+new axiom or a kernel inconsistency.
+
 ## Purpose
 
 This ledger separates logical foundations, project-level premises, formal definitions, and physical requirements. A standard Lean axiom is not treated as a defect. A proposition imported as a premise, or a definition that is weaker than the paper's object, is a separate audit target.

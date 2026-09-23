@@ -46,6 +46,8 @@ correspondence failure under review, not yet a kernel-level contradiction.
 
 | CTR-017 | The pressure/uniqueness chain may hide a vacuous or imported comparison premise. | `PressureRecovery.gradient_recovery_complex` uses explicit compact temporal tests; `HarmonicTestFunctionals.eq_zero_of_compact_harmonic` uses a Fourier Sobolev bound; `WholeSpaceComparisonClosure` constructs the scalar rate bound; selected-path axiom probes report only standard axioms. | Not substantiated in the inspected path | Preserve the pressure chain as a live mathematical audit target, but do not call it a formal failure without a concrete false identity or mandatory unprovable premise. |
 
+| CTR-036 | The local paper construction, the five named moments, and the exported R³ candidate are one already-identified object. | `LocalResidualFlatness.lean` and `LocalPaperTheorem.lean` use the selected raw stages and a schedule; `ActualCandidateAssembly.selected_witness` exposes an existential schedule/extension/force assembly; `PaperLocalization.lean` proves late local velocity and pressure agreement, but the inspected result does not state force equality or transport `(M, I, J, S, C_p)` into the final comparator. | Semantic transport not established; not a kernel contradiction | Prove or refute one selected-path theorem carrying the named moment tuple and the same force through local construction, localization, and exported `selected_candidate`. |
+
 ## 2026-09-23 pressure-chain adjudication
 
 The pressure and comparison audit was completed at source level. The generic `Filter.bot` warning remains real, but the inspected pressure-recovery path does not use an empty-filter shortcut: compact temporal tests are converted to pointwise equality on `Ioo 0 T` by continuity and an integral fundamental lemma. The harmonic-functional step is bounded by an explicit Fourier Sobolev norm before compact harmonicity is extended to the full Schwartz test space.
@@ -53,6 +55,9 @@ The pressure and comparison audit was completed at source level. The generic `Fi
 This closes the specific claim that the endpoint consumes a free scalar rate bound. The comparison closure constructs it internally, and the pressure-flux constant is constructed upstream from the pressure-recovery hypotheses. The chain remains analytically load-bearing, but no zero-sorry contradiction has yet been found in it.
 
 ## Formal artefacts
+
+- `NavierStokesReview/evidence/selected_endpoint_composition_audit_2026-09-24.md`: source map for the local paper schedule, selected raw stages, exported witness, and R³ packaging.
+- `NavierStokesReview/src/probes/ActualCandidateAssemblyIsolationProbe.lean`: corrected zero-sorry interface probe; it no longer claims that `PositiveOrderMoments` is dead code.
 
 - `NavierStokesReview/src/probes/MomentCoordinateMismatchProbe.lean`: zero-sorry vector inequalities.
 - `NavierStokesReview/src/probes/MomentBridgeObstructionProbe.lean`: zero-sorry impossibility of a direct row-by-row bridge.

@@ -16,6 +16,8 @@
 | BP-04 | Is smooth forcing derived or injected? | [~] | `force_smooth` consumes residual-jet limits and away extensions; verify those premises for the selected fields. |
 | BP-05 | Is `WholeDomain*` dead code? | CORRECTED | Unreachable from `selected_witness`, but reachable through paper-result modules. |
 | BP-06 | Has a zero-sorry contradiction been obtained? | [ ] | None yet. Do not label the claim refuted without a selected-path contradiction. |
+| BP-07 | Are the local paper fields, selected raw stages, force, and exported R³ candidate identified as one object? | [~] | Local velocity/pressure agreement is present, but force and five-moment transport are not exposed in one theorem. |
+| BP-08 | Were prior probes themselves checked for overclaiming? | [x] | The isolation probe was corrected; “PositiveOrderMoments is dead code” is withdrawn. |
 
 Evidence: `NavierStokesReview/evidence/base_profile_core_asymptotics_audit_2026-09-23.md` and `NavierStokesReview/src/probes/BaseProfileCoreAsymptoticsProbe.lean`.
 
@@ -29,6 +31,14 @@ Evidence: `NavierStokesReview/evidence/base_profile_core_asymptotics_audit_2026-
 | CMI-04 | Does the code prove the PDE on the required domain, rather than only define a residual? | [~] | Match `navierStokesResidual = forcing` against the selected candidate fields. |
 
 CMI does not impose the additional conditions `∫ f dx = 0` or `∇ · f = 0` on the external force. Those are possible physical diagnostics, not automatic CMI disproofs. A conservation-law attack becomes decisive only after deriving the relevant identity from the stated hypotheses and showing that the selected force violates it.
+
+## Composition audit added 2026-09-24
+
+The next falsification target is explicit: prove or disprove a selected-path
+transport theorem carrying the paper's `(M, I, J, S, C_p)` data and the same
+force from `LocalPaperTheorem` through `PaperLocalization` into
+`ActualCandidateAssembly.selected_candidate`. The current source establishes
+local velocity/pressure agreement, not this complete identity.
 
 ## 2. Selected endpoint trace
 

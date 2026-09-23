@@ -24,6 +24,7 @@ This matters because two common objections are too broad. First, residual forcin
 | Division by zero invalidates the singular limit. | Search actual source for the claimed file and guarded denominators. | No division-by-zero failure has been established in the current snapshot. Do not repeat the old claim. |
 | Ladyzhenskaya stress or fractional dissipation defeats the construction. | Compare those equations with the official Newtonian statement. | A robustness objection, not an internal contradiction of the stated C/D theorem. |
 | Level A stress covariance is not Level B exact PDE realisation. | Trace all three moment layers into the selected candidate and force residual. | Correct audit distinction. The missing staging theorem between nominal, positive-order, and physical-rank interfaces is a concrete Level A to Level B correspondence target. |
+| The local paper theorem and exported R³ candidate are automatically the same realised object. | Compare `LocalPaperTheorem`, `PaperLocalization`, and `ActualCandidateAssembly.selected_witness`. | Not established by the inspected signatures. Local velocity/pressure agreement is present, but force equality and five-moment transport are not stated together. |
 
 ## Source-to-paper map
 

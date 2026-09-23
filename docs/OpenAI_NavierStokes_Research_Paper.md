@@ -1,10 +1,28 @@
-# A Formal Audit of OpenAI's Navier–Stokes Blow-Up Claim
+# A Counter-Paper on OpenAI's Navier–Stokes Blow-Up Claim
 
 ## 17. Base profile and core-asymptotics finding
 
 The core profile is axisymmetric in reduced variables `(t, s, z)`, but its potential is embedded in three Cartesian directions and converted to velocity by spatial curl. The source therefore supports a three-component axisymmetric field, not a globally one-dimensional or globally zero-swirl field. The radial-anchor zero is a local normalisation.
 
 Five-moment repair algebra exists upstream. The unresolved issue is transport into the selected endpoint: the generic finite-stage summation theorem does not itself identify the final fields with `(M, I, J, S, C_p)`. Base smoothness follows from coefficient regularity, while force smoothness depends on residual-jet limits and away extensions. The `WholeDomain*` family is disconnected from `selected_witness` but not globally unused. No zero-sorry contradiction has yet been established.
+
+## 18. The composition gap between the local construction and the exported endpoint
+
+The source separates the local paper construction from the exported R³
+candidate. `LocalResidualFlatness` selects a schedule for the raw-stage aliases,
+and `LocalPaperTheorem` proves the local properties for that schedule.
+`ActualCandidateAssembly.selected_witness` exposes an existential assembly
+containing a schedule, away extensions, a force, generic candidate properties,
+and asymptotic consequences. `PaperLocalization` connects these layers by
+proving local velocity and pressure agreement at late times, but its result does
+not state force equality or carry the paper's five named moments `(M, I, J, S,
+C_p)` into the final R³ comparator.
+
+That omission is not a Lean compilation error. It is a missing semantic
+transport theorem at the point where a local construction becomes the claimed
+whole-space solution. The earlier stronger statement that the five-moment
+module is dead code is withdrawn: the local layer consumes the selected
+aliases, and a genuine five-component repair theorem exists upstream.
 
 ## Abstract
 

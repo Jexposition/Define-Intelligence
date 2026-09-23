@@ -2,17 +2,15 @@ import NavierStokes.ActualCandidateAssembly
 import NavierStokes.PositiveOrderMoments
 
 /-!
-# Actual Candidate Assembly Isolation Probe
+# Actual Candidate Assembly Interface Probe
 
-This zero-sorry probe formally verifies that the final candidate solution assembled
-in `ActualCandidateAssembly.lean` (specifically `selected_witness` and `selected_candidate`)
-is completely isolated from the `PositiveOrderMoments.moments` 5D exact repair theorem.
-
-By extracting the exact type of `ActualCandidateAssembly.Witness` and observing that 
-it makes no mathematical assertions about `PositiveOrderMoments.moments`, we prove that 
-the 5D exact repair module is "dead code" with respect to the final CMI theorem endpoint. 
-The endpoint strictly relies on the flawed 3-debt formulation from `FiveRowRank.lean` 
-as traced in the previous coordinate mismatch probes.
+This zero-sorry probe records the exact type-level boundary of the exported
+candidate. It does not prove that `PositiveOrderMoments` is dead code: the
+repository contains a genuine five-coordinate repair theorem and imports it in
+the wider construction. It also does not prove that the exported candidate is
+false. The point is narrower: the proposition returned by `selected_witness`
+does not expose a theorem identifying its selected fields with the named
+`PositiveOrderMoments` rows.
 -/
 
 noncomputable section
@@ -21,14 +19,18 @@ open NavierStokes ActualCandidateAssembly
 
 namespace NavierStokesReview.ActualCandidateAssemblyIsolationProbe
 
-/-- 
-  Formal proof that `selected_candidate` extracts its fields directly from `selected_witness` 
-  without ever invoking or requiring `PositiveOrderMoments.moments`. 
--/
+/-- The exported candidate is obtained from the `Witness` proposition. -/
 theorem selected_candidate_isolation :
     ∃ (_w : Witness ActualCandidateConstruction.selectedBudget ActualCandidateConstruction.selectedThreshold
       ActualCandidateConstruction.selectedThreshold_geometry), 
     True := by
   exact ⟨selected_witness, trivial⟩
+
+/- The omitted bridge is a proposition-level observation, not a theorem that
+   the upstream candidate is invalid. The exported `Witness` type contains
+   the schedule, away extensions, forcing, `CandidateProperties`, generic
+   consequences, derivative growth, and boundary jets. It does not contain a
+   field of type `PositiveOrderMoments.Debt` or an equality relating such a
+   debt to the selected sums. -/
 
 end NavierStokesReview.ActualCandidateAssemblyIsolationProbe

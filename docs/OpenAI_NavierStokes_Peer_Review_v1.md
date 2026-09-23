@@ -10,6 +10,21 @@ The repository has genuine upstream five-moment repair algebra, but the generic 
 
 The force boundary must also be quoted accurately: the zero-force branch starts at `t ≥ 2`, not `t ≥ 1`; `force_smooth` is conditional on residual-jet and extension premises.
 
+## Finding 20: local and exported composition are not one exposed theorem
+
+`LocalResidualFlatness` and `LocalPaperTheorem` work with the selected raw
+stage aliases and a supplied schedule. The public whole-space endpoint is
+instead extracted from `ActualCandidateAssembly.Witness` and then passed
+through the R³ localisation layer. `PaperLocalization` proves local agreement
+of velocity and pressure on an open set at late times, but the combined result
+does not state equality of the forces or identify the five named moments with
+the exported residual. The paper therefore needs an explicit composition
+theorem before it can claim that its local five-moment construction is the
+object used by the CMI endpoint.
+
+This strengthens CTR-005 as a source-level correspondence objection. It does
+not refute `selected_candidate` by itself.
+
 ## Recommendation
 
 **Major revision.** The public Lean development contains a substantial formal endpoint for a forced whole-space breakdown statement, but the accompanying mathematical narrative is not yet shown to correspond to the actual source implementation. The most concrete issue is the mismatch between the paper's five cumulative moments and the repository's `FiveRowRank` debt system.
