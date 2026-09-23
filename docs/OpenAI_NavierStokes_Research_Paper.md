@@ -69,7 +69,7 @@ The selected `originPast` path has been checked separately with `OriginPastNeBot
 
 ### 4.6 Challenge-file placeholders are not endpoint evidence
 
-Two `sorry` declarations remain in each of the separate Comparator challenge files. Source and dependency inspection did not place those declarations on the selected R3 endpoint path. They must remain visible in the axiom ledger, but they cannot be used as a refutation of the headline theorem without a transitive dependency witness.
+The repository contains four `sorry` declarations in `ComparatorChallenges`: two in `ComparatorChallenges/NavierStokes.lean` and two in `ComparatorChallenges/Euler.lean`. Source and dependency inspection did not place those declarations on the selected R3 endpoint path. This is a verified repository-integrity defect and defeats any unqualified claim that the entire source tree is zero-sorry. It is not, without a transitive dependency witness, a refutation of the exported headline theorem.
 
 ### 4.7 Physical robustness objections are not contradictions to the stated PDE
 
@@ -98,6 +98,14 @@ Accordingly, the review recommendation is **major revision**. The authors must s
 1. Charles L. Fefferman, [Existence and Smoothness of the Navier–Stokes Equation](https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf).
 2. Clay Mathematics Institute, [Millennium Prize Problem rules](https://www.claymath.org/millennium-problems/rules/).
 3. OpenAI, [NavierStokesAndEuler repository](https://github.com/openai/NavierStokesAndEuler).
+
+## Additional adjudication: import closure and regularity
+
+The selected theorem's import closure contains both `PositiveOrderMoments.Debt` and `FiveRowRank.Debt`, as verified by the zero-sorry `SelectedImportClosureProbe.lean`. This rules out the simplistic claim that the repository lacks a five-row module. It does not prove that the module is the implementation of the paper's five named quantities.
+
+The selected witness is assembled through `ActualCandidateAssembly.selected_witness`, the actual stage-estimate chain, and the germ endpoint. The inspected source has not supplied a theorem identifying `(M,I,J,S,Cp)` with the promoted debt `(0,0,-P,-Jθ,-Jz)` and transporting that identification into the residual estimates. The correct conclusion is that paper-to-endpoint correspondence remains unestablished, not that the exported C/D theorem has been formally contradicted.
+
+One proposed adverse argument is expressly withdrawn. `preSingularDomain = Ico 0 1 × univ` includes the initial face, and `ContDiffOn` is relative to that half-domain. The formal source therefore does not support an initial-time smoothness loophole.
 
 ## Revision statement: the moment objection is narrowed
 

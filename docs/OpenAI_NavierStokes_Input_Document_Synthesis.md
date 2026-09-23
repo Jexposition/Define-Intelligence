@@ -122,3 +122,17 @@ The human-readable research paper and referee report now state these distinction
 The previous synthesis treated the five-versus-three interface difference as the strongest adverse result. That interpretation is now narrowed. `FiveRowPositiveOrderBridgeProbe.lean` proves, with no `sorry`, that the physical repair functions are exactly the positive-order repair functions after promoting the three debts to `(0,0,-P,-Jθ,-Jz)`, and that the five weighted moments are exact for this promoted target.
 
 The honest remaining criticism is therefore not that the repository has incompatible repair machinery. It is that the selected endpoint has not yet displayed the theorem connecting the paper's five named quantities to the promoted physical debt and showing that the correspondence is preserved through the actual witness and residual estimates.
+
+## Selected import closure is not a bridge theorem
+
+The selected theorem import closure contains both `PositiveOrderMoments` and `FiveRowRank`; this is verified by the zero-sorry `SelectedImportClosureProbe.lean`. That finding corrects any suggestion that the repository simply omitted the five-row layer.
+
+The unresolved issue is more precise. The selected witness is assembled through `ActualCandidateAssembly.selected_witness` and the actual stage-estimate chain, yet the inspected endpoint has not exposed a theorem that identifies the paper's named five moments with the promoted physical debt and carries that identification into the residual estimates. The review should ask for that theorem, while avoiding the unsupported claim that the compiled endpoint is already contradicted.
+
+The initial-face regularity objection is rejected. `Ico 0 1` includes zero, and relative `ContDiffOn` supplies the relevant half-domain regularity. It is removed from the adverse findings.
+
+## Repository-wide admitted declarations
+
+The source census must be stated precisely. There are four `sorry` declarations in the repository's `ComparatorChallenges` area: two in `ComparatorChallenges/NavierStokes.lean` and two in `ComparatorChallenges/Euler.lean`. The Navier–Stokes challenge file identifies them as standalone challenge placeholders, and the selected R³ endpoint does not import that module.
+
+This yields a two-level conclusion. The repository is not globally zero-sorry, so an unqualified claim of complete source-level derivation is false. Separately, the inspected selected endpoint remains standard-axiom-only, so the census does not by itself prove that the C/D theorem is false. The counter-paper records the former as a concrete integrity defect and keeps the latter as an open selected-path falsification target.

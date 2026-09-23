@@ -139,6 +139,22 @@ This does not close the entire CMI endpoint against the repository because `Posi
 
 The current gate is **major revision**. Escalation to formal disproof requires a zero-sorry contradiction or a false mandatory premise on the selected witness path.
 
+## Selected import closure and endpoint transport
+
+The new `SelectedImportClosureProbe.lean` imports `NavierStokes.R3.Theorem` and resolves both the positive-order and physical-rank debt types. This prevents a simplistic claim that the five-moment machinery is absent. It does not answer the substantive question: where does the selected witness identify the paper's five quantities `(M,I,J,S,Cp)` with the promoted debt `(0,0,-P,-Jθ,-Jz)` and then use that identity in the actual PDE residual estimates?
+
+The next required artefact is a source-linked transport theorem or a zero-sorry countermodel showing that the claimed identification cannot hold for the selected fields. Until one exists, classify the paper-to-endpoint correspondence as **OPEN**, not **REFUTED**.
+
+## Rejected attack line: initial-face regularity
+
+The proposed objection that `ContDiffOn` excludes `t = 0` is withdrawn. The formal domain is `Ico 0 1 × univ`, which includes `t = 0`, and the smoothness statement is relative to that half-domain. Future reviews must not reuse this criticism.
+
+## Repository-scope integrity lane
+
+The review also maintains a separate source-integrity lane. A repository-wide census found four `sorry` declarations: two in the Navier–Stokes challenge file and two in the Euler challenge file. This lane answers the question “is every source file fully derived?” It does not answer the narrower question “does the selected C/D endpoint depend on those declarations?”
+
+The endpoint question is answered only by dependency inspection and `#print axioms` reports. The current reports for the exported theorem and selected construction show only Lean's standard foundations. The challenge placeholders therefore remain a verified repository defect and an overclaim risk, but not a formal disproof of the selected endpoint. The counter-paper must retain this distinction in its verdict.
+
 ## 2026-09-23 correction to the moment lane
 
 `MomentBridgeObstructionProbe.lean` proves that the nominal five-coordinate interface cannot be directly identified with `FiveRowRank`. `FiveRowPositiveOrderBridgeProbe.lean` now proves the natural constrained promotion and exact repair identity:

@@ -126,3 +126,22 @@ The present review classification is **major revision**. A stronger `[FORMALLY R
 | CTR-030 | `FiveRowPositiveOrderBridgeProbe.lean` proves that `PositiveOrderMoments.repairU` and `repairE` equal `FiveRowRank.gamma` and `deltaV` after promoting debt `(P,Jθ,Jz)` to `(0,0,-P,-Jθ,-Jz)`. | Confirmed zero-sorry constructive bridge | The direct dimension mismatch is not a repair contradiction. The remaining target is the selected-path transport of the paper's named moments into this promoted interface. |
 
 This entry supersedes any interpretation of CTR-027 as a standalone refutation. CTR-027 remains a proof that direct row identification is impossible. CTR-030 proves the natural constrained reduced form. The live falsification threshold is now a false equality or false mandatory premise on the selected endpoint path.
+
+## 2026-09-23 repository-wide admitted-declaration census
+
+| ID | New result | Status | Interpretation |
+| --- | --- | --- | --- |
+| CTR-031 | A source census finds four `sorry` declarations in `ComparatorChallenges`: two in `ComparatorChallenges/NavierStokes.lean` and two in `ComparatorChallenges/Euler.lean`. | Confirmed source fact | Any repository-wide statement that every Lean file is zero-sorry is false. The challenge module header describes these as intentional standalone placeholders. |
+| CTR-032 | The inspected dependency reports for `NavierStokes/R3/Theorem.lean`, `theorem_1_1`, the selected witness, and the selected stage estimates contain only `propext`, `Classical.choice`, and `Quot.sound`. | Confirmed endpoint fact | The four challenge-file placeholders are not currently shown to contaminate the exported C/D endpoint. This is a repository-scope defect, not yet an endpoint refutation. |
+
+The counter-paper therefore makes two distinct claims. First, the repository is not globally zero-sorry. Second, the selected endpoint is standard-axiom-only in the inspected dependency reports. Collapsing those claims into either “the whole repository is admitted” or “the whole repository is fully verified” would misstate the evidence.
+
+## 2026-09-23 selected import closure and regularity correction
+
+| ID | New result | Status | Interpretation |
+| --- | --- | --- | --- |
+| CTR-033 | `SelectedImportClosureProbe.lean`, importing `NavierStokes.R3.Theorem`, resolves both `PositiveOrderMoments.Debt` and `FiveRowRank.Debt`. | Confirmed zero-sorry probe | The selected theorem's import closure contains both moment layers. Module availability is not evidence that the paper's five named moments are identified with the endpoint's debt or consumed by its residual estimates. |
+| CTR-034 | Direct inspection of `ActualCandidateAssembly.selected_witness` shows the endpoint is assembled through the actual stage-estimate and germ-witness chain, but no named theorem was found there equating `(M,I,J,S,Cp)` with the promoted debt and carrying that equality into `CandidateProperties`. | Open load-bearing correspondence obligation | The correct criticism is missing endpoint transport, not absence of five-moment code. A contradiction has not been proved. |
+| CTR-035 | The proposed initial-face smoothness counterexample is invalid. `preSingularDomain = Ico 0 1 × univ` includes `t = 0`, and `ContDiffOn` is relative to that half-domain. | Withdrawn | The review must not claim that the formal candidate is only smooth for `0 < t < 1`; the source explicitly includes relative right-smoothness at the initial face. |
+
+The active falsification lane therefore remains the semantic transport from the paper's moment names to the selected residual construction. The import probe strengthens the audit map but does not turn an unproved bridge into a contradiction.

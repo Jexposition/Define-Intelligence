@@ -217,3 +217,21 @@ The ledger distinguishes a proved adverse correspondence result from an unproved
 `FiveRowPositiveOrderBridgeProbe.lean` proves that the positive-order five-coordinate repair reduces exactly to the `FiveRowRank` repair under the promotion `(P,Jθ,Jz) ↦ (0,0,-P,-Jθ,-Jz)`. It also proves the exact positive-order weighted moments for the promoted physical repair. Status: **confirmed constructive bridge**.
 
 This supersedes the stronger reading of AX-009. AX-009 proves that literal row-by-row identification and a full linear equivalence of the two debt spaces are impossible. It does not prove that the repair formulas are inconsistent. AX-011 remains open: the selected endpoint still needs a theorem transporting the paper's five named moment defects into the promoted physical interface.
+
+## Supplement: selected import closure is not selected theorem dependence
+
+`NavierStokesReview/src/probes/SelectedImportClosureProbe.lean` imports `NavierStokes.R3.Theorem` and resolves both `PositiveOrderMoments.Debt` and `FiveRowRank.Debt`. This proves that both namespaces are present in the compiled import closure. It does not prove that the selected endpoint uses the positive-order repair as the implementation of the paper's five-moment system.
+
+The current dependency claim is deliberately narrow: the endpoint construction passes through `ActualCandidateAssembly.selected_witness`, `ActualStageEstimates`, `GermCandidateAssembly`, and `CandidateProperties`; a theorem identifying `(M,I,J,S,Cp)` with the promoted physical debt and transporting that equality into the residual estimates has not been located. This is a missing correspondence theorem, not a new axiom and not a contradiction.
+
+## Supplement: withdrawn initial-face objection
+
+The initial-face regularity objection is rejected. `preSingularDomain` is `Set.Ico 0 1 × Set.univ`, so it contains the initial face. `ContDiffOn` is relative to that half-domain and the source documents this semantics. No initial-time smoothness loophole should remain in the review.
+
+## AX-016: repository-wide `sorry` census
+
+A direct source census on 2026-09-23 found four admitted declarations under `ComparatorChallenges`: two in `ComparatorChallenges/NavierStokes.lean` and two in `ComparatorChallenges/Euler.lean`. The Navier–Stokes challenge file labels these as intentional standalone challenge placeholders, and the selected R³ solution does not import that module.
+
+Status: **CONFIRMED REPOSITORY-SCOPE DEFECT; ENDPOINT CONTAMINATION NOT SHOWN**.
+
+The precise axiom claim is therefore limited. The inspected headline and selected-witness dependency reports are standard-axiom-only. The repository as a whole is not a zero-sorry corpus. Any public statement using the latter as evidence for the former is invalid until the challenge files are excluded explicitly.
