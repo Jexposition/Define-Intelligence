@@ -1,5 +1,7 @@
 # OpenAI Navier–Stokes Axiom and Assumption Ledger
 
+*Evidence ledger. Source snapshot: OpenAI Navier–Stokes repository, commit `f9e8bc5`.*
+
 ## Purpose
 
 This ledger separates logical foundations, project-level premises, formal definitions, and physical requirements. A standard Lean axiom is not treated as a defect. A proposition imported as a premise, or a definition that is weaker than the paper's object, is a separate audit target.
@@ -114,7 +116,7 @@ Only the third is a formal correspondence obstruction. None of the three, standi
 
 No custom axiom has been found at the inspected headline or selected-witness interfaces. A zero-sorry formal obstruction has been found to a direct identification of the nominal five-coordinate interface with the physical three-debt interface, but a separate exact five-coordinate `PositiveOrderMoments` repair is present and load-bearing. The outstanding question is whether the repository proves the required maps and staging relations among all three layers. Until answered, the claim of complete direct formal verification must be reported as not established.
 
-## 9c. Regularity does not entail the physical rows
+## 9. Regularity does not entail the physical rows
 
 The distinction between an analytic interface and a moment equation is now formalised. `GaugeMomentBalances.MovingField` contains only `smooth`, `supported`, and `periodic` fields. The zero-sorry probe `MovingFieldRowNonImplicationProbe.lean` constructs the zero moving field and pairs it with zero backgrounds, zero increments, and a constant nonzero debt. The moving-field predicate is satisfied, while the third physical row becomes
 
@@ -126,43 +128,43 @@ and is therefore false.
 
 This is not evidence that the selected physical rank stage lacks a row solve. `LocalRankDefect.RankGeometry.fiveRows` supplies `FiveRowRank.FiveRows` through the stronger rank-geometry assumptions and `CorrectionState.rank_rows_on_patch`. The formal conclusion is narrower and useful: generic smoothness, support, and periodicity premises cannot be cited as if they already carried the five moment identities. The missing review obligation is the transport of the paper's five named quantities into the stronger rank-geometry data actually consumed by the selected path.
 
-## 9a. Empty active-pair branch audit
+## 10. Empty active-pair branch audit
 
 `ActualParticularStageControls.raw_jets` splits on `Nonempty (ActivePair B N0)`. Its negative branch does not obtain a contradiction from an arbitrary proposition. Instead, it proves `False` only after receiving `hz : z ∈ controlPatch l n k`; the first component of `hz` is an `Active l n` witness and therefore constructs the forbidden active pair. The control patch is consequently empty in that branch, and the estimates are vacuous over that empty support.
 
 The positive branch uses `exists_surjective_nat (ActivePair B N0)` and an explicit reindexing. This audit removes a tempting but invalid claim that the source uses `False.elim` to prove arbitrary estimates on a nonempty physical patch. It does not yet prove that the selected active subtype is inhabited, so the endpoint-level reachability of the empty branch remains a live but narrower question.
 
-## 9b. Import graph versus semantic bridge
+## 11. Import graph versus semantic bridge
 
 The import edge from `MeanRankUpdate.lean` to `FiveProfileMoments.lean` does not itself transport any proposition or data. A source census of `MeanRankUpdate.lean` finds its operative definitions in `FiveRowRank`: `Debt` is abbreviated to `FiveRowRank.Debt`, the rows are `FiveRowRank.FiveRows`, and `scaleDebt` has three coordinates. No theorem in that file invokes a `FiveProfileMoments` declaration. The ledger therefore records the edge as library availability, not as evidence of a nominal-to-physical moment correspondence.
 
-## 9. Exact shape of the physical five-row predicate
+## 12. Exact shape of the physical five-row predicate
 
 The source-level declaration `FiveRowRank.FiveRows` must be read literally. It takes `Debt := Fin 3 → ℝ`, not a five-coordinate debt. Its conjunction is structured as two fixed zero-moment equations followed by three equations whose right-hand sides are `-(d 0)`, `-(d 1)`, and `-(d 2)`. `FiveRowsStructureProbe.lean` compiles these projections without assumptions beyond the declaration itself.
 
 This is not a contradiction: the first two rows can be invariants established independently, and the source proves them for the constructed bumps. It is, however, a correction to any statement that this declaration alone implements an arbitrary five-equation, five-unknown inverse. The ledger therefore records the issue as a specification and correspondence obligation, not as a final C/D refutation.
 
-## 10. Whole-space endpoint provenance
+## 13. Whole-space endpoint provenance
 
 The whole-space endpoint is not an isolated wrapper around an unrelated witness. `NavierStokes/R3/Theorem.lean` obtains the viscosity-one candidate from `ActualCandidateAssembly.selected_witness`. `NavierStokes/R3/ActualCandidate.lean` then applies the proved spatial localisation, positive-time force cutoff, and compact-support energy estimate. `NavierStokes/R3/ViscosityScaling.lean` transports the candidate from viscosity one to every positive viscosity and proves the residual scaling identity.
 
 This closes a separate provenance objection: the R³ theorem is connected to the selected construction at source level. It does not close the moment objection. The endpoint provenance passes through interfaces whose physical meaning still depends on the missing correspondence account among `FiveProfileMoments`, `PositiveOrderMoments`, and `FiveRowRank`.
 
-## 11. Whole-space comparison premise correction
+## 14. Whole-space comparison premise correction
 
 An earlier audit formulation treated the final scalar rate inequality as an unproved hypothesis consumed by the whole-space endpoint. The source does not support that description. `WholeSpaceComparisonClosure.eq_of_pressure_flux_bound` calls `ComparisonRateBound.exists_uniform_rate_bound` internally after constructing constants from comparison norms. The pressure-flux constant is likewise produced inside `WholeSpaceUniqueness.classical_uniqueness_on_Icc` by `PressureFlux.exists_uniform_actual_pressure_flux_bound`, using `PressureRecovery.Hypotheses` assembled from smoothness, divergence, residual equality, and finite-energy bounds.
 
 This correction removes a proposed interface-premise failure. It does not certify the analytic validity of pressure recovery or localised energy estimates. Those remain load-bearing and must be checked for correct hypotheses and whole-space meaning. Status: no external rate-bound assumption found at this endpoint; analytic derivation remains under review.
 
-## 12. Pressure-chain axiom adjudication
+## 15. Pressure-chain axiom adjudication
 
 The inspected pressure path uses compact temporal tests, continuity, a Fourier Sobolev bound, and weighted `L²` representation before producing the cutoff flux. The selected dependency probes found no custom axiom at these interfaces. The generic `Filter.bot` risk remains a valid audit question for other modules, but it was not shown to enter this pressure chain. No new axiom defect is therefore recorded.
 
-## 13. Preserved-mass check
+## 16. Preserved-mass check
 
 The fixed zero rows in `FiveRowRank.FiveRows` were tested against the possibility that the selected initial state had nonzero invariants. `ActualInitialization.initial_zeroMasses` proves zero angular and axial masses for `initialState B N0`; the correction-stage theorems preserve `ZeroMassesOn`; and `MomentInitializationProbe.lean` compiles the initialization theorem without adding an axiom. This is positive source evidence and removes the proposed invariant failure. It does not create a bridge between the nominal, positive-order, and physical-rank moment layers.
 
-## 14. Source-tree admitted declarations
+## 17. Source-tree admitted declarations
 
 The selected endpoint and the archived challenge module must be reported separately. Direct compilation of `ComparatorChallenges/NavierStokes.lean` emits two warnings that theorem declarations use `sorry`, at the whole-space and periodic challenge theorem bodies. `NavierStokes/ComparatorSolution.lean` does not import that module, so those placeholders do not appear in the axiom dependency report for the exported solution.
 
@@ -174,11 +176,11 @@ Ledger status:
 
 The defensible statement is therefore “the exported theorem path is standard-axiom-only,” not “every Lean file in the repository is zero-sorry.”
 
-## 15. Selected-stage provenance
+## 18. Selected-stage provenance
 
 `ActualCandidateAssembly.selected_witness` feeds the R³ endpoint through `GluedStageEstimates.actualStageEstimates`. The estimate constructor consumes `ActualCycleResidualBounds.PhysicalData`; `ActualPhysicalPrefixFields.physicalFields_all` derives that record from actual smoothness, local physical germ agreement, pressure-germ agreement, and exterior equality. This closes the disconnected-wrapper suspicion at source level. It does not resolve whether the several moment systems passed through those fields have the common five-moment meaning claimed in the paper.
 
-## 16. Selected-closure moment census
+## 19. Selected-closure moment census
 
 The selected import closure does contain the nominal moment layer. `NominalProfile`, `ModulatedHistories`, `ModulatedCone`, `ModulatedProfileAssembly`, `MatchingDebtBounds`, `RepairConeBounds`, and `ReservedPatches` contain substantive references to `FiveProfileMoments`. The adverse claim must therefore not be phrased as absence of nominal five-moment code.
 

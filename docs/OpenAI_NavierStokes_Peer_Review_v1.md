@@ -1,5 +1,7 @@
 # Adverse Peer Review of the OpenAI Navier–Stokes Formalisation
 
+*Referee report. Source snapshot: OpenAI Navier–Stokes repository, commit `f9e8bc5`.*
+
 ## Recommendation
 
 The public claim should be narrowed. The repository contains a substantial Lean theorem with the outer shape of alternatives (C) and (D), but the claim that the code verifies the analytic construction in the official paper is not established. The strongest formal adverse finding is a missing cross-layer correspondence at the load-bearing moment-repair interfaces. The source does contain an exact five-coordinate positive-order repair, so a direct coordinate mismatch is not by itself a refutation.
@@ -78,7 +80,7 @@ The authors should publish a correspondence appendix containing:
 
 Until that appendix exists, the defensible answer is: the repository proves a C/D-shaped Lean proposition, but the claimed proof of the published construction has not been demonstrated.
 
-## Final assessment
+## Preliminary assessment
 
 The review has two formal findings and one important correction. First, the force activity probe establishes that every candidate force is nonzero at some time before one. The construction is therefore forced throughout the approach to the singular time. This is relevant to interpretation, but the CMI C/D statement allows a smooth external force, so it is not a rejection criterion by itself.
 
@@ -145,3 +147,9 @@ The review tested whether the generic interface used throughout the actual cycle
 This is a genuine formal interface result, but its scope must be stated exactly. The selected physical rank route is not based on `MovingField` alone. `LocalRankDefect.RankGeometry.fiveRows` derives the five physical rows from the stronger rank-geometry model, including the background profile, nonzero coefficient and velocity data, interval geometry, and debt. The probe therefore does not refute the exported C/D theorem. It does refute any explanatory claim that smoothness, support, and periodicity by themselves verify the five-equation repair.
 
 The authors must still identify the transport from the paper's five quantities `(M, I, J, S, C_p)` into the debt and background data supplied to `RankGeometry.fiveRows`. Without that map, the repository demonstrates a physical row solve at one interface and a paper-shaped five-moment repair at another, but not their asserted identity.
+
+## Recommendation and conclusion
+
+The submission requires major revision of its formalisation claim. The exported Lean theorem has the outer shape of alternatives (C) and (D), and the selected endpoint does not presently expose a custom axiom or an imported scalar rate bound. Those are positive findings.
+
+The stronger claim, that the Lean development verifies the published five-moment construction, is not established. The source contains three distinct moment interfaces, and the direct nominal-to-physical identification is impossible by a zero-sorry Lean theorem. The exact positive-order repair prevents that result from being treated as a refutation of the endpoint, but it does not replace the missing transport theorem. The authors should provide that theorem, its dependency path into `selected_witness`, and its axiom report before the release is described as a faithful formal proof of the paper.

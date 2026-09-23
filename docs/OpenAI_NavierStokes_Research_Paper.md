@@ -1,4 +1,6 @@
-# Against the Claim of a Verified Navier–Stokes Blow-Up Proof
+# A Formal Audit of OpenAI's Navier–Stokes Blow-Up Claim
+
+*Research paper. Source snapshot: OpenAI Navier–Stokes repository, commit `f9e8bc5`.*
 
 ## Abstract
 
@@ -8,11 +10,11 @@ That result does not settle whether the Lean development formalises the analytic
 
 The immediate conclusion is therefore precise. The claim that the repository mechanically verifies the paper's Appendix A construction is not established, and the stronger claim of direct formal correspondence is contradicted by the checked coordinate declarations unless an additional change-of-variables theorem is supplied. The source also contains substantial positive evidence in `PositiveOrderMoments`, so the adverse result is not that the repository lacks a five-row repair. It is that the cross-layer correspondence required by the public claim has not yet been demonstrated. This is a formal correspondence failure, not a contradiction of the final existential proposition itself. The paper also distinguishes genuine objections from arguments that do not work: an a posteriori force is allowed by alternatives (C) and (D), and a local `Filter.bot` hazard is not a global refutation unless it reaches the selected witness.
 
-## Audit verdict
+## Principal finding
 
 The answer is split. Yes, the repository contains a Lean-checked theorem with the outer shape of alternatives (C) and (D). No, the inspected source does not establish that this theorem is a faithful formalisation of the official paper's five-moment construction. The direct row-by-row identification is formally impossible; only a separately proved nontrivial change of variables could close that gap.
 
-## 1. What must be shown
+## 1. Standard of assessment
 
 The relevant question is not whether Lean compiles. Compilation establishes that the kernel accepts a term of the declared type. The research question is whether the declared type and every load-bearing interface mean what the official paper says they mean.
 
@@ -102,17 +104,17 @@ theorem no_linear_debt_equivalence :
 
 Here the physical rank interface exposes three free residual-debt coordinates, whereas the profile interface exposes five moment coordinates. This does not exclude an embedding into a constrained five-dimensional subspace, nor does it prove that the two modules are intended to represent the same stage. It does establish that a full linear identification of their debt spaces is impossible and that any claimed correspondence must state its restriction or stage distinction explicitly.
 
-The dependency trace is load-bearing: `ActualCandidateAssembly.selected_witness` consumes `estimates`, which is constructed by `GluedStageEstimates.actualStageEstimates` from `ActualCycleResidualBounds.PhysicalData`. The actual candidate correction route uses `MeanRankUpdate` and `FiveRowRank`. The nominal and modulation route uses `NominalProfile`, `ModulatedHistories`, `ReservedPatches`, and `FiveProfileMoments`; the recursive positive-order route uses `PositiveOrderMoments` through `GlobalSlowProfiles`. The remaining audit obligation is therefore not merely a comparison of unused declarations. It is to show that these routes are intentionally staged and that the fields and debts handed from one route to the next preserve the published five-moment meaning.
+The dependency trace is load-bearing: `ActualCandidateAssembly.selected_witness` consumes `estimates`, which is constructed by `GluedStageEstimates.actualStageEstimates` from `ActualCycleResidualBounds.PhysicalData`. The actual candidate correction route uses `MeanRankUpdate` and `FiveRowRank`. The nominal and modulation route uses `NominalProfile`, `ModulatedHistories`, `ReservedPatches`, and `FiveProfileMoments`; the recursive positive-order route uses `PositiveOrderMoments` through `GlobalSlowProfiles`. The mathematical question is therefore not merely whether these declarations exist, but whether the construction states that they are successive representations of the same five quantities and preserves those quantities at every hand-off.
 
-The source dependency itself is narrower than the import graph suggests. `MeanRankUpdate.lean` imports `FiveProfileMoments.lean`, but its definitions and theorems use `FiveRowRank.Debt`, `FiveRowRank.FiveRows`, and the three-component scaled debt; a source census finds no use of the `FiveProfileMoments` namespace in that file. An import is therefore not a semantic bridge. The authors must identify the file and theorem that transport the five named paper moments into the physical rank inputs. If no such theorem exists on the selected path, the public statement that one verified five-moment system drives the final construction is not supported by the source map.
+The source dependency itself is narrower than the import graph suggests. `MeanRankUpdate.lean` imports `FiveProfileMoments.lean`, but its definitions and theorems use `FiveRowRank.Debt`, `FiveRowRank.FiveRows`, and the three-component scaled debt; a source census finds no use of the `FiveProfileMoments` namespace in that file. An import is therefore not a semantic bridge. The source map examined here contains no named theorem transporting the five paper moments into the physical rank inputs. Consequently, the statement that one verified five-moment system drives the final construction is unsupported unless such a theorem exists outside the inspected path.
 
-## 5. Why other proposed objections are insufficient by themselves
+## 5. Boundary of the counterclaim
 
 The force is deliberately defined from the residual and remains active up to the singular time. That is a legitimate criticism of physical interpretation, but alternatives (C) and (D) explicitly allow a smooth external force. It therefore does not refute the stated C/D proposition.
 
 The repository contains a `JetRate` abstraction without an explicit `NeBot` parameter. The review probe `JetRateVacuityProbe.lean` proves that a generic limit predicate over `Filter.bot` can be discharged vacuously. This identifies a real proof-engineering hazard. The selected path, however, uses the concrete `GlobalBaseError.originPast` filter and non-vacuous local neighbourhood lemmas. A fatal result requires tracing a bot filter into a mandatory premise of `selected_witness` or `theorem_1_1`; that reachability has not yet been proved.
 
-The whole-space comparison chain also required a correction during the audit. It is not accurate to say that the final scalar rate inequality is passed into the endpoint as an unproved hypothesis. `WholeSpaceComparisonClosure.eq_of_pressure_flux_bound` constructs the rate bound through `ComparisonRateBound.exists_uniform_rate_bound`. In the preceding uniqueness chain, `PressureFlux.exists_uniform_actual_pressure_flux_bound` constructs the pressure-flux constant from the `PressureRecovery.Hypotheses` record and the associated energy and integrability estimates. This removes one proposed formal interface failure. It does not make the pressure reconstruction or localised energy argument automatically valid: those remain load-bearing analytic derivations whose hypotheses and whole-space interpretation require review.
+It is not accurate to say that the final scalar rate inequality is passed into the endpoint as an unproved hypothesis. `WholeSpaceComparisonClosure.eq_of_pressure_flux_bound` constructs the rate bound through `ComparisonRateBound.exists_uniform_rate_bound`. In the preceding uniqueness chain, `PressureFlux.exists_uniform_actual_pressure_flux_bound` constructs the pressure-flux constant from the `PressureRecovery.Hypotheses` record and the associated energy and integrability estimates. This removes one proposed formal interface failure. It does not make the pressure reconstruction or localised energy argument automatically valid: those remain load-bearing analytic derivations whose hypotheses and whole-space interpretation require expert verification.
 
 Similarly, omitted Ladyzhenskaya stress laws and fractional dissipation are not contradictions to a Newtonian C/D theorem. They matter to claims of physical robustness, not to literal compliance with the stated Newtonian problem.
 
@@ -122,27 +124,27 @@ Similarly, omitted Ladyzhenskaya stress laws and fractional dissipation are not 
 
 The follow-up `SelectedDependencyAxiomProbe.lean` reports the same three standard axioms for `ActualCandidateAssembly.selected_witness`, `ActualCandidateAssembly.physicalData`, `GluedStageEstimates.actualStageEstimates`, and `ActualCycleResidualBounds.Invariant.residual_jetRate`. This is negative evidence against a hidden custom axiom at those interfaces. It is also why the adverse finding is stated as a missing correspondence theorem rather than as a claim that the kernel accepted an explicit `axiom` or `sorry`.
 
-## 7. Conclusion
+## 7. Interim finding
 
 The honest adverse conclusion is not “Lean cannot prove this” and not “the force is illegal”. The checked evidence supports a narrower and stronger statement:
 
 > The repository has a formally accepted C/D-shaped R³ endpoint, and it contains paper-shaped, positive-order, and physical-rank moment constructions. The direct equality between two of those interfaces is formally impossible, while the positive-order layer supplies an exact five-row repair inside its own coordinates. The claim that the complete selected witness formally verifies one coherent Appendix A construction is therefore not established until the cross-layer correspondence and staging are made explicit and proved.
 
-That is already a valid counter-result against the stronger public claim of direct formal verification. The next decisive task is to either locate the missing bridge or prove that the selected witness depends on the mismatched coordinates without any valid conversion. Only the latter would justify escalating from “formal correspondence failure” to “the final theorem is false or unproved”.
+This is a valid adverse result against the stronger public claim of direct formal verification. It is deliberately narrower than a refutation of the exported existential theorem. The distinction is maintained throughout the remaining analysis: a missing bridge supports a correspondence finding, whereas a theorem-level refutation requires a contradiction or a false mandatory premise on the selected witness path.
 
-## 8. A formal consequence of the selected force construction
+## 8. Forcing and physical interpretation
 
 The source-level review yields an additional proposition that clarifies the nature of the claimed singularity. `CandidateConsequences.lean` derives, from `CandidateProperties u p f`, the existence of a time `t` with `0 < t < 1` and a spatial point `x` at which `f (t,x) ≠ 0`. The review probe `ForceActivityProbe.lean` restates this implication independently at the candidate interface.
 
 This result matters because it rules out an interpretation of the witness as an autonomous collapse occurring after an external driver has been removed. The force is active during the pre-singular interval. It is nevertheless not a contradiction of alternatives (C) or (D): the official formulation permits a smooth external force, and the accompanying paper itself defines the force from the momentum residual of the constructed fields. The correct conclusion is therefore semantic and mechanistic. The construction is continuously forced; it is not an unforced Navier–Stokes blow-up proof.
 
-## 9. Status of the adverse result
+## 9. Interpretation of the evidence
 
-The counter-paper's strongest formal result remains the moment-interface obstruction. The repository has three relevant layers: paper-shaped profile moments, an exact positive-order five-coordinate repair, and a physical rank interface with a three-coordinate residual debt. The checked direct bridge between the nominal and physical declarations is impossible, while the positive-order repair is exact within its own coordinates. Consequently, the public claim that the full Lean development verifies one coherent Appendix A construction is not established by the current source map. This is a failure of demonstrated formal correspondence, not yet a contradiction of the final C/D existential theorem.
+The strongest formal result remains the moment-interface obstruction. The repository has three relevant layers: paper-shaped profile moments, an exact positive-order five-coordinate repair, and a physical rank interface with a three-coordinate residual debt. The checked direct bridge between the nominal and physical declarations is impossible, while the positive-order repair is exact within its own coordinates. Consequently, the public claim that the full Lean development verifies one coherent Appendix A construction is not established by the source map examined here. This is a failure of demonstrated formal correspondence, not yet a contradiction of the final C/D existential theorem.
 
 The comparison-premise correction narrows that conclusion. The adverse report must not claim that a free scalar rate bound is smuggled into the endpoint. The remaining criticism is more demanding: the source derives the rate estimate, but the review must still determine whether the pressure recovery, flux control, and localised energy estimates actually prove the mathematical statements they assert for the selected fields.
 
-The distinction is essential. Kernel acceptance establishes the declared proposition. It does not supply a missing change of variables, prove that differently indexed debts have the same physical meaning, or convert a residual-defined force into an autonomous evolution. A future revision could close the gap by exposing those maps and proving their preservation properties. Until then, the appropriate scientific verdict is that the repository contains a substantial formal C/D-shaped result but has not demonstrated the stronger claim made for the complete paper-to-code correspondence.
+The distinction is essential. Kernel acceptance establishes the declared proposition. It does not supply a missing change of variables, prove that differently indexed debts have the same physical meaning, or convert a residual-defined force into an autonomous evolution. The appropriate scientific verdict is that the repository contains a substantial formal C/D-shaped result but has not demonstrated the stronger claim made for the complete paper-to-code correspondence.
 
 ## 10. Pressure recovery does not presently supply a contradiction
 
@@ -162,7 +164,7 @@ A natural countertest was to ask whether the two fixed rows in `FiveRowRank.Five
 
 This closes one proposed contradiction. It does not close the correspondence problem. The source still contains distinct nominal, positive-order, and physical-rank moment interfaces, and the inspected code does not expose one theorem identifying their coordinates and preserving the five published quantities across every hand-off. The correct adverse conclusion is therefore narrower: the fixed rows are not shown to be invalid because of nonzero initialization, but the complete paper-to-code correspondence remains unestablished.
 
-## 12. Reproducibility record
+## 12. Reproducibility and source scope
 
 - Source snapshot under review: OpenAI Navier–Stokes repository, commit `f9e8bc5` as recorded in the review materials.
 - Review branch: `review/cmi-first-navier-stokes-2026-09-22`.
@@ -170,7 +172,7 @@ This closes one proposed contradiction. It does not close the correspondence pro
 - New zero-sorry probes: `NavierStokesReview/src/probes/MomentCoordinateMismatchProbe.lean`, `MomentBridgeObstructionProbe.lean`, `FiveRowsStructureProbe.lean`, `MomentInitializationProbe.lean`, `SelectedDependencyAxiomProbe.lean`, the corrected `MainAxiomProbe.lean`, the compiled `ForceActivityProbe.lean`, the compiled `R3ComparisonPremiseProbe.lean`, and `MovingFieldRowNonImplicationProbe.lean`.
 - No source file in the OpenAI construction was edited.
 
-## 13. Source-scope qualification
+### 12.1 Source-scope qualification
 
 The source tree requires one further qualification. Direct compilation of `ComparatorChallenges/NavierStokes.lean` emits two Lean warnings because the whole-space and periodic challenge theorem bodies are `sorry`. That module is not imported by `NavierStokes/ComparatorSolution.lean`; the exported endpoint instead imports the independent comparator definitions and the project’s own bridge theorems. The headline endpoint therefore remains standard-axiom-only in its own report.
 
@@ -178,13 +180,13 @@ The warnings nevertheless contradict a blanket repository-level statement that e
 
 The selected witness is not a disconnected endpoint wrapper. `ActualCandidateAssembly.selected_witness` supplies the data consumed by the R³ theorem, and `GluedStageEstimates.actualStageEstimates` derives finite-stage residual rates from `ActualCycleResidualBounds.PhysicalData`. `ActualPhysicalPrefixFields.physicalFields_all` constructs that data from smooth stage realisations, local germ identities, pressure-germ identities, and exterior equality. This closes the provenance objection while leaving the cross-layer moment correspondence as the decisive unresolved claim.
 
-## 14. Empty-index branches do not by themselves refute the construction
+## 13. Totalised branches and reachability
 
 The particular-wave control layer contains an explicit case split on `Nonempty (ActivePair B N0)`. In the empty branch, `controlPatch l n k` is empty whenever a point is supplied, because membership in that patch includes `Active l n`; the jet estimates then follow from the empty-domain elimination rule. In the nonempty branch, the code reindexes an explicit surjection from `ℕ` onto `ActivePair B N0` and transports the selected estimates back to every active label.
 
 This is a legitimate totalisation of a family indexed by active pairs, not evidence that the headline theorem has been proved by `False.elim`. It does leave one precise audit obligation: the endpoint construction must show whether the selected witness uses a genuinely inhabited active family or whether the particular-wave contribution can be empty while the remaining slow-base construction still supplies the claimed blow-up. The branch itself is therefore a reachability question, not a formal contradiction. The review does not count it as a refutation without a theorem that the endpoint relies on a nonempty active family and that this family is empty.
 
-## 15. The selected closure contains both moment languages without proving their transport
+## 14. The selected closure contains both moment languages without proving their transport
 
 The import graph requires a more careful statement than either “the physical code omits the five moments” or “the import proves the bridge”. The selected dependency closure contains substantial uses of `FiveProfileMoments` in `NominalProfile`, `ModulatedHistories`, `ModulatedCone`, `ModulatedProfileAssembly`, `MatchingDebtBounds`, `RepairConeBounds`, and `ReservedPatches`. This is positive evidence that the paper-shaped moment language is present in the construction tree.
 
@@ -192,7 +194,7 @@ The cross-use in `ReservedPatches` is nevertheless limited in the inspected decl
 
 This distinction matters because `MeanRankUpdate` proves the physical-row identities entirely in terms of `FiveRowRank.Debt`, `FiveRowRank.FiveRows`, and a three-coordinate rescaling. The selected closure therefore contains both representations and several valid local identities, but the inspected source still lacks a named theorem carrying all five published quantities `(M, I, J, S, C_p)` through the nominal, positive-order, and physical-rank hand-offs. The result is a correspondence failure in the claimed paper-to-code narrative, not a contradiction of the exported C/D existential proposition. A definitive refutation would require proving that this transport is a mandatory false premise, rather than merely observing that it has not been stated.
 
-## 16. Regularity assumptions do not carry the moment equations
+## 15. Regularity assumptions do not carry the moment equations
 
 There is a second, more precise interface distinction. The actual cycle repeatedly uses `GaugeMomentBalances.MovingField` to express smoothness, radial support, and periodicity of moving fields. Those properties are analytically important, but they are not moment identities. This can be checked constructively in Lean rather than inferred from a source reading.
 
@@ -205,3 +207,9 @@ MovingField regularity  →  FiveRowRank.FiveRows.
 This result does not refute OpenAI's selected C/D endpoint. The selected physical rank path supplies a stronger theorem, `LocalRankDefect.RankGeometry.fiveRows`, which derives the row identities from the rank background, nonzero coefficients and velocities, interval geometry, and debt data. The correct criticism is therefore not that the repository contains no row solve. It is that the publication must show how the five paper quantities `(M, I, J, S, C_p)` become the concrete data consumed by that stronger rank-geometry theorem. A generic regularity premise cannot fill that semantic gap.
 
 This strengthens the counter-paper's central distinction. The code can contain a valid physical row repair and a valid paper-shaped five-moment repair while still lacking a proved theorem that they describe the same stage and the same quantities. Until that transport theorem is supplied and traced into `selected_witness`, the broad claim of faithful formalisation remains unestablished, even though the abstract C/D proposition remains formally unresolved.
+
+## 16. Conclusion
+
+The audit establishes three different facts that must not be conflated. First, the repository contains a Lean-checked whole-space and periodic proposition with the outer form of alternatives (C) and (D). Second, the selected construction is residual-forced through the approach to the singular time, and the repository contains substantial exact moment-repair machinery. Third, the inspected source does not prove the correspondence required to identify its paper-shaped, positive-order, and physical-rank interfaces as one implementation of the published five-moment construction.
+
+Accordingly, the answer to the public claim is negative in its strong form: faithful formal verification of the published construction has not been demonstrated. The answer is not yet a formal refutation of the exported C/D existential proposition. That stronger conclusion would require a zero-sorry contradiction or a false premise proved to be mandatory on the selected witness path. The present paper therefore rejects an overclaim while preserving the narrower theorem that the Lean kernel actually checks.

@@ -1,5 +1,7 @@
 # Input Document Synthesis for the Navier–Stokes Counter-Paper
 
+*Synthesis memorandum. This document consolidates supplied criticisms into evidence-backed propositions; it is not the research paper or the execution tracker.*
+
 ## Purpose
 
 The supplied reports and notes are treated as proposed adverse hypotheses. They are not treated as evidence merely because they are detailed. Each proposition is compared with the official paper and then tested against the actual Lean source tree.

@@ -1,5 +1,7 @@
 # CMI-First Counter-Paper Review Plan
 
+*Research protocol. The tracker records execution; this document defines the method and escalation rules.*
+
 ## Objective
 
 Write an evidence-based paper that tests the official OpenAI claim against the mathematical statement it purports to formalise. The goal is an honest disproof where the source permits one, not a compilation report and not a physical objection substituted for a theorem.
@@ -69,7 +71,7 @@ Write the smallest zero-sorry probe that tests a load-bearing statement. Do not 
 
 The counter-paper may state that OpenAI's stronger claim of faithful formalisation is not established when a required bridge is absent or a selected-path premise is false. It may state “formal disproof” only after a zero-sorry Lean theorem proves the contradiction or a false premise is shown to be mandatory. A physical objection, a missing regularisation, active forcing, or a generic filter hazard must remain in its own category until it reaches the C/D endpoint.
 
-## Active work update: 2026-09-23
+## Current protocol position
 
 The plan now has two live proof-bearing lanes and three closed or bounded lanes.
 
@@ -91,19 +93,19 @@ The moment lane now has a source-map test in addition to the type-level probes. 
 
 Use “formal disproof” only after a zero-sorry contradiction or a false mandatory premise has been proved. Use “formal correspondence failure” when the code and paper are not connected by a required theorem. Do not escalate a semantic criticism into a theorem-level verdict.
 
-## Current adjudication: pressure and uniqueness
+### Pressure and uniqueness
 
 The pressure/uniqueness chain has now been inspected beyond its exported theorem names. The temporal recovery theorem uses compact temporal tests and continuity to obtain interior-time equality. The spatial step uses an explicit Fourier Sobolev bound and a weighted `L²` representative to eliminate compactly harmonic functionals. The comparison closure constructs its scalar rate bound internally, while the pressure-flux constant is constructed from the pressure-recovery hypotheses.
 
 This lane does not presently yield a formal disproof. Its status is “analytically load-bearing, no checked contradiction”. The review must not describe the rate bound as an imported premise or describe the pressure route as absent. The decisive remaining routes are the cross-layer moment bridge, a selected-path filter-collapse proof, or a concrete false identity in the pressure/energy estimates.
 
-## Current adjudication: fixed moment rows
+### Fixed moment rows
 
 The preserved-mass lane was tested against the selected witness and closed as a route to contradiction. The initial state is explicitly tagged with `ActualInitialization.initial_zeroMasses`, and the temporal and rank corrections preserve that invariant. `MomentInitializationProbe.lean` compiles the relevant theorem with no added assumptions.
 
 The next decisive moment test is therefore not whether the fixed rows start at zero. It is whether the source proves a cross-layer map from those rows and the three debt coordinates to the five published quantities `(M, I, J, S, C_p)`, and whether that map is preserved through the selected construction.
 
-## Source-scope correction
+### Source-scope correction
 
 The zero-sorry test must be scoped to the exported proof path. Direct compilation of `ComparatorChallenges/NavierStokes.lean` emits two `sorry` warnings, but `NavierStokes/ComparatorSolution.lean` does not import that challenge module. The headline endpoint remains standard-axiom-only in its own dependency report. The review therefore records a repository-level metadata defect without misclassifying it as a contradiction of the selected C/D theorem.
 
@@ -111,7 +113,7 @@ The selected-stage trace is explicit: `ActualCandidateAssembly.selected_witness`
 
 The latest import-closure census refines that lane. The selected closure contains real `FiveProfileMoments` uses in `NominalProfile`, `ModulatedHistories`, `ModulatedCone`, `ModulatedProfileAssembly`, `MatchingDebtBounds`, `RepairConeBounds`, and `ReservedPatches`. In `ReservedPatches`, the identified cross-use proves support of nominal bump edits and agreement of heated fields with a `FiveRowRank.background`; it does not transport the five nominal moment rows into `FiveRowRank.FiveRows`. The next decisive test is therefore a theorem search for the full row, debt, and coefficient map, not a search for whether the nominal module is imported at all.
 
-## Regularity and row equations: adjudicated
+### Regularity and row equations
 
 `MovingFieldRowNonImplicationProbe.lean` now supplies a zero-sorry countermodel to the weaker implication that generic moving-field regularity entails the physical row equations. The zero moving field meets `MovingField` for every admissible region and bounds, but a constant nonzero debt makes the third `FiveRows` identity false. This probe is not a selected-endpoint refutation: the actual rank path invokes `LocalRankDefect.RankGeometry.fiveRows`, which derives the rows from a stronger background/rank model.
 
