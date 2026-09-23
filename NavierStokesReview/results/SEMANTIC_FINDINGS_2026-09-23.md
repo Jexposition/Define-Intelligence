@@ -103,17 +103,30 @@ The present evidence supports this narrower statement:
 
 No `[REFUTED]` seal is issued here. F-002 is a confirmed correction to the claim description. F-003 and F-007 remain open proof-content audits, while F-005 is now narrowed to a confirmed overstatement rather than an alleged missing energy derivation.
 
-## F-012 — Zero-angular repair claim is locally supported but physically overinterpreted
+## F-012 — Zero-angular repair claim is locally supported and reaches the construction path
 
-Status: `CONFIRMED local algebra; downstream semantic identification OPEN`
+Status: `CONFIRMED local algebra and downstream use; physical row-label identification OPEN`
 
 Evidence:
 
-- `NavierStokes/PositiveOrderMoments.lean:142-181` defines the three-component `angularDebt` target and proves exact moments for `repairE` under positivity, ordering, and exponent hypotheses.
-- `NavierStokes/FiveProfileMoments.lean:202-222` proves invertibility of the generalized power-moment matrix for injective exponents; `:274-285` proves injectivity of the three angular exponents.
-- `NavierStokes/FiveProfileMoments.lean:356-374` proves the normalized linear-plus-quadratic moment identity, with later local existence machinery solving the repair equation.
+- `NavierStokes/FiveRowRank.lean` explicitly declares the debt order `(P, Jθ, Jz)`, proves the three angular exponents are injective, and defines `FiveRows` as two zero-mass constraints plus three defect-cancellation rows.
+- `NavierStokes/CorrectionState.lean:449-476` and `DefectIncrementBounds.lean:776-787` carry those rows into the actual rank increment, rather than leaving them as an unused lemma.
+- `NavierStokes/BaseRankPatch.lean:337-352` proves the five rows for the actual final base from the proved patch identities, positivity, and nonzero coefficient/velocity scales.
+- `NavierStokes/PositiveOrderMoments.lean` and `FiveProfileMoments.lean` provide a related downstream positive-order repair path with exact moments, invertibility, support, and jet bounds.
 
-Conclusion: the supplied zero-angular attachment correctly describes a substantive three-equation local repair mechanism, subject to its hypotheses. It does not, from these declarations alone, establish that the three coordinates are exactly the physical quantities labelled `M_theta`, `-P_q`, and `-J_z,q`, nor that local repair completes the full Navier–Stokes residual cancellation. The appropriate finding is a semantic mapping obligation, not an absent-code finding.
+Conclusion: the supplied attachment describes a real local repair mechanism and the source proves its downstream use. However, the source's exact row order is `(P, Jθ, Jz)` and its first two `FiveRows` clauses are zero-mass constraints; the attachment's labels `M_theta`, `-P_q`, and `-J_z,q` are not yet shown to be a one-to-one transcription of those declarations. In addition, exact five-row cancellation is only one interface in the larger PDE argument. This is a row-semantics and sufficiency audit, not an absent-code finding.
+
+## F-013 — Five-row assumptions are supplied by the actual geometry, but remain interface boundaries
+
+Status: `CONFIRMED discharged for the inspected final-base call; full PDE sufficiency OPEN`
+
+Evidence:
+
+- `CorrectionInitialization.lean:4413-4431` constructs the rank geometry with positive patch radii, positive lengths, nonzero coefficients and nonzero velocities, and supplies the background/zero-axial patch identities from `BaseRankPatch.rank_fields`.
+- `BaseRankPatch.lean:347-352` discharges the corresponding hypotheses directly for the final base using `rankCoefficient_pos`, `rankLength_pos`, `rankVelocity_pos`, and `rank_fields`.
+- The theorem still proves only the five weighted integral rows. It does not, by itself, prove the complete residual estimate, pressure compatibility, smooth force extension, or CMI conclusion.
+
+Conclusion: the earlier suggestion that the rank proof merely accepts arbitrary `hV`, `hG`, `hC`, or `hU` at the final call site is not supported by the inspected source. Those assumptions are supplied by proved construction data. The remaining failure-to-claim lane is whether the row identities are sufficient for every later analytic interface, not whether this local call is vacuous.
 
 ## F-008 — Five-moment repair is present, but local algebra is not the whole PDE proof
 

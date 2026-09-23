@@ -257,11 +257,15 @@ uses a guarded `t < 1` hypothesis and `(1-t)^(-A)`, so the proposed Lean
 
 The five-moment repair machinery is present, imported into the candidate
 construction, and contains genuine determinant, inverse, moment, support, and
-jet lemmas. The pressure Fourier module is also real. However, the direct
+jet lemmas. The actual `FiveRowRank` call path additionally discharges its
+positive-radius, nonzero-scale, and patch-model assumptions from proved
+construction data. The pressure Fourier module is also real. However, the direct
 headline pressure route runs through the R3 Riesz-test, pressure-recovery,
 and pressure-flux hierarchy, so the supplied file-level attribution must be
-corrected. Local moment or pressure lemmas cannot be treated as the full PDE
-conclusion without tracing their downstream interfaces.
+corrected. The exact five-row declaration uses order `(P, Jθ, Jz)` and begins
+with two zero-mass constraints, which must be mapped explicitly to any
+manuscript labels. Local moment or pressure lemmas cannot be treated as the
+full PDE conclusion without tracing their downstream interfaces.
 
 One specification hazard remains active: `DiagonalResidual.JetRate` has no
 `NeBot` premise. The selected endpoint filter is nontrivial, but each derived
