@@ -93,3 +93,10 @@ The selected import closure does contain substantive nominal-layer code, so the 
 The interface audit now has a compiled countermodel. `GaugeMomentBalances.MovingField` records smoothness, radial support, and periodicity only. `MovingFieldRowNonImplicationProbe.lean` proves that the zero field satisfies this predicate while a constant nonzero debt makes the third `FiveRowRank.FiveRows` identity impossible for zero background and zero increments. Therefore the generic moving-field assumptions cannot be used as a substitute for the moment equations.
 
 The source does contain a stronger selected-path theorem: `LocalRankDefect.RankGeometry.fiveRows` obtains the physical rows from the rank geometry and the constructed rank increment. This changes the audit question from “is there any physical row solve?” to “does the rank geometry receive the same five published quantities repaired in the nominal and positive-order modules?” Until that transport is displayed, the paper-to-code correspondence remains unestablished, while the final C/D proposition remains formally unresolved rather than refuted.
+## Actual-field recomputation adjudication
+
+The official construction requires each correction to be recomputed from the updated divergence-free field. The selected Lean path contains actual local velocity and pressure germs in `PhysicalFields`, carries them through `StateRealization`, and proves `StateRealization.chartIdentity`, which reconstructs the Cartesian residual from those actual fields. The stale-background objection is therefore not supported by the selected source path. This is a cleared attack surface, not evidence that the analytic estimates are independently correct.
+
+## Filter adjudication
+
+The generic `JetRate` interface remains vacuous on `Filter.bot` because it lacks a `NeBot` condition. The selected endpoint uses `GlobalBaseError.originPast`, a neighbourhood-within filter with explicit pre-singular and scale-limit lemmas. The selected rate proof is therefore not shown to be vacuous. The synthesis retains the generic API hazard while withdrawing any claim that it already refutes the endpoint.

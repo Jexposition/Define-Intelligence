@@ -187,3 +187,14 @@ The selected import closure does contain the nominal moment layer. `NominalProfi
 The inspected `ReservedPatches` cross-use is not a transport theorem. `momentPatch` and `five_row_updates_supported` establish support for the nominal bump functions, while `radial_heated_fields` identifies the heated outgoing field with a `FiveRowRank.background` profile. No inspected declaration there equates `FiveProfileMoments.physicalMoments` with `FiveRowRank.FiveRows` or converts the nominal five-coordinate debt into the physical three-coordinate debt used by `MeanRankUpdate`.
 
 Ledger status: both representations are present; local support and background identities are proved; a complete five-row transport theorem remains unidentified. This supports a correspondence objection to the public narrative, not a kernel-level refutation of the C/D endpoint.
+## 20. Actual-field recomputation chain
+
+The selected endpoint is not connected only through nominal profile declarations. `ActualPhysicalPrefixFields.physicalFields_all` constructs `PhysicalData` from actual regularity, local velocity and pressure germs, and exterior agreement. `ActualCycleResidualBounds.Invariant.stateRealization` carries those fields into `StateRealization`. Its `chartIdentity` theorem reconstructs the Cartesian residual from the actual velocity and pressure after the polar inverse. This is positive provenance evidence for the paper's requirement that a correction be recomputed from the updated field.
+
+No contradiction was found in the stale-background attack on the selected path. This evidence does not prove the analytic estimates independently, nor does it identify the published five moments with every downstream physical row.
+
+## 21. Selected filter non-vacuity
+
+`DiagonalResidual.JetRate` has the generic form `∃ C, 0 ≤ C ∧ ∀ᶠ x in l, ...`; it has no `NeBot l` premise and is therefore vacuous at `Filter.bot`. The selected consumer is more specific. Its base filter is `GlobalBaseError.originPast`, defined as a neighbourhood-within filter at the endpoint, and the proof uses `originPast_before`, `originPast_tendsto`, and `originPast_q_tendsto_zero` before splitting on the selected region.
+
+The generic specification hazard is confirmed, but selected endpoint vacuity is not demonstrated. A future audit must census every other `JetRate` consumer rather than generalising this local result.

@@ -208,7 +208,15 @@ This result does not refute OpenAI's selected C/D endpoint. The selected physica
 
 This strengthens the counter-paper's central distinction. The code can contain a valid physical row repair and a valid paper-shaped five-moment repair while still lacking a proved theorem that they describe the same stage and the same quantities. Until that transport theorem is supplied and traced into `selected_witness`, the broad claim of faithful formalisation remains unestablished, even though the abstract C/D proposition remains formally unresolved.
 
-## 16. Conclusion
+## 16. Actual-field recomputation and endpoint-filter audit
+
+Two further tests were required before treating the correspondence objection as a refutation. The paper's Section 8.7 requires every correction to be recomputed from the updated divergence-free velocity, rather than from a stale background field. The selected Lean path contains a corresponding obligation. `PhysicalFields.velocity_germ` and `PhysicalFields.pressure_germ` identify the actual local fields, `StateRealization` carries those identifications into the residual stage, and `StateRealization.chartIdentity` reconstructs the Cartesian residual from the actual velocity and pressure through the polar inverse. This is positive source evidence that the selected endpoint is not merely a disconnected wrapper around nominal profile data.
+
+The filter objection also requires path-level rather than generic reasoning. `DiagonalResidual.JetRate` is indeed true on `Filter.bot` in the absence of a `NeBot` premise. However, the selected endpoint does not use an arbitrary filter at its final step. Its `originPast` filter is a neighbourhood-within filter at the singular endpoint, and the selected-rate proof uses the established pre-singular relation and positivity of the scale factor. The generic definition remains a specification hazard for other consumers, but the inspected endpoint path does not yield a vacuous proof by `Filter.bot`.
+
+These tests remove two candidate contradictions. They do not prove the analytic estimates independently of Lean, and they do not supply the missing named theorem that transports the published quantities `(M, I, J, S, C_p)` through the nominal, positive-order, and physical-rank layers. The remaining correspondence criticism is therefore a live proof obligation, not a proved contradiction.
+
+## 17. Conclusion
 
 The audit establishes three different facts that must not be conflated. First, the repository contains a Lean-checked whole-space and periodic proposition with the outer form of alternatives (C) and (D). Second, the selected construction is residual-forced through the approach to the singular time, and the repository contains substantial exact moment-repair machinery. Third, the inspected source does not prove the correspondence required to identify its paper-shaped, positive-order, and physical-rank interfaces as one implementation of the published five-moment construction.
 
