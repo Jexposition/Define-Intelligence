@@ -166,11 +166,11 @@ The recommendation remains **major revision**, but for narrower reasons. The rep
 
 The proposed counter-argument asks whether Newton's third law forces
 
-\[
+$$
 \int_{\mathbb R^3} f(x,t)\,dx=0
 \quad\text{and}\quad
 \nabla\cdot f=0.
-\]
+$$
 
 Those conditions cannot be used as CMI disproof criteria without an additional theorem or admissibility assumption. In the forced alternatives, the external body force is not an internal stress. It may inject net momentum, and incompressibility is imposed on the velocity field rather than on the body force. The repository's `CandidateProperties` likewise requires force smoothness, positive-time support, rapid decay, the Navier–Stokes residual identity, and the stated energy/blow-up consequences, but not either proposed conservation identity.
 
