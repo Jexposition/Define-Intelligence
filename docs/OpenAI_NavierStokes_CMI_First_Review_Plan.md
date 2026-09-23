@@ -1,125 +1,118 @@
-# OpenAI Navier–Stokes Lean Review: CMI-First Plan
+# CMI-First Review Plan for the OpenAI Navier–Stokes Formalisation
 
-Status: active peer review. Formal trust and Lean-level CMI predicate matching pass; analytic peer review remains open. No negative CMI finding has been issued.
+## 1. Objective
 
-## 1. Review question
+Determine, by direct inspection of the Lean source and its mathematical interfaces, whether the OpenAI release establishes a valid solution to the Clay Mathematics Institute Navier–Stokes problem. The review must distinguish:
 
-Does the public Lean development prove one of the four statements in the Clay Mathematics Institute (CMI) problem specification, or does it only prove a related finite-time or forced construction? The review will keep three questions separate:
+1. what the Lean kernel checks;
+2. what proposition the source actually states;
+3. whether the selected construction supplies the premises of that proposition; and
+4. whether the proposition corresponds to the claimed Clay alternative.
 
-1. Does the code elaborate and kernel-check under a pinned Lean/toolchain/dependency snapshot?
-2. What proposition is actually proved, including all quantifiers, domains, regularity, support, viscosity, and energy clauses?
-3. Does that proposition imply CMI alternative (C) or (D) without an unproved bridge, hidden axiom, `sorryAx`, or semantic mismatch?
+The target is not compilation alone. A successful compile is evidence about elaboration and kernel acceptance; it is not evidence that the formal definitions encode the intended PDE argument.
 
-The local downloaded extraction is never edited. In this fork branch, the public review checkout is the repository root, with source commit `f9e8bc5b38b6e212696e8a30e3e91517af887bbd` and review commit `d22a07e66928213ecec94baa3165857431b13869`; review harnesses remain under `NavierStokesReview/src/`.
+## 2. CMI criteria
 
-## 2. CMI acceptance criteria
+The review uses the written Fefferman formulation as the primary specification. It must classify the result against all four alternatives rather than silently treating a forced construction as an unforced one.
 
-The official statement defines the incompressible Navier–Stokes system on `R^3` or periodic `R^3/Z^3`, with `nu > 0`, smooth divergence-free initial data, smooth external forcing, the PDE, the initial condition, and physically reasonable solutions. For whole space, the accepted solution class requires `p,u` smooth for all `t >= 0` and uniformly bounded kinetic energy. The CMI alternatives are:
-
-- **(A)** global smooth bounded-energy solution on `R^3` for every admissible datum with `f = 0`;
-- **(B)** the periodic analogue with `f = 0`;
-- **(C)** an admissible whole-space datum and force for which no such global solution exists;
-- **(D)** the periodic analogue.
-
-The CMI document explicitly permits an external force in the problem statement. Therefore, “the construction is forced” is not by itself a CMI failure. The decisive checks are whether the force has the required smoothness/decay or periodicity, whether the prescribed data meet the conditions, and whether the nonexistence conclusion is for the exact CMI solution class.
-
-Primary reference: [Fefferman, official CMI problem statement](https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf), especially equations (1)–(11) and alternatives (A)–(D).
-
-### CMI prize-procedure gate
-
-The mathematical statement and the prize procedure are separate tests. CMI's current rules require qualifying publication, at least two years since publication, and general acceptance in the global mathematics community before CMI considers a proposed solution. CMI does not accept direct unsolicited submissions. Its 11 September 2026 announcement describes the Navier–Stokes claim as apparently settled and says the work is being analysed; it is not a prize determination.
-
-Primary procedural references: [CMI rules](https://www.claymath.org/millennium-problems/rules/) and [CMI Navier–Stokes announcement](https://www.claymath.org/news/navier-stokes-announcement/).
-
-## 3. Current source map
-
-| Layer | Current public path | Review purpose |
+| Alternative | Core question | Review requirement |
 |---|---|---|
-| Entry point | `NavierStokes.lean` | Imports `ComparatorSolution` and `PaperResults`. |
-| CMI adapter | `NavierStokes/ComparatorSolution.lean` | Exposes theorem names for C and D. |
-| Whole-space target | `NavierStokes/R3/ProblemStatement.lean` | Defines `CandidateProperties`, `candidateStatement`, and `breakdownStatement`. |
-| Main whole-space theorem | `NavierStokes/R3/Theorem.lean:26-62` | Claims the selected construction for every positive viscosity. |
-| Candidate witness | `NavierStokes/R3/ActualCandidate.lean` | Supplies the selected fields and properties. |
-| CMI bridge | `NavierStokes/R3/ComparatorBridge.lean:22-88` | Converts compact support and a global comparator solution into the contradiction. |
-| Periodic route | `NavierStokes/PeriodicPaperTheorem.lean` and `NavierStokes/PeriodicPaperComparator.lean` | Separate C/D periodic construction and bridge. |
-| Challenge stubs | `ComparatorChallenges/*.lean` | Independent Comparator benchmark files; intentional `sorry` placeholders must not be confused with the main theorem dependency. |
+| A | Global smooth solution for unforced flow on `R³`. | Verify `f = 0`, all-time regularity, energy bounds, and the exact domain. |
+| B | Global smooth solution for unforced periodic flow. | Verify periodicity, `f = 0`, and all-time regularity independently of A. |
+| C | Breakdown for a smooth decaying force on `R³`. | Verify force class, PDE, initial data, divergence constraint, energy, and finite-time breakdown. |
+| D | Periodic forced analogue. | Verify the periodic forced theorem separately. |
 
-The local extraction dated 2026-09-08 has 2,486 Lean files and imports only `NavierStokes.ComparatorSolution` at its top-level entry point. The public checkout dated 2026-09-10 has 2,659 Lean files and imports `NavierStokes.PaperResults` as well. All conclusions must identify which tree they concern.
+The official statement may permit smooth external forcing in C and D. Therefore “the force is engineered” is not by itself a formal mismatch with C or D. It is a causal and interpretive objection unless the formal force fails the stated smoothness, support, or decay conditions.
 
-## 4. Review workflow
+## 3. Evidence classes
 
-1. **Freeze provenance.** Record source path, public URL, commit, file counts, SHA-256 hashes for manifests and theorem files, and whether the local zip matches the extracted tree.
-2. **Reproduce builds.** Inventory the requested Lean 4.32 environment using `D:\Research Lab\V-lab-Equipment\.lake\packages-4.32`, then separately test the repository-declared Lean 4.34.0-rc2 environment. The 4.32 cache currently contains `mathlib` but no `Comparator`, while this repository declares matching 4.34.0-rc2 revisions. Do not call that incompatibility a source failure.
-3. **Kernel and axiom audit.** Build the main targets, collect `#print axioms` for every exported theorem, and search for `sorry`, `admit`, `axiom`, `opaque`, `unsafe`, and imported declarations that introduce `sorryAx`.
-4. **Statement audit.** Expand every definition in the CMI path and produce a quantifier/domain table. Check viscosity scaling, time domain, initial condition, spatial decay/support, periodicity, pressure sign, Laplacian, divergence, and energy quantifiers.
-5. **Bridge audit.** Trace the exact dependency chain from the selected witness to `ComparatorSolution`. Check that each conversion preserves the same `nu`, `u0`, `f`, PDE convention, smoothness domain, and energy bound.
-6. **Mathematical stress tests.** Target the highest-risk lemmas: compact support to CMI force decay, local pre-singular fields to a global nonexistence statement, uniqueness/continuation assumptions, viscosity rescaling, endpoint regularity, and any use of integrability or measure-theoretic coercion.
-7. **Independent reproduction.** Run the public build and Comparator instructions from a clean review checkout. Compare outputs against the pinned manifests and record exact commands and failures.
-8. **Verdict discipline.** Use `CONFIRMED`, `PENDING`, `OPEN`, or `NOT_TESTED_THOROUGHLY`. A negative verdict requires a concrete countermodel, failed kernel check, invalid implication, or an explicit CMI criterion not met. Numerical scans and textual suspicions are evidence for a test, not a verdict.
+Each conclusion receives one evidence label:
 
-## 5. Highest-value potential failure modes
+- **Kernel evidence:** theorem declaration, proof term, `#print axioms`, and import reachability.
+- **Source-semantic evidence:** definitions, quantifiers, domain types, support predicates, and interface fields.
+- **Mathematical adequacy evidence:** proofs that the constructed fields satisfy the analytic hypotheses used by the interfaces.
+- **Interpretive evidence:** relation to autonomous dynamics, physical forcing, altered constitutive laws, and human-readable mathematical meaning.
 
-- **Statement weakening:** proving blow-up only on `0 <= t < 1` without proving that no global solution in the CMI class exists for the same data and force.
-- **Bridge mismatch:** a comparator solution uses a different force, pressure sign, viscosity, initial datum, or time convention than the candidate theorem.
-- **Support/decay mismatch:** compactness is only spatial, only temporal, or established for a transformed field rather than the exact force in CMI (5)/(9).
-- **Regularity boundary:** `ContDiffOn` on a pre-singular domain is used as if it supplied the all-time regularity required of a hypothetical global comparator solution, or differentiability at the endpoint is silently used.
-- **Scaling error:** the positive-viscosity rescaling changes the force or energy class in a way not covered by the stated lemmas.
-- **Axiom contamination:** the exported theorem depends on `sorryAx`, an unreviewed axiom, or an opaque declaration whose semantic content is stronger than its proved interface.
-- **Environment drift:** the downloaded snapshot and public `main` differ, or the proof only builds under a different Lean/mathlib revision than the one being audited.
+Interpretive evidence may limit the claim, but it must not be presented as a Lean counterexample. Conversely, a kernel theorem cannot be treated as a mathematical solution until source-semantic and adequacy checks are complete.
 
-## 6. Evidence policy
+## 4. Work packages
 
-Each finding must contain: source snapshot, exact file and line, proposition or declaration, command used, observed output, CMI criterion affected, severity, and a proposed reproduction. No source file under `NavierStokesAndEuler-main-open Ais solution` will be modified. Review code and scripts belong under `NavierStokesReview/src/audit/`.
+### WP-1: Provenance and reproducibility
 
-## 7. Immediate next actions
+Record the upstream commit, review-branch commits, file manifests, archive hashes, Lean toolchain, Mathlib revision, and Comparator revision. Keep the pinned 4.34.0-rc2 build distinct from the user-requested 4.32 package environment.
 
-1. Complete the proof-relevant map of derived filters used by residual-rate
-   consumers, including any `Filter.inf` and principal restrictions.
-2. State the one-sided `ContDiffOn`/`iteratedFDerivWithin` convention explicitly
-   and obtain a textbook-equivalence review for the CMI boundary notation.
-3. Verify the common physical-domain and premise provenance links from the
-   inverse/correction constructions to the selected R3 witness.
-4. Obtain independent PDE peer review of the remaining analytic lemmas; keep
-   this separate from the completed kernel axiom reports.
+**Exit condition:** another reviewer can identify the exact source tree and reproduce each reported command.
 
-## 8. Source-draft disposition
+### WP-2: Statement and quantifier audit
 
-The supplied drafts were read as review hypotheses, not as established findings. Their useful claims are converted into tests below.
+Trace `ProblemStatement`, `ComparatorDefinitions`, `ComparatorSolution`, `R3/Theorem`, and the periodic theorem. Construct a table for domain, time interval, viscosity, pressure, velocity, force, initial data, divergence, energy, decay, and singularity clauses.
 
-| Draft claim | Source-backed disposition | Review treatment |
+**Exit condition:** every clause in the claimed C/D theorem is mapped to an explicit Lean proposition, with no inference from names or comments.
+
+### WP-3: Candidate-construction audit
+
+Trace `ActualCandidateAssembly` through `GermCandidateAssembly`, `GluedStageEstimates`, `ActualCycleResidualBounds`, `PhysicalData`, and the finite-stage invariant. Verify whether every rate and regularity field is constructed or merely passed as a premise.
+
+**Exit condition:** a complete dependency diagram from finite-stage data to `CandidateProperties`.
+
+### WP-4: Force and causality audit
+
+Inspect `CandidateFromLimits` and the residual trace. Prove the exact intervals on which the force is zero, active, or identified with the residual. Audit smooth extension at the temporal cutoffs and derivative decay at spatial infinity. Separately record that no causal-independence predicate is present.
+
+**Exit condition:** a formal force timeline and a classification as literal C/D compliance, causal concern, or actual predicate failure.
+
+### WP-5: Filter and asymptotic audit
+
+Audit every `JetRate` consumer. Add zero-sorry probes for bottom-filter vacuity, endpoint non-vacuity, and the exact derived filter in the selected path. Determine whether a bottom filter is possible and whether any headline theorem consumes a proposition that becomes vacuous there.
+
+**Exit condition:** either a proved `NeBot` result for every load-bearing filter or a formally demonstrated vacuity path.
+
+### WP-6: Moment, pressure, and PDE interface audit
+
+Map the five moment rows, determinant/invertibility facts, pressure recovery, pressure flux, Riesz hierarchy, whole-space uniqueness, and comparison closure. Test that the hypotheses are attached to the correct functions and domains.
+
+**Exit condition:** no unexplained interface boundary between stress matching, exact velocity construction, residual flattening, pressure recovery, and final non-existence.
+
+### WP-7: Axiom and contradiction audit
+
+Run `#print axioms` on the headline exports under the pinned toolchain. Search actual imports for `sorry`, custom axioms, and admitted declarations. If a proposition mismatch is found, write the smallest zero-sorry Lean witness that derives the contradiction or exhibits the vacuity. Do not add a theorem that merely restates a criticism in prose.
+
+**Exit condition:** every stronger negative claim is backed by a source proposition, a reproducible command, and, where possible, a checked Lean witness.
+
+## 5. File-to-question map
+
+| Review question | Primary files | Required result |
 |---|---|---|
-| A forced construction cannot satisfy CMI | Incorrect as a general objection. CMI alternatives (C) and (D) explicitly include smooth forcing. | Test the exact force class, domain, decay, and quantifiers instead. |
-| The force is chosen a posteriori from the residual | Substantively accurate as a construction description: the main candidate witness existentially produces `forcing` after the candidate fields and residual estimates. | Treat as an interpretation/relevance concern, not a CMI failure unless the force class or quantifiers fail. |
-| Hyperviscosity or Ladyzhenskaya viscosity destroys the construction | This changes the PDE. It does not refute a theorem about the classical Newtonian `nu * Delta u` equation. | Keep as a robustness/physical-model question; do not use it as a counterexample to the stated CMI problem. |
-| The main result contains `sorry` or an assumed blowup axiom | Current lexical scan finds four intentional `sorry` lines in two challenge files and no source-level `axiom` declaration in the main result tree. Independent headline reports contain only standard foundations and no `sorryAx`. | Keep the challenge files isolated; do not treat their lexical placeholders as dependencies of the exported results. |
-| Lean compilation establishes the mathematical claim | Incorrect standard. Compilation only shows elaboration and kernel acceptance under a toolchain. | Use compilation only to obtain reproducible theorem and axiom evidence; perform the CMI and PDE audit separately. |
-| The candidate is merely an interface carrying the desired properties | Not established. `ActualCandidateAssembly.selected_witness` is obtained from `GermCandidateAssembly.exists_candidate_witness_of_finite_stages`, using `StageEstimates`, support, endpoint, cone, and residual inputs. | Audit those finite-stage estimates and their dependencies line by line. |
+| What is claimed? | `ComparatorDefinitions.lean`, `ComparatorSolution.lean`, `R3/Theorem.lean` | Exact theorem and alternative classification. |
+| Is the force admissible? | `CandidateFromLimits.lean`, `ComparatorBridge.lean`, `CompactSpatialForceDecay.lean` | Smoothness, support, decay, and force timeline. |
+| Is the candidate actually constructed? | `ActualCandidateAssembly.lean`, `GermCandidateAssembly.lean`, `GluedStageEstimates.lean` | Interface-premise provenance. |
+| Can asymptotics be vacuous? | `DiagonalResidual.lean`, `ActualCycleResidualBounds.lean`, review probes | Non-vacuity or checked vacuity path. |
+| Are moments repaired? | `FiveProfileMoments.lean`, `LocalizedMomentRepair.lean`, `FiveRowRank.lean` | Row-by-row semantic mapping and rank audit. |
+| Is pressure closed? | pressure recovery, pressure flux, Riesz, uniqueness, comparison files | Hypothesis and domain closure. |
+| Does the result reach CMI? | `PeriodicPaperTheorem.lean`, `PeriodicPaperComparator.lean`, R3 comparator files | Separate C and D dispositions. |
 
-## 9. Current load-bearing proof path
+## 6. Contradiction protocol
 
-The R3 route currently reads as:
+A formal disproof is warranted only when the source exposes a proposition that cannot meet the claimed criterion. The sequence is:
 
-`ActualCandidateAssembly.selected_witness`
-→ `R3.ActualCandidate.of_localized_fields`
-→ `R3.Theorem.theorem_1_1_with_initial_rest`
-→ `WholeSpaceUniqueness.candidate_global_agrees_before_one`
-→ `CandidateBreakdown.no_global_solution_one`
-→ `ComparatorR3Bridge.comparator_of_breakdown`
-→ exported Comparator theorem.
+1. isolate the exact definition or theorem;
+2. identify the missing, false, or vacuous condition;
+3. write the smallest zero-sorry Lean probe;
+4. verify whether the probe is on the headline dependency path;
+5. state the result as a formal failure only if reachability and relevance are proved.
 
-The uniqueness bridge is materially stronger than a simple boundedness lemma. It invokes `PressureRecovery`, `PressureFlux`, `CompactComparisonBounds`, and `WholeSpaceComparisonClosure` to compare a compact candidate with an arbitrary smooth finite-energy competitor. The audit must therefore inspect those analytic interfaces and their exact hypotheses, not only the final theorem signature.
+The `JetRate` bottom-filter theorem already establishes a real local semantic hazard. It does not yet establish that the selected candidate theorem is vacuous. The next formal target is the exact `originPast ⊓ 𝓟 activeᶜ` filter.
 
-The finite-stage construction is also load-bearing. The selected witness uses a proved `StageEstimates` object and a theorem named `exists_candidate_witness_of_finite_stages`; this is not, by itself, an axiom or a `sorry`, but the contents and dependency graph of those estimates determine whether the advertised smooth residual and blowup properties are genuinely derived.
-# Snapshot update: 2026-09-22
+## 7. Acceptance criteria
 
-The review now distinguishes three artefacts that must not be conflated:
+The review can declare the claim formally established only if the source supplies a checked theorem whose type matches the intended CMI alternative, all interface premises are discharged on the selected path, no relevant admitted declaration is reachable, every load-bearing asymptotic filter is nontrivial, and the force/domain/regularity conditions are exact.
 
-1. the downloaded, non-Git checkout at `NavierStokesAndEuler-main-open Ais solution`;
-2. the current public clone at the repository root of this fork branch, pinned to commit `f9e8bc5b38b6e212696e8a30e3e91517af887bbd`;
-3. the independent review workspace under `NavierStokesReview`, which contains the census, probes, logs, and reports.
+The review can declare a formal failure only if a checked contradiction, a reachable admitted gap, a false theorem premise, or a proposition-to-criterion mismatch is demonstrated. Otherwise the correct status is **NOT ESTABLISHED**, with the unresolved obligations named explicitly.
 
-The current clone contains 2,659 project Lean files and 173 project files not present in the downloaded copy. The downloaded ZIP and current fork share 2,493 comparable text/source entries: 2,478 are identical after line-ending normalisation and 15 changed. The machine-readable comparison is `NavierStokesReview/evidence/download_snapshot_comparison.json`; the local checkout must still be pinned to the public commit for current conclusions.
+## 8. Deliverables
 
-The public CMI question is not rejected merely because the construction uses forcing. The official CMI statement explicitly permits smooth forcing in alternatives C and D. The decisive audit therefore remains: do the exported theorems prove the stated PDE, regularity, support/decay, initial-data, and no-global-solution clauses, and do their kernel-reported dependencies contain only accepted foundations? The separate Euler result is not itself one of the Clay prize alternatives.
-
-The current source census finds four actual `sorry` lines, all in the intentionally separate `ComparatorChallenges` files. The independent headline probes now report only `propext`, `Classical.choice`, and `Quot.sound` for all four Navier–Stokes declarations and both Euler declarations. The CMI quantifier probe also elaborates the whole-space and periodic exported statements. These results close the formal-trust inventory, while the half-space semantic correspondence, derived-filter map, common-domain coverage, and human PDE review remain open as recorded in `NavierStokesReview/results/COMPLETION_AUDIT_2026-09-22.md`.
+- this plan as the method and acceptance standard;
+- the axiom ledger as the assumption inventory;
+- the audit tracker as the evidence and status record;
+- `OpenAI_NavierStokes_Peer_Review_v1.md` as the formal referee report;
+- `OpenAI_NavierStokes_Research_Paper.md` as the human-readable synthesis.

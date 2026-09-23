@@ -1,303 +1,128 @@
-# A CMI-First Peer-Review Protocol for the OpenAI Navier–Stokes Lean Development
+# What the OpenAI Navier–Stokes Formalisation Establishes
 
 ## Abstract
 
-This paper records an independent, reproducible review of the Lean formalization accompanying OpenAI’s public claim concerning finite-time singularity formation for the three-dimensional incompressible Navier–Stokes equations. The review does not treat the words “blowup”, “formalized”, or “kernel checked” as interchangeable. It separates kernel validity, proposition content, and compliance with the official Clay Mathematics Institute formulation. The first local census finds a version drift between a downloaded extraction and the public repository’s later `main` commit. The public source exposes a whole-space theorem that claims a candidate construction for every positive viscosity and a bridge translating its nonexistence result into CMI alternative (C). The decisive work is therefore a transitive Lean axiom audit and a semantic audit of the candidate-to-comparator bridge, force decay, regularity domains, viscosity scaling, and periodic route.
+This paper examines the public Lean 4 formalisation released with OpenAI’s claimed finite-time Navier–Stokes breakdown construction. The central question is not whether the repository compiles. It is whether the propositions accepted by Lean, together with their definitions and interfaces, establish the mathematical claim made about the Clay Mathematics Institute problem.
 
-## 1. Scope and standard
+The audit finds a substantial formal development whose theorem shape is directed at forced alternatives C and D of the written Fefferman formulation. Existing independent Lean 4.34.0-rc2 reports support the theorem-level formal claim for those forced exports under standard kernel axioms. The construction defines the external force from the momentum residual of a selected collapsing field and keeps that force active through the approach to the singular time. This is materially different from an autonomous, unforced blow-up argument, although residual-defined forcing is not automatically disallowed by alternatives C and D. The source also contains a genuine asymptotic-specification hazard: `JetRate` has no non-vacuity condition and is true on the bottom filter. The selected endpoint filter is nontrivial, but the derived filter used by the residual path remains to be audited.
 
-The official CMI statement allows a smooth external force. For alternative (C), it asks for smooth divergence-free initial data and a smooth force satisfying the stated decay conditions such that no globally smooth, bounded-energy solution exists on `R^3 × [0,∞)`. Alternative (D) is the periodic analogue. A criticism based only on external forcing would therefore misstate the official target. A valid objection must identify a missing hypothesis, a false implication, a dependency on an untrusted declaration, or a mismatch in the exact PDE and solution class.
+The five-row moment-repair and pressure infrastructures are present; no row-drop or missing-pressure conclusion has been established. Conversely, the current review has not completed the analytic bridge from those modules to every required global condition. The responsible conclusion is therefore **claim not established**, not **formalisation refuted**.
 
-## 2. Reproducibility boundary
+## 1. Research question
 
-The downloaded directory `NavierStokesAndEuler-main-open Ais solution` has no Git metadata and was timestamped locally on 2026-09-08. The separately cloned public checkout is pinned to commit `f9e8bc5b38b6e212696e8a30e3e91517af887bbd`, dated 2026-09-10. The local tree contains 2,486 Lean files; the public checkout contains 2,659. The current entry point imports `NavierStokes.PaperResults`, while the downloaded entry point does not. Results referring to “the OpenAI repository” must therefore name the snapshot.
+OpenAI’s release is presented as a formal proof of finite-time breakdown for the three-dimensional Navier–Stokes equations. A peer review must answer two different questions:
 
-## 3. Formal claim map
+1. What theorem does the Lean source actually prove?
+2. Does that theorem satisfy the written CMI criteria and the mathematical meaning attributed to it?
 
-The public whole-space route is layered. `R3/ProblemStatement.lean` defines the candidate properties and breakdown statement. `R3/Theorem.lean:26-62` states `theorem_1_1_with_initial_rest`, `theorem_1_1`, `candidateStatement`, and `breakdownStatement`. `R3/ComparatorBridge.lean:22-45` converts compact support into the force condition used by the comparator, and lines 47-88 convert a hypothetical comparator solution into a global finite-energy solution, yielding the contradiction. This architecture is a useful review boundary because it exposes the exact lemmas where a semantic mismatch would occur.
+These questions cannot be answered by compilation alone. Lean checks a proof term against a type. It does not decide whether a definition faithfully captures a PDE concept, whether a supplied interface premise has been established from the construction, or whether a force selected from a solution is physically independent of that solution.
 
-## 4. Review hypotheses
+## 2. Scope and source
 
-The main risks are not the existence of many files by itself. They are: an exported theorem depending transitively on `sorryAx`; a bridge that changes viscosity, force, pressure sign, or time domain; compact support that does not imply the exact CMI decay condition used; endpoint regularity being conflated with global regularity; a scaling lemma that changes the quantified data; or a periodic theorem that is assumed rather than independently established. The Comparator challenge placeholders are intentionally retained benchmark stubs and will be treated separately from the main theorem dependency graph.
+The audited upstream snapshot is commit `f9e8bc5b38b6e212696e8a30e3e91517af887bbd`. The independent review is maintained on branch `review/cmi-first-navier-stokes-2026-09-22` in the companion repository. The source is reviewed directly rather than through extracted PDF text or early filenames from secondary notes.
 
-## 5. Methods
+The main source areas are:
 
-The review uses two toolchain lanes. The first is the requested Lean 4.32 environment with packages under `D:\Research Lab\V-lab-Equipment\.lake\packages-4.32`, used for compatibility and independent checks. The second is the repository-declared Lean 4.34.0-rc2 environment with mathlib and Comparator at their declared revisions, used to reproduce the public source. For each lane, the review records exact commands, compiler output, imported modules, and `#print axioms` results. Source files in the downloaded OpenAI extraction are not edited.
+- `ComparatorDefinitions.lean` and `ComparatorSolution.lean` for the formal target;
+- `NavierStokes/R3/Theorem.lean` and `NavierStokes/R3/ComparatorBridge.lean` for the whole-space route;
+- `ActualCandidateAssembly.lean`, `GermCandidateAssembly.lean`, and `ActualCycleResidualBounds.lean` for candidate construction;
+- `CandidateFromLimits.lean` for the force and endpoint construction;
+- `DiagonalResidual.lean`, `FiveProfileMoments.lean`, `LocalizedMomentRepair.lean`, `FiveRowRank.lean`, and the pressure hierarchy for the load-bearing interfaces.
 
-## 6. Formal and CMI-interface result
+## 3. The CMI alternatives and the formal target
 
-The public source has a concrete CMI-oriented theorem and bridge, while the downloaded snapshot is stale relative to `main`. The current lexical scan finds four intentional `sorry` placeholders in Comparator challenge files. Independent transitive reports for the six audited headline exports now contain only `propext`, `Classical.choice`, and `Quot.sound`; no `sorryAx`, native-evaluation axiom, or project-specific axiom appears. The formal-trust gate is therefore closed for those exports, while analytic peer review remains separate.
+The unforced alternatives A and B concern global regularity for `f = 0`, respectively on Euclidean space and the periodic domain. The forced alternatives C and D permit a smooth external force subject to the stated decay and domain conditions. A theorem about a forced construction must therefore be classified as C or D unless the source separately proves that the force is identically zero.
 
-## 7. Planned findings structure
+The inspected comparator definitions encode smoothness, the Navier–Stokes equations, incompressibility, initial data, integrability, and energy conditions. The whole-space theorem quantifies over positive viscosity and is translated into a forced comparator statement. The periodic route is represented separately and cannot be inferred from the whole-space route.
 
-Each finding will state the snapshot, exact declaration, CMI criterion, proof dependency, reproduction command, observed result, severity, and remediation or rebuttal. Numerical experiments, prose concerns, and failed builds caused solely by using the wrong toolchain will remain labelled as review evidence rather than proof failures.
+This establishes the correct formal target: the release is not an A/B proof merely because the velocity becomes unbounded. The relevant question is whether its C/D theorem is complete and correctly connected to the construction.
 
-## 8. Current evidence update
+## 4. The force is an a posteriori residual
 
-The downloaded ZIP is not simply an unrelated tree: all 2,493 comparable source/text entries are present in the public fork, with 2,478 unchanged after line-ending normalisation and 15 changed. The review therefore pins the public commit and treats the ZIP as a comparison snapshot rather than silently substituting it for current source.
+In `CandidateFromLimits.lean`, the force is obtained through a smooth extension of the traced momentum residual:
 
-The source audit confirms four actual `sorry` declarations, all in the separately named `ComparatorChallenges` files. The reviewed Navier–Stokes and Euler result modules do not import those challenge files lexically. The periodic route also explicitly declares pressure periodicity in `PeriodicPaperTheorem` and supplies it in `PeriodicComparatorSolution`, correcting the older supplied criticism that this condition was absent.
+\[
+ f = \operatorname{smoothExtension}\bigl(\operatorname{tracedResidual}(u,p,L)\bigr).
+\]
 
-No concrete CMI statement mismatch has been demonstrated in the source-level pass. The R3 adapter has the forced-C shape required by the official Clay statement, and the force is existentially constructed after the candidate fields. That a-posteriori construction is a legitimate peer-review question, but not a CMI violation unless the resulting force or bridge fails the official hypotheses. The completed `#print axioms` reports close the formal-integrity gate for the audited exports. An independent zero-sorry force-bridge probe also elaborates the implication from compact smooth positive-time support to the full Comparator force-decay predicate.
+On the active interval `0 ≤ t < 1`, the source identifies the force with the activated residual of the selected fields. The source proves that the force is zero for `t ≤ 0` and `t ≥ 2`; it does not prove that the force is switched off on an interval before the singular time `t = 1`.
 
-# Current review position: 2026-09-22
+This has two consequences. First, the construction is a tracking-force construction: the forcing is selected after the candidate velocity and pressure have been specified so that the residual is supplied as the external term. It does not prove autonomous singularity formation. Second, the fact that the force is engineered is not, by itself, a formal violation of C or D, because those written alternatives allow an external force. The decisive internal test is whether the resulting force satisfies every smoothness, support, and derivative-decay condition in the comparator predicate.
 
-The current public snapshot is materially newer than the downloaded directory. The review therefore uses the public Git clone as the primary source and preserves the downloaded directory as a comparison snapshot. The latest public README claims forced breakdown alternatives in whole-space and periodic settings, while also presenting a separate unforced Euler result. The official Clay statement permits smooth forcing in its C and D alternatives, so the presence of forcing is not, by itself, a failure to address the Millennium problem.
+The formal predicates inspected in `ComparatorDefinitions.lean` do not include a causal-independence condition requiring `f` to be chosen independently of `u`. That omission limits the physical interpretation of the result, even if the literal forced alternative is eventually verified.
 
-The central peer-review question is narrower and more testable: whether the Lean theorem chain establishes the exact Clay quantifiers and analytic conditions, rather than a proposition with similar vocabulary. In particular, the review follows the chain from the exported adapters through `ComparatorR3Theorem`, the R3 candidate construction, the periodic compression and periodisation route, and the global-solution definitions. It also separates the challenge files, which contain intentional placeholders, from the main result path until the import graph proves otherwise.
+## 5. From finite-stage data to the candidate
 
-The first machine census found 2,659 project Lean files and 173 files added relative to the downloaded copy. It found no lexical `sorry` in the four exported result files. The independent reports now confirm the formal-trust status, and the CMI quantifier and force-bridge probes confirm the Lean-level statement mapping. The appropriate status is therefore a formal-trust pass with analytic peer review still open. The stopped dependency build was an environment limitation, not evidence of a theorem failure.
+The generic assembly uses a `StageEstimates` interface containing finite background and residual rate bounds. It would be an overclaim to say that the final result simply assumes the desired conclusion: the selected path constructs `actualStageEstimates` from `ActualCycleResidualBounds.PhysicalData`. The residual rate is then derived from the invariant, native residual bound, and local/exterior field germs.
 
-One suspected bridge failure was also checked and not found at source level: `CandidateProperties.not_global_agreement` bounds a global smooth comparator on the candidate's fixed compact spacetime support and uses that bound against the candidate's unbounded speed. It does not claim that a uniform finite-energy bound alone implies an `L∞` bound.
+This does not remove the audit obligation. It relocates it. The review must verify that the invariant-to-rate derivation supplies all derivative orders, domains, and asymptotic exponents required by the candidate assembly. A structure field named “physical data” is not itself a proof that the intended PDE estimates hold globally.
 
-The finite-stage construction was then audited at its load-bearing interfaces. `StageEstimates` explicitly carries raw smoothness, growth, field bounds, background rates, and residual rates. The actual constructor obtains these from concrete cycle data, representations, coherence, and physical-field data. The source path does not expose a missing residual estimate disguised as a theorem conclusion. A related specification concern remains: `JetRate` is only an eventual inequality for `iteratedFDeriv` and does not itself bundle smoothness. Because the stage record separately requires `ContDiffOn` for the raw fields, and the inspected residual-stability consumers likewise require explicit smoothness, this is not currently a CMI failure. A complete endpoint-consumer audit is still required.
+The relevant distinction is between a conditional construction theorem and a completed application of that theorem. The source contains evidence for the latter’s dependency chain, but the independent audit has not yet discharged every analytic interface.
 
-The pressure-flux uniqueness route was also traced. The localized closure theorem receives an explicit pressure-flux inequality, but the R3 uniqueness theorem derives that inequality through pressure-gradient recovery from the comparison equations and finite-energy hypotheses, then through canonical Riesz pairing and cutoff estimates. Compact support supplies the reference-field bounds; the competing global solution supplies smoothness and uniform finite energy. No source-level circular assumption of global agreement was found. This remains a structural source result rather than an independent validation of the analytic proof terms; its inspected kernel footprint is now recorded as standard-only in the intermediate report.
+## 6. The filter non-vacuity problem
 
-An independent September 2026 semantic-coverage preprint identifies three further source-level tests: a common positive domain for every inverse and differentiated inverse, term-by-term residual closure through curl, self-interaction, pressure, mean, support, and normalisation terms, and derivative-loss bounds independent of correction stage. The present audit records these as open leads. They sharpen the review method without establishing a defect: a zero-sorry kernel proof can validate an abstraction while leaving the paper-to-abstraction correspondence underexamined.
+The asymptotic predicate `JetRate` is defined in `DiagonalResidual.lean` by an eventual derivative bound:
 
-The subsequent source pass partially resolved those leads. `SmoothFamilyTorusInverse.inverse_finiteJets` explicitly fixes a five-derivative loss, `PhysicalResidualJetBounds` expands the residual into source, mean, base, Gaussian, alias, and excluded contributions, `ActualCycleResidualBounds` carries a derivative-order loss through all correction indices, and the endpoint adapter derives smooth extensions from `OneSidedExtension`, joint limits, and `PhysicalJets.of_rawStage`. These checks are meaningful positive evidence against an under-specified residual ledger. They do not by themselves establish one common inverse domain, prove the analytic provenance of every invariant and `PhysicalData` premise, or identify the torus candidate with the whole-space CMI witness. The semantic status therefore remains partially verified and open.
-
-The inverse call-site map narrows the common-domain concern. The universal
-torus estimate is specialised to a fixed `fiberShell a b s`; the radial
-source-jet induction preserves that same fibre and support interval; and the
-mixed-jet and real-complexification interfaces retain one slow parameter set.
-No empty-domain failure was found. The unresolved question is whether the
-conditions guaranteeing `a ≤ b`, nonempty fibres, and physical-domain
-coverage are visibly connected to the final selected witness and its R3
-localisation.
-
-The periodic-to-compact transition is also deliberate rather than contradictory. The periodic candidate layer is localised by `R3CompactCandidate`, and `R3/ActualCandidate` packages the resulting compact fields and positive-time compact force into the whole-space statement. The audit records this as a tested non-failure; the remaining concern is semantic correspondence and analytic peer review.
-
-## 9. External research update
-
-The external literature was checked as a prioritisation aid rather than as a substitute for inspecting the repository. An independent September 2026 semantic-coverage preprint identifies the same three high-value tests now tracked locally: common nonempty domains for all inverse constructions, term-by-term closure of the nonlinear residual and pressure/mean/support terms, and derivative-loss bounds independent of correction stage. The source audit has positive evidence for several interfaces, but the common physical-domain and torus-to-R3 correspondence remain open.
-
-A later arXiv paper studies data generated by the compact forced construction while explicitly taking the OpenAI theorem as an input. It is therefore downstream work, not independent validation. A separate neural-forcing paper provides a useful methodological warning that a computational objective is not a continuum proof certificate without a theorem and robust margin, but it does not audit this Lean repository. The exact sources and dispositions are recorded in `NavierStokesReview/results/EXTERNAL_RESEARCH_UPDATE_2026-09-22.md`.
-
-The external review does not change the current classification: no concrete CMI statement mismatch has been established, intermediate analytic declarations report only standard foundational axioms, and the completed headline transitive axiom audit reports the same standard set. The remaining open work is semantic correspondence and human PDE review.
-
-## 10. A concrete specification-quality finding
-
-The independent Lean probe also exposed a weakness in the generic residual
-rate interface. `DiagonalResidual.JetRate` quantifies over an arbitrary
-filter and requires only an eventual derivative inequality. On the bottom
-filter, every proposition is eventual, so the rate is provable for arbitrary
-functions, including functions for which the displayed iterated derivatives
-do not provide a smoothness certificate. This is a genuine formalisation
-issue and is now recorded as `AUD-046` with a zero-sorry kernel probe.
-
-It is not yet a disproof of the Navier–Stokes result. The principal path uses
-named approach filters such as `originPast`, and the review must establish
-their nontriviality and domain coverage at every load-bearing rate use. If
-those filters are proved nontrivial and all smoothness premises remain
-independent, the finding remains a reusable API warning rather than a CMI
-mismatch. If a bottom or unverified filter can reach the selected witness's
-residual closure, it becomes a proof-relevant defect.
-
-The principal `GlobalBaseError.originPast` filter has now been independently
-proved `NeBot`, clearing this concern for that endpoint. Derived intersections
-and local correction filters remain to be checked individually.
-
-The kernel audit meanwhile reached the direct pre-export layer. The R3 bridge,
-periodic paper theorem, and periodic comparator bridge each report only
-`propext`, `Classical.choice`, and `Quot.sound`.
-
-The Navier–Stokes part of that gate is now closed at the kernel level: the
-whole-space and periodic public exports, the R3 theorem, and the periodic
-corollary all report only the standard foundational axioms. The Euler exports
-now report the same standard foundational set. No audited headline declaration
-reports `sorryAx`, native evaluation, or a project-specific axiom. This closes
-the repository's formal-trust inventory under the declared toolchain, but it
-still does not establish the exact CMI analytic correspondence or CMI
-procedural acceptance.
-
-## 11. Completion status
-
-The independent formal-trust gate is now complete for the audited public
-exports. Under Lean 4.34.0-rc2, the whole-space and periodic Navier–Stokes
-exports, the R3 theorem, the periodic corollary, and both Euler exports report
-only `propext`, `Classical.choice`, and `Quot.sound`. The four lexical
-`sorry` declarations remain isolated in the separate Comparator challenge
-target and do not appear in any of the six headline transitive reports.
-
-The direct resumable compiler used for the Euler closure was an evidence
-collection mechanism only. It avoided the large intermediate IR footprint of
-the ordinary Lake closure and produced ignored interface files; successful
-elaboration was not used as a mathematical verdict.
-
-The CMI Lean-interface gate passes. The public statements elaborate with the
-expected whole-space and periodic quantifier shapes, and the source mapping
-covers the official PDE, force, decay/periodicity, pressure, and energy
-clauses. Three items remain for independent PDE review: textbook equivalence
-of the half-space `ContDiffOn` and within-derivative convention, proof-relevant
-nontriviality of every derived filter used by the residual-rate path, and
-explicit common-domain/premise provenance from the inverse/correction
-construction to the selected R3 witness.
-
-The strongest concrete formalisation issue found is generic rather than yet
-route-breaking: `DiagonalResidual.JetRate` is vacuous on the bottom filter.
-The selected `GlobalBaseError.originPast` endpoint is independently proved
-nontrivial, so the generic issue is recorded as an API risk, not as a negative
-finding against the exported theorem. The full disposition and evidence map
-are in `NavierStokesReview/results/COMPLETION_AUDIT_2026-09-22.md`.
-
-The exact endpoint check was then strengthened. `SpacetimeEndpoint.openPast 1`
-is the explicit set `Iio 1 ×ˢ univ`, and a zero-sorry Lean probe proves that
-`nhdsWithin (1, 0) (openPast 1)` is `NeBot`. Thus the selected endpoint is not
-an instance of the bottom-filter vacuity. The generic interface remains weaker
-than the semantic claim it is intended to represent: any derived intersection
-or local-correction filter used by a rate consumer must still be shown
-nontrivial or shown to carry the required domain coverage. This narrows, but
-does not eliminate, the formalisation-quality finding.
-
-## 12. Final peer-review disposition: 2026-09-22
-
-**Verdict: no, the OpenAI claim is not established as a completed CMI
-mathematical proof by this review.**
-
-The repository does establish a different and important result: the audited
-Navier–Stokes and Euler exports are kernel-checked Lean theorems, and their
-CMI-facing proposition shapes match the whole-space and periodic alternatives
-at the Lean-interface level. That answers the formal-trust question positively.
-It does not answer the mathematical peer-review question positively, because
-kernel checking validates the supplied formal premises and derivation, not the
-independent analytic truth or CMI correspondence of every imported premise.
-
-The final unresolved gates are construction-premise provenance, common-domain
-coverage for all inverse and correction operations, proof-relevant nontriviality
-of every derived filter, term-by-term residual and endpoint-force closure,
-independent pressure/energy comparison, and equivalence of the half-space
-smoothness convention to the CMI convention. No confirmed fatal counterexample
-was found in the audited bridge lanes. The correct classification is therefore
-`CLAIM NOT ESTABLISHED`, not `THEOREM REFUTED`.
-
-The complete disposition, evidence links, and conditions for changing the
-verdict are recorded in
-`NavierStokesReview/results/FINAL_PEER_REVIEW_VERDICT_2026-09-22.md`.
-
-## 13. Binary claim classification: 2026-09-22
-
-The review must distinguish the formal claim from the broader public reading
-of “proof of blow-up”. The answer is **yes** at the Lean formal-theorem level
-for the forced CMI Alternative C/D-shaped result. The exported theorem
-constructs a smooth positive-time force, uses zero initial velocity, and
-excludes every global smooth finite-energy solution with that same force. The
-CMI statement expressly permits such a force in Alternatives C and D.
-
-The answer is **no** for the unforced Navier–Stokes problem. The development
-does not prove that arbitrary unforced three-dimensional data blow up. The
-answer is also **not yet certified** for a complete human line-by-line review
-of every analytic certificate in the paper. This is a review boundary, not a
-Lean compilation objection and not a claim that a fatal formal counterexample
-was found.
-
-## 14. Independent semantic composition: 2026-09-23
-
-The semantic question was strengthened beyond matching OpenAI's own
-Comparator definitions. An independent audit repository supplies a separate
-Clay/Fefferman transcription, a Comparator-to-Clay bridge, and an end-to-end
-adapter. We compiled those three layers against the current public OpenAI
-source closure `f9e8bc5b38b6e212696e8a30e3e91517af887bbd`.
-
-The resulting declarations were:
-
-```text
-SemanticGap.ComparatorOptionC_to_ClayOptionC
-SemanticGap.ComparatorOptionD_to_ClayOptionD
-SemanticGapAdapter.openAI_to_ClayOptionC
-SemanticGapAdapter.openAI_to_ClayOptionD
+```lean
+∃ C, 0 ≤ C ∧ ∀ᶠ x in l,
+  ‖iteratedFDeriv ℝ m f x‖ ≤ C * q x ^ r
 ```
 
-All four report only `propext`, `Classical.choice`, and `Quot.sound`. The
-bridge checks equation conventions, divergence, decay predicates,
-periodicity, the energy condition, and the contradiction direction for global
-solutions. This is positive evidence that the current formal result has the
-right forced CMI meaning. It does not convert the forced result into an
-unforced A/B theorem. The raw transcript is in
-`NavierStokesReview/results/INDEPENDENT_CLAY_BRIDGE_CURRENT_2026-09-23.txt`.
+There is no `NeBot l` hypothesis. In Lean’s filter semantics, `Filter.bot` represents an empty eventuality context. Every eventual proposition holds on that filter. A zero-sorry probe in the review repository proves that arbitrary `JetRate` claims can therefore be constructed when `l = Filter.bot`.
 
-## 9. Procedural CMI boundary
+This result is mathematically specific and should not be overstated. It proves a local specification hazard. It does not prove that the headline theorem is vacuous, because the selected endpoint filter `originPast` has separately been shown nontrivial. The remaining load-bearing object is the derived filter used by the residual path,
 
-The CMI prize rules impose a separate procedural condition. Before CMI will
-consider a proposed solution, it must be published in a Qualifying Outlet, at
-least two years must have passed, and it must have received general acceptance
-in the global mathematics community. The public OpenAI announcement and GitHub
-repository establish a public release and a formalisation claim, but do not by
-themselves establish those three conditions. The audit therefore records a
-formal-trust pass and CMI-interface match, while leaving analytic peer review
-and CMI procedural eligibility open.
+\[
+  \texttt{GlobalBaseError.originPast}\;\sqcap\;\mathcal{P}(\texttt{active}^{c}).
+\]
+
+The current source does not yet provide the required direct proof that this exact filter is non-bottom, nor does it establish that the headline theorem is independent of a potentially vacuous branch. This is the strongest current formal audit target. A final negative conclusion requires either a checked bottomness result on the selected path or a proof that the main theorem consumes a vacuous rate proposition.
+
+## 7. Moment repair and the distinction between stress and velocity
+
+The five-row moment infrastructure is present in the actual source path. `FiveProfileMoments.lean`, `LocalizedMomentRepair.lean`, and `FiveRowRank.lean` implement and analyse a five-dimensional repair map. The rows include two normalisation or constraint conditions, a pressure row, an angular row, and an axial row. Determinant and rank results support local invertibility.
+
+The implementation should be described using its actual row definitions. In particular, the paper must not identify the entire system with a single informal phrase such as “zero angular momentum” unless an explicit equivalence is proved. Nor does invertibility alone establish that an exact nonlinear velocity field realises the target covariance while all higher-order PDE residuals vanish.
+
+This is the difference between two levels of claim:
+
+- **Level A:** the target stress or moment data lie in an admissible finite-dimensional repair system;
+- **Level B:** the repaired data are realised by a global smooth velocity and pressure satisfying the exact nonlinear PDE and all endpoint estimates.
+
+The Lean modules provide evidence for a Level A mechanism and interfaces toward Level B. The independent review must not silently treat the former as the latter.
+
+## 8. Pressure and source-tree corrections
+
+Early review drafts referred to files such as `Forcing/Smoothness.lean`, `Pressure/LerayProjection.lean`, `Scaling/SingularLimits.lean`, and `EnergyDefect.lean`. Those paths are not present in the audited commit. Their absence is not a proof of missing functionality. The actual source contains pressure recovery, pressure flux, Riesz, whole-space uniqueness, and comparison-closure modules.
+
+The correct question is whether those actual modules have the hypotheses required for the claimed conclusion: whole-space domains, pressure normalisation, energy bounds, comparison fields, and all relevant regularity assumptions. A filename discrepancy is a documentation error and has been recorded as such in the audit tracker.
+
+## 9. Axiom and build status
+
+The ordinary Lean foundations reported for the project are `propext`, `Classical.choice`, and `Quot.sound`. Existing independent reports for the headline exports contain only these standard axioms. These are standard foundations, not evidence that the Navier–Stokes mathematics is correct. The public source also contains four intentional `sorry` occurrences in Comparator challenge files. Their lexical presence does not show that they are imported into the headline theorem; import reachability must be checked.
+
+The repository pins Lean 4.34.0-rc2, while the shared package directory requested for auxiliary work is based on 4.32. The review archive contains independent 4.34.0-rc2 axiom reports for the headline exports, while a clean rebuild and recapture from the current environment remains an explicit reproducibility task. The reports support formal trust of the exported declarations; they do not establish the analytic truth of every imported premise.
+
+## 10. Discussion
+
+Several proposed objections are valuable but have different logical status. Ladyzhenskaya non-Newtonian stress, hypo-dissipative exponents, and physical stability tests examine robustness under altered equations. They are not counterexamples to a theorem whose statement contains only the Newtonian Laplacian. They may nevertheless show that the construction should not be described as a physically universal mechanism.
+
+Similarly, the absence of a causal-independence predicate does not falsify a literal forced C/D proposition. It does show that the proposition is weaker than a claim of spontaneous blow-up and that the force must be described as an engineered external input rather than an emergent physical driver.
+
+The filter issue is different: it concerns the truth conditions of a Lean predicate itself. That is why it is a formal audit target. Yet even here, the correct conclusion depends on the selected filter’s reachability and non-vacuity. A local vacuity theorem is not automatically a global refutation.
+
+## 11. Conclusion
+
+The OpenAI release contains a serious Lean development aimed at a forced Navier–Stokes breakdown theorem. The inspected source does not establish an unforced A/B result. Its force is defined a posteriori from the momentum residual and remains active through the approach to the singular time. The five-row moment and pressure infrastructures are present, and no confirmed row-drop or missing-pressure defect has been found.
+
+The outstanding proof-relevant issues are the exact force-class bridge, the invariant-to-rate construction, the non-vacuity of the selected derived filter, the reachability of admitted challenge declarations, and the complete analytic closure of the pressure and uniqueness interfaces. Until those obligations are resolved, the appropriate scientific statement is:
+
+> **At theorem level, the forced C/D-shaped exports are formally supported. The claim of a verified Clay solution is not established by the present independent audit, and no formal contradiction of the headline Lean theorem has yet been demonstrated.**
+
+This conclusion is deliberately narrower than a rejection of the entire formalisation and stronger than a compilation report. It identifies precisely what is established, what is not, and what would be required for the verdict to change.
 
 ## References
 
-1. Charles L. Fefferman, [Existence and Smoothness of the Navier–Stokes Equation, official CMI problem statement](https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf).
-2. OpenAI, [On the Navier–Stokes Millennium Prize Problem](https://openai.com/index/navier-stokes-solution/).
-3. OpenAI, [NavierStokesAndEuler repository](https://github.com/openai/NavierStokesAndEuler).
-
-## 15. Six-question semantic audit: 2026-09-23
-
-The targeted source audit does not currently produce a fatal Lean error, but
-it does narrow the public claim. The force is constructed a posteriori from
-the candidate residual and remains active for the full pre-singular interval;
-the source proves only the stated past and future cutoffs. This supports a
-forced C/D-shaped existential statement, not an autonomous physical
-instability and not an A/B theorem.
-
-The force-smoothness route is more substantive than a simple cutoff argument:
-`SpacetimeGluing.smoothExtension` consumes normal-jet matching, while the
-candidate trace consumes derivative recurrences and endpoint limits. Those
-upstream analytic premises remain load-bearing review obligations.
-
-Two supplied objections are scope tests rather than refutations. No theorem
-for Ladyzhenskaya stress with `p ≥ 3` or hypodissipation `α < 1` was found, so
-the repository makes no formal robustness claim for those altered equations.
-Similarly, the cited singular-limit file is absent; the actual origin formula
-uses a guarded `t < 1` hypothesis and `(1-t)^(-A)`, so the proposed Lean
-`x / 0 = 0` failure is not source-confirmed.
-
-The five-moment repair machinery is present, imported into the candidate
-construction, and contains genuine determinant, inverse, moment, support, and
-jet lemmas. The actual `FiveRowRank` call path additionally discharges its
-positive-radius, nonzero-scale, and patch-model assumptions from proved
-construction data. The pressure Fourier module is also real. However, the direct
-headline pressure route runs through the R3 Riesz-test, pressure-recovery,
-and pressure-flux hierarchy, so the supplied file-level attribution must be
-corrected. The exact five-row declaration uses order `(P, Jθ, Jz)` and begins
-with two zero-mass constraints, which must be mapped explicitly to any
-manuscript labels. Local moment or pressure lemmas cannot be treated as the
-full PDE conclusion without tracing their downstream interfaces.
-
-One specification hazard remains active: `DiagonalResidual.JetRate` has no
-`NeBot` premise. The selected endpoint filter is nontrivial, but each derived
-intersection filter in the residual chain still requires an explicit
-non-vacuity proof. The full six-question disposition is recorded in
-`NavierStokesReview/results/SIX_QUESTION_SOURCE_AUDIT_2026-09-23.md`.
-
-The resulting classification is **NOT ESTABLISHED as an independently
-verified mathematical CMI proof**, while no `[REFUTED]` finding has yet been
-proved. The next decisive work is theorem-by-theorem provenance for endpoint
-limits, derived-filter non-vacuity, pressure flux, and the global comparison
-interface.
-
-## 16. Causality and audit-environment correction: 2026-09-23
-
-The a-posteriori residual definition of the force is a serious physical
-interpretation issue, but it is not a formal contradiction of Alternatives C
-or D as written. The Clay statement requires a smooth force with decay bounds;
-it does not encode a causal-independence predicate between force and velocity.
-Accordingly, this review rejects any claim that the construction proves an
-autonomous or unforced singularity, while retaining C/D as the literal target
-if the construction and its analytic interfaces are valid.
-
-The current workspace also cannot produce a fresh kernel axiom report. The
-repository pins Lean 4.34.0-rc2, whereas the requested external cache is
-4.32; cached headers are incompatible under 4.32, and a rebuild under the
-repository pin encounters missing private toolchain and Mathlib object files.
-This is recorded as an environment reproducibility issue, not as a proof
-failure. The next report must identify the exact clean toolchain and package
-snapshot used for every independent axiom transcript.
-### Finite-stage obligations and the filter boundary
-
-The finite-stage interface is a real conditional boundary, but it is not accurate to say that the selected theorem merely assumes the completed candidate. `StageEstimates` requires finite background and residual `JetRate` bounds. In the selected path, these are assembled by `GluedStageEstimates.actualStageEstimates` from `PhysicalData`, and `Invariant.residual_jetRate` derives the residual rate from the cycle invariant, a native residual bound, and local/exterior germs. The source trace did not expose a field equivalent to the final `CandidateProperties` record as an input.
-
-There is nevertheless a separate non-vacuity obligation. `JetRate` is defined over an arbitrary filter and is automatically true on `Filter.bot`. The selected residual proof uses the derived filter `originPast ⊓ 𝓟 activeᶜ`, but the audited source does not establish a `NeBot` fact for that derived filter. Since `active` is expressed in a rescaled Cartesian radial coordinate, this cannot be settled merely from physical position tending to the origin. The correct verdict is an unresolved audit gap until that filter is shown nontrivial or a concrete bottom-filter derivation is exhibited.
+1. OpenAI source snapshot, `f9e8bc5b38b6e212696e8a30e3e91517af887bbd`.
+2. Clay Mathematics Institute, *Existence and Smoothness of the Navier–Stokes Equation*, official problem statement: <https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf>.
+3. Review repository documents: `OpenAI_NavierStokes_Audit_Tracker.md`, `OpenAI_NavierStokes_Axiom_Ledger.md`, and `OpenAI_NavierStokes_Peer_Review_v1.md`.
