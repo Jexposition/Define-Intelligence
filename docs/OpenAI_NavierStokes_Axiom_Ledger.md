@@ -68,6 +68,8 @@ axialPowers lam   := ![1, 1 - 2 * lam]
 
 `MomentBridgeObstructionProbe.lean` strengthens this result. Its `DirectMomentBridge` structure requires both source power vectors to be equal, and `no_direct_moment_bridge` proves that structure impossible for arbitrary `lam` and `b`. The obstruction is therefore not a special-feature failure caused by the paper's substitution; it rules out the direct row-by-row reading of the declarations.
 
+The probe also proves that the two debt spaces have no linear equivalence. `FiveRowRank.Debt` is `Fin 3 → ℝ`, while `FiveProfileMoments.Debt` is `Fin 5 → ℝ`. This is not a proof that no constrained or nonlinear correspondence can exist. It is a zero-sorry obstruction to claiming that the two full debt interfaces are the same linear coordinate space.
+
 The correct conclusion is a missing bridge, not an automatic refutation of every possible rescaling. The authors must prove the change of variables, preserve all five rows, and show that the transformed rows are the ones consumed by the selected witness. `SelectedDependencyAxiomProbe.lean` confirms that the selected witness and stage-estimate interfaces do not rely on a visible custom axiom, so the remaining adverse target is semantic correspondence rather than kernel admission. Without that proof, the public claim that the complete mixed pipeline directly verifies one coherent Appendix A system is unsupported.
 
 ## 5. Physical requirements that are not kernel axioms

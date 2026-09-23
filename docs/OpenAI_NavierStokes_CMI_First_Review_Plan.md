@@ -34,6 +34,8 @@ The current evidence supports A and B, rejects the old “periodic toy” object
 
 Compare the paper's `(M, I, J, S, C_p)` system with both `FiveProfileMoments` and `FiveRowRank`. The former contains matching normalised vectors; the latter is a distinct physical rank interface. Trace `physical_five_rows`, `prescribed_five_rows`, `reserved_five_rows`, the `ModulatedHistories` consumers, and the selected witness. The direct-bridge probe is complete and rules out a row-by-row identification. The remaining decisive test is whether a nontrivial conversion exists and is actually consumed by the selected witness.
 
+The probe also rules out a full linear equivalence between the three-coordinate `FiveRowRank.Debt` and the five-coordinate `FiveProfileMoments.Debt`. The next correspondence test must therefore distinguish a constrained embedding or a deliberate stage separation from a claimed identity of the two debt spaces.
+
 ### Lane 2: filter non-vacuity
 
 Audit every `JetRate`, frequency-shell, germ, and limit obligation consumed by the selected candidate. Prove `NeBot` for each derived filter or prove that the target statement is independent of that filter. The existing generic `Filter.bot` probe is a warning, not yet a headline refutation.

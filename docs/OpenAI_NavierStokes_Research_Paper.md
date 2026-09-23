@@ -81,6 +81,15 @@ theorem no_direct_moment_bridge (lam b : ℝ) :
 
 for arbitrary `lam` and `b`, not only for the paper's substitution. This is a formal obstruction to treating the two declarations as the same five-row system. It does not rule out a nontrivial analytic transformation, but that transformation must be stated and proved rather than inferred from compilation.
 
+The same probe proves a dimension-level obstruction to a direct linear debt identification:
+
+```lean
+theorem no_linear_debt_equivalence :
+  ¬ Nonempty (FiveRowRank.Debt ≃ₗ[ℝ] FiveProfileMoments.Debt)
+```
+
+Here the physical rank interface exposes three free residual-debt coordinates, whereas the profile interface exposes five moment coordinates. This does not exclude an embedding into a constrained five-dimensional subspace, nor does it prove that the two modules are intended to represent the same stage. It does establish that a full linear identification of their debt spaces is impossible and that any claimed correspondence must state its restriction or stage distinction explicitly.
+
 The dependency trace is load-bearing: `ActualCandidateAssembly.selected_witness` consumes `estimates`, which is constructed by `GluedStageEstimates.actualStageEstimates` from `ActualCycleResidualBounds.PhysicalData`. The physical prefix and reserved-patch route uses `MeanRankUpdate` and `FiveRowRank`, while the nominal and modulation route uses `NominalProfile`, `ModulatedHistories`, `ReservedPatches`, and `FiveProfileMoments`. The missing bridge is therefore a selected-path obligation, not merely a comparison of unused declarations.
 
 ## 4. Why other proposed objections are insufficient by themselves
@@ -109,6 +118,6 @@ That is already a valid counter-result against the stronger public claim of dire
 
 - Source snapshot under review: OpenAI Navier–Stokes repository, commit `f9e8bc5` as recorded in the review materials.
 - Review branch: `review/cmi-first-navier-stokes-2026-09-22`.
-- Kernel environment: Lean 4.32 via `C:\Users\Admin\.elan\bin\lake.exe`.
+- Kernel environment: the repository-declared Lean `4.34.0-rc2` via `C:\Users\Admin\.elan\bin\lake.exe`; the separate V-lab `packages-4.32` cache was not used for this source snapshot because its manifest pins Lean 4.34.0-rc2.
 - New zero-sorry probes: `NavierStokesReview/src/probes/MomentCoordinateMismatchProbe.lean`, `MomentBridgeObstructionProbe.lean`, `SelectedDependencyAxiomProbe.lean`, and the corrected `MainAxiomProbe.lean`.
 - No source file in the OpenAI construction was edited.

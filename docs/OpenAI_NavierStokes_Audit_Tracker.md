@@ -6,7 +6,7 @@ This document is the working ledger for the counter-paper. It records evidence, 
 
 - Upstream source under review: OpenAI Navier–Stokes repository, snapshot recorded as `f9e8bc5`.
 - Review branch: `review/cmi-first-navier-stokes-2026-09-22`.
-- Formal environment: Lean 4.32 through the local elan installation.
+- Formal environment: the repository-declared Lean 4.34.0-rc2 through the local elan installation. The separate V-lab `packages-4.32` cache was not substituted because this fork pins matching 4.34.0-rc2 Mathlib and Comparator revisions.
 - Boundary: the OpenAI source tree is not edited. Review probes live under `NavierStokesReview/src/probes`.
 
 ## Current position
@@ -26,6 +26,7 @@ The repository contains a genuine R³ C/D-shaped endpoint and the headline theor
 | CTR-007 | Non-Newtonian regularisation disproves the Newtonian theorem. | The published endpoint is Newtonian and C/D allows smooth force. | Rejected as internal refutation | Retain only as a physical robustness limitation. |
 | CTR-008 | The two moment declarations may be treated as the same system by direct identification. | `MomentBridgeObstructionProbe.lean` proves `¬ DirectMomentBridge lam b` for all real `lam` and `b`, by evaluating the first axial coordinate. | Formally disproved at the direct-correspondence level | Require an explicit nontrivial change-of-variables theorem. |
 | CTR-009 | The selected witness hides a custom axiom at the stage-estimate interface. | `SelectedDependencyAxiomProbe.lean` reports only `propext`, `Classical.choice`, and `Quot.sound` for `selected_witness`, `physicalData`, `actualStageEstimates`, and `Invariant.residual_jetRate`. | Closed for custom-axiom suspicion | Continue semantic and interface audit; do not treat standard axioms as defects. |
+| CTR-010 | The two debt interfaces admit a direct full linear identification. | `MomentBridgeObstructionProbe.lean` proves `¬ Nonempty (FiveRowRank.Debt ≃ₗ[ℝ] FiveProfileMoments.Debt)` by finite-dimensional rank. | Formally disproved for full linear identification | Require an explicit constrained embedding or stage-separation theorem. |
 
 ## Formal artefacts
 

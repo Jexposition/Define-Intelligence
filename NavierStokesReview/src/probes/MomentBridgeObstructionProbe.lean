@@ -10,9 +10,11 @@ claim that follows from that fact without adding assumptions: no direct
 row-by-row identification of the two systems can exist.
 
 This is not, by itself, a refutation of the final Navier--Stokes theorem.  A
-valid proof could still supply a nontrivial change-of-variables or a theorem
-identifying the corresponding physical rows.  The probe therefore turns the
-review target into a precise missing-interface obligation.
+valid proof could still supply a nontrivial change-of-variables, restrict the
+five-dimensional debt to a subspace, or prove that the two systems describe
+different stages.  The probe therefore turns the review target into precise
+missing-interface obligations rather than treating different declarations as
+an automatic theorem-level contradiction.
 -/
 
 open NavierStokes.FiveRowRank
@@ -38,3 +40,11 @@ theorem no_direct_moment_bridge (lam b : ℝ) :
     ¬ DirectMomentBridge lam b := by
   intro h
   exact no_direct_axial_bridge lam b h.axial_powers_eq
+
+theorem no_linear_debt_equivalence :
+    ¬ Nonempty (NavierStokes.FiveRowRank.Debt ≃ₗ[ℝ]
+      NavierStokes.FiveProfileMoments.Debt) := by
+  rintro ⟨e⟩
+  have h := LinearEquiv.finrank_eq e
+  norm_num [NavierStokes.FiveRowRank.Debt,
+    NavierStokes.FiveProfileMoments.Debt] at h
