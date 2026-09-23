@@ -135,3 +135,7 @@ This correction removes a proposed interface-premise failure. It does not certif
 ## 12. Pressure-chain axiom adjudication
 
 The inspected pressure path uses compact temporal tests, continuity, a Fourier Sobolev bound, and weighted `L²` representation before producing the cutoff flux. The selected dependency probes found no custom axiom at these interfaces. The generic `Filter.bot` risk remains a valid audit question for other modules, but it was not shown to enter this pressure chain. No new axiom defect is therefore recorded.
+
+## 13. Preserved-mass check
+
+The fixed zero rows in `FiveRowRank.FiveRows` were tested against the possibility that the selected initial state had nonzero invariants. `ActualInitialization.initial_zeroMasses` proves zero angular and axial masses for `initialState B N0`; the correction-stage theorems preserve `ZeroMassesOn`; and `MomentInitializationProbe.lean` compiles the initialization theorem without adding an axiom. This is positive source evidence and removes the proposed invariant failure. It does not create a bridge between the nominal, positive-order, and physical-rank moment layers.

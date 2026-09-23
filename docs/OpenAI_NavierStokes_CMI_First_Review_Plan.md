@@ -92,3 +92,9 @@ Use “formal disproof” only after a zero-sorry contradiction or a false manda
 The pressure/uniqueness chain has now been inspected beyond its exported theorem names. The temporal recovery theorem uses compact temporal tests and continuity to obtain interior-time equality. The spatial step uses an explicit Fourier Sobolev bound and a weighted `L²` representative to eliminate compactly harmonic functionals. The comparison closure constructs its scalar rate bound internally, while the pressure-flux constant is constructed from the pressure-recovery hypotheses.
 
 This lane does not presently yield a formal disproof. Its status is “analytically load-bearing, no checked contradiction”. The review must not describe the rate bound as an imported premise or describe the pressure route as absent. The decisive remaining routes are the cross-layer moment bridge, a selected-path filter-collapse proof, or a concrete false identity in the pressure/energy estimates.
+
+## Current adjudication: fixed moment rows
+
+The preserved-mass lane was tested against the selected witness and closed as a route to contradiction. The initial state is explicitly tagged with `ActualInitialization.initial_zeroMasses`, and the temporal and rank corrections preserve that invariant. `MomentInitializationProbe.lean` compiles the relevant theorem with no added assumptions.
+
+The next decisive moment test is therefore not whether the fixed rows start at zero. It is whether the source proves a cross-layer map from those rows and the three debt coordinates to the five published quantities `(M, I, J, S, C_p)`, and whether that map is preserved through the selected construction.

@@ -154,10 +154,16 @@ Third, `ActualPressureFlux.pressure_flux_eq_canonical` converts the recovered co
 
 This audit closes one proposed failure mode. The rate estimate is not an unexplained premise passed into the endpoint. It does not, however, turn kernel acceptance into independent mathematical validation. The pressure reconstruction, Riesz estimates, and localised energy balance remain load-bearing analytic claims that require expert verification. At present they provide no zero-sorry contradiction. The counter-paper therefore retains its principal finding: the public claim of one coherent formalisation of the paper's moment construction is not established, while the final C/D existential proposition has not yet been formally refuted.
 
-## Reproducibility record
+## 11. The preserved-moment objection was tested and rejected
+
+A natural countertest was to ask whether the two fixed rows in `FiveRowRank.FiveRows` merely preserve a nonzero initial angular or axial mass. If so, the displayed zero rows would not implement the zero-moment conditions described in Appendix A. The selected construction does not exhibit that defect. `ActualInitialization.initial_zeroMasses` proves that the two relevant initial masses are zero, and the correction interfaces carry a `ZeroMassesOn` invariant through the temporal and rank stages. `DefectIncrementBounds.fiveRows_preserve_masses` proves the same fact at the local five-row update. The zero-sorry `MomentInitializationProbe.lean` independently compiles the initialization theorem.
+
+This closes one proposed contradiction. It does not close the correspondence problem. The source still contains distinct nominal, positive-order, and physical-rank moment interfaces, and the inspected code does not expose one theorem identifying their coordinates and preserving the five published quantities across every hand-off. The correct adverse conclusion is therefore narrower: the fixed rows are not shown to be invalid because of nonzero initialization, but the complete paper-to-code correspondence remains unestablished.
+
+## 12. Reproducibility record
 
 - Source snapshot under review: OpenAI Navier–Stokes repository, commit `f9e8bc5` as recorded in the review materials.
 - Review branch: `review/cmi-first-navier-stokes-2026-09-22`.
 - Kernel environment: the repository-declared Lean `4.34.0-rc2` via `C:\Users\Admin\.elan\bin\lake.exe`; the separate V-lab `packages-4.32` cache was not used for this source snapshot because its manifest pins Lean 4.34.0-rc2.
-- New zero-sorry probes: `NavierStokesReview/src/probes/MomentCoordinateMismatchProbe.lean`, `MomentBridgeObstructionProbe.lean`, `FiveRowsStructureProbe.lean`, `SelectedDependencyAxiomProbe.lean`, the corrected `MainAxiomProbe.lean`, the compiled `ForceActivityProbe.lean`, and the compiled `R3ComparisonPremiseProbe.lean`.
+- New zero-sorry probes: `NavierStokesReview/src/probes/MomentCoordinateMismatchProbe.lean`, `MomentBridgeObstructionProbe.lean`, `FiveRowsStructureProbe.lean`, `MomentInitializationProbe.lean`, `SelectedDependencyAxiomProbe.lean`, the corrected `MainAxiomProbe.lean`, the compiled `ForceActivityProbe.lean`, and the compiled `R3ComparisonPremiseProbe.lean`.
 - No source file in the OpenAI construction was edited.

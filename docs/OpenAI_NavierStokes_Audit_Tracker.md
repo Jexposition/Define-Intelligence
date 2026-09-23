@@ -51,6 +51,7 @@ This closes the specific claim that the endpoint consumes a free scalar rate bou
 - `NavierStokesReview/src/probes/OpenPastNeBotProbe.lean`: non-vacuity of a concrete open-past filter.
 - `NavierStokesReview/src/probes/ForceActivityProbe.lean`: compiled force-activity consequence from `CandidateConsequences.consequences_of_candidate`.
 - `NavierStokesReview/src/probes/FiveRowsStructureProbe.lean`: compiled source-structure check for the three-coordinate `FiveRows` debt and its two fixed zero rows.
+- `NavierStokesReview/src/probes/MomentInitializationProbe.lean`: compiled zero-sorry check that the selected initial state satisfies the two preserved zero-mass rows.
 - `NavierStokesReview/src/probes/R3ComparisonPremiseProbe.lean`: compiled zero-sorry source-level audit showing that the scalar comparison rate is constructed inside the R³ closure rather than passed into the endpoint as an unproved hypothesis; its endpoint `#print axioms` output contains only `propext`, `Classical.choice`, and `Quot.sound`.
 
 Positive source evidence audited directly:
@@ -71,6 +72,7 @@ Use “formal disproof” only for a zero-sorry contradiction or a demonstrated 
 | CTR-013 | The earlier suggestion that the repository lacked a periodic D endpoint was checked against `PeriodicPaperTheorem.lean` and withdrawn. | Corrected | The repository exports both whole-space and periodic C/D-shaped endpoints. The review must attack a false premise or correspondence, not a missing filename. |
 | CTR-014 | The five-moment criticism was narrowed after inspection of `PositiveOrderMoments.lean`. | Corrected | The repository does contain an exact five-coordinate repair in that layer. The remaining adverse issue is the absence of an explicit bridge among nominal, positive-order, and physical-rank layers. |
 | CTR-015 | `FiveRowRank.FiveRows` is a generic five-target, five-unknown solve. | Formally corrected | `FiveRows` has `Debt := Fin 3 → ℝ`; rows 1 and 2 are fixed zero-moment constraints, while rows 3–5 use debt coordinates 0–2. The new zero-sorry probe rules out describing this declaration itself as a full five-dimensional inverse, but does not refute the endpoint because the fixed rows may be valid invariants. |
+| CTR-018 | The two fixed physical-rank rows preserve a nonzero initial mass. | Rejected on the selected witness | `ActualInitialization.initial_zeroMasses` proves the selected initial state has the relevant zero masses; the temporal and rank-stage correction interfaces preserve `ZeroMassesOn`. `MomentInitializationProbe.lean` compiles this source theorem without an added assumption. This closes the initialization attack, but not the cross-layer correspondence gap. |
 
 The paper therefore reports two separate conclusions: active residual forcing is a proved property of the selected candidate, while the moment-interface result is a formal correspondence objection. Neither is promoted to a refutation of the final C/D existential theorem without a reachable false premise.
 

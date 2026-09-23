@@ -64,6 +64,10 @@ The latest provenance check narrows the adverse case further. The R³ endpoint i
 
 The whole-space comparison audit supplies a further correction. The scalar rate bound is not merely inserted at the final endpoint: `WholeSpaceComparisonClosure` derives it from `ComparisonRateBound.exists_uniform_rate_bound`, and `WholeSpaceUniqueness` derives the pressure-flux bound from the pressure-recovery hypotheses. This closes the specific objection that a free rate-bound premise is being consumed by the endpoint. The review must now test the pressure reconstruction and localised energy estimates themselves, with their exact hypotheses, rather than treating the rate-bound interface as missing.
 
+## Preserved-mass test
+
+The fixed zero rows in `FiveRowRank` cannot presently be criticised as preserving nonzero initial moments. `ActualInitialization.initial_zeroMasses` initializes the selected state with the two relevant masses equal to zero, and the correction interfaces preserve them. This closes a candidate contradiction against the physical-rank implementation. It leaves the substantive correspondence question intact: the repository still needs an explicit map across the nominal, positive-order, and physical-rank moment systems.
+
 ## Pressure-chain finding
 
 The pressure and comparison modules were inspected as a possible source of a hidden premise. That proposed failure is not supported by the current source. `PressureRecovery` derives pointwise interior-time pressure-gradient identities from compact temporal tests, continuity, and a harmonic-functional argument. `ActualPressureFlux` derives the cutoff pressure flux from those identities. Finally, `WholeSpaceComparisonClosure` constructs the scalar rate bound internally rather than receiving it as an unexplained endpoint input.
