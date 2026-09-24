@@ -101,3 +101,11 @@ publishes. The second clause is only a report about the current state of the
 review's attempted Lean contradiction. It must not be read as a presumption
 that the unproved bridge is valid or as a shift of the proof burden to the
 reviewer.
+
+## Correction to the supplied response set
+
+The phrase “major revision” is too weak if it is read as a neutral midpoint.
+The operative review conclusion is **not established**: the authors have not
+met the affirmative burden for the stronger paper and CMI interpretation. A
+kernel-level `False` theorem would be a stronger result, but its absence does
+not convert an unproved composition theorem into evidence for the authors.

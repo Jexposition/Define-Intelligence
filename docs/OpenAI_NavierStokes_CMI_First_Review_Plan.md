@@ -537,3 +537,13 @@ Evidence: `NavierStokesReview/evidence/global_germ_transport_audit_2026-09-24.md
 
 The active counter-paper target is therefore an underclaim in the published
 mathematical correspondence, not a generic objection to compilation.
+
+## Burden-of-proof gate
+
+The publication verdict is controlled asymmetrically. OpenAI must provide the
+selected-field composition theorem before the stronger claim is accepted. If
+that theorem is absent, the review records **NOT ESTABLISHED** and withholds
+acceptance. **NOT FORMALLY REFUTED** remains only a subordinate technical
+status reporting that the current Lean attack has not derived `False`; it is
+not a presumption that the missing bridge exists. Continue the `False` search
+as a separate lane, not as a prerequisite for the publication verdict.

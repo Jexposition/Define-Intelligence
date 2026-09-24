@@ -22,8 +22,11 @@ the exported residual. The paper therefore needs an explicit composition
 theorem before it can claim that its local five-moment construction is the
 object used by the CMI endpoint.
 
-This strengthens CTR-005 as a source-level correspondence objection. It does
-not refute `selected_candidate` by itself.
+This strengthens CTR-005 as a source-level failure of the authors' affirmative
+proof record. It is sufficient to withhold acceptance of the stronger paper
+claim; the reviewer is not required to derive `False` merely because OpenAI
+has not supplied the composition theorem. It does not, however, assert that
+`selected_candidate` has already been refuted at the Lean-kernel level.
 
 ## Finding 21: the compact-pressure attack does not replace the correspondence failure
 
@@ -1089,9 +1092,11 @@ pressure, residual, or force. The constrained three-debt promotion is a useful
 local bridge, not the missing global identification.
 
 The correct conclusion is consequently stronger than “a compiler warning was
-found” and narrower than “the Lean theorem is already false”: the repository
-has not established that the public paper's central five-moment construction is
-the object proved by the exported endpoint. That burden lies with the authors.
+found” and independent of whether the review has already derived `False`: the
+repository has not established that the public paper's central five-moment
+construction is the object proved by the exported endpoint. That affirmative
+burden lies with the authors, and the missing composition theorem is sufficient
+to withhold acceptance of the stronger claim.
 Until the selected-path transport theorem is supplied, the stronger public
 solution claim should not be accepted. A kernel-level refutation remains a
 separate threshold requiring a false selected premise or a zero-sorry

@@ -17,11 +17,14 @@ field-level equality identifying the paper's $(M,I,J,S,C_p)$ moments with the
 selected velocity, pressure, residual, and force. A zero-sorry probe proves
 that the witness type does not entail an arbitrary five-moment certificate.
 
-That is a load-bearing correspondence failure, not yet a derivation of
-`False`. The present verdict is therefore **not established as a CMI
-solution** and **not formally refuted**. A formal refutation requires a
-zero-sorry contradiction on the selected dependency path or a false mandatory
-premise proved for the selected fields.
+That is a load-bearing failure of the authors' affirmative proof record. The
+publication-level verdict is therefore **not established as a CMI solution**.
+The separate phrase **not formally refuted** reports only that the review has
+not yet derived `False` from the selected Lean endpoint; it is not a competing
+verdict and does not validate the missing bridge. A formal refutation would
+require a zero-sorry contradiction on the selected dependency path or a false
+mandatory premise proved for the selected fields, but that stronger result is
+not a prerequisite for withholding acceptance of the published claim.
 
 ## A selected-path obstruction to residual cancellation
 
@@ -510,7 +513,9 @@ candidate is the five-moment construction described in the paper and that the
 required analytic premises hold for that same candidate. The second is a
 narrow statement about the present refutation programme: no zero-sorry proof of
 `False` has yet been derived from the selected endpoint. Absence of that
-refutation is not affirmative evidence for the authors' claim.
+refutation is not affirmative evidence for the authors' claim, and the review
+does not carry an equal burden to manufacture the authors' missing composition
+theorem.
 
 The burden is asymmetric. OpenAI must establish the stronger claim made in the
 paper: that the selected fields are the advertised five-moment construction
