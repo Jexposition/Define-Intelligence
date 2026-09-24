@@ -7,7 +7,10 @@ The reduced profile coordinates do not imply a scalar or one-component field. `A
 ## 1. Component Matrix Envelope
 **Target Definitions:** `potential` (Line 66) and `heatPotential` (Line 217)
 **Analysis:** 
-The underlying velocity field is structurally evaluated in an **Axisymmetric wrapper**, not as a native 3D Cartesian fluid. 
+The underlying profile is parameterised through an **axisymmetric wrapper**,
+then embedded in Cartesian components and converted to velocity by spatial
+curl. The wrapper is a reduced-coordinate representation, not evidence that
+the selected field is only two-dimensional.
 * **Coordinate Mapping:** `potential` explicitly invokes `AxisymmetricFields.potential (SlowBorelBase.streamFactor ...) (gaugedSwirl ...)`.
 * **Component Count:** The base germ is manufactured from exactly **two** independent geometric scalars: a 2D scalar stream function (`streamFactor`) and a 1D scalar angular swirl function (`gaugedSwirl`). 
 * **Verdict:** The profile is parameterised by reduced axisymmetric data, but

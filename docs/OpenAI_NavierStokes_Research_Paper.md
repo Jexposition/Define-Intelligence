@@ -47,12 +47,19 @@ with fixed $c>0$, provided the force is locally bounded near $1$. This is the
 correct mathematical target for the force-smoothness attack.
 
 The selected raw residual actually falsifies the proposed lower-bound premise:
-its norm tends to zero while the origin speed diverges. This is a formal
-certificate of residual cancellation, not a proof of force singularity. The
-remaining question is whether the raw mixed residual is explicitly composed
-with the final force at the origin, rather than only identified with the force
-on the interior before localisation. The force attack therefore sharpens
-CTR-005 but does not yet produce `False` for the C/D endpoint.
+its norm tends to zero while the origin speed diverges. A second zero-sorry
+probe now composes that result with the final selected force. Late-time
+activation is removed, the periodic and original residuals agree at the
+origin, and the selected force therefore satisfies
+
+$$
+\lVert f(t,0)\rVert\longrightarrow0\qquad(t\to1^-).
+$$
+
+This is a formal certificate of residual cancellation, not a proof of force
+singularity. It closes the force-explosion route and moves the live
+falsification target back to CTR-005: the missing selected-path transport of
+the paper's five moments and absolute pressure semantics.
 
 ## 1. Review question and standard
 
@@ -177,10 +184,31 @@ $$
 $$
 
 has not been proved and is not a valid inference from norm growth alone. The
-force-smoothness attack remains open until a selected-field PDE lower bound or
-another incompatible residual identity is derived.
+force-smoothness attack is closed as a force-explosion argument by the selected
+force-origin composition result. A formal refutation now requires a different
+incompatible selected-field identity or a false mandatory premise.
 
-## 5. The five-moment correspondence objection
+## 5. The flat residual is an all-order, debt-blind interface
+
+The source definition of `VanishingJointJets` quantifies over every natural
+order of the spacetime Fréchet derivative. Its selected construction is fed by
+finite residual-rate estimates derived from the actual cycle invariant, then
+passes through the schedule theorem and the mixed residual theorem. It is not
+an `H^3` truncation.
+
+The time switch is globally smooth, becomes identically one for
+`t\geq3/4`, and has zero positive-order derivatives on that late region. The
+spatial periodic and cut residuals agree with the original residual on a
+neighbourhood of the origin. The comparison is made with the complete
+Navier--Stokes residual, so the temporal derivative, advection, Laplacian, and
+pressure-gradient terms are not projected away.
+
+This regularity result does not resolve the review's central objection. The
+localisation files contain no debt-vector parameter and no equality to the
+paper's `(M,I,J,S,C_p)` moments. They provide debt-blind field identities, not
+the missing selected moment-realisation theorem.
+
+## 6. The five-moment correspondence objection
 
 The upstream five-moment machinery is substantive. In
 `PositiveOrderMoments.lean`, the history debt is
@@ -254,7 +282,7 @@ transport by its type alone. It does not prove that the concrete selected
 velocity violates the five integrals. That second statement needs a
 field-level computation.
 
-## 6. Pressure and localisation
+## 7. Pressure and localisation
 
 The R3 packaging imposes compact support on pre-singular pressure slices.
 Pressure-recovery modules prove genuine compact-test comparison identities,
@@ -283,7 +311,7 @@ current source does not expose that complete bridge. The pressure route is
 therefore an open analytic correspondence objection, not a completed
 trivialisation theorem.
 
-## 7. Generic interfaces and countermodels
+## 8. Generic interfaces and countermodels
 
 The generic `StageEstimates` record stores smoothness and finite jet-rate
 bounds but no five-moment field integral. A zero-sorry probe inhabits this
@@ -301,7 +329,7 @@ filter API permits vacuous statements over `Filter.bot`, but the selected
 origin-past filter has been checked non-vacuous. The generic hazard is real;
 selected-path exploitation has not been demonstrated.
 
-## 8. Adverse claims that do not meet the CMI disproof threshold
+## 9. Adverse claims that do not meet the CMI disproof threshold
 
 The following arguments are not accepted as refutations on the present
 evidence:
@@ -322,7 +350,7 @@ These exclusions do not grant the authors a presumption of correctness. They
 identify the exact extra theorem needed before each proposed objection can
 become a contradiction.
 
-## 9. Verdict
+## 10. Verdict
 
 The formal review establishes the following.
 

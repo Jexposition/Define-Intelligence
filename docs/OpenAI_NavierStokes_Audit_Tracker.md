@@ -612,3 +612,58 @@ does not merely juxtapose unrelated estimates: it splits on `w ∈ S`, uses the
 off-axis chart bound on `S`, and uses `houtside` plus `base_exterior_jetRate`
 on `Sᶜ`. The positive-radius restriction is a scope limitation and a missing
 origin semantic bridge, not a proved derivative discontinuity.
+
+## Selected force-origin composition: 2026-09-24
+
+`SelectedForceOriginCompositionProbe.lean` now compiles with zero errors and no
+admitted declarations. It extracts the actual selected witness and proves the
+late-time chain
+
+$$
+f(t,0)=\mathcal R_{\mathrm{periodic}}(t,0)
+       =\mathcal R_{\mathrm{original}}(t,0)
+$$
+
+eventually as (t\to1^-). The selected `VanishingJointJets` premise therefore
+implies
+
+$$
+\lVert f(t,0)\rVert\to0.
+$$
+
+This closes the proposed force-explosion route. The selected velocity still
+has unbounded origin speed, so a fixed positive lower bound from velocity norm
+to residual norm is impossible; however, no such lower bound is a premise of
+the exported endpoint. The result is evidence of deliberate residual
+cancellation, not a formal disproof.
+
+**Status:** selected force composition confirmed; force-singularity attack
+closed; CTR-005 remains the load-bearing moment/pressure transport objection.
+
+Evidence: `NavierStokesReview/evidence/selected_force_origin_composition_2026-09-24.md`.
+
+## Vanishing-jets and localisation trace: 2026-09-24
+
+The selected flat residual is not supplied as a truncated `H^3` assertion.
+`JointResidualLimits.VanishingJointJets` quantifies over every natural
+derivative order. The selected chain fills its finite residual-rate field from
+`ActualCycleResidualBounds.Invariant.residual_jetRate`, passes it through
+`finite_residual_rates` and `ActualStageEstimates.stageEstimates_of_representations`,
+and invokes `StageEstimates.exists_schedule` to obtain the all-order jet limit
+in `MixedDiagonalResidual.exists_physical_schedule_residual_zero`.
+
+The time switch is globally smooth, becomes identically one for `t ≥ 3/4`,
+and has zero positive-order derivatives on the late side. The late activation
+lemmas prove local spacetime equality. The spatial periodic/cut/original
+identities likewise compare the complete Navier–Stokes residual through local
+equalities, preserving the time derivative, advection, Laplacian, and pressure
+gradient terms. No dropped Cartesian component or off-diagonal advection term
+was found.
+
+The localisation layer has no debt-vector parameter and does not mention
+`FiveRowRank`, `PositiveOrderMoments`, or `(M,I,J,S,C_p)`. This is a precise
+debt-blind interface finding, not a proof that the selected fields violate the
+moment equations. It reinforces CTR-005 because the missing selected moment
+transport is not supplied by the cutoff identities.
+
+Evidence: `NavierStokesReview/evidence/vanishing_joint_jets_and_localisation_trace_2026-09-24.md`.

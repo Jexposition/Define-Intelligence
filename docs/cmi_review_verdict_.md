@@ -32,10 +32,11 @@ The peer review has uncovered a critical specification and traceability gap
 between the human-readable paper and the Lean 4 formalisation regarding
 moment transport, together with a narrower pressure-semantic gap.
 
-The pressure and force objections remain active attack surfaces. A failed
+The pressure objection remains an active attack surface. A failed
 compact-support probe is not a clearance: the decisive missing premise is the
-selected global pressure-Poisson equation, while the force-jet attack requires
-showing that the selected residual cannot satisfy the endpoint `hlim` family.
+selected global pressure-Poisson equation. The force-jet attack has now been
+tested on the selected endpoint and closes in the opposite direction: the
+final force inherits the flat residual at the origin.
 The new zero-sorry `SelectedWitnessInhabitationProbe` also shows that the
 exported witness envelope carries no five-debt payload, so the selected
 five-moment transport remains unverified at the type level.
@@ -50,7 +51,12 @@ Then, `PeriodicSobolev.lean` uses coordinate-wise Fundamental Theorem of Calculu
 
 ## 3. Spacetime Regularity of the Residual Force at $t=1$
 
-The most precarious mathematical boundary in the residual-feedback exploit is whether the artificially defined force $f(x,t)$ remains smooth ($C^\infty$) at the exact temporal interface $t=1$. Since the velocity and its derivatives are exploding, the residual components $(\partial_t u + u \cdot \nabla u - \Delta u)$ are individually blowing up.
+The most precarious mathematical boundary in the residual-feedback construction
+is whether the force remains smooth ($C^\infty$) at the exact temporal
+interface $t=1$. Velocity growth alone does not imply that the residual
+components $(\partial_t u + u \cdot \nabla u - \Delta u)$ blow up, because
+the construction may cancel them. The selected zero-sorry composition probe
+shows precisely such cancellation at the origin.
 
 The source isolates the endpoint requirement in the `VanishingJointJets`
 hypothesis and uses `SpacetimeGluing.smoothExtension`. The generic theorem

@@ -178,12 +178,55 @@ the residual/origin contradiction remain open.
 - [x] `SelectedWitnessAttackBoundaryProbe.lean` compiles without `sorry`.
   It proves the witness envelope does not entail a five-debt certificate and
   records the scalar compatibility of blow-up with a flat residual.
-- [x] The force-jet route remains active but conditional on a selected-field
-  velocity-to-residual lower bound. No residual explosion is inferred merely
-  from velocity growth.
+- [x] The force-jet route is closed as a force-explosion argument. The selected
+  force tends to zero at the origin despite selected speed blow-up; no residual
+  explosion is inferred from velocity growth.
 - [x] The pressure route remains a missing global Poisson/Leray transport
   objection. Compact support alone is not recorded as a contradiction.
 - [~] A selected-path zero-sorry `False` theorem has still not been obtained.
+
+## Selected force-origin composition: 2026-09-24
+
+- [x] `SelectedForceOriginCompositionProbe.lean` compiles without admitted
+  declarations and extracts the actual selected witness.
+- [x] The probe identifies the final force with the periodic and original
+  residuals at the origin for late times, then proves
+
+  $$
+  \lVert f(t,0)\rVert\to0\quad(t\to1^-).
+  $$
+
+- [x] The force-explosion objection is closed. The selected speed still tends
+  to infinity, so the source exhibits cancellation rather than a lower-bound
+  contradiction.
+- [~] CTR-005 remains the headline issue: the five-moment and absolute
+  pressure semantics are not exposed as transport premises of the selected
+  residual/force theorem.
+
+Evidence: `NavierStokesReview/evidence/selected_force_origin_composition_2026-09-24.md`.
+
+## Vanishing-jets and localisation trace: 2026-09-24
+
+- [x] `JointResidualLimits.VanishingJointJets` is an all-orders definition:
+  `∀ n : ℕ, Tendsto (iteratedFDeriv ℝ n f) ... (𝓝 0)`, not an `H^3`
+  truncation.
+- [x] The selected source derives the premise through
+  `ActualCycleResidualBounds.Invariant.residual_jetRate`,
+  `finite_residual_rates`, `ActualStageEstimates.stageEstimates_of_representations`,
+  `StageEstimates.exists_schedule`, and
+  `MixedDiagonalResidual.exists_physical_schedule_residual_zero`.
+- [x] `timeSwitch` is globally `ContDiff`, equals one on the late side of
+  `t = 3/4`, and has zero positive-order derivatives there. The late activation
+  lemmas prove neighbourhood equality, not only pointwise equality.
+- [x] `MixedPeriodicAssembly` transports the complete residual operator through
+  neighbourhood equalities. No Cartesian component projection or advection
+  cross-term deletion was found.
+- [~] The localisation files take no `FiveRowRank.Debt`,
+  `PositiveOrderMoments.Debt`, or named paper moments. They are therefore
+  debt-blind field identities and do not supply the missing selected moment
+  transport theorem.
+
+Evidence: `NavierStokesReview/evidence/vanishing_joint_jets_and_localisation_trace_2026-09-24.md`.
 
 ## Upstream moment-chain correction
 
@@ -216,7 +259,9 @@ artifact. It extracts the selected schedule, proves origin speed blow-up, and
 proves that the selected raw mixed residual tends to zero. It also contains
 the conditional contradiction obtained if a positive velocity-to-residual
 lower bound is imposed. CTR-005 remains the headline correspondence finding;
-the remaining question is whether the raw residual is explicitly composed
-with the final force at the origin.
+`SelectedForceOriginCompositionProbe.lean` now proves that the raw residual is
+explicitly composed with the final force at the origin and that the final force
+tends to zero there. The force-explosion route is closed.
 
-Evidence: `NavierStokesReview/evidence/selected_witness_endpoint_residual_probe_2026-09-24.md`.
+Evidence: `NavierStokesReview/evidence/selected_witness_endpoint_residual_probe_2026-09-24.md` and
+`NavierStokesReview/evidence/selected_force_origin_composition_2026-09-24.md`.

@@ -525,8 +525,56 @@ The zero-sorry probe proves that the selected origin velocity blow-up and
 vanishing residual jets are inconsistent with any eventual fixed positive
 lower bound from velocity norm to residual norm. The production source exposes
 upper `JetRate` bounds and an explicit flat-error cancellation, but no such
-lower bound. This is an unresolved load-bearing falsification target, not a
-proof that the selected witness is consistent.
+lower bound. The selected-force composition probe now identifies the final
+force with that flat residual at the origin, so this lower-bound route is
+closed rather than a remaining force-singularity target.
 
-**Status:** conditional contradiction proved; selected lower-bound premise not
-located.
+**Status:** conditional contradiction proved; lower-bound force attack closed
+by selected residual cancellation.
+
+## AX-035: selected force inherits the flat origin residual
+
+**Source:** `NavierStokesReview/src/probes/SelectedForceOriginCompositionProbe.lean`;
+`NavierStokes/CandidateFromLimits.lean:108-111`;
+`NavierStokes/MixedPeriodicAssembly.lean:91-100`.
+
+The selected witness, late-time activation identities, and the periodic
+localisation identities combine to identify the final force with the original
+selected residual at the origin for (t\to1^-). The selected joint residual
+jets then prove
+
+$$
+\lVert f(t,0)\rVert\to0.
+$$
+
+This formally closes the proposed force-explosion route. It also confirms that
+the selected construction is designed around residual cancellation: velocity
+growth alone does not force force growth. The remaining review target is the
+unexhibited transport of the paper's five moments and global pressure meaning
+into this cancellation theorem.
+
+**Status:** selected force composition confirmed; force-singularity objection
+closed; selected-witness contradiction still unestablished.
+
+## AX-036: all-order jet premise and debt-blind localisation
+
+**Source:** `NavierStokes/JointResidualLimits.lean:67-106`;
+`NavierStokes/MixedCandidateAssembly.lean:67-90`;
+`NavierStokes/MixedDiagonalResidual.lean:186-232`;
+`NavierStokes/TimeLocalization.lean:74-96,127-153`;
+`NavierStokes/MixedPeriodicAssembly.lean:67-101`.
+
+`VanishingJointJets` quantifies over every `n : ℕ` and is derived on the
+selected path from finite residual-rate estimates, rather than being an `H^3`
+truncation. The time switch and the spatial localisation are also smooth local
+equalities, so the complete residual operator is transported, including
+advection, diffusion, and pressure-gradient terms.
+
+Neither localisation file accepts a three-debt or five-moment parameter. The
+cutoff identities therefore cannot establish the paper's moment transport;
+they are debt-blind field identities. This is a correspondence limitation,
+not evidence that the cutoffs delete cross terms or make the selected fields
+non-Newtonian.
+
+**Status:** all-order jet derivation and localisation regularity confirmed;
+selected five-moment transport remains open.

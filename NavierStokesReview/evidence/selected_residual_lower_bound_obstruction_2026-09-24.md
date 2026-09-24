@@ -32,10 +32,11 @@ origin filter is nontrivial; this is not a `Filter.bot` result.
 
 ## Disposition
 
-This is a completed formal target specification, not yet a refutation of the
-selected witness. The decisive unresolved question is now precise: prove the
-positive lower-bound transport theorem for the actual selected fields, or show
-why the paper's claimed coupling implies it. A velocity blow-up alone cannot
-replace that theorem because the residual can cancel to flat order.
+This is a completed formal target specification, not a refutation of the
+selected witness. The selected-force composition probe now shows that the
+positive lower-bound premise is incompatible with the actual endpoint
+cancellation. A velocity blow-up alone cannot replace that theorem because the
+residual can cancel to flat order.
 
-**Status:** force-jet falsification remains open; no clearance is recorded.
+**Status:** force-jet falsification route closed; no selected-witness
+contradiction established.

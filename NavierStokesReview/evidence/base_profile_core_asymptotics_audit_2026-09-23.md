@@ -7,7 +7,8 @@ Probe result: exit code 0 with no `sorry` declarations.
 
 ## Verdict
 
-Agent 2 identified two real architectural review targets, but two formulations were too strong.
+The source review identified two real architectural targets, but two
+formulations were too strong.
 
 | ID | Finding | Status | Exact basis |
 |---|---|---|---|
@@ -62,7 +63,7 @@ The component formulas in `AxisymmetricFields.velocity_zero`, `velocity_one`, an
 
 ## 3. Five-moment transport
 
-The direct syntactic part of Agent 2’s claim is correct:
+The direct syntactic part of the import claim is correct:
 
 - `GermCandidateAssembly.lean:1` imports only `MixedCandidateWitness`.
 - `GermCandidateAssembly.lean:75-96` proves an abstract germ identity for arbitrary `base`, `initial`, and `stages`.

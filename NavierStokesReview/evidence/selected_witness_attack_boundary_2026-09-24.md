@@ -28,10 +28,10 @@ jet-rate bounds and explicit core cancellation, not this lower bound.
 
 ## Consequence for the review
 
-The force-smoothness lane remains open and load-bearing.  It must now target
-an actual theorem connecting the selected velocity, pressure, and residual,
-or a false mandatory premise in the selected construction.  It is not valid
-to infer residual divergence from velocity divergence alone.
+The force-smoothness lane is closed as a force-explosion route: the companion
+selected-force composition probe connects the selected force to the flat
+residual at the origin and proves that its norm tends to zero. It remains
+invalid to infer residual divergence from velocity divergence alone.
 
 The moment result remains CTR-005: the upstream five-coordinate repair is
 real, but no theorem has been exhibited that transports its named rows into

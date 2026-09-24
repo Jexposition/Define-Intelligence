@@ -51,8 +51,8 @@ local velocity/pressure agreement, not this complete identity.
 | 5D-03 | State the required promotion. | [x] | `promoteDebt d := ![0,0,-(d 0),-(d 1),-(d 2)]`; the zero-sorry probe proves only the algebraic repair equality. |
 | 5D-04 | Prove promotion is the selected physical five-moment identity. | [ ] | Required theorem must mention selected stage fields, their integrals, and the selected residual/force. None is exhibited. |
 | ORG-01 | Check whether `StateRealization.chartIdentity` reaches the singular origin. | [x] | Zero-sorry probe proves its domain and `graphSourceTZ` exclude radius zero. Evidence `state_realization_axis_scope_audit_2026-09-24.md`. |
-| ORG-02 | Connect `GlobalBaseError.originPast` to actual selected fields. | [~] | The selected schedule now has a zero-sorry raw-residual limit at the origin; composition with the final force remains a separate interface obligation. |
-| ORG-03 | Derive `False` from selected residual limits and origin blow-up. | [~] | The selected raw residual tends to zero while speed diverges, so the positive lower-bound route is impossible. Seek a different false premise or a missing raw-residual/force composition theorem. |
+| ORG-02 | Connect `GlobalBaseError.originPast` to actual selected fields. | [x] | The selected schedule has a zero-sorry raw-residual limit, and `SelectedForceOriginCompositionProbe.lean` identifies the final force with that residual at the origin. |
+| ORG-03 | Derive `False` from selected residual limits and origin blow-up. | [~] | The selected speed diverges while the selected force tends to zero. This refutes any positive velocity-to-residual lower bound, but no such premise is required by the endpoint. Seek a different false selected premise. |
 
 ## 2. Selected endpoint trace
 
@@ -71,8 +71,8 @@ local velocity/pressure agreement, not this complete identity.
 | FORCE-01 | Inspect `PositiveTimeForce.timeCutoff`. | [x] | Smooth bump; active on `[3/8,1]`; no step discontinuity. |
 | FORCE-02 | Locate pressure in the force residual. | [x] | Pressure enters `navierStokesResidual` in `CandidateFromLimits`; `PositiveTimeForce.force` is only a wrapper. |
 | FORCE-03 | Check residual provenance. | [x] | Before `t=1`, `CandidateFromLimits.force` equals the activated residual; endpoint uses smooth extension. |
-| FORCE-04 | Prove or refute selected residual endpoint limits. | [x] | `SelectedWitnessEndpointResidualProbe.lean` proves the selected raw mixed residual tends to zero at the origin; the final-force composition remains separately tracked. |
-| FORCE-05 | Prove force-norm divergence, failed support, failed decay, or failed `ContDiff`. | [~] | `SelectedWitnessEndpointResidualProbe.lean` proves `False` from speed blow-up, a local force bound, and a positive residual lower bound. The selected source still lacks the lower-bound premise. |
+| FORCE-04 | Prove or refute selected residual endpoint limits. | [x] | `SelectedWitnessEndpointResidualProbe.lean` proves the selected raw mixed residual tends to zero at the origin, and `SelectedForceOriginCompositionProbe.lean` transports that limit to the final force. |
+| FORCE-05 | Prove force-norm divergence, failed support, failed decay, or failed `ContDiff`. | [x] | `SelectedForceOriginCompositionProbe.lean` proves the final selected force also tends to zero at the origin. The force-explosion route is closed. |
 | FORCE-06 | Test the selected origin velocity-to-residual lower bound. | [x] | Zero-sorry selected-path probe proves origin speed tends to infinity while the selected raw residual tends to zero; every fixed positive lower bound is impossible. |
 
 ## 4. Moment and physical-correspondence lane
@@ -103,7 +103,7 @@ local velocity/pressure agreement, not this complete identity.
 | ENG-03 | Prove a selected-field energy mismatch. | [ ] | Requires an exact contradiction, not a scaling suspicion. |
 | PRS-01 | Check whether pressure is compactly supported in the selected R³ candidate. | [x] | `CandidateProperties.pressure_support` and `R3CompactCandidate.pressure_supported` make this explicit. |
 | PRS-02 | Derive a pressure-tail contradiction from the actual force. | [ ] | Only valid after proving the extra force-divergence or independence premise needed for a force-free Poisson argument. |
-| GLU-01 | Trace temporal gluing and endpoint jets. | [~] | `SpacetimeGluing.smoothExtension` proves the interface form; verify selected residual-limit inputs. |
+| GLU-01 | Trace temporal gluing and endpoint jets. | [x] | `VanishingJointJets` is all-orders; `timeSwitch` is globally smooth and late-time local equality preserves all local jets. The selected residual-limit inputs are source-linked through the actual stage estimates. |
 
 ## 4d. Advanced structural lanes
 
@@ -135,6 +135,8 @@ local velocity/pressure agreement, not this complete identity.
 | PRS-09 | Do not treat the comparison probe as a selected-field refutation. | [x] | The probe proves an interface limitation only. A formal disproof still requires a false selected premise or a contradiction with the selected residual limits. |
 | PRS-10 | Connect pressure-germ/base-equation premises to origin limits. | [~] | `StateRealization` is off-axis; `GlobalBaseError.originPast` supplies a separate error-limit route. A full selected pressure/residual identity at the origin remains unproved. |
 
+| GLU-02 | Check whether activation or spatial localisation drops residual terms or debt constraints. | [x] | The localisation theorems preserve the complete residual by neighbourhood equality; they have no debt-vector parameter and supply no five-moment transport theorem. |
+
 Evidence for this block:
 `NavierStokesReview/evidence/semantic_transport_pressure_audit_2026-09-23.md`,
 `NavierStokesReview/src/probes/SemanticTransportPressureProbe.lean`.
@@ -158,9 +160,9 @@ Do not use `sorry`, an arbitrary existential witness, a generic countermodel dis
 
 | Priority | Next bounded action | Output |
 |---:|---|---|
-| 1 | Resolve raw-residual to final-force composition at the origin. | The selected-path probe proves residual cancellation, so the lower-bound force attack is closed as a route. Test whether the final force is explicitly the same residual at the origin or whether a different selected premise fails. |
-| 2 | Search for the five-moment transport theorem on the selected import closure. | Theorem citation or exact absence report; use the extracted 5D target as the acceptance specification. |
-| 3 | Test the strongest actual selected obligation in Lean without `sorry`. | Seek a contradiction between selected residual limits, pressure semantics, and origin blow-up. |
+| 1 | Search for the five-moment transport theorem on the selected import closure. | Theorem citation or exact absence report; use the extracted 5D target as the acceptance specification. |
+| 2 | Connect selected pressure-germ/base-equation premises to the final residual and origin limit. | A selected-field theorem, or a zero-sorry contradiction if the premises are incompatible. |
+| 3 | Test the strongest actual selected obligation in Lean without `sorry`. | Seek a contradiction between selected moment/pressure semantics and the endpoint, not a generic countermodel. |
 | 4 | Update tracker, axiom ledger, synthesis, peer review, and paper. | Human-readable counter-paper prose, not a chronological audit log. |
 
 ## External literature lane

@@ -56,7 +56,9 @@ The force attack has reached a precise boundary. The selected source proves
 the cancellation pattern needed for residual flatness while the selected
 origin speed diverges. Consequently, the proposed positive lower-bound route
 is formally impossible for the selected raw residual. A remaining
-unconditional refutation would need a different theorem, such as a proof that
-the raw residual is not the same field as the force used by the final
-`CandidateProperties`, or a false premise in the residual-flatness transport.
-The probe does not itself establish either failure.
+unconditional refutation therefore needs a different theorem, such as a false
+selected moment or pressure premise. The companion
+`SelectedForceOriginCompositionProbe.lean` now proves that the raw residual is
+the same selected force at the origin for late times and that the force norm
+tends to zero there. The present probe records the raw-residual part of that
+composition.

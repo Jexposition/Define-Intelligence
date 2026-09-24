@@ -310,3 +310,21 @@ five-coordinate debt. This is stronger than a missing-name search, but it is
 still not a contradiction to the selected witness, which adds concrete
 construction premises. The required next result is a field-level transport
 theorem, or a zero-sorry contradiction using those concrete premises.
+## Selected force-origin composition
+
+The selected-path force audit is now stronger than the generic residual
+objection. `SelectedForceOriginCompositionProbe.lean` extracts the actual
+selected witness and proves that late-time activation, periodic localisation,
+and the selected joint residual jets give
+
+$$
+\lVert f(t,0)\rVert\to0\qquad(t\to1^-).
+$$
+
+The selected velocity still has unbounded origin speed. Thus the construction
+contains residual cancellation, and velocity growth cannot be converted into
+force growth without an additional lower-bound theorem. This closes the force
+explosion route and leaves the five-moment and absolute-pressure transport
+questions as the live formal objections.
+
+Evidence: `NavierStokesReview/evidence/selected_force_origin_composition_2026-09-24.md`.

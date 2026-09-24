@@ -271,13 +271,21 @@ positive lower bound in the displayed contradiction is impossible for that
 selected raw residual. This is evidence of deliberate residual cancellation,
 not evidence that the force is singular.
 
-The remaining interface question is whether the raw mixed residual in that
-probe is identified with the final force at the origin, rather than only with
-the interior residual before localisation. Until that composition is stated,
-the result is a precise correspondence objection, not an unconditional
-refutation of the C/D endpoint.
+The composition question is now settled on the selected path. The zero-sorry
+probe `SelectedForceOriginCompositionProbe.lean` uses the late-time activation
+identities, the periodic plateau at the origin, and the selected
+`VanishingJointJets` premise to prove
 
-Evidence: `NavierStokesReview/evidence/selected_witness_endpoint_residual_probe_2026-09-24.md`.
+$$
+\lVert f(t,0)\rVert\longrightarrow0\qquad(t\to1^-).
+$$
+
+The selected force therefore does not diverge at the origin. This closes the
+force-explosion route and records genuine residual cancellation. It does not
+validate the paper's five-moment or absolute-pressure interpretation, and it
+does not itself produce `False`.
+
+Evidence: `NavierStokesReview/evidence/selected_force_origin_composition_2026-09-24.md`.
 
 ## Finding 14: the selected endpoint is divergence-free
 
@@ -521,18 +529,21 @@ then the residual's vanishing endpoint jets and the origin velocity blow-up
 derive `False`. The probe also proves the one-sided residual norm limit from
 `VanishingJointJets` on the actual non-bottom endpoint filter.
 
-The selected source currently exposes upper residual `JetRate` bounds and local
-chart identities, not this positive lower bound. Therefore this work sharpens
-the live falsification target but does not declare the selected witness safe or
-refuted. The next proof must derive the lower bound from the actual selected
-five-moment/PDE coupling, or identify a different concrete contradiction.
+The selected source instead proves the raw residual and final force tend to
+zero at the origin. The positive lower bound is therefore not merely
+unlocated; it is incompatible with the selected cancellation. This closes the
+force-jet route as a formal disproof strategy. The remaining falsification
+work must identify a different false selected premise, most directly in the
+transport of the paper's five moments or in the absolute pressure semantics.
 
 ## Finding 26: the selected-witness falsification boundary is still open
 
 The direct attacks have been tested against the production path. The force
-attack has a formal conditional contradiction, but no selected-field lower
-bound has been proved. The pressure attack identifies the absence of a global
-Poisson/Leray premise, but compact support alone does not imply triviality.
+attack now has a stronger selected-path result: the final force tends to zero
+at the origin while the selected speed diverges, so the proposed force
+explosion is not available. The pressure attack identifies the absence of a
+global Poisson/Leray premise, but compact support alone does not imply
+triviality.
 The moment-blindness probe shows that the exported witness envelope does not
 carry the paper's five-debt payload, but it does not prove a wrong moment for
 the concrete selected sums.
@@ -552,3 +563,26 @@ the missing velocity-to-residual lower bound is not a technicality: it is the
 premise required to turn the force-jet objection into `False`.
 
 Evidence: `NavierStokesReview/evidence/selected_witness_attack_boundary_2026-09-24.md`.
+
+## Finding 27: the flat residual premise is all-order but debt-blind
+
+`JointResidualLimits.VanishingJointJets` is defined by a quantifier over every
+natural derivative order. The selected construction derives it from finite
+residual-rate estimates through `ActualCycleResidualBounds`,
+`ActualStageEstimates`, `StageEstimates.exists_schedule`, and
+`MixedDiagonalResidual.exists_physical_schedule_residual_zero`. The result is
+not a truncated `H^3` condition.
+
+The late time switch and the periodic spatial localisation are also source
+supported. The switch is globally smooth, equals one for `t ≥ 3/4`, and its
+positive-order derivatives vanish on the late side. The localisation compares
+the complete residual by neighbourhood equality, preserving advection,
+diffusion, pressure gradient, and all local derivative orders.
+
+Those identities nevertheless take no `FiveRowRank.Debt`,
+`PositiveOrderMoments.Debt`, or paper-moment parameter. They cannot supply the
+missing selected transport theorem. This is a precise debt-blind interface
+finding, not evidence of a temporal discontinuity or deleted three-dimensional
+cross term.
+
+Evidence: `NavierStokesReview/evidence/vanishing_joint_jets_and_localisation_trace_2026-09-24.md`.
