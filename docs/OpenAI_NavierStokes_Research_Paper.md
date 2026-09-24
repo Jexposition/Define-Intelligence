@@ -320,6 +320,27 @@ the paper's $(M,I,J,S,C_p)$ identities into the selected fields and residual.
 
 Evidence: `NavierStokesReview/evidence/stage_estimates_moment_blindness_2026-09-24.md`.
 
+## The selected residual bridge stops off the singular axis
+
+The selected construction does not use one global chart identity for every
+spatial point. `StateRealization` excludes zero radius from its domain, while
+`graphSourceTZ` requires a strictly positive radial coordinate. Its
+`chartIdentity` therefore proves the reconstructed residual only off the
+singular axis. The blow-up statement at the spatial origin is supplied by a
+separate base-profile argument, and the origin error limit is supplied by
+`GlobalBaseError.actual_error_vanishingJointJets`.
+
+This separation is a material correspondence obligation. The source does not
+yet expose a theorem showing that the independent origin error estimate is the
+full selected residual identity, or that the paper's five moments force the
+same residual at the origin. It is consequently evidence that the endpoint
+bridge is incomplete, not by itself a contradiction to the exported witness.
+The decisive next theorem would have to derive a nonzero selected residual
+lower bound, or a pressure/five-moment identity incompatible with the claimed
+`VanishingJointJets` limit.
+
+Evidence: `NavierStokesReview/evidence/state_realization_axis_scope_audit_2026-09-24.md`.
+
 ## 18. Pressure support is not a zero-field theorem
 
 The R3 construction multiplies pressure by a smooth spatial cutoff and then

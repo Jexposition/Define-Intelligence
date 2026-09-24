@@ -42,13 +42,25 @@ force from `LocalPaperTheorem` through `PaperLocalization` into
 `ActualCandidateAssembly.selected_candidate`. The current source establishes
 local velocity/pressure agreement, not this complete identity.
 
+## 5D target and origin contradiction lane: 2026-09-24
+
+| ID | Task | Status | Decisive test / evidence |
+|---|---|---:|---|
+| 5D-01 | Extract the five physical row definitions. | [x] | `PositiveOrderMoments.rowDensity`, `moments`, `weightedDensity`, and `FiveProfileMoments.physicalMoments`; evidence `physical_transport_bridge_spec_extraction_2026-09-24.md`. |
+| 5D-02 | Extract the runtime three-debt update and fixed rows. | [x] | `FiveRowRank.Debt := Fin 3 → ℝ`; `FiveRows` has two zero rows and three `(P,Jθ,Jz)` rows; `MeanRankUpdate.scaleDebt` transports the three rows. |
+| 5D-03 | State the required promotion. | [x] | `promoteDebt d := ![0,0,-(d 0),-(d 1),-(d 2)]`; the zero-sorry probe proves only the algebraic repair equality. |
+| 5D-04 | Prove promotion is the selected physical five-moment identity. | [ ] | Required theorem must mention selected stage fields, their integrals, and the selected residual/force. None is exhibited. |
+| ORG-01 | Check whether `StateRealization.chartIdentity` reaches the singular origin. | [x] | Zero-sorry probe proves its domain and `graphSourceTZ` exclude radius zero. Evidence `state_realization_axis_scope_audit_2026-09-24.md`. |
+| ORG-02 | Connect `GlobalBaseError.originPast` to actual selected fields. | [~] | `actual_error_vanishingJointJets` supplies a separate error-limit route; it does not itself identify the full selected residual at the origin. |
+| ORG-03 | Derive `False` from selected residual limits and origin blow-up. | [ ] | Prove an actual selected residual lower bound or a five-moment/pressure identity contradicting `VanishingJointJets`; generic fields do not qualify. |
+
 ## 2. Selected endpoint trace
 
 | ID | Task | Status | Required result |
 |---|---|---:|---|
 | END-01 | Trace `selected_witness` into `GermCandidateAssembly.exists_candidate_witness_of_finite_stages`. | [x] | Selected witness consumes actual stage estimates, endpoint extensions, and axis conditions. |
 | END-02 | Check whether residual rate bounds are inserted or derived. | [x] | `ActualCycleResidualBounds.native_residual` derives the full residual bound from component estimates. |
-| END-03 | Check whether `VanishingJointJets` and `AwayExtensions` are derived on the selected path. | [~] | Inspect the exact theorem chain and compile a zero-sorry dependency probe. |
+| END-03 | Check whether `VanishingJointJets` and `AwayExtensions` are derived on the selected path. | [x] | `StageEstimates.exists_schedule` and `MixedDiagonalResidual.physical_vanishingJointJets` derive the limits; `selected_witness` consumes them. Evidence `selected_residual_endpoint_trace_2026-09-24.md`. |
 | END-04 | Run `#print axioms` on the exported R³ endpoint and selected witness. | [x] | Current reports show only `propext`, `Classical.choice`, and `Quot.sound`. |
 | END-05 | Audit `selectedBudget = 0` and selected stage aliases. | [x] | Zero is an input parameter; stage families remain indexed by `ℕ`; no `sorry` found. |
 
@@ -112,6 +124,7 @@ local velocity/pressure agreement, not this complete identity.
 | TRN-06 | Extract the exact five-row target specification and runtime update laws. | [x] | `physical_transport_bridge_spec_extraction_2026-09-24.md` records the raw row densities, repair theorems, `scaleDebt`, `next_mean`, and `next_preserve_masses`. |
 | TRN-07 | Do not invent a recursive stability theorem in `PositiveOrderMoments`. | [x] | The file proves one exact repair step; recursive cycle induction is elsewhere. The selected-path transport theorem remains absent from the inspected declarations. |
 | TRN-08 | Separate the extracted 5D target from the selected residual proof. | [x] | `physical_transport_bridge_spec_extraction_2026-09-24.md` records the target and runtime laws; it is an audit specification, not a theorem supplied by the authors. |
+| TRN-09 | Check whether `StateRealization.chartIdentity` reaches the singular origin. | [x] | Zero-sorry probe proves its domain and `graphSourceTZ` are strictly positive-radius; no origin transport theorem is present in the inspected chain. |
 | PRS-03 | Keep R³ and periodic-lift domains separate. | [x] | R³ `CandidateProperties` uses Euclidean compact support; periodic endpoint uses lifted periodicity. Do not transfer torus support arguments to R³. |
 | PRS-04 | Print the exact meaning of `pressure_support`. | [x] | It is `tsupport(slice p) ⊆ K` with `IsCompact K`, not a pressure-Poisson axiom. |
 | PRS-05 | Trace `PressureRecovery` and `ActualPressureFlux`. | [x] | `candidate_unique_on_Icc` supplies the selected candidate; `classical_uniqueness_on_Icc` constructs the recovery hypotheses and pressure-flux bound. |
@@ -119,6 +132,7 @@ local velocity/pressure agreement, not this complete identity.
 | PRS-07 | Test whether comparison recovery verifies absolute selected pressure semantics. | [x] | `PressureRecoveryAbsolutePremiseProbe.lean` compiles: identical zero velocities and any common smooth pressure satisfy the comparison record. This exposes a limitation of the comparison interface, not yet a selected-endpoint contradiction. |
 | PRS-08 | Seek a genuine selected-path pressure contradiction. | [~] | Must connect the selected `pressure_germ`/`base_equation` to an absolute global Poisson or normalisation theorem, then contradict the selected pressure if possible. |
 | PRS-09 | Do not treat the comparison probe as a selected-field refutation. | [x] | The probe proves an interface limitation only. A formal disproof still requires a false selected premise or a contradiction with the selected residual limits. |
+| PRS-10 | Connect pressure-germ/base-equation premises to origin limits. | [~] | `StateRealization` is off-axis; `GlobalBaseError.originPast` supplies a separate error-limit route. A full selected pressure/residual identity at the origin remains unproved. |
 
 Evidence for this block:
 `NavierStokesReview/evidence/semantic_transport_pressure_audit_2026-09-23.md`,
@@ -143,7 +157,7 @@ Do not use `sorry`, an arbitrary existential witness, a generic countermodel dis
 
 | Priority | Next bounded action | Output |
 |---:|---|---|
-| 1 | Trace `VanishingJointJets` and `AwayExtensions` into `selected_witness`. | Source-linked dependency note and probe; attack the selected `hlim`, not a generic force. |
+| 1 | Connect the independent origin residual bound to `StateRealization.chartIdentity`. | Source-linked scope note and probe; attack the selected `hlim`, not a generic force. |
 | 2 | Search for the five-moment transport theorem on the selected import closure. | Theorem citation or exact absence report; use the extracted 5D target as the acceptance specification. |
 | 3 | Test the strongest actual selected obligation in Lean without `sorry`. | Seek a contradiction between selected residual limits, pressure semantics, and origin blow-up. |
 | 4 | Update tracker, axiom ledger, synthesis, peer review, and paper. | Human-readable counter-paper prose, not a chronological audit log. |

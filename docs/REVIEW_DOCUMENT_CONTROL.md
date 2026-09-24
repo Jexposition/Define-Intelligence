@@ -52,6 +52,14 @@ and
 the argument is in the peer review and research paper, while the plan and
 tracker retain only compact status entries.
 
+The 2026-09-24 authority map also includes
+`NavierStokesReview/evidence/state_realization_axis_scope_audit_2026-09-24.md`.
+That evidence proves a scope limitation: `StateRealization.chartIdentity` is
+an off-axis, positive-radius identity and does not itself reach the origin
+used by `origin_blowup`. `GlobalBaseError.actual_error_vanishingJointJets`
+provides a separate origin error-limit route. The two routes have not been
+proved contradictory.
+
 ## Agent 2 documents: disposition
 
 | Document | Disposition | What survives |
@@ -97,7 +105,11 @@ The following claims are currently **not established** as disproofs:
 - that the selected endpoint exploits `Filter.bot` vacuity;
 - that the force is nonsmooth merely because it is residual-defined;
 - that the whole `WholeDomain*` branch is dead code globally;
-- that a dimension count alone disproves the five-moment construction.
+- that a dimension count alone disproves the five-moment construction;
+- that the off-axis `chartIdentity` limitation alone refutes the selected
+  origin residual estimate;
+- that the explicit three-to-five promotion is the selected endpoint's
+  physical moment identity.
 
 The pure-axial and zero-helicity collapse hypothesis is explicitly cleared as
 an attack surface: `AxisymmetricFields.potential` has three Cartesian

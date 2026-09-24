@@ -351,6 +351,35 @@ Evidence:
 The selected-instantiation correction is recorded in
 `NavierStokesReview/evidence/pressure_recovery_selected_instantiation_2026-09-23.md`.
 
+## Axis scope and 5D target extraction: 2026-09-24
+
+The source audit separates three facts:
+
+1. `PositiveOrderMoments` defines genuine five-coordinate radial integrals
+   and proves exact one-step repair.
+2. `FiveRowRank` defines a separate `Fin 3 → ℝ` debt interface. Its
+   `FiveRows` predicate explicitly proves two zero preservation rows and
+   three debt rows, rather than hiding those rows in a type alias.
+3. The selected endpoint still exposes no theorem identifying either system
+   with the selected velocity, pressure, residual, or force.
+
+The exact promotion is recorded in
+`physical_transport_bridge_spec_extraction_2026-09-24.md`. Its zero-sorry
+probe proves algebraic compatibility of the repair formulas only. It does
+not prove selected-field transport.
+
+The axis audit proves that `StateRealization.chartIdentity` requires a
+nonzero radius and that `graphSourceTZ` requires positive radius. It therefore
+does not itself cover the origin used by `origin_blowup`.
+`GlobalBaseError.actual_error_vanishingJointJets` supplies a separate origin
+error-limit route, so the axis exclusion is a correspondence gap and not yet
+`False`.
+
+**Status:** 5D target extracted; selected transport unresolved; selected-path
+contradiction not established.
+
+Evidence: `NavierStokesReview/evidence/state_realization_axis_scope_audit_2026-09-24.md`.
+
 ## Document-control audit: 2026-09-23
 
 The active evidence surface is the fork `Define-Intelligence-github/docs`.

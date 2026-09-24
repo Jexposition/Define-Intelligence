@@ -365,6 +365,26 @@ moments as premises of that limit. This is the current CTR-005 transport
 objection, not yet a zero-sorry contradiction to the selected theorem.
 Evidence: `NavierStokesReview/evidence/selected_residual_endpoint_trace_2026-09-24.md`.
 
+## Axis scope of the residual bridge
+
+The selected residual proof has a second interface limitation. `StateRealization`
+requires `x.1.1 ≠ 0` throughout its domain, and `graphSourceTZ` requires a
+strictly positive radial coordinate. Consequently `StateRealization.chartIdentity`
+is an off-axis identity. It cannot, by its own quantified hypotheses, certify
+the singular origin used by `origin_blowup`.
+
+This is not yet a contradiction. The construction separately proves
+`GlobalBaseError.actual_error_vanishingJointJets` for the base error on the
+past-origin filter, and `selected_residual_jetRate` combines an off-axis bound
+with an origin/base bound. The unresolved question is whether that separate
+origin estimate is actually an identity for the selected residual, and whether
+the paper's five moments or pressure equations force a nonzero origin residual.
+The required zero-sorry refutation is therefore a theorem about the actual
+selected fields, not about an arbitrary `StateRealization` or generic rate
+contract.
+
+Evidence: `NavierStokesReview/evidence/state_realization_axis_scope_audit_2026-09-24.md`.
+
 ## Editorial control
 
 This is the active human-readable review. Its evidence boundary and the status

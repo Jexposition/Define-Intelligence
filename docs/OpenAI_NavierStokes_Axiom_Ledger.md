@@ -438,6 +438,24 @@ transport gap, not proof that the residual limits are false.
 **Status:** **selected-path moment transport unestablished; no formal
 contradiction obtained**.
 
+## AX-032: chart identity excludes the singular axis
+
+**Source:** `NavierStokes/PhysicalResidualJetBounds.lean:885-966`;
+`NavierStokes/PhysicalResidualTZ.lean:388-389`;
+`NavierStokes/ActualCycleResidualBounds.lean:915-1000`;
+`NavierStokesReview/src/probes/StateRealizationAxisExclusionProbe.lean`.
+
+`StateRealization` requires nonzero radius on its domain, and
+`graphSourceTZ` requires a strictly positive radial coordinate. Therefore
+`StateRealization.chartIdentity` is an off-axis residual identity and does not
+itself certify the origin used by `origin_blowup`. The selected construction
+has a separate `GlobalBaseError.actual_error_vanishingJointJets` route for the
+origin error. No theorem inspected here proves those two routes inconsistent.
+
+**Status:** machine-checked scope limitation; not a selected-path
+contradiction. A refutation still requires a false origin estimate or a
+five-moment/pressure identity forcing a nonzero residual there.
+
 ## Document-control note
 
 This ledger is active only in the fork. See
