@@ -644,3 +644,21 @@ already been contradicted. The authors must establish the correspondence before
 the stronger published “solution” description can be accepted.
 
 Evidence: `NavierStokesReview/evidence/official_claim_transport_matrix_2026-09-24.md`.
+
+## Selected physical-data interface recheck
+
+The current source-backed refinement is narrower and stronger than an
+orphaned import-graph allegation. `PhysicalData` is genuinely constructed for
+the selected finite-stage fields and consumed by the residual-rate endpoint,
+but its record exports no five-coordinate debt or equality to the paper tuple
+`(M,I,J,S,C_p)`. The review-side probe
+`SelectedPhysicalDataMomentInterfaceProbe.lean` compiles a nonzero abstract
+debt alongside the actual selected record, demonstrating that this interface
+does not determine the paper's five-moment payload.
+
+This strengthens CTR-005 as an affirmative burden-of-proof failure. It is not
+yet a selected-field `False` theorem: the actual integrals remain to be
+equated with the paper quantities before a numerical or symbolic mismatch can
+be derived.
+
+Evidence: `NavierStokesReview/evidence/selected_physical_data_moment_interface_2026-09-24.md`.

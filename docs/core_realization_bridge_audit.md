@@ -70,3 +70,20 @@ residual/force endpoint.
 Evidence: `NavierStokesReview/src/completions/SelectedCycleMomentTransport.lean`.
 The broad “orphaned moment specification” wording is withdrawn; the live
 finding is a missing theorem at the selected mixed-sum boundary.
+
+## Selected physical-data moment interface
+
+The active bridge has the following source boundary:
+
+| Source | Function in the selected path | Missing export |
+|---|---|---|
+| `ActualCycleResidualBounds.lean:1015-1037` | `PhysicalFields` record: smoothness, germs, exterior agreement | No five-coordinate debt field |
+| `ActualCycleResidualBounds.lean:1142-1173` | `PhysicalData` abbreviation and residual jet-rate construction | No equality to `(M,I,J,S,C_p)` |
+| `ActualCandidateAssembly.lean:1079-1098` | Constructs and consumes selected `physicalData` | No field-level moment identity |
+| `ActualCandidateAssembly.lean:1121-1151` | Exports `Witness` | No selected mixed-field moment certificate |
+
+`SelectedPhysicalDataMomentInterfaceProbe.lean` compiles a nonzero abstract
+debt alongside the actual selected `PhysicalData`. This is a precise proof
+that the exported interface does not determine the paper's five-moment
+payload. It is not a proof that the concrete selected integrals are false;
+that requires a separate identity for those integrals.

@@ -547,3 +547,17 @@ acceptance. **NOT FORMALLY REFUTED** remains only a subordinate technical
 status reporting that the current Lean attack has not derived `False`; it is
 not a presumption that the missing bridge exists. Continue the `False` search
 as a separate lane, not as a prerequisite for the publication verdict.
+
+## Selected physical-data moment gate
+
+| Task | Status | Acceptance condition |
+|---|---:|---|
+| Trace `PhysicalData` into the selected residual-rate endpoint | [x] | `ActualCycleResidualBounds.lean:1015-1037, 1142-1173`; `ActualCandidateAssembly.lean:1079-1098` |
+| Test whether the exported record determines a five-moment payload | [x] | `SelectedPhysicalDataMomentInterfaceProbe.lean` compiles with arbitrary nonzero abstract debt |
+| Prove the selected mixed fields equal `(M,I,J,S,C_p)` | [ ] | A field-level integral identity in the selected `Witness` path |
+| Derive a selected-field mismatch | [ ] | A false equality or false mandatory endpoint premise, proved without `sorry` |
+
+The publication gate is already met for the narrower review conclusion:
+without the selected-field composition theorem, the stronger paper claim is
+**NOT ESTABLISHED**. The remaining two rows are required only for a stronger
+kernel-level refutation.

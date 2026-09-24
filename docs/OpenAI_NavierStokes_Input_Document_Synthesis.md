@@ -473,3 +473,17 @@ claim. The authors bear the burden of supplying that correspondence. A formal
 establish that the paper's current explanation is under-supported.
 
 Evidence: `NavierStokesReview/evidence/official_claim_transport_matrix_2026-09-24.md`.
+
+## Selected physical-data boundary
+
+The source is connected at the level of local smoothness, germs, exterior
+matching, and residual jet estimates. The remaining gap is semantic: the
+selected `PhysicalData` and `Witness` interfaces do not export an equality
+between the final mixed fields and the paper's five named moments. The new
+zero-sorry probe records this as an interface non-implication, not as a claim
+that the selected integrals have already been disproved.
+
+This distinction resolves the burden-of-proof question. The stronger public
+claim is not established until the authors provide that selected-field
+transport theorem; no kernel-level `False` derivation is required merely to
+withhold acceptance of an unsupported affirmative correspondence.

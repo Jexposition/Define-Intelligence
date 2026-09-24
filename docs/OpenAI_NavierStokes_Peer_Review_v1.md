@@ -1103,3 +1103,26 @@ separate threshold requiring a false selected premise or a zero-sorry
 contradiction.
 
 Evidence: `NavierStokesReview/evidence/official_claim_transport_matrix_2026-09-24.md`.
+
+## Finding 38: the selected physical-data record does not export the paper's moment payload
+
+The selected path is materially populated. `ActualCandidateAssembly.physicalData`
+constructs `PhysicalData` for the actual finite-stage fields, and
+`ActualCycleResidualBounds.Invariant.residual_jetRate` consumes that record to
+obtain the residual bounds used downstream. This rules out the imprecise claim
+that the final endpoint is only a disconnected wrapper.
+
+The record nevertheless contains smoothness, germs, and exterior agreement,
+not an equality to `PositiveOrderMoments.moments`,
+`FiveProfileMoments.physicalMoments`, `FiveRowRank.FiveRows`, or the paper's
+`(M,I,J,S,C_p)`. The zero-sorry
+`SelectedPhysicalDataMomentInterfaceProbe.lean` makes the interface omission
+explicit by pairing the actual selected record with an arbitrary nonzero debt.
+
+That result is an interface non-implication, not a claim that the selected
+integrals have already been shown false. It is nevertheless sufficient to
+withhold the stronger published solution claim: the authors must supply the
+selected-field moment-composition theorem. A `False` theorem would strengthen
+the review but is not required to establish this failure of affirmative proof.
+
+Evidence: `NavierStokesReview/evidence/selected_physical_data_moment_interface_2026-09-24.md`.

@@ -761,3 +761,13 @@ adds no axiom. Its theorem uses the existing compact perturbation obstruction
 to prove failure of the explicitly strengthened `FixedForceStable` predicate.
 The result is not a `False` derivation from the literal C/D endpoint because
 force independence and perturbation stability are not endpoint fields.
+
+## AX-045: selected physical-data moment interface probe
+
+`NavierStokesReview/src/probes/SelectedPhysicalDataMomentInterfaceProbe.lean`
+adds no axiom, `sorry`, or `unsafe` declaration. It proves that the actual
+selected `PhysicalData` record can coexist with an arbitrary nonzero abstract
+five-coordinate debt because the record does not contain that debt or an
+equality to the paper's `(M,I,J,S,C_p)` tuple. The result is an interface
+non-implication supporting CTR-005, not a contradiction of the selected
+endpoint and not evidence that the upstream five-moment modules are dead.

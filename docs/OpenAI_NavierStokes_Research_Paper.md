@@ -902,3 +902,35 @@ published interpretation. A `False` theorem would be a stronger and separate
 result, not a prerequisite for this conclusion.
 
 Evidence: `NavierStokesReview/evidence/official_claim_transport_matrix_2026-09-24.md`.
+
+## The selected physical-data interface
+
+The selected construction does contain a genuine local-to-global assembly.
+`PhysicalData` records the smooth velocity and pressure fields, their germs,
+and their exterior agreement; the residual endpoint consumes those data to
+obtain the jet estimates used by the force construction. The review therefore
+does not treat the upstream five-moment modules as dead code and does not
+claim that the exported endpoint is empty.
+
+The unresolved issue is more precise. The selected `PhysicalData` record and
+the exported `Witness` do not state that the final mixed fields realise the
+five quantities
+
+$$
+(M,I,J,S,C_p).
+$$
+
+The source defines genuine five-coordinate moments upstream, but the review
+has not located a theorem transporting those integrals through the selected
+mixed velocity, pressure, residual, and force. The zero-sorry interface probe
+shows that the selected physical-data record can coexist with an arbitrary
+nonzero abstract five-debt parameter because that parameter is not part of the
+record's contract.
+
+This is an affirmative underclaim finding. It is enough to conclude that the
+paper's stronger five-moment explanation is **NOT ESTABLISHED** by the
+exported endpoint. It is not, by itself, a proof that the actual selected
+integrals are wrong; that stronger result requires a field-level identity and
+then a proved mismatch.
+
+Evidence: `NavierStokesReview/evidence/selected_physical_data_moment_interface_2026-09-24.md`.

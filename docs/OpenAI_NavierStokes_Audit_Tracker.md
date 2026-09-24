@@ -1268,3 +1268,24 @@ identification is on the authors. A missing bridge is enough to withhold the
 stronger claim, even though it is not itself a proof of `False`.
 
 Evidence: `NavierStokesReview/evidence/official_claim_transport_matrix_2026-09-24.md`.
+
+## Selected physical-data moment-interface recheck: 2026-09-24
+
+The selected source does construct and consume `PhysicalData`; this is not a
+dead-code finding. `ActualCycleResidualBounds.lean:1015-1037` defines the
+record with smoothness, germs, and exterior agreement, while
+`ActualCycleResidualBounds.lean:1142-1173` abbreviates that record as
+`PhysicalData` and uses it to produce residual jet bounds. The record has no
+`PositiveOrderMoments.Debt`, `FiveProfileMoments.physicalMoments`, or
+paper-level `(M,I,J,S,C_p)` field.
+
+The review-side zero-sorry probe
+`SelectedPhysicalDataMomentInterfaceProbe.lean` pairs the actual selected
+`physicalData` theorem with an arbitrary nonzero five-coordinate debt. This
+proves an interface non-implication: the exported record does not determine a
+five-moment payload. It does not prove that the actual selected fields have a
+wrong integral. The next affirmative target is a theorem equating the
+selected mixed fields to the five named moments, followed by a proof that one
+such equality fails or is absent from a mandatory endpoint premise.
+
+Evidence: `NavierStokesReview/evidence/selected_physical_data_moment_interface_2026-09-24.md`.
