@@ -734,6 +734,12 @@ The extension theorem packages the pointwise obstruction for
 `PositiveTimeForce.force`. The structural duality probe separately proves that
 `-f` is smooth, reverses the local work pairing, and cancels `f` pointwise.
 
+The probe also supplies an explicit field `eₐ(t,x) = (t-t₀) • a`. It proves
+`ContDiff ℝ ∞` smoothness, zero spatial divergence, and a fixed-force defect
+equal to `a` at `t₀`; hence every nonzero `a` breaks the same-force equation.
+This is an operator-level countertest, not yet an admissible finite-energy,
+compactly supported perturbation of the selected whole-space witness.
+
 **Status:** [x] operator-level fixed-data and mirror identities proved;
 [~] selected schedule fracture and C/D `False` remain unproved. No theorem yet
 supplies an admissible perturbation of the selected witness or identifies a

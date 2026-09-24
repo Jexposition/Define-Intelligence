@@ -270,6 +270,9 @@ Evidence: `NavierStokesReview/evidence/selected_witness_endpoint_residual_probe_
 
 - [x] `IndependentDataPerturbationProbe.lean` derives the fixed-force
   perturbation defect.
+- [x] The same probe supplies a globally smooth, spatially divergence-free
+  affine-time field with an explicitly nonzero defect for every nonzero
+  amplitude.
 - [x] `FixedForcePerturbationCompletion.lean` packages the result for the
   positive-time force wrapper.
 - [x] `StructuralDualityMirrorProbe.lean` proves mirror smoothness, local work

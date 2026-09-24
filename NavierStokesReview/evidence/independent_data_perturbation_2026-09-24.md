@@ -32,6 +32,25 @@ $$
 At `:54-69`, a nonzero value of this defect proves that the perturbed field
 cannot satisfy the same fixed-force equation.
 
+The probe now includes the explicit test field
+
+$$
+e_a(t,x)=(t-t_0)a,qquad a\ne0.
+$$
+
+`affine_time_perturbation_smooth`, lines 25-28, proves that this field is
+globally `ContDiff ℝ ∞`; `affine_time_perturbation_divergence_free`, lines
+30-33, proves that its spatial divergence is zero. The theorem
+`affine_time_perturbation_defect_eq`, lines 85-119, computes its defect at
+`t=t₀` exactly as `a`. `affine_time_perturbation_breaks_fixed_force`, lines
+121-172, therefore proves that no nonzero `a` can preserve the same fixed
+force at that point.
+
+This is an operator-level causality test. The particular perturbation is not
+compactly supported or finite-energy on `ℝ³`, so it is not itself an admissible
+CMI witness perturbation. A compactly supported divergence-free version would
+be a stronger, separate theorem.
+
 The reusable version is
 `NavierStokesReview/src/extensions/FixedForcePerturbationCompletion.lean`:
 
@@ -56,11 +75,13 @@ The standalone probe also compiled with exit code 0.
 
 ## What this proves
 
-The force cannot adapt to a perturbation while remaining the same fixed datum:
+The force cannot adapt to this perturbation while remaining the same fixed datum:
 the cross terms and the quadratic perturbation term must be cancelled by the
 perturbation itself. This is a formal obstruction to describing a
 residual-designed construction as a forward evolution robust under independent
-velocity perturbations.
+velocity perturbations. This is stronger than an interface-only observation:
+the kernel computes a nonzero defect for a concrete smooth divergence-free
+test field.
 
 ## What this does not prove
 

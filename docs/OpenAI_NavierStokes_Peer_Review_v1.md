@@ -246,6 +246,32 @@ The code inspection also answers the implementation question. `PositiveTimeForce
 
 **Verdict:** the proposed conservation trap is not an ironclad counterexample. The live formal target is to prove, without `sorry`, that the selected residual cannot have the endpoint limits or force predicates required by the code. Evidence: `NavierStokesReview/evidence/force_conservation_obstruction_adjudication_2026-09-23.md`.
 
+## Finding 14: fixed-data perturbation exposes residual path dependence
+
+The independent-data objection has now been tested against the concrete
+residual operator rather than left as a physical analogy. The zero-sorry probe
+`IndependentDataPerturbationProbe.lean` defines
+
+$$
+e_a(t,x)=(t-t_0)a,qquad a\ne0,
+$$
+
+and proves that `e_a` is globally smooth and spatially divergence-free. At
+the reference time its spatial derivatives and Laplacian vanish, while its
+time derivative is `a`. The exact residual defect is therefore `a`, so the
+perturbed velocity cannot satisfy the same fixed force as the base velocity.
+
+This formally establishes path dependence: a force selected as the residual
+of one trajectory does not remain the residual after an independent velocity
+variation. It does not, by itself, prove that the literal existential C/D
+statement is false. The chosen test field is not compactly supported or
+finite-energy on `ℝ³`, and no source theorem currently states that
+`StageEstimates.exists_schedule` must be stable under an admissible variation.
+The result is a direct causality objection and a precise target for a stronger
+selected-path theorem, not a fabricated `False` certificate.
+
+Evidence: `NavierStokesReview/evidence/independent_data_perturbation_2026-09-24.md`.
+
 ## Finding 22: the force attack now has an exact conditional contradiction
 
 The review has now attacked the selected witness itself. The zero-sorry probe

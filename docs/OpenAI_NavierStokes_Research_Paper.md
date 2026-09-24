@@ -425,6 +425,18 @@ residual-designed force on its selected velocity path. It does not, however,
 show that the selected existential witness must admit such a perturbation, and
 therefore does not by itself derive `False` from the C/D endpoint.
 
+The probe also contains a concrete test field
+
+$$
+e_a(t,x)=(t-t_0)a,qquad a\ne0.
+$$
+
+It proves this field is globally smooth and spatially divergence-free, and
+computes its defect at (t=t_0) as exactly (a). Thus the same fixed force
+cannot satisfy both the original and perturbed velocities. The field is not
+compactly supported or finite-energy on (mathbb R^3), so this is an exact
+operator-level causality obstruction rather than a direct CMI counterexample.
+
 The correct CTR-012 conclusion is consequently two-layered. The construction
 is not a forward prescribed-force stability result: changing the velocity
 without recomputing the residual generally destroys the force identity. But a

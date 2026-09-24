@@ -307,12 +307,14 @@ field `-f` exists, but it is not a counterexample to an existential claim about
 |---|---:|---|
 | CTR-012-A | [x] | Fixed-force perturbation identity compiles with no admitted declarations. |
 | CTR-012-B | [x] | The obstruction is packaged for `PositiveTimeForce.force`. |
+| CTR-012-A2 | [x] | The explicit affine-time perturbation is globally smooth, spatially divergence-free, and has nonzero defect `a` for `a ≠ 0`. |
 | CTR-012-C | [x] | Mirror smoothness, work sign reversal, and `f + (-f) = 0` compile. |
 | CTR-012-D | [ ] | A selected-path admissible perturbation or force-superposition contradiction remains to be proved. |
 
 The current lane establishes that residual-designed forcing is path-dependent:
 holding the force fixed after changing the velocity imposes the full homogeneous
-perturbation PDE. It does not establish that the selected existential witness
+perturbation PDE. The explicit affine-time test field gives a nonzero defect
+under this fixed datum. It does not establish that the selected existential witness
 must be stable under that perturbation, nor that the nonlinear schedule reverses
 under (f\mapsto-f). Those stronger conclusions require additional premises.
 
