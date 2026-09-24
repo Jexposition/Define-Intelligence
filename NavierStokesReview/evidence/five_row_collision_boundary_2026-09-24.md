@@ -75,4 +75,3 @@ that transports the paper's five named moments through the selected stage
 fields, rank corrections, residual, pressure, and endpoint force. Until such
 a theorem or a false selected premise is exhibited, the collision argument is
 a rejected inference, not a disproof of the C/D endpoint.
-
