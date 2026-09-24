@@ -142,11 +142,27 @@ The construction also contains an actual-field route. `ActualStageEstimates`, `A
 
 ## Findings requiring revision
 
-### Finding 1: the paper-to-code moment correspondence is missing
+### Finding 1: the selected-field transport required by the published solution is missing
 
-The paper describes five cumulative quantities `(M, I, J, S, Cp)` and a five-parameter repair. `FiveRowRank.lean` defines `Debt := Fin 3 → ℝ`, uses three angular powers and two axial powers, and treats its first two rows as fixed zero-moment conditions. `MomentBridgeObstructionProbe.lean` proves that the paper-shaped exponent vectors cannot be directly equal to the `FiveRowRank` vectors and that the associated debt spaces have no linear equivalence.
+The paper makes five moment quantities and their repair a load-bearing part of
+the construction. `PositiveOrderMoments.lean` does contain a genuine five-row
+definition: `rowDensity` and `moments` at lines 77-85 use the same five
+order-n integrands as the paper's equations (5.10)-(5.11). This is positive
+evidence and should not be misreported as a formula mismatch.
 
-This is not a stylistic discrepancy. It blocks the direct inference that the paper's five-equation Jacobian is the matrix verified by `FiveRowRank`.
+The unresolved issue is the selected-field composition. The production field
+at `ActualCandidateAssembly.lean:515-523` is the sum of the particular,
+signed, and stream-mean fields. The exported `Witness` at
+`ActualCandidateAssembly.lean:1121-1151` exports sums, extensions, a force,
+`CandidateProperties`, and endpoint consequences, but no equality identifying
+that mixed field with `PositiveOrderMoments.moments`,
+`FiveProfileMoments.physicalMoments`, or the paper tuple `(M,I,J,S,C_p)`.
+
+This is not a request for optional explanatory detail. The paper uses those
+identities to remove pressure/stress tails and to preserve the outer fields.
+Without the selected-field transport theorem, the source record does not
+establish that the object advertised as the Navier-Stokes solution is the
+five-moment object proved in the paper.
 
 The runtime audit also rules out an overstrong version of the objection. In
 `MeanRankUpdate.lean`, `scaleDebt` carries three debt coordinates with explicit
@@ -156,9 +172,21 @@ energy. The source theorem `five_rows` constructs these corrections for
 nonzero debt. The remaining issue is therefore transport into the selected
 Cartesian field, not an immediate contradiction from clamped energy rows.
 
-### Finding 2: a separate five-dimensional repair does not close Finding 1
+### Finding 2: the three-debt interface is not the selected five-moment certificate
 
-`PositiveOrderMoments.lean` defines `Debt := Fin 5 → ℝ` and proves an exact repair theorem for five physical rows. This is positive evidence that the source has a serious five-row mechanism. It does not establish that these rows are the paper's `(M, I, J, S, Cp)`, nor that this module is the repair consumed by the selected exported candidate. A correspondence theorem and endpoint dependency trace are required.
+`FiveRowRank.lean:21-22` defines `Debt := Fin 3 → ℝ`; its repair functions
+consume three debt coordinates, while the first two rows of `FiveRows` impose
+the correction constraints. `FiveRowPositiveOrderBridgeProbe.lean` verifies
+only the explicit promotion `(P,Jθ,Jz) ↦ (0,0,-P,-Jθ,-Jz)`. That algebraic
+promotion does not prove that the selected mixed velocity and pressure fields
+have the paper's five integrals, nor that the promoted rows drive the residual
+and force used by `Witness`.
+
+Accordingly, the direct dimensional objection to `PositiveOrderMoments` is
+withdrawn, but the central composition objection is strengthened: the source
+contains both real five-row formulae and a distinct three-debt runtime repair,
+yet the published solution record does not export the theorem that connects
+the selected endpoint to the paper's five-moment mechanism.
 
 ### Finding 3: regularity is not a substitute for moment tracing
 

@@ -1316,3 +1316,26 @@ state of the kernel-level contradiction search.
 
 Evidence: `NavierStokesReview/evidence/burden_of_proof_underclaim_audit_2026-09-24.md`;
 `NavierStokesReview/evidence/official_claim_transport_matrix_2026-09-24.md`.
+
+## Five-row formula alignment and selected-field transport: 2026-09-25
+
+The review has corrected an important possible underclaim. The positive-order
+five-row formulae are not being alleged to disagree with the paper:
+`PositiveOrderMoments.rowDensity` and `moments`
+(`PositiveOrderMoments.lean:77-85`) match the paper's five order-moment
+integrands. The outstanding defect is at the selected composition boundary.
+`ActualCandidateAssembly.positivePotential`
+(`ActualCandidateAssembly.lean:515-523`) is the particular-plus-signed-plus-
+stream field used to form the selected stages, while `Witness`
+(`ActualCandidateAssembly.lean:1121-1151`) exports no equality carrying that
+mixed field into `PositiveOrderMoments.moments`,
+`FiveProfileMoments.physicalMoments`, or the paper tuple `(M,I,J,S,C_p)`.
+
+That omission is load-bearing because the paper uses the five identities to
+remove pressure/stress tails and preserve outer fields. The current verdict
+therefore addresses the central published solution claim: the source does not
+establish that the selected object exported as the solution is the object to
+which the paper's five-moment tail-cancellation argument applies. This is an
+affirmative failure to discharge the authors' proof burden. It is distinct
+from the narrower question whether the selected endpoint alone yields a
+kernel-level `False`.

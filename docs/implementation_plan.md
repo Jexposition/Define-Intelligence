@@ -130,3 +130,17 @@ identifies a solution for `-f` or `0` with the selected solution for `f`.
 | OC-05 | [ ] | Promote CTR-005 to a kernel-level disproof only after a zero-sorry selected-path contradiction. |
 
 Evidence: `NavierStokesReview/evidence/official_claim_transport_matrix_2026-09-24.md`.
+
+## Source correction: five-row formulae versus selected transport
+
+The review must not call `PositiveOrderMoments` a formula mismatch. Its
+`rowDensity`/`moments` definitions at `PositiveOrderMoments.lean:77-85`
+match the paper's five order-moment integrands. The live objection is that the
+selected production field at `ActualCandidateAssembly.lean:515-523` is a
+particular-plus-signed-plus-stream sum, while `Witness` at
+`ActualCandidateAssembly.lean:1121-1151` exports no equality carrying that
+mixed field into `PositiveOrderMoments.moments`,
+`FiveProfileMoments.physicalMoments`, or `(M,I,J,S,C_p)`. Because the paper
+uses these identities to remove pressure/stress tails and preserve outer
+fields, this missing transport is a defect in the central published solution
+claim, not an optional explanatory omission.
