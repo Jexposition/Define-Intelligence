@@ -425,6 +425,19 @@ residual-designed force on its selected velocity path. It does not, however,
 show that the selected existential witness must admit such a perturbation, and
 therefore does not by itself derive `False` from the C/D endpoint.
 
+The localisation objection has now been formalised rather than left at the
+level of the affine test. `CompactFixedForcePerturbation.lean` constructs a
+smooth compactly supported potential, takes its spatial curl, and forms a
+time-affine perturbation. The resulting field is divergence-free on every
+time slice. At the switch time its spatial value, first derivative, and
+Laplacian vanish, while its temporal derivative at the origin is the nonzero
+first coordinate vector. The theorem
+`compactPerturbation_breaks_any_fixed_force_at_origin` proves that the base and
+perturbed fields cannot satisfy the same residual equation with the same force.
+This is a genuine localised fixed-data obstruction, but it remains an
+operator-level result: the literal endpoint does not assert stability under
+perturbation, so this theorem alone does not refute its existential quantifier.
+
 The probe also contains a concrete test field
 
 $$
@@ -478,6 +491,37 @@ the paper's five moments into the actual velocity, pressure, residual, and
 force. The review should be upgraded to a formal refutation only after a
 zero-sorry theorem derives `False` from the selected witness and its actual
 premises, or proves a false mandatory endpoint predicate.
+
+## 12. Closure correction and the surviving counter-argument
+
+The five-moment objection is not that the repository lacks five-moment
+mathematics. A transitive import traversal rooted at
+`ActualCandidateAssembly.lean` reaches 507 local modules, including the
+positive-order, profile, and rank subsystems. The source contains exact repair
+identities and uses rank/debt data upstream of the selected endpoint.
+
+The counter-argument is instead about semantic transport. The public `Witness`
+proposition exposes the selected schedule, mixed sums, extensions, force,
+candidate properties, consequences, blow-up norm, force decay, and boundary
+jets. It does not expose an equality identifying the final mixed fields with
+the paper's five quantities
+
+$$
+(M,I,J,S,C_p),
+$$
+
+nor a theorem carrying that equality into the residual, pressure, force, and
+all-order jet estimates. The direct-germ interface is therefore weaker than
+the paper's advertised five-moment semantics even though the upstream repair
+system is substantive.
+
+This is a genuine paper-to-endpoint correspondence failure and the strongest
+current counter-paper result. It is not yet a formal `False` theorem: the
+review has not shown that the concrete selected fields violate one of those
+integral identities. The decisive next step is a field-level transport theorem
+or a zero-sorry counterexample to one of its concrete equalities.
+
+Evidence: `NavierStokesReview/evidence/selected_moment_transport_closure_2026-09-24.md`.
 
 ## References and evidence
 

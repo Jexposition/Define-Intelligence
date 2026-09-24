@@ -165,6 +165,16 @@ Do not use `sorry`, an arbitrary existential witness, a generic countermodel dis
 | 3 | Test the strongest actual selected obligation in Lean without `sorry`. | Seek a contradiction between selected moment/pressure semantics and the endpoint, not a generic countermodel. |
 | 4 | Update tracker, axiom ledger, synthesis, peer review, and paper. | Human-readable counter-paper prose, not a chronological audit log. |
 
+### Fixed-data perturbation closure
+
+| Check | Status | Result |
+|---|---:|---|
+| Exact residual perturbation identity | [x] | `IndependentDataPerturbationProbe.lean` compiles without `sorry`. |
+| Smooth divergence-free localised test field | [x] | `CompactFixedForcePerturbation.lean` constructs a compact spatial curl perturbation. |
+| Nonzero switch-time defect | [x] | The defect at the origin is `coordinateVector 0 ≠ 0`. |
+| Contradiction with same fixed force | [x] | Base and perturbed fields cannot satisfy the same residual equation under the stated local hypotheses. |
+| Contradiction to literal C/D existential endpoint | [~] | Not established: the endpoint does not currently quantify over perturbations. |
+
 ## External literature lane
 
 | ID | Result | Status | Interpretation |
@@ -320,3 +330,15 @@ under (f\mapsto-f). Those stronger conclusions require additional premises.
 
 Evidence: `NavierStokesReview/evidence/independent_data_perturbation_2026-09-24.md`;
 `NavierStokesReview/evidence/mirror_force_symmetry_2026-09-24.md`.
+
+## Closure correction: 2026-09-24
+
+| Check | Status | Result |
+|---|---:|---|
+| Selected import closure | [x] | 507 reachable modules from `ActualCandidateAssembly`; five-moment and rank modules are present upstream. |
+| Dead-code allegation | [x] | Withdrawn in its broad form. The active objection is missing selected-endpoint transport, not absent machinery. |
+| Endpoint type boundary | [x] | `Witness` contains schedules, fields, force, consequences, jets, and decay, but no named five-moment equality. |
+| Selected transport theorem | [~] | Search/construct a theorem identifying the actual mixed sums with `(M,I,J,S,C_p)` and carrying it into residual and force premises. |
+| Formal contradiction | [~] | No selected-path `False` theorem yet. Keep the counter-paper verdict at “not established as claimed”. |
+
+Evidence: `NavierStokesReview/evidence/selected_moment_transport_closure_2026-09-24.md`.

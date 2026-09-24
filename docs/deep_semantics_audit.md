@@ -44,3 +44,12 @@ a certification of the complete CMI claim. The force result remains conditional
 on the selected residual limits and extension data. The live objections are
 the **Specification Drift (Missing Moment Transport Glue)** and the absence of
 an absolute pressure-semantic bridge in the comparison interface.
+
+The selected-closure census fixes the scope of that objection. The closure
+rooted at `ActualCandidateAssembly.lean` reaches 507 local modules and contains
+the upstream five-moment and rank machinery. The remaining issue is not an
+algebraic circularity or a dead subsystem; it is the absence of an exposed
+selected-field equality carrying the paper moments into the final residual and
+force chain.
+
+Evidence: `NavierStokesReview/evidence/selected_moment_transport_closure_2026-09-24.md`.

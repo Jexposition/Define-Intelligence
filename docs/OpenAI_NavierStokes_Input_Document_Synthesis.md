@@ -350,3 +350,18 @@ theorems.
 
 Evidence: `NavierStokesReview/evidence/independent_data_perturbation_2026-09-24.md`;
 `NavierStokesReview/evidence/mirror_force_symmetry_2026-09-24.md`.
+
+## Closure census correction
+
+The selected import closure was rerun rather than inferred from direct imports.
+It reaches 507 local modules and contains substantive references to
+`PositiveOrderMoments`, `FiveProfileMoments`, `FiveRowRank`, `physicalMoments`,
+and `CorrectionState.debt`. The counter-paper therefore withdraws any claim
+that the five-moment construction is absent or globally orphaned.
+
+The sharper finding survives: the endpoint `Witness` type does not expose a
+selected-field equality transporting the paper's five named moments into the
+final mixed velocity, pressure, residual, force, or all-order residual-jet
+premises. This is the live CTR-005 correspondence objection.
+
+Evidence: `NavierStokesReview/evidence/selected_moment_transport_closure_2026-09-24.md`.

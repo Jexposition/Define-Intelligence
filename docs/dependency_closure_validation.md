@@ -30,8 +30,12 @@ The final proof structure explicitly unpacks the constructed variables using the
 **Analysis:** 
 The exact file chain is:
 `Theorem.lean` ➔ `ActualCandidate.lean` ➔ `ActualCandidateAssembly.lean` ➔ `ActualCycleResidualBounds.lean` ➔ `PhysicalResidualJetBounds.lean`.
-* **The transport gap:** Across this inspected import chain, no direct
-  inclusion or merging of `FiveRowRank.lean` was found.
+* **The transport gap:** The direct residual-bound modules do not expose a
+  semantic `FiveRowRank` equality. A transitive closure rooted at
+  `ActualCandidateAssembly.lean` nevertheless reaches `FiveRowRank`,
+  `FiveProfileMoments`, and `PositiveOrderMoments` through upstream
+  construction modules. Direct-import separation is therefore evidence about
+  the endpoint interface, not evidence that the rank machinery is absent.
 * **The interface boundary:** `selected_witness` is consumed as a generic
   `CandidateProperties` structure. This hides the construction history from
   the public endpoint, but does not prove that the underlying fields violate
@@ -58,3 +62,14 @@ Poisson representative for the selected pressure. These are material
 paper-to-code correspondence objections. They are not irrefutable formal
 disproofs, and they do not establish that the endpoint contains no 3D
 Navier–Stokes fields.
+
+## 4. Selected-closure census
+
+The import traversal was rerun from `ActualCandidateAssembly.lean` and reached
+507 local modules. Literal occurrence counts in that closure were 154 for
+`PositiveOrderMoments`, 146 for `FiveProfileMoments`, 104 for `FiveRowRank`,
+44 for `FiveRows`, 42 for `physicalMoments`, and 44 for
+`CorrectionState.debt`. The surviving objection is the missing selected-field
+transport theorem, not a dead-code claim.
+
+Evidence: `NavierStokesReview/evidence/selected_moment_transport_closure_2026-09-24.md`.

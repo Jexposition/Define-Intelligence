@@ -1,5 +1,6 @@
 import NavierStokes.ResidualCalculus
 import Mathlib.Analysis.Calculus.Deriv.Add
+import Mathlib.Analysis.Calculus.Deriv.Mul
 import Mathlib.Analysis.Calculus.ContDiff.Operations
 
 /-!
@@ -94,19 +95,8 @@ theorem affine_time_perturbation_defect_eq
           ((t₀ - t₀) • a) = a := by
   have hderiv :
       deriv (fun s : ℝ => (s - t₀) • a) t₀ = a := by
-    rw [← fderiv_apply_one_eq_deriv]
-    have hf :
-        fderiv ℝ (fun s : ℝ => (s - t₀) • a) t₀ =
-          (fderiv ℝ (fun s : ℝ => s - t₀) t₀).smulRight a := by
-      simpa only [id_eq] using
-        (fderiv_smul_const (c := fun s : ℝ => s - t₀)
-          (differentiableAt_id.sub_const t₀) a)
-    rw [hf]
-    have hs : deriv (fun s : ℝ => s - t₀) t₀ = 1 := by
-      change deriv (fun s : ℝ => id s + (-t₀)) t₀ = 1
-      rw [deriv_add_const]
-      exact deriv_id t₀
-    simp [ContinuousLinearMap.smulRight_apply, hs]
+    simpa only [id_eq, one_smul] using
+      (((hasDerivAt_id t₀).sub_const t₀).smul_const a).deriv
   have hspatial :
       spatialDerivative (fun z : SpaceTime => (z.1 - t₀) • a) t₀ x = 0 := by
     simp [spatialDerivative]
@@ -133,19 +123,8 @@ theorem affine_time_perturbation_breaks_fixed_force
       temporalDerivative (fun z : SpaceTime => (z.1 - t₀) • a) t₀ x = a := by
     rw [temporalDerivative, fderiv_apply_one_eq_deriv]
     change deriv (fun s : ℝ => (s - t₀) • a) t₀ = a
-    rw [← fderiv_apply_one_eq_deriv]
-    have hf :
-        fderiv ℝ (fun s : ℝ => (s - t₀) • a) t₀ =
-          (fderiv ℝ (fun s : ℝ => s - t₀) t₀).smulRight a := by
-      simpa only [id_eq] using
-        (fderiv_smul_const (c := fun s : ℝ => s - t₀)
-          (differentiableAt_id.sub_const t₀) a)
-    rw [hf]
-    have hs : deriv (fun s : ℝ => s - t₀) t₀ = 1 := by
-      change deriv (fun s : ℝ => id s + (-t₀)) t₀ = 1
-      rw [deriv_add_const]
-      exact deriv_id t₀
-    simp [ContinuousLinearMap.smulRight_apply, hs]
+    simpa only [id_eq, one_smul] using
+      (((hasDerivAt_id t₀).sub_const t₀).smul_const a).deriv
   have hspatial :
       spatialDerivative (fun z : SpaceTime => (z.1 - t₀) • a) t₀ x = 0 := by
     simp [spatialDerivative]

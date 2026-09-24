@@ -42,3 +42,11 @@ construct the germ and convergence interfaces, while the selected path also
 contains upstream five-moment machinery. The remaining question is whether an
 explicit selected-path theorem connects those moments to the physical residual;
 the present note does not establish an architectural severing.
+
+The closure census confirms that this conclusion is an interface statement,
+not a dead-code claim: 507 local modules are reachable from
+`ActualCandidateAssembly`, including the substantive five-moment and rank
+modules. The missing object remains a theorem for the actual selected mixed
+sums and residual.
+
+Evidence: `NavierStokesReview/evidence/selected_moment_transport_closure_2026-09-24.md`.

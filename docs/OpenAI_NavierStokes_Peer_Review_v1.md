@@ -272,6 +272,28 @@ selected-path theorem, not a fabricated `False` certificate.
 
 Evidence: `NavierStokesReview/evidence/independent_data_perturbation_2026-09-24.md`.
 
+## Finding 29: the five-moment branch is present, but the selected transport theorem is not
+
+The dependency closure was rerun from `ActualCandidateAssembly.lean` rather
+than inferred from direct imports. It reaches 507 local modules, including
+154 occurrences of `PositiveOrderMoments`, 146 of `FiveProfileMoments`, 104 of
+`FiveRowRank`, 42 of `physicalMoments`, and 44 of `CorrectionState.debt`.
+`MeanRankUpdate.physical_five_rows`, `CorrectionState.rank_model_rows`, and
+`ActualStageEstimates.RunData.rank_class` show that the upstream construction
+does use genuine rank and debt data.
+
+That result withdraws any broad allegation that the five-moment subsystem is
+dead or globally disconnected. It strengthens the narrower objection. The
+selected `Witness` type at `ActualCandidateAssembly.lean:1121-1151` and its
+`selected_witness` instantiation at lines 1177-1180 contain no equality
+identifying the final mixed sums with `PositiveOrderMoments.moments`,
+`FiveProfileMoments.physicalMoments`, `FiveRowRank.FiveRows`, or the paper's
+tuple `(M,I,J,S,C_p)`. The missing theorem is therefore a selected-endpoint
+transport obligation. It is material to the paper-to-code claim, but it is not
+itself a zero-sorry contradiction to the concrete endpoint.
+
+Evidence: `NavierStokesReview/evidence/selected_moment_transport_closure_2026-09-24.md`.
+
 ## Finding 22: the force attack now has an exact conditional contradiction
 
 The review has now attacked the selected witness itself. The zero-sorry probe
@@ -401,7 +423,7 @@ predicate.
 
 ## Technical Discrepancies
 
-### The Semantic Firewall and the Orphaned Moment Specification
+### The missing selected-endpoint moment transport
 The repository compiles on the inspected Lean path, and the source contains
 three-component spatial evaluations. That is not a certification of the full
 mathematical claim. The base profile (`TailGaugePotential`) and residual bounds
@@ -642,3 +664,28 @@ perturbation is one of the admissible witnesses in the repository, nor that
 causality and correspondence defect in the claimed physical interpretation,
 not yet an unconditional `False` theorem for the literal existential C/D
 statement. Evidence: `NavierStokesReview/evidence/independent_data_perturbation_2026-09-24.md`.
+
+## Finding 30: the fixed-force obstruction survives spatial localisation
+
+The earlier affine-time test was useful for isolating the operator identity but
+was not spatially localised. The new extension
+`NavierStokesReview/src/extensions/CompactFixedForcePerturbation.lean`
+constructs a smooth compactly supported potential, takes its spatial curl, and
+uses that curl in a time-affine perturbation. The source proves smoothness,
+slice compact support, and exact divergence freedom without `sorry`.
+
+At the switch time, the perturbation itself, its spatial derivative, and its
+spatial Laplacian vanish, while its temporal derivative is the curl field. The
+potential is chosen so that the curl at the origin is `coordinateVector 0`, a
+nonzero vector. The theorem
+`compactPerturbation_breaks_any_fixed_force_at_origin` therefore proves that a
+base field satisfying `navierStokesResidual u p = f` cannot also satisfy that
+same fixed-force equation after this localised perturbation.
+
+This closes the earlier localisation limitation in the operator test. It still
+does not prove `False` from the literal existential C/D endpoint: the endpoint
+does not state perturbation stability or quantify over this test field. The
+load-bearing CMI objection remains the missing theorem connecting the selected
+residual construction to the independent-data semantics claimed in the paper.
+
+Evidence: `NavierStokesReview/evidence/compact_fixed_force_perturbation_2026-09-24.md`.

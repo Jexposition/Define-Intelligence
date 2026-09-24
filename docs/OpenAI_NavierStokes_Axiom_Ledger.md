@@ -593,3 +593,20 @@ The proof uses the residual add/subtract identity and no project-level axiom.
 fixed-datum obstruction and not yet a contradiction to the selected
 existential witness, because the source does not provide an admissible
 perturbation theorem.
+
+## AX-038. Selected-closure moment census
+
+The local import closure rooted at `ActualCandidateAssembly.lean` reaches 507
+modules. Literal source counts in that closure are: `PositiveOrderMoments`
+154, `FiveProfileMoments` 146, `FiveRowRank` 104, `FiveRows` 44,
+`physicalMoments` 42, and `CorrectionState.debt` 44.
+
+This is evidence against treating the five-moment implementation as globally
+dead. It is not evidence that the selected endpoint exports the paper's
+five-moment semantics. `Witness` at `ActualCandidateAssembly.lean:1121-1151`
+contains no equality to `moments`, `physicalMoments`, `FiveRows`, or
+`(M,I,J,S,C_p)`. The distinction is between reachable implementation and
+selected theorem transport.
+
+**Status:** source-backed correspondence gap; no new kernel-level axiom or
+`False` derivation.

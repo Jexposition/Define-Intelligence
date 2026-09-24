@@ -39,10 +39,10 @@ dead code.
 ## 3. Human-readable review text
 *(To be inserted into `OpenAI_NavierStokes_Peer_Review_v1.md` under 'Technical Discrepancies')*
 
-**The Semantic Firewall and the Orphaned Moment Specification**
+**The Missing Selected-Endpoint Moment Transport**
 The repository achieves a Lean 4 compilation with a boundary between the physical PDE evaluation and the algebraic moment constraints. The foundational modules, including the base profile (`TailGaugePotential`) and the residual bounds (`PhysicalResidualJetBounds`), contain three-component spatial evaluations. The theorem does not rely on the pure-axial or fake-two-dimensional premise; the underlying field construction is genuinely three-component.
 
-However, a critical divergence occurs at the final assembly boundary (`ActualCandidateAssembly.selected_witness`). The proof evaluates PDE correctness through direct geometric jet decay bounds (`NativeBounds`). The selected assembly's transitive import closure does contain `FiveProfileMoments`, `FiveRowRank`, and `PositiveOrderMoments` through upstream construction modules, but the residual-realisation chain does not expose those five-coordinate arrays $(M, I, J, S, C_p)$ as semantic premises or prove their identification with the selected residual.
+However, a critical divergence occurs at the final assembly boundary (`ActualCandidateAssembly.selected_witness`). The proof evaluates PDE correctness through direct geometric jet decay bounds (`NativeBounds`). A closure census rooted at `ActualCandidateAssembly` reaches `FiveProfileMoments`, `FiveRowRank`, and `PositiveOrderMoments` through upstream construction modules, but the residual-realisation chain does not expose those five-coordinate arrays $(M, I, J, S, C_p)$ as semantic premises or prove their identification with the selected residual.
 
 Consequently, while the repository's modules compile, the paper-to-code
 correspondence is not established by the selected public interface. The
@@ -53,3 +53,8 @@ The pressure comparison interface has the same shape limitation: it compares
 pressure gradients under hypotheses but does not state an absolute selected
 pressure-Poisson representative. Neither gap alone is a formal contradiction
 until a selected-path premise is shown false.
+
+The exact closure result is recorded in
+`NavierStokesReview/evidence/selected_moment_transport_closure_2026-09-24.md`.
+The broad “orphaned moment specification” wording is withdrawn; the live
+finding is a missing theorem at the selected mixed-sum boundary.

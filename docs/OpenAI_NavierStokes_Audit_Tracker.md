@@ -222,7 +222,11 @@ Are there any remaining hidden truncations in the time-localization of the blowu
 
 1. **Time Localization:** \CandidateProperties\ and \	imeSwitch\ (in \TimeLocalization.lean\ and \SmoothCutoffs.lean\) are mathematically sound. The cutoff equals 1 near the singular time =1$, perfectly preserving the ^\infty$ \SpeedUnboundedAtOne\ blowup without artificial truncation.
 2. **Active Pair:** \ActualParticularStageControls.raw_jets\ handles the empty subtype correctly by deriving \False\ from a patch-membership hypothesis rather than a generic contradiction. It is safe from vacuous limits.
-3. **Transport Theorem Absence:** A full repository \grep\ confirms that \RankGeometry.fiveRows\ (and the physical-rank interface) is entirely disconnected from \PositiveOrderMoments\ or any theorem equating them with the paper's 5 moments on the selected path.
+3. **Transport Theorem Absence:** The direct residual-bound interface does not
+   expose a theorem equating `RankGeometry.fiveRows` or the other physical-rank
+   data with the paper's five moments on the selected path. The transitive
+   closure does contain both rank and positive-order machinery, so this is a
+   missing selected-endpoint transport theorem, not global disconnection.
 
 ### Decision
 
@@ -747,3 +751,56 @@ solution for `-f` or zero force with the selected solution.
 
 Evidence: `NavierStokesReview/evidence/independent_data_perturbation_2026-09-24.md`;
 `NavierStokesReview/evidence/mirror_force_symmetry_2026-09-24.md`.
+
+### Compact perturbation closure
+
+`NavierStokesReview/src/extensions/CompactFixedForcePerturbation.lean` now
+supplies the missing localisation for the fixed-force test. The source defines
+a compactly supported smooth potential and its curl at lines 12--72, proves
+slice compact support at lines 96--105, and proves exact divergence freedom at
+lines 107--121. At the switch time, the perturbation's temporal derivative is
+the curl field while its value, spatial derivative, and spatial Laplacian
+vanish (lines 123--160). The origin curl is the nonzero first coordinate vector
+(lines 162--183).
+
+The theorem `compactPerturbation_breaks_any_fixed_force_at_origin` (lines
+185--226) proves that a base identity `navierStokesResidual u p = f` cannot
+also hold for the perturbed velocity with the same pressure and force. This is
+a zero-sorry operator-level fixed-data obstruction with spatial localisation.
+It does not prove that the original existential C/D witness is impossible,
+because the endpoint theorem does not quantify over perturbations.
+
+**Status:** [x] compact, smooth, divergence-free fixed-force obstruction;
+[~] selected-witness contradiction and schedule failure remain open.
+
+Evidence: `NavierStokesReview/evidence/compact_fixed_force_perturbation_2026-09-24.md`.
+
+### Compilation coordinates
+
+The current `IndependentDataPerturbationProbe.lean` source records smoothness
+and divergence freedom at lines 26--34, the exact residual identity at
+36--66, the general impossibility theorem at 68--84, the corrected derivative
+calculation at 96--99, and the concrete fixed-force failure at 111--150. These
+coordinates supersede earlier shorthand line references after the derivative
+proof was repaired. The compact localised theorem compiles separately in
+`CompactFixedForcePerturbation.lean`, with its final obstruction at lines
+185--226.
+
+## 2026-09-24 selected-closure moment census
+
+The dependency audit was rerun from `NavierStokes/ActualCandidateAssembly.lean`.
+The local `NavierStokes.*` import closure contains 507 reachable modules, with
+literal occurrence counts of 154 for `PositiveOrderMoments`, 146 for
+`FiveProfileMoments`, 104 for `FiveRowRank`, 44 for `FiveRows`, 42 for
+`physicalMoments`, and 44 for `CorrectionState.debt`.
+
+This corrects the broad claim that the five-moment branch is dead or absent.
+The live upstream chain includes `MeanRankUpdate.physical_five_rows`,
+`CorrectionState.rank_model_rows`, `rank_rows_on_patch`, and
+`ActualStageEstimates.RunData.rank_class`. The surviving CTR-005 objection is
+more precise: `ActualCandidateAssembly.Witness` (lines 1121–1151) and
+`selected_witness` (lines 1177–1180) expose no equality transporting the
+paper tuple `(M, I, J, S, C_p)` into the selected mixed sums, residual, force,
+or `VanishingJointJets` premises.
+
+Evidence: `NavierStokesReview/evidence/selected_moment_transport_closure_2026-09-24.md`.

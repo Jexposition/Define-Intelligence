@@ -111,3 +111,15 @@ selected velocity solves the zero-force equation, because nonlinear advection
 and the selected schedule are not linear in the force. The remaining formal
 target is therefore a selected-path perturbation or a force-independent
 admissibility premise, not the mirror identity itself.
+
+## Selected-closure correction
+
+The five-moment implementation is present in the selected transitive closure.
+The closure rooted at `ActualCandidateAssembly.lean` reaches 507 local modules,
+including `PositiveOrderMoments`, `FiveProfileMoments`, `FiveRowRank`, and
+`CorrectionState.debt`. The surviving defect is that `Witness` does not expose
+the theorem identifying those upstream quantities with the final mixed fields,
+residual, and force. This is a selected-endpoint correspondence failure, not
+a claim that the repository contains no five-moment construction.
+
+Evidence: `NavierStokesReview/evidence/selected_moment_transport_closure_2026-09-24.md`.

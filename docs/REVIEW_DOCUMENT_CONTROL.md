@@ -287,3 +287,41 @@ They do not replace the selected-witness standard for a formal `False` result.
 
 Evidence: `NavierStokesReview/evidence/independent_data_perturbation_2026-09-24.md`;
 `NavierStokesReview/evidence/mirror_force_symmetry_2026-09-24.md`.
+
+## Compact fixed-force theorem: 2026-09-24
+
+- [x] `CompactFixedForcePerturbation.lean` constructs a smooth compactly
+  supported spatial curl perturbation.
+- [x] The perturbation is divergence-free on every time slice.
+- [x] Its switch-time residual defect at the origin is the nonzero coordinate
+  vector `coordinateVector 0`.
+- [x] `compactPerturbation_breaks_any_fixed_force_at_origin` compiles without
+  `sorry`, `axiom`, or `unsafe` and rejects simultaneous satisfaction of the
+  same fixed-force equation by the base and perturbed fields.
+- [~] This remains an operator-level causality result. It is not a direct
+  contradiction of the existential C/D endpoint until an independence or
+  stability premise is shown to be part of that endpoint.
+
+Evidence: `NavierStokesReview/evidence/compact_fixed_force_perturbation_2026-09-24.md`.
+
+## Source-line verification record: 2026-09-24
+
+`IndependentDataPerturbationProbe.lean` was recompiled at exit code 0. The
+current source coordinates are:
+
+| Lines | Verified item |
+|---:|---|
+| 26--34 | smooth affine-time field and zero spatial divergence |
+| 36--66 | exact fixed-force perturbation identity |
+| 68--84 | nonzero-defect impossibility theorem |
+| 86--109 | affine defect calculation; derivative proof at 96--99 |
+| 111--150 | fixed-force failure theorem; corrected derivative proof at 122--127 |
+
+The earlier shorthand references to lines 25, 30, 85, 96, and 121 are retained
+only as historical pointers. The table above is the authoritative coordinate
+record for the current source snapshot.
+
+The compact localised theorem is in
+`CompactFixedForcePerturbation.lean`: smoothness and compact support are at
+lines 23--37 and 77--105, divergence freedom at lines 107--121, and the final
+same-force obstruction at lines 185--226.
