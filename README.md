@@ -62,7 +62,8 @@ and [`NavierStokesReview/evidence/compact_fixed_force_perturbation_2026-09-24.md
 
 ## Navier Stokes
 
-For every positive viscosity, we prove two results:
+The upstream formalisation exports two C/D-shaped results for every positive
+viscosity:
 
 - **Whole space $\mathbb{R}^3$:** There exist smooth initial data and forcing for
   which no global smooth solution with uniformly bounded kinetic energy exists.
@@ -74,6 +75,14 @@ and [**(D)**](https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.p
 in the Clay Mathematics Institute’s [official problem description](https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf)
 of the [Navier–Stokes existence and smoothness](https://www.claymath.org/millennium/navier-stokes-equation/)
 [Millennium Prize Problem](https://www.claymath.org/millennium-problems/).
+
+The review does not treat that export as sufficient evidence for every claim in
+the accompanying paper. In particular, the selected endpoint does not expose
+the theorem identifying the paper's five named moments `(M, I, J, S, C_p)` with
+the final mixed velocity, pressure, residual, and force. The authors bear the
+burden of supplying that selected-field correspondence before the stronger
+published solution claim is accepted. See the
+[`official claim transport matrix`](NavierStokesReview/evidence/official_claim_transport_matrix_2026-09-24.md).
 
 ## Euler
 
