@@ -430,3 +430,16 @@ endpoint is still required for a kernel-level `False` result.
   `docs/OpenAI_NavierStokes_Source_Context_Register.md`.
 
 Evidence: `NavierStokesReview/evidence/temporal_patching_audit_2026-09-24.md`.
+
+## Selected-witness fixed-force closure: 2026-09-24
+
+- [x] The compact perturbation extension destructs
+  `ActualCandidateAssembly.selected_witness`.
+- [x] It binds the selected velocity, pressure, and force and uses the selected
+  residual equation at `(1/2, 0)`.
+- [x] The perturbation defect is the nonzero vector `coordinateVector 0`; the
+  extension compiles without `sorry`, `axiom`, or `unsafe` declarations.
+- [ ] No global `False` result has been obtained. The endpoint does not state
+  perturbation stability or force independence.
+
+Authority: `NavierStokesReview/evidence/selected_witness_fixed_force_obstruction_2026-09-24.md`.

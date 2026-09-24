@@ -375,3 +375,13 @@ runtime rank audit.
 
 Evidence: `NavierStokesReview/evidence/temporal_patching_audit_2026-09-24.md` and
 `docs/OpenAI_NavierStokes_Source_Context_Register.md`.
+
+## Selected-witness fixed-force closure
+
+| ID | Task | Status | Acceptance test |
+|---|---|---:|---|
+| CTR-012-E | Instantiate the compact fixed-force obstruction on the selected witness. | [x] | `selected_candidate_fixed_force_obstruction` compiles without admitted declarations. |
+| CTR-012-F | Convert the selected-path obstruction into a CMI-level contradiction. | [ ] | Add a theorem using a premise actually required by the endpoint, such as force independence or a false selected identity. |
+
+The current result proves path dependence of the selected residual construction,
+not emptiness of the endpoint existential.

@@ -680,3 +680,15 @@ This is not the paper's complete five-moment identity and is not yet an
 exported `Witness` equality. The remaining load-bearing question is whether
 the internal two-moment invariant is transported through the mixed sums and
 identified with the paper's `(M,I,J,S,C_p)` at the C/D endpoint.
+
+## AX-041: selected-witness fixed-force obstruction
+
+**Source:** `NavierStokesReview/src/extensions/CompactFixedForcePerturbation.lean`.
+
+`selected_candidate_fixed_force_obstruction` destructs the selected witness,
+binds its velocity, pressure, and force, and proves that the compact
+divergence-free perturbation in the extension cannot obey the same residual
+equation at $(t,x)=(1/2,0)$. The proof uses the selected candidate residual
+equality and the residual addition identity. It adds no axiom and proves no
+global `False`; a CMI-level refutation would still require an endpoint
+independence predicate or another false mandatory premise.

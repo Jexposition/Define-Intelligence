@@ -382,3 +382,15 @@ final mixed velocity, pressure, residual, force, or all-order residual-jet
 premises. This is the live CTR-005 correspondence objection.
 
 Evidence: `NavierStokesReview/evidence/selected_moment_transport_closure_2026-09-24.md`.
+
+## Selected-witness fixed-force result
+
+The fixed-force objection has been instantiated on the actual selected field,
+not only on an abstract smooth field. A compact divergence-free perturbation
+has a nonzero residual defect at an interior origin point, so the selected
+velocity and its perturbation cannot share the selected force. This is a precise
+path-dependence result. It does not turn the literal existential endpoint into
+`False`, because perturbation stability and causal force independence are not
+fields of `CandidateProperties`.
+
+Evidence: `NavierStokesReview/evidence/selected_witness_fixed_force_obstruction_2026-09-24.md`.

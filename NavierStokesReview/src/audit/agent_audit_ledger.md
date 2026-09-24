@@ -12,9 +12,10 @@ Rigorously review the source code comprising OpenAI's Navier-Stokes claimed proo
 
 ### Finding 1: Type Disconnection in Repair Mechanism
 - **Location**: `NavierStokes/ActualCandidateAssembly.lean` -> `NavierStokes/CorrectionState.lean` -> `NavierStokes/FiveRowRank.lean`
-- **Status**: Structurally Falsified (Absence of Transport Theorem)
+- **Status**: Correspondence gap; not a formal refutation
 - **Description**: The paper claims a 5-dimensional moment repair defined by `(M, I, J, S, Cp)`. The repository provides a module for this (`PositiveOrderMoments.lean`). However, the actual endpoint relies on `CorrectionState.debt`, which is strictly a 3-dimensional quantity `Fin 3 → ℝ` representing `(P, Jθ, Jz)`. No theorem within the endpoint's dependency closure identifies the 5-dimensional moments with the 3-dimensional debt, meaning the paper's mechanism is not actually proven to be the one operating on the selected candidate. 
-- **Evidence**: `src/probes/agent_transport_obstruction.lean`
+- **Evidence**: `NavierStokesReview/src/probes/SelectedWitnessInhabitationProbe.lean`; the
+  selected-path transport theorem remains open.
 
 ### Finding 2: Verification of Endpoint Properties
 - **Location**: `NavierStokes/CandidateProperties.lean`, `NavierStokes/TimeLocalization.lean`
@@ -34,7 +35,11 @@ Rigorously review the source code comprising OpenAI's Navier-Stokes claimed proo
 - **Description**: The four `sorry` placeholders located in `ComparatorChallenges/` do NOT bleed into the main `ActualCandidateAssembly`. The `selected_witness` only relies on `propext`, `Classical.choice`, and `Quot.sound`, which are standard Lean axioms.
 
 ## 4. Conclusion
-The repository correctly formalizes a forced blow-up under `CandidateProperties`. However, it structurally fails to provide a transport theorem to connect the paper's 5-dimensional moment repair claims (`PositiveOrderMoments`) to the actual 3-dimensional code used in the `FiveRowRank` pipeline. **The mathematical claim remains untransported and therefore structurally falsified at the code level.**
+The repository formalizes a forced blow-up proposition under `CandidateProperties`.
+The inspected endpoint does not expose a theorem connecting the paper's
+five-dimensional moment interpretation (`PositiveOrderMoments`) to the selected
+mixed field and residual. That is a correspondence gap, not a kernel-certified
+falsification of the endpoint.
 
 
 ## 7. Semantic Gap Audit
@@ -42,15 +47,25 @@ The repository correctly formalizes a forced blow-up under `CandidateProperties`
 Compiled the independent \semantic-gap-audit\ against the current public OpenAI source closure (\9e8bc5\) utilizing Lean \4.34.0-rc2\. The verified compilation yielded zero custom axioms, showing that the semantic bridge from the \ComparatorOptionC/D\ to the CMI \ClaySpec.lean\ is proven entirely on standard Lean foundations (propext, Classical.choice, Quot.sound). No semantic trickery exists in the statement translation.
 
 The verified axiom log is recorded at \NavierStokesReview/results/INDEPENDENT_CLAY_BRIDGE_CURRENT_2026-09-23.txt\.
-### Finding 5: Endpoint Isolation of the 5D Repair (Dead Code)
+### Finding 5: Endpoint does not expose the 5D repair payload
 - **Location**: `NavierStokes/ActualCandidateAssembly.lean`
-- **Status**: Structurally Falsified
-- **Description**: The formal endpoint definition for the candidate solution, `ActualCandidateAssembly.Witness`, structurally binds to the `FiveRowRank.FiveRows` physical geometry properties while completely omitting any reference to `PositiveOrderMoments.moments`. This establishes an ironclad, formal proof that the 5D exact repair layer described in the accompanying manuscript is completely isolated "dead code." The final CMI endpoint operates exclusively on the flawed 3-debt formulation.
+- **Status**: Endpoint transport unresolved
+- **Description**: The formal endpoint definition for the candidate solution,
+  `ActualCandidateAssembly.Witness`, does not expose an equality connecting
+  `PositiveOrderMoments.moments` to the selected mixed fields. The repository
+  also contains reachable five-moment and rank infrastructure. The source
+  therefore establishes an endpoint transport gap, not that the upstream
+  five-moment layer is dead code or that the selected endpoint is already
+  inconsistent.
 - **Evidence**: `src/probes/ActualCandidateAssemblyIsolationProbe.lean`
 
-### Finding 6: 2D Spatial Submanifold Exploit
+### Finding 6: Promotion map requires semantic interpretation
 - **Location**: `NavierStokes/FiveRowRank.lean` and Implicit Equivalence Maps
-- **Status**: Structurally Falsified (Physics Dimensionality Violation)
-- **Description**: By formally extracting the exact tensor promotion mapping used to bridge the 3-debt `FiveRowRank` code to the full 5-moment formulation, we verified that the mapping explicitly forces the first two spatial flux dimensions to zero (`0`). In physical terms, the agent mathematically achieved a valid rank algebra solve by artificially collapsing the 3D fluid into a constrained lower-dimensional manifold where key non-linear momentum couplings vanish. This violates the 3D physical premises of the Navier-Stokes equations required by the CMI specification.
+- **Status**: Interpretation unresolved
+- **Description**: The inspected promotion map inserts two zero coordinates in a
+  five-coordinate representation of a three-debt update. This is evidence that
+  the map needs a field-level interpretation theorem. It is not, without such
+  a theorem, evidence that the selected Cartesian velocity is lower-dimensional
+  or that the CMI premises are violated.
 - **Evidence**: `src/probes/ManifoldDimensionalReductionProbe.lean`
 

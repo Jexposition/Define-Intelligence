@@ -682,3 +682,21 @@ five named moments and pressure semantics into the exported endpoint.
 5. [`SelectedWitnessAttackBoundaryProbe.lean`](../NavierStokesReview/src/probes/SelectedWitnessAttackBoundaryProbe.lean).
 6. [`FiveRowPositiveOrderBridgeProbe.lean`](../NavierStokesReview/src/probes/FiveRowPositiveOrderBridgeProbe.lean).
 7. [`PressureRecoveryAbsolutePremiseProbe.lean`](../NavierStokesReview/src/probes/PressureRecoveryAbsolutePremiseProbe.lean).
+
+## Selected-witness fixed-force result
+
+The fixed-force obstruction has now been instantiated on the actual selected
+field. `selected_candidate_fixed_force_obstruction` destructs
+`ActualCandidateAssembly.selected_witness`, binds its mixed velocity, pressure,
+and force, and applies the selected residual equation at the interior point
+$(t,x)=(1/2,0)$. The compact divergence-free perturbation has the explicit
+nonzero defect `coordinateVector 0`, so the perturbed selected field cannot
+satisfy the same fixed-force equation.
+
+This closes the localisation gap in the operator test and strengthens CTR-012.
+It does not make the literal C/D existential proposition empty: the endpoint
+does not quantify over perturbations and does not require a force-independence
+or perturbation-stability predicate. The result is therefore a selected-path
+causality objection, not a global `False` theorem.
+
+Evidence: [`selected_witness_fixed_force_obstruction_2026-09-24.md`](../NavierStokesReview/evidence/selected_witness_fixed_force_obstruction_2026-09-24.md).

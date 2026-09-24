@@ -783,3 +783,20 @@ equation. The external-source distinction is recorded in
 `docs/OpenAI_NavierStokes_Source_Context_Register.md`: residual construction is
 a real causal/provenance criticism, but it is not by itself a literal C/D
 contradiction under the existential formulation.
+
+## Finding 31: the compact obstruction reaches the selected witness
+
+`selected_candidate_fixed_force_obstruction` now destructs
+`ActualCandidateAssembly.selected_witness` and binds its selected velocity,
+pressure, and force. At $(t,x)=(1/2,0)$, the compact divergence-free
+perturbation has defect `coordinateVector 0`, so the selected field and its
+perturbation cannot satisfy the same fixed-force residual equation. The
+extension compiles without `sorry`, `axiom`, or `unsafe` declarations.
+
+This is a selected-path causality result, not a global existential
+contradiction. `CandidateProperties` does not state perturbation stability or
+an independence predicate for the force. The result strengthens CTR-012 while
+leaving CTR-005, the missing selected five-moment transport theorem, as the
+load-bearing correspondence objection.
+
+Evidence: `NavierStokesReview/evidence/selected_witness_fixed_force_obstruction_2026-09-24.md`.

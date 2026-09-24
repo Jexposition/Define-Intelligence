@@ -1,10 +1,12 @@
 import NavierStokes.SpatialCurl
 import NavierStokes.SmoothCutoffs
 import NavierStokes.ResidualCalculus
+import NavierStokes.ActualCandidateAssembly
 import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension
 
 open Set
 open NavierStokes ProblemStatement
+open NavierStokes.CorrectionInitialization.ActualPrimary
 open scoped Topology ContDiff
 
 noncomputable section
@@ -224,3 +226,96 @@ theorem compactPerturbation_breaks_any_fixed_force_at_origin
           simpa [pressureGradient] using hidentity.symm
       _ = 0 := hresidual_zero
   exact (compactPerturbation_fixed_force_defect_nonzero_at_origin u t₀) hzero_defect
+
+/-!
+The same local obstruction can be instantiated at the actual selected witness.
+This is deliberately an operator-level result: it proves path dependence of the
+fixed-force equation, not stability of the CMI existential quantifier.
+-/
+
+theorem selected_candidate_fixed_force_obstruction :
+    ∃ (u : VelocityField) (p : PressureField) (f : VelocityField),
+      CandidateProperties u p f ∧
+      navierStokesResidual
+          (fun z => u z + compactPerturbation ((1 : ℝ) / 2) z) p
+          ((1 : ℝ) / 2) 0 ≠ f (((1 : ℝ) / 2), 0) := by
+  obtain ⟨a, _, ea, eb, ep, forcing, hc, _⟩ :=
+    NavierStokes.ActualCandidateAssembly.selected_witness
+  let ASum := SolenoidalDiagonal.potentialSum (fun j => (a j : ℝ))
+      (PhysicalWaveSum.physicalQ h)
+      (NavierStokes.ActualCandidateAssembly.potentialStages
+        ActualCandidateConstruction.selectedBudget
+        ActualCandidateConstruction.selectedThreshold
+        ActualCandidateConstruction.selectedThreshold_geometry)
+  let BSum := SolenoidalDiagonal.potentialSum (fun j => (a j : ℝ))
+      (PhysicalWaveSum.physicalQ h)
+      (NavierStokes.ActualCandidateAssembly.directStages
+        ActualCandidateConstruction.selectedBudget
+        ActualCandidateConstruction.selectedThreshold
+        ActualCandidateConstruction.selectedThreshold_geometry)
+  let PSum := SolenoidalDiagonal.potentialSum (fun j => (a j : ℝ))
+      (PhysicalWaveSum.physicalQ h)
+      (NavierStokes.ActualCandidateAssembly.pressureStages
+        ActualCandidateConstruction.selectedBudget
+        ActualCandidateConstruction.selectedThreshold
+        ActualCandidateConstruction.selectedThreshold_geometry)
+  let u : VelocityField :=
+    TimeLocalization.activatedVelocity
+      (MixedPeriodicAssembly.periodicVelocity ASum BSum)
+  let p : PressureField :=
+    TimeLocalization.activatedPressure
+      (SpatialLocalization.periodicPressure PSum)
+  have hc' : CandidateProperties u p forcing := by
+    simpa [u, p, ASum, BSum, PSum] using hc
+  refine ⟨u, p, forcing, hc', ?_⟩
+  have ht : ((1 : ℝ) / 2) ∈ Ioo (0 : ℝ) 1 := by norm_num
+  have htu : DifferentiableAt ℝ (fun s : ℝ => u (s, (0 : Space)))
+      ((1 : ℝ) / 2) := by
+    have hjoint := ProblemStatement.smooth_at_interior hc'.velocity_smooth ht 0
+    exact (hjoint.comp ((1 : ℝ) / 2)
+      (contDiffAt_id.prodMk contDiffAt_const)).differentiableAt (by simp)
+  have hu : ContDiff ℝ 2 (fun y : Space => u (((1 : ℝ) / 2, y))) := by
+    exact (TimeLocalization.spatial_smooth_including_initial _ hc'.velocity_smooth
+      ((1 : ℝ) / 2) ⟨by norm_num, by norm_num⟩).of_le (by norm_num)
+  have hp : DifferentiableAt ℝ (fun y : Space => p (((1 : ℝ) / 2, y))) 0 := by
+    exact ((TimeLocalization.spatial_smooth_including_initial _ hc'.pressure_smooth
+      ((1 : ℝ) / 2) ⟨by norm_num, by norm_num⟩).differentiable (by simp) 0)
+  intro hpert
+  have hzero_pressure : DifferentiableAt ℝ (fun _ : Space => (0 : ℝ)) 0 :=
+    differentiableAt_const (c := (0 : ℝ))
+  have hj2 : ContDiff ℝ 2 (compactPerturbation ((1 : ℝ) / 2)) :=
+    (compactPerturbation_contDiff ((1 : ℝ) / 2)).of_le (by norm_num)
+  have ht2 : ContDiff ℝ 2
+      (fun s : ℝ => compactPerturbation ((1 : ℝ) / 2) (s, 0)) :=
+    hj2.comp (contDiff_id.prodMk contDiff_const)
+  have hs2 : ContDiff ℝ 2
+      (fun y : Space => compactPerturbation ((1 : ℝ) / 2) ((1 : ℝ) / 2, y)) :=
+    hj2.comp (contDiff_const.prodMk contDiff_id)
+  have hidentity := NavierStokes.ResidualCalculus.navierStokesResidual_add_sub
+    u (compactPerturbation ((1 : ℝ) / 2)) p (fun _ => 0) ((1 : ℝ) / 2) 0 htu
+    ((ht2.contDiffAt.differentiableAt (by norm_num))) hu hs2 hp hzero_pressure
+  have hresidual_zero :
+      navierStokesResidual
+          (fun z => u z + compactPerturbation ((1 : ℝ) / 2) z) p
+            ((1 : ℝ) / 2) 0 -
+          navierStokesResidual u p ((1 : ℝ) / 2) 0 = 0 := by
+    rw [hpert, hc'.navier_stokes ((1 : ℝ) / 2) ht 0]
+    simp
+  have hzero_defect :
+      temporalDerivative (compactPerturbation ((1 : ℝ) / 2)) ((1 : ℝ) / 2) 0 -
+        spatialLaplacian (compactPerturbation ((1 : ℝ) / 2)) ((1 : ℝ) / 2) 0 +
+        spatialDerivative u ((1 : ℝ) / 2) 0
+          (compactPerturbation ((1 : ℝ) / 2) (((1 : ℝ) / 2), 0)) +
+        spatialDerivative (compactPerturbation ((1 : ℝ) / 2)) ((1 : ℝ) / 2) 0
+          (u (((1 : ℝ) / 2), 0)) +
+        spatialDerivative (compactPerturbation ((1 : ℝ) / 2)) ((1 : ℝ) / 2) 0
+          (compactPerturbation ((1 : ℝ) / 2) (((1 : ℝ) / 2), 0)) = 0 := by
+    calc
+      _ = navierStokesResidual
+          (fun z => u z + compactPerturbation ((1 : ℝ) / 2) z) p
+            ((1 : ℝ) / 2) 0 -
+            navierStokesResidual u p ((1 : ℝ) / 2) 0 := by
+          simpa [pressureGradient] using hidentity.symm
+      _ = 0 := hresidual_zero
+  exact (compactPerturbation_fixed_force_defect_nonzero_at_origin u
+    ((1 : ℝ) / 2)) hzero_defect
