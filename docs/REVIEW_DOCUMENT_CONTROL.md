@@ -200,7 +200,7 @@ the residual/origin contradiction remain open.
   issue is semantic transport into the residual endpoint, not dead code or
   total import separation.
 - [x] Commit `700e39d` is the last recorded remote baseline. Local review
-  commits through `1dd551b` are not confirmed pushed because GitHub
+  commits through `556992d` are not confirmed pushed because GitHub
   authentication is unavailable. No tracked `.olean`, `.ilean`,
   or `.lake` files are present. The only untracked paths are the two supplied
   reference PDFs `docs/euler.pdf` and `docs/navier-stokes openai.pdf`; they are
