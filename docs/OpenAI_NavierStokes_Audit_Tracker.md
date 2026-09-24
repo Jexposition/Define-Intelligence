@@ -786,6 +786,28 @@ proof was repaired. The compact localised theorem compiles separately in
 `CompactFixedForcePerturbation.lean`, with its final obstruction at lines
 185--226.
 
+### Release verification record: 2026-09-24
+
+The current review branch is synchronised at `d2e6be7`, with `967da70` as the
+immediate parent containing the earlier affine-time theorem. The current
+`IndependentDataPerturbationProbe.lean` compile completed with Lean 4.34.0-rc2
+at exit code 0. The review-module scan found no `sorry`, `axiom`, or `unsafe`
+declarations; the tracked-artifact scan found no `.olean`, `.ilean`, or `.lake`
+files. `git diff --check` also passed.
+
+The historical references to lines 25, 30, 85, 96, and 121 are preserved for
+traceability only. The authoritative current ranges are 26--34, 36--66,
+68--84, 86--109, and 111--151. The compact localised theorem's final
+obstruction is at lines 185--226 of
+`NavierStokesReview/src/extensions/CompactFixedForcePerturbation.lean`.
+
+This evidence establishes a fixed-data operator obstruction. It does not, by
+itself, prove that the literal existential C/D proposition is contradictory:
+the selected endpoint does not quantify over the perturbation used by the
+probe. CTR-005 therefore remains the principal selected-endpoint
+correspondence objection, while CTR-012 records the independently verified
+path-dependence result.
+
 ## 2026-09-24 selected-closure moment census
 
 The dependency audit was rerun from `NavierStokes/ActualCandidateAssembly.lean`.

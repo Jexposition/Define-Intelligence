@@ -27,6 +27,15 @@ matches the published mathematical construction.
   selected from one velocity path cannot remain the same force after this
   perturbation.
 
+The two findings are related but distinct. The selected construction has the
+form `f = navierStokesResidual u p` along its chosen path, so the residual
+identity is part of the witness predicates rather than an independently
+transported forcing datum. `IndependentDataPerturbationProbe.lean` and
+`CompactFixedForcePerturbation.lean` then prove, without `sorry`, that holding
+`p` and `f` fixed while changing `u` by the displayed smooth perturbation
+produces a nonzero residual defect. This is a machine-checked path-dependence
+and correspondence objection.
+
 The formal review therefore establishes a machine-checked causality and
 correspondence objection. It has not yet derived `False` from the literal
 existential C/D endpoint. The evidence and exact scope are maintained in

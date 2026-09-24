@@ -325,3 +325,32 @@ The compact localised theorem is in
 `CompactFixedForcePerturbation.lean`: smoothness and compact support are at
 lines 23--37 and 77--105, divergence freedom at lines 107--121, and the final
 same-force obstruction at lines 185--226.
+
+## Release verification: 2026-09-24
+
+The review branch is `review/cmi-first-navier-stokes-2026-09-22` at commit
+`d2e6be7` (`Add compact fixed-force obstruction audit`). Its parent
+`967da70` (`Add explicit fixed-force perturbation obstruction`) is retained in
+the branch history. The current source, not the historical shorthand, is the
+authority for line coordinates.
+
+| Check | Result |
+|---|---|
+| `IndependentDataPerturbationProbe.lean` compiled with Lean 4.34.0-rc2 | PASS, exit code 0 |
+| `sorry`, `axiom`, and `unsafe` scan for the review modules | PASS, no matches |
+| tracked `.olean`, `.ilean`, and `.lake` artefacts | PASS, none tracked |
+| `git diff --check` | PASS |
+| branch compared with origin | PASS, clean and synchronised at `d2e6be7` |
+
+The current probe coordinates are 26--34 for smoothness and divergence
+freedom, 36--66 for the fixed-force identity, 68--84 for the general
+nonzero-defect obstruction, 86--109 for the affine defect computation, and
+111--151 for the concrete fixed-force failure. Lines 25, 30, 85, 96, and 121
+are retained as historical navigation points from the parent commit; they are
+not substituted for the current theorem ranges.
+
+This release record does not promote CTR-012 to a literal C/D refutation. It
+records exactly what is proved: the selected residual construction is
+path-dependent under a fixed-force perturbation. A further theorem connecting
+that admissible perturbation or independence requirement to the published C/D
+endpoint is still required for a kernel-level `False` result.
