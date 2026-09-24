@@ -207,7 +207,7 @@ These findings narrow the counter-paper. The remaining formal correspondence obj
 | CTR-028 | `PositiveOrderMoments.lean` contains a separate five-dimensional exact repair theorem. | Confirmed positive evidence | The repository has serious five-row machinery, so the correct issue is the missing identification and endpoint-use theorem, not absence of all five-row repair. |
 | CTR-029 | The R3 endpoint remains standard-axiom-only in the inspected reports, while the force is residual-driven on the interior interval and extended smoothly at the endpoint. | Confirmed with scope | The endpoint is forced and C/D-shaped; this does not establish autonomous or force-free collapse. At the origin the selected force tends to zero, so “active through the singular interval” must not be read as a global pointwise nonzero claim. CMI C/D permits smooth forcing. |
 
-The present review classification is **major revision**. A stronger `[FORMALLY REFUTED]` label is reserved for a zero-sorry contradiction or a false premise proved on the selected endpoint path.
+The present publication classification is **do not accept the stronger CMI-solution claim on the inspected record**. This decision follows from the affirmative burden of proof: the published argument must identify the selected fields and transport the paper's named quantities into the exported endpoint. A stronger `[FORMALLY REFUTED]` label is reserved for a zero-sorry contradiction or a false premise proved on the selected endpoint path; that narrower label is not required to withhold acceptance of an under-supported affirmative claim.
 
 ## 2026-09-23 bridge correction
 
@@ -276,7 +276,7 @@ Are there any remaining hidden truncations in the time-localization of the blowu
 
 ### Decision
 
-The earlier “absolute structural falsification” wording is withdrawn. The direct transport from the paper's named five moments to the selected endpoint remains an exposition and reproducibility obligation, but the existing constrained positive-order bridge prevents treating the type difference as a contradiction. The selected-budget issue likewise produces no endpoint refutation. The current evidence supports major revision and continued falsification work, not a formally complete disproof.
+The earlier “absolute structural falsification” wording is withdrawn. The direct transport from the paper's named five moments to the selected endpoint remains a publication-critical obligation, but the existing constrained positive-order bridge prevents treating the type difference alone as a contradiction. The selected-budget issue likewise produces no endpoint refutation. The current evidence therefore supports a negative decision on the stronger published claim, while reserving “formally refuted” for a separate selected-path contradiction.
 
 ## 2026-09-23 selected-parameter audit
 
@@ -1289,3 +1289,22 @@ selected mixed fields to the five named moments, followed by a proof that one
 such equality fails or is absent from a mandatory endpoint premise.
 
 Evidence: `NavierStokesReview/evidence/selected_physical_data_moment_interface_2026-09-24.md`.
+
+## Publication-burden reassessment: 2026-09-25
+
+The review decision is now stated consistently across the active corpus:
+**do not accept the stronger published CMI-solution claim on the inspected
+record**. This is an underclaim finding, not a demand that the reviewer first
+derive `False` from the literal existential endpoint. The selected endpoint
+may be a genuine formal C/D-shaped object while the published paper-to-code
+identification remains unproved.
+
+The load-bearing omission is affirmative. The source does not export the
+selected-field theorem identifying the paper's `(M,I,J,S,C_p)` quantities and
+transporting them through the correction, germ, residual, and force layers.
+The burden to supply that composition theorem remains with the authors. The
+status **not formally refuted** is subordinate and records only the separate
+state of the kernel-level contradiction search.
+
+Evidence: `NavierStokesReview/evidence/burden_of_proof_underclaim_audit_2026-09-24.md`;
+`NavierStokesReview/evidence/official_claim_transport_matrix_2026-09-24.md`.

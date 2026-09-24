@@ -319,7 +319,7 @@ The appropriate review demand is therefore a zero-sorry proof that the selected 
 
 ## Revised recommendation
 
-The recommendation remains **major revision**, but for narrower reasons. The repository-wide zero-sorry claim is false because four challenge-file declarations are admitted, and the paper does not yet present a source-linked theorem mapping all named paper moments into the selected endpoint. Those are material reproducibility and correspondence defects. They are not a formal disproof of the selected C/D theorem. The review must not state otherwise without a new contradiction on the endpoint dependency path.
+The recommendation is **do not accept the stronger published CMI-solution claim on the inspected record**. The repository-wide zero-sorry claim is false because four challenge-file declarations are admitted, and the paper does not yet present a source-linked theorem mapping all named paper moments into the selected endpoint. Those are publication-blocking reproducibility and correspondence defects. They are not, by themselves, a formal disproof of the literal selected C/D theorem. The review need not derive `False` before rejecting the stronger affirmative claim; a selected-path contradiction remains a separate escalation target.
 
 ## Physical realizability verdict: force-conservation proposal
 

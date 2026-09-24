@@ -1,7 +1,7 @@
 # Navier–Stokes review document control
 
 **Status:** active source-of-truth map  
-**Updated:** 2026-09-24
+**Updated:** 2026-09-25
 **Review root:** `Define-Intelligence-github`
 
 ## Authority
