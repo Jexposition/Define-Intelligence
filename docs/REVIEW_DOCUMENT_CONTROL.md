@@ -554,3 +554,13 @@ does not prove selected-label inhabitance from the exported witness.
 - selected-witness contradiction: not established by this route.
 
 Evidence: `NavierStokesReview/evidence/selected_active_pair_reachability_2026-09-24.md`.
+
+## CTR-016 control entry: 2026-09-24
+
+`CandidateConsequences.mixed_exists_force_with_consequences` and the concrete
+`ActualCandidateAssembly.Witness` do provide a substantial local-to-global
+bundle. The review-side `GlobalTransportBridgeProbe` proves that this bundle
+coexists with failure of the stronger same-datum fixed-force stability
+predicate. The selected endpoint still exports neither that predicate nor a
+field-level equality to the paper's five named moments. This is a formal
+contract non-implication, not an endpoint `False` theorem.

@@ -471,3 +471,14 @@ trivialises the candidate.
 | Preserve CMI wording distinction | [x] | Causal/provenance criticism separated from literal C/D hypotheses. |
 
 Evidence: `NavierStokesReview/evidence/selected_active_pair_reachability_2026-09-24.md`.
+
+## Global germ-transport validity audit (CTR-016)
+
+| Check | Status | Decisive source / result |
+|---|---:|---|
+| Identify the local-to-global consequence theorem | [x] | `CandidateConsequences.mixed_exists_force_with_consequences`, lines 185--215. |
+| Trace the concrete selected assembly | [x] | `ActualCandidateAssembly.physicalData`, `estimates`, `endpoints`, and `Witness`, lines 1079--1151; `selected_witness`, lines 1177--1181. |
+| Test global consequences against fixed-force transport | [x] | `GlobalTransportBridgeProbe.lean` compiles: `Consequences` coexists with failure of `FixedForceSameDatumStable`. |
+| Derive literal C/D `False` | [ ] | The endpoint still has no perturbation-stability or five-moment field identity requirement. |
+
+Evidence: `NavierStokesReview/evidence/global_germ_transport_audit_2026-09-24.md`.

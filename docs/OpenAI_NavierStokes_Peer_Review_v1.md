@@ -938,3 +938,32 @@ formal force-independence or perturbation-stability condition. The compact
 fixed-force theorem is therefore a formal objection to the stronger
 forward-data reading, not a standalone proof of `False` for the literal
 existential endpoint.
+
+## Finding 36: global germ transport is substantial but not semantically complete
+
+The source audit does not support describing the global assembly as a hollow
+wrapper. `CandidateConsequences.mixed_exists_force_with_consequences`
+(`CandidateConsequences.lean:185-215`) constructs a force together with
+`CandidateProperties`, the maximal-lifespan and H³ consequences, force-jet
+decay, and all-order boundary jets. `ActualCandidateAssembly.physicalData`,
+`estimates`, and `endpoints` (`1079-1115`) supply actual cycle data to the
+finite-stage construction, and `Witness` (`1121-1151`) packages the resulting
+selected fields.
+
+The remaining defect is an interface omission, not a missing PDE theorem in
+those modules. `Witness` exposes no equality transporting the paper's
+$(M,I,J,S,C_p)$ moments into the selected mixed velocity, pressure, residual,
+or force. It also exposes no fixed-force same-datum stability condition. The
+zero-sorry `GlobalTransportBridgeProbe.lean` proves that the selected candidate
+has the full `Consequences` bundle while the independently constructed
+same-datum perturbation breaks the fixed-force predicate. The separate
+`EndpointContractNonImplication.lean` theorem proves that
+`CandidateProperties` alone does not imply that predicate.
+
+This is the precise CTR-016/CTR-012 result. It establishes that the exported
+global contract is weaker than the forward-data and five-moment interpretation
+used in the paper. It does not, without an additional premise or a false
+selected identity, derive `False` from the literal C/D existential.
+
+Evidence: [`global_germ_transport_audit_2026-09-24.md`](../NavierStokesReview/evidence/global_germ_transport_audit_2026-09-24.md),
+[`endpoint_contract_nonimplication_2026-09-24.md`](../NavierStokesReview/evidence/endpoint_contract_nonimplication_2026-09-24.md).

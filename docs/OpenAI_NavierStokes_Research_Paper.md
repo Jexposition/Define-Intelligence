@@ -767,3 +767,32 @@ Evidence: `selected_residual_provenance_2026-09-24.md`,
 `selected_rank_transport_reaudit_2026-09-24.md`,
 `whole_space_uniqueness_audit_2026-09-24.md`,
 `selected_active_pair_reachability_2026-09-24.md`.
+
+## Appendix B. Global germ transport and endpoint contract
+
+The source trace separates two claims that are easy to conflate. The theorem
+`CandidateConsequences.mixed_exists_force_with_consequences` at
+`CandidateConsequences.lean:185-215` does provide a substantial local-to-global
+bundle: a force, the complete `CandidateProperties` record, lifespan and H³
+consequences, force-jet decay, and the all-order boundary-jet identity. The
+concrete assembly supplies its local inputs through `physicalData`, `estimates`,
+and `endpoints` at `ActualCandidateAssembly.lean:1079-1115`, and packages the
+result in `Witness` at lines `1121-1151`.
+
+That bundle still does not export an equality identifying the selected fields
+with the paper's five named moments. Nor does it require that the force and
+pressure remain fixed under a smooth, compactly supported, divergence-free
+perturbation that preserves the initial datum. The review-side
+`GlobalTransportBridgeProbe.lean` proves the exact boundary: the selected
+candidate has the full `Consequences` bundle while
+`FixedForceSameDatumStable` fails. A second extension proves the universal
+non-implication from `CandidateProperties` to that stability predicate.
+
+This result strengthens the causal and paper-to-endpoint objections without
+changing the formal verdict. It is not a proof that the literal existential C/D
+proposition is empty, because that proposition quantifies over one admissible
+force and one candidate trajectory and does not state the stronger stability or
+five-moment transport requirements.
+
+Evidence: `global_germ_transport_audit_2026-09-24.md`,
+`endpoint_contract_nonimplication_2026-09-24.md`.

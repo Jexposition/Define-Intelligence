@@ -1103,3 +1103,26 @@ support a causal/provenance objection to a residual-designed trajectory, but
 the exported C/D proposition contains no formal independence predicate. The
 review records this as a paper-to-endpoint correspondence issue, not as a
 Lean contradiction derived from wording alone.
+
+## CTR-016: global germ-transport validity audit: 2026-09-24
+
+| Source / interface | Exact result | Status |
+|---|---|---:|
+| `CandidateConsequences.lean:185-215` | `mixed_exists_force_with_consequences` returns the force, `CandidateProperties`, `Consequences`, H³ growth, force-jet decay, and boundary jets from its supplied local data and residual limits. | [x] |
+| `ActualCandidateAssembly.lean:1079-1098` | `physicalData` and `estimates` consume actual cycle states, uncut fields, representations, and residual data. | [x] |
+| `ActualCandidateAssembly.lean:1100-1115` | `endpoints` supplies germ-stage endpoint data to the finite-stage schedule. | [x] |
+| `ActualCandidateAssembly.lean:1121-1151` | `Witness` exports selected sums, away extensions, force predicates, `Consequences`, H³ growth, decay, and boundary jets, but no `(M,I,J,S,C_p)` equality. | [x] |
+| `ActualCandidateAssembly.lean:1177-1181` | `selected_witness` instantiates that same bundle without adding a moment-transport or force-independence theorem. | [x] |
+| `GlobalTransportBridgeProbe.lean:27-43` | Zero-sorry result: the selected candidate has the global `Consequences` bundle while same-datum fixed-force stability fails. | [x] |
+
+CTR-016 is a global contract mismatch, not a compiler failure. The local-to-
+global PDE and jet consequences are present. The missing exported fields are
+the selected five-moment identity and force-independence/stability condition.
+
+Evidence: `NavierStokesReview/evidence/global_germ_transport_audit_2026-09-24.md`.
+
+## Endpoint contract non-implication: 2026-09-24
+
+`EndpointContractNonImplication.lean:20-25` proves that `CandidateProperties`
+does not imply `FixedForceSameDatumStable`. Its axiom audit reports only
+`propext`, `Classical.choice`, and `Quot.sound`.

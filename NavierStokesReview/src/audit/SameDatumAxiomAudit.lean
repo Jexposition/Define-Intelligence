@@ -1,4 +1,8 @@
 import extensions.SameDatumFixedForcePerturbation
+import extensions.EndpointContractNonImplication
 
 #print axioms
   NavierStokesReview.SameDatumFixedForcePerturbation.selected_candidate_fails_fixed_force_same_datum_stability
+
+#print axioms
+  NavierStokesReview.EndpointContractNonImplication.candidateProperties_does_not_imply_fixedForceSameDatumStable
