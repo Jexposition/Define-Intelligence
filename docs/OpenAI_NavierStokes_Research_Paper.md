@@ -329,28 +329,90 @@ filter API permits vacuous statements over `Filter.bot`, but the selected
 origin-past filter has been checked non-vacuous. The generic hazard is real;
 selected-path exploitation has not been demonstrated.
 
-## 9. Adverse claims that do not meet the CMI disproof threshold
+## 9. Pressure response and the residual equation
 
-The following arguments are not accepted as refutations on the present
-evidence:
+The proposed equal-and-opposite pressure argument was tested against the
+actual operator rather than treated as a general physical objection. The
+residual is
 
-- active forcing, because C/D permits smooth forcing;
-- a nonzero force integral or nonzero force divergence, because neither is a
-  stated CMI restriction;
-- Ladyzhenskaya or hypo-dissipative regularisation, because those change the
-  equation under review;
-- pure-axial collapse, because the final field is assembled as a
-  three-component spatial-curl field and the global-zero-swirl claim was not
-  proved;
-- compact pressure support alone, because the residual force is unrestricted;
-- compilation of an auxiliary theorem, because the theorem may still have a
-  weaker interface than the paper's claim.
+$$
+\mathcal R_\nu(u,p)=\partial_tu+(u\cdot\nabla)u-\nu\Delta u+\nabla p,
+$$
 
-These exclusions do not grant the authors a presumption of correctness. They
-identify the exact extra theorem needed before each proposed objection can
-become a contradiction.
+and the candidate predicate requires `\mathcal R_\nu(u,p)=f`. The force is
+therefore the full residual, not a separate term that the pressure equation
+must cancel.
 
-## 10. Verdict
+The zero-sorry probe
+[`PressureResidualNonCancellationProbe.lean`](../NavierStokesReview/src/probes/PressureResidualNonCancellationProbe.lean)
+compiles the exact perturbation identity
+
+$$
+\mathcal R(u+e,p+q)-\mathcal R(u,p)
+=\partial_te-\Delta e+\nabla q
+ +(u\cdot\nabla)e+(e\cdot\nabla)u+(e\cdot\nabla)e.
+$$
+
+In particular, for zero velocity,
+
+$$
+\mathcal R(0,q)-\mathcal R(0,0)=\nabla q.
+$$
+
+Thus a nonzero pressure gradient changes the residual; the formal operator
+does not imply an equal-and-opposite cancellation. The pressure-recovery
+modules are comparison results: they assume two divergence-free fields with
+equal residuals and recover pressure differences through compact tests. They do
+not impose an absolute Poisson representative for the selected fields.
+
+For a forced incompressible equation, the divergence identity contains the
+force term:
+
+$$
+\Delta p=\nabla\!\cdot f-
+\nabla\!\cdot\bigl((u\cdot\nabla)u\bigr),
+$$
+
+when the required commutations are available. Dropping `\nabla\!\cdot f`
+would silently replace the forced problem by an additional divergence-free
+force assumption. That assumption is not part of the exported candidate
+predicate.
+
+The pressure route therefore yields a precise correspondence objection, not a
+formal annihilation theorem: the selected path still lacks an explicit
+absolute global pressure-Poisson/normalisation bridge, but the proposed
+pressure cancellation has not been proved and is contradicted by the compiled
+residual identity.
+
+## 10. External-force causality
+
+The official problem statement describes \(f(x,t)\) as a given, externally
+applied force. The repository instead defines the final force from the selected
+velocity, pressure, and residual-limit data. This is a real paper-to-code
+causality mismatch: the construction is residual-designed, not a forward
+initial-value argument in which an independently specified force is held fixed
+while the velocity evolves.
+
+The formal consequence must nevertheless be stated precisely. Fefferman's C/D
+alternatives quantify over the existence of a smooth force satisfying the
+specified decay conditions. They do not state an additional Lean-style
+independence predicate forbidding the construction of that force from other
+witness components. Once constructed, the residual-defined object is still a
+function (f(x,t)). The CMI prize rules do not add such a causal predicate.
+
+Therefore residual feedback is a serious objection to the physical
+interpretation and to any claim that the code reproduces a prescribed-force
+evolution. It is not, without an additional admissibility theorem or a false
+mandatory endpoint predicate, a formal disproof of the literal existential C/D
+proposition. The official-source adjudication is recorded in
+[`cmi_force_independence_adjudication_2026-09-24.md`](../NavierStokesReview/evidence/cmi_force_independence_adjudication_2026-09-24.md).
+
+Other proposed objections remain outside the CMI disproof threshold unless a
+selected-path theorem supplies their missing premise: active forcing, nonzero
+force integral or divergence, non-Newtonian regularisation, pure-axial collapse,
+and compact pressure support alone.
+
+## 11. Verdict
 
 The formal review establishes the following.
 

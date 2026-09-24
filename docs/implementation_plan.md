@@ -11,12 +11,12 @@
 | W3 | Extract five target moments and runtime three-debt engine | [x] | `physical_transport_bridge_spec_extraction_2026-09-24.md` records literal definitions and anchors. |
 | W4 | Test whether generic `StageEstimates` determines five debt or blow-up | [x] | `StageEstimatesMomentBlindnessProbe.lean` compiles without `sorry`. |
 | W5 | Locate selected-path five-moment transport theorem | [~] | Generic stage estimates do not provide it. The new zero-sorry probe proves the exported `Witness` does not entail an arbitrary five-debt certificate; field-level violation is still unproved. |
-| W6 | Connect pressure germ/base equation to global pressure semantics | [ ] | Either a contradiction is derived or the exact missing premise is documented. Pressure comparison alone is insufficient. |
+| W6 | Connect pressure germ/base equation to global pressure semantics | [~] | Comparison identities are verified, but no selected-field absolute Poisson/normalisation theorem is exposed. The pressure-cancellation probe is disproved; the correspondence gap remains. |
 
 | W7 | Re-audit live upstream five-moment construction against selected mixed endpoint | [x]/[ ] | Upstream identities and base blow-up compile; final mixed-sum transport remains open. |
-| W8 | Connect `VanishingJointJets` to the origin residual and blow-up | [~] | `SelectedWitnessAttackBoundaryProbe.lean` proves the scalar endpoint predicates are compatible; a PDE-specific residual lower bound remains the required attack theorem. |
+| W8 | Connect `VanishingJointJets` to the origin residual and blow-up | [x]/[~] | All-order `VanishingJointJets` and the selected force-to-origin composition are source-traced and compiled. A contradiction still requires a selected PDE lower bound. |
 | W9 | Rewrite the peer review and research paper as human-readable papers | [x] | The research paper is now a single coherent argument; the peer review retains its evidence findings and states the same verdict boundary. |
-| W10 | Run all probes, lint documents, and package branch | [ ] | Probes pass; `git diff --check` passes; no tracked `.olean` or build output; final status is clean after commit. |
+| W10 | Run all probes, lint documents, and package branch | [~] | Targeted probes pass. Re-run the full review probe set, document lint, and clean-status check after the current evidence update. |
 
 ## Formal target board
 
@@ -27,8 +27,8 @@
 | CTR-039 | Generic stage interface determines five debt | Confirmed by `interface_does_not_determine_five_debt`; this is not yet a selected-witness refutation. |
 | CTR-040 | Residual flatness contradicts origin blow-up | Residual-flatness compatibility probe blocks this implication without PDE coupling; selected endpoint contradiction remains open. |
 | CTR-041 | Selected residual lower-bound obstruction | Zero-sorry conditional contradiction is proved. The selected source currently supplies upper jet rates, not the required positive lower bound. |
-| PRS-08 | Compact pressure support alone forces trivialisation | Open attack. Compact support is not itself the contradiction; the required global Poisson/Leray premises must be formalised against the selected fields. |
-| PRS-09 | Selected pressure has global Poisson semantics | Open; comparison lemmas do not supply the absolute selected-field premise. |
+| PRS-08 | Compact pressure support alone forces trivialisation | Rejected as a standalone route. Compact support is not itself the contradiction; the selected global Poisson/Leray premises are still absent. |
+| PRS-09 | Selected pressure has global Poisson semantics | Open correspondence gap; comparison lemmas do not supply the absolute selected-field premise. |
 
 ## Required source checks
 
@@ -60,11 +60,11 @@ Inspect the selected import closure for a theorem whose conclusion mentions both
 | 5D-06 | [ ] | Prove selected-field equality between the five physical moments and promoted runtime rows. |
 | 5D-07 | [ ] | Carry that equality through `StateRealization.chartIdentity`, pressure data, residual estimates, and `VanishingJointJets`. |
 
-| FJ-01 | [~] | Attack force smoothness by proving the selected residual derivatives cannot have the `hlim` endpoint family despite velocity blow-up. The scalar implication is blocked; source-specific coupling is required. |
+| FJ-01 | [x]/[~] | The selected force composition and all-order jet path are verified. A force-singularity contradiction is not available because the selected origin force tends to zero; source-specific lower bounds remain absent. |
 | FJ-02 | [~] | Add the missing global pressure-Poisson/Leray equation and derive a selected pressure/support contradiction if the hypotheses really force one. |
 | FJ-03 | [x] | `SelectedWitnessAttackBoundaryProbe` proves the exported `Witness` does not entail zero for every five-debt payload. This is a type-level gap, not yet a field-level violation. |
 | FJ-04 | [~] | Trace `ActualCandidateAssembly.Witness` through `R3/ActualCandidate.of_localized_fields` and `R3/Theorem`; test whether any five-moment equality is consumed. |
-| FJ-05 | [~] | Attack `CandidateFromLimits.hlim` at the selected origin by expanding the actual residual against `origin_blowup`; generic predicate incompatibility is not sufficient. |
+| FJ-05 | [x]/[~] | The selected raw residual and final force both tend to zero at the origin. This closes the explosion attempt, but does not prove a contradiction without an additional PDE lower bound. |
 | FJ-06 | [~] | Add the selected-field pressure-Poisson/Leray identity as a proof target and test it against compact localisation; compact support alone is not a contradiction. |
 | FJ-08 | [x]/[~] | The companion probes prove that `c * ‖u‖ ≤ ‖residual‖` would force `False`, while a scalar countermodel shows blow-up plus flat residual is otherwise consistent. Source inspection has not found the selected premise. |
 
@@ -75,6 +75,6 @@ Inspect the selected import closure for a theorem whose conclusion mentions both
 | ID | Status | Acceptance test |
 |---|---:|---|
 | SW-01 | [~] | Derive the selected positive velocity-to-residual lower bound. |
-| SW-02 | [~] | Derive the selected global pressure-Poisson/Leray identity and test support. |
+| SW-02 | [~] | Derive the selected global pressure-Poisson/Leray identity and test support. The equal-and-opposite cancellation proposal is ruled out by the compiled residual perturbation identity. |
 | SW-03 | [x]/[~] | Interface moment blindness is proved; concrete selected-field violation remains open. |
 | SW-04 | [ ] | Close one attack with a zero-sorry `False` theorem from `selected_witness`. |

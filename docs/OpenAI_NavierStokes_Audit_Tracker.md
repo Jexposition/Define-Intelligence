@@ -667,3 +667,53 @@ moment equations. It reinforces CTR-005 because the missing selected moment
 transport is not supplied by the cutoff identities.
 
 Evidence: `NavierStokesReview/evidence/vanishing_joint_jets_and_localisation_trace_2026-09-24.md`.
+
+## 2026-09-24 pressure and mirror-force adjudication
+
+The proposed equal-and-opposite pressure argument was tested against the
+actual residual operator. `CandidateFromLimits.force` and the R3 candidate
+predicate use the full residual, including the pressure gradient. The compiled
+probe `PressureResidualNonCancellationProbe.lean` proves the perturbation
+identity and its zero-velocity special case
+
+$$
+\mathcal R(0,q)-\mathcal R(0,0)=\nabla q.
+$$
+
+Consequently, a nonzero pressure gradient changes the force residual; the
+operator does not force it to cancel. The pressure-recovery chain compares two
+fields with equal residuals and does not impose `div f = 0` or an absolute
+selected-field Poisson representative. The pressure semantic bridge remains
+open, but the proposed annihilation theorem is not supported.
+
+The mirror construction `mirrorForce := fun z => -f z` was also compiled in
+`MirrorForceSymmetryProbe.lean`. Negation preserves smoothness, but it defines
+a different forced problem. For the same velocity and pressure to satisfy both
+the original and mirror equations, the source proves `f = -f` pointwise. The
+whole-space uniqueness theorem compares solutions with the same force; it does
+not compare the solutions for `f` and `-f`. Therefore mirror forcing supplies
+no contradiction to the original existential C/D claim.
+
+Evidence: `NavierStokesReview/evidence/pressure_residual_non_cancellation_2026-09-24.md`,
+`NavierStokesReview/evidence/mirror_force_symmetry_2026-09-24.md`.
+
+## 2026-09-24 official force-independence check
+
+The official Fefferman statement describes `f(x,t)` as a given, externally
+applied force and requires the stated smoothness and decay bounds. Its C/D
+claims nevertheless quantify over the existence of a smooth force; the text
+does not add a formal independence predicate forbidding a witness construction
+that defines `f` from selected `u` and `p`. The CMI prize rules likewise govern
+publication and evaluation procedure, not an additional causal axiom for the
+PDE.
+
+The repository therefore has a substantial paper-to-model causality objection:
+`CandidateFromLimits.force` is residual-designed rather than an independently
+specified forward datum. That can invalidate a claim that the construction
+models an independently driven physical experiment, but it is not by itself a
+formal contradiction to the literal existential C/D proposition. The decisive
+remaining question is whether the selected fields satisfy every stated
+predicate and whether the paper's stronger causal interpretation is part of
+the theorem being claimed.
+
+Evidence: `NavierStokesReview/evidence/cmi_force_independence_adjudication_2026-09-24.md`.

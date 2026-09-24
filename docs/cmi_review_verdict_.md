@@ -88,3 +88,18 @@ failure and a formal conditional residual obstruction, but not yet a
 zero-sorry `False` theorem from the actual selected witness. The CMI claim is
 therefore **not established** by this audit; the remaining work is to derive a
 concrete selected-field moment, pressure, or residual contradiction.
+
+## 5. Pressure and mirror-force checks
+
+The equal-and-opposite pressure proposal does not produce that contradiction.
+The compiled `PressureResidualNonCancellationProbe` proves that a pressure
+perturbation enters the residual as `pressureGradient q`; it is not forced to
+cancel the residual-derived force. The forced divergence identity would also
+retain the `div f` term unless an additional divergence-free-force hypothesis
+were proved.
+
+The compiled `MirrorForceSymmetryProbe` proves that `-f` remains smooth, but it
+is a different prescribed-force problem. The same fields can satisfy both
+equations only if `f = -f` pointwise. The uniqueness module compares solutions
+with the same force and therefore cannot turn the mirror construction into a
+refutation of the original existential claim.

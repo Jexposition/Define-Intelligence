@@ -251,6 +251,7 @@ Evidence: `NavierStokesReview/evidence/stage_estimates_moment_blindness_2026-09-
 | PRS-08 | Compact pressure support forces trivialisation | [~] | No contradiction has been proved. Add the global Poisson/Leray premises and test the selected pressure and velocity, rather than treating compact support alone as decisive. |
 | PRS-09 | Selected pressure has the paper's global semantics | [~] | The comparison interface has no absolute pressure-Poisson premise; selected local `pressure_germ` and `base_equation` still need to be connected to a global pressure theorem. |
 | PRS-10 | Pressure comparison chain was over-cleared | [x] | Corrected: the chain is real for differences and flux bounds, but cannot be cited as an absolute selected-pressure verification. |
+| CTR-012 | Residual-designed force versus given external datum | [x]/[~] | Official-source check confirms a real causal/paper correspondence objection, but no separate formal independence predicate was found in the C/D statement. |
 
 Evidence: `NavierStokesReview/evidence/pressure_recovery_chain_audit_2026-09-24.md`,
 `NavierStokesReview/evidence/physical_transport_bridge_spec_extraction_2026-09-24.md`,
@@ -267,13 +268,13 @@ and `NavierStokesReview/src/probes/PressureRecoveryAbsolutePremiseProbe.lean`.
 | 5D-05 | Derive contradiction from selected residual limits and origin blow-up | [~] | The scalar endpoint predicates are compatible. A zero-sorry `False` now requires a selected-field PDE lower bound or an incompatible pressure/moment identity. |
 | 5D-06 | Inhabit the selected witness with an unconstrained five-debt payload | [x] | `SelectedWitnessInhabitationProbe.lean` compiles without `sorry`: the `Witness` envelope contains no `PositiveOrderMoments.Debt` field or equality. |
 | 5D-07 | Derive an actual selected-field five-moment violation | [ ] | Add field-level moments to the selected path and prove their failure or contradiction with the selected residual and pressure premises. |
-| FJ-01 | Force-jet breakdown at the singular interface | [~] | `SelectedWitnessAttackBoundaryProbe.lean` records the scalar compatibility boundary. Derive or refute the selected `hlim` family using the actual PDE coupling. |
+| FJ-01 | Force-jet breakdown at the singular interface | [x]/[~] | The selected raw residual and final force are composed at the origin and tend to zero; the explosion route is closed. A contradiction still requires a separate selected PDE lower bound. |
 | FJ-02 | Pressure-Poisson/support contradiction | [~] | The R3 candidate record has compact pressure support but no explicit global pressure-Poisson field. Add the missing identity and test the selected fields. |
 | FJ-04 | Selected-path transport closure | [~] | Trace `ActualCandidateAssembly.Witness` through `R3ActualCandidate.selected_compact_candidate`, `R3/ActualCandidate.of_localized_fields`, and `R3/Theorem`; prove whether any five-moment equality is consumed. |
-| FJ-05 | Selected origin residual contradiction | [~] | Expand the selected residual at `origin_blowup` and compare it with `CandidateFromLimits.hlim`; a generic residual-flatness incompatibility is insufficient. |
+| FJ-05 | Selected origin residual contradiction | [x]/[~] | The selected force composition proves the origin force tends to zero. A generic residual-flatness incompatibility remains insufficient without a selected PDE lower bound. |
 | FJ-08 | Exact residual lower-bound obstruction | [x]/[~] | The zero-sorry probe proves that `c * ‖u‖ ≤ ‖residual‖` with `c > 0` would contradict the selected flat residual and origin blow-up. The companion scalar countermodel proves that blow-up alone does not supply this bound. |
 | FJ-06 | Selected pressure semantics | [~] | Add a selected-field global Poisson/Leray premise and test it against compact pressure localisation; compact support alone is not the contradiction. |
-| PRS-11 | Pressure absolute-semantics check | [ ] | Show either a selected-field Poisson/Leray identity contradicts compact support, or document that the pressure route remains conditional and cannot yield `False`. |
+| PRS-11 | Pressure absolute-semantics check | [~] | The absolute selected-field Poisson/Leray bridge remains open. The equal-and-opposite cancellation proposal is ruled out by the compiled residual perturbation identity. |
 
 ## Direct selected-witness attacks: 2026-09-24
 
@@ -283,6 +284,7 @@ and `NavierStokesReview/src/probes/PressureRecoveryAbsolutePremiseProbe.lean`.
 | SW-02 | Pressure-Poisson/support mismatch | [~] | Derive the global selected pressure-Poisson/Leray identity and contradict compact support or endpoint limits. |
 | SW-03 | Moment-blind ghost model | [x]/[~] | The witness envelope has no five-debt field; still derive an actual moment violation for the selected sums. |
 | SW-04 | Selected-witness contradiction | [ ] | Close one of SW-01 to SW-03 with `False` from the actual selected witness. |
+| SW-05 | Mirror-force symmetry | [x]/[~] | Negation preserves force smoothness, but the mirror force is a different existential input. The same fields satisfy both equations only when `f = -f` pointwise. |
 
 Evidence: `NavierStokesReview/evidence/selected_witness_boundary_attack_status_2026-09-24.md`.
 
@@ -291,5 +293,10 @@ Evidence: `NavierStokesReview/evidence/selected_witness_boundary_attack_status_2
 `SelectedWitnessAttackBoundaryProbe.lean` compiles without `sorry`. It proves
 that the exported `Witness` proposition does not entail zero for every
 five-coordinate debt and that an unbounded scalar endpoint can coexist with a
-flat scalar residual. This keeps CTR-005 and the force-jet attack active while
-preventing an invalid automatic `False` inference.
+flat scalar residual. This prevents an invalid automatic `False` inference.
+
+The selected force composition and all-order jet trace now close the force-
+explosion route, while CTR-005 and the absolute pressure bridge remain open.
+The mirror-force probe records the corresponding symmetry boundary: a smooth
+field `-f` exists, but it is not a counterexample to an existential claim about
+`f` and it does not reverse the nonlinear solution path.
