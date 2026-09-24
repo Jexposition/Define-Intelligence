@@ -68,6 +68,12 @@ itself sufficient to withhold acceptance of the published solution claim. A
 kernel-level contradiction would strengthen the finding, but is not a
 precondition for the present negative review conclusion.
 
+The scope is fixed by the authors' own publication language. OpenAI presents
+the work as a solution of the Navier–Stokes existence and smoothness problem,
+and its paper states the C/D consequence as the result. Accordingly, the
+missing selected-field bridge is assessed against the central solution claim,
+not treated as an optional stronger reading of an otherwise complete paper.
+
 The six core documents above are synchronised to that authority map. The
 pressure result is sourced to
 `NavierStokesReview/evidence/pressure_uniqueness_closure_audit_2026-09-24.md`

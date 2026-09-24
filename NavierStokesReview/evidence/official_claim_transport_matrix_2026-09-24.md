@@ -20,12 +20,38 @@ Lean endpoint.
 
 ## Source anchors
 
+The advertised object is unambiguously a solution claim. OpenAI's announcement
+states that it is sharing “a solution to the Navier–Stokes existence and
+smoothness problem” and says that the result resolves the problem by
+establishing alternatives (C) and (D). The paper's opening theorem likewise
+states existence of the force, fields, bounded energy, finite-time velocity
+blow-up, and the corresponding C/D consequence. These are not optional
+implementation details or a request for a stronger interpretation.
+
 | Source | Relevant statement | Local or published anchor |
 | --- | --- | --- |
 | Clay, Fefferman | The equations use a given externally applied force and alternatives (C) and (D) concern breakdown under admissible forcing. | `docs/navierstokes.pdf`, pp. 1, 3–4; [Clay PDF](https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf) |
 | OpenAI paper | Theorem 1.1 claims a smooth compactly supported force, rest initial data, bounded kinetic energy, unbounded velocity, and the C/D consequence. | OpenAI paper, Theorem 1.1, pp. 1–2; [paper PDF](https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf) |
 | OpenAI paper | The construction defines the force as the momentum residual of a chosen incompressible flow and then proves smooth residual extension. | OpenAI paper, discussion immediately following Theorem 1.1 and proof outline, pp. 3, 8–9 |
 | OpenAI announcement | The public announcement describes the result as a resolution of alternatives (C) and (D). | [OpenAI announcement](https://openai.com/index/navier-stokes-solution/) |
+
+The paper itself makes the five moments load-bearing rather than decorative.
+Its notation table identifies $m=(M,I,J,S,C_p)$ as the five cumulative radial
+integrals used to preserve pressure, radial velocity, and stress across joins
+(p. 19). The construction then says that vanishing five moments remove the
+exterior pressure and stress tails (p. 49), uses five unknown correction
+coefficients (p. 51), and states that exact matching preserves the subsequent
+outer fields (pp. 155–156). Appendix A repeats that the five moment functions
+and the axis pressure datum preserve every subsequent outer field (p. 127).
+These statements make a selected-field transport theorem a load-bearing part
+of the published solution argument.
+
+The announcement therefore fixes the review question: does the inspected
+record establish the published assertion that the construction is a solution
+of the Navier–Stokes problem? The literal endpoint is evidence relevant to
+that question, but it is not a substitute for the paper's selected-field
+identification and the analytic bridges used to present the endpoint as the
+advertised solution.
 
 ## Claim-by-claim result
 
@@ -45,6 +71,8 @@ Lean endpoint.
 | The five published moments `(M, I, J, S, C_p)` are the moments of the selected final velocity/pressure fields. | `PositiveOrderMoments.lean:76-85`; `FiveProfileMoments.lean:473-489`; `ActualCandidateAssembly.lean:1090-1098`, `1121-1151` | The repository contains exact five-moment machinery and substantial upstream profile infrastructure. The exported `Witness` type does not state an equality between `physicalMoments` or `PositiveOrderMoments.moments` and the final mixed sums, residual, or force. | Load-bearing correspondence obligation not established. |
 | The three-debt rank interface is the same five-moment system described in the paper. | `FiveRowRank.lean:240-246`; `NavierStokesReview/src/probes/FiveRowPositiveOrderBridgeProbe.lean:22-51` | `FiveRows` has two fixed zero correction rows and three debt coordinates. A zero-padded promotion `(0,0,-P,-Jθ,-Jz)` gives an exact local repair bridge. That bridge is constructive but is not, by itself, a theorem about the selected final field. | Direct identification is false; constrained local bridge is proved; selected-path transport remains open. |
 | The exact five-moment identities survive every stage and enter the residual/force endpoint. | `PositiveOrderMoments.lean:251-284`, `913-960`; `ModulatedHistories.lean:941-1018`; `ModulatedCone.lean:1486-1498`; `ActualCandidateAssembly.lean:1090-1098` | Exact repair exists upstream, and repaired axis histories are restored with the physical moment identity. `StageEstimates` and `physicalData` feed the selected assembly, but no inspected theorem has the conclusion that those repaired histories equal the final selected mixed-field quantities used by `CandidateProperties`. | Local transport established; final selected-endpoint transport not established. This is the principal paper-to-code burden gap. |
+
+| The five moments are merely informal motivation and need not be connected to the exported fields. | OpenAI paper pp. 19, 49, 51, 127, 155–156; `ActualCandidateAssembly.lean:1090-1098` | The paper explicitly uses the five moments to remove exterior pressure/stress tails and preserve the outer fields. The selected witness still does not state their equality with the final mixed fields, residual, and force. | Rejected as a reading of the paper. The missing selected-field transport is central to the advertised solution claim. |
 | The pressure is an absolute global Poisson representative for the selected velocity. | `CandidateProperties` requires a pressure field and residual identity; `PressureRecovery` and `ActualPressureFlux` provide comparison identities under hypotheses. | The inspected chain supports relative pressure recovery and residual compatibility. The exported endpoint does not state an absolute Poisson equation or a selected-field theorem identifying `p` with a globally normalised pressure representative. | Not established as an additional paper-level semantic claim; compact support alone is not a contradiction. |
 | The construction is robust under independent perturbation of the force or initial data. | Review-side theorems in `NavierStokesReview/src/extensions/CompactFixedForcePerturbation.lean` and `EndpointContractNonImplication.lean` | A fixed-force perturbation can be shown to create a nonzero residual defect. This demonstrates path dependence of the engineered trajectory. It does not refute an existential statement, which asks for one force and one candidate. | Valid robustness/provenance criticism; not a C/D disproof. |
 

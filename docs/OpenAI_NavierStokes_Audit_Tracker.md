@@ -25,6 +25,14 @@ is not evidence against the claim.
 
 The repository contains a genuine R³ C/D-shaped endpoint and the headline theorem reports only standard Lean axioms. The primary adverse result is that the published five-moment/CMI solution claim is **not established** by the inspected paper-to-endpoint record: the authors have not supplied the selected-field composition theorem that their advertised solution requires. This is not softened by the fact that a separate zero-sorry attack has not yet derived `False`. `FiveProfileMoments` matches the paper-shaped normalisation, `PositiveOrderMoments` proves an exact five-component recursive repair, and `FiveRowRank` supplies a distinct three-debt physical rank interface. A zero-sorry theorem rules out direct row-by-row identification between the first and third interfaces, while the positive-order layer may be an intended intermediate representation. The literal endpoint is therefore not labelled formally refuted, but the published solution claim is not accepted pending affirmative proof of the missing transport.
 
+This is the claim OpenAI actually published, not a stronger interpretation
+invented by the review. The announcement calls the work a solution of the
+Navier–Stokes existence and smoothness problem and says it resolves the
+problem through alternatives (C) and (D). The paper's Theorem 1.1 makes the
+same affirmative construction claim. The missing selected-field transport is
+therefore a defect in the proof record for the central published solution,
+not a request for optional robustness or physical realism.
+
 **Headline load-bearing finding: CTR-005.** The paper's named five-moment
 system has not been shown by a selected-path theorem to be the same moment
 data transported into the production debt, residual estimates, and public
