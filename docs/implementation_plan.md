@@ -42,7 +42,7 @@
 - A generic interface countermodel is evidence against the interface implication only.
 - A missing theorem is a correspondence objection, not a formal refutation by itself.
 - `False` may be recorded only after a source-backed, zero-sorry Lean derivation from the selected witness and its actual premises.
-- Agent notes are supporting material; source code and compiled probes control the verdict.
+- Supporting notes are secondary; source code and compiled probes control the verdict.
 
 ## Current next action
 

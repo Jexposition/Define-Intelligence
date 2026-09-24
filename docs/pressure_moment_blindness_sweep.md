@@ -1,5 +1,5 @@
 # Pressure-Moment Blindness Forensic Sweep
-**Authority:** aligned to `REVIEW_DOCUMENT_CONTROL.md` 2026-09-24 and Agent 1's machine-checked probe results.
+**Authority:** aligned to `REVIEW_DOCUMENT_CONTROL.md` 2026-09-24 and the machine-checked probe results.
 **Scope rule:** no claim in this ledger exceeds "correspondence failure not yet converted into formal refutation" unless a zero-sorry contradiction is cited.
 
 ---
@@ -89,8 +89,8 @@ import NavierStokes.ResidualPolarGraph
 ### `PositiveOrderMoments` presence
 A direct search for `PositiveOrderMoments`, `FiveProfileMoments`, and `FiveRowRank` in `PhysicalResidualJetBounds.lean` returns **zero matches**. None of the three moment systems appears as an import, a type reference, or a symbol in the file.
 
-### Transitive closure correction (per Agent 1)
-The earlier Agent 2 claim of "total import separation" was too strong. `ActualCandidateAssembly.lean` does transitively reach `FiveProfileMoments` and `FiveRowRank` through `InitialPhysicalData` and `MeanRankUpdate`, and reaches `PositiveOrderMoments` through the physical-prefix/profile chain. The five-moment modules are therefore *present in the transitive closure* of the selected endpoint.
+### Transitive closure correction
+The earlier claim of "total import separation" was too strong. `ActualCandidateAssembly.lean` does transitively reach `FiveProfileMoments` and `FiveRowRank` through `InitialPhysicalData` and `MeanRankUpdate`, and reaches `PositiveOrderMoments` through the physical-prefix/profile chain. The five-moment modules are therefore *present in the transitive closure* of the selected endpoint.
 
 ### The precise boundary
 The moment systems are dropped from the *residual-evaluation* chain at the boundary between the cycle/state construction (which produces `PhysicalData` and `StateRealization`) and the native residual estimate (`PhysicalResidualJetBounds.NativeBounds` and `residual_jetRate`). The `StateRealization.chartIdentity` theorem (Line 927 of `PhysicalResidualJetBounds.lean`) connects the polar-chart lift to the actual velocity and pressure fields. It does not consume any `Debt`, `FiveRows`, or moment-identity premise.
@@ -107,7 +107,7 @@ This means the paper's five-moment narrative exists upstream and is algebraicall
 
 ## Summary alignment with authority map
 
-| Prior Agent 2 claim | Correction status |
+| Prior claim | Correction status |
 |---|---|
 | "Total import separation" between moment systems and selected endpoint | **Corrected.** Transitive imports exist through `InitialPhysicalData`, `MeanRankUpdate`, and the physical-prefix chain. |
 | "Fake 2D planar fluid / zero helicity" | **Rejected.** `AxisymmetricFields.potential` has three Cartesian components; the base-profile probe proves active 3D geometry. |

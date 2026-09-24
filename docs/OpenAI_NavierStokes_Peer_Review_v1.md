@@ -246,6 +246,39 @@ The code inspection also answers the implementation question. `PositiveTimeForce
 
 **Verdict:** the proposed conservation trap is not an ironclad counterexample. The live formal target is to prove, without `sorry`, that the selected residual cannot have the endpoint limits or force predicates required by the code. Evidence: `NavierStokesReview/evidence/force_conservation_obstruction_adjudication_2026-09-23.md`.
 
+## Finding 22: the force attack now has an exact conditional contradiction
+
+The review has now attacked the selected witness itself. The zero-sorry probe
+`SelectedWitnessEndpointResidualProbe.lean` extracts the actual
+`CandidateProperties` package and proves that, before the singular time, the
+selected force is exactly the selected Navier–Stokes residual. It then proves
+the following implication:
+
+$$
+\begin{aligned}
+\lVert u(t,0)\rVert&\longrightarrow\infty,\\
+\lVert f(t,0)\rVert&\leq B,\\
+c\lVert u(t,0)\rVert&\leq\lVert\mathcal R(u,p)(t,0)\rVert,\quad c>0
+\end{aligned}
+\qquad(t\to1^-)
+\quad\Longrightarrow\quad\bot.
+$$
+
+This is stronger than the earlier residual-naming objection. The probe now
+also instantiates the selected schedule and proves that its origin speed tends
+to infinity while its actual mixed residual tends to zero. Consequently, the
+positive lower bound in the displayed contradiction is impossible for that
+selected raw residual. This is evidence of deliberate residual cancellation,
+not evidence that the force is singular.
+
+The remaining interface question is whether the raw mixed residual in that
+probe is identified with the final force at the origin, rather than only with
+the interior residual before localisation. Until that composition is stated,
+the result is a precise correspondence objection, not an unconditional
+refutation of the C/D endpoint.
+
+Evidence: `NavierStokesReview/evidence/selected_witness_endpoint_residual_probe_2026-09-24.md`.
+
 ## Finding 14: the selected endpoint is divergence-free
 
 The proposed direct test of `selectedPotentialStages` targets the wrong object.
@@ -408,11 +441,23 @@ The selected residual proof has a second interface limitation, specifically at t
 1. **The Off-Axis Cartesian Fields:** The core engine that lifts coordinates and evaluates residual properties (`StateRealization.chartIdentity`, Line 927 of `NavierStokes/PhysicalResidualJetBounds.lean`) explicitly excludes the singular axis. The type parameter requires `radius_ne : ∀ x ∈ U, x.1.1 ≠ 0`.
 2. **The On-Axis Global Limits:** The construction of the vanishing jet fields along the singular temporal limit requires a joint bound across the central axis (`GlobalBaseError.originPast`, Line 159 of `NavierStokes/GlobalBaseError.lean`), which evaluates spatial coordinates passing through `r = 0`.
 
-The repository structurally separates these two regions without providing a verified formal limit crossing for the dynamic components. The terminal assembly theorem (`selected_residual_jetRate`, Line 956 of `NavierStokes/ActualCycleResidualBounds.lean`) manually patches the off-axis `chartIdentity` germ together with an independent on-axis base estimate (`base_exterior_jetRate`, Line 555) using a disjoint geometric split (via the `active` set).
+The repository does structurally separate these regions. The terminal theorem
+(`selected_residual_jetRate`, `ActualCycleResidualBounds.lean:956-989`)
+combines an estimate on `S` with a base estimate on `Sᶜ`. The `houtside`
+hypothesis is the transport step that makes this legitimate: outside `S`, the
+selected velocity and pressure are eventually equal to the base fields. Thus
+the source proves a piecewise rate bound; it does not prove a discontinuity or
+an automatic failure at the axis.
 
-Because the off-axis `chartIdentity` drops the paper's five-moment boundary parameters, and the on-axis limit `GlobalBaseError.error_vanishingJointJets` only bounds the base background flow (not the full dynamic five-moment sum), the mathematical constraints responsible for producing the blow-up are never formally verified to survive the limit `r → 0`. The spatial domain topology gap allows the compiler to succeed on the disjoint pieces without forcing the non-linear convective terms to satisfy the moment debts *at* the topological origin.
-
-This is a load-bearing correspondence gap (CTR-005). The unresolved question is whether the paper's five moments or pressure equations force a nonzero origin residual, which would contradict `VanishingJointJets`. The required zero-sorry refutation is therefore a theorem about the actual selected fields across this unbridged spatial domain topology gap.
+The genuine limitation is narrower. `chartIdentity` is not an origin theorem,
+and the selected public interface does not state that the paper's five
+moments or an absolute pressure-Poisson identity are preserved when the
+piecewise residual bound is assembled. This leaves a selected-path
+correspondence obligation under CTR-005. It does not show that the nonlinear
+terms fail to match at `r → 0`, because the source may be intentionally
+placing the correction support away from the origin and using the base germ
+there. A formal refutation still requires a false equality or an incompatible
+origin consequence for the actual selected fields.
 
 Evidence: `NavierStokesReview/evidence/state_realization_axis_scope_audit_2026-09-24.md`.
 

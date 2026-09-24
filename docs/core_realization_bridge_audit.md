@@ -36,7 +36,7 @@ That supports a missing-transport objection. It does not prove that the
 native residual estimates are false or that the moment modules are globally
 dead code.
 
-## 3. Final Closing Transmittal Text Generation
+## 3. Human-readable review text
 *(To be inserted into `OpenAI_NavierStokes_Peer_Review_v1.md` under 'Technical Discrepancies')*
 
 **The Semantic Firewall and the Orphaned Moment Specification**

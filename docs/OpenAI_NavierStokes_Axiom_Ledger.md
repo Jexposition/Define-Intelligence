@@ -27,6 +27,13 @@ or scalar rate bounds as opaque endpoint axioms. `PressureFlux` and
 pressure support therefore remains a rejected standalone attack, not a
 demonstrated trivialisation theorem. This finding does not close CTR-005.
 
+**AX-037.** `SelectedWitnessEndpointResidualProbe.lean` extracts the selected
+schedule and proves origin speed blow-up together with a zero limit for the
+selected raw mixed residual. It also proves that any fixed positive
+velocity-to-residual lower bound would be contradictory. This records an
+explicit cancellation result; it is not a force-singularity theorem and does
+not by itself refute the final endpoint.
+
 ## Purpose
 
 This ledger separates logical foundations, project-level premises, formal definitions, and physical requirements. A standard Lean axiom is not treated as a defect. A proposition imported as a premise, or a definition that is weaker than the paper's object, is a separate audit target.
@@ -476,7 +483,7 @@ five-moment/pressure identity forcing a nonzero residual there.
 
 This ledger is active only in the fork. See
 [`REVIEW_DOCUMENT_CONTROL.md`](REVIEW_DOCUMENT_CONTROL.md) for the status of
-parent copies and Agent 2 notes. A source file being imported in some
+parent copies and supporting notes. A source file being imported in some
 paper-result module is not enough to show that it is on the selected endpoint
 path, and a source file not imported by `GermCandidateAssembly` is not enough
 to show that its entire upstream construction is absent.

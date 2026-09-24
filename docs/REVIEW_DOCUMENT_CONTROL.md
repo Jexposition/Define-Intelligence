@@ -29,7 +29,7 @@ the fork's documents.
 | `OpenAI_NavierStokes_Research_Paper.md` | Human-readable research paper | Explain the argument; do not turn it into a chronological log. |
 | `REVIEW_DOCUMENT_CONTROL.md` | This map | Prevent duplicate docs from becoming competing verdicts. |
 
-`dependency_closure_validation.md` and the Agent 2 diagnostic notes are
+`dependency_closure_validation.md` and the supporting diagnostic notes are
 supporting material. They are not independent verdicts.
 
 ## Alignment check: 2026-09-24
@@ -61,7 +61,7 @@ used by `origin_blowup`. `GlobalBaseError.actual_error_vanishingJointJets`
 provides a separate origin error-limit route. The two routes have not been
 proved contradictory.
 
-## Agent 2 documents: disposition
+## Supporting documents: disposition
 
 | Document | Disposition | What survives |
 |---|---|---|
@@ -114,7 +114,7 @@ The following claims are currently **not established** as disproofs:
 
 The pure-axial and zero-helicity collapse hypothesis is explicitly cleared as
 an attack surface: `AxisymmetricFields.potential` has three Cartesian
-components and the selected final velocity is curl-generated. The Agent 2
+components and the selected final velocity is curl-generated. The supporting
 solenoidal-collapse note is retained only as a rejected hypothesis.
 
 Any future “refuted” or “definitive failure” label requires a source-backed
@@ -157,7 +157,7 @@ the residual/origin contradiction remain open.
 - [x] The six core documents are present under this `docs/` authority map:
   plan, tracker, axiom ledger, input synthesis, peer review, and research
   paper. Each points back to this control file.
-- [x] Agent 2's `solenoidal_assembly_collapse.md`,
+- [x] `solenoidal_assembly_collapse.md`,
   `dependency_closure_validation.md`, and
   `core_realization_bridge_audit.md` are supporting notes only and use the
   corrected, narrower conclusion.
@@ -198,11 +198,25 @@ or disconnected.
 
 ## Selected-witness attack control: 2026-09-24
 
-The active force attack is the conditional lower-bound theorem in
-`SelectedResidualLowerBoundObstructionProbe.lean`. The pressure attack is
-limited to the missing selected global Poisson/Leray transport; compact support
-alone is not recorded as a contradiction. The moment-blindness probe is an
-interface countermodel only. These routes remain active until a zero-sorry
-`False` theorem is derived from the actual selected witness.
+The force lane now has a selected-path cancellation result: the selected
+origin speed tends to infinity while the selected raw mixed residual tends to
+zero. Therefore a fixed positive velocity-to-residual lower bound is
+impossible for that raw residual. The pressure attack is limited to the
+missing selected global Poisson/Leray transport; compact support alone is not
+recorded as a contradiction. The moment-blindness probe is an interface
+countermodel only. These findings sharpen CTR-005 but do not yet prove `False`
+for the final C/D endpoint.
 
 Evidence: `NavierStokesReview/evidence/selected_witness_boundary_attack_status_2026-09-24.md`.
+
+## Endpoint residual control: 2026-09-24
+
+`SelectedWitnessEndpointResidualProbe.lean` is now the active force-attack
+artifact. It extracts the selected schedule, proves origin speed blow-up, and
+proves that the selected raw mixed residual tends to zero. It also contains
+the conditional contradiction obtained if a positive velocity-to-residual
+lower bound is imposed. CTR-005 remains the headline correspondence finding;
+the remaining question is whether the raw residual is explicitly composed
+with the final force at the origin.
+
+Evidence: `NavierStokesReview/evidence/selected_witness_endpoint_residual_probe_2026-09-24.md`.

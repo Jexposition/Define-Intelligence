@@ -44,3 +44,20 @@ upgrade this finding to a refutation, a zero-sorry theorem must show either:
 The probe therefore narrows CTR-005/CTR-038. It prevents the paper from citing
 `StateRealization.chartIdentity` as an origin-valid global pressure/PDE bridge
 without an additional axis-extension theorem.
+
+## Independent re-audit of the piecewise rate theorem
+
+The stronger claim that the two regions are merely patched without being
+forced to agree is not established by the source. `selected_residual_jetRate`
+does a case split on membership in `S`. On `S`, it uses the off-axis chart
+bound. Outside `S`, it uses `houtside`, which states eventual equality of the
+selected fields with the base fields, followed by `base_exterior_jetRate`.
+That is a valid conditional piecewise estimate and does not by itself imply a
+derivative discontinuity or a contradiction at the axis.
+
+The surviving objection is an interface one: the theorem does not expose the
+paper's five-moment identities or an absolute pressure-Poisson identity as
+premises of this assembled rate. The source may be intentionally localising
+the correction support away from the origin. Any formal disproof must therefore
+show that this localisation is incompatible with the actual selected fields,
+not merely observe that `chartIdentity` has a positive-radius domain.

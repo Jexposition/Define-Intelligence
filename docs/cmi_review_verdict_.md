@@ -1,6 +1,6 @@
 # Superseded provisional verdict: OpenAI Navier-Stokes formalisation
 
-This file is retained as Agent 2 supporting material. The active verdict is in
+This file is retained as supporting material. The active verdict is in
 `OpenAI_NavierStokes_Peer_Review_v1.md`, and the active evidence ledger is in
 `OpenAI_NavierStokes_Audit_Tracker.md`. Claims below are subordinate to those
 documents and to `REVIEW_DOCUMENT_CONTROL.md`.

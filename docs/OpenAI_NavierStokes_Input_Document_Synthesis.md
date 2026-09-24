@@ -282,8 +282,8 @@ Evidence: `NavierStokesReview/evidence/semantic_transport_pressure_audit_2026-09
 ## Document-control conclusion
 
 This synthesis is the controlled intake for supplied critiques and earlier
-agent reports. Its corrections take precedence over the stale parent verdict
-and over unsupported Agent 2 summaries. The active document map is
+source reports. Its corrections take precedence over the stale parent verdict
+and over unsupported summaries. The active document map is
 [`REVIEW_DOCUMENT_CONTROL.md`](REVIEW_DOCUMENT_CONTROL.md).
 
 The synthesis therefore carries forward the missing selected-path moment

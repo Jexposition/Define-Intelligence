@@ -6,7 +6,7 @@
 
 `[x]` checked and closed as an attack route  ·  `[~]` active review  ·  `[ ]` not yet checked  ·  `[!]` formal failure found
 
-## Agent 2 verification board: 2026-09-23
+## Base-profile verification board: 2026-09-23
 
 | ID | Question | Status | Evidence / next action |
 |---|---|---|---|
@@ -51,8 +51,8 @@ local velocity/pressure agreement, not this complete identity.
 | 5D-03 | State the required promotion. | [x] | `promoteDebt d := ![0,0,-(d 0),-(d 1),-(d 2)]`; the zero-sorry probe proves only the algebraic repair equality. |
 | 5D-04 | Prove promotion is the selected physical five-moment identity. | [ ] | Required theorem must mention selected stage fields, their integrals, and the selected residual/force. None is exhibited. |
 | ORG-01 | Check whether `StateRealization.chartIdentity` reaches the singular origin. | [x] | Zero-sorry probe proves its domain and `graphSourceTZ` exclude radius zero. Evidence `state_realization_axis_scope_audit_2026-09-24.md`. |
-| ORG-02 | Connect `GlobalBaseError.originPast` to actual selected fields. | [~] | `actual_error_vanishingJointJets` supplies a separate error-limit route; it does not itself identify the full selected residual at the origin. |
-| ORG-03 | Derive `False` from selected residual limits and origin blow-up. | [ ] | Prove an actual selected residual lower bound or a five-moment/pressure identity contradicting `VanishingJointJets`; generic fields do not qualify. |
+| ORG-02 | Connect `GlobalBaseError.originPast` to actual selected fields. | [~] | The selected schedule now has a zero-sorry raw-residual limit at the origin; composition with the final force remains a separate interface obligation. |
+| ORG-03 | Derive `False` from selected residual limits and origin blow-up. | [~] | The selected raw residual tends to zero while speed diverges, so the positive lower-bound route is impossible. Seek a different false premise or a missing raw-residual/force composition theorem. |
 
 ## 2. Selected endpoint trace
 
@@ -71,8 +71,9 @@ local velocity/pressure agreement, not this complete identity.
 | FORCE-01 | Inspect `PositiveTimeForce.timeCutoff`. | [x] | Smooth bump; active on `[3/8,1]`; no step discontinuity. |
 | FORCE-02 | Locate pressure in the force residual. | [x] | Pressure enters `navierStokesResidual` in `CandidateFromLimits`; `PositiveTimeForce.force` is only a wrapper. |
 | FORCE-03 | Check residual provenance. | [x] | Before `t=1`, `CandidateFromLimits.force` equals the activated residual; endpoint uses smooth extension. |
-| FORCE-04 | Prove or refute selected residual endpoint limits. | [~] | Write a zero-sorry probe against actual `hlim`, not an arbitrary force norm. |
-| FORCE-05 | Prove force-norm divergence, failed support, failed decay, or failed `ContDiff`. | [ ] | Any one exact selected-path failure upgrades this lane to `[!]`. |
+| FORCE-04 | Prove or refute selected residual endpoint limits. | [x] | `SelectedWitnessEndpointResidualProbe.lean` proves the selected raw mixed residual tends to zero at the origin; the final-force composition remains separately tracked. |
+| FORCE-05 | Prove force-norm divergence, failed support, failed decay, or failed `ContDiff`. | [~] | `SelectedWitnessEndpointResidualProbe.lean` proves `False` from speed blow-up, a local force bound, and a positive residual lower bound. The selected source still lacks the lower-bound premise. |
+| FORCE-06 | Test the selected origin velocity-to-residual lower bound. | [x] | Zero-sorry selected-path probe proves origin speed tends to infinity while the selected raw residual tends to zero; every fixed positive lower bound is impossible. |
 
 ## 4. Moment and physical-correspondence lane
 
@@ -157,7 +158,7 @@ Do not use `sorry`, an arbitrary existential witness, a generic countermodel dis
 
 | Priority | Next bounded action | Output |
 |---:|---|---|
-| 1 | Connect the independent origin residual bound to `StateRealization.chartIdentity`. | Source-linked scope note and probe; attack the selected `hlim`, not a generic force. |
+| 1 | Resolve raw-residual to final-force composition at the origin. | The selected-path probe proves residual cancellation, so the lower-bound force attack is closed as a route. Test whether the final force is explicitly the same residual at the origin or whether a different selected premise fails. |
 | 2 | Search for the five-moment transport theorem on the selected import closure. | Theorem citation or exact absence report; use the extracted 5D target as the acceptance specification. |
 | 3 | Test the strongest actual selected obligation in Lean without `sorry`. | Seek a contradiction between selected residual limits, pressure semantics, and origin blow-up. |
 | 4 | Update tracker, axiom ledger, synthesis, peer review, and paper. | Human-readable counter-paper prose, not a chronological audit log. |
@@ -176,6 +177,7 @@ References: [CMI problem statement](https://www.claymath.org/wp-content/uploads/
 ## Evidence index
 
 - `NavierStokesReview/evidence/force_cutoff_activity_audit_2026-09-23.md`
+- `NavierStokesReview/evidence/selected_witness_endpoint_residual_probe_2026-09-24.md`
 - `NavierStokesReview/evidence/selected_moment_bridge_audit_2026-09-23.md`
 - `NavierStokesReview/evidence/force_conservation_obstruction_adjudication_2026-09-23.md`
 - `NavierStokesReview/evidence/selected_divergence_audit_2026-09-23.md`
@@ -217,16 +219,16 @@ Evidence: `NavierStokesReview/evidence/analytic_objections_adjudication_2026-09-
 
 This fork is the active review corpus. See
 [`REVIEW_DOCUMENT_CONTROL.md`](REVIEW_DOCUMENT_CONTROL.md) before using any
-parent-directory copy or Agent 2 diagnostic note. A claim enters this plan only
+parent-directory copy or supporting diagnostic note. A claim enters this plan only
 after source inspection or a recorded zero-sorry probe.
 
 | ID | Control task | Status | Decisive condition |
 |---|---|---:|---|
 | DOC-01 | Quarantine stale parent verdicts and unsupported pure-axial claims | [x] | The control map identifies active, supporting, archival, and rejected notes. |
-| DOC-02 | Reconcile Agent 2 notes with current source paths | [x] | `finalPotential`, selected imports, force gluing, and pressure support are corrected in the active corpus. |
+| DOC-02 | Reconcile supporting notes with current source paths | [x] | `finalPotential`, selected imports, force gluing, and pressure support are corrected in the active corpus. |
 | DOC-03 | Maintain one human-readable peer review and one research paper | [x] | Narrative documents point to tracker/evidence rather than functioning as logs. |
 | DOC-04 | Resolve the selected five-moment transport objection | [ ] | Find or refute the theorem transporting the named moments through the selected endpoint. |
-| DOC-05 | Verify final authority-map packaging | [x] | Control map, tracker, six core documents, and Agent 2 dispositions agree; no tracked build artefacts. |
+| DOC-05 | Verify final authority-map packaging | [x] | Control map, tracker, six core documents, and supporting-note dispositions agree; no tracked build artefacts. |
 
 ## New formal countermodel
 

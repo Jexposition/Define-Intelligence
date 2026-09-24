@@ -23,6 +23,37 @@ solution** and **not formally refuted**. A formal refutation requires a
 zero-sorry contradiction on the selected dependency path or a false mandatory
 premise proved for the selected fields.
 
+## A selected-path obstruction to residual cancellation
+
+The force objection can be made precise without assuming that velocity blow-up
+automatically implies force blow-up. The selected witness supplies an interior
+identity
+
+$$
+\mathcal R(u,p)(t,x)=f(t,x),\qquad 0<t<1,
+$$
+
+and the selected schedule supplies unbounded mixed velocity at the origin. The
+new zero-sorry probe also proves that the corresponding selected mixed
+residual tends to zero at that endpoint. Independently, the candidate
+interface identifies its interior Navier–Stokes residual with the force. The
+probe proves that these facts contradict any selected-field estimate
+
+$$
+c\lVert u(t,0)\rVert\leq\lVert\mathcal R(u,p)(t,0)\rVert
+$$
+
+with fixed $c>0$, provided the force is locally bounded near $1$. This is the
+correct mathematical target for the force-smoothness attack.
+
+The selected raw residual actually falsifies the proposed lower-bound premise:
+its norm tends to zero while the origin speed diverges. This is a formal
+certificate of residual cancellation, not a proof of force singularity. The
+remaining question is whether the raw mixed residual is explicitly composed
+with the final force at the origin, rather than only identified with the force
+on the interior before localisation. The force attack therefore sharpens
+CTR-005 but does not yet produce `False` for the C/D endpoint.
+
 ## 1. Review question and standard
 
 The audit asks three different questions.
@@ -130,6 +161,9 @@ zero-sorry probe
 [`SelectedResidualLowerBoundObstructionProbe.lean`](../NavierStokesReview/src/probes/SelectedResidualLowerBoundObstructionProbe.lean)
 proves exactly this conditional contradiction on the actual one-sided
 endpoint filter.
+
+The selected-path extraction and the zero residual limit are recorded in
+[`SelectedWitnessEndpointResidualProbe.lean`](../NavierStokesReview/src/probes/SelectedWitnessEndpointResidualProbe.lean).
 
 The selected source, however, also contains explicit core cancellation:
 `FinalSlowBase.stressForce_core_germ` and its jet theorem make the stress-force
