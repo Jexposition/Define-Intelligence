@@ -466,3 +466,22 @@ Evidence: `NavierStokesReview/evidence/temporal_patching_audit_2026-09-24.md`.
   perturbation stability or force independence.
 
 Authority: `NavierStokesReview/evidence/selected_witness_fixed_force_obstruction_2026-09-24.md`.
+
+## Whole-space uniqueness audit: 2026-09-24
+
+`WholeSpaceUniqueness.classical_uniqueness_on_Icc` is an active comparison
+theorem. It builds the pressure-recovery hypotheses from the two smooth,
+divergence-free residual solutions, finite-energy bounds, and compact support
+of the reference velocity. `candidate_global_agrees_before_one` instantiates
+that theorem with the selected candidate and a global same-force competitor.
+The compact-support and speed-blow-up argument then gives the no-global-
+solution conclusion.
+
+Compact pressure support is not used to force pressure or velocity to vanish.
+The pressure step is relative and compact-test based, so it does not expose an
+absolute pressure normalisation. That remains a semantic correspondence issue,
+not a pressure-trivialisation contradiction. The queried endpoints and
+uniqueness lemmas report only `propext`, `Classical.choice`, and `Quot.sound`.
+
+Evidence: `NavierStokesReview/evidence/whole_space_uniqueness_audit_2026-09-24.md`;
+`NavierStokesReview/src/audit/WholeSpaceAxiomAudit.lean`.

@@ -989,3 +989,29 @@ withdrawn. The surviving CTR-005 issue is narrower: `Witness` and
 moments to the paper's `(M,I,J,S,C_p)` or to the final mixed residual and
 force. Evidence:
 `NavierStokesReview/evidence/selected_rank_transport_reaudit_2026-09-24.md`.
+
+## 2026-09-24 whole-space uniqueness-chain audit
+
+The selected R³ endpoint was traced through `WholeSpaceUniqueness`.
+`classical_uniqueness_on_Icc` derives equality on each closed interval before
+time one from the two residual equations, incompressibility, smoothness,
+finite-energy bounds, compact reference support, and compact-test pressure
+recovery. `candidate_global_agrees_before_one` applies this to a
+`GlobalFiniteEnergySolution`; `CandidateProperties.no_global_solution_one`
+then uses compact support and the selected speed blow-up.
+
+This corrects two weaker objections. The R³ theorem is not a candidate-only
+shell, and compact pressure support is not a hidden premise that pressure or
+velocity vanishes. The pressure argument is relative and compact-test based,
+so an absolute selected pressure representative remains unexposed, but no
+pressure-trivialisation contradiction was found.
+
+`WholeSpaceAxiomAudit.lean` reports only the standard Lean axioms for the
+queried R³ and periodic endpoints and uniqueness lemmas. No admitted
+declaration was found in this audited path.
+
+**Classification:** uniqueness route formally active; no selected-witness
+`False` obtained. CTR-005 remains the load-bearing selected-path
+five-moment/pressure correspondence objection.
+
+Evidence: `NavierStokesReview/evidence/whole_space_uniqueness_audit_2026-09-24.md`.

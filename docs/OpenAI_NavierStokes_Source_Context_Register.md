@@ -108,3 +108,18 @@ of the construction rather than an inference from names. It still does not
 add an independence predicate to the exported existential statement; the
 distinction between a provenance objection and a literal C/D contradiction
 remains essential.
+
+## Whole-space uniqueness correction
+
+The whole-space no-global-solution route is formally active. The comparison
+theorem derives equality before time one from the two residual equations,
+incompressibility, smoothness, finite-energy bounds, compact reference support,
+and compact-test pressure recovery. The selected-candidate wrapper then uses
+that equality with the speed blow-up. Compact pressure support is not used as
+a substitute for the pressure argument and does not imply that the pressure or
+velocity vanishes.
+
+This source fact narrows the counter-paper. The remaining pressure objection is
+the absence of an absolute selected pressure representative in the exported
+semantic bridge, not the absence of a uniqueness proof. Evidence:
+`NavierStokesReview/evidence/whole_space_uniqueness_audit_2026-09-24.md`.

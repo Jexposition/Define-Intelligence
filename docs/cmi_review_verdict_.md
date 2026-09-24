@@ -134,3 +134,20 @@ The unresolved defect is the missing theorem carrying these internal radial
 identities into the exported mixed `Witness` and identifying them with the
 paper's complete five-moment system. Evidence:
 `NavierStokesReview/src/completions/SelectedCycleMomentTransport.lean`.
+
+## Whole-space uniqueness qualification
+
+The whole-space no-global-solution argument has been audited through its
+actual source path. `classical_uniqueness_on_Icc` derives the comparison from
+the two residual equations, incompressibility, smoothness, finite-energy
+bounds, compact reference support, and compact-test pressure recovery.
+`candidate_global_agrees_before_one` and `no_global_solution_one` then apply
+that result to the selected candidate.
+
+Accordingly, the review withdraws any suggestion that the R³ endpoint is only
+an existential candidate shell or that compact pressure support alone forces a
+trivial pressure. The pressure chain still leaves absolute selected-pressure
+semantics unexposed, so CTR-005 remains live. The uniqueness audit itself
+does not yield a selected-witness `False`.
+
+Evidence: `NavierStokesReview/evidence/whole_space_uniqueness_audit_2026-09-24.md`.

@@ -835,3 +835,27 @@ force. This is a material paper-to-endpoint correspondence gap. It is not
 itself a selected-witness `False` theorem.
 
 Evidence: `NavierStokesReview/evidence/selected_rank_transport_reaudit_2026-09-24.md`.
+
+## Finding 35: the whole-space uniqueness route is formally active
+
+The no-global-solution conclusion was checked against its actual dependency
+chain. `WholeSpaceUniqueness.classical_uniqueness_on_Icc` derives equality on
+each closed interval before time one from the two residual equations,
+incompressibility, smoothness, finite-energy bounds, compact support of the
+reference velocity, and compact-test pressure recovery. The selected wrapper
+`candidate_global_agrees_before_one` supplies the candidate properties, and
+`CandidateProperties.no_global_solution_one` uses compact support together
+with the speed blow-up.
+
+This removes two weaker objections from the review. The R³ theorem is not
+merely a candidate-existence shell, and compact pressure support is not used to
+make the pressure or velocity vanish. The pressure argument recovers relative
+gradient information for the comparison estimate; it does not expose an
+absolute pressure representative. That remains a correspondence question, not
+a pressure-trivialisation contradiction.
+
+The audited declarations use only the standard Lean axioms
+`propext`, `Classical.choice`, and `Quot.sound`. No selected-path `False`
+result follows from this audit.
+
+Evidence: [`whole_space_uniqueness_audit_2026-09-24.md`](../NavierStokesReview/evidence/whole_space_uniqueness_audit_2026-09-24.md).

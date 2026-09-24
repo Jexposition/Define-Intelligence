@@ -739,3 +739,23 @@ failure, not a claim that the rank construction is absent or that Lean has
 already derived `False`.
 
 Evidence: [`selected_rank_transport_reaudit_2026-09-24.md`](../NavierStokesReview/evidence/selected_rank_transport_reaudit_2026-09-24.md).
+
+## Whole-space comparison: a cleared overstatement
+
+The whole-space endpoint cannot accurately be described as a candidate-only
+existential wrapper. The source proves comparison on every closed interval
+before the singular time. It derives the pressure flux from the two residual
+equations and incompressibility using compact spatial tests, then closes the
+weighted energy estimate under the stated finite-energy hypotheses. The
+selected candidate is supplied to this theorem by
+`candidate_global_agrees_before_one`; compact support and speed unboundedness
+then exclude a global finite-energy competitor.
+
+This does not resolve the separate semantic question about the force being
+chosen from the candidate residual, nor does it expose an absolute global
+pressure representative. It does mean that the review must not present the
+R³ no-global-solution conclusion as dead code, an uninhabited wrapper, or a
+pressure-support trivialisation. The remaining formal objection is the missing
+selected-path transport of the paper's named moments and pressure semantics.
+
+Evidence: [`whole_space_uniqueness_audit_2026-09-24.md`](../NavierStokesReview/evidence/whole_space_uniqueness_audit_2026-09-24.md).

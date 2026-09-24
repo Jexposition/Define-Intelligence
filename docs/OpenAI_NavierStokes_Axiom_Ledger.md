@@ -705,3 +705,18 @@ the exported candidate rather than relying on a name-based search. This is
 strong evidence that the force is selected from the candidate motion, but it
 is not an extra Lean premise forbidding such construction. Record it as a
 provenance defect under CTR-012, not as a kernel contradiction.
+
+## AX-043: whole-space uniqueness chain
+
+`WholeSpaceUniqueness.classical_uniqueness_on_Icc` is proved from the stated
+comparison hypotheses. Its pressure step uses compact spatial tests and the
+residual equations; it does not assume an absolute pressure normalisation or
+infer pressure vanishing from compact support. The selected-candidate wrapper
+then supplies the candidate properties and derives agreement with every
+global finite-energy competitor before time one.
+
+`NavierStokesReview/src/audit/WholeSpaceAxiomAudit.lean` reports only
+`propext`, `Classical.choice`, and `Quot.sound` for the R³ theorem, the
+uniqueness lemmas, and the periodic corollary. This is a positive formal
+verification result for the no-global-solution chain, not a new axiom and not
+a `False` derivation.

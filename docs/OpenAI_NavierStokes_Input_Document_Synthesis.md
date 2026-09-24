@@ -401,3 +401,15 @@ extracts the exported witness and proves that its force equals the selected
 residual on the whole pre-singular interval. This confirms the causal
 provenance objection while preserving the formal boundary: the C/D endpoint
 does not encode force independence, so the result is not a literal `False`.
+
+## Whole-space uniqueness audit
+
+The source also contains a genuine no-global-solution comparison chain. It
+uses compact-test pressure recovery and a weighted energy estimate before
+applying compact support and speed blow-up. The pressure-support predicate is
+not itself a global Poisson contradiction, and the comparison argument leaves
+absolute pressure normalisation implicit. The synthesis therefore keeps the
+pressure and five-moment transport questions focused on selected-endpoint
+semantics rather than alleging that the uniqueness machinery is absent.
+
+Evidence: `NavierStokesReview/evidence/whole_space_uniqueness_audit_2026-09-24.md`.

@@ -408,3 +408,15 @@ backwards.
 | Transport into selected mixed endpoint | Unresolved | Identify the paper tuple `(M,I,J,S,C_p)` with the selected fields and residual, or prove a concrete violation. |
 
 Evidence: `NavierStokesReview/evidence/selected_rank_transport_reaudit_2026-09-24.md`.
+
+## Whole-space uniqueness-chain audit: 2026-09-24
+
+| ID | Task | Status | Required follow-up |
+|---|---|---:|---|
+| UNI-01 | Audit `classical_uniqueness_on_Icc`. | [x] | Preserve its actual hypotheses in the peer review. |
+| UNI-02 | Audit selected-candidate instantiation and no-global conclusion. | [x] | Do not describe the R³ theorem as candidate-only or dead code. |
+| UNI-03 | Test compact pressure support as a trivialisation premise. | [x] | Keep this route cleared unless a separate absolute Poisson identity is proved. |
+| UNI-04 | Check kernel dependencies of R³, uniqueness, and periodic endpoints. | [x] | Standard axioms only; no admitted declaration found in the audited path. |
+| UNI-05 | Produce selected-path `False` from this chain. | [ ] | Requires a false mandatory premise; none found in this pass. |
+
+Evidence: `NavierStokesReview/evidence/whole_space_uniqueness_audit_2026-09-24.md`.
