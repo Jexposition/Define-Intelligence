@@ -717,3 +717,27 @@ predicate and whether the paper's stronger causal interpretation is part of
 the theorem being claimed.
 
 Evidence: `NavierStokesReview/evidence/cmi_force_independence_adjudication_2026-09-24.md`.
+
+## CTR-012: fixed-force perturbation and structural duality
+
+The official statement's description of a “given, externally applied force”
+supports a causal correspondence objection because the repository constructs
+its final force from the selected residual. The zero-sorry
+`IndependentDataPerturbationProbe` makes the objection exact: if (p) and (f)
+are held fixed after replacing (u) by (u+e), then
+
+$$
+\partial_t e-\Delta e+(u\cdot\nabla)e+(e\cdot\nabla)u+(e\cdot\nabla)e=0.
+$$
+
+The extension theorem packages the pointwise obstruction for
+`PositiveTimeForce.force`. The structural duality probe separately proves that
+`-f` is smooth, reverses the local work pairing, and cancels `f` pointwise.
+
+**Status:** [x] operator-level fixed-data and mirror identities proved;
+[~] selected schedule fracture and C/D `False` remain unproved. No theorem yet
+supplies an admissible perturbation of the selected witness or identifies a
+solution for `-f` or zero force with the selected solution.
+
+Evidence: `NavierStokesReview/evidence/independent_data_perturbation_2026-09-24.md`;
+`NavierStokesReview/evidence/mirror_force_symmetry_2026-09-24.md`.

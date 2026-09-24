@@ -70,6 +70,19 @@ Inspect the selected import closure for a theorem whose conclusion mentions both
 
 **Last updated:** 2026-09-24
 
+## CTR-012 and structural duality
+
+| ID | Status | Acceptance test |
+|---|---:|---|
+| CTR-012-A | [x] | Fixed-force perturbation identity compiles without admitted declarations. |
+| CTR-012-B | [x] | Positive-time force wrapper obstruction compiles in `FixedForcePerturbationCompletion`. |
+| CTR-012-C | [x] | Mirror smoothness, local work sign reversal, and `f + (-f) = 0` compile. |
+| CTR-012-D | [ ] | Produce a source-backed admissible perturbation or force-superposition theorem that contradicts the selected witness. |
+
+The current results prove path dependence and algebraic mirror symmetry. They
+do not prove failure of the selected nonlinear schedule, because no theorem
+identifies a solution for `-f` or `0` with the selected solution for `f`.
+
 ## Selected-witness attack board
 
 | ID | Status | Acceptance test |

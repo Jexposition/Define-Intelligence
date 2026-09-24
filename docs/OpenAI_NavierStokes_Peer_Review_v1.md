@@ -586,3 +586,33 @@ finding, not evidence of a temporal discontinuity or deleted three-dimensional
 cross term.
 
 Evidence: `NavierStokesReview/evidence/vanishing_joint_jets_and_localisation_trace_2026-09-24.md`.
+
+## Finding 28: fixed-force perturbations expose residual dependence
+
+The phrase “given, externally applied force” has a stronger causal meaning
+than the source's construction: `CandidateFromLimits.force` is built from the
+selected residual and then extended through the endpoint. To test the
+consequence rather than merely describe it, the review adds a smooth velocity
+perturbation (e) while keeping pressure and force fixed.
+
+The zero-sorry theorem in
+`NavierStokesReview/src/probes/IndependentDataPerturbationProbe.lean` proves
+that simultaneous satisfaction of the same fixed-force equation requires
+
+$$
+\partial_t e-\Delta e+(u\cdot\nabla)e+(e\cdot\nabla)u+(e\cdot\nabla)e=0.
+$$
+
+The companion extension in
+`NavierStokesReview/src/extensions/FixedForcePerturbationCompletion.lean`
+instantiates the obstruction for `PositiveTimeForce.force`. Thus a nonzero
+perturbation defect cannot be absorbed by the unchanged force. This is a
+formal, source-level demonstration that the construction is path-dependent:
+the force must be recomputed when the selected velocity path changes.
+
+The result must not be overstated. It does not prove that an arbitrary
+perturbation is one of the admissible witnesses in the repository, nor that
+`exists_schedule` fails for every perturbation. It therefore establishes a
+causality and correspondence defect in the claimed physical interpretation,
+not yet an unconditional `False` theorem for the literal existential C/D
+statement. Evidence: `NavierStokesReview/evidence/independent_data_perturbation_2026-09-24.md`.

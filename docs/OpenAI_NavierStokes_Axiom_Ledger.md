@@ -578,3 +578,18 @@ non-Newtonian.
 
 **Status:** all-order jet derivation and localisation regularity confirmed;
 selected five-moment transport remains open.
+
+## AX-037: fixed-force perturbation obstruction
+
+**Source:** `NavierStokesReview/src/probes/IndependentDataPerturbationProbe.lean`;
+`NavierStokesReview/src/extensions/FixedForcePerturbationCompletion.lean`.
+
+The zero-sorry theorem derives the complete perturbation defect required when
+the same force and pressure are retained after replacing (u) by (u+e).
+The extension also packages the result for the positive-time force wrapper.
+The proof uses the residual add/subtract identity and no project-level axiom.
+
+**Status:** compiled with standard Lean foundations only. This is a proved
+fixed-datum obstruction and not yet a contradiction to the selected
+existential witness, because the source does not provide an admissible
+perturbation theorem.

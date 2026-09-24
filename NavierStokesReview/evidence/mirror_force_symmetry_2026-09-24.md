@@ -53,3 +53,24 @@ counterexample to the C/D existential claim and does not establish a pressure,
 energy, or uniqueness contradiction for the selected witness.
 
 **Build:** Lean 4.34.0-rc2, zero errors, no `sorry`, no custom axiom.
+
+## Structural duality probe
+
+`StructuralDualityMirrorProbe.lean` independently rechecks the mirror claims.
+It proves smoothness of the negated force, the pointwise identity
+
+$$
+f+(-f)=0,
+$$
+
+and sign reversal of the local pairing
+
+$$
+\langle-f,u\rangle=-\langle f,u\rangle.
+$$
+
+It also proves that the same fields cannot satisfy both the original and
+mirror residual equations at a point where (f\ne0). These are algebraic
+symmetries, not a proof that the original `exists_schedule` fails after force
+superposition. The probe compiled with Lean 4.34.0-rc2, exit code 0, no
+`sorry`, and no custom axiom.

@@ -300,3 +300,21 @@ explosion route, while CTR-005 and the absolute pressure bridge remain open.
 The mirror-force probe records the corresponding symmetry boundary: a smooth
 field `-f` exists, but it is not a counterexample to an existential claim about
 `f` and it does not reverse the nonlinear solution path.
+
+## CTR-012 independent-data and mirror lane
+
+| ID | Status | Decisive result |
+|---|---:|---|
+| CTR-012-A | [x] | Fixed-force perturbation identity compiles with no admitted declarations. |
+| CTR-012-B | [x] | The obstruction is packaged for `PositiveTimeForce.force`. |
+| CTR-012-C | [x] | Mirror smoothness, work sign reversal, and `f + (-f) = 0` compile. |
+| CTR-012-D | [ ] | A selected-path admissible perturbation or force-superposition contradiction remains to be proved. |
+
+The current lane establishes that residual-designed forcing is path-dependent:
+holding the force fixed after changing the velocity imposes the full homogeneous
+perturbation PDE. It does not establish that the selected existential witness
+must be stable under that perturbation, nor that the nonlinear schedule reverses
+under (f\mapsto-f). Those stronger conclusions require additional premises.
+
+Evidence: `NavierStokesReview/evidence/independent_data_perturbation_2026-09-24.md`;
+`NavierStokesReview/evidence/mirror_force_symmetry_2026-09-24.md`.

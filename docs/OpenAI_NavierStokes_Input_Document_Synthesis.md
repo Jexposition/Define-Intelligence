@@ -328,3 +328,25 @@ explosion route and leaves the five-moment and absolute-pressure transport
 questions as the live formal objections.
 
 Evidence: `NavierStokesReview/evidence/selected_force_origin_composition_2026-09-24.md`.
+
+## Fixed-force perturbation and mirror checks
+
+The fixed-force probe derives the exact homogeneous perturbation equation when
+the same pressure and spacetime force are retained after replacing (u) by
+(u+e). A nonzero defect rules out the perturbed field under that unchanged
+force. The extension applies this to the positive-time force wrapper.
+
+The structural duality probe separately verifies that negating a smooth force
+preserves smoothness, reverses the local work pairing, and cancels pointwise
+under superposition. It also proves that the same fields cannot satisfy both
+the original and mirror residual equations where the force is nonzero.
+
+These results formally support path dependence and the distinction between a
+residual-designed field and a forward prescribed-force construction. They do
+not prove that the selected schedule fails under an arbitrary perturbation, or
+that the selected velocity solves the unforced equation after force
+superposition. Those stronger conclusions require additional selected-path
+theorems.
+
+Evidence: `NavierStokesReview/evidence/independent_data_perturbation_2026-09-24.md`;
+`NavierStokesReview/evidence/mirror_force_symmetry_2026-09-24.md`.

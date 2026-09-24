@@ -103,3 +103,11 @@ is a different prescribed-force problem. The same fields can satisfy both
 equations only if `f = -f` pointwise. The uniqueness module compares solutions
 with the same force and therefore cannot turn the mirror construction into a
 refutation of the original existential claim.
+
+The structural duality probe verifies the strongest unconditional mirror
+statements: smoothness survives (f\mapsto-f), local work changes sign, and
+the two forces cancel pointwise when superposed. It does not prove that the
+selected velocity solves the zero-force equation, because nonlinear advection
+and the selected schedule are not linear in the force. The remaining formal
+target is therefore a selected-path perturbation or a force-independent
+admissibility premise, not the mirror identity itself.

@@ -407,6 +407,34 @@ mandatory endpoint predicate, a formal disproof of the literal existential C/D
 proposition. The official-source adjudication is recorded in
 [`cmi_force_independence_adjudication_2026-09-24.md`](../NavierStokesReview/evidence/cmi_force_independence_adjudication_2026-09-24.md).
 
+The fixed-data test makes this objection mathematically sharper. Let (e) be
+an independently chosen smooth perturbation, keep (p) and the spacetime
+force (f) fixed, and require both (u) and (u+e) to satisfy the same
+residual equation. The compiled theorem
+[`IndependentDataPerturbationProbe.lean`](../NavierStokesReview/src/probes/IndependentDataPerturbationProbe.lean)
+derives the necessary identity
+
+$$
+\partial_t e-\Delta e+(u\cdot\nabla)e+(e\cdot\nabla)u+(e\cdot\nabla)e=0.
+$$
+
+The extension module packages the stronger local conclusion: whenever this
+defect is nonzero at one spacetime point, the perturbed field cannot satisfy
+the same fixed force. This formally exposes the dependence of the
+residual-designed force on its selected velocity path. It does not, however,
+show that the selected existential witness must admit such a perturbation, and
+therefore does not by itself derive `False` from the C/D endpoint.
+
+The correct CTR-012 conclusion is consequently two-layered. The construction
+is not a forward prescribed-force stability result: changing the velocity
+without recomputing the residual generally destroys the force identity. But a
+single specially matched smooth triple ((u,p,f)) can still satisfy a literal
+existential statement. A formal CMI disproof requires either an independence
+condition in the theorem being claimed or a selected-path theorem that supplies
+an admissible perturbation with nonzero defect. The exact proof and its limits
+are recorded in
+[`independent_data_perturbation_2026-09-24.md`](../NavierStokesReview/evidence/independent_data_perturbation_2026-09-24.md).
+
 Other proposed objections remain outside the CMI disproof threshold unless a
 selected-path theorem supplies their missing premise: active forcing, nonzero
 force integral or divergence, non-Newtonian regularisation, pure-axial collapse,

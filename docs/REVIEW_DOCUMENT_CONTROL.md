@@ -265,3 +265,22 @@ tends to zero there. The force-explosion route is closed.
 
 Evidence: `NavierStokesReview/evidence/selected_witness_endpoint_residual_probe_2026-09-24.md` and
 `NavierStokesReview/evidence/selected_force_origin_composition_2026-09-24.md`.
+
+## Independent-data and mirror checks: 2026-09-24
+
+- [x] `IndependentDataPerturbationProbe.lean` derives the fixed-force
+  perturbation defect.
+- [x] `FixedForcePerturbationCompletion.lean` packages the result for the
+  positive-time force wrapper.
+- [x] `StructuralDualityMirrorProbe.lean` proves mirror smoothness, local work
+  sign reversal, and pointwise force cancellation.
+- [~] Neither probe proves that `exists_schedule` fails after an arbitrary
+  perturbation or after replacing the force by its negative. Those would
+  require an admissible selected-path perturbation theorem and a theorem
+  relating the new force to the original solution.
+
+These results strengthen CTR-012 as a causality and correspondence objection.
+They do not replace the selected-witness standard for a formal `False` result.
+
+Evidence: `NavierStokesReview/evidence/independent_data_perturbation_2026-09-24.md`;
+`NavierStokesReview/evidence/mirror_force_symmetry_2026-09-24.md`.
