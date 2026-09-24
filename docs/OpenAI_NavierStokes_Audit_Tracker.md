@@ -1258,7 +1258,7 @@ theorem for the five named moments.
 | Whole-space and periodic C/D comparator consequences follow | `R3/ComparatorR3Theorem.lean:21-35`; `ComparatorTheorem.lean:25-51` | Present on the inspected path |
 | The selected mixed fields equal the paper's `(M,I,J,S,C_p)` moments | No equality in `Witness`; upstream definitions are `PositiveOrderMoments.lean:76-85` and `FiveProfileMoments.lean:473-489` | Not established; headline CTR-005 |
 | The three-debt rank repair is the paper's five-moment system | `FiveRowPositiveOrderBridgeProbe.lean` proves only the constrained promotion `(0,0,-P,-Jθ,-Jz)` | Direct identification fails; selected transport remains unproved |
-| Residual-designed force satisfies an independently encoded force-data condition | No independence or perturbation-stability field in `CandidateProperties` | Not established as the stronger semantic reading |
+| Residual-designed force satisfies an independently encoded force-data condition | No independence or perturbation-stability field in `CandidateProperties` | Not established as part of the published solution claim |
 
 The proper review conclusion is therefore: the authors have established a
 formal C/D-shaped endpoint only if the endpoint source is accepted as given;
