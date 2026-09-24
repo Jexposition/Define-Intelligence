@@ -294,6 +294,32 @@ itself a zero-sorry contradiction to the concrete endpoint.
 
 Evidence: `NavierStokesReview/evidence/selected_moment_transport_closure_2026-09-24.md`.
 
+## Finding 31: the proposed zero-row collision is not a selected-field contradiction
+
+The claim that a compact perturbation must force `False` through the first two
+rows of `FiveRowRank.FiveRows` was tested at the declaration and theorem
+levels. `FiveRows` constrains the correction functions `dv` and `ga`; its first
+two equations are explicit radial correction integrals. The theorem
+`FiveRowRank.five_rows` proves all five rows for every admissible
+`d : Fin 3 → ℝ`, including a nonzero debt. The downstream theorem
+`DefectIncrementBounds.fiveRows_preserve_masses` preserves two radial moments
+of the correction state, not a generic energy integral of the selected
+Cartesian velocity.
+
+The selected `Witness` type contains stage sequences, extensions, force
+properties, consequences, norm growth, decay, and endpoint jets. It contains
+no `Debt`, `FiveRows`, `physicalMoments`, or equality to the paper tuple. A
+zero-sorry probe therefore establishes that a nonzero rank debt and the
+selected witness can coexist as separate data. The compact fixed-force
+perturbation remains an operator-level obstruction, but it is not transported
+into the selected correction state by the endpoint theorem.
+
+This rejects the direct collision argument without clearing CTR-005. The
+remaining decisive question is whether a selected-path theorem identifies the
+paper's five moments with the correction-state rows and carries that identity
+into the mixed residual and force. Evidence:
+`NavierStokesReview/evidence/five_row_collision_boundary_2026-09-24.md`.
+
 ## Finding 22: the force attack now has an exact conditional contradiction
 
 The review has now attacked the selected witness itself. The zero-sorry probe

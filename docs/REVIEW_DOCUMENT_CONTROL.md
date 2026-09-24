@@ -171,6 +171,20 @@ the residual/origin contradiction remain open.
   tree is intentionally dirty while the 2026-09-24 attack ledger and probes
   are being packaged; final clean-status validation remains pending.
 
+## Five-row collision boundary: 2026-09-24
+
+- [x] The proposed compact-perturbation collision was tested in
+  `FiveRowCollisionBoundaryProbe.lean` with no `sorry`, `axiom`, or `unsafe`.
+- [x] The probe confirms that `FiveRowRank.five_rows` admits nonzero
+  three-coordinate debt and that `Witness` carries no debt or perturbation
+  field. The requested `False` therefore does not follow by type collision.
+- [x] The first two rows are controlled as correction-state radial moment
+  invariants, not as a selected Cartesian energy identity. The headline issue
+  remains CTR-005: transport of the paper's five moments into the selected
+  endpoint is not exhibited.
+
+Evidence: `NavierStokesReview/evidence/five_row_collision_boundary_2026-09-24.md`.
+
 ## Research-paper and attack-boundary update: 2026-09-24
 
 - [x] `OpenAI_NavierStokes_Research_Paper.md` has been rewritten as a coherent

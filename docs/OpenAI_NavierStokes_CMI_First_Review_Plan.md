@@ -50,6 +50,7 @@ local velocity/pressure agreement, not this complete identity.
 | 5D-02 | Extract the runtime three-debt update and fixed rows. | [x] | `FiveRowRank.Debt := Fin 3 → ℝ`; `FiveRows` has two zero rows and three `(P,Jθ,Jz)` rows; `MeanRankUpdate.scaleDebt` transports the three rows. |
 | 5D-03 | State the required promotion. | [x] | `promoteDebt d := ![0,0,-(d 0),-(d 1),-(d 2)]`; the zero-sorry probe proves only the algebraic repair equality. |
 | 5D-04 | Prove promotion is the selected physical five-moment identity. | [ ] | Required theorem must mention selected stage fields, their integrals, and the selected residual/force. None is exhibited. |
+| 5D-05 | Test whether the two zero correction rows collide with a nonzero perturbation or selected witness. | [x] | `FiveRowCollisionBoundaryProbe.lean` compiles: `FiveRowRank.five_rows` admits nonzero `Fin 3 → ℝ` debt, while `Witness` contains no rank debt or perturbation field. No `False` follows by type collision. |
 | ORG-01 | Check whether `StateRealization.chartIdentity` reaches the singular origin. | [x] | Zero-sorry probe proves its domain and `graphSourceTZ` exclude radius zero. Evidence `state_realization_axis_scope_audit_2026-09-24.md`. |
 | ORG-02 | Connect `GlobalBaseError.originPast` to actual selected fields. | [x] | The selected schedule has a zero-sorry raw-residual limit, and `SelectedForceOriginCompositionProbe.lean` identifies the final force with that residual at the origin. |
 | ORG-03 | Derive `False` from selected residual limits and origin blow-up. | [~] | The selected speed diverges while the selected force tends to zero. This refutes any positive velocity-to-residual lower bound, but no such premise is required by the endpoint. Seek a different false selected premise. |
@@ -84,6 +85,7 @@ local velocity/pressure agreement, not this complete identity.
 | MOM-03 | Find the transport theorem from `(M,I,J,S,C_p)` to selected physical debt. | [~] | No selected-endpoint theorem exhibited yet; search import closure and theorem applications. |
 | MOM-04 | Test whether selected fields can satisfy endpoint claims without that transport. | [~] | Construct a zero-sorry countermodel or locate the missing mandatory premise. |
 | MOM-05 | Do not infer a CMI failure from non-Newtonian regularisations. | [x] | Such models are external stability tests, not the classical forced equation. |
+| MOM-06 | Keep the correction-state invariants distinct from selected-field energy. | [x] | `fiveRows_preserve_masses` preserves two radial correction moments; no theorem equates them with selected Cartesian mass or kinetic energy. |
 
 ## 4a. Incompressibility lane
 

@@ -74,6 +74,15 @@ The declaration-level audit adds an important qualification. `FiveRowRank.FiveRo
 
 That finding is now carried consistently into the plan, ledger, tracker, peer review, and research paper.
 
+The proposed final collision test was also run against the literal source. It
+does not turn the fixed correction rows into a selected-field energy theorem.
+`FiveRowRank.five_rows` is inhabited for nonzero three-coordinate debt, while
+`ActualCandidateAssembly.Witness` contains no debt or perturbation field. The
+correction-state preservation theorems therefore cannot be combined with the
+compact perturbation by type unification. The direct `False` route is rejected
+as stated; the missing selected-path transport of the five paper moments is
+still the load-bearing objection.
+
 The latest provenance check narrows the adverse case further. The R³ endpoint is source-connected to `ActualCandidateAssembly.selected_witness`; it is not a disconnected formal wrapper. The remaining formal objection is therefore not endpoint provenance but semantic transport: the selected path must explain how the several moment systems encode the same five published quantities.
 ## Comparison-premise correction
 

@@ -826,3 +826,23 @@ paper tuple `(M, I, J, S, C_p)` into the selected mixed sums, residual, force,
 or `VanishingJointJets` premises.
 
 Evidence: `NavierStokesReview/evidence/selected_moment_transport_closure_2026-09-24.md`.
+
+## 2026-09-24 proposed five-row collision test
+
+The proposed inference that a compact perturbation must collide with the two
+zero rows of `FiveRowRank.FiveRows` was tested directly. The zero-sorry
+`FiveRowCollisionBoundaryProbe.lean` compiles `FiveRowRank.five_rows` for a
+nonzero `Debt := Fin 3 → ℝ` and separately pairs `selected_witness` with that
+nonzero debt. This is possible because `FiveRows` constrains the correction
+functions `dv` and `ga`, while `Witness` contains no debt field, perturbation
+field, `physicalMoments`, or `FiveRows` equality.
+
+`DefectIncrementBounds.fiveRows_preserve_masses` and `zeroMasses` do prove
+preservation of two radial correction-state moments. They do not identify
+those moments with kinetic energy or with the selected Cartesian velocity.
+Consequently the proposed type-level collision does not derive `False`.
+
+**Status:** [x] direct collision route tested and rejected as stated; [~]
+selected five-moment transport remains the CTR-005 load-bearing objection.
+
+Evidence: `NavierStokesReview/evidence/five_row_collision_boundary_2026-09-24.md`.

@@ -28,10 +28,10 @@ I executed a strict symbol dependency and import trace between the axisymmetric 
 **Analysis:** 
 I cross-referenced the 5-row rank system with the base profile logic.
 * **The Constraint Definitions:** 
-  `FiveRows` explicitly hardcodes the first two rows (representing mass/energy moments $M$ and $I$) to absolute zero:
+  `FiveRows` has two explicit zero constraints on its correction functions:
   ` (∫ R, R ^ (2 : ℕ) * dv R) = 0 `
   ` (∫ R, R * ga R) = 0 `
-* **The Disconnect:** The debt parameter `d` only starts feeding into the equations at row 3 (`d 0`), row 4 (`d 1`), and row 5 (`d 2`) (corresponding to $P$, $J_\theta$, $J_z$).
+* **The Disconnect:** The debt parameter `d` only starts feeding into the equations at row 3 (`d 0`), row 4 (`d 1`), and row 5 (`d 2`) (corresponding to $P$, $J_\theta$, $J_z$). Upstream preservation identifies the fixed rows with `barMoment 2` of the angular correction and `barMoment 1` of the axial correction. The source does not identify either row with a kinetic-energy integral or directly with the selected Cartesian velocity.
 * **Verdict:** `FiveRows` contains two zero constraints and a three-coordinate
   debt interface. The review still requires the selected-path theorem showing
   how these constraints correspond to the paper's named moments; the row shape

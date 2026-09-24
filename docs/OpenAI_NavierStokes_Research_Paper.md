@@ -523,6 +523,27 @@ or a zero-sorry counterexample to one of its concrete equalities.
 
 Evidence: `NavierStokesReview/evidence/selected_moment_transport_closure_2026-09-24.md`.
 
+### The proposed rank-collision refutation
+
+A stronger proposed refutation was tested: inject a compact perturbation into
+the selected witness and use the two zero rows of `FiveRowRank.FiveRows` to
+derive an impossible nonzero moment. The source does not support that
+inference. The five-row predicate is a proposition about two correction
+functions and a three-coordinate debt. Its theorem `five_rows` is inhabited
+for arbitrary admissible debt, including nonzero debt. The correction-state
+theorems preserve two radial moments, but do not state that those moments are
+the selected field's kinetic energy or the paper's complete five-moment tuple.
+
+The endpoint `Witness` contains no rank debt or perturbation parameter. Thus
+the compact perturbation theorem cannot be substituted into the endpoint by
+type unification, and no `False` theorem follows from the zero rows alone.
+This negative result is useful: it removes an attractive but invalid shortcut
+and leaves the substantive paper-to-code question in its proper form. The
+missing theorem is a selected-path transport identity from
+$(M,I,J,S,C_p)$ through the correction state and mixed sums into the residual,
+pressure, and force. Evidence:
+`NavierStokesReview/evidence/five_row_collision_boundary_2026-09-24.md`.
+
 ## References and evidence
 
 1. Charles L. Fefferman, [Existence and Smoothness of the Navier–Stokes

@@ -386,6 +386,21 @@ bridge is transported into the selected endpoint.
 
 **Status:** **algebraic promotion proved; paper-to-selected semantic transport remains open**.
 
+## AX-030: the zero rows are correction-state invariants, not selected-field energy axioms
+
+**Source:** `NavierStokes/FiveRowRank.lean:21-22,240-284`; `NavierStokes/DefectIncrementBounds.lean:635-646,799-813`; `NavierStokes/ActualCandidateAssembly.lean:1121-1151`; `NavierStokesReview/src/probes/FiveRowCollisionBoundaryProbe.lean`.
+
+`FiveRowRank.FiveRows` constrains `dv` and `ga`, with a three-coordinate debt.
+`five_rows` proves the predicate for nonzero debt, and the correction-state
+theorems preserve two radial moments. Neither declaration is an axiom saying
+that the selected Cartesian velocity has zero mass or zero kinetic energy.
+The zero-sorry collision probe confirms that a nonzero rank debt and the
+selected `Witness` can coexist because `Witness` exposes no rank debt or
+perturbation parameter.
+
+**Status:** **the proposed direct `False` collision is rejected; selected
+five-moment transport remains the CTR-005 obligation**.
+
 ## AX-029: compact pressure support is not a zero theorem
 
 **Source:** `NavierStokes/R3/ProblemStatement.lean:92-109`; `NavierStokes/R3/ActualCandidate.lean:59-108`; `NavierStokes/R3/PressureRecovery.lean:33-44,407-438`; `NavierStokes/R3/ActualPressureFlux.lean:28-45`; `NavierStokesReview/src/probes/SemanticTransportPressureProbe.lean:37-50`.
