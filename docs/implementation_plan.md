@@ -71,10 +71,20 @@ Inspect the selected import closure for a theorem whose conclusion mentions both
 | FJ-06 | [~] | Add the selected-field pressure-Poisson/Leray identity as a proof target and test it against compact localisation; compact support alone is not a contradiction. |
 | FJ-08 | [x]/[~] | The companion probes prove that `c * ‖u‖ ≤ ‖residual‖` would force `False`, while a scalar countermodel shows blow-up plus flat residual is otherwise consistent. Source inspection has not found the selected premise. |
 
-**Last updated:** 2026-09-24
+**Last updated:** 2026-09-25
 
 The current release package is source-controlled by `REVIEW_DOCUMENT_CONTROL.md`.
 The two untracked reference PDFs are intentionally excluded from commits.
+
+## Current counter-paper decision: 2026-09-25
+
+The active paper is seeking an honest disproof of the stronger official claim,
+not a compiler-error narrative. The current source-backed result is an
+affirmative underclaim: the published five-moment/CMI correspondence is not
+established because the selected-field composition theorem is not exported.
+The literal selected C/D endpoint remains a separate formal target. Continue
+the zero-sorry contradiction search, but do not make that stronger search a
+prerequisite for rejecting the unsupported published claim.
 
 ## CTR-012 and structural duality
 

@@ -771,3 +771,15 @@ five-coordinate debt because the record does not contain that debt or an
 equality to the paper's `(M,I,J,S,C_p)` tuple. The result is an interface
 non-implication supporting CTR-005, not a contradiction of the selected
 endpoint and not evidence that the upstream five-moment modules are dead.
+
+## AX-046: affirmative burden for the published claim
+
+The selected endpoint is a real formal C/D-shaped construction, but the
+exported `Witness` does not carry the field-level composition theorem required
+by the paper's stronger five-moment interpretation. The missing theorem must
+identify the selected mixed velocity, pressure, residual, and force with the
+paper's `(M,I,J,S,C_p)` data and transport that identity through the correction,
+germ, and force layers. This is an affirmative proof obligation on the
+published claim. Its absence is sufficient to withhold acceptance of that
+claim; it is not itself a `False` theorem about the literal existential
+endpoint.

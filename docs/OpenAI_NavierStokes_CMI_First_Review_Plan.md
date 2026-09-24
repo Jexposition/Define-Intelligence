@@ -533,7 +533,7 @@ Evidence: `NavierStokesReview/evidence/global_germ_transport_audit_2026-09-24.md
 | Treat burden of proof asymmetrically | [x] | OpenAI must supply the selected-field transport theorem before the stronger published claim is accepted. |
 | Prevent underclaiming the review result | [x] | The primary verdict is `NOT ESTABLISHED`; `NOT FORMALLY REFUTED` is only a narrower report about the current `False` search. |
 | Promote the correspondence gap to `False` | [ ] | Requires a false equality or false mandatory premise on the selected path. |
-| Continue selected-field theorem search | [ ] | Locate a theorem identifying the final mixed fields with `(M,I,J,S,C_p)`, or compile a concrete counterexample to that identity. |
+| Continue selected-field theorem search | [~] | Locate a theorem identifying the final mixed fields with `(M,I,J,S,C_p)`, or compile a concrete counterexample to that identity. The publication verdict already remains `NOT ESTABLISHED` if the affirmative bridge is absent. |
 
 The active counter-paper target is therefore an underclaim in the published
 mathematical correspondence, not a generic objection to compilation.
@@ -554,10 +554,13 @@ as a separate lane, not as a prerequisite for the publication verdict.
 |---|---:|---|
 | Trace `PhysicalData` into the selected residual-rate endpoint | [x] | `ActualCycleResidualBounds.lean:1015-1037, 1142-1173`; `ActualCandidateAssembly.lean:1079-1098` |
 | Test whether the exported record determines a five-moment payload | [x] | `SelectedPhysicalDataMomentInterfaceProbe.lean` compiles with arbitrary nonzero abstract debt |
-| Prove the selected mixed fields equal `(M,I,J,S,C_p)` | [ ] | A field-level integral identity in the selected `Witness` path |
+| Prove the selected mixed fields equal `(M,I,J,S,C_p)` | [~] | A field-level integral identity in the selected `Witness` path; this remains the load-bearing proof obligation for the published claim. |
 | Derive a selected-field mismatch | [ ] | A false equality or false mandatory endpoint premise, proved without `sorry` |
 
 The publication gate is already met for the narrower review conclusion:
 without the selected-field composition theorem, the stronger paper claim is
 **NOT ESTABLISHED**. The remaining two rows are required only for a stronger
-kernel-level refutation.
+kernel-level refutation. Their absence is already sufficient to withhold the
+stronger affirmative paper claim.
+
+**Last updated:** 2026-09-25
