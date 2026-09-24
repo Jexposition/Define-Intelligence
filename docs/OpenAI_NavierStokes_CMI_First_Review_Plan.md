@@ -397,3 +397,14 @@ The construction therefore has a proved causal/provenance mismatch with the
 forward-data language of the official problem statement, but the literal
 existential endpoint is not empty merely because its witness was manufactured
 backwards.
+
+## Selected rank transport re-audit: 2026-09-24
+
+| Check | Result | Required follow-up |
+|---|---|---|
+| Runtime `FiveRows` is active | Confirmed | Keep the selected-cycle rank chain in scope. |
+| First two rows freeze total energy | Rejected | Do not use this claim in the paper. |
+| Internal radial correction invariant | Confirmed | Treat `ZeroMassesOn` as a local invariant only. |
+| Transport into selected mixed endpoint | Unresolved | Identify the paper tuple `(M,I,J,S,C_p)` with the selected fields and residual, or prove a concrete violation. |
+
+Evidence: `NavierStokesReview/evidence/selected_rank_transport_reaudit_2026-09-24.md`.

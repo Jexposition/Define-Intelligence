@@ -816,3 +816,22 @@ paper-to-code provenance failure, while a literal formal refutation still
 requires an additional admissibility premise or a false selected identity.
 
 Evidence: `NavierStokesReview/evidence/selected_residual_provenance_2026-09-24.md`.
+
+## Finding 34: the runtime rank layer is real, but endpoint transport remains unshown
+
+The correction-row re-audit rules out an exaggerated version of the zero-row
+objection. `MeanRankUpdate.physical_five_rows` proves the full runtime row
+system for arbitrary three-coordinate debt, and the actual cycle consumes
+that debt through `CorrectionState`. The first two rows constrain the radial
+moments of the correction functions and preserve the corresponding internal
+mean moments. They are not an energy axiom and do not force the selected
+Cartesian velocity to vanish.
+
+The remaining objection is more precise. The public `Witness` exports the
+mixed fields, pressure, force, residual consequences, jets, and blow-up, but
+no equality identifying the internal correction moments with the paper's
+`(M,I,J,S,C_p)` or transporting that equality into the final residual and
+force. This is a material paper-to-endpoint correspondence gap. It is not
+itself a selected-witness `False` theorem.
+
+Evidence: `NavierStokesReview/evidence/selected_rank_transport_reaudit_2026-09-24.md`.

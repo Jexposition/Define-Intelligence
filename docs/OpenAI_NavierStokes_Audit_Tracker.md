@@ -970,3 +970,22 @@ question, not a proved `False`, because the exported `CandidateProperties` does
 not quantify over perturbations or require an independence predicate.
 
 Evidence: `NavierStokesReview/evidence/selected_residual_provenance_2026-09-24.md`.
+
+## Selected rank transport re-audit: 2026-09-24
+
+The production rank subsystem is live rather than dead code. `FiveRows` is
+proved for arbitrary three-coordinate debt by `MeanRankUpdate.physical_five_rows`,
+and `CorrectionState.rank_model_rows`/`rank_rows_on_patch` apply the result to
+the actual rank increment. The two zero rows constrain correction functions
+and preserve two radial correction moments; they do not freeze total mass or
+kinetic energy.
+
+`ActualMeanPhysicalData.cycleRank_class` consumes the actual
+`CorrectionState.debt`, while `ActualCandidateAssembly.physicalData` and
+`estimates` consume actual cycle fields and residual data. The broad claim that
+the selected path is insulated from all moment machinery is therefore
+withdrawn. The surviving CTR-005 issue is narrower: `Witness` and
+`selected_candidate` do not export an equality connecting those internal
+moments to the paper's `(M,I,J,S,C_p)` or to the final mixed residual and
+force. Evidence:
+`NavierStokesReview/evidence/selected_rank_transport_reaudit_2026-09-24.md`.

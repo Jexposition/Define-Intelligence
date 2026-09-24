@@ -721,3 +721,21 @@ five-moment or pressure identity whose required premises are false, or a
 direct contradiction in the selected endpoint.
 
 Evidence: `NavierStokesReview/evidence/selected_residual_provenance_2026-09-24.md`.
+
+### Runtime rank correction
+
+The runtime rank audit narrows the five-moment objection. The rank layer is
+not dead code: `MeanRankUpdate.physical_five_rows` and
+`CorrectionState.rank_model_rows` apply the three-debt repair to the actual
+cycle, and the two zero rows preserve two named radial correction moments.
+Those rows do not state that total kinetic energy is zero, nor do they by
+themselves identify the final Cartesian field with the paper's five quantities.
+
+The unresolved issue is the selected-endpoint transport theorem. The exported
+`Witness` contains no equality connecting the internal correction moments to
+`(M,I,J,S,C_p)` and then to the mixed velocity, pressure, residual, and force.
+The correct conclusion is therefore a material paper-to-code correspondence
+failure, not a claim that the rank construction is absent or that Lean has
+already derived `False`.
+
+Evidence: [`selected_rank_transport_reaudit_2026-09-24.md`](../NavierStokesReview/evidence/selected_rank_transport_reaudit_2026-09-24.md).

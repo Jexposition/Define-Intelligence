@@ -304,6 +304,22 @@ the actual residual, pressure, force, and `VanishingJointJets` data. This
 correction supersedes any wording that calls the entire five-moment branch dead
 or disconnected.
 
+## Selected rank transport re-audit: 2026-09-24
+
+The runtime rank layer is active. `MeanRankUpdate.physical_five_rows` proves
+the complete `FiveRows` predicate for arbitrary three-coordinate debt, and
+`CorrectionState.rank_model_rows`/`rank_rows_on_patch` apply it to the actual
+rank construction. `DefectIncrementBounds.RankGeometry.preserve_masses` then
+preserves the two radial correction moments through a rank stage.
+
+This does not support the stronger claim that the zero rows set total mass or
+kinetic energy to zero. The rows constrain `dv` and `ga`, while the exported
+`Witness` at `ActualCandidateAssembly.lean:1121-1151` contains no
+`FiveRows`, `ZeroMasses`, or equality to `(M,I,J,S,C_p)`. The selected path
+therefore has a real internal invariant, but the paper-to-endpoint transport
+theorem remains unexhibited. Evidence:
+`NavierStokesReview/evidence/selected_rank_transport_reaudit_2026-09-24.md`.
+
 ## Selected-witness attack control: 2026-09-24
 
 The force lane now has a selected-path cancellation result: the selected
