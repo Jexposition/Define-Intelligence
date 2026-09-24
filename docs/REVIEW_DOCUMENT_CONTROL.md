@@ -178,6 +178,21 @@ the residual/origin contradiction remain open.
 - [x] The probe confirms that `FiveRowRank.five_rows` admits nonzero
   three-coordinate debt and that `Witness` carries no debt or perturbation
   field. The requested `False` therefore does not follow by type collision.
+
+## Correction-row transport closure: 2026-09-24
+
+- [x] The generic `FiveRows` consequence and rank-stage preservation are
+  compiled in `CorrectionInvariantScope.lean` without `sorry`, `axiom`, or
+  `unsafe`.
+- [x] The exact invariant is recorded as two radial correction moments.
+- [x] The conditional nonzero-moment contradiction is recorded.
+- [ ] The selected endpoint still lacks the theorem transporting a compact
+  Cartesian perturbation into `rankIncrement` with a nonzero corresponding
+  moment.
+- [ ] No kinetic-energy conclusion is authorised from the zero rows.
+
+Evidence authority:
+`NavierStokesReview/evidence/correction_moment_transport_audit_2026-09-24.md`.
 - [x] The first two rows are controlled as correction-state radial moment
   invariants, not as a selected Cartesian energy identity. The headline issue
   remains CTR-005: transport of the paper's five moments into the selected

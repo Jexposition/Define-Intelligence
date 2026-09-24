@@ -563,6 +563,33 @@ and apply the conditional obstruction. Until that transport is proved, the
 result is a load-bearing route to falsification, not a completed `False`
 theorem for `selected_witness`.
 
+### What the two zero rows actually preserve
+
+The rank construction is stronger than a syntactic placeholder, but weaker
+than the proposed energy argument. Its first two equations constrain the
+increment functions themselves:
+
+\[
+\int R^2\,dv(R)=0,\qquad \int R\,ga(R)=0.
+\]
+
+The correction-state layer identifies these with two radial moments of the
+updated angular and axial mean fields, and the generic rank theorem preserves
+them from one rank stage to the next. This is a genuine conditional
+obstruction: a correction increment with a nonzero corresponding moment cannot
+satisfy the complete five-row system.
+
+It is not, however, an energy identity. The source does not equate these
+radial moments with total kinetic energy, the full Cartesian velocity, or the
+paper's five quantities `(M,I,J,S,C_p)`. Nor does the selected `Witness`
+export those moments. The remaining decisive task is therefore a semantic
+transport theorem from the selected perturbation and mixed stage fields into
+`rankIncrement`. If that theorem proves a nonzero radial moment, the
+conditional `False` result closes the selected path; until then, the formal
+finding is a correspondence failure under CTR-005, not a completed
+refutation. Evidence:
+`NavierStokesReview/evidence/correction_moment_transport_audit_2026-09-24.md`.
+
 ## References and evidence
 
 1. Charles L. Fefferman, [Existence and Smoothness of the Navier–Stokes

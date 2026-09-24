@@ -644,3 +644,22 @@ selected theorem transport.
 
 **Status:** source-backed correspondence gap; no new kernel-level axiom or
 `False` derivation.
+
+## AX-039: correction-row invariants do not yet reach the selected endpoint
+
+**Source:** `NavierStokes/FiveRowRank.lean:240-284`;
+`NavierStokes/CorrectionState.lean:241-251,444-458`;
+`NavierStokes/DefectIncrementBounds.lean:621-646,799-813`;
+`NavierStokes/ActualCandidateAssembly.lean:1121-1151,1177-1185`;
+`NavierStokesReview/src/completions/CorrectionInvariantScope.lean`.
+
+The zero rows impose two exact radial correction constraints and the generic
+rank theorem preserves them through `rankStage`. They do not impose zero
+kinetic energy or zero total Cartesian mass. The exported `Witness` has no
+field carrying either invariant or the paper's five-moment tuple.
+
+The strongest formal consequence is conditional: if a selected correction
+increment is shown to have a nonzero corresponding radial moment, `FiveRows`
+is inconsistent. The selected-path identification and nonzero calculation
+remain unproved. This is a missing transport premise under CTR-005, not a
+kernel-level contradiction.

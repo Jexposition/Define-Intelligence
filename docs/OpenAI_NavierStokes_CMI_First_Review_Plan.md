@@ -345,3 +345,13 @@ Evidence: `NavierStokesReview/evidence/independent_data_perturbation_2026-09-24.
 | Formal contradiction | [~] | No selected-path `False` theorem yet. Keep the counter-paper verdict at “not established as claimed”. |
 
 Evidence: `NavierStokesReview/evidence/selected_moment_transport_closure_2026-09-24.md`.
+
+## Correction-row transport audit: 2026-09-24
+
+| ID | Task | Status | Acceptance test |
+|---|---|---:|---|
+| 5D-10 | Prove the exact generic correction-moment invariant. | [x] | `CorrectionInvariantScope.rank_stage_preserves_designated_moments` compiles without admitted declarations. |
+| 5D-11 | Transport a selected Cartesian perturbation into `rankIncrement`. | [ ] | A theorem must identify the perturbation with the actual correction field and prove a nonzero `barMoment 2` or `barMoment 1`. |
+| 5D-12 | Infer kinetic-energy or full five-moment preservation from the zero rows. | [ ] | No such inference is licensed by the source; `FiveRows` contains radial correction moments, not an energy identity. |
+
+Evidence: `NavierStokesReview/evidence/correction_moment_transport_audit_2026-09-24.md`.

@@ -867,3 +867,24 @@ field or the paper's five named quantities. No such endpoint transport is
 currently present. This sharpens CTR-005 rather than clearing it.
 
 Evidence: `NavierStokesReview/evidence/correction_invariant_scope_2026-09-24.md`.
+
+## Correction-row transport audit: 2026-09-24
+
+The generic rank-stage theorem has now been exposed directly in the review
+completion. It preserves `radialMoment 2` of the angular mean and
+`radialMoment 1` of the axial mean. These are the exact consequences of the
+two zero correction rows in `FiveRows`.
+
+This is narrower than a mass/energy claim. The source does not identify these
+moments with kinetic energy, the complete Cartesian velocity, or the paper's
+`(M,I,J,S,C_p)`. The selected `Witness` and `RunInvariant` types do not carry
+the invariant. A compact perturbation therefore gives `False` only after a
+missing selected-path theorem maps it into `rankIncrement` and proves one of
+the two exact moments nonzero.
+
+**CTR-005 update:** generic correction preservation is proved; selected
+transport remains the load-bearing unresolved objection. The direct claim
+that the zero rows freeze total mass or kinetic energy is not supported by
+the source.
+
+Evidence: `NavierStokesReview/evidence/correction_moment_transport_audit_2026-09-24.md`.

@@ -50,4 +50,29 @@ theorem nonzero_axial_shift_cannot_satisfy_five_rows
     (hshift : barMoment 1 h.axial ≠ 0) : False := by
   exact hshift (five_rows_force_zero_correction_moments hv hg hrows).2
 
+/-!
+`FiveRows` constrains the correction increment, and the generic rank-stage
+theorem transports precisely those two radial moments to the updated mean
+state.  This wrapper keeps that transport visible to the review without
+claiming that the selected Cartesian endpoint exposes the same invariant.
+-/
+theorem rank_stage_preserves_designated_moments
+    {p : CorrectionState.ReconstructionData}
+    {r : CorrectionState.RankData P}
+    {c : CorrectionState.Context (DefectIncrementBounds.Point P)}
+    {u : CorrectionState.State (DefectIncrementBounds.Point P)}
+    (hg : DefectIncrementBounds.RankGeometry p r c u)
+    (axial : P × PressureStream.Plane)
+    {a b : ℝ}
+    (hm : DefectIncrementBounds.ShellTriple a b u.mean)
+    (hh : DefectIncrementBounds.ShellTriple a b
+      (CorrectionState.rankIncrement p r axial c u)) :
+    CorrectionState.radialMoment 2
+        (CorrectionState.rankStage p r axial c u).mean.angular =
+        CorrectionState.radialMoment 2 u.mean.angular ∧
+      CorrectionState.radialMoment 1
+          (CorrectionState.rankStage p r axial c u).mean.axial =
+        CorrectionState.radialMoment 1 u.mean.axial := by
+  exact hg.preserve_masses axial hm hh
+
 end NavierStokesReview.CorrectionInvariantScope
