@@ -457,3 +457,15 @@ The active route is therefore the selected-field transport theorem, not the
 discarded claims that the five-moment branch is dead code, that the first two
 rows freeze total kinetic energy, or that compact pressure support alone
 trivialises the candidate.
+
+## Reachability and external-data scope
+
+| Task | Status | Acceptance condition |
+|---|---:|---|
+| Audit the `ActivePair` empty branch | [x] | Source split and branch premises identified. |
+| Prove concrete-label reachability | [x] | `active_pair_of_selected_label` compiles without admitted declarations. |
+| Prove selected-label inhabitance | [ ] | Construct or refute `Nonempty (ActualPrimary.Label B N0)` for selected constants. |
+| Convert the branch into `False` | [ ] | Requires a false selected predicate, not branch inspection alone. |
+| Preserve CMI wording distinction | [x] | Causal/provenance criticism separated from literal C/D hypotheses. |
+
+Evidence: `NavierStokesReview/evidence/selected_active_pair_reachability_2026-09-24.md`.

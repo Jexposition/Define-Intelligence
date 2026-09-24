@@ -794,3 +794,40 @@ five-moment transport theorem under CTR-005 as the principal unresolved
 correspondence target.
 
 Evidence: [`fixed_force_stability_extension_2026-09-24.md`](../NavierStokesReview/evidence/fixed_force_stability_extension_2026-09-24.md).
+
+## Reachability of the active stage layer
+
+The stage-control implementation contains an explicit case split for an
+empty active-pair type. This is not, by itself, evidence that the selected
+Navier--Stokes construction is vacuous. The review extension
+`SelectedActivePairReachability.lean` proves that every concrete selected
+label yields an active pair at its own band because
+
+$$
+\mathrm{cellBand}(L)\in\mathrm{CommonWindow.levels}(\mathrm{cellBand}(L)).
+$$
+
+The proof does not establish that the selected label subtype is inhabited at
+the exported endpoint. The formal status is therefore asymmetric: concrete
+label reachability is proved, while selected-label inhabitance remains an
+interface question. A claim that the empty branch produces the published
+blow-up would require the missing inhabitance result or a false selected-field
+identity.
+
+## External force language and the formal target
+
+The official formulation calls $f$ a given, externally applied force and
+requires derivative decay estimates. OpenAI's release describes the same
+balance as a smooth applied force remaining regular while velocity grows. The
+selected force is nevertheless obtained from the candidate residual on the
+interior interval, so the provenance criticism is mathematically substantive.
+The formal endpoint does not add a force-independence or perturbation-
+stability predicate. The review therefore distinguishes:
+
+1. the selected force is residual-designed;
+2. the selected candidate fails the stronger fixed-force perturbation-stability
+   property; and
+3. the literal C/D existential endpoint is inconsistent.
+
+The first two are proved on the review side. The third still requires a false
+mandatory endpoint premise or a concrete selected-field contradiction.

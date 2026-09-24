@@ -897,3 +897,31 @@ provenance theorem, while CTR-005 remains the unresolved paper-to-endpoint
 transport objection.
 
 Evidence: [`fixed_force_stability_extension_2026-09-24.md`](../NavierStokesReview/evidence/fixed_force_stability_extension_2026-09-24.md).
+
+## Active-stage non-vacuity is conditional
+
+The stage-control implementation explicitly branches on whether
+`ActiveParticularStageControls.ActivePair` is nonempty. That branch cannot be
+used as proof that the selected construction is vacuous. The review theorem
+`active_pair_of_selected_label` establishes the positive conditional fact:
+once a concrete `ActualPrimary.Label B N0` is supplied, its chart-band lower
+bound and `CommonWindow.self_mem` produce an active pair.
+
+The selected witness still does not export a theorem asserting inhabitance of
+the label subtype. Until that theorem is constructed or its negation is
+proved, the empty branch is a source-level reachability question rather than
+a formal refutation.
+
+Evidence: [`selected_active_pair_reachability_2026-09-24.md`](../NavierStokesReview/evidence/selected_active_pair_reachability_2026-09-24.md).
+
+## CMI wording and formal admissibility
+
+Fefferman's statement uses the language of a given, externally applied force
+and requires smooth decay estimates. OpenAI's release presents the same
+balance as a smooth applied force whose acceleration, pressure, transport, and
+viscosity terms cancel. The residual-defined force remains a serious causal
+and provenance objection. The exported C/D predicate, however, contains no
+formal force-independence or perturbation-stability condition. The compact
+fixed-force theorem is therefore a formal objection to the stronger
+forward-data reading, not a standalone proof of `False` for the literal
+existential endpoint.

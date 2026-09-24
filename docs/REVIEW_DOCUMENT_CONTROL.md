@@ -529,3 +529,17 @@ uniqueness lemmas report only `propext`, `Classical.choice`, and `Quot.sound`.
 
 Evidence: `NavierStokesReview/evidence/whole_space_uniqueness_audit_2026-09-24.md`;
 `NavierStokesReview/src/audit/WholeSpaceAxiomAudit.lean`.
+
+## Reachability control: 2026-09-24
+
+The active-stage construction has a genuine source-level empty/nonempty split.
+The review theorem `SelectedActivePairReachability.lean` proves that a
+concrete selected label produces an active pair at its own positive band. It
+does not prove selected-label inhabitance from the exported witness.
+
+- concrete-label reachability: verified;
+- selected-label inhabitance: unresolved;
+- selected-path vacuity: not established;
+- selected-witness contradiction: not established by this route.
+
+Evidence: `NavierStokesReview/evidence/selected_active_pair_reachability_2026-09-24.md`.

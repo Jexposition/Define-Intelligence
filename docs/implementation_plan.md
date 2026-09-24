@@ -96,3 +96,11 @@ identifies a solution for `-f` or `0` with the selected solution for `f`.
 | SW-02 | [~] | Derive the selected global pressure-Poisson/Leray identity and test support. The equal-and-opposite cancellation proposal is ruled out by the compiled residual perturbation identity. |
 | SW-03 | [x]/[~] | Interface moment blindness is proved; concrete selected-field violation remains open. |
 | SW-04 | [ ] | Close one attack with a zero-sorry `False` theorem from `selected_witness`. |
+
+## Active-stage reachability follow-up
+
+- [x] Isolate the `ActivePair` empty/nonempty split.
+- [x] Prove active-pair construction from a concrete selected label.
+- [ ] Establish or refute inhabitance of the selected label subtype.
+- [ ] Use a proved false selected identity before upgrading CTR-005 to a
+  kernel-level contradiction.

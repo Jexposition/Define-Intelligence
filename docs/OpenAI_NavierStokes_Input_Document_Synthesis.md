@@ -424,3 +424,15 @@ literal C/D endpoint, which contains no perturbation-stability or force-
 independence premise.
 
 Evidence: `NavierStokesReview/evidence/fixed_force_stability_extension_2026-09-24.md`.
+
+## 2026-09-24 source-scope addition
+
+The source's `ActivePair` type has a real empty/nonempty branch. A concrete
+label is sufficient to produce an active pair at its own band, using the
+four-band threshold and `CommonWindow.self_mem`. The selected endpoint still
+does not export label-subtype inhabitance. This is retained as an interface
+question, not described as a vacuity proof.
+
+The CMI force wording is tracked separately from the Lean endpoint. “Given,
+externally applied force” supports the causal interpretation of the review,
+while the formal C/D proposition contains no explicit independence predicate.

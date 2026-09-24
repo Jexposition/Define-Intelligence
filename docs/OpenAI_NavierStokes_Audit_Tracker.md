@@ -1058,3 +1058,27 @@ It proves a fixed-force stability failure, not that the literal endpoint is
 empty. `CandidateProperties` does not quantify over perturbations or require
 force independence. Evidence:
 `NavierStokesReview/evidence/fixed_force_stability_extension_2026-09-24.md`.
+
+## Selected active-pair reachability: 2026-09-24
+
+The stage-control source contains an explicit empty/nonempty split for
+`ActualParticularStageControls.ActivePair`. A review-side theorem proves the
+positive implication that is justified by the source: given a concrete
+`ActualPrimary.Label B N0`, its chart-band lower bound makes the same-band
+pair active via `CommonWindow.self_mem`.
+
+This does not prove that the selected label subtype is inhabited from the
+exported C/D witness, and it does not prove that the empty branch is reached.
+The branch remains a reachability target, not a contradiction.
+
+Evidence: `NavierStokesReview/evidence/selected_active_pair_reachability_2026-09-24.md`.
+
+## External wording and admissibility scope: 2026-09-24
+
+The official problem statement calls the force a given, externally applied
+force and imposes smooth decay estimates. OpenAI's release describes a smooth
+applied force whose terms cancel while velocity grows. These statements
+support a causal/provenance objection to a residual-designed trajectory, but
+the exported C/D proposition contains no formal independence predicate. The
+review records this as a paper-to-endpoint correspondence issue, not as a
+Lean contradiction derived from wording alone.
