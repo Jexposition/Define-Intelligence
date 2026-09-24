@@ -477,7 +477,7 @@ trivialises the candidate.
 |---|---:|---|
 | Audit the `ActivePair` empty branch | [x] | Source split and branch premises identified. |
 | Prove concrete-label reachability | [x] | `active_pair_of_selected_label` compiles without admitted declarations. |
-| Prove selected-label inhabitance | [ ] | Construct or refute `Nonempty (ActualPrimary.Label B N0)` for selected constants. |
+| Prove selected-label inhabitance | [x] | Review theorem constructs `Nonempty (ActualPrimary.Label B N0)` above the selected band floor. |
 | Convert the branch into `False` | [ ] | Requires a false selected predicate, not branch inspection alone. |
 | Preserve CMI wording distinction | [x] | Causal/provenance criticism separated from literal C/D hypotheses. |
 
@@ -489,9 +489,9 @@ Evidence: `NavierStokesReview/evidence/selected_active_pair_reachability_2026-09
 |---|---:|---|
 | Recheck the active/nonempty source split | [x] | `raw_jets` and `ActualInitialMean.covariance_bounds_of_curl` both expose explicit empty branches. |
 | Repair and compile the reachability theorem | [x] | Stage label `(0,L)` is used at the `ActivePair` boundary; audit and probe compile without admitted declarations. |
-| Prove selected label inhabitance | [ ] | Find a source theorem constructing `Nonempty (ActualPrimary.Label B N0)`, or prove the selected endpoint reaches a false premise if it does not. |
+| Prove selected label inhabitance | [x] | `SelectedLabelConstructionProbe.selected_primary_label_nonempty` compiles without admitted declarations. |
 | Test diagonal-sum vacuity | [x] | `potentialSum` is shown to be a total natural-indexed `tsum`; empty `ActivePair` does not imply an empty-set limit. |
-| Update the verdict only from selected-path evidence | [x] | Keep CTR-019 as an unresolved reachability objection, not a formal refutation. |
+| Update the verdict only from selected-path evidence | [x] | CTR-019 is cleared as a selected-path vacuity route; retain the generic empty-branch fact without overclaiming. |
 
 Evidence: `NavierStokesReview/evidence/selected_label_inhabitability_audit_2026-09-24.md`.
 

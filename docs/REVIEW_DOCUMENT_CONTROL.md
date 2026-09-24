@@ -562,25 +562,25 @@ Evidence: `NavierStokesReview/evidence/whole_space_uniqueness_audit_2026-09-24.m
 ## Reachability control: 2026-09-24
 
 The active-stage construction has a genuine source-level empty/nonempty split.
-The review theorem `SelectedActivePairReachability.lean` proves that a
-concrete selected label produces an active pair at its own positive band. It
-does not prove selected-label inhabitance from the exported witness.
+The review theorem `SelectedLabelConstructionProbe.lean` now proves more:
+`slowMask_sum_sq = 1` constructs a selected primary label above the chosen
+band floor, and that label produces an active pair at its positive band.
 
 - concrete-label reachability: verified;
-- selected-label inhabitance: unresolved;
-- selected-path vacuity: not established;
+- selected-label inhabitance: verified by a zero-sorry review theorem;
+- selected-path vacuity: cleared by that theorem;
 - selected-witness contradiction: not established by this route.
 
 Evidence: `NavierStokesReview/evidence/selected_active_pair_reachability_2026-09-24.md`.
 
-The follow-up inhabitability probe is now the active CTR-019 record. It
-corrects the stage-label construction in the review-side reachability theorem
-and compiles both that theorem and
-`NavierStokesReview/src/probes/SelectedLabelInhabitabilityProbe.lean` without
-admitted declarations. The probe confirms that `potentialSum` is a total
-natural-indexed `tsum`; an assumed empty `ActivePair` does not by itself create
-an empty-set limit. The selected-label inhabitance theorem is still missing,
-so the empty branch remains an unresolved selected-path obligation.
+The follow-up inhabitability work is now closed as CTR-019. It compiles
+`NavierStokesReview/src/probes/SelectedLabelConstructionProbe.lean` without
+admitted declarations. The probe constructs a nonzero partition mask at any
+positive band, supplies an explicit point of the reference annulus, and proves
+both `Nonempty (ActualPrimary.Label B N0)` and
+`Nonempty (ActivePair B N0)`. It also confirms that `potentialSum` is a total
+natural-indexed `tsum`; the generic empty branch is not the selected-path
+limit.
 
 Evidence: `NavierStokesReview/evidence/selected_label_inhabitability_audit_2026-09-24.md`.
 

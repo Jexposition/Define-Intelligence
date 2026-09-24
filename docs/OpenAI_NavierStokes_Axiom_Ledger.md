@@ -173,12 +173,16 @@ This is not evidence that the selected physical rank stage lacks a row solve. `L
 
 The positive branch uses `exists_surjective_nat (ActivePair B N0)` and an explicit reindexing. This audit removes a tempting but invalid claim that the source uses `False.elim` to prove arbitrary estimates on a nonempty physical patch. It does not yet prove that the selected active subtype is inhabited, so the endpoint-level reachability of the empty branch remains a live but narrower question.
 
-The selected-label follow-up preserves that distinction. The review-side probe
-compiles a conditional active-pair construction and the empty-patch mechanism,
-but it also unfolds `LocalScheduleWitness.potentialSum` to a `tsum` indexed by
-natural stage numbers. An empty `ActivePair` therefore does not make the
-diagonal series an empty-set limit. The unresolved axiom/interface question is
-the missing selected-label inhabitance theorem itself.
+The selected-label follow-up closes the selected-path inhabitance question.
+`SelectedLabelConstructionProbe.primary_activeLabel_at_band_of_mem` uses
+`SquaredPartition.slowMask_sum_sq = 1` to construct an active label at any
+positive band. The explicit point `(√(2a),(0,1))` lies in the selected
+reference annulus, so `selected_primary_label_nonempty` constructs a label
+above the selected threshold and `selected_active_pair_nonempty` constructs its
+active stage pair. The generic empty branch remains present for arbitrary
+inputs, but it is not a vacuity explanation for the selected path. The same
+probe unfolds `LocalScheduleWitness.potentialSum` to a `tsum` indexed by
+natural stage numbers, independently ruling out an empty-subtype limit reading.
 
 ## 11. Import graph versus semantic bridge
 

@@ -101,6 +101,9 @@ identifies a solution for `-f` or `0` with the selected solution for `f`.
 
 - [x] Isolate the `ActivePair` empty/nonempty split.
 - [x] Prove active-pair construction from a concrete selected label.
-- [ ] Establish or refute inhabitance of the selected label subtype.
+- [x] Establish inhabitance of the selected label subtype using the nonzero
+  partition mask at an explicit reference-annulus point.
+- [x] Establish inhabitance of the selected active-pair subtype above the
+  selected threshold.
 - [ ] Use a proved false selected identity before upgrading CTR-005 to a
   kernel-level contradiction.

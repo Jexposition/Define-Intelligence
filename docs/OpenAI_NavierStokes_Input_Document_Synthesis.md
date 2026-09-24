@@ -439,16 +439,20 @@ Evidence: `NavierStokesReview/evidence/fixed_force_stability_extension_2026-09-2
 
 The source's `ActivePair` type has a real empty/nonempty branch. A concrete
 label is sufficient to produce an active pair at its own band, using the
-four-band threshold and `CommonWindow.self_mem`. The selected endpoint still
-does not export label-subtype inhabitance. This is retained as an interface
-question, not described as a vacuity proof.
+four-band threshold and `CommonWindow.self_mem`. The review-side construction
+now goes further: `slowMask_sum_sq = 1` gives a nonzero mask at every positive
+band, and the explicit point `(√(2a),(0,1))` lies in the selected reference
+annulus. This constructs the selected label above `prepared.N` and then an
+active pair. The generic empty branch is therefore not a selected-path
+vacuity.
 
 The follow-up zero-sorry probe adds an important separation. `LocalScheduleWitness.potentialSum`
 is a `SolenoidalDiagonal.potentialSum` whose `tsum` is indexed by natural
 stage numbers, not by `ActivePair`. Thus an empty active-pair hypothesis leaves
 the output type inhabited and does not, by itself, make the diagonal limit an
-empty-set limit. The unresolved item is specifically the missing theorem that
-the selected primary-label subtype is inhabited.
+empty-set limit. The unresolved item is instead the missing field-level
+transport theorem; selected-label inhabitance is closed by the zero-sorry
+construction.
 
 The CMI force wording is tracked separately from the Lean endpoint. “Given,
 externally applied force” supports the causal interpretation of the review,

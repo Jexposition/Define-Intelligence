@@ -41,13 +41,15 @@ The new zero-sorry `SelectedWitnessInhabitationProbe` also shows that the
 exported witness envelope carries no five-debt payload, so the selected
 five-moment transport remains unverified at the type level.
 
-The separate CTR-019 sweep finds a real but narrower reachability issue. The
-source explicitly tolerates an empty active-pair/index branch, while the
-selected endpoint exports no `Nonempty (ActualPrimary.Label B N0)` theorem.
-The diagonal `potentialSum` is nevertheless a natural-indexed `tsum`, so this
-observation does not prove that the selected velocity is an empty-set limit.
-The verdict remains `NOT ESTABLISHED`, with selected-label inhabitance open and
-selected-path vacuity unproved.
+The separate CTR-019 sweep finds a real generic empty-branch behaviour but not
+a selected-path vacuity. A zero-sorry review construction uses
+`slowMask_sum_sq = 1` to obtain an active label at every positive band, then
+chooses a band above `prepared.N` to construct
+`Nonempty (ActualPrimary.Label B N0)` and `Nonempty (ActivePair B N0)`. The
+diagonal `potentialSum` is independently a natural-indexed `tsum`. CTR-019 is
+therefore cleared as a selected-path contradiction. The verdict remains
+`NOT ESTABLISHED` for the separate CTR-005 missing field-level five-moment
+transport theorem.
 
 ## 2 Blow-Up Mechanism (Audit of `PeriodicSobolev.lean`)
 

@@ -1089,9 +1089,12 @@ positive implication that is justified by the source: given a concrete
 `ActualPrimary.Label B N0`, its chart-band lower bound makes the same-band
 pair active via `CommonWindow.self_mem`.
 
-This does not prove that the selected label subtype is inhabited from the
-exported C/D witness, and it does not prove that the empty branch is reached.
-The branch remains a reachability target, not a contradiction.
+The selected-path construction is now stronger than this conditional result:
+`SelectedLabelConstructionProbe.selected_primary_label_nonempty` constructs a
+label above the selected threshold, and
+`selected_active_pair_nonempty` turns it into an active pair. The generic
+empty branch remains a valid interface branch, but it is not reachable on the
+selected path under the proved construction.
 
 Evidence: `NavierStokesReview/evidence/selected_active_pair_reachability_2026-09-24.md`.
 
@@ -1099,19 +1102,22 @@ Evidence: `NavierStokesReview/evidence/selected_active_pair_reachability_2026-09
 
 | Check | Source result | Status |
 |---|---|---:|
-| Primary choice | `ActualPrimary.choice_nonempty` proves a `Choice` record exists, but its `prepared.N` field does not construct a `PrimaryGeometryAssembly.Index` label. | Open |
-| Active-pair reachability | The corrected review theorem constructs the stage label `(0,L)` and uses `BaseChartJets.cellBand L` plus `CommonWindow.self_mem`. | Verified conditionally |
+| Primary choice | `ActualPrimary.choice_nonempty` selects the prepared geometric data. A separate review theorem constructs the required label above its selected band floor. | Verified by review theorem |
+| Active-pair reachability | `SelectedLabelConstructionProbe.selected_active_pair_nonempty` constructs the stage label `(0,L)` and uses `BaseChartJets.cellBand L` plus `CommonWindow.self_mem`. | Verified on selected path |
 | Empty branch | `ActualParticularStageControls.raw_jets` contains an explicit `¬ Nonempty (ActivePair B N0)` branch; `ActualInitialMean.covariance_bounds_of_curl` also splits on an empty cycle index. | Verified source branch |
-| Diagonal sum | `LocalScheduleWitness.potentialSum` unfolds to `SolenoidalDiagonal.potentialSum`, a `tsum` over `j : ℕ`, not over `ActivePair`. | Empty-pair vacuity not established |
+| Diagonal sum | `LocalScheduleWitness.potentialSum` unfolds to `SolenoidalDiagonal.potentialSum`, a `tsum` over `j : ℕ`, not over `ActivePair`. | Not an empty-set limit |
 
-The selected witness exports no theorem proving `Nonempty (ActualPrimary.Label B N0)` or
-`Nonempty (ActivePair B N0)`. The new zero-sorry probe therefore preserves the
-objection as a reachability obligation, while ruling out the stronger claim that
-an empty active-pair subtype automatically makes the natural-indexed diagonal
-series an empty-set limit.
+The selected witness does not itself export these inhabitance theorems, but the
+review-side construction now proves both propositions without admitted
+declarations. `slowMask_sum_sq = 1` supplies a nonzero mask at every positive
+band; the explicit point `(√(2a),(0,1))` lies in the selected reference
+annulus. Thus CTR-019 is cleared as a selected-path vacuity route. The generic
+empty branches remain real interface behaviour, but they do not apply to the
+selected construction.
 
 Evidence: `NavierStokesReview/evidence/selected_label_inhabitability_audit_2026-09-24.md`;
-`NavierStokesReview/src/probes/SelectedLabelInhabitabilityProbe.lean`.
+`NavierStokesReview/src/probes/SelectedLabelInhabitabilityProbe.lean`;
+`NavierStokesReview/src/probes/SelectedLabelConstructionProbe.lean`.
 
 ## External wording and admissibility scope: 2026-09-24
 

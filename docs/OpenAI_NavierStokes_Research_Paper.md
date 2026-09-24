@@ -751,11 +751,18 @@ pressure objection is the absence of an absolute selected pressure
 representative in the exported semantic bridge.
 
 The stage-control source contains an empty/nonempty split for `ActivePair`.
-The review theorem `active_pair_of_selected_label` proves that a concrete
-selected label gives an active pair at its own band, using the lower-band
-bound and `CommonWindow.self_mem`. It does not prove inhabitance of the
-selected label subtype from the exported witness, so the empty branch remains
-an interface target rather than a vacuity refutation.
+The review construction resolves the selected-path inhabitance question. The
+partition identity
+
+$$
+\sum_k \operatorname{slowMask}_n(k,x)^2=1
+$$
+
+implies that at least one grid mask is nonzero at every positive band. The
+explicit point $(\sqrt{2a},(0,1))$ lies in the reference annulus, so a label
+above the selected threshold can be constructed. The zero-sorry theorems
+`selected_primary_label_nonempty` and `selected_active_pair_nonempty` then
+inhabit the selected label and active-pair subtypes.
 
 The inhabitability sweep narrows this point. `ActualPrimary.choice_nonempty`
 constructs the prepared geometric choice, not a label. Meanwhile,
@@ -764,9 +771,10 @@ cycle index, and `ActualParticularStageControls.raw_jets` explicitly handles an
 empty active-pair type. These are genuine reachability obligations. They do
 not, however, make the diagonal velocity series vacuous: `LocalScheduleWitness`
 defines `potentialSum` through `SolenoidalDiagonal.potentialSum`, whose actual
-`tsum` is indexed by the natural stage number. The current evidence therefore
-supports a missing selected-label inhabitance theorem, not the stronger claim
-that the selected blow-up is already an empty-set artefact.
+`tsum` is indexed by the natural stage number. The generic empty branch is
+therefore not a selected-path empty-limit explanation. The remaining
+load-bearing issue is CTR-005: no theorem identifies the selected Cartesian
+fields and residual with the paper's complete five-moment tuple.
 
 These results are source-linked and compiled in the evidence files below. The
 paper's conclusion remains a correspondence-based counter-claim: the public
