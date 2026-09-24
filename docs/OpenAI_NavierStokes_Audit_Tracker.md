@@ -62,6 +62,20 @@ four distinctions are mandatory when quoting them:
 The exact claim-by-claim record is
 `NavierStokesReview/evidence/response_claims_adjudication_2026-09-24.md`.
 
+## Build verification: 2026-09-24
+
+The declared toolchain was rerun after the review-document updates:
+
+| Target | Result |
+| --- | --- |
+| `lake build NavierStokesReview` | 3,688 jobs completed successfully |
+| `lake build NavierStokes` | 9,580 jobs completed successfully |
+| Exported comparator axiom report | `propext`, `Classical.choice`, `Quot.sound` only |
+
+This verifies compilation and dependency hygiene for the inspected targets. It
+does not discharge CTR-005 or convert the endpoint into a proof of the paper's
+selected five-moment semantics.
+
 ## Pressure and uniqueness closure audit: 2026-09-24
 
 The compact-pressure trivialisation attack is rejected as a standalone
