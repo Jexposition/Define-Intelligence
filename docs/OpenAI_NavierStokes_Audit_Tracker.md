@@ -1015,3 +1015,16 @@ declaration was found in this audited path.
 five-moment/pressure correspondence objection.
 
 Evidence: `NavierStokesReview/evidence/whole_space_uniqueness_audit_2026-09-24.md`.
+
+## External-source scope control: 2026-09-24
+
+The companion Euler paper and the public release are tracked as comparison
+material only. The release describes the Euler result as unforced and presents
+the Navier--Stokes result through the forced C/D alternatives. That distinction
+does not supply a temporal-gluing theorem for the Navier--Stokes indexed stages
+and does not alter the selected-endpoint transport target. Source register:
+`docs/OpenAI_NavierStokes_Source_Context_Register.md`.
+
+Packaging status: `700e39d` is pushed; control commit `eff4d0f` is local
+pending GitHub authentication. The two supplied reference PDFs remain
+intentionally untracked, and no Lean build artefacts are tracked.

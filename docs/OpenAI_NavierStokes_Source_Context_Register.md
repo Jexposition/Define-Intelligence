@@ -83,6 +83,16 @@ Euler paper's parent-child time language therefore cannot be silently used as
 evidence that the Navier--Stokes Lean construction has, or lacks, a temporal
 matching theorem.
 
+The public release makes the separation explicit as well: it describes the
+Euler result as unforced, while the Navier--Stokes result is presented through
+the forced alternatives C and D. That comparison is useful for scope control,
+but it does not transfer the Euler argument into the Navier--Stokes endpoint.
+The review must therefore test the forced candidate against the CMI statement
+and its own selected-field transport, rather than infer a force-free conclusion
+from the companion paper.
+
+Primary source for the release distinction: [OpenAI's announcement](https://openai.com/index/navier-stokes-solution/).
+
 ## Counter-argument register
 
 | Proposed argument | Source-backed assessment |

@@ -175,7 +175,8 @@ the residual/origin contradiction remain open.
   issue is semantic transport into the residual endpoint, not dead code or
   total import separation.
 - [x] Commit `700e39d` is pushed to
-  `review/cmi-first-navier-stokes-2026-09-22`. No tracked `.olean`, `.ilean`,
+  `review/cmi-first-navier-stokes-2026-09-22`; the newer control commit
+  `eff4d0f` is local pending GitHub authentication. No tracked `.olean`, `.ilean`,
   or `.lake` files are present. The only untracked paths are the two supplied
   reference PDFs `docs/euler.pdf` and `docs/navier-stokes openai.pdf`; they are
   intentionally not staged.
