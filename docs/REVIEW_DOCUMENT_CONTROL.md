@@ -511,6 +511,17 @@ supporting evidence about residual provenance and forward-data stability.
 
 Evidence: `NavierStokesReview/evidence/fixed_force_stability_extension_2026-09-24.md`.
 
+The perturbation lane was subsequently strengthened to preserve the zero
+initial datum. `SameDatumFixedForcePerturbation.lean` defines a smooth compact
+divergence-free perturbation with factor `t(t-t₀)`, proves it vanishes at
+`t=0`, and proves a nonzero residual defect at `(t₀,0)` for `t₀ ≠ 0`.
+`selected_candidate_fails_fixed_force_same_datum_stability` compiles without
+admitted declarations. This closes the prior initial-data loophole in CTR-012;
+it does not change the authority verdict that a literal C/D contradiction
+requires an independence or stability premise in the endpoint.
+
+Evidence: `NavierStokesReview/evidence/same_datum_fixed_force_obstruction_2026-09-24.md`.
+
 ## Whole-space uniqueness audit: 2026-09-24
 
 `WholeSpaceUniqueness.classical_uniqueness_on_Icc` is an active comparison

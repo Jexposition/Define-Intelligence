@@ -414,12 +414,14 @@ backwards.
 |---|---:|---|
 | Define explicit fixed-force stability predicate | [x] | `FixedForceStable` quantifies over smooth, compactly supported, divergence-free perturbations. |
 | Instantiate the selected compact perturbation | [x] | `selected_candidate_fails_fixed_force_stability` compiles with no admitted declarations. |
+| Strengthen perturbation to preserve zero initial data | [x] | `selected_candidate_fails_fixed_force_same_datum_stability` compiles with no admitted declarations. |
 | Promote this to literal C/D `False` | [ ] | Requires force independence or perturbation stability as an actual endpoint premise, or a false selected identity. |
 
 Interpret the result as a formal provenance/stability objection. Do not write
 that the existential C/D proposition has been refuted by this extension alone.
 
-Evidence: `NavierStokesReview/evidence/fixed_force_stability_extension_2026-09-24.md`.
+Evidence: `NavierStokesReview/evidence/fixed_force_stability_extension_2026-09-24.md` and
+`NavierStokesReview/evidence/same_datum_fixed_force_obstruction_2026-09-24.md`.
 
 ## Selected rank transport re-audit: 2026-09-24
 

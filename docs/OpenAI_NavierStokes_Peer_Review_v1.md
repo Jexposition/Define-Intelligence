@@ -898,6 +898,19 @@ transport objection.
 
 Evidence: [`fixed_force_stability_extension_2026-09-24.md`](../NavierStokesReview/evidence/fixed_force_stability_extension_2026-09-24.md).
 
+The initial-data loophole in that first probe has now been removed. The review
+extension `SameDatumFixedForcePerturbation.lean` uses the factor
+`t(t-t₀)`, so the perturbation is zero at the selected initial time as well as
+at the interior switch. It remains smooth, compactly supported on each spatial
+slice, and divergence-free, but its temporal derivative at the switch is
+nonzero at the origin. The theorem
+`selected_candidate_fails_fixed_force_same_datum_stability` therefore proves
+fixed-force path dependence without changing the zero initial datum. The result
+still concerns a strengthened forward-data predicate; it is not a standalone
+`False` derivation from the literal existential C/D endpoint.
+
+Evidence: [`same_datum_fixed_force_obstruction_2026-09-24.md`](../NavierStokesReview/evidence/same_datum_fixed_force_obstruction_2026-09-24.md).
+
 ## Active-stage non-vacuity is conditional
 
 The stage-control implementation explicitly branches on whether

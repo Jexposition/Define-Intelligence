@@ -34,6 +34,13 @@ velocity-to-residual lower bound would be contradictory. This records an
 explicit cancellation result; it is not a force-singularity theorem and does
 not by itself refute the final endpoint.
 
+**AX-038.** `SameDatumFixedForcePerturbation.lean` adds no axiom and uses no
+admitted declaration. Its selected-candidate theorem preserves the zero initial
+datum while proving a nonzero fixed-force residual defect for an interior,
+smooth, compactly supported, divergence-free perturbation. This is a stronger
+CTR-012 provenance test, not a new premise of the C/D endpoint. Its dedicated
+axiom audit reports only `[propext, Classical.choice, Quot.sound]`.
+
 ## Purpose
 
 This ledger separates logical foundations, project-level premises, formal definitions, and physical requirements. A standard Lean axiom is not treated as a defect. A proposition imported as a premise, or a definition that is weaker than the paper's object, is a separate audit target.

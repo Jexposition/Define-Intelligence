@@ -145,3 +145,13 @@ contradiction of the existential C/D endpoint, which does not include that
 predicate.
 
 Evidence: `NavierStokesReview/evidence/fixed_force_stability_extension_2026-09-24.md`.
+
+The stronger review extension `SameDatumFixedForcePerturbation.lean` uses the
+factor `t(t-t₀)`. It preserves the selected zero initial datum while retaining
+smoothness, compact spatial support, divergence-free slices, and a nonzero
+fixed-force residual defect at an interior switch. This removes the initial-data
+qualification from the earlier probe, but it remains a strengthened
+forward-data test rather than a literal contradiction of the existential C/D
+predicate.
+
+Evidence: `NavierStokesReview/evidence/same_datum_fixed_force_obstruction_2026-09-24.md`.

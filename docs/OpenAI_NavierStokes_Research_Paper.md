@@ -460,6 +460,24 @@ an admissible perturbation with nonzero defect. The exact proof and its limits
 are recorded in
 [`independent_data_perturbation_2026-09-24.md`](../NavierStokesReview/evidence/independent_data_perturbation_2026-09-24.md).
 
+The perturbation test was then strengthened so that it preserves the selected
+zero initial datum. The new field is
+
+$$e_{t_0}(t,x)=t(t-t_0)\,\operatorname{curl}A(x).$$
+
+It is smooth, compactly supported on each spatial slice, divergence-free, and
+zero at both $t=0$ and $t=t_0$. At $t=t_0$ its spatial derivative and spatial
+Laplacian vanish, while its temporal derivative is
+$t_0\operatorname{curl}A(x)$. At the origin the selected compact potential
+gives a nonzero curl, so the fixed-force residual equation fails at the switch.
+This closes the initial-data loophole in the earlier perturbation probe and
+strengthens CTR-012 as a forward-data provenance objection. It still does not
+negate the literal existential C/D proposition, which does not quantify over
+such perturbations or encode force independence.
+
+Evidence:
+[`same_datum_fixed_force_obstruction_2026-09-24.md`](../NavierStokesReview/evidence/same_datum_fixed_force_obstruction_2026-09-24.md).
+
 Other proposed objections remain outside the CMI disproof threshold unless a
 selected-path theorem supplies their missing premise: active forcing, nonzero
 force integral or divergence, non-Newtonian regularisation, pure-axial collapse,

@@ -1,0 +1,4 @@
+import extensions.SameDatumFixedForcePerturbation
+
+#print axioms
+  NavierStokesReview.SameDatumFixedForcePerturbation.selected_candidate_fails_fixed_force_same_datum_stability

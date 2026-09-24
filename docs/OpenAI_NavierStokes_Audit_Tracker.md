@@ -1059,6 +1059,27 @@ empty. `CandidateProperties` does not quantify over perturbations or require
 force independence. Evidence:
 `NavierStokesReview/evidence/fixed_force_stability_extension_2026-09-24.md`.
 
+## Same-datum fixed-force closure: 2026-09-24
+
+The earlier fixed-force perturbation lane did not require the perturbation to
+preserve the selected zero initial datum. That limitation is now removed in
+`NavierStokesReview/src/extensions/SameDatumFixedForcePerturbation.lean`.
+The new field uses the factor `t(t-t₀)` and is globally smooth, compactly
+supported on every spatial slice, divergence-free, and zero at `t = 0`. At an
+interior switch `t₀`, its value, spatial derivative, and spatial Laplacian
+vanish, while its temporal derivative is `t₀ • compactCurlField (t₀, x)`. At
+the origin this is nonzero for `t₀ ≠ 0`.
+
+The zero-sorry theorem
+`selected_candidate_fails_fixed_force_same_datum_stability` therefore proves
+fixed-force path dependence even when the initial datum is held fixed. This
+strengthens CTR-012 as a forward-data objection. It still does not make the
+literal C/D existential empty, because `CandidateProperties` does not quantify
+over perturbations or encode force independence.
+
+Evidence:
+`NavierStokesReview/evidence/same_datum_fixed_force_obstruction_2026-09-24.md`.
+
 ## Selected active-pair reachability: 2026-09-24
 
 The stage-control source contains an explicit empty/nonempty split for

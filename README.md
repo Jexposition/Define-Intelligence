@@ -26,6 +26,9 @@ matches the published mathematical construction.
   defect at the origin is the nonzero first coordinate vector. Thus a residual
   selected from one velocity path cannot remain the same force after this
   perturbation.
+  The stronger `SameDatumFixedForcePerturbation.lean` version also makes the
+  perturbation vanish at the initial time, so this objection does not rely on
+  changing the selected zero initial datum.
 - **CTR-017, temporal index boundary:** a zero-sorry theorem constructs unequal
   raw entries at indices zero and one of `initializedSeries`. The source does
   not identify the natural-number stage index with time, and its selected sums
@@ -43,8 +46,9 @@ and [`mean_rank_update_scope_2026-09-24.md`](NavierStokesReview/evidence/mean_ra
 The two findings are related but distinct. The selected construction has the
 form `f = navierStokesResidual u p` along its chosen path, so the residual
 identity is part of the witness predicates rather than an independently
-transported forcing datum. `IndependentDataPerturbationProbe.lean` and
-`CompactFixedForcePerturbation.lean` then prove, without `sorry`, that holding
+transported forcing datum. `IndependentDataPerturbationProbe.lean`,
+`CompactFixedForcePerturbation.lean`, and
+`SameDatumFixedForcePerturbation.lean` then prove, without `sorry`, that holding
 `p` and `f` fixed while changing `u` by the displayed smooth perturbation
 produces a nonzero residual defect. This is a machine-checked path-dependence
 and correspondence objection.
