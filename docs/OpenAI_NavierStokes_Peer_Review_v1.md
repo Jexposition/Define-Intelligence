@@ -109,9 +109,19 @@ Evidence: `NavierStokesReview/evidence/burden_of_proof_underclaim_audit_2026-09-
 
 ## Recommendation
 
-**Major revision.** The public Lean development contains a substantial formal endpoint for a forced whole-space breakdown statement, but the accompanying mathematical narrative is not yet shown to correspond to the actual source implementation. The most concrete issue is the mismatch between the paper's five cumulative moments and the repository's `FiveRowRank` debt system.
+**Do not accept the published CMI-solution claim on the inspected record.** The
+public Lean development contains a substantial formal endpoint for a forced
+whole-space breakdown statement, but the accompanying mathematical narrative
+is not shown to correspond to the actual source implementation. The most
+concrete issue is the missing selected-field transport of the paper's five
+cumulative moments into the residual, pressure, force, and exported witness.
 
-This recommendation is not based on compilation failure. It is based on a source-level and zero-sorry formal audit of the propositions, interfaces, and dependency path that compilation alone does not inspect.
+This decision is not based on compilation failure and does not require the
+reviewer to prove `False` from the literal existential endpoint. OpenAI made
+the affirmative claim. The source therefore has to establish the selected
+object and every load-bearing bridge used to present it as the paper's CMI
+solution. An unproved bridge is a failure of that claim, not a reason to
+presume the bridge valid.
 
 ## Materials and scope
 
@@ -191,7 +201,15 @@ The force remains active at `t = 1`, but `PositiveTimeForce.timeCutoff` is a smo
 
 ## Final assessment
 
-The formal endpoint should not be dismissed as a mere compile illusion. Conversely, a clean endpoint axiom report does not verify the paper's construction line by line. The current evidence supports a **major-revision** decision: the authors have a formal C/D-shaped endpoint and substantial construction machinery, while the paper's endpoint-level five-moment transport remains unproved at the source level. The review does not yet possess a zero-sorry theorem showing that the exported endpoint is false.
+The formal endpoint should not be dismissed as a mere compile illusion.
+Conversely, a clean endpoint axiom report does not verify the paper's
+construction line by line. The evidence supports a negative publication
+decision on the stronger claim: the repository has a formal C/D-shaped
+endpoint and substantial construction machinery, while the paper's
+endpoint-level five-moment transport remains unproved at the source level.
+The review does not yet possess a zero-sorry theorem showing that the
+exported endpoint is false; that narrower technical status does not reverse
+the burden-of-proof decision.
 
 ## Review artefacts
 
