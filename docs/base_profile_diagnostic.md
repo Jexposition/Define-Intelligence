@@ -26,7 +26,7 @@ The angular velocity/swirl profile is **not** a global zero or a static
 constant by type constraint. The source proves only a zero at the specified
 radial anchor via a mathematical gauge transformation.
 * **Override (Line 55):** `radialNormalize_anchor (K : Point → ℝ) (t z : ℝ) : radialNormalize K (t, (1, z)) = 0`.
-* **Mechanism:** The agent defines `gaugedSwirl` (Line 59) as `radialNormalize (SlowBorelBase.swirlPotential...)`. This proves a zero value at the radial anchor `s = 1`.
+* **Mechanism:** The source defines `gaugedSwirl` (Line 59) as `radialNormalize (SlowBorelBase.swirlPotential...)`. This proves a zero value at the radial anchor `s = 1`.
 * **Verdict:** The inspected theorem is a local gauge identity. It does not
   prove global zero swirl, zero helicity, or failure of the physical boundary
   equations. Those stronger claims are rejected unless a separate theorem is
@@ -37,7 +37,7 @@ radial anchor via a mathematical gauge transformation.
 **Analysis:** 
 I traced the dependency link for the $C^{\infty}$ smoothness predicate. 
 * **The Proof (Line 85):** `potential_smooth` invokes `AxisymmetricFields.contDiffOn_potential`, which rigorously composes the smoothness of the underlying `streamFactor` and `gaugedSwirl`. 
-* **Tautology Check:** The agent did **not** declare smoothness as an `opaque` mapping, nor did it assume it as an unproven axiom. The smoothness is legitimately built up from basic 1D and 2D smooth components in Lean's mathlib. 
+* **Tautology Check:** The source does **not** declare smoothness as an `opaque` mapping, nor assume it as an unproven axiom. The smoothness is legitimately built up from basic 1D and 2D smooth components in Lean's mathlib. 
 * **Verdict:** There is no tautological smoothness bypass in this module. The
   base field is genuinely $C^{\infty}$ smooth by construction. That fact is
   only one input to the later residual-limit construction; it does not prove

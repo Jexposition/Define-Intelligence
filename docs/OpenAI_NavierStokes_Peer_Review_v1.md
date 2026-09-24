@@ -836,6 +836,25 @@ itself a selected-witness `False` theorem.
 
 Evidence: `NavierStokesReview/evidence/selected_rank_transport_reaudit_2026-09-24.md`.
 
+## Endpoint transport recheck
+
+The final source trace does not support the claim that the five-moment system
+is dead. `ActualCandidateAssembly.physicalData` is built from actual cycle
+fields, `ActualStageEstimates` consumes `CorrectionState.debt`, and the rank
+layer proves its five integral rows for the constructed correction. The
+upstream machinery is therefore substantive.
+
+The exported `Witness` still exposes only the schedule, mixed stage fields,
+away extensions, force, candidate properties, residual consequences, blow-up,
+decay, and endpoint jets. It does not expose an equality to
+`PositiveOrderMoments.moments`, `FiveProfileMoments.physicalMoments`,
+`FiveRowRank.FiveRows`, or `(M,I,J,S,C_p)`. The correct objection is that the
+paper's five-moment interpretation is not transported into the public
+endpoint. That is a load-bearing correspondence defect, not a theorem that
+the selected fields violate the moments.
+
+Evidence: `NavierStokesReview/evidence/selected_endpoint_direct_source_trace_2026-09-24.md`.
+
 ## Finding 35: the whole-space uniqueness route is formally active
 
 The no-global-solution conclusion was checked against its actual dependency

@@ -373,6 +373,16 @@ runtime rank audit.
 | SRC-02 | Compare the Euler parent-child time iteration with the Navier--Stokes indexed stage constructor. | [x] | The source register records that the comparison does not transfer a temporal-gluing theorem into the Navier--Stokes code. |
 | SRC-03 | Keep the five-moment and pressure bridges linked to the final witness. | [ ] | Find a selected-field equality for `(M,I,J,S,C_p)` and the absolute pressure semantics, or prove a false mandatory premise. |
 
+## Selected endpoint direct-source recheck: 2026-09-24
+
+| Task | Status | Acceptance test |
+|---|---:|---|
+| Recheck actual cycle/rank consumption | [x] | `physicalData`, `RunData.rank_class`, `rank_rows_on_patch`, and `SelectedCycleMomentTransport` are source-linked and compile. |
+| Recheck exported five-moment transport | [ ] | No equality from the selected mixed endpoint to `moments`, `physicalMoments`, `FiveRows`, or `(M,I,J,S,C_p)` was found. |
+| Escalate CTR-005 to formal disproof | [ ] | Requires a false equality or other contradiction on the selected fields; an omitted export field is not enough. |
+
+Evidence: `NavierStokesReview/evidence/selected_endpoint_direct_source_trace_2026-09-24.md`.
+
 Evidence: `NavierStokesReview/evidence/temporal_patching_audit_2026-09-24.md` and
 `docs/OpenAI_NavierStokes_Source_Context_Register.md`.
 

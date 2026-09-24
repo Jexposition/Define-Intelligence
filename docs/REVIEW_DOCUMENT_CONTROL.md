@@ -134,6 +134,13 @@ no field-level debt equality. This keeps the five-moment falsification lane
 active; it does not yet prove that the actual selected fields violate the
 moments.
 
+The direct endpoint recheck is recorded in
+`NavierStokesReview/evidence/selected_endpoint_direct_source_trace_2026-09-24.md`.
+It confirms that actual cycle/rank data are consumed upstream while the public
+`Witness` still exports no equality to the paper's five moments. The active
+classification remains a selected-endpoint correspondence gap; no `False`
+theorem has been added without a concrete selected-field contradiction.
+
 ## Evidence entry rule
 
 Every active claim must point to at least one of:

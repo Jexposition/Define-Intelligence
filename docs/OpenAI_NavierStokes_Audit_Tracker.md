@@ -1028,3 +1028,18 @@ and does not alter the selected-endpoint transport target. Source register:
 Packaging status: `700e39d` is pushed; control commit `eff4d0f` is local
 pending GitHub authentication. The two supplied reference PDFs remain
 intentionally untracked, and no Lean build artefacts are tracked.
+
+## Selected endpoint direct-source trace: 2026-09-24
+
+- [x] Rechecked the immediate endpoint path. `physicalData` and `estimates`
+  consume actual cycle fields and residual bounds.
+- [x] Rechecked the upstream rank path. `FiveRows` and the two internal radial
+  invariants are proved for the constructed correction states.
+- [x] Rechecked the exported `Witness`. It contains no equality to
+  `PositiveOrderMoments.moments`, `FiveProfileMoments.physicalMoments`,
+  `FiveRowRank.FiveRows`, or `(M,I,J,S,C_p)`.
+- [ ] A concrete selected-field violation or zero-sorry `False` theorem has
+  not been obtained. CTR-005 remains a selected-endpoint correspondence
+  objection, not a dead-code or hardcoded-zero claim.
+
+Evidence: `NavierStokesReview/evidence/selected_endpoint_direct_source_trace_2026-09-24.md`.

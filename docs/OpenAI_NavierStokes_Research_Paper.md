@@ -619,6 +619,21 @@ two-moment conservation theorem, but does not display the theorem that makes
 it the paper's five-moment endpoint certificate. Evidence:
 `NavierStokesReview/src/completions/SelectedCycleMomentTransport.lean`.
 
+### Direct endpoint trace
+
+The immediate source path sharpens this conclusion. `ActualCandidateAssembly`
+does consume actual cycle data and residual estimates, while
+`CorrectionState` proves the rank rows for the constructed correction. The
+exported `Witness`, however, contains no equality to
+`PositiveOrderMoments.moments`, `FiveProfileMoments.physicalMoments`,
+`FiveRowRank.FiveRows`, or the named tuple `(M,I,J,S,C_p)`. The absence is not
+evidence that those upstream identities are false; it is the absence of the
+transport theorem needed to claim that the selected endpoint is the same
+five-moment object described in the paper.
+
+This distinction is recorded in
+`NavierStokesReview/evidence/selected_endpoint_direct_source_trace_2026-09-24.md`.
+
 ### Temporal stage boundary audit
 
 The indexed stage constructor deserves a separate statement. In
