@@ -544,6 +544,25 @@ $(M,I,J,S,C_p)$ through the correction state and mixed sums into the residual,
 pressure, and force. Evidence:
 `NavierStokesReview/evidence/five_row_collision_boundary_2026-09-24.md`.
 
+### A conditional correction-moment obstruction
+
+The zero rows are not empty syntax. They force two precise radial moments of
+the correction increment to vanish. The new Lean completion
+`CorrectionInvariantScope.lean` proves the corresponding conditional
+refutation: if an increment transported into the rank subsystem has a nonzero
+`barMoment 2` angular component or nonzero `barMoment 1` axial component, the
+complete `FiveRows` predicate is inconsistent.
+
+This is the strongest result presently available from the rank interface. It
+does not, by itself, identify an externally chosen Cartesian perturbation with
+the correction increment, nor does it identify the two radial moments with
+kinetic energy or the paper's five named moments. The remaining theorem is
+therefore concrete rather than rhetorical: transport the perturbation through
+the selected stage construction, calculate one of these moments as nonzero,
+and apply the conditional obstruction. Until that transport is proved, the
+result is a load-bearing route to falsification, not a completed `False`
+theorem for `selected_witness`.
+
 ## References and evidence
 
 1. Charles L. Fefferman, [Existence and Smoothness of the Navier–Stokes

@@ -185,6 +185,18 @@ the residual/origin contradiction remain open.
 
 Evidence: `NavierStokesReview/evidence/five_row_collision_boundary_2026-09-24.md`.
 
+## Conditional correction-moment obstruction: 2026-09-24
+
+- [x] `CorrectionInvariantScope.lean` compiles with no `sorry`, `axiom`, or
+  `unsafe`.
+- [x] It proves that `FiveRows` forces the two correction moments to zero and
+  derives `False` from either corresponding nonzero increment hypothesis.
+- [ ] The selected-path transport of an independent Cartesian perturbation into
+  the constrained correction increment is still missing. Keep this under
+  CTR-005; do not relabel the conditional theorem as an endpoint refutation.
+
+Evidence: `NavierStokesReview/evidence/correction_invariant_scope_2026-09-24.md`.
+
 ## Research-paper and attack-boundary update: 2026-09-24
 
 - [x] `OpenAI_NavierStokes_Research_Paper.md` has been rewritten as a coherent

@@ -401,6 +401,25 @@ perturbation parameter.
 **Status:** **the proposed direct `False` collision is rejected; selected
 five-moment transport remains the CTR-005 obligation**.
 
+## AX-031: conditional obstruction for a nonzero correction moment
+
+**Source:** `NavierStokes/FiveRowRank.lean:241-246,280-318`;
+`NavierStokes/DefectIncrementBounds.lean:621-646,799-813`;
+`NavierStokesReview/src/completions/CorrectionInvariantScope.lean`.
+
+The two zero rows do have a rigorous consequence. Under the full `FiveRows`
+hypotheses, the angular correction satisfies `barMoment 2 h.angular = 0` and
+the axial correction satisfies `barMoment 1 h.axial = 0`. The new zero-sorry
+completion derives `False` from either corresponding nonzero hypothesis.
+
+This does not identify `h` with the selected Cartesian perturbation. It also
+does not identify either radial moment with kinetic energy or with the paper's
+tuple `(M, I, J, S, C_p)`. The load-bearing unresolved premise is therefore
+the selected-path transport theorem that would supply those identifications.
+
+**Status:** conditional contradiction proved; selected-field transport remains
+open under CTR-005.
+
 ## AX-029: compact pressure support is not a zero theorem
 
 **Source:** `NavierStokes/R3/ProblemStatement.lean:92-109`; `NavierStokes/R3/ActualCandidate.lean:59-108`; `NavierStokes/R3/PressureRecovery.lean:33-44,407-438`; `NavierStokes/R3/ActualPressureFlux.lean:28-45`; `NavierStokesReview/src/probes/SemanticTransportPressureProbe.lean:37-50`.

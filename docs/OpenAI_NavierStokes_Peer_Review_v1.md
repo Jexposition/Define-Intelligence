@@ -320,6 +320,26 @@ paper's five moments with the correction-state rows and carries that identity
 into the mixed residual and force. Evidence:
 `NavierStokesReview/evidence/five_row_collision_boundary_2026-09-24.md`.
 
+## Finding 32: the zero rows give a conditional perturbation obstruction
+
+The correction subsystem does support a genuine contradiction once the
+perturbation has been transported into the correction increment. A new
+zero-sorry completion proves that the full `FiveRows` predicate forces
+`barMoment 2 h.angular = 0` and `barMoment 1 h.axial = 0`; adding either
+corresponding nonzero hypothesis yields `False`.
+
+That result does not yet apply to the selected witness. `FiveRows` constrains
+the correction increment, while `Witness` exposes the assembled stages,
+pressure, force, endpoint consequences, and norm growth. The selected theorem
+does not provide an equality identifying an independently injected Cartesian
+perturbation with `h.angular` or `h.axial`. It also does not identify these
+radial moments with kinetic energy or `(M, I, J, S, C_p)`.
+
+The correct conclusion is therefore a live conditional attack, not a completed
+endpoint refutation: prove the missing selected-path transport and the
+nonzero-moment calculation, then the new theorem supplies the contradiction.
+Evidence: `NavierStokesReview/evidence/correction_invariant_scope_2026-09-24.md`.
+
 ## Finding 22: the force attack now has an exact conditional contradiction
 
 The review has now attacked the selected witness itself. The zero-sorry probe

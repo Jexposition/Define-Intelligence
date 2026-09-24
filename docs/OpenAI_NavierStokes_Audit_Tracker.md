@@ -846,3 +846,24 @@ Consequently the proposed type-level collision does not derive `False`.
 selected five-moment transport remains the CTR-005 load-bearing objection.
 
 Evidence: `NavierStokesReview/evidence/five_row_collision_boundary_2026-09-24.md`.
+
+## 2026-09-24 correction-invariant scope theorem
+
+The follow-up theorem isolates the strongest valid consequence of the two zero
+rows. `CorrectionInvariantScope.lean` proves, with no `sorry`, `axiom`, or
+`unsafe`, that a correction increment satisfying the complete `FiveRows`
+predicate must have
+
+```text
+barMoment 2 h.angular = 0
+barMoment 1 h.axial = 0.
+```
+
+It therefore derives `False` from either nonzero correction moment. This is a
+real conditional obstruction, not a selected-witness contradiction: the
+theorem still needs a transport result identifying the injected perturbation
+with `h.angular` or `h.axial` and identifying those moments with the selected
+field or the paper's five named quantities. No such endpoint transport is
+currently present. This sharpens CTR-005 rather than clearing it.
+
+Evidence: `NavierStokesReview/evidence/correction_invariant_scope_2026-09-24.md`.
