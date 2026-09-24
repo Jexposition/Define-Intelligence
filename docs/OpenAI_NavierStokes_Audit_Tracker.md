@@ -908,3 +908,43 @@ not the existence of a local correction invariant.
 
 Evidence: `NavierStokesReview/evidence/correction_moment_transport_audit_2026-09-24.md`;
 `NavierStokesReview/src/completions/SelectedCycleMomentTransport.lean`.
+
+## CTR-017: temporal patching boundary audit
+
+The requested stage-transition audit is source-complete for the inspected
+files. `GermCandidateAssembly.initializedSeries` at lines 52--61 is an indexed
+base/initial/stage selector, not a piecewise-in-time definition. Its first
+successor is definitionally `stages 0`; the constructor itself imposes no
+adjacent-stage matching equation. `ActualCandidateConstruction.uncutPrefix_succ`
+at lines 419--423 and `angularMeanStages_prefix` at lines 425--433 instead
+describe additive finite prefixes.
+
+The selected spacetime regularity path is different. `LocalPotentialRebundle`
+lines 78--119 proves smoothness and local agreement for the selected summed
+fields. `TimeLocalization` lines 27--41 proves smoothness of the actual time
+activation, while lines 74--96 and 144--164 prove late local field, derivative,
+and residual agreement. `MixedPeriodicAssembly` lines 166--177 and 231--238
+proves smoothness and transfer of residual jet limits under spatial local
+equality.
+
+| Claim | Status | Evidence |
+|---|---:|---|
+| Raw indexed stages have an adjacent-stage matching premise | [x] | No such premise in `initializedSeries`; the review probe records the unconstrained boundary. |
+| The selected field is proved temporally discontinuous | [ ] | No source theorem or zero-sorry result establishes this. |
+| A higher-order kinetic-energy jump is present | [ ] | No energy-gradient identity is attached to the stage prefix boundary. |
+| The activation introduces a non-smooth temporal switch | [x] | Rejected: `timeSwitch` is used through `ContDiffOn ℝ ∞`. |
+| Late temporal jets agree with the incoming field | [x] | `activated_temporalDerivative_eq_late` and local eventual equality. |
+
+**Classification:** retain `CTR-017 (Temporal Patching Discontinuity)` as an
+open interface question, not a proved endpoint defect. A selected-path
+contradiction would require a theorem identifying an actual temporal boundary
+with a nonzero derivative mismatch. The zero-sorry probe is
+`NavierStokesReview/src/probes/TemporalPatchingDiscontinuityProbe.lean` and
+the ledger is `NavierStokesReview/evidence/temporal_patching_audit_2026-09-24.md`.
+
+The official-source nuance is recorded separately in
+`docs/OpenAI_NavierStokes_Source_Context_Register.md`: Fefferman's “given,
+externally applied” wording supports a causal/provenance objection, while the
+literal C/D alternatives remain existential and OpenAI's paper explicitly
+describes residual construction. That distinction is part of the audit
+record, not a concession about the missing selected semantic bridge.

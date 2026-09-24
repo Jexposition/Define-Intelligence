@@ -743,3 +743,28 @@ load-bearing CMI objection remains the missing theorem connecting the selected
 residual construction to the independent-data semantics claimed in the paper.
 
 Evidence: `NavierStokesReview/evidence/compact_fixed_force_perturbation_2026-09-24.md`.
+
+## Finding 33: temporal patching is an open interface question, not a proved jump
+
+The stage-transition audit does not find a piecewise-in-time stage definition.
+`GermCandidateAssembly.initializedSeries` selects a base/initial field at index
+zero and a raw stage at each successor index. The constructor does not itself
+require adjacent fields to match, so a proof of selected-field continuity must
+come from the later summed-field regularity theorems. This is a legitimate
+interface obligation, but it is not a proof that the selected field has a
+temporal discontinuity or an energy-gradient jump.
+
+The source does contain the relevant positive results: `timeSwitch` is used
+through a `ContDiffOn ℝ ∞` theorem, late local equality preserves temporal
+derivatives, and spatial localization transfers residual jet limits by local
+equality. The zero-sorry probe
+`NavierStokesReview/src/probes/TemporalPatchingDiscontinuityProbe.lean`
+records those facts and the exact indexed-prefix recurrence.
+
+The review therefore retains `CTR-017` as an unresolved verification task:
+close it only by deriving a nonzero derivative mismatch for the selected
+spacetime sum, not merely by pointing to the absence of an adjacent-stage
+equation. The external-source distinction is recorded in
+`docs/OpenAI_NavierStokes_Source_Context_Register.md`: residual construction is
+a real causal/provenance criticism, but it is not by itself a literal C/D
+contradiction under the existential formulation.

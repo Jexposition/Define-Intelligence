@@ -610,6 +610,42 @@ two-moment conservation theorem, but does not display the theorem that makes
 it the paper's five-moment endpoint certificate. Evidence:
 `NavierStokesReview/src/completions/SelectedCycleMomentTransport.lean`.
 
+### Temporal stage boundary audit
+
+The indexed stage constructor deserves a separate statement. In
+`GermCandidateAssembly.lean`, `initializedSeries` assigns the base plus initial
+field to index zero and assigns `stages j` to index `j+1`. This leaves no
+adjacent-stage matching condition at the constructor boundary. The finite-prefix
+theorems in `ActualCandidateConstruction.lean` are additive identities, not
+energy conservation laws and not temporal interpolation statements.
+
+That observation does not establish a discontinuity in the selected field.
+The selected sums have presingular smoothness theorems, the time activation is
+globally smooth, and late temporal derivatives agree by local eventual
+equality. The correct conclusion is an open interface obligation: the review
+has not found a theorem deriving a selected temporal boundary mismatch, so it
+cannot call the temporal-patching route a formal refutation.
+
+The exact ledger and zero-sorry probe are in
+`NavierStokesReview/evidence/temporal_patching_audit_2026-09-24.md` and
+`NavierStokesReview/src/probes/TemporalPatchingDiscontinuityProbe.lean`.
+
+### Source context and causal wording
+
+Fefferman describes the force as given and externally applied, which supports
+a provenance objection to choosing a trajectory first and defining its
+residual afterwards. OpenAI's own paper nevertheless makes that residual
+construction explicit and states that the challenge is to make the residual
+smooth through the singular time. The formal review therefore asks for the
+missing semantic bridges rather than treating the construction method alone as
+a contradiction of the existential C/D statement.
+
+The companion Euler paper uses a parent-child sequence on nested time
+intervals. That is useful context for what a genuine temporal induction looks
+like, but it does not prove that the Navier--Stokes Lean stage index is a time
+partition. The full source-context register is
+`docs/OpenAI_NavierStokes_Source_Context_Register.md`.
+
 ## References and evidence
 
 1. Charles L. Fefferman, [Existence and Smoothness of the Navier–Stokes

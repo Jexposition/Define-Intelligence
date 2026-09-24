@@ -358,3 +358,17 @@ Evidence: `NavierStokesReview/evidence/selected_moment_transport_closure_2026-09
 
 Evidence: `NavierStokesReview/evidence/correction_moment_transport_audit_2026-09-24.md` and
 `NavierStokesReview/src/completions/SelectedCycleMomentTransport.lean`.
+
+## Temporal patching and source-context lane: 2026-09-24
+
+| ID | Task | Status | Acceptance test |
+|---|---|---:|---|
+| CTR-017-01 | Map `initializedSeries`, finite prefixes, and successor stage families. | [x] | Exact source ledger distinguishes indexed stages from temporal intervals. |
+| CTR-017-02 | Test for a selected temporal derivative jump. | [ ] | A zero-sorry theorem must derive a nonzero derivative mismatch for the selected sum; no such theorem is currently present. |
+| CTR-017-03 | Verify time activation and late jet agreement. | [x] | `TemporalPatchingDiscontinuityProbe.lean` compiles; `timeSwitch` and late derivative theorems are source-linked. |
+| SRC-01 | Reconcile Fefferman's “given external force” wording with C/D existential quantification. | [x] | `OpenAI_NavierStokes_Source_Context_Register.md` records both facts without converting provenance into an unsupported `False`. |
+| SRC-02 | Compare the Euler parent-child time iteration with the Navier--Stokes indexed stage constructor. | [x] | The source register records that the comparison does not transfer a temporal-gluing theorem into the Navier--Stokes code. |
+| SRC-03 | Keep the five-moment and pressure bridges linked to the final witness. | [ ] | Find a selected-field equality for `(M,I,J,S,C_p)` and the absolute pressure semantics, or prove a false mandatory premise. |
+
+Evidence: `NavierStokesReview/evidence/temporal_patching_audit_2026-09-24.md` and
+`docs/OpenAI_NavierStokes_Source_Context_Register.md`.

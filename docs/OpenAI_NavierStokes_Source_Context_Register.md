@@ -1,0 +1,92 @@
+# Source context register
+
+This register keeps the external wording and the repository-level findings in
+the same place. It is a context map for the counter-paper, not a substitute
+for a proof.
+
+## CMI formulation
+
+Fefferman's official problem statement defines the unknown velocity and
+pressure, says that the initial velocity and force are given, externally
+applied data, and imposes incompressibility. It then defines the four
+alternatives. In particular, alternatives C and D are existential statements:
+they ask for a smooth divergence-free initial field and a smooth force for
+which no global physically reasonable solution exists. The same statement also
+requires the force decay estimates (5) or (9), and the solution regularity and
+periodicity conditions in (6)--(11).
+
+Primary source: [Fefferman's official problem statement](https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf), especially pp. 1--2.
+
+The phrase “given, externally applied” supports a serious causal/provenance
+question: a force chosen after a candidate trajectory is constructed is not
+the ordinary forward-data presentation of a Cauchy problem. It does not,
+without an additional formal admissibility predicate, prove that the
+existential C/D proposition is false. The review must keep those two claims
+separate.
+
+## OpenAI's stated construction
+
+The published paper makes the residual strategy explicit. Its introduction
+states a theorem with a smooth compactly supported force and a velocity that is
+smooth for `t < 1`, bounded in kinetic energy, and unbounded in supremum norm
+as `t` approaches one. In its physical-description section it says that for
+an incompressible flow and pressure one can define the external force to be
+the residual, and that the construction must arrange cancellation so the
+residual and all derivatives extend smoothly.
+
+Primary source: [OpenAI's Navier--Stokes paper](https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf), Theorem 1.1 and Sections 2--3. The repository copy is retained as `docs/navier-stokes openai.pdf`.
+
+This wording defeats a weak objection that merely says “the force is
+residual-defined”. The stronger review question is whether the Lean endpoint
+actually proves every advertised bridge: the selected fields, the full
+five-moment quantities, the pressure semantics, the residual limits, and the
+force extension must be the same object under the paper's definitions.
+
+## Five moments and correction constraints
+
+The paper's Appendix A uses five named cumulative radial quantities `(M, I, J,
+S, C_p)` and solves a five-coordinate correction problem. The source audit
+confirms that the repository contains substantive five-moment machinery
+upstream. It also confirms that `FiveRowRank.FiveRows` has two exact zero
+correction-moment rows and three debt-controlled rows. The selected-cycle
+invariant transports two radial moments internally, but the exported `Witness`
+does not expose an equality identifying those moments with the paper's five
+named quantities.
+
+That is the active CTR-005 correspondence objection. It is stronger and more
+precise than claiming that the five-moment machinery is absent or that the
+zero rows automatically freeze kinetic energy.
+
+## Euler paper as a comparison, not a transfer
+
+The companion Euler paper describes a different iterative architecture: smooth
+parent and child Euler solutions are built on nested time intervals, with
+target times increasing to a finite limit. It explicitly describes the child
+becoming the parent at the next stage and controls convergence of initial data
+and gradient growth.
+
+Primary source: [OpenAI's Euler paper](https://cdn.openai.com/pdf/315b36cd-ec98-4023-8342-93345194ece1/euler.pdf), Sections 1--2. The repository copy is retained as `docs/euler.pdf`.
+
+This comparison prevents a category error. The Navier--Stokes Lean files
+inspected for CTR-017 use indexed raw stage families, finite prefix sums, and
+smooth cutoffs. They do not, in the files audited, define a theorem saying
+that the raw stage index is a sequence of temporal Cauchy intervals. The
+Euler paper's parent-child time language therefore cannot be silently used as
+evidence that the Navier--Stokes Lean construction has, or lacks, a temporal
+matching theorem.
+
+## Counter-argument register
+
+| Proposed argument | Source-backed assessment |
+|---|---|
+| “Residual-defined force is automatically illegal.” | Too strong as a literal C/D refutation; OpenAI explicitly presents residual construction, and C/D are existential. Keep it as a causal/provenance objection unless an independence requirement is formalised. |
+| “The first two zero rows freeze total mass and kinetic energy.” | Not established. They constrain correction moments; the source does not identify them with total kinetic energy. |
+| “The indexed stage constructor proves a temporal jump.” | Not established. The constructor has no adjacent-stage matching premise, but the selected summed fields have smoothness theorems. |
+| “Smoothness lemmas alone prove the paper's semantics.” | Not established. Smoothness is conditional evidence; the selected five-moment and absolute pressure transport remain separate obligations. |
+
+## Review rule
+
+The paper should state “not established as claimed” where the selected bridge
+is missing, and “formally refuted” only where a source-linked zero-sorry
+theorem proves a false mandatory premise or derives `False` from the actual
+selected witness.

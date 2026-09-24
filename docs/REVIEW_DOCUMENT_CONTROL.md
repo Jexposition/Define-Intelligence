@@ -412,3 +412,18 @@ records exactly what is proved: the selected residual construction is
 path-dependent under a fixed-force perturbation. A further theorem connecting
 that admissible perturbation or independence requirement to the published C/D
 endpoint is still required for a kernel-level `False` result.
+
+## Temporal-patching control: 2026-09-24
+
+- [x] `GermCandidateAssembly.initializedSeries` is recorded as an indexed
+  selector, not as a temporal piecewise glue.
+- [x] `TimeLocalization` smoothness and late derivative agreement are recorded
+  from the actual source theorems.
+- [ ] A selected-field temporal discontinuity has not been proved. Do not turn
+  the absence of an adjacent-stage matching premise into an endpoint failure.
+- [x] The Euler paper's parent-child time construction is kept separate from
+  the Navier--Stokes Lean stage indexing.
+- [x] External CMI/OpenAI wording is tracked in
+  `docs/OpenAI_NavierStokes_Source_Context_Register.md`.
+
+Evidence: `NavierStokesReview/evidence/temporal_patching_audit_2026-09-24.md`.
