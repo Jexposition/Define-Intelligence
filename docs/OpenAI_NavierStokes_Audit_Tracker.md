@@ -132,7 +132,7 @@ The new `FiveRowsStructureProbe.lean` result narrows the moment objection furthe
 
 | ID | New result | Status | Interpretation |
 | --- | --- | --- | --- |
-| CTR-019 | Direct compilation of `ComparatorChallenges/NavierStokes.lean` emits two `declaration uses sorry` warnings, at its whole-space and periodic challenge theorem declarations. | Confirmed source-tree defect; not on the exported endpoint path | The repository-wide claim “zero admitted gaps in every Lean file” is false. `ComparatorSolution.lean` does not import this challenge module, so the finding does not by itself refute the selected C/D theorem. |
+| CTR-019-SRC | Direct compilation of `ComparatorChallenges/NavierStokes.lean` emits two `declaration uses sorry` warnings, at its whole-space and periodic challenge theorem declarations. | Confirmed source-tree defect; not on the exported endpoint path | The repository-wide claim “zero admitted gaps in every Lean file” is false. `ComparatorSolution.lean` does not import this challenge module, so the finding does not by itself refute the selected C/D theorem. |
 | CTR-020 | `ActualCandidateAssembly.selected_witness` feeds `GluedStageEstimates.actualStageEstimates`, which consumes `ActualCycleResidualBounds.PhysicalData`; `ActualPhysicalPrefixFields.physicalFields_all` derives that data from smoothness, local germs, and exterior equality. | Positive provenance evidence | The R³ endpoint is not a disconnected wrapper. The live adverse lane remains the unproved semantic correspondence among the three moment systems. |
 
 The source-scope correction changes the wording of the paper and peer review: the exported path is standard-axiom-only in the inspected reports, but the repository contains an unused challenge module with admitted theorem bodies. The two claims must not be conflated.
@@ -1093,6 +1093,24 @@ exported C/D witness, and it does not prove that the empty branch is reached.
 The branch remains a reachability target, not a contradiction.
 
 Evidence: `NavierStokesReview/evidence/selected_active_pair_reachability_2026-09-24.md`.
+
+## CTR-019: selected-label inhabitability: 2026-09-24
+
+| Check | Source result | Status |
+|---|---|---:|
+| Primary choice | `ActualPrimary.choice_nonempty` proves a `Choice` record exists, but its `prepared.N` field does not construct a `PrimaryGeometryAssembly.Index` label. | Open |
+| Active-pair reachability | The corrected review theorem constructs the stage label `(0,L)` and uses `BaseChartJets.cellBand L` plus `CommonWindow.self_mem`. | Verified conditionally |
+| Empty branch | `ActualParticularStageControls.raw_jets` contains an explicit `¬ Nonempty (ActivePair B N0)` branch; `ActualInitialMean.covariance_bounds_of_curl` also splits on an empty cycle index. | Verified source branch |
+| Diagonal sum | `LocalScheduleWitness.potentialSum` unfolds to `SolenoidalDiagonal.potentialSum`, a `tsum` over `j : ℕ`, not over `ActivePair`. | Empty-pair vacuity not established |
+
+The selected witness exports no theorem proving `Nonempty (ActualPrimary.Label B N0)` or
+`Nonempty (ActivePair B N0)`. The new zero-sorry probe therefore preserves the
+objection as a reachability obligation, while ruling out the stronger claim that
+an empty active-pair subtype automatically makes the natural-indexed diagonal
+series an empty-set limit.
+
+Evidence: `NavierStokesReview/evidence/selected_label_inhabitability_audit_2026-09-24.md`;
+`NavierStokesReview/src/probes/SelectedLabelInhabitabilityProbe.lean`.
 
 ## External wording and admissibility scope: 2026-09-24
 

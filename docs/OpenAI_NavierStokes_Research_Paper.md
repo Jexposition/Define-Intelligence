@@ -757,6 +757,17 @@ bound and `CommonWindow.self_mem`. It does not prove inhabitance of the
 selected label subtype from the exported witness, so the empty branch remains
 an interface target rather than a vacuity refutation.
 
+The inhabitability sweep narrows this point. `ActualPrimary.choice_nonempty`
+constructs the prepared geometric choice, not a label. Meanwhile,
+`ActualInitialMean.covariance_bounds_of_curl` explicitly handles an empty
+cycle index, and `ActualParticularStageControls.raw_jets` explicitly handles an
+empty active-pair type. These are genuine reachability obligations. They do
+not, however, make the diagonal velocity series vacuous: `LocalScheduleWitness`
+defines `potentialSum` through `SolenoidalDiagonal.potentialSum`, whose actual
+`tsum` is indexed by the natural stage number. The current evidence therefore
+supports a missing selected-label inhabitance theorem, not the stronger claim
+that the selected blow-up is already an empty-set artefact.
+
 These results are source-linked and compiled in the evidence files below. The
 paper's conclusion remains a correspondence-based counter-claim: the public
 paper's five-moment semantics are not yet shown to be the semantics of the
@@ -766,7 +777,8 @@ mandatory endpoint premise or a concrete selected-field contradiction.
 Evidence: `selected_residual_provenance_2026-09-24.md`,
 `selected_rank_transport_reaudit_2026-09-24.md`,
 `whole_space_uniqueness_audit_2026-09-24.md`,
-`selected_active_pair_reachability_2026-09-24.md`.
+`selected_active_pair_reachability_2026-09-24.md`,
+`selected_label_inhabitability_audit_2026-09-24.md`.
 
 ## Appendix B. Global germ transport and endpoint contract
 

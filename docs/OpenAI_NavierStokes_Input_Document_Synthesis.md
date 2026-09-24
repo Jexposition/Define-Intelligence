@@ -443,6 +443,13 @@ four-band threshold and `CommonWindow.self_mem`. The selected endpoint still
 does not export label-subtype inhabitance. This is retained as an interface
 question, not described as a vacuity proof.
 
+The follow-up zero-sorry probe adds an important separation. `LocalScheduleWitness.potentialSum`
+is a `SolenoidalDiagonal.potentialSum` whose `tsum` is indexed by natural
+stage numbers, not by `ActivePair`. Thus an empty active-pair hypothesis leaves
+the output type inhabited and does not, by itself, make the diagonal limit an
+empty-set limit. The unresolved item is specifically the missing theorem that
+the selected primary-label subtype is inhabited.
+
 The CMI force wording is tracked separately from the Lean endpoint. “Given,
 externally applied force” supports the causal interpretation of the review,
 while the formal C/D proposition contains no explicit independence predicate.

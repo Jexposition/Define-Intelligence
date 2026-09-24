@@ -41,6 +41,14 @@ The new zero-sorry `SelectedWitnessInhabitationProbe` also shows that the
 exported witness envelope carries no five-debt payload, so the selected
 five-moment transport remains unverified at the type level.
 
+The separate CTR-019 sweep finds a real but narrower reachability issue. The
+source explicitly tolerates an empty active-pair/index branch, while the
+selected endpoint exports no `Nonempty (ActualPrimary.Label B N0)` theorem.
+The diagonal `potentialSum` is nevertheless a natural-indexed `tsum`, so this
+observation does not prove that the selected velocity is an empty-set limit.
+The verdict remains `NOT ESTABLISHED`, with selected-label inhabitance open and
+selected-path vacuity unproved.
+
 ## 2 Blow-Up Mechanism (Audit of `PeriodicSobolev.lean`)
 
 A deep dive into `PeriodicSobolev.lean` reveals exactly how the codebase sidesteps the LPS regularity firewalls. The authors do not accidentally trap themselves in an LPS-compliant bounded space. 

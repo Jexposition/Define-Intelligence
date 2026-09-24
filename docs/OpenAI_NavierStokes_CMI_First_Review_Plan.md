@@ -464,7 +464,7 @@ Evidence: `NavierStokesReview/evidence/whole_space_uniqueness_audit_2026-09-24.m
 | Selected rank path | [x] | The actual cycle consumes rank/debt data; the two local radial invariants are compiled in `SelectedCycleMomentTransport.lean`. |
 | Endpoint transport | [ ] | `Witness` exposes no equality to the five paper moments or to `FiveRowRank.FiveRows`; a concrete selected-field violation remains to be proved. |
 | Whole-space audit | [x] | The comparison/uniqueness chain and standard-axiom report are recorded. |
-| Release packaging | [x]/[~] | `700e39d` is pushed; newer control commit `eff4d0f` is local pending GitHub authentication. No tracked Lean build artefacts exist. Two supplied PDFs remain intentionally untracked. |
+| Release packaging | [x]/[~] | `700e39d` is the last confirmed remote baseline; local review work through `20ea5ec` is not confirmed pushed because GitHub authentication is unavailable. No tracked Lean build artefacts exist. Two supplied PDFs remain intentionally untracked. |
 
 The active route is therefore the selected-field transport theorem, not the
 discarded claims that the five-moment branch is dead code, that the first two
@@ -482,6 +482,18 @@ trivialises the candidate.
 | Preserve CMI wording distinction | [x] | Causal/provenance criticism separated from literal C/D hypotheses. |
 
 Evidence: `NavierStokesReview/evidence/selected_active_pair_reachability_2026-09-24.md`.
+
+### CTR-019 selected-label inhabitability sweep
+
+| Task | Status | Acceptance condition |
+|---|---:|---|
+| Recheck the active/nonempty source split | [x] | `raw_jets` and `ActualInitialMean.covariance_bounds_of_curl` both expose explicit empty branches. |
+| Repair and compile the reachability theorem | [x] | Stage label `(0,L)` is used at the `ActivePair` boundary; audit and probe compile without admitted declarations. |
+| Prove selected label inhabitance | [ ] | Find a source theorem constructing `Nonempty (ActualPrimary.Label B N0)`, or prove the selected endpoint reaches a false premise if it does not. |
+| Test diagonal-sum vacuity | [x] | `potentialSum` is shown to be a total natural-indexed `tsum`; empty `ActivePair` does not imply an empty-set limit. |
+| Update the verdict only from selected-path evidence | [x] | Keep CTR-019 as an unresolved reachability objection, not a formal refutation. |
+
+Evidence: `NavierStokesReview/evidence/selected_label_inhabitability_audit_2026-09-24.md`.
 
 ## Global germ-transport validity audit (CTR-016)
 

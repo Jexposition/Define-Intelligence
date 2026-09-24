@@ -925,7 +925,17 @@ the label subtype. Until that theorem is constructed or its negation is
 proved, the empty branch is a source-level reachability question rather than
 a formal refutation.
 
-Evidence: [`selected_active_pair_reachability_2026-09-24.md`](../NavierStokesReview/evidence/selected_active_pair_reachability_2026-09-24.md).
+The follow-up probe makes the boundary precise. `potentialSum` is defined as a
+natural-indexed `tsum` of stage fields, so an assumed empty `ActivePair` does
+not turn the diagonal series into a limit over an empty subtype. The missing
+result is narrower and still material: the selected endpoint does not export
+`Nonempty (ActualPrimary.Label B N0)` or `Nonempty (ActivePair B N0)`, while
+upstream estimates explicitly tolerate an empty index. This is an unresolved
+selected-path inhabitability obligation, not evidence that the selected
+velocity is already vacuous.
+
+Evidence: [`selected_active_pair_reachability_2026-09-24.md`](../NavierStokesReview/evidence/selected_active_pair_reachability_2026-09-24.md);
+[`selected_label_inhabitability_audit_2026-09-24.md`](../NavierStokesReview/evidence/selected_label_inhabitability_audit_2026-09-24.md).
 
 ## CMI wording and formal admissibility
 

@@ -2,8 +2,10 @@
 
 ## Result
 
-`NavierStokesReview/src/audit/SelectedActivePairReachability.lean` compiles
-without `sorry`, `axiom`, or `unsafe` declarations. It proves that every
+`NavierStokesReview/src/audit/SelectedActivePairReachability.lean` now compiles
+against the current source tree without `sorry`, `axiom`, or `unsafe`
+declarations. Its corrected constructor uses the stage label `(0, L)` required
+by `ActivePair`; it proves that every
 concrete `ActualPrimary.Label B N0` supplies an inhabited
 `ActualParticularStageControls.ActivePair B N0`.
 
@@ -47,4 +49,3 @@ The empty-`ActivePair` branch is a real source branch, but it is not a proved
 selected-witness contradiction. The audit therefore closes only the claim
 that this branch can be treated as evidence of vacuous selected execution
 without first proving that the selected label type is empty.
-

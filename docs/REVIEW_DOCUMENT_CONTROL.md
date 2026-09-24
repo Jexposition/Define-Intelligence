@@ -573,6 +573,17 @@ does not prove selected-label inhabitance from the exported witness.
 
 Evidence: `NavierStokesReview/evidence/selected_active_pair_reachability_2026-09-24.md`.
 
+The follow-up inhabitability probe is now the active CTR-019 record. It
+corrects the stage-label construction in the review-side reachability theorem
+and compiles both that theorem and
+`NavierStokesReview/src/probes/SelectedLabelInhabitabilityProbe.lean` without
+admitted declarations. The probe confirms that `potentialSum` is a total
+natural-indexed `tsum`; an assumed empty `ActivePair` does not by itself create
+an empty-set limit. The selected-label inhabitance theorem is still missing,
+so the empty branch remains an unresolved selected-path obligation.
+
+Evidence: `NavierStokesReview/evidence/selected_label_inhabitability_audit_2026-09-24.md`.
+
 ## CTR-016 control entry: 2026-09-24
 
 `CandidateConsequences.mixed_exists_force_with_consequences` and the concrete

@@ -173,6 +173,13 @@ This is not evidence that the selected physical rank stage lacks a row solve. `L
 
 The positive branch uses `exists_surjective_nat (ActivePair B N0)` and an explicit reindexing. This audit removes a tempting but invalid claim that the source uses `False.elim` to prove arbitrary estimates on a nonempty physical patch. It does not yet prove that the selected active subtype is inhabited, so the endpoint-level reachability of the empty branch remains a live but narrower question.
 
+The selected-label follow-up preserves that distinction. The review-side probe
+compiles a conditional active-pair construction and the empty-patch mechanism,
+but it also unfolds `LocalScheduleWitness.potentialSum` to a `tsum` indexed by
+natural stage numbers. An empty `ActivePair` therefore does not make the
+diagonal series an empty-set limit. The unresolved axiom/interface question is
+the missing selected-label inhabitance theorem itself.
+
 ## 11. Import graph versus semantic bridge
 
 The import edge from `MeanRankUpdate.lean` to `FiveProfileMoments.lean` does not itself transport any proposition or data. A source census of `MeanRankUpdate.lean` finds its operative definitions in `FiveRowRank`: `Debt` is abbreviated to `FiveRowRank.Debt`, the rows are `FiveRowRank.FiveRows`, and `scaleDebt` has three coordinates. No theorem in that file invokes a `FiveProfileMoments` declaration. The ledger therefore records the edge as library availability, not as evidence of a nominal-to-physical moment correspondence.
