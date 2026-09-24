@@ -2516,6 +2516,15 @@
 
 ## Review-corpus control
 
+The active authority map for the CMI-first review is
+[`REVIEW_DOCUMENT_CONTROL.md`](REVIEW_DOCUMENT_CONTROL.md). The current
+load-bearing objection is `CTR-005`: no selected-path theorem has been found
+that transports the paper's five moments into the selected velocity, pressure,
+residual, and force endpoint. The zero-sorry result
+`interface_does_not_determine_five_debt` strengthens that interface finding,
+but does not by itself refute `selected_witness`. Pure-axial collapse and
+compact-pressure trivialisation are not active conclusions.
+
 The active review documents live in this fork's `docs/` directory. Start with
 [`REVIEW_DOCUMENT_CONTROL.md`](REVIEW_DOCUMENT_CONTROL.md), then use
 `OpenAI_NavierStokes_CMI_First_Review_Plan.md` for tasks,

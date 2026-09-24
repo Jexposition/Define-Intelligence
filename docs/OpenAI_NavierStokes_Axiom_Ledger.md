@@ -438,6 +438,20 @@ transport gap, not proof that the residual limits are false.
 **Status:** **selected-path moment transport unestablished; no formal
 contradiction obtained**.
 
+## AX-033: generic stage estimates carry no five-debt equality
+
+**Probe:** `NavierStokesReview/src/probes/StageEstimatesMomentBlindnessProbe.lean`.
+
+The zero-sorry theorem `interface_does_not_determine_five_debt` shows that the
+`StageEstimates` type alone cannot determine a value of
+`PositiveOrderMoments.Debt`. This is not an extra axiom and does not alter the
+official endpoint. It records the exact information missing from the generic
+interface: a theorem identifying the actual selected-field integrals with the
+five moments in the paper.
+
+**Status:** **confirmed interface obstruction; no selected-witness
+contradiction yet**.
+
 ## AX-032: chart identity excludes the singular axis
 
 **Source:** `NavierStokes/PhysicalResidualJetBounds.lean:885-966`;

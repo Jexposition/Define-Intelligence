@@ -17,7 +17,7 @@ I executed a strict symbol dependency and import trace between the axisymmetric 
 **Analysis:** 
 `heatPotential` (Line 217 of `TailGaugePotential.lean`) strictly activates only `coordinateVector 2` (the axial $z$-component, so $u_r = 0, u_\theta = 0$).
 * **The Convective Transport:** In cylindrical coordinates, the non-linear convective interaction terms for the radial and angular momentum equations depend heavily on $u_\theta^2/r$ (centrifugal force) and $u_r u_\theta / r$ (Coriolis force). 
-* **The Vanishing Act:** Because the gauge anchors the baseline state to be purely axial ($u_z$) in the critical exterior, these terms ($u_r$ and $u_\theta$) are structurally clamped to zero. 
+* **Scope correction:** The gauge anchor fixes a radial reference value; it does not prove that the selected field is globally purely axial or that $u_r$ and $u_\theta$ vanish everywhere. Any claim of global component collapse requires a separate theorem about the selected field.
 * **Verdict:** The displayed `heatPotential` component is a specialised
   auxiliary field. It does not establish that the assembled velocity is purely
   axial or that the selected Navier–Stokes residual loses its cross-component

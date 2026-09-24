@@ -303,3 +303,10 @@ confirmed interface failure, not yet a contradiction to the selected endpoint,
 which supplies additional physical-data and origin-growth premises.
 
 Evidence: `NavierStokesReview/evidence/stage_estimates_moment_blindness_2026-09-24.md`.
+
+The companion theorem `interface_does_not_determine_five_debt` makes the
+scope precise: the generic stage-rate record cannot determine an arbitrary
+five-coordinate debt. This is stronger than a missing-name search, but it is
+still not a contradiction to the selected witness, which adds concrete
+construction premises. The required next result is a field-level transport
+theorem, or a zero-sorry contradiction using those concrete premises.

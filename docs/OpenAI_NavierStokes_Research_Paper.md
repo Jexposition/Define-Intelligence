@@ -363,6 +363,24 @@ endpoint.
 
 Evidence: `NavierStokesReview/evidence/pressure_recovery_chain_audit_2026-09-24.md`.
 
+## Five-moment transport remains the decisive test
+
+The repository contains genuine five-coordinate moment machinery and a
+separate three-coordinate rank engine. The existing promotion map is an
+algebraic construction, not a proof that the selected velocity and pressure
+fields realise the paper's five cumulative integrals. A zero-sorry theorem,
+`interface_does_not_determine_five_debt`, proves that the generic
+`StageEstimates` contract cannot determine an arbitrary five-coordinate debt.
+Consequently, the selected endpoint requires an additional field-level
+transport theorem linking `(M,I,J,S,C_p)` to the selected stages, pressure
+germ, residual jets, and origin estimate.
+
+This result sharpens the paper-to-code objection without overstating it. It
+does not derive a contradiction to `selected_witness`, because the selected
+construction supplies additional premises. The formal disproof target remains
+an actual zero-sorry contradiction between those premises, the selected
+residual limits, and the origin blow-up.
+
 ## Editorial control
 
 This paper is the active explanatory account of the review. The fork document

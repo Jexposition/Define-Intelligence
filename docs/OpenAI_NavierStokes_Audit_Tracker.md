@@ -438,6 +438,18 @@ unestablished.
 
 Evidence: `NavierStokesReview/evidence/stage_estimates_moment_blindness_2026-09-24.md`.
 
+## CTR-039: the generic stage contract does not determine five debt
+
+`StageEstimatesMomentBlindnessProbe.interface_does_not_determine_five_debt`
+is a zero-sorry theorem showing that the generic stage record cannot determine
+an arbitrary `PositiveOrderMoments.Debt`. This formally strengthens CTR-005:
+the rate interface carries no five-coordinate payload. It remains an
+interface-level result. The selected endpoint can still supply additional
+field-level premises, so this theorem alone does not derive `False` from
+`selected_witness`.
+
+**Status:** confirmed interface obstruction; selected-path contradiction open.
+
 ## Pressure-chain verification: 2026-09-24
 
 The requested pressure-trivialisation proof was attempted against the actual

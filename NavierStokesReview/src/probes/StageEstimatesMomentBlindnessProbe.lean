@@ -152,4 +152,22 @@ theorem interface_does_not_encode_blowup :
   have : (1 : ℝ) < 0 := by simpa using hlarge
   linarith
 
+/-- The stage-rate record does not determine a five-coordinate debt payload.
+
+This is the exact formal limit of the interface countermodel.  It does not
+assert that the selected physical construction has an arbitrary debt; it
+shows that no theorem may infer the paper's five-coordinate payload from a
+`StageEstimates` value alone.  A selected-path transport theorem must add
+field-level moment hypotheses or prove the relevant integral identities. -/
+theorem interface_does_not_determine_five_debt :
+    ¬ (∀ (_E : StageEstimates (1 / 4 : ℝ) 1 zeroVelocityStages zeroVelocityStages
+        zeroPressureStages),
+        ∀ d : PositiveOrderMoments.Debt, d = 0) := by
+  intro h
+  obtain ⟨E0⟩ := zero_stage_estimates
+  let d : PositiveOrderMoments.Debt := fun _ => 1
+  have hd : d = 0 := h E0 d
+  have hd0 := congrFun hd (0 : Fin 5)
+  norm_num [d] at hd0
+
 end NavierStokesReview.StageEstimatesMomentBlindnessProbe

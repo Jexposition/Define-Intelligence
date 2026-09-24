@@ -60,3 +60,34 @@ located.
 **Confirmed interface-level failure; not a complete selected-endpoint
 refutation.** The paper's physical moment claim is not established by the
 generic stage-estimate interface.
+
+## Five-debt non-determination theorem
+
+The same probe now contains the zero-sorry theorem
+`interface_does_not_determine_five_debt`. It proves
+
+```text
+¬ (∀ E : StageEstimates ..., ∀ d : PositiveOrderMoments.Debt, d = 0)
+```
+
+by instantiating the generic interface with the zero-stage witness and then
+choosing the constant-one five-coordinate debt. The theorem is deliberately
+about the information content of `StageEstimates`; it does not claim that the
+selected physical construction has constant-one debt. Its consequence is
+that a selected-path transport theorem must add field-level moment equations
+or derive them from the actual selected fields. The promotion map in the
+separate five-row probe is algebraically valid, but it is not that transport
+theorem.
+
+**Disposition:** confirmed interface obstruction; selected-witness
+contradiction still open.
+
+## Reproducibility run
+
+On 2026-09-24 the pinned Lean command
+`elan run leanprover/lean4:v4.34.0-rc2 lake env lean` was run against this
+probe and the four companion probes for the five-row bridge, axis scope,
+pressure premises, and base-profile asymptotics. All five invocations exited
+successfully with no errors or `sorry` diagnostics. The stage probe retains
+only existing linter warnings about unused simplification arguments; these do
+not affect the theorem result.

@@ -130,6 +130,13 @@ Every active claim must point to at least one of:
 Compilation is evidence that Lean accepted a term. It is not, by itself,
 evidence that the term has the intended Navier–Stokes semantics.
 
+The new zero-sorry theorem
+`StageEstimatesMomentBlindnessProbe.interface_does_not_determine_five_debt`
+is controlled as an interface result. It confirms that the generic stage-rate
+record cannot determine the paper's five-coordinate debt, but it does not by
+itself refute the selected witness. The selected-path transport theorem and
+the residual/origin contradiction remain open.
+
 ## Final authority-map verification: 2026-09-24
 
 - [x] `CTR-005` remains the headline, load-bearing finding in the tracker:

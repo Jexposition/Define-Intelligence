@@ -235,6 +235,7 @@ Evidence: `NavierStokesReview/evidence/stage_estimates_moment_blindness_2026-09-
 |---|---|---:|---|
 | CTR-037 | Generic `StageEstimates` encodes physical blow-up | [x] | Zero-sorry zero-field countermodel; interface is insufficient. |
 | CTR-038 | Selected five-moment transport into residual endpoint | [ ] | Locate a theorem linking `(M,I,J,S,C_p)` to selected fields, `chartIdentity`, and `VanishingJointJets`, or prove a contradiction from its premises. |
+| CTR-039 | Generic stage interface determines the paper's five-debt payload | [x] | `interface_does_not_determine_five_debt` is a zero-sorry countertheorem: `StageEstimates` alone cannot determine an arbitrary `PositiveOrderMoments.Debt`. This is an interface obstruction, not yet a selected-witness refutation. |
 | PRS-08 | Compact pressure support forces trivialisation | [x] (route rejected) | Generic implication formally disproved; this does not validate the selected pressure semantics. |
 | PRS-09 | Selected pressure has the paper's global semantics | [~] | The comparison interface has no absolute pressure-Poisson premise; selected local `pressure_germ` and `base_equation` still need to be connected to a global pressure theorem. |
 | PRS-10 | Pressure comparison chain was over-cleared | [x] | Corrected: the chain is real for differences and flux bounds, but cannot be cited as an absolute selected-pressure verification. |
@@ -242,3 +243,14 @@ Evidence: `NavierStokesReview/evidence/stage_estimates_moment_blindness_2026-09-
 Evidence: `NavierStokesReview/evidence/pressure_recovery_chain_audit_2026-09-24.md`,
 `NavierStokesReview/evidence/physical_transport_bridge_spec_extraction_2026-09-24.md`,
 and `NavierStokesReview/src/probes/PressureRecoveryAbsolutePremiseProbe.lean`.
+
+## 5D target and contradiction lane
+
+| ID | Task | Status | Acceptance test |
+|---|---|---:|---|
+| 5D-01 | Extract literal `PositiveOrderMoments` rows, integrals, and repair lemmas | [x] | `physical_transport_bridge_spec_extraction_2026-09-24.md` records `rowDensity`, `positiveIntegral`, `moments`, `moments_repair`, and `exists_smooth_exact_repair`. |
+| 5D-02 | Extract the runtime three-debt update and five-row promotion | [x] | Record `FiveRowRank.Debt`, `scaleDebt`, `FiveRows`, and the existing promotion `(0,0,-P,-Jθ,-Jz)` with source anchors. |
+| 5D-03 | Prove generic interface non-determination | [x] | `StageEstimatesMomentBlindnessProbe.interface_does_not_determine_five_debt` compiles without `sorry`. |
+| 5D-04 | Transport the five moments into the selected endpoint | [ ] | A theorem must identify the actual selected fields' integrals with the five named rows and connect them to `chartIdentity`, `pressure_germ`, and `VanishingJointJets`. |
+| 5D-05 | Derive contradiction from selected residual limits and origin blow-up | [ ] | A zero-sorry theorem must derive `False` from the selected witness, not from a weaker generic interface. |
+| PRS-11 | Pressure absolute-semantics check | [ ] | Show either a selected-field Poisson/Leray identity contradicts compact support, or document that the pressure route remains conditional and cannot yield `False`. |

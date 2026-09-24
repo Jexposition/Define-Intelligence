@@ -385,6 +385,25 @@ contract.
 
 Evidence: `NavierStokesReview/evidence/state_realization_axis_scope_audit_2026-09-24.md`.
 
+## Finding 23: the rate interface cannot carry the paper's five debt
+
+The formal review now contains a second zero-sorry result beside the
+zero-stage countermodel. `StageEstimatesMomentBlindnessProbe` proves
+`interface_does_not_determine_five_debt`: the generic rate record cannot
+determine an arbitrary `PositiveOrderMoments.Debt`. This closes a precise
+interface question. The paper's five quantities cannot be treated as present
+merely because the selected construction imports five-moment modules or
+because a three-coordinate debt can be promoted algebraically.
+
+The result does not prove that the selected endpoint has the wrong moments.
+It identifies the missing load-bearing theorem: the actual selected velocity,
+pressure, and residual must be shown to realise the five named integrals and
+to preserve them through the selected schedule. Until that theorem or a
+contradiction from its concrete premises is supplied, the correct verdict is
+**formal correspondence failure not yet converted into a formal refutation**.
+
+Evidence: `NavierStokesReview/evidence/stage_estimates_moment_blindness_2026-09-24.md`.
+
 ## Editorial control
 
 This is the active human-readable review. Its evidence boundary and the status
