@@ -159,6 +159,42 @@ The same audit found that the spatial localisation is curl-based and accompanied
 
 This finding does not certify the underlying analysis outside Lean. It does establish the correct review boundary: the remaining correspondence criticism concerns whether the formal symbols are adequately identified with the paper's named moments and physical interpretation, not whether the selected endpoint simply assumes its own conclusion.
 
+## Finding 12: the selected-witness falsification lane remains open
+
+The earlier pressure discussion was too willing to treat a failed
+trivialisation probe as a cleared hypothesis. That is corrected here. The R3
+`CandidateProperties` record requires compact pressure support and a residual
+identity, but it does not expose a global pressure-Poisson/Leray equation. The
+force can therefore absorb the pressure gradient at the record level. This is
+an unresolved semantic attack: the review must add the global elliptic premise
+and test it against the selected pressure and velocity before deciding the
+support/topology contradiction.
+
+The force-jet attack remains equally active. `force_smooth` consumes a family
+of residual-limit premises `hlim`; it does not derive those premises from the
+velocity blow-up. The required proof is a selected-field lower bound showing
+that the residual derivatives cannot have the endpoint jets used by the
+gluing theorem.
+
+Finally, `SelectedWitnessInhabitationProbe.lean` gives a zero-sorry
+type-level countermodel: the inhabited `Witness` envelope can be paired with
+an arbitrary nonzero five-debt payload because no such payload occurs in the
+type. This proves that the envelope does not certify five-moment transport. It
+does not yet prove the actual selected fields violate the moments, so the next
+step is to add the missing field-level equality and attack it directly.
+
+
+## Selected-path transport boundary
+
+`ActualCandidateAssembly.Witness` packages the stage schedule, residual force,
+periodic `CandidateProperties`, and endpoint consequences. The R3 theorem then
+passes that package through `R3/ActualCandidate.of_localized_fields`. None of
+these interfaces consumes an equality between the selected fields and
+`PositiveOrderMoments.moments` or `FiveRowRank.FiveRows`. This is a load-bearing
+transport omission, not yet a proof that the concrete fields fail those
+moments. The active falsification task is to use the actual selected residual,
+pressure, and origin data to derive `False`, rather than to treat a generic
+type-level countermodel as field-level evidence.
 
 ## Finding 10: selected aliases are not admitted proofs
 
@@ -411,3 +447,59 @@ of older notes are defined in [`REVIEW_DOCUMENT_CONTROL.md`](REVIEW_DOCUMENT_CON
 It is intentionally not a chronological audit log: claims are stated with
 their present status and linked evidence, while unresolved objections remain
 explicitly unresolved.
+
+## Finding 24: the five-moment machinery is live upstream, but its selected-endpoint transport is not shown
+
+The review withdraws the stronger claim that the five-moment branch is dead or
+disconnected. `GlobalStressSupport.moments_zero` is used by
+`EntranceAlignedBase.aligned_moments_zero`; the modulated construction derives
+finite residual identities, and `FinalSlowBase` exports those identities for the
+same profile that supplies the base origin blow-up. The zero-sorry
+`SelectedBaseMomentCompatibilityProbe` verifies this chain directly.
+
+That correction does not remove CTR-005. The selected endpoint accepts generic
+`StageEstimates` and local `PhysicalFields`/germ data. Those interfaces do not
+state that the final mixed sums equal the repaired five rows or the paper's
+`(M,I,J,S,C_p)`. No theorem carrying that equality into the selected residual,
+pressure, force, and `VanishingJointJets` premises was found in the inspected
+path. The correct criticism is therefore a missing selected-mixed-sum transport
+theorem, not a nonexistent upstream repair subsystem.
+
+**Status:** material correspondence failure; no zero-sorry `False` theorem yet.
+
+Evidence: `NavierStokesReview/evidence/selected_base_moment_chain_reaudit_2026-09-24.md`.
+
+## Finding 25: the force-jet attack now has a precise missing theorem
+
+The new zero-sorry probe `SelectedResidualLowerBoundObstructionProbe.lean`
+proves the exact conditional contradiction: if the selected origin residual
+satisfies a fixed positive lower bound
+
+$$c\lVert u(t,0)\rVert \leq \lVert\mathcal R(u,p)(t,0)\rVert,$$
+
+then the residual's vanishing endpoint jets and the origin velocity blow-up
+derive `False`. The probe also proves the one-sided residual norm limit from
+`VanishingJointJets` on the actual non-bottom endpoint filter.
+
+The selected source currently exposes upper residual `JetRate` bounds and local
+chart identities, not this positive lower bound. Therefore this work sharpens
+the live falsification target but does not declare the selected witness safe or
+refuted. The next proof must derive the lower bound from the actual selected
+five-moment/PDE coupling, or identify a different concrete contradiction.
+
+## Finding 26: the selected-witness falsification boundary is still open
+
+The direct attacks have been tested against the production path. The force
+attack has a formal conditional contradiction, but no selected-field lower
+bound has been proved. The pressure attack identifies the absence of a global
+Poisson/Leray premise, but compact support alone does not imply triviality.
+The moment-blindness probe shows that the exported witness envelope does not
+carry the paper's five-debt payload, but it does not prove a wrong moment for
+the concrete selected sums.
+
+These are not clearances. They are the exact remaining proof obligations for
+turning the architectural objections into a zero-sorry `False` theorem.
+The current review verdict remains **not established**, with a live formal
+falsification programme and no completed selected-witness contradiction.
+
+Evidence: `NavierStokesReview/evidence/selected_witness_boundary_attack_status_2026-09-24.md`.

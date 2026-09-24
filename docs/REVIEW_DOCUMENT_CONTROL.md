@@ -38,11 +38,12 @@ The tracker names **CTR-005**, the missing selected-path transport of the
 paper's `(M, I, J, S, C_p)` data and force, as the headline load-bearing
 objection. The pure-axial/pure-swirl collapse hypothesis is explicitly marked
 as a cleared and rejected attack surface in the tracker and in the supporting
-solenoidal ledger. The pressure-trivialisation route is rejected only in its
-narrow form: compact support alone does not imply a zero pressure slice. The
-comparison-interface probe leaves a separate live objection because the
-recovery chain is comparative and does not, by its type, establish an
-absolute global Poisson representative for the selected pressure.
+solenoidal ledger. The pressure-trivialisation route remains open: compact
+support alone is not the contradiction, and the missing global Poisson/Leray
+premise must be formalised for the selected fields. The comparison-interface
+probe leaves a live objection because the recovery chain is comparative and
+does not, by its type, establish an absolute global Poisson representative for
+the selected pressure.
 
 The six core documents above are synchronised to that authority map. The
 pressure result is sourced to
@@ -119,6 +120,13 @@ solenoidal-collapse note is retained only as a rejected hypothesis.
 Any future “refuted” or “definitive failure” label requires a source-backed
 counterexample or a zero-sorry Lean theorem closing the relevant contradiction.
 
+The selected-witness attack is not cleared by a weak interface test. The new
+`SelectedWitnessInhabitationProbe` proves that the exported `Witness` type can
+coexist with an arbitrary nonzero five-debt payload because the type contains
+no field-level debt equality. This keeps the five-moment falsification lane
+active; it does not yet prove that the actual selected fields violate the
+moments.
+
 ## Evidence entry rule
 
 Every active claim must point to at least one of:
@@ -159,6 +167,28 @@ the residual/origin contradiction remain open.
   `PositiveOrderMoments` through the physical-prefix/profile chain. The open
   issue is semantic transport into the residual endpoint, not dead code or
   total import separation.
-- [x] The branch has no tracked `.olean` or `.lake` files, and the working
-  tree is clean after packaging. Ignored local build output is not part of the
-  review release.
+- [~] The branch has no tracked `.olean` or `.lake` files. The current working
+  tree is intentionally dirty while the 2026-09-24 attack ledger and probes
+  are being packaged; final clean-status validation remains pending.
+
+## Upstream moment-chain correction
+
+The five-moment repair identities are live in the upstream aligned and
+modulated construction. `SelectedBaseMomentCompatibilityProbe.lean` verifies
+the moment identity, finite residual identity, and base blow-up without
+`sorry`. The controlled objection is therefore narrower: the selected mixed
+endpoint still lacks an exhibited theorem transporting those identities into
+the actual residual, pressure, force, and `VanishingJointJets` data. This
+correction supersedes any wording that calls the entire five-moment branch dead
+or disconnected.
+
+## Selected-witness attack control: 2026-09-24
+
+The active force attack is the conditional lower-bound theorem in
+`SelectedResidualLowerBoundObstructionProbe.lean`. The pressure attack is
+limited to the missing selected global Poisson/Leray transport; compact support
+alone is not recorded as a contradiction. The moment-blindness probe is an
+interface countermodel only. These routes remain active until a zero-sorry
+`False` theorem is derived from the actual selected witness.
+
+Evidence: `NavierStokesReview/evidence/selected_witness_boundary_attack_status_2026-09-24.md`.

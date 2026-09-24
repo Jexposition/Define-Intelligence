@@ -390,7 +390,9 @@ comparison theorems with equal-residual, smoothness, divergence, and energy
 hypotheses. The zero-sorry probe proves compact support alone does not imply a
 scalar field is zero.
 
-**Status:** **generic pressure-trivialisation objection disproved; selected comparison instantiation confirmed, absolute selected-pressure semantics still open**.
+**Status:** **pressure attack remains open; compact-support-only implication is unproved, comparison instantiation is confirmed, and absolute selected-pressure semantics remain unresolved**.
+
+The failed compact-support-only implication is not a clearance of the pressure objection.  The comparison lemmas prove identities under explicit comparison hypotheses; they do not supply a global pressure-Poisson or Leray-projection identity for the selected fields.  The selected whole-space envelope can therefore absorb the pressure-gradient residual into its prescribed force.  A valid refutation still requires a theorem about the selected fields themselves, not merely the support predicate.
 
 This status is deliberately limited. It confirms only that the comparison
 wrapper is present; it does not confirm the paper's global pressure semantics.
@@ -489,3 +491,35 @@ interface, not an additional assumption used by the official endpoint.
 
 **Status:** **confirmed interface-level countermodel; selected endpoint not
 formally refuted by this probe alone**.
+
+## AX-033: upstream five-moment construction is live, endpoint transport remains unexposed
+
+**Source:** `NavierStokes/GlobalStressSupport.lean:144-180`;
+`NavierStokes/EntranceAlignedBase.lean:666-697,871-874`;
+`NavierStokes/FinalSlowBase.lean:107-109,356-382`;
+`NavierStokesReview/src/probes/SelectedBaseMomentCompatibilityProbe.lean`.
+
+The aligned and modulated construction proves the five positive-order moment
+identities, derives conservative flux identities, exports finite residual
+identities, and proves base origin blow-up. Therefore the claim that the entire
+five-moment branch is dead is false. The selected endpoint still lacks an
+exhibited theorem transporting those identities to the final mixed velocity,
+pressure, residual, and force fields consumed by `selected_witness`.
+
+**Status:** upstream chain confirmed; selected-mixed-sum transport unresolved.
+
+## AX-034: selected residual lower-bound obstruction
+
+**Source:** `NavierStokesReview/src/probes/SelectedResidualLowerBoundObstructionProbe.lean`;
+`NavierStokes/CandidateFromLimits.lean:39-41,80-87`;
+`NavierStokes/FinalSlowBase.lean:330-382`.
+
+The zero-sorry probe proves that the selected origin velocity blow-up and
+vanishing residual jets are inconsistent with any eventual fixed positive
+lower bound from velocity norm to residual norm. The production source exposes
+upper `JetRate` bounds and an explicit flat-error cancellation, but no such
+lower bound. This is an unresolved load-bearing falsification target, not a
+proof that the selected witness is consistent.
+
+**Status:** conditional contradiction proved; selected lower-bound premise not
+located.

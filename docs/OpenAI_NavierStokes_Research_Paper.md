@@ -4,7 +4,7 @@
 
 This paper reports an independent formal review of the public Lean development associated with OpenAI's claim of finite-time breakdown for the three-dimensional incompressible Navier–Stokes equations. The review asks a narrower question than whether the repository compiles: does the exported formal theorem establish the mathematical construction described in the accompanying paper, and does that construction meet the exact alternatives in Charles Fefferman's Clay Mathematics Institute problem statement?
 
-The current evidence gives a mixed result. The repository contains a genuine whole-space endpoint with the quantifier shape of a forced CMI alternative, and the inspected endpoint depends only on Lean's standard foundational axioms. The uniqueness and comparator chain is not a superficial compilation artefact. However, the paper's five-coordinate moment narrative is not directly identified with the repository's `FiveRowRank` system: the two systems have different debt dimensions and incompatible row exponents. The repository also contains a separate five-dimensional `PositiveOrderMoments` repair theorem, but no inspected endpoint theorem establishes the required identification between that layer, the paper's `(M,I,J,S,Cp)` coordinates, and the exported candidate. The appropriate conclusion is therefore **major revision: the claimed paper-to-code correspondence is not established**. A formal contradiction to the exported endpoint has not yet been derived.
+The current evidence gives a mixed result. The repository contains a whole-space endpoint with the quantifier shape of a forced CMI alternative, and the inspected headline declarations depend only on Lean's standard foundational axioms. The uniqueness and comparator chain is not a superficial compilation artefact. The five-moment repair is also live upstream: `PositiveOrderMoments` and `GlobalStressSupport` prove genuine five-row identities for the constructed base profile. The unresolved issue is endpoint transport. No inspected theorem identifies those upstream identities with the final mixed velocity, pressure, residual, force, and the paper's `(M,I,J,S,C_p)` tuple consumed by `selected_witness`. The appropriate conclusion is therefore **major revision: the claimed paper-to-code correspondence is not established**. A formal contradiction to the exported endpoint has not yet been derived.
 
 ## 1. Question and standard
 
@@ -46,20 +46,33 @@ The inspected chain in `WholeSpaceUniqueness.lean`, `PressureFlux.lean`, and `Wh
 
 This does not prove every analytic estimate in the construction is correct. It does rule out the simpler accusation that the final contradiction is merely an unguarded boundedness assertion or an implicit use of an admitted global competitor estimate.
 
-### 4.3 The paper's five-moment system is not directly identified with `FiveRowRank`
+### 4.3 The five-moment repair is live upstream, but selected transport is not shown
 
-The paper describes five cumulative profile quantities `(M, I, J, S, Cp)` and a five-parameter local repair. The repository's `FiveRowRank.lean` instead defines a three-dimensional debt, with three angular powers and two axial powers. Its first two rows are fixed zero-moment conditions, while the remaining rows act on a three-coordinate defect.
+The earlier draft overstated the dimensional mismatch. `FiveRowRank` has a
+three-coordinate debt, but `PositiveOrderMoments` contains a genuine
+five-coordinate integral repair. `GlobalStressSupport.moments_zero` is used by
+the aligned construction, and the same upstream chain reaches the finite
+residual identities and the base origin blow-up. The zero-sorry
+`SelectedBaseMomentCompatibilityProbe.lean` confirms those facts.
 
-The zero-sorry probe `MomentBridgeObstructionProbe.lean` proves two exact facts:
+The remaining load-bearing issue is narrower. The selected mixed endpoint is
+assembled through generic `StageEstimates`, `PhysicalFields`, local germs, and
+`StateRealization.chartIdentity`. Those exported interfaces do not state that
+the final selected velocity and pressure realise the paper's `(M,I,J,S,C_p)`
+or the promoted five rows. No theorem was found carrying that equality into
+the residual estimates, pressure semantics, `VanishingJointJets`, and
+`selected_witness`. This is a formal correspondence failure, not yet a
+zero-sorry contradiction.
 
-- the paper-shaped and `FiveRowRank` exponent vectors cannot be made equal by direct row identification;
-- there is no linear equivalence between their debt spaces, because one has dimension three and the other dimension five.
+### 4.4 Regularity does not imply the selected moment transport
 
-This is a genuine formal obstruction to the direct identification suggested by the paper narrative. It is not yet a contradiction to the exported endpoint, because the repository also contains `PositiveOrderMoments.lean`, which defines a separate five-dimensional physical row system and proves an exact repair theorem. The missing result is a theorem identifying the paper's five quantities with the actual rows used by the selected candidate and showing that the repair is consumed by the endpoint.
-
-### 4.4 Regularity does not imply the required moment identities
-
-`MovingFieldRowNonImplicationProbe.lean` proves that smoothness and field motion alone do not entail the five row identities. Thus a proof of `ContDiff` or of local field reconstruction cannot be cited as a substitute for the missing moment-transport theorem. The burden is to provide the exact integrals, row ordering, coefficient map, and use of the repaired field in the PDE residual estimate.
+The generic rate record can be inhabited by identically zero stages, and a
+zero-sorry probe proves that it does not determine an arbitrary five-debt
+payload. That countermodel is decisive against the implication
+`StageEstimates → five-moment realisation`, but the selected endpoint supplies
+additional actual-base, physical-data, and origin-growth premises. The live
+formal attack must therefore target those concrete fields rather than treating
+the generic interface countermodel as a refutation of `selected_witness`.
 
 ### 4.5 The generic filter interface has a vacuity hazard, but the selected path is not shown vacuous
 
@@ -74,6 +87,45 @@ The repository contains four `sorry` declarations in `ComparatorChallenges`: two
 ### 4.7 Physical robustness objections are not contradictions to the stated PDE
 
 Ladyzhenskaya stresses, hypo-dissipation, and other regularisations change the equation being solved. They are legitimate questions about physical robustness and modelling scope, but they do not refute a theorem about the classical Newtonian Laplacian equation. The review records them as external scope questions, not as Lean failures.
+
+### 4.8 The endpoint falsification attacks are not cleared
+
+The review does not treat a failed weak probe as evidence that the selected
+witness is sound. Three stronger attacks remain active. First, the smooth-force
+gluing theorem consumes residual-limit data `hlim`; the task is to prove that
+the selected velocity blow-up makes those limits impossible, not merely to
+observe that the H3 norm diverges. Second, the R3 candidate record has compact
+pressure support but no explicit global pressure-Poisson/Leray equation; the
+support/topology contradiction must be formalised against the selected fields.
+Third, the exported `Witness` contains no five-moment payload or equality.
+
+The zero-sorry `SelectedWitnessInhabitationProbe.lean` formalises the third
+point by pairing the inhabited selected witness with an arbitrary nonzero
+five-debt payload. This is a countermodel to type-level certification of the
+paper's moment transport. It is not yet a proof that the selected velocity
+violates the physical integrals. The counter-paper therefore keeps all three
+falsification lanes open and requires a field-level contradiction before a
+definitive refutation.
+
+### 4.9 The selected-witness boundary is the decisive test
+
+The exported witness is assembled from the selected stage schedule, periodic
+candidate properties, residual force, and endpoint consequences. The R3
+theorem then localises that candidate and preserves the recorded residual,
+divergence, energy, and blow-up predicates. The inspected path nevertheless
+contains no equality identifying the selected fields with the five cumulative
+moments described in the paper.
+
+This distinction determines the admissible conclusion. A zero-sorry probe can
+pair the selected witness with an arbitrary nonzero five-dimensional debt,
+because no five-dimensional debt appears in the witness type. That proves a
+failure of type-level certification of the paper-to-code transport. It does
+not, by itself, prove that the concrete selected velocity violates a moment
+identity. The remaining refutation target is concrete: derive the selected
+fields' moments and residual at the origin, then prove either that the required
+endpoint limit is impossible or that the claimed global pressure semantics are
+absent or inconsistent. Until such a theorem is proved, the formal verdict is
+an unestablished correspondence claim, not a kernel-certified contradiction.
 
 ## 5. Adjudicated claim table
 
@@ -388,3 +440,72 @@ map [`REVIEW_DOCUMENT_CONTROL.md`](REVIEW_DOCUMENT_CONTROL.md) governs which
 supporting notes may be cited. Historical logs and unverified agent summaries
 are not treated as results; each material conclusion must be backed by source
 locations or recorded zero-sorry evidence.
+
+## Five-moment construction: live upstream, unproved at the selected mixed endpoint
+
+The source audit corrects an important overstatement. The five-moment repair is
+not a decorative or unreachable subsystem. `GlobalStressSupport.moments_zero`
+proves the exact five-row identity for the aligned scheme; conservative radial
+flux identities follow; modulation preserves the finite residual identities;
+and `FinalSlowBase` exports those identities alongside the same base profile's
+origin blow-up. These facts are compiled without `sorry` in
+`SelectedBaseMomentCompatibilityProbe.lean`.
+
+The remaining objection is at the endpoint, not upstream. The theorem that
+constructs the selected witness consumes generic stage-rate contracts and local
+physical-field germs. The inspected endpoint interfaces do not expose an
+equality between the final mixed velocity/pressure fields and
+`PositiveOrderMoments.moments`, `FiveRowRank.FiveRows`, or the paper's
+`(M,I,J,S,C_p)`. Nor was a theorem found carrying that equality into the
+residual-limit and force construction. The paper therefore has a precise
+source-linked correspondence obligation still unmet. This is not, by itself,
+a derivation of `False` from the selected witness.
+
+Evidence: `NavierStokesReview/evidence/selected_base_moment_chain_reaudit_2026-09-24.md`.
+
+## Force-jet falsification target: the missing lower bound
+
+The selected residual attack can now be stated as a formal theorem rather than
+as the informal claim that exploding velocity derivatives must explode the
+force. `SelectedResidualLowerBoundObstructionProbe.lean` proves, without
+`sorry`, that a positive field-level estimate
+
+$$c\lVert u(t,0)\rVert \leq \lVert\mathcal R(u,p)(t,0)\rVert,
+\qquad c>0,$$
+
+would contradict the selected origin blow-up and the vanishing residual jets.
+The proof uses the actual one-sided endpoint filter and its non-bottom
+property. The inspected production path currently supplies upper `JetRate`
+estimates and local chart identities, but no such lower estimate. Accordingly,
+the force-smoothness route remains open: the next decisive result must derive
+this lower bound from the selected five-moment/PDE coupling or produce another
+zero-sorry contradiction from the concrete endpoint fields.
+
+Evidence: `NavierStokesReview/evidence/selected_residual_lower_bound_obstruction_2026-09-24.md`.
+
+## Direct falsification programme against the selected witness
+
+The review does not infer a force singularity merely from velocity growth.
+The selected source deliberately supplies residual cancellation and flat jet
+limits, so the decisive force objection is a lower-bound theorem linking the
+actual selected residual to the actual selected velocity. That theorem is not
+present. It has instead been isolated formally: if such a bound exists, the
+one-sided endpoint filter, residual flatness, and origin blow-up derive
+`False`.
+
+The pressure objection has the same discipline. The candidate requires compact
+pressure support and local pressure germs, but the inspected endpoint does not
+state a global pressure-Poisson/Leray identity. Compact support alone is not a
+contradiction. The five-moment objection is stronger as a correspondence
+failure: the public witness envelope carries no five-moment equality even
+though the upstream base construction does prove five-row identities. A
+concrete field-level moment violation remains necessary for a formal
+refutation.
+
+Accordingly, the paper's present conclusion is not that `selected_witness` has
+already been contradicted. It is that the claimed CMI result remains
+**not established by the inspected formal transport**, while the three
+zero-sorry attack routes identify exact missing theorems rather than relying on
+compiler failure or physical intuition alone.
+
+Evidence: `NavierStokesReview/evidence/selected_witness_boundary_attack_status_2026-09-24.md`.

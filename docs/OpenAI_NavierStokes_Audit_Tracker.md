@@ -452,25 +452,28 @@ field-level premises, so this theorem alone does not derive `False` from
 
 ## Pressure-chain verification: 2026-09-24
 
-The requested pressure-trivialisation proof was attempted against the actual
-R3 closure path. It does not go through. `CandidateProperties.pressure_support`
-is only a compact support inclusion; `PressureRecovery` and
-`ActualPressureFlux` recover compact-test pressure-gradient/flux identities
-from equal-residual, divergence-free, smooth, finite-energy comparison
-hypotheses. `WholeSpaceUniqueness.classical_uniqueness_on_Icc` constructs those
-hypotheses for the candidate comparison. No source theorem makes compact
-pressure support imply zero, and the existing zero-sorry probe proves that
-generic implication false using the repository's own nonzero cutoff.
+The pressure-trivialisation attack remains open and is being strengthened.
+`CandidateProperties.pressure_support` is only a compact-support inclusion;
+`PressureRecovery` and `ActualPressureFlux` recover comparison identities from
+equal-residual hypotheses. No global pressure-Poisson/Leray equation for the
+selected fields is exposed in the R3 candidate record. This is not a reason to
+clear the attack. It identifies the premise that must be added before the
+support/topology contradiction can be proved.
 
-Disposition: only the standalone implication “compact pressure support forces
-the field to vanish” is cleared/rejected. This does **not** validate the
-authors' global pressure interpretation. The selected source still needs a
-paper-linked theorem connecting its compactly localised pressure, the local
-`StateRealization`/`chartIdentity` identities, and the claimed global pressure
-semantics. The load-bearing formal target remains CTR-005/CTR-038, the
-selected-path five-moment transport into the residual endpoint.
+The load-bearing target is explicit: formalise the global pressure identity for
+the selected fields and test it against the compact pressure slices and the
+selected velocity cross-terms. Until that is done, the pressure route is
+unresolved, not rejected.
 
 Evidence: `NavierStokesReview/evidence/pressure_recovery_chain_audit_2026-09-24.md`.
+
+The three-vector adversarial attack is recorded in
+`NavierStokesReview/evidence/selected_witness_falsification_attacks_2026-09-24.md`.
+The zero-sorry `SelectedWitnessInhabitationProbe.lean` proves the selected
+`Witness` envelope can be paired with an arbitrary nonzero five-debt payload
+because no such payload occurs in the type. This is the strongest current
+type-level inhabitance obstruction; a field-level moment violation remains the
+next target.
 
 The new zero-sorry comparison-interface probe changes the pressure conclusion's
 scope. `PressureRecoveryAbsolutePremiseProbe.lean` proves that the comparison
@@ -494,3 +497,62 @@ it does not permit a formal-contradiction label without a false selected
 premise.
 
 Evidence: `NavierStokesReview/evidence/selected_residual_endpoint_trace_2026-09-24.md`.
+
+The selected-path ledger now records the exact projection through
+`ActualCandidateAssembly.Witness`, `R3ActualCandidate.selected_compact_candidate`,
+`R3/ActualCandidate.of_localized_fields`, and `R3/Theorem`.  The zero-sorry
+`SelectedWitnessPathProbe.lean` confirms that this path carries the residual,
+support, divergence, energy, and blow-up records but no five-moment equality.
+This keeps CTR-005 load-bearing and leaves the force-jet, pressure-Poisson,
+and field-level moment attacks active.
+
+Evidence: `NavierStokesReview/evidence/selected_witness_path_ledger_2026-09-24.md`.
+
+## Upstream five-moment chain: corrected finding
+
+The five-moment construction is live upstream, not dead code. A zero-sorry
+probe confirms that `GlobalStressSupport.moments_zero` is transported through
+`EntranceAlignedBase.aligned_moments_zero`, the modulated finite-identity chain,
+and `FinalSlowBase.finiteIdentities`; the same constructed base also supplies
+`FinalSlowBase.speedUnbounded`. The earlier “complete disconnection” wording is
+withdrawn.
+
+The unresolved CTR-005 objection is more precise: the final mixed sums consumed
+by `GermCandidateAssembly.exists_candidate_witness_of_finite_stages` are
+accepted through generic `StageEstimates` and local physical-field data, but no
+source-linked theorem was located that identifies those mixed fields with the
+repaired five rows `(M,I,J,S,C_p)` and carries that equality into the residual,
+pressure, and force endpoint. This is an endpoint transport gap, not a claim
+that the upstream repair algebra is absent.
+
+Evidence: `NavierStokesReview/evidence/selected_base_moment_chain_reaudit_2026-09-24.md` and
+`NavierStokesReview/src/probes/SelectedBaseMomentCompatibilityProbe.lean`.
+
+## Selected residual lower-bound attack: 2026-09-24
+
+The force-smoothness attack now has a zero-sorry formal obstruction theorem.
+`NavierStokesReview/src/probes/SelectedResidualLowerBoundObstructionProbe.lean`
+proves that the selected origin blow-up and flat residual jets are incompatible
+with any eventual estimate
+
+$$c\lVert u(t,0)\rVert \leq \lVert \mathcal R(u,p)(t,0)\rVert,$$
+
+for a fixed $c>0$. The source path currently proves upper `JetRate` bounds for
+residual derivatives. No field-level positive lower bound has been located in
+`ActualCycleResidualBounds`, `PhysicalResidualJetBounds`, or
+`CandidateFromLimits`. This leaves FJ-01/FJ-05 open and identifies the exact
+theorem still required for a formal refutation.
+
+Evidence: `NavierStokesReview/evidence/selected_residual_lower_bound_obstruction_2026-09-24.md`.
+
+## Direct selected-witness falsification board: 2026-09-24
+
+The three attacks are now tracked against the actual selected endpoint. The
+force route has a proved conditional contradiction, not a clearance: a fixed
+positive velocity-to-residual lower bound would conflict with residual flatness
+and origin blow-up, but the source has not supplied that lower bound. The
+pressure route remains open because compact support is not itself a Poisson
+contradiction. The moment-blindness result is an interface countermodel only;
+it does not yet evaluate the concrete selected fields.
+
+Evidence: `NavierStokesReview/evidence/selected_witness_boundary_attack_status_2026-09-24.md`.

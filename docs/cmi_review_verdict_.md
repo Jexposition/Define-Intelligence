@@ -19,11 +19,26 @@ from supplied fields and can be smooth only after the residual-jet and
 extension hypotheses are established for those same selected fields. Calling
 this a “valid exploit” would overstate what the inspected interfaces prove.
 
-The construction is a tautological engineering feat: the velocity field $u(x,t)$ is explicitly designed to blow up, and the external force $f(x,t)$ is *defined* to be exactly equal to the Navier-Stokes residual of that field. This satisfies the literal CMI requirements for a forced blow-up, even though it occupies a "contrived, nonanalytic forced branch" (as corroborated by Constantin, Ignatova, and Vicol). 
+The construction is a residual-driven forced-candidate architecture: the
+velocity field is designed to grow, and the force is obtained from a smooth
+extension of the candidate residual once the residual-limit hypotheses are
+supplied. That architecture is admissible in principle for a forced CMI
+alternative, but the audit has not independently established that the
+selected fields satisfy every required analytic and semantic premise. It is
+therefore not correct to state that the code has already verified the literal
+CMI claim merely because the force is residual-defined.
 
 The peer review has uncovered a critical specification and traceability gap
 between the human-readable paper and the Lean 4 formalisation regarding
 moment transport, together with a narrower pressure-semantic gap.
+
+The pressure and force objections remain active attack surfaces. A failed
+compact-support probe is not a clearance: the decisive missing premise is the
+selected global pressure-Poisson equation, while the force-jet attack requires
+showing that the selected residual cannot satisfy the endpoint `hlim` family.
+The new zero-sorry `SelectedWitnessInhabitationProbe` also shows that the
+exported witness envelope carries no five-debt payload, so the selected
+five-moment transport remains unverified at the type level.
 
 ## 2 Blow-Up Mechanism (Audit of `PeriodicSobolev.lean`)
 
@@ -52,12 +67,18 @@ not encode an absolute pressure-Poisson representative.
 
 ## 4. Critical Defect: Missing Moment Transport Glue
 
-While the topological and spacetime mechanics are functionally sound, the codebase contains a massive **specification drift** regarding the 5-moment structural defect.
+The five-moment machinery is live upstream: the aligned and modulated
+construction proves five-row identities and finite residual identities for the
+same base profile that supplies the origin growth. The surviving defect is
+narrower and more serious than a dead-code allegation. The selected witness
+endpoint consumes generic stage-rate records and local physical-field germs;
+those interfaces do not expose an equality transporting the named moments to
+the final mixed velocity, pressure, residual, and force. The zero-sorry
+interface probe proves that the witness envelope itself carries no such
+five-debt payload.
 
-The human-readable paper relies on a unified 5-moment exact repair module. However, the Lean 4 implementation splits this into two disjoint systems:
-1. `FiveRowRank.lean`: A 3-dimensional debt system used exclusively for the mean flow ($n=0$).
-2. `PositiveOrderMoments.lean`: A 5-dimensional exact repair system used for the positive slow orders ($n \ge 1$).
-
-As proven by earlier diagnostic probes (`MomentBridgeObstructionProbe.lean`), there is no `DirectMomentBridge` theorem proving an exact equivalence between the codebase's bifurcated implementation and the paper's unified 5-moment constraint. 
-
-**Verdict:** The codebase's mathematical chain is internally consistent, but it fails to formally link its theoretical moment assumptions to the actual executing velocity fields via a unified transport lemma. The AI agents over-engineered the template stages so heavily to satisfy the compiler's blow-up and smoothness checks that they decoupled the structural implementation from the human paper's specifications. This is a severe traceability and reproducibility failure that warrants major revision before acceptance.
+**Verdict:** the review has a source-backed selected-endpoint correspondence
+failure and a formal conditional residual obstruction, but not yet a
+zero-sorry `False` theorem from the actual selected witness. The CMI claim is
+therefore **not established** by this audit; the remaining work is to derive a
+concrete selected-field moment, pressure, or residual contradiction.

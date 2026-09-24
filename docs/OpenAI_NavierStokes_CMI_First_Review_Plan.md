@@ -193,6 +193,14 @@ References: [CMI problem statement](https://www.claymath.org/wp-content/uploads/
 
 **Last updated:** 2026-09-24
 **Owner:** CMI-first formal review
+
+## Current live-chain correction
+
+| ID | Status | Acceptance test |
+|---|---:|---|
+| 5D-08 | [x] | `SelectedBaseMomentCompatibilityProbe.lean` confirms the live upstream five-moment identity, conservative flux consequences, final finite residual identity, and base origin blow-up. |
+| 5D-09 | [ ] | Locate a theorem transporting that base invariant into the final mixed fields consumed by `selected_witness`, or derive a contradiction from the actual endpoint premises. |
+| FJ-07 | [~] | The five-moment chain is live upstream; selected-mixed-sum transport into residual, pressure, force, and `VanishingJointJets` remains unresolved. |
 ## 4c. Analytic-objection adjudication
 
 | Lane | Status | Working conclusion | Next decisive test |
@@ -236,7 +244,7 @@ Evidence: `NavierStokesReview/evidence/stage_estimates_moment_blindness_2026-09-
 | CTR-037 | Generic `StageEstimates` encodes physical blow-up | [x] | Zero-sorry zero-field countermodel; interface is insufficient. |
 | CTR-038 | Selected five-moment transport into residual endpoint | [ ] | Locate a theorem linking `(M,I,J,S,C_p)` to selected fields, `chartIdentity`, and `VanishingJointJets`, or prove a contradiction from its premises. |
 | CTR-039 | Generic stage interface determines the paper's five-debt payload | [x] | `interface_does_not_determine_five_debt` is a zero-sorry countertheorem: `StageEstimates` alone cannot determine an arbitrary `PositiveOrderMoments.Debt`. This is an interface obstruction, not yet a selected-witness refutation. |
-| PRS-08 | Compact pressure support forces trivialisation | [x] (route rejected) | Generic implication formally disproved; this does not validate the selected pressure semantics. |
+| PRS-08 | Compact pressure support forces trivialisation | [~] | No contradiction has been proved. Add the global Poisson/Leray premises and test the selected pressure and velocity, rather than treating compact support alone as decisive. |
 | PRS-09 | Selected pressure has the paper's global semantics | [~] | The comparison interface has no absolute pressure-Poisson premise; selected local `pressure_germ` and `base_equation` still need to be connected to a global pressure theorem. |
 | PRS-10 | Pressure comparison chain was over-cleared | [x] | Corrected: the chain is real for differences and flux bounds, but cannot be cited as an absolute selected-pressure verification. |
 
@@ -253,4 +261,23 @@ and `NavierStokesReview/src/probes/PressureRecoveryAbsolutePremiseProbe.lean`.
 | 5D-03 | Prove generic interface non-determination | [x] | `StageEstimatesMomentBlindnessProbe.interface_does_not_determine_five_debt` compiles without `sorry`. |
 | 5D-04 | Transport the five moments into the selected endpoint | [ ] | A theorem must identify the actual selected fields' integrals with the five named rows and connect them to `chartIdentity`, `pressure_germ`, and `VanishingJointJets`. |
 | 5D-05 | Derive contradiction from selected residual limits and origin blow-up | [ ] | A zero-sorry theorem must derive `False` from the selected witness, not from a weaker generic interface. |
+| 5D-06 | Inhabit the selected witness with an unconstrained five-debt payload | [x] | `SelectedWitnessInhabitationProbe.lean` compiles without `sorry`: the `Witness` envelope contains no `PositiveOrderMoments.Debt` field or equality. |
+| 5D-07 | Derive an actual selected-field five-moment violation | [ ] | Add field-level moments to the selected path and prove their failure or contradiction with the selected residual and pressure premises. |
+| FJ-01 | Force-jet breakdown at the singular interface | [~] | `force_smooth` consumes residual-limit premises; a velocity blow-up lower bound alone does not prove force-jet divergence. Derive or refute the selected `hlim` family. |
+| FJ-02 | Pressure-Poisson/support contradiction | [~] | The R3 candidate record has compact pressure support but no explicit global pressure-Poisson field. Add the missing identity and test the selected fields. |
+| FJ-04 | Selected-path transport closure | [~] | Trace `ActualCandidateAssembly.Witness` through `R3ActualCandidate.selected_compact_candidate`, `R3/ActualCandidate.of_localized_fields`, and `R3/Theorem`; prove whether any five-moment equality is consumed. |
+| FJ-05 | Selected origin residual contradiction | [~] | Expand the selected residual at `origin_blowup` and compare it with `CandidateFromLimits.hlim`; a generic residual-flatness incompatibility is insufficient. |
+| FJ-08 | Exact residual lower-bound obstruction | [x]/[~] | The zero-sorry probe proves that `c * ‖u‖ ≤ ‖residual‖` with `c > 0` would contradict the selected flat residual and origin blow-up. No such lower bound has been found in the selected source; the attack remains open. |
+| FJ-06 | Selected pressure semantics | [~] | Add a selected-field global Poisson/Leray premise and test it against compact pressure localisation; compact support alone is not the contradiction. |
 | PRS-11 | Pressure absolute-semantics check | [ ] | Show either a selected-field Poisson/Leray identity contradicts compact support, or document that the pressure route remains conditional and cannot yield `False`. |
+
+## Direct selected-witness attacks: 2026-09-24
+
+| ID | Attack | Status | Required zero-sorry result |
+|---|---|---:|---|
+| SW-01 | Force-jet breakdown | [~] | Derive a positive lower bound from the selected velocity to its residual, then apply `SelectedResidualLowerBoundObstructionProbe`. |
+| SW-02 | Pressure-Poisson/support mismatch | [~] | Derive the global selected pressure-Poisson/Leray identity and contradict compact support or endpoint limits. |
+| SW-03 | Moment-blind ghost model | [x]/[~] | The witness envelope has no five-debt field; still derive an actual moment violation for the selected sums. |
+| SW-04 | Selected-witness contradiction | [ ] | Close one of SW-01 to SW-03 with `False` from the actual selected witness. |
+
+Evidence: `NavierStokesReview/evidence/selected_witness_boundary_attack_status_2026-09-24.md`.
