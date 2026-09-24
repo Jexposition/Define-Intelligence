@@ -693,141 +693,59 @@ five named moments and pressure semantics into the exported endpoint.
    Equation](https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf).
 2. Clay Mathematics Institute, [Millennium Prize rules](https://www.claymath.org/millennium-problems/rules/).
 3. OpenAI, [NavierStokesAndEuler repository](https://github.com/openai/NavierStokesAndEuler).
-4. [`SelectedResidualLowerBoundObstructionProbe.lean`](../NavierStokesReview/src/probes/SelectedResidualLowerBoundObstructionProbe.lean).
-5. [`SelectedWitnessAttackBoundaryProbe.lean`](../NavierStokesReview/src/probes/SelectedWitnessAttackBoundaryProbe.lean).
-6. [`FiveRowPositiveOrderBridgeProbe.lean`](../NavierStokesReview/src/probes/FiveRowPositiveOrderBridgeProbe.lean).
-7. [`PressureRecoveryAbsolutePremiseProbe.lean`](../NavierStokesReview/src/probes/PressureRecoveryAbsolutePremiseProbe.lean).
+4. OpenAI, [Finite Time Blowup for Navier–Stokes](https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf).
+5. OpenAI, [On the Navier–Stokes Millennium Prize Problem](https://openai.com/index/navier-stokes-solution/).
+6. OpenAI, [Finite Time Blowup for the Euler Equation](https://cdn.openai.com/pdf/315b36cd-ec98-4023-8342-93345194ece1/euler.pdf).
+7. [`SelectedResidualLowerBoundObstructionProbe.lean`](../NavierStokesReview/src/probes/SelectedResidualLowerBoundObstructionProbe.lean).
+8. [`SelectedWitnessAttackBoundaryProbe.lean`](../NavierStokesReview/src/probes/SelectedWitnessAttackBoundaryProbe.lean).
+9. [`FiveRowPositiveOrderBridgeProbe.lean`](../NavierStokesReview/src/probes/FiveRowPositiveOrderBridgeProbe.lean).
+10. [`PressureRecoveryAbsolutePremiseProbe.lean`](../NavierStokesReview/src/probes/PressureRecoveryAbsolutePremiseProbe.lean).
 
-## Selected-witness fixed-force result
+## Appendix A. Technical findings supporting the verdict
 
-The fixed-force obstruction has now been instantiated on the actual selected
-field. `selected_candidate_fixed_force_obstruction` destructs
-`ActualCandidateAssembly.selected_witness`, binds its mixed velocity, pressure,
-and force, and applies the selected residual equation at the interior point
-$(t,x)=(1/2,0)$. The compact divergence-free perturbation has the explicit
-nonzero defect `coordinateVector 0`, so the perturbed selected field cannot
-satisfy the same fixed-force equation.
-
-This closes the localisation gap in the operator test and strengthens CTR-012.
-It does not make the literal C/D existential proposition empty: the endpoint
-does not quantify over perturbations and does not require a force-independence
-or perturbation-stability predicate. The result is therefore a selected-path
-causality objection, not a global `False` theorem.
-
-Evidence: [`selected_witness_fixed_force_obstruction_2026-09-24.md`](../NavierStokesReview/evidence/selected_witness_fixed_force_obstruction_2026-09-24.md).
-
-## Selected-force provenance closure
-
-The causal criticism is now a proved property of the selected endpoint. The
-zero-sorry extension `SelectedResidualProvenance.lean` extracts the selected
-velocity, pressure, and force and proves the interior identity
+The selected-force provenance theorem extracts the endpoint identity
 
 $$
-f(t,x)=\partial_tu+(u\cdot\nabla)u-\Delta u+\nabla p.
+f(t,x)=\partial_tu+(u\cdot\nabla)u-\Delta u+\nabla p
 $$
 
-Thus the construction is a residual-designed trajectory, not an independently
-specified force followed through a forward Cauchy evolution. This sharpens the
-causal criticism and explains why the compact fixed-force perturbation is a
-valid diagnostic. It does not, by itself, make the existential C/D predicate
-inconsistent, because that predicate contains no formal force-independence or
-perturbation-stability condition. The remaining decisive work is a selected
-five-moment or pressure identity whose required premises are false, or a
-direct contradiction in the selected endpoint.
+for interior times. Together with the compact perturbation theorem, this
+proves that the selected trajectory is not stable under arbitrary smooth,
+compactly supported, divergence-free perturbations when the force and pressure
+are held fixed. This is the formal CTR-012 causality objection. It is not a
+contradiction of the literal existential C/D endpoint, which does not include
+that stability predicate.
 
-Evidence: `NavierStokesReview/evidence/selected_residual_provenance_2026-09-24.md`.
+The runtime rank layer is active. `MeanRankUpdate.physical_five_rows` and
+`CorrectionState.rank_model_rows` apply the three-coordinate debt repair to
+the actual cycle. The first two rows preserve two radial correction moments;
+they do not state that total kinetic energy is zero. The exported `Witness`
+still exposes no equality identifying those internal quantities with the
+paper's $(M,I,J,S,C_p)$ and transporting them into the final mixed fields,
+pressure, residual, and force. This is the load-bearing CTR-005
+paper-to-endpoint correspondence problem.
 
-### Runtime rank correction
+The whole-space uniqueness route is also active: the comparison theorem uses
+the two residual equations, incompressibility, smoothness, finite-energy
+bounds, compact support, and compact-test pressure recovery. Compact pressure
+support alone does not imply that pressure or velocity vanishes. The remaining
+pressure objection is the absence of an absolute selected pressure
+representative in the exported semantic bridge.
 
-The runtime rank audit narrows the five-moment objection. The rank layer is
-not dead code: `MeanRankUpdate.physical_five_rows` and
-`CorrectionState.rank_model_rows` apply the three-debt repair to the actual
-cycle, and the two zero rows preserve two named radial correction moments.
-Those rows do not state that total kinetic energy is zero, nor do they by
-themselves identify the final Cartesian field with the paper's five quantities.
+The stage-control source contains an empty/nonempty split for `ActivePair`.
+The review theorem `active_pair_of_selected_label` proves that a concrete
+selected label gives an active pair at its own band, using the lower-band
+bound and `CommonWindow.self_mem`. It does not prove inhabitance of the
+selected label subtype from the exported witness, so the empty branch remains
+an interface target rather than a vacuity refutation.
 
-The unresolved issue is the selected-endpoint transport theorem. The exported
-`Witness` contains no equality connecting the internal correction moments to
-`(M,I,J,S,C_p)` and then to the mixed velocity, pressure, residual, and force.
-The correct conclusion is therefore a material paper-to-code correspondence
-failure, not a claim that the rank construction is absent or that Lean has
-already derived `False`.
-
-Evidence: [`selected_rank_transport_reaudit_2026-09-24.md`](../NavierStokesReview/evidence/selected_rank_transport_reaudit_2026-09-24.md).
-
-## Whole-space comparison: a cleared overstatement
-
-The whole-space endpoint cannot accurately be described as a candidate-only
-existential wrapper. The source proves comparison on every closed interval
-before the singular time. It derives the pressure flux from the two residual
-equations and incompressibility using compact spatial tests, then closes the
-weighted energy estimate under the stated finite-energy hypotheses. The
-selected candidate is supplied to this theorem by
-`candidate_global_agrees_before_one`; compact support and speed unboundedness
-then exclude a global finite-energy competitor.
-
-This does not resolve the separate semantic question about the force being
-chosen from the candidate residual, nor does it expose an absolute global
-pressure representative. It does mean that the review must not present the
-R³ no-global-solution conclusion as dead code, an uninhabited wrapper, or a
-pressure-support trivialisation. The remaining formal objection is the missing
-selected-path transport of the paper's named moments and pressure semantics.
-
-Evidence: [`whole_space_uniqueness_audit_2026-09-24.md`](../NavierStokesReview/evidence/whole_space_uniqueness_audit_2026-09-24.md).
-
-## A formal fixed-force stability test
-
-The review includes a separate semantic extension that makes the forward-data
-interpretation explicit. `FixedForceStable` requires a single force and
-pressure to satisfy the residual equation after every smooth, compactly
-supported, divergence-free perturbation of the velocity. The selected
-candidate fails this strengthened condition: at $(t,x)=(1/2,0)$, the compact
-perturbation produces the nonzero defect `coordinateVector 0` while the force
-is held fixed.
-
-This result sharpens the causal interpretation of the residual construction,
-but it must not be overstated. The literal C/D endpoint does not contain this
-stability or independence predicate. The theorem therefore does not derive
-`False` from the published existential statement. It records a formal
-failure of the stronger forward-data reading and leaves the selected
-five-moment transport theorem under CTR-005 as the principal unresolved
-correspondence target.
-
-Evidence: [`fixed_force_stability_extension_2026-09-24.md`](../NavierStokesReview/evidence/fixed_force_stability_extension_2026-09-24.md).
-
-## Reachability of the active stage layer
-
-The stage-control implementation contains an explicit case split for an
-empty active-pair type. This is not, by itself, evidence that the selected
-Navier--Stokes construction is vacuous. The review extension
-`SelectedActivePairReachability.lean` proves that every concrete selected
-label yields an active pair at its own band because
-
-$$
-\mathrm{cellBand}(L)\in\mathrm{CommonWindow.levels}(\mathrm{cellBand}(L)).
-$$
-
-The proof does not establish that the selected label subtype is inhabited at
-the exported endpoint. The formal status is therefore asymmetric: concrete
-label reachability is proved, while selected-label inhabitance remains an
-interface question. A claim that the empty branch produces the published
-blow-up would require the missing inhabitance result or a false selected-field
-identity.
-
-## External force language and the formal target
-
-The official formulation calls $f$ a given, externally applied force and
-requires derivative decay estimates. OpenAI's release describes the same
-balance as a smooth applied force remaining regular while velocity grows. The
-selected force is nevertheless obtained from the candidate residual on the
-interior interval, so the provenance criticism is mathematically substantive.
-The formal endpoint does not add a force-independence or perturbation-
-stability predicate. The review therefore distinguishes:
-
-1. the selected force is residual-designed;
-2. the selected candidate fails the stronger fixed-force perturbation-stability
-   property; and
-3. the literal C/D existential endpoint is inconsistent.
-
-The first two are proved on the review side. The third still requires a false
+These results are source-linked and compiled in the evidence files below. The
+paper's conclusion remains a correspondence-based counter-claim: the public
+paper's five-moment semantics are not yet shown to be the semantics of the
+exported selected witness. A kernel-level disproof still requires a false
 mandatory endpoint premise or a concrete selected-field contradiction.
+
+Evidence: `selected_residual_provenance_2026-09-24.md`,
+`selected_rank_transport_reaudit_2026-09-24.md`,
+`whole_space_uniqueness_audit_2026-09-24.md`,
+`selected_active_pair_reachability_2026-09-24.md`.
