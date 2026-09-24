@@ -394,3 +394,10 @@ path-dependence result. It does not turn the literal existential endpoint into
 fields of `CandidateProperties`.
 
 Evidence: `NavierStokesReview/evidence/selected_witness_fixed_force_obstruction_2026-09-24.md`.
+
+The selected-force provenance is now explicit in a zero-sorry extension:
+`SelectedResidualProvenance.selected_candidate_force_is_residual_output`
+extracts the exported witness and proves that its force equals the selected
+residual on the whole pre-singular interval. This confirms the causal
+provenance objection while preserving the formal boundary: the C/D endpoint
+does not encode force independence, so the result is not a literal `False`.

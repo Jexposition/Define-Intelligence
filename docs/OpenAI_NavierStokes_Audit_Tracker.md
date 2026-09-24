@@ -948,3 +948,25 @@ externally applied” wording supports a causal/provenance objection, while the
 literal C/D alternatives remain existential and OpenAI's paper explicitly
 describes residual construction. That distinction is part of the audit
 record, not a concession about the missing selected semantic bridge.
+
+## CTR-012 provenance closure: selected force is residual output
+
+The zero-sorry theorem
+`SelectedResidualProvenance.selected_candidate_force_is_residual_output`
+destructs `ActualCandidateAssembly.selected_candidate` and proves, for the
+selected velocity, pressure, and force,
+
+$$
+f(t,x)=\operatorname{navierStokesResidual}(u,p,t,x)
+$$
+
+for every interior time and spatial point. The source construction reaches the
+same conclusion through `MixedPeriodicAssembly.exists_candidate_force` and
+`CandidateFromLimits.force_eq_activated_residual`.
+
+**Classification:** [x] residual provenance established on the selected path;
+[~] the CMI-level force-independence objection remains a correspondence
+question, not a proved `False`, because the exported `CandidateProperties` does
+not quantify over perturbations or require an independence predicate.
+
+Evidence: `NavierStokesReview/evidence/selected_residual_provenance_2026-09-24.md`.

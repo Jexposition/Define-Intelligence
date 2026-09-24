@@ -385,3 +385,15 @@ Evidence: `NavierStokesReview/evidence/temporal_patching_audit_2026-09-24.md` an
 
 The current result proves path dependence of the selected residual construction,
 not emptiness of the endpoint existential.
+
+## Residual provenance closure
+
+| ID | Task | Status | Acceptance test |
+|---|---|---:|---|
+| CTR-012-G | Extract residual provenance from the exported selected witness. | [x] | `SelectedResidualProvenance.selected_candidate_force_is_residual_output` compiles and proves `f = navierStokesResidual u p` on `0 < t < 1`. |
+| CTR-012-H | Convert provenance into a literal C/D contradiction. | [ ] | Requires a force-independence/admissibility premise in the endpoint or a false selected predicate. |
+
+The construction therefore has a proved causal/provenance mismatch with the
+forward-data language of the official problem statement, but the literal
+existential endpoint is not empty merely because its witness was manufactured
+backwards.

@@ -700,3 +700,24 @@ or perturbation-stability predicate. The result is therefore a selected-path
 causality objection, not a global `False` theorem.
 
 Evidence: [`selected_witness_fixed_force_obstruction_2026-09-24.md`](../NavierStokesReview/evidence/selected_witness_fixed_force_obstruction_2026-09-24.md).
+
+## Selected-force provenance closure
+
+The causal criticism is now a proved property of the selected endpoint. The
+zero-sorry extension `SelectedResidualProvenance.lean` extracts the selected
+velocity, pressure, and force and proves the interior identity
+
+$$
+f(t,x)=\partial_tu+(u\cdot\nabla)u-\Delta u+\nabla p.
+$$
+
+Thus the construction is a residual-designed trajectory, not an independently
+specified force followed through a forward Cauchy evolution. This sharpens the
+causal criticism and explains why the compact fixed-force perturbation is a
+valid diagnostic. It does not, by itself, make the existential C/D predicate
+inconsistent, because that predicate contains no formal force-independence or
+perturbation-stability condition. The remaining decisive work is a selected
+five-moment or pressure identity whose required premises are false, or a
+direct contradiction in the selected endpoint.
+
+Evidence: `NavierStokesReview/evidence/selected_residual_provenance_2026-09-24.md`.

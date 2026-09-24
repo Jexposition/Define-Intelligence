@@ -692,3 +692,16 @@ equation at $(t,x)=(1/2,0)$. The proof uses the selected candidate residual
 equality and the residual addition identity. It adds no axiom and proves no
 global `False`; a CMI-level refutation would still require an endpoint
 independence predicate or another false mandatory premise.
+
+## AX-042: selected force provenance is residual-defined
+
+**Source:** `NavierStokesReview/src/extensions/SelectedResidualProvenance.lean`;
+`NavierStokes/MixedPeriodicAssembly.lean:338-365`;
+`NavierStokes/CandidateFromLimits.lean:80-110`.
+
+The selected witness supplies a force satisfying the exact residual equation
+throughout the pre-singular interval. The review theorem extracts this from
+the exported candidate rather than relying on a name-based search. This is
+strong evidence that the force is selected from the candidate motion, but it
+is not an extra Lean premise forbidding such construction. Record it as a
+provenance defect under CTR-012, not as a kernel contradiction.

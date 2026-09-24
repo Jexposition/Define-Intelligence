@@ -800,3 +800,19 @@ leaving CTR-005, the missing selected five-moment transport theorem, as the
 load-bearing correspondence objection.
 
 Evidence: `NavierStokesReview/evidence/selected_witness_fixed_force_obstruction_2026-09-24.md`.
+
+## Selected-force provenance closure
+
+The provenance claim is now directly extracted from the selected endpoint.
+`SelectedResidualProvenance.selected_candidate_force_is_residual_output`
+proves that the selected force equals the selected Navier--Stokes residual at
+every interior time. This removes any ambiguity about whether the concern is
+merely terminological: the construction really does choose the force from the
+candidate motion. The proof still has a precise boundary. The exported C/D
+predicate asks for existence of a smooth force and does not state that the
+force must be chosen independently, nor that the witness must be stable under
+independent perturbations. The causal objection is therefore established as a
+paper-to-code provenance failure, while a literal formal refutation still
+requires an additional admissibility premise or a false selected identity.
+
+Evidence: `NavierStokesReview/evidence/selected_residual_provenance_2026-09-24.md`.

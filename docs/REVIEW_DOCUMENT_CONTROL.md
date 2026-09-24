@@ -53,6 +53,13 @@ and
 the argument is in the peer review and research paper, while the plan and
 tracker retain only compact status entries.
 
+The selected-force provenance result is sourced to
+`NavierStokesReview/evidence/selected_residual_provenance_2026-09-24.md` and
+`NavierStokesReview/src/extensions/SelectedResidualProvenance.lean`. It is
+logged under CTR-012 as a proved provenance mismatch, while the literal C/D
+existential remains unrefuted absent an independence predicate or another
+false selected premise.
+
 The 2026-09-24 authority map also includes
 `NavierStokesReview/evidence/state_realization_axis_scope_audit_2026-09-24.md`.
 That evidence proves a scope limitation: `StateRealization.chartIdentity` is

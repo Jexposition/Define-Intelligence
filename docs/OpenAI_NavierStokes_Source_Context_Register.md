@@ -98,3 +98,13 @@ The paper should state “not established as claimed” where the selected bridg
 is missing, and “formally refuted” only where a source-linked zero-sorry
 theorem proves a false mandatory premise or derives `False` from the actual
 selected witness.
+
+## Selected-path force provenance
+
+`SelectedResidualProvenance.lean` now extracts the exported selected witness
+and proves that its force equals the selected Navier--Stokes residual at every
+interior time. This establishes the causal/provenance mismatch as a property
+of the construction rather than an inference from names. It still does not
+add an independence predicate to the exported existential statement; the
+distinction between a provenance objection and a literal C/D contradiction
+remains essential.
