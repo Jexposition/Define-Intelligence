@@ -355,16 +355,19 @@ Evidence: `NavierStokesReview/evidence/selected_moment_transport_closure_2026-09
 | 5D-12 | Infer kinetic-energy or full five-moment preservation from the zero rows. | [ ] | No such inference is licensed by the source; `FiveRows` contains radial correction moments, not an energy identity. |
 | 5D-13 | Expose the actual selected-cycle local mass invariant. | [x] | `SelectedCycleMomentTransport.lean` compiles: `state_invariant.masses` gives `ZeroMassesOn` for every selected cycle stage. |
 | 5D-14 | Transport that local invariant into the exported mixed `Witness`. | [ ] | The `Witness` type must expose the relevant equality and identify it with the paper's five named moments. |
+| 5D-15 | Audit the runtime rank scaling and the scope of the two zero rows. | [x] | `MeanRankUpdateAudit.lean` compiles; `scaleDebt` is three-coordinate scaling and `FiveRows` zeroes correction moments, not kinetic energy. |
 
 Evidence: `NavierStokesReview/evidence/correction_moment_transport_audit_2026-09-24.md` and
-`NavierStokesReview/src/completions/SelectedCycleMomentTransport.lean`.
+`NavierStokesReview/src/completions/SelectedCycleMomentTransport.lean`, with
+`NavierStokesReview/evidence/mean_rank_update_scope_2026-09-24.md` for the
+runtime rank audit.
 
 ## Temporal patching and source-context lane: 2026-09-24
 
 | ID | Task | Status | Acceptance test |
 |---|---|---:|---|
 | CTR-017-01 | Map `initializedSeries`, finite prefixes, and successor stage families. | [x] | Exact source ledger distinguishes indexed stages from temporal intervals. |
-| CTR-017-02 | Test for a selected temporal derivative jump. | [ ] | A zero-sorry theorem must derive a nonzero derivative mismatch for the selected sum; no such theorem is currently present. |
+| CTR-017-02 | Test for a selected temporal derivative jump. | [x] | Audit complete: the zero-sorry probe constructs an unequal raw indexed boundary, but no theorem identifies the index with time or derives a selected-field derivative mismatch. |
 | CTR-017-03 | Verify time activation and late jet agreement. | [x] | `TemporalPatchingDiscontinuityProbe.lean` compiles; `timeSwitch` and late derivative theorems are source-linked. |
 | SRC-01 | Reconcile Fefferman's “given external force” wording with C/D existential quantification. | [x] | `OpenAI_NavierStokes_Source_Context_Register.md` records both facts without converting provenance into an unsupported `False`. |
 | SRC-02 | Compare the Euler parent-child time iteration with the Navier--Stokes indexed stage constructor. | [x] | The source register records that the comparison does not transfer a temporal-gluing theorem into the Navier--Stokes code. |

@@ -421,6 +421,9 @@ endpoint is still required for a kernel-level `False` result.
   from the actual source theorems.
 - [ ] A selected-field temporal discontinuity has not been proved. Do not turn
   the absence of an adjacent-stage matching premise into an endpoint failure.
+- [x] The raw interface test is recorded: a concrete zero-sorry family has
+  unequal entries at indices zero and one, but the source provides no theorem
+  identifying those indices with temporal intervals.
 - [x] The Euler paper's parent-child time construction is kept separate from
   the Navier--Stokes Lean stage indexing.
 - [x] External CMI/OpenAI wording is tracked in

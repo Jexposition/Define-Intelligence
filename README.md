@@ -26,6 +26,19 @@ matches the published mathematical construction.
   defect at the origin is the nonzero first coordinate vector. Thus a residual
   selected from one velocity path cannot remain the same force after this
   perturbation.
+- **CTR-017, temporal index boundary:** a zero-sorry theorem constructs unequal
+  raw entries at indices zero and one of `initializedSeries`. The source does
+  not identify the natural-number stage index with time, and its selected sums
+  and smooth activation have `ContDiff` and late-jet theorems. This is an open
+  interface obligation, not a proved temporal PDE discontinuity.
+
+The runtime rank audit also narrows the moment objection. `FiveRows` constrains
+two radial moments of correction functions and carries three debt coordinates;
+it does not hard-code total kinetic energy to zero. The missing result is the
+selected-path theorem transporting those internal moments into the paper's
+five named quantities and the exported mixed field. See
+[`MeanRankUpdateAudit.lean`](NavierStokesReview/src/completions/MeanRankUpdateAudit.lean)
+and [`mean_rank_update_scope_2026-09-24.md`](NavierStokesReview/evidence/mean_rank_update_scope_2026-09-24.md).
 
 The two findings are related but distinct. The selected construction has the
 form `f = navierStokesResidual u p` along its chosen path, so the residual

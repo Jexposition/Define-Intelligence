@@ -19,6 +19,9 @@ evidence that the selected spacetime field has a temporal jump.
 | `NavierStokes/ActualCandidateConstruction.lean` | 419--433 | `uncutPrefix_succ` makes a finite prefix additive, and `angularMeanStages_prefix` reconstructs the cycle mean. | No energy-gradient identity is attached to the prefix boundary. |
 | `NavierStokes/ActualCandidateConstruction.lean` | 492--502 | Successor stage families are defined by the cycle's increment families. | The source does not identify these indices with disjoint time slices. |
 | `NavierStokes/ActualCandidateConstruction.lean` | 638--653 | Chart potential parts split successor data into wave and stream components by algebraic addition. | No derivative mismatch follows from this algebraic split. |
+| `NavierStokes/FiveRowRank.lean` | 241--247 | `FiveRows` imposes two zero radial moments on correction functions `dv` and `ga`, followed by three debt rows. | These are correction-moment equations, not a kinetic-energy or temporal-gradient identity. |
+| `NavierStokes/DefectIncrementBounds.lean` | 799--813 | `RankGeometry.preserve_masses` and `zeroMasses` transport the two named radial moments from a state to its rank stage. | The theorem is on internal correction states; it does not identify a jump in the exported spacetime energy. |
+| `NavierStokes/ActualCandidateConstruction.lean` | 392--437 | Successor mean stages are cycle increments and finite prefixes reconstruct the cycle mean. | No theorem maps the natural-number stage index to a temporal interface. |
 | `NavierStokes/LocalPotentialRebundle.lean` | 78--119 | The selected potential and direct fields are `ContDiffOn ℝ ∞` on the preterminal domain when the summed schedule is smooth. | The theorem applies to the selected sums, not to an asserted piecewise-time glue. |
 | `NavierStokes/TimeLocalization.lean` | 27--41 | The actual time activation is multiplication by a globally smooth `timeSwitch`; it preserves `ContDiffOn ℝ ∞`. | No non-smooth conditional or indicator cutoff is used here. |
 | `NavierStokes/TimeLocalization.lean` | 74--96, 144--164 | After `t > 3/4`, activated fields and temporal derivatives agree locally with the incoming fields; the residual agrees as well. | This establishes late local jet agreement, not an independent Cauchy stability theorem. |
@@ -29,7 +32,7 @@ evidence that the selected spacetime field has a temporal jump.
 
 `NavierStokesReview/src/probes/TemporalPatchingDiscontinuityProbe.lean`
 compiles with exit code 0 and contains no `sorry`, `axiom`, or `unsafe`.
-It records four facts:
+It records five facts:
 
 1. The indexed `initializedSeries` constructor does not itself enforce equality
    between `base + initial` and the first raw stage.
@@ -37,12 +40,21 @@ It records four facts:
 3. The selected time activation is presingularly smooth.
 4. Late temporal derivatives agree because the switch is locally constant at
    one after `3/4`.
+5. `initialized_series_admits_concrete_boundary_mismatch` constructs a raw
+   family with zero base and initial fields and a nonzero first stage, proving
+   that the indexed selector permits unequal adjacent entries.
 
 The first fact is a real interface obligation. It is not a proof that the
 actual selected sums jump, because the endpoint smoothness theorems apply to
 the summed fields and their cutoffs. No theorem in the inspected files turns
 the stage index into a time partition, and no theorem was found equating a
 stage boundary jump with a kinetic-energy jump.
+
+The concrete mismatch theorem sharpens that conclusion. It proves an
+unconstrained raw-family boundary, not a selected-field defect. The witness
+uses `ProblemStatement.coordinateVector 0` only to make the inequality
+constructive; it does not assert that this family satisfies the selected
+`StageEstimates`, support, divergence, residual, or endpoint hypotheses.
 
 ## Audit classification
 

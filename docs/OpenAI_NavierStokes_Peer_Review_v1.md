@@ -73,6 +73,14 @@ The paper describes five cumulative quantities `(M, I, J, S, Cp)` and a five-par
 
 This is not a stylistic discrepancy. It blocks the direct inference that the paper's five-equation Jacobian is the matrix verified by `FiveRowRank`.
 
+The runtime audit also rules out an overstrong version of the objection. In
+`MeanRankUpdate.lean`, `scaleDebt` carries three debt coordinates with explicit
+length and velocity powers. In `FiveRowRank.lean`, the first two rows constrain
+the correction functions `dv` and `ga`; they do not define total kinetic
+energy. The source theorem `five_rows` constructs these corrections for
+nonzero debt. The remaining issue is therefore transport into the selected
+Cartesian field, not an immediate contradiction from clamped energy rows.
+
 ### Finding 2: a separate five-dimensional repair does not close Finding 1
 
 `PositiveOrderMoments.lean` defines `Debt := Fin 5 → ℝ` and proves an exact repair theorem for five physical rows. This is positive evidence that the source has a serious five-row mechanism. It does not establish that these rows are the paper's `(M, I, J, S, Cp)`, nor that this module is the repair consumed by the selected exported candidate. A correspondence theorem and endpoint dependency trace are required.
@@ -753,6 +761,13 @@ require adjacent fields to match, so a proof of selected-field continuity must
 come from the later summed-field regularity theorems. This is a legitimate
 interface obligation, but it is not a proof that the selected field has a
 temporal discontinuity or an energy-gradient jump.
+
+The distinction is now formal. `initialized_series_admits_concrete_boundary_mismatch`
+constructs unequal raw entries at indices zero and one, using a nonzero
+coordinate vector for the first stage. Because the index is not a time
+coordinate, this establishes only that the raw selector lacks an adjacent-stage
+matching contract. It does not establish a temporal PDE jump, nor does it show
+that the concrete family satisfies the selected endpoint hypotheses.
 
 The source does contain the relevant positive results: `timeSwitch` is used
 through a `ContDiffOn ℝ ∞` theorem, late local equality preserves temporal

@@ -36,6 +36,14 @@ residual and all derivatives extend smoothly.
 
 Primary source: [OpenAI's Navier--Stokes paper](https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf), Theorem 1.1 and Sections 2--3. The repository copy is retained as `docs/navier-stokes openai.pdf`.
 
+OpenAI's public announcement repeats the stronger headline: it says the
+formalisation establishes statement C and D, with a smooth applied force and
+bounded energy. The announcement also describes cancellation of the large
+acceleration, pressure, momentum-transfer, and viscous terms. Those public
+claims make the selected-field transport theorem the relevant review target;
+they do not turn the residual construction into an automatic contradiction.
+See [OpenAI's announcement](https://openai.com/index/navier-stokes-solution/).
+
 This wording defeats a weak objection that merely says “the force is
 residual-defined”. The stronger review question is whether the Lean endpoint
 actually proves every advertised bridge: the selected fields, the full

@@ -32,6 +32,22 @@ theorem initialized_series_boundary_is_unconstrained
       GermCandidateAssembly.initializedSeries base initial stages 1 := by
   simpa only [GermCandidateAssembly.initializedSeries] using h
 
+theorem initialized_series_admits_concrete_boundary_mismatch (w : SpaceTime) :
+    let base : VelocityField := fun _ => 0
+    let initial : VelocityField := fun _ => 0
+    let stages : ℕ → VelocityField := fun j =>
+      if j = 0 then fun _ => coordinateVector 0 else fun _ => 0
+    GermCandidateAssembly.initializedSeries base initial stages 0 w ≠
+      GermCandidateAssembly.initializedSeries base initial stages 1 w := by
+  dsimp only
+  intro h
+  have hcoord : coordinateVector 0 ≠ (0 : Space) := by
+    intro hz
+    have hzero := congrArg (fun v : Space => v 0) hz
+    simp [coordinateVector] at hzero
+  apply hcoord
+  simpa [GermCandidateAssembly.initializedSeries] using h.symm
+
 theorem uncut_prefix_boundary_is_additive
     (stages : ℕ → ProblemStatement.VelocityField) (N : ℕ) :
     DiagonalJetBounds.uncutPrefix stages (N + 1) =

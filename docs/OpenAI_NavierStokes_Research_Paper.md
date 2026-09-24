@@ -544,6 +544,15 @@ $(M,I,J,S,C_p)$ through the correction state and mixed sums into the residual,
 pressure, and force. Evidence:
 `NavierStokesReview/evidence/five_row_collision_boundary_2026-09-24.md`.
 
+The runtime scope is now checked separately. `MeanRankUpdate.scaleDebt` has
+three debt coordinates, and `FiveRows` constrains only two radial moments of
+the correction functions before applying its three debt equations. A compiled
+completion constructs a nonzero debt satisfying the full predicate. Thus the
+review does not claim that the runtime rows hard-code total kinetic energy to
+zero. The unresolved issue is the selected-path transport of the internal
+correction data into the exported field and the paper's five named moments.
+Evidence: `NavierStokesReview/evidence/mean_rank_update_scope_2026-09-24.md`.
+
 ### A conditional correction-moment obstruction
 
 The zero rows are not empty syntax. They force two precise radial moments of
@@ -619,6 +628,14 @@ adjacent-stage matching condition at the constructor boundary. The finite-prefix
 theorems in `ActualCandidateConstruction.lean` are additive identities, not
 energy conservation laws and not temporal interpolation statements.
 
+This is not merely a missing annotation. The supplementary theorem
+`initialized_series_admits_concrete_boundary_mismatch` constructs a raw family
+with zero base and initial fields and a nonzero first stage. It proves that the
+indexed selector permits unequal adjacent entries. The construction is still
+not a temporal counterexample: the index is a natural number, not time, and the
+theorem does not assert the selected `StageEstimates`, support, divergence,
+residual, or endpoint conditions.
+
 That observation does not establish a discontinuity in the selected field.
 The selected sums have presingular smoothness theorems, the time activation is
 globally smooth, and late temporal derivatives agree by local eventual
@@ -645,6 +662,15 @@ intervals. That is useful context for what a genuine temporal induction looks
 like, but it does not prove that the Navier--Stokes Lean stage index is a time
 partition. The full source-context register is
 `docs/OpenAI_NavierStokes_Source_Context_Register.md`.
+
+The official CMI statement is correspondingly important in two ways. It calls
+the force given and externally applied, which makes force provenance a serious
+mathematical question. It also formulates alternatives C and D existentially,
+with smooth force data satisfying the stated decay conditions. A perturbation
+test or a sign-reversed force therefore cannot, by itself, refute the selected
+existential witness. The decisive formal target remains a false mandatory
+premise or a missing selected-path identity, especially the transport of the
+five named moments and pressure semantics into the exported endpoint.
 
 ## References and evidence
 
