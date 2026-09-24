@@ -53,3 +53,23 @@ selected-field equality carrying the paper moments into the final residual and
 force chain.
 
 Evidence: `NavierStokesReview/evidence/selected_moment_transport_closure_2026-09-24.md`.
+
+## Source-trace correction: the five-moment machinery is active upstream
+
+The 507-module selected closure reaches `PositiveOrderMoments`,
+`GlobalSlowProfiles`, `AssembledSlowBase`, `FiveProfileMoments`, and
+`FiveRowRank`. In particular, `PositiveOrderMoments.lean:76-85` defines the
+five integrated rows, `GlobalSlowProfiles.lean:1043-1055` proves their
+positive-order cancellation, and `AssembledSlowBase.lean:592-617` consumes
+that result. The record therefore does not support a dead-code or absent-formula
+objection.
+
+The remaining load-bearing gap is at the selected mixed-field boundary:
+`ActualCandidateAssembly.lean:515-523` assembles the final potential and
+pressure fields, while `1121-1151` exports the `Witness` contract without a
+field-level equality carrying the paper moments into the residual and force
+claims. The publication verdict remains **NOT ESTABLISHED**, because the
+paper markets those moments as part of the solution mechanism and the selected
+endpoint does not expose their realisation.
+
+Evidence: `NavierStokesReview/evidence/selected_moment_transport_source_trace_2026-09-25.md`.

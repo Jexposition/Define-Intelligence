@@ -564,3 +564,23 @@ kernel-level refutation. Their absence is already sufficient to withhold the
 advertised affirmative paper claim.
 
 **Last updated:** 2026-09-25
+
+## Source-trace correction
+
+The selected closure reaches the five-moment construction. The active task is
+therefore not to prove that the formulas are absent. It is to obtain or refute
+the selected-field identity linking `PositiveOrderMoments.moments` and the
+paper tuple
+$$
+(M,I,J,S,C_p)
+$$
+to the mixed fields assembled at `ActualCandidateAssembly.lean:515-523` and
+exported by `Witness` at `1121-1151`.
+
+| Check | Status | Evidence |
+|---|---:|---|
+| Five radial densities exist | [x] | `PositiveOrderMoments.lean:76-85` |
+| Five-row cancellation is proved upstream | [x] | `GlobalSlowProfiles.lean:1043-1055`; `AssembledSlowBase.lean:592-617` |
+| Selected mixed-field transport into the final residual/force contract | [ ] | No field-level equality found in `Witness` |
+
+Evidence: `NavierStokesReview/evidence/selected_moment_transport_source_trace_2026-09-25.md`.

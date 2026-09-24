@@ -87,3 +87,27 @@ debt alongside the actual selected `PhysicalData`. This is a precise proof
 that the exported interface does not determine the paper's five-moment
 payload. It is not a proof that the concrete selected integrals are false;
 that requires a separate identity for those integrals.
+
+## Source-trace correction: active upstream five-moment construction
+
+The closure rooted at `ActualCandidateAssembly` reaches the five-moment
+machinery. `PositiveOrderMoments.rowDensity` and `moments`
+(`PositiveOrderMoments.lean:76-85`) define the five radial quantities, while
+`GlobalSlowProfiles.profiles_moments` (`GlobalSlowProfiles.lean:1043-1055`)
+proves their vanishing for the slow-profile sequence. The result is then used
+by `AssembledSlowBase.extended_axial_primitive_zero`
+(`AssembledSlowBase.lean:592-617`). These are substantive upstream results,
+not dead imports.
+
+The unresolved point is the next transport step. The selected mixed fields are
+assembled in `ActualCandidateAssembly.lean:515-523`, passed into
+`potentialStages` at `531-534`, and exported through `Witness` at `1121-1151`.
+No theorem in that selected export identifies the resulting velocity,
+pressure, residual, or force with the paper tuple
+$$
+(M,I,J,S,C_p).
+$$
+Accordingly, the objection is a missing selected-field realisation theorem,
+not a claim that the five upstream formulas do not exist.
+
+Evidence: `NavierStokesReview/evidence/selected_moment_transport_source_trace_2026-09-25.md`.

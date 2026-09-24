@@ -487,3 +487,11 @@ This distinction resolves the burden-of-proof question. The public solution
 claim is not established until the authors provide that selected-field
 transport theorem; no kernel-level `False` derivation is required merely to
 withhold acceptance of an unsupported affirmative correspondence.
+
+The source trace now records the positive upstream facts as well. The
+five-coordinate densities and cancellation theorem are present and active in
+the selected closure; the remaining issue is their transport into the final
+mixed candidate. This avoids both underclaiming the source construction and
+overclaiming what the current endpoint proves.
+
+Evidence: `NavierStokesReview/evidence/selected_moment_transport_source_trace_2026-09-25.md`.

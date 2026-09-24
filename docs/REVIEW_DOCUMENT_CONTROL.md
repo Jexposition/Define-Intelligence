@@ -668,3 +668,19 @@ equated with the paper quantities before a numerical or symbolic mismatch can
 be derived.
 
 Evidence: `NavierStokesReview/evidence/selected_physical_data_moment_interface_2026-09-24.md`.
+
+## Current source authority for CTR-005
+
+The active source record corrects the earlier reachability hypothesis. The
+five-moment modules are reachable and prove substantive upstream identities.
+The controlled objection is now the absence of a theorem transporting those
+identities from the slow-profile construction through the selected mixed
+fields and into `Witness`.
+
+The exact source trace is maintained in
+`NavierStokesReview/evidence/selected_moment_transport_source_trace_2026-09-25.md`.
+It supersedes any wording that describes `PositiveOrderMoments` or
+`FiveProfileMoments` as dead or absent from the selected closure. The primary
+publication verdict remains **NOT ESTABLISHED**; the narrower status
+**NOT FORMALLY REFUTED** still means only that no selected-path `False` theorem
+has yet been derived.

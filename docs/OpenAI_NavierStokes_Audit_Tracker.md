@@ -1339,3 +1339,9 @@ which the paper's five-moment tail-cancellation argument applies. This is an
 affirmative failure to discharge the authors' proof burden. It is distinct
 from the narrower question whether the selected endpoint alone yields a
 kernel-level `False`.
+
+The exact source-backed correction and line ledger are now recorded in
+`NavierStokesReview/evidence/selected_moment_transport_source_trace_2026-09-25.md`.
+It confirms that the five-row formulas and upstream cancellation are active;
+the unresolved defect is their transport into the selected mixed field and
+the exported solution contract.

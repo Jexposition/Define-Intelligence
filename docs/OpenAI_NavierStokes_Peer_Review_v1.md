@@ -1172,3 +1172,27 @@ selected-field moment-composition theorem. A `False` theorem would strengthen
 the review but is not required to establish this failure of affirmative proof.
 
 Evidence: `NavierStokesReview/evidence/selected_physical_data_moment_interface_2026-09-24.md`.
+
+## Source-trace correction to the central finding
+
+The repository does contain the paper-shaped five-moment construction. The
+five densities are defined at `PositiveOrderMoments.lean:76-85`, their
+positive-order cancellation is proved at `GlobalSlowProfiles.lean:1043-1055`,
+and the assembled slow base uses it at `AssembledSlowBase.lean:592-617`.
+This removes the weaker allegation that the five-moment formulas are absent or
+dead.
+
+It does not remove the central publication objection. The final mixed fields
+are assembled at `ActualCandidateAssembly.lean:515-523`, but the exported
+`Witness` contract (`1121-1151`) does not state that their velocity, pressure,
+residual, or force realise the paper's
+$$
+(M,I,J,S,C_p)
+$$
+identities. The missing theorem is therefore a selected-field transport
+theorem. Since OpenAI presents the construction as a solution, not as an
+unconnected collection of upstream lemmas, this missing link is sufficient to
+withhold the affirmative solution claim. It is not yet a direct proof that the
+selected integrals are false.
+
+Evidence: `NavierStokesReview/evidence/selected_moment_transport_source_trace_2026-09-25.md`.
