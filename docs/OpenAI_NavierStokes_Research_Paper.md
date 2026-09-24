@@ -867,3 +867,31 @@ force and one trajectory and does not quantify over perturbations. The
 counter-paper's formal conclusion is consequently a failed paper-to-endpoint
 identification until the missing selected-field moment theorem is supplied or
 one of its concrete premises is proved false.
+
+## Burden of proof and the underclaim finding
+
+The review must distinguish the proposition that the Lean endpoint exports from
+the proposition OpenAI's paper asks readers to accept. The endpoint is not an
+empty wrapper: `ActualCandidateAssembly.Witness` packages smoothness, support,
+zero initial data, incompressibility, residual equality, the relevant energy and
+blow-up consequences, and the force-jet extension. The comparator modules carry
+those predicates into the formal C/D-shaped conclusions.
+
+The paper, however, gives the five named moments `(M,I,J,S,C_p)` a load-bearing
+role in the explanation of the construction. `PositiveOrderMoments` and
+`FiveProfileMoments` define genuine five-coordinate objects, while
+`FiveRowRank` operates through a constrained three-debt interface. The review
+has proved a local promotion theorem for those interfaces, but has not found a
+theorem identifying the selected final mixed fields and residual with the
+paper's five named quantities. That is the unresolved correspondence required
+to support the paper's stronger interpretation.
+
+This places the burden where it belongs. A reviewer need not prove that every
+smooth force is harmless, or that the literal existential C/D proposition is
+false, before declining to accept a paper whose central construction has not
+been transported into its exported endpoint. The current formal conclusion is
+therefore: the literal endpoint is materially populated, but the public
+five-moment solution claim is not established by the source as presently
+exposed. A `False` theorem would be a stronger and separate result.
+
+Evidence: `NavierStokesReview/evidence/official_claim_transport_matrix_2026-09-24.md`.

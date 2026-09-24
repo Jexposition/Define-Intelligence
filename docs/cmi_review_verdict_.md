@@ -173,3 +173,19 @@ semantics unexposed, so CTR-005 remains live. The uniqueness audit itself
 does not yield a selected-witness `False`.
 
 Evidence: `NavierStokesReview/evidence/whole_space_uniqueness_audit_2026-09-24.md`.
+
+## Burden-of-proof correction: 2026-09-24
+
+The final classification must not understate the review's adverse result. The
+exported endpoint is materially populated and formally C/D-shaped. The
+unresolved defect concerns the stronger public claim that the selected endpoint
+is the five-moment construction described in the paper. The repository defines
+the relevant moment systems, but no selected-path theorem located in
+`Witness` identifies `(M,I,J,S,C_p)` with the final mixed fields and residual.
+
+Accordingly, the authors have not discharged the burden for the stronger
+published solution description. This is a substantive “not established”
+finding, not a request that the reviewer prove a universal negation. A literal
+Lean `False` remains a separate threshold and has not been claimed here.
+
+Evidence: `NavierStokesReview/evidence/official_claim_transport_matrix_2026-09-24.md`.

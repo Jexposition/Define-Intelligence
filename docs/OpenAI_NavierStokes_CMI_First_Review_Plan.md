@@ -523,3 +523,16 @@ Evidence: `NavierStokesReview/evidence/selected_label_inhabitability_audit_2026-
 | Derive literal C/D `False` | [ ] | The endpoint still has no perturbation-stability or five-moment field identity requirement. |
 
 Evidence: `NavierStokesReview/evidence/global_germ_transport_audit_2026-09-24.md`.
+
+## Official claim transport and underclaim gate
+
+| Task | Status | Acceptance condition |
+|---|---:|---|
+| Map each published Theorem 1.1 obligation to the Lean endpoint | [x] | `official_claim_transport_matrix_2026-09-24.md` records source anchors and endpoint status. |
+| Separate literal C/D predicates from the paper's five-moment explanation | [x] | The matrix records the endpoint predicates as present and the selected five-moment identification as unproved. |
+| Treat burden of proof asymmetrically | [x] | OpenAI must supply the selected-field transport theorem before the stronger published claim is accepted. |
+| Promote the correspondence gap to `False` | [ ] | Requires a false equality or false mandatory premise on the selected path. |
+| Continue selected-field theorem search | [ ] | Locate a theorem identifying the final mixed fields with `(M,I,J,S,C_p)`, or compile a concrete counterexample to that identity. |
+
+The active counter-paper target is therefore an underclaim in the published
+mathematical correspondence, not a generic objection to compilation.

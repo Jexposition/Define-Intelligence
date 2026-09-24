@@ -1067,3 +1067,30 @@ defined fixed-force same-datum stability predicate fails. That result is a
 formal selected-path provenance objection. It does not turn the literal
 existential C/D statement into `False`, because that statement does not include
 the stronger perturbation-stability or force-independence predicate.
+
+## Finding 37: the burden of proof is asymmetric
+
+The source-to-claim matrix changes the emphasis of the review. The repository
+does export a substantial C/D-shaped endpoint. `Witness` includes the selected
+stage sums, extensions, force, `CandidateProperties`, force regularity, H3
+growth, and endpoint jets; the R3 and periodic comparator modules then derive
+the corresponding no-global-solution statements.
+
+That positive result does not discharge the authors' larger published claim.
+The paper presents the five quantities `(M,I,J,S,C_p)` as the mechanism that
+makes the selected construction a Newtonian fluid solution. The source contains
+the relevant five-moment systems, but the exported `Witness` contains no
+selected-field equality identifying those moments with the final mixed velocity,
+pressure, residual, or force. The constrained three-debt promotion is a useful
+local bridge, not the missing global identification.
+
+The correct conclusion is consequently stronger than “a compiler warning was
+found” and narrower than “the Lean theorem is already false”: the repository
+has not established that the public paper's central five-moment construction is
+the object proved by the exported endpoint. That burden lies with the authors.
+Until the selected-path transport theorem is supplied, the stronger public
+solution claim should not be accepted. A kernel-level refutation remains a
+separate threshold requiring a false selected premise or a zero-sorry
+contradiction.
+
+Evidence: `NavierStokesReview/evidence/official_claim_transport_matrix_2026-09-24.md`.

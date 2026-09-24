@@ -616,3 +616,25 @@ coexists with failure of the stronger same-datum fixed-force stability
 predicate. The selected endpoint still exports neither that predicate nor a
 field-level equality to the paper's five named moments. This is a formal
 contract non-implication, not an endpoint `False` theorem.
+
+## Claim-to-endpoint matrix: 2026-09-24
+
+The new source matrix separates the literal exported proposition from the
+stronger explanation in the public paper. `ActualCandidateAssembly.Witness`
+(`ActualCandidateAssembly.lean:1121-1151`) and `selected_candidate`
+(`1177-1185`) do export the C/D-shaped fields: smoothness, support, zero initial
+data, divergence-free velocity, residual equality, energy on the R³ path, and
+blow-up. The comparator theorems therefore cannot be described as empty shells.
+
+The paper's central five-moment story is different. The repository contains
+`PositiveOrderMoments`, `FiveProfileMoments`, and the three-debt
+`FiveRowRank` repair, but the exported `Witness` does not state that
+`PositiveOrderMoments.moments`, `FiveProfileMoments.physicalMoments`, or the
+paper tuple `(M,I,J,S,C_p)` equals the selected mixed field, residual, or force.
+That selected-path transport theorem is the outstanding burden on the authors.
+
+This is an underclaim finding, not a claim that the literal Lean endpoint has
+already been contradicted. The authors must establish the correspondence before
+the stronger published “solution” description can be accepted.
+
+Evidence: `NavierStokesReview/evidence/official_claim_transport_matrix_2026-09-24.md`.

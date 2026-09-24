@@ -163,3 +163,19 @@ forward-data test rather than a literal contradiction of the existential C/D
 predicate.
 
 Evidence: `NavierStokesReview/evidence/same_datum_fixed_force_obstruction_2026-09-24.md`.
+
+## Published claim versus exported endpoint: 2026-09-24
+
+The official sources state a C/D solution claim, while the repository's
+`Witness` exports a concrete C/D-shaped predicate. The review therefore does
+not rely on the weaker argument that the theorem is merely an existential
+placeholder. The unresolved issue is more specific: the paper's five-moment
+mechanism is not identified with the selected final mixed fields, pressure,
+residual, and force by any theorem located in the exported `Witness` chain.
+
+This is an author-side burden of proof. The absence of that selected-path
+transport theorem is enough to keep the stronger paper claim unestablished;
+it is not, without a false selected identity, a formal contradiction to the
+literal C/D endpoint.
+
+Evidence: `NavierStokesReview/evidence/official_claim_transport_matrix_2026-09-24.md`.
