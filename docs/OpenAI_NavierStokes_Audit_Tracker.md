@@ -1026,7 +1026,7 @@ and does not alter the selected-endpoint transport target. Source register:
 `docs/OpenAI_NavierStokes_Source_Context_Register.md`.
 
 Packaging status: `700e39d` is the last confirmed remote baseline; local review
-commit `81da057` is not confirmed pushed because GitHub authentication is
+commit `1dd551b` is not confirmed pushed because GitHub authentication is
 unavailable. The two supplied reference PDFs remain intentionally untracked,
 and no Lean build artefacts are tracked.
 

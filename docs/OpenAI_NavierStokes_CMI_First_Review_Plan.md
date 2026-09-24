@@ -464,7 +464,7 @@ Evidence: `NavierStokesReview/evidence/whole_space_uniqueness_audit_2026-09-24.m
 | Selected rank path | [x] | The actual cycle consumes rank/debt data; the two local radial invariants are compiled in `SelectedCycleMomentTransport.lean`. |
 | Endpoint transport | [ ] | `Witness` exposes no equality to the five paper moments or to `FiveRowRank.FiveRows`; a concrete selected-field violation remains to be proved. |
 | Whole-space audit | [x] | The comparison/uniqueness chain and standard-axiom report are recorded. |
-| Release packaging | [x]/[~] | `700e39d` is the last confirmed remote baseline; local review commit `81da057` is not confirmed pushed because GitHub authentication is unavailable. No tracked Lean build artefacts exist. Two supplied PDFs remain intentionally untracked. |
+| Release packaging | [x]/[~] | `700e39d` is the last confirmed remote baseline; local review commit `1dd551b` is not confirmed pushed because GitHub authentication is unavailable. No tracked Lean build artefacts exist. Two supplied PDFs remain intentionally untracked. |
 
 The active route is therefore the selected-field transport theorem, not the
 discarded claims that the five-moment branch is dead code, that the first two
