@@ -1025,9 +1025,10 @@ does not supply a temporal-gluing theorem for the Navier--Stokes indexed stages
 and does not alter the selected-endpoint transport target. Source register:
 `docs/OpenAI_NavierStokes_Source_Context_Register.md`.
 
-Packaging status: `700e39d` is pushed; control commit `eff4d0f` is local
-pending GitHub authentication. The two supplied reference PDFs remain
-intentionally untracked, and no Lean build artefacts are tracked.
+Packaging status: `700e39d` is the last confirmed remote baseline; local review
+commit `81da057` is not confirmed pushed because GitHub authentication is
+unavailable. The two supplied reference PDFs remain intentionally untracked,
+and no Lean build artefacts are tracked.
 
 ## Selected endpoint direct-source trace: 2026-09-24
 
