@@ -133,3 +133,15 @@ This source fact narrows the counter-paper. The remaining pressure objection is
 the absence of an absolute selected pressure representative in the exported
 semantic bridge, not the absence of a uniqueness proof. Evidence:
 `NavierStokesReview/evidence/whole_space_uniqueness_audit_2026-09-24.md`.
+
+## Fixed-force stability extension
+
+The review-side theorem `FixedForcePerturbationStability.lean` makes the
+forward-data reading explicit by requiring the same force and pressure to
+survive every smooth, compactly supported, divergence-free perturbation of
+the velocity. The selected candidate fails this stronger predicate at an
+interior point. This is evidence of residual path dependence, not a literal
+contradiction of the existential C/D endpoint, which does not include that
+predicate.
+
+Evidence: `NavierStokesReview/evidence/fixed_force_stability_extension_2026-09-24.md`.

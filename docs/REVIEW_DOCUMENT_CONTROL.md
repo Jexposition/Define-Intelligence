@@ -494,6 +494,23 @@ Evidence: `NavierStokesReview/evidence/temporal_patching_audit_2026-09-24.md`.
 
 Authority: `NavierStokesReview/evidence/selected_witness_fixed_force_obstruction_2026-09-24.md`.
 
+## Fixed-force stability extension
+
+The review now contains a separate theorem layer at
+`NavierStokesReview/src/external_semantic/FixedForcePerturbationStability.lean`.
+It proves that the selected candidate fails the explicitly strengthened
+predicate `FixedForceStable`: the force and pressure are held fixed while a
+smooth, compactly supported, divergence-free perturbation is added to the
+velocity. The review library compiles successfully under Lean 4.34.0-rc2.
+
+This result strengthens CTR-012 but does not alter the authority verdict. The
+literal C/D endpoint does not require perturbation stability or a formal force
+independence predicate, so no selected-witness `False` is claimed. CTR-005
+remains the headline correspondence objection; the fixed-force theorem is
+supporting evidence about residual provenance and forward-data stability.
+
+Evidence: `NavierStokesReview/evidence/fixed_force_stability_extension_2026-09-24.md`.
+
 ## Whole-space uniqueness audit: 2026-09-24
 
 `WholeSpaceUniqueness.classical_uniqueness_on_Icc` is an active comparison

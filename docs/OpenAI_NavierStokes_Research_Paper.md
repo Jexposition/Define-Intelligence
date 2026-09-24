@@ -774,3 +774,23 @@ pressure-support trivialisation. The remaining formal objection is the missing
 selected-path transport of the paper's named moments and pressure semantics.
 
 Evidence: [`whole_space_uniqueness_audit_2026-09-24.md`](../NavierStokesReview/evidence/whole_space_uniqueness_audit_2026-09-24.md).
+
+## A formal fixed-force stability test
+
+The review includes a separate semantic extension that makes the forward-data
+interpretation explicit. `FixedForceStable` requires a single force and
+pressure to satisfy the residual equation after every smooth, compactly
+supported, divergence-free perturbation of the velocity. The selected
+candidate fails this strengthened condition: at $(t,x)=(1/2,0)$, the compact
+perturbation produces the nonzero defect `coordinateVector 0` while the force
+is held fixed.
+
+This result sharpens the causal interpretation of the residual construction,
+but it must not be overstated. The literal C/D endpoint does not contain this
+stability or independence predicate. The theorem therefore does not derive
+`False` from the published existential statement. It records a formal
+failure of the stronger forward-data reading and leaves the selected
+five-moment transport theorem under CTR-005 as the principal unresolved
+correspondence target.
+
+Evidence: [`fixed_force_stability_extension_2026-09-24.md`](../NavierStokesReview/evidence/fixed_force_stability_extension_2026-09-24.md).

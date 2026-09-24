@@ -878,3 +878,22 @@ The audited declarations use only the standard Lean axioms
 result follows from this audit.
 
 Evidence: [`whole_space_uniqueness_audit_2026-09-24.md`](../NavierStokesReview/evidence/whole_space_uniqueness_audit_2026-09-24.md).
+
+## Fixed-force stability is a separate formal objection
+
+The review-side theorem `FixedForcePerturbationStability.lean` defines an
+explicit stronger requirement: the same force and pressure must continue to
+satisfy the residual equation after every smooth, compactly supported,
+divergence-free velocity perturbation. The selected candidate fails this
+requirement. The compact perturbation at $(t,x)=(1/2,0)$ contributes the
+nonzero defect `coordinateVector 0`, while the force is held fixed.
+
+This is a precise formalisation of the causal/provenance concern surrounding
+the residual-designed force. It is not, by itself, a refutation of the
+literal C/D existential statement, because that endpoint exports one selected
+force and one selected candidate and does not quantify over perturbations. The
+result therefore belongs under CTR-012, alongside the direct residual
+provenance theorem, while CTR-005 remains the unresolved paper-to-endpoint
+transport objection.
+
+Evidence: [`fixed_force_stability_extension_2026-09-24.md`](../NavierStokesReview/evidence/fixed_force_stability_extension_2026-09-24.md).

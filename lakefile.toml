@@ -26,3 +26,8 @@ globs = ["Euler", "Euler.+"]
 [[lean_lib]]
 name = "ComparatorChallenges"
 globs = ["ComparatorChallenges.+"]
+
+[[lean_lib]]
+name = "NavierStokesReview"
+srcDir = "NavierStokesReview/src"
+globs = ["extensions.+", "external_semantic.+"]

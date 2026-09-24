@@ -1043,3 +1043,18 @@ intentionally untracked, and no Lean build artefacts are tracked.
   objection, not a dead-code or hardcoded-zero claim.
 
 Evidence: `NavierStokesReview/evidence/selected_endpoint_direct_source_trace_2026-09-24.md`.
+
+## Fixed-force stability extension: 2026-09-24
+
+| ID | Result | Status |
+|---|---|---:|
+| CTR-012-I | Defined `FixedForceStable` for smooth, compactly supported, divergence-free velocity perturbations with force and pressure held fixed. | [x] |
+| CTR-012-J | Proved that the selected candidate fails this strengthened predicate using the compact perturbation at `(1/2, 0)`. | [x] |
+| CTR-012-K | Derived a contradiction with the literal C/D existential endpoint. | [ ] |
+
+The new theorem is compiled in
+`NavierStokesReview/src/external_semantic/FixedForcePerturbationStability.lean`.
+It proves a fixed-force stability failure, not that the literal endpoint is
+empty. `CandidateProperties` does not quantify over perturbations or require
+force independence. Evidence:
+`NavierStokesReview/evidence/fixed_force_stability_extension_2026-09-24.md`.

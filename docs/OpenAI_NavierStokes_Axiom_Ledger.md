@@ -720,3 +720,11 @@ global finite-energy competitor before time one.
 uniqueness lemmas, and the periodic corollary. This is a positive formal
 verification result for the no-global-solution chain, not a new axiom and not
 a `False` derivation.
+
+## AX-044: fixed-force stability extension
+
+`NavierStokesReview/src/external_semantic/FixedForcePerturbationStability.lean`
+adds no axiom. Its theorem uses the existing compact perturbation obstruction
+to prove failure of the explicitly strengthened `FixedForceStable` predicate.
+The result is not a `False` derivation from the literal C/D endpoint because
+force independence and perturbation stability are not endpoint fields.

@@ -413,3 +413,14 @@ pressure and five-moment transport questions focused on selected-endpoint
 semantics rather than alleging that the uniqueness machinery is absent.
 
 Evidence: `NavierStokesReview/evidence/whole_space_uniqueness_audit_2026-09-24.md`.
+
+## Fixed-force stability extension
+
+The review-side extension defines an explicit stronger forward-data predicate
+and proves that the selected candidate fails it under a smooth, compactly
+supported, divergence-free perturbation with force and pressure held fixed.
+This formalises the residual provenance concern. It does not change the
+literal C/D endpoint, which contains no perturbation-stability or force-
+independence premise.
+
+Evidence: `NavierStokesReview/evidence/fixed_force_stability_extension_2026-09-24.md`.

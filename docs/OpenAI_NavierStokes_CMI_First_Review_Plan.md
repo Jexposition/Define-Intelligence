@@ -408,6 +408,19 @@ forward-data language of the official problem statement, but the literal
 existential endpoint is not empty merely because its witness was manufactured
 backwards.
 
+## Current formal extension
+
+| Task | Status | Acceptance test |
+|---|---:|---|
+| Define explicit fixed-force stability predicate | [x] | `FixedForceStable` quantifies over smooth, compactly supported, divergence-free perturbations. |
+| Instantiate the selected compact perturbation | [x] | `selected_candidate_fails_fixed_force_stability` compiles with no admitted declarations. |
+| Promote this to literal C/D `False` | [ ] | Requires force independence or perturbation stability as an actual endpoint premise, or a false selected identity. |
+
+Interpret the result as a formal provenance/stability objection. Do not write
+that the existential C/D proposition has been refuted by this extension alone.
+
+Evidence: `NavierStokesReview/evidence/fixed_force_stability_extension_2026-09-24.md`.
+
 ## Selected rank transport re-audit: 2026-09-24
 
 | Check | Result | Required follow-up |

@@ -92,3 +92,16 @@ lake build
 
 For instructions on checking the formalizations with Comparator, see the
 [ComparatorChallenges README](ComparatorChallenges/README.md).
+
+## Review status
+
+The independent review fork contains a separate `NavierStokesReview` library.
+Its fixed-force extension proves that the selected residual construction is
+not stable under smooth, compactly supported, divergence-free velocity
+perturbations when the force and pressure are held fixed. This is a formal
+provenance objection under a stronger forward-data interpretation. It is not
+presented as a literal `False` derivation from the C/D existential endpoint,
+which does not encode force independence or perturbation stability. See
+[`docs/OpenAI_NavierStokes_Peer_Review_v1.md`](docs/OpenAI_NavierStokes_Peer_Review_v1.md)
+and
+[`NavierStokesReview/evidence/fixed_force_stability_extension_2026-09-24.md`](NavierStokesReview/evidence/fixed_force_stability_extension_2026-09-24.md).
