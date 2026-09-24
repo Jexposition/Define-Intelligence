@@ -504,6 +504,14 @@ The resulting verdict is:
 > paper-to-code correspondence. A formal contradiction to the selected Lean
 > witness has not yet been proved.**
 
+The two clauses have different logical roles. The first is the review verdict:
+the authors have not discharged the burden of showing that the exported
+candidate is the five-moment construction described in the paper and that the
+required analytic premises hold for that same candidate. The second is a
+narrow statement about the present refutation programme: no zero-sorry proof of
+`False` has yet been derived from the selected endpoint. Absence of that
+refutation is not affirmative evidence for the authors' claim.
+
 The load-bearing objection is CTR-005: the missing selected-path transport of
 the paper's five moments into the actual velocity, pressure, residual, and
 force. The review should be upgraded to a formal refutation only after a

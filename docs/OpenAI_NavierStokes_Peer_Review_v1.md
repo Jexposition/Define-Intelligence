@@ -42,6 +42,44 @@ load-bearing objection: the selected-path theorem still does not identify the
 paper's named moments and force with the fields consumed by the exported R³
 endpoint. That correspondence claim remains unestablished.
 
+## Finding 22: response summaries require four scope qualifications
+
+The current source supports the main outline of the supplied technical
+summaries, but several formulations would overstate the evidence if copied
+without qualification.
+
+First, `FiveRowPositiveOrderBridgeProbe.lean` proves an algebraic identity for
+the repair maps under the promotion
+`(P,Jθ,Jz) ↦ (0,0,-P,-Jθ,-Jz)`. It does not identify the selected Cartesian
+field with the paper's `(M,I,J,S,C_p)` integrals, and it does not transport that
+identity through the residual and force estimates. The bridge repairs the
+algebraic objection; it does not close CTR-005.
+
+Second, the residual-defined force satisfies the repository's formal
+existential candidate predicate. That is not a ruling on the phrase “given,
+externally applied force” in the CMI problem description. The formal predicate
+contains smoothness, support, residual, energy, and blow-up fields, but no
+independence axiom. The provenance criticism is therefore material and worth
+reviewing, but it is not by itself a Lean contradiction of C or D.
+
+Third, force cancellation at the origin is a local endpoint result. The source
+proves residual equality on `0 < t < 1` and supplies a smooth extension at the
+endpoint; the selected force tends to zero at the origin. This does not prove a
+global force norm statement or that the force is nonzero at every point at
+time one.
+
+Fourth, the generic zero-velocity and five-debt probes establish interface
+non-implication, not emptiness of the selected witness. The selected-label
+construction gives explicit witnesses for the selected primary label and
+active pair. The exact adjudication is recorded in
+`NavierStokesReview/evidence/response_claims_adjudication_2026-09-24.md`.
+
+These qualifications do not shift the burden of proof onto the reviewer. The
+authors must establish the selected-path identifications and analytic
+premises needed for the claim they publish. The phrase “not formally refuted”
+reports only that the current Lean attack has not derived `False`; it does not
+mean that the unproved paper-to-endpoint bridge is presumed valid.
+
 ## Recommendation
 
 **Major revision.** The public Lean development contains a substantial formal endpoint for a forced whole-space breakdown statement, but the accompanying mathematical narrative is not yet shown to correspond to the actual source implementation. The most concrete issue is the mismatch between the paper's five cumulative moments and the repository's `FiveRowRank` debt system.

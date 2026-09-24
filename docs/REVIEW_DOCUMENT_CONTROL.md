@@ -45,6 +45,14 @@ probe leaves a live objection because the recovery chain is comparative and
 does not, by its type, establish an absolute global Poisson representative for
 the selected pressure.
 
+The active verdict uses two separate statuses: `NOT ESTABLISHED` means the
+authors have not discharged the burden of proving the selected-path
+correspondence and its analytic premises; `NOT FORMALLY REFUTED` means that the
+review has not yet derived `False` from the selected endpoint. The latter is
+not a presumption that the former has been satisfied. The claim-by-claim
+qualification record is
+`NavierStokesReview/evidence/response_claims_adjudication_2026-09-24.md`.
+
 The six core documents above are synchronised to that authority map. The
 pressure result is sourced to
 `NavierStokesReview/evidence/pressure_uniqueness_closure_audit_2026-09-24.md`

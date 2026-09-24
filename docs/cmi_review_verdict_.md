@@ -11,6 +11,11 @@ The source-backed audit confirms that the force is a residual-based construction
 
 Likewise, `finalPotential_smooth` is derived from smooth coefficient data, and `force_smooth` is conditional on residual-jet limits and away extensions. The unresolved issue is whether the selected endpoint proves the paper's five-moment transport and all those analytic premises for the same fields. No zero-sorry contradiction has yet been established.
 
+This does not shift the proof burden to the review. The published claim remains
+unestablished until the authors exhibit the selected-path correspondence and
+discharge its analytic premises. “No zero-sorry contradiction yet” describes
+only the narrower status of the current falsification attempt.
+
 ## 1. Executive Summary
 
 The source establishes a residual-based forced-candidate architecture, but this

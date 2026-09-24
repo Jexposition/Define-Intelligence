@@ -31,6 +31,37 @@ data transported into the production debt, residual estimates, and public
 `selected_witness`. This is the active counter-paper objection. It is a
 correspondence failure under review, not yet a kernel-level contradiction.
 
+This is a failure to discharge the authors' proof burden, not a presumption
+that the missing bridge is true. “Not formally refuted” is a separate status
+for the narrower question whether the current review has derived `False` from
+the selected endpoint. The active review verdict remains negative on the
+published claim until the selected-path bridge and its analytic premises are
+shown.
+
+## Response-claims clarification: 2026-09-24
+
+The supplied technical summaries are broadly consistent with the source, but
+four distinctions are mandatory when quoting them:
+
+1. `FiveRowPositiveOrderBridgeProbe.lean` proves an algebraic repair identity
+   under the promotion `(P,Jθ,Jz) ↦ (0,0,-P,-Jθ,-Jz)`. It does not prove that
+   the selected Cartesian fields realise `(M,I,J,S,C_p)` or that the equality
+   survives the selected residual and force pipeline.
+2. The residual-defined force is compatible with the repository's formal
+   existential predicate. Calling that “CMI compliant” would overstate the
+   result: force provenance and the meaning of “given, externally applied” are
+   not encoded as an independence axiom in `CandidateProperties`.
+3. The origin cancellation result is local. Interior residual equality holds
+   for `0 < t < 1`, the endpoint is a smooth extension, and the selected force
+   tends to zero at the origin. This is not a global statement that the force
+   vanishes or is nonzero at every point at time one.
+4. Generic zero-velocity and five-debt probes test interface non-implication;
+   they do not show that the selected witness is empty or zero. The selected
+   primary label and active pair now have explicit zero-sorry witnesses.
+
+The exact claim-by-claim record is
+`NavierStokesReview/evidence/response_claims_adjudication_2026-09-24.md`.
+
 ## Pressure and uniqueness closure audit: 2026-09-24
 
 The compact-pressure trivialisation attack is rejected as a standalone
@@ -159,7 +190,7 @@ These findings narrow the counter-paper. The remaining formal correspondence obj
 | --- | --- | --- | --- |
 | CTR-027 | `MomentBridgeObstructionProbe.lean` proves that the paper-shaped exponent vectors cannot be directly identified with `FiveRowRank`, and that the associated debt spaces have no linear equivalence. | Confirmed zero-sorry adverse result | The direct Appendix-A-to-`FiveRowRank` reading is impossible. This is a paper-to-code correspondence failure, not yet a refutation of the exported endpoint. |
 | CTR-028 | `PositiveOrderMoments.lean` contains a separate five-dimensional exact repair theorem. | Confirmed positive evidence | The repository has serious five-row machinery, so the correct issue is the missing identification and endpoint-use theorem, not absence of all five-row repair. |
-| CTR-029 | The R3 endpoint remains standard-axiom-only in the inspected reports, while the force stays active through the singular interval. | Confirmed | The endpoint is forced and C/D-shaped; it is not established as autonomous or force-free. CMI C/D permits smooth forcing. |
+| CTR-029 | The R3 endpoint remains standard-axiom-only in the inspected reports, while the force is residual-driven on the interior interval and extended smoothly at the endpoint. | Confirmed with scope | The endpoint is forced and C/D-shaped; this does not establish autonomous or force-free collapse. At the origin the selected force tends to zero, so “active through the singular interval” must not be read as a global pointwise nonzero claim. CMI C/D permits smooth forcing. |
 
 The present review classification is **major revision**. A stronger `[FORMALLY REFUTED]` label is reserved for a zero-sorry contradiction or a false premise proved on the selected endpoint path.
 

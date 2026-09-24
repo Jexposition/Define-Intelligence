@@ -11,6 +11,7 @@
 | W3 | Extract five target moments and runtime three-debt engine | [x] | `physical_transport_bridge_spec_extraction_2026-09-24.md` records literal definitions and anchors. |
 | W4 | Test whether generic `StageEstimates` determines five debt or blow-up | [x] | `StageEstimatesMomentBlindnessProbe.lean` compiles without `sorry`. |
 | W5 | Locate selected-path five-moment transport theorem | [~] | Generic stage estimates do not provide it. The new zero-sorry probe proves the exported `Witness` does not entail an arbitrary five-debt certificate; field-level violation is still unproved. |
+| W5a | Adjudicate supplied summaries against source and burden of proof | [x] | `NavierStokesReview/evidence/response_claims_adjudication_2026-09-24.md`; distinguishes algebraic promotion, selected transport, formal non-refutation, and the authors' proof burden. |
 | W6 | Connect pressure germ/base equation to global pressure semantics | [~] | Comparison identities are verified, but no selected-field absolute Poisson/normalisation theorem is exposed. The pressure-cancellation probe is disproved; the correspondence gap remains. |
 
 | W7 | Re-audit live upstream five-moment construction against selected mixed endpoint | [x]/[ ] | Upstream identities and base blow-up compile; final mixed-sum transport remains open. |
