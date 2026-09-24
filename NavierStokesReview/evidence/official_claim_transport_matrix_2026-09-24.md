@@ -10,10 +10,10 @@ This document separates three propositions that have been repeatedly conflated:
 
 1. the literal proposition exported by the Lean endpoint;
 2. the mathematical construction described in OpenAI's paper; and
-3. the stronger claim that the published construction has been independently
-   established as a solution of the Clay problem.
+3. the central published claim that the construction has been established as a
+   solution of the Clay problem.
 
-The burden of establishing the stronger claim lies with the authors. A missing
+The burden of establishing the central solution claim lies with the authors. A missing
 transport theorem is therefore sufficient to withhold acceptance of the paper's
 description, even when it is not yet a proof of `False` against the literal
 Lean endpoint.
@@ -55,7 +55,7 @@ placeholder: it explicitly contains smoothness, support, divergence, residual,
 energy, and blow-up predicates. The current evidence therefore does not justify
 the sentence “Lean proves `False` from the selected witness.”
 
-The published claim nevertheless carries a larger burden than the endpoint
+The published solution claim nevertheless carries a larger burden than the endpoint
 alone. The paper presents the five named moments as the mechanism that makes the
 selected construction a physically valid Newtonian flow. The source contains
 genuine local repair and axis-history restoration theorems, but the inspected
@@ -64,12 +64,12 @@ into the final mixed fields and then into the residual/force theorem. Until that
 repository establishes a formal C/D-shaped proposition while leaving the
 paper-to-code correspondence for its central five-moment mechanism unproved.
 
-That is an underclaim in the public mathematical presentation, not a claim that
+That is a failure to establish the public mathematical solution claim, not a claim that
 the literal Lean proposition has already been refuted. The correct burden is on
 the authors to provide the missing selected-path transport theorem and its
 analytic interpretation. A reviewer need not construct a contradictory force or
 prove that every admissible force is regular in order to withhold acceptance of
-the stronger published explanation.
+the published solution claim.
 
 ## Required closure theorem
 
