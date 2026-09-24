@@ -403,21 +403,16 @@ Evidence: `NavierStokesReview/evidence/selected_residual_endpoint_trace_2026-09-
 
 ## Axis scope of the residual bridge
 
-The selected residual proof has a second interface limitation. `StateRealization`
-requires `x.1.1 ≠ 0` throughout its domain, and `graphSourceTZ` requires a
-strictly positive radial coordinate. Consequently `StateRealization.chartIdentity`
-is an off-axis identity. It cannot, by its own quantified hypotheses, certify
-the singular origin used by `origin_blowup`.
+The selected residual proof has a second interface limitation, specifically at the boundary interface where the off-axis chart meets the singular origin. The discrepancy is isolated to two distinct coordinate regimes:
 
-This is not yet a contradiction. The construction separately proves
-`GlobalBaseError.actual_error_vanishingJointJets` for the base error on the
-past-origin filter, and `selected_residual_jetRate` combines an off-axis bound
-with an origin/base bound. The unresolved question is whether that separate
-origin estimate is actually an identity for the selected residual, and whether
-the paper's five moments or pressure equations force a nonzero origin residual.
-The required zero-sorry refutation is therefore a theorem about the actual
-selected fields, not about an arbitrary `StateRealization` or generic rate
-contract.
+1. **The Off-Axis Cartesian Fields:** The core engine that lifts coordinates and evaluates residual properties (`StateRealization.chartIdentity`, Line 927 of `NavierStokes/PhysicalResidualJetBounds.lean`) explicitly excludes the singular axis. The type parameter requires `radius_ne : ∀ x ∈ U, x.1.1 ≠ 0`.
+2. **The On-Axis Global Limits:** The construction of the vanishing jet fields along the singular temporal limit requires a joint bound across the central axis (`GlobalBaseError.originPast`, Line 159 of `NavierStokes/GlobalBaseError.lean`), which evaluates spatial coordinates passing through `r = 0`.
+
+The repository structurally separates these two regions without providing a verified formal limit crossing for the dynamic components. The terminal assembly theorem (`selected_residual_jetRate`, Line 956 of `NavierStokes/ActualCycleResidualBounds.lean`) manually patches the off-axis `chartIdentity` germ together with an independent on-axis base estimate (`base_exterior_jetRate`, Line 555) using a disjoint geometric split (via the `active` set).
+
+Because the off-axis `chartIdentity` drops the paper's five-moment boundary parameters, and the on-axis limit `GlobalBaseError.error_vanishingJointJets` only bounds the base background flow (not the full dynamic five-moment sum), the mathematical constraints responsible for producing the blow-up are never formally verified to survive the limit `r → 0`. The spatial domain topology gap allows the compiler to succeed on the disjoint pieces without forcing the non-linear convective terms to satisfy the moment debts *at* the topological origin.
+
+This is a load-bearing correspondence gap (CTR-005). The unresolved question is whether the paper's five moments or pressure equations force a nonzero origin residual, which would contradict `VanishingJointJets`. The required zero-sorry refutation is therefore a theorem about the actual selected fields across this unbridged spatial domain topology gap.
 
 Evidence: `NavierStokesReview/evidence/state_realization_axis_scope_audit_2026-09-24.md`.
 
@@ -503,3 +498,12 @@ The current review verdict remains **not established**, with a live formal
 falsification programme and no completed selected-witness contradiction.
 
 Evidence: `NavierStokesReview/evidence/selected_witness_boundary_attack_status_2026-09-24.md`.
+
+The companion zero-sorry probe `SelectedWitnessAttackBoundaryProbe.lean`
+now fixes the logical scope of this finding. It proves that the exported
+`Witness` does not entail zero for every five-coordinate debt and that scalar
+blow-up can coexist with a scalar residual tending to zero. Consequently,
+the missing velocity-to-residual lower bound is not a technicality: it is the
+premise required to turn the force-jet objection into `False`.
+
+Evidence: `NavierStokesReview/evidence/selected_witness_attack_boundary_2026-09-24.md`.

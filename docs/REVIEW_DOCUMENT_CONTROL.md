@@ -171,6 +171,20 @@ the residual/origin contradiction remain open.
   tree is intentionally dirty while the 2026-09-24 attack ledger and probes
   are being packaged; final clean-status validation remains pending.
 
+## Research-paper and attack-boundary update: 2026-09-24
+
+- [x] `OpenAI_NavierStokes_Research_Paper.md` has been rewritten as a coherent
+  paper with a single verdict, rather than a chronological audit log.
+- [x] `SelectedWitnessAttackBoundaryProbe.lean` compiles without `sorry`.
+  It proves the witness envelope does not entail a five-debt certificate and
+  records the scalar compatibility of blow-up with a flat residual.
+- [x] The force-jet route remains active but conditional on a selected-field
+  velocity-to-residual lower bound. No residual explosion is inferred merely
+  from velocity growth.
+- [x] The pressure route remains a missing global Poisson/Leray transport
+  objection. Compact support alone is not recorded as a contradiction.
+- [~] A selected-path zero-sorry `False` theorem has still not been obtained.
+
 ## Upstream moment-chain correction
 
 The five-moment repair identities are live in the upstream aligned and

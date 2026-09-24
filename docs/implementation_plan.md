@@ -10,12 +10,12 @@
 | W2 | Map `selected_witness`, `StageEstimates`, germ assembly, residual, force, and origin blow-up | [x] | Selected endpoint trace has source anchors. |
 | W3 | Extract five target moments and runtime three-debt engine | [x] | `physical_transport_bridge_spec_extraction_2026-09-24.md` records literal definitions and anchors. |
 | W4 | Test whether generic `StageEstimates` determines five debt or blow-up | [x] | `StageEstimatesMomentBlindnessProbe.lean` compiles without `sorry`. |
-| W5 | Locate selected-path five-moment transport theorem | [ ] | Theorem identifies actual selected-field integrals with `(M,I,J,S,C_p)`. Generic stage estimates do not provide it. |
+| W5 | Locate selected-path five-moment transport theorem | [~] | Generic stage estimates do not provide it. The new zero-sorry probe proves the exported `Witness` does not entail an arbitrary five-debt certificate; field-level violation is still unproved. |
 | W6 | Connect pressure germ/base equation to global pressure semantics | [ ] | Either a contradiction is derived or the exact missing premise is documented. Pressure comparison alone is insufficient. |
 
 | W7 | Re-audit live upstream five-moment construction against selected mixed endpoint | [x]/[ ] | Upstream identities and base blow-up compile; final mixed-sum transport remains open. |
-| W8 | Connect `VanishingJointJets` to the origin residual and blow-up | [~] | Zero-sorry compatibility probe blocks the implication from residual flatness alone to no velocity blow-up. Actual PDE-coupled contradiction remains open. |
-| W9 | Rewrite the peer review and research paper as human-readable papers | [~] | Findings are claim/evidence/conclusion prose, not task history. |
+| W8 | Connect `VanishingJointJets` to the origin residual and blow-up | [~] | `SelectedWitnessAttackBoundaryProbe.lean` proves the scalar endpoint predicates are compatible; a PDE-specific residual lower bound remains the required attack theorem. |
+| W9 | Rewrite the peer review and research paper as human-readable papers | [x] | The research paper is now a single coherent argument; the peer review retains its evidence findings and states the same verdict boundary. |
 | W10 | Run all probes, lint documents, and package branch | [ ] | Probes pass; `git diff --check` passes; no tracked `.olean` or build output; final status is clean after commit. |
 
 ## Formal target board
@@ -60,13 +60,13 @@ Inspect the selected import closure for a theorem whose conclusion mentions both
 | 5D-06 | [ ] | Prove selected-field equality between the five physical moments and promoted runtime rows. |
 | 5D-07 | [ ] | Carry that equality through `StateRealization.chartIdentity`, pressure data, residual estimates, and `VanishingJointJets`. |
 
-| FJ-01 | [~] | Attack force smoothness by proving the selected residual derivatives cannot have the `hlim` endpoint family despite velocity blow-up. |
+| FJ-01 | [~] | Attack force smoothness by proving the selected residual derivatives cannot have the `hlim` endpoint family despite velocity blow-up. The scalar implication is blocked; source-specific coupling is required. |
 | FJ-02 | [~] | Add the missing global pressure-Poisson/Leray equation and derive a selected pressure/support contradiction if the hypotheses really force one. |
-| FJ-03 | [x] | `SelectedWitnessInhabitationProbe` proves the exported `Witness` envelope can coexist with an arbitrary nonzero five-debt payload because the payload is absent from its type. This is a type-level gap, not yet a field-level violation. |
+| FJ-03 | [x] | `SelectedWitnessAttackBoundaryProbe` proves the exported `Witness` does not entail zero for every five-debt payload. This is a type-level gap, not yet a field-level violation. |
 | FJ-04 | [~] | Trace `ActualCandidateAssembly.Witness` through `R3/ActualCandidate.of_localized_fields` and `R3/Theorem`; test whether any five-moment equality is consumed. |
 | FJ-05 | [~] | Attack `CandidateFromLimits.hlim` at the selected origin by expanding the actual residual against `origin_blowup`; generic predicate incompatibility is not sufficient. |
 | FJ-06 | [~] | Add the selected-field pressure-Poisson/Leray identity as a proof target and test it against compact localisation; compact support alone is not a contradiction. |
-| FJ-08 | [x]/[~] | The companion probe proves that `c * ‖u‖ ≤ ‖residual‖` would force `False`; source inspection has not found the selected premise. Keep the attack open. |
+| FJ-08 | [x]/[~] | The companion probes prove that `c * ‖u‖ ≤ ‖residual‖` would force `False`, while a scalar countermodel shows blow-up plus flat residual is otherwise consistent. Source inspection has not found the selected premise. |
 
 **Last updated:** 2026-09-24
 

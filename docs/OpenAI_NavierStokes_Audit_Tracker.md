@@ -556,3 +556,25 @@ contradiction. The moment-blindness result is an interface countermodel only;
 it does not yet evaluate the concrete selected fields.
 
 Evidence: `NavierStokesReview/evidence/selected_witness_boundary_attack_status_2026-09-24.md`.
+
+## Selected-witness attack-boundary result: 2026-09-24
+
+`SelectedWitnessAttackBoundaryProbe.lean` compiles without `sorry` and fixes
+the logical strength of the current adverse result. It proves
+
+$$
+\neg(\texttt{Witness}\Rightarrow
+\forall d:\mathrm{Fin}(5)\to\mathbb R,\ d=0),
+$$
+
+because the exported witness contains no five-debt field or equality. It also
+constructs a scalar endpoint countermodel in which one quantity tends to
+infinity while another tends to zero. Therefore the proposed force attack
+still requires a selected-field lower bound linking velocity to residual; the
+source's velocity blow-up and residual-flatness predicates do not provide that
+bound by themselves.
+
+**Status:** confirmed interface obstruction and attack boundary; selected-path
+formal contradiction remains open.
+
+Evidence: `NavierStokesReview/evidence/selected_witness_attack_boundary_2026-09-24.md`.
