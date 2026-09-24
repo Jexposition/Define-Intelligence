@@ -168,6 +168,17 @@ Do not use `sorry`, an arbitrary existential witness, a generic countermodel dis
 | 3 | Test the strongest actual selected obligation in Lean without `sorry`. | Seek a contradiction between selected moment/pressure semantics and the endpoint, not a generic countermodel. |
 | 4 | Update tracker, axiom ledger, synthesis, peer review, and paper. | Human-readable counter-paper prose, not a chronological audit log. |
 
+## CTR-016 global germ-transport audit: recheck status
+
+| Check | Status | Result |
+|---|---:|---|
+| Local cycle invariants reach the mean-atlas input | [x] | `state_runInvariant`, `state_particularData`, `state_waveData`, and `state_wave_transport` feed `mean_input_of_transport`. |
+| Native stages have actual chart/exterior transport | [x] | Stage definitions, prefix identities, and chart equalities are source-linked in `ActualCandidateConstruction` and `ActualCandidateAssembly`. |
+| `physicalData`, `estimates`, and `endpoints` consume actual selected data | [x] | `ActualCandidateAssembly.lean:1079-1115`. |
+| Exported `Witness` identifies the selected fields with the paper's five moments | [ ] | No equality to `PositiveOrderMoments.moments`, `FiveProfileMoments.physicalMoments`, `FiveRowRank.FiveRows`, or `(M,I,J,S,C_p)` is exported. |
+| Global consequences imply fixed-force same-datum stability | [x] | `GlobalTransportBridgeProbe.lean` proves the selected consequences coexist with failure of the review-side stability predicate. |
+| Selected-path `False` | [ ] | Not obtained. The remaining target is a concrete false field-level moment or pressure identity, not a generic interface objection. |
+
 ### Fixed-data perturbation closure
 
 | Check | Status | Result |

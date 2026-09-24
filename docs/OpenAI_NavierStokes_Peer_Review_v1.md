@@ -967,3 +967,33 @@ selected identity, derive `False` from the literal C/D existential.
 
 Evidence: [`global_germ_transport_audit_2026-09-24.md`](../NavierStokesReview/evidence/global_germ_transport_audit_2026-09-24.md),
 [`endpoint_contract_nonimplication_2026-09-24.md`](../NavierStokesReview/evidence/endpoint_contract_nonimplication_2026-09-24.md).
+
+## Revision note: global germ transport recheck
+
+The global-transport audit was rechecked against the actual cycle construction,
+not only against the final `Witness` type. `state_runInvariant`
+(`ActualCyclePreservation.lean:826-848`) inducts the selected cycle while
+retaining analytic, coherence, and periodicity data. `state_particularData`,
+`state_waveData`, and `state_wave_transport` (`850-912`) supply the inputs used
+by `ActualCycleCoherence.mean_input_of_transport` (`ActualCycleCoherence.lean:803-820`).
+The stage constructors and chart equalities are also real:
+`ActualCandidateConstruction.lean:392-404,464-502` defines the native stages
+and prefix identities, while `ActualCandidateAssembly.lean:392-424`
+identifies the actual fields with their chart expressions.
+
+This removes the claim that the selected endpoint is merely a disconnected
+wrapper. It does not remove the load-bearing correspondence objection. The
+transport chain carries cycle, covariance, wave, chart, and residual data into
+`physicalData`, `estimates`, and `endpoints`; `Witness`
+(`ActualCandidateAssembly.lean:1121-1151`) still exports no equality to
+`PositiveOrderMoments.moments`, `FiveProfileMoments.physicalMoments`,
+`FiveRowRank.FiveRows`, or the paper's $(M,I,J,S,C_p)$ tuple. The precise
+finding is therefore a missing field-level semantic identification, not an
+absence of global PDE assembly.
+
+The zero-sorry `GlobalTransportBridgeProbe.lean` result remains unchanged: the
+selected candidate has the full `Consequences` bundle while the independently
+defined fixed-force same-datum stability predicate fails. That result is a
+formal selected-path provenance objection. It does not turn the literal
+existential C/D statement into `False`, because that statement does not include
+the stronger perturbation-stability or force-independence predicate.

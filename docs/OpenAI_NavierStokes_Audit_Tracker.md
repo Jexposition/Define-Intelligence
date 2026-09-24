@@ -1121,6 +1121,24 @@ the selected five-moment identity and force-independence/stability condition.
 
 Evidence: `NavierStokesReview/evidence/global_germ_transport_audit_2026-09-24.md`.
 
+### CTR-016 recheck: actual cycle transport is present, endpoint semantics remain unexported
+
+The source recheck records positive transport evidence before the final
+envelope. `ActualCyclePreservation.state_runInvariant` (826-848) and its
+particular-data/wave results (850-912) feed
+`ActualCycleCoherence.mean_input_of_transport` (803-820). Native stage
+definitions and prefix identities occur at
+`ActualCandidateConstruction.lean:392-404,464-502`, and actual chart
+equalities occur at `ActualCandidateAssembly.lean:392-424`.
+
+This narrows, rather than removes, CTR-016. The source has a genuine local-to-
+global construction and the selected endpoint consumes actual cycle data. The
+remaining missing theorem is the field-level identification of that data with
+`PositiveOrderMoments.moments`, `FiveProfileMoments.physicalMoments`,
+`FiveRowRank.FiveRows`, and the paper tuple `(M,I,J,S,C_p)` inside the selected
+mixed velocity, pressure, residual, and force. The classification remains
+**open, load-bearing correspondence defect; no `False` theorem**.
+
 ## Endpoint contract non-implication: 2026-09-24
 
 `EndpointContractNonImplication.lean:20-25` proves that `CandidateProperties`

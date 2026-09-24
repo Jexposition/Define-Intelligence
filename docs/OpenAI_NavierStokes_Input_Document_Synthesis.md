@@ -303,6 +303,16 @@ source reports. Its corrections take precedence over the stale parent verdict
 and over unsupported summaries. The active document map is
 [`REVIEW_DOCUMENT_CONTROL.md`](REVIEW_DOCUMENT_CONTROL.md).
 
+## Global germ-transport recheck
+
+The latest source pass confirms that the actual cycle, wave, chart, and residual
+objects do reach the selected assembly. The correct criticism is therefore not
+that globalisation is absent. It is that the final `Witness` does not export the
+field-level theorem identifying those objects with the paper's five named
+moments and their promoted rank representation. The fixed-force perturbation
+result remains a selected-path provenance objection, not a contradiction of the
+literal existential forced alternative.
+
 The synthesis therefore carries forward the missing selected-path moment
 transport as an open, load-bearing objection, while rejecting the stronger
 claims that the final field is globally pure axial, that compact pressure

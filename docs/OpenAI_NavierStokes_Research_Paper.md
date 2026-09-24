@@ -796,3 +796,38 @@ five-moment transport requirements.
 
 Evidence: `global_germ_transport_audit_2026-09-24.md`,
 `endpoint_contract_nonimplication_2026-09-24.md`.
+
+## Global germ transport: what the source does and does not connect
+
+The selected construction contains a genuine transport chain before the final
+existential envelope. `ActualCyclePreservation.state_runInvariant`
+(`ActualCyclePreservation.lean:826-848`) inducts the actual cycle state;
+`state_particularData`, `state_waveData`, and `state_wave_transport`
+(`850-912`) provide the analytic and wave data consumed by
+`ActualCycleCoherence.mean_input_of_transport`
+(`ActualCycleCoherence.lean:803-820`). The native stream, angular, and pressure
+stages are defined in `ActualCandidateConstruction.lean:392-404,464-502`, and
+the assembly proves local chart equalities in
+`ActualCandidateAssembly.lean:392-424`. `physicalData`, `estimates`, and
+`endpoints` then consume these actual objects at
+`ActualCandidateAssembly.lean:1079-1115`.
+
+That positive chain matters. It prevents a fair review from describing the
+formalisation as a collection of unrelated declarations. The unresolved issue
+is more exact: the exported `Witness`
+(`ActualCandidateAssembly.lean:1121-1151`) does not contain a theorem
+identifying its selected mixed velocity, pressure, residual, or force with
+`PositiveOrderMoments.moments`, `FiveProfileMoments.physicalMoments`,
+`FiveRowRank.FiveRows`, or the paper's $(M,I,J,S,C_p)$ quantities. The source
+therefore proves substantial global germ transport while leaving the paper's
+semantic five-moment identification unexported.
+
+The review-side theorem in `GlobalTransportBridgeProbe.lean` sharpens the same
+boundary. It pairs the selected candidate's full `Consequences` bundle with a
+zero-sorry failure of a fixed-force, same-initial-datum perturbation predicate.
+This establishes path dependence of the residual-designed trajectory. It is not
+a contradiction of the literal C/D existential, which asks for one admissible
+force and one trajectory and does not quantify over perturbations. The
+counter-paper's formal conclusion is consequently a failed paper-to-endpoint
+identification until the missing selected-field moment theorem is supplied or
+one of its concrete premises is proved false.

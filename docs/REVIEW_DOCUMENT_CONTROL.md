@@ -127,6 +127,24 @@ solenoidal-collapse note is retained only as a rejected hypothesis.
 Any future “refuted” or “definitive failure” label requires a source-backed
 counterexample or a zero-sorry Lean theorem closing the relevant contradiction.
 
+## Global germ-transport recheck: 2026-09-24
+
+The actual cycle-to-assembly path has now been rechecked at source level. The
+cycle invariants and wave transport feed `mean_input_of_transport`; native stage
+definitions have prefix identities; and `ActualCandidateAssembly` proves local
+chart/exterior equalities before passing actual data to `physicalData`,
+`estimates`, and `endpoints`. This is positive evidence that the global germ
+construction is connected to the selected assembly.
+
+The unresolved boundary is narrower and remains load-bearing: `Witness` still
+does not export a field-level equality identifying the selected mixed velocity,
+pressure, residual, or force with `PositiveOrderMoments.moments`,
+`FiveProfileMoments.physicalMoments`, `FiveRowRank.FiveRows`, or the paper tuple
+`(M,I,J,S,C_p)`. CTR-016 therefore records incomplete semantic transport, not
+absent globalisation. The fixed-force perturbation result remains a stronger
+forward-data objection, but it is not a `False` theorem for the literal
+existential C/D endpoint.
+
 The selected-witness attack is not cleared by a weak interface test. The new
 `SelectedWitnessInhabitationProbe` proves that the exported `Witness` type can
 coexist with an arbitrary nonzero five-debt payload because the type contains
@@ -181,9 +199,9 @@ the residual/origin contradiction remain open.
   `PositiveOrderMoments` through the physical-prefix/profile chain. The open
   issue is semantic transport into the residual endpoint, not dead code or
   total import separation.
-- [x] Commit `700e39d` is pushed to
-  `review/cmi-first-navier-stokes-2026-09-22`; the newer control commit
-  `eff4d0f` is local pending GitHub authentication. No tracked `.olean`, `.ilean`,
+- [x] Commit `700e39d` is the last recorded remote baseline. Local review
+  commits through `ddfdf8d` are not confirmed pushed because GitHub
+  authentication is unavailable. No tracked `.olean`, `.ilean`,
   or `.lake` files are present. The only untracked paths are the two supplied
   reference PDFs `docs/euler.pdf` and `docs/navier-stokes openai.pdf`; they are
   intentionally not staged.

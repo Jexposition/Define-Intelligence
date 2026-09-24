@@ -281,6 +281,21 @@ The localisation and cone interfaces are similarly connected to constructions: t
 
 Status: **SELECTED INTERFACE DERIVATION CONFIRMED; EXTERNAL ANALYTIC ADEQUACY STILL OPEN**.
 
+## AX-022: global germ transport and semantic endpoint fields
+
+`CandidateConsequences.mixed_exists_force_with_consequences` is a derived
+local-to-global theorem. Its premises include local smoothness, divergence,
+residual-jet limits, away extensions, and origin growth; its conclusion includes
+`CandidateProperties`, lifespan and H³ consequences, force-jet decay, and
+boundary jets (`CandidateConsequences.lean:185-215`). The selected assembly
+supplies actual cycle data through `physicalData`, `estimates`, and `endpoints`
+(`ActualCandidateAssembly.lean:1079-1115`).
+
+The remaining admission is semantic rather than foundational: the exported
+`Witness` has no field identifying the selected mixed fields with the paper's
+five named moments. This is not a custom axiom and not a proof of inconsistency.
+It is the load-bearing unverified correspondence recorded as CTR-005/CTR-016.
+
 This entry narrows the counter-paper's adverse claim. A missing human-readable bridge from the paper's named moments to the selected promoted debt remains a correspondence defect, but the inspected source does not show that the final endpoint assumes convergence or incompressibility as its own conclusion.
 
 The precise axiom claim is therefore limited. The inspected headline and selected-witness dependency reports are standard-axiom-only. The repository as a whole is not a zero-sorry corpus. Any public statement using the latter as evidence for the former is invalid until the challenge files are excluded explicitly.
