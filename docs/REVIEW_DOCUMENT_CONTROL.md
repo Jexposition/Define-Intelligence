@@ -53,6 +53,15 @@ not a presumption that the former has been satisfied. The claim-by-claim
 qualification record is
 `NavierStokesReview/evidence/response_claims_adjudication_2026-09-24.md`.
 
+This is a burden-of-proof distinction, not a symmetry between the parties.
+OpenAI is responsible for establishing the stronger paper and CMI claim it
+published. The review does not need to prove the negation of the literal
+existential endpoint before rejecting that stronger claim for an unproved
+selected-field correspondence or missing analytic composition theorem. The
+separate record
+`NavierStokesReview/evidence/burden_of_proof_underclaim_audit_2026-09-24.md`
+lists those obligations and the consequences of leaving them open.
+
 The six core documents above are synchronised to that authority map. The
 pressure result is sourced to
 `NavierStokesReview/evidence/pressure_uniqueness_closure_audit_2026-09-24.md`
@@ -134,6 +143,12 @@ solenoidal-collapse note is retained only as a rejected hypothesis.
 
 Any future “refuted” or “definitive failure” label requires a source-backed
 counterexample or a zero-sorry Lean theorem closing the relevant contradiction.
+
+That escalation rule applies only to the narrower label **formally refuted**.
+It does not require the review to grant the published CMI claim while its
+load-bearing correspondence and composition theorems remain unproved. The
+active substantive verdict is therefore **not established**, with CTR-005 as
+the principal burden-of-proof failure.
 
 ## Global germ-transport recheck: 2026-09-24
 

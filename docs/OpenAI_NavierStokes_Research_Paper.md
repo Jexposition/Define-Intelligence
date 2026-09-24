@@ -512,6 +512,14 @@ narrow statement about the present refutation programme: no zero-sorry proof of
 `False` has yet been derived from the selected endpoint. Absence of that
 refutation is not affirmative evidence for the authors' claim.
 
+The burden is asymmetric. OpenAI must establish the stronger claim made in the
+paper: that the selected fields are the advertised five-moment construction
+and that the analytic premises used by the endpoint hold for those same
+fields. The reviewer need not prove the negation of the literal existential
+endpoint before concluding that this published claim has not been established.
+The missing composition theorem is therefore a substantive negative review
+finding, not a neutral request for optional documentation.
+
 The load-bearing objection is CTR-005: the missing selected-path transport of
 the paper's five moments into the actual velocity, pressure, residual, and
 force. The review should be upgraded to a formal refutation only after a

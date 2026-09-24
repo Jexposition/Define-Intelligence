@@ -104,6 +104,13 @@ zero-sorry `False` theorem from the actual selected witness. The CMI claim is
 therefore **not established** by this audit; the remaining work is to derive a
 concrete selected-field moment, pressure, or residual contradiction.
 
+This is not a presumption in favour of the authors. The burden of establishing
+the paper's stronger construction claim remains with OpenAI. A missing
+selected-field bridge and missing analytic composition theorem are affirmative
+reasons not to accept that claim, even though the narrower literal endpoint
+has not yet been formally refuted. See
+`NavierStokesReview/evidence/burden_of_proof_underclaim_audit_2026-09-24.md`.
+
 ## 5. Pressure and mirror-force checks
 
 The equal-and-opposite pressure proposal does not produce that contradiction.

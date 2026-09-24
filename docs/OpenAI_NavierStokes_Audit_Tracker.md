@@ -1174,6 +1174,34 @@ the exported C/D proposition contains no formal independence predicate. The
 review records this as a paper-to-endpoint correspondence issue, not as a
 Lean contradiction derived from wording alone.
 
+## Burden of proof and possible underclaim: 2026-09-24
+
+The audit distinguishes a failure to establish the published claim from a
+formal refutation of the literal exported proposition. OpenAI bears the burden
+of proving the stronger statement it presents to readers. The review does not
+have to derive `False` from `selected_witness` before finding that the paper's
+CMI-level claim is unsupported by the inspected source.
+
+The unresolved obligations are affirmative requirements on the authors:
+
+1. identify the actual selected velocity and pressure fields with the paper's
+   named moments `(M,I,J,S,C_p)`;
+2. transport those identities through the correction, germ, residual, and
+   force construction;
+3. show that the analytic premises consumed by the endpoint hold for that same
+   object; and
+4. explain why the residual-designed force satisfies the paper's use of
+   “given, externally applied force”, rather than only the weaker formal
+   `CandidateProperties` predicate.
+
+The current evidence shows that these obligations are not exported as one
+selected-field composition theorem. This is therefore a substantive
+**not-established** finding, not a presumption that the missing bridge is
+true. The narrower status **not formally refuted** records only that the
+current zero-sorry attack has not produced `False` from the selected endpoint.
+
+Evidence: `NavierStokesReview/evidence/burden_of_proof_underclaim_audit_2026-09-24.md`.
+
 ## CTR-016: global germ-transport validity audit: 2026-09-24
 
 | Source / interface | Exact result | Status |

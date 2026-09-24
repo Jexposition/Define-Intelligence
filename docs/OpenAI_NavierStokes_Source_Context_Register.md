@@ -24,6 +24,14 @@ without an additional formal admissibility predicate, prove that the
 existential C/D proposition is false. The review must keep those two claims
 separate.
 
+That qualification does not make the burden symmetrical. OpenAI must establish
+the stronger paper and CMI claim it chose to publish. If the selected Lean
+endpoint does not expose the paper's field-level identifications and their
+analytic composition, the correct review result is **not established as
+claimed**, even if the narrower existential endpoint has not been formally
+refuted. This is a failure to discharge the published claim, not a request
+that the reviewer prove its negation.
+
 ## OpenAI's stated construction
 
 The published paper makes the residual strategy explicit. Its introduction

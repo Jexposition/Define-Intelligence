@@ -2,6 +2,23 @@
 
 **Working verdict:** `NOT ESTABLISHED AS A CMI SOLUTION` until the selected endpoint is independently checked. This document is a compact work plan, not the research log. Evidence belongs under `NavierStokesReview/evidence/`; completed arguments belong in the peer review and paper.
 
+## Burden-of-proof gate
+
+The authors must establish the claim they publish. The review need not derive
+the negation of the literal existential endpoint before withholding acceptance
+of a stronger paper or CMI claim. Track these as separate outcomes:
+
+| Claim level | Required evidence | Current status |
+|---|---|---|
+| Lean endpoint | The exported proposition is kernel-checked. | Partly confirmed on the inspected path. |
+| Selected construction | The same selected fields satisfy every analytic and PDE premise consumed by the endpoint. | The complete field-level composition remains to be exhibited. |
+| Published paper | The selected fields are the advertised five-moment construction. | **Not established; CTR-005 remains open.** |
+| CMI solution | The paper construction matches a Fefferman alternative with all required hypotheses. | **Not established.** |
+
+`NOT FORMALLY REFUTED` is only the status of the current Lean contradiction
+search. It is not affirmative evidence that an unproved bridge is valid.
+Evidence: `NavierStokesReview/evidence/burden_of_proof_underclaim_audit_2026-09-24.md`.
+
 ## Status key
 
 `[x]` checked and closed as an attack route  ·  `[~]` active review  ·  `[ ]` not yet checked  ·  `[!]` formal failure found
@@ -292,6 +309,7 @@ and `NavierStokesReview/src/probes/PressureRecoveryAbsolutePremiseProbe.lean`.
 | 5D-05 | Derive contradiction from selected residual limits and origin blow-up | [~] | The scalar endpoint predicates are compatible. A zero-sorry `False` now requires a selected-field PDE lower bound or an incompatible pressure/moment identity. |
 | 5D-06 | Inhabit the selected witness with an unconstrained five-debt payload | [x] | `SelectedWitnessInhabitationProbe.lean` compiles without `sorry`: the `Witness` envelope contains no `PositiveOrderMoments.Debt` field or equality. |
 | 5D-07 | Derive an actual selected-field five-moment violation | [ ] | Add field-level moments to the selected path and prove their failure or contradiction with the selected residual and pressure premises. |
+| BURDEN-01 | Separate non-establishment from formal refutation | [x] | The authors' missing selected-field composition is an affirmative reason not to accept the published CMI claim; a separate zero-sorry `False` theorem is required only for the narrower label `FORMALLY REFUTED`. |
 | FJ-01 | Force-jet breakdown at the singular interface | [x]/[~] | The selected raw residual and final force are composed at the origin and tend to zero; the explosion route is closed. A contradiction still requires a separate selected PDE lower bound. |
 | FJ-02 | Pressure-Poisson/support contradiction | [~] | The R3 candidate record has compact pressure support but no explicit global pressure-Poisson field. Add the missing identity and test the selected fields. |
 | FJ-04 | Selected-path transport closure | [~] | Trace `ActualCandidateAssembly.Witness` through `R3ActualCandidate.selected_compact_candidate`, `R3/ActualCandidate.of_localized_fields`, and `R3/Theorem`; prove whether any five-moment equality is consumed. |

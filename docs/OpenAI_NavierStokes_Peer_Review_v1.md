@@ -80,6 +80,26 @@ premises needed for the claim they publish. The phrase “not formally refuted�
 reports only that the current Lean attack has not derived `False`; it does not
 mean that the unproved paper-to-endpoint bridge is presumed valid.
 
+## Finding 23: the burden of proof is asymmetric
+
+The review should not be framed as though OpenAI and the reviewer carry equal
+burdens. OpenAI made the CMI-level claim and must establish the object and
+hypotheses it presents. A compiling existential endpoint is not enough to
+establish the stronger paper claim when the selected witness does not export
+the paper's five-moment identity or its transport into the residual and force.
+
+The correct conclusion is therefore affirmative but limited: the published
+claim is **not established** by the inspected paper-to-code record. “Not
+formally refuted” is only a report that the current Lean search has not derived
+`False`; it is not evidence that the authors' unproved bridges hold.
+
+The required author response is a field-level composition theorem starting at
+the actual selected stages and ending at the paper tuple, residual, pressure,
+force, and analytic endpoint consequences. The review's burden is to identify
+that missing obligation accurately, not to supply the authors' missing proof.
+
+Evidence: `NavierStokesReview/evidence/burden_of_proof_underclaim_audit_2026-09-24.md`.
+
 ## Recommendation
 
 **Major revision.** The public Lean development contains a substantial formal endpoint for a forced whole-space breakdown statement, but the accompanying mathematical narrative is not yet shown to correspond to the actual source implementation. The most concrete issue is the mismatch between the paper's five cumulative moments and the repository's `FiveRowRank` debt system.
