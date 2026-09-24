@@ -328,6 +328,13 @@ zero-sorry completion proves that the full `FiveRows` predicate forces
 `barMoment 2 h.angular = 0` and `barMoment 1 h.axial = 0`; adding either
 corresponding nonzero hypothesis yields `False`.
 
+The production recurrence does carry a related internal invariant: its
+`CycleAnalyticInvariant.masses` field is propagated through every selected
+cycle stage. `SelectedCycleMomentTransport.lean` exposes that fact and proves
+the same conditional impossibility for a nonzero selected-cycle radial
+moment. This removes the stronger claim that the cycle has no local mass
+preservation theorem.
+
 That result does not yet apply to the selected witness. `FiveRows` constrains
 the correction increment, while `Witness` exposes the assembled stages,
 pressure, force, endpoint consequences, and norm growth. The selected theorem
@@ -338,7 +345,8 @@ radial moments with kinetic energy or `(M, I, J, S, C_p)`.
 The correct conclusion is therefore a live conditional attack, not a completed
 endpoint refutation: prove the missing selected-path transport and the
 nonzero-moment calculation, then the new theorem supplies the contradiction.
-Evidence: `NavierStokesReview/evidence/correction_invariant_scope_2026-09-24.md`.
+Evidence: `NavierStokesReview/evidence/correction_invariant_scope_2026-09-24.md`;
+`NavierStokesReview/src/completions/SelectedCycleMomentTransport.lean`.
 
 ## Finding 22: the force attack now has an exact conditional contradiction
 

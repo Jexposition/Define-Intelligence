@@ -17,6 +17,8 @@
 | W8 | Connect `VanishingJointJets` to the origin residual and blow-up | [x]/[~] | All-order `VanishingJointJets` and the selected force-to-origin composition are source-traced and compiled. A contradiction still requires a selected PDE lower bound. |
 | W9 | Rewrite the peer review and research paper as human-readable papers | [x] | The research paper is now a single coherent argument; the peer review retains its evidence findings and states the same verdict boundary. |
 | W10 | Run all probes, lint documents, and package branch | [~] | Targeted probes pass. Re-run the full review probe set, document lint, and clean-status check after the current evidence update. |
+| W11 | Expose the internal selected-cycle radial invariant | [x] | `SelectedCycleMomentTransport.lean` compiles and obtains `state_invariant.masses` for every selected cycle stage. |
+| W12 | Connect the internal invariant to the exported mixed witness and paper tuple | [~] | The cycle invariant is proved, but `Witness` still exposes no equality to `(M,I,J,S,C_p)`; this is the active transport target. |
 
 ## Formal target board
 

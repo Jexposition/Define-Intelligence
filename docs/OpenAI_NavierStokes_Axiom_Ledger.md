@@ -663,3 +663,20 @@ increment is shown to have a nonzero corresponding radial moment, `FiveRows`
 is inconsistent. The selected-path identification and nonzero calculation
 remain unproved. This is a missing transport premise under CTR-005, not a
 kernel-level contradiction.
+
+## AX-040: the internal selected cycle does carry two local mass constraints
+
+**Source:** `NavierStokes/ActualCyclePreservation.lean:259-262,826-833`;
+`NavierStokes/ActualCandidateConstruction.lean:212-223`;
+`NavierStokesReview/src/completions/SelectedCycleMomentTransport.lean`.
+
+`ActualCyclePreservation.Invariant` is a `CycleAnalyticInvariant` and includes
+the `masses` field. Consequently, the actual cycle induction supplies
+`GaugeMassPreservation.ZeroMassesOn` for every selected cycle state. The review
+completion exposes that fact and derives `False` from either corresponding
+nonzero radial moment.
+
+This is not the paper's complete five-moment identity and is not yet an
+exported `Witness` equality. The remaining load-bearing question is whether
+the internal two-moment invariant is transported through the mixed sums and
+identified with the paper's `(M,I,J,S,C_p)` at the C/D endpoint.

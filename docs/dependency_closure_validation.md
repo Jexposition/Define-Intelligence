@@ -73,3 +73,12 @@ The import traversal was rerun from `ActualCandidateAssembly.lean` and reached
 transport theorem, not a dead-code claim.
 
 Evidence: `NavierStokesReview/evidence/selected_moment_transport_closure_2026-09-24.md`.
+
+## Internal invariant versus exported witness
+
+The selected import closure contains an actual cycle invariant: the
+`CycleAnalyticInvariant.masses` field is propagated by `state_invariant`.
+This is distinct from the public `Witness` type, which does not expose that
+field or an equality to the paper's five moments. The valid correspondence
+objection is therefore an endpoint transport gap, not absence of all local
+mass-preservation logic.

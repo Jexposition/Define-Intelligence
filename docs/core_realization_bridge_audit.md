@@ -56,5 +56,17 @@ until a selected-path premise is shown false.
 
 The exact closure result is recorded in
 `NavierStokesReview/evidence/selected_moment_transport_closure_2026-09-24.md`.
+
+## Selected-cycle invariant refinement
+
+The internal cycle does carry a local two-moment invariant. `Invariant` is a
+`CycleAnalyticInvariant` with a `masses` field, and `state_invariant` propagates
+it through the actual recurrence. This corrects any suggestion that the
+production rank cycle has no mass-preservation theorem. The remaining bridge
+question is whether those two radial mean identities are transported into the
+mixed sums and identified with the paper's five named moments and the exported
+residual/force endpoint.
+
+Evidence: `NavierStokesReview/src/completions/SelectedCycleMomentTransport.lean`.
 The broad “orphaned moment specification” wording is withdrawn; the live
 finding is a missing theorem at the selected mixed-sum boundary.

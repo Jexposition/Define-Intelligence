@@ -353,5 +353,8 @@ Evidence: `NavierStokesReview/evidence/selected_moment_transport_closure_2026-09
 | 5D-10 | Prove the exact generic correction-moment invariant. | [x] | `CorrectionInvariantScope.rank_stage_preserves_designated_moments` compiles without admitted declarations. |
 | 5D-11 | Transport a selected Cartesian perturbation into `rankIncrement`. | [ ] | A theorem must identify the perturbation with the actual correction field and prove a nonzero `barMoment 2` or `barMoment 1`. |
 | 5D-12 | Infer kinetic-energy or full five-moment preservation from the zero rows. | [ ] | No such inference is licensed by the source; `FiveRows` contains radial correction moments, not an energy identity. |
+| 5D-13 | Expose the actual selected-cycle local mass invariant. | [x] | `SelectedCycleMomentTransport.lean` compiles: `state_invariant.masses` gives `ZeroMassesOn` for every selected cycle stage. |
+| 5D-14 | Transport that local invariant into the exported mixed `Witness`. | [ ] | The `Witness` type must expose the relevant equality and identify it with the paper's five named moments. |
 
-Evidence: `NavierStokesReview/evidence/correction_moment_transport_audit_2026-09-24.md`.
+Evidence: `NavierStokesReview/evidence/correction_moment_transport_audit_2026-09-24.md` and
+`NavierStokesReview/src/completions/SelectedCycleMomentTransport.lean`.

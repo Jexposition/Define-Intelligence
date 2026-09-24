@@ -123,3 +123,14 @@ residual, and force. This is a selected-endpoint correspondence failure, not
 a claim that the repository contains no five-moment construction.
 
 Evidence: `NavierStokesReview/evidence/selected_moment_transport_closure_2026-09-24.md`.
+
+## Internal-cycle qualification
+
+The production recurrence does contain a proved two-moment invariant:
+`ActualCyclePreservation.Invariant` includes `masses`, and the selected-cycle
+completion exposes its `ZeroMassesOn` consequence. Thus the counter-paper does
+not rely on the claim that the correction cycle ignores every mass constraint.
+The unresolved defect is the missing theorem carrying these internal radial
+identities into the exported mixed `Witness` and identifying them with the
+paper's complete five-moment system. Evidence:
+`NavierStokesReview/src/completions/SelectedCycleMomentTransport.lean`.

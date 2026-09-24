@@ -212,6 +212,23 @@ Evidence: `NavierStokesReview/evidence/five_row_collision_boundary_2026-09-24.md
 
 Evidence: `NavierStokesReview/evidence/correction_invariant_scope_2026-09-24.md`.
 
+## Selected-cycle invariant refinement: 2026-09-24
+
+- [x] `ActualCyclePreservation.Invariant` is confirmed to contain a
+  `masses` field, and `state_invariant` propagates `ZeroMassesOn` through every
+  actual cycle stage.
+- [x] `SelectedCycleMomentTransport.lean` exposes that invariant for the
+  selected cycle and derives `False` from a nonzero corresponding moment.
+- [ ] The internal two-moment invariant is still not identified with the
+  published five-moment tuple or exposed as an equality for the mixed
+  `Witness` endpoint.
+
+The active counter-paper claim is therefore narrower than “the cycle has no
+mass constraints”: the cycle has two local radial constraints, while the
+paper-to-endpoint five-moment transport remains unproved.
+
+Evidence: `NavierStokesReview/src/completions/SelectedCycleMomentTransport.lean`.
+
 ## Research-paper and attack-boundary update: 2026-09-24
 
 - [x] `OpenAI_NavierStokes_Research_Paper.md` has been rewritten as a coherent

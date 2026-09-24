@@ -74,6 +74,14 @@ The declaration-level audit adds an important qualification. `FiveRowRank.FiveRo
 
 That finding is now carried consistently into the plan, ledger, tracker, peer review, and research paper.
 
+The selected-cycle source requires one further qualification. Its internal
+`CycleAnalyticInvariant` includes and propagates a two-moment `masses` field;
+the new zero-sorry completion exposes this for the selected cycle. The
+remaining counter-paper issue is not that the recurrence lacks every mass
+constraint, but that the source does not display the theorem identifying those
+two radial identities with the paper's five quantities and carrying them into
+the mixed `Witness` endpoint.
+
 The proposed final collision test was also run against the literal source. It
 does not turn the fixed correction rows into a selected-field energy theorem.
 `FiveRowRank.five_rows` is inhabited for nonzero three-coordinate debt, while

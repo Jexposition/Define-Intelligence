@@ -47,3 +47,13 @@ divergence-free endpoint, so this note does not prove a disconnected or
 tautological fluid. The pressure comparison probe adds a separate limitation:
 comparison identities do not, by themselves, establish an absolute global
 pressure-Poisson representative for the selected pressure.
+
+## Selected-cycle refinement
+
+The production cycle is not free of all moment constraints. Its
+`CycleAnalyticInvariant.masses` field is propagated by
+`ActualCyclePreservation.state_invariant`, and the separate completion
+`SelectedCycleMomentTransport.lean` exposes the two local radial moments for
+the selected cycle. The unresolved issue is narrower: those two constraints
+are not displayed as the paper's complete `(M,I,J,S,C_p)` identity at the
+mixed `Witness` endpoint.

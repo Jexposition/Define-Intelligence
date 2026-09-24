@@ -888,3 +888,23 @@ that the zero rows freeze total mass or kinetic energy is not supported by
 the source.
 
 Evidence: `NavierStokesReview/evidence/correction_moment_transport_audit_2026-09-24.md`.
+
+## Selected-cycle mass invariant refinement: 2026-09-24
+
+The production path does carry a local invariant that was previously described
+too narrowly. `ActualCyclePreservation.Invariant` is a
+`CycleAnalyticInvariant`, whose `masses` field is propagated by
+`state_invariant`. The new zero-sorry completion
+`SelectedCycleMomentTransport.lean` exposes this for every selected cycle
+stage and derives `False` from either corresponding nonzero radial moment.
+
+This does not close the counter-paper objection. The invariant is stated on
+the internal `CycleState` mean fields and only covers two radial moments. The
+exported `ActualCandidateAssembly.Witness` contains the mixed sums, pressure,
+force, decay, and blow-up consequences, but does not expose an equality from
+those internal moments to the mixed endpoint or to `(M,I,J,S,C_p)`. The live
+target is now the precise cycle-to-witness and five-moment transport theorem,
+not the existence of a local correction invariant.
+
+Evidence: `NavierStokesReview/evidence/correction_moment_transport_audit_2026-09-24.md`;
+`NavierStokesReview/src/completions/SelectedCycleMomentTransport.lean`.

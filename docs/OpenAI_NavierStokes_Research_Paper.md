@@ -590,6 +590,26 @@ finding is a correspondence failure under CTR-005, not a completed
 refutation. Evidence:
 `NavierStokesReview/evidence/correction_moment_transport_audit_2026-09-24.md`.
 
+### Internal cycle invariant and the remaining endpoint gap
+
+The source contains a further fact that must be distinguished from the
+exported theorem interface. `ActualCyclePreservation.Invariant` is a
+`CycleAnalyticInvariant` with a `masses` field. Its induction therefore proves
+that every actual selected-cycle state has two local radial moments equal to
+zero. The separate Lean completion exposes this invariant and proves that a
+nonzero value of either corresponding selected-cycle moment is impossible.
+
+This result removes an overly broad version of the “zero rows are ignored”
+objection. The correction cycle does preserve the two quantities it names.
+What remains unproved is the semantic transport from those internal mean
+fields into the mixed velocity and pressure sums consumed by `Witness`, and
+then into the five published quantities `(M,I,J,S,C_p)`. The local invariant
+also says nothing by itself about total kinetic energy. The counter-paper's
+load-bearing claim is consequently precise: the source has an internal
+two-moment conservation theorem, but does not display the theorem that makes
+it the paper's five-moment endpoint certificate. Evidence:
+`NavierStokesReview/src/completions/SelectedCycleMomentTransport.lean`.
+
 ## References and evidence
 
 1. Charles L. Fefferman, [Existence and Smoothness of the Navier–Stokes
