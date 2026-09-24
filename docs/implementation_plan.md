@@ -16,7 +16,7 @@
 | W7 | Re-audit live upstream five-moment construction against selected mixed endpoint | [x]/[ ] | Upstream identities and base blow-up compile; final mixed-sum transport remains open. |
 | W8 | Connect `VanishingJointJets` to the origin residual and blow-up | [x]/[~] | All-order `VanishingJointJets` and the selected force-to-origin composition are source-traced and compiled. A contradiction still requires a selected PDE lower bound. |
 | W9 | Rewrite the peer review and research paper as human-readable papers | [x] | The research paper is now a single coherent argument; the peer review retains its evidence findings and states the same verdict boundary. |
-| W10 | Run all probes, lint documents, and package branch | [~] | Targeted probes pass. Re-run the full review probe set, document lint, and clean-status check after the current evidence update. |
+| W10 | Run all probes, lint documents, and package branch | [x]/[~] | Targeted probes and the full `NavierStokes` build pass; commit `700e39d` is pushed and no tracked build artefacts exist. Final document-wide lint remains an ongoing release check. |
 | W11 | Expose the internal selected-cycle radial invariant | [x] | `SelectedCycleMomentTransport.lean` compiles and obtains `state_invariant.masses` for every selected cycle stage. |
 | W12 | Connect the internal invariant to the exported mixed witness and paper tuple | [~] | The cycle invariant is proved, but `Witness` still exposes no equality to `(M,I,J,S,C_p)`; this is the active transport target. |
 
@@ -48,7 +48,7 @@
 
 ## Current next action
 
-Inspect the selected import closure for a theorem whose conclusion mentions both the actual selected stages and `PositiveOrderMoments.moments`; if absent, write the smallest zero-sorry obstruction showing the selected endpoint type does not expose that equality.
+Inspect the selected import closure for a theorem whose conclusion mentions both the actual selected stages and `PositiveOrderMoments.moments`; the current recheck confirms the upstream rank path is live but the exported endpoint still does not expose that equality. Preserve this as the next field-level transport target rather than treating generic interface blindness as a selected-field contradiction.
 
 ## 5D target specification and runtime engine
 
@@ -71,6 +71,9 @@ Inspect the selected import closure for a theorem whose conclusion mentions both
 | FJ-08 | [x]/[~] | The companion probes prove that `c * ‖u‖ ≤ ‖residual‖` would force `False`, while a scalar countermodel shows blow-up plus flat residual is otherwise consistent. Source inspection has not found the selected premise. |
 
 **Last updated:** 2026-09-24
+
+The current release package is source-controlled by `REVIEW_DOCUMENT_CONTROL.md`.
+The two untracked reference PDFs are intentionally excluded from commits.
 
 ## CTR-012 and structural duality
 

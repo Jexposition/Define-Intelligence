@@ -174,9 +174,11 @@ the residual/origin contradiction remain open.
   `PositiveOrderMoments` through the physical-prefix/profile chain. The open
   issue is semantic transport into the residual endpoint, not dead code or
   total import separation.
-- [~] The branch has no tracked `.olean` or `.lake` files. The current working
-  tree is intentionally dirty while the 2026-09-24 attack ledger and probes
-  are being packaged; final clean-status validation remains pending.
+- [x] Commit `700e39d` is pushed to
+  `review/cmi-first-navier-stokes-2026-09-22`. No tracked `.olean`, `.ilean`,
+  or `.lake` files are present. The only untracked paths are the two supplied
+  reference PDFs `docs/euler.pdf` and `docs/navier-stokes openai.pdf`; they are
+  intentionally not staged.
 
 ## Five-row collision boundary: 2026-09-24
 
@@ -193,6 +195,23 @@ the residual/origin contradiction remain open.
   `unsafe`.
 - [x] The exact invariant is recorded as two radial correction moments.
 - [x] The conditional nonzero-moment contradiction is recorded.
+
+## Selected-cycle transport recheck: 2026-09-24
+
+- [x] The selected cycle consumes real rank/debt data upstream through
+  `ActualMeanPhysicalData`, `ActualStageEstimates`, and
+  `ActualCandidateAssembly.physicalData`.
+- [x] `SelectedCycleMomentTransport.lean` compiles the two local radial
+  moment invariants for every selected cycle stage.
+- [x] The exported `Witness` still contains no equality connecting those
+  invariants to `PositiveOrderMoments.moments`,
+  `FiveProfileMoments.physicalMoments`, `FiveRowRank.FiveRows`, or the paper
+  tuple `(M,I,J,S,C_p)`.
+- [ ] A concrete selected-field violation or a zero-sorry `False` theorem has
+  not been obtained. CTR-005 remains a load-bearing correspondence gap.
+
+Evidence: `NavierStokesReview/evidence/selected_moment_transport_closure_2026-09-24.md` and
+`NavierStokesReview/evidence/selected_rank_transport_reaudit_2026-09-24.md`.
 - [ ] The selected endpoint still lacks the theorem transporting a compact
   Cartesian perturbation into `rankIncrement` with a nonzero corresponding
   moment.

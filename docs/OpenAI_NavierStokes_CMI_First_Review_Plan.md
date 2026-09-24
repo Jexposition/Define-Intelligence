@@ -420,3 +420,17 @@ Evidence: `NavierStokesReview/evidence/selected_rank_transport_reaudit_2026-09-2
 | UNI-05 | Produce selected-path `False` from this chain. | [ ] | Requires a false mandatory premise; none found in this pass. |
 
 Evidence: `NavierStokesReview/evidence/whole_space_uniqueness_audit_2026-09-24.md`.
+
+## Release-control recheck: 2026-09-24
+
+| Check | Status | Result |
+|---|---:|---|
+| Selected rank path | [x] | The actual cycle consumes rank/debt data; the two local radial invariants are compiled in `SelectedCycleMomentTransport.lean`. |
+| Endpoint transport | [ ] | `Witness` exposes no equality to the five paper moments or to `FiveRowRank.FiveRows`; a concrete selected-field violation remains to be proved. |
+| Whole-space audit | [x] | The comparison/uniqueness chain and standard-axiom report are recorded. |
+| Release packaging | [x]/[~] | Commit `700e39d` is pushed; no tracked Lean build artefacts exist. Two supplied PDFs remain intentionally untracked. |
+
+The active route is therefore the selected-field transport theorem, not the
+discarded claims that the five-moment branch is dead code, that the first two
+rows freeze total kinetic energy, or that compact pressure support alone
+trivialises the candidate.
