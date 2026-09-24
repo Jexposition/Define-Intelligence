@@ -41,10 +41,12 @@ The affirmative review conclusion is:
 > paper.
 
 The review is **not** claiming that the current source audit has proved
-`False` from `selected_witness`. The absence of that contradiction reports the
-state of the current Lean refutation search. It does not supply the missing
-bridge, validate the paper's stronger interpretation, or transfer the burden
-of proof to the reviewer.
+`False` from `selected_witness`. The absence of that contradiction reports
+only the state of the current Lean refutation search. It does not supply the
+missing bridge, validate the paper's stronger interpretation, or transfer the
+burden of proof to the reviewer. The negative review conclusion is already
+justified by the authors' failure to establish the affirmative composition
+theorem required by the stronger claim.
 
 ## Role of the zero-sorry probes
 

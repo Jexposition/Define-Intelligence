@@ -89,9 +89,13 @@ establish the stronger paper claim when the selected witness does not export
 the paper's five-moment identity or its transport into the residual and force.
 
 The correct conclusion is therefore affirmative but limited: the published
-claim is **not established** by the inspected paper-to-code record. “Not
-formally refuted” is only a report that the current Lean search has not derived
-`False`; it is not evidence that the authors' unproved bridges hold.
+claim is **not established** by the inspected paper-to-code record. This is
+the review verdict, because the authors have not discharged the affirmative
+burden of identifying the selected construction with the five-moment mechanism
+and its analytic composition. “Not formally refuted” is only a subordinate
+report that the current Lean search has not derived `False`; it is not evidence
+that the authors' unproved bridges hold, and it is not a reason to defer the
+negative review conclusion.
 
 The required author response is a field-level composition theorem starting at
 the actual selected stages and ending at the paper tuple, residual, pressure,

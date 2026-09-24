@@ -23,7 +23,7 @@ is not evidence against the claim.
 
 ## Current position
 
-The repository contains a genuine R³ C/D-shaped endpoint and the headline theorem reports only standard Lean axioms. The strongest adverse result is a cross-layer correspondence gap, not a proof that no five-row repair exists. `FiveProfileMoments` matches the paper-shaped normalisation, `PositiveOrderMoments` proves an exact five-component recursive repair, and `FiveRowRank` supplies a distinct three-debt physical rank interface. A zero-sorry theorem rules out a direct row-by-row bridge between the first and third interfaces, but that probe is not by itself a refutation because the positive-order layer may be an intended intermediate representation. The final theorem is not labelled refuted until a false mandatory premise or an impossible selected-path correspondence is proved.
+The repository contains a genuine R³ C/D-shaped endpoint and the headline theorem reports only standard Lean axioms. The primary adverse result is that the published five-moment/CMI claim is **not established** by the inspected paper-to-endpoint record: the authors have not supplied the selected-field composition theorem that their stronger explanation requires. This is not softened by the fact that a separate zero-sorry attack has not yet derived `False`. `FiveProfileMoments` matches the paper-shaped normalisation, `PositiveOrderMoments` proves an exact five-component recursive repair, and `FiveRowRank` supplies a distinct three-debt physical rank interface. A zero-sorry theorem rules out direct row-by-row identification between the first and third interfaces, while the positive-order layer may be an intended intermediate representation. The literal endpoint is therefore not labelled formally refuted, but the published claim is not accepted pending affirmative proof of the missing transport.
 
 **Headline load-bearing finding: CTR-005.** The paper's named five-moment
 system has not been shown by a selected-path theorem to be the same moment
@@ -32,11 +32,12 @@ data transported into the production debt, residual estimates, and public
 correspondence failure under review, not yet a kernel-level contradiction.
 
 This is a failure to discharge the authors' proof burden, not a presumption
-that the missing bridge is true. “Not formally refuted” is a separate status
-for the narrower question whether the current review has derived `False` from
-the selected endpoint. The active review verdict remains negative on the
-published claim until the selected-path bridge and its analytic premises are
-shown.
+that the missing bridge is true. “Not formally refuted” is a separate,
+subordinate status for the narrower question whether the current review has
+derived `False` from the selected endpoint. The active review verdict is
+negative on the published claim until the selected-path bridge and its
+analytic premises are shown. The reviewer is not required to construct the
+authors' missing affirmative proof before reaching that conclusion.
 
 ## Response-claims clarification: 2026-09-24
 

@@ -531,6 +531,7 @@ Evidence: `NavierStokesReview/evidence/global_germ_transport_audit_2026-09-24.md
 | Map each published Theorem 1.1 obligation to the Lean endpoint | [x] | `official_claim_transport_matrix_2026-09-24.md` records source anchors and endpoint status. |
 | Separate literal C/D predicates from the paper's five-moment explanation | [x] | The matrix records the endpoint predicates as present and the selected five-moment identification as unproved. |
 | Treat burden of proof asymmetrically | [x] | OpenAI must supply the selected-field transport theorem before the stronger published claim is accepted. |
+| Prevent underclaiming the review result | [x] | The primary verdict is `NOT ESTABLISHED`; `NOT FORMALLY REFUTED` is only a narrower report about the current `False` search. |
 | Promote the correspondence gap to `False` | [ ] | Requires a false equality or false mandatory premise on the selected path. |
 | Continue selected-field theorem search | [ ] | Locate a theorem identifying the final mixed fields with `(M,I,J,S,C_p)`, or compile a concrete counterexample to that identity. |
 

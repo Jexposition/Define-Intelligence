@@ -45,12 +45,13 @@ probe leaves a live objection because the recovery chain is comparative and
 does not, by its type, establish an absolute global Poisson representative for
 the selected pressure.
 
-The active verdict uses two separate statuses: `NOT ESTABLISHED` means the
-authors have not discharged the burden of proving the selected-path
-correspondence and its analytic premises; `NOT FORMALLY REFUTED` means that the
-review has not yet derived `False` from the selected endpoint. The latter is
-not a presumption that the former has been satisfied. The claim-by-claim
-qualification record is
+The active verdict is asymmetric. The primary status is **NOT ESTABLISHED**:
+the authors have not discharged the burden of proving the selected-path
+correspondence and its analytic premises. The narrower technical status
+**NOT FORMALLY REFUTED** means only that the review has not yet derived
+`False` from the selected endpoint. It is not a provisional acceptance or a
+presumption that the missing bridge is valid. The claim-by-claim qualification
+record is
 `NavierStokesReview/evidence/response_claims_adjudication_2026-09-24.md`.
 
 This is a burden-of-proof distinction, not a symmetry between the parties.
@@ -61,6 +62,11 @@ selected-field correspondence or missing analytic composition theorem. The
 separate record
 `NavierStokesReview/evidence/burden_of_proof_underclaim_audit_2026-09-24.md`
 lists those obligations and the consequences of leaving them open.
+
+The review must not underclaim its result: an unproved affirmative bridge is
+itself sufficient to withhold acceptance of the stronger published claim. A
+kernel-level contradiction would strengthen the finding, but is not a
+precondition for the present negative review conclusion.
 
 The six core documents above are synchronised to that authority map. The
 pressure result is sourced to

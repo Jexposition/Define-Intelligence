@@ -889,9 +889,11 @@ to support the paper's stronger interpretation.
 This places the burden where it belongs. A reviewer need not prove that every
 smooth force is harmless, or that the literal existential C/D proposition is
 false, before declining to accept a paper whose central construction has not
-been transported into its exported endpoint. The current formal conclusion is
-therefore: the literal endpoint is materially populated, but the public
-five-moment solution claim is not established by the source as presently
-exposed. A `False` theorem would be a stronger and separate result.
+been transported into its exported endpoint. The primary conclusion is
+therefore: the public five-moment solution claim is **not established** by the
+source as presently exposed. The literal endpoint is materially populated,
+but that narrower fact does not discharge the authors' burden for the stronger
+published interpretation. A `False` theorem would be a stronger and separate
+result, not a prerequisite for this conclusion.
 
 Evidence: `NavierStokesReview/evidence/official_claim_transport_matrix_2026-09-24.md`.
