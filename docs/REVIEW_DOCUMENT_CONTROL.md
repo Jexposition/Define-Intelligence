@@ -55,16 +55,16 @@ record is
 `NavierStokesReview/evidence/response_claims_adjudication_2026-09-24.md`.
 
 This is a burden-of-proof distinction, not a symmetry between the parties.
-OpenAI is responsible for establishing the stronger paper and CMI claim it
+OpenAI is responsible for establishing the paper and CMI solution claim it
 published. The review does not need to prove the negation of the literal
-existential endpoint before rejecting that stronger claim for an unproved
+existential endpoint before rejecting that published solution claim for an unproved
 selected-field correspondence or missing analytic composition theorem. The
 separate record
 `NavierStokesReview/evidence/burden_of_proof_underclaim_audit_2026-09-24.md`
 lists those obligations and the consequences of leaving them open.
 
 The review must not underclaim its result: an unproved affirmative bridge is
-itself sufficient to withhold acceptance of the stronger published claim. A
+itself sufficient to withhold acceptance of the published solution claim. A
 kernel-level contradiction would strengthen the finding, but is not a
 precondition for the present negative review conclusion.
 
@@ -641,7 +641,7 @@ That selected-path transport theorem is the outstanding burden on the authors.
 
 This is an underclaim finding, not a claim that the literal Lean endpoint has
 already been contradicted. The authors must establish the correspondence before
-the stronger published “solution” description can be accepted.
+the published “solution” description can be accepted.
 
 Evidence: `NavierStokesReview/evidence/official_claim_transport_matrix_2026-09-24.md`.
 

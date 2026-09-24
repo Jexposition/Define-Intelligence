@@ -175,7 +175,7 @@ The construction-interface audit changes the status of three proposed failure mo
 
 The localisation objection is also narrower than initially stated. The selected velocity localisation is curl-generated and has an explicit divergence-free theorem, while the residual argument uses local equality. The cone-preservation step receives a derived coefficient bound from the modulated repair family. The source therefore does not support the claim that these three properties are obtained by simply assuming the desired endpoint.
 
-The synthesis now separates two conclusions. The repository and the official exposition still contain material overclaims: the source tree is not globally admitted-free, and the paper does not yet expose a complete named-moment transport theorem. Because OpenAI made the affirmative CMI-solution claim, those defects are sufficient to withhold acceptance of that stronger claim on the inspected record. They do not, on their own, falsify the literal selected forced C/D theorem. A formal counterexample remains a separate escalation target on the actual selected dependency path.
+The synthesis now separates two conclusions. The repository and the official exposition still contain material overclaims: the source tree is not globally admitted-free, and the paper does not yet expose a complete named-moment transport theorem. Because OpenAI made the affirmative CMI-solution claim, those defects are sufficient to withhold acceptance of the advertised solution on the inspected record. They do not, on their own, falsify the literal selected forced C/D theorem. A formal counterexample remains a separate escalation target on the actual selected dependency path.
 
 The source census must be stated precisely. There are four `sorry` declarations in the repository's `ComparatorChallenges` area: two in `ComparatorChallenges/NavierStokes.lean` and two in `ComparatorChallenges/Euler.lean`. The Navier–Stokes challenge file identifies them as standalone challenge placeholders, and the selected R³ endpoint does not import that module.
 
@@ -467,7 +467,7 @@ shell. The unresolved issue is that no selected-path theorem located in the
 exported witness identifies the paper's five named moments `(M,I,J,S,C_p)` with
 the final mixed velocity, pressure, residual, and force.
 
-This is an affirmative reason not to accept the stronger published solution
+This is an affirmative reason not to accept the published solution
 claim. The authors bear the burden of supplying that correspondence. A formal
 `False` result remains a separate, stronger outcome and is not required to
 establish that the paper's current explanation is under-supported.
@@ -483,7 +483,7 @@ between the final mixed fields and the paper's five named moments. The new
 zero-sorry probe records this as an interface non-implication, not as a claim
 that the selected integrals have already been disproved.
 
-This distinction resolves the burden-of-proof question. The stronger public
+This distinction resolves the burden-of-proof question. The public solution
 claim is not established until the authors provide that selected-field
 transport theorem; no kernel-level `False` derivation is required merely to
 withhold acceptance of an unsupported affirmative correspondence.

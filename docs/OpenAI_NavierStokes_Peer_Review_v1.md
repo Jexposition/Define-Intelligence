@@ -23,8 +23,8 @@ theorem before it can claim that its local five-moment construction is the
 object used by the CMI endpoint.
 
 This strengthens CTR-005 as a source-level failure of the authors' affirmative
-proof record. It is sufficient to withhold acceptance of the stronger paper
-claim; the reviewer is not required to derive `False` merely because OpenAI
+proof record. It is sufficient to withhold acceptance of the paper's advertised
+Navier–Stokes solution claim; the reviewer is not required to derive `False` merely because OpenAI
 has not supplied the composition theorem. It does not, however, assert that
 `selected_candidate` has already been refuted at the Lean-kernel level.
 
@@ -88,7 +88,7 @@ mean that the unproved paper-to-endpoint bridge is presumed valid.
 The review should not be framed as though OpenAI and the reviewer carry equal
 burdens. OpenAI made the CMI-level claim and must establish the object and
 hypotheses it presents. A compiling existential endpoint is not enough to
-establish the stronger paper claim when the selected witness does not export
+establish the advertised paper solution claim when the selected witness does not export
 the paper's five-moment identity or its transport into the residual and force.
 
 The correct conclusion is therefore affirmative but limited: the published
@@ -204,7 +204,7 @@ The force remains active at `t = 1`, but `PositiveTimeForce.timeCutoff` is a smo
 The formal endpoint should not be dismissed as a mere compile illusion.
 Conversely, a clean endpoint axiom report does not verify the paper's
 construction line by line. The evidence supports a negative publication
-decision on the stronger claim: the repository has a formal C/D-shaped
+decision on the published solution claim: the repository has a formal C/D-shaped
 endpoint and substantial construction machinery, while the paper's
 endpoint-level five-moment transport remains unproved at the source level.
 The review does not yet possess a zero-sorry theorem showing that the
@@ -319,7 +319,7 @@ The appropriate review demand is therefore a zero-sorry proof that the selected 
 
 ## Revised recommendation
 
-The recommendation is **do not accept the stronger published CMI-solution claim on the inspected record**. The repository-wide zero-sorry claim is false because four challenge-file declarations are admitted, and the paper does not yet present a source-linked theorem mapping all named paper moments into the selected endpoint. Those are publication-blocking reproducibility and correspondence defects. They are not, by themselves, a formal disproof of the literal selected C/D theorem. The review need not derive `False` before rejecting the stronger affirmative claim; a selected-path contradiction remains a separate escalation target.
+The recommendation is **do not accept the published CMI-solution claim on the inspected record**. The repository-wide zero-sorry claim is false because four challenge-file declarations are admitted, and the paper does not yet present a source-linked theorem mapping all named paper moments into the selected endpoint. Those are publication-blocking reproducibility and correspondence defects. They are not, by themselves, a formal disproof of the literal selected C/D theorem. The review need not derive `False` before rejecting the advertised solution claim; a selected-path contradiction remains a separate escalation target.
 
 ## Physical realizability verdict: force-conservation proposal
 
@@ -1114,9 +1114,9 @@ found” and independent of whether the review has already derived `False`: the
 repository has not established that the public paper's central five-moment
 construction is the object proved by the exported endpoint. That affirmative
 burden lies with the authors, and the missing composition theorem is sufficient
-to withhold acceptance of the stronger claim.
-Until the selected-path transport theorem is supplied, the stronger public
-solution claim should not be accepted. A kernel-level refutation remains a
+to withhold acceptance of the published solution claim.
+Until the selected-path transport theorem is supplied, the public solution
+claim should not be accepted. A kernel-level refutation remains a
 separate threshold requiring a false selected premise or a zero-sorry
 contradiction.
 
@@ -1139,7 +1139,7 @@ explicit by pairing the actual selected record with an arbitrary nonzero debt.
 
 That result is an interface non-implication, not a claim that the selected
 integrals have already been shown false. It is nevertheless sufficient to
-withhold the stronger published solution claim: the authors must supply the
+withhold the published solution claim: the authors must supply the
 selected-field moment-composition theorem. A `False` theorem would strengthen
 the review but is not required to establish this failure of affirmative proof.
 

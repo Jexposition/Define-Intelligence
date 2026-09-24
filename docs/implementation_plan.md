@@ -78,7 +78,7 @@ The two untracked reference PDFs are intentionally excluded from commits.
 
 ## Current counter-paper decision: 2026-09-25
 
-The active paper is seeking an honest disproof of the stronger official claim,
+The active paper is seeking an honest disproof of the official solution claim,
 not a compiler-error narrative. The current source-backed result is an
 affirmative underclaim: the published five-moment/CMI correspondence is not
 established because the selected-field composition theorem is not exported.

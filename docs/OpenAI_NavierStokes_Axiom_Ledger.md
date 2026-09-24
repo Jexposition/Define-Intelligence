@@ -776,7 +776,7 @@ endpoint and not evidence that the upstream five-moment modules are dead.
 
 The selected endpoint is a real formal C/D-shaped construction, but the
 exported `Witness` does not carry the field-level composition theorem required
-by the paper's stronger five-moment interpretation. The missing theorem must
+by the paper's central five-moment solution interpretation. The missing theorem must
 identify the selected mixed velocity, pressure, residual, and force with the
 paper's `(M,I,J,S,C_p)` data and transport that identity through the correction,
 germ, and force layers. This is an affirmative proof obligation on the

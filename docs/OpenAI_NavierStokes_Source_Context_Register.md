@@ -25,7 +25,7 @@ existential C/D proposition is false. The review must keep those two claims
 separate.
 
 That qualification does not make the burden symmetrical. OpenAI must establish
-the stronger paper and CMI claim it chose to publish. If the selected Lean
+the paper and CMI solution claim it chose to publish. If the selected Lean
 endpoint does not expose the paper's field-level identifications and their
 analytic composition, the correct review result is **not established as
 claimed**, even if the narrower existential endpoint has not been formally
@@ -174,7 +174,7 @@ mechanism is not identified with the selected final mixed fields, pressure,
 residual, and force by any theorem located in the exported `Witness` chain.
 
 This is an author-side burden of proof. The absence of that selected-path
-transport theorem is enough to keep the stronger paper claim unestablished;
+transport theorem is enough to keep the published solution claim unestablished;
 it is not, without a false selected identity, a formal contradiction to the
 literal C/D endpoint.
 

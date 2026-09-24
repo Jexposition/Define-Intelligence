@@ -23,7 +23,7 @@ is not evidence against the claim.
 
 ## Current position
 
-The repository contains a genuine R³ C/D-shaped endpoint and the headline theorem reports only standard Lean axioms. The primary adverse result is that the published five-moment/CMI claim is **not established** by the inspected paper-to-endpoint record: the authors have not supplied the selected-field composition theorem that their stronger explanation requires. This is not softened by the fact that a separate zero-sorry attack has not yet derived `False`. `FiveProfileMoments` matches the paper-shaped normalisation, `PositiveOrderMoments` proves an exact five-component recursive repair, and `FiveRowRank` supplies a distinct three-debt physical rank interface. A zero-sorry theorem rules out direct row-by-row identification between the first and third interfaces, while the positive-order layer may be an intended intermediate representation. The literal endpoint is therefore not labelled formally refuted, but the published claim is not accepted pending affirmative proof of the missing transport.
+The repository contains a genuine R³ C/D-shaped endpoint and the headline theorem reports only standard Lean axioms. The primary adverse result is that the published five-moment/CMI solution claim is **not established** by the inspected paper-to-endpoint record: the authors have not supplied the selected-field composition theorem that their advertised solution requires. This is not softened by the fact that a separate zero-sorry attack has not yet derived `False`. `FiveProfileMoments` matches the paper-shaped normalisation, `PositiveOrderMoments` proves an exact five-component recursive repair, and `FiveRowRank` supplies a distinct three-debt physical rank interface. A zero-sorry theorem rules out direct row-by-row identification between the first and third interfaces, while the positive-order layer may be an intended intermediate representation. The literal endpoint is therefore not labelled formally refuted, but the published solution claim is not accepted pending affirmative proof of the missing transport.
 
 **Headline load-bearing finding: CTR-005.** The paper's named five-moment
 system has not been shown by a selected-path theorem to be the same moment
@@ -207,7 +207,7 @@ These findings narrow the counter-paper. The remaining formal correspondence obj
 | CTR-028 | `PositiveOrderMoments.lean` contains a separate five-dimensional exact repair theorem. | Confirmed positive evidence | The repository has serious five-row machinery, so the correct issue is the missing identification and endpoint-use theorem, not absence of all five-row repair. |
 | CTR-029 | The R3 endpoint remains standard-axiom-only in the inspected reports, while the force is residual-driven on the interior interval and extended smoothly at the endpoint. | Confirmed with scope | The endpoint is forced and C/D-shaped; this does not establish autonomous or force-free collapse. At the origin the selected force tends to zero, so “active through the singular interval” must not be read as a global pointwise nonzero claim. CMI C/D permits smooth forcing. |
 
-The present publication classification is **do not accept the stronger CMI-solution claim on the inspected record**. This decision follows from the affirmative burden of proof: the published argument must identify the selected fields and transport the paper's named quantities into the exported endpoint. A stronger `[FORMALLY REFUTED]` label is reserved for a zero-sorry contradiction or a false premise proved on the selected endpoint path; that narrower label is not required to withhold acceptance of an under-supported affirmative claim.
+The present publication classification is **do not accept the published CMI-solution claim on the inspected record**. This decision follows from the affirmative burden of proof: the published argument must identify the selected fields and transport the paper's named quantities into the exported endpoint. A `[FORMALLY REFUTED]` label is reserved for a zero-sorry contradiction or a false premise proved on the selected endpoint path; that narrower label is not required to withhold acceptance of an under-supported solution claim.
 
 ## 2026-09-23 bridge correction
 
@@ -276,7 +276,7 @@ Are there any remaining hidden truncations in the time-localization of the blowu
 
 ### Decision
 
-The earlier “absolute structural falsification” wording is withdrawn. The direct transport from the paper's named five moments to the selected endpoint remains a publication-critical obligation, but the existing constrained positive-order bridge prevents treating the type difference alone as a contradiction. The selected-budget issue likewise produces no endpoint refutation. The current evidence therefore supports a negative decision on the stronger published claim, while reserving “formally refuted” for a separate selected-path contradiction.
+The earlier “absolute structural falsification” wording is withdrawn. The direct transport from the paper's named five moments to the selected endpoint remains a publication-critical obligation, but the existing constrained positive-order bridge prevents treating the type difference alone as a contradiction. The selected-budget issue likewise produces no endpoint refutation. The current evidence therefore supports a negative decision on the published solution claim, while reserving “formally refuted” for a separate selected-path contradiction.
 
 ## 2026-09-23 selected-parameter audit
 
@@ -1249,7 +1249,7 @@ does not imply `FixedForceSameDatumStable`. Its axiom audit reports only
 The source-to-claim matrix records the burden asymmetry precisely. The exported
 `Witness` and comparator path contain the literal C/D-shaped predicates, so the
 review does not describe the endpoint as a hollow existential shell. The
-stronger public paper claim still requires a selected-field correspondence
+published solution claim still requires a selected-field correspondence
 theorem for the five named moments.
 
 | Obligation | Source result | Status |
@@ -1265,7 +1265,7 @@ formal C/D-shaped endpoint only if the endpoint source is accepted as given;
 they have not yet established that the central five-moment construction in the
 paper is the construction exported by that endpoint. The burden to supply that
 identification is on the authors. A missing bridge is enough to withhold the
-stronger claim, even though it is not itself a proof of `False`.
+published solution claim, even though it is not itself a proof of `False`.
 
 Evidence: `NavierStokesReview/evidence/official_claim_transport_matrix_2026-09-24.md`.
 
@@ -1293,7 +1293,7 @@ Evidence: `NavierStokesReview/evidence/selected_physical_data_moment_interface_2
 ## Publication-burden reassessment: 2026-09-25
 
 The review decision is now stated consistently across the active corpus:
-**do not accept the stronger published CMI-solution claim on the inspected
+**do not accept the published CMI-solution claim on the inspected
 record**. This is an underclaim finding, not a demand that the reviewer first
 derive `False` from the literal existential endpoint. The selected endpoint
 may be a genuine formal C/D-shaped object while the published paper-to-code

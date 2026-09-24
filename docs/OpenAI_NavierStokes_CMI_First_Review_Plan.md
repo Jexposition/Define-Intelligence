@@ -6,7 +6,7 @@
 
 The authors must establish the claim they publish. The review need not derive
 the negation of the literal existential endpoint before withholding acceptance
-of a stronger paper or CMI claim. Track these as separate outcomes:
+of the published paper and its CMI solution claim. Track these as separate outcomes:
 
 | Claim level | Required evidence | Current status |
 |---|---|---|
@@ -530,7 +530,7 @@ Evidence: `NavierStokesReview/evidence/global_germ_transport_audit_2026-09-24.md
 |---|---:|---|
 | Map each published Theorem 1.1 obligation to the Lean endpoint | [x] | `official_claim_transport_matrix_2026-09-24.md` records source anchors and endpoint status. |
 | Separate literal C/D predicates from the paper's five-moment explanation | [x] | The matrix records the endpoint predicates as present and the selected five-moment identification as unproved. |
-| Treat burden of proof asymmetrically | [x] | OpenAI must supply the selected-field transport theorem before the stronger published claim is accepted. |
+| Treat burden of proof asymmetrically | [x] | OpenAI must supply the selected-field transport theorem before the published solution claim is accepted. |
 | Prevent underclaiming the review result | [x] | The primary verdict is `NOT ESTABLISHED`; `NOT FORMALLY REFUTED` is only a narrower report about the current `False` search. |
 | Promote the correspondence gap to `False` | [ ] | Requires a false equality or false mandatory premise on the selected path. |
 | Continue selected-field theorem search | [~] | Locate a theorem identifying the final mixed fields with `(M,I,J,S,C_p)`, or compile a concrete counterexample to that identity. The publication verdict already remains `NOT ESTABLISHED` if the affirmative bridge is absent. |
@@ -541,7 +541,7 @@ mathematical correspondence, not a generic objection to compilation.
 ## Burden-of-proof gate
 
 The publication verdict is controlled asymmetrically. OpenAI must provide the
-selected-field composition theorem before the stronger claim is accepted. If
+selected-field composition theorem before the published solution claim is accepted. If
 that theorem is absent, the review records **NOT ESTABLISHED** and withholds
 acceptance. **NOT FORMALLY REFUTED** remains only a subordinate technical
 status reporting that the current Lean attack has not derived `False`; it is
@@ -558,9 +558,9 @@ as a separate lane, not as a prerequisite for the publication verdict.
 | Derive a selected-field mismatch | [ ] | A false equality or false mandatory endpoint premise, proved without `sorry` |
 
 The publication gate is already met for the narrower review conclusion:
-without the selected-field composition theorem, the stronger paper claim is
+without the selected-field composition theorem, the published solution claim is
 **NOT ESTABLISHED**. The remaining two rows are required only for a stronger
 kernel-level refutation. Their absence is already sufficient to withhold the
-stronger affirmative paper claim.
+advertised affirmative paper claim.
 
 **Last updated:** 2026-09-25
