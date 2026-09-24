@@ -37,7 +37,7 @@ radial anchor via a mathematical gauge transformation.
 **Analysis:** 
 I traced the dependency link for the $C^{\infty}$ smoothness predicate. 
 * **The Proof (Line 85):** `potential_smooth` invokes `AxisymmetricFields.contDiffOn_potential`, which rigorously composes the smoothness of the underlying `streamFactor` and `gaugedSwirl`. 
-* **Tautology Check:** The source does **not** declare smoothness as an `opaque` mapping, nor assume it as an unproven axiom. The smoothness is legitimately built up from basic 1D and 2D smooth components in Lean's mathlib. 
+* **Tautology Check:** The source does **not** declare smoothness as an `opaque` mapping, nor assume it as an unproven axiom. The smoothness is legitimately built up from basic 1D and 2D smooth components in Lean's mathlib.
 * **Verdict:** There is no tautological smoothness bypass in this module. The
   base field is genuinely $C^{\infty}$ smooth by construction. That fact is
   only one input to the later residual-limit construction; it does not prove
