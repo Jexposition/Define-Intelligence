@@ -108,3 +108,15 @@ identifies a solution for `-f` or `0` with the selected solution for `f`.
   selected threshold.
 - [ ] Use a proved false selected identity before upgrading CTR-005 to a
   kernel-level contradiction.
+
+## Official-claim underclaim gate: 2026-09-24
+
+| ID | Status | Acceptance test |
+|---|---:|---|
+| OC-01 | [x] | Map OpenAI Theorem 1.1 obligations to `Witness`, `selected_candidate`, and the C/D comparator modules. |
+| OC-02 | [x] | Record that the literal endpoint is populated, rather than calling it an empty existential shell. |
+| OC-03 | [x] | Record that the paper's `(M,I,J,S,C_p)` mechanism is not identified with the selected mixed fields, residual, or force. |
+| OC-04 | [ ] | Require a selected-field transport theorem from the authors, or prove one of its concrete identities false. |
+| OC-05 | [ ] | Promote CTR-005 to a kernel-level disproof only after a zero-sorry selected-path contradiction. |
+
+Evidence: `NavierStokesReview/evidence/official_claim_transport_matrix_2026-09-24.md`.

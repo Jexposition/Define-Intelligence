@@ -457,3 +457,19 @@ construction.
 The CMI force wording is tracked separately from the Lean endpoint. “Given,
 externally applied force” supports the causal interpretation of the review,
 while the formal C/D proposition contains no explicit independence predicate.
+
+## Published claim and burden of proof: 2026-09-24
+
+The source review now separates the official paper's stronger explanatory claim
+from the formal endpoint. `ActualCandidateAssembly.Witness` carries the literal
+C/D properties, so the endpoint is not accurately described as a hollow type
+shell. The unresolved issue is that no selected-path theorem located in the
+exported witness identifies the paper's five named moments `(M,I,J,S,C_p)` with
+the final mixed velocity, pressure, residual, and force.
+
+This is an affirmative reason not to accept the stronger published solution
+claim. The authors bear the burden of supplying that correspondence. A formal
+`False` result remains a separate, stronger outcome and is not required to
+establish that the paper's current explanation is under-supported.
+
+Evidence: `NavierStokesReview/evidence/official_claim_transport_matrix_2026-09-24.md`.
