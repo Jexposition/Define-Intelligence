@@ -1079,7 +1079,7 @@ does not supply a temporal-gluing theorem for the Navier--Stokes indexed stages
 and does not alter the selected-endpoint transport target. Source register:
 `docs/OpenAI_NavierStokes_Source_Context_Register.md`.
 
-Packaging status: review commit `a9c85f2` is pushed to
+Packaging status: review commit `054f407` is pushed to
 `review/cmi-first-navier-stokes-2026-09-22`. The two supplied reference PDFs
 remain intentionally untracked, and no Lean build artefacts are tracked.
 

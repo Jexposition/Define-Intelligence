@@ -234,7 +234,7 @@ the residual/origin contradiction remain open.
   `PositiveOrderMoments` through the physical-prefix/profile chain. The open
   issue is semantic transport into the residual endpoint, not dead code or
   total import separation.
-- [x] Review commit `a9c85f2` is pushed to
+- [x] Review commit `054f407` is pushed to
   `review/cmi-first-navier-stokes-2026-09-22`. No tracked `.olean`, `.ilean`,
   or `.lake` files are present. The only untracked paths are the two supplied
   reference PDFs `docs/euler.pdf` and `docs/navier-stokes openai.pdf`; they are
