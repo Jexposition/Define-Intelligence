@@ -1,7 +1,7 @@
 # Selected mixed velocity decomposition
 
-**Tree:** review branch at the source tree audited on 2026-09-25  
-**Review theorem:** `NavierStokesReview/src/completions/SelectedMixedVelocityDecomposition.lean`  
+**Tree:** review branch at the source tree audited on 2026-09-25
+**Review theorem:** `NavierStokesReview/src/completions/SelectedMixedVelocityDecomposition.lean`
 **Build:** `lake build NavierStokesReview` — 3702 jobs, successful; the new
 module contains no `sorry`, custom `axiom`, or `unsafe`.
 
@@ -69,4 +69,3 @@ terms.  The decomposition itself is not a contradiction.
 | Periodic split | `NavierStokes/MixedPeriodicAssembly.lean:36-38` |
 | Selected aliases | `NavierStokes/ActualCandidateAssembly.lean:1165-1175` |
 | Selected witness gate | `NavierStokes/ActualCandidateAssembly.lean:1177-1181` |
-
