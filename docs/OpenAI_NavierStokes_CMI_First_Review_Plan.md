@@ -250,8 +250,8 @@ proposal. Never describe a generic probe as a selected contradiction.
 | Lean review tree | `lake build NavierStokesReview` under Lean `v4.34.0-rc2`; no errors, `sorry`, custom axioms, or `unsafe` in new review modules. | `[x]` 3704 jobs |
 | Build hygiene | No tracked `.olean`, `.ilean`, `.c`, or `.lake` outputs. | `[x]` |
 | Python helper | Run the radial helper with the canonical V-lab interpreter after its path is repaired. | `[ ]` |
-| Documentation | New evidence cited in tracker, axiom ledger, synthesis, peer review, paper, README, control map, and this plan. | `[~]` potential chart result being synchronised |
-| Release | Commit and push only review source, evidence, and documents; leave supplied PDFs and scratch space untracked. | `[ ]` pending current synchronisation |
+| Documentation | New evidence cited in tracker, axiom ledger, synthesis, peer review, paper, README, control map, and this plan. | `[x]` potential chart result synchronised |
+| Release | Commit and push only review source, evidence, and documents; leave supplied PDFs and scratch space untracked. | `[x]` committed as `bc2f7e8`; push pending |
 
 ## Immediate execution order
 
