@@ -230,7 +230,7 @@ proposal. Never describe a generic probe as a selected contradiction.
 | Build hygiene | No tracked `.olean`, `.ilean`, `.c`, or `.lake` outputs. | `[x]` |
 | Python helper | Run the radial helper with the canonical V-lab interpreter after its path is repaired. | `[ ]` |
 | Documentation | New evidence cited in tracker, axiom ledger, synthesis, peer review, paper, README, control map, and this plan. | `[x]` through the mixed-field decomposition update |
-| Release | Commit and push only review source, evidence, and documents; leave supplied PDFs and scratch space untracked. | `[~]` current wave ready for release |
+| Release | Commit and push only review source, evidence, and documents; leave supplied PDFs and scratch space untracked. | `[~]` committed locally through `d6217e0`; push pending |
 
 ## Immediate execution order
 
