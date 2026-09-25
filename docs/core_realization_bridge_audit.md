@@ -111,3 +111,19 @@ Accordingly, the objection is a missing selected-field realisation theorem,
 not a claim that the five upstream formulas do not exist.
 
 Evidence: `NavierStokesReview/evidence/selected_moment_transport_source_trace_2026-09-25.md`.
+
+## Selected-witness export test: 2026-09-25
+
+The review extension
+`SelectedEndpointMomentTransportObstruction.lean` now instantiates the actual
+`selected_witness`. A nonzero five-coordinate debt can coexist with that
+exported witness, and the witness does not entail that every such debt is
+zero. This proves an interface non-implication at the final realization
+boundary. It does not assert that the selected physical integrals are false.
+
+The surviving bridge obligation is exact: identify the mixed selected fields
+with the paper's five moments and transport that identity through the
+residual, pressure, and force layers. Until that theorem is exported, the
+paper's affirmative solution claim remains **NOT ESTABLISHED**.
+
+Evidence: `NavierStokesReview/evidence/selected_endpoint_moment_transport_obstruction_2026-09-25.md`.

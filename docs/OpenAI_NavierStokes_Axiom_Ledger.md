@@ -806,3 +806,19 @@ but they invalidate a repository-wide zero-sorry claim. Evidence:
 The review-side `#print axioms` audit reports `sorryAx` for each of the four
 declarations. The audit module itself compiles without `sorry`, `axiom`, or
 `unsafe`; it is an observation of the source tree, not a replacement proof.
+
+## AX-048: selected-witness moment-export non-implication
+
+`NavierStokesReview/src/extensions/SelectedEndpointMomentTransportObstruction.lean`
+contains no `sorry`, `axiom`, or `unsafe` declaration. It imports the actual
+selected assembly and proves that `selected_witness` can coexist at the
+exported interface with an explicit nonzero
+`PositiveOrderMoments.Debt`. It also proves that the witness does not entail
+that every five-coordinate debt is zero.
+
+This is a zero-sorry interface theorem, not an admission and not a proof that
+the selected field's actual integrals are wrong. It records that the selected
+`Witness` type does not export the field-level moment identity required by the
+paper. The corresponding affirmative burden remains logged under CTR-005.
+
+Evidence: `NavierStokesReview/evidence/selected_endpoint_moment_transport_obstruction_2026-09-25.md`.

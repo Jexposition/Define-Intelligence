@@ -1277,3 +1277,36 @@ integrity objection without being misrepresented as a proof that the selected
 R³ endpoint itself depends on `sorryAx`.
 
 Evidence: `NavierStokesReview/evidence/repository_admission_axiom_log_2026-09-25.md`.
+
+## Finding 40: selected-witness export does not certify the five-moment payload
+
+The review now tests the actual selected endpoint rather than inferring its
+scope from a generic stage contract. `ActualCandidateAssembly.Witness` is
+inhabited by `selected_witness`, and its definition exports the selected
+schedule, assembled fields, force, candidate properties, force regularity,
+H3 growth, force-jet decay, and endpoint jets. It does not export a
+`PositiveOrderMoments.Debt`, a `FiveRows` proposition, or an equality
+identifying the selected mixed fields with
+$$
+(M,I,J,S,C_p).
+$$
+
+The zero-sorry extension
+`NavierStokesReview/src/extensions/SelectedEndpointMomentTransportObstruction.lean`
+formalises the boundary: a nonzero five-coordinate payload can coexist with
+the actual selected witness, and the witness does not entail that every such
+payload is zero. This is an interface non-implication, not a claim that the
+selected physical integrals have already been calculated incorrectly. The
+upstream five-moment formulae remain active and are not being described as
+dead code.
+
+The publication consequence is direct. Because the paper presents the
+five-moment mechanism as part of its solution, the authors must exhibit the
+selected-field composition theorem that transports those identities through
+the mixed sums, residual, pressure, and force. Until then, the advertised
+solution claim remains **NOT ESTABLISHED** on the inspected record. A
+selected-field `False` theorem would strengthen this finding but is not
+required to reject an affirmative claim whose load-bearing correspondence is
+not exported.
+
+Evidence: `NavierStokesReview/evidence/selected_endpoint_moment_transport_obstruction_2026-09-25.md`.

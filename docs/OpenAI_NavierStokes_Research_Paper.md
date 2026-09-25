@@ -1042,6 +1042,39 @@ then a proved mismatch.
 
 Evidence: `NavierStokesReview/evidence/selected_physical_data_moment_interface_2026-09-24.md`.
 
+### A selected-witness non-implication
+
+The stronger endpoint test has now been made against the actual selected
+`Witness`, not only against `PhysicalData`. The extension
+`SelectedEndpointMomentTransportObstruction.lean` proves, without an
+admission, that
+
+$$
+\exists d : \operatorname{Debt}_5,
+\quad d \ne 0
+\quad\land\quad
+\operatorname{Witness}_{\mathrm{selected}}.
+$$
+
+Here the nonzero payload is an explicit constant function on `Fin 5`, while
+the witness is the repository's own `selected_witness`. The result is not a
+claim that this abstract payload equals the selected physical integrals. It
+proves the exact limitation of the exported proposition: the witness carries
+no five-coordinate payload and therefore cannot, by its type alone, certify
+the paper's moment identities.
+
+This matters because the paper treats those identities as part of the
+solution mechanism, not as optional explanatory notation. The required
+theorem must identify the actual selected mixed velocity and pressure fields,
+transport their five integrals through the residual and force construction,
+and connect them to the endpoint used to claim breakdown. That theorem is
+still absent from the inspected export. The counter-paper therefore rejects
+the advertised solution claim as **NOT ESTABLISHED**, while keeping the
+separate and narrower statement that no selected-path `False` theorem has yet
+been derived.
+
+Evidence: `NavierStokesReview/evidence/selected_endpoint_moment_transport_obstruction_2026-09-25.md`.
+
 ## The published claim and the selected-field burden
 
 The question under review is the claim that this repository supplies a

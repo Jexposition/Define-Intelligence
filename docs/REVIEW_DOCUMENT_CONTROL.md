@@ -715,6 +715,26 @@ is not a completed `False` theorem for the literal R³ endpoint.
 
 Evidence: `NavierStokesReview/evidence/cmi_target_and_claim_level_reconciliation_2026-09-25.md`.
 
+## Selected-endpoint moment-export check: 2026-09-25
+
+The review-side extension
+`NavierStokesReview/src/extensions/SelectedEndpointMomentTransportObstruction.lean`
+now tests the actual `selected_witness`. It proves a zero-sorry interface
+non-implication: the exported witness can coexist with a nonzero abstract
+five-coordinate debt because `Witness` exports no debt field or equality to
+the paper's `(M,I,J,S,C_p)` integrals.
+
+This strengthens CTR-005 without overstating the result. The upstream
+five-moment machinery remains active and source-supported. The new theorem
+does not prove that the selected physical integrals are false; it proves that
+the published five-moment correspondence is not certified by the exported
+witness type. The active counter-paper verdict remains **NOT ESTABLISHED** for
+the advertised solution claim, while the narrower selected-path status remains
+**NOT FORMALLY REFUTED** until a false selected premise or zero-sorry `False`
+theorem is obtained.
+
+Evidence: `NavierStokesReview/evidence/selected_endpoint_moment_transport_obstruction_2026-09-25.md`.
+
 ## Release-integrity evidence update: 2026-09-25
 
 The admission census now has a direct Lean axiom log at

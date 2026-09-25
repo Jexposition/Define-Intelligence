@@ -505,3 +505,20 @@ so it remains separate from CTR-005 and from the selected-path contradiction
 search.
 
 Evidence: `NavierStokesReview/evidence/repository_admission_axiom_log_2026-09-25.md`.
+
+## Selected-witness endpoint test: 2026-09-25
+
+The latest review-side theorem tests the actual selected `Witness`, not a
+generic proxy. It proves that the inhabited selected witness can coexist at
+the exported type boundary with an explicit nonzero
+`PositiveOrderMoments.Debt`. This is because `Witness` exports no debt field
+and no equality to the paper's `(M,I,J,S,C_p)` integrals.
+
+The result must be read narrowly. It does not show that the selected
+integrals are wrong, and it does not turn the literal C/D endpoint into a
+formal contradiction. It does show that the paper's five-moment transport is
+not certified by the selected witness type. That is sufficient to keep the
+advertised solution claim **NOT ESTABLISHED** until the authors provide the
+missing selected-field composition theorem.
+
+Evidence: `NavierStokesReview/evidence/selected_endpoint_moment_transport_obstruction_2026-09-25.md`.

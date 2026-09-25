@@ -608,3 +608,20 @@ Evidence: `NavierStokesReview/evidence/cmi_target_and_claim_level_reconciliation
 | Keep selected endpoint and repository-wide claims separate | [x] | Census does not claim the challenge declarations lie on `NavierStokes/R3`'s dependency path. |
 | Record the release-level consequence | [x] | Blanket repository-wide zero-sorry claim is rejected; evidence is `repository_admission_census_2026-09-25.md`. |
 | Reproduce the admission result through Lean's axiom report | [x] | `RepositoryAdmissionAudit.lean` compiles and reports `sorryAx` for all four standalone challenge declarations; see `repository_admission_axiom_log_2026-09-25.md`. |
+
+## Selected-endpoint transport obstruction: 2026-09-25
+
+| Task | Status | Acceptance condition |
+|---|---:|---|
+| Test the actual selected `Witness`, not only a generic stage interface | [x] | Review extension imports `ActualCandidateAssembly` and uses `selected_witness`. |
+| Test whether the exported witness determines a five-coordinate payload | [x] | A zero-sorry theorem pairs the inhabited witness with a nonzero `PositiveOrderMoments.Debt`. |
+| Claim that the selected physical integrals are false | [ ] | No such claim is made without a field-level integral equality. |
+| Prove the paper's five-moment composition theorem | [ ] | Still required from the affirmative solution record. |
+| Derive selected-path `False` | [ ] | Continue only through a false selected premise or an exact contradictory identity. |
+
+Evidence: `NavierStokesReview/evidence/selected_endpoint_moment_transport_obstruction_2026-09-25.md`.
+
+The active counter-paper conclusion remains **NOT ESTABLISHED** for the
+advertised solution claim. The new theorem strengthens CTR-005 as an exported
+interface non-implication; it does not convert an absent transport field into
+a fabricated contradiction.

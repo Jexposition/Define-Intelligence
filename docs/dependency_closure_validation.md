@@ -82,3 +82,19 @@ This is distinct from the public `Witness` type, which does not expose that
 field or an equality to the paper's five moments. The valid correspondence
 objection is therefore an endpoint transport gap, not absence of all local
 mass-preservation logic.
+
+## Endpoint payload check: 2026-09-25
+
+The selected `Witness` is inhabited and carries the concrete C/D-shaped
+properties, but its exported proposition contains no five-coordinate debt or
+moment equality. The zero-sorry extension
+`SelectedEndpointMomentTransportObstruction.lean` proves that a nonzero
+abstract five-moment payload can coexist with the selected witness. This
+formalises the endpoint's inability to certify the paper tuple without
+claiming that the selected integrals themselves are false.
+
+The result strengthens the paper-level counterfinding under CTR-005. It does
+not justify calling the selected endpoint a fake field or a kernel-level
+contradiction.
+
+Evidence: `NavierStokesReview/evidence/selected_endpoint_moment_transport_obstruction_2026-09-25.md`.

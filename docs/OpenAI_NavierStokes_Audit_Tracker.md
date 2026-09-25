@@ -1407,3 +1407,28 @@ independent comparator definitions and bridge. Classification: **confirmed
 repository-scope defect; selected-endpoint contamination not shown**.
 
 Evidence: `NavierStokesReview/evidence/repository_admission_axiom_log_2026-09-25.md`.
+
+## CTR-043: selected witness does not export the paper's moment payload
+
+The selected-endpoint extension
+`NavierStokesReview/src/extensions/SelectedEndpointMomentTransportObstruction.lean`
+uses the actual `selected_witness` and proves, without `sorry`, that it is
+compatible at the exported type boundary with a nonzero
+`PositiveOrderMoments.Debt`. The same module proves that the witness does not
+entail `∀ d : Debt, d = 0`.
+
+This is not a claim that the selected integrals are false. It is a direct
+non-implication result: `ActualCandidateAssembly.Witness` does not itself
+export a debt field, a five-moment array, or an equality identifying the
+selected mixed fields with `(M,I,J,S,C_p)`. The upstream five-row formulae
+remain active and source-supported. The missing selected-field composition
+theorem remains the load-bearing publication objection under CTR-005.
+
+| Check | Result |
+|---|---|
+| Selected `Witness` is inhabited | Proved by `ActualCandidateAssembly.selected_witness`. |
+| Nonzero five-coordinate payload can coexist with that export | Proved by `selected_witness_compatible_with_nonzero_five_payload`. |
+| Actual selected moments are disproved | Not claimed; no equality to the selected integrals is exposed. |
+| Published five-moment solution claim established | **No; selected-field transport remains unproved.** |
+
+Evidence: `NavierStokesReview/evidence/selected_endpoint_moment_transport_obstruction_2026-09-25.md`.
