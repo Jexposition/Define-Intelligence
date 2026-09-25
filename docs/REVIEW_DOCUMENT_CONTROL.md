@@ -859,3 +859,14 @@ This completion recovers the selected scalar angular coefficient from one
 Cartesian component on the positive radial section. Its strict `r > 0`
 hypothesis is part of the result: the source totalises the angular frame to
 zero on the axis. The global moment calculation remains open.
+
+## Axis-boundary completion: 2026-09-25
+
+The authority map now also includes
+`NavierStokesReview/src/completions/SelectedRadialAxisBoundary.lean` and
+`NavierStokesReview/evidence/selected_radial_axis_boundary_2026-09-25.md`.
+The completion proves the component-one axis value for every selected direct
+stage. It supplies the missing source branch at `r = 0` but does not establish
+a derivative mismatch, a nonzero radial remainder, or `False`. The active
+counter-paper route remains the full mixed-field transport through curl,
+localisation, torus averaging, outer support, and `barMoment`.

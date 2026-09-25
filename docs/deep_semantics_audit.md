@@ -100,3 +100,9 @@ The selected radial section is now source-backed: component one recovers the
 scalar angular coefficient for `r > 0`, while the axis is a separate zero-frame
 branch. This narrows the remaining semantic question to the full selected
 field composition rather than a generic coordinate objection.
+
+The axis case is now proved for the selected direct stages: the first angular
+component is exactly zero when the radial coordinates vanish. This is a
+totalisation branch in the source, not a claim that the off-axis field fails to
+extend smoothly. The unresolved semantic test remains the full radial moment
+of the curl-generated mixed field.

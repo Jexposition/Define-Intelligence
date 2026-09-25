@@ -1466,3 +1466,25 @@ or `False` theorem follows yet; the published solution claim remains
 **NOT ESTABLISHED** pending the complete selected-field integral identity.
 
 Evidence: `NavierStokesReview/evidence/selected_radial_section_component_2026-09-25.md`.
+
+### Axis value of the selected angular branch
+
+The radial calculation now has an exact boundary value. Let (w=(t,x)) be a
+space-time point with (x_1=x_2=0). The review-side theorem unfolds the
+production angular frame and proves
+
+$$
+\bigl(u^{\mathrm{direct}}_j(t,x)\bigr)_1=0
+\qquad\text{when }x_1=x_2=0.
+$$
+
+For (r>0), the preceding theorem recovers the scalar coefficient instead.
+Thus the selected calculation is piecewise in its source representation:
+positive-radius coefficient recovery and an explicitly totalised zero axis
+branch. A complete counterexample would still require evaluating the
+curl-generated mixed field against the radial operator on both branches,
+including the cutoff-gradient commutator and boundary terms. The axis theorem
+therefore closes a definitional ambiguity but does not itself prove a nonzero
+remainder or `False`.
+
+Evidence: `NavierStokesReview/evidence/selected_radial_axis_boundary_2026-09-25.md`.

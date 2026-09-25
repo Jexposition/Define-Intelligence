@@ -198,3 +198,10 @@ radius, the first Cartesian component of the actual angular field recovers its
 scalar coefficient. At the axis the source uses a totalised zero angular
 frame, so the recovery requires a separate boundary treatment. This narrows
 the live calculation without asserting a nonzero remainder prematurely.
+
+The axis branch is now source-verified as well: the first component of every
+selected direct angular stage is exactly zero when both radial Cartesian
+coordinates vanish. This is a totalised boundary value, not evidence of a
+discontinuity. The live counter-paper calculation remains the full
+Cartesian-to-radial composition, including localisation, curl, torus averaging,
+and `barMoment`.

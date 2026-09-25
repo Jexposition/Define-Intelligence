@@ -67,3 +67,7 @@ The coordinate transport is now concrete on the positive radial section:
 `SelectedRadialSectionComponent.lean` recovers the scalar coefficient from the
 actual angular field. The axis, localisation commutator, curl-generated
 meridional field, and outer boundary still require separate transport.
+
+The axis part of that transport is now exact for the selected direct angular
+branch: its first component is zero at (r=0). This is not a substitute for
+the all-order germ and moment calculation of the complete mixed field.

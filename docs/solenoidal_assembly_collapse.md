@@ -64,3 +64,7 @@ The field-level refinement is now explicit on `r > 0`: component one of the
 selected angular field recovers its scalar coefficient. At `r = 0` the source
 uses a totalised zero angular frame. This is a calculation boundary, not
 evidence of pure-axial collapse or a selected moment contradiction.
+
+The new axis theorem reinforces the narrower reading. A zero component on the
+radial axis follows from the totalised angular frame, but it does not imply a
+globally pure-axial field, a curl collapse, or a nonzero moment defect.

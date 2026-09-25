@@ -70,3 +70,9 @@ The radial-section completion now recovers the coefficient from the actual
 selected angular field for positive radius. This confirms the next calculation
 input while leaving the meridional curl, cutoff commutator, torus average,
 axis, and outer-tail terms unresolved.
+
+The axis boundary is no longer an uninspected definition: the review theorem
+`SelectedRadialAxisBoundary.lean` proves the first selected direct angular
+component is zero at (r=0). This does not evaluate the base profile's full
+curl or establish a moment leak; it supplies one exact endpoint for the
+remaining radial calculation.

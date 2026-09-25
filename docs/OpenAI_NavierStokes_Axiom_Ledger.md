@@ -929,3 +929,16 @@ selected mixed field still requires the meridional curl, cutoff commutator,
 torus average, outer support, and `barMoment` calculation.
 
 Evidence: `NavierStokesReview/evidence/selected_radial_section_component_2026-09-25.md`.
+
+## AX-057: selected axis boundary theorem
+
+`SelectedRadialAxisBoundary.lean` is a review-side theorem with no `sorry`,
+custom axiom, or `unsafe` declaration. It unfolds the actual angular field and
+proves the component-one value at the radial axis, then transports the result
+to the selected direct stages. This is an ordinary theorem over the source
+definitions, not an admission into the upstream construction.
+
+It does not establish a derivative seam, a full vector-to-scalar projection,
+or a nonzero radial moment. Those remain separate obligations.
+
+Evidence: `NavierStokesReview/evidence/selected_radial_axis_boundary_2026-09-25.md`.

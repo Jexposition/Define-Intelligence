@@ -129,3 +129,10 @@ The selected radial-section theorem is an additional active closure result.
 It connects one actual Cartesian component to the scalar coefficient on the
 positive-radius section, but does not connect the entire mixed `Witness` field
 to `barMoment` or establish a nonzero remainder.
+
+The new axis-boundary completion is part of the active review closure. It
+proves the selected direct stage's component-one value on the axis, while
+leaving the full mixed-field-to-`barMoment` transport open. It therefore adds
+source precision without changing the burden-of-proof classification.
+
+Evidence: `NavierStokesReview/evidence/selected_radial_axis_boundary_2026-09-25.md`.

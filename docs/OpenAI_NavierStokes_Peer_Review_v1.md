@@ -1551,3 +1551,21 @@ divide by `r` at `r = 0`. The theorem still does not identify the full mixed
 velocity with `barMoment`, and it supplies no nonzero remainder or `False`.
 
 Evidence: `NavierStokesReview/evidence/selected_radial_section_component_2026-09-25.md`.
+
+## Finding 52: the selected radial calculation has a proved axis branch
+
+The review-side completion `SelectedRadialAxisBoundary.lean` proves that the
+first Cartesian component of every selected direct stage is zero on the axis,
+where both radial Cartesian coordinates vanish. This is the exact production
+boundary value of the totalised angular frame. It should not be described as a
+temporal or spatial discontinuity: no derivative mismatch has been proved.
+
+The result strengthens the counter-paper's calculation. Any claimed transport
+from the scalar moment invariant to the full Cartesian field must now join the
+positive-radius coefficient identity to this axis branch, while also retaining
+the cutoff-gradient curl term, meridional contribution, torus average, and
+outer-support boundary. The published solution claim remains **NOT
+ESTABLISHED** because that composition is still not supplied; no `Delta m ≠ 0`
+or kernel-level `False` is asserted here.
+
+Evidence: `NavierStokesReview/evidence/selected_radial_axis_boundary_2026-09-25.md`.

@@ -170,3 +170,11 @@ Evidence: `NavierStokesReview/evidence/selected_scalar_barMoment_transport_2026-
 coordinate recovery needed by this bridge. Its strict radius hypothesis is
 source-mandated by the totalised angular frame; it is not a proof that the
 full Cartesian endpoint preserves the scalar moment.
+
+The selected axis branch is now explicit. At the radial axis, the first
+component of each selected direct angular stage is zero by the source's
+totalised angular frame. The missing bridge must therefore join this value to
+the positive-radius identity and then to the full curl/localisation and
+`barMoment` composition.
+
+Evidence: `NavierStokesReview/evidence/selected_radial_axis_boundary_2026-09-25.md`.

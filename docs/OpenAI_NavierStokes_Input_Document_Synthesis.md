@@ -641,3 +641,13 @@ calculation from a generic vector/scalar type mismatch to the full selected
 field, axis, cutoff-curl, torus-average, and outer-support composition.
 
 Evidence: `NavierStokesReview/evidence/selected_radial_section_component_2026-09-25.md`.
+
+## Axis branch is now source-resolved
+
+The positive-radius coefficient identity has a separately proved axis branch.
+When both radial Cartesian coordinates are zero, the source angular frame and
+therefore the first component of each selected direct stage evaluate to zero.
+This removes an ambiguity in the boundary calculation, but it does not supply
+the missing full-field `barMoment` transport or a contradiction.
+
+Evidence: `NavierStokesReview/evidence/selected_radial_axis_boundary_2026-09-25.md`.

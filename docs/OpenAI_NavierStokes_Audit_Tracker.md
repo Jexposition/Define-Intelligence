@@ -1711,3 +1711,19 @@ in CTR-005 but does not establish the full Cartesian-to-`barMoment` identity,
 a nonzero `Delta m`, or `False`.
 
 Evidence: `NavierStokesReview/evidence/selected_radial_section_component_2026-09-25.md`.
+
+## CTR-056: selected angular axis branch is explicitly zero
+
+`SelectedRadialAxisBoundary.lean` proves that the first Cartesian component of
+the actual selected angular field is zero whenever the two radial Cartesian
+coordinates vanish. The same identity is transported to every selected direct
+stage. This follows from the production `angularVector` definition and its
+totalised divisions; it is not an inferred continuity failure.
+
+Together with CTR-055, the selected radial calculation now has two exact
+branches: coefficient recovery for `r > 0` and a zero angular-frame component
+on the axis. The unresolved calculation is the full mixed field after cutoff,
+curl, torus averaging, and `barMoment`. No nonzero `Delta m` or `False` follows
+from the axis result alone.
+
+Evidence: `NavierStokesReview/evidence/selected_radial_axis_boundary_2026-09-25.md`.

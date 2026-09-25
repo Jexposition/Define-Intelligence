@@ -69,3 +69,8 @@ The latest selected-field result makes the positive-radius part explicit:
 component one of the actual angular field on the radial section. The source
 totalises the frame to zero on the axis, so this does not remove the axis
 boundary obligation or prove a full `barMoment` identity.
+
+`SelectedRadialAxisBoundary.lean` now proves the corresponding selected-stage
+axis value: component one is zero when both radial Cartesian coordinates are
+zero. The two results should be read together as a source-level branch split,
+not as a discontinuity theorem.
