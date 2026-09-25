@@ -65,6 +65,33 @@ contradiction on the selected dependency path or a false mandatory premise
 proved for the selected fields. That stronger result remains a separate
 research target.
 
+### Burden of proof for the advertised solution
+
+The burden in this review is set by OpenAI's own public claim: the repository
+and paper are presented as a solution of the Navier–Stokes problem, not merely
+as a collection of compiling experiments or a proposal for future work. The
+relevant affirmative proposition is therefore that one selected construction
+simultaneously satisfies
+
+$$
+\text{equations} + \text{regularity} + \text{force conditions}
+  + \text{energy bound} + \text{finite-time breakdown},
+$$
+
+and that the construction described in the paper is the construction exported
+by the theorem. A repository-wide collection of supporting modules cannot
+carry that burden if the final witness does not identify the paper's
+load-bearing objects with the selected fields.
+
+Accordingly, this paper rejects the advertised solution claim on the inspected
+record. That conclusion does not depend on first proving a contradiction in
+Lean. A zero-sorry `False` theorem would be a stronger disproof of the source
+endpoint; it is not a prerequisite for finding that the affirmative paper has
+failed to establish its claimed solution. The distinction is deliberate:
+absence of a formal refutation is not positive evidence for the published
+claim, and the unresolved correspondence remains the authors' burden to
+discharge.
+
 This is not a review of an optional implementation detail. OpenAI's public
 announcement presents the work as a solution of the Navier–Stokes existence
 and smoothness problem and expressly says that it establishes alternatives
