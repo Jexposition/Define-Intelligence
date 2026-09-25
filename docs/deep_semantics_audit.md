@@ -83,3 +83,15 @@ contains Cartesian fields assembled by curl and `tsum`. The audit must now
 evaluate the selected finite prefix, cutoff derivatives, and axis/tail terms.
 No nonzero remainder is recorded until a Lean theorem identifies the resulting
 profile with the selected field.
+
+## Selected scalar moment result
+
+The selected-cycle path now has a zero-sorry `barMoment` result for its scalar
+mean profiles. This is a positive source fact and rules out a stage-iteration
+leak as the explanation for any future mismatch. It does not settle the
+Cartesian endpoint: the angular coefficient is transformed by the physical
+atlas and frame before localisation and curl. The next contradiction target
+must therefore be a proved field-level projection or boundary remainder, not a
+generic claim that the moment system is absent.
+
+Evidence: `NavierStokesReview/evidence/selected_scalar_barMoment_transport_2026-09-25.md`.

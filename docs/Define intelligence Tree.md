@@ -2540,3 +2540,12 @@ The active review documents live in this fork's `docs/` directory. Start with
 `OpenAI_NavierStokes_Peer_Review_v1.md` / `OpenAI_NavierStokes_Research_Paper.md`
 for human-readable conclusions. The parent `Define Intelligence/docs` tree is
 archival/staging and must not be treated as a competing active verdict.
+
+## Selected-field calculation update
+
+The active review now includes zero-sorry completions proving the selected
+cycle's scalar `barMoment` identities and exposing a Cartesian component of
+the selected angular field. These results close the proposed stage-level
+moment-leak shortcut but leave the atlas, cutoff, curl, axis, tail, and final
+Cartesian-to-radial calculation open. See
+`NavierStokesReview/evidence/selected_scalar_barMoment_transport_2026-09-25.md`.

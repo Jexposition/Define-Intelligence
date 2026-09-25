@@ -153,3 +153,15 @@ the spatial curl, cylindrical projection, torus average, and radial integral,
 with all localisation derivative and boundary terms visible. Until that
 theorem exists, the upstream zero-row invariant cannot be used to assert a
 nonzero selected remainder or `False`.
+
+## Selected scalar moment transport refinement
+
+The selected cycle does expose more than an abstract invariant: the review
+completion proves that the selected scalar mean state has zero `barMoment 2`
+angular and zero `barMoment 1` axial values on the carrier at every stage.
+Therefore the live bridge is not the existence of local scalar moment
+preservation. It is the unproved identification of those scalar profiles with
+the final Cartesian field after atlas scaling, angular-frame multiplication,
+localisation, curl, torus averaging, and boundary evaluation.
+
+Evidence: `NavierStokesReview/evidence/selected_scalar_barMoment_transport_2026-09-25.md`.

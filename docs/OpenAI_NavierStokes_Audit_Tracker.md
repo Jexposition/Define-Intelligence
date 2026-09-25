@@ -1636,3 +1636,26 @@ axis, and tail terms. No selected `Delta m ≠ 0` or selected-path `False` has
 been proved.
 
 Evidence: `NavierStokesReview/evidence/selected_angular_component_formula_2026-09-25.md`.
+
+## CTR-052: selected direct stages have a positive-radius chart identity
+
+The review-side completion
+`NavierStokesReview/src/completions/SelectedDirectPrefixField.lean` now proves
+`selected_direct_stage_eq_chart`. After specialising the source theorem to the
+selected budget and threshold, each selected direct stage agrees with
+`chartDirectStages` on an admissible positive-radius chart.
+
+The transport is source-backed by `ActualCandidateAssembly.lean:553-556` and
+`ActualCandidateConstruction.lean:561-572`. It is therefore incorrect to say
+that the selected direct stage is only an abstract witness or an uninhabited
+limit.
+
+The identity still has a strict boundary. It is not a Cartesian curl formula,
+does not cross the axis, and does not identify the vector field with the scalar
+radial-profile input consumed by `DefectIncrementBounds.barMoment`. The live
+CTR-005 calculation remains: expand the selected coefficient, cutoff
+derivatives, curl/connection terms, axis and outer-support terms, and only then
+evaluate the radial integral. No selected `Delta m ≠ 0` or kernel `False` has
+been proved.
+
+Evidence: `NavierStokesReview/evidence/selected_direct_chart_transport_2026-09-25.md`.

@@ -50,3 +50,15 @@ modules. The missing object remains a theorem for the actual selected mixed
 sums and residual.
 
 Evidence: `NavierStokesReview/evidence/selected_moment_transport_closure_2026-09-24.md`.
+
+## Selected recurrence and scalar moment correction
+
+The selected natural-indexed construction does carry a proved scalar local
+moment invariant. `SelectedCycleMomentTransport.lean` identifies `barMoment`
+with the cycle state's radial moment and proves the selected angular and axial
+values vanish on the carrier at every stage. Thus the unresolved issue is not
+that the recurrence silently drops its local moment constraints. It is whether
+the atlas/cutoff/curl construction transports those scalar values to the
+Cartesian endpoint and the paper's full five-moment tuple.
+
+Evidence: `NavierStokesReview/evidence/selected_scalar_barMoment_transport_2026-09-25.md`.

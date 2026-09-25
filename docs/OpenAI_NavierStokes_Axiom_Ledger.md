@@ -875,3 +875,17 @@ by the Cartesian radius. This theorem exposes the exact analytic expression
 needed for the radial calculation, but it does not assert a nonzero remainder.
 
 Evidence: `NavierStokesReview/evidence/selected_angular_component_formula_2026-09-25.md`.
+
+## AX-053: selected direct stages transport through a positive-radius chart
+
+`SelectedDirectPrefixField.lean` proves the selected direct-stage equality with
+`chartDirectStages` on the explicit chart hypotheses. This closes the weaker
+possibility that the selected stage family is merely an uninhabited or generic
+interface value.
+
+The theorem is not an axis-crossing result and not a radial-moment theorem.
+The selected field remains vector-valued after chart transport; the scalar
+`barMoment` operation still requires a separately proved projection and
+integrability calculation. No nonzero remainder follows from this axiom entry.
+
+Evidence: `NavierStokesReview/evidence/selected_direct_chart_transport_2026-09-25.md`.

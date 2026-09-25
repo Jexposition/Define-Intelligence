@@ -57,4 +57,18 @@ theorem selected_cycle_nonzero_axial_moment_impossible
     False := by
   exact hshift ((selected_cycle_state_zero_masses j n s hs).2)
 
+theorem selected_cycle_mean_angular_barMoment_zero
+    (j n : ℕ) {s : PressureStream.Plane}
+    (hs : s ∈ ActualInitialization.geometry.region.carrier) :
+    DefectIncrementBounds.barMoment 2
+        (ActualCandidateConstruction.selectedCycle j).state.mean.angular n s = 0 := by
+  exact selected_cycle_state_zero_masses j n s hs |>.1
+
+theorem selected_cycle_mean_axial_barMoment_zero
+    (j n : ℕ) {s : PressureStream.Plane}
+    (hs : s ∈ ActualInitialization.geometry.region.carrier) :
+    DefectIncrementBounds.barMoment 1
+        (ActualCandidateConstruction.selectedCycle j).state.mean.axial n s = 0 := by
+  exact selected_cycle_state_zero_masses j n s hs |>.2
+
 end NavierStokesReview.SelectedCycleMomentTransport

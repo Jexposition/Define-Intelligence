@@ -825,3 +825,12 @@ and `NavierStokesReview/evidence/selected_angular_component_formula_2026-09-25.m
 This completion exposes one concrete Cartesian component of the selected
 angular field. It narrows the next calculation but does not establish a
 nonzero moment remainder or a kernel contradiction.
+
+The authority map also includes
+`NavierStokesReview/src/completions/SelectedDirectPrefixField.lean` and
+`NavierStokesReview/evidence/selected_direct_chart_transport_2026-09-25.md`.
+The new theorem transports every selected direct stage to the source's
+positive-radius `chartDirectStages` expression. It closes the generic/vacuous
+stage objection, but it deliberately does not claim an axis-crossing curl
+identity or a scalar `barMoment` equality. CTR-005 therefore remains the
+active selected Cartesian-to-radial calculation gate.

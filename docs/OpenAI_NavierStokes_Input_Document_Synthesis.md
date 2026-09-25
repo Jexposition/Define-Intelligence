@@ -588,3 +588,18 @@ axis and outer-support terms, and torus average before asserting any nonzero
 remainder.
 
 Evidence: `NavierStokesReview/evidence/selected_cycle_mass_preservation_2026-09-25.md`.
+
+## Selected chart transport check: 2026-09-25
+
+The selected direct-stage trace now reaches a concrete positive-radius chart:
+`SelectedDirectPrefixField.lean` proves equality with `chartDirectStages` under
+the source's chart, carrier, and preterminal hypotheses. This removes the
+possibility that the selected direct family is only a generic endpoint shell.
+
+The transport stops exactly where the affirmative paper claim becomes
+load-bearing. The chart theorem does not cross the axis, expand the spatial
+curl, or produce the scalar radial profile needed by `barMoment`. The next
+calculation must retain cutoff derivatives, connection terms, torus averaging,
+and axis/tail contributions. No nonzero selected remainder is inferred.
+
+Evidence: `NavierStokesReview/evidence/selected_direct_chart_transport_2026-09-25.md`.

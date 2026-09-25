@@ -50,3 +50,12 @@ I executed a comprehensive cross-reference to find where the compiler enforces d
 No formal disproof is established by this note. Its surviving result is the
 need for an explicit theorem transporting the paper's moment data into the
 selected curl-generated field and residual estimates.
+
+## Selected scalar moment refinement
+
+The active selected cycle carries zero scalar angular and axial `barMoment`
+values on the carrier at every stage. This rules out a stage-level collapse
+argument based only on the two zero correction rows. The unresolved assembly
+question remains concrete: whether the atlas coefficient and angular frame,
+after localisation and spatial curl, realise the same radial moments in the
+exported Cartesian sum.

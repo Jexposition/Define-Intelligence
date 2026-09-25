@@ -57,3 +57,9 @@ The production cycle is not free of all moment constraints. Its
 the selected cycle. The unresolved issue is narrower: those two constraints
 are not displayed as the paper's complete `(M,I,J,S,C_p)` identity at the
 mixed `Witness` endpoint.
+
+The scalar result is now explicit in `barMoment` notation: the selected cycle
+mean angular and axial profiles have the required zero radial moments on the
+carrier. This does not extend automatically to the final Cartesian velocity;
+the angular frame, atlas scaling, cutoff, curl, and boundary terms remain the
+field-level transport calculation.

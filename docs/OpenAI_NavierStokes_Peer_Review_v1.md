@@ -1481,3 +1481,19 @@ and curl terms, and compute the axis and outer-support contributions before a
 nonzero `Delta m` can be asserted.
 
 Evidence: `NavierStokesReview/evidence/selected_angular_component_formula_2026-09-25.md`.
+
+## Finding 48: selected direct stages are chart-realised off the axis
+
+The review now proves a stronger selected-path fact: under the source's
+positive-radius chart hypotheses, each selected direct stage agrees with the
+corresponding `chartDirectStages` field. This rules out treating the direct
+stage family as a merely generic or vacuous witness.
+
+It does not settle the paper's five-moment claim. The identity is restricted to
+the chart domain, while the advertised radial moments require the selected
+Cartesian field after localisation, spatial curl, torus averaging, and the
+axis/outer-support limits. The repository still provides no theorem identifying
+that vector-valued expression with the scalar `barMoment` input. A nonzero
+`Delta m` therefore remains unproved, as does any kernel-level `False`.
+
+Evidence: `NavierStokesReview/evidence/selected_direct_chart_transport_2026-09-25.md`.

@@ -55,3 +55,13 @@ CTR-005 question is whether the paper's five-moment balances are transported
 into the selected residual estimates. The pressure comparison interface also
 needs an absolute semantic bridge. This note does not establish that the
 endpoint is a physical phantom.
+
+## Selected scalar-to-Cartesian boundary
+
+The selected cycle's scalar mean profiles do satisfy the local `barMoment`
+zero identities used by the correction invariant. The selected angular field
+then multiplies that coefficient by the Cartesian angular frame; its component
+one is explicitly exposed in `SelectedAngularComponentFormula.lean`. The
+remaining question is whether the resulting atlas/curl field preserves the
+same radial quantity, including axis and outer-tail terms. No nonzero
+remainder is inferred from the base profile alone.

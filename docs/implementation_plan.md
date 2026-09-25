@@ -185,3 +185,23 @@ Required next implementation:
 The companion Euler interval audit and the radial symbolic helper remain
 separate lanes. Neither may be used as a Navier--Stokes contradiction without
 their own source-linked selected theorem.
+
+## Selected chart transport: 2026-09-25
+
+`SelectedDirectPrefixField.lean` now proves the selected direct-stage identity
+on the explicit positive-radius chart. The next implementation must use that
+identity as the input to the actual Cartesian calculation, not replace it with
+a generic profile.
+
+Required calculation:
+
+1. expand the physical-atlas coefficient on one selected positive-radius band;
+2. expand `SmoothCutoffs.scaledCutoff` before differentiating;
+3. apply the actual Cartesian curl and retain connection terms;
+4. prove the axis and outer-support contributions, including integrability;
+5. compare the resulting scalar radial expression with `barMoment_apply`; and
+6. compile either a selected nonzero `Delta m` theorem or a proved zero identity.
+
+The supplied Euler PDF and OpenAI companion paper remain a separate source
+context lane. Their interval claims may motivate checks, but they cannot be
+used as Navier--Stokes evidence without source-linked Lean results.

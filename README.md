@@ -165,3 +165,9 @@ the selected angular field as the physical-atlas coefficient times the
 corresponding angular-frame component. These results narrow the live test to
 the actual coefficient, cutoff derivatives, curl, axis/tail terms, and
 `barMoment`; they do not establish a nonzero remainder or `False`.
+
+The selected direct stages are now also transported through the source's
+positive-radius chart by `selected_direct_stage_eq_chart`. This removes a
+generic or vacuous-stage explanation while leaving the decisive calculation
+unchanged: localisation, Cartesian curl, axis/tail terms, torus averaging,
+and the scalar `barMoment` must still be related by an explicit theorem.

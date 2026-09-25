@@ -1376,3 +1376,21 @@ no `Delta m ≠ 0` or kernel `False` is claimed from the component identity
 alone.
 
 Evidence: `NavierStokesReview/evidence/selected_angular_component_formula_2026-09-25.md`.
+
+## Selected direct stages are chart-realised off the axis
+
+The source audit now proves that the selected direct stage is not an arbitrary
+placeholder. On the explicit positive-radius chart hypotheses,
+`selected_direct_stage_eq_chart` identifies it with the source's
+`chartDirectStages`. This follows the selected stage through the atlas rather
+than relying on the generic existential envelope.
+
+That result also fixes the remaining mathematical burden. The chart identity
+does not cross the axis and does not expand the Cartesian curl. The paper's
+five cumulative quantities are scalar radial quantities, whereas the exported
+selected stage remains a vector field assembled through the angular frame,
+localisation, curl, and torus averaging. Until those operations are connected
+by an explicit selected theorem, the review cannot claim a numerical remainder
+or a contradiction. The published solution claim remains **NOT ESTABLISHED**.
+
+Evidence: `NavierStokesReview/evidence/selected_direct_chart_transport_2026-09-25.md`.

@@ -113,3 +113,14 @@ for a dimension mismatch. Until a selected nonzero remainder is proved, no
 `False` theorem follows from this route.
 
 Evidence: `NavierStokesReview/evidence/ctr005_profile_tail_collision_route_2026-09-25.md`.
+
+## Selected scalar moment correction
+
+The closure contains a proved selected-cycle scalar result in the exact
+`barMoment` operator: the angular second and axial first mean-state moments
+vanish on the carrier for every selected stage. This confirms that the active
+upstream invariant is substantive. It remains distinct from the exported
+Cartesian `Witness` sums, so the selected-field transport calculation is still
+the load-bearing paper objection.
+
+Evidence: `NavierStokesReview/evidence/selected_scalar_barMoment_transport_2026-09-25.md`.

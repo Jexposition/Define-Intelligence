@@ -240,3 +240,20 @@ declarations on the selected R³ solution path, so the selected endpoint and
 the repository-wide admission census remain separate findings.
 
 Evidence: `NavierStokesReview/evidence/repository_admission_axiom_log_2026-09-25.md`.
+
+## Selected scalar moment update: 2026-09-25
+
+The selected-cycle completion now proves the two local scalar identities in the
+same `barMoment` notation used by the correction system. For every selected
+stage, the angular second moment and axial first moment of the cycle mean state
+vanish on the carrier. This removes any claim that the active recurrence loses
+those moments merely through iteration.
+
+The remaining adverse finding is at the exported field boundary: the selected
+direct prefix is a Cartesian velocity formed from an atlas coefficient, angular
+frame, localisation, and curl. The source still does not prove that this
+Cartesian field has the paper's radial profile moments after all cutoffs and
+boundary terms. The paper claim remains **NOT ESTABLISHED**, but no selected
+`Delta m ≠ 0` or kernel `False` is asserted.
+
+Evidence: `NavierStokesReview/evidence/selected_scalar_barMoment_transport_2026-09-25.md`.

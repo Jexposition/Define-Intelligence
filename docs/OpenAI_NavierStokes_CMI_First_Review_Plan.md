@@ -798,6 +798,11 @@ calculation from a generic `VelocityField` to the scalar coefficient and
 angular frame used by the selected direct stages. It still does not prove a
 nonzero remainder.
 
+| CALC-16 | Prove the selected scalar `barMoment` values. | [x] | `SelectedCycleMomentTransport.lean` proves the angular second and axial first scalar moments vanish on the carrier for every selected stage. Evidence `selected_scalar_barMoment_transport_2026-09-25.md`. |
+| CALC-17 | Compare the scalar moment identity with the exported Cartesian field. | [~] | The selected field multiplies the atlas coefficient by the angular frame and then passes through localisation/curl; the equality and any boundary remainder remain to be calculated. |
+| CALC-18 | Transport each selected direct stage through its actual positive-radius chart. | [x] | `SelectedDirectPrefixField.lean` proves `selected_direct_stage_eq_chart` using `ActualCandidateAssembly.directStages_eq` and `ActualCandidateConstruction.angularMeanStages_on_chart`. |
+| CALC-19 | Expand the chart-realised field through localisation, Cartesian curl, axis/tail limits, torus average, and `barMoment`. | [ ] | This is the remaining route to an explicit selected `Delta m`; retain every cutoff derivative and connection term. |
+
 This result also records a required correction to the review vocabulary:
 “zero correction rows” means preserved radial moments of correction/state
 profiles in `ZeroMassesOn`; it does not mean zero total energy, zero total
@@ -819,17 +824,19 @@ momentum, or zero moment of the final Cartesian velocity.
 | Euler companion | Audit parent-child horizons, Zeno sums, value/first-jet seams, all-order seams, and any hidden forcing term separately from Navier--Stokes. | [~] |
 | Euler source context | Read the supplied Euler PDF and OpenAI companion material; record only source-supported interval and PDE claims. | [ ] |
 | Radial helper | Run `NavierStokesReview/tools/radial_profile_integrals.py` only after Lean supplies an exact selected profile; repair the local Python interpreter path before execution. | [~] |
+| Source-context objections | Keep CMI wording, force provenance, existential quantification, pressure support, and physical five-moment semantics separate. | [x] The review distinguishes literal C/D endpoint obligations from the paper-to-code correspondence burden. |
+| Editorial release | Maintain a human-readable README abstract and synchronise plan, tracker, axiom ledger, synthesis, peer review, research paper, and control map after each source result. | [~] Add the chart-transport evidence to the release set. |
 | Editorial packaging | Maintain the README abstract/editorial summary and synchronise paper, peer review, tracker, axiom ledger, control map, and plan after each proved result. | [~] |
 
 ### Tooling and source-control gates
 
 | Gate | Acceptance test | Status |
 |---|---|---:|
-| Lean review tree | `lake build NavierStokesReview` has zero errors, zero `sorry`, zero custom axioms, and no `unsafe` in new review modules. | [x] 3696 jobs |
+| Lean review tree | `lake build NavierStokesReview` has zero errors, zero `sorry`, zero custom axioms, and no `unsafe` in new review modules. | [x] 3697 jobs under Lean `v4.34.0-rc2` |
 | Symbolic helper | V-lab Python interpreter executes the radial helper and records its exact input/output. | [ ] Current interpreter points to an inaccessible `uv` Python path. |
 | Build hygiene | No `.olean`, `.ilean`, `.c`, or `.lake` outputs are tracked. | [x] |
-| Documentation sync | New evidence is cited by the plan, tracker, axiom ledger, peer review, research paper, and control map. | [~] Add the selected-cycle evidence to each record. |
-| Release | Commit and push the final selected-field audit update. | [x] Commit `054f407` is pushed to the review branch; the two supplied PDFs remain intentionally untracked. |
+| Documentation sync | New evidence is cited by the plan, tracker, axiom ledger, peer review, research paper, synthesis, README, and control map. | [x] Scalar moment and positive-radius chart evidence are recorded; the field-level `Delta m` calculation remains open. |
+| Release | Commit and push the final selected-field audit update. | [~] Current source and documentation changes are ready for the next review-branch commit; the two supplied PDFs remain intentionally untracked. |
 
 ### Counter-paper source anchor
 
