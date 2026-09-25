@@ -867,11 +867,11 @@ momentum, or zero moment of the final Cartesian velocity.
 
 | Gate | Acceptance test | Status |
 |---|---|---:|
-| Lean review tree | `lake build NavierStokesReview` has zero errors, zero `sorry`, zero custom axioms, and no `unsafe` in new review modules. | [x] 3697 jobs under Lean `v4.34.0-rc2` |
+| Lean review tree | `lake build NavierStokesReview` has zero errors, zero `sorry`, zero custom axioms, and no `unsafe` in new review modules. | [x] 3698 jobs under Lean `v4.34.0-rc2` |
 | Symbolic helper | V-lab Python interpreter executes the radial helper and records its exact input/output. | [ ] Current interpreter points to an inaccessible `uv` Python path. |
 | Build hygiene | No `.olean`, `.ilean`, `.c`, or `.lake` outputs are tracked. | [x] |
 | Documentation sync | New evidence is cited by the plan, tracker, axiom ledger, peer review, research paper, synthesis, README, and control map. | [x] Scalar moment and positive-radius chart evidence are recorded; the field-level `Delta m` calculation remains open. |
-| Release | Commit and push the final selected-field audit update. | [x] Commit `ce4afd6` is pushed to `review/cmi-first-navier-stokes-2026-09-22`; the two supplied PDFs remain intentionally untracked. |
+| Release | Commit and push the final selected-field audit update. | [x] Commit `73867db` is pushed to `review/cmi-first-navier-stokes-2026-09-22`; the two supplied PDFs and existing scratch file remain intentionally untracked. |
 
 ### Counter-paper source anchor
 
