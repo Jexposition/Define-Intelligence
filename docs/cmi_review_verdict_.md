@@ -229,3 +229,14 @@ as a failure to establish the paper's five-moment mechanism at the selected
 field boundary, not as a completed contradiction of the literal C/D endpoint.
 
 Evidence: `NavierStokesReview/evidence/cmi_target_and_claim_level_reconciliation_2026-09-25.md`.
+
+## Release-integrity qualification
+
+The fork also records a concrete repository-wide defect: `ComparatorChallenges`
+is a default Lake target, and Lean's `#print axioms` reports `sorryAx` for its
+two Navier–Stokes and two Euler challenge declarations. This defeats an
+unqualified zero-sorry release description. The evidence does not place those
+declarations on the selected R³ solution path, so the selected endpoint and
+the repository-wide admission census remain separate findings.
+
+Evidence: `NavierStokesReview/evidence/repository_admission_axiom_log_2026-09-25.md`.

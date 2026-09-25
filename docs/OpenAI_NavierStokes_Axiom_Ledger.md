@@ -802,3 +802,7 @@ challenge declarations. `lakefile.toml` includes this library in
 `defaultTargets`. These are not silently attributed to the selected endpoint,
 but they invalidate a repository-wide zero-sorry claim. Evidence:
 `NavierStokesReview/evidence/repository_admission_census_2026-09-25.md`.
+
+The review-side `#print axioms` audit reports `sorryAx` for each of the four
+declarations. The audit module itself compiles without `sorry`, `axiom`, or
+`unsafe`; it is an observation of the source tree, not a replacement proof.

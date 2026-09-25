@@ -1259,3 +1259,21 @@ withhold the affirmative solution claim. It is not yet a direct proof that the
 selected integrals are false.
 
 Evidence: `NavierStokesReview/evidence/selected_moment_transport_source_trace_2026-09-25.md`.
+
+## Finding 14: the release is not globally admission-free
+
+The repository's default Lake targets include `ComparatorChallenges`. Its two
+Navier–Stokes challenge declarations and two Euler challenge declarations are
+implemented with `by sorry`. A review-side Lean module reproduces this through
+`#print axioms`: each declaration depends on `sorryAx`. This is a concrete
+failure of a repository-wide zero-sorry description and must be disclosed in
+any release record.
+
+The result is deliberately scoped. `NavierStokes/ComparatorSolution.lean`
+imports the independent comparator definitions and the project bridges rather
+than the challenge module, and the inspected selected R³ theorem remains
+standard-axiom-only. The admission census therefore strengthens the release
+integrity objection without being misrepresented as a proof that the selected
+R³ endpoint itself depends on `sorryAx`.
+
+Evidence: `NavierStokesReview/evidence/repository_admission_axiom_log_2026-09-25.md`.

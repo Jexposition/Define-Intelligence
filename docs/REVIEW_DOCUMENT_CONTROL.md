@@ -714,3 +714,15 @@ withhold acceptance of the paper's claimed five-moment correspondence, but it
 is not a completed `False` theorem for the literal R³ endpoint.
 
 Evidence: `NavierStokesReview/evidence/cmi_target_and_claim_level_reconciliation_2026-09-25.md`.
+
+## Release-integrity evidence update: 2026-09-25
+
+The admission census now has a direct Lean axiom log at
+`NavierStokesReview/evidence/repository_admission_axiom_log_2026-09-25.md`.
+It records `#print axioms` output for all four standalone challenge
+declarations and separates that repository-wide defect from the selected R³
+endpoint. The active verdict map therefore contains two distinct negative
+findings: CTR-005, the load-bearing selected-field correspondence failure, and
+CTR-042, the confirmed repository-wide admission defect. Neither is inflated
+into a selected-path `False` theorem without a direct dependency or false
+mandatory premise.

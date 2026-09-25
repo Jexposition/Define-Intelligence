@@ -495,3 +495,13 @@ mixed candidate. This avoids both underclaiming the source construction and
 overclaiming what the current endpoint proves.
 
 Evidence: `NavierStokesReview/evidence/selected_moment_transport_source_trace_2026-09-25.md`.
+
+The repository-integrity question is now independently closed at source level.
+`ComparatorChallenges` is a default Lake target, and Lean's axiom report shows
+that its four advertised challenge declarations depend on `sorryAx`. This
+supports a precise release-level objection to any blanket zero-sorry claim. It
+does not establish that the selected R³ endpoint imports those declarations,
+so it remains separate from CTR-005 and from the selected-path contradiction
+search.
+
+Evidence: `NavierStokesReview/evidence/repository_admission_axiom_log_2026-09-25.md`.

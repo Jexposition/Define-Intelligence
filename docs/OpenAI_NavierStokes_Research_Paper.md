@@ -1105,3 +1105,13 @@ refutation of that endpoint. They are, however, a direct failure of any
 repository-wide zero-sorry release claim and a reproducibility defect in the
 published proof record. Evidence:
 `NavierStokesReview/evidence/repository_admission_census_2026-09-25.md`.
+
+The source census has now been reproduced by Lean rather than inferred only
+from text search. A review-side audit module reports `sorryAx` in the axiom
+dependencies of all four standalone challenge declarations. This makes the
+release-level objection independently reproducible. It does not contaminate
+the selected R³ dependency report, which uses the independent comparator
+definitions; the paper therefore treats it as a separate integrity defect,
+not as a substitute for the unresolved selected-field contradiction.
+
+Evidence: `NavierStokesReview/evidence/repository_admission_axiom_log_2026-09-25.md`.

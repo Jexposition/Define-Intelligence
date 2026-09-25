@@ -607,3 +607,4 @@ Evidence: `NavierStokesReview/evidence/cmi_target_and_claim_level_reconciliation
 | Census every default build target for admitted declarations | [x] | `ComparatorChallenges/NavierStokes.lean:273-284` and `ComparatorChallenges/Euler.lean:85-88,181-184` contain explicit `sorry` bodies. |
 | Keep selected endpoint and repository-wide claims separate | [x] | Census does not claim the challenge declarations lie on `NavierStokes/R3`'s dependency path. |
 | Record the release-level consequence | [x] | Blanket repository-wide zero-sorry claim is rejected; evidence is `repository_admission_census_2026-09-25.md`. |
+| Reproduce the admission result through Lean's axiom report | [x] | `RepositoryAdmissionAudit.lean` compiles and reports `sorryAx` for all four standalone challenge declarations; see `repository_admission_axiom_log_2026-09-25.md`. |

@@ -1385,3 +1385,25 @@ not claim that these challenge declarations lie on its dependency path. The
 publication-level verdict remains **not established**, with CTR-005 as the
 load-bearing selected-field correspondence objection. Evidence:
 `NavierStokesReview/evidence/repository_admission_census_2026-09-25.md`.
+
+## CTR-042: admitted declarations independently confirmed by `#print axioms`: 2026-09-25
+
+The review-side module
+`NavierStokesReview/src/audit/RepositoryAdmissionAudit.lean` imports the
+standalone challenge declarations and contains no admitted declaration of its
+own. Lean reports `sorryAx` for all four challenge results:
+
+| Declaration | Axiom result | Scope |
+|---|---|---|
+| `NavierStokes.Comparator.navier_stokes_breakdown_R3` | `propext, sorryAx, Classical.choice, Quot.sound` | standalone challenge module |
+| `NavierStokes.Comparator.navier_stokes_breakdown_periodic` | `propext, sorryAx, Classical.choice, Quot.sound` | standalone challenge module |
+| `Euler.euler_breakdown_R3` | `propext, sorryAx, Classical.choice, Quot.sound` | standalone challenge module |
+| `Euler.exists_compact_smooth_euler_singularity` | `propext, sorryAx, Classical.choice, Quot.sound` | standalone challenge module |
+
+This confirms the release-level admission finding rather than merely counting
+the source token. It does not place `ComparatorChallenges` on the selected
+`NavierStokes/R3` dependency path; `ComparatorSolution.lean` uses the
+independent comparator definitions and bridge. Classification: **confirmed
+repository-scope defect; selected-endpoint contamination not shown**.
+
+Evidence: `NavierStokesReview/evidence/repository_admission_axiom_log_2026-09-25.md`.
