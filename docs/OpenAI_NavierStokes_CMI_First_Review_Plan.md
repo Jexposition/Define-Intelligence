@@ -836,7 +836,7 @@ momentum, or zero moment of the final Cartesian velocity.
 | Symbolic helper | V-lab Python interpreter executes the radial helper and records its exact input/output. | [ ] Current interpreter points to an inaccessible `uv` Python path. |
 | Build hygiene | No `.olean`, `.ilean`, `.c`, or `.lake` outputs are tracked. | [x] |
 | Documentation sync | New evidence is cited by the plan, tracker, axiom ledger, peer review, research paper, synthesis, README, and control map. | [x] Scalar moment and positive-radius chart evidence are recorded; the field-level `Delta m` calculation remains open. |
-| Release | Commit and push the final selected-field audit update. | [x] Commit `50f4819` is pushed to `review/cmi-first-navier-stokes-2026-09-22`; the two supplied PDFs remain intentionally untracked. |
+| Release | Commit and push the final selected-field audit update. | [x] Commit `69858dc` is pushed to `review/cmi-first-navier-stokes-2026-09-22`; the two supplied PDFs remain intentionally untracked. |
 
 ### Counter-paper source anchor
 
