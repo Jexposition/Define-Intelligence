@@ -1517,3 +1517,36 @@ published solution claim remains **NOT ESTABLISHED** until the full selected
 Cartesian-to-radial transport is supplied.
 
 Evidence: `NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md`.
+
+## Direct stage moments and the remaining transport problem
+
+A further source-level completion now isolates one part of the selected
+construction rather than treating the internal correction invariant as if it
+already applied to the exported field. The selected native angular stages are
+defined by the initial mean-angular state followed by differences of
+successive cycle states. The cycle invariant supplies zero order-2 radial
+angular moment for each state, while its primitive mean data supplies the
+smoothness and support conditions required to subtract the corresponding
+integrals. The resulting Lean theorem proves that every selected native
+angular stage has zero order-2 `barMoment` on the selected region.
+
+This is a useful negative result for the proposed remainder calculation. The
+direct scalar angular branch cannot, by itself, provide the selected nonzero
+order-2 radial defect required for a kernel contradiction. It does not,
+however, establish the same statement for the final Cartesian field. The
+production endpoint is
+
+$$
+u_{\mathrm{selected}}
+=\operatorname{curl}\!\left(\sum_j\chi_j A_j\right)
+ +\sum_j\chi_j B_j,
+$$
+
+so the unresolved calculation must transport the curl-generated potential
+branch through localisation, cylindrical components, torus averaging, radial
+integration, and boundary terms, and then compare it with the separately
+added direct branch. Until that selected-field equality and a proved nonzero
+remainder are available, the publication claim remains **NOT ESTABLISHED**,
+but a kernel-level `False` has not been obtained.
+
+Evidence: `NavierStokesReview/evidence/selected_direct_stage_moment_transport_2026-09-25.md`.

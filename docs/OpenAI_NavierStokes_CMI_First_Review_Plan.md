@@ -111,6 +111,7 @@ selected stage/potential
 | CALC-07 | Derive `False`. | `[ ]` | Combine CALC-06 with the selected correction invariant in Lean without `sorry`. |
 | CALC-08 | Verify recurrence/mass preservation. | `[x]` | `selected_cycle_zeroMasses` holds for every stage; do not call this total-field conservation. |
 | CALC-09 | Compare scalar moments with Cartesian output. | `[~]` | Transport the scalar `barMoment` identities through the atlas frame, localisation, curl, and `tsum`. |
+| CALC-10 | Transport the selected direct scalar stages. | `[x]` | `SelectedDirectStageMomentTransport.lean` proves every selected native angular stage has order-2 `barMoment` zero. This does not yet transport the mixed Cartesian field. |
 | CALC-10 | Verify finite-prefix/tail order. | `[x]` locally | Preterminal `tsum` tails are exactly zero after a finite index; terminal transport is still open. |
 
 ### Concrete subtargets
@@ -226,27 +227,30 @@ proposal. Never describe a generic probe as a selected contradiction.
 
 | Gate | Acceptance test | Status |
 |---|---|---:|
-| Lean review tree | `lake build NavierStokesReview` under Lean `v4.34.0-rc2`; no errors, `sorry`, custom axioms, or `unsafe` in new review modules. | `[x]` 3702 jobs |
+| Lean review tree | `lake build NavierStokesReview` under Lean `v4.34.0-rc2`; no errors, `sorry`, custom axioms, or `unsafe` in new review modules. | `[x]` 3703 jobs |
 | Build hygiene | No tracked `.olean`, `.ilean`, `.c`, or `.lake` outputs. | `[x]` |
 | Python helper | Run the radial helper with the canonical V-lab interpreter after its path is repaired. | `[ ]` |
-| Documentation | New evidence cited in tracker, axiom ledger, synthesis, peer review, paper, README, control map, and this plan. | `[x]` through the mixed-field decomposition update |
-| Release | Commit and push only review source, evidence, and documents; leave supplied PDFs and scratch space untracked. | `[x]` pushed at `bf3b92d` |
+| Documentation | New evidence cited in tracker, axiom ledger, synthesis, peer review, paper, README, control map, and this plan. | `[x]` direct-stage result synchronised |
+| Release | Commit and push only review source, evidence, and documents; leave supplied PDFs and scratch space untracked. | `[x]` pushed at `0579914` |
 
 ## Immediate execution order
 
 1. Trace `Atlas.physical` → `physicalPoint` → torus-average invariance for one
-   selected positive-radius stage.
+   selected positive-radius potential stage.
 2. Expand the selected cutoff/curl commutator and identify its actual radial
    operator input.
-3. Prove the first selected `barMoment_apply` equality with all integrability
+3. Transport the direct-stage zero result and the potential-stage expression
+   into one Cartesian-to-radial comparison theorem.
+4. Prove the first selected `barMoment_apply` equality with all integrability
    and boundary hypotheses explicit.
-4. Calculate `Δm`; only then attempt the zero-sorry `False` theorem.
-5. Record the result across the evidence ledger and active counter-paper.
+5. Calculate `Δm`; only then attempt the zero-sorry `False` theorem.
+6. Record the result across the evidence ledger and active counter-paper.
 
-**Current stopping point:** the mixed-field order is now source-verified, but
-no selected nonzero remainder and no selected kernel contradiction have yet
-been proved. The active burden remains the Cartesian-to-radial transport of
-both the curl-generated potential summand and the post-curl direct summand.
+**Current stopping point:** the mixed-field order and the direct scalar
+stage-moment result are source-verified, but no selected nonzero remainder and
+no selected kernel contradiction have yet been proved. The active burden is
+now the Cartesian-to-radial transport of the curl-generated potential summand
+and its comparison with the already-zero direct scalar branch.
 
 ## Source anchors
 

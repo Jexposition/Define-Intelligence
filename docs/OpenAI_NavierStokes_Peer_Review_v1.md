@@ -1590,3 +1590,24 @@ burden of the published five-moment claim while leaving the kernel-level
 contradiction open.
 
 Evidence: `NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md`.
+
+## Finding 54: direct scalar angular stages have zero order-2 moment
+
+The new completion `SelectedDirectStageMomentTransport.lean` checks the
+selected direct branch itself. Stage zero is a selected cycle mean-angular
+field. Each later stage is the difference of two consecutive selected cycle
+mean-angular fields. The selected cycle invariant gives zero order-2 radial
+moment for both states, and the exported primitive regularity gives the
+smoothness/support premises needed by `radialMoment_sub_on`. Lean therefore
+proves zero order-2 `barMoment` for every selected native angular stage.
+
+This closes one possible location for a selected nonzero remainder, but it
+does not close CTR-005. The theorem concerns the scalar native stage before
+the final Cartesian assembly. The exported velocity still contains a
+curl-generated potential sum plus a separately added direct sum. The remaining
+affirmative calculation must transport the potential branch and the mixed
+field through localisation, cylindrical projection, torus averaging, radial
+integration, and boundary terms. No selected `Delta m ≠ 0` or `False` has been
+proved.
+
+Evidence: `NavierStokesReview/evidence/selected_direct_stage_moment_transport_2026-09-25.md`.

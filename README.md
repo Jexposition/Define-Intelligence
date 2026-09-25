@@ -222,3 +222,12 @@ transport theorem. This correction keeps the counter-paper focused on the
 actual selected field rather than a stronger surrogate.
 
 Evidence: [`selected_mixed_velocity_decomposition_2026-09-25.md`](NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md).
+
+The latest selected-path completion proves that every native direct angular
+stage has zero order-2 radial `barMoment` on the selected region. This removes
+that scalar branch as the source of a selected nonzero remainder. It does not
+yet transport the identity to the final mixed Cartesian field or prove
+`False`; the active target remains the potential/curl branch and the complete
+Cartesian-to-radial calculation.
+
+Evidence: [`selected_direct_stage_moment_transport_2026-09-25.md`](NavierStokesReview/evidence/selected_direct_stage_moment_transport_2026-09-25.md).

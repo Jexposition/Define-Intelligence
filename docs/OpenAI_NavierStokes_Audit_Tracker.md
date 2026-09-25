@@ -1750,3 +1750,39 @@ one curl. It narrows the field-level calculation but does not prove a
 nonzero `Delta m` or `False`.
 
 Evidence: `NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md`.
+
+## CTR-058: selected direct angular stages have zero order-2 radial moment
+
+`SelectedDirectStageMomentTransport.lean` now proves the selected native
+angular-stage identity
+
+$$
+\operatorname{barMoment}_2(\texttt{angularNativeStages}\;j)=0
+$$
+
+on the selected region for every stage index. Stage zero uses the selected
+cycle `ZeroMassesOn` theorem. A successor stage is a difference of consecutive
+cycle mean-angular fields; the cycle `primitives.mean` data supplies the
+smoothness and support needed by
+`GaugeDebtIncrement.radialMoment_sub_on`, after which the two state moments
+cancel.
+
+This is selected-path evidence, not a generic interface countermodel. It
+removes the direct scalar angular branch as a source of a selected nonzero
+order-2 radial remainder. It does not identify that scalar moment with the
+final mixed Cartesian velocity, evaluate the potential/curl branch, prove a
+nonzero `Delta m`, or derive `False`.
+
+Source anchors:
+
+- `NavierStokes/ActualCandidateConstruction.lean:392-394`
+- `NavierStokes/CorrectionStep.lean:9446-9448`
+- `NavierStokes/MeanStateRegularity.lean:228-246, 339-347`
+- `NavierStokes/GaugeDebtIncrement.lean:175-179`
+- `NavierStokesReview/src/completions/SelectedDirectStageMomentTransport.lean:31-62`
+
+Evidence: `NavierStokesReview/evidence/selected_direct_stage_moment_transport_2026-09-25.md`.
+
+Build: `elan run leanprover/lean4:v4.34.0-rc2 lake build NavierStokesReview`;
+3703 jobs completed successfully with no new `sorry`, custom axiom, or
+`unsafe` declaration.

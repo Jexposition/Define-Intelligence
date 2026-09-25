@@ -663,3 +663,15 @@ remaining affirmative burden is therefore a two-branch transport through the
 radial operator, not a one-curl calculation.
 
 Evidence: `NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md`.
+
+## Direct scalar stage moment result
+
+The selected native angular stages now have a compiled order-2 `barMoment`
+zero identity on the selected region. The proof transports the cycle
+`ZeroMassesOn` invariant through the initial stage and successive state
+differences using the source's primitive regularity. This removes the direct
+scalar angular branch as the immediate source of a selected nonzero radial
+remainder, while leaving the potential/curl branch and the final mixed
+Cartesian-to-radial transport unresolved.
+
+Evidence: `NavierStokesReview/evidence/selected_direct_stage_moment_transport_2026-09-25.md`.

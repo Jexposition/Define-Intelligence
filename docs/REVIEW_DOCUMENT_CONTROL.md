@@ -880,3 +880,22 @@ the curl-generated potential sum plus a separate direct angular sum, with
 periodic localisation preserving that order. It corrects the stronger model
 that treated the whole field as one curl. The active CTR-005 calculation must
 transport both branches; no `Delta m` or `False` is recorded.
+
+## Direct-stage moment transport: 2026-09-25
+
+The authority map now includes
+`NavierStokesReview/src/completions/SelectedDirectStageMomentTransport.lean`
+and its evidence record. The zero-sorry theorem proves that every selected
+native angular stage has order-2 `barMoment` zero on the selected region. It
+uses the selected cycle `ZeroMassesOn` invariant for stage zero and
+`GaugeDebtIncrement.radialMoment_sub_on` for successor differences, with
+primitive smoothness/support data supplied by the selected cycle invariant.
+
+This is selected-path evidence and narrows the live CTR-005 calculation. It
+does not transport the result to the final mixed Cartesian field, does not
+evaluate the potential/curl branch, and does not establish `Delta m ≠ 0` or
+`False`. The controlled verdict remains **NOT ESTABLISHED** for the published
+solution claim, with the selected Cartesian-to-radial transport still open.
+
+Build record: `elan run leanprover/lean4:v4.34.0-rc2 lake build
+NavierStokesReview`; 3703 jobs completed successfully.

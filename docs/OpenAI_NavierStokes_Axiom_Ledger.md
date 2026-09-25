@@ -953,3 +953,14 @@ without a separate theorem. This is a source correction to the calculation
 model, not a contradiction or an additional axiom.
 
 Evidence: `NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md`.
+
+## AX-059: direct-stage moment transport has no new axioms
+
+`SelectedDirectStageMomentTransport.lean` adds no `sorry`, custom axiom, or
+`unsafe` declaration. It uses existing selected-cycle zero-moment and
+primitive-regularity theorems together with the source radial-moment
+subtraction lemma. The result is selected-path evidence for the direct scalar
+branch only; it adds no premise connecting that branch to the final mixed
+Cartesian field.
+
+Evidence: `NavierStokesReview/evidence/selected_direct_stage_moment_transport_2026-09-25.md`.
