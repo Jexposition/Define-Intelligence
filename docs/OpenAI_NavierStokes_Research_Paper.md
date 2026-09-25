@@ -515,12 +515,12 @@ are recorded in
 The perturbation test was then strengthened so that it preserves the selected
 zero initial datum. The new field is
 
-$$e_{t_0}(t,x)=t(t-t_0)\,\operatorname{curl}A(x).$$
+$$e_{t_0}(t,x)=t(t-t_0)\,\mathrm{curl}A(x).$$
 
 It is smooth, compactly supported on each spatial slice, divergence-free, and
 zero at both $t=0$ and $t=t_0$. At $t=t_0$ its spatial derivative and spatial
 Laplacian vanish, while its temporal derivative is
-$t_0\operatorname{curl}A(x)$. At the origin the selected compact potential
+$t_0\mathrm{curl}A(x)$. At the origin the selected compact potential
 gives a nonzero curl, so the fixed-force residual equation fails at the switch.
 This closes the initial-data loophole in the earlier perturbation probe and
 strengthens CTR-012 as a forward-data provenance objection. It still does not
@@ -836,7 +836,7 @@ The review construction resolves the selected-path inhabitance question. The
 partition identity
 
 $$
-\sum_k \operatorname{slowMask}_n(k,x)^2=1
+\sum_k\mathrm{slowMask}_n(k,x)^2=1
 $$
 
 implies that at least one grid mask is nonzero at every positive band. The
