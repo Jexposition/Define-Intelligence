@@ -915,3 +915,17 @@ selected finite prefix, torus average, axis and outer-support limits, and
 `barMoment`.
 
 Evidence: `NavierStokesReview/evidence/selected_cutoff_curl_commutator_2026-09-25.md`.
+
+## AX-056: selected radial-section recovery has an explicit axis boundary
+
+`SelectedRadialSectionComponent.lean` contains no admission, custom axiom, or
+unsafe declaration. It proves coefficient recovery for the actual selected
+angular field on the positive radial section. The proof requires strict
+positivity of the radius because the source's totalised angular frame is zero
+on the axis.
+
+This is a coordinate transport theorem, not a moment mismatch. The full
+selected mixed field still requires the meridional curl, cutoff commutator,
+torus average, outer support, and `barMoment` calculation.
+
+Evidence: `NavierStokesReview/evidence/selected_radial_section_component_2026-09-25.md`.

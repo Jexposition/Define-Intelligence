@@ -62,3 +62,8 @@ the atlas/cutoff/curl construction transports those scalar values to the
 Cartesian endpoint and the paper's full five-moment tuple.
 
 Evidence: `NavierStokesReview/evidence/selected_scalar_barMoment_transport_2026-09-25.md`.
+
+The coordinate transport is now concrete on the positive radial section:
+`SelectedRadialSectionComponent.lean` recovers the scalar coefficient from the
+actual angular field. The axis, localisation commutator, curl-generated
+meridional field, and outer boundary still require separate transport.

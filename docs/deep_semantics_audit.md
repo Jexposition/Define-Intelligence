@@ -95,3 +95,8 @@ must therefore be a proved field-level projection or boundary remainder, not a
 generic claim that the moment system is absent.
 
 Evidence: `NavierStokesReview/evidence/selected_scalar_barMoment_transport_2026-09-25.md`.
+
+The selected radial section is now source-backed: component one recovers the
+scalar angular coefficient for `r > 0`, while the axis is a separate zero-frame
+branch. This narrows the remaining semantic question to the full selected
+field composition rather than a generic coordinate objection.

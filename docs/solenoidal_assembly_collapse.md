@@ -59,3 +59,8 @@ argument based only on the two zero correction rows. The unresolved assembly
 question remains concrete: whether the atlas coefficient and angular frame,
 after localisation and spatial curl, realise the same radial moments in the
 exported Cartesian sum.
+
+The field-level refinement is now explicit on `r > 0`: component one of the
+selected angular field recovers its scalar coefficient. At `r = 0` the source
+uses a totalised zero angular frame. This is a calculation boundary, not
+evidence of pure-axial collapse or a selected moment contradiction.

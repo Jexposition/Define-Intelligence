@@ -851,3 +851,11 @@ The authority map now also includes
 The completion proves the exact derivative-of-cutoff commutator in the
 selected curl path. It does not prove a nonzero selected radial remainder or
 `False`; the selected torus-average and `barMoment` transport remain open.
+
+The authority map also includes
+`NavierStokesReview/src/completions/SelectedRadialSectionComponent.lean` and
+`NavierStokesReview/evidence/selected_radial_section_component_2026-09-25.md`.
+This completion recovers the selected scalar angular coefficient from one
+Cartesian component on the positive radial section. Its strict `r > 0`
+hypothesis is part of the result: the source totalises the angular frame to
+zero on the axis. The global moment calculation remains open.

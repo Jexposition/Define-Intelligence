@@ -630,3 +630,14 @@ uncompleted transport obligation, not evidence of a nonzero remainder by
 itself.
 
 Evidence: `NavierStokesReview/evidence/selected_cutoff_curl_commutator_2026-09-25.md`.
+
+## Radial-section transport now has a concrete selected input
+
+The actual selected angular field has been evaluated on its positive radial
+section. Its first Cartesian component recovers the scalar coefficient used
+by the construction for `r > 0`. The axis is a separate totalised branch and
+must not be handled by informal division. This result narrows the remaining
+calculation from a generic vector/scalar type mismatch to the full selected
+field, axis, cutoff-curl, torus-average, and outer-support composition.
+
+Evidence: `NavierStokesReview/evidence/selected_radial_section_component_2026-09-25.md`.

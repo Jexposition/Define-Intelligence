@@ -1536,3 +1536,18 @@ The review records the exact term as an open calculation, not as `Delta m ≠ 0`
 or a kernel contradiction.
 
 Evidence: `NavierStokesReview/evidence/selected_cutoff_curl_commutator_2026-09-25.md`.
+
+## Finding 51: the selected radial profile is recoverable only off the axis
+
+The selected angular field has now been evaluated on the actual radial
+section. `SelectedRadialSectionComponent.lean` proves that, for `r > 0`, its
+first Cartesian component equals the scalar coefficient used to construct the
+field. This provides a concrete selected input for the radial calculation.
+
+The restriction is not cosmetic. The source defines the angular frame by
+division by the Cartesian radius and totalises it to zero on the axis. Thus a
+global proof must separately evaluate the axis extension and cannot simply
+divide by `r` at `r = 0`. The theorem still does not identify the full mixed
+velocity with `barMoment`, and it supplies no nonzero remainder or `False`.
+
+Evidence: `NavierStokesReview/evidence/selected_radial_section_component_2026-09-25.md`.

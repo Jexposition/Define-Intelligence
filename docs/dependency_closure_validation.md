@@ -124,3 +124,8 @@ Cartesian `Witness` sums, so the selected-field transport calculation is still
 the load-bearing paper objection.
 
 Evidence: `NavierStokesReview/evidence/selected_scalar_barMoment_transport_2026-09-25.md`.
+
+The selected radial-section theorem is an additional active closure result.
+It connects one actual Cartesian component to the scalar coefficient on the
+positive-radius section, but does not connect the entire mixed `Witness` field
+to `barMoment` or establish a nonzero remainder.

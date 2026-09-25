@@ -1442,3 +1442,27 @@ claim remains **NOT ESTABLISHED** until the complete selected-field
 calculation is supplied.
 
 Evidence: `NavierStokesReview/evidence/selected_cutoff_curl_commutator_2026-09-25.md`.
+
+## Positive-radius recovery and the axis obligation
+
+The selected angular field can now be followed onto an actual radial section.
+For positive radius, the first Cartesian component recovers the scalar
+coefficient used in the field construction:
+
+$$
+u_1\bigl(t,(r,0,z)\bigr)=a(t,r,z),\qquad r>0.
+$$
+
+This is a concrete selected-field identity, but it also fixes the boundary
+condition that the paper-to-code calculation must address. The source
+totalises the angular frame to zero on the axis, so the positive-radius
+formula cannot be extended by division at `r=0`. The complete moment transport
+must combine the off-axis recovery with the axis extension, the cutoff-curl
+commutator, torus averaging, and the outer support boundary.
+
+The result strengthens the counter-paper's burden-of-proof argument without
+claiming a mismatch that has not been calculated. No selected `Delta m ≠ 0`
+or `False` theorem follows yet; the published solution claim remains
+**NOT ESTABLISHED** pending the complete selected-field integral identity.
+
+Evidence: `NavierStokesReview/evidence/selected_radial_section_component_2026-09-25.md`.

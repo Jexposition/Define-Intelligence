@@ -63,3 +63,9 @@ mean angular and axial profiles have the required zero radial moments on the
 carrier. This does not extend automatically to the final Cartesian velocity;
 the angular frame, atlas scaling, cutoff, curl, and boundary terms remain the
 field-level transport calculation.
+
+The latest selected-field result makes the positive-radius part explicit:
+`SelectedRadialSectionComponent.lean` recovers the scalar coefficient from
+component one of the actual angular field on the radial section. The source
+totalises the frame to zero on the axis, so this does not remove the axis
+boundary obligation or prove a full `barMoment` identity.

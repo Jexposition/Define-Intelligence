@@ -1695,3 +1695,19 @@ torus average and `barMoment`, and no selected `Delta m ≠ 0` or `False` has
 been derived.
 
 Evidence: `NavierStokesReview/evidence/selected_cutoff_curl_commutator_2026-09-25.md`.
+
+## CTR-055: positive-radius selected coefficient recovery
+
+`SelectedRadialSectionComponent.lean` proves a concrete selected-field
+identity on the radial section: for positive radius, component one of the
+actual `meanAngularField` equals its scalar `meanField` coefficient. The
+source path is `ActualMeanStageData.radialSection` together with the actual
+`PhysicalMeanJetBounds.angularVector` definition.
+
+The strict hypothesis `r > 0` is substantive. At the axis the source
+totalises the angular frame to zero, so coefficient recovery cannot be
+extended by algebraic division. The result therefore sharpens the axis term
+in CTR-005 but does not establish the full Cartesian-to-`barMoment` identity,
+a nonzero `Delta m`, or `False`.
+
+Evidence: `NavierStokesReview/evidence/selected_radial_section_component_2026-09-25.md`.

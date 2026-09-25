@@ -840,6 +840,8 @@ nonzero remainder.
 
 | CALC-20 | Isolate the cutoff-gradient curl term. | [x] | `SelectedCutoffCurlCommutator.lean` proves `curl (χ • A) = χ • curl A + curlLinear ((fderiv χ).smulRight (A x))`; the term is exact but its selected radial value remains open. |
 | CALC-21 | Transport the commutator through the selected radial operator. | [ ] | Identify the selected potential, torus average, axis/tail limits, integrability, and `barMoment` input in one theorem. |
+| CALC-22 | Recover a selected scalar coefficient on the radial section. | [x] | `SelectedRadialSectionComponent.lean` proves component one of the actual selected angular field equals `meanField` for `r > 0`. |
+| CALC-23 | Join the positive-radius recovery to the axis and full mixed field. | [ ] | Handle the totalised axis frame, meridional curl contribution, cutoff commutator, torus average, and `barMoment` in one selected theorem. |
 
 This result also records a required correction to the review vocabulary:
 “zero correction rows” means preserved radial moments of correction/state
@@ -850,8 +852,9 @@ momentum, or zero moment of the final Cartesian velocity.
 
 | Lane | Required work | Status |
 |---|---|---:|
-| Selected-field radial calculation | Expand `meanAngularField`, `angularVector`, `cartesianPotential_curl`, `scaledCutoff`, torus averaging, `barMoment_apply`, and axis/tail terms. | [~] |
+| Selected-field radial calculation | Expand `meanAngularField`, `angularVector`, `cartesianPotential_curl`, `scaledCutoff`, torus averaging, `barMoment_apply`, and axis/tail terms. | [~] Positive-radius coefficient now exposed; full mixed field remains. |
 | Cutoff-curl commutator | Carry `curlLinear ((Dχ).smulRight A)` through the selected finite prefix and radial projection. | [x] Exact local term isolated; selected radial value open. |
+| Radial-section coefficient | Recover the scalar coefficient from the actual selected angular field. | [x] Positive-radius theorem proved; axis and mixed-field transport remain open. |
 | Grid-mask leakage | Check derivatives of every partition/cutoff in overlap zones; do not assume a partition identity cancels nonlinear residual terms. | [ ] |
 | Finite-prefix remainder | Evaluate a concrete preterminal prefix before the tail is active; distinguish a finite-prefix value from an infinite-series limit. | [ ] |
 | Curl/profile mismatch | Check whether the 3D curl-to-cylindrical projection preserves the radial identities or creates a boundary term. | [ ] |
@@ -864,14 +867,14 @@ momentum, or zero moment of the final Cartesian velocity.
 | Euler source context | Read the supplied Euler PDF and OpenAI companion material; record only source-supported interval and PDE claims. | [ ] |
 | Radial helper | Run `NavierStokesReview/tools/radial_profile_integrals.py` only after Lean supplies an exact selected profile; repair the local Python interpreter path before execution. | [~] |
 | Source-context objections | Keep CMI wording, force provenance, existential quantification, pressure support, and physical five-moment semantics separate. | [x] The review distinguishes literal C/D endpoint obligations from the paper-to-code correspondence burden. |
-| Editorial release | Maintain a human-readable README abstract and synchronise plan, tracker, axiom ledger, synthesis, peer review, research paper, and control map after each source result. | [~] Add the chart-transport evidence to the release set. |
+| Editorial release | Maintain a human-readable README abstract and synchronise plan, tracker, axiom ledger, synthesis, peer review, research paper, and control map after each source result. | [~] Add the radial-section evidence to the release set. |
 | Editorial packaging | Maintain the README abstract/editorial summary and synchronise paper, peer review, tracker, axiom ledger, control map, and plan after each proved result. | [~] |
 
 ### Tooling and source-control gates
 
 | Gate | Acceptance test | Status |
 |---|---|---:|
-| Lean review tree | `lake build NavierStokesReview` has zero errors, zero `sorry`, zero custom axioms, and no `unsafe` in new review modules. | [x] 3698 jobs under Lean `v4.34.0-rc2` |
+| Lean review tree | `lake build NavierStokesReview` has zero errors, zero `sorry`, zero custom axioms, and no `unsafe` in new review modules. | [x] 3700 jobs under Lean `v4.34.0-rc2` |
 | Symbolic helper | V-lab Python interpreter executes the radial helper and records its exact input/output. | [ ] Current interpreter points to an inaccessible `uv` Python path. |
 | Build hygiene | No `.olean`, `.ilean`, `.c`, or `.lake` outputs are tracked. | [x] |
 | Documentation sync | New evidence is cited by the plan, tracker, axiom ledger, peer review, research paper, synthesis, README, and control map. | [x] Scalar moment and positive-radius chart evidence are recorded; the field-level `Delta m` calculation remains open. |

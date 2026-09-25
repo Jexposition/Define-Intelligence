@@ -192,3 +192,9 @@ $$
 This cutoff-gradient commutator must be included before a selected radial
 moment can be evaluated. It is not being presented as a nonzero leak without
 the remaining selected integral calculation.
+
+The review now also has a selected radial-section identity: for positive
+radius, the first Cartesian component of the actual angular field recovers its
+scalar coefficient. At the axis the source uses a totalised zero angular
+frame, so the recovery requires a separate boundary treatment. This narrows
+the live calculation without asserting a nonzero remainder prematurely.

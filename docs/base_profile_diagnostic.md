@@ -65,3 +65,8 @@ one is explicitly exposed in `SelectedAngularComponentFormula.lean`. The
 remaining question is whether the resulting atlas/curl field preserves the
 same radial quantity, including axis and outer-tail terms. No nonzero
 remainder is inferred from the base profile alone.
+
+The radial-section completion now recovers the coefficient from the actual
+selected angular field for positive radius. This confirms the next calculation
+input while leaving the meridional curl, cutoff commutator, torus average,
+axis, and outer-tail terms unresolved.

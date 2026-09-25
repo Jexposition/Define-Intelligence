@@ -165,3 +165,8 @@ the final Cartesian field after atlas scaling, angular-frame multiplication,
 localisation, curl, torus averaging, and boundary evaluation.
 
 Evidence: `NavierStokesReview/evidence/selected_scalar_barMoment_transport_2026-09-25.md`.
+
+`SelectedRadialSectionComponent.lean` now supplies the positive-radius
+coordinate recovery needed by this bridge. Its strict radius hypothesis is
+source-mandated by the totalised angular frame; it is not a proof that the
+full Cartesian endpoint preserves the scalar moment.
