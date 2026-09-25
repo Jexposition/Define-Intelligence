@@ -98,3 +98,18 @@ not justify calling the selected endpoint a fake field or a kernel-level
 contradiction.
 
 Evidence: `NavierStokesReview/evidence/selected_endpoint_moment_transport_obstruction_2026-09-25.md`.
+
+## Profile-tail collision route
+
+The closure contains the rank and moment machinery, but the source-level
+types remain distinct at the endpoint. `FiveRows` acts on correction profiles;
+`barMoment` acts on radial/toroidal profile histories; `Witness` exports the
+assembled Cartesian sums and candidate consequences. The new zero-sorry
+refutation module confirms that nonzero runtime debt does not collide with the
+zero correction rows.
+
+The unresolved task is a genuine field-level evaluation bridge, not a search
+for a dimension mismatch. Until a selected nonzero remainder is proved, no
+`False` theorem follows from this route.
+
+Evidence: `NavierStokesReview/evidence/ctr005_profile_tail_collision_route_2026-09-25.md`.

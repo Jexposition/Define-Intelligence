@@ -522,3 +522,20 @@ advertised solution claim **NOT ESTABLISHED** until the authors provide the
 missing selected-field composition theorem.
 
 Evidence: `NavierStokesReview/evidence/selected_endpoint_moment_transport_obstruction_2026-09-25.md`.
+
+## Profile-tail collision route: 2026-09-25
+
+The proposed field-level attack has been checked against the literal source.
+The two zero rows in `FiveRows` apply to correction profiles, while
+`barMoment` is a radial/toroidal profile integral. The selected cycle does
+carry a real local two-moment invariant. The missing step is still a map from
+the final Cartesian `tsum` fields and pressure to those radial profile types,
+followed by a proved nonzero remainder.
+
+The review-side refutation module proves the exact conditional scope without
+admissions: nonzero runtime debt is compatible with the zero correction rows,
+so the proposed type-collision argument alone cannot derive `False`. The
+route remains active as the strongest selected-field target, while the
+published solution claim remains **NOT ESTABLISHED**.
+
+Evidence: `NavierStokesReview/evidence/ctr005_profile_tail_collision_route_2026-09-25.md`.

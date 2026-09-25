@@ -127,3 +127,20 @@ residual, pressure, and force layers. Until that theorem is exported, the
 paper's affirmative solution claim remains **NOT ESTABLISHED**.
 
 Evidence: `NavierStokesReview/evidence/selected_endpoint_moment_transport_obstruction_2026-09-25.md`.
+
+## Profile-tail collision route
+
+The proposed upgrade to a kernel contradiction is now formalised in
+`refutations.CTR005ProfileTailCollisionScope`. The source check confirms that
+`FiveRows` constrains correction increments, not the total Cartesian endpoint;
+`barMoment` is a radial/toroidal profile quantity. A nonzero runtime debt is
+compatible with the two zero correction rows, while the selected cycle's local
+zero-moment invariant is genuine.
+
+The missing theorem is therefore a real field-level transport map from the
+selected Cartesian sums to the radial history/profile inputs. No nonzero
+selected remainder has yet been proved. This keeps the counter-paper precise:
+CTR-005 is a publication-level failure of selected-field correspondence, not
+yet a kernel-level contradiction.
+
+Evidence: `NavierStokesReview/evidence/ctr005_profile_tail_collision_route_2026-09-25.md`.

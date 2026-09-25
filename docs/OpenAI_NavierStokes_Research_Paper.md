@@ -361,6 +361,43 @@ transport by its type alone. It does not prove that the concrete selected
 velocity violates the five integrals. That second statement needs a
 field-level computation.
 
+### The profile-tail collision route and its exact limit
+
+The natural next attack is to calculate one of the selected fields' radial
+moments and combine a nonzero remainder with the zero rows of `FiveRows`. The
+source audit shows why that route is conditional rather than already a
+contradiction. `FiveRows` applies to correction profiles `dv` and `ga`; its
+first two equations are
+
+$$
+\int R^2\,dv(R)\,dR=0,
+\qquad
+\int R\,ga(R)\,dR=0.
+$$
+
+They are not, by themselves, equations saying that the total Cartesian field,
+its kinetic energy, or its five paper moments vanish. The review-side
+refutation module proves the complementary fact that a nonzero runtime debt
+can coexist with those two zero correction rows. This removes the proposed
+type-unification shortcut: no contradiction follows merely from the
+three-coordinate debt interface.
+
+The selected cycle does carry a real local two-moment invariant, and the
+conditional obstruction is valid: if a selected correction moment is proved
+nonzero, `FiveRows` yields `False`. The missing step is a field-level map from
+the selected Cartesian `tsum` and pressure to the radial profile/history types
+accepted by `barMoment` or `PositiveOrderMoments.moments`. `barMoment` itself
+is a function-valued radial/toroidal integral, not a total integral of the
+exported `VelocityField`.
+
+Thus the route remains the strongest path toward a kernel contradiction, but
+its decisive nonzero-remainder premise has not been established. The current
+publication conclusion is unchanged: the paper's five-moment mechanism is
+**NOT ESTABLISHED** at the selected endpoint, while a literal selected-path
+`False` result remains an open stronger target.
+
+Evidence: `NavierStokesReview/evidence/ctr005_profile_tail_collision_route_2026-09-25.md`.
+
 ## 7. Pressure and localisation
 
 The R3 packaging imposes compact support on pre-singular pressure slices.

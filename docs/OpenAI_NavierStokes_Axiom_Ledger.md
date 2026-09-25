@@ -822,3 +822,19 @@ the selected field's actual integrals are wrong. It records that the selected
 paper. The corresponding affirmative burden remains logged under CTR-005.
 
 Evidence: `NavierStokesReview/evidence/selected_endpoint_moment_transport_obstruction_2026-09-25.md`.
+
+## AX-049: profile-tail collision scope
+
+`NavierStokesReview/src/refutations/CTR005ProfileTailCollisionScope.lean`
+is included in the review library and contains no `sorry`, `axiom`, or
+`unsafe` declaration. It formally records that `FiveRows` constrains the
+correction profiles, that nonzero runtime debt is compatible with those rows,
+and that `barMoment` is a radial/toroidal profile quantity. It also imports
+the selected cycle's zero-moment invariant.
+
+The module deliberately does not assert a field-level mismatch or `False`:
+the source has not yet supplied the map from the selected Cartesian sums to
+the radial history/profile inputs. This is a proof of the route's exact scope,
+not an admission and not a clearance of CTR-005.
+
+Evidence: `NavierStokesReview/evidence/ctr005_profile_tail_collision_route_2026-09-25.md`.

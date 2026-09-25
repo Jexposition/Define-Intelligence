@@ -30,4 +30,4 @@ globs = ["ComparatorChallenges.+"]
 [[lean_lib]]
 name = "NavierStokesReview"
 srcDir = "NavierStokesReview/src"
-globs = ["extensions.+", "external_semantic.+"]
+globs = ["extensions.+", "external_semantic.+", "completions.+", "refutations.+"]

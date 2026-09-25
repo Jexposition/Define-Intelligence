@@ -625,3 +625,16 @@ The active counter-paper conclusion remains **NOT ESTABLISHED** for the
 advertised solution claim. The new theorem strengthens CTR-005 as an exported
 interface non-implication; it does not convert an absent transport field into
 a fabricated contradiction.
+
+## CTR-005 profile-tail collision route: 2026-09-25
+
+| Task | Status | Acceptance condition |
+|---|---:|---|
+| Confirm the scope of `FiveRows` | [x] | Zero rows are correction-profile identities for `dv` and `ga`, not total-field moments. |
+| Test whether nonzero runtime debt is compatible with those rows | [x] | `CTR005ProfileTailCollisionScope.lean` proves compatibility without admissions. |
+| Trace the selected cycle invariant | [x] | Selected cycle zero-moment theorem is compiled and source-linked. |
+| Map selected Cartesian `tsum` fields to radial `barMoment`/history types | [ ] | Required field-level evaluation bridge is still absent. |
+| Prove a selected nonzero remainder | [ ] | No source-backed value or inequality has yet been established. |
+| Derive selected-path `False` | [ ] | Remains open; do not infer it from the correction-row interface alone. |
+
+Evidence: `NavierStokesReview/evidence/ctr005_profile_tail_collision_route_2026-09-25.md`.

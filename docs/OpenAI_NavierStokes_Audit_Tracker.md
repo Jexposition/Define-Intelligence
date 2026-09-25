@@ -1432,3 +1432,29 @@ theorem remains the load-bearing publication objection under CTR-005.
 | Published five-moment solution claim established | **No; selected-field transport remains unproved.** |
 
 Evidence: `NavierStokesReview/evidence/selected_endpoint_moment_transport_obstruction_2026-09-25.md`.
+
+## CTR-044: profile-tail collision route adjudication
+
+The proposed route to a kernel contradiction has been tested against the
+actual definitions. `FiveRowRank.FiveRows` constrains correction profiles
+`dv` and `ga`; `DefectIncrementBounds.barMoment` returns radial/toroidal
+profile moments, not total Cartesian field or kinetic-energy integrals. The
+selected cycle carries a genuine local two-moment invariant, but the final
+`Witness` does not export a map from its Cartesian `tsum` fields to those
+radial profile types.
+
+The review-side module
+`NavierStokesReview/src/refutations/CTR005ProfileTailCollisionScope.lean`
+proves without admissions that a nonzero runtime debt is compatible with the
+two zero correction rows. It also exposes the selected cycle zero-moment fact
+and the exact `barMoment` type. Therefore the conditional implication
+
+$$
+\text{nonzero selected correction moment} \Longrightarrow \mathrm{False}
+$$
+
+remains valid, but its selected-field nonzero premise is not established. The
+route strengthens CTR-005 as the main field-level target; it does not yet
+produce `False`.
+
+Evidence: `NavierStokesReview/evidence/ctr005_profile_tail_collision_route_2026-09-25.md`.

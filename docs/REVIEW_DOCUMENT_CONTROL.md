@@ -735,6 +735,25 @@ theorem is obtained.
 
 Evidence: `NavierStokesReview/evidence/selected_endpoint_moment_transport_obstruction_2026-09-25.md`.
 
+## CTR-005 profile-tail collision route: 2026-09-25
+
+The route toward a selected-field `False` theorem has been source-checked.
+`FiveRows` is scoped to correction profiles, and `barMoment` is a local
+radial/toroidal profile integral. The selected cycle has a real local
+two-moment invariant, but the exported `Witness` still does not transport its
+Cartesian `tsum` fields into the radial history/profile types. The review-side
+refutation module proves that nonzero runtime debt is compatible with the two
+zero correction rows, so a type collision cannot be claimed from those rows
+alone.
+
+This is now the strongest formal target under CTR-005: establish a concrete
+selected nonzero remainder through a genuine field-level evaluation bridge.
+Until that bridge and mismatch are proved, the publication verdict remains
+**NOT ESTABLISHED** and the narrower selected-path status remains **NOT
+FORMALLY REFUTED**.
+
+Evidence: `NavierStokesReview/evidence/ctr005_profile_tail_collision_route_2026-09-25.md`.
+
 ## Release-integrity evidence update: 2026-09-25
 
 The admission census now has a direct Lean axiom log at

@@ -242,6 +242,31 @@ The original action-reaction objection was too strong. `FiveRowRank.FiveRows` is
 
 The remaining issue is endpoint correspondence. The selected witness does not expose a theorem identifying its actual stage fields with `FiveRows`, `PositiveOrderMoments.moments`, or the paper tuple `(M, I, J, S, C_p)`. This is a material reproducibility gap, not evidence that the first two rows were merely inserted by type definition.
 
+### Profile-tail collision route: exact source boundary
+
+The proposed upgrade from CTR-005 to a kernel contradiction is well-targeted
+but requires a missing field-level calculation. `FiveRows` constrains the
+correction profiles `dv` and `ga`; its two zero rows do not assert that the
+total assembled Cartesian velocity or its kinetic energy has zero moment. A
+review-side zero-sorry module proves that a nonzero three-coordinate runtime
+debt is compatible with the two zero correction rows.
+
+The selected cycle separately carries a genuine local two-moment invariant,
+so the conditional obstruction remains available: a proved nonzero selected
+cycle correction moment would imply `False`. The inspected endpoint still
+does not provide the required map from the Cartesian `potentialSum`/pressure
+fields to the radial profile types accepted by `barMoment` or
+`PositiveOrderMoments.moments`. The proposed existential evaluation
+`∃ Δm, moments = Δm` would be tautological and cannot establish a nonzero
+remainder.
+
+This route therefore strengthens the live research target without justifying
+a fabricated contradiction. The paper-level result remains **NOT
+ESTABLISHED** because the affirmative five-moment selected-field theorem is
+missing; the selected-path `False` search remains open.
+
+Evidence: `NavierStokesReview/evidence/ctr005_profile_tail_collision_route_2026-09-25.md`.
+
 ### Force regularity and residual provenance
 
 The force remains active at `t = 1`, but `PositiveTimeForce.timeCutoff` is a smooth bump and `timeCutoff_contDiff` proves global smoothness. The source does not support a discontinuous-cutoff objection. `CandidateFromLimits.force` agrees with the activated residual for `0 ≤ t < 1` and obtains its global smooth extension from locally uniform residual limits and boundary jets. This confirms a posteriori force engineering, but does not prove force divergence. A valid adverse result must show, without `sorry`, that the selected residual fails those endpoint limits or that the resulting force violates smoothness, support, or decay.
