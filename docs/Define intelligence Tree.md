@@ -2525,6 +2525,14 @@ residual, and force endpoint. The zero-sorry result
 but does not by itself refute `selected_witness`. Pure-axial collapse and
 compact-pressure trivialisation are not active conclusions.
 
+The five-moment source trace is pinned to exact declarations:
+`PositiveOrderMoments.lean:76-85`, `GlobalSlowProfiles.lean:1043-1055`,
+`AssembledSlowBase.lean:592-617`, and the selected assembly boundary
+`ActualCandidateAssembly.lean:515-523, 1121-1151`. The five-moment formulas
+are active upstream; the unresolved CTR-005 issue is their transport into the
+selected exported solution. See
+`NavierStokesReview/evidence/selected_moment_transport_source_trace_2026-09-25.md`.
+
 The active review documents live in this fork's `docs/` directory. Start with
 [`REVIEW_DOCUMENT_CONTROL.md`](REVIEW_DOCUMENT_CONTROL.md), then use
 `OpenAI_NavierStokes_CMI_First_Review_Plan.md` for tasks,

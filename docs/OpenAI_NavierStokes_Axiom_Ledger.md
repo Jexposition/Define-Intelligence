@@ -783,3 +783,22 @@ germ, and force layers. This is an affirmative proof obligation on the
 published claim. Its absence is sufficient to withhold acceptance of that
 claim; it is not itself a `False` theorem about the literal existential
 endpoint.
+
+## Source-trace authority update
+
+The five-moment formulas are source-supported and active upstream. The current
+load-bearing question is whether they are transported to the selected mixed
+fields and exported through `Witness`, not whether the repository contains the
+formulae. Exact anchors and the selected-field boundary are recorded in
+`NavierStokesReview/evidence/selected_moment_transport_source_trace_2026-09-25.md`.
+
+## AX-047: repository-wide admitted challenge declarations
+
+The release tree contains explicit `sorry` admissions outside the selected
+`NavierStokes/R3` endpoint. `ComparatorChallenges/NavierStokes.lean:273-284`
+contains two admitted Navier–Stokes challenge declarations, and
+`ComparatorChallenges/Euler.lean:85-88,181-184` contains further admitted
+challenge declarations. `lakefile.toml` includes this library in
+`defaultTargets`. These are not silently attributed to the selected endpoint,
+but they invalidate a repository-wide zero-sorry claim. Evidence:
+`NavierStokesReview/evidence/repository_admission_census_2026-09-25.md`.

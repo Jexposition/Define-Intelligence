@@ -5,6 +5,17 @@ This file is retained as supporting material. The active verdict is in
 `OpenAI_NavierStokes_Audit_Tracker.md`. Claims below are subordinate to those
 documents and to `REVIEW_DOCUMENT_CONTROL.md`.
 
+## Direct verdict on the published solution claim
+
+OpenAI's paper claims a solution of the Navier–Stokes problem. That claim is
+**not accepted on the inspected record**. The source contains a substantial
+R³ C/D-shaped theorem, but the exported endpoint does not expose the
+selected-field transport theorem identifying it with the five-moment
+construction used in the paper's proof narrative. This is a failure of the
+affirmative solution record, not an optional implementation criticism. The
+absence of a kernel-level `False` is recorded only as a narrower status of the
+current contradiction search.
+
 ## Verification correction: selected endpoint and temporal boundary
 
 The source-backed audit confirms that the force is a residual-based construction, but the public CMI alternatives permit smooth forcing, so that fact alone is not a disqualification. The exact source boundary must be quoted: `CandidateFromLimits.force_zero_from` establishes the zero-force branch from `t ≥ 2`, while the activated residual branch is used for `t < 1`. The claim that the force is glued to zero from `t ≥ 1` is therefore incorrect.
@@ -189,3 +200,32 @@ finding, not a request that the reviewer prove a universal negation. A literal
 Lean `False` remains a separate threshold and has not been claimed here.
 
 Evidence: `NavierStokesReview/evidence/official_claim_transport_matrix_2026-09-24.md`.
+
+## Source-trace correction
+
+The five-moment construction is active upstream rather than absent. The exact
+rows are defined in `PositiveOrderMoments.lean:76-85`, cancelled for the slow
+profile sequence in `GlobalSlowProfiles.lean:1043-1055`, and consumed by the
+assembled slow base in `AssembledSlowBase.lean:592-617`. The unresolved issue
+is the selected mixed-field transport at `ActualCandidateAssembly.lean:515-523`
+and the exported `Witness` contract at `1121-1151`: no field-level equality is
+stated there for the paper tuple
+$$
+(M,I,J,S,C_p).
+$$
+The affirmative solution claim therefore remains **NOT ESTABLISHED**. This
+does not assert that the upstream five-row identities are false.
+
+Evidence: `NavierStokesReview/evidence/selected_moment_transport_source_trace_2026-09-25.md`.
+
+## Whole-space claim-level correction
+
+The source also contains a distinct R³ endpoint. `NavierStokes/R3/Theorem.lean`
+exports `NavierStokesR3.theorem_1_1`, whose proposition directly includes the
+compact positive-time force, smooth pre-singular fields, incompressibility,
+bounded kinetic energy, speed blow-up, and nonexistence of a global smooth
+finite-energy competitor. The present CTR-005 verdict must therefore be read
+as a failure to establish the paper's five-moment mechanism at the selected
+field boundary, not as a completed contradiction of the literal C/D endpoint.
+
+Evidence: `NavierStokesReview/evidence/cmi_target_and_claim_level_reconciliation_2026-09-25.md`.

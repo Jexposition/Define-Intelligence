@@ -684,3 +684,33 @@ It supersedes any wording that describes `PositiveOrderMoments` or
 publication verdict remains **NOT ESTABLISHED**; the narrower status
 **NOT FORMALLY REFUTED** still means only that no selected-path `False` theorem
 has yet been derived.
+
+## Claim-level reconciliation: 2026-09-25
+
+The whole-space source is part of the authority map. The inspected chain reaches
+`NavierStokesR3.theorem_1_1`, which exports the literal R³ C/D breakdown
+proposition with compact positive-time force, smooth pre-singular fields,
+incompressibility, bounded kinetic energy, speed blow-up, and nonexistence of a
+global smooth finite-energy competitor. This is not merely a periodic
+existential wrapper.
+
+The residual-defined-force and fixed-force perturbation arguments therefore do
+not contradict the literal C/D existential. They test stronger provenance or
+stability properties unless a selected-field premise is shown false. The
+official paper itself presents smooth residual cancellation as the construction
+challenge.
+
+CTR-005 remains the publication-level issue because the exported selected
+witness does not identify its final mixed fields with the paper's five-moment
+tuple
+
+$$
+(M,I,J,S,C_p).
+$$
+
+The five-moment machinery is live upstream, so this is a missing composition
+theorem, not a dead-code or dimension-mismatch allegation. It is sufficient to
+withhold acceptance of the paper's claimed five-moment correspondence, but it
+is not a completed `False` theorem for the literal R³ endpoint.
+
+Evidence: `NavierStokesReview/evidence/cmi_target_and_claim_level_reconciliation_2026-09-25.md`.

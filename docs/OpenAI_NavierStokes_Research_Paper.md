@@ -14,13 +14,30 @@
 **A thousand AI agents have proven to be that of an insufficient sum.**  
 **If the objective is to produce works comparable to Shakespeare using only monkeys and typewriters, a vastly greater quantity of both monkeys and typewriters are therefore required.**
 
+## Executive verdict
+
+OpenAI's published claim to have solved the Navier–Stokes problem is **rejected
+as unestablished on the inspected record**. This is a paper-level negative
+finding, not a request for a compiler error. OpenAI claimed a solution of the
+Navier–Stokes problem, so the burden is to exhibit one selected construction
+whose equations, regularity, force, and load-bearing five-moment mechanism are
+the same object. The source does export an R³ C/D-shaped theorem, but that
+export does not identify its selected fields with the construction used in the
+paper. That selected-field transport is not exposed. The result is a
+publication-blocking failure of the affirmative solution record. The narrower
+statement that no kernel-level `False` has yet been derived is only a status of
+the review's stronger contradiction search; it is not an acceptance of the
+published solution.
+
 ## Abstract
 
-This paper evaluates whether the public Lean development establishes the
-mathematical construction described in OpenAI's Navier–Stokes paper and
-whether that construction satisfies the forced alternatives in Charles
-Fefferman's Clay Mathematics Institute formulation. The review separates
-kernel validity, endpoint specification, and paper-to-code correspondence.
+OpenAI presents its paper and public announcement as a solution of the
+Navier–Stokes existence and smoothness problem, specifically by claiming the
+forced alternatives in Charles Fefferman's Clay Mathematics Institute
+formulation. This paper therefore evaluates that affirmative solution claim,
+not an optional implementation detail. The review separates kernel validity,
+the exported endpoint specification, and whether the endpoint is the
+five-moment construction used to justify the advertised solution.
 
 The inspected endpoint is not refuted by a compiler error or by the use of an
 external force. The repository contains a genuine five-coordinate upstream
@@ -31,14 +48,32 @@ field-level equality identifying the paper's $(M,I,J,S,C_p)$ moments with the
 selected velocity, pressure, residual, and force. A zero-sorry probe proves
 that the witness type does not entail an arbitrary five-moment certificate.
 
-That is a load-bearing failure of the authors' affirmative proof record. The
-publication-level verdict is therefore **not established as a CMI solution**.
-The separate phrase **not formally refuted** reports only that the review has
-not yet derived `False` from the selected Lean endpoint; it is not a competing
-verdict and does not validate the missing bridge. A formal refutation would
-require a zero-sorry contradiction on the selected dependency path or a false
-mandatory premise proved for the selected fields, but that stronger result is
-not a prerequisite for withholding acceptance of the published claim.
+That is a load-bearing failure of the authors' advertised five-moment proof
+record. The publication-level verdict is therefore **the paper's claimed
+solution is not established by the exposed selected-field correspondence**.
+The inspected R³ theorem is a separate level: it exports a literal C/D-shaped
+proposition, but that fact does not establish that the proposition is the
+five-moment Navier–Stokes solution described and marketed in the paper. This
+paper does not claim that the literal endpoint has already been formally
+refuted; it rejects the published solution claim because its affirmative proof
+record is incomplete at the load-bearing composition boundary.
+
+The phrase **not formally refuted** reports only that the review has not yet
+derived `False` from the selected Lean endpoint; it is not evidence that the
+missing bridge is true. A formal refutation would require a zero-sorry
+contradiction on the selected dependency path or a false mandatory premise
+proved for the selected fields. That stronger result remains a separate
+research target.
+
+This is not a review of an optional implementation detail. OpenAI's public
+announcement presents the work as a solution of the Navier–Stokes existence
+and smoothness problem and expressly says that it establishes alternatives
+(C) and (D). The paper's Theorem 1.1 makes the same affirmative claim by
+asserting existence of the force and fields, bounded kinetic energy, finite-time
+velocity blow-up, and the resulting nonexistence conclusion. The adverse
+finding in this paper therefore addresses the claim OpenAI actually published:
+the inspected record does not establish that the selected endpoint is the
+five-moment Navier–Stokes construction used to support that solution claim.
 
 ## A selected-path obstruction to residual cancellation
 
@@ -531,7 +566,7 @@ refutation is not affirmative evidence for the authors' claim, and the review
 does not carry an equal burden to manufacture the authors' missing composition
 theorem.
 
-The burden is asymmetric. OpenAI must establish the stronger claim made in the
+The burden is asymmetric. OpenAI must establish the central solution claim made in the
 paper: that the selected fields are the advertised five-moment construction
 and that the analytic premises used by the endpoint hold for those same
 fields. The reviewer need not prove the negation of the literal existential
@@ -567,6 +602,17 @@ nor a theorem carrying that equality into the residual, pressure, force, and
 all-order jet estimates. The direct-germ interface is therefore weaker than
 the paper's advertised five-moment semantics even though the upstream repair
 system is substantive.
+
+The paper itself makes this correspondence indispensable. Its notation table
+defines $m=(M,I,J,S,C_p)$ as the five cumulative radial integrals preserving
+pressure, radial velocity, and stress across profile joins. The construction
+then states that vanishing five moments remove the exterior pressure and stress
+tails, solves for five correction coefficients, and uses exact matching to
+preserve the subsequent outer fields. Appendix A repeats that the moment
+matching and the axis pressure datum preserve every subsequent outer field.
+Those are load-bearing assertions in the proof of the advertised solution,
+not informal physical commentary. The selected endpoint must therefore expose
+the corresponding identities for the actual selected fields.
 
 This is a genuine paper-to-endpoint correspondence failure and the strongest
 current counter-paper result. It is not yet a formal `False` theorem: the
@@ -903,7 +949,7 @@ role in the explanation of the construction. `PositiveOrderMoments` and
 has proved a local promotion theorem for those interfaces, but has not found a
 theorem identifying the selected final mixed fields and residual with the
 paper's five named quantities. That is the unresolved correspondence required
-to support the paper's stronger interpretation.
+to support the paper's central solution interpretation.
 
 This places the burden where it belongs. A reviewer need not prove that every
 smooth force is harmless, or that the literal existential C/D proposition is
@@ -911,11 +957,31 @@ false, before declining to accept a paper whose central construction has not
 been transported into its exported endpoint. The primary conclusion is
 therefore: the public five-moment solution claim is **not established** by the
 source as presently exposed. The literal endpoint is materially populated,
-but that narrower fact does not discharge the authors' burden for the stronger
-published interpretation. A `False` theorem would be a stronger and separate
+but that narrower fact does not discharge the authors' burden for the published
+solution claim. A `False` theorem would be a separate, stronger
 result, not a prerequisite for this conclusion.
 
 Evidence: `NavierStokesReview/evidence/official_claim_transport_matrix_2026-09-24.md`.
+
+## Publication decision on the advertised solution claim
+
+The relevant review decision is not a vote on whether Lean can type-check the
+exported endpoint. It is whether the inspected record establishes the claim
+that OpenAI presents to readers: that the selected five-moment construction is
+the construction proving a CMI Navier–Stokes alternative. On that question the
+burden is asymmetric. OpenAI must exhibit the selected-field composition and
+transport theorems; the reviewer does not have to prove the negation of the
+literal existential endpoint before declining acceptance of the advertised
+solution claim.
+
+The correct publication conclusion is therefore **do not accept the published
+CMI-solution claim on the inspected record**. The reason is affirmative and
+source-based: the exported witness does not identify its selected mixed fields
+with the paper's $(M,I,J,S,C_p)$ tuple, nor does it expose the theorem carrying
+that identity through the correction, germ, residual, and force construction.
+The phrase **not formally refuted** remains a narrower statement about the
+separate search for a selected-path `False` theorem. It cannot be read as
+evidence that the missing composition theorem is true.
 
 ## The selected physical-data interface
 
@@ -942,9 +1008,100 @@ nonzero abstract five-debt parameter because that parameter is not part of the
 record's contract.
 
 This is an affirmative underclaim finding. It is enough to conclude that the
-paper's stronger five-moment explanation is **NOT ESTABLISHED** by the
+paper's five-moment solution explanation is **NOT ESTABLISHED** by the
 exported endpoint. It is not, by itself, a proof that the actual selected
 integrals are wrong; that stronger result requires a field-level identity and
 then a proved mismatch.
 
 Evidence: `NavierStokesReview/evidence/selected_physical_data_moment_interface_2026-09-24.md`.
+
+## The published claim and the selected-field burden
+
+The question under review is the claim that this repository supplies a
+solution of the Navier–Stokes problem. It is not enough that the source tree
+contains a five-moment library or that an upstream slow-profile theorem
+compiles. The paper uses the five quantities
+$$
+(M,I,J,S,C_p)
+$$
+to justify tail cancellation and preservation of the exterior field. The
+selected candidate must therefore export the identities for the actual mixed
+velocity and pressure fields used in the final residual and force.
+
+The source trace establishes the positive part: `PositiveOrderMoments.lean:76-85`
+defines the five rows, `GlobalSlowProfiles.lean:1043-1055` proves their
+positive-order cancellation, and `AssembledSlowBase.lean:592-617` uses that
+result. The unresolved issue is the selected-field transport step. The mixed
+fields are assembled at `ActualCandidateAssembly.lean:515-523`, while the
+`Witness` export at `1121-1151` contains no equality identifying those fields'
+integrals with the paper tuple.
+
+This is a direct burden-of-proof failure in the advertised solution claim.
+The appropriate conclusion is **NOT ESTABLISHED**, not because the five-row
+library is absent, but because its connection to the claimed final solution is
+not stated or proved at the exported endpoint. A separate Lean `False` result
+would strengthen the paper; it is not required to reject an affirmative claim
+whose load-bearing construction remains unconnected.
+
+Evidence: `NavierStokesReview/evidence/selected_moment_transport_source_trace_2026-09-25.md`.
+
+## Claim-level reconciliation: what the source does and does not establish
+
+The review has now compared the exported R³ theorem with the exact CMI target,
+rather than treating the periodic assembly interface as the whole claim. This
+changes the wording of the conclusion.
+
+`NavierStokes/R3/ProblemStatement.lean` defines the whole-space candidate with
+the relevant requirements: a smooth force of compact positive-time support,
+smooth pre-singular velocity and pressure, incompressibility, the residual
+equation, zero initial velocity, uniformly bounded kinetic energy, and
+unbounded speed near time one. `NavierStokes/R3/Theorem.lean:27-53` then
+exports `breakdownStatement` for every positive viscosity. The selected chain
+is therefore not merely a type-erased periodic wrapper.
+
+The force-provenance objection must also be stated accurately. The CMI
+statement specifies a given externally applied force, but its C/D alternatives
+are existential statements about a smooth force satisfying the stated decay
+conditions. The published paper itself says that, for a chosen incompressible
+flow and pressure, the residual can be called the force, and identifies smooth
+extension of that residual as the construction problem. A perturbation or
+mirror-force theorem changes the force or the trajectory; it does not
+contradict the original existential witness.
+
+The strongest supported conclusion is consequently split:
+
+1. The inspected R³ source does state and prove the literal C/D-shaped theorem,
+   with the exported theorem depending only on Lean's standard foundational
+   axioms.
+2. The paper's five-moment explanation remains under-identified at the final
+   interface. The selected export at `ActualCandidateAssembly.lean:1121-1151`
+   does not expose an equality transporting the paper tuple
+   $$
+   (M,I,J,S,C_p)
+   $$
+   into the final mixed velocity, pressure, residual, and force.
+3. That missing composition theorem is a publication-level correspondence
+   defect if the five-moment mechanism is presented as the proof's load-bearing
+   justification. It is not, by itself, a formal contradiction of the literal
+   C/D theorem.
+
+This is the correct burden-of-proof position. OpenAI must make the advertised
+paper mechanism traceable to the selected fields. The review must not claim
+that the C/D theorem has been falsified unless a concrete selected-field
+premise is contradicted or a zero-sorry `False` theorem is obtained.
+
+Evidence: `NavierStokesReview/evidence/cmi_target_and_claim_level_reconciliation_2026-09-25.md`.
+
+## Repository-wide admission census
+
+The release record also does not support a blanket claim that the repository
+is zero-sorry. `ComparatorChallenges/NavierStokes.lean:273-284` contains two
+Navier–Stokes challenge declarations whose theorem bodies are `by sorry`, and
+`ComparatorChallenges/Euler.lean:85-88,181-184` contains further admitted
+challenge declarations. `lakefile.toml` includes `ComparatorChallenges` in its
+default targets. These admissions are not evidence that the selected
+`NavierStokes/R3` endpoint imports them, so they are not being misreported as a
+refutation of that endpoint. They are, however, a direct failure of any
+repository-wide zero-sorry release claim and a reproducibility defect in the
+published proof record. Evidence:
+`NavierStokesReview/evidence/repository_admission_census_2026-09-25.md`.

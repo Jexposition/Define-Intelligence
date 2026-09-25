@@ -1345,3 +1345,43 @@ The exact source-backed correction and line ledger are now recorded in
 It confirms that the five-row formulas and upstream cancellation are active;
 the unresolved defect is their transport into the selected mixed field and
 the exported solution contract.
+
+## Claim-level reconciliation: 2026-09-25
+
+The R³ theorem path is part of the controlled source record. The selected
+periodic witness is localised by `NavierStokes/R3/ActualCandidate.lean`, and
+`NavierStokes/R3/Theorem.lean:27-53` exports `breakdownStatement` for every
+positive viscosity. The literal C/D target is therefore not being rejected on
+the ground that only a generic periodic witness exists.
+
+The residual-defined-force and fixed-force perturbation arguments do not
+contradict that existential target. They test stronger provenance or stability
+properties unless a selected-field premise is shown false. The official paper
+itself presents smooth residual cancellation as the construction method.
+
+CTR-005 remains the publication-level issue because the final `Witness` export
+does not expose the equality transporting the paper's five quantities
+
+$$
+(M,I,J,S,C_p)
+$$
+
+into the selected mixed velocity, pressure, residual, and force. Upstream
+five-moment definitions and cancellation theorems are confirmed live. Status:
+**publication claim not established at the advertised mechanism level; literal
+C/D endpoint not formally refuted by this route**.
+
+Evidence: `NavierStokesReview/evidence/cmi_target_and_claim_level_reconciliation_2026-09-25.md`.
+
+## Repository admission census: 2026-09-25
+
+The source tree contains explicit admitted challenge declarations:
+`ComparatorChallenges/NavierStokes.lean:273-284` has two `by sorry` theorem
+bodies, and `ComparatorChallenges/Euler.lean:85-88,181-184` has further
+admissions. `lakefile.toml` includes `ComparatorChallenges` in
+`defaultTargets`. This defeats a blanket repository-wide zero-sorry claim.
+The selected `NavierStokes/R3` endpoint is tracked separately; the census does
+not claim that these challenge declarations lie on its dependency path. The
+publication-level verdict remains **not established**, with CTR-005 as the
+load-bearing selected-field correspondence objection. Evidence:
+`NavierStokesReview/evidence/repository_admission_census_2026-09-25.md`.

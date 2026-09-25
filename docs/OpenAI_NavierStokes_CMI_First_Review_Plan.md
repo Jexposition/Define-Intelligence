@@ -584,3 +584,26 @@ exported by `Witness` at `1121-1151`.
 | Selected mixed-field transport into the final residual/force contract | [ ] | No field-level equality found in `Witness` |
 
 Evidence: `NavierStokesReview/evidence/selected_moment_transport_source_trace_2026-09-25.md`.
+
+## Claim-level reconciliation: 2026-09-25
+
+| Review level | Current result | Required next action |
+|---|---|---|
+| Literal R³ C/D proposition | Exported by `NavierStokesR3.theorem_1_1`; force provenance alone does not contradict it | Audit imported analytic lemmas for an actual false premise or invalid operator identity |
+| Paper's five-moment mechanism | Upstream construction is live, but selected-field composition into `Witness` is not exposed | Require or derive the equality for the paper tuple $(M,I,J,S,C_p)$ on the final mixed fields |
+| Formal refutation | No zero-sorry `False` for the selected endpoint | Do not label the literal theorem refuted without a concrete selected-field contradiction |
+
+The publication-level counterfinding remains valid: the advertised
+five-moment explanation is not established by the exported selected-field
+interface. The review must not misstate this as proof that the literal C/D
+proposition is false.
+
+Evidence: `NavierStokesReview/evidence/cmi_target_and_claim_level_reconciliation_2026-09-25.md`.
+
+## Repository-wide admission census
+
+| Task | Status | Acceptance condition |
+|---|---:|---|
+| Census every default build target for admitted declarations | [x] | `ComparatorChallenges/NavierStokes.lean:273-284` and `ComparatorChallenges/Euler.lean:85-88,181-184` contain explicit `sorry` bodies. |
+| Keep selected endpoint and repository-wide claims separate | [x] | Census does not claim the challenge declarations lie on `NavierStokes/R3`'s dependency path. |
+| Record the release-level consequence | [x] | Blanket repository-wide zero-sorry claim is rejected; evidence is `repository_admission_census_2026-09-25.md`. |

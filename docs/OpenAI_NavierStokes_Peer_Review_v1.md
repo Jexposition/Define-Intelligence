@@ -1,5 +1,32 @@
 # Independent peer review of the OpenAI Navier–Stokes formalisation
 
+## Publication decision
+
+**Do not accept the published claim that this repository supplies a solution of
+the Navier–Stokes problem on the inspected record.** The object under review
+is the solution claim OpenAI published, not a merely compiling endpoint and
+not an optional implementation detail. The source exports an R³ C/D-shaped
+proposition, but the proof record does not expose the selected-field theorem
+identifying that endpoint with the five-moment construction used to justify
+the paper's claim. That is an affirmative failure to discharge the burden of
+proof for the published solution. `NOT FORMALLY REFUTED` remains only the
+narrow status that this review has not yet derived a kernel-level `False` from
+the selected endpoint.
+
+## Scope correction: literal C/D theorem versus advertised mechanism
+
+The whole-space endpoint must be reviewed separately from the paper's
+five-moment explanation. `NavierStokes/R3/Theorem.lean:27-53` exports the
+literal R³ C/D breakdown proposition, and residual-defined forcing is not by
+itself a contradiction of that existential target. The live adverse finding is
+that the final selected export does not expose the paper tuple
+$$
+(M,I,J,S,C_p)
+$$
+as an identity for the mixed velocity, pressure, residual, and force. That is
+a failure to establish the advertised mechanism, not a completed `False`
+theorem for the literal endpoint.
+
 ## Finding 18: base-profile geometry is not a one-component collapse
 
 The reduced `(t, s, z)` profile is embedded into three Cartesian basis directions before spatial curl. The only proven zero is on the radial gauge anchor. No global zero-swirl theorem was found.
@@ -1149,6 +1176,42 @@ separate threshold requiring a false selected premise or a zero-sorry
 contradiction.
 
 Evidence: `NavierStokesReview/evidence/official_claim_transport_matrix_2026-09-24.md`.
+
+## Finding 39: the literal R³ target must be separated from the paper mechanism
+
+The review has completed the whole-space target check. The source does not
+stop at the periodic `Witness`: `NavierStokes/R3/ActualCandidate.lean` converts
+the selected periodic fields to compactly supported whole-space fields and
+preserves the residual equation, divergence-free condition, blow-up, and
+energy bound. `NavierStokes/R3/Theorem.lean:27-53` exports
+`ProblemStatement.breakdownStatement` for every positive viscosity.
+
+This matters for the verdict. The residual-defined-force objection, fixed-force
+perturbation, mirror-force construction, and compact-pressure arguments do not
+contradict an existential C/D statement. They either change the force or test a
+stability property that the literal alternative does not quantify over. The
+published paper also openly identifies residual cancellation as the central
+construction task.
+
+The live negative finding is narrower but still material: the final selected
+export does not expose a theorem identifying the paper's five cumulative
+moments
+$$
+(M,I,J,S,C_p)
+$$
+with the actual mixed fields used by the residual and force. The upstream
+five-moment formulas and cancellation theorems are real; the missing item is
+their selected-field composition theorem.
+
+Accordingly, this review rejects any claim that the five-moment paper-to-code
+correspondence has been demonstrated on the inspected record. It does not
+claim that the literal R³ C/D proposition has already been formally
+contradicted. The publication burden remains asymmetric: OpenAI must show the
+selected-field transport if it relies on that mechanism in its advertised
+solution explanation, while a selected-field `False` theorem is a stronger
+separate result.
+
+Evidence: `NavierStokesReview/evidence/cmi_target_and_claim_level_reconciliation_2026-09-25.md`.
 
 ## Finding 38: the selected physical-data record does not export the paper's moment payload
 
