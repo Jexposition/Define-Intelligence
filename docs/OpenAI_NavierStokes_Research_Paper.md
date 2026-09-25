@@ -177,7 +177,7 @@ below are tied either to source declarations or to zero-sorry Lean probes.
 The audit followed the selected path:
 
 $$
-\texttt{ActualCandidateAssembly.selected\_witness}
+\texttt{ActualCandidateAssembly.selected\textttwitness}
 \to
 \texttt{GermCandidateAssembly}
 \to
@@ -1087,10 +1087,10 @@ The stronger endpoint test has now been made against the actual selected
 admission, that
 
 $$
-\exists d : \operatorname{Debt}_5,
+\exists d : \mathrm{Debt}_5,
 \quad d \ne 0
 \quad\land\quad
-\operatorname{Witness}_{\mathrm{selected}}.
+\mathrm{Witness}_{\mathrm{selected}}.
 $$
 
 Here the nonzero payload is an explicit constant function on `Fin 5`, while
@@ -1423,9 +1423,9 @@ five-moment argument must address. If a potential is localised by a smooth
 scalar cutoff `χ`, then
 
 $$
-\operatorname{curl}(\chi A)
-=\chi\operatorname{curl}(A)
-+\operatorname{curlLinear}\big((D\chi).\operatorname{smulRight}(A)\big).
+\mathrm{curl}(\chi A)
+=\chi\mathrm{curl}(A)
++\mathrm{curlLinear}\big((D\chi).\mathrm{smulRight}(A)\big).
 $$
 
 The second term is the spatial commutator created by the localisation mask.
@@ -1497,7 +1497,7 @@ not define the selected velocity as a single curl of a combined potential.
 
 $$
 u_{\mathrm{selected}}
-=\operatorname{curl}\!\left(\sum_j\chi_j A_j\right)
+=\mathrm{curl}\!\left(\sum_j\chi_j A_j\right)
  +\sum_j\chi_j B_j,
 $$
 
@@ -1538,7 +1538,7 @@ production endpoint is
 
 $$
 u_{\mathrm{selected}}
-=\operatorname{curl}\!\left(\sum_j\chi_j A_j\right)
+=\mathrm{curl}\!\left(\sum_j\chi_j A_j\right)
  +\sum_j\chi_j B_j,
 $$
 
