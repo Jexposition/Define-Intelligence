@@ -144,3 +144,18 @@ mixed field into `PositiveOrderMoments.moments`,
 uses these identities to remove pressure/stress tails and preserve outer
 fields, this missing transport is a defect in the central published solution
 claim, not an optional explanatory omission.
+
+## Active implementation lane: selected radial remainder
+
+The next review-side module must begin with one concrete positive-radius stage,
+not with an abstract `StageEstimates` countermodel. Its obligations are:
+
+1. expose the stage expression used by `selectedPotentialStages`;
+2. expand the cutoff and spatial curl, retaining mask derivatives;
+3. establish the cylindrical projection and axis/outer boundary terms;
+4. instantiate `barMoment_apply` under explicit integrability hypotheses; and
+5. compile a zero-sorry `Delta m ≠ 0` result before attempting `False`.
+
+The current source trace has not supplied step 1's radial expression. The
+calculator in `NavierStokesReview/tools/radial_profile_integrals.py` is ready
+for explicit expressions but must not be treated as a Lean transport theorem.

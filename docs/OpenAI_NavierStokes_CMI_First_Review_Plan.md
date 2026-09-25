@@ -686,4 +686,49 @@ audit is recorded in `docs/Euler_Parent_Child_Interval_Audit.md` and
 5. Update the paper, peer review, tracker, and control record with the result;
    keep the publication verdict and kernel-level verdict separate.
 
+## Selected-field calculation gate: 2026-09-25
+
+This is the active route for upgrading CTR-005 from an exported
+correspondence objection to a selected-path contradiction. The target is an
+actual value or inequality for the fields used by `selected_witness`, not a
+repetition of the fact that a bridge theorem is absent.
+
+| Calculation target | Required source-level check | Current state |
+|---|---|---|
+| Finite-prefix contribution | Expand `initialPotential` and `positivePotential` through `potentialSum` on a concrete positive spatial band and a time before the tail is active. | `[ ]` No exact selected radial expression has yet been exposed. |
+| Cutoff-mask derivatives | Retain every derivative of `SmoothCutoffs.scaledCutoff` in the curl and residual; do not assume partition terms cancel. | `[ ]` The source gives local-finiteness and smoothness, not the required radial integral identity. |
+| Curl-to-profile projection | Map the Cartesian curl in `ActualMeanPotentialRealization` to the cylindrical components consumed by `barMoment`, including the positive-radius hypothesis. | `[ ]` Chart identities exist, but no selected `barMoment` transport theorem has been found. |
+| Axis and tail terms | Prove the boundary terms at `R = 0` and at the supported outer radius vanish, or calculate their exact values. | `[ ]` Generic support lemmas exist; selected-field boundary evaluation remains open. |
+| Moment operator | Instantiate `DefectIncrementBounds.barMoment_apply` on the actual selected scalar profile, not on `dv` or `ga` alone. | `[ ]` The selected `VelocityField` is not typed as a `ScalarField (Point P)`. |
+| Nonzero remainder | Exhibit a concrete `Δm ≠ 0` after all cutoffs, curls, and finite-prefix terms are included. | `[ ]` No source-backed value or inequality has been proved. |
+| Kernel collision | Combine that exact selected equality with `SelectedCycleMomentTransport` or `FiveRows` in a zero-sorry theorem. | `[ ]` No `False` theorem exists. |
+
+The symbolic helper `NavierStokesReview/tools/radial_profile_integrals.py`
+is only a reproducible calculator for expressions explicitly supplied by the
+reviewer. It cannot identify those expressions with the selected Cartesian
+field. A calculator output therefore becomes evidence only after a Lean
+transport theorem supplies the input profile.
+
+The following arguments are not active contradiction claims and must remain
+classified accordingly: zero correction rows are not zero total kinetic
+energy; compact pressure support alone is not a Poisson contradiction; a
+smooth cutoff is not a discontinuity; and fixed-force perturbations show
+path-dependence of the residual construction but do not negate the literal
+existential quantifier. The burden remains on the published solution claim to
+provide the selected-field transport and moment identities.
+
+## Companion Euler route boundary
+
+The parent-child Euler interval audit remains a separate investigation. The
+source proves positive horizons, geometric width control, and value/first-
+derivative seam premises. It does not yet provide either a quiet Zeno endpoint
+or an all-order time-jet mismatch. Euler evidence cannot be used as a Navier--
+Stokes contradiction until the corresponding selected field and endpoint
+identity are proved.
+
+**Current next action:** expose one concrete positive-radius selected stage,
+expand its Cartesian curl and cutoff derivatives, and attempt the first
+`barMoment_apply` equality under explicit integrability and boundary
+hypotheses.
+
 **Last updated:** 2026-09-25

@@ -1365,3 +1365,26 @@ positive interval geometry and uses explicit value and first-derivative matching
 in its joining lemmas. An all-order time-jet theorem remains an open question,
 but a higher-order defect must be exhibited before it can support a refutation.
 This result is kept separate from the Navier–Stokes selected-field finding.
+
+## Finding 43: selected-field calculation gate
+
+The review has followed the proposed remainder route into the concrete stage
+definitions. The selected fields are assembled from actual initial and
+positive stages, cylindrical angular data, Cartesian chart fields, spatial
+curl, and a locally finite cut-stage `tsum`. This rules out describing the
+construction as a generic zero-field placeholder.
+
+It does not yet yield the requested `Delta m ≠ 0`. `barMoment_apply` accepts a
+scalar radial-profile field after torus averaging. The inspected source does
+not provide the theorem that turns the selected Cartesian `VelocityField`,
+including cutoff derivatives, curl terms, and axis/tail boundary terms, into
+that scalar profile. The two zero rows in `FiveRows` therefore remain local
+correction invariants, not a ready-made equality for the exported field.
+
+This is the correct aggressive target: calculate one selected finite prefix,
+transport it through the Cartesian-to-radial map, and prove a nonzero
+remainder. Until that equality and value exist in zero-sorry Lean, the record
+supports a failure to establish the advertised five-moment solution
+mechanism, not a fabricated selected-path `False` theorem. The symbolic
+calculator is evidence only after its input expressions are linked to the
+selected field.

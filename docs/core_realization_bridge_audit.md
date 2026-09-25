@@ -144,3 +144,12 @@ CTR-005 is a publication-level failure of selected-field correspondence, not
 yet a kernel-level contradiction.
 
 Evidence: `NavierStokesReview/evidence/ctr005_profile_tail_collision_route_2026-09-25.md`.
+
+## Calculation consequence
+
+The bridge is now specified as a field-level calculation rather than an
+abstract request. It must carry a selected Cartesian cut-stage `tsum` through
+the spatial curl, cylindrical projection, torus average, and radial integral,
+with all localisation derivative and boundary terms visible. Until that
+theorem exists, the upstream zero-row invariant cannot be used to assert a
+nonzero selected remainder or `False`.

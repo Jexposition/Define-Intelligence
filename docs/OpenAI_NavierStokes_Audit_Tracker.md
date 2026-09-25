@@ -1513,3 +1513,39 @@ explicit unmatched derivative before being called a defect.
 
 Evidence: `docs/Euler_Parent_Child_Interval_Audit.md` and
 `NavierStokesReview/evidence/euler_parent_child_interval_audit_2026-09-25.md`.
+
+## CTR-047: selected-field radial remainder calculation gate
+
+The concrete selected-field trace was extended from the stage aliases into
+the actual construction. `ActualCandidateConstruction` gives the initial and
+positive stage fields, `DirectAngularDiagonal` gives the cylindrical angular
+component and cutoff multiplication, `ActualMeanPotentialRealization` gives
+the Cartesian embedding and curl identities, and `SolenoidalDiagonal` gives
+the locally finite `potentialSum`.
+
+The calculation stops at a specific, testable interface. `barMoment` is
+defined for scalar radial-profile fields and `barMoment_apply` evaluates a
+torus-averaged radial integral. No source theorem identifies that scalar
+profile with the selected Cartesian `VelocityField` after cutoff, curl,
+projection, and `tsum`. The first two `FiveRows` identities therefore cannot
+yet be applied to the selected field as a matter of type or value.
+
+| Required result | Status | Evidence |
+|---|---:|---|
+| Expand a concrete selected stage on a positive-radius band | Open | `ActualCandidateConstruction.lean:953-970` |
+| Retain cutoff derivative terms | Open | `DirectAngularDiagonal.lean:208-214`; no selected radial identity |
+| Transport Cartesian curl to `barMoment` | Open | `ActualMeanPotentialRealization.lean:29-40,300-316`; `DefectIncrementBounds.lean:214-220` |
+| Evaluate axis and outer-support terms | Open | Generic support lemmas exist; selected values are not computed |
+| Prove a nonzero selected remainder | Open | No source-backed `Δm ≠ 0` has been established |
+| Derive selected-path `False` | Open | Requires the preceding selected equality and value |
+
+The symbolic helper `NavierStokesReview/tools/radial_profile_integrals.py`
+is a calculator for explicit reviewer-supplied profiles, not a proof that
+those profiles are the selected field. The complete source trace is recorded
+in `NavierStokesReview/evidence/selected_field_moment_calculation_gate_2026-09-25.md`.
+
+This record also closes three invalid shortcuts: correction zero rows are not
+total kinetic-energy identities; smooth localisation is not a discontinuity;
+and fixed-force perturbation brittleness is not by itself a contradiction of
+the existential C/D proposition. The affirmative five-moment selected-field
+transport remains the authors' burden.

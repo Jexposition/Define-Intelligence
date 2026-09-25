@@ -73,3 +73,13 @@ paper markets those moments as part of the solution mechanism and the selected
 endpoint does not expose their realisation.
 
 Evidence: `NavierStokesReview/evidence/selected_moment_transport_source_trace_2026-09-25.md`.
+
+## Selected Cartesian-to-radial checkpoint
+
+The selected path contains substantive stage data and local moment
+preservation. The unresolved semantic step is narrower and more concrete:
+`barMoment` consumes scalar radial profiles, whereas the exported witness
+contains Cartesian fields assembled by curl and `tsum`. The audit must now
+evaluate the selected finite prefix, cutoff derivatives, and axis/tail terms.
+No nonzero remainder is recorded until a Lean theorem identifies the resulting
+profile with the selected field.

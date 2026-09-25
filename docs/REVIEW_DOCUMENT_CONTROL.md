@@ -787,3 +787,19 @@ Authority additions:
 - `NavierStokesReview/evidence/euler_parent_child_interval_audit_2026-09-25.md`
 - `NavierStokesReview/tools/radial_profile_integrals.py`
 - `NavierStokesReview/evidence/selected_field_remainder_trace_2026-09-25.md`
+
+## Selected-field calculation control: 2026-09-25
+
+The active authority map now includes
+`NavierStokesReview/evidence/selected_field_moment_calculation_gate_2026-09-25.md`.
+It supersedes no earlier finding. It sharpens CTR-005 into a concrete
+calculation gate: selected stage, cutoff derivative, curl/projection,
+axis/tail, `barMoment`, nonzero remainder, then `False`. It records no
+nonzero remainder because the selected Cartesian-to-radial equality has not
+yet been proved.
+
+The symbolic helper remains non-authoritative until its input profile is linked
+to the selected field by zero-sorry Lean. The six core review documents must
+continue to use **NOT ESTABLISHED** for the published solution claim and must
+not label the literal C/D endpoint formally refuted without a selected-path
+contradiction.

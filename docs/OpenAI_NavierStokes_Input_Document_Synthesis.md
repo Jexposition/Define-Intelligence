@@ -539,3 +539,18 @@ route remains active as the strongest selected-field target, while the
 published solution claim remains **NOT ESTABLISHED**.
 
 Evidence: `NavierStokesReview/evidence/ctr005_profile_tail_collision_route_2026-09-25.md`.
+
+## Selected-field calculation update: 2026-09-25
+
+The selected histories are substantive stage fields assembled through spatial
+cutoffs, Cartesian curl, and a locally finite `tsum`. The upstream correction
+invariants are also real, but `barMoment` is a scalar radial-profile operator
+and the exported selected field is a Cartesian `VelocityField`. No theorem in
+the inspected source transports the selected `tsum` through cylindrical
+projection and `barMoment`.
+
+The remaining falsification test is to retain cutoff derivative, axis, and
+outer-support terms, evaluate one finite selected prefix, and prove an exact
+nonzero remainder. The symbolic radial-integral helper is only a calculator
+until that profile is identified in Lean. No numerical leak or kernel `False`
+is claimed without the selected equality.

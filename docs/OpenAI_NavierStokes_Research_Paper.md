@@ -1252,3 +1252,33 @@ These two results sharpen the burden of proof. The advertised work is still
 **NOT ESTABLISHED** as a complete solution record because the selected-field
 five-moment composition is not exposed. The literal whole-space C/D endpoint
 is not called formally refuted without a concrete selected-field contradiction.
+
+## Selected-field calculation gate
+
+The source trace has now been pushed to the point where a genuine numerical
+objection could be made. The selected stage fields are not empty placeholders:
+`ActualCandidateConstruction` supplies the initial and positive fields,
+`DirectAngularDiagonal` supplies the cylindrical angular component and its
+cutoff multiplication, and `ActualMeanPotentialRealization` supplies the
+Cartesian embedding and curl identities. `SolenoidalDiagonal.potentialSum`
+then assembles the local finite portions of the cut-stage series.
+
+The remaining calculation is exact rather than rhetorical. The derivatives of
+the localisation masks must be retained, the positive-radius chart must be
+transported through the curl, and the axis and outer-support terms must be
+evaluated before `barMoment_apply` can be used. That operator integrates a
+scalar radial profile after torus averaging; it does not itself identify a
+Cartesian selected velocity with a radial profile. The inspected source still
+contains no theorem performing that identification.
+
+Accordingly, no nonzero selected remainder is asserted here. The symbolic
+integral helper is a reproducible calculator for an explicitly supplied
+profile, not evidence that the profile came from the selected `tsum`. A
+kernel contradiction requires both a Lean equality for the selected field and
+a proved value such as `Delta m ≠ 0`. This is the live route for testing the
+affirmative paper claim, while the present publication verdict remains
+**NOT ESTABLISHED** rather than a fabricated `False` theorem.
+
+The companion Euler interval study remains separate. Positive interval
+geometry and value/first-derivative seam matching are source-supported; a
+quiet Zeno endpoint and an all-order time-jet mismatch remain unproved.
