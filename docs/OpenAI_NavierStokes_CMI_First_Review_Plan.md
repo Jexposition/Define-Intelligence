@@ -251,7 +251,7 @@ proposal. Never describe a generic probe as a selected contradiction.
 | Build hygiene | No tracked `.olean`, `.ilean`, `.c`, or `.lake` outputs. | `[x]` |
 | Python helper | Run the radial helper with the canonical V-lab interpreter after its path is repaired. | `[ ]` |
 | Documentation | New evidence cited in tracker, axiom ledger, synthesis, peer review, paper, README, control map, and this plan. | `[x]` potential chart result synchronised |
-| Release | Commit and push only review source, evidence, and documents; leave supplied PDFs and scratch space untracked. | `[x]` committed as `bc2f7e8`; push pending |
+| Release | Commit and push only review source, evidence, and documents; leave supplied PDFs and scratch space untracked. | `[x]` pushed through `6f3dede` |
 
 ## Immediate execution order
 
