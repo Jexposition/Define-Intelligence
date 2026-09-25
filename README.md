@@ -184,9 +184,9 @@ The next exact term is now isolated. For a localised potential, the review
 proves
 
 $$
-\operatorname{curl}(\chi A)
-=\chi\operatorname{curl}(A)
-+\operatorname{curlLinear}\big((D\chi).\operatorname{smulRight}(A)\big).
+\mathrm{curl}(\chi A)
+=\chi\mathrm{curl}(A)
++\mathrm{curlLinear}\big((D\chi).\mathrm{smulRight}(A)\big).
 $$
 
 This cutoff-gradient commutator must be included before a selected radial
@@ -210,7 +210,7 @@ The production order of that composition is now source-verified too. The
 selected velocity is
 
 $$
-\operatorname{curl}\!\left(\sum_j\chi_j A_j\right)
+\mathrm{curl}\!\left(\sum_j\chi_j A_j\right)
  +\sum_j\chi_j B_j,
 $$
 

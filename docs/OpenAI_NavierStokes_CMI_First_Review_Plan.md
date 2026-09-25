@@ -10,6 +10,26 @@ This file is the compact navigation plan.  The chronology belongs in the
 tracker; source extracts belong in `NavierStokesReview/evidence/`; human
 argument belongs in the peer review and research paper.
 
+## Scratch-intake control
+
+`scratch_space/scratch ideas.md` is an untracked hypothesis notebook. Its
+compact register is the reading index; older material is retained for provenance
+and is not evidence. Current work is limited to the selected-field route:
+
+| Lane | Status | Required upgrade |
+|---|---:|---|
+| Potential/curl to radial moment | `[~]` | Selected equality for the actual production field |
+| Cutoff/curl commutator | `[~]` | Calculate its selected radial value; do not assume nonzero |
+| Axis and outer support | `[~]` | Prove the boundary limit or a valid excision theorem |
+| Absolute pressure semantics | `[~]` | Selected Poisson/normalisation equation plus contradictory value |
+| Dissipation/advection scaling | `[ ]` | Source-derived amplitudes, frequencies, support and time-width estimates |
+| Companion Euler seams | `[ ]` | Separate source audit; no transfer to Navier--Stokes |
+
+The scratch notebook's proposed pressure tails, dissipation divergence, and
+Euler seam failure remain hypotheses until these acceptance conditions are met.
+Use `\mathrm{curl}`, `\mathrm{barMoment}`, and `\mathrm{Debt}` in Markdown
+equations intended for Discord rendering.
+
 ## Status and decision rules
 
 `[x]` source-checked and closed · `[~]` active · `[ ]` open · `[!]` selected
@@ -104,15 +124,15 @@ selected stage/potential
 |---|---|---:|---|
 | CALC-01 | Identify selected direct stages. | `[x]` | `directStages_eq` reaches `angularMeanStages`. |
 | CALC-02 | Expose a selected finite prefix. | `[x]` | `SelectedDirectPrefixField.lean` gives the uncut chart/cycle identity. |
-| CALC-03 | Retain cutoff and curl. | `[~]` | Exact split proved: curl the potential sum, then add the direct sum. Expand cutoff terms only on the potential summand unless a separate direct-curl theorem is proved. |
-| CALC-04 | Build Cartesian-to-radial transport. | `[ ]` | Define the actual scalar input required by `barMoment_apply` and prove equality with the selected field. |
+| CALC-03 | Retain cutoff and curl. | `[x]` | Exact production split is proved; the remaining task is the selected commutator value on the potential summand. |
+| CALC-04 | Build Cartesian-to-radial transport. | `[~]` | Define the actual scalar input required by `barMoment_apply` and prove equality with the selected field. |
 | CALC-05 | Evaluate axis and outer support. | `[~]` | Axis component-one value is proved; meridional, mixed, outer, and full boundary terms remain. |
 | CALC-06 | Compute selected `Δm`. | `[ ]` | Prove a selected nonzero value or inequality after all cutoffs, curls, sums, averages, and boundaries. |
 | CALC-07 | Derive `False`. | `[ ]` | Combine CALC-06 with the selected correction invariant in Lean without `sorry`. |
 | CALC-08 | Verify recurrence/mass preservation. | `[x]` | `selected_cycle_zeroMasses` holds for every stage; do not call this total-field conservation. |
 | CALC-09 | Compare scalar moments with Cartesian output. | `[~]` | Transport the scalar `barMoment` identities through the atlas frame, localisation, curl, and `tsum`. |
 | CALC-10 | Transport the selected direct scalar stages. | `[x]` | `SelectedDirectStageMomentTransport.lean` proves every selected native angular stage has order-2 `barMoment` zero. This does not yet transport the mixed Cartesian field. |
-| CALC-10 | Verify finite-prefix/tail order. | `[x]` locally | Preterminal `tsum` tails are exactly zero after a finite index; terminal transport is still open. |
+| CALC-11 | Verify finite-prefix/tail order. | `[x]` locally | Preterminal `tsum` tails are exactly zero after a finite index; terminal transport is still open. |
 
 ### Concrete subtargets
 
@@ -231,7 +251,7 @@ proposal. Never describe a generic probe as a selected contradiction.
 | Build hygiene | No tracked `.olean`, `.ilean`, `.c`, or `.lake` outputs. | `[x]` |
 | Python helper | Run the radial helper with the canonical V-lab interpreter after its path is repaired. | `[ ]` |
 | Documentation | New evidence cited in tracker, axiom ledger, synthesis, peer review, paper, README, control map, and this plan. | `[x]` direct-stage result synchronised |
-| Release | Commit and push only review source, evidence, and documents; leave supplied PDFs and scratch space untracked. | `[x]` pushed at `0579914` |
+| Release | Commit and push only review source, evidence, and documents; leave supplied PDFs and scratch space untracked. | `[x]` pushed at `89af746` |
 
 ## Immediate execution order
 
@@ -239,12 +259,14 @@ proposal. Never describe a generic probe as a selected contradiction.
    selected positive-radius potential stage.
 2. Expand the selected cutoff/curl commutator and identify its actual radial
    operator input.
-3. Transport the direct-stage zero result and the potential-stage expression
+3. Prove the axis/support limit needed to extend that input to the full radial
+   domain.
+4. Transport the direct-stage zero result and the potential-stage expression
    into one Cartesian-to-radial comparison theorem.
-4. Prove the first selected `barMoment_apply` equality with all integrability
+5. Prove the first selected `barMoment_apply` equality with all integrability
    and boundary hypotheses explicit.
-5. Calculate `Δm`; only then attempt the zero-sorry `False` theorem.
-6. Record the result across the evidence ledger and active counter-paper.
+6. Calculate `Delta m`; only then attempt the zero-sorry `False` theorem.
+7. Record the result across the evidence ledger and active counter-paper.
 
 **Current stopping point:** the mixed-field order and the direct scalar
 stage-moment result are source-verified, but no selected nonzero remainder and
