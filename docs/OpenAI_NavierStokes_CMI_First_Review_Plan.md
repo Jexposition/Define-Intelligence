@@ -801,7 +801,7 @@ nonzero remainder.
 | CALC-16 | Prove the selected scalar `barMoment` values. | [x] | `SelectedCycleMomentTransport.lean` proves the angular second and axial first scalar moments vanish on the carrier for every selected stage. Evidence `selected_scalar_barMoment_transport_2026-09-25.md`. |
 | CALC-17 | Compare the scalar moment identity with the exported Cartesian field. | [~] | The selected field multiplies the atlas coefficient by the angular frame and then passes through localisation/curl; the equality and any boundary remainder remain to be calculated. |
 | CALC-18 | Transport each selected direct stage through its actual positive-radius chart. | [x] | `SelectedDirectPrefixField.lean` proves `selected_direct_stage_eq_chart` using `ActualCandidateAssembly.directStages_eq` and `ActualCandidateConstruction.angularMeanStages_on_chart`. |
-| CALC-19 | Expand the chart-realised field through localisation, Cartesian curl, axis/tail limits, torus average, and `barMoment`. | [ ] | This is the remaining route to an explicit selected `Delta m`; retain every cutoff derivative and connection term. |
+| CALC-19 | Expand the chart-realised field through localisation, Cartesian curl, axis/tail limits, torus average, and `barMoment`. | [ ] | Source order is now fixed: cutoff before `tsum`, then spatial curl, then local finite-prefix reduction. Retain every cutoff derivative and connection term. |
 
 This result also records a required correction to the review vocabulary:
 “zero correction rows” means preserved radial moments of correction/state

@@ -13,6 +13,19 @@ The proof uses the source identities
 `ActualCandidateConstruction.lean:561-572`, which transport the angular mean
 stage through the atlas chart.
 
+For the potential branch, the assembly order is explicit in
+`SolenoidalDiagonal.lean:31-38,182-188,252-266`: `scaledCutoff` is applied to
+each stage before the `tsum`, and `velocitySum` is the spatial curl of the
+summed potential. The local finiteness theorem then reduces the velocity to a
+finite sum of curls. The chart-level curl transport is stated in
+`ActualMeanPotentialRealization.lean:245-252`.
+
+This order answers two audit questions. The correction/state zero rows are
+proved before this vector-valued cutoff/curl assembly; they are not identities
+for the final Cartesian field. Conversely, the source does not justify a
+nonzero remainder merely from that ordering: the cutoff derivatives and curl
+terms still have to be evaluated for the selected field.
+
 ## Boundary of the result
 
 This is a genuine selected-path transport identity, but it is only a
