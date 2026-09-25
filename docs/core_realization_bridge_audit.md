@@ -178,3 +178,10 @@ the positive-radius identity and then to the full curl/localisation and
 `barMoment` composition.
 
 Evidence: `NavierStokesReview/evidence/selected_radial_axis_boundary_2026-09-25.md`.
+
+The production bridge is now ordered explicitly. The selected velocity is the
+curl of the cut potential sum plus a separate direct angular sum; periodic
+localisation preserves that separation. The missing bridge must transport both
+branches before comparing them with `barMoment`.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md`.

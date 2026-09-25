@@ -54,6 +54,7 @@ selected theorem converts them into a violated stated premise.
 | Force | `PositiveTimeForce.force` is a wrapper; pressure enters `navierStokesResidual` in `CandidateFromLimits`. | `FORCE-01`–`FORCE-04` |
 | Force limit | Selected origin composition gives residual/force tending to zero; no positive velocity-to-residual lower bound follows. | `selected_force_origin_composition_2026-09-24.md` |
 | Temporal jets | Smooth cutoffs and all-order `VanishingJointJets` are present on the selected construction. | `GLU-01`, `vanishing_jets_localisation_trace_2026-09-24.md` |
+| Mixed velocity order | Production velocity is `curl(potential sum) + direct sum`; the direct summand is not automatically a curl. | `SelectedMixedVelocityDecomposition.lean`; `selected_mixed_velocity_decomposition_2026-09-25.md` |
 | Incompressibility | Final curl-generated field has a divergence-free theorem under its stated hypotheses. | `SelectedDivergenceAudit.lean` |
 | Stage recurrence | Selected stages satisfy the source `ZeroMassesOn` invariant. | `SelectedCycleMasses.lean`; `selected_cycle_mass_preservation_2026-09-25.md` |
 | Selected finite prefix | `potentialSum` is locally finite before the terminal time, and all local jets use the same finite prefix. | `SelectedFieldFinitePrefix.lean`; `selected_field_finite_prefix_transport_2026-09-25.md` |
@@ -103,7 +104,7 @@ selected stage/potential
 |---|---|---:|---|
 | CALC-01 | Identify selected direct stages. | `[x]` | `directStages_eq` reaches `angularMeanStages`. |
 | CALC-02 | Expose a selected finite prefix. | `[x]` | `SelectedDirectPrefixField.lean` gives the uncut chart/cycle identity. |
-| CALC-03 | Retain cutoff and curl. | `[~]` | Expand `scaledCutoff`, `cut_angularField`, and `cartesianPotential_curl`; keep every derivative term. |
+| CALC-03 | Retain cutoff and curl. | `[~]` | Exact split proved: curl the potential sum, then add the direct sum. Expand cutoff terms only on the potential summand unless a separate direct-curl theorem is proved. |
 | CALC-04 | Build Cartesian-to-radial transport. | `[ ]` | Define the actual scalar input required by `barMoment_apply` and prove equality with the selected field. |
 | CALC-05 | Evaluate axis and outer support. | `[~]` | Axis component-one value is proved; meridional, mixed, outer, and full boundary terms remain. |
 | CALC-06 | Compute selected `Δm`. | `[ ]` | Prove a selected nonzero value or inequality after all cutoffs, curls, sums, averages, and boundaries. |
@@ -122,7 +123,8 @@ selected stage/potential
    \nabla\times(\chi A)=\chi(\nabla\times A)+(\nabla\chi)\times A
    $$
    through the selected prefix. The second term is a target, not evidence of
-   non-vanishing until its selected radial value is calculated.
+   non-vanishing until its selected radial value is calculated. It applies to
+   the potential summand; the direct summand is added after the curl.
 3. **Torus transport.** Check `PressureStream.torusAverage_physicalAlias`,
    `torusAverage_physicalCompact`, and the radial-section identities before
    asserting that the coordinate bridge is impossible.
@@ -224,11 +226,11 @@ proposal. Never describe a generic probe as a selected contradiction.
 
 | Gate | Acceptance test | Status |
 |---|---|---:|
-| Lean review tree | `lake build NavierStokesReview` under Lean `v4.34.0-rc2`; no errors, `sorry`, custom axioms, or `unsafe` in new review modules. | `[x]` 3701 jobs |
+| Lean review tree | `lake build NavierStokesReview` under Lean `v4.34.0-rc2`; no errors, `sorry`, custom axioms, or `unsafe` in new review modules. | `[x]` 3702 jobs |
 | Build hygiene | No tracked `.olean`, `.ilean`, `.c`, or `.lake` outputs. | `[x]` |
 | Python helper | Run the radial helper with the canonical V-lab interpreter after its path is repaired. | `[ ]` |
-| Documentation | New evidence cited in tracker, axiom ledger, synthesis, peer review, paper, README, control map, and this plan. | `[x]` through axis-boundary update |
-| Release | Commit and push only review source, evidence, and documents; leave supplied PDFs and scratch space untracked. | `[x]` at `c874c5e` |
+| Documentation | New evidence cited in tracker, axiom ledger, synthesis, peer review, paper, README, control map, and this plan. | `[x]` through the mixed-field decomposition update |
+| Release | Commit and push only review source, evidence, and documents; leave supplied PDFs and scratch space untracked. | `[~]` current wave ready for release |
 
 ## Immediate execution order
 
@@ -241,10 +243,10 @@ proposal. Never describe a generic probe as a selected contradiction.
 4. Calculate `Δm`; only then attempt the zero-sorry `False` theorem.
 5. Record the result across the evidence ledger and active counter-paper.
 
-**Current stopping point:** no selected nonzero remainder and no selected
-kernel contradiction have yet been proved. The active burden remains the
-Cartesian-to-radial transport calculation, not a generic restatement of the
-missing bridge.
+**Current stopping point:** the mixed-field order is now source-verified, but
+no selected nonzero remainder and no selected kernel contradiction have yet
+been proved. The active burden remains the Cartesian-to-radial transport of
+both the curl-generated potential summand and the post-curl direct summand.
 
 ## Source anchors
 

@@ -942,3 +942,14 @@ It does not establish a derivative seam, a full vector-to-scalar projection,
 or a nonzero radial moment. Those remain separate obligations.
 
 Evidence: `NavierStokesReview/evidence/selected_radial_axis_boundary_2026-09-25.md`.
+
+## AX-058: selected mixed-field order is explicit
+
+`SelectedMixedVelocityDecomposition.lean` is a zero-sorry review theorem. It
+records that the production velocity is the curl of the cut potential sum
+plus the direct angular sum, and that periodic localisation preserves this
+two-summand order. No curl identity may be applied to the direct summand
+without a separate theorem. This is a source correction to the calculation
+model, not a contradiction or an additional axiom.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md`.

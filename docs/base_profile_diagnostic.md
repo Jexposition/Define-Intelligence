@@ -76,3 +76,10 @@ The axis boundary is no longer an uninspected definition: the review theorem
 component is zero at (r=0). This does not evaluate the base profile's full
 curl or establish a moment leak; it supplies one exact endpoint for the
 remaining radial calculation.
+
+The selected field calculation is two-branch rather than one-curl: the
+potential sum is spatially curled and the direct angular sum is added after
+that operation. A base-profile curl calculation alone cannot certify the
+radial moment of the complete selected velocity.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md`.

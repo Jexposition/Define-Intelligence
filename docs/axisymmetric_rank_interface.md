@@ -74,3 +74,10 @@ boundary obligation or prove a full `barMoment` identity.
 axis value: component one is zero when both radial Cartesian coordinates are
 zero. The two results should be read together as a source-level branch split,
 not as a discontinuity theorem.
+
+The selected production field has an additional source-level split: the
+potential sum is curled first and the direct angular sum is added afterwards.
+The rank/profile interface therefore cannot be treated as the full
+curl-generated Cartesian field without a separate transport theorem.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md`.

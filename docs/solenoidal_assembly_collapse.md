@@ -68,3 +68,9 @@ evidence of pure-axial collapse or a selected moment contradiction.
 The new axis theorem reinforces the narrower reading. A zero component on the
 radial axis follows from the totalised angular frame, but it does not imply a
 globally pure-axial field, a curl collapse, or a nonzero moment defect.
+
+The assembly order supplies a further restriction: the selected field is a
+curl-generated potential sum plus a direct angular sum. The direct branch
+cannot be silently absorbed into the solenoidal curl calculation.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md`.

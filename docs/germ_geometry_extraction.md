@@ -71,3 +71,10 @@ meridional field, and outer boundary still require separate transport.
 The axis part of that transport is now exact for the selected direct angular
 branch: its first component is zero at (r=0). This is not a substitute for
 the all-order germ and moment calculation of the complete mixed field.
+
+The complete mixed field is now source-resolved as two branches: a
+curl-generated potential sum and a direct angular sum added after the curl.
+The positive-radius and axis results therefore do not yet transport the
+whole field into `barMoment`.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md`.

@@ -205,3 +205,8 @@ Required calculation:
 The supplied Euler PDF and OpenAI companion paper remain a separate source
 context lane. Their interval claims may motivate checks, but they cannot be
 used as Navier--Stokes evidence without source-linked Lean results.
+
+Source correction: transport the selected velocity as two branches,
+`curl(potential sum)` and `direct sum`. Apply the cutoff commutator first to
+the potential branch; require a separate direct-branch radial identity before
+calculating any selected remainder.

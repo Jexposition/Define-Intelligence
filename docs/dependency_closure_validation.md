@@ -136,3 +136,8 @@ leaving the full mixed-field-to-`barMoment` transport open. It therefore adds
 source precision without changing the burden-of-proof classification.
 
 Evidence: `NavierStokesReview/evidence/selected_radial_axis_boundary_2026-09-25.md`.
+
+The active closure now includes `SelectedMixedVelocityDecomposition.lean`.
+It proves the source order `curl(potential sum) + direct sum`. This is a
+review-side identity with no new upstream assumptions; the radial
+`barMoment` transport remains open for both summands.

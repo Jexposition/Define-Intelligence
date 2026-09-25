@@ -870,3 +870,13 @@ stage. It supplies the missing source branch at `r = 0` but does not establish
 a derivative mismatch, a nonzero radial remainder, or `False`. The active
 counter-paper route remains the full mixed-field transport through curl,
 localisation, torus averaging, outer support, and `barMoment`.
+
+## Mixed-field order correction: 2026-09-25
+
+The authority map now includes
+`NavierStokesReview/src/completions/SelectedMixedVelocityDecomposition.lean`
+and its evidence record. The completion proves that the selected velocity is
+the curl-generated potential sum plus a separate direct angular sum, with
+periodic localisation preserving that order. It corrects the stronger model
+that treated the whole field as one curl. The active CTR-005 calculation must
+transport both branches; no `Delta m` or `False` is recorded.

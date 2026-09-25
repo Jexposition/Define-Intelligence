@@ -1488,3 +1488,32 @@ therefore closes a definitional ambiguity but does not itself prove a nonzero
 remainder or `False`.
 
 Evidence: `NavierStokesReview/evidence/selected_radial_axis_boundary_2026-09-25.md`.
+
+## Production order of the selected velocity
+
+The field-level calculation requires one further distinction. The source does
+not define the selected velocity as a single curl of a combined potential.
+`MixedDiagonalResidual.velocity` and its periodic wrapper use the order
+
+$$
+u_{\mathrm{selected}}
+=\operatorname{curl}\!\left(\sum_j\chi_j A_j\right)
+ +\sum_j\chi_j B_j,
+$$
+
+where the second term is the direct angular branch. The periodic construction
+then localises and periodises the potential and direct branches separately.
+Therefore the identity
+
+$$
+\nabla\times(\chi A)=\chi(\nabla\times A)+(\nabla\chi)\times A
+$$
+
+is load-bearing for the potential branch, but does not automatically describe
+the direct branch. Any paper-to-code disproof must calculate both branches
+before claiming a nonzero radial remainder. This source result corrects the
+stronger one-curl model without weakening the central conclusion: the
+published solution claim remains **NOT ESTABLISHED** until the full selected
+Cartesian-to-radial transport is supplied.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md`.

@@ -2549,3 +2549,8 @@ the selected angular field. These results close the proposed stage-level
 moment-leak shortcut but leave the atlas, cutoff, curl, axis, tail, and final
 Cartesian-to-radial calculation open. See
 `NavierStokesReview/evidence/selected_scalar_barMoment_transport_2026-09-25.md`.
+
+The latest source trace records the production split explicitly:
+`curl(potential sum) + direct sum`. The direct branch is not covered by a
+potential-curl commutator unless a separate representation is proved. See
+`NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md`.

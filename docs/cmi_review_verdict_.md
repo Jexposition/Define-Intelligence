@@ -257,3 +257,11 @@ boundary terms. The paper claim remains **NOT ESTABLISHED**, but no selected
 `Delta m ≠ 0` or kernel `False` is asserted.
 
 Evidence: `NavierStokesReview/evidence/selected_scalar_barMoment_transport_2026-09-25.md`.
+
+The current source correction is that the exported mixed velocity is not one
+combined curl. It is a curl-generated potential branch plus a direct angular
+branch. The selected Cartesian-to-radial moment calculation is therefore open
+for both branches. The paper claim remains **NOT ESTABLISHED**, while no
+selected `False` theorem is claimed.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md`.

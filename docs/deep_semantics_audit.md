@@ -106,3 +106,10 @@ component is exactly zero when the radial coordinates vanish. This is a
 totalisation branch in the source, not a claim that the off-axis field fails to
 extend smoothly. The unresolved semantic test remains the full radial moment
 of the curl-generated mixed field.
+
+The source-level mixed field is more specific than that shorthand: only the
+potential branch is curl-generated, while the direct angular branch is added
+after the curl. Consequently, the cutoff commutator cannot describe the whole
+field until a separate direct-branch representation is proved.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md`.

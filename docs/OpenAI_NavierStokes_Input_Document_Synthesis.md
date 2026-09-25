@@ -651,3 +651,15 @@ This removes an ambiguity in the boundary calculation, but it does not supply
 the missing full-field `barMoment` transport or a contradiction.
 
 Evidence: `NavierStokesReview/evidence/selected_radial_axis_boundary_2026-09-25.md`.
+
+## Mixed-field order correction: 2026-09-25
+
+The selected velocity has two distinct production branches. The potential
+branch is cut, summed, and spatially curled; the direct angular branch is cut
+and added after that curl. The periodic wrapper preserves the same separation.
+This means that the cutoff-curl commutator cannot be promoted to a statement
+about the entire velocity without an additional direct-branch theorem. The
+remaining affirmative burden is therefore a two-branch transport through the
+radial operator, not a one-curl calculation.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md`.

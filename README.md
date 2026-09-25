@@ -205,3 +205,20 @@ coordinates vanish. This is a totalised boundary value, not evidence of a
 discontinuity. The live counter-paper calculation remains the full
 Cartesian-to-radial composition, including localisation, curl, torus averaging,
 and `barMoment`.
+
+The production order of that composition is now source-verified too. The
+selected velocity is
+
+$$
+\operatorname{curl}\!\left(\sum_j\chi_j A_j\right)
+ +\sum_j\chi_j B_j,
+$$
+
+not one curl of a combined potential. The direct angular branch is added after
+the potential curl, and periodic localisation preserves the split. The
+cutoff-gradient commutator is therefore mandatory for the potential branch,
+but cannot be used as a defect claim about the direct branch without a new
+transport theorem. This correction keeps the counter-paper focused on the
+actual selected field rather than a stronger surrogate.
+
+Evidence: [`selected_mixed_velocity_decomposition_2026-09-25.md`](NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md).

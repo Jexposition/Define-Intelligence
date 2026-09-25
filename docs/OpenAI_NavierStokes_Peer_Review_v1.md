@@ -1569,3 +1569,24 @@ ESTABLISHED** because that composition is still not supplied; no `Delta m ≠ 0`
 or kernel-level `False` is asserted here.
 
 Evidence: `NavierStokesReview/evidence/selected_radial_axis_boundary_2026-09-25.md`.
+
+## Finding 53: the selected velocity is not one combined curl
+
+The source-level completion `SelectedMixedVelocityDecomposition.lean` fixes
+the order of the exported mixed field. It is
+
+$$
+\operatorname{curl}\!\left(\sum_j\chi_j A_j\right)
+ +\sum_j\chi_j B_j,
+$$
+
+not `curl (potential sum + direct sum)`. The periodic assembly also cuts and
+periodises these two summands separately. Consequently, the cutoff-gradient
+commutator is a mandatory term for the potential branch, but it cannot be
+used to infer a defect in the direct branch. A genuine selected `Delta m` must
+transport both branches through the cylindrical projection, torus average,
+radial integration, and boundary terms. This strengthens the affirmative
+burden of the published five-moment claim while leaving the kernel-level
+contradiction open.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md`.

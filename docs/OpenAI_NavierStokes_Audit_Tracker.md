@@ -1727,3 +1727,26 @@ curl, torus averaging, and `barMoment`. No nonzero `Delta m` or `False` follows
 from the axis result alone.
 
 Evidence: `NavierStokesReview/evidence/selected_radial_axis_boundary_2026-09-25.md`.
+
+## CTR-057: selected mixed velocity has two production summands
+
+`SelectedMixedVelocityDecomposition.lean` proves the exact selected-field
+order used by the source:
+
+$$
+u_{\mathrm{mixed}}
+=\operatorname{curl}\!\left(\sum_j\chi_j A_j\right)
+ +\sum_j\chi_j B_j.
+$$
+
+`MixedDiagonalResidual.lean:26-29` defines this split, while
+`MixedPeriodicAssembly.lean:36-38` localises and periodises the two summands
+separately. The direct angular summand is therefore not automatically covered
+by a curl product rule. The cutoff commutator remains a valid target for the
+potential summand only; the direct summand needs its own radial transport.
+
+This corrects the stronger scratch-space model of the whole selected field as
+one curl. It narrows the field-level calculation but does not prove a
+nonzero `Delta m` or `False`.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md`.
