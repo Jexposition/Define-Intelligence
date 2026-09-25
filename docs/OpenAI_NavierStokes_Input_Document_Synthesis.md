@@ -603,3 +603,19 @@ calculation must retain cutoff derivatives, connection terms, torus averaging,
 and axis/tail contributions. No nonzero selected remainder is inferred.
 
 Evidence: `NavierStokesReview/evidence/selected_direct_chart_transport_2026-09-25.md`.
+
+## Positive-radius recovery gate: 2026-09-25
+
+The review now has a zero-sorry coordinate recovery theorem. On the explicit
+positive-radius chart, component one of `meanAngularField` recovers the atlas
+scalar coefficient after division by the angular-frame coordinate. The proof
+derives the radius nonzero obligation and therefore exposes exactly where the
+axis boundary must be handled separately.
+
+This does not yet supply the paper's radial moment. The selected construction
+still passes through cutoff multiplication, a Cartesian spatial curl, a local
+finite-prefix reduction, torus averaging, and the scalar `barMoment` operator.
+The cutoff/curl commutator and the axis and outer-support terms must be
+calculated before a nonzero remainder can be claimed.
+
+Evidence: `NavierStokesReview/evidence/selected_cartesian_radial_gate_2026-09-25.md`.

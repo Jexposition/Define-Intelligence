@@ -834,3 +834,13 @@ positive-radius `chartDirectStages` expression. It closes the generic/vacuous
 stage objection, but it deliberately does not claim an axis-crossing curl
 identity or a scalar `barMoment` equality. CTR-005 therefore remains the
 active selected Cartesian-to-radial calculation gate.
+
+The authority map now also includes
+`NavierStokesReview/src/completions/SelectedCartesianRadialGate.lean` and
+`NavierStokesReview/evidence/selected_cartesian_radial_gate_2026-09-25.md`.
+This completion proves positive-radius recovery of the atlas scalar
+coefficient from a selected Cartesian angular component and derives the
+nonzero-radius obligation. It does not supply the selected curl-to-`barMoment`
+identity, a nonzero `Delta m`, or `False`. The active control boundary remains
+the full cutoff, curl, torus-average, axis, tail, and radial-integral
+calculation.

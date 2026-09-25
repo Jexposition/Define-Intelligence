@@ -1659,3 +1659,16 @@ evaluate the radial integral. No selected `Delta m ≠ 0` or kernel `False` has
 been proved.
 
 Evidence: `NavierStokesReview/evidence/selected_direct_chart_transport_2026-09-25.md`.
+
+## CTR-053: positive-radius Cartesian-to-radial recovery gate
+
+`SelectedCartesianRadialGate.lean` proves the exact algebraic recovery of the
+scalar atlas coefficient from component one of the selected angular field,
+under the explicit nonzero first-coordinate hypothesis on the radial chart.
+The proof also derives nonvanishing of the Cartesian radius. This is the
+strongest new coordinate result, but it is not a `barMoment` theorem: the
+selected curl, cutoff derivatives, torus average, axis value, and outer-tail
+terms remain outside the identity. No selected `Delta m ≠ 0` or `False` is
+recorded.
+
+Evidence: `NavierStokesReview/evidence/selected_cartesian_radial_gate_2026-09-25.md`.

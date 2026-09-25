@@ -171,3 +171,11 @@ positive-radius chart by `selected_direct_stage_eq_chart`. This removes a
 generic or vacuous-stage explanation while leaving the decisive calculation
 unchanged: localisation, Cartesian curl, axis/tail terms, torus averaging,
 and the scalar `barMoment` must still be related by an explicit theorem.
+
+The latest selected-field completion makes this gate concrete: on the
+positive-radius chart, the atlas scalar coefficient is recovered from
+component one of the selected angular field, with the radius nonvanishing
+proved from the chart coordinate. This is not yet a radial-moment calculation.
+The selected cutoff derivatives, Cartesian curl, torus average, axis, and
+outer-tail terms still require an exact field-level theorem. See
+[`NavierStokesReview/evidence/selected_cartesian_radial_gate_2026-09-25.md`](NavierStokesReview/evidence/selected_cartesian_radial_gate_2026-09-25.md).

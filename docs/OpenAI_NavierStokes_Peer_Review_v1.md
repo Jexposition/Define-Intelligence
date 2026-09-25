@@ -1497,3 +1497,20 @@ that vector-valued expression with the scalar `barMoment` input. A nonzero
 `Delta m` therefore remains unproved, as does any kernel-level `False`.
 
 Evidence: `NavierStokesReview/evidence/selected_direct_chart_transport_2026-09-25.md`.
+
+## Finding 49: the positive-radius scalar recovery gate is now explicit
+
+The review-side completion `SelectedCartesianRadialGate.lean` proves that the
+scalar atlas coefficient can be recovered from component one of the selected
+angular field wherever the first radial-chart coordinate is nonzero. It also
+derives nonvanishing of the Cartesian radius. This is a concrete selected
+coordinate identity, not a generic interface objection.
+
+The identity stops before the advertised radial moment. It does not evaluate
+the selected cut-stage curl, its cutoff-derivative terms, the torus average,
+or the axis and outer-support boundaries. Consequently no selected
+`Delta m ≠ 0` and no kernel-level `False` follows yet. The published solution
+claim remains **NOT ESTABLISHED** because the affirmative paper still needs
+the full field-level transport calculation.
+
+Evidence: `NavierStokesReview/evidence/selected_cartesian_radial_gate_2026-09-25.md`.

@@ -674,6 +674,41 @@ converted into a discontinuity claim without a concrete unmatched jet. The
 audit is recorded in `docs/Euler_Parent_Child_Interval_Audit.md` and
 `NavierStokesReview/evidence/euler_parent_child_interval_audit_2026-09-25.md`.
 
+## Cartesian-to-radial gate completion: 2026-09-25
+
+The first exact coordinate recovery identity is now compiled. It is a gate
+into the remaining calculation, not a nonzero-remainder result.
+
+| Work item | Status | Required result |
+|---|---:|---|
+| Recover the scalar atlas coefficient from the selected angular component | [x] | `SelectedCartesianRadialGate.meanField_recovered_from_component_one` proves the positive-radius identity under `(radialProjection w).1 ≠ 0`. |
+| Derive the radius nonvanishing obligation | [x] | The theorem derives `cartesianRadius ≠ 0` from the selected nonzero angular-frame coordinate. |
+| Define a global axis-safe projection | [ ] | A projection must specify its value at the axis and prove compatibility with the off-axis chart; no such convention may be silently assumed. |
+| Expand the localisation commutator | [ ] | Compute the contribution from differentiating `SmoothCutoffs.scaledCutoff` before the curl is applied. |
+| Transport through the actual curl | [ ] | Identify the cut-stage curl with a scalar radial input only after all component and connection terms are retained. |
+| Evaluate axis and outer-support terms | [ ] | Prove exact boundary values or inequalities for the selected field at `R = 0` and the supported outer radius. |
+| Run the symbolic radial calculator | [ ] | Supply only a profile expression already identified with the selected field by Lean; arbitrary test profiles are not evidence. |
+| Produce a selected nonzero remainder and `False` | [ ] | Requires both the selected equality and a proved `Delta m ≠ 0`; neither is currently available. |
+
+Evidence: `NavierStokesReview/evidence/selected_cartesian_radial_gate_2026-09-25.md`.
+
+## Complete calculation and companion-paper register: 2026-09-25
+
+The following ideas are retained as explicit work lanes so that they are not
+mistaken for completed objections:
+
+| Lane | Required audit | Status |
+|---|---|---:|
+| Cutoff/curl commutator | Test `curl (chi • A)` against the selected source and retain the `fderiv chi` term; do not infer cancellation from smoothness or local finiteness. | [ ] |
+| Axis extension | Compare the positive-radius chart with the origin branch and test all required derivatives; an off-axis hypothesis alone is not a discontinuity proof. | [ ] |
+| Finite-prefix leak | Choose a concrete selected preterminal stage and time, expand its finite prefix, and calculate the moment before claiming a tail remainder. | [ ] |
+| Scalar/vector typing | Construct the exact map from `VelocityField` to `ScalarField (Point P)` required by `barMoment`; document its domain, torus average, and support hypotheses. | [~] Positive-radius coefficient recovery is proved; full map remains open. |
+| Five-row collision | Compare the transported selected profile with the correction-profile rows only after the preceding map is established. | [ ] |
+| Euler Zeno route | Read `docs/euler.pdf`, the companion source, and the interval constructors; test geometric widths, positive horizons, value seams, first jets, all-order jets, and any hidden forcing term separately. | [~] Geometric and first-jet evidence exists; no quiet Zeno endpoint or seam mismatch is proved. |
+| Radial helper | Run `NavierStokesReview/tools/radial_profile_integrals.py` only with a Lean-linked profile; record input and output as evidence. | [~] Tool exists; no selected profile is linked yet. |
+| Defence matrix | Keep existential quantification, “given” force provenance, compact pressure support, smooth cutoffs, and five-moment correspondence as separate questions. | [x] Included in the source-context register; no single item is treated as a kernel contradiction without a selected theorem. |
+| Editorial synchronisation | Update the plan, tracker, axiom ledger, synthesis, peer review, research paper, README, and control map after every proved source result. | [~] This gate and evidence file are the current synchronisation target. |
+
 ## Current execution order
 
 1. Extract the exact selected profile expressions and active cutoff regions.
@@ -836,7 +871,7 @@ momentum, or zero moment of the final Cartesian velocity.
 | Symbolic helper | V-lab Python interpreter executes the radial helper and records its exact input/output. | [ ] Current interpreter points to an inaccessible `uv` Python path. |
 | Build hygiene | No `.olean`, `.ilean`, `.c`, or `.lake` outputs are tracked. | [x] |
 | Documentation sync | New evidence is cited by the plan, tracker, axiom ledger, peer review, research paper, synthesis, README, and control map. | [x] Scalar moment and positive-radius chart evidence are recorded; the field-level `Delta m` calculation remains open. |
-| Release | Commit and push the final selected-field audit update. | [x] Commit `69858dc` is pushed to `review/cmi-first-navier-stokes-2026-09-22`; the two supplied PDFs remain intentionally untracked. |
+| Release | Commit and push the final selected-field audit update. | [x] Commit `ce4afd6` is pushed to `review/cmi-first-navier-stokes-2026-09-22`; the two supplied PDFs remain intentionally untracked. |
 
 ### Counter-paper source anchor
 

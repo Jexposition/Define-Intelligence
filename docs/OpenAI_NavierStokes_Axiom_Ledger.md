@@ -889,3 +889,15 @@ The selected field remains vector-valued after chart transport; the scalar
 integrability calculation. No nonzero remainder follows from this axiom entry.
 
 Evidence: `NavierStokesReview/evidence/selected_direct_chart_transport_2026-09-25.md`.
+
+## AX-054: positive-radius coefficient recovery is proved, global moment transport is not
+
+`SelectedCartesianRadialGate.meanField_recovered_from_component_one` derives
+the atlas scalar coefficient from the first component of the selected angular
+field on the explicit positive-radius chart. The radius nonvanishing is proved
+from the chart coordinate rather than assumed. This exposes a real input for
+the remaining radial calculation, but it does not identify the cut Cartesian
+curl or its `tsum` with the scalar `barMoment` input. No nonzero remainder or
+kernel contradiction follows.
+
+Evidence: `NavierStokesReview/evidence/selected_cartesian_radial_gate_2026-09-25.md`.

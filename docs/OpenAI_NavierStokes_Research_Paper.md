@@ -1394,3 +1394,24 @@ by an explicit selected theorem, the review cannot claim a numerical remainder
 or a contradiction. The published solution claim remains **NOT ESTABLISHED**.
 
 Evidence: `NavierStokesReview/evidence/selected_direct_chart_transport_2026-09-25.md`.
+
+## Positive-radius recovery and the remaining radial calculation
+
+The selected-field audit now proves an exact positive-radius recovery formula:
+the atlas scalar coefficient of the selected angular field is recovered from
+one Cartesian component after division by the corresponding angular-frame
+coordinate. The proof also derives that the Cartesian radius is nonzero under
+the chart hypothesis. This makes the remaining calculation concrete and
+locates the axis as an explicit boundary, rather than treating the selected
+field as a generic existential object.
+
+The result is not itself a refutation. The selected construction still applies
+localisation before the natural-indexed sum and then takes a Cartesian spatial
+curl. The paper's five quantities are computed by a scalar radial profile after
+torus averaging. A complete review therefore has to retain the cutoff
+commutator, curl and connection terms, axis and outer-support contributions,
+and integrability hypotheses before evaluating `barMoment`. No selected
+nonzero remainder or kernel contradiction has yet been proved, so the
+published solution claim remains **NOT ESTABLISHED**.
+
+Evidence: `NavierStokesReview/evidence/selected_cartesian_radial_gate_2026-09-25.md`.
