@@ -179,3 +179,16 @@ proved from the chart coordinate. This is not yet a radial-moment calculation.
 The selected cutoff derivatives, Cartesian curl, torus average, axis, and
 outer-tail terms still require an exact field-level theorem. See
 [`NavierStokesReview/evidence/selected_cartesian_radial_gate_2026-09-25.md`](NavierStokesReview/evidence/selected_cartesian_radial_gate_2026-09-25.md).
+
+The next exact term is now isolated. For a localised potential, the review
+proves
+
+$$
+\operatorname{curl}(\chi A)
+=\chi\operatorname{curl}(A)
++\operatorname{curlLinear}\big((D\chi).\operatorname{smulRight}(A)\big).
+$$
+
+This cutoff-gradient commutator must be included before a selected radial
+moment can be evaluated. It is not being presented as a nonzero leak without
+the remaining selected integral calculation.

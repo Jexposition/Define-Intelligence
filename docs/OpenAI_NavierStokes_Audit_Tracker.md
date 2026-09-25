@@ -1672,3 +1672,26 @@ terms remain outside the identity. No selected `Delta m ≠ 0` or `False` is
 recorded.
 
 Evidence: `NavierStokesReview/evidence/selected_cartesian_radial_gate_2026-09-25.md`.
+
+## CTR-054: cutoff--curl commutator is explicit, but its radial value is open
+
+`SelectedCutoffCurlCommutator.lean` now proves the exact local product rule
+for a scalar-localised potential:
+
+$$
+\operatorname{curl}(\chi A)
+=\chi\operatorname{curl}(A)
++\operatorname{curlLinear}\big((D\chi).\operatorname{smulRight}(A)\big).
+$$
+
+This matters because `SolenoidalDiagonal.cutStage` applies the scaled cutoff
+before `potentialSum`, while `velocitySum` applies the spatial curl afterward.
+The derivative-of-cutoff term is therefore part of the selected field-level
+calculation. Smoothness and compact support do not make it vanish.
+
+The result is a precise calculation obligation under CTR-005, not a proved
+leak: no theorem currently evaluates this commutator through the selected
+torus average and `barMoment`, and no selected `Delta m ≠ 0` or `False` has
+been derived.
+
+Evidence: `NavierStokesReview/evidence/selected_cutoff_curl_commutator_2026-09-25.md`.

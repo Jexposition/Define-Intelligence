@@ -844,3 +844,10 @@ nonzero-radius obligation. It does not supply the selected curl-to-`barMoment`
 identity, a nonzero `Delta m`, or `False`. The active control boundary remains
 the full cutoff, curl, torus-average, axis, tail, and radial-integral
 calculation.
+
+The authority map now also includes
+`NavierStokesReview/src/completions/SelectedCutoffCurlCommutator.lean` and
+`NavierStokesReview/evidence/selected_cutoff_curl_commutator_2026-09-25.md`.
+The completion proves the exact derivative-of-cutoff commutator in the
+selected curl path. It does not prove a nonzero selected radial remainder or
+`False`; the selected torus-average and `barMoment` transport remain open.

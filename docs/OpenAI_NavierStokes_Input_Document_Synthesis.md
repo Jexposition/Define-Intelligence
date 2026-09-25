@@ -619,3 +619,14 @@ The cutoff/curl commutator and the axis and outer-support terms must be
 calculated before a nonzero remainder can be claimed.
 
 Evidence: `NavierStokesReview/evidence/selected_cartesian_radial_gate_2026-09-25.md`.
+
+## Exact localisation term now isolated
+
+The selected field uses the order cutoff, natural-indexed sum, then spatial
+curl. A zero-sorry review theorem expands that composition and isolates the
+cutoff-gradient commutator. This is the first exact algebraic term that must
+be included in the paper's radial moment calculation. It is evidence of an
+uncompleted transport obligation, not evidence of a nonzero remainder by
+itself.
+
+Evidence: `NavierStokesReview/evidence/selected_cutoff_curl_commutator_2026-09-25.md`.

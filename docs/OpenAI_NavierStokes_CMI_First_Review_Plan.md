@@ -838,6 +838,9 @@ nonzero remainder.
 | CALC-18 | Transport each selected direct stage through its actual positive-radius chart. | [x] | `SelectedDirectPrefixField.lean` proves `selected_direct_stage_eq_chart` using `ActualCandidateAssembly.directStages_eq` and `ActualCandidateConstruction.angularMeanStages_on_chart`. |
 | CALC-19 | Expand the chart-realised field through localisation, Cartesian curl, axis/tail limits, torus average, and `barMoment`. | [ ] | Source order is now fixed: cutoff before `tsum`, then spatial curl, then local finite-prefix reduction. Retain every cutoff derivative and connection term. |
 
+| CALC-20 | Isolate the cutoff-gradient curl term. | [x] | `SelectedCutoffCurlCommutator.lean` proves `curl (χ • A) = χ • curl A + curlLinear ((fderiv χ).smulRight (A x))`; the term is exact but its selected radial value remains open. |
+| CALC-21 | Transport the commutator through the selected radial operator. | [ ] | Identify the selected potential, torus average, axis/tail limits, integrability, and `barMoment` input in one theorem. |
+
 This result also records a required correction to the review vocabulary:
 “zero correction rows” means preserved radial moments of correction/state
 profiles in `ZeroMassesOn`; it does not mean zero total energy, zero total
@@ -848,6 +851,7 @@ momentum, or zero moment of the final Cartesian velocity.
 | Lane | Required work | Status |
 |---|---|---:|
 | Selected-field radial calculation | Expand `meanAngularField`, `angularVector`, `cartesianPotential_curl`, `scaledCutoff`, torus averaging, `barMoment_apply`, and axis/tail terms. | [~] |
+| Cutoff-curl commutator | Carry `curlLinear ((Dχ).smulRight A)` through the selected finite prefix and radial projection. | [x] Exact local term isolated; selected radial value open. |
 | Grid-mask leakage | Check derivatives of every partition/cutoff in overlap zones; do not assume a partition identity cancels nonlinear residual terms. | [ ] |
 | Finite-prefix remainder | Evaluate a concrete preterminal prefix before the tail is active; distinguish a finite-prefix value from an infinite-series limit. | [ ] |
 | Curl/profile mismatch | Check whether the 3D curl-to-cylindrical projection preserves the radial identities or creates a boundary term. | [ ] |

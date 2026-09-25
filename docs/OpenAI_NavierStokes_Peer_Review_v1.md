@@ -1514,3 +1514,25 @@ claim remains **NOT ESTABLISHED** because the affirmative paper still needs
 the full field-level transport calculation.
 
 Evidence: `NavierStokesReview/evidence/selected_cartesian_radial_gate_2026-09-25.md`.
+
+## Finding 50: localisation creates an explicit curl commutator
+
+The selected construction cannot be audited by replacing a cut potential with
+the curl of its uncut potential. In `SelectedCutoffCurlCommutator.lean`, the
+review proves the exact identity
+
+$$
+\operatorname{curl}(\chi A)
+=\chi\operatorname{curl}(A)
++\operatorname{curlLinear}\big((D\chi).\operatorname{smulRight}(A)\big).
+$$
+
+This follows the source order: `cutStage` multiplies each potential by a
+smooth scaled cutoff, `potentialSum` sums those cut stages, and `velocitySum`
+then applies the spatial curl. The extra term is therefore a load-bearing
+part of any Cartesian-to-radial moment calculation. The source does not,
+however, establish that its selected torus-averaged radial moment is nonzero.
+The review records the exact term as an open calculation, not as `Delta m ≠ 0`
+or a kernel contradiction.
+
+Evidence: `NavierStokesReview/evidence/selected_cutoff_curl_commutator_2026-09-25.md`.

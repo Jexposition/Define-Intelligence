@@ -1415,3 +1415,30 @@ nonzero remainder or kernel contradiction has yet been proved, so the
 published solution claim remains **NOT ESTABLISHED**.
 
 Evidence: `NavierStokesReview/evidence/selected_cartesian_radial_gate_2026-09-25.md`.
+
+## Cutoff derivatives are part of the selected field
+
+The field-level audit now proves an exact identity that the published
+five-moment argument must address. If a potential is localised by a smooth
+scalar cutoff `χ`, then
+
+$$
+\operatorname{curl}(\chi A)
+=\chi\operatorname{curl}(A)
++\operatorname{curlLinear}\big((D\chi).\operatorname{smulRight}(A)\big).
+$$
+
+The second term is the spatial commutator created by the localisation mask.
+It is not removed merely by smoothness, compact support, divergence-freeness,
+or local finite-sum reduction. Since the repository cuts stages before
+forming the potential sum and curls the resulting sum afterward, the term must
+be carried through the positive-radius chart, torus average, axis and
+outer-support limits, and finally `barMoment`.
+
+This strengthens the affirmative burden without overstating the result. The
+review has not yet proved that the selected commutator has a nonzero radial
+moment, so it does not claim `Delta m ≠ 0` or `False`. The published solution
+claim remains **NOT ESTABLISHED** until the complete selected-field
+calculation is supplied.
+
+Evidence: `NavierStokesReview/evidence/selected_cutoff_curl_commutator_2026-09-25.md`.
