@@ -1341,3 +1341,38 @@ until the selected Cartesian-to-radial transport theorem and its numerical or
 symbolic consequences are exhibited.
 
 Evidence: `NavierStokesReview/evidence/selected_direct_prefix_field_2026-09-25.md`.
+
+## A necessary correction: stage mass preservation is source-supported
+
+The review has now checked the active selected recurrence against the source's
+preservation theorem. `SelectedCycleMasses.lean` proves that every selected
+cycle state carries the explicit `ZeroMassesOn` invariant. Thus the claim that
+the two zero correction rows automatically create a stage-level mass leak is
+not supported by the code and is not used here.
+
+This does not settle the published five-moment claim. The invariant is stated
+for the correction state's mean profiles; the exported selected direct prefix
+is a Cartesian velocity assembled from a scalar coefficient, angular frame,
+localisation, and curl. The paper's Appendix A requires the resulting field
+to have the corresponding radial moments. That requires an explicit selected
+Cartesian-to-radial calculation, including cutoff derivatives and axis and
+tail terms. Until that calculation is supplied, the advertised solution
+remains **NOT ESTABLISHED**; no `Delta m ≠ 0` or kernel `False` is asserted.
+
+Evidence: `NavierStokesReview/evidence/selected_cycle_mass_preservation_2026-09-25.md`.
+
+## Selected angular component exposed
+
+The review has now exposed component one of the selected angular field as the
+physical-atlas scalar coefficient times the corresponding component of the
+totalised angular frame. This is a concrete selected-field formula and gives
+the radial calculation an actual input expression.
+
+It is not yet a contradiction. The coefficient remains defined through the
+atlas and radial projection, and the advertised moment requires the complete
+cutoff, curl, torus-average, axis, and tail calculation. The paper's claim is
+therefore still **NOT ESTABLISHED** pending that selected transport theorem;
+no `Delta m ≠ 0` or kernel `False` is claimed from the component identity
+alone.
+
+Evidence: `NavierStokesReview/evidence/selected_angular_component_formula_2026-09-25.md`.

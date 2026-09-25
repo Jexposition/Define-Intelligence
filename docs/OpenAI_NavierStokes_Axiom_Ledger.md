@@ -855,3 +855,23 @@ calculation and any nonzero remainder remain open. This entry strengthens the
 affirmative burden under CTR-005 without claiming a `False` theorem.
 
 Evidence: `NavierStokesReview/evidence/selected_direct_prefix_field_2026-09-25.md`.
+
+## AX-051: selected recurrence carries correction-state mass preservation
+
+`SelectedCycleMasses.lean` proves that every selected cycle state inherits
+the explicit `CycleAnalyticInvariant.masses` field. This is a proved property
+of the correction/state representation, not an assumption and not a claim
+about total Cartesian energy. It must not be used as if it were already a
+`barMoment` identity for the final selected velocity.
+
+Evidence: `NavierStokesReview/evidence/selected_cycle_mass_preservation_2026-09-25.md`.
+
+## AX-052: selected angular component is coefficient times frame
+
+The selected Cartesian angular field is not an opaque vector: its component-one
+formula is proved in `SelectedAngularComponentFormula.lean`. The result is an
+atlas scalar coefficient multiplied by the radial-projection coordinate divided
+by the Cartesian radius. This theorem exposes the exact analytic expression
+needed for the radial calculation, but it does not assert a nonzero remainder.
+
+Evidence: `NavierStokesReview/evidence/selected_angular_component_formula_2026-09-25.md`.

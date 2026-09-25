@@ -770,6 +770,67 @@ hypotheses.
 
 Evidence: NavierStokesReview/evidence/selected_direct_prefix_field_2026-09-25.md and NavierStokesReview/evidence/selected_field_moment_calculation_gate_2026-09-25.md.
 
+### Selected-cycle invariant check: 2026-09-25
+
+The first field-level check against the proposed “clamped energy” route is
+now complete. The selected recurrence is definitionally the same fixed
+recurrence covered by `ActualCyclePreservation.state_invariant`; the review
+completion
+`NavierStokesReview/src/completions/SelectedCycleMasses.lean` proves
+`ZeroMassesOn` for every selected stage. This is not a proof of the paper's
+Cartesian five-moment claim. It is a source-backed result that prevents the
+review from alleging a stage-level mass leak that the code actually rules out.
+
+| ID | Required check | Status | Result / next test |
+|---|---|---:|---|
+| CALC-08 | Identify the selected recurrence behind `selectedCycle`. | [x] | It is definitionally the preserved `ActualCyclePreservation.state` recurrence. |
+| CALC-09 | Prove selected-stage radial mass preservation. | [x] | `selected_cycle_zeroMasses` compiles for every `j`; evidence `selected_cycle_mass_preservation_2026-09-25.md`. |
+| CALC-10 | Identify the selected Cartesian field corresponding to those state moments. | [~] | `selectedDirectStages` reaches `meanAngularField`; a vector-to-scalar `barMoment` projection is still required. |
+| CALC-11 | Check cutoff/curl/axis/tail terms after that projection. | [ ] | Expand the actual angular vector and `cartesianPotential_curl`, retaining all derivative and boundary terms. |
+| CALC-12 | Prove or disprove `Delta m ≠ 0` for the selected field. | [ ] | No value may be inferred from the correction invariant alone. |
+
+| CALC-13 | Expose a concrete selected Cartesian component. | [x] | `SelectedAngularComponentFormula.lean` proves the component-one formula for `meanAngularField`; evidence `selected_angular_component_formula_2026-09-25.md`. |
+| CALC-14 | Evaluate the atlas coefficient in the component formula. | [ ] | Requires a positive-radius selected band and an explicit physical-point/radial-profile expression. |
+| CALC-15 | Carry the component through cutoff and curl into the radial operator. | [ ] | Retain all mask derivatives and connection terms; no cancellation may be assumed. |
+
+The component theorem is a genuine selected-field refinement. It narrows the
+calculation from a generic `VelocityField` to the scalar coefficient and
+angular frame used by the selected direct stages. It still does not prove a
+nonzero remainder.
+
+This result also records a required correction to the review vocabulary:
+“zero correction rows” means preserved radial moments of correction/state
+profiles in `ZeroMassesOn`; it does not mean zero total energy, zero total
+momentum, or zero moment of the final Cartesian velocity.
+
+### Complete idea and follow-up register: 2026-09-25
+
+| Lane | Required work | Status |
+|---|---|---:|
+| Selected-field radial calculation | Expand `meanAngularField`, `angularVector`, `cartesianPotential_curl`, `scaledCutoff`, torus averaging, `barMoment_apply`, and axis/tail terms. | [~] |
+| Grid-mask leakage | Check derivatives of every partition/cutoff in overlap zones; do not assume a partition identity cancels nonlinear residual terms. | [ ] |
+| Finite-prefix remainder | Evaluate a concrete preterminal prefix before the tail is active; distinguish a finite-prefix value from an infinite-series limit. | [ ] |
+| Curl/profile mismatch | Check whether the 3D curl-to-cylindrical projection preserves the radial identities or creates a boundary term. | [ ] |
+| Kernel contradiction | Only write `False` after a selected equality and a selected nonzero value are both proved. | [ ] |
+| Pressure semantics | Keep compact support, comparison recovery, and absolute Poisson semantics separate; seek a selected contradiction, not an interface-only objection. | [~] |
+| Force provenance | Keep residual-as-force and fixed-force perturbation results as causal/provenance objections, not automatic negations of the existential endpoint. | [x] |
+| Temporal gluing | Preserve the cleared result: smooth cutoffs and all-order jet premises are present; seek only an actual unmatched selected jet. | [x] |
+| Selected-label inhabitation | Check constructive nonemptiness of active labels at every selected stage; do not infer vacuity from a generic filter risk. | [~] |
+| Euler companion | Audit parent-child horizons, Zeno sums, value/first-jet seams, all-order seams, and any hidden forcing term separately from Navier--Stokes. | [~] |
+| Euler source context | Read the supplied Euler PDF and OpenAI companion material; record only source-supported interval and PDE claims. | [ ] |
+| Radial helper | Run `NavierStokesReview/tools/radial_profile_integrals.py` only after Lean supplies an exact selected profile; repair the local Python interpreter path before execution. | [~] |
+| Editorial packaging | Maintain the README abstract/editorial summary and synchronise paper, peer review, tracker, axiom ledger, control map, and plan after each proved result. | [~] |
+
+### Tooling and source-control gates
+
+| Gate | Acceptance test | Status |
+|---|---|---:|
+| Lean review tree | `lake build NavierStokesReview` has zero errors, zero `sorry`, zero custom axioms, and no `unsafe` in new review modules. | [x] 3696 jobs |
+| Symbolic helper | V-lab Python interpreter executes the radial helper and records its exact input/output. | [ ] Current interpreter points to an inaccessible `uv` Python path. |
+| Build hygiene | No `.olean`, `.ilean`, `.c`, or `.lake` outputs are tracked. | [x] |
+| Documentation sync | New evidence is cited by the plan, tracker, axiom ledger, peer review, research paper, and control map. | [~] Add the selected-cycle evidence to each record. |
+| Release | Commit and push the final local metadata commit after GitHub authentication is restored. | [~] Local `1c61f6c` is not pushed. |
+
 ### Counter-paper source anchor
 
 The target is the claim actually published, not a weaker generic proxy. OpenAI's

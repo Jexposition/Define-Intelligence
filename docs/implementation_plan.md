@@ -17,7 +17,7 @@
 | W7 | Re-audit live upstream five-moment construction against selected mixed endpoint | [x]/[ ] | Upstream identities and base blow-up compile; final mixed-sum transport remains open. |
 | W8 | Connect `VanishingJointJets` to the origin residual and blow-up | [x]/[~] | All-order `VanishingJointJets` and the selected force-to-origin composition are source-traced and compiled. A contradiction still requires a selected PDE lower bound. |
 | W9 | Rewrite the peer review and research paper as human-readable papers | [x] | The research paper is now a single coherent argument; the peer review retains its evidence findings and states the same verdict boundary. |
-| W10 | Run all probes, lint documents, and package branch | [x] | On 2026-09-25, `lake build NavierStokesReview` completed 3,695 jobs under Lean 4.34.0-rc2. The exported comparator reports only standard axioms. Review commit `a9c85f2` is pushed to the review branch. No tracked build artefacts exist. |
+| W10 | Run all probes, lint documents, and package branch | [x] | On 2026-09-25, `lake build NavierStokesReview` completed 3,697 jobs under Lean 4.34.0-rc2. The exported comparator reports only standard axioms. Review commit `a9c85f2` is pushed to the review branch. No tracked build artefacts exist. |
 | W11 | Expose the internal selected-cycle radial invariant | [x] | `SelectedCycleMomentTransport.lean` compiles and obtains `state_invariant.masses` for every selected cycle stage. |
 | W12 | Connect the internal invariant to the exported mixed witness and paper tuple | [~] | The cycle invariant is proved, but `Witness` still exposes no equality to `(M,I,J,S,C_p)`; this is the active transport target. |
 | W13 | Calculate a selected-field radial remainder | [~] | Source trace now reaches the selected stage families, cutoff multiplication, Cartesian curl, and `barMoment` definition. A selected `Delta m ≠ 0` still requires an explicit Cartesian-to-radial equality and boundary-term calculation. |
@@ -162,3 +162,26 @@ not with an abstract `StageEstimates` countermodel. Its obligations are:
 The current source trace has not supplied step 1's radial expression. The
 calculator in `NavierStokesReview/tools/radial_profile_integrals.py` is ready
 for explicit expressions but must not be treated as a Lean transport theorem.
+
+## Selected-cycle correction: 2026-09-25
+
+`NavierStokesReview/src/completions/SelectedCycleMasses.lean` now compiles the
+selected recurrence against `ActualCyclePreservation.state_invariant` and
+proves `ZeroMassesOn` at every selected stage. This closes the proposed
+stage-level correction-mass leak as an unsupported attack. It does not close
+the paper's affirmative field claim: the selected Cartesian prefix still must
+be projected through the angular frame, localisation, curl, torus average,
+and `barMoment` with all boundary terms retained.
+
+Required next implementation:
+
+1. expose one concrete positive-radius selected prefix;
+2. derive its component formula from `PhysicalMeanJetBounds.angularVector`;
+3. retain `SmoothCutoffs.scaledCutoff` derivative terms and Cartesian curl;
+4. evaluate axis and outer-support terms; and
+5. compile either a selected nonzero `Delta m` theorem or a documented proof
+   that the exact selected moment is zero.
+
+The companion Euler interval audit and the radial symbolic helper remain
+separate lanes. Neither may be used as a Navier--Stokes contradiction without
+their own source-linked selected theorem.

@@ -1596,3 +1596,43 @@ any selected Delta m ≠ 0 can be stated.
 | Selected-path False | Not derived. |
 
 Evidence: NavierStokesReview/evidence/selected_direct_prefix_field_2026-09-25.md.
+
+## CTR-050: selected-cycle zero-moment preservation is proved, but not yet field transport
+
+The review-side completion
+`NavierStokesReview/src/completions/SelectedCycleMasses.lean` now checks the
+actual selected recurrence against `ActualCyclePreservation.state_invariant`.
+It proves, for every selected stage `j`,
+`GaugeMassPreservation.ZeroMassesOn ... (selectedCycle j).state`.
+The source path is `ActualCandidateConstruction.lean:35-42,212-214`,
+`ActualCyclePreservation.lean:149-159,826-838`, and
+`CorrectionStep.lean:9408-9449`.
+
+This rules out one proposed attack: the active correction cycle does not
+accidentally lose its two preserved mean-state radial moments at a stage
+boundary. It does not prove the public paper's Cartesian five-moment claim.
+The selected direct prefix is still a Cartesian `VelocityField`, while
+`DefectIncrementBounds.barMoment` consumes a scalar radial profile after torus
+averaging. The required curl, cutoff, axis, tail, and projection calculation
+remains open. No selected `Delta m ≠ 0` and no selected-path `False` is
+recorded.
+
+Evidence: `NavierStokesReview/evidence/selected_cycle_mass_preservation_2026-09-25.md`.
+
+## CTR-051: selected angular component is now explicit
+
+The review-side completion
+`NavierStokesReview/src/completions/SelectedAngularComponentFormula.lean`
+proves the component-one identity for `meanAngularField`: it is the atlas
+scalar coefficient multiplied by the first Cartesian component of the
+totalised angular frame. This is a concrete refinement of the selected direct
+prefix, not a generic witness argument.
+
+The identity still stops before `barMoment`. The coefficient remains expressed
+through the physical atlas and radial projection, while `barMoment` requires a
+scalar radial profile after torus averaging. The next source-level check must
+evaluate that coefficient on a positive-radius band and retain cutoff, curl,
+axis, and tail terms. No selected `Delta m ≠ 0` or selected-path `False` has
+been proved.
+
+Evidence: `NavierStokesReview/evidence/selected_angular_component_formula_2026-09-25.md`.

@@ -809,3 +809,19 @@ The current selected-field source authority also includes
 That completion proves an actual selected direct-stage prefix identity. It
 does not yet provide the Cartesian-to-radial `barMoment` equality or a
 nonzero `Delta m`, so CTR-005 remains the active affirmative burden.
+
+The authority map additionally includes
+`NavierStokesReview/src/completions/SelectedCycleMasses.lean` and
+`NavierStokesReview/evidence/selected_cycle_mass_preservation_2026-09-25.md`.
+This completion proves `ZeroMassesOn` for every selected cycle state through
+the actual preservation theorem. It closes the proposed stage-level mass-leak
+attack, but it does not identify the final Cartesian velocity with the scalar
+radial profile consumed by `barMoment`. The selected curl, cutoff, axis, tail,
+and radial-integral calculation remains the active CTR-005 gate.
+
+The authority map also includes
+`NavierStokesReview/src/completions/SelectedAngularComponentFormula.lean`
+and `NavierStokesReview/evidence/selected_angular_component_formula_2026-09-25.md`.
+This completion exposes one concrete Cartesian component of the selected
+angular field. It narrows the next calculation but does not establish a
+nonzero moment remainder or a kernel contradiction.

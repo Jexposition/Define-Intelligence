@@ -156,3 +156,12 @@ corresponding selected cycle-state mean angular field. This strengthens the
 counter-paper's source claim. It still stops before the Cartesian-to-radial
 `barMoment` equality, so no nonzero `Delta m` or `False` theorem is
 claimed without that missing calculation.
+
+The review has also checked the selected recurrence itself. A zero-sorry
+completion proves that every selected cycle state carries the source
+`ZeroMassesOn` invariant, so a stage-level leak cannot be alleged merely from
+the two zero correction rows. A second completion exposes component one of
+the selected angular field as the physical-atlas coefficient times the
+corresponding angular-frame component. These results narrow the live test to
+the actual coefficient, cutoff derivatives, curl, axis/tail terms, and
+`barMoment`; they do not establish a nonzero remainder or `False`.

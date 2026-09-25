@@ -573,3 +573,18 @@ a concrete selected radial remainder, but does not label the result
 `Delta m ≠ 0` until that equality is proved.
 
 Evidence: `NavierStokesReview/evidence/selected_direct_prefix_field_2026-09-25.md`.
+
+## Selected-cycle preservation check: 2026-09-25
+
+The active selected recurrence is covered by the source's actual preservation
+theorem. `SelectedCycleMasses.lean` proves `ZeroMassesOn` for every selected
+cycle state. This means the review cannot honestly attribute a stage-level
+radial-moment leak to the two zero correction rows alone.
+
+The remaining burden is still field-level: the selected direct prefix is a
+Cartesian velocity, while `barMoment` consumes a scalar radial profile. The
+review must calculate the angular coefficient, cutoff and curl contributions,
+axis and outer-support terms, and torus average before asserting any nonzero
+remainder.
+
+Evidence: `NavierStokesReview/evidence/selected_cycle_mass_preservation_2026-09-25.md`.

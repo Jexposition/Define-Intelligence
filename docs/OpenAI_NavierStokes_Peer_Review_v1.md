@@ -1445,3 +1445,39 @@ of a completed five-moment Navier--Stokes solution remains **NOT
 ESTABLISHED** on the inspected record.
 
 Evidence: `NavierStokesReview/evidence/selected_direct_prefix_field_2026-09-25.md`.
+
+## Finding 46: the proposed stage mass leak is not present
+
+The active selected recurrence is definitionally the recurrence covered by
+`ActualCyclePreservation.state_invariant`. A zero-sorry review completion now
+proves that every selected cycle state carries `ZeroMassesOn`; the two
+preserved mean-state radial moments are not lost merely because the stages are
+iterated. This removes the unproved claim that the first two correction rows
+necessarily accumulate a stage-level remainder.
+
+The calculation is still not complete at the advertised field level. The
+selected direct prefix is a Cartesian velocity field, whereas `barMoment` is
+defined on scalar radial profiles after torus averaging. The remaining test
+must explicitly transport the selected coefficient through the angular frame,
+localisation masks, Cartesian curl, axis and outer-support terms, and the
+radial integral. No selected `Delta m ≠ 0` or `False` theorem has been proved.
+The publication claim therefore remains **NOT ESTABLISHED**, while this
+specific stage-leak objection is withdrawn as unsupported.
+
+Evidence: `NavierStokesReview/evidence/selected_cycle_mass_preservation_2026-09-25.md`.
+
+## Finding 47: the selected angular field has a concrete component formula
+
+The review now proves that component one of the selected angular mean field is
+the physical-atlas scalar coefficient times the corresponding component of the
+totalised angular frame. This supplies a concrete expression for the next
+radial calculation and confirms that the selected direct family is not being
+treated as an arbitrary abstract vector.
+
+The formula remains a positive-radius expression with the coefficient hidden
+behind the physical atlas. It does not by itself establish a moment mismatch.
+The remaining calculation must evaluate the coefficient, preserve all cutoff
+and curl terms, and compute the axis and outer-support contributions before a
+nonzero `Delta m` can be asserted.
+
+Evidence: `NavierStokesReview/evidence/selected_angular_component_formula_2026-09-25.md`.
