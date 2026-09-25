@@ -638,3 +638,52 @@ a fabricated contradiction.
 | Derive selected-path `False` | [ ] | Remains open; do not infer it from the correction-row interface alone. |
 
 Evidence: `NavierStokesReview/evidence/ctr005_profile_tail_collision_route_2026-09-25.md`.
+
+## Field-level remainder calculation: 2026-09-25
+
+This is the remaining route to a kernel-level contradiction. It must evaluate
+the selected fields, not merely restate the missing bridge.
+
+| Work item | Status | Required result |
+|---|---:|---|
+| Trace `potentialSum` as the actual natural-indexed `tsum` of cut stages | [x] | `SolenoidalDiagonal.lean:20-39`; finite-tail/local-prefix lemmas recorded |
+| Trace the Cartesian construction before projection | [x] | `ActualCandidateConstruction.lean:509-520,963-966`; `ActualMeanPotentialRealization.lean:29-40,630-648`; `DirectAngularDiagonal.lean:65-71,231-237` |
+| Trace `barMoment` and `FiveRows` after profile formation | [x] | `DefectIncrementBounds.lean:214-220`; `FiveRowRank.lean:241+`; rows constrain `dv` and `ga` |
+| Prove a Cartesian-curl to radial-profile identity for the selected `tsum` | [ ] | Explicit theorem with all coordinate changes and endpoint hypotheses |
+| Check cutoff-mask derivative terms | [ ] | Evaluate whether derivatives of localization masks enter the selected radial moments; do not infer a leak from absence of a preservation lemma |
+| Check curl/projection boundary terms at the axis and infinity | [ ] | Concrete boundary value or inequality, not a generic pressure/localization objection |
+| Check finite-prefix moments before the infinite tail is active | [ ] | Exhibit a stage and a value of `t` with an exact nonzero remainder, if one exists |
+| Derive `False` from a selected nonzero remainder | [ ] | Zero-sorry theorem combining the actual selected-field identity with the correction invariant |
+
+The review-side scanner
+`NavierStokesReview/tools/radial_profile_integrals.py` is a symbolic
+calculation aid. It accepts explicit profile expressions and computes the five
+integrals and their residuals against the promoted debt vector. It does not
+pretend to extract a Cartesian expression from Lean. A remainder becomes
+evidence only after the expression is linked to the selected field by a Lean
+theorem.
+
+## Companion Euler interval audit: 2026-09-25
+
+The Euler parent-child route is tracked separately. The source audit found
+geometric contraction and positive common horizons, but no theorem establishing
+a quiet Zeno endpoint before the advertised singular time. The seam
+constructions prove value and first-derivative matching. An all-order time-jet
+theorem across every parent-child seam remains an open check; it must not be
+converted into a discontinuity claim without a concrete unmatched jet. The
+audit is recorded in `docs/Euler_Parent_Child_Interval_Audit.md` and
+`NavierStokesReview/evidence/euler_parent_child_interval_audit_2026-09-25.md`.
+
+## Current execution order
+
+1. Extract the exact selected profile expressions and active cutoff regions.
+2. Build the Cartesian-to-cylindrical moment theorem, including axis and tail
+   boundary terms.
+3. Run the symbolic scanner on those exact expressions and record any nonzero
+   remainder.
+4. Attempt the zero-sorry contradiction only if the selected equality and a
+   nonzero value are both available.
+5. Update the paper, peer review, tracker, and control record with the result;
+   keep the publication verdict and kernel-level verdict separate.
+
+**Last updated:** 2026-09-25

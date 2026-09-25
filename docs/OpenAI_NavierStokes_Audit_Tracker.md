@@ -1458,3 +1458,58 @@ route strengthens CTR-005 as the main field-level target; it does not yet
 produce `False`.
 
 Evidence: `NavierStokesReview/evidence/ctr005_profile_tail_collision_route_2026-09-25.md`.
+
+## CTR-045: selected Cartesian-to-radial remainder search
+
+The source trace follows the actual selected construction rather than assuming
+that upstream profile identities apply automatically. The field path is
+
+$$
+\texttt{potentialSum}
+\longrightarrow \texttt{cutStage/SpatialCurl}
+\longrightarrow \text{Cartesian field}
+\longrightarrow \text{cylindrical profile}
+\longrightarrow \texttt{barMoment}.
+$$
+
+`SolenoidalDiagonal.lean:20-39` defines the natural-indexed sum of cut stages.
+`ActualCandidateConstruction.lean:509-520,963-966` supplies the charted stage
+fields. `ActualMeanPotentialRealization.lean:29-40` and
+`DirectAngularDiagonal.lean:65-71,231-237` expose the meridional and angular
+Cartesian constructions. `DefectIncrementBounds.lean:214-220` defines the
+radial/toroidal `barMoment`, while `FiveRowRank.lean:241+` constrains the
+correction profiles `dv` and `ga`.
+
+No selected-field theorem currently evaluates this entire composition. The
+remaining test is concrete: calculate finite-prefix and tail contributions,
+including derivatives of localisation masks and axis/tail boundary terms, and
+search for an exact nonzero remainder. The symbolic helper
+`NavierStokesReview/tools/radial_profile_integrals.py` is deliberately only a
+calculation aid until such a Lean equality is proved.
+
+| Check | Result |
+|---|---|
+| `tsum` and local finite-tail behaviour traced | Confirmed |
+| Cartesian stage and curl constructions traced | Confirmed |
+| `barMoment`/`FiveRows` scope traced | Confirmed; correction-profile scope |
+| Exact selected Cartesian-to-radial identity | Open |
+| Exact selected nonzero remainder | Open |
+| Selected-path `False` | Not derived |
+
+Classification: **live kernel-level falsification target**, not a completed
+contradiction. Evidence:
+`NavierStokesReview/evidence/selected_field_remainder_trace_2026-09-25.md`.
+
+## CTR-046: Euler parent-child interval audit
+
+The companion Euler source was checked independently. `PacketSourceScaleSequence`
+and `PacketSourceScaleGuards` prove positive widths and controlled contraction;
+`PacketNestedHorizons` proves positive common horizons and monotone activation;
+`IntervalPathConcatenation`, `TimeIntervalGlue`, and the joined-path modules
+require and use value plus first-derivative matching at seams. The inspected
+source does not establish the proposed quiet Zeno endpoint or a first-order
+temporal jump. An all-order jet audit remains open and must be supported by an
+explicit unmatched derivative before being called a defect.
+
+Evidence: `docs/Euler_Parent_Child_Interval_Audit.md` and
+`NavierStokesReview/evidence/euler_parent_child_interval_audit_2026-09-25.md`.

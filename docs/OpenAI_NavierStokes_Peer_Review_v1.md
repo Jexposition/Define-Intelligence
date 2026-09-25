@@ -1335,3 +1335,33 @@ required to reject an affirmative claim whose load-bearing correspondence is
 not exported.
 
 Evidence: `NavierStokesReview/evidence/selected_endpoint_moment_transport_obstruction_2026-09-25.md`.
+
+## Finding 41: the live route is an actual selected-field remainder
+
+The review has now narrowed the remaining kernel-level attack to a concrete
+calculation. `potentialSum` is a natural-indexed sum of cut stages. The selected
+stage fields are then passed through spatial curl and Cartesian chart maps,
+while `barMoment` is formed later as a radial/toroidal profile integral. The
+two zero rows in `FiveRows` constrain the correction profiles `dv` and `ga`;
+they do not, by themselves, constrain the total Cartesian sum.
+
+The required contradiction is therefore explicit: calculate the selected
+finite-prefix and tail profile contributions, include derivatives of
+localisation masks and axis/tail boundary terms, and prove a nonzero remainder.
+Only then can the correction invariant be combined with the selected field to
+derive `False`. The symbolic radial-integral helper records candidate
+calculations but does not substitute for the missing Lean field identity.
+
+This is a stronger objection than repeating that a bridge is absent. It
+identifies the exact expression that must be evaluated and the exact point at
+which a symbolic leak would become a kernel contradiction. No nonzero selected
+remainder is asserted without that calculation.
+
+## Finding 42: companion Euler interval result
+
+The parent-child Euler interval audit does not support the proposed simple
+Zeno or first-order seam-discontinuity argument. The inspected source proves
+positive interval geometry and uses explicit value and first-derivative matching
+in its joining lemmas. An all-order time-jet theorem remains an open question,
+but a higher-order defect must be exhibited before it can support a refutation.
+This result is kept separate from the Navier–Stokes selected-field finding.

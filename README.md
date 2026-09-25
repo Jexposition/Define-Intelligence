@@ -118,3 +118,16 @@ which does not encode force independence or perturbation stability. See
 [`docs/OpenAI_NavierStokes_Peer_Review_v1.md`](docs/OpenAI_NavierStokes_Peer_Review_v1.md)
 and
 [`NavierStokesReview/evidence/fixed_force_stability_extension_2026-09-24.md`](NavierStokesReview/evidence/fixed_force_stability_extension_2026-09-24.md).
+
+The current review also tracks the remaining field-level test rather than
+assuming that upstream profile identities apply to the exported field. The
+selected natural-indexed `tsum` must be followed through spatial curl,
+localisation, Cartesian-to-cylindrical projection, and `barMoment`. A concrete
+nonzero remainder would combine with the correction invariant to give a
+kernel-level contradiction; until then, the result is a load-bearing
+correspondence failure and the affirmative solution claim remains
+**NOT ESTABLISHED**. The companion Euler interval audit found controlled
+contraction and explicit value/first-derivative seam matching, so its proposed
+Zeno and first-order-jump objections are not currently source-supported.
+See [`docs/Euler_Parent_Child_Interval_Audit.md`](docs/Euler_Parent_Child_Interval_Audit.md)
+and [`NavierStokesReview/tools/radial_profile_integrals.py`](NavierStokesReview/tools/radial_profile_integrals.py).

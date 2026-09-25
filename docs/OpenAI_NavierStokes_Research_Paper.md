@@ -1212,3 +1212,43 @@ definitions; the paper therefore treats it as a separate integrity defect,
 not as a substitute for the unresolved selected-field contradiction.
 
 Evidence: `NavierStokesReview/evidence/repository_admission_axiom_log_2026-09-25.md`.
+
+## Remaining field-level calculation
+
+The next question is not whether the repository contains five-moment
+definitions. It does. The question is whether the moments used in the paper are
+the moments of the selected fields exported by the theorem.
+
+The selected velocity is assembled as a natural-indexed sum of cut stages. The
+source path runs from `SolenoidalDiagonal.potentialSum`, through the spatial
+curl and the Cartesian chart construction, into cylindrical components and
+finally into the radial/toroidal `barMoment` interface. `FiveRows` then imposes
+zero identities on correction profiles. Those are meaningful upstream facts,
+but they are not automatically identities for the total selected field.
+
+This leaves a precise possible refutation. One must compute the finite-prefix
+and tail contributions, retain derivatives of every localisation mask, account
+for axis and far-field boundary terms, and exhibit an exact nonzero remainder
+that the selected field is required to have while the correction invariant
+requires zero. A symbolic helper has been added for the five profile integrals,
+but it is intentionally not treated as proof: it becomes evidence only when a
+Lean theorem identifies its input expressions with the selected Cartesian
+field. Until that calculation is completed, the five-moment objection is a
+failure to establish the advertised mechanism, not an assertion that the
+selected physical integral is false.
+
+## Companion Euler interval audit
+
+The companion Euler construction was checked as a separate claim. Its source
+proves positive interval widths, controlled contraction, positive common
+horizons, and value plus first-derivative matching at the inspected seams. The
+source therefore does not support the proposed first-order temporal jump or a
+quiet Zeno endpoint. An all-order time-jet matching theorem across every seam
+has not been identified and remains a legitimate review question. It should be
+resolved by an explicit higher-order mismatch, not inferred from the existence
+of discrete parent and child stages.
+
+These two results sharpen the burden of proof. The advertised work is still
+**NOT ESTABLISHED** as a complete solution record because the selected-field
+five-moment composition is not exposed. The literal whole-space C/D endpoint
+is not called formally refuted without a concrete selected-field contradiction.

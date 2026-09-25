@@ -765,3 +765,25 @@ findings: CTR-005, the load-bearing selected-field correspondence failure, and
 CTR-042, the confirmed repository-wide admission defect. Neither is inflated
 into a selected-path `False` theorem without a direct dependency or false
 mandatory premise.
+
+## Current field-level and companion audits: 2026-09-25
+
+The active plan now contains the exact route for upgrading CTR-005 from an
+interface objection to a selected-path contradiction: evaluate the actual
+Cartesian `tsum`, its curl and localisation terms, its cylindrical profile,
+and the resulting `barMoment` values. The correction rows are not being
+misreported as total-field moment identities. The symbolic helper is only a
+calculation aid; a nonzero remainder must still be linked to the selected field
+by a zero-sorry Lean theorem before `False` is claimed.
+
+The Euler parent-child interval audit is a separate companion record. It found
+controlled interval contraction and explicit value/first-derivative seam
+matching, not the proposed Zeno or first-order discontinuity. Higher-order jet
+matching remains an identified question, not a settled defect.
+
+Authority additions:
+
+- `docs/Euler_Parent_Child_Interval_Audit.md`
+- `NavierStokesReview/evidence/euler_parent_child_interval_audit_2026-09-25.md`
+- `NavierStokesReview/tools/radial_profile_integrals.py`
+- `NavierStokesReview/evidence/selected_field_remainder_trace_2026-09-25.md`
