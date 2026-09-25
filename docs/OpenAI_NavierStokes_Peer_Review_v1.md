@@ -1611,3 +1611,23 @@ integration, and boundary terms. No selected `Delta m ≠ 0` or `False` has been
 proved.
 
 Evidence: `NavierStokesReview/evidence/selected_direct_stage_moment_transport_2026-09-25.md`.
+
+## Finding 55: selected potential-stage chart equality
+
+The review-side completion `SelectedPotentialStageChartTransport.lean` now
+checks the potential branch at the field level. On the actual Cartesian chart
+domain, the curl of each selected potential stage agrees with the potential
+field supplied by the selected stage-realisation structure. This closes a
+local source correspondence that had previously been only described through
+the surrounding construction.
+
+The result is deliberately narrower than the paper's five-moment conclusion.
+The exported velocity is still a curled potential sum plus a separately added
+direct angular sum. The new theorem does not identify the potential field with
+the scalar radial input of `barMoment`, and it does not prove the required
+torus-average, axis, outer-support, or boundary identities. Accordingly, no
+selected nonzero `Delta m` or kernel-level `False` follows from it. The
+publication claim remains **NOT ESTABLISHED** until the complete selected
+Cartesian-to-radial transport is proved.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_stage_chart_transport_2026-09-25.md`.

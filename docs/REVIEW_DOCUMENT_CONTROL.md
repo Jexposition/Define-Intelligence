@@ -899,3 +899,18 @@ solution claim, with the selected Cartesian-to-radial transport still open.
 
 Build record: `elan run leanprover/lean4:v4.34.0-rc2 lake build
 NavierStokesReview`; 3703 jobs completed successfully.
+
+## Selected potential-stage chart transport: 2026-09-25
+
+Authority is added for
+`NavierStokesReview/src/completions/SelectedPotentialStageChartTransport.lean`
+and
+`NavierStokesReview/evidence/selected_potential_stage_chart_transport_2026-09-25.md`.
+The zero-sorry theorem proves the selected potential-stage curl equality on the
+actual Cartesian chart domain by consuming the source
+`StageRealizations.potential` field equality. It is selected-path field
+evidence only. It does not establish the scalar `barMoment` transport, a
+nonzero `Delta m`, or `False`.
+
+Build record: `elan run leanprover/lean4:v4.34.0-rc2 lake build
+NavierStokesReview`; 3704 jobs completed successfully.

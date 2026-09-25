@@ -1550,3 +1550,41 @@ remainder are available, the publication claim remains **NOT ESTABLISHED**,
 but a kernel-level `False` has not been obtained.
 
 Evidence: `NavierStokesReview/evidence/selected_direct_stage_moment_transport_2026-09-25.md`.
+
+## Local transport of the selected potential stage
+
+The selected construction now admits a source-level field identity for its
+potential branch. For each selected stage index satisfying the construction's
+residual-band condition, the spatial curl of the selected potential stage
+agrees on the actual Cartesian chart domain with the potential field supplied
+by the stage-realisation structure. In symbols, on that chart domain,
+
+$$
+\mathrm{curl}(A_{\mathrm{selected},k})
+=P_{\mathrm{selected},k}.
+$$
+
+This result matters because the published moment argument cannot begin from a
+generic potential placeholder; it must first identify the actual selected
+field that enters the exported velocity. The identity supplies that local
+field correspondence without adding axioms or admitted proof gaps.
+
+It does not, however, complete the claimed five-moment argument. The
+production velocity has the form
+
+$$
+u_{\mathrm{selected}}
+=\mathrm{curl}\!\left(\sum_j \chi_j A_j\right)
+ +\sum_j \chi_j B_j,
+$$
+
+so the remaining proof must transport the curled potential branch and the
+separately added direct branch through the cylindrical component map, torus
+average, radial integration, axis treatment, and outer-support boundary. A
+local chart equality is not a nonzero selected remainder. No proof of
+\(\Delta m\ne 0\) or of a kernel contradiction has been obtained. The review
+therefore continues to find the published solution claim **NOT ESTABLISHED**
+while preserving the distinction between a missing semantic bridge and a
+formal contradiction.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_stage_chart_transport_2026-09-25.md`.

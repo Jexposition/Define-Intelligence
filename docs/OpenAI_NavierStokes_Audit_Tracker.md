@@ -1786,3 +1786,37 @@ Evidence: `NavierStokesReview/evidence/selected_direct_stage_moment_transport_20
 Build: `elan run leanprover/lean4:v4.34.0-rc2 lake build NavierStokesReview`;
 3703 jobs completed successfully with no new `sorry`, custom axiom, or
 `unsafe` declaration.
+
+## CTR-059: selected potential-stage chart transport
+
+`SelectedPotentialStageChartTransport.lean` now proves the selected
+potential-stage curl equality on the actual Cartesian chart domain. For every
+selected stage index satisfying the source residual-band condition, the curl
+of `selectedPotentialStages k` agrees on that domain with the corresponding
+`CyclePhysicalPrefixes.potentialParts` field supplied by
+`ActualPhysicalPrefixFields.StageRealizations`.
+
+Source anchors:
+
+- `NavierStokes/SolenoidalDiagonal.lean:111-126, 318-327` for the cut
+  potential, potential sum, and velocity curl;
+- `NavierStokes/ActualCandidateAssembly.lean:531-533` for the selected
+  potential-stage definition;
+- `NavierStokes/ActualCandidateAssembly.lean:911-938, 1025-1056,
+  1059-1082, 1165-1168` for chart potentials, chart transport, and selected
+  aliases;
+- `NavierStokes/ActualPhysicalPrefixFields.lean:342-356` for the stage
+  realization field;
+- `NavierStokesReview/src/completions/SelectedPotentialStageChartTransport.lean:21-44`
+  for the review theorem.
+
+This is selected-path field evidence. It closes a local chart equality only.
+It does not prove that the potential branch has a nonzero radial `barMoment`,
+does not supply the torus-average, axis, support, or boundary transport, and
+does not establish `Delta m ≠ 0` or `False`.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_stage_chart_transport_2026-09-25.md`.
+
+Build: `elan run leanprover/lean4:v4.34.0-rc2 lake build NavierStokesReview`;
+3704 jobs completed successfully with no new `sorry`, custom axiom, or
+`unsafe` declaration.

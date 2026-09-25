@@ -675,3 +675,14 @@ remainder, while leaving the potential/curl branch and the final mixed
 Cartesian-to-radial transport unresolved.
 
 Evidence: `NavierStokesReview/evidence/selected_direct_stage_moment_transport_2026-09-25.md`.
+
+## Selected potential-stage chart equality
+
+The selected potential branch now has a compiled chart transport theorem. On
+the source Cartesian chart domain, the spatial curl of each selected potential
+stage agrees with the corresponding `StageRealizations.potential` field. This
+is the correct local field equality for the potential branch, but it is not a
+radial `barMoment` identity. The torus average, axis and support limits,
+boundary terms, and final mixed-field comparison remain open.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_stage_chart_transport_2026-09-25.md`.

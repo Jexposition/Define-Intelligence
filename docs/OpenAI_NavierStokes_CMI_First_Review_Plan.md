@@ -247,11 +247,11 @@ proposal. Never describe a generic probe as a selected contradiction.
 
 | Gate | Acceptance test | Status |
 |---|---|---:|
-| Lean review tree | `lake build NavierStokesReview` under Lean `v4.34.0-rc2`; no errors, `sorry`, custom axioms, or `unsafe` in new review modules. | `[x]` 3703 jobs |
+| Lean review tree | `lake build NavierStokesReview` under Lean `v4.34.0-rc2`; no errors, `sorry`, custom axioms, or `unsafe` in new review modules. | `[x]` 3704 jobs |
 | Build hygiene | No tracked `.olean`, `.ilean`, `.c`, or `.lake` outputs. | `[x]` |
 | Python helper | Run the radial helper with the canonical V-lab interpreter after its path is repaired. | `[ ]` |
-| Documentation | New evidence cited in tracker, axiom ledger, synthesis, peer review, paper, README, control map, and this plan. | `[x]` direct-stage result synchronised |
-| Release | Commit and push only review source, evidence, and documents; leave supplied PDFs and scratch space untracked. | `[x]` pushed at `89af746` |
+| Documentation | New evidence cited in tracker, axiom ledger, synthesis, peer review, paper, README, control map, and this plan. | `[~]` potential chart result being synchronised |
+| Release | Commit and push only review source, evidence, and documents; leave supplied PDFs and scratch space untracked. | `[ ]` pending current synchronisation |
 
 ## Immediate execution order
 
@@ -268,11 +268,20 @@ proposal. Never describe a generic probe as a selected contradiction.
 6. Calculate `Delta m`; only then attempt the zero-sorry `False` theorem.
 7. Record the result across the evidence ledger and active counter-paper.
 
-**Current stopping point:** the mixed-field order and the direct scalar
-stage-moment result are source-verified, but no selected nonzero remainder and
-no selected kernel contradiction have yet been proved. The active burden is
-now the Cartesian-to-radial transport of the curl-generated potential summand
-and its comparison with the already-zero direct scalar branch.
+The current potential-stage source result is `selected_potential_stage_curl_on_chart`
+in `NavierStokesReview/src/completions/SelectedPotentialStageChartTransport.lean`.
+It discharges the selected chart-field equality, but not the scalar radial
+operator required by `barMoment`. The next calculation must preserve the
+actual two-branch production order: curled potential sum plus separately added
+direct angular sum.
+
+**Current stopping point:** the mixed-field order, the direct scalar
+stage-moment result, and the selected potential-stage chart equality are
+source-verified. No selected nonzero remainder and no selected kernel
+contradiction have yet been proved. The active burden is now the
+Cartesian-to-radial transport of the curl-generated potential summand,
+including torus average, axis/support limits, and comparison with the already
+zero direct scalar branch.
 
 ## Source anchors
 

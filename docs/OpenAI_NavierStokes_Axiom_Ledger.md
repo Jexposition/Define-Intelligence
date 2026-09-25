@@ -964,3 +964,15 @@ branch only; it adds no premise connecting that branch to the final mixed
 Cartesian field.
 
 Evidence: `NavierStokesReview/evidence/selected_direct_stage_moment_transport_2026-09-25.md`.
+
+## AX-060: selected potential chart transport has no new axioms
+
+`SelectedPotentialStageChartTransport.lean` proves the selected potential
+branch's chart equality from the existing `StageRealizations.potential`
+theorem and the selected construction parameters. It adds no `sorry`, custom
+axiom, or `unsafe` declaration. The result is a field-level transport fact,
+not a radial-moment identity and not a contradiction. The missing
+Cartesian-to-radial, torus-average, support, and boundary composition remains
+an open proof obligation.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_stage_chart_transport_2026-09-25.md`.

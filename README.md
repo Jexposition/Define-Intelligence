@@ -231,3 +231,11 @@ yet transport the identity to the final mixed Cartesian field or prove
 Cartesian-to-radial calculation.
 
 Evidence: [`selected_direct_stage_moment_transport_2026-09-25.md`](NavierStokesReview/evidence/selected_direct_stage_moment_transport_2026-09-25.md).
+
+The latest selected-path completion also proves the potential-stage curl
+equality on the actual Cartesian chart domain. This closes a local field
+correspondence for the potential branch, but not the radial `barMoment`
+transport. The remaining calculation must still include the separate direct
+branch, torus average, axis/support limits, and boundary terms before any
+`Delta m` or `False` result can be claimed. See
+[`selected_potential_stage_chart_transport_2026-09-25.md`](NavierStokesReview/evidence/selected_potential_stage_chart_transport_2026-09-25.md).
