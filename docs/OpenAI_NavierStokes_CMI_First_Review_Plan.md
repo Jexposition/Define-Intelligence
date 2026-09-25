@@ -717,6 +717,31 @@ path-dependence of the residual construction but do not negate the literal
 existential quantifier. The burden remains on the published solution claim to
 provide the selected-field transport and moment identities.
 
+## Selected finite-prefix completion: 2026-09-25
+
+The first selected-field theorem beyond the generic endpoint has now been
+compiled in
+`NavierStokesReview/src/completions/SelectedFieldFinitePrefix.lean`.
+
+| Calculation target | Status | Exact consequence |
+|---|---:|---|
+| Selected schedule is concrete | [x] | `selected_witness` supplies the schedule used by the selected stage aliases. |
+| Selected potential `tsum` is locally finite | [x] | `potentialSum_eventuallyEq_partial` gives a finite prefix at every positive preterminal point. |
+| All local jets use the same finite prefix | [x] | `potentialSum_allJets_eventuallyEq_partial` gives the result for every iterated derivative order. |
+| Empty-filter or empty-tail explanation | [x] | Not available on the selected preterminal path; the tail is exactly zero after a finite index. |
+| Cartesian-to-radial transport | [ ] | Still requires a theorem from the selected Cartesian `VelocityField` through curl, cylindrical projection, torus averaging, and `barMoment`. |
+| Cutoff derivative contribution | [ ] | Must retain derivatives of `SmoothCutoffs.scaledCutoff`; smoothness alone is not a cancellation identity. |
+| Axis and outer-support terms | [ ] | Must be evaluated for the selected field rather than inferred from generic support lemmas. |
+| Selected nonzero remainder `Delta m ≠ 0` | [ ] | No source-backed value or inequality has been established. |
+| Kernel contradiction | [ ] | Requires the preceding selected equality and nonzero value; no `False` theorem exists yet. |
+
+This completion changes the status of the live route in one important way:
+the selected series is not being treated as a vacuous limit. It does not,
+however, prove that the paper's radial moments are wrong. The remaining test
+is a real field-level calculation, not a restatement of the missing bridge.
+Full source ledger:
+`NavierStokesReview/evidence/selected_field_finite_prefix_transport_2026-09-25.md`.
+
 ## Companion Euler route boundary
 
 The parent-child Euler interval audit remains a separate investigation. The

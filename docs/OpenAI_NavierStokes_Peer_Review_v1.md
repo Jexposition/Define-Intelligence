@@ -1388,3 +1388,33 @@ supports a failure to establish the advertised five-moment solution
 mechanism, not a fabricated selected-path `False` theorem. The symbolic
 calculator is evidence only after its input expressions are linked to the
 selected field.
+
+## Finding 44: selected series is non-vacuous, radial moment remains unproved
+
+The review has now checked the actual selected series rather than stopping at
+the type boundary. `selected_witness` supplies a concrete schedule, and
+`SolenoidalDiagonal.potentialSum_eventuallyEq_partial` proves that at every
+positive preterminal point the selected `tsum` is locally a finite prefix.
+`potentialSum_allJets_eventuallyEq_partial` proves the same statement for all
+iterated Frechet derivatives. The selected construction therefore cannot be
+dismissed as an empty-limit artefact.
+
+That result does not close the paper's five-moment argument. The selected
+field is a Cartesian `VelocityField` assembled from cutoff potentials and
+spatial curls. `barMoment`, by contrast, is defined on a scalar radial-profile
+field after torus averaging. The inspected source contains no theorem that
+performs this conversion for the selected field. `NominalProfile` contains an
+explicit five-coordinate formula for nominal profiles, but it does not prove
+that the formula is the moment vector of the selected mixed `tsum`.
+
+The remaining falsification test is consequently concrete: expand one local
+finite prefix, retain all derivatives of the localisation masks, transport
+the curl through the positive-radius chart, evaluate the axis and outer-tail
+terms, and only then apply `barMoment_apply`. A nonzero resulting remainder
+would combine with the correction invariant to yield a zero-sorry `False`
+theorem. No such selected `Delta m` has yet been proved, so this finding is a
+strengthened, source-level burden-of-proof objection rather than a claimed
+formal refutation.
+
+Evidence:
+`NavierStokesReview/evidence/selected_field_finite_prefix_transport_2026-09-25.md`.

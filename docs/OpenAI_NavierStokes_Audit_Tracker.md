@@ -1549,3 +1549,24 @@ total kinetic-energy identities; smooth localisation is not a discontinuity;
 and fixed-force perturbation brittleness is not by itself a contradiction of
 the existential C/D proposition. The affirmative five-moment selected-field
 transport remains the authors' burden.
+
+## CTR-048: selected finite-prefix transport is non-vacuous
+
+The review-side completion
+`NavierStokesReview/src/completions/SelectedFieldFinitePrefix.lean` imports
+the actual `selected_witness` and proves that the selected potential `tsum` is
+eventually equal to a finite prefix at every positive preterminal point. It
+also proves that the same finite prefix represents every iterated Frechet jet.
+This closes the empty-tail and empty-filter version of the selected-series
+objection.
+
+The result sharpens, rather than removes, CTR-005. The selected sum is a real
+locally finite Cartesian construction, but the source still provides no
+theorem identifying that Cartesian field, after curl and localisation, with
+the scalar radial profile consumed by `DefectIncrementBounds.barMoment`. The
+nominal five-row formula in `NominalProfile.outgoing_moments_ideal` is not
+such an identification. No selected nonzero remainder `Delta m ≠ 0` or
+selected path `False` has been established.
+
+Evidence:
+`NavierStokesReview/evidence/selected_field_finite_prefix_transport_2026-09-25.md`.

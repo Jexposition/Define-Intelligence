@@ -131,3 +131,20 @@ contraction and explicit value/first-derivative seam matching, so its proposed
 Zeno and first-order-jump objections are not currently source-supported.
 See [`docs/Euler_Parent_Child_Interval_Audit.md`](docs/Euler_Parent_Child_Interval_Audit.md)
 and [`NavierStokesReview/tools/radial_profile_integrals.py`](NavierStokesReview/tools/radial_profile_integrals.py).
+
+## Current selected-field calculation
+
+The selected potential series is not an empty-limit artefact. A review-side
+Lean completion proves that `selected_witness` supplies a concrete schedule,
+that the selected `tsum` is locally equal to a finite prefix at every positive
+preterminal point, and that the same prefix represents every iterated jet.
+This closes the vacuity route without supplying the authors' missing physical
+calculation.
+
+The remaining question is whether that concrete Cartesian finite prefix,
+including cutoff derivatives and curl terms, has the five radial moments used
+in the paper. The repository still exposes no theorem transporting the
+selected `VelocityField` into the scalar `barMoment` input. A symbolic helper
+can calculate an explicitly supplied radial profile, but it cannot silently
+identify that profile with the selected field. The review therefore records a
+live route to a kernel contradiction, not a fabricated one.

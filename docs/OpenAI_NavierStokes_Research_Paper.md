@@ -1282,3 +1282,32 @@ affirmative paper claim, while the present publication verdict remains
 The companion Euler interval study remains separate. Positive interval
 geometry and value/first-derivative seam matching are source-supported; a
 quiet Zeno endpoint and an all-order time-jet mismatch remain unproved.
+
+## Selected series and the remaining moment calculation
+
+The review has now followed the selected potential series into a concrete
+finite-prefix theorem. The selected schedule is supplied by
+`ActualCandidateAssembly.selected_witness`. At every positive preterminal
+point, `SolenoidalDiagonal.potentialSum` is locally equal to a finite sum of
+the selected stages, and the same finite sum represents every iterated Frechet
+jet. This rules out an empty-limit explanation for the selected field.
+
+The result also makes the remaining burden exact. The selected field is built
+as a Cartesian velocity from localised potentials and spatial curls. The
+paper's five moments, however, are consumed through a scalar radial profile
+and torus average in `DefectIncrementBounds.barMoment`. The nominal profile
+module proves an explicit five-coordinate formula for its own ideal profiles;
+the source does not identify that formula with the selected Cartesian sum.
+
+The next calculation must therefore retain cutoff derivatives, carry the curl
+through the positive-radius cylindrical chart, and evaluate the axis and
+outer-support terms before applying `barMoment_apply`. If those exact terms
+produce a nonzero selected remainder, it can be combined with the zero-row
+correction invariant in a zero-sorry contradiction. At present no such
+selected `Delta m` has been proved. The honest conclusion is stronger than a
+generic missing-bridge complaint but narrower than a formal disproof: the
+published five-moment solution claim remains **NOT ESTABLISHED** until this
+selected-field calculation is supplied.
+
+Evidence:
+`NavierStokesReview/evidence/selected_field_finite_prefix_transport_2026-09-25.md`.
