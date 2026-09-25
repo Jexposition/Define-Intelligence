@@ -838,3 +838,20 @@ the radial history/profile inputs. This is a proof of the route's exact scope,
 not an admission and not a clearance of CTR-005.
 
 Evidence: `NavierStokesReview/evidence/ctr005_profile_tail_collision_route_2026-09-25.md`.
+
+## AX-050: selected direct-prefix identity does not yet reach radial moments
+
+`NavierStokesReview/src/completions/SelectedDirectPrefixField.lean` proves,
+without admissions, that the selected direct stages are the actual angular
+mean stages and that each uncut finite prefix equals the selected cycle-state
+mean angular field. This establishes concrete selected-field transport through
+the stage recurrence.
+
+It does not prove a `barMoment` equality. The target types remain different:
+the selected prefix is a Cartesian spacetime `VelocityField`, whereas
+`DefectIncrementBounds.barMoment` takes a scalar radial-profile field and
+then integrates its torus average. Therefore the selected-field radial
+calculation and any nonzero remainder remain open. This entry strengthens the
+affirmative burden under CTR-005 without claiming a `False` theorem.
+
+Evidence: `NavierStokesReview/evidence/selected_direct_prefix_field_2026-09-25.md`.

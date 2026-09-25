@@ -148,3 +148,11 @@ selected `VelocityField` into the scalar `barMoment` input. A symbolic helper
 can calculate an explicitly supplied radial profile, but it cannot silently
 identify that profile with the selected field. The review therefore records a
 live route to a kernel contradiction, not a fabricated one.
+
+The selected-field trace is now concrete at the direct-stage level:
+`SelectedDirectPrefixField.lean` proves that the selected direct stages are
+the actual angular mean stages and that each uncut finite prefix equals the
+corresponding selected cycle-state mean angular field. This strengthens the
+counter-paper's source claim. It still stops before the Cartesian-to-radial
+`barMoment` equality, so no nonzero `Delta m` or `False` theorem is
+claimed without that missing calculation.

@@ -554,3 +554,22 @@ outer-support terms, evaluate one finite selected prefix, and prove an exact
 nonzero remainder. The symbolic radial-integral helper is only a calculator
 until that profile is identified in Lean. No numerical leak or kernel `False`
 is claimed without the selected equality.
+
+## Selected-field calculation update: direct prefix
+
+The latest source-backed completion identifies an actual selected field rather
+than only a generic witness interface. `selectedDirectStages` is identified
+with the source's `angularMeanStages`, and every uncut finite prefix is
+identified with the corresponding selected cycle-state mean angular field.
+This confirms that the direct stage path is substantive.
+
+The result also fixes the next burden precisely. `DirectAngularDiagonal`
+puts the cutoff on the angular field, while
+`ActualMeanPotentialRealization` transports meridional data through a
+Cartesian curl on a positive-radius chart. `barMoment` is later defined for
+a scalar radial profile after torus averaging. No theorem in the inspected
+selected path identifies these types. The review therefore continues to target
+a concrete selected radial remainder, but does not label the result
+`Delta m ≠ 0` until that equality is proved.
+
+Evidence: `NavierStokesReview/evidence/selected_direct_prefix_field_2026-09-25.md`.

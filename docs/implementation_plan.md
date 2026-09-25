@@ -17,9 +17,12 @@
 | W7 | Re-audit live upstream five-moment construction against selected mixed endpoint | [x]/[ ] | Upstream identities and base blow-up compile; final mixed-sum transport remains open. |
 | W8 | Connect `VanishingJointJets` to the origin residual and blow-up | [x]/[~] | All-order `VanishingJointJets` and the selected force-to-origin composition are source-traced and compiled. A contradiction still requires a selected PDE lower bound. |
 | W9 | Rewrite the peer review and research paper as human-readable papers | [x] | The research paper is now a single coherent argument; the peer review retains its evidence findings and states the same verdict boundary. |
-| W10 | Run all probes, lint documents, and package branch | [x]/[~] | On 2026-09-24, `lake build NavierStokesReview` completed 3,688 jobs and `lake build NavierStokes` completed 9,580 jobs under Lean 4.34.0-rc2. The exported comparator reports only standard axioms. `700e39d` remains the last confirmed remote baseline; newer review commits remain local pending GitHub authentication. No tracked build artefacts exist. |
+| W10 | Run all probes, lint documents, and package branch | [x] | On 2026-09-25, `lake build NavierStokesReview` completed 3,694 jobs under Lean 4.34.0-rc2. The exported comparator reports only standard axioms. Review commit `c9adab3` is pushed to the review branch. No tracked build artefacts exist. |
 | W11 | Expose the internal selected-cycle radial invariant | [x] | `SelectedCycleMomentTransport.lean` compiles and obtains `state_invariant.masses` for every selected cycle stage. |
 | W12 | Connect the internal invariant to the exported mixed witness and paper tuple | [~] | The cycle invariant is proved, but `Witness` still exposes no equality to `(M,I,J,S,C_p)`; this is the active transport target. |
+| W13 | Calculate a selected-field radial remainder | [~] | Source trace now reaches the selected stage families, cutoff multiplication, Cartesian curl, and `barMoment` definition. A selected `Delta m ≠ 0` still requires an explicit Cartesian-to-radial equality and boundary-term calculation. |
+| W14 | Keep the counter-paper anchored to the official claim | [x] | OpenAI's Theorem 1.1 and Appendix A are recorded as the claims under challenge; the review targets the selected-field five-moment and residual transport, not a weaker generic proxy. |
+| W15 | Maintain the companion Euler comparison lane | [~] | Parent-child interval geometry and first-derivative seam facts are source-backed; a Zeno endpoint or all-order seam failure is not established and cannot be transferred to Navier--Stokes. |
 
 ## Formal target board
 

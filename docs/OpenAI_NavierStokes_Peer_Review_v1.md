@@ -1418,3 +1418,30 @@ formal refutation.
 
 Evidence:
 `NavierStokesReview/evidence/selected_field_finite_prefix_transport_2026-09-25.md`.
+
+## Finding 45: a concrete selected direct prefix, with the radial gate still open
+
+The review now proves a selected-field identity at the stage level. The
+review-side module `SelectedDirectPrefixField.lean` imports the actual
+`selected_witness` construction and establishes that each selected direct
+stage is the corresponding angular mean stage. Its finite uncut prefix equals
+the mean angular field of the selected cycle state at the terminal index.
+This is source-level evidence about the published construction, not a generic
+countermodel.
+
+That identity does not yet yield the advertised five moments. The selected
+prefix is a Cartesian spacetime velocity field. `barMoment` is a scalar
+radial profile operator with torus averaging. The missing calculation must
+retain the localisation-mask derivatives, positive-radius curl terms, and
+axis and outer-support contributions before applying the radial integral. No
+selected `Delta m ≠ 0` has been proved, and no selected-path `False` is
+claimed here.
+
+This is nevertheless a sharper counter-paper finding than a bare statement
+that a bridge is absent: the selected stage recurrence has been identified,
+and the exact next operation required to validate the paper's Appendix A
+mechanism is exposed. Until that operation is supplied, the published claim
+of a completed five-moment Navier--Stokes solution remains **NOT
+ESTABLISHED** on the inspected record.
+
+Evidence: `NavierStokesReview/evidence/selected_direct_prefix_field_2026-09-25.md`.

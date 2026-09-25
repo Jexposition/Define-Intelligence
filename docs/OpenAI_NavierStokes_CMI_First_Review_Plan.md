@@ -482,7 +482,7 @@ Evidence: `NavierStokesReview/evidence/whole_space_uniqueness_audit_2026-09-24.m
 | Selected rank path | [x] | The actual cycle consumes rank/debt data; the two local radial invariants are compiled in `SelectedCycleMomentTransport.lean`. |
 | Endpoint transport | [ ] | `Witness` exposes no equality to the five paper moments or to `FiveRowRank.FiveRows`; a concrete selected-field violation remains to be proved. |
 | Whole-space audit | [x] | The comparison/uniqueness chain and standard-axiom report are recorded. |
-| Release packaging | [x]/[~] | `700e39d` is the last confirmed remote baseline; local review commit `7e6f0c7` is not confirmed pushed because GitHub authentication is unavailable. No tracked Lean build artefacts exist. Two supplied PDFs remain intentionally untracked. |
+| Release packaging | [x] | Review commit `c9adab3` is pushed to `review/cmi-first-navier-stokes-2026-09-22`. No tracked Lean build artefacts exist. The two supplied PDFs remain intentionally untracked. |
 
 The active route is therefore the selected-field transport theorem, not the
 discarded claims that the five-moment branch is dead code, that the first two
@@ -755,5 +755,31 @@ identity are proved.
 expand its Cartesian curl and cutoff derivatives, and attempt the first
 `barMoment_apply` equality under explicit integrability and boundary
 hypotheses.
+
+### Selected-field calculation route: 2026-09-25
+
+| ID | Required calculation | Status | Acceptance test |
+|---|---|---:|---|
+| CALC-01 | Identify the selected direct stage family. | [x] | selectedDirectStages is definitionally directStages; directStages_eq identifies each stage with angularMeanStages. |
+| CALC-02 | Compute a concrete selected finite prefix. | [x] | SelectedDirectPrefixField.lean proves the uncut prefix equals the selected cycle-state mean angular field, with no sorry, axiom, or unsafe. |
+| CALC-03 | Retain cutoff and curl terms. | [~] | Use DirectAngularDiagonal.cut_angularField and ActualMeanPotentialRealization.cartesianPotential_curl; no scalar radial projection theorem is yet supplied. |
+| CALC-04 | Transport the selected Cartesian field to barMoment. | [ ] | Required theorem must construct a scalar ScalarField (Point P), torus average, and radial equality for the selected field. |
+| CALC-05 | Evaluate axis and outer-support terms. | [ ] | Prove the boundary terms for the selected prefix and its cut-stage tail; generic support statements are insufficient. |
+| CALC-06 | Prove a selected nonzero remainder Delta m ≠ 0. | [ ] | A symbolic calculator output is admissible only after CALC-04 identifies its input with the selected field. |
+| CALC-07 | Derive kernel False. | [ ] | Combine CALC-06 with the selected correction invariant in a zero-sorry Lean theorem. |
+
+Evidence: NavierStokesReview/evidence/selected_direct_prefix_field_2026-09-25.md and NavierStokesReview/evidence/selected_field_moment_calculation_gate_2026-09-25.md.
+
+### Counter-paper source anchor
+
+The target is the claim actually published, not a weaker generic proxy. OpenAI's
+paper states a theorem with smooth compactly supported forcing, smooth fields
+before the singular time, bounded kinetic energy, and unbounded velocity, and
+then identifies the result with Alternatives C and D. Its Appendix A presents
+the five cumulative quantities (M, I, J, S, C_p) as the mechanism removing
+exterior stress and pressure tails. The review therefore treats the selected
+Cartesian-to-radial composition as a load-bearing affirmative burden. The
+official paper is
+https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf.
 
 **Last updated:** 2026-09-25

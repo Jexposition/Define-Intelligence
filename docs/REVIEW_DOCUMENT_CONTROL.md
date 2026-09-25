@@ -234,9 +234,8 @@ the residual/origin contradiction remain open.
   `PositiveOrderMoments` through the physical-prefix/profile chain. The open
   issue is semantic transport into the residual endpoint, not dead code or
   total import separation.
-- [x] Commit `700e39d` is the last recorded remote baseline. Local review
-  commits through `7e6f0c7` are not confirmed pushed because GitHub
-  authentication is unavailable. No tracked `.olean`, `.ilean`,
+- [x] Review commit `c9adab3` is pushed to
+  `review/cmi-first-navier-stokes-2026-09-22`. No tracked `.olean`, `.ilean`,
   or `.lake` files are present. The only untracked paths are the two supplied
   reference PDFs `docs/euler.pdf` and `docs/navier-stokes openai.pdf`; they are
   intentionally not staged.
@@ -803,3 +802,10 @@ to the selected field by zero-sorry Lean. The six core review documents must
 continue to use **NOT ESTABLISHED** for the published solution claim and must
 not label the literal C/D endpoint formally refuted without a selected-path
 contradiction.
+
+The current selected-field source authority also includes
+`NavierStokesReview/src/completions/SelectedDirectPrefixField.lean` and
+`NavierStokesReview/evidence/selected_direct_prefix_field_2026-09-25.md`.
+That completion proves an actual selected direct-stage prefix identity. It
+does not yet provide the Cartesian-to-radial `barMoment` equality or a
+nonzero `Delta m`, so CTR-005 remains the active affirmative burden.

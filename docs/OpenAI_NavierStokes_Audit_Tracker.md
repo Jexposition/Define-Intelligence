@@ -1079,10 +1079,9 @@ does not supply a temporal-gluing theorem for the Navier--Stokes indexed stages
 and does not alter the selected-endpoint transport target. Source register:
 `docs/OpenAI_NavierStokes_Source_Context_Register.md`.
 
-Packaging status: `700e39d` is the last confirmed remote baseline; local review
-commit `7e6f0c7` is not confirmed pushed because GitHub authentication is
-unavailable. The two supplied reference PDFs remain intentionally untracked,
-and no Lean build artefacts are tracked.
+Packaging status: review commit `c9adab3` is pushed to
+`review/cmi-first-navier-stokes-2026-09-22`. The two supplied reference PDFs
+remain intentionally untracked, and no Lean build artefacts are tracked.
 
 ## Selected endpoint direct-source trace: 2026-09-24
 
@@ -1570,3 +1569,30 @@ selected path `False` has been established.
 
 Evidence:
 `NavierStokesReview/evidence/selected_field_finite_prefix_transport_2026-09-25.md`.
+
+## CTR-049: selected direct-prefix identity
+
+The review-side completion
+NavierStokesReview/src/completions/SelectedDirectPrefixField.lean now proves
+a concrete identity for the actual selected direct family. Each
+selectedDirectStages j is the corresponding angularMeanStages field, and the
+uncut prefix through J equals the selected cycle-state mean angular field.
+The module compiles without sorry, axiom, or unsafe.
+
+This is stronger than a generic interface observation: it locates an actual
+selected field and its finite-stage recurrence. It still does not supply the
+next analytical operation required by the paper's argument. The prefix is a
+Cartesian VelocityField; barMoment consumes a scalar radial profile after
+torus averaging. Cutoff derivatives, positive-radius curl terms, and axis and
+outer-support contributions must be transported through that interface before
+any selected Delta m ≠ 0 can be stated.
+
+| Check | Result |
+|---|---|
+| Selected direct stage identity | Proved. |
+| Selected finite-prefix field identity | Proved. |
+| Cartesian-to-radial barMoment identity | Open. |
+| Selected nonzero remainder | Open; not asserted. |
+| Selected-path False | Not derived. |
+
+Evidence: NavierStokesReview/evidence/selected_direct_prefix_field_2026-09-25.md.

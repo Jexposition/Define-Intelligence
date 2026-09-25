@@ -1311,3 +1311,33 @@ selected-field calculation is supplied.
 
 Evidence:
 `NavierStokesReview/evidence/selected_field_finite_prefix_transport_2026-09-25.md`.
+
+## A selected-field calculation, not a generic objection
+
+The counter-paper now contains a zero-sorry completion that follows the
+actual selected direct fields through one concrete layer of the construction.
+`selectedDirectStages` is identified with the source's
+`angularMeanStages`, and every uncut finite prefix is identified with the
+corresponding selected cycle-state mean angular field. Thus the review does
+not rely on the claim that the upstream five-moment machinery is dead code or
+that the selected series is an empty limit.
+
+The remaining issue is analytical and exact. The direct field is multiplied
+by smooth localisation cutoffs, the meridional pieces are embedded into
+Cartesian potentials and curled, and the final endpoint consumes a Cartesian
+velocity. The paper's Appendix A moments are instead scalar radial profile
+integrals after torus averaging. The inspected source does not provide the
+selected equality between these objects. A valid counterexample would now be
+a computed nonzero remainder after the cutoff derivatives, curl terms, and
+axis and outer-support terms are included. Until that calculation is proved in
+Lean, this paper makes no unsupported claim that `Delta m ≠ 0` or that the
+selected witness yields `False`.
+
+The burden remains with the authors because their published theorem claims
+that the selected construction establishes the five-moment cancellation and
+the CMI alternatives. The source-backed result is therefore a strengthened
+publication objection: the advertised solution remains **NOT ESTABLISHED**
+until the selected Cartesian-to-radial transport theorem and its numerical or
+symbolic consequences are exhibited.
+
+Evidence: `NavierStokesReview/evidence/selected_direct_prefix_field_2026-09-25.md`.
