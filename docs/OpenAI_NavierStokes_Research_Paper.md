@@ -4537,6 +4537,27 @@ Evidence:
 `NavierStokesReview/src/audit/priority_177_fefferman_word_connection_adjudication_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`.
 
+## Priority 179: source-complete CMI semantic crosswalk
+
+The CMI comparison is not a C-only syntactic test. Fefferman's wording makes
+“physically reasonable” a connected solution class. “Hence” connects control
+of spatial growth to whole-space data conditions `(4),(5)`; “only if” makes
+global smoothness and bounded energy `(6),(7)` necessary. “Alternatively” and
+“may look” permit choosing the periodic branch, but “Thus”, “In place of”, and
+“We then accept” impose the periodic data and solution conditions `(8),(9)` and
+`(10),(11)` once that branch is chosen.
+
+The OpenAI manuscript must therefore be compared with the full connected
+package. Its residual, pulse, stress, pressure, localisation, and moment
+mechanism is scientifically relevant to that comparison. The Lean endpoint
+has a concrete residual-limit and smooth-force route, but the selected-field
+transport of the manuscript's complete five-moment consequences remains
+`NOT ESTABLISHED (CTR-005)`. This is not a claim that the moments are
+optional, nor a claim that literal C/D failure has already been proved.
+
+Full record:
+[`priority_179_fefferman_full_semantic_dependency_network_2026-09-29.md`](../NavierStokesReview/src/audit/priority_179_fefferman_full_semantic_dependency_network_2026-09-29.md).
+
 ## Priority 177: Fefferman's connected semantic requirements
 
 The source-level audit now records the mathematical work carried by the words
