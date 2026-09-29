@@ -2554,3 +2554,75 @@ The latest source trace records the production split explicitly:
 `curl(potential sum) + direct sum`. The direct branch is not covered by a
 potential-curl commutator unless a separate representation is proved. See
 `NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md`.
+
+The current chart node is now explicit as well: the first Cartesian frame
+component is `sin θ * v 0 + cos θ * v 1` on the valid positive-radius chart.
+Its evidence is
+`NavierStokesReview/evidence/selected_cylindrical_component_transport_2026-09-25.md`.
+
+The selected direct branch now has a source-checked component node retaining
+the polar rotation, graph scale, and `swapCylinder` reindexing. The radial
+moment node remains open until these factors and the potential branch are
+transported through torus averaging and boundary limits.
+
+`NavierStokesReview/evidence/selected_physical_component_transport_2026-09-25.md`.
+
+The direct component node now has a radial-moment child: the native scalar is
+identified on the positive radial section and its order-two torus-averaged
+integral is zero.  The potential/curl branch still has no equivalent node.
+
+`NavierStokesReview/evidence/selected_direct_radial_moment_bridge_2026-09-25.md`.
+
+The rank/stream node is now source-resolved: rank zero-mass is consumed in
+`rankPotential`, and the selected successor stream is temporal plus rank
+before the Cartesian curl. The unresolved child remains the scalar
+torus-average and `barMoment` identity for the assembled mixed field.
+
+`NavierStokesReview/evidence/selected_stream_rank_moment_scope_2026-09-25.md`.
+
+Latest selected-field calculation: the first Cartesian component of the
+cutoff--curl commutator is `(D₁χ)A₂ − (D₂χ)A₁`. The radial/toroidal image of
+this expression remains the active child of the review tree.
+
+The child now has a selected positive-radial component theorem:
+`SelectedPotentialProductionRadialScalar.lean`. The next descendant is the
+full lifted `torusAverage`/`barMoment` transport, including boundary terms and
+the final `tsum`; no contradiction is recorded at this node.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_production_radial_scalar_2026-09-25.md`.
+
+The next tree node is the finite-prefix torus-average reduction in
+`SelectedPotentialProductionTorusAverage.lean`. It exposes the exact
+weighted radial integral. Its descendants remain axis/tail evaluation,
+infinite-`tsum` transport, selected invariant comparison, and only then a
+possible contradiction.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_production_torus_average_2026-09-26.md`.
+
+### Controlled update: finite-prefix endpoint
+
+`SelectedFiniteCutoffEndpoint.lean` proves the selected finite-prefix cutoff
+plateau on the axis as `t → 1⁻`. This does not identify the infinite
+`potentialSum`, its `barMoment`, or a nonzero remainder. The active review
+path therefore remains the finite-prefix-to-`tsum` transport calculation under
+the authority map in `REVIEW_DOCUMENT_CONTROL.md`.
+
+### Controlled update: mixed `barMoment` interface
+
+`SelectedMixedProductionBarMoment.lean` adds the first typed pullback of the
+actual mixed endpoint component into the `barMoment` scalar-family domain. It
+does not evaluate the mixed radial integral, identify the paper moments, or
+produce `Δm ≠ 0`.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_production_barMoment_2026-09-26.md`.
+
+The next tree node reduces that mixed scalar's auxiliary torus average exactly
+and exposes the literal weighted radial integral; its value is still open.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_production_torus_average_2026-09-26.md`.
+
+The next node records unit periodicity of the radial pullback and the
+conditional bounded-support-to-zero implication. Its support premise is not
+exported by `selected_witness`.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_radial_periodicity_2026-09-26.md`.

@@ -1,19 +1,23 @@
 {
   "date": "2026-09-29",
   "status": "source_bound_p2_progress",
+  "scope": "selected observable type boundary",
+  "source_files": [
+    "NavierStokes/SolenoidalDiagonal.lean:31-67",
+    "NavierStokes/ActualCandidateAssembly.lean:1121-1151",
+    "NavierStokes/SpatialLocalization.lean:164-217",
+    "NavierStokes/MixedPeriodicAssembly.lean:32-49",
+    "NavierStokes/DefectIncrementBounds.lean:22-25,214-220"
+  ],
   "findings": {
     "selected_tsum_curl_localisation_periodisation_route": "established",
     "barMoment_is_definitionally_selected_cartesian_velocity_observable": "not_established",
     "selected_field_equals_paper_five_observables": "not_established",
     "selected_nonzero_defect": "not_proved",
+    "impossibility_theorem": "not_proved",
     "literal_cmi_failure": "not_proved",
     "lean_kernel_contradiction": "not_proved"
   },
-  "source_files": [
-    "NavierStokes/ActualCandidateAssembly.lean:1121-1151",
-    "NavierStokes/SolenoidalDiagonal.lean:31-67",
-    "NavierStokes/SpatialLocalization.lean:164-217",
-    "NavierStokes/MixedPeriodicAssembly.lean:32-49",
-    "NavierStokes/DefectIncrementBounds.lean:22-25,214-220"
-  ]
+  "interpretation": "barMoment consumes ScalarField (Point P) and a PressureStream.torusAverage; Witness supplies activated mixed Cartesian fields. An explicit representation and transport theorem is required to connect them.",
+  "reproducible_check": "rg -n \"potentialSum|periodicVelocity|activatedVelocity|barMoment\" NavierStokes/ActualCandidateAssembly.lean NavierStokes/SolenoidalDiagonal.lean NavierStokes/SpatialLocalization.lean NavierStokes/MixedPeriodicAssembly.lean NavierStokes/TimeLocalization.lean NavierStokes/DefectIncrementBounds.lean"
 }

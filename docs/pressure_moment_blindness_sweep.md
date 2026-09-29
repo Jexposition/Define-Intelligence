@@ -116,3 +116,10 @@ This means the paper's five-moment narrative exists upstream and is algebraicall
 | The residual bounds are "completely disconnected" from five-moment machinery | **Corrected to:** the residual bounds do not directly consume five-moment premises, but the five-moment machinery exists upstream in the transitive closure. The open question is semantic transport, not dead code. |
 
 **Headline finding (unchanged):** CTR-005 remains load-bearing. The selected endpoint's residual and force construction does not expose a theorem transporting the paper's named `(M, I, J, S, C_p)` through `StateRealization`, `NativeBounds`, `VanishingJointJets`, and `selected_witness`. This is a formal correspondence failure not yet converted into a formal refutation.
+
+The corresponding R3 packaging check is now machine-checked: a nonzero
+abstract `Fin 5 → ℝ` payload can coexist with the exported R3 candidate. This
+confirms the missing export at the type boundary but does not evaluate the
+selected pressure or velocity moments.
+
+Evidence: `NavierStokesReview/evidence/selected_r3_packaging_boundary_2026-09-26.md`.

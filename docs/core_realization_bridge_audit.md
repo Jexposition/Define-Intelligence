@@ -185,3 +185,187 @@ localisation preserves that separation. The missing bridge must transport both
 branches before comparing them with `barMoment`.
 
 Evidence: `NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md`.
+
+The next transport identity is now compiled in
+`SelectedCylindricalComponentTransport.lean`. On the valid positive-radius
+chart, the first Cartesian component is the exact rotated combination of the
+first two cylindrical components. This closes a local frame calculation only;
+the torus-average, axis/support, and `barMoment` composition remain open.
+
+Evidence: `NavierStokesReview/evidence/selected_cylindrical_component_transport_2026-09-25.md`.
+
+The next source-checked step is the selected direct component formula. It
+contains `cos(theta)`, the graph scale, and `swapCylinder`; these factors are
+part of the field-level bridge and cannot be dropped when comparing the
+Cartesian output with `barMoment`.
+
+Evidence: `NavierStokesReview/evidence/selected_physical_component_transport_2026-09-25.md`.
+
+The selected direct component now reaches the native scalar moment interface
+on the positive radial section, and the exact order-two radial integral is
+zero.  The remaining bridge is specifically the curled potential summand,
+not the direct scalar branch.
+
+Evidence: `NavierStokesReview/evidence/selected_direct_radial_moment_bridge_2026-09-25.md`.
+
+The latest source trace confirms that the rank correction is used upstream in
+`rankPotential`; it is not an orphaned module. The unresolved realization
+boundary is later: the temporal-plus-rank stream is curled and exported as a
+Cartesian field, while `barMoment` consumes a scalar torus average. The
+selected equality between those representations is still absent.
+
+Evidence: `NavierStokesReview/evidence/selected_stream_rank_moment_scope_2026-09-25.md`.
+
+The first Cartesian component of the selected cut-stage commutator is
+`(D₁χ)A₂ − (D₂χ)A₁`. The global bridge must account for this expression before
+identifying the Cartesian field with the scalar radial input.
+
+The production sampling map is now known to miss an explicit point in the
+auxiliary square integrated by `torusAverage`. This sharpens the realization
+boundary: the raw `ActualMeanPhysicalData.Scalar` family is global, while
+`meanField` samples it through `physicalPoint`. A selected equality or selected
+difference is still required.
+
+Evidence: `NavierStokesReview/evidence/selected_torus_lift_image_scope_2026-09-25.md`.
+
+The atlas selector adds a second, precise boundary. The completion
+`SelectedAtlasPhysicalErasure.lean` proves that `Atlas.physical` depends only
+on values at valid chart samples. This is selected interface evidence, not a
+claim that the native family is nonunique in the admissible smooth class. The
+remaining bridge must relate valid-sample agreement to the full-domain
+`barMoment` integral.
+
+## Selected production potential boundary
+
+The selected completion
+`NavierStokesReview/src/completions/SelectedPotentialProductionProductRule.lean`
+now fixes the production-side input to the bridge. On valid unit-cube points,
+
+$$
+V_{\mathrm{prod}}=\chi\,\operatorname{curl}(A)
+ +\operatorname{curlLinear}(D\chi\,A).
+$$
+
+The derivative-of-cutoff term must be included before any claim about the
+radial profile or `barMoment`. The current source does not determine its
+selected integral or sign. This record therefore marks the production identity
+complete and the scalar transport calculation open.
+
+## Selected positive-radial production component
+
+`SelectedPotentialProductionRadialScalar.lean` now supplies the corresponding
+selected potential-side component on the source radial section. Under the
+selected physical-domain and unit-cube hypotheses,
+
+$$
+V_{\mathrm{prod},1}=\chi(\operatorname{curl}A)_1
+ +\bigl(\operatorname{curlLinear}(D\chi\,A)\bigr)_1.
+$$
+
+This closes the local component transport and derives its differentiability
+from the selected schedule. It does not close the scalar `barMoment` bridge:
+the full lifted averaging domain, graph image, axis/support terms, and final
+`tsum` remain unresolved. The commutator must therefore remain in the selected
+calculation.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_production_radial_scalar_2026-09-25.md`.
+
+## Typed production section for `barMoment`
+
+The potential-production component is now lifted to a genuine scalar family
+on `PressureStream.Lift PhysicalGraphBounds.Plane`, the point type accepted by
+the source `barMoment`. The section map is explicit and agrees with the
+physical point construction on the positive radial section. This closes a
+type-level interface question, but not the realization theorem: the final
+mixed Cartesian field, auxiliary torus average, boundary terms, and infinite
+sum still have to be transported before the five-row invariant can be applied
+to the endpoint.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_production_barmoment_section_2026-09-26.md`.
+
+## Finite-prefix production closure
+
+The finite selected potential is now expanded before the infinite limit. The
+review-side theorem preserves the exact term
+
+$$
+\operatorname{curl}(\chi A_N)=
+\chi\operatorname{curl}(A_N)+(\nabla\chi)\times A_N.
+$$
+
+It also supplies the scalar `barMoment` representative and its positive-radius
+pullback. This advances the selected realization chain, but the weighted
+integral and `tsum` passage remain unproved. No `Delta m != 0` or `False` is
+inferred.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_production_finite_prefix_2026-09-26.md`.
+
+## Finite-prefix torus-average gate
+
+The finite-prefix scalar now passes through the exact source definitions of
+`PressureStream.torusAverage` and `DefectIncrementBounds.barMoment`. The
+auxiliary `Plane` coordinate is erased by `pointToCyl`, so both interval
+integrals reduce to a single sample and the weighted radial integral is
+exposed verbatim. This resolves a local representation question only. The
+full mixed Cartesian `tsum`, boundary terms, and selected five-moment equality
+remain unproved; no numerical remainder or `False` follows.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_production_torus_average_2026-09-26.md`.
+
+## Finite-prefix endpoint bridge: 2026-09-26
+
+The finite-cutoff endpoint is now transported through the source axis scale:
+for every fixed prefix, the cutoffs are eventually one as `t → 1⁻` on the
+axis. This sharpens the selected calculation but does not provide the missing
+uniform prefix-to-`tsum` theorem, weighted value, or invariant conflict.
+
+Evidence: `NavierStokesReview/evidence/selected_finite_cutoff_endpoint_2026-09-26.md`.
+
+## Mixed field to `barMoment`: 2026-09-26
+
+The actual mixed endpoint, rather than the potential-only surrogate, now has
+an exact scalar-family pullback for `barMoment`. The bridge stops at the
+weighted radial integral: the direct cut-and-periodised contribution, axis
+terms, and endpoint interchange remain to be evaluated.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_production_barMoment_2026-09-26.md`.
+
+The mixed branch split and exact torus-average reduction now expose the
+remaining value-level gate: the cut direct contribution must be integrated.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_production_torus_average_2026-09-26.md`.
+
+The field-level gate now has a sharper form: the mixed radial pullback is
+periodic, whereas bounded radial support would force it to zero. The missing
+step is whether the source's radial moment hypotheses can legitimately be
+transported to this periodised endpoint.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_radial_periodicity_2026-09-26.md`.
+
+## R3 packaging boundary: 2026-09-26
+
+The review-side R3 completion proves a non-implication at the exported
+candidate boundary: a nonzero `Fin 5 → ℝ` payload can coexist with the R3
+`CandidateProperties` witness. The result confirms that the type does not
+export the paper's five-moment transport, but it does not evaluate the actual
+selected field. The unresolved field-level gate remains the periodic
+`barMoment` calculation and its transport through compactification.
+
+Evidence: `NavierStokesReview/evidence/selected_r3_packaging_boundary_2026-09-26.md`.
+
+## Periodised-field support boundary: 2026-09-26
+
+The selected field is not the compact cut field used before periodisation.
+`cutPotential` has a compact support theorem, but `periodicVelocity` is a
+lattice-periodic assembly. Since `barMoment` integrates over the full real
+radial coordinate, the support-to-moment step is not definitional. The
+review-side theorem that bounded radial support would force the periodic
+pullback to vanish remains conditional on a selected support premise.
+
+## Mapping provenance boundary: 2026-09-26
+
+The current map records 3,021 tree file entries, 3,058 live files, 2,997
+unique-basename resolutions, 24 retained ambiguities, and no missing
+basenames. Exact compiled-to-source joins improve source navigation only. They
+do not supply the field-level equality connecting the selected Cartesian
+assembly, periodisation, summation, and `barMoment`.

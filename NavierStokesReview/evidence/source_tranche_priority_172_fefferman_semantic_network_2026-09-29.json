@@ -4,18 +4,47 @@
   "source": "docs/navierstokes.txt",
   "source_lines": "25-81",
   "audit": "NavierStokesReview/src/audit/priority_172_fefferman_semantic_network_2026-09-29.md",
-  "claims": {
-    "F1_force_initial_data_network": "established",
-    "F2_admissibility_and_physical_reasonableness": "established",
-    "F3_periodic_and_whole_space_branches_separated": "established",
-    "LEAN_C_shaped_endpoint_on_inspected_path": "established",
-    "CTR_005_selected_field_five_observable_transport": "not_established",
-    "selected_mismatch_force_nonsmoothness_or_false": "not_proved"
-  },
+  "claims": [
+    {
+      "id": "F1-F2",
+      "status": "established",
+      "finding": "Fefferman defines the fluid model, unknowns, given initial datum, given externally applied force, Newton-law interpretation, and incompressibility as connected source nodes."
+    },
+    {
+      "id": "F3-F4",
+      "status": "established",
+      "finding": "The words physically reasonable and Hence connect the growth-at-infinity motivation to all-order decay conditions (4) and (5), while only if makes global smoothness and bounded energy (6) and (7) acceptance conditions."
+    },
+    {
+      "id": "F5",
+      "status": "established",
+      "finding": "Alternatively and Thus define a separate periodic branch with data conditions (8) and (9) and accepted-solution conditions (10) and (11)."
+    },
+    {
+      "id": "F6",
+      "status": "established",
+      "finding": "Retaining the heart of the problem links alternatives A-D to the connected PDE, data, regularity, decay, energy, and domain packages."
+    },
+    {
+      "id": "LEAN-C",
+      "status": "established_on_inspected_path",
+      "finding": "The selected Lean route contains concrete residual-limit and jet-recurrence force regularity, pre-singular energy control, and a global-comparator contradiction."
+    },
+    {
+      "id": "CTR-005",
+      "status": "not_established",
+      "finding": "No final selected Cartesian field-level theorem was located identifying the completed velocity, pressure, residual, and force with the manuscript five observables (M,I,J,S,C_p) through the full selected construction."
+    },
+    {
+      "id": "REFUTATION",
+      "status": "not_proved",
+      "finding": "No selected mismatch, force nonsmoothness, impossibility theorem, literal C or D failure, or kernel contradiction was established by this tranche."
+    }
+  ],
   "validation": {
     "exact_source_wording_preserved": true,
     "upstream_openai_source_modified": false,
-    "semantic_connections_recorded": true,
-    "whole_space_and_periodic_branches_kept_separate": true
+    "whole_space_and_periodic_branches_kept_separate": true,
+    "semantic_connections_recorded": true
   }
 }

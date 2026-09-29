@@ -3931,7 +3931,7 @@ Evidence:
 - [x] Record that the inspected comparator theorem proves the corresponding
   operational C-shaped existential/nonexistence proposition, without calling
   that full CMI compliance.
-- [x] Distinguish the operational C result from the stronger claim that Lean
+- [x] Distinguish the operational C-shaped result from the stronger claim that Lean
   verifies the manuscript's exact five-moment proof mechanism.
 - [x] Do not infer `not C` from the absence of a final moment-export theorem.
 - [ ] Continue the selected-field transport audit as a fidelity question and
@@ -4068,3 +4068,53 @@ processes.
   averaging, radial integration, support, integrability, and axis limits.
 
 Controlling record: `docs/CMI_OpenAI_Full_Semantic_Crosswalk.md`, Priority 188.
+
+## Priority 190: publication-paper consolidation and dossier preservation
+
+The publication manuscript has been separated from its chronological source
+dossier without deletion. The formal paper remains at
+`docs/OpenAI_NavierStokes_Research_Paper.md`; its publication argument is now
+separate from the active provenance record
+`NavierStokesReview/evidence/research_paper_evidence_dossier_2026-09-30.md`.
+The exact pre-consolidation file is preserved at
+`docs/archive/OpenAI_NavierStokes_Research_Paper_with_dossier_2026-09-30.md`.
+
+The boundary and hashes are recorded in
+`docs/archive/ARCHIVE_MANIFEST_2026-09-30.md`. No material was deleted. The
+document tree and evidence tree link the new locations. The paper must remain a
+formal argument in manuscript order; future dated source reviews belong in the
+evidence dossier or the audit ledger, not appended to the paper's argument.
+
+Priority 189 is also retained as a source-checked wording correction: the
+OpenAI manuscript does not state that the construction would never occur in
+physical reality. The controlled wording and source record are
+`NavierStokesReview/src/audit/priority_189_openai_physical_wording_source_check_2026-09-30.md`
+and its paired JSON evidence file.
+
+The next cleanup gate remains content-addressed triage of the 59 untracked
+entries. No raw scan, plot, log, OpenAI source file, or draft root document may
+be bulk-staged. Only after cross-reference and SHA-256 review may confirmed
+redundant material be moved to its parent archive with a manifest entry.
+
+## Priority 191: current control-state refresh and scoped publication tranche
+
+The private source-of-truth branch is now at `75d7e7f`
+(`review/cmi-first-navier-stokes-2026-09-29`). The previous curated public
+baseline remains at `e321bde` (`review/cmi-first-navier-stokes-public-2026-09-29`)
+and will not be rewritten. The current curated publication target is the new
+dated branch `review/cmi-first-navier-stokes-public-2026-09-30`; it has not yet
+been pushed. The legacy
+`review/cmi-first-navier-stokes-2026-09-22` branch remains untouched.
+
+The current untracked inventory is 60 entries: 54 evidence artefacts, 3 draft
+or root documents, 1 protected OpenAI source file, and 2 miscellaneous items.
+No duplicate SHA-256 content was found in the inventory. This is a triage
+backlog, not a staging queue. The protected source file, `$null`, raw scans,
+plots, logs, generated registers, and draft root documents remain uncommitted.
+
+The current scoped publication tranche consists of the Priority 189 source
+correction and its links in the paper, peer review, and semantic crosswalk.
+Before that tranche is committed and mirrored publicly, complete the formal
+document fetch, SHA-256 inventory, supersession matrix, and cross-reference
+check. Archive only confirmed redundant material in its parent archive, never
+delete it, and record every move in a local manifest.

@@ -1,0 +1,18 @@
+{
+  "priority": 164,
+  "date": "2026-09-29",
+  "status": "verified_positive_result",
+  "claim": "The repository proves the formal forced whole-space CMI Alternative (C) proposition for every positive viscosity.",
+  "theorem": "NavierStokesReview.SelectedFeffermanAlternativeCProof.selected_proves_literal_fefferman_alternative_C",
+  "proof_inputs": [
+    "NavierStokesR3.theorem_1_1",
+    "NavierStokesR3.comparator_of_breakdown",
+    "NavierStokesR3.forceConditionDecay_of_compact",
+    "NavierStokesR3.globalSolutionOfComparator"
+  ],
+  "axioms": ["propext", "Classical.choice", "Quot.sound"],
+  "sorryAx": false,
+  "full_repository_build": "blocked_by_pre_existing_user_owned_NavierStokes/R3/TestPressure.lean:6_syntax_error",
+  "separate_open_question": "Whether the complete manuscript five-moment mechanism is semantically identified with every selected endpoint consequence.",
+  "escalation_rule": "Do not infer formal refutation from the correspondence gap without a direct selected mismatch, impossibility theorem, or failed mandatory CMI premise."
+}

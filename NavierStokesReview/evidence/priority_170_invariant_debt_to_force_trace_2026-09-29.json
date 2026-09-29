@@ -1,0 +1,59 @@
+{
+  "priority": 170,
+  "date": "2026-09-29",
+  "status": "source_audited",
+  "scope": "Invariant debt and rank data to selected residual rates, vanishing jets, smooth force, and Witness packaging",
+  "sources": {
+    "manuscript": [
+      "docs/navier-stokes openai.txt:109-124",
+      "docs/navier-stokes openai.txt:440-500",
+      "docs/navier-stokes openai.txt:515-590",
+      "docs/navier-stokes openai.txt:760-783"
+    ],
+    "lean": [
+      "NavierStokes/ActualCandidateAssembly.lean:1079-1151",
+      "NavierStokes/GluedStageEstimates.lean:436-440",
+      "NavierStokes/GluedStageEstimates.lean:681-701",
+      "NavierStokes/ActualCycleResidualBounds.lean:843-880",
+      "NavierStokes/ActualCycleResidualBounds.lean:1156-1172",
+      "NavierStokes/ActualCycleResidualBounds.lean:1190-1206",
+      "NavierStokes/CorrectionAnalyticStep.lean:584-629",
+      "NavierStokes/ActualCyclePreservation.lean:800-838",
+      "NavierStokes/MixedDiagonalResidual.lean:168-195",
+      "NavierStokes/CandidateFromLimits.lean:31-80"
+    ]
+  },
+  "findings": [
+    {
+      "id": "P170-01",
+      "claim": "Velocity infinity blow-up implies each residual summand diverges",
+      "status": "rejected",
+      "reason": "The manuscript explicitly allows divergent individual terms with smooth cancellation of the total residual and all derivatives."
+    },
+    {
+      "id": "P170-02",
+      "claim": "The five moments are the only cancellation mechanism in the manuscript",
+      "status": "rejected_as_overstrong",
+      "reason": "The manuscript also uses pulse covariance, stress-cone representation, wave and mean corrections, pressure corrections, cutoff terms, and recursive residual improvement."
+    },
+    {
+      "id": "P170-03",
+      "claim": "Selected NativeBounds are an arbitrary smoothness assumption",
+      "status": "rejected_for_selected_route",
+      "reason": "The actual stage-estimate constructor derives residual rates from the actual invariant, physical data, exterior germs, and base-exterior estimates."
+    },
+    {
+      "id": "P170-04",
+      "claim": "Witness proves final selected-field equality to (M,I,J,S,Cp)",
+      "status": "not_located",
+      "reason": "Witness packages concrete force and residual consequences but has no explicit final five-observable identity or composition theorem."
+    }
+  ],
+  "classification": {
+    "concrete_invariant_backed_force_route": "established_by_source_trace",
+    "final_selected_field_five_observable_transport": "not_established",
+    "selected_nonzero_defect": "not_proved",
+    "literal_cmi_failure": "not_proved",
+    "lean_kernel_contradiction": "not_proved"
+  }
+}

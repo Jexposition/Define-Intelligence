@@ -1,0 +1,57 @@
+{
+  "priority": 163,
+  "title": "Full CMI dependency crosswalk adjudication",
+  "date": "2026-09-29",
+  "status": "source_adjudicated",
+  "decision": {
+    "literal_forced_cmi_proposition": "proved_by_current_comparator_route_subject_to_build_caveat",
+    "paper_five_moment_mechanism": "load_bearing_in_manuscript",
+    "selected_field_five_observable_identity": "not_established",
+    "selected_moment_defect": "not_proved",
+    "force_nonsmoothness": "not_proved",
+    "alternative_c_failure": "not_proved",
+    "formal_refutation": "not_escalated"
+  },
+  "adjudication": {
+    "step_1": "Fefferman's smooth force and decay conditions are mandatory; Alternative (C) is an existential forced branch among the listed alternatives.",
+    "step_2": "The manuscript's residual-defined force is a genuine forward-Cauchy provenance concern, but not automatically a contradiction of an existential pair.",
+    "step_3": "Velocity norm blow-up does not imply termwise divergence of all residual summands; a selected-field lower-bound theorem is required.",
+    "step_4": "The five moments are load-bearing for the manuscript's matching and correction mechanism, but an explicit sole-mechanism Fredholm-adjoint-Laurent iff theorem was not found.",
+    "step_5": "Witness omits a named final five-observable equality, but force smoothness is derived through concrete physical data, residual rates, derivative recurrence, boundary limits, and smooth extension."
+  },
+  "source_refs": [
+    "docs/navierstokes.txt:24-47,64-81",
+    "docs/navier-stokes openai.txt:523-546,695-784,8091-8107,8451-8517",
+    "NavierStokes/R3/ProblemStatement.lean:90-153",
+    "NavierStokes/R3/ComparatorBridge.lean:22-45,77-88",
+    "NavierStokes/CandidateFromLimits.lean:35-57,80-112,138-148",
+    "NavierStokes/MixedPeriodicAssembly.lean:338-365",
+    "NavierStokes/GluedStageEstimates.lean:684-725",
+    "NavierStokes/ActualStageEstimates.lean:395-403",
+    "NavierStokes/ActualCandidateAssembly.lean:1079-1151"
+  ],
+  "negative_search": {
+    "Fredholm": 0,
+    "adjoint": 0,
+    "Laurent": 0,
+    "if_and_only_if": 0,
+    "orthogon": 8,
+    "pole": 1
+  },
+  "probe": {
+    "path": "NavierStokesReview/src/extensions/CMIAlternativeCLiteralCrosswalk.lean",
+    "result": "fresh_target_compile_2026-09-29_success",
+    "axioms": ["propext", "Classical.choice", "Quot.sound"]
+  },
+  "build_status": {
+    "target_probe": "success",
+    "full_repository_build": "blocked_by_pre_existing_user_owned_NavierStokes/R3/TestPressure.lean:6_syntax_error",
+    "protected_source_modified": false
+  },
+  "open_questions": [
+    "Does the complete selected mixed Cartesian field satisfy the paper's relevant moment consequences after tsum, curl, localisation, periodisation, pressure, and force construction?",
+    "Is there a direct selected-field mismatch or impossibility theorem?",
+    "Are all mandatory CMI conditions discharged on the selected path independently of the comparator packaging?"
+  ],
+  "created": "2026-09-29"
+}

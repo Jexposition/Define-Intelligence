@@ -1,0 +1,227 @@
+{
+  "schema": "navier-stokes-review-audit-bundle/v2",
+  "evidence_policy": {
+    "tree": "inventory/provenance snapshot; never a substitute for current paths",
+    "filesystem": "exact current checkout path, byte count, and SHA-256",
+    "source": "exact imports and source-coordinate diagnostics",
+    "kernel": "compiled environment declaration edges and endpoint routes",
+    "heuristics": "diagnostic only; cannot establish theorem use or a contradiction"
+  },
+  "inputs": {
+    "repository": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Define-Intelligence-github",
+    "tree": "D:\\Research Lab\\Jexposition\\tree-maker\\Define inteligence tree.md",
+    "tree_sha256": "476cc9257bf6f3a8259fe78110bdcd9df170b8e265dabb6aeb13e850aa522d17",
+    "source_map": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Define-Intelligence-github\\NavierStokesReview\\evidence\\hardened_source_map_2026-09-26.json",
+    "source_map_sha256": "57ae6dde9b3d4eced572b0237cc56ac3461730d8b3d32d1e10595e5c6e150527",
+    "joined_environment": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Define-Intelligence-github\\NavierStokesReview\\evidence\\joined_environment_source_map_2026-09-26.json",
+    "joined_environment_sha256": "bc62ee028d006e1a8404ae3f8ac9cec30b0060acf0679a5516b6fa4386af1c3e",
+    "tree_reconciliation": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Define-Intelligence-github\\NavierStokesReview\\evidence\\tree_reconciliation_2026-09-26.json",
+    "tree_reconciliation_sha256": "cde9bcb1dc366383143c1c367c3b38e96eead69d6c30d0eaa085218eb6f1ce29"
+  },
+  "counts": {
+    "tree_entries": 3021,
+    "current_files": 3088,
+    "lean_modules": 2790,
+    "source_declarations": 50191,
+    "diagnostic_edges": 186194,
+    "environment_nodes": 30721,
+    "environment_edges": 227128,
+    "exact_source_matches": 22958,
+    "reachable_sorryAx_users": 0,
+    "git_status_entries": 16,
+    "tree_ambiguous_entries": 24,
+    "tree_missing_entries": 0
+  },
+  "validation": {
+    "passed": true,
+    "failures": [],
+    "source_hash_drift": [],
+    "required_routes": [
+      "NavierStokesR3.theorem_1_1",
+      "NavierStokes.ActualCandidateAssembly.selected_witness",
+      "NavierStokes.FiveRowRank.FiveRows",
+      "NavierStokes.PositiveOrderMoments.Debt",
+      "NavierStokes.MeanRankUpdate.scaleDebt",
+      "NavierStokes.DefectIncrementBounds.barMoment",
+      "NavierStokesR3.ProblemStatement.CandidateProperties"
+    ],
+    "unreachable_required_routes": [],
+    "tree_reconciliation": {
+      "passed": true,
+      "missing_entries_are_review_obligations": false,
+      "ambiguous_entries_are_review_obligations": true
+    }
+  },
+  "git_status": [
+    {
+      "index": " M",
+      "path": "NavierStokesReview/evidence/hardened_source_map_2026-09-26.json"
+    },
+    {
+      "index": " M",
+      "path": "NavierStokesReview/evidence/hardened_source_map_2026-09-26.md"
+    },
+    {
+      "index": " M",
+      "path": "NavierStokesReview/evidence/joined_environment_source_map_2026-09-26.json"
+    },
+    {
+      "index": " M",
+      "path": "NavierStokesReview/evidence/tree_reconciliation_2026-09-26.json"
+    },
+    {
+      "index": " M",
+      "path": "NavierStokesReview/evidence/tree_reconciliation_2026-09-26.md"
+    },
+    {
+      "index": "??",
+      "path": "NavierStokes/R3/TestPressure.lean"
+    },
+    {
+      "index": "??",
+      "path": "\"docs/Define inteligence tree.md\""
+    },
+    {
+      "index": "??",
+      "path": "docs/OpenAI_NavierStokes_Final_Falsification_Report.md"
+    },
+    {
+      "index": "??",
+      "path": "docs/euler.pdf"
+    },
+    {
+      "index": "??",
+      "path": "\"docs/navier-stokes openai.pdf\""
+    },
+    {
+      "index": "??",
+      "path": "scratch_space/bias_check_report.md"
+    },
+    {
+      "index": "??",
+      "path": "scratch_space/check.md"
+    },
+    {
+      "index": "??",
+      "path": "scratch_space/imports.txt"
+    },
+    {
+      "index": "??",
+      "path": "scratch_space/notes.md"
+    },
+    {
+      "index": "??",
+      "path": "\"scratch_space/scratch ideas.md\""
+    },
+    {
+      "index": "??",
+      "path": "\"scratch_space/scratch ideas_raw_2026-09-25.md\""
+    }
+  ],
+  "selected_routes": {
+    "NavierStokesR3.theorem_1_1": {
+      "path": [
+        "NavierStokesR3.theorem_1_1"
+      ],
+      "reachable": true
+    },
+    "NavierStokes.ActualCandidateAssembly.selected_witness": {
+      "path": [
+        "NavierStokesR3.theorem_1_1",
+        "NavierStokesR3.theorem_1_1_with_initial_rest",
+        "NavierStokesR3.ActualCandidate.selected_candidate_one_with_initial_rest",
+        "NavierStokes.ActualCandidateAssembly.selected_witness"
+      ],
+      "reachable": true
+    },
+    "NavierStokes.FiveRowRank.FiveRows": {
+      "path": [
+        "NavierStokesR3.theorem_1_1",
+        "NavierStokesR3.theorem_1_1_with_initial_rest",
+        "NavierStokesR3.ActualCandidate.selected_candidate_one_with_initial_rest",
+        "NavierStokes.ActualCandidateAssembly.directStages",
+        "NavierStokes.ActualCandidateAssembly.directData",
+        "NavierStokes.ActualCandidateAssembly.meanCycleInput",
+        "NavierStokes.ActualCyclePreservation.state_invariant",
+        "NavierStokes.ActualCyclePreservation.state_runInvariant",
+        "NavierStokes.ActualCyclePreservation.initial_runInvariant",
+        "NavierStokes.ActualCyclePreservation.initial_invariant",
+        "NavierStokes.ActualCoreSupport.initial_invariant",
+        "NavierStokes.ActualInitialization.initial_invariant",
+        "NavierStokes.ActualInitialization.initial_cumulative",
+        "NavierStokes.ActualInitialMean.initial_cumulative_bounds",
+        "NavierStokes.ActualInitialMean.initial_bounds",
+        "NavierStokes.ActualInitialMean.initial_bounds_of_primaryData",
+        "NavierStokes.CorrectionInitialization.MovingInitialization.PrimaryMeanData.rank_zeroMasses",
+        "NavierStokes.LocalRankDefect.RankGeometry.preserve_masses",
+        "NavierStokes.FiveRowRank.FiveRows"
+      ],
+      "reachable": true
+    },
+    "NavierStokes.PositiveOrderMoments.Debt": {
+      "path": [
+        "NavierStokesR3.theorem_1_1",
+        "NavierStokesR3.theorem_1_1_with_initial_rest",
+        "NavierStokesR3.ActualCandidate.selected_candidate_one_with_initial_rest",
+        "NavierStokes.ActualCandidateAssembly.selected_witness",
+        "NavierStokes.ActualCandidateAssembly.witness",
+        "NavierStokes.GermCandidateAssembly.exists_candidate_witness_of_finite_stages",
+        "NavierStokes.TailGaugePotential.finalPotential_awayExtensions",
+        "NavierStokes.TailGaugePotential.realized_awayExtensions",
+        "NavierStokes.ModulatedExterior.realized_exterior_coefficients",
+        "NavierStokes.ModulatedExterior.realized_primitive_zero_all",
+        "NavierStokes.AssembledSlowBase.extended_axial_primitive_zero",
+        "NavierStokes.PositiveOrderMoments.Debt"
+      ],
+      "reachable": true
+    },
+    "NavierStokes.MeanRankUpdate.scaleDebt": {
+      "path": [
+        "NavierStokesR3.theorem_1_1",
+        "NavierStokesR3.theorem_1_1_with_initial_rest",
+        "NavierStokesR3.ActualCandidate.selected_candidate_one_with_initial_rest",
+        "NavierStokes.ActualCandidateAssembly.selected_witness",
+        "NavierStokes.ActualCandidateAssembly.witness",
+        "NavierStokes.ActualCandidateAssembly.initialPotential_support",
+        "NavierStokes.ActualMeanStageData.initialRankSupport",
+        "NavierStokes.ActualMeanPhysicalData.initialRankFamily",
+        "NavierStokes.ActualMeanPhysicalData.initialRank_overlap",
+        "NavierStokes.ActualMeanPhysicalData.Atlas.rank_overlap",
+        "NavierStokes.RankStateCoherence.rankPotential_on",
+        "NavierStokes.RankStateCoherence.rankDesiredAxial_on",
+        "NavierStokes.RankStateCoherence.RankOn.desiredAxial",
+        "NavierStokes.MeanRankUpdate.scaleDebt"
+      ],
+      "reachable": true
+    },
+    "NavierStokes.DefectIncrementBounds.barMoment": {
+      "path": [
+        "NavierStokesR3.theorem_1_1",
+        "NavierStokesR3.theorem_1_1_with_initial_rest",
+        "NavierStokesR3.ActualCandidate.selected_candidate_one_with_initial_rest",
+        "NavierStokes.ActualCandidateAssembly.directStages",
+        "NavierStokes.ActualCandidateAssembly.directData",
+        "NavierStokes.ActualCandidateAssembly.meanCycleInput",
+        "NavierStokes.ActualCyclePreservation.state_waveData",
+        "NavierStokes.ActualCyclePreservation.waveData_of_particular",
+        "NavierStokes.ActualParticularMeanGain.postParticular_gain",
+        "NavierStokes.CorrectionStep.waveStage_mean_gain",
+        "NavierStokes.CorrectionStep.gaugeWaveStage_mean_from_covariance",
+        "NavierStokes.GaugeDebtIncrement.waveStage_debt_change_mem",
+        "NavierStokes.GaugeDebtIncrement.waveStage_debt_change_formula",
+        "NavierStokes.GaugeDebtIncrement.debt_sub_eq",
+        "NavierStokes.GaugeDebtIncrement.radialMoment_sub_on",
+        "NavierStokes.LocalRankDefect.barMoment_sub_on",
+        "NavierStokes.DefectIncrementBounds.barMoment"
+      ],
+      "reachable": true
+    },
+    "NavierStokesR3.ProblemStatement.CandidateProperties": {
+      "path": [
+        "NavierStokesR3.theorem_1_1",
+        "NavierStokesR3.ProblemStatement.CandidateProperties"
+      ],
+      "reachable": true
+    }
+  }
+}

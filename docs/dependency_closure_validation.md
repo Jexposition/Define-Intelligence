@@ -141,3 +141,80 @@ The active closure now includes `SelectedMixedVelocityDecomposition.lean`.
 It proves the source order `curl(potential sum) + direct sum`. This is a
 review-side identity with no new upstream assumptions; the radial
 `barMoment` transport remains open for both summands.
+
+The closure also builds `SelectedCylindricalComponentTransport.lean`, which
+transports the exact positive-radius frame component through the source polar
+chart theorem. It adds no moment identity or contradiction; the scalar
+radial-field equality remains the next selected-path obligation.
+
+The closure now also builds `SelectedPhysicalComponentTransport.lean`. It
+retains the source `swapCylinder` reindexing and graph scale in the selected
+direct component. This is selected-path positive evidence and does not alter
+the unresolved full-field-to-`barMoment` obligation.
+
+Evidence: `NavierStokesReview/evidence/selected_physical_component_transport_2026-09-25.md`.
+
+The closure now includes the direct radial moment bridge.  It compiles the
+selected direct component-to-scalar equality and the exact zero radial
+integral, while leaving the potential/curl-to-`barMoment` transport open.
+
+Evidence: `NavierStokesReview/evidence/selected_direct_radial_moment_bridge_2026-09-25.md`.
+## Selected-stream refinement: 2026-09-25
+
+The closure result must be read with the selected-field trace. The rank
+modules are reachable and their zero-mass premise is consumed by
+`LocalRankDefect.rankPotential`; the selected stream is assembled from
+temporal and rank families and then enters the Cartesian curl branch. The
+remaining CTR-005 issue is not dead-code reachability. It is the absence of a
+selected theorem transporting that assembled curl field into the scalar
+`PressureStream.torusAverage` input used by `barMoment_apply`, with all
+localisation, summation, and boundary terms accounted for.
+
+Evidence: `NavierStokesReview/evidence/selected_stream_rank_moment_scope_2026-09-25.md`.
+
+The review closure now includes a zero-sorry selected component theorem for
+the cutoff--curl term. It adds a source dependency to the radial calculation,
+not a new axiom and not a contradiction.
+
+The selected radial completion derives the same component from the selected
+schedule and source physical-domain smoothness. Its remaining dependency is
+the full scalar `barMoment` transport, not a missing upstream module.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_production_radial_scalar_2026-09-25.md`.
+
+## Closure update: finite-prefix endpoint transport
+
+`SelectedFiniteCutoffEndpoint.lean` adds only existing source dependencies:
+the axis-scale limit and the finite-family cutoff plateau. It introduces no
+new axiom and no endpoint contradiction. The remaining closure obligation is
+the uniform transport from finite prefixes to the selected infinite sum.
+
+Evidence: `NavierStokesReview/evidence/selected_finite_cutoff_endpoint_2026-09-26.md`.
+
+## Closure update: mixed `barMoment` typing
+
+The review-side completion imports the existing mixed decomposition and
+bar-moment interface only. Lean verifies the scalar pullback and its
+positive-radius coordinate identity without new axioms; the weighted value and
+infinite-sum transport remain outside the closure.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_production_barMoment_2026-09-26.md`.
+
+The closure now includes the branch split and exact torus-average reduction,
+without adding axioms or evaluating the remaining radial integral.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_production_torus_average_2026-09-26.md`.
+
+The closure now contains a zero-sorry periodicity theorem and a conditional
+support obstruction. It adds no support premise to the authors' endpoint and
+does not produce `False`.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_radial_periodicity_2026-09-26.md`.
+
+The R3 endpoint closure has now been tested separately. The review completion
+shows that the exported `CandidateProperties` record admits coexistence with
+a nonzero abstract five-coordinate payload. This is a type-level packaging
+observation; it does not imply that the concrete selected field has nonzero
+moments and does not close the `barMoment` transport.
+
+Evidence: `NavierStokesReview/evidence/selected_r3_packaging_boundary_2026-09-26.md`.

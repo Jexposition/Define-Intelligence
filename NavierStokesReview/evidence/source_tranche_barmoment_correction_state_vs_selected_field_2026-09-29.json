@@ -1,0 +1,65 @@
+{
+  "priority": 162,
+  "date": "2026-09-29",
+  "status": "direct_declaration_review_no_selected_defect_claimed",
+  "sources": [
+    {
+      "path": "NavierStokes/DefectIncrementBounds.lean",
+      "lines": "214-220;621-658",
+      "finding": "Defines barMoment as a torus-averaged radial moment on scalar correction fields and proves zero/preservation/defect-row identities from FiveRowRank.FiveRows."
+    },
+    {
+      "path": "NavierStokes/StateMomentBalances.lean",
+      "lines": "956-978",
+      "finding": "Proves an axial flux-plus-pressure radial-moment recipe identity for a shell-supported periodic state."
+    },
+    {
+      "path": "NavierStokes/CorrectionStep.lean",
+      "lines": "1469-1498",
+      "finding": "Proves temporal correction preserves radial moments of correction-state mean fields through a zero torus-average increment."
+    },
+    {
+      "path": "NavierStokes/CorrectionInitialization.lean",
+      "lines": "1945-1976",
+      "finding": "Bounds initial correction debts through barMoment membership and zero-mean defects."
+    },
+    {
+      "path": "NavierStokes/NominalProfile.lean",
+      "lines": "1970-2030;2078-2140",
+      "finding": "Proves genuine reduced-profile five-moment certificates and heated-profile transfer, including pressure datum and integrability."
+    },
+    {
+      "path": "NavierStokes/ActualCandidateAssembly.lean",
+      "lines": "1121-1151",
+      "finding": "Witness packages activated velocity/pressure/force and consequences but contains no final barMoment or (M,I,J,S,C_p) equality field."
+    },
+    {
+      "path": "NavierStokes/MixedPeriodicAssembly.lean",
+      "lines": "338-365",
+      "finding": "The force construction consumes residual limits, smoothness, extensions, divergence, and axis growth; no final barMoment equality is asserted."
+    }
+  ],
+  "search_scope": {
+    "root": "NavierStokes",
+    "patterns": [
+      "barMoment.*periodicVelocity",
+      "barMoment.*activatedVelocity",
+      "barMoment.*activatedPressure",
+      "barMoment.*potentialSum",
+      "barMoment.*Witness",
+      "FiveRows.*periodicVelocity",
+      "FiveRows.*Witness"
+    ],
+    "result": "No final observable-equality declaration found in the inspected source search."
+  },
+  "conclusion": {
+    "positive": "Reduced-profile and correction-state moment transport is genuine and substantive.",
+    "unclosed": "The final selected Cartesian field-level observable identification remains unclosed.",
+    "not_proved": [
+      "nonzero selected-field defect",
+      "force nonsmoothness",
+      "impossibility theorem",
+      "selected-path False"
+    ]
+  }
+}

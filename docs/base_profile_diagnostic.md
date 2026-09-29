@@ -83,3 +83,86 @@ that operation. A base-profile curl calculation alone cannot certify the
 radial moment of the complete selected velocity.
 
 Evidence: `NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md`.
+
+The selected chart component is now source-verified as a rotated cylindrical
+combination on the positive-radius domain. The base-profile review must still
+transport that combination through the potential curl, direct branch, torus
+average, and radial boundary terms before a moment conclusion is possible.
+
+Evidence: `NavierStokesReview/evidence/selected_cylindrical_component_transport_2026-09-25.md`.
+
+The selected base branch is now connected explicitly as well. The constructed
+potential has the selected slow-base velocity as its Euclidean curl for every
+preterminal time, and the source axis theorem transports its norm blow-up to
+that curl. This clears the hypothesis that the base potential is an empty
+placeholder. It does not identify the complete mixed field with `barMoment`
+and does not establish a nonzero remainder or `False`.
+
+Evidence: `NavierStokesReview/evidence/selected_base_profile_transport_2026-09-25.md`.
+
+The direct branch has also been reduced to an exact selected Cartesian
+component formula. Its polar factor and graph reindexing must be retained in
+any comparison with the base or radial moment calculation. No base-profile
+contradiction follows from this component result alone.
+
+Evidence: `NavierStokesReview/evidence/selected_physical_component_transport_2026-09-25.md`.
+
+The direct radial calculation is now closed for the native scalar: the
+selected order-two torus-averaged radial integral is zero on the carrier.  The
+base/potential branch remains the unresolved component of the full endpoint.
+
+Evidence: `NavierStokesReview/evidence/selected_direct_radial_moment_bridge_2026-09-25.md`.
+
+The rank/temporal stream trace rules out a dead-rank explanation. The rank
+mass-zero premise enters the potential construction, but the resulting stream
+is later represented as a curled Cartesian field. A full scalar `barMoment`
+calculation for that mixed field is still required before a base-profile
+remainder can be asserted.
+
+Evidence: `NavierStokesReview/evidence/selected_stream_rank_moment_scope_2026-09-25.md`.
+
+The production cut-off does not commute silently with curl. The selected
+first component contains `(D₁χ)A₂ − (D₂χ)A₁`; its radial evaluation remains a
+required calculation rather than an assumed cancellation.
+
+The selected production radial theorem now carries this first component to the
+source radial section and derives its differentiability from the selected
+schedule. It still supplies no sign for the commutator integral.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_production_radial_scalar_2026-09-25.md`.
+
+## 2026-09-26 synchronization: endpoint cutoff scope
+
+The source axis identity and finite-cutoff theorem now give a common plateau
+for every fixed finite prefix near the singular time. This does not supply a
+uniform infinite-prefix bound or a sign for the localisation commutator, so
+the base-profile diagnostic remains a calculation target rather than a
+nonzero-remainder proof.
+
+Evidence: `NavierStokesReview/evidence/selected_finite_cutoff_endpoint_2026-09-26.md`.
+
+## 2026-09-26 synchronization: mixed observable typing
+
+The selected mixed first component can now be represented on the exact
+`barMoment` scalar-family domain. The result leaves the periodised, cut direct
+branch explicit, so it supplies no sign or nonzero-value conclusion for the
+base-profile calculation.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_production_barMoment_2026-09-26.md`.
+
+The mixed scalar's auxiliary average reduces exactly to its radial-section
+value; no sign or nonzero integral follows.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_production_torus_average_2026-09-26.md`.
+
+The actual mixed radial integrand is unit-periodic. Any claim that it has a
+bounded radial support shell would therefore force the integrand to be zero;
+that support claim is not exported by the selected witness.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_radial_periodicity_2026-09-26.md`.
+
+The whole-space packaging boundary is now checked separately. A nonzero
+abstract five-coordinate payload can coexist with the exported R3 predicate;
+this does not determine the base profile's actual radial moment.
+
+Evidence: `NavierStokesReview/evidence/selected_r3_packaging_boundary_2026-09-26.md`.

@@ -113,3 +113,151 @@ after the curl. Consequently, the cutoff commutator cannot describe the whole
 field until a separate direct-branch representation is proved.
 
 Evidence: `NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md`.
+
+The positive-radius semantic bridge now has an exact component formula. It
+shows that the Cartesian component used by the radial gate is frame-rotated,
+not an unqualified scalar profile. The remaining semantic question is the
+selected torus-average and `barMoment` transport of the complete two-branch
+field.
+
+Evidence: `NavierStokesReview/evidence/selected_cylindrical_component_transport_2026-09-25.md`.
+
+The component audit now includes the complete selected direct-branch factor:
+frame rotation, graph scaling, and `swapCylinder` coordinate order. This
+narrows the semantic bridge but does not establish a global radial moment or a
+contradiction.
+
+Evidence: `NavierStokesReview/evidence/selected_physical_component_transport_2026-09-25.md`.
+
+The direct component's scalar source is now explicitly identified and its
+order-two torus/radial moment is zero under the selected carrier hypotheses.
+This is not a global moment identity for the mixed Cartesian endpoint.
+
+Evidence: `NavierStokesReview/evidence/selected_direct_radial_moment_bridge_2026-09-25.md`.
+
+The semantic trace now separates active rank construction from endpoint
+meaning. Rank zero-mass is used to build `rankPotential`, and the selected
+stream is the temporal-plus-rank angular field before Cartesian curl. The
+exported `MovingField` contract records smoothness, support, and periodicity;
+it does not by itself establish the five cumulative moments of the final mixed
+velocity.
+
+Evidence: `NavierStokesReview/evidence/selected_stream_rank_moment_scope_2026-09-25.md`.
+
+The source-level localisation semantics now expose the first curl component
+as `(D₁χ)A₂ − (D₂χ)A₁`. This is a concrete transport obligation, not evidence
+that the term is nonzero.
+
+The latest image calculation is now source-specific: the production
+`physicalPoint` map misses an explicit auxiliary point used by the full
+`torusAverage` domain. The raw scalar family and the sampled production field
+must still be compared before any selected moment difference is asserted.
+
+Evidence: `NavierStokesReview/evidence/selected_torus_lift_image_scope_2026-09-25.md`.
+
+`Atlas.physical` has now been checked at its defining branch. The zero-sorry
+completion `SelectedAtlasPhysicalErasure.lean` proves that invalid native
+values are not read by the selected physical map. Because `barMoment` reads
+the native family on the full averaging domain, this establishes a precise
+semantic boundary but not a selected moment discrepancy. Coverage or an
+invariance theorem remains required.
+
+The selected potential production is now carried to the first component on the
+positive-radial section by `SelectedPotentialProductionRadialScalar.lean`.
+This closes a local semantic transport step, while the full lifted-domain
+representative and graph-coverage comparison remain open.
+
+The next local semantic gate is now compiled. A section map sends lifted
+physical coordinates to the positive-radial cylindrical coordinates, and the
+selected potential-production component is represented as the exact scalar
+family consumed by `barMoment`. The physical radial section is verified
+against the source point construction. This is a genuine selected transport
+fact, but it still leaves the full mixed post-curl/post-`tsum` equality and
+the weighted value open; no remainder or `False` is inferred.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_production_barmoment_section_2026-09-26.md`.
+
+The finite-prefix semantic gate is now also compiled. The selected partial
+potential is expanded through the curl and localisation product rule, and its
+production component is placed on the exact scalar family accepted by
+`barMoment`. The positive-radius physical pullback is explicit. This does not
+yet evaluate the torus average or identify the infinite selected endpoint, so
+the semantic status remains unresolved rather than contradictory.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_production_finite_prefix_2026-09-26.md`.
+
+The torus-average gate is also closed for the finite-prefix review scalar.
+Because `pointToCyl` ignores the auxiliary coordinate, unfolding the source
+integrals gives the exact `torusAverage` and `barMoment` reductions. This
+does not supply the missing mixed-field or infinite-`tsum` equality, so it
+does not establish a nonzero remainder or contradiction.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_production_torus_average_2026-09-26.md`.
+
+## Endpoint quantifier correction: 2026-09-26
+
+The finite-prefix cutoff result is source-backed, but its neighbourhood may
+depend on the prefix length. It therefore cannot be promoted to uniform
+control of the selected `tsum` or to a field-level contradiction. The semantic
+load-bearing question remains transport of the complete mixed field into the
+five-moment observable.
+
+Evidence: `NavierStokesReview/evidence/selected_finite_cutoff_endpoint_2026-09-26.md`.
+
+## Mixed scalar-domain closure: 2026-09-26
+
+The selected mixed first component is now transported to the scalar domain
+required by `barMoment`, with an exact positive-radius pullback. This removes a
+typing objection but not the semantic calculation: no equality with the
+paper's five moments and no numerical remainder has been proved.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_production_barMoment_2026-09-26.md`.
+
+The scalar-domain result now reduces `barMoment` to the literal radial
+integral of the actual mixed endpoint. This is stronger transport evidence,
+not a numerical contradiction.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_production_torus_average_2026-09-26.md`.
+
+The selected radial observable is now proved periodic in its unbounded radial
+variable. This exposes a support/integrability compatibility obligation, but
+not a contradiction without a selected support or nonzero theorem.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_radial_periodicity_2026-09-26.md`.
+
+## R3 packaging check: 2026-09-26
+
+The exported R3 predicate was tested directly with a zero-sorry completion.
+Its `CandidateProperties` witness can coexist with an arbitrary nonzero
+five-coordinate payload because no five-moment equality is part of that type.
+This sharpens the semantic boundary but does not determine the selected
+field's actual radial integral or yield `False`.
+
+Evidence: `NavierStokesReview/evidence/selected_r3_packaging_boundary_2026-09-26.md`.
+
+## Map-layer safeguard
+
+The repository map treats source-token edges as navigation diagnostics and
+compiled `ConstantInfo` edges as the authority for endpoint reachability. This
+prevents both opposite errors: calling reachable moment infrastructure dead,
+or treating reachability as proof that its values survive the selected
+Cartesian-to-radial assembly.
+
+## Periodisation and support semantics: 2026-09-26
+
+The compact support and periodicity interfaces apply to different stages of
+the construction. `cutPotential` is supported before periodisation; the
+selected mixed velocity is then formed from periodised branches. Because
+`barMoment` is a global real-radial integral, compact support cannot be carried
+across that step by definitional reduction. The missing selected support or
+integrability transport remains part of CTR-005; no unconditional vanishing or
+kernel contradiction follows.
+
+## Mapping provenance boundary: 2026-09-26
+
+The hardened map reconciles the extracted tree with the live checkout while
+retaining 24 ambiguous entries rather than guessing their paths. Compiled
+environment reachability is joined to source spans only by exact qualified
+names. This removes filename and parser ambiguity from navigation, but it does
+not establish the missing value-level transport from the assembled Cartesian
+field to the paper's radial observables.

@@ -1,0 +1,45 @@
+{
+  "priority": 169,
+  "date": "2026-09-29",
+  "scope": "connected Fefferman admissibility, selected Lean endpoint, and manuscript five-moment correspondence",
+  "statuses": {
+    "fefferman_connected_physical_admissibility": "established",
+    "selected_concrete_residual_flatness_route": "established_on_source_path",
+    "selected_force_smoothness_route": "established_on_source_path",
+    "formal_c_shaped_existential_route": "established_on_inspected_source_path",
+    "selected_final_five_moment_transport": "not_established",
+    "selected_force_nonsmoothness": "not_proved",
+    "alternative_c_false_from_tuple_omission": "unsupported_inference",
+    "complete_paper_to_code_correspondence": "not_established",
+    "fresh_transitive_axiom_replay": "not_completed_command_timeout",
+    "targeted_selected_path_probe_replay": "established_exit_0"
+  },
+  "selected_chain": [
+    "ActualCandidateAssembly.physicalData",
+    "GluedStageEstimates.actualStageEstimates",
+    "ActualCycleResidualBounds.finite_residual_rates",
+    "MixedDiagonalResidual.exists_physical_schedule_residual_zero",
+    "JointResidualLimits.VanishingJointJets",
+    "CandidateFromLimits.tracedResidual_smooth",
+    "CandidateFromLimits.force_smooth",
+    "ProblemStatement.CandidateProperties",
+    "R3FiniteEnergyComparison",
+    "ComparatorR3Theorem.nav_stokes_breakdown_R3"
+  ],
+  "negative_search_boundary": [
+    "No located selected-field equality transporting FiveProfileMoments.physicalMoments to the activated Cartesian sums",
+    "No located selected-field equality identifying the endpoint with (M,I,J,S,Cp)",
+    "No direct selected-value mismatch theorem",
+    "GaugeMassPreservation.ZeroMassesOn exposes two radial mean constraints, not the five-component FiveProfileMoments physicalMoments vector",
+    "SelectedMomentBridgeAudit, SelectedPhysicalDataMomentInterfaceProbe, SelectedWitnessPathProbe, and GlobalTransportBridgeProbe compiled with exit code 0"
+  ],
+  "build_evidence": {
+    "NavierStokes/ComparatorR3Theorem.lean": "direct_compile_exit_0",
+    "NavierStokes/ActualCandidateAssembly.lean": "direct_compile_exit_0",
+    "HeadlineAxiomProbe.lean": "dependency_build_timeout_after_124_seconds",
+    "NavierStokesReview/src/probes/SelectedMomentBridgeAudit.lean": "direct_compile_exit_0",
+    "NavierStokesReview/src/probes/SelectedPhysicalDataMomentInterfaceProbe.lean": "direct_compile_exit_0",
+    "NavierStokesReview/src/probes/SelectedWitnessPathProbe.lean": "direct_compile_exit_0",
+    "NavierStokesReview/src/probes/GlobalTransportBridgeProbe.lean": "direct_compile_exit_0"
+  }
+}

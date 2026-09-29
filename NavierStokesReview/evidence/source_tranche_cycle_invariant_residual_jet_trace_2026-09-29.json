@@ -1,0 +1,31 @@
+{
+  "priority": 164,
+  "title": "Cycle invariant to residual-jet trace",
+  "date": "2026-09-29",
+  "status": "source_adjudicated",
+  "decision": {
+    "cycle_invariant_is_substantive": true,
+    "cycle_invariant_contains_final_M_I_J_S_Cp_identity": false,
+    "defect_moment_and_zero_mass_data_feed_residual_rates": true,
+    "force_smoothness_is_empty_interface_assumption": false,
+    "selected_field_five_observable_transport": "not_established",
+    "selected_moment_defect": "not_proved",
+    "alternative_c_failure": "not_proved"
+  },
+  "source_refs": [
+    "NavierStokes/CorrectionStep.lean:9405-9462",
+    "NavierStokes/CorrectionState.lean:225-251,449-476",
+    "NavierStokes/ActualInitialization.lean:1376-1389,1425-1458",
+    "NavierStokes/ActualCycleResidualBounds.lean:1156-1203",
+    "NavierStokes/ActualStageEstimates.lean:347-403",
+    "NavierStokes/ActualCandidateAssembly.lean:1079-1098,1121-1151",
+    "NavierStokes/CandidateFromLimits.lean:35-57,80-112"
+  ],
+  "mathematical_reading": {
+    "defect_vector": "(P, J_theta, J_z)",
+    "separate_mass_constraints": "radialMoment_2(mean.angular)=0 and radialMoment_1(mean.axial)=0",
+    "final_missing_statement": "Moments(u_selected,p_selected,f_selected)=(M,I,J,S,Cp) after the full selected Cartesian composition"
+  },
+  "conclusion": "The residual-rate and force-smoothness route is grounded in concrete correction-state data, but the inspected endpoint still lacks the final selected-field semantic identification required for complete paper-to-code correspondence.",
+  "created": "2026-09-29"
+}

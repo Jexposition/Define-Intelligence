@@ -74,3 +74,89 @@ curl-generated potential sum plus a direct angular sum. The direct branch
 cannot be silently absorbed into the solenoidal curl calculation.
 
 Evidence: `NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md`.
+
+The positive-radius frame component is now exact and source-backed. It is a
+rotated Cartesian component, so the assembly cannot be compared with a scalar
+radial moment until the torus-average and boundary transport are supplied.
+
+Evidence: `NavierStokesReview/evidence/selected_cylindrical_component_transport_2026-09-25.md`.
+
+The selected direct branch's component formula is now explicit and retains
+the polar rotation, graph scale, and `swapCylinder` coordinate reindexing. This
+further rules out treating the scalar profile as an unrotated Cartesian field,
+but it does not establish pure-axial collapse or a moment defect.
+
+Evidence: `NavierStokesReview/evidence/selected_physical_component_transport_2026-09-25.md`.
+
+The direct branch is not a source of an unrotated moment leak: its selected
+component is identified with the native scalar and its exact order-two radial
+moment is zero.  Any remaining contradiction must come from the separately
+curled potential branch or from a proved failure of their composition.
+
+Evidence: `NavierStokesReview/evidence/selected_direct_radial_moment_bridge_2026-09-25.md`.
+
+The rank correction is not eliminated by the solenoidal assembly: its
+zero-mass premise is consumed before the temporal-plus-rank stream enters the
+curl branch. The unresolved issue is instead whether the final curled mixed
+field has the scalar radial representative required by `barMoment`.
+
+Evidence: `NavierStokesReview/evidence/selected_stream_rank_moment_scope_2026-09-25.md`.
+
+The solenoidal production calculation now exposes the first cutoff--curl
+component as `(D₁χ)A₂ − (D₂χ)A₁`. The assembly is not entitled to discard this
+term when passing to a radial moment.
+
+The direct production branch has the same localisation issue: its native
+zero-moment profile is multiplied by `spatialCutoff` before periodisation.
+The exact unit-cube identity is proved by
+`SelectedProductionDirectCutoff.lean`; the weighted radial moment remains to
+be calculated.
+
+The potential branch now has the corresponding selected positive-radial
+component identity. Both production branches retain their localisation terms;
+neither branch yet supplies the final mixed-field `barMoment` value.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_production_radial_scalar_2026-09-25.md`.
+
+The potential branch now has a finite-prefix torus-average reduction. The
+localisation commutator remains present inside the scalar integrand; no
+boundary cancellation or nonzero weighted value has been inferred.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_production_torus_average_2026-09-26.md`.
+
+## Finite-prefix endpoint qualification
+
+The new endpoint theorem concerns only the cutoff factors in a fixed finite
+prefix. It does not collapse the solenoidal assembly, identify the infinite
+mixed field with the radial scalar, or prove a nonzero moment. The assembly
+remains fully three-component at the source level and the selected value is
+still open.
+
+Evidence: `NavierStokesReview/evidence/selected_finite_cutoff_endpoint_2026-09-26.md`.
+
+## Mixed radial observable qualification: 2026-09-26
+
+The actual mixed first component now has a typed `barMoment` pullback on the
+positive-radius section. This confirms that the direct branch remains part of
+the selected field rather than disappearing by definition. No value-level
+moment calculation or collapse to zero follows from the interface theorem.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_production_barMoment_2026-09-26.md`.
+
+The mixed torus average now reduces to the actual radial integrand. The
+solenoidal assembly does not collapse by this identity; the direct branch is
+still explicit and its weighted value remains uncomputed.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_production_torus_average_2026-09-26.md`.
+
+The selected radial pullback is periodic after Cartesian periodisation. The
+conditional bounded-support obstruction does not collapse the solenoidal field
+because the required support premise is not established.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_radial_periodicity_2026-09-26.md`.
+
+The R3 packaging theorem confirms that the solenoidal field's exported type
+does not itself identify a five-coordinate moment payload. It does not show
+that the assembled field collapses or that its actual moment is nonzero.
+
+Evidence: `NavierStokesReview/evidence/selected_r3_packaging_boundary_2026-09-26.md`.

@@ -3079,3 +3079,53 @@ a selected failed connected condition, value mismatch, impossibility theorem,
 or contradiction.
 
 Controlling record: `docs/CMI_OpenAI_Full_Semantic_Crosswalk.md`, Priority 188.
+
+## Priority 190 goal control: formal paper versus evidence dossier
+
+The research-paper path is now a formal publication document rather than a
+combined paper and chronological audit log:
+
+- publication argument: `docs/OpenAI_NavierStokes_Research_Paper.md`;
+- active provenance dossier: `NavierStokesReview/evidence/research_paper_evidence_dossier_2026-09-30.md`;
+- exact pre-consolidation recovery copy:
+  `docs/archive/OpenAI_NavierStokes_Research_Paper_with_dossier_2026-09-30.md`;
+- archive manifest and SHA-256 boundary record:
+  `docs/archive/ARCHIVE_MANIFEST_2026-09-30.md`.
+
+The original source was copied before restructuring. No deletion occurred. The
+publication manuscript retains the argument, references, appendices, and
+current verdict; dated source-tranche material remains in the evidence dossier,
+audit ledger, and linked source records. Do not append new chronological audit
+entries to the publication argument.
+
+Priority 189 is the controlling correction for physical wording: the inspected
+OpenAI manuscript does not support the attribution that the forced construction
+would never occur in physical reality. Keep that correction linked to its source
+record rather than importing unsupported language into the paper.
+
+The next required hygiene pass is still a full content-addressed inventory and
+supersession matrix for the 59 untracked entries. No deletion, bulk staging, or
+archive move is permitted without source cross-checking, SHA-256 recording, and
+parent-folder placement.
+
+## Priority 191 goal control: current state and publication gate
+
+The private source-of-truth branch is `review/cmi-first-navier-stokes-2026-09-29`
+at commit `75d7e7f`. The previous curated public baseline is
+`review/cmi-first-navier-stokes-public-2026-09-29` at `e321bde` and will not be
+rewritten. The current curated publication target is the new dated branch
+`review/cmi-first-navier-stokes-public-2026-09-30`; it has not yet been pushed.
+The legacy 2026-09-22 branch remains separate and untouched.
+
+The current untracked inventory contains 60 entries: 54 evidence artefacts, 3
+draft or root documents, 1 protected OpenAI source file, and 2 miscellaneous
+items. No duplicate SHA-256 content was found. These files remain a controlled
+triage backlog and must not be bulk-staged. The active publication tranche is
+the source-checked Priority 189 wording correction linked from the paper, peer
+review, and semantic crosswalk.
+
+The next gate is requirement-by-requirement document fetch, SHA-256 inventory,
+supersession analysis, and cross-reference validation. Only confirmed
+redundancies may then be moved to the archive belonging to their parent folder,
+with an old-path, new-path, reason, and SHA-256 manifest entry. No deletion is
+authorised.

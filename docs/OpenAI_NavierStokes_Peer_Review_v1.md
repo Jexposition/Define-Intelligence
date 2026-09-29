@@ -3977,9 +3977,10 @@ the corresponding whole-space existential/nonexistence proposition.
 
 Therefore the review must state both conclusions, without collapsing either:
 
-1. **Operational C result:** the inspected Lean path proves the connected
-   whole-space C-shaped proposition, subject to its recorded build and axiom
-   status.
+1. **Operational C-shaped result:** the inspected Lean path provides the
+   connected whole-space C-shaped proposition, subject to its recorded build
+   and axiom status. This is not, by itself, full Fefferman
+   physical/semantic compliance.
 2. **Manuscript-fidelity result:** the inspected public endpoint does not yet
    identify the completed selected Cartesian fields, pressure, force, and
    residual with every manuscript-level consequence of the five-moment
@@ -3987,7 +3988,8 @@ Therefore the review must state both conclusions, without collapsing either:
    and packaging chain. The claim that Lean verifies the manuscript's exact
    five-moment proof is therefore **NOT ESTABLISHED (CTR-005)**.
 
-The second conclusion is not a proof that operational C is false. Conversely,
+The second conclusion is not a proof that the operational C-shaped proposition
+is false. Conversely,
 the first conclusion is not proof that the Lean route is the manuscript's
 five-moment route. Fefferman's words “given” and “externally applied” preserve
 a material physical-provenance objection, but the displayed C predicate does
@@ -4294,3 +4296,25 @@ impossibility theorem, or contradiction.
 
 Controlling crosswalk: [`CMI_OpenAI_Full_Semantic_Crosswalk.md`](CMI_OpenAI_Full_Semantic_Crosswalk.md),
 Priority 188.
+
+## Priority 189: source correction on physical wording
+
+The inspected OpenAI manuscript does not say that its forced construction
+“would never occur in physical reality”. It presents a physical description,
+defines the force as the momentum residual, and states that individual
+residual terms may diverge while the total residual and all derivatives extend
+smoothly through the singular time (docs/navier-stokes openai.txt:106-124).
+The later passages describe pulses, corrections, localisation, summation, and
+force extension (:252-321).
+
+This correction does not turn Fefferman into an equation-only test. “May look
+for spatially periodic solutions” selects the periodic branch; “Thus”, “In
+place of”, “we then accept”, “physically reasonable”, and “retaining the heart
+of the problem” connect the branch data and accepted-solution conditions.
+The review therefore keeps the connected CMI package in scope while retaining
+the precise status: the selected Cartesian five-moment transport remains
+**NOT ESTABLISHED (CTR-005)**. No selected failed Fefferman condition or
+literal C/D refutation has been proved by this source correction alone.
+
+Evidence: [priority 189 source correction](../NavierStokesReview/src/audit/priority_189_openai_physical_wording_source_check_2026-09-30.md);
+[source tranche](../NavierStokesReview/evidence/source_tranche_priority_189_openai_physical_wording_source_check_2026-09-30.json).

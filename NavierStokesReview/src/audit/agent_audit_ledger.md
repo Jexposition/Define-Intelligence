@@ -13,14 +13,14 @@ Rigorously review the source code comprising OpenAI's Navier-Stokes claimed proo
 ### Finding 1: Type Disconnection in Repair Mechanism
 - **Location**: `NavierStokes/ActualCandidateAssembly.lean` -> `NavierStokes/CorrectionState.lean` -> `NavierStokes/FiveRowRank.lean`
 - **Status**: Correspondence gap; not a formal refutation
-- **Description**: The paper claims a 5-dimensional moment repair defined by `(M, I, J, S, Cp)`. The repository provides a module for this (`PositiveOrderMoments.lean`). However, the actual endpoint relies on `CorrectionState.debt`, which is strictly a 3-dimensional quantity `Fin 3 → ℝ` representing `(P, Jθ, Jz)`. No theorem within the endpoint's dependency closure identifies the 5-dimensional moments with the 3-dimensional debt, meaning the paper's mechanism is not actually proven to be the one operating on the selected candidate. 
+- **Description**: The paper claims a 5-dimensional moment repair defined by `(M, I, J, S, Cp)`. The repository provides a module for this (`PositiveOrderMoments.lean`). However, the actual endpoint relies on `CorrectionState.debt`, which is strictly a 3-dimensional quantity `Fin 3 → ℝ` representing `(P, Jθ, Jz)`. No theorem within the endpoint's dependency closure identifies the 5-dimensional moments with the 3-dimensional debt, meaning the paper's mechanism is not actually proven to be the one operating on the selected candidate.
 - **Evidence**: `NavierStokesReview/src/probes/SelectedWitnessInhabitationProbe.lean`; the
   selected-path transport theorem remains open.
 
 ### Finding 2: Verification of Endpoint Properties
 - **Location**: `NavierStokes/CandidateProperties.lean`, `NavierStokes/TimeLocalization.lean`
 - **Status**: Verified Valid (No Sleight of Hand Found)
-- **Description**: I reviewed the formal definitions of `SpeedUnboundedAtOne` and the construction `activatedVelocity(t) = timeSwitch(t) * u(t)`. 
+- **Description**: I reviewed the formal definitions of `SpeedUnboundedAtOne` and the construction `activatedVelocity(t) = timeSwitch(t) * u(t)`.
   - The `timeSwitch` is correctly defined as `0` for $|t| \le 3/8$, satisfying the `zero_initial_velocity` constraint trivially and correctly matching `navier_stokes` at $t=0$ if the force is zero.
   - The cutoff smoothly scales to `1` near $t=1$, preserving the L-infinity `SpeedUnboundedAtOne` blowup.
   - The equations rely on standard smooth limits and standard topology. There is no artificial truncation of the blowup itself.

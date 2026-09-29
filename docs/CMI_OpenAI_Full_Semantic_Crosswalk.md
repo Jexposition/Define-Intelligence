@@ -1461,3 +1461,27 @@ This is the controlling distinction for the review: the adverse finding is a
 paper-to-code correspondence failure, not a claim that Fefferman's connected
 CMI predicate was reduced to `(1)--(3)` or that the selected C/D theorem has
 already been formally falsified.
+
+## Priority 189: source correction on physical wording
+
+The inspected OpenAI source does not state that the forced construction “would
+never occur in physical reality”. It explicitly presents a physical
+description, defines the residual force, and states that singular-looking
+terms are to be cancelled so that the total residual and all derivatives
+extend smoothly (docs/navier-stokes openai.txt:106-124). Its later
+construction summary names internal transport, pulses, corrections,
+localisation, summation, and force extension (:252-321).
+
+This does not remove the connected Fefferman semantics. “May look for” is
+branch latitude; “Thus”, “In place of”, and “we then accept” bind the
+periodic conditions. “Physically reasonable” is the accepted solution class
+connected to the data decay or periodicity, smoothness, energy, domain, and
+global-time clauses. The controlled conclusion is therefore unchanged:
+the repository proves a connected formal C/D-shaped proposition on the
+inspected path, while the complete manuscript mechanism at the selected
+Cartesian endpoint remains **NOT ESTABLISHED (CTR-005)**. Neither the source
+correction nor the missing bridge alone proves a selected failed condition,
+nonzero selected moment defect, or literal C/D False.
+
+Evidence: [priority 189 source correction](../NavierStokesReview/src/audit/priority_189_openai_physical_wording_source_check_2026-09-30.md);
+[source tranche](../NavierStokesReview/evidence/source_tranche_priority_189_openai_physical_wording_source_check_2026-09-30.json).

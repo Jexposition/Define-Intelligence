@@ -107,6 +107,7 @@ entries are classified as follows:
 The canonical 3D CUDA record is therefore not being mistaken for a toy scan,
 and the legacy profile-level results are not being promoted into a proof.
 No file was deleted or moved by this refresh.
+
 ### Live status after ignore-rule refresh (2026-09-29)
 
 `git status --short` currently reports 59 untracked path entries. The lower

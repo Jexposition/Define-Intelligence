@@ -43,6 +43,17 @@ five named quantities and the exported mixed field. See
 [`MeanRankUpdateAudit.lean`](NavierStokesReview/src/completions/MeanRankUpdateAudit.lean)
 and [`mean_rank_update_scope_2026-09-24.md`](NavierStokesReview/evidence/mean_rank_update_scope_2026-09-24.md).
 
+The current selected-field calculation has closed one additional transport
+edge: [`SelectedStreamCurlChartTransport.lean`](NavierStokesReview/src/completions/SelectedStreamCurlChartTransport.lean)
+proves that the selected mean stream enters the Cartesian curl branch on the
+production chart. It does not yet identify that vector-valued curl with the
+scalar field averaged by `barMoment`; the graph-to-torus and boundary-term
+calculation remains open. The direct scalar branch has an exact order-two zero,
+so the live test is now whether the potential/curl branch contributes a
+selected nonzero remainder. See
+[`selected_stream_curl_chart_transport_2026-09-25.md`](NavierStokesReview/evidence/selected_stream_curl_chart_transport_2026-09-25.md)
+and [`selected_direct_radial_moment_bridge_2026-09-25.md`](NavierStokesReview/evidence/selected_direct_radial_moment_bridge_2026-09-25.md).
+
 The two findings are related but distinct. The selected construction has the
 form `f = navierStokesResidual u p` along its chosen path, so the residual
 identity is part of the witness predicates rather than an independently
@@ -131,6 +142,14 @@ contraction and explicit value/first-derivative seam matching, so its proposed
 Zeno and first-order-jump objections are not currently source-supported.
 See [`docs/Euler_Parent_Child_Interval_Audit.md`](docs/Euler_Parent_Child_Interval_Audit.md)
 and [`NavierStokesReview/tools/radial_profile_integrals.py`](NavierStokesReview/tools/radial_profile_integrals.py).
+
+The base-profile audit closes a separate possible misreading. A zero-sorry
+completion proves that the selected constructed potential has the selected
+slow-base velocity as its Euclidean curl before the terminal time, and that
+the curl norm tends to infinity on the spatial axis. This confirms that the
+base branch is a concrete selected field, not an empty placeholder. It still
+does not identify the full mixed Cartesian field with the scalar `barMoment`
+input, so it supplies no `Delta m != 0` or kernel-level `False`.
 
 ## Current selected-field calculation
 
@@ -239,3 +258,68 @@ transport. The remaining calculation must still include the separate direct
 branch, torus average, axis/support limits, and boundary terms before any
 `Delta m` or `False` result can be claimed. See
 [`selected_potential_stage_chart_transport_2026-09-25.md`](NavierStokesReview/evidence/selected_potential_stage_chart_transport_2026-09-25.md).
+
+The latest completion also fixes the positive-radius component formula: the
+Cartesian component used by the radial gate is a rotated combination of the
+cylindrical components. This is a selected chart transport result, not yet a
+global `barMoment` identity or a contradiction. The active target remains the
+actual mixed field after curl, direct-branch addition, torus averaging, and
+axis/support limits.
+
+The next selected-field completion makes the direct branch fully explicit. Its
+Cartesian component includes the polar rotation, the graph scale, and the
+`swapCylinder` reindexing before it can be compared with the scalar profile
+used by `barMoment`. This is positive transport evidence and a precise
+constraint on the counter-paper calculation, not a claimed kernel
+contradiction.
+
+Evidence: [`selected_physical_component_transport_2026-09-25.md`](NavierStokesReview/evidence/selected_physical_component_transport_2026-09-25.md).
+
+The direct radial moment is now evaluated as well.  The selected direct
+Cartesian component agrees with its native scalar on the positive radial
+section, and the exact order-two torus-averaged radial integral is zero on the
+selected carrier.  The full endpoint remains the mixed field
+
+$$
+\nabla\times A_{\mathrm{sum}}+B_{\mathrm{sum}},
+$$
+
+so the potential/curl branch is still the decisive counter-paper target.
+This result is positive selected-field evidence, not a kernel contradiction.
+
+Evidence: [`selected_direct_radial_moment_bridge_2026-09-25.md`](NavierStokesReview/evidence/selected_direct_radial_moment_bridge_2026-09-25.md).
+
+The latest source trace also corrects the scope of the rank objection. The
+rank correction is active: its zero-mass identity is used to construct
+`rankPotential`, and the selected stream is explicitly the temporal-plus-rank
+field before the Cartesian curl. The unresolved issue is more precise: the
+exported curled mixed field is not yet identified with the scalar
+`torusAverage` input required by `barMoment`. This remains the load-bearing
+CTR-005 endpoint correspondence gap, not a claim that the rank code is dead
+or that a numerical remainder has already been proved.
+
+Evidence: [`selected_stream_rank_moment_scope_2026-09-25.md`](NavierStokesReview/evidence/selected_stream_rank_moment_scope_2026-09-25.md).
+
+The latest completion isolates one further source-level requirement. Because
+the production branch curls cut-off potentials, every selected stage contains
+the exact product-rule commutator
+
+$$
+\operatorname{curl}(\chi A)-\chi\operatorname{curl}(A)
+ =(\nabla\chi)\times A.
+$$
+
+This term must be transported into the radial `barMoment` calculation. The
+review has proved the identity and compiled it without `sorry`; it has not
+yet proved a nonzero radial remainder or `False`.
+
+Evidence: [`selected_cutoff_curl_commutator_2026-09-25.md`](NavierStokesReview/evidence/selected_cutoff_curl_commutator_2026-09-25.md).
+
+The component-level form is now available as well:
+
+$$
+\bigl((\nabla\chi)\times A\bigr)_0=(D_1\chi)A_2-(D_2\chi)A_1.
+$$
+
+The next proof obligation is to transport this selected expression into the
+scalar radial moment, with its axis and support boundaries retained.

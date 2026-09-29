@@ -292,4 +292,6 @@
  ├── 📄 source_tranche_priority_186_fefferman_full_word_connection_closure_2026-09-30.json
  ├── 📄 source_tranche_priority_187_circularity_adjudication_2026-09-30.json
  ├── 📄 source_tranche_priority_188_connected_cmi_compliance_2026-09-30.json
+ ├── 📄 research_paper_evidence_dossier_2026-09-30.md
+ └── 📄 source_tranche_priority_189_openai_physical_wording_source_check_2026-09-30.json
 ```

@@ -1,0 +1,66 @@
+{
+  "schema": "navier-stokes-review-claim-register-report/v1",
+  "validation": {
+    "passed": true,
+    "failures": []
+  },
+  "claims": [
+    {
+      "id": "MAP-001",
+      "title": "Selected endpoint route map",
+      "status": "supported",
+      "level": "compiled-route",
+      "structural_prerequisites": {
+        "source_names_present": true,
+        "compiled_routes_reachable": true,
+        "evidence_files_present": true
+      },
+      "open_semantic_obligation": false,
+      "interpretation": "The captured environment reaches the selected endpoint declarations; this does not prove semantic transport."
+    },
+    {
+      "id": "CTR-005",
+      "title": "Selected five-moment transport",
+      "status": "open",
+      "level": "semantic-transport",
+      "structural_prerequisites": {
+        "source_names_present": true,
+        "compiled_routes_reachable": true,
+        "evidence_files_present": true
+      },
+      "open_semantic_obligation": true,
+      "interpretation": "Reachability is confirmed, but a zero-sorry equality transporting the named paper moments through the selected Cartesian field, periodisation, tsum, and radial observable remains required."
+    },
+    {
+      "id": "CTR-012",
+      "title": "Residual-force provenance",
+      "status": "conditional",
+      "level": "provenance",
+      "structural_prerequisites": {
+        "source_names_present": true,
+        "compiled_routes_reachable": true,
+        "evidence_files_present": true
+      },
+      "open_semantic_obligation": true,
+      "interpretation": "The selected force is residual-derived on the constructed path. Treating that as a literal CMI violation requires an explicit independent-data admissibility predicate; the existential formal endpoint is not thereby contradicted."
+    },
+    {
+      "id": "CTR-032",
+      "title": "Selected endpoint axiom hygiene",
+      "status": "supported",
+      "level": "kernel-metadata",
+      "structural_prerequisites": {
+        "source_names_present": true,
+        "compiled_routes_reachable": true,
+        "evidence_files_present": true
+      },
+      "open_semantic_obligation": false,
+      "interpretation": "The captured selected closure has no reachable sorryAx users. This is endpoint-scoped and is not a repository-wide zero-sorry assertion."
+    }
+  ],
+  "counts": {
+    "claims": 4,
+    "open_or_conditional": 2,
+    "structural_failures": 0
+  }
+}

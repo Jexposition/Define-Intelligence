@@ -20,7 +20,7 @@
 | W10 | Run all probes, lint documents, and package branch | [x] | On 2026-09-25, `lake build NavierStokesReview` completed 3,697 jobs under Lean 4.34.0-rc2. The exported comparator reports only standard axioms. Review commit `054f407` is pushed to the review branch. No tracked build artefacts exist. |
 | W11 | Expose the internal selected-cycle radial invariant | [x] | `SelectedCycleMomentTransport.lean` compiles and obtains `state_invariant.masses` for every selected cycle stage. |
 | W12 | Connect the internal invariant to the exported mixed witness and paper tuple | [~] | The cycle invariant is proved, but `Witness` still exposes no equality to `(M,I,J,S,C_p)`; this is the active transport target. |
-| W13 | Calculate a selected-field radial remainder | [~] | Source trace now reaches the selected stage families, cutoff multiplication, Cartesian curl, and `barMoment` definition. A selected `Delta m ≠ 0` still requires an explicit Cartesian-to-radial equality and boundary-term calculation. |
+| W13 | Calculate a selected-field radial remainder | [~] | The potential-production component now has an exact `ScalarField`/`barMoment` section and positive-radial physical pullback. A selected `Delta m ≠ 0` still requires full mixed-field, boundary, and `tsum` transport. |
 | W14 | Keep the counter-paper anchored to the official claim | [x] | OpenAI's Theorem 1.1 and Appendix A are recorded as the claims under challenge; the review targets the selected-field five-moment and residual transport, not a weaker generic proxy. |
 | W15 | Maintain the companion Euler comparison lane | [~] | Parent-child interval geometry and first-derivative seam facts are source-backed; a Zeno endpoint or all-order seam failure is not established and cannot be transferred to Navier--Stokes. |
 
@@ -74,7 +74,17 @@ Inspect the selected import closure for a theorem whose conclusion mentions both
 | FJ-06 | [~] | Add the selected-field pressure-Poisson/Leray identity as a proof target and test it against compact localisation; compact support alone is not a contradiction. |
 | FJ-08 | [x]/[~] | The companion probes prove that `c * ‖u‖ ≤ ‖residual‖` would force `False`, while a scalar countermodel shows blow-up plus flat residual is otherwise consistent. Source inspection has not found the selected premise. |
 
-**Last updated:** 2026-09-25
+**Last updated:** 2026-09-26
+
+## 2026-09-26 implementation update
+
+`SelectedPotentialProductionBarMomentSection.lean` completes the local
+CALC-26 type gate. It defines the production scalar on the lifted point type,
+proves `barMoment_apply` for that family, and verifies the positive-radial
+physical section. The next implementation target is CALC-27: transport a
+finite selected prefix through the production cutoff/curl identity while
+retaining the commutator and the actual auxiliary average. No selected
+nonzero remainder or kernel contradiction has yet been proved.
 
 The current release package is source-controlled by `REVIEW_DOCUMENT_CONTROL.md`.
 The two untracked reference PDFs are intentionally excluded from commits.
@@ -210,3 +220,125 @@ Source correction: transport the selected velocity as two branches,
 `curl(potential sum)` and `direct sum`. Apply the cutoff commutator first to
 the potential branch; require a separate direct-branch radial identity before
 calculating any selected remainder.
+
+The positive-radius component identity is now compiled in
+`SelectedCylindricalComponentTransport.lean`. The next implementation step is
+to supply the scalar field consumed by `barMoment_apply`, not to infer a
+nonzero remainder from the rotation formula alone.
+
+The selected direct branch has now been carried through that map far enough to
+expose its exact component factor, including the source `swapCylinder`
+reindexing and graph scale. The next step remains scalar identification and
+torus/radial integration; no nonzero remainder is assumed.
+
+Evidence: `NavierStokesReview/evidence/selected_physical_component_transport_2026-09-25.md`.
+
+The direct scalar calculation is complete and formally checked.  The next
+implementation target is the potential/curl branch's scalar representative,
+including its cutoff, torus average, axis, support, and sum limits.
+
+Evidence: `NavierStokesReview/evidence/selected_direct_radial_moment_bridge_2026-09-25.md`.
+
+The next implementation target is now explicit: preserve the temporal/rank
+decomposition through the selected Cartesian curl, then construct the scalar
+torus-average representative required by `barMoment`. Do not treat rank
+zero-mass as a total-field invariant, and do not claim a remainder until the
+selected mixed field has been integrated.
+
+Evidence: `NavierStokesReview/evidence/selected_stream_rank_moment_scope_2026-09-25.md`.
+
+Implementation update: the selected cut-stage curl and its first component
+are now compiled in `NavierStokesReview/src/completions/SelectedCutStageCurlScope.lean`.
+The next implementation target is its scalar radial transport, not an assumed
+nonzero remainder.
+Implementation update: `SelectedTorusLiftImageScope.lean` now proves, without
+`sorry`, that the production `physicalPoint` map misses an explicit auxiliary
+point in the unit averaging square. The next implementation target is the
+raw-scalar-to-production pullback equality, followed by the retained cutoff,
+curl, torus, and radial calculation. No nonzero remainder is assumed.
+
+Evidence: `NavierStokesReview/evidence/selected_torus_lift_image_scope_2026-09-25.md`.
+
+Implementation update: `SelectedAtlasPhysicalErasure.lean` compiles without
+`sorry` and proves valid-sample congruence for `Atlas.physical`. The next
+implementation target is CALC-26: connect that selected observation map to the
+full native scalar-family domain used by `barMoment`, retaining the unresolved
+coverage or omitted-contribution case.
+
+Implementation update: `SelectedPotentialProductionRadialScalar.lean` now
+derives the selected localised potential component on the positive-radial
+section. The next target is still the full averaging-domain representative,
+including graph coverage, boundary terms, and the final `tsum`.
+
+Implementation update: `SelectedPotentialProductionFinitePrefix.lean` now
+defines the concrete finite selected potential and proves its complete
+cutoff/curl/stage expansion. It also places the finite production on the exact
+`barMoment` scalar domain and proves the positive-radius pullback. The next
+target is the actual weighted integral and then the justified passage to the
+selected `tsum`; no numerical remainder is assumed.
+
+Implementation update: `SelectedPotentialProductionTorusAverage.lean` now
+reduces the finite-prefix scalar through the exact torus-average definition
+and exposes the literal weighted radial integral. The remaining work is the
+actual evaluation, boundary control, and infinite-`tsum` transport; no
+nonzero remainder is assumed.
+
+## 2026-09-26 controlled audit update
+
+`SelectedFiniteCutoffEndpoint.lean` proves a further selected-path fact:
+for every fixed finite prefix `N`, the axis value
+`physicalQ h (t, 0)` eventually lies in the common plateau of all scaled
+cutoffs in that prefix as `t → 1⁻`. The proof uses
+`AxisPreservation.physicalQ_origin_tendsto` and
+`SmoothCutoffs.finite_scaledCutoffs_eventually_one`.
+
+This is a finite-prefix result only. It does not establish a uniform plateau
+in `N`, identify the value of the infinite `potentialSum`, evaluate the
+selected `barMoment`, or prove a nonzero remainder. The next acceptance test
+is the exact passage from `potentialSum_eventuallyEq_partial` and
+`potentialSum_allJets_eventuallyEq_partial` to the selected torus-average and
+radial moment, including axis and outer-support terms.
+
+The manuscript now states the corresponding formal obligations explicitly:
+field-level transport of `(M, I, J, S, C_p)`, absolute pressure semantics,
+off-axis/on-axis chart compatibility, and force-provenance scope. These are
+review obligations, not replacements for a selected-field contradiction.
+
+## 2026-09-26 implementation update
+
+Completed `CALC-38c`: the actual mixed first component is now pulled back to
+the exact scalar-family type consumed by `barMoment`, and the positive-radius
+physical pullback compiles without `sorry`. The next implementation target is
+the value of that mixed integral, including the cut direct branch, axis/tail
+terms, and any justified passage from finite prefixes to the selected `tsum`.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_production_barMoment_2026-09-26.md`.
+
+`CALC-38e` is complete: the mixed `barMoment` reduces to the literal radial
+integral. The remaining acceptance test is its value, including the cut direct
+branch and all endpoint/interchange hypotheses.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_production_torus_average_2026-09-26.md`.
+
+The next acceptance test now includes radial compatibility: prove an exported
+support/integrability mechanism for the periodic mixed pullback, or derive a
+value-level result without importing the bounded-shell premise.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_radial_periodicity_2026-09-26.md`.
+
+The R3 packaging acceptance test is complete as a non-implication theorem.
+The next proof-bearing task remains the selected mixed integral and its
+periodic-to-whole-space transport, not another interface-only payload test.
+
+Evidence: `NavierStokesReview/evidence/selected_r3_packaging_boundary_2026-09-26.md`.
+
+## W16 — Hardened repository mapping
+
+- [x] Hash the extracted tree snapshot and reconcile live checkout files.
+- [x] Parse namespace-aware source spans and exact import edges.
+- [x] Export the elaborated endpoint environment.
+- [x] Join compiled names to source spans by exact qualified name.
+- [x] Validate selected routes, hash drift, and reachable `sorryAx` users.
+- [ ] Use the route ledger to prove selected-field moment transport.
+
+Method: `docs/REVIEW_MAPPING_METHOD.md`.

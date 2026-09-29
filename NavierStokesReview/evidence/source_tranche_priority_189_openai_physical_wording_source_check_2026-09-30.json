@@ -1,0 +1,14 @@
+{
+  "priority": 189,
+  "date": "2026-09-30",
+  "status": "source_checked",
+  "claim_checked": "The OpenAI manuscript says its forced construction would never occur physically.",
+  "result": "not_supported_by_inspected_source",
+  "sources": [
+    {"path": "docs/navier-stokes openai.txt", "lines": "31-47", "role": "theorem statement and claimed global consequence"},
+    {"path": "docs/navier-stokes openai.txt", "lines": "106-124", "role": "physical description, residual force, smooth cancellation"},
+    {"path": "docs/navier-stokes openai.txt", "lines": "252-304", "role": "background residual, pulses, corrections, cutoff force"},
+    {"path": "docs/navier-stokes openai.txt", "lines": "306-321", "role": "proof obligation and force extension architecture"}
+  ],
+  "controlled_conclusion": "The source presents a physically framed residual-designed forced construction. The audit must separately test Fefferman admissibility and complete manuscript-mechanism fidelity. CTR-005 remains an unestablished selected-field transport finding, not a claim that the manuscript itself declares the flow physically impossible."
+}

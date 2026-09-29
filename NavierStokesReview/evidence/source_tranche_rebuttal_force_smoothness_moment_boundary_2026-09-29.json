@@ -1,0 +1,83 @@
+{
+  "priority": 161,
+  "date": "2026-09-29",
+  "status": "source_adjudication_complete_no_selected_mismatch_claimed",
+  "question": "Whether omission of a final five-moment tuple means the selected force smoothness is assumed or the paper mechanism is physically refuted.",
+  "sources": [
+    {
+      "path": "NavierStokes/ActualCandidateAssembly.lean",
+      "lines": "1079-1098;1121-1151",
+      "finding": "Actual physical data constructs selected StageEstimates; Witness omits a named final (M,I,J,S,C_p) equality while packaging force smoothness, consequences, blow-up, and boundary limits."
+    },
+    {
+      "path": "NavierStokes/GluedStageEstimates.lean",
+      "lines": "684-725",
+      "finding": "actualStageEstimates consumes concrete PhysicalData and supplies finite residual rates; it is not a free abstract rate premise at this constructor."
+    },
+    {
+      "path": "NavierStokes/ActualStageEstimates.lean",
+      "lines": "348-400",
+      "finding": "finite_residual_rates is invoked for the concrete cycle velocity family and physical-data hypotheses."
+    },
+    {
+      "path": "NavierStokes/LocalResidualFlatness.lean",
+      "lines": "80-125",
+      "finding": "selected estimates derive a common schedule and all residual jet rates."
+    },
+    {
+      "path": "NavierStokes/CandidateFromLimits.lean",
+      "lines": "35-57;80-112;138-148",
+      "finding": "force smoothness and activated-residual agreement are derived from locally uniform full residual derivative limits and a smooth extension."
+    },
+    {
+      "path": "NavierStokes/MixedPeriodicAssembly.lean",
+      "lines": "338-365",
+      "finding": "the selected force construction consumes residual limits, smoothness, extensions, divergence, and the axis blow-up premise."
+    },
+    {
+      "path": "docs/navier-stokes openai.txt",
+      "lines": "523-546;695-735;746-757;761-784;8091-8107;8451-8517",
+      "finding": "the manuscript gives load-bearing reduced-profile moment matching and a multi-operation residual correction/summation architecture."
+    },
+    {
+      "path": "docs/navierstokes.txt",
+      "lines": "24-26;41-47;74-77",
+      "finding": "CMI text requires a given externally applied force with decay conditions and states the existential forced breakdown alternative."
+    },
+    {
+      "path": "NavierStokesReview/src/extensions/SelectedEndpointMomentTransportObstruction.lean",
+      "lines": "1-40",
+      "finding": "AX-033 proves abstract payload non-entailment only; it does not construct a selected physical field with nonzero moments."
+    }
+  ],
+  "text_search": {
+    "manuscript": {
+      "Fredholm": 0,
+      "adjoint": 0,
+      "Laurent": 0,
+      "if and only if": 0,
+      "orthogon": 8,
+      "pole": 1
+    }
+  },
+  "adjudication": {
+    "confirmed": [
+      "Witness omits an explicit final five-observable equality.",
+      "The written paper treats five radial moments as load-bearing profile matching and correction data.",
+      "The selected Lean route derives residual rates and force smoothness from concrete data and full residual limits.",
+      "The endpoint correspondence to the paper's complete five-moment explanation remains unestablished."
+    ],
+    "not_established": [
+      "The five moments are the only residual cancellation mechanism.",
+      "Each residual component diverges at t=1.",
+      "Force smoothness is logically equivalent to one final five-moment equality.",
+      "AX-033 is a physical nonzero-moment countermodel.",
+      "A selected-field nonzero defect, impossibility theorem, or False."
+    ]
+  },
+  "source_hygiene": {
+    "openai_source_modified": false,
+    "toy_scan": false,
+    "processes_at_review_start": "none of lean/lake/elan/python"
+  }
+}

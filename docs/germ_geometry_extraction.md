@@ -78,3 +78,74 @@ The positive-radius and axis results therefore do not yet transport the
 whole field into `barMoment`.
 
 Evidence: `NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md`.
+
+The valid-chart component is now formally reduced to the frame rotation of the
+cylindrical velocity. This clarifies the local germ data needed by the radial
+gate but does not cross the axis or prove the global `barMoment` identity.
+
+Evidence: `NavierStokesReview/evidence/selected_cylindrical_component_transport_2026-09-25.md`.
+
+The selected direct component is now source-resolved beyond the frame identity:
+the formula retains `cos(theta)`, the graph scale, and `swapCylinder`. This
+specifies the coordinate data that a global radial transport theorem must
+carry, without asserting a nonzero remainder.
+
+Evidence: `NavierStokesReview/evidence/selected_physical_component_transport_2026-09-25.md`.
+
+The selected direct radial section now has an exact native scalar moment
+identity.  Its order-two torus-averaged integral vanishes on the carrier;
+this does not extend automatically across the potential/curl branch.
+
+Evidence: `NavierStokesReview/evidence/selected_direct_radial_moment_bridge_2026-09-25.md`.
+
+The germ trace now records that rank data enters the selected stream through
+`rankPotential` and is added to the temporal family. The germ-to-curl theorem
+therefore has genuine rank content, but no selected theorem yet carries the
+assembled result through torus averaging and `barMoment`.
+
+Evidence: `NavierStokesReview/evidence/selected_stream_rank_moment_scope_2026-09-25.md`.
+
+At the selected stage, the first Cartesian localisation contribution is
+`(D₁χ)A₂ − (D₂χ)A₁`. Any germ-to-radial transport must preserve this term and
+its support boundaries.
+
+`SelectedPotentialProductionRadialScalar.lean` now records that term in the
+actual first component on the positive-radial section. The remaining germ
+transport is the lifted averaging map, boundary control, and final `tsum`.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_production_radial_scalar_2026-09-25.md`.
+
+## Endpoint scale update: 2026-09-26
+
+The selected axis scale is now source-confirmed as `1 - t`, and every fixed
+finite cutoff prefix is eventually on at the endpoint. This does not evaluate
+the germ's infinite curl sum or its radial moment; the germ-to-radial
+transport and boundary terms remain open.
+
+Evidence: `NavierStokesReview/evidence/selected_finite_cutoff_endpoint_2026-09-26.md`.
+
+## Mixed germ observable: 2026-09-26
+
+The first component of the selected mixed field now has a source-typed radial
+observable on the positive-radius section. The germ calculation remains open
+at the value level because the direct localisation and periodisation terms
+have not been integrated.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_production_barMoment_2026-09-26.md`.
+
+The germ-to-radial map now exposes the exact mixed weighted integral. The cut
+direct term remains a value-level calculation target.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_production_torus_average_2026-09-26.md`.
+
+The radial germ pullback is unit-periodic after the selected Cartesian
+periodisation. A bounded radial shell would force zero, so support transport
+must be justified before treating it as a genuine compact radial profile.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_radial_periodicity_2026-09-26.md`.
+
+The selected R3 type boundary has now been checked in zero-sorry Lean. It
+does not export the five-moment payload used by the paper, but this remains a
+packaging limitation rather than a numerical claim about the germ field.
+
+Evidence: `NavierStokesReview/evidence/selected_r3_packaging_boundary_2026-09-26.md`.

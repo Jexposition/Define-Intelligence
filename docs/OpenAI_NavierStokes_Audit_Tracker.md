@@ -1,13 +1,38 @@
 # OpenAI Navier–Stokes Counter-Paper Evidence Tracker
 
-## Live register state (2026-09-28)
+## Live register state (2026-09-29)
 
-The authoritative register currently records 2,790 indexed modules, 588
- reachable modules, 613 evidence-inspected modules, 0 reachable modules still
- open, and 0 missing project import edges. Historical tranche counts below are
-kept as provenance; they are not the current total.
+The authoritative register currently records 2,794 indexed modules, 588
+modules in the directly captured `NavierStokes.R3.Theorem` closure, 904
+evidence-inspected rows, 1,883 source-indexed rows queued for direct review,
+10 source rows containing a `sorry` token, 70 supplemental evidence records,
+and 0 missing project import edges. Historical tranche counts below are kept
+as provenance; they are not the current total. Closure membership,
+evidence-inspection status, and declaration-level theorem use are separate
+measurements.
 
 This document is the working ledger for the counter-paper. It records evidence, status, and the next falsification test. It is intentionally a tracker. The argument itself is written in `OpenAI_NavierStokes_Research_Paper.md`.
+
+## MAP-51: Reclassification after raw endpoint adjudication (2026-09-29)
+
+The earlier CTR-005 formulation treated the absence of a named final
+`(M,I,J,S,C_p)` field in `ActualCandidateAssembly.Witness` as evidence that
+the paper's moment/rank restoration was dropped before the endpoint. Direct
+source tracing disproves that formulation. `NominalProfile` and the repair
+modules provide genuine reduced-profile moment certificates; coefficient
+matching converts them into `BaseResidual.FiniteIdentities`; `FinalSlowBase`,
+`BaseWitnessClosure`, `ActualBaseResidual`, and
+`ActualCycleResidualBounds` consume those identities; and
+`ActualCandidateConstruction` identifies the resulting stage fields with the
+selected slow-base fields used downstream.
+
+**Status:** withdraw “missing restoration” as a demonstrated failure. Retain
+only a narrower semantic-crosswalk question: whether every paper assertion has
+the same scope as the selected CMI endpoint, including pressure, force,
+support, and whole-space interpretation. Tuple omission alone proves neither
+a nonzero defect nor an impossibility theorem and does not derive `False`.
+
+Evidence: `NavierStokesReview/evidence/profile_moment_selected_path_adjudication_2026-09-29.md`.
 
 ## MAP-41: R3 breakdown, primary coherence, mean bounds, and signed-wave tier (2026-09-27)
 
@@ -74,15 +99,17 @@ is not evidence against the claim.
 
 ## Current position
 
-The repository contains a genuine R³ C/D-shaped endpoint and the headline theorem reports only standard Lean axioms. The primary adverse result is that the published five-moment/CMI solution claim is **not established** by the inspected paper-to-endpoint record: the authors have not supplied the selected-field composition theorem that their advertised solution requires. This is not softened by the fact that a separate zero-sorry attack has not yet derived `False`. `FiveProfileMoments` matches the paper-shaped normalisation, `PositiveOrderMoments` proves an exact five-component recursive repair, and `FiveRowRank` supplies a distinct three-debt physical rank interface. A zero-sorry theorem rules out direct row-by-row identification between the first and third interfaces, while the positive-order layer may be an intended intermediate representation. The literal endpoint is therefore not labelled formally refuted, but the published solution claim is not accepted pending affirmative proof of the missing transport.
+The repository contains a genuine R³ C/D-shaped endpoint and the headline theorem reports only standard Lean axioms. The primary adverse result is that the published five-moment/CMI solution claim is **not established** as an exact paper-to-endpoint correspondence on the inspected record. This is not a claim that the internal repair machinery is missing: `FiveProfileMoments` matches the paper-shaped normalisation, `PositiveOrderMoments` proves exact recursive repair, `FiveRowRank` supplies a distinct physical rank interface, and the raw selected chain consumes moment/rank-dependent coefficient and residual identities. The remaining issue is whether every paper-level consequence is realised with the same scope by the completed selected Cartesian fields, pressure, force, support, and endpoint. The literal endpoint is therefore not labelled formally refuted, but the advertised exact correspondence is not credited on tuple omission or interface non-implication alone.
 
 This is the claim OpenAI actually published, not a stronger interpretation
 invented by the review. The announcement calls the work a solution of the
 Navier–Stokes existence and smoothness problem and says it resolves the
 problem through alternatives (C) and (D). The paper's Theorem 1.1 makes the
-same affirmative construction claim. The missing selected-field transport is
-therefore a defect in the proof record for the central published solution,
-not a request for optional robustness or physical realism.
+same affirmative construction claim. The unresolved selected-field
+composition is therefore an adverse gap in the proof record for the central
+published solution, not a request for optional robustness or physical realism;
+it must be tested against the actual internal chain rather than inferred from
+the shape of `Witness`.
 
 **Headline load-bearing finding: CTR-005.** The paper's named five-moment
 system has not been shown by a selected-path theorem to be the same moment
@@ -4629,3 +4656,65 @@ The register after regeneration is **2,792 indexed**, **588 captured
 endpoint-closure**, **734 evidence-inspected**, **2,051 queued**, **0 missing
 project import edges**, **10 source rows containing a `sorry` token**, and **38
 supplemental evidence records**. This tranche causes no verdict escalation.
+## 2026-09-29 compile-boundary re-audit: blow-up is present, final moment identity is not exported
+
+The selected endpoint was re-audited after an ambiguity in the phrase “moment
+machinery is bypassed”. That phrase was too strong and is withdrawn. The
+declaration-level closure rooted at `ActualCandidateAssembly.selected_witness`
+contains genuine `PositiveOrderMoments`, `FiveProfileMoments`, `FiveRowRank`,
+`barMoment`, profile-repair, primitive-cancellation, and physical-data
+dependencies. The selected estimates are built by
+`GluedStageEstimates.actualStageEstimates` from actual cycle coherence, signed
+wave inputs, representations, and `physicalData`.
+
+The selected blow-up premise is also explicit rather than inferred from the
+absence of a moment field. `GermCandidateAssembly.origin_blowup` transports the
+origin asymptotic to the mixed field and uses `FinalSlowBase.axis_tendsto`; the
+result is passed as `haxis` into
+`CandidateConsequences.mixed_exists_force_with_consequences`. Thus Lean can
+prove `CandidateProperties.speed_unbounded` even though `Witness` does not
+return a final equality
+`moments(selected_fields) = (M,I,J,S,C_p)`.
+
+The corrected CTR-005 finding is therefore: upstream moment machinery is active,
+the formal blow-up candidate is nonempty, but the inspected endpoint does not
+close the full selected mixed Cartesian field, pressure, residual, and force
+composition to the paper's five named observables. This is a paper-to-endpoint
+correspondence failure, not proof that the endpoint is moment-free, empty, or
+already mathematically false. The current record does not justify `Delta m != 0`,
+an impossibility theorem, or `False`.
+
+Evidence: `NavierStokesReview/evidence/selected_endpoint_compile_boundary_reaudit_2026-09-29.md`.
+
+The direct production-source operator trace is `NavierStokesReview/evidence/selected_field_operator_trace_2026-09-29.md`. It confirms the actual sum/curl/localisation/periodisation route and records that `barMoment` is a separate scalar pressure-stream interface; it does not establish a global defect or impossibility.
+
+Priority 162 adds the direct correction-state boundary review:
+`NavierStokesReview/src/audit/priority_162_barmoment_correction_state_vs_selected_field_source_review_2026-09-29.md`
+and
+`NavierStokesReview/evidence/source_tranche_barmoment_correction_state_vs_selected_field_2026-09-29.json`.
+These records confirm genuine correction-state `barMoment`/`FiveRows`
+identities without treating them as a final activated Cartesian-field equality.
+
+## MAP-50 — Profile-moment dependency adjudication (2026-09-29)
+
+Direct source inspection corrects the earlier scope of CTR-005. The five-moment
+and rank/repair mechanism is not absent from the selected construction:
+`PositiveOrderMoments.moments_zero` feeds `GlobalStressSupport` conservative
+identities, `EntranceAlignedBase` finite identities, `FinalSlowBase`, and the
+`BaseResidual` jet-rate/all-jets-flat obligations. The local axis theorem
+`GermCandidateAssembly.origin_blowup` proves one blow-up conjunct and must not
+be mistaken for the full candidate proof.
+
+The paper’s `(M,I,J,S,C_p)` quantities are reduced-profile cumulative radial
+integrals used for profile joins, stress/pressure preservation, and correction
+stages. Therefore the absence of a literal tuple field in `Witness` is not by
+itself evidence that the mechanism is omitted, and the prior “missing
+restoration” formulation is superseded. The live adverse question is the
+complete semantic composition from those profile identities through the
+selected mixed `tsum`/curl/localisation/periodisation/pressure/force endpoint.
+
+**Classification:** internal mechanism present and consumed; complete global
+paper-to-endpoint correspondence still under audit. No nonzero defect,
+impossibility theorem, or `False` is recorded from this correction.
+
+Evidence: `NavierStokesReview/evidence/selected_profile_moment_dependency_adjudication_2026-09-29.md`.

@@ -81,3 +81,88 @@ The rank/profile interface therefore cannot be treated as the full
 curl-generated Cartesian field without a separate transport theorem.
 
 Evidence: `NavierStokesReview/evidence/selected_mixed_velocity_decomposition_2026-09-25.md`.
+
+The positive-radius frame calculation is now explicit:
+`(frame θ v) 1 = sin θ * v 0 + cos θ * v 1`, and the source
+`velocity_polar_forward` theorem transports it to the selected chart velocity.
+This is a local component identity only; it does not identify the mixed field
+with the scalar radial `barMoment` input.
+
+Evidence: `NavierStokesReview/evidence/selected_cylindrical_component_transport_2026-09-25.md`.
+
+The selected direct branch now has its full component factor exposed on the
+valid chart: polar rotation, graph scale, and `swapCylinder` reindexing all
+remain present before comparison with a scalar radial profile. This is a
+transport constraint, not a rank collision or a selected contradiction.
+
+Evidence: `NavierStokesReview/evidence/selected_physical_component_transport_2026-09-25.md`.
+
+The direct branch now has a selected scalar moment calculation: its positive-
+radius first component is the native angular scalar, whose exact order-two
+torus-averaged radial integral is zero.  This does not transport the curled
+potential branch or the mixed endpoint into the same moment operator.
+
+Evidence: `NavierStokesReview/evidence/selected_direct_radial_moment_bridge_2026-09-25.md`.
+
+The rank correction is active in the selected stream: its zero-mass identity
+is consumed by `rankPotential`, and the successor stream is the temporal-plus-
+rank angular field. The exported stream still reaches `barMoment` only through
+an unresolved curl-to-scalar torus-average identification.
+
+Evidence: `NavierStokesReview/evidence/selected_stream_rank_moment_scope_2026-09-25.md`.
+
+The cut-stage curl calculation is now explicit at component level:
+`(D₁χ)A₂ − (D₂χ)A₁` for the first Cartesian component. The rank/axis analysis
+must retain this term before claiming a scalar `barMoment` identity.
+
+The selected radial production completion now proves the corresponding first
+component on the positive-radial section. Rank data therefore reaches a
+concrete local scalar gate, but the torus-average and full `barMoment` bridge
+remain open.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_production_radial_scalar_2026-09-25.md`.
+
+The finite-prefix scalar has now been reduced through the exact torus-average
+and `barMoment` definitions. The rank identities therefore have a concrete
+finite-prefix radial target, but the target's value and its equality with the
+complete mixed selected field remain open.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_production_torus_average_2026-09-26.md`.
+
+## 2026-09-26 synchronization: finite-prefix endpoint
+
+`SelectedFiniteCutoffEndpoint.lean` proves that every fixed finite set of
+scaled cutoffs is eventually one on the axis as `physicalQ h (t, 0) → 0`.
+This gives the finite-prefix endpoint input for the radial calculation. It is
+not uniform in the prefix length and does not evaluate the complete mixed
+field, `barMoment`, or a nonzero remainder.
+
+Evidence: `NavierStokesReview/evidence/selected_finite_cutoff_endpoint_2026-09-26.md`.
+
+## 2026-09-26 synchronization: mixed `barMoment` domain
+
+`SelectedMixedProductionBarMoment.lean` now pulls the first Cartesian
+component of the actual mixed endpoint back to the scalar-family domain used
+by `barMoment`. On positive radius it reduces to the mixed radial section.
+This closes a typing and coordinate interface only; it does not evaluate the
+mixed weighted integral or establish a nonzero remainder.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_production_barMoment_2026-09-26.md`.
+
+The auxiliary torus average now reduces exactly, giving the literal mixed
+weighted radial integral. Its value remains unevaluated.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_production_torus_average_2026-09-26.md`.
+
+The selected mixed radial pullback is also unit-periodic. The repository's
+generic support theorem shows that bounded radial support would force it to
+vanish identically; the selected endpoint does not export that support premise.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_radial_periodicity_2026-09-26.md`.
+
+The R3 packaging check confirms that the exported `CandidateProperties` record
+does not carry a five-coordinate moment payload. This is an interface
+non-implication only; the actual mixed radial integral remains the decisive
+field-level test.
+
+Evidence: `NavierStokesReview/evidence/selected_r3_packaging_boundary_2026-09-26.md`.
