@@ -4302,3 +4302,18 @@ refuted.
 
 See `docs/CMI_OpenAI_Full_Semantic_Crosswalk.md` and
 `NavierStokesReview/src/audit/priority_168_fefferman_physical_admissibility_and_force_chain_2026-09-29.md`.
+
+## Audit update: selected observable type boundary (2026-09-29)
+
+The selected construction is materially present in the Lean source. The
+endpoint builds `ASum`, `BSum`, and `PSum` from a locally finite `tsum`, applies
+the cutoff-before-curl and periodisation operations, and then time-activates
+the mixed fields. The source also proves the cutoff-gradient commutator.
+
+The remaining issue is the observable interface. `barMoment` is defined on a
+lifted scalar pressure-stream domain and applies a torus average before radial
+integration. It is not definitionally the activated Cartesian velocity supplied
+by `Witness`. A source-level theorem must provide the scalar and component
+pullback, convergence, support and integrability, and equality with the
+completed selected field before the manuscript quantities can be credited to
+the endpoint. No selected nonzero defect has been established.

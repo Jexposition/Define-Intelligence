@@ -3714,3 +3714,16 @@ selected force is nonsmooth.  The source-backed distinction and the required
 next bridge search are recorded in
 `NavierStokesReview/src/audit/priority_168_fefferman_physical_admissibility_and_force_chain_2026-09-29.md`
 and `docs/CMI_OpenAI_Full_Semantic_Crosswalk.md`.
+
+## P2 source-bound refinement: observable domain boundary
+
+The selected endpoint is built from actual `potentialSum` terms, mixed
+Cartesian curl/localisation, periodisation, and time activation. The remaining
+correspondence question is an observable-domain theorem: `barMoment` consumes
+a lifted scalar pressure-stream field and integrates its torus average, while
+`Witness` exports activated Cartesian fields. A theorem must identify these
+domains and transport the observable through the completed operator chain.
+
+That theorem has not been located in the inspected source. This sustains
+CTR-005 as a paper-to-endpoint correspondence gap, but it is not a proof of a
+nonzero selected defect or literal CMI failure.

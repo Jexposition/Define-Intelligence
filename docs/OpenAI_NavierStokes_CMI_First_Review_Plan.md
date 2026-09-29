@@ -3392,3 +3392,26 @@ NavierStokesReview/evidence/source_tranche_priority_169_invariant_force_adjudica
 
 Evidence: `NavierStokesReview/src/audit/priority_168_full_closure_moment_symbol_census_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_full_closure_moment_symbol_census_2026-09-29.json`.
+
+## Priority 171: selected observable type boundary
+
+The selected endpoint is built from actual `potentialSum` terms, mixed
+Cartesian curl/localisation, periodisation, and time activation. The source
+also exposes the cutoff-gradient commutator. Separately,
+`DefectIncrementBounds.barMoment` consumes `ScalarField (Point P)` and
+integrates a `PressureStream.torusAverage`; it is not definitionally an
+observable on the activated Cartesian velocity in `Witness`.
+
+The remaining obligation is an explicit scalar lift, component identification,
+support and integrability argument, and equality through the completed sum,
+curl, localisation, periodisation, averaging, radial integration, and axis
+extension. This does not prove a selected defect, but it makes P2 a precise
+value-level representation search.
+
+- [x] Bind the selected field expressions and operator definitions.
+- [x] Bind the exact `barMoment` domain and radial-integral formula.
+- [ ] Prove or disprove equality with `(M,I,J,S,C_p)`.
+
+Evidence:
+`NavierStokesReview/src/audit/priority_171_selected_observable_type_boundary_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_171_selected_observable_type_boundary_2026-09-29.json`.

@@ -2325,3 +2325,21 @@ comparison with the manuscript observables.
 Evidence:
 NavierStokesReview/src/audit/priority_169_declaration_level_invariant_force_adjudication_2026-09-29.md;
 NavierStokesReview/evidence/source_tranche_priority_169_invariant_force_adjudication_2026-09-29.json.
+
+## Priority 171 goal control: selected observable domain
+
+The selected endpoint is a genuine `potentialSum`/curl/localisation/
+periodisation/time-activation construction. The remaining boundary is that
+`barMoment` is defined on `ScalarField (Point P)` through
+`PressureStream.torusAverage`, while `Witness` supplies activated Cartesian
+fields. A representation and transport theorem is required before the paper's
+five observables can be credited to the endpoint.
+
+- [x] Bind the selected field and operator definitions.
+- [x] Bind the `barMoment` domain and radial formula.
+- [ ] Resolve the value-level equality with `(M,I,J,S,C_p)`.
+- [ ] Keep CTR-005 at **NOT ESTABLISHED** until that obligation is resolved.
+
+Evidence:
+`NavierStokesReview/src/audit/priority_171_selected_observable_type_boundary_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_171_selected_observable_type_boundary_2026-09-29.json`.
