@@ -1,0 +1,46 @@
+{
+  "priority": 183,
+  "date": "2026-09-29",
+  "title": "Force smoothness and five-moment rebuttal adjudication",
+  "classification": "CTR-005",
+  "status": "source_checked",
+  "claims": [
+    {
+      "id": "P183-C1",
+      "claim": "The manuscript treats the five moments as load-bearing but also assigns distinct residual-control roles to wave, covariance, auxiliary-time, pressure, cutoff, nonlinear, and summation operations.",
+      "status": "supported",
+      "sources": ["docs/navier-stokes openai.txt:492-496", "docs/navier-stokes openai.txt:539-546", "docs/navier-stokes openai.txt:695-735", "docs/navier-stokes openai.txt:761-784"]
+    },
+    {
+      "id": "P183-C2",
+      "claim": "Velocity norm blow-up alone does not imply termwise divergence of every residual summand.",
+      "status": "supported_mathematical_correction",
+      "sources": ["docs/navier-stokes openai.txt:109-124"]
+    },
+    {
+      "id": "P183-C3",
+      "claim": "The selected Lean force theorem is derived from actual residual-rate and locally uniform limit premises, not a bare NativeBounds assumption.",
+      "status": "supported",
+      "sources": ["NavierStokes/ActualCandidateAssembly.lean:1079-1098", "NavierStokes/ActualCycleResidualBounds.lean:1156-1173", "NavierStokes/ActualCycleResidualBounds.lean:1187-1206", "NavierStokes/CandidateFromLimits.lean:39-66", "NavierStokes/CandidateFromLimits.lean:80-112"]
+    },
+    {
+      "id": "P183-C4",
+      "claim": "Upstream repaired finite identities feed concrete residual jet-rate and all-jets-flatness theorems.",
+      "status": "supported",
+      "sources": ["NavierStokes/ConstructedSlowBase.lean:224-256", "NavierStokes/ConstructedSlowBase.lean:351-383"]
+    },
+    {
+      "id": "P183-C5",
+      "claim": "The audit has not located a final endpoint theorem identifying the completed Cartesian fields and force with the paper tuple (M,I,J,S,Cp) after all selected transformations.",
+      "status": "not_established",
+      "sources": ["NavierStokes/ActualCandidateAssembly.lean:1121-1151", "NavierStokesReview/evidence/selected_endpoint_moment_transport_obstruction_2026-09-25.md", "NavierStokesReview/src/audit/priority_181_global_barmoment_integrability_gate_2026-09-29.md"]
+    }
+  ],
+  "negative_results": [
+    "No selected nonzero moment defect proved",
+    "No impossibility theorem proved",
+    "No literal CMI failure proved",
+    "No Lean False theorem proved"
+  ],
+  "build_note": "Source-level adjudication completed. Current shell has no Lean, elan, or lake executable, so no fresh compilation claim is made in this tranche."
+}

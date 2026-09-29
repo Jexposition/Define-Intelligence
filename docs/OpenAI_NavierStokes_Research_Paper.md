@@ -4710,3 +4710,52 @@ not a literal C/D refutation.
 
 Evidence: `NavierStokesReview/src/audit/priority_182_fefferman_semantic_word_to_condition_closure_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_182_fefferman_semantic_word_to_condition_closure_2026-09-29.json`.
+
+### Clarification of the periodic-branch wording
+
+The phrase “we may look for spatially periodic solutions” is treated here as
+branch latitude, not as permission to omit requirements. “Thus, we assume”
+binds (8) and (9) after the periodic branch is selected; “in place of” changes
+the whole-space data controls (4) and (5), while “we then accept” binds (10)
+and (11). For the whole-space branch used by the C-shaped route, (4), (5),
+(6), and (7) remain connected requirements.
+
+This also resolves the apparent force-provenance contradiction. Fefferman's
+“given, externally applied” language is a physical forward-problem framing,
+but the displayed C and D propositions do not add a separate formal predicate
+that a force must be constructed independently of a selected trajectory. The
+OpenAI manuscript explicitly defines the force as the residual of a chosen
+flow and pressure, then makes smooth extension of the total residual the
+central challenge. Therefore the audit must test both levels: the complete
+displayed C/D admissibility package and the manuscript's physical construction
+correspondence. The operational C route can be formally present while the
+selected-field transport of the manuscript's five-moment mechanism remains
+unestablished. Neither statement cancels the other.
+
+## Audit dossier update: force smoothness and the five-moment endpoint
+
+The source-controlled review now separates three propositions that had been
+blurring together. The manuscript's five-moment system is load-bearing for
+profile matching and finite-dimensional correction. The selected Lean route
+also contains a concrete residual-jet recurrence, locally uniform endpoint
+limits, and a smooth Taylor--Borel force extension that agrees with the
+activated residual before the terminal time. Therefore the record does not
+support the claim that `force_smooth` is simply assumed from `NativeBounds`.
+
+At the same time, no inspected export theorem identifies the completed
+selected Cartesian fields and their residual/force with the manuscript's
+`(M,I,J,S,C_p)` observables after the full `tsum`, curl, localisation,
+periodisation, torus-average, and radial-integral composition. That is a
+substantive paper-to-code correspondence failure, not a claim that the
+upstream moment code is dead or that the residual force has already been
+proved nonsmooth.
+
+The current scientific classification is consequently **NOT ESTABLISHED
+(CTR-005)** for complete manuscript-to-endpoint fidelity. A stronger result
+would require a selected value mismatch, an impossibility theorem, or a
+connected failed CMI condition. The dossier must not label the manuscript's
+literal C/D target false solely from the missing endpoint identity.
+
+Evidence:
+`../NavierStokesReview/src/audit/priority_183_force_smoothness_moment_rebuttal_adjudication_2026-09-29.md`;
+`../NavierStokesReview/evidence/source_tranche_priority_183_force_smoothness_moment_rebuttal_adjudication_2026-09-29.json`.

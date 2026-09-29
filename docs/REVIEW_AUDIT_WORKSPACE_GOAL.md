@@ -2823,3 +2823,71 @@ nonzero defect, impossibility, literal CMI failure, or `False`.
 Evidence:
 `NavierStokesReview/src/audit/priority_181_global_barmoment_integrability_gate_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_181_global_barmoment_integrability_gate_2026-09-29.json`.
+
+## Priority 183 goal control: force smoothness is not the same as final moment transport
+
+The latest rebuttal correctly insists that the five-moment mechanism must be
+treated as part of the manuscript's connected mathematical construction. It
+does not, however, establish three stronger claims: that velocity blow-up
+forces termwise divergence of every residual summand, that the five moments
+are the manuscript's only cancellation operation, or that
+`CandidateFromLimits.force_smooth` is assumed from a generic rate interface.
+
+The inspected Lean route is materially stronger than that description:
+
+\[
+H_{\mathrm{selected}}
+\Rightarrow J_{\mathrm{flat}}
+\Rightarrow \text{locally uniform residual-jet limits}
+\Rightarrow F_{\mathrm{smooth}},
+\]
+
+with preterminal agreement between the smooth force extension and the actual
+residual. The selected route also consumes concrete physical data and
+residual-rate constructions. This does not close the separate paper-to-code
+identity
+
+\[
+\operatorname{PaperMoments}(u_{\mathrm{selected}},p_{\mathrm{selected}})
+=(M,I,J,S,C_p)
+\]
+
+after the completed `tsum`, curl, localisation, periodisation, torus-average,
+and global radial-integration chain. That missing value-level identification
+remains the controlling adverse result, `NOT ESTABLISHED (CTR-005)`. It is not
+yet a selected mismatch, a force-nonsmoothness theorem, literal C/D failure,
+or `False`.
+
+The goal therefore remains adversarial and source-first: close the selected
+field transport gate, not hand OpenAI a repair request and not declare a
+stronger refutation without its required theorem.
+
+Evidence:
+`NavierStokesReview/src/audit/priority_183_force_smoothness_moment_rebuttal_adjudication_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_183_force_smoothness_moment_rebuttal_adjudication_2026-09-29.json`.
+
+## Priority 183 goal control: consolidation before publication
+
+The active goal includes repository hygiene as an evidentiary requirement.
+The current checkout was measured at 61 untracked path entries, not the older
+approximate count of one hundred. This count includes directory entries and
+does not justify bulk staging.
+
+The following are protected and must remain untouched and unpublished:
+`scratch_space/`, `NavierStokes/R3/TestPressure.lean`, and `$null`. The
+existing evidence archive remains under its correct parent and is local-only.
+The canonical CUDA-first 3D diagnostic is already tracked and linked. Its
+nonzero commutator result is evidence about the declared diagnostic model,
+not a theorem about the selected Lean field, because its own report records
+the unresolved selected `tsum`, periodisation, averaging, global integral,
+and axis bindings.
+
+The next consolidation pass must hash and cross-reference the remaining
+generated registers, logs, historical scans, duplicate source extraction, and
+quarantined falsification draft. Only after that check may files be moved to
+an archive inside their parent folder. No deletions are permitted. Only
+curated, source-backed records may be committed, and the new review branch
+must be published with its resulting remote commit recorded.
+
+Control record:
+`NavierStokesReview/evidence/worktree_triage_2026-09-29.md`.

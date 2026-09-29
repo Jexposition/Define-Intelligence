@@ -4100,3 +4100,66 @@ condition, selected value mismatch, impossibility theorem, or contradiction.
 
 Evidence: `NavierStokesReview/src/audit/priority_182_fefferman_semantic_word_to_condition_closure_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_182_fefferman_semantic_word_to_condition_closure_2026-09-29.json`.
+
+The wording “may look for spatially periodic solutions” is a branch choice,
+not a waiver. Once chosen, “Thus”, “In place of”, and “We then accept” bind
+(8), (9), (10), and (11). The whole-space C route retains (4), (5), (6), and
+(7). This is why a C-shaped theorem cannot be assessed by checking only the
+Navier--Stokes equations and a blow-up limit.
+
+The force language must be handled with the same precision. “Given,
+externally applied” supplies physical provenance and forward-problem meaning,
+but the displayed C/D quantifiers do not state an additional trajectory-
+independence predicate. OpenAI's manuscript expressly uses residual-defined
+forcing and makes smoothness of the total residual the analytic obligation.
+Thus residual design is a material physical-provenance objection, but not by
+itself a formal C/D counterexample. Conversely, a compiling C-shaped theorem
+does not, without a selected-field correspondence argument, establish every
+manuscript-level claim about the five-moment mechanism. The review reports
+these as separate layers rather than treating either as a substitute for the
+other.
+
+## Priority 183: adjudication of the force-smoothness rebuttal
+
+The latest rebuttal correctly rejects any attempt to treat the paper's five
+moments as optional notation. The paper uses them in profile matching,
+modulation repair, compatibility-defect correction, and preservation of the
+exterior quantities. The rebuttal overreaches in three places, however.
+
+First, `‖u(t)‖∞ → ∞` does not imply that each term in the residual diverges.
+The manuscript's construction is explicitly designed so that singular pieces
+can cancel in their sum. A termwise-divergence claim requires a separate
+asymptotic calculation.
+
+Secondly, the manuscript does not support the assertion that the five moments
+are its only cancellation operation. Its residual construction also contains
+wave-amplitude equations, covariance corrections, auxiliary-time inversion,
+pressure reconstruction, cutoff commutators, nonlinear remainder estimates,
+and repeated full-residual recomputation. The five moments are a load-bearing
+solvability and matching mechanism, but they are not interchangeable with the
+whole residual proof.
+
+Thirdly, the selected Lean route does not derive `force_smooth` from an
+unconnected `NativeBounds` premise. `CandidateFromLimits` consumes the actual
+residual derivative recurrence and locally uniform endpoint limits, constructs
+a smooth extension, and proves agreement with the activated residual before
+the terminal time. Upstream concrete physical-data and residual-rate
+constructions feed that route.
+
+The adverse finding remains exact and material. The inspected export does not
+yet contain an explicit theorem identifying the completed selected Cartesian
+velocity, pressure, residual, and force with the manuscript's five observables
+`(M,I,J,S,C_p)` after `tsum`, curl, localisation, periodisation, torus
+averaging, and global radial integration. Thus the paper's complete
+mechanism-to-endpoint correspondence is **NOT ESTABLISHED (CTR-005)**. This
+does not itself prove that the selected force is nonsmooth, that the selected
+moments are nonzero, or that Fefferman's literal C/D proposition is false.
+
+The review therefore rejects both underclaiming and overclaiming: it does not
+credit a green Lean build as proof of the manuscript's full physical argument,
+and it does not convert an absent transport theorem into a selected-path
+counterexample without the required value-level calculation.
+
+Evidence:
+`NavierStokesReview/src/audit/priority_183_force_smoothness_moment_rebuttal_adjudication_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_183_force_smoothness_moment_rebuttal_adjudication_2026-09-29.json`.

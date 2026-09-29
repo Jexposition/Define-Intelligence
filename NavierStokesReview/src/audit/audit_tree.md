@@ -157,7 +157,8 @@
 ├── 📄 priority_179_latest_force_smoothness_rebuttal_2026-09-29.md
 ├── 📄 priority_180_selected_field_boundary_rebuttal_adjudication_2026-09-29.md
 ├── 📄 priority_181_global_barmoment_integrability_gate_2026-09-29.md
-└── 📄 priority_182_fefferman_semantic_word_to_condition_closure_2026-09-29.md
+ ├── 📄 priority_182_fefferman_semantic_word_to_condition_closure_2026-09-29.md
+ └── 📄 priority_183_force_smoothness_moment_rebuttal_adjudication_2026-09-29.md
 ├── 📄 snapshot_compare.py
 ├── 📄 source_tranche_summary.py
 ├── 📄 source_tree_map.py

@@ -3623,6 +3623,66 @@ Evidence:
 `NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`;
 `docs/CMI_OpenAI_Full_Semantic_Crosswalk.md`.
 
+## Priority 183: adjudicate the force-smoothness rebuttal without collapsing the dependency graph
+
+- [x] Recheck the claim that velocity blow-up forces every summand in
+  `∂ₜu + (u·∇)u − νΔu + ∇p` to diverge. The manuscript explicitly describes
+  cancellation of singular pieces in the total residual, so termwise
+  divergence is not established by `‖u‖∞ → ∞` alone.
+- [x] Recheck whether the manuscript presents the five moments as its only
+  residual-control operation. It also assigns distinct roles to wave-amplitude
+  equations, covariance corrections, auxiliary-time inversion, pressure
+  reconstruction, cutoffs, nonlinear remainders, and repeated residual
+  recomputation. The five moments remain load-bearing, but “only mechanism” is
+  not source-supported.
+- [x] Trace `CandidateFromLimits.force_smooth` through the selected path. The
+  inspected theorem derives smoothness from the actual residual derivative
+  recurrence and locally uniform limits, then defines the smooth force
+  extension and proves preterminal agreement with the activated residual. It
+  is not a bare `NativeBounds` assumption.
+- [x] Preserve the adverse finding: no explicit theorem has yet been located
+  identifying the completed selected Cartesian velocity, pressure, residual,
+  and force with the manuscript's `(M,I,J,S,C_p)` observables after the
+  selected `tsum`, curl, localisation, periodisation, torus-average, and
+  global radial-integral steps. Complete manuscript-to-endpoint fidelity is
+  therefore **NOT ESTABLISHED (CTR-005)**.
+- [ ] Continue the value-level bridge audit. The next gate is not a generic
+  force-smoothness probe; it is a selected-field theorem or counterexample for
+  the exact completed observable, with explicit domain, integrability,
+  support, and transport hypotheses.
+- [ ] Do not upgrade to literal C/D failure, a nonzero selected defect,
+  impossibility, or `False` without the corresponding selected-path theorem.
+
+Evidence:
+`NavierStokesReview/src/audit/priority_183_force_smoothness_moment_rebuttal_adjudication_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_183_force_smoothness_moment_rebuttal_adjudication_2026-09-29.json`.
+
+## Priority 183: consolidation gate and numerical-evidence classification
+
+- [x] Recount the current worktree rather than relying on the earlier report of
+  approximately one hundred uncommitted files. The current snapshot contains
+  61 untracked path entries, including local directories.
+- [x] Leave `scratch_space/`, `NavierStokes/R3/TestPressure.lean`, and the
+  placeholder `$null` untouched and outside publication.
+- [x] Confirm that the canonical CUDA-first 3D curl/cutoff evidence is already
+  tracked and linked from the plan, goal, research paper, peer review, and
+  evidence tree.
+- [x] Preserve the numerical boundary: the CUDA diagnostic resolves a declared
+  3D model and reports nonzero commutator values, but it does not bind the
+  selected `tsum`, periodisation, `torusAverage`, `barMoment`, or axis route.
+- [ ] Hash and cross-reference every legacy generated register, build log, and
+  2026-09-27 cutoff output before moving anything to the evidence archive.
+- [ ] Create `docs/archive/` only when the duplicate source extraction,
+  quarantined historical falsification draft, and zero-byte tree file have
+  been reconciled against all current links.
+- [ ] Make the next curated commit contain only verified control documents and
+  source-backed evidence. Do not stage a directory wholesale.
+- [ ] Publish the curated review branch and record the remote commit hash after
+  the commit passes the clean-worktree and source-link checks.
+
+Control record:
+`NavierStokesReview/evidence/worktree_triage_2026-09-29.md`.
+
 ## Priority 181B: global `barMoment` integrability gate
 
 - [x] Record that the selected mixed radial pullback is proved periodic on the
