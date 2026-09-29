@@ -3111,10 +3111,10 @@ parent-folder placement.
 ## Priority 191 goal control: current state and publication gate
 
 The private source-of-truth branch is `review/cmi-first-navier-stokes-2026-09-29`
-at commit `75d7e7f`. The previous curated public baseline is
+at commit `959a129`. The previous curated public baseline is
 `review/cmi-first-navier-stokes-public-2026-09-29` at `e321bde` and will not be
 rewritten. The new dated branch
-`review/cmi-first-navier-stokes-public-2026-09-30` is published at `3d7c36d`.
+`review/cmi-first-navier-stokes-public-2026-09-30` is published at `eb5ad38`.
 The legacy 2026-09-22 branch remains separate and untouched.
 
 The current untracked inventory contains 60 entries: 54 evidence artefacts, 3

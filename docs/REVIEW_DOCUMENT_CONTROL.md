@@ -2223,9 +2223,9 @@ cross-reference check, and parent-archive manifest required by the active goal.
 ## Evidence-control entry: priority 191 (2026-09-30)
 
 The private source-of-truth branch is now `review/cmi-first-navier-stokes-2026-09-29`
-at `75d7e7f`. The previous curated public baseline remains at `e321bde` and
+at `959a129`. The previous curated public baseline remains at `e321bde` and
 was not rewritten. The new dated branch
-`review/cmi-first-navier-stokes-public-2026-09-30` is published at `3d7c36d`.
+`review/cmi-first-navier-stokes-public-2026-09-30` is published at `eb5ad38`.
 The legacy 2026-09-22 branch remains separate.
 
 The current untracked inventory contains 60 entries: 54 evidence artefacts, 3

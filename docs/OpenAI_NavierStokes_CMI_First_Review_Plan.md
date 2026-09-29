@@ -4098,11 +4098,11 @@ redundant material be moved to its parent archive with a manifest entry.
 
 ## Priority 191: current control-state refresh and scoped publication tranche
 
-The private source-of-truth branch is now at `75d7e7f`
+The private source-of-truth branch is now at `959a129`
 (`review/cmi-first-navier-stokes-2026-09-29`). The previous curated public
 baseline remains at `e321bde` (`review/cmi-first-navier-stokes-public-2026-09-29`)
 and was not rewritten. The new dated branch
-`review/cmi-first-navier-stokes-public-2026-09-30` is published at `3d7c36d`.
+`review/cmi-first-navier-stokes-public-2026-09-30` is published at `eb5ad38`.
 The legacy
 `review/cmi-first-navier-stokes-2026-09-22` branch remains untouched.
 
