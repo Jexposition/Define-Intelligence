@@ -4163,3 +4163,26 @@ counterexample without the required value-level calculation.
 Evidence:
 `NavierStokesReview/src/audit/priority_183_force_smoothness_moment_rebuttal_adjudication_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_183_force_smoothness_moment_rebuttal_adjudication_2026-09-29.json`.
+
+## Priority 184: selected-path foundation audit
+
+The latest source inspection rejects the claim that `force_smooth` is merely
+an unlinked `NativeBounds` assumption. `ActualCandidateAssembly` constructs a
+concrete `Witness`; the periodic assembly transports vanishing joint jets and
+locally uniform residual limits; and `CandidateFromLimits.force_smooth` is
+derived from those premises. The inspection found no explicit `axiom`,
+`sorry`, or `admit` in the targeted selected-path modules. `noncomputable` and
+`Classical.choice` are standard mechanisms for integrals, limits, infinite
+sums, and extension selection.
+
+That correction does not resolve `CTR-005`. The source still does not expose a
+selected-field theorem identifying the completed Cartesian velocity, pressure,
+or force with \((M,I,J,S,C_p)\) after the actual series, curl, localisation,
+periodisation, torus-average, radial-integral, and integrability steps. Thus
+the endpoint's smooth-force route and the paper's named five-observable
+correspondence must be reported separately. A selected nonzero defect or CMI
+failure has not been proved merely by the missing endpoint identity.
+
+Evidence:
+`NavierStokesReview/src/audit/priority_184_selected_path_foundation_audit_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_184_selected_path_foundation_audit_2026-09-29.json`.

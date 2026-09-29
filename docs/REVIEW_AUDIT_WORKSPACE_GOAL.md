@@ -2866,6 +2866,28 @@ Evidence:
 `NavierStokesReview/src/audit/priority_183_force_smoothness_moment_rebuttal_adjudication_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_183_force_smoothness_moment_rebuttal_adjudication_2026-09-29.json`.
 
+## Priority 184 goal control: selected-path foundations are not the missing bridge
+
+The current source audit must preserve three separate propositions:
+
+1. The selected Lean path constructs concrete stage, residual, extension, and
+   blow-up data.
+2. The selected residual-jet and boundary-limit route derives a smooth force.
+3. The completed selected Cartesian fields have the paper's five observable
+   identities \((M,I,J,S,C_p)\).
+
+The inspection supports (1) and (2) in the targeted source path, but has not
+located (3). `noncomputable` definitions and standard `Classical.choice` do
+not supply the missing identity and do not constitute a compiler loophole.
+Conversely, omission of the identity does not by itself prove a selected
+nonzero defect or force nonsmoothness. The active classification remains
+`CTR-005 = NOT ESTABLISHED` until a value-level identity, mismatch, or
+impossibility theorem closes the gate.
+
+Evidence:
+`NavierStokesReview/src/audit/priority_184_selected_path_foundation_audit_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_184_selected_path_foundation_audit_2026-09-29.json`.
+
 ## Priority 183 goal control: consolidation before publication
 
 The active goal includes repository hygiene as an evidentiary requirement.

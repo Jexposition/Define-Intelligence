@@ -3657,6 +3657,26 @@ Evidence:
 `NavierStokesReview/src/audit/priority_183_force_smoothness_moment_rebuttal_adjudication_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_183_force_smoothness_moment_rebuttal_adjudication_2026-09-29.json`.
 
+## Priority 184: selected-path foundation audit and force-smoothness boundary
+
+- [x] Inspect the selected endpoint envelope, residual-to-force bridge,
+  periodic assembly, global `barMoment`, and completion probes without editing
+  OpenAI source files.
+- [x] Record that `noncomputable` sections and `Classical.choice` are standard
+  construction dependencies, not custom axioms or compiler bypasses.
+- [x] Record that `force_smooth` is derived from residual jet and boundary-limit
+  premises, while the selected endpoint still lacks a named equality to the
+  paper tuple \((M,I,J,S,C_p)\).
+- [ ] Close the value-level transport gate through selected `tsum`, curl,
+  localisation, periodisation, torus averaging, radial integration, and
+  integrability/support.
+- [ ] Only after that gate, classify a selected mismatch or failed CMI
+  condition. Do not infer a selected defect from type-level non-entailment.
+
+Evidence:
+`NavierStokesReview/src/audit/priority_184_selected_path_foundation_audit_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_184_selected_path_foundation_audit_2026-09-29.json`.
+
 ## Priority 183: consolidation gate and numerical-evidence classification
 
 - [x] Recount the current worktree rather than relying on the earlier report of

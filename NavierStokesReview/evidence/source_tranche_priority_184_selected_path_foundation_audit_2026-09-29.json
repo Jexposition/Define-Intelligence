@@ -1,0 +1,50 @@
+{
+  "priority": 184,
+  "date": "2026-09-29",
+  "status": "source_checked_no_fresh_lean_rebuild",
+  "classification": "CTR-005_NOT_ESTABLISHED",
+  "scope": "selected Lean endpoint foundation and force-smoothness dependency",
+  "protected_source_policy": "No edits to OpenAI NavierStokes or Euler source trees",
+  "source_checks": [
+    {
+      "path": "NavierStokes/ActualCandidateAssembly.lean",
+      "lines": "1121-1151,1177-1180",
+      "finding": "Witness and selected_witness are concrete endpoint declarations; no named equality to the paper tuple was found."
+    },
+    {
+      "path": "NavierStokes/CandidateFromLimits.lean",
+      "lines": "80-112",
+      "finding": "force_smooth follows residual boundary-limit premises and the constructed extension; it is not a bare NativeBounds axiom."
+    },
+    {
+      "path": "NavierStokes/MixedPeriodicAssembly.lean",
+      "lines": "228-237,283-315,339-365",
+      "finding": "Classical.choice selects existing extensions; vanishing joint jets and locally uniform limits are transported through the periodic assembly."
+    },
+    {
+      "path": "NavierStokes/DefectIncrementBounds.lean",
+      "lines": "214-237",
+      "finding": "barMoment is a noncomputable integral definition; Shell.barIntegrable supplies integrability separately."
+    }
+  ],
+  "negative_search": {
+    "patterns": ["axiom", "sorry", "admit"],
+    "targeted_selected_modules": 9,
+    "matches_in_targeted_selected_modules": 0,
+    "interpretation": "No explicit custom axiom or unfinished proof was found in the inspected selected-path modules."
+  },
+  "positive_findings": [
+    "Concrete selected stage and physical-data construction exists.",
+    "Residual jet rates, vanishing joint jets, local uniform limits, and force smoothness are connected in the selected path.",
+    "The manuscript five-moment machinery is load-bearing upstream."
+  ],
+  "open_finding": "No selected-field theorem was located identifying the completed Cartesian velocity, pressure, or force with (M,I,J,S,Cp) after tsum, curl, localisation, periodisation, averaging, and radial integration.",
+  "not_proved": [
+    "selected nonzero five-moment defect",
+    "force nonsmoothness",
+    "impossibility of transport",
+    "literal CMI Alternative C failure",
+    "Lean contradiction or False"
+  ],
+  "next_gate": "Value-level selected observable transport or selected mismatch/impossibility proof"
+}

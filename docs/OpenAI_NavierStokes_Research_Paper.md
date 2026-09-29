@@ -4759,3 +4759,26 @@ literal C/D target false solely from the missing endpoint identity.
 Evidence:
 `../NavierStokesReview/src/audit/priority_183_force_smoothness_moment_rebuttal_adjudication_2026-09-29.md`;
 `../NavierStokesReview/evidence/source_tranche_priority_183_force_smoothness_moment_rebuttal_adjudication_2026-09-29.json`.
+
+### Priority 184 source correction: smooth-force route versus moment transport
+
+The selected Lean construction must not be described as obtaining force
+smoothness from a bare generic rate contract. The inspected path constructs
+actual residual data, carries vanishing joint jets and boundary limits through
+the periodic assembly, and derives `force_smooth` from those premises. The
+targeted source modules use standard `noncomputable` definitions and one
+standard `Classical.choice` construction; no explicit custom axiom, `sorry`, or
+`admit` was found in the inspected selected path.
+
+The paper-to-code correspondence nevertheless remains incomplete at a more
+specific point. No selected-endpoint theorem has yet been located that
+identifies the completed Cartesian field and force with the paper's five
+observables \((M,I,J,S,C_p)\) after `tsum`, curl, localisation, periodisation,
+torus averaging, radial integration, and the required integrability/support
+arguments. This is the current `CTR-005` finding. It does not prove that the
+selected force is nonsmooth or that the selected moments are wrong; those
+stronger conclusions require a value-level mismatch or impossibility result.
+
+Evidence:
+`../NavierStokesReview/src/audit/priority_184_selected_path_foundation_audit_2026-09-29.md`;
+`../NavierStokesReview/evidence/source_tranche_priority_184_selected_path_foundation_audit_2026-09-29.json`.

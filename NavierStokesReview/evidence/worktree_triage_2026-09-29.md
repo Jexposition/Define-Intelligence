@@ -107,3 +107,23 @@ entries are classified as follows:
 The canonical 3D CUDA record is therefore not being mistaken for a toy scan,
 and the legacy profile-level results are not being promoted into a proof.
 No file was deleted or moved by this refresh.
+### Live status after ignore-rule refresh (2026-09-29)
+
+`git status --short` currently reports 59 untracked path entries. The lower
+count is a visibility change caused by the committed ignore rules for
+`scratch_space/` and the existing local evidence archive; it is not evidence
+that material was deleted. The semantic source-of-truth remains
+`docs/CMI_OpenAI_Full_Semantic_Crosswalk.md`, with the connected-word audit in
+`src/audit/priority_179_fefferman_full_semantic_dependency_network_2026-09-29.md`
+and the word-to-condition closure in
+`src/audit/priority_182_fefferman_semantic_word_to_condition_closure_2026-09-29.md`.
+### Priority 184 triage update
+
+The selected-path foundation audit is now a curated source-backed addition:
+`NavierStokesReview/src/audit/priority_184_selected_path_foundation_audit_2026-09-29.md`
+and
+`NavierStokesReview/evidence/source_tranche_priority_184_selected_path_foundation_audit_2026-09-29.json`.
+It records that the selected residual-jet route is substantive, while the
+completed selected-field equality to \((M,I,J,S,C_p)\) remains unlocated.
+The current working tree still has 59 untracked entries. No untracked backlog,
+protected OpenAI source, or user scratch material is staged by this pass.

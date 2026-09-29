@@ -159,6 +159,7 @@
 ├── 📄 priority_181_global_barmoment_integrability_gate_2026-09-29.md
  ├── 📄 priority_182_fefferman_semantic_word_to_condition_closure_2026-09-29.md
  └── 📄 priority_183_force_smoothness_moment_rebuttal_adjudication_2026-09-29.md
+ └── 📄 priority_184_selected_path_foundation_audit_2026-09-29.md
 ├── 📄 snapshot_compare.py
 ├── 📄 source_tranche_summary.py
 ├── 📄 source_tree_map.py
