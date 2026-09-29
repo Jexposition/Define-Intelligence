@@ -164,6 +164,9 @@
  ├── 📄 priority_187_circularity_adjudication_2026-09-30.md
  ├── 📄 priority_188_connected_cmi_compliance_2026-09-30.md
  ├── 📄 priority_189_openai_physical_wording_source_check_2026-09-30.md
+ ├── 📄 priority_190_connected_cmi_revalidation_2026-09-30.md
+ └── 📄 priority_193_fefferman_semantic_branch_network_2026-09-30.md
+ ├── 📄 priority_194_residual_cancellation_and_endpoint_adjudication_2026-09-30.md
 ├── 📄 snapshot_compare.py
 ├── 📄 source_tranche_summary.py
 ├── 📄 source_tree_map.py

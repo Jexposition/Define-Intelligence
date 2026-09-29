@@ -2241,3 +2241,33 @@ The next control gate is the full document fetch, SHA-256 inventory,
 supersession matrix, and cross-reference check. Confirmed redundant material
 may be moved only to the archive in its parent folder, never deleted, and every
 move requires a local old-path, new-path, reason, and SHA-256 manifest.
+
+## Evidence-control entry: priority 194 (2026-09-30)
+
+Priority 194 source-checks the latest residual-cancellation rebuttal. It
+corrects three overstatements: velocity blow-up does not imply summandwise
+divergence; the manuscript does not source-prove that the five moments are its
+sole cancellation mechanism; and the selected `force_smooth` route is not a
+free generic-rate assumption, because concrete physical data, residual rates,
+vanishing joint jets, recurrence, locally uniform limits, and smooth extension
+are present on the inspected path.
+
+The unresolved finding remains `CTR-005`: the exported selected endpoint does
+not identify the final Cartesian fields and residual construction with the
+manuscript's transported `(M,I,J,S,Cp)` observables. This supports
+`NOT_ESTABLISHED` for complete paper-to-endpoint fidelity, not a literal C/D
+refutation. No claim of nonsmooth force, nonzero selected defect,
+impossibility, or contradiction is authorised without a connected value-level
+result.
+
+The controlling artefacts are:
+
+- `NavierStokesReview/src/audit/priority_194_residual_cancellation_and_endpoint_adjudication_2026-09-30.md`
+- `NavierStokesReview/evidence/source_tranche_priority_194_residual_cancellation_and_endpoint_adjudication_2026-09-30.json`
+
+Branch state is tracked by the private source-of-truth branch and the dated
+public branch, with current refs verified from Git rather than embedded as
+self-invalidating commit hashes. The full document fetch, SHA-256 inventory,
+supersession matrix, cross-reference audit, and parent-folder archive manifest
+remain mandatory before any archive move. No deletion or bulk staging is
+authorised.

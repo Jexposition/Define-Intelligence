@@ -293,5 +293,8 @@
  ├── 📄 source_tranche_priority_187_circularity_adjudication_2026-09-30.json
  ├── 📄 source_tranche_priority_188_connected_cmi_compliance_2026-09-30.json
  ├── 📄 research_paper_evidence_dossier_2026-09-30.md
- └── 📄 source_tranche_priority_189_openai_physical_wording_source_check_2026-09-30.json
+ ├── 📄 source_tranche_priority_189_openai_physical_wording_source_check_2026-09-30.json
+ ├── 📄 source_tranche_priority_190_connected_cmi_revalidation_2026-09-30.json
+ └── 📄 source_tranche_priority_193_fefferman_semantic_branch_network_2026-09-30.json
+ ├── 📄 source_tranche_priority_194_residual_cancellation_and_endpoint_adjudication_2026-09-30.json
 ```

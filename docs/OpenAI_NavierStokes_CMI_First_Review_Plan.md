@@ -4121,3 +4121,84 @@ Before that tranche is committed and mirrored publicly, complete the formal
 document fetch, SHA-256 inventory, supersession matrix, and cross-reference
 check. Archive only confirmed redundant material in its parent archive, never
 delete it, and record every move in a local manifest.
+
+## Priority 192: live control-state correction
+
+The previous control paragraph is superseded by the live state below.
+
+- Private source-of-truth branch: review/cmi-first-navier-stokes-2026-09-29
+  at commit 3e32b89.
+- Priority 189 source correction, dossier, and Priority 190 Lean
+  revalidation are committed locally.
+- The publication paper is the current 992-line publication file; the full
+  pre-consolidation paper-plus-dossier remains preserved under
+  docs/archive, and the evidence dossier is tracked under
+  NavierStokesReview/evidence.
+- The live worktree contains 60 untracked entries. They remain a triage
+  backlog and are not a staging queue.
+- The dated public branch review/cmi-first-navier-stokes-public-2026-09-30
+  has not been pushed. Do not rewrite the legacy 2026-09-22 branch.
+
+The next action is a content-addressed inventory of all 60 entries, followed
+by document fetch, supersession, and cross-reference checks. No archive move
+or deletion is authorised until those checks identify a confirmed redundant
+artefact and record its parent-folder archive destination and SHA-256.
+## Priority 193: semantic branch closure before any CMI verdict
+
+The controlling source record is:
+
+- `NavierStokesReview/src/audit/priority_193_fefferman_semantic_branch_network_2026-09-30.md`
+- `NavierStokesReview/evidence/source_tranche_priority_193_fefferman_semantic_branch_network_2026-09-30.json`
+- `docs/CMI_OpenAI_Full_Semantic_Crosswalk.md` Priority 193
+
+Required interpretation:
+
+1. Preserve Fefferman's exact wording. “May look for” selects the periodic
+   branch. It does not waive physical reasonableness.
+2. Read “thus”, “in place of”, “we then accept”, “such”, and “retaining the
+   heart of the problem” as semantic connectors, not filler.
+3. Audit the connected C/D packages: data admissibility, PDE, incompressibility,
+   initial condition, global smoothness, energy or periodicity, and the global
+   nonexistence quantifier.
+4. Keep two conclusions separate: the Lean comparator's connected formal C/D
+   proposition, and complete manuscript-to-selected-field fidelity.
+5. Treat `CTR-005` as the unresolved selected-path correspondence gate. Do not
+   promote it to literal C/D refutation without a selected failed condition,
+   value mismatch, impossibility theorem, or contradiction.
+6. Cross-check the OpenAI manuscript's residual extension claim against the
+   actual five-moment profile/stress mechanism, wave corrections, localisation,
+   summation, pressure, and all-order derivative estimates.
+
+## Priority 194: residual-cancellation claim correction and live control state
+
+The source-checked adjudication is recorded in:
+
+- `NavierStokesReview/src/audit/priority_194_residual_cancellation_and_endpoint_adjudication_2026-09-30.md`
+- `NavierStokesReview/evidence/source_tranche_priority_194_residual_cancellation_and_endpoint_adjudication_2026-09-30.json`
+
+The current evidence requires this wording discipline:
+
+1. Do not infer summandwise divergence from \(\|u(t)\|_\infty\to\infty\).
+   The manuscript says individual terms can diverge and that cancellation is
+   arranged in their sum.
+2. Describe the five moments as load-bearing in the manuscript's correction
+   cycle, not as the source-proven sole cancellation mechanism. The manuscript
+   also lists wave-amplitude, covariance/stress, auxiliary-time, pressure,
+   localisation, summation, and higher-order residual operations.
+3. Do not describe `force_smooth` as a free generic `NativeBounds` assumption
+   on the inspected selected path. The source path runs through concrete
+   `physicalData`, `actualStageEstimates`, finite residual rates,
+   `VanishingJointJets`, residual recurrence, locally uniform limits, and
+   smooth extension.
+4. Retain `CTR-005`: the selected export still lacks the final theorem
+   identifying the manuscript's \((M,I,J,S,C_p)\) observables with the final
+   Cartesian fields through the complete construction.
+5. Do not promote this correspondence gap to nonsmooth force, a failed literal
+   C/D condition, impossibility, or `False` without a selected value-level
+   result.
+
+The private source-of-truth branch and the dated public branch are tracked by
+branch name and current Git refs, not by hard-coded commit hashes in this
+living plan. The next control gate remains the full document fetch,
+SHA-256 inventory, supersession matrix, cross-reference audit, and parent-folder
+archive manifest. No deletion or bulk staging is authorised.

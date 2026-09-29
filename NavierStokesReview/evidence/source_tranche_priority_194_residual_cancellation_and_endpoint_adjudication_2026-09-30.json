@@ -1,0 +1,49 @@
+{
+  "priority": 194,
+  "date": "2026-09-30",
+  "status": "source_checked_adjudication",
+  "claim": "The latest rebuttal overstates three points: summandwise divergence, exclusivity of the five-moment cancellation route, and the status of force_smooth as an unlinked generic assumption.",
+  "source_files": [
+    "docs/navier-stokes openai.txt",
+    "NavierStokes/ActualCandidateAssembly.lean",
+    "NavierStokes/GluedStageEstimates.lean",
+    "NavierStokes/ActualCycleResidualBounds.lean",
+    "NavierStokes/MixedCandidateWitness.lean",
+    "NavierStokes/MixedCandidateAssembly.lean",
+    "NavierStokes/MixedPeriodicAssembly.lean",
+    "NavierStokes/CandidateFromLimits.lean"
+  ],
+  "source_ranges": [
+    "docs/navier-stokes openai.txt:109-124",
+    "docs/navier-stokes openai.txt:252-304",
+    "docs/navier-stokes openai.txt:306-321",
+    "docs/navier-stokes openai.txt:548-572",
+    "docs/navier-stokes openai.txt:697-735",
+    "NavierStokes/ActualCandidateAssembly.lean:1079-1098",
+    "NavierStokes/GluedStageEstimates.lean:684-744",
+    "NavierStokes/ActualCycleResidualBounds.lean:1190-1206",
+    "NavierStokes/MixedCandidateWitness.lean:26-31",
+    "NavierStokes/MixedCandidateAssembly.lean:67-91",
+    "NavierStokes/MixedPeriodicAssembly.lean:310-367",
+    "NavierStokes/CandidateFromLimits.lean:47-87"
+  ],
+  "established": [
+    "The manuscript requires the total residual and all derivatives to extend smoothly even when individual residual terms can diverge.",
+    "The manuscript presents multiple correction operations; the five radial equations are one load-bearing operation in the stated cycle.",
+    "The selected Lean path derives force_smooth from concrete physical-data estimates, vanishing joint jets, residual recurrence, locally uniform limits, and smooth extension.",
+    "The exported Witness still lacks a final selected-field identification theorem for the manuscript's (M,I,J,S,Cp) observables and their transport through the full construction."
+  ],
+  "not_established": [
+    "That every summand of the residual diverges as t approaches 1.",
+    "That the five moments are the sole cancellation mechanism in the manuscript.",
+    "That the selected force is nonsmooth or that literal connected C or D is false.",
+    "That the complete manuscript mechanism has been transported to the selected endpoint."
+  ],
+  "audit_status": {
+    "summandwise_divergence_claim": "OVERSTATED",
+    "five_moment_role": "LOAD_BEARING_BUT_NOT_PROVEN_EXCLUSIVE",
+    "selected_force_smoothness_route": "ESTABLISHED_ON_INSPECTED_LEAN_PATH",
+    "complete_manuscript_to_selected_endpoint_fidelity": "NOT_ESTABLISHED_CTR_005",
+    "literal_c_or_d_refutation": "NOT_PROVED"
+  }
+}

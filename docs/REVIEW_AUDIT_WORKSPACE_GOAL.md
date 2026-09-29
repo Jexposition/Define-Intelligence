@@ -3131,3 +3131,82 @@ supersession analysis, and cross-reference validation. Only confirmed
 redundancies may then be moved to the archive belonging to their parent folder,
 with an old-path, new-path, reason, and SHA-256 manifest entry. No deletion is
 authorised.
+
+## Priority 192 goal control: live state correction
+
+The preceding branch and count values are historical. The current authoritative
+state is:
+
+- private source-of-truth branch:
+  review/cmi-first-navier-stokes-2026-09-29 at 3e32b89;
+- local commits include the Priority 189 source correction and Priority 190
+  connected-CMI Lean revalidation;
+- 60 untracked entries remain in the worktree and are a controlled triage
+  backlog, not a staging queue;
+- the dated public branch review/cmi-first-navier-stokes-public-2026-09-30
+  remains to be published;
+- the legacy 2026-09-22 branch must remain untouched.
+
+The next required work is the content-addressed inventory, formal-document
+fetch, supersession matrix, and cross-reference audit. Only confirmed
+redundancies may be moved to the archive belonging to their parent folder,
+with old path, new path, reason, and SHA-256 recorded. No deletion or bulk
+staging is authorised.
+## Priority 193: connected Fefferman semantics is mandatory audit context
+
+The audit must not isolate Fefferman Alternative (C) or (D) from the
+surrounding definition of a smooth, physically reasonable solution. The source
+text is authoritative at `docs/navierstokes.txt:25-81,89-184`.
+
+The phrase “we may look for spatially periodic solutions” is a permitted
+branch selection. “Thus, we assume” binds periodic data conditions (8),(9),
+“in place of” substitutes those controls only for whole-space decay controls
+(4),(5), and “we then accept” binds periodic accepted-solution conditions
+(10),(11). “Such smooth, physically reasonable solutions” and “retaining the
+heart of the problem” carry the connected global existence and smoothness
+meaning into the alternatives.
+
+The working record is:
+
+- `NavierStokesReview/src/audit/priority_193_fefferman_semantic_branch_network_2026-09-30.md`
+- `NavierStokesReview/evidence/source_tranche_priority_193_fefferman_semantic_branch_network_2026-09-30.json`
+- `docs/CMI_OpenAI_Full_Semantic_Crosswalk.md` Priority 193
+
+The review must therefore verify, for either C or D, the whole connected
+package rather than equations `(1)--(3)` or existential syntax alone. At the
+same time, the review must distinguish a connected comparator-level theorem
+from proof that the selected Lean construction reproduces every load-bearing
+step of OpenAI's manuscript. The five-moment transport, residual extension,
+localisation, summation, pressure, and force links remain part of the
+paper-to-selected-endpoint correspondence audit.
+
+## Priority 194: adjudicated residual logic and current branch control
+
+The latest source-checked correction is maintained at:
+
+- `NavierStokesReview/src/audit/priority_194_residual_cancellation_and_endpoint_adjudication_2026-09-30.md`
+- `NavierStokesReview/evidence/source_tranche_priority_194_residual_cancellation_and_endpoint_adjudication_2026-09-30.json`
+
+This goal must not assert that velocity blow-up forces every residual summand
+to diverge. It must not assert that the five moments are the manuscript's only
+cancellation mechanism. The manuscript explicitly describes several coupled
+correction operations, while the five radial equations remain load-bearing.
+
+The selected Lean route must be reported accurately: actual physical data feed
+stage estimates and finite residual rates; the selected schedule supplies
+vanishing joint jets; residual recurrence and locally uniform limits establish
+the traced residual's smooth extension; and `force_smooth` follows. This is
+stronger than an unlinked generic-rate assumption, but it still does not prove
+the missing final identification of the selected Cartesian fields with the
+paper's \((M,I,J,S,C_p)\) observables.
+
+Therefore the active verdict is `CTR-005: NOT ESTABLISHED` for complete
+manuscript-to-selected-endpoint fidelity. Literal C/D refutation remains
+unproved until a selected failed connected condition, value-level mismatch,
+impossibility theorem, or contradiction is established.
+
+The private source-of-truth branch and dated public branch are tracked by
+branch name and verified current Git refs. The next control gate is the full
+document fetch, SHA-256 inventory, supersession matrix, cross-reference audit,
+and parent-folder archive manifest. No deletion, bulk staging, or archive move
+is authorised before that gate.
