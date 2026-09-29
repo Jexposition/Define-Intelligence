@@ -1639,7 +1639,7 @@ point, `SolenoidalDiagonal.potentialSum` is locally equal to a finite sum of
 the selected stages, and the same finite sum represents every iterated Frechet
 jet. This rules out an empty-limit explanation for the selected field.
 
-The result also makes the remaining burden exact. The selected field is built
+The result also makes the unresolved endpoint precise. The selected field is built
 as a Cartesian velocity from localised potentials and spatial curls. The
 paper's five moments, however, are consumed through a scalar radial profile
 and torus average in `DefectIncrementBounds.barMoment`. The nominal profile
@@ -2027,7 +2027,7 @@ u_{\mathrm{selected}}
  +\sum_j \chi_j B_j,
 $$
 
-so the remaining proof must transport the curled potential branch and the
+so the current record lacks transport of the curled potential branch and the
 separately added direct branch through the cylindrical component map, torus
 average, radial integration, axis treatment, and outer-support boundary. A
 local chart equality is not a nonzero selected remainder. No proof of
@@ -2218,7 +2218,7 @@ $$
 
 This is genuine selected-field transport. It does not, however, identify the
 resulting vector field with the scalar `Point → ℝ` function on which
-`barMoment_apply` operates. The remaining proof obligation is therefore not
+`barMoment_apply` operates. The unresolved endpoint is therefore not
 that the mean stream is unused, but that its chart/curl representation is
 correctly reduced to the torus-averaged scalar moment, including axis and
 outer-support terms. The full advertised five-moment conclusion therefore
@@ -2628,7 +2628,7 @@ contains the product-rule contribution
 \nabla\times(\chi A)=\chi(\nabla\times A)+(\nabla\chi)\times A.
 \]
 
-The remaining burden is therefore concrete: transport these production terms
+The unresolved endpoint is therefore concrete: the current record does not transport these production terms
 through the atlas, auxiliary torus average, boundary limits, and final
 `tsum`, then evaluate the resulting selected moment. The present completion
 proves neither `\Delta m\ne0` nor `False`; it removes the native direct prefix
@@ -2871,7 +2871,7 @@ $$
 This follows from the defining equation for the positive similarity coordinate
 after the axial coordinate is set to zero. It is therefore a genuine selected
 coordinate identity, not a filter-vacuity argument. It does not calculate the
-selected velocity's radial moment. The remaining burden is to transport the
+selected velocity's radial moment. The unresolved endpoint is the absent transport of the
 complete Cartesian `tsum` through the cutoff/curl construction and then
 evaluate its axis, tail, and weighted `barMoment` contributions.
 
@@ -2965,16 +2965,15 @@ g(r+1,Y)=g(r,Y),qquad
 g(r,Y)=0.
 $$
 
-This result does not supply the missing premises for the selected endpoint.
+This result is not a selected-endpoint identification.
 It does not prove that the selected Cartesian field has a bounded radial
 pullback, nor does it identify that pullback with the scalar consumed by
 `barMoment`. It therefore yields no numerical remainder and no kernel
-contradiction. It sharpens the unresolved selected-field issue: the inspected
+contradiction. It sharpens the adverse finding: on the inspected
 record does not transport the periodised Cartesian field into the radial
 observable with compatible support, nor does it state and justify a different
-scalar extension. Until that identification is proved in the source, the
-advertised five-moment paper-to-code correspondence remains **NOT
-ESTABLISHED**.
+scalar extension. The advertised five-moment paper-to-code correspondence is
+therefore **NOT ESTABLISHED** on the present formal record.
 
 Evidence:
 `NavierStokesReview/evidence/periodic_radial_support_obstruction_2026-09-26.md`.
@@ -3219,7 +3218,7 @@ Consequently, compact support before periodisation does not imply radial support
 or integrability of the selected pullback after periodisation. The review has
 proved the relevant periodicity and the conditional support obstruction, but it
 has not proved the missing support/integrability transport or a nonzero value.
-This is a concrete remaining burden under CTR-005, not an unconditional
+This is a concrete unresolved correspondence failure under CTR-005, not an unconditional
 contradiction.
 ## Reproducible source and dependency mapping
 

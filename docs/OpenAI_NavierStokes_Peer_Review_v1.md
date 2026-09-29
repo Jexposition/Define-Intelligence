@@ -111,7 +111,8 @@ object used by the CMI endpoint.
 This strengthens CTR-005 as a source-level failure of the authors' affirmative
 proof record. It is sufficient to withhold acceptance of the paper's advertised
 Navier–Stokes solution claim; the reviewer is not required to derive `False` merely because OpenAI
-has not supplied the composition theorem. It does not, however, assert that
+the composition theorem is absent from the inspected record. It does not,
+however, assert that
 `selected_candidate` has already been refuted at the Lean-kernel level.
 
 ## Finding 21: the compact-pressure attack does not replace the correspondence failure
@@ -473,7 +474,7 @@ The suggested Newton’s-third-law objection was tested at source level. `FiveRo
 
 The remaining criticism is stronger when stated narrowly. `ActualCandidateAssembly.selected_witness` returns `Witness` over three raw stage sequences and the downstream schedule, force, blow-up, decay, and boundary properties. The selected endpoint does not expose a theorem identifying those stage fields with `FiveRowRank.FiveRows`, `PositiveOrderMoments.moments`, or the paper’s five named quantities. The zero-sorry `SelectedMomentBridgeAudit.lean` probe records this type boundary.
 
-This is a material correspondence and reproducibility defect. It is not yet a formal disproof, because an absent public bridge does not establish that no transitive theorem can be supplied. The review should require that bridge, and should escalate only after a false required equality or a zero-sorry countermodel is produced.
+This is a material correspondence and reproducibility defect. It is not yet a formal disproof, because an absent public bridge does not establish that no transitive theorem exists. The present adjudication records a correspondence failure; escalation requires a false selected equality or a zero-sorry countermodel, not a request for revision.
 
 ## Finding 13: the cutoff is smooth, active, and residual-driven
 
@@ -841,9 +842,10 @@ because a three-coordinate debt can be promoted algebraically.
 
 The result does not prove that the selected endpoint has the wrong moments.
 It identifies the missing load-bearing theorem: the actual selected velocity,
-pressure, and residual must be shown to realise the five named integrals and
-to preserve them through the selected schedule. Until that theorem or a
-contradiction from its concrete premises is supplied, the correct verdict is
+pressure, and residual have not been shown in the inspected record to realise
+the five named integrals and preserve them through the selected schedule. In
+the absence of that theorem or a contradiction from its concrete premises,
+the correct verdict is
 **formal correspondence failure not yet converted into a formal refutation**.
 
 Evidence: `NavierStokesReview/evidence/stage_estimates_moment_blindness_2026-09-24.md`.
@@ -908,7 +910,7 @@ The moment-blindness probe shows that the exported witness envelope does not
 carry the paper's five-debt payload, but it does not prove a wrong moment for
 the concrete selected sums.
 
-These are not clearances. They are the exact remaining proof obligations for
+These are not clearances. They identify the exact unresolved tests required
 turning the architectural objections into a zero-sorry `False` theorem.
 The current review verdict remains **not established**, with a live formal
 falsification programme and no completed selected-witness contradiction.
@@ -1786,7 +1788,7 @@ from the scalar moment invariant to the full Cartesian field must now join the
 positive-radius coefficient identity to this axis branch, while also retaining
 the cutoff-gradient curl term, meridional contribution, torus average, and
 outer-support boundary. The published solution claim remains **NOT
-ESTABLISHED** because that composition is still not supplied; no `Delta m ≠ 0`
+ESTABLISHED** because that composition is still absent from the inspected record; no `Delta m ≠ 0`
 or kernel-level `False` is asserted here.
 
 Evidence: `NavierStokesReview/evidence/selected_radial_axis_boundary_2026-09-25.md`.
@@ -1883,7 +1885,7 @@ the spatial axis as (t\to1^{-}). The review completion transports that
 identity to the constructed potential.
 
 This positive result narrows, rather than removes, the central objection. The
-remaining burden is to identify the complete mixed Cartesian field, including
+The unresolved endpoint is the absent identification of the complete mixed Cartesian field, including
 the curled potential branch and the separately added direct branch, with the
 scalar field consumed by `barMoment_apply`. No such selected global equality,
 nonzero radial remainder, or kernel contradiction has yet been proved.
@@ -2738,7 +2740,7 @@ conditional, and `CTR-005` remains open. The register validates mapping
 prerequisites only; it does not convert compiled reachability into a
 field-level transport theorem.
 
-## Mapping control and remaining burden
+## Mapping control and unresolved endpoint
 
 The hardened map confirms that the relevant upstream declarations are compiled
 and reachable. It does not support a dead-code objection. The exact-name join
@@ -2981,8 +2983,8 @@ production path proves the corresponding equality for the final Cartesian
 `ASum`/`BSum`/`PSum` field after summation, curl, localisation, periodisation,
 torus averaging, radial pullback, and axis/outer-domain extension. Upstream
 profile and rank certificates are positive evidence and must not be called dead
-code. They do not substitute for that final value-level theorem. Until it is
-located or proved, the paper-to-endpoint correspondence remains unestablished
+code. They do not substitute for that final value-level theorem. Because it is
+not located in the inspected record, the paper-to-endpoint correspondence remains unestablished
 under CTR-005. This is not evidence of an incorrect moment value or a kernel
 contradiction; those require a concrete remainder or impossibility proof.
 
@@ -2998,14 +3000,14 @@ transport the associated parameters and derivatives. This is positive
 evidence that the profile mechanism is used upstream. It is not, however, a
 theorem whose input is the final `ASum`/`BSum`/`PSum` field or whose conclusion
 computes the five observables after curl, localisation, periodisation,
-activation, torus averaging, and radial pullback. The remaining finding is
-therefore a selected-field value-level transport question, not a claim that
+activation, torus averaging, and radial pullback. The finding is therefore a
+selected-field value-level transport failure on the current record, not a claim that
 the profile/history branch is dead.
-### Partial selected-field bridges and the remaining burden
+### Partial selected-field bridges and the adverse classification
 
 The audit does not claim that every bridge is absent. The review tree proves several intermediate facts: typed scalar pullback into `barMoment`, torus-average reduction, a finite-prefix/`tsum` jet scope, and the cutoff--curl commutator. It also contains a positive-radius component-recovery formula. These are useful and should be credited.
 
-They are not the endpoint theorem required by the paper. The remaining proof must evaluate the final activated Cartesian field, not merely an intermediate scalar representative, through summation, curl, localisation, periodisation, torus averaging, radial pullback, integrability/support, and the axis boundary. In particular, the conditional zero theorem in `PeriodicGlobalIntegral.lean:57-75` assumes positivity, proves non-integrability of a periodic function, and invokes `integral_undef`; it does not establish the selected field's physical moment value.
+They are not the endpoint theorem required by the paper. The adverse finding is that the current formal record does not evaluate the final activated Cartesian field, rather than merely an intermediate scalar representative, through summation, curl, localisation, periodisation, torus averaging, radial pullback, integrability/support, and the axis boundary. In particular, the conditional zero theorem in `PeriodicGlobalIntegral.lean:57-75` assumes positivity, proves non-integrability of a periodic function, and invokes `integral_undef`; it does not establish the selected field's physical moment value.
 
 The defensible verdict therefore remains **not established as a paper-to-code correspondence**, while explicitly rejecting the weaker overclaim that no intermediate bridge exists. No unconditional `False` follows from these partial results.
 
@@ -3013,7 +3015,7 @@ The defensible verdict therefore remains **not established as a paper-to-code co
 
 The source-tier review confirms that the adverse finding is not based on absent or fictitious upstream mathematics. `PositiveOrderMoments.lean:21-23,77-84,192-301` contains a real five-coordinate debt and exact profile repair/target-moment theorems. `MeanRankUpdate.lean:24-44,137-169,195-200` contains a distinct three-coordinate physical debt interface and proves `FiveRows` for correction increments. These results are positive evidence for the construction's upstream machinery, but neither theorem has the final selected Cartesian field as input and the five-observable tuple as output.
 
-The selected construction is also materially connected. `ActualCandidateConstruction.lean:205-257,289-345,832-970` defines the selected cycle, chart stages, direct/stream mean stages, and potential-stage field identities. `SpatialLocalization.lean:164-203,209-290,313-340` proves cutoff-before-curl, displays the cutoff-gradient commutator, and proves local periodised-field identities, periodicity, divergence freedom, and residual transfer. This rules out the weaker allegation that the construction is only a disconnected profile toy. It does not supply the missing value-level composition through `tsum`, curl, localisation, periodisation, torus averaging, radial pullback, support/integrability, and the axis boundary.
+The selected construction is also materially connected. `ActualCandidateConstruction.lean:205-257,289-345,832-970` defines the selected cycle, chart stages, direct/stream mean stages, and potential-stage field identities. `SpatialLocalization.lean:164-203,209-290,313-340` proves cutoff-before-curl, displays the cutoff-gradient commutator, and proves local periodised-field identities, periodicity, divergence freedom, and residual transfer. This rules out the weaker allegation that the construction is only a disconnected profile toy. The inspected record does not contain the value-level composition through `tsum`, curl, localisation, periodisation, torus averaging, radial pullback, support/integrability, and the axis boundary.
 
 The correct peer-review statement is therefore: the formal record contains genuine local and intermediate certificates, but it does not yet establish that the final exported selected field realizes the five cumulative moments used in the paper's global mechanism. This is a load-bearing correspondence failure under CTR-005. It is not, without a computed nonzero remainder or impossibility theorem, a kernel-level `False` result.
 
