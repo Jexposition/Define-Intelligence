@@ -4097,19 +4097,28 @@ Evidence: `NavierStokesReview/src/audit/priority_163_full_cmi_dependency_crosswa
 
 ## Priority 164: formal CMI Alternative (C) result and manuscript-fidelity boundary
 
-The current Lean record contains a direct zero-sorry proof of the forced
-whole-space Alternative (C) proposition. The proof establishes the complete
-formal comparator requirements and excludes every global smooth finite-energy
-competitor for the same force and initial data. This confirms the positive
-formal result and must not be described as a mere existential shell.
+The current Lean record contains a direct zero-sorry proof of a forced
+whole-space proposition whose declared predicates mirror the displayed
+clauses of Alternative (C). The proof establishes the comparator's declared
+smoothness, decay, PDE, initial-data, and global finite-energy competitor
+requirements. This is a positive result about the Lean proposition, not a
+blanket finding that the paper's complete physically reasonable construction
+has been machine-checked.
 
-The manuscript-fidelity question remains distinct. The paper uses the five
-moments as load-bearing profile matching and correction data, while the public
-endpoint does not expose a separate final-Cartesian identity for every such
-consequence. The correct conclusion is therefore: formal Alternative (C) is
-proved by the current Lean route; complete equivalence between that route and
-every paper-level mechanism remains unestablished until the selected-field
-transport is proved or a direct mismatch is found.
+The manuscript-fidelity question is therefore decisive, not optional. Fefferman
+introduces a connected class of smooth, physically reasonable solutions and C
+cites that class through (4)--(7); it is not legitimate to reduce C to the
+existential symbols or equation labels alone. The paper uses the five moments
+as load-bearing profile matching and correction data, while the public
+endpoint does not expose a selected-field theorem identifying every
+paper-level consequence, including the transport of the corrected moments
+through the completed Cartesian construction and residual force. The correct
+publication conclusion is consequently: the Lean proposition is proved as
+declared, but OpenAI's claim that Lean verifies the manuscript's CMI proof is
+**NOT ESTABLISHED** on the current record. A direct proof that the selected
+force/data violate (4)--(5), or that the selected field cannot realise the
+claimed smooth residual, would escalate this correspondence finding to a
+formal CMI failure; that stronger result has not yet been derived.
 
 Evidence: `NavierStokesReview/evidence/priority_164_direct_cmi_alternative_c_proof_2026-09-29.md`;
 `NavierStokesReview/evidence/priority_164_direct_cmi_alternative_c_proof_2026-09-29.json`.
@@ -4222,3 +4231,42 @@ CORRESPONDENCE**, rather than a claim that a selected moment defect or force
 nonsmoothness has been proved. Evidence:
 `NavierStokesReview/src/audit/priority_167_selected_field_composition_trace_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_selected_field_composition_trace_2026-09-29.json`.
+
+### Correction to the endpoint characterisation
+
+The repository-wide endpoint closure genuinely contains the paper's moment and
+rank machinery. A direct 588-module closure census identified 32 modules with
+exact moment symbols and representative theorems for profile repair, stress
+support, rank updates, state balances, and terminal compensation. The audit
+must not call this machinery dead, unreachable, or absent.
+
+The unresolved issue is instead the final semantic identification. The
+exported `ActualCandidateAssembly.Witness` packages the selected activated
+fields and force consequences but does not visibly state
+
+\[
+\operatorname{Moments}(u_{\mathrm{selected}},p_{\mathrm{selected}},f_{\mathrm{selected}})
+=(M,I,J,S,C_p).
+\]
+
+Thus the current record demonstrates substantial upstream moment mathematics
+and a concrete residual-flatness route, while still lacking the explicit
+selected-field transport theorem needed to claim that the exported endpoint
+is the paper's five-observable construction. This is `CTR-005`, not a claim
+that the upstream moment machinery is absent.
+
+Evidence: `NavierStokesReview/src/audit/priority_168_full_closure_moment_symbol_census_2026-09-29.md`.
+## Audit boundary update: physical admissibility and endpoint correspondence (2026-09-29)
+
+The manuscript audit now cross-references Fefferman's connected meaning of
+“physically reasonable”, including the whole-space and periodic branches and
+their global smoothness, decay, periodicity, and energy requirements.  It also
+records that the selected Lean force route is derived from concrete physical
+cycle data and residual-jet limits.  The remaining open correspondence is the
+explicit transport of every paper-level five-moment consequence through the
+completed selected Cartesian construction.  This source-bound status is not a
+claim that the force is nonsmooth or that the CMI proposition is already
+refuted.
+
+See `docs/CMI_OpenAI_Full_Semantic_Crosswalk.md` and
+`NavierStokesReview/src/audit/priority_168_fefferman_physical_admissibility_and_force_chain_2026-09-29.md`.

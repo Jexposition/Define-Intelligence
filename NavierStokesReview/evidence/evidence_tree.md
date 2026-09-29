@@ -233,6 +233,7 @@
 ├── 📄 worktree_triage_2026-09-29.md
 ├── 📄 source_tranche_cycle_invariant_residual_jet_trace_2026-09-29.json
 ├── 📄 source_tranche_selected_field_composition_trace_2026-09-29.json
+├── 📄 source_tranche_fefferman_physical_admissibility_force_chain_2026-09-29.json
 ├── 📄 semantic_transport_pressure_audit_2026-09-23.md
 ├── 📄 source_path_reconciliation_2026-09-26.md
 ├── 📄 source_tranche_comparator_eulerproof_2026-09-28.json
@@ -256,7 +257,8 @@
 ├── 📄 tree_reconciliation_2026-09-27.json
 ├── 📄 tree_reconciliation_2026-09-27.md
 ├── 📄 vanishing_joint_jets_and_localisation_trace_2026-09-24.md
-└── 📄 whole_space_uniqueness_audit_2026-09-24.md
+├── 📄 whole_space_uniqueness_audit_2026-09-24.md
+└── 📄 source_tranche_full_closure_moment_symbol_census_2026-09-29.json
 ```
 ├── 📄 repository_map_2026-09-27.dot
 ├── 📄 repository_map_2026-09-27.json

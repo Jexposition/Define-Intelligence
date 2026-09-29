@@ -191,7 +191,7 @@ The resulting audit distinction is exact:
 
 | Proposition | Current status |
 |---|---|
-| The inspected Lean theorem proves the repository's formal encoding of the C conclusion: decaying initial data, decaying smooth force, and no global object satisfying the repository's encoded equations, smoothness, and bounded-energy predicates | Established as a formal Lean proposition on the inspected endpoint, subject to the recorded build and axiom ledger; this is stronger than saying it merely has a similar “shape” |
+| The inspected Lean theorem proves a Lean proposition whose declared predicates mirror the displayed C clauses: decaying initial data, decaying smooth force, and no global object satisfying the repository's encoded equations, smoothness, and bounded-energy predicates | Established as a formal Lean proposition on the inspected endpoint, subject to the recorded build and axiom ledger; this is not yet a paper-level finding that the connected physically reasonable construction described by Fefferman and OpenAI has been verified |
 | The Lean endpoint proves that the selected field and residual realise the connected moment/correction argument used by the manuscript to obtain the smooth force required by Fefferman's physically reasonable CMI target | Not established on the inspected record |
 | The selected field or force is mathematically impossible, or violates (4), (5), (6), or (7) | Not proved by the endpoint-omission finding alone |
 
@@ -617,7 +617,13 @@ That theorem is not established in this pass.
 
 ### 7.1 What is established
 
-The repository proves a formal proposition matching the shape of Fefferman Alternative (C), subject to the build caveat:
+The repository proves a Lean proposition whose declared predicates mirror the
+displayed clauses of Fefferman Alternative (C), subject to the build caveat.
+That is a source-level fact about the Lean definitions and proof term. It is
+not yet a paper-level finding that OpenAI has proved Fefferman's connected
+“smooth, physically reasonable” construction, because that stronger claim
+requires semantic fidelity between the selected Lean fields, the
+residual-designed force, and the manuscript's complete correction mechanism:
 
 \[
 \exists u^\circ,f\;
@@ -628,7 +634,15 @@ The repository proves a formal proposition matching the shape of Fefferman Alter
 \big].
 \]
 
-This is not a compiler cheat merely because the proposition is existential. It is a genuine Lean term for that formal target.
+This is not a compiler cheat merely because the proposition is existential.
+It is a genuine Lean term for the declared Lean target. The review must not,
+however, promote that fact to the unqualified sentence “Alternative (C) is
+proved”. Fefferman does not present C as isolated equation labels: C cites
+the force/data hypotheses (4)--(5) and the accepted-solution conditions
+(6)--(7), after defining them as the connected meaning of a smooth,
+physically reasonable solution. The paper-level question is whether the
+selected Lean construction establishes that connected object and the
+manuscript's route to it.
 
 ### 7.2 What is not established
 
@@ -716,3 +730,156 @@ Evidence: `NavierStokesReview/src/audit/priority_167_selected_field_composition_
 The correct whole-picture statement is neither “Lean proved nothing” nor “the C-shaped wrapper proves the paper”.
 
 OpenAI’s repository contains a real selected construction and a real proof of its encoded forced breakdown proposition. The upstream moment and correction machinery is not absent, dead, or fabricated. It contributes to actual cycle invariants and residual-rate derivations. However, the present formal record does not yet establish the complete semantic identity between the manuscript’s five cumulative radial repair quantities and the final activated Cartesian fields and force used by the endpoint. Therefore the claim that the Lean development machine-checks the manuscript’s complete CMI proof remains **not established** until the value-level bridge is proved. This is a correspondence finding, not a fabricated kernel contradiction. Conversely, the missing bridge is not permission to report the paper as verified merely because the encoded existential proposition compiles.
+## Connected semantic network: Fefferman's words, conditions, and branches
+
+This section makes the connective meaning explicit.  The words “may look for
+spatially periodic solutions” introduce an alternative modelling branch.  They
+do not make the conditions in that branch optional.  Once the periodic branch
+is selected, (8)--(11) replace the whole-space data and acceptance conditions
+as a connected package.  Likewise, the phrase “physically reasonable” names
+the acceptance class formed by the surrounding definitions; it is not a
+decorative adjective that can be removed while retaining the same problem.
+
+### Fefferman dependency graph
+
+```text
+unknowns u,p on space-time
+        |
+        +--> (1) momentum balance
+        |       |  contains inertia, viscosity, pressure gradient, and f
+        |       |  is interpreted as Newton's law for a fluid element
+        |       |
+        |       +--> force f is given and externally applied in the stated model
+        |
+        +--> (2) div u = 0
+        |       |  incompressibility constraint on the same u as (1)
+        |       |
+        +--> (3) u(x,0)=u°(x)
+        |       |  couples the unknown trajectory to the prescribed datum
+        |
+        +--> whole-space branch
+        |       +--> (4) rapid decay of every initial-data derivative
+        |       +--> (5) rapid decay of every force space-time derivative
+        |       +--> (6) global smoothness of p,u
+        |       +--> (7) bounded energy for every t >= 0
+        |
+        +--> periodic branch introduced by “Alternatively ... may look”
+                +--> (8) periodic initial data and force
+                +--> (9) temporal derivative decay of the force
+                +--> (10) periodic solution velocity
+                +--> (11) global smoothness of p,u
+```
+
+The graph has two different kinds of edge.  Equations (1)--(3) are the
+dynamical and initial-value core.  Conditions (4)--(7), or (8)--(11), are the
+admissibility and acceptance envelope.  A CMI alternative quantifies over the
+data in one branch and quantifies nonexistence over solutions satisfying the
+same connected envelope.  It is therefore not enough for a candidate to obey
+(1) locally before its terminal time if the requested conclusion is a global
+nonexistence statement against objects satisfying (6)--(7), or (10)--(11).
+
+### Word-level connections that control the mathematics
+
+| Wording | Direct mathematical meaning | Dependency it creates |
+|---|---|---|
+| “unknown velocity vector” and “pressure” | `u` and `p` are the coupled unknown fields on space-time | The same fields must occur in the momentum equation, incompressibility, initial condition, smoothness, and energy clauses. |
+| “given” initial field | `u°` is data, not a quantity selected after the solution is known | (3) and the decay/periodicity conditions constrain the candidate before solving. |
+| “given, externally applied force” | `f` is data in the stated physical model and enters the momentum balance | (1), (4)/(5) or (8)/(9), and the global solution question use the same force. Residual design is logically possible for an existential witness, but it is a provenance departure that must be reported. |
+| “incompressible fluids filling all of \(\mathbb R^n\)” | The whole-space setting is part of the model before the periodic alternative is introduced | It explains why decay at spatial infinity is imposed in (4) and (5). |
+| “physically reasonable” | The surrounding data and solution clauses define the accepted class | It binds the equation to decay or periodicity, smoothness, and energy; it is not an independent soft preference. |
+| “Hence” before (4) and (5) | The decay requirements are justified by the preceding physical-reasonableness aim | The force and initial data must be checked together with the solution, not only the local PDE identity. |
+| “only if” before (6) and (7) | Smoothness and bounded energy are necessary acceptance conditions | A global solution that fails either condition is not an accepted solution for the alternatives. |
+| “Alternatively” | A second domain-at-infinity formulation is offered | It switches the data and solution envelope to (8)--(11); it does not delete admissibility requirements. |
+| “Thus, we assume” after the periodic alternative | The selected periodic branch receives its own explicit hypotheses | (8) and (9) are premises for the periodic data, not examples. |
+| “We then accept” | (10) and (11) are the periodic acceptance conditions | The periodic branch must prove periodicity and smoothness for the same solution fields. |
+| “fundamental problem” | The question is global existence and smoothness in the accepted class | It explains why the alternatives quantify over all future time and not merely a local construction. |
+| “reasonable leeway” | Fefferman permits either whole-space or periodic formulations | The leeway is a choice of admissible setting, not permission to omit conditions inside that setting. |
+| “retaining the heart of the problem” | The global smoothness/existence-versus-breakdown question remains intact | A proposed proof must preserve the connected equation, data, regularity, and energy semantics. |
+| “for which there exist no solutions” in (C)/(D) | Nonexistence is relative to the same prescribed data and accepted solution class | A local singular trajectory is not enough unless it rules out every global accepted solution for the same data. |
+
+### The two alternative branches are not interchangeable
+
+For the whole-space branch, the connected target is:
+
+\[
+\begin{aligned}
+\mathrm{Admissible}_{\mathbb R^3}(u^\circ,f)&:
+  (4)\land(5),\\
+\mathrm{Accepted}_{\mathbb R^3}(p,u;u^\circ,f)&:
+  (1)\land(2)\land(3)\land(6)\land(7).
+\end{aligned}
+\]
+
+For the periodic branch, the connected target is:
+
+\[
+\begin{aligned}
+\mathrm{Admissible}_{\mathbb T^3}(u^\circ,f)&:
+  (8)\land(9),\\
+\mathrm{Accepted}_{\mathbb T^3}(p,u;u^\circ,f)&:
+  (1)\land(2)\land(3)\land(10)\land(11).
+\end{aligned}
+\]
+
+The CMI-shaped breakdown claims are consequently:
+
+\[
+\exists u^\circ,f\;\Bigl[
+  \mathrm{Admissible}_{\mathbb R^3}(u^\circ,f)\land
+  \neg\exists p,u\;\mathrm{Accepted}_{\mathbb R^3}(p,u;u^\circ,f)
+\Bigr]
+\]
+
+for (C), and the analogous periodic statement for (D).  This formalisation is
+useful for the audit because it prevents a common category error: proving a
+local residual identity or a pre-terminal field property does not by itself
+prove the connected global nonexistence claim.
+
+### Cross-references to the later Fefferman discussion
+
+The later paragraphs are not detached background.  They explain why the
+connected package is difficult:
+
+1. The local-in-time result explains that a solution exists for a short
+   interval, so the unresolved issue is continuation to all time.
+2. The definition of blow-up time connects failure of continuation to
+   unbounded velocity near a finite terminal time for Navier--Stokes.
+3. The weak-solution discussion explains that equations (12)--(13) weaken
+   differentiability requirements and therefore are not interchangeable with
+   the smooth accepted class (6)--(7) or (10)--(11).
+4. The partial-regularity discussion explains what is known about weak
+   solutions and why a singular set result does not settle global smoothness.
+5. The closing statement that standard methods appear inadequate supplies the
+   motivation for asking for a proof of one of the four connected alternatives.
+
+These connections matter to the OpenAI audit.  The relevant question is not
+whether a Lean declaration can be syntactically mapped to the words “there
+exist \(u^\circ,f\)”.  It is whether the selected construction supplies the
+same data, equations, global acceptance conditions, and physical mechanism
+that the manuscript claims to use to establish the relevant whole-space or
+periodic alternative.
+
+### OpenAI crosswalk consequence
+
+The OpenAI manuscript's residual construction can be logically analysed in
+the connected CMI envelope.  It must establish, for the selected data, all of
+the following together:
+
+\[
+\begin{array}{c}
+u^\circ\text{ satisfies the chosen data conditions},\\
+f\text{ is a globally smooth force satisfying the same data conditions},\\
+(u,p)\text{ satisfies (1)--(3) before the terminal time},\\
+f=\mathcal R(u,p)\text{ extends smoothly through the terminal time},\\
+\text{no global accepted solution for the same }(u^\circ,f)\text{ exists}.
+\end{array}
+\]
+
+The current Lean source supports a concrete residual-rate and smooth-force
+route.  It does not yet expose the complete theorem that the selected
+Cartesian fields, after the manuscript's profile corrections, sums, curls,
+localisation, periodisation, pressure construction, and endpoint extension,
+realise every five-moment identity claimed by the manuscript.  That is the
+precise remaining correspondence question.  It must neither be weakened into
+“the moments do not matter” nor overstated into “the force is already proved
+nonsmooth”.

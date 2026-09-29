@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-29",
+  "root": "NavierStokes.R3.Theorem",
+  "closure_modules": 588,
+  "closure_command": "direct_lean_closure.py NavierStokes.R3.Theorem --workers 4",
+  "closure_status": "exit_code_0",
+  "exact_symbol_families": [
+    "FiveProfileMoments",
+    "PositiveOrderMoments",
+    "FiveRowRank",
+    "physicalMoments",
+    "barMoment"
+  ],
+  "modules_with_exact_symbol_families": 32,
+  "representative_declarations": [
+    {"module": "NavierStokes.FiveProfileMoments", "declarations": ["physicalMoments_eq:637", "local_profile_moments:1136"]},
+    {"module": "NavierStokes.PositiveOrderMoments", "declarations": ["moments_repair_target:276", "exists_parameterized_exact_repair:916"]},
+    {"module": "NavierStokes.GlobalStressSupport", "declarations": ["moments_zero:146"]},
+    {"module": "NavierStokes.NominalProfile", "declarations": ["corrected_moments:288"]},
+    {"module": "NavierStokes.ModulatedHistories", "declarations": ["actual_histories_restored:987"]},
+    {"module": "NavierStokes.MeanRankUpdate", "declarations": ["physical_five_rows:163"]},
+    {"module": "NavierStokes.DefectIncrementBounds", "declarations": ["fiveRows_preserve_masses:634", "fiveRows:775"]},
+    {"module": "NavierStokes.StateMomentBalances", "declarations": ["axial_flux_pressure_moment:955"]},
+    {"module": "NavierStokes.TerminalCompensation", "declarations": ["physicalMoments_eq:540", "physicalMoments_cancel:570"]}
+  ],
+  "endpoint_contract": {
+    "file": "NavierStokes/ActualCandidateAssembly.lean",
+    "lines": "1121-1151",
+    "final_five_observable_equality_found": false,
+    "interpretation": "exported Witness does not visibly require the final selected Cartesian observable identity"
+  },
+  "limits": [
+    "Import closure is not declaration-level proof-term closure",
+    "The census does not prove a nonzero selected-field defect",
+    "The census does not prove force nonsmoothness",
+    "The census does not refute the literal existential endpoint"
+  ],
+  "next_gate": "trace declaration-level consumption from actual physical data through StageEstimates, VanishingJointJets, potentialSum, periodicVelocity, and the activated field"
+}

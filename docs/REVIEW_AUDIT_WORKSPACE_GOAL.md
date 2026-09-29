@@ -2222,3 +2222,72 @@ that literal Alternative (C) fails.
 
 Evidence: `NavierStokesReview/src/audit/priority_167_selected_field_composition_trace_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_selected_field_composition_trace_2026-09-29.json`.
+
+## Priority 168 goal control: connected physical admissibility and force provenance
+
+Fefferman's wording is now treated as a connected semantic network.  In
+particular, “Alternatively, we may look for spatially periodic solutions”
+introduces a whole branch with (8)--(11); it does not make those conditions
+optional after the periodic branch is selected.  “Physically reasonable” binds
+the equations to the data decay or periodicity, global smoothness, and energy
+conditions in the relevant branch.  “Retaining the heart of the problem” means
+the audit must preserve that global existence/smoothness-versus-breakdown
+question rather than crediting a local PDE identity alone.
+
+The source trace also corrects the earlier force wording:
+
+- `ActualCandidateAssembly.physicalData` and
+  `ActualStageEstimates.stageEstimates_of_representations` consume concrete
+  physical cycle data;
+- `ActualCycleResidualBounds.finite_residual_rates` derives finite residual
+  rates from invariant and physical-data obligations;
+- `StageEstimates.exists_schedule` derives vanishing joint residual jets;
+- `CandidateFromLimits.force_smooth` derives a smooth force extension from
+  those compatible residual limits.
+
+Therefore the selected force route must not be described as a free or empty
+`NativeBounds` assumption.  The adverse finding remains narrower and active:
+the inspected endpoint still does not expose the theorem identifying the
+completed selected Cartesian field, pressure, and force with every
+paper-level five-moment consequence after all sums, curls, localisation,
+periodisation, pressure, and endpoint operations.  This is `CTR-005`, a
+paper-to-endpoint correspondence finding.  It is not by itself a proof that
+the selected force is nonsmooth or that the connected CMI proposition is false.
+
+- [x] Add the connected Fefferman semantic graph and branch interpretation to
+  `docs/CMI_OpenAI_Full_Semantic_Crosswalk.md`.
+- [x] Record the concrete residual-rate-to-force-smoothness chain.
+- [x] Remove the unsupported “compiler cheat” and “five moments are the only
+  cancellation route” formulations from the controlling status.
+- [ ] Trace whether the invariant-backed rates are explicitly derived from the
+  manuscript's five observables, not merely from related intermediate debt and
+  zero-mass fields.
+- [ ] Reconcile the full selected endpoint with the connected CMI branch before
+  any claim of literal CMI failure or formal refutation.
+
+Evidence: `NavierStokesReview/src/audit/priority_168_fefferman_physical_admissibility_and_force_chain_2026-09-29.md`;
+`docs/CMI_OpenAI_Full_Semantic_Crosswalk.md`.
+
+## Priority 168 correction: full closure moment-symbol census (2026-09-29)
+
+The complete direct import closure rooted at `NavierStokes.R3.Theorem` contains
+588 project modules. A source census found 32 closure modules containing exact
+five-moment/rank symbols, including `FiveProfileMoments`,
+`PositiveOrderMoments`, `FiveRowRank`, `GlobalStressSupport`,
+`MeanRankUpdate`, `StateMomentBalances`, and `TerminalCompensation`.
+
+This is a mandatory correction to the audit vocabulary: those modules are
+genuinely reachable in the endpoint repository. The unresolved question is
+not whether the machinery exists or is imported. It is whether the selected
+declarations consume its identities as proof arguments all the way through the
+activated Cartesian field and export the paper-level observable equality.
+
+Evidence:
+
+- `NavierStokesReview/evidence/source_tranche_full_closure_moment_symbol_census_2026-09-29.json`
+- `NavierStokesReview/src/audit/priority_168_full_closure_moment_symbol_census_2026-09-29.md`
+
+The next gate is declaration-level tracing from `ActualCandidateAssembly`
+through the concrete estimates, vanishing jets, `tsum`, mixed curl/cutoff,
+periodisation, and time activation. Import reachability must not be reported as
+proof-term transport, but neither may it be reported as absence.

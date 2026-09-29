@@ -3312,3 +3312,60 @@ Alternative (C) failure.
 
 Evidence: `NavierStokesReview/src/audit/priority_167_selected_field_composition_trace_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_selected_field_composition_trace_2026-09-29.json`.
+
+## Priority 168: connected Fefferman semantics and force-chain correction (2026-09-29)
+
+- [x] Treat “physically reasonable” as the connected acceptance class formed
+  by the equation, data, decay or periodicity, smoothness, and energy clauses.
+- [x] Treat “Alternatively, we may look for spatially periodic solutions” as a
+  branch choice, not permission to omit (8)--(11) after choosing that branch.
+- [x] Map “retaining the heart of the problem” to the global
+  existence/smoothness-versus-breakdown question, including the later
+  finite-time blow-up and weak-solution discussion.
+- [x] Verify that actual stage estimates and residual rates are derived from
+  concrete cycle invariants and physical data, rather than alleging a free
+  `NativeBounds` input.
+- [x] Verify that `VanishingJointJets` and compatible residual limits derive
+  `CandidateFromLimits.force_smooth` on the selected route.
+- [x] Preserve the adverse `CTR-005` finding: no inspected declaration yet
+  identifies the completed selected Cartesian field, pressure, and force with
+  every manuscript-level `(M,I,J,S,C_p)` consequence.
+- [ ] Search the invariant and residual-rate proof terms for an explicit or
+  definitionally equivalent bridge from the manuscript's five observables to
+  the selected rate chain.
+- [ ] Check the whole connected Fefferman predicate for the selected data and
+  force, not just the existential comparator wrapper.
+- [ ] Escalate to formal refutation only after a direct selected mismatch,
+  failed mandatory premise, impossibility theorem, or selected-path `False`.
+
+Evidence: `NavierStokesReview/src/audit/priority_168_fefferman_physical_admissibility_and_force_chain_2026-09-29.md`;
+`docs/CMI_OpenAI_Full_Semantic_Crosswalk.md`.
+
+## Priority 168: full closure moment-symbol census (2026-09-29)
+
+The direct closure rooted at `NavierStokes.R3.Theorem` contains 588 project
+modules and 32 modules with exact `FiveProfileMoments`,
+`PositiveOrderMoments`, `FiveRowRank`, `physicalMoments`, or `barMoment`
+symbols. This corrects any wording that calls the moment machinery dead,
+unreachable, or absent from the endpoint repository.
+
+- [x] Run `direct_lean_closure.py NavierStokes.R3.Theorem --workers 4`.
+- [x] Record the exact-symbol census in
+  `NavierStokesReview/evidence/source_tranche_full_closure_moment_symbol_census_2026-09-29.json`.
+- [x] Record representative declarations and import-path limits in
+  `NavierStokesReview/src/audit/priority_168_full_closure_moment_symbol_census_2026-09-29.md`.
+- [ ] Trace declaration-level consumption rather than import reachability from
+  `InitialPhysicalData`, `ActualCandidateConstruction`,
+  `ActualCyclePreservation.state_coherent`, and `ActualCandidateAssembly.estimates`
+  into `StageEstimates`, `VanishingJointJets`, `potentialSum`,
+  `periodicVelocity`, and the activated field.
+- [ ] Locate, or prove absent from the selected declaration path, an equality
+  identifying the completed Cartesian field with the paper's five observables.
+
+The current status remains `CTR-005`: the final selected-field observable
+correspondence is not established. The census alone is not evidence of a
+nonzero defect, force nonsmoothness, or failure of the literal existential
+endpoint.
+
+Evidence: `NavierStokesReview/src/audit/priority_168_full_closure_moment_symbol_census_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_full_closure_moment_symbol_census_2026-09-29.json`.

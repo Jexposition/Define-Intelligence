@@ -3339,7 +3339,7 @@ The OpenAI manuscript is explicit about its method: for a chosen incompressible 
 
 The Lean endpoint is aimed at the same existential structure. NavierStokes/R3/ProblemStatement.lean:92-109 requires a smooth compactly supported force, a pre-singular smooth candidate, the residual identity, bounded energy on \(0\leq t<1\), and speed unbounded as \(t\uparrow1\). ProblemStatement.lean:119-135 defines a global competitor with the same force and zero initial datum, smooth for all future times and uniformly finite-energy. ProblemStatement.lean:150-153 then states the breakdown proposition as existence of the candidate together with nonexistence of such a global competitor. NavierStokes/R3/Theorem.lean:46-49 exports that proposition.
 
-Accordingly, the absence of a literal final-field tuple \((M,I,J,S,C_p)\) is not enough to refute the formal Alternative (C) target. If the Lean definitions and the accompanying proofs are accepted as establishing the stated compact-support, smoothness, residual, energy, and uniqueness obligations, the endpoint is a formal witness of the forced existential breakdown proposition. That is a statement about the formal target actually encoded, not a blanket certification that every sentence of the manuscript has been transported into the endpoint.
+Accordingly, the absence of a literal final-field tuple \((M,I,J,S,C_p)\) is not by itself a value-level proof that the selected force is nonsmooth. But it is also not permissible to conclude from the comparator theorem alone that OpenAI has verified the manuscript's CMI solution. Fefferman's C statement is embedded in the connected definition of a smooth, physically reasonable solution: the force and initial data must satisfy (4)--(5), and any accepted global solution must satisfy (1)--(3), (6), and (7). If the Lean definitions and proofs are accepted extensionally, they establish a Lean proposition with those declared clauses. The review question is stronger: whether those clauses are realised by the same selected fields, residual force, and load-bearing moment/correction mechanism described in the manuscript. That paper-to-endpoint equivalence remains unestablished.
 
 ### Physical-projection level
 
@@ -3463,6 +3463,26 @@ selected-field nonsmoothness proof or a formal refutation of Alternative (C).
 
 Evidence: `NavierStokesReview/src/audit/priority_163_full_cmi_dependency_crosswalk_adjudication_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_full_cmi_dependency_crosswalk_2026-09-29.json`.
+
+### Full-closure correction
+
+The endpoint import closure must not be described as moment-blind in the broad
+repository sense. A direct closure run rooted at `NavierStokes.R3.Theorem`
+found 588 project modules, including 32 modules with exact moment/rank symbols.
+Representative declarations include `FiveProfileMoments.physicalMoments_eq`,
+`PositiveOrderMoments.moments_repair_target`,
+`GlobalStressSupport.moments_zero`, `MeanRankUpdate.physical_five_rows`, and
+`TerminalCompensation.physicalMoments_cancel`.
+
+The remaining finding is narrower: `ActualCandidateAssembly.Witness` does not
+export a theorem identifying the final selected Cartesian observables with
+`(M,I,J,S,C_p)`. Import reachability proves that the upstream machinery is
+present, not that its identities are transported through the selected sums,
+localisation, periodisation, and activation. The audit therefore retains
+`CTR-005` as a final correspondence finding, not as a claim that the moment
+machinery is dead or absent.
+
+Evidence: `NavierStokesReview/evidence/source_tranche_full_closure_moment_symbol_census_2026-09-29.json`.
 
 ## Source-complete control note: Priority 165
 
@@ -3646,3 +3666,20 @@ an impossibility theorem, a false mandatory CMI premise, or a selected-path
 
 Evidence: `NavierStokesReview/src/audit/priority_163_full_cmi_dependency_crosswalk_adjudication_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_full_cmi_dependency_crosswalk_2026-09-29.json`.
+## Source-adjudication update: connected CMI semantics (2026-09-29)
+
+The review treats Fefferman's “physically reasonable” wording as a connected
+mathematical acceptance class.  The periodic sentence introduces an alternative
+branch whose conditions (8)--(11) remain mandatory once selected.  The current
+Lean source also shows a real concrete chain from cycle physical data through
+finite residual rates, vanishing joint jets, and `force_smooth`; the endpoint
+must not be described as accepting empty `NativeBounds`.
+
+The remaining adverse finding is `CTR-005`: the inspected endpoint does not yet
+expose the theorem identifying the completed selected Cartesian construction
+with every paper-level five-moment consequence after the full composition.
+This is a paper-to-endpoint correspondence failure, not a proof that the
+selected force is nonsmooth.  The source-backed distinction and the required
+next bridge search are recorded in
+`NavierStokesReview/src/audit/priority_168_fefferman_physical_admissibility_and_force_chain_2026-09-29.md`
+and `docs/CMI_OpenAI_Full_Semantic_Crosswalk.md`.
