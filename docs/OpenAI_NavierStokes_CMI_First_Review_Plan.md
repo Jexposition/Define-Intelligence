@@ -3995,3 +3995,76 @@ impossibility, or `False` without the corresponding value-level theorem.
 
 Evidence: `NavierStokesReview/src/audit/priority_187_circularity_adjudication_2026-09-30.md` and
 `NavierStokesReview/evidence/source_tranche_priority_187_circularity_adjudication_2026-09-30.json`.
+
+## Priority 188: adjudicate the residual-jet circularity rebuttal and freeze the cleanup gate
+
+The latest rebuttal is partly correct and partly overclaims. The manuscript makes
+the five radial moments load-bearing for profile matching, stress support, and the
+five-equation correction step. It does not follow that every residual summand must
+diverge when the velocity norm diverges, nor that the five moments are the only
+operation contributing to residual flatness. The manuscript explicitly retains
+wave, covariance, pressure, curl, cutoff, summation, and higher-order residual terms.
+
+The selected Lean path is not a bare `NativeBounds` assumption. The source trace is:
+
+`ActualCandidateAssembly.physicalData`
+`-> GluedStageEstimates.actualStageEstimates`
+`-> ActualCycleResidualBounds.finite_residual_rates`
+`-> MixedCandidateWitness.SelectedSchedule` with `VanishingJointJets`
+`-> MixedPeriodicAssembly.boundaryLimits_locallyUniform`
+`-> CandidateFromLimits.tracedResidual_smooth`
+`-> CandidateFromLimits.force_smooth`.
+
+The unresolved bridge is instead:
+
+`selected VanishingJointJets / residual-rate data`
+`->? final selected Cartesian field realises the manuscript's`
+`PaperMoments(u_selected,p_selected) = (M,I,J,S,C_p)`.
+
+Keep `CTR-005 = NOT ESTABLISHED` for complete manuscript-to-endpoint fidelity.
+Do not state that the selected force is nonsmooth, that Fefferman Alternative (C)
+fails, or that the construction is impossible unless a connected value-level
+mismatch, failed CMI premise, impossibility theorem, or contradiction is proved.
+
+The publication boundary is now fixed. The private source-of-truth branch is
+`review/cmi-first-navier-stokes-2026-09-29` at `6152dc4`. Its curated public mirror
+is `review/cmi-first-navier-stokes-public-2026-09-29` at `248debc`, already pushed.
+The older `review/cmi-first-navier-stokes-2026-09-22` branch is legacy and must not
+be silently rewritten. The current private worktree has 59 untracked entries;
+they are a triage backlog, not a staging queue. Protected items include
+`NavierStokes/R3/TestPressure.lean`, `$null`, raw scans, plots, logs, generated
+registers, and draft root documents.
+
+Before any archive move or cleanup commit:
+
+- fetch and hash the formal documents and evidence records;
+- build a content-addressed supersession and cross-reference matrix;
+- update the control trees and publication links;
+- verify that no substantive source-backed finding is lost;
+- move only confirmed redundant material to its parent archive, never delete it,
+  and record old path, new path, reason, and SHA-256 in a local-only manifest;
+- commit only the scoped curated tranche and mirror that commit to the new public
+  branch; never stage the entire untracked tree.
+
+No cleanup or archive move is authorised at Priority 188. Clear only verified
+orphaned Lean, Lake, or Elan processes before the next build; do not kill unrelated
+processes.
+
+## Priority 188: no equation-only or C-only interpretation
+
+- [x] Treat Fefferman's “may look for” as branch latitude, not a waiver.
+- [x] Treat “Thus, we assume”, “In place of”, and “We then accept” as binding
+  the periodic data and accepted-solution conditions.
+- [x] Audit the connected C and D packages, including decay, smoothness, PDE,
+  incompressibility, initial data, energy, and periodic pressure requirements.
+- [x] Verify that `ComparatorDefinitions.lean` encodes those connected
+  packages, and that `ComparatorR3Theorem.lean` maps the selected theorem to
+  the corresponding formal propositions.
+- [x] Keep this positive formal result separate from the manuscript-fidelity
+  question. The absence of a final five-moment export is not itself a proof
+  that the encoded C/D proposition is false.
+- [ ] Complete the selected-field transport audit for the manuscript's
+  `(M,I,J,S,C_p)` mechanism after curl, localisation, `tsum`, periodisation,
+  averaging, radial integration, support, integrability, and axis limits.
+
+Controlling record: `docs/CMI_OpenAI_Full_Semantic_Crosswalk.md`, Priority 188.

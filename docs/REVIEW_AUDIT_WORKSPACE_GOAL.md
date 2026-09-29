@@ -2995,3 +2995,87 @@ corresponding theorem.
 
 Evidence:
 `NavierStokesReview/evidence/source_tranche_priority_187_circularity_adjudication_2026-09-30.json`.
+
+## Priority 188 goal control: residual jets, five moments, and publication hygiene
+
+The active goal must distinguish three propositions that were previously being
+collapsed:
+
+1. The manuscript uses `(M,I,J,S,C_p)` as load-bearing profile, matching, stress,
+   and correction data.
+2. The selected Lean route derives smooth residual extension from concrete physical
+   data, cycle invariants, residual-rate bounds, `VanishingJointJets`, and the
+   actual `CandidateFromLimits` construction.
+3. The current endpoint record does not yet identify that selected residual-jet
+   route with the manuscript's final five observable identities after all selected
+   curls, cutoffs, `tsum` sums, periodisation, averaging, radial integrals, and axis
+   limits.
+
+The current status is therefore **NOT ESTABLISHED (CTR-005)** for complete
+paper-to-endpoint fidelity. Do not convert this into a claim of nonsmooth force,
+literal CMI failure, impossibility, or `False` without a connected value-level
+theorem establishing the relevant mismatch or failed condition. Conversely, do not
+describe the missing bridge as a harmless naming omission: the manuscript's physical
+mechanism is not credited to the exported endpoint until that bridge is proved.
+
+The controlling source path is:
+
+`physicalData -> actualStageEstimates -> finite_residual_rates ->`
+`SelectedSchedule/VanishingJointJets -> boundaryLimits_locallyUniform ->`
+`tracedResidual_smooth -> force_smooth`.
+
+The open implication is:
+
+\[
+J_{\rm flat}\;\Longrightarrow\;
+\operatorname{PaperMoments}(u_{\rm selected},p_{\rm selected})
+  =(M,I,J,S,C_p).
+\]
+
+The private source-of-truth branch is
+`review/cmi-first-navier-stokes-2026-09-29` at `6152dc4`. The curated public
+mirror is `review/cmi-first-navier-stokes-public-2026-09-29` at `248debc` and is
+already pushed. The older `review/cmi-first-navier-stokes-2026-09-22` branch is
+legacy and must remain separate.
+
+The worktree currently has 59 untracked entries. They must not be bulk-staged.
+`NavierStokes/R3/TestPressure.lean`, `$null`, raw scans, plots, logs, generated
+registers, and draft root documents are protected pending consolidation. The next
+hygiene gate is a full fetch, SHA-256 inventory, supersession matrix, and
+cross-reference check over the formal documents and evidence records. Only after
+that gate may confirmed redundant material be moved, never deleted, to a parent
+archive with a local-only path/reason/hash manifest. Clear verified orphaned Lean,
+Lake, or Elan processes before builds; do not kill unrelated processes.
+
+## Priority 188 goal control: connected Fefferman semantics
+
+The audit must not describe Fefferman's C/D alternatives as equation-only
+propositions. “May look for” selects the periodic branch; it does not waive
+that branch's conditions. The source words “Thus, we assume”, “In place of”,
+and “We then accept” bind `(8),(9)` and `(10),(11)`. The whole-space route
+binds `(1)--(7)`. “Physically reasonable” and “retaining the heart of the
+problem” carry the connected global smoothness, decay, force, domain, and
+energy meaning into the alternatives.
+
+The comparator source was checked against this network. Its definitions include
+the initial-data conditions, force smoothness and decay, PDE, divergence-free
+constraint, initial condition, global smoothness, whole-space energy, and the
+periodic velocity and pressure conditions. Therefore the repository has a
+positive formal result for its encoded connected forced C/D propositions.
+
+That positive result does not close the separate manuscript-fidelity gate:
+
+\[
+J_{\rm flat}\Rightarrow
+\operatorname{PaperMoments}(u_{\rm selected},p_{\rm selected})
+=(M,I,J,S,C_p).
+\]
+
+Keep `CTR-005 = NOT ESTABLISHED` for complete paper-to-selected-endpoint
+fidelity. Do not call the missing moment export proof that C or D is false,
+and do not call the compiled C/D theorem proof that the manuscript's complete
+five-moment mechanism has been machine-checked. A literal C/D failure requires
+a selected failed connected condition, value mismatch, impossibility theorem,
+or contradiction.
+
+Controlling record: `docs/CMI_OpenAI_Full_Semantic_Crosswalk.md`, Priority 188.

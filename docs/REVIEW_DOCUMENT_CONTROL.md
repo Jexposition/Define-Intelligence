@@ -2181,3 +2181,25 @@ The reconciled register and source-map artefacts are:
 - [`semantic_coverage_register_full_2026-09-29.html`](../NavierStokesReview/evidence/semantic_coverage_register_full_2026-09-29.html)
 - [`hardened_source_map_2026-09-29.md`](../NavierStokesReview/evidence/hardened_source_map_2026-09-29.md)
 - [`hardened_source_map_2026-09-29.json`](../NavierStokesReview/evidence/hardened_source_map_2026-09-29.json)
+
+## Evidence-control entry: priority 188 (2026-09-30)
+
+Priority 188 records the adjudication of the residual-jet circularity rebuttal.
+The five manuscript moments remain load-bearing, but the claim that the Lean force
+proof rests on an unlinked generic rate contract is rejected as stated. The selected
+path passes concrete physical data through `actualStageEstimates` and
+`finite_residual_rates` into `SelectedSchedule`/`VanishingJointJets`, then derives
+`tracedResidual_smooth` and `force_smooth`. The unresolved issue is the final
+value-level identification of that selected route with the manuscript's
+`(M,I,J,S,C_p)` observables. `CTR-005` remains **NOT ESTABLISHED** for complete
+paper-to-endpoint fidelity. No force nonsmoothness, literal CMI failure,
+impossibility, or `False` classification is authorised without a connected
+value-level result.
+
+The private source-of-truth commit is `6152dc4` on
+`review/cmi-first-navier-stokes-2026-09-29`; the curated public mirror is
+`248debc` on `review/cmi-first-navier-stokes-public-2026-09-29`. The older
+`review/cmi-first-navier-stokes-2026-09-22` branch remains separate. The current
+worktree has 59 untracked entries. No bulk staging, deletion, or archive move is
+permitted before the formal-document fetch, SHA-256 inventory, supersession matrix,
+cross-reference check, and parent-archive manifest required by the active goal.
