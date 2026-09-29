@@ -916,6 +916,31 @@ selected finite prefix, torus average, axis and outer-support limits, and
 
 Evidence: `NavierStokesReview/evidence/selected_cutoff_curl_commutator_2026-09-25.md`.
 
+## AX-037: production direct branch is cutoff-weighted
+
+**Source:** `MixedPeriodicAssembly.periodicVelocity`,
+`SpatialLocalization.cutPotential`, and
+`PeriodicLocalization.periodize_eq_on_unitCube`.
+
+**Formal content:** the selected production direct branch is
+
+$$
+u_{\mathrm{direct,prod}}(t,x)=\chi(x)v(t,x)
+$$
+
+before the stated unit-cube periodisation identity. It is not definitionally
+the native uncut scalar profile.
+
+**Evidence:** `SelectedProductionDirectCutoff.lean` and
+`selected_production_direct_cutoff_2026-09-25.md`.
+
+## AX-038: native moment zero does not transport automatically
+
+The proved native identity `barMoment₂(v)=0` does not entail
+`barMoment₂(χv)=0`. That implication requires an explicit scalar pullback,
+torus-average calculation, and boundary proof. This is an unresolved
+selected-field obligation, not a declared contradiction.
+
 ## AX-056: selected radial-section recovery has an explicit axis boundary
 
 `SelectedRadialSectionComponent.lean` contains no admission, custom axiom, or
@@ -976,3 +1001,199 @@ Cartesian-to-radial, torus-average, support, and boundary composition remains
 an open proof obligation.
 
 Evidence: `NavierStokesReview/evidence/selected_potential_stage_chart_transport_2026-09-25.md`.
+
+## AX-061: selected chart component transport
+
+`SelectedCylindricalComponentTransport.lean` adds no axiom. Its three
+identities reduce the first Cartesian frame component to the rotated
+cylindrical components and use the existing `velocity_polar_forward` theorem
+for the selected chart. The result is a local transport fact, not a global
+radial-moment identity and not a contradiction.
+
+Evidence: `NavierStokesReview/evidence/selected_cylindrical_component_transport_2026-09-25.md`.
+
+## AX-062: selected direct component transport adds no admissions
+
+`SelectedPhysicalComponentTransport.lean` adds no `sorry`, custom axiom, or
+`unsafe` declaration.  It proves the selected direct Cartesian component from
+the source polar frame and graph definitions, including the `swapCylinder`
+reindexing and graph scale.  The theorem is selected-path positive evidence;
+it is not a `barMoment` identity and does not derive `False`.
+
+Evidence: `NavierStokesReview/evidence/selected_physical_component_transport_2026-09-25.md`.
+
+## AX-063: direct radial moment transport adds no admissions
+
+`SelectedDirectRadialMomentBridge.lean` introduces no `sorry`, custom axiom,
+or `unsafe` declaration.  It proves that the selected direct component on the
+positive radial section is the selected native scalar and that its exact
+order-two `barMoment` integral is zero on the selected carrier.  The theorem
+does not identify the curl-generated potential branch with that scalar and
+therefore does not derive a contradiction.
+
+Evidence: `NavierStokesReview/evidence/selected_direct_radial_moment_bridge_2026-09-25.md`.
+
+## AX-064: graph-to-torus boundary adds no axioms
+
+The source audit records a missing selected-field identification, not an
+assumption. `radialSection` supplies one graph sample, while
+`PressureStream.torusAverage` supplies the auxiliary average consumed by
+`barMoment_apply`. No new axiom, `sorry`, or `unsafe` declaration is used.
+The missing equality remains an affirmative proof obligation for the
+published five-moment construction and does not derive `False`.
+
+Evidence: `NavierStokesReview/evidence/selected_torus_average_representation_gap_2026-09-25.md`.
+
+## AX-065: selected stream-to-curl completion adds no axioms
+
+`SelectedStreamCurlChartTransport.lean` introduces no `sorry`, custom axiom,
+or `unsafe` declaration. It specialises the existing selected chart theorem
+and proves source-to-curl transport for the actual mean stream. It does not
+add the still-missing vector-to-scalar torus-average equality.
+
+Evidence: `NavierStokesReview/evidence/selected_stream_curl_chart_transport_2026-09-25.md`.
+
+## AX-066: selected rank/stream scope adds no axioms
+
+`SelectedStreamRankScope.lean` composes the source identities for the selected
+temporal-plus-rank stream and its `MovingField` regularity. It adds no axiom,
+`sorry`, or `unsafe` declaration. The remaining curl-to-torus-average identity
+is an unproved construction obligation, not an imported assumption.
+
+Evidence: `NavierStokesReview/evidence/selected_stream_rank_moment_scope_2026-09-25.md`.
+
+The new selected component theorem introduces no axiom, `sorry`, or `unsafe`
+declaration. It records the exact term `(D₁χ)A₂ − (D₂χ)A₁` that remains to be
+transported into `barMoment`.
+
+## AX-067: selected positive-stage chart component adds no axioms
+
+`SelectedPotentialChartComponent.lean` introduces no custom axiom, `sorry`, or
+`unsafe` declaration.  Its two theorems use the existing production identities
+to transport the actual selected successor-stage curl component to
+`chartWaveParts + chartStreamParts`.  The unresolved vector-to-scalar
+torus-average identity remains an obligation, not an assumption.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_chart_component_2026-09-25.md`.
+
+## AX-068: selected `barMoment` interface completion adds no axioms
+
+`SelectedBarMomentInterface.lean` introduces the explicit pullback required to
+compare a selected Cartesian component with `DefectIncrementBounds.barMoment`.
+Its two transport theorems use only existing definitions and equality
+reasoning. The module contains no custom axiom, `sorry`, or `unsafe` declaration.
+The selected-field equality after the production `tsum`, torus average, axis
+limits, and support limits remains unproved.
+
+Evidence: `NavierStokesReview/evidence/selected_barMoment_interface_2026-09-25.md`.
+## Review-side transport completion: 2026-09-25
+
+SelectedPhysicalPointTransport.lean introduces no axiom, sorry, or unsafe
+declaration. Its first theorem records definitional compatibility between the
+physical chart point and DefectIncrementBounds.Point Plane. Its second theorem
+is a conditional barMoment expansion: it consumes an explicit point-to-
+spacetime map and scalar profile rather than manufacturing either one. The
+result is evidence about the missing selected-field transport, not an
+additional premise silently imported into the authors' theorem.
+
+Evidence: NavierStokesReview/evidence/selected_physical_point_transport_2026-09-25.md.
+
+## Review-side completion: selected radial production component
+
+`SelectedPotentialProductionRadialScalar.lean` adds no axiom, `sorry`, or
+`unsafe` declaration. It derives differentiability from the selected schedule
+and source smoothness, then applies the existing cutoff/curl theorem. Its
+unresolved scalar-domain transport is an open obligation, not a silently
+imported premise.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_production_radial_scalar_2026-09-25.md`.
+
+`SelectedPotentialProductionTorusAverage.lean` adds no axioms, `sorry`, or
+`unsafe` declarations. Its two theorems are ordinary finite-prefix identities
+obtained by unfolding the repository's torus-average and radial-moment
+definitions. They add no premise to the authors' endpoint and do not prove a
+contradiction.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_production_torus_average_2026-09-26.md`.
+
+## AX-069: finite-prefix endpoint completion adds no axioms
+
+`SelectedFiniteCutoffEndpoint.lean` composes the existing axis-scale limit
+with the existing finite-cutoff plateau theorem. It introduces no `sorry`,
+custom axiom, or `unsafe` declaration. Its conclusion is explicitly finite
+in the stage index; it does not identify the infinite selected sum or its
+weighted moment.
+
+Evidence:
+`NavierStokesReview/evidence/selected_finite_cutoff_endpoint_2026-09-26.md`.
+
+The related source-scope record notes that the local finite-tail and all-jet
+theorems require a strict positive scale. Their hypotheses therefore do not
+automatically identify the selected infinite sum at the axis limit.
+
+Evidence:
+`NavierStokesReview/evidence/selected_tsum_endpoint_scope_2026-09-26.md`.
+
+## AX-070: mixed `barMoment` interface completion
+
+`SelectedMixedProductionBarMoment.lean` adds definitions and theorems only;
+its focused Lean check reports no `sorry`, `unsafe`, or custom axiom. The
+completion transports the actual mixed first component to the existing
+`barMoment` type and proves the positive-radius pullback. It adds no value
+claim about the moment and no contradiction to the exported endpoint.
+
+Evidence:
+`NavierStokesReview/evidence/selected_mixed_production_barMoment_2026-09-26.md`.
+
+## AX-071: mixed radial reduction adds no axioms
+
+The branch split and exact torus-average reduction compile without `sorry`,
+`unsafe`, or custom axioms. They expose an integral expression only; no
+numerical moment value is introduced.
+
+Evidence:
+`NavierStokesReview/evidence/selected_mixed_production_torus_average_2026-09-26.md`.
+
+## AX-072: periodicity/support completion adds no axioms
+
+The selected mixed radial periodicity and conditional support obstruction
+compile without `sorry`, `unsafe`, or custom axioms. They introduce no
+bounded-support premise into the endpoint and make no unconditional value or
+contradiction claim.
+
+Evidence:
+`NavierStokesReview/evidence/selected_mixed_radial_periodicity_2026-09-26.md`.
+
+## AX-074: R3 packaging non-implication
+
+`SelectedR3PackagingBoundary.lean` is a zero-sorry, zero-axiom review-side
+completion. It adds no premise to the authors' endpoint. It proves only that
+the exported R3 `CandidateProperties` record can coexist with an arbitrary
+nonzero five-coordinate payload because that payload is not present in the
+record. No selected numerical moment and no `False` theorem follows.
+
+Evidence: `NavierStokesReview/evidence/selected_r3_packaging_boundary_2026-09-26.md`.
+
+## AX-073: selected-witness packaging boundary
+
+The source-path verification introduces no axiom or theorem claim. The
+`hc` component of `ActualCandidateAssembly.selected_witness` is a
+`CandidateProperties` record. Its construction includes the energy theorem,
+but the record has no five-moment or `barMoment` transport field. The R3
+wrapper additionally applies spatial force compactification and a smooth
+positive-time cutoff. This documents a correspondence obligation only; it
+does not create `False`, `sorry`, `unsafe`, or a custom axiom.
+
+Evidence: `NavierStokesReview/evidence/source_path_reconciliation_2026-09-26.md`.
+
+## AX-075: mapping controls are not mathematical axioms
+
+The reproducible mapping bundle records exact source hashes and compiled
+environment routes, with zero reachable `sorryAx` users in the selected
+endpoint closure. The bundle introduces no Lean axiom and no theorem about the
+values of the final field. Reachability of upstream moment and pressure
+declarations must not be recorded as proof of their transport into the
+exported witness.
+
+Evidence: `docs/REVIEW_MAPPING_METHOD.md` and
+`NavierStokesReview/evidence/hardened_audit_bundle_2026-09-26.md`.

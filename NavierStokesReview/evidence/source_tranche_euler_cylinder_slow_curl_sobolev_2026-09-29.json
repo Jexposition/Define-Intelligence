@@ -1,0 +1,30 @@
+{
+  "schema": "source-tranche-review/v1",
+  "date": "2026-09-29",
+  "priority": 150,
+  "scope": "Euler cylinder slice representatives, slow curl, weights, Sobolev operators, embeddings, and spatial means",
+  "method": "Direct source inspection with declaration/import anchors and token scan",
+  "classification": {
+    "positive_infrastructure": true,
+    "captured_navierstokes_r3_endpoint": false,
+    "selected_field_five_observable_transport_found": false,
+    "nonzero_selected_field_defect_proved": false,
+    "false_proved": false
+  },
+  "token_scan": {"files": 12, "sorry": 0, "admit": 0, "axiom": 0},
+  "records": [
+    {"path":"Euler/CylinderSliceRepresentatives.lean","anchors":"1; 17-34","finding":"Identifies continuous cylinder path representatives from equal slice data, including scalar representatives. No selected-field moment transport."},
+    {"path":"Euler/CylinderSlowCurl.lean","anchors":"1-3; 38-47; 55-77; 80-107","finding":"Defines three curl terms, a finite path sum, ae reconstruction, a classical field, and equality with the lifted slow-curl operator. No five-observable or selected endpoint equality."},
+    {"path":"Euler/CylinderSlowCurlBounds.lean","anchors":"1; 39-72","finding":"Proves a block bound where one spatial derivative consumes one shift while the external radius is unchanged. This is not radial moment transport."},
+    {"path":"Euler/CylinderSlowCurlWeight.lean","anchors":"1-2; 30-59; 74-101","finding":"Proves weight commutation, path normalisation, normalised block bounds, and time-derivative normalisation/bounds. No selected-field observable equality."},
+    {"path":"Euler/CylinderSobolevDensity.lean","anchors":"1; 16-63","finding":"Defines Sobolev mollifiers and proves boundedness, convergence, representative compatibility, ae word identities, and smooth density. No endpoint transport."},
+    {"path":"Euler/CylinderSobolevDerivatives.lean","anchors":"1; 13-103","finding":"Defines truncation and derivative operators with bounds, value recovery, derivative existence, and translation compatibility. No five-moment conclusion."},
+    {"path":"Euler/CylinderSobolevEmbedding.lean","anchors":"1-2; 18-67","finding":"Proves embedding constants and pointwise value bounds from high-order Sobolev control. No radial integral bridge."},
+    {"path":"Euler/CylinderSobolevOperators.lean","anchors":"1; 16-53; 68-145","finding":"Defines array/value/word operators, derivative-sum norms, lifted translation-commuting operators, and continuity. No selected-field or pressure semantics."},
+    {"path":"Euler/CylinderSobolevOrbit.lean","anchors":"1-2; 23-71","finding":"Defines Sobolev translation orbits and assembled paths with coordinate and smoothness results. No endpoint transport."},
+    {"path":"Euler/CylinderSobolevWordBounds.lean","anchors":"1-2; 23-89","finding":"Proves word-level, summed-level, and block-level Sobolev bounds for the orbit. No five-observable equality."},
+    {"path":"Euler/CylinderSpatialEmbedding.lean","anchors":"1-3; 23-61; 79-109","finding":"Embeds spatial L2 fields into cylinder L2 and proves linearity, norm scaling, continuity, and inner-product identities. No radial moment or pressure-Poisson theorem."},
+    {"path":"Euler/CylinderSpatialMean.lean","anchors":"1-3; 18-44; 51-86","finding":"Defines a bounded cylinder-to-spatial mean as an adjoint and proves translation covariance, retraction on constant embeddings, and angular-average invariance. This is not barMoment or selected-field transport."}
+  ],
+  "absence_boundary": "No declaration in this tranche mentions barMoment, FiveRowRank, PositiveOrderMoments, selected_witness, CandidateProperties, or an equality identifying a final Cartesian field with (M,I,J,S,C_p). This is tranche-level evidence, not a repository-wide nonexistence proof."
+}

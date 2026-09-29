@@ -2,11 +2,14 @@
 
 ## Result
 
-`NavierStokesReview/src/completions/SelectedCutoffCurlCommutator.lean`
-compiles without `sorry`, custom `axiom`, or `unsafe` declarations in the
-review library. Its theorem
-`curl_smul_eq_smul_curl_add_commutator` proves, for differentiable scalar
-cutoff `χ` and potential `A`,
+`NavierStokesReview/src/completions/SelectedCutoffCurlCommutator.lean` and
+`NavierStokesReview/src/completions/SelectedCutStageCurlScope.lean` compile
+without `sorry`, custom `axiom`, or `unsafe` declarations in the review
+library. The selected-stage theorem
+`selected_cut_stage_curl_expansion` instantiates the general theorem
+`curl_smul_eq_smul_curl_add_commutator` for the production
+`selectedPotentialStages` family. For differentiable scalar cutoff `χ` and
+potential `A`, it proves
 
 $$
 \operatorname{curl}(\chi A)(x)
@@ -16,6 +19,17 @@ $$
 
 The final summand is the exact cutoff-gradient commutator. It is not set to
 zero by the product rule.
+
+The companion theorem `selected_cut_stage_curl_component_zero` gives its first
+Cartesian component explicitly:
+
+$$
+\bigl((\nabla\chi)\times A\bigr)_0
+  =(D_1\chi)A_2-(D_2\chi)A_1.
+$$
+
+These are the derivative/component products that a selected radial
+calculation must integrate.
 
 ## Source anchors
 
@@ -27,7 +41,9 @@ zero by the product rule.
 | `potentialSum` | `NavierStokes/SolenoidalDiagonal.lean:37` | Takes the natural-indexed sum of cut stages. |
 | `velocitySum` | `NavierStokes/SolenoidalDiagonal.lean:188-190` | Applies spatial curl to the potential sum. |
 | cutoff regularity | `NavierStokes/SmoothCutoffs.lean:134-155` | Gives smoothness and compact support of the scaled cutoff. |
-| review theorem | `NavierStokesReview/src/completions/SelectedCutoffCurlCommutator.lean:18-26` | Expands the selected calculation's local product rule. |
+| review theorem | `NavierStokesReview/src/completions/SelectedCutoffCurlCommutator.lean:18-26` | General local product rule. |
+| selected-stage theorem | `NavierStokesReview/src/completions/SelectedCutStageCurlScope.lean:21-38` | Instantiates the rule for the selected production stage. |
+| selected component theorem | `NavierStokesReview/src/completions/SelectedCutStageCurlScope.lean:40-62` | Expands the first Cartesian component of the commutator. |
 
 ## What this establishes
 
@@ -48,4 +64,4 @@ Accordingly it supplies a concrete calculation gate, not `Delta m ≠ 0` and not
 
 Command: `lake build NavierStokesReview` under Lean `v4.34.0-rc2`.
 
-Result: `Build completed successfully (3699 jobs).`
+Result: `Build completed successfully (3711 jobs).`

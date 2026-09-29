@@ -95,9 +95,9 @@ the inspected selected path**. The load-bearing unresolved issue is CTR-005,
 not selected-label vacuity, compact-pressure trivialisation, or the mere use
 of a residual-defined force.
 
-The first clause is the substantive review result. OpenAI must supply the
-selected-path bridge and the analytic justifications for the claim it
-publishes. The second clause is only a report about the current state of the
+The first clause is the substantive review result. The published claim is
+rejected on the present record because the inspected endpoint lacks the
+selected-path bridge and its analytic identification. The second clause is only a report about the current state of the
 review's attempted Lean contradiction. It must not be read as a presumption
 that the unproved bridge is valid or as a shift of the proof burden to the
 reviewer.

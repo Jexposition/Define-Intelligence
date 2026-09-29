@@ -1,0 +1,59 @@
+{
+  "date": "2026-09-29",
+  "priority": 141,
+  "scope": "direct raw-source review of five Euler continuous Gram/tensor modules",
+  "classification": "source_reviewed",
+  "files": [
+    {
+      "file": "Euler/ContinuousBoundedTensor.lean",
+      "imports": ["Euler.FinitePathTensor", "Mathlib.Topology.ContinuousMap.Bounded.Normed"],
+      "anchors": "26-45; 50-74; 97-150",
+      "declarations": ["coordinates", "reassembly", "tensorPath", "tensorPath_eq", "tensorPath_norm_le", "tensorPathLinear", "tensorPathMap", "tensorPathMap_norm_le", "tensorPath_iteratedFDeriv"],
+      "finding": "Finite-dimensional tensor reassembly and continuous bounded-path evaluation with norm and derivative identities; no selected NS endpoint symbols."
+    },
+    {
+      "file": "Euler/ContinuousGramAcceleration.lean",
+      "imports": ["Euler.TransverseStrongEstimates"],
+      "anchors": "27-39; 41-46; 48-78; 81-95",
+      "declarations": ["accelerationPath", "accelerationPath_apply", "accelerationPath_equation", "accelerationPath_norm", "accelerationPath_ae"],
+      "finding": "Continuous Gram-inverse acceleration, equation, bound, and conditional almost-everywhere identification."
+    },
+    {
+      "file": "Euler/ContinuousGramPath.lean",
+      "imports": ["Euler.ContinuousPathComposition", "Euler.TransverseGramPath", "Euler.TransverseStrongEstimates"],
+      "anchors": "31-50; 53-74; 77-114",
+      "declarations": ["gramPathUnit", "gramInversePath_eq_ringInverse", "solve", "solve_equation", "solve_left_inverse", "solve_norm", "gramPath_contDiff", "gramInversePath_contDiff", "solve_contDiff", "gramPath_bound"],
+      "finding": "Continuous-in-time Gram path and inverse with two-sided identities, parameter smoothness, norm, and derivative bounds."
+    },
+    {
+      "file": "Euler/ContinuousGramGevrey.lean",
+      "imports": ["Euler.ContinuousGramPath", "Euler.BoundedInverseGevrey", "Euler.TimeLpGramGevrey"],
+      "anchors": "23-43; 47-72; 75-122; 124-163",
+      "declarations": ["leftMultiplicationMap", "leftMultiplicationMap_norm", "inversePath_gevrey", "solution_gevrey"],
+      "finding": "Conditional factorial/Gevrey propagation through the continuous Gram inverse and solution operator."
+    },
+    {
+      "file": "Euler/ContinuousGramSobolev.lean",
+      "imports": ["Euler.ContinuousGramGevrey", "Euler.TimeLpGramSobolev"],
+      "anchors": "21-37",
+      "declarations": ["solution_block_gevrey"],
+      "finding": "Conditional fixed Sobolev-word-block/Gevrey propagation through the continuous Gram solve."
+    }
+  ],
+  "dependent_imports": [
+    "Euler/BoundedTensorCoordinates.lean",
+    "Euler/CylinderSmoothTimeField.lean",
+    "Euler/ContinuousAccelerationSobolev.lean",
+    "Euler/ContinuousAccelerationGevrey.lean",
+    "Euler/TransverseForwardRegularity.lean",
+    "Euler/MeanClassicalTime.lean",
+    "Euler/TransverseFixedEvolution.lean",
+    "Euler/TransverseForwardCoefficientGevrey.lean"
+  ],
+  "endpoint_test": {
+    "selected_navier_stokes_symbols_found_in_reviewed_files": false,
+    "barMoment_or_five_observable_transport": "not stated",
+    "global_pressure_poisson_endpoint": "not stated",
+    "false_or_nonzero_defect": "not obtained"
+  }
+}

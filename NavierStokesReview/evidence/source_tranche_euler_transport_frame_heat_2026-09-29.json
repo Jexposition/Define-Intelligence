@@ -1,0 +1,24 @@
+{
+  "schema": "source-tranche-review/v1",
+  "date": "2026-09-29",
+  "priority": 154,
+  "scope": "Euler transport, frame endpoint, flow escape, functional velocity, gained mild evolution, and Gaussian cylinder heat support",
+  "files": 12,
+  "source_hygiene": {"sorry": 0, "admit": 0, "axiom": 0},
+  "records": [
+    {"path":"Euler/FixedEvolutionRegularity.lean","anchors":"1-5; 24-43; 45-92","finding":"Smooth parameter dependence of fixed-frame velocity, acceleration, physical velocity, and derivative paths under explicit coercivity, regularity, and smallness hypotheses. No selected endpoint bridge."},
+    {"path":"Euler/FixedFrameNaturality.lean","anchors":"1-2; 28-39; 45-96","finding":"Norm control and intertwining for fixed-frame operators. No selected Cartesian moment transport."},
+    {"path":"Euler/FlowEscapeBound.lean","anchors":"1-4; 26-70; 99-180","finding":"Action bounds for curve displacement, flow escape, and escape measure under explicit hypotheses. Euler flow estimate only."},
+    {"path":"Euler/FlowL2Transport.lean","anchors":"1-2; 13-29; 43-69","finding":"Determinant-one inverse flow gives measure-preserving homeomorphism and exact continuous spatial L2 path transport. No five radial observable transport."},
+    {"path":"Euler/FrameEndpointUniqueness.lean","anchors":"1-2; 21-40; 40-99; 100-130","finding":"Conditional moving-frame projected-equation zero and uniqueness from energy coercivity and endpoint conditions. Not whole-space selected Navier-Stokes uniqueness."},
+    {"path":"Euler/FrameWronskian.lean","anchors":"1-4; 19-65","finding":"Constant frame Wronskian and induced strain symmetry. Local frame algebra only."},
+    {"path":"Euler/FrozenEvolutionGevrey.lean","anchors":"1; 23 onward","finding":"Frozen-evolution Gevrey derivative recurrence. No selected endpoint transport."},
+    {"path":"Euler/FunctionalVelocity.lean","anchors":"1-2; 15-19; 24-57","finding":"Four lifted velocity coefficients assembled as a bounded linear map with coordinate Sobolev and dimension-factor bounds. No selected witness or five-moment equality."},
+    {"path":"Euler/GainedMildFormula.lean","anchors":"1; 16-69","finding":"High-order heat-plus-Duhamel path, truncation identity, and gained-mild equivalence. Euler cylinder/Sobolev layer only."},
+    {"path":"Euler/GainedMildPasting.lean","anchors":"1-2; 15-25; 30-50","finding":"Bounded maps commute with matching endpoint gluing and gained-mild solutions paste under explicit source hypotheses. No global selected-field bridge."},
+    {"path":"Euler/GaussianCylinderHeat.lean","anchors":"1-2; 17-73; 85-144","finding":"Gaussian line heat orbit/operator continuity, integrability, contraction, translation, semigroup, commutation, and representation results. No selected pressure or moment equality."},
+    {"path":"Euler/GaussianHeatSmoothing.lean","anchors":"1; 16-91","finding":"Gaussian moment derivative operator, differentiability, derivative bounds, and translation compatibility. Heat smoothing only."}
+  ],
+  "absence_boundary": "No declaration in this tranche mentions selected_witness, CandidateProperties, barMoment, FiveRowRank, PositiveOrderMoments, NavierStokesR3, or an equality identifying a final selected Cartesian field with (M,I,J,S,C_p). This is tranche-level evidence only.",
+  "source_hygiene_boundary": "No sorry, admit, or axiom token was found in the twelve directly reviewed files."
+}

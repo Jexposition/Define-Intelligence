@@ -1,0 +1,24 @@
+{
+  "schema": "source-tranche-review/v1",
+  "date": "2026-09-29",
+  "priority": 152,
+  "scope": "Euler packet pressure/profile bounds, recursive construction, cancellation, forcing, residual tails, and the narrow StageEstimates interface probe",
+  "files": 12,
+  "source_hygiene": {"sorry": 0, "admit": 0, "axiom": 0},
+  "records": [
+    {"path":"Euler/PacketMeanPressureStepBound.lean","anchors":"1; 29-65","finding":"Mean-pressure step existence and field bound under supplied Field hypotheses. Not selected pressure or five-observable transport."},
+    {"path":"Euler/PacketProfileCoarseBounds.lean","anchors":"1-3; 16-87","finding":"Packet word, scale, high, mean, corrector, derivative, and pressure coarse majorants. No selected Cartesian observable equality."},
+    {"path":"Euler/PacketRecursiveBase.lean","anchors":"1; 11-54","finding":"Primary profiles and zero/one recursive-grade identities with a first nonlinear grade estimate. Euler packet algebra only."},
+    {"path":"Euler/PacketRecursiveCancellation.lean","anchors":"1-3; 13-67","finding":"Assembled velocity/pressure and recursive-grade identities, including zero-grade cancellation under hypotheses. No global moment transport."},
+    {"path":"Euler/ParentNormalizedEuler.lean","anchors":"1-2; 16-75","finding":"Normalized Euler parent-frame velocity/pressure, differentiability, zero normalized momentum, and restoration identities. Not selected Witness."},
+    {"path":"NavierStokesReview/src/probes/StageEstimatesMomentBlindnessProbe.lean","anchors":"1; 21-173","finding":"Zero StageEstimates inhabitant, no zero-stage blowup, and no inference of PositiveOrderMoments.Debt from StageEstimates alone. Source explicitly says it does not attack selected_witness."},
+    {"path":"Euler/PacketProfileRecursion.lean","anchors":"1-2; 20-143","finding":"Actual Profile/operators, angular mean, jet/force maps, one-step and strong-recursion profiles, prefix dependence, and recursive equations. No selected endpoint bridge."},
+    {"path":"Euler/PacketJoinedSourceResidual.lean","anchors":"1-2; 24-76","finding":"Joined primary profiles and finite packet residual equality to an uncancelled recursive tail sum under explicit hypotheses. Not CandidateProperties."},
+    {"path":"Euler/PacketRecursiveForcing.lean","anchors":"1-2; 18-95","finding":"Assembled jets/full force, primary and nonlinear-grade identities, known-force subtraction, and recursive force sums. Not CMI force provenance."},
+    {"path":"Euler/PacketRecursiveResidual.lean","anchors":"1; 13","finding":"Supplies the recursive residual-tail theorem consumed by packet base and joined-source modules. No whole-space endpoint semantics."},
+    {"path":"Euler/PacketResidualTailActual.lean","anchors":"1-2; 16-96","finding":"Finite assembled velocity jets and sliced momentum grades are identified with recursive tails, then packaged as literal tail-grade fields. Conditional packet-local result."},
+    {"path":"Euler/PacketResidualTailDecomposition.lean","anchors":"1; 14-77","finding":"Convolution shift, coefficient-tail, and recursive-grade tail identities. Algebraic decomposition, not five-moment selected-field transport."}
+  ],
+  "absence_boundary": "No declaration in this tranche mentions barMoment, FiveRowRank, selected_witness, CandidateProperties, or an equality identifying a final selected Cartesian field with (M,I,J,S,C_p). This is tranche-level evidence, not repository-wide nonexistence proof.",
+  "probe_boundary": "StageEstimatesMomentBlindnessProbe explicitly states that it does not attack the selected witness; its theorems establish interface non-entailment only."
+}

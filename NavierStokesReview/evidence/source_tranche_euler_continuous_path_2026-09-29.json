@@ -1,0 +1,69 @@
+{
+  "date": "2026-09-29",
+  "priority": 142,
+  "scope": "direct raw-source review of five Euler continuous-path and cylinder modules",
+  "classification": "source_reviewed",
+  "files": [
+    {
+      "file": "Euler/ContinuousInverseDerivative.lean",
+      "imports": ["Mathlib.Analysis.Calculus.FDeriv.OfCompLeft"],
+      "anchors": "1; 17-35",
+      "declarations": ["hasFDerivAt_inverse"],
+      "finding": "Generic derivative-of-inverse theorem under explicit local composition and left-inverse hypotheses; no PDE endpoint statement."
+    },
+    {
+      "file": "Euler/ContinuousPathCalculus.lean",
+      "imports": ["Euler.ContinuousTimeIntegral", "Euler.OperatorGevreyCalculus"],
+      "anchors": "1-2; 36-92",
+      "declarations": ["coefficientLinear", "coefficientMap", "coefficientMap_norm", "contDiff_multiplier", "multiplier_bound", "contDiff_apply", "apply_bound"],
+      "finding": "Continuous operator-valued path multiplication, norm bounds, differentiability, and application estimates."
+    },
+    {
+      "file": "Euler/ContinuousPathComposition.lean",
+      "imports": ["Euler.ContinuousPathCalculus", "Euler.TransverseGramInverse"],
+      "anchors": "1-2; 47-85; 121-144",
+      "declarations": ["postcomposition_norm", "compositionLift", "compositionLift_norm", "compose", "contDiff_compose", "compose_bound", "adjointMap", "adjointMap_norm", "contDiff_adjoint", "adjoint_bound"],
+      "finding": "Continuous operator composition and adjoint-path regularity and norm propagation."
+    },
+    {
+      "file": "Euler/CylinderActionWords.lean",
+      "imports": ["Euler.IsometricActionWords", "Euler.LpCylinderOrbit", "Euler.CylinderTranslationAdjoint", "Euler.MeanPathLpBlocks"],
+      "anchors": "1-4; 22-35; 39-97",
+      "declarations": ["pathTranslate_norm_map", "pathTranslateIsometry", "path_block_constant", "timeTranslateIsometry", "timeTranslateIsometry_add", "timeTranslateIsometry_zero", "time_block_constant", "pathLp_orbit_contDiff", "pathLp_block_le"],
+      "finding": "Isometric path/time translations and conditional cylinder L2 regularity and block bounds."
+    },
+    {
+      "file": "Euler/CylinderAngleEvolution.lean",
+      "imports": ["Euler.CylinderAngleRepresentative", "Euler.CylinderAngleWordBounds", "Euler.CylinderTimeRegularity"],
+      "anchors": "1-3; 20-43; 66-73",
+      "declarations": ["pathPrimitive_translation", "pathPrimitive_orbit_contDiff", "primitive_sobolevPath", "pointField_primitive_formula", "pathPrimitive_time_derivative", "classicalPrimitive_time_derivative"],
+      "finding": "Angular primitive and time-derivative identities under explicit mean-zero and regularity hypotheses."
+    }
+  ],
+  "dependent_imports": [
+    "Euler/PacketContinuousInverse.lean",
+    "Euler/SmoothFlowJacobian.lean",
+    "Euler/ParentParticleRegularity.lean",
+    "Euler/LpCylinderRectangular.lean",
+    "Euler/LinearDuhamelParameter.lean",
+    "Euler/SmoothPathSuperposition.lean",
+    "Euler/SmoothTimeSuperposition.lean",
+    "Euler/TimeH1GeneratorBounds.lean",
+    "Euler/BoundedFieldCalculus.lean",
+    "Euler/ContinuousGramPath.lean",
+    "Euler/ContinuousAccelerationForcing.lean",
+    "Euler/ContinuousSpatialFamily.lean",
+    "Euler/CylinderPathProduct.lean",
+    "Euler/CylinderDirichletTimeBounds.lean",
+    "Euler/CylinderDirichletPhysicalBounds.lean",
+    "Euler/CylinderDirichletSobolev.lean",
+    "Euler/MeanCylinderWordBounds.lean",
+    "Euler/CylinderPotentialPath.lean"
+  ],
+  "endpoint_test": {
+    "selected_navier_stokes_symbols_found_in_reviewed_files": false,
+    "barMoment_or_five_observable_transport": "not stated",
+    "global_pressure_poisson_endpoint": "not stated",
+    "false_or_nonzero_defect": "not obtained"
+  }
+}

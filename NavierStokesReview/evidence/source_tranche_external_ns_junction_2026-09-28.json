@@ -1,0 +1,1435 @@
+{
+  "tool": "source_tranche_summary.py",
+  "scope": "source navigation only; not a theorem prover or absence detector",
+  "root": ".",
+  "files": [
+    {
+      "file": "NavierStokes/CandidateAssembly.lean",
+      "bytes": 11630,
+      "lines": 231,
+      "imports": [
+        "import NavierStokes.TimeLocalization",
+        "import NavierStokes.ResidualRegularity",
+        "import Mathlib.Tactic.Linarith",
+        "import Mathlib.Tactic.NormNum"
+      ],
+      "declarations": [
+        {
+          "line": 25,
+          "kind": "def",
+          "text": "def assembledForce (u : VelocityField) (p : PressureField) (F : VelocityField) :"
+        },
+        {
+          "line": 31,
+          "kind": "theorem",
+          "text": "theorem assembledForce_eq_early (u : VelocityField) (p : PressureField) (F : VelocityField)"
+        },
+        {
+          "line": 37,
+          "kind": "theorem",
+          "text": "theorem assembledForce_eq_after_join (u : VelocityField) (p : PressureField)"
+        },
+        {
+          "line": 44,
+          "kind": "theorem",
+          "text": "theorem assembledForce_eq_late (u : VelocityField) (p : PressureField) (F : VelocityField)"
+        },
+        {
+          "line": 56,
+          "kind": "theorem",
+          "text": "theorem assembledForce_eq_residual (u : VelocityField) (p : PressureField)"
+        },
+        {
+          "line": 71,
+          "kind": "theorem",
+          "text": "theorem assembledForce_eventuallyEq_early (u : VelocityField) (p : PressureField)"
+        },
+        {
+          "line": 80,
+          "kind": "theorem",
+          "text": "theorem assembledForce_eventuallyEq_late (u : VelocityField) (p : PressureField)"
+        },
+        {
+          "line": 91,
+          "kind": "theorem",
+          "text": "theorem activatedVelocity_eventually_zero (u : VelocityField) (x : Space) :"
+        },
+        {
+          "line": 98,
+          "kind": "theorem",
+          "text": "theorem activatedPressure_eventually_zero (p : PressureField) (x : Space) :"
+        },
+        {
+          "line": 107,
+          "kind": "theorem",
+          "text": "theorem assembledForce_eventually_zero (u : VelocityField) (p : PressureField)"
+        },
+        {
+          "line": 114,
+          "kind": "theorem",
+          "text": "theorem assembledForce_zero_initial (u : VelocityField) (p : PressureField)"
+        },
+        {
+          "line": 120,
+          "kind": "theorem",
+          "text": "theorem assembledForce_smooth (u : VelocityField) (p : PressureField) (F : VelocityField)"
+        },
+        {
+          "line": 151,
+          "kind": "theorem",
+          "text": "theorem assembledForce_periodic (u : VelocityField) (p : PressureField)"
+        },
+        {
+          "line": 172,
+          "kind": "theorem",
+          "text": "theorem assembledForce_time_support (u : VelocityField) (p : PressureField)"
+        },
+        {
+          "line": 186,
+          "kind": "theorem",
+          "text": "theorem assembled_candidate_properties"
+        },
+        {
+          "line": 211,
+          "kind": "theorem",
+          "text": "theorem candidateStatement_of_late_force"
+        }
+      ],
+      "keyword_lines": {
+        "period": [
+          151,
+          153,
+          154,
+          155,
+          156,
+          164,
+          165,
+          190,
+          191,
+          195,
+          202,
+          203,
+          215,
+          216,
+          220
+        ],
+        "pressure": [
+          25,
+          28,
+          31,
+          34,
+          37,
+          44,
+          56,
+          62,
+          71,
+          74,
+          80,
+          98,
+          99,
+          103,
+          107,
+          112,
+          114,
+          120,
+          139,
+          141,
+          151,
+          165,
+          172,
+          187,
+          199,
+          200,
+          202,
+          212,
+          225
+        ],
+        "support": [
+          171,
+          172,
+          173,
+          174,
+          196,
+          204,
+          221,
+          227
+        ],
+        "residual": [
+          2,
+          9,
+          10,
+          19,
+          22,
+          28,
+          34,
+          46,
+          50,
+          54,
+          56,
+          59,
+          62,
+          68,
+          69,
+          74,
+          83,
+          111,
+          125,
+          138,
+          141,
+          164,
+          198,
+          208,
+          223
+        ],
+        "force": [
+          9,
+          11,
+          12,
+          22,
+          23,
+          25,
+          31,
+          33,
+          35,
+          37,
+          39,
+          40,
+          42,
+          44,
+          48,
+          50,
+          52,
+          54,
+          56,
+          61,
+          64,
+          67,
+          71,
+          73,
+          78,
+          80,
+          85,
+          89,
+          105,
+          107,
+          109,
+          110,
+          114,
+          115,
+          116,
+          118,
+          120,
+          126,
+          134,
+          145,
+          147,
+          151,
+          156,
+          160,
+          163,
+          167,
+          168,
+          172,
+          174,
+          180,
+          184,
+          185,
+          199,
+          201,
+          203,
+          204,
+          208,
+          211,
+          225
+        ],
+        "CandidateProperties": [
+          11,
+          199
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "NavierStokes/R3/H3CandidateStrong.lean",
+      "bytes": 6488,
+      "lines": 123,
+      "imports": [
+        "import NavierStokes.R3.L2TimeDerivative",
+        "import NavierStokes.R3.H3CompactCurve",
+        "import NavierStokes.R3.H3StrongSolution"
+      ],
+      "declarations": [
+        {
+          "line": 35,
+          "kind": "theorem",
+          "text": "theorem temporalDerivative_memLp_of_compact {a b t : \u211d} {u : VelocityField} {K : Set Space}"
+        },
+        {
+          "line": 49,
+          "kind": "theorem",
+          "text": "theorem hasDerivAt_velocityLp_of_compact {a b t : \u211d} {u : VelocityField} {K : Set Space}"
+        },
+        {
+          "line": 77,
+          "kind": "theorem",
+          "text": "theorem weakAdvection_eq_advection (u : VelocityField) (t : \u211d) (x : Space) :"
+        },
+        {
+          "line": 87,
+          "kind": "def",
+          "text": "def strongSolution_of_compact_slab {\u03bd a b : \u211d} {u f : VelocityField} {p : PressureField}"
+        },
+        {
+          "line": 111,
+          "kind": "def",
+          "text": "def candidate_classicalH3Solution {\u03bd : \u211d} {u : VelocityField} {p : PressureField}"
+        }
+      ],
+      "keyword_lines": {
+        "period": [
+          14,
+          81
+        ],
+        "pressure": [
+          87,
+          99,
+          105,
+          111,
+          118
+        ],
+        "support": [
+          28,
+          37,
+          40,
+          45,
+          51,
+          65,
+          90,
+          116,
+          119
+        ],
+        "residual": [
+          92
+        ],
+        "CandidateProperties": [
+          112
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "NavierStokes/R3/H3Continuity.lean",
+      "bytes": 5086,
+      "lines": 108,
+      "imports": [
+        "import NavierStokes.R3.H3Definitions",
+        "import NavierStokes.R3.H3CompactHelpers"
+      ],
+      "declarations": [
+        {
+          "line": 25,
+          "kind": "def",
+          "text": "def H3ContinuousOn (u : VelocityField) (s : Set \u211d) : Prop :="
+        },
+        {
+          "line": 30,
+          "kind": "theorem",
+          "text": "theorem finiteH3_of_compact_slab {a b : \u211d} (hab : a < b) {u : VelocityField}"
+        },
+        {
+          "line": 43,
+          "kind": "theorem",
+          "text": "theorem continuousOn_derivativeH3Energy_of_compact_slab {a b : \u211d} (hab : a < b)"
+        },
+        {
+          "line": 66,
+          "kind": "theorem",
+          "text": "theorem continuousOn_derivativeH3Norm_of_compact_slab {a b : \u211d} (hab : a < b)"
+        },
+        {
+          "line": 81,
+          "kind": "theorem",
+          "text": "theorem h3ContinuousOn_of_compact_slab {a b : \u211d} (hab : a < b)"
+        },
+        {
+          "line": 99,
+          "kind": "theorem",
+          "text": "theorem candidate_h3ContinuousOn {\u03bd : \u211d} {u : VelocityField} {p : PressureField}"
+        }
+      ],
+      "keyword_lines": {
+        "period": [
+          20,
+          21
+        ],
+        "pressure": [
+          99
+        ],
+        "support": [
+          32,
+          46,
+          69,
+          79,
+          84,
+          91,
+          93,
+          105,
+          106
+        ],
+        "tsum": [
+          53,
+          55,
+          58,
+          60,
+          62
+        ],
+        "CandidateProperties": [
+          100
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "NavierStokes/R3/H3CandidateUniqueness.lean",
+      "bytes": 6264,
+      "lines": 116,
+      "imports": [
+        "import NavierStokes.R3.H3WeakStrong",
+        "import NavierStokes.R3.H3CandidateStrong",
+        "import NavierStokes.R3.H3PressureOrthogonality",
+        "import NavierStokes.R3.CompactComparisonBounds"
+      ],
+      "declarations": [
+        {
+          "line": 20,
+          "kind": "theorem",
+          "text": "theorem integral_inner_pressureGradient_zero {w : Space \u2192 Space}"
+        },
+        {
+          "line": 45,
+          "kind": "theorem",
+          "text": "theorem strong_unique {\u03bd T : \u211d} (h\u03bd : 0 \u2264 \u03bd)"
+        },
+        {
+          "line": 78,
+          "kind": "theorem",
+          "text": "theorem candidate_force_memLp {\u03bd : \u211d} {u f : VelocityField}"
+        },
+        {
+          "line": 90,
+          "kind": "theorem",
+          "text": "theorem candidate_unique_on_Icc_h3 {\u03bd : \u211d} {u : VelocityField} {p : PressureField}"
+        }
+      ],
+      "keyword_lines": {
+        "period": [
+          15,
+          16,
+          110
+        ],
+        "pressure": [
+          3,
+          14,
+          18,
+          20,
+          23,
+          24,
+          25,
+          27,
+          33,
+          35,
+          39,
+          42,
+          43,
+          46,
+          56,
+          57,
+          58,
+          68,
+          69,
+          70,
+          71,
+          79,
+          90,
+          93
+        ],
+        "support": [
+          81,
+          82,
+          84,
+          86,
+          100
+        ],
+        "force": [
+          78,
+          82,
+          86,
+          101
+        ],
+        "CandidateProperties": [
+          79,
+          92
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "NavierStokes/ComparatorTheorem.lean",
+      "bytes": 2766,
+      "lines": 55,
+      "imports": [
+        "import NavierStokes.ComparatorBridge",
+        "import NavierStokes.ActualCandidateAssembly",
+        "import NavierStokes.CandidateConsequences",
+        "import NavierStokes.PeriodicPaperComparator"
+      ],
+      "declarations": [
+        {
+          "line": 25,
+          "kind": "theorem",
+          "text": "theorem option_D_of_candidate {u : VelocityField} {p : PressureField} {f : VelocityField}"
+        },
+        {
+          "line": 47,
+          "kind": "theorem",
+          "text": "theorem navier_stokes_breakdown_periodic (\u03bd : \u211d) (h\u03bd : \u03bd > 0) :"
+        }
+      ],
+      "keyword_lines": {
+        "period": [
+          4,
+          7,
+          9,
+          28,
+          29,
+          32,
+          33,
+          38,
+          42,
+          47,
+          50,
+          51,
+          52
+        ],
+        "pressure": [
+          25,
+          42
+        ],
+        "support": [
+          34,
+          35
+        ],
+        "force": [
+          10,
+          11,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          37,
+          38,
+          50
+        ],
+        "CandidateProperties": [
+          26
+        ],
+        "Witness": [
+          23
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "NavierStokes/LocalAngularGrowth.lean",
+      "bytes": 13957,
+      "lines": 251,
+      "imports": [
+        "import NavierStokes.R3.ActualCandidate",
+        "import NavierStokes.ActualExteriorPrefix",
+        "import NavierStokes.BaseAngularGrowth"
+      ],
+      "declarations": [
+        {
+          "line": 22,
+          "kind": "def",
+          "text": "def rawVelocity (A D : \u2115 \u2192 VelocityField) (a : \u2115 \u2192 \u211d) : VelocityField :="
+        },
+        {
+          "line": 30,
+          "kind": "theorem",
+          "text": "theorem rawVelocity_eq_base {B Nr : \u2115} {A D : \u2115 \u2192 VelocityField}"
+        },
+        {
+          "line": 60,
+          "kind": "theorem",
+          "text": "theorem localized_eq_raw {A D : VelocityField} {t : \u211d} (ht : 3 / 4 \u2264 t)"
+        },
+        {
+          "line": 71,
+          "kind": "def",
+          "text": "def innerRadius : \u211d := NominalConeAssembly.activeLeft ActualPrimary.nominal / 2"
+        },
+        {
+          "line": 73,
+          "kind": "theorem",
+          "text": "theorem innerRadius_pos : 0 < innerRadius :="
+        },
+        {
+          "line": 76,
+          "kind": "theorem",
+          "text": "theorem innerRadius_lt_left : innerRadius < NominalConeAssembly.activeLeft ActualPrimary.nominal :="
+        },
+        {
+          "line": 81,
+          "kind": "theorem",
+          "text": "theorem exists_ray_interval (a : \u2115 \u2192 \u211d) (Nr : \u2115) :"
+        },
+        {
+          "line": 138,
+          "kind": "def",
+          "text": "def selectedPotential (a : \u2115 \u2192 \u2115) : VelocityField :="
+        },
+        {
+          "line": 142,
+          "kind": "def",
+          "text": "def selectedDirect (a : \u2115 \u2192 \u2115) : VelocityField :="
+        },
+        {
+          "line": 146,
+          "kind": "def",
+          "text": "def selectedVelocity (a : \u2115 \u2192 \u2115) : VelocityField :="
+        },
+        {
+          "line": 149,
+          "kind": "theorem",
+          "text": "theorem selectedVelocity_eq_base_on_ray {a : \u2115 \u2192 \u2115}"
+        },
+        {
+          "line": 168,
+          "kind": "theorem",
+          "text": "theorem innerRadius_le_boxRadius : innerRadius \u2264"
+        },
+        {
+          "line": 180,
+          "kind": "def",
+          "text": "def AngularGrowth (u : VelocityField) : Prop :="
+        },
+        {
+          "line": 188,
+          "kind": "def",
+          "text": "def selectedRawVelocity (a : \u2115 \u2192 \u2115) : VelocityField :="
+        },
+        {
+          "line": 192,
+          "kind": "theorem",
+          "text": "theorem selectedRawVelocity_angularGrowth {a : \u2115 \u2192 \u2115}"
+        },
+        {
+          "line": 217,
+          "kind": "theorem",
+          "text": "theorem selectedVelocity_angularGrowth {a : \u2115 \u2192 \u2115}"
+        },
+        {
+          "line": 230,
+          "kind": "theorem",
+          "text": "theorem selected_exponent_small : 0 < ActualPrimary.h \u2227 ActualPrimary.h < 1 / 100 := by"
+        },
+        {
+          "line": 238,
+          "kind": "theorem",
+          "text": "theorem selected_candidate_one_with_angular_growth :"
+        }
+      ],
+      "keyword_lines": {
+        "curl": [
+          47,
+          48,
+          56,
+          57,
+          64,
+          67,
+          68
+        ],
+        "period": [
+          23,
+          62,
+          189
+        ],
+        "pressure": [
+          31,
+          237,
+          239,
+          249
+        ],
+        "support": [
+          79
+        ],
+        "tsum": [
+          53
+        ],
+        "residual": [
+          157,
+          196
+        ],
+        "CandidateProperties": [
+          240
+        ],
+        "Witness": [
+          243
+        ],
+        "selected_witness": [
+          243
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "NavierStokes/LocalScheduleWitness.lean",
+      "bytes": 9357,
+      "lines": 165,
+      "imports": [
+        "import NavierStokes.ActualCandidateAssembly",
+        "import NavierStokes.R3.ActualCandidate"
+      ],
+      "declarations": [
+        {
+          "line": 22,
+          "kind": "def",
+          "text": "def potentialSum (a : \u2115 \u2192 \u2115) : VelocityField :="
+        },
+        {
+          "line": 27,
+          "kind": "def",
+          "text": "def directSum (a : \u2115 \u2192 \u2115) : VelocityField :="
+        },
+        {
+          "line": 32,
+          "kind": "def",
+          "text": "def pressureSum (a : \u2115 \u2192 \u2115) : PressureField :="
+        },
+        {
+          "line": 37,
+          "kind": "abbrev",
+          "text": "abbrev Selected (a : \u2115 \u2192 \u2115) : Prop :="
+        },
+        {
+          "line": 45,
+          "kind": "theorem",
+          "text": "theorem awayExtensions_of_schedule (B N0 : \u2115)"
+        },
+        {
+          "line": 103,
+          "kind": "theorem",
+          "text": "theorem selected_awayExtensions {a : \u2115 \u2192 \u2115} (ha : Selected a) :"
+        },
+        {
+          "line": 110,
+          "kind": "theorem",
+          "text": "theorem selected_origin_blowup {a : \u2115 \u2192 \u2115} (ha : Selected a) :"
+        },
+        {
+          "line": 131,
+          "kind": "theorem",
+          "text": "theorem selected_periodic_candidate {a : \u2115 \u2192 \u2115} (ha : Selected a) :"
+        },
+        {
+          "line": 156,
+          "kind": "theorem",
+          "text": "theorem selected_compact_candidate {a : \u2115 \u2192 \u2115} (ha : Selected a) :"
+        }
+      ],
+      "keyword_lines": {
+        "period": [
+          111,
+          131,
+          134,
+          136,
+          149,
+          162
+        ],
+        "pressure": [
+          31,
+          32,
+          34,
+          41,
+          48,
+          54,
+          68,
+          71,
+          88,
+          91,
+          100,
+          105,
+          136,
+          151,
+          160
+        ],
+        "support": [
+          64,
+          71,
+          78,
+          80,
+          81,
+          85,
+          86,
+          87,
+          91,
+          93,
+          97,
+          99,
+          129,
+          161
+        ],
+        "tsum": [
+          27,
+          104,
+          112,
+          135,
+          159
+        ],
+        "residual": [
+          8,
+          18
+        ],
+        "force": [
+          149
+        ],
+        "CandidateProperties": [
+          133,
+          158
+        ],
+        "Witness": [
+          14,
+          38,
+          47,
+          165
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "NavierStokes/PeriodicPaperTheorem.lean",
+      "bytes": 8212,
+      "lines": 164,
+      "imports": [
+        "import NavierStokes.PeriodicPaperSupport",
+        "import NavierStokes.PeriodicPaperScalingSupport",
+        "import NavierStokes.R3.ParabolicScaling",
+        "import NavierStokes.R3.Theorem",
+        "import NavierStokes.PeriodizePDE",
+        "import NavierStokes.PeriodicViscosity",
+        "import NavierStokes.CandidateConsequences"
+      ],
+      "declarations": [
+        {
+          "line": 26,
+          "kind": "structure",
+          "text": "structure CandidateProperties (\u03bd : \u211d) (u : VelocityField) (p : PressureField)"
+        },
+        {
+          "line": 51,
+          "kind": "structure",
+          "text": "structure GlobalSmoothSolution (\u03bd : \u211d) (f : VelocityField) where"
+        },
+        {
+          "line": 65,
+          "kind": "theorem",
+          "text": "theorem CandidateProperties.no_global_solution {\u03bd : \u211d} {u f : VelocityField}"
+        },
+        {
+          "line": 77,
+          "kind": "theorem",
+          "text": "theorem CandidateProperties.force_derivative_decay {\u03bd : \u211d} {u f : VelocityField}"
+        },
+        {
+          "line": 92,
+          "kind": "theorem",
+          "text": "theorem of_compact_candidate {\u03bd : \u211d} {u f : VelocityField} {p : PressureField}"
+        },
+        {
+          "line": 148,
+          "kind": "def",
+          "text": "def breakdownStatement : Prop :="
+        },
+        {
+          "line": 155,
+          "kind": "theorem",
+          "text": "theorem periodic_corollary : breakdownStatement := by"
+        }
+      ],
+      "keyword_lines": {
+        "period": [
+          1,
+          2,
+          5,
+          6,
+          10,
+          12,
+          14,
+          19,
+          21,
+          25,
+          31,
+          32,
+          33,
+          49,
+          56,
+          57,
+          64,
+          69,
+          70,
+          72,
+          76,
+          83,
+          89,
+          98,
+          99,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          115,
+          120,
+          124,
+          127,
+          130,
+          135,
+          136,
+          140,
+          146,
+          147,
+          153,
+          155,
+          161,
+          162,
+          164
+        ],
+        "pressure": [
+          24,
+          26,
+          29,
+          32,
+          38,
+          50,
+          53,
+          55,
+          57,
+          62,
+          66,
+          70,
+          72,
+          78,
+          92,
+          105,
+          108,
+          113,
+          128,
+          149
+        ],
+        "support": [
+          1,
+          2,
+          12,
+          13,
+          14,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          41,
+          83,
+          89,
+          97,
+          100,
+          101,
+          110,
+          111,
+          112,
+          113,
+          115,
+          116,
+          124,
+          125,
+          127,
+          128,
+          135,
+          146
+        ],
+        "residual": [
+          46,
+          62,
+          142
+        ],
+        "force": [
+          24,
+          30,
+          33,
+          41,
+          42,
+          49,
+          75,
+          77,
+          83,
+          86,
+          106,
+          109,
+          115,
+          116,
+          117,
+          135
+        ],
+        "CandidateProperties": [
+          26,
+          65,
+          66,
+          77,
+          78,
+          93,
+          98,
+          151
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "NavierStokes/R3/H3Blowup.lean",
+      "bytes": 3885,
+      "lines": 78,
+      "imports": [
+        "import NavierStokes.R3.H3CompactCurve",
+        "import NavierStokes.R3.H3StrongSolution"
+      ],
+      "declarations": [
+        {
+          "line": 20,
+          "kind": "theorem",
+          "text": "theorem candidate_spatial_norm_bound {\u03bd : \u211d} {u : VelocityField} {p : PressureField}"
+        },
+        {
+          "line": 40,
+          "kind": "theorem",
+          "text": "theorem candidate_h3Norm_unbounded {\u03bd : \u211d} {u : VelocityField} {p : PressureField}"
+        },
+        {
+          "line": 53,
+          "kind": "theorem",
+          "text": "theorem candidate_no_h3_continuation {\u03bd : \u211d} {u v : VelocityField} {p : PressureField}"
+        },
+        {
+          "line": 66,
+          "kind": "theorem",
+          "text": "theorem candidate_no_classicalH3_extension {\u03bd : \u211d} {u v : VelocityField}"
+        }
+      ],
+      "keyword_lines": {
+        "period": [
+          18
+        ],
+        "pressure": [
+          20,
+          40,
+          53,
+          67
+        ],
+        "support": [
+          34,
+          36
+        ],
+        "CandidateProperties": [
+          21,
+          41,
+          54,
+          68
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "NavierStokes/PeriodicPaperComparator.lean",
+      "bytes": 2728,
+      "lines": 54,
+      "imports": [
+        "import NavierStokes.PeriodicComparatorSolution",
+        "import NavierStokes.CandidateConsequences"
+      ],
+      "declarations": [
+        {
+          "line": 21,
+          "kind": "theorem",
+          "text": "theorem forceConditionPeriodic_of_paper_candidate {\u03bd : \u211d}"
+        },
+        {
+          "line": 31,
+          "kind": "theorem",
+          "text": "theorem option_D_same_force_of_paper_candidate {\u03bd : \u211d}"
+        },
+        {
+          "line": 45,
+          "kind": "theorem",
+          "text": "theorem option_D_of_paper_candidate {\u03bd : \u211d}"
+        }
+      ],
+      "keyword_lines": {
+        "period": [
+          1,
+          5,
+          9,
+          19,
+          20,
+          21,
+          23,
+          24,
+          25,
+          27,
+          30,
+          33,
+          34,
+          35,
+          36,
+          37,
+          39,
+          41,
+          43,
+          47,
+          48,
+          50,
+          51
+        ],
+        "pressure": [
+          22,
+          32,
+          46
+        ],
+        "support": [
+          9,
+          27
+        ],
+        "force": [
+          7,
+          9,
+          19,
+          20,
+          21,
+          24,
+          25,
+          26,
+          27,
+          29,
+          31,
+          36,
+          39,
+          50,
+          52
+        ],
+        "CandidateProperties": [
+          23,
+          33,
+          47
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "NavierStokes/R3/H3CompactCurve.lean",
+      "bytes": 3975,
+      "lines": 76,
+      "imports": [
+        "import NavierStokes.R3.H3Curve"
+      ],
+      "declarations": [
+        {
+          "line": 16,
+          "kind": "theorem",
+          "text": "theorem continuous_compact_slices_toLp {a b : \u211d} (hab : a < b)"
+        },
+        {
+          "line": 48,
+          "kind": "def",
+          "text": "def h3Curve_of_compact_slab {a b : \u211d} (hab : a < b)"
+        },
+        {
+          "line": 69,
+          "kind": "def",
+          "text": "def candidate_h3Curve {\u03bd : \u211d} {u : VelocityField} {p : PressureField}"
+        }
+      ],
+      "keyword_lines": {
+        "period": [
+          11,
+          12
+        ],
+        "pressure": [
+          69
+        ],
+        "support": [
+          14,
+          19,
+          28,
+          30,
+          51,
+          61,
+          63,
+          65,
+          72,
+          74
+        ],
+        "CandidateProperties": [
+          70
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "NavierStokes/PaperLocalization.lean",
+      "bytes": 2505,
+      "lines": 52,
+      "imports": [
+        "import NavierStokes.LocalPaperHeat",
+        "import NavierStokes.R3.Theorem"
+      ],
+      "declarations": [
+        {
+          "line": 20,
+          "kind": "theorem",
+          "text": "theorem compact_pressure_eq_local (P : PressureField) {t : \u211d} (ht : 3 / 4 \u2264 t)"
+        },
+        {
+          "line": 28,
+          "kind": "theorem",
+          "text": "theorem local_theorem_with_compact_candidate :"
+        }
+      ],
+      "keyword_lines": {
+        "pressure": [
+          8,
+          20,
+          22,
+          23,
+          24,
+          30,
+          31,
+          45,
+          50
+        ],
+        "residual": [
+          39
+        ],
+        "force": [
+          26
+        ],
+        "CandidateProperties": [
+          33
+        ],
+        "Witness": [
+          40
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "NavierStokes/R3/H3MaximalLifespan.lean",
+      "bytes": 5916,
+      "lines": 118,
+      "imports": [
+        "import NavierStokes.R3.H3CandidateStrong",
+        "import NavierStokes.R3.H3CandidateUniqueness",
+        "import NavierStokes.R3.H3Blowup",
+        "import NavierStokes.R3.Theorem"
+      ],
+      "declarations": [
+        {
+          "line": 21,
+          "kind": "def",
+          "text": "def ClassicalH3Solution.restrict {\u03bd T S : \u211d} {f u : VelocityField} {p : PressureField}"
+        },
+        {
+          "line": 28,
+          "kind": "def",
+          "text": "def VelocityAgreesOn (T : \u211d) (u v : VelocityField) : Prop :="
+        },
+        {
+          "line": 31,
+          "kind": "def",
+          "text": "def HasClassicalH3Extension (\u03bd : \u211d) (f : VelocityField) (initial : Space \u2192 Space)"
+        },
+        {
+          "line": 36,
+          "kind": "def",
+          "text": "def IsMaximalClassicalH3Solution (\u03bd : \u211d) (f : VelocityField) (initial : Space \u2192 Space)"
+        },
+        {
+          "line": 40,
+          "kind": "def",
+          "text": "def admissibleH3Lifespans (\u03bd : \u211d) (f : VelocityField) (initial : Space \u2192 Space) : Set \u211d :="
+        },
+        {
+          "line": 43,
+          "kind": "theorem",
+          "text": "theorem candidate_agrees_with_classicalH3 {\u03bd T : \u211d} {u v : VelocityField}"
+        },
+        {
+          "line": 57,
+          "kind": "theorem",
+          "text": "theorem candidate_classicalH3_lifespan_le_one {\u03bd T : \u211d} {u v : VelocityField}"
+        },
+        {
+          "line": 66,
+          "kind": "theorem",
+          "text": "theorem candidate_extends_shorter_classicalH3 {\u03bd T : \u211d} {u v : VelocityField}"
+        },
+        {
+          "line": 76,
+          "kind": "theorem",
+          "text": "theorem candidate_is_maximal_classicalH3 {\u03bd : \u211d} {u : VelocityField}"
+        },
+        {
+          "line": 87,
+          "kind": "theorem",
+          "text": "theorem maximal_classicalH3_lifespan_eq_one {\u03bd T : \u211d} {u v : VelocityField}"
+        },
+        {
+          "line": 96,
+          "kind": "theorem",
+          "text": "theorem candidate_admissibleH3Lifespans {\u03bd : \u211d} {u : VelocityField}"
+        },
+        {
+          "line": 109,
+          "kind": "theorem",
+          "text": "theorem theorem_1_1_with_maximalH3 (\u03bd : \u211d) (h\u03bd : 0 < \u03bd) :"
+        }
+      ],
+      "keyword_lines": {
+        "period": [
+          10
+        ],
+        "pressure": [
+          10,
+          21,
+          33,
+          37,
+          41,
+          44,
+          58,
+          67,
+          77,
+          88,
+          97,
+          110
+        ],
+        "force": [
+          84
+        ],
+        "CandidateProperties": [
+          45,
+          59,
+          68,
+          78,
+          89,
+          98,
+          111
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "NavierStokes/R3/ComparatorBridge.lean",
+      "bytes": 3829,
+      "lines": 90,
+      "imports": [
+        "import NavierStokes.R3.ProblemStatement",
+        "import NavierStokes.ComparatorR3Bridge",
+        "import NavierStokes.CompactSpatialForceDecay"
+      ],
+      "declarations": [
+        {
+          "line": 22,
+          "kind": "theorem",
+          "text": "theorem forceConditionDecay_of_compact {f : VelocityField}"
+        },
+        {
+          "line": 48,
+          "kind": "def",
+          "text": "def globalSolutionOfComparator {\u03bd : \u211d} {f : VelocityField}"
+        },
+        {
+          "line": 77,
+          "kind": "theorem",
+          "text": "theorem comparator_of_breakdown {\u03bd : \u211d}"
+        }
+      ],
+      "keyword_lines": {
+        "pressure": [
+          53,
+          55,
+          78
+        ],
+        "support": [
+          9,
+          23,
+          25,
+          27,
+          29,
+          33,
+          34,
+          37,
+          86
+        ],
+        "force": [
+          3,
+          8,
+          9,
+          22,
+          24,
+          27,
+          44,
+          76,
+          83,
+          86
+        ],
+        "CandidateProperties": [
+          79
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "NavierStokes/R3/ViscousUniqueness.lean",
+      "bytes": 2551,
+      "lines": 59,
+      "imports": [
+        "import NavierStokes.R3.WholeSpaceUniqueness",
+        "import NavierStokes.R3.ViscosityScaling"
+      ],
+      "declarations": [
+        {
+          "line": 23,
+          "kind": "theorem",
+          "text": "theorem candidate_unique_on_Icc_viscosity {\u03bd : \u211d} (h\u03bd : 0 < \u03bd)"
+        }
+      ],
+      "keyword_lines": {
+        "pressure": [
+          24,
+          26
+        ],
+        "residual": [
+          31,
+          51
+        ],
+        "CandidateProperties": [
+          25,
+          43
+        ]
+      },
+      "sorry_token_lines": []
+    }
+  ],
+  "file_count": 15
+}

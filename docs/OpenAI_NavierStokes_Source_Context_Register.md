@@ -24,9 +24,9 @@ without an additional formal admissibility predicate, prove that the
 existential C/D proposition is false. The review must keep those two claims
 separate.
 
-That qualification does not make the burden symmetrical. OpenAI must establish
-the paper and CMI solution claim it chose to publish. If the selected Lean
-endpoint does not expose the paper's field-level identifications and their
+That qualification does not make the audit a repair handoff. The published
+paper and CMI solution claim are rejected on the present record when the
+selected Lean endpoint does not expose the paper's field-level identifications and their
 analytic composition, the correct review result is **not established as
 claimed**, even if the narrower existential endpoint has not been formally
 refuted. This is a failure to discharge the published claim, not a request
@@ -179,3 +179,39 @@ it is not, without a false selected identity, a formal contradiction to the
 literal C/D endpoint.
 
 Evidence: `NavierStokesReview/evidence/official_claim_transport_matrix_2026-09-24.md`.
+
+## Controlled update: finite-prefix endpoint plateau
+
+`SelectedFiniteCutoffEndpoint.lean` proves that every fixed finite selected
+cutoff prefix is eventually on its unit plateau at the axis as `t → 1⁻`.
+This follows from the source identity
+`physicalQ h (t, 0) = 1 - t` before the endpoint and the finite-family
+cutoff theorem. It narrows the remaining calculation: the unresolved issue
+is not whether a fixed finite prefix can be placed on the plateau, but whether
+that fact transports uniformly through the infinite `potentialSum`, the
+Cartesian curl, torus averaging, and `barMoment`.
+
+The independent analytical context is Constantin--Ignatova--Vicol,
+[arXiv:2609.20803](https://arxiv.org/abs/2609.20803). That preprint concerns
+analytic forcing and OpenAI-type anisotropic bounds. It is relevant context
+for the non-analytic forced branch, not a direct refutation of the written
+smooth-forcing existential alternative.
+
+## Source-path reconciliation: 2026-09-26
+
+No current or reachable historical source path named `SelectedCandidate.lean`
+was found. The verified active path is
+`ActualCandidateAssembly.selected_witness` and `selected_candidate`, followed
+by `R3/ActualCandidate.lean` and `R3/Theorem.lean`. The named energy results
+are present at `R3/CompactEnergy.lean:343` and `R3/Theorem.lean:66`.
+
+The review-side periodic-integral completion is conditional: it reduces the
+selected mixed radial observable to a literal weighted integral and proves a
+non-integrability branch under strict positivity of a unit-periodic pullback.
+It does not prove that positivity for the selected field, evaluate the
+weighted values, or derive `False`. The final R³ field is obtained by a local
+compactification of the periodic intermediate field, so a global transport
+theorem between those objects remains required.
+
+Evidence: `NavierStokesReview/evidence/source_path_reconciliation_2026-09-26.md`;
+`NavierStokesReview/evidence/periodic_global_integral_semantics_2026-09-26.md`.

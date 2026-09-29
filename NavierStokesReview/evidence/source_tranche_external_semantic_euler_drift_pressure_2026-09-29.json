@@ -1,0 +1,81 @@
+{
+  "date": "2026-09-29",
+  "priority": 147,
+  "scope": "External semantic bridge plus Euler all-order drift, correction, pressure, parity, and residual source tranche",
+  "method": "Direct source inspection of imports, declarations, theorem bodies, endpoint symbols, and bounded absence checks",
+  "files": [
+    {
+      "path": "NavierStokesReview/src/external-semantic/ClaySpec.lean",
+      "anchors": "28-32; 53-114; 117-171; 174-226",
+      "finding": "Defines the audit-side R3 and periodic spaces, within-half-space derivatives, equations, data conditions, energy predicate, and alternatives C/D. It is an audit specification layer, not the OpenAI selected endpoint."
+    },
+    {
+      "path": "NavierStokesReview/src/external-semantic/Gap.lean",
+      "anchors": "274-303; 525-597; 602-642",
+      "finding": "Proves comparator-to-ClaySpec data and solution translations and statement-level implications. It contains no selected_witness, CandidateProperties, barMoment, or five-observable transport theorem."
+    },
+    {
+      "path": "Euler/AllOrderDriftEquation.lean",
+      "anchors": "33-68; 71-137; 141-166",
+      "finding": "Constructs corrected Euler field and pressure towers and an existential exact lifted solution under Budget and ApproximationResidual hypotheses."
+    },
+    {
+      "path": "Euler/AllOrderDriftFieldDecomposition.lean",
+      "anchors": "18-43",
+      "finding": "Proves corrected tower and exact packet point-field decompositions in the Euler branch."
+    },
+    {
+      "path": "Euler/AllOrderDriftResidualBounds.lean",
+      "anchors": "17-36; 39-72; 75-105; 109-151",
+      "finding": "Proves residual-envelope, weighted field/derivative, pressure, and time-derivative bounds. These are weighted norm estimates, not radial five-observable identities."
+    },
+    {
+      "path": "Euler/CorrectionResidualCancellation.lean",
+      "anchors": "22-53; 55-86",
+      "finding": "Proves exact nonlinear residual increment and cancellation identities and closure properties for corrected Euler paths."
+    },
+    {
+      "path": "Euler/MeanPressureRepresentative.lean",
+      "anchors": "29-90; 96-156",
+      "finding": "Constructs continuous L2 pressure representatives and proves physical-gradient and scalar-equation identities in the Euler mean-pressure branch."
+    },
+    {
+      "path": "Euler/PacketAngularPressureStepBound.lean",
+      "anchors": "15-95",
+      "finding": "Constructs an angular pressure step under explicit packet budget hypotheses."
+    },
+    {
+      "path": "Euler/PacketFiniteParity.lean",
+      "anchors": "19-143",
+      "finding": "Propagates joint oddness through finite sums, assembly, pressure, nonlinear grades, velocity, and residual tails in the Euler packet branch."
+    },
+    {
+      "path": "Euler/PacketForwardPressureBudgets.lean",
+      "anchors": "17-214",
+      "finding": "Constructs forward angular and initialized pressure budgets under explicit hypotheses."
+    },
+    {
+      "path": "Euler/PacketForwardPressureRemainder.lean",
+      "anchors": "37-155",
+      "finding": "Defines forward initialized pressure and covector remainders and proves gradient decomposition and bounds."
+    },
+    {
+      "path": "Euler/PacketInitializedPressureRemainder.lean",
+      "anchors": "37-157",
+      "finding": "Defines initialized pressure and covector remainders and proves gradient decomposition and bounds."
+    }
+  ],
+  "cross_file_search": {
+    "selected_endpoint_symbols": ["ActualCandidate", "selected_witness", "CandidateProperties", "NavierStokesR3.theorem_1_1", "FiveRowRank", "PositiveOrderMoments", "barMoment"],
+    "result": "No reviewed Euler file declares a selected Navier-Stokes field-level five-observable transport theorem. Gap.lean names only the audit comparator structures it translates.",
+    "scope_limit": "This is a tranche-level absence check, not a repository-wide nonexistence proof."
+  },
+  "classification": {
+    "semantic_bridge": "audit infrastructure requiring separate CMI fidelity validation",
+    "euler_correction": "genuine conditional construction",
+    "residual_bounds": "genuine weighted-norm control",
+    "pressure_and_parity": "genuine scoped Euler lemmas",
+    "ctr_005": "still open; not resolved by this tranche",
+    "kernel_false": "not established"
+  }
+}

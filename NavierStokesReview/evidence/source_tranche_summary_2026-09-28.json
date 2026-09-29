@@ -1,0 +1,2308 @@
+{
+  "tool": "source_tranche_summary.py",
+  "scope": "source navigation only; not a theorem prover or absence detector",
+  "root": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Define-Intelligence-github\\NavierStokes",
+  "files": [
+    {
+      "file": "R3PressureNearKernel.lean",
+      "bytes": 12898,
+      "lines": 275,
+      "imports": [
+        "import NavierStokes.R3PressureKernel"
+      ],
+      "declarations": [
+        {
+          "line": 19,
+          "kind": "def",
+          "text": "def radialProfile (a b : \u211d) (x : Space) : \u211d :="
+        },
+        {
+          "line": 22,
+          "kind": "theorem",
+          "text": "theorem radialProfile_nonneg (a b : \u211d) (x : Space) : 0 \u2264 radialProfile a b x := by"
+        },
+        {
+          "line": 26,
+          "kind": "theorem",
+          "text": "theorem radialProfile_measurable (a b : \u211d) : Measurable (radialProfile a b) := by"
+        },
+        {
+          "line": 30,
+          "kind": "theorem",
+          "text": "theorem radialProfile_integrable {a b : \u211d} (ha : -3 < a) (hb : b < -3) :"
+        },
+        {
+          "line": 68,
+          "kind": "def",
+          "text": "def scaled (R : \u211d) (f : Space \u2192 \u211d) (x : Space) : \u211d := R ^ (-3 : \u211d) * f (R\u207b\u00b9 \u2022 x)"
+        },
+        {
+          "line": 70,
+          "kind": "theorem",
+          "text": "theorem scaled_nonneg {R : \u211d} (hR : 0 < R) {f : Space \u2192 \u211d} (hf : \u2200 x, 0 \u2264 f x) (x : Space) :"
+        },
+        {
+          "line": 73,
+          "kind": "theorem",
+          "text": "theorem scaled_measurable (R : \u211d) {f : Space \u2192 \u211d} (hf : Measurable f) :"
+        },
+        {
+          "line": 78,
+          "kind": "theorem",
+          "text": "theorem scaled_power {R p : \u211d} (hR : 0 < R) {f : Space \u2192 \u211d} (hf : \u2200 x, 0 \u2264 f x) (x : Space) :"
+        },
+        {
+          "line": 82,
+          "kind": "theorem",
+          "text": "theorem scaled_power_integrable {R p : \u211d} (hR : 0 < R) {f : Space \u2192 \u211d}"
+        },
+        {
+          "line": 88,
+          "kind": "theorem",
+          "text": "theorem integral_scaled_power {R p : \u211d} (hR : 0 < R) {f : Space \u2192 \u211d} (hf : \u2200 x, 0 \u2264 f x) :"
+        },
+        {
+          "line": 98,
+          "kind": "theorem",
+          "text": "theorem scaled_memLp {R : \u211d} (hR : 0 < R) {p : \u211d\u22650\u221e} (hp : p \u2260 0) (hpt : p \u2260 \u22a4)"
+        },
+        {
+          "line": 107,
+          "kind": "theorem",
+          "text": "theorem scaled_lpNorm {R : \u211d} (hR : 0 < R) {p : \u211d\u22650\u221e} (hp : p \u2260 0) (hpt : p \u2260 \u22a4)"
+        },
+        {
+          "line": 120,
+          "kind": "def",
+          "text": "def nearBase (x : Space) : \u211d := if \u2016x\u2016 < 1 then \u2016x\u2016 ^ (-2 : \u211d) else 0"
+        },
+        {
+          "line": 122,
+          "kind": "def",
+          "text": "def remainderBase : Space \u2192 \u211d := radialProfile 3 (-3)"
+        },
+        {
+          "line": 124,
+          "kind": "theorem",
+          "text": "theorem nearBase_nonneg (x : Space) : 0 \u2264 nearBase x := by"
+        },
+        {
+          "line": 128,
+          "kind": "theorem",
+          "text": "theorem nearBase_measurable : Measurable nearBase := by"
+        },
+        {
+          "line": 132,
+          "kind": "theorem",
+          "text": "theorem nearBase_power_integrable : Integrable (fun x : Space => nearBase x ^ (6 / 5 : \u211d)) := by"
+        },
+        {
+          "line": 144,
+          "kind": "theorem",
+          "text": "theorem remainderBase_power_integrable : Integrable (fun x : Space => remainderBase x ^ (2 : \u211d)) := by"
+        },
+        {
+          "line": 150,
+          "kind": "theorem",
+          "text": "theorem nearBase_memLp : MemLp nearBase (6 / 5) := by"
+        },
+        {
+          "line": 156,
+          "kind": "theorem",
+          "text": "theorem remainderBase_memLp : MemLp remainderBase 2 := by"
+        },
+        {
+          "line": 162,
+          "kind": "def",
+          "text": "def nearKernel (R : \u211d) : Space \u2192 \u211d := scaled R nearBase"
+        },
+        {
+          "line": 164,
+          "kind": "def",
+          "text": "def remainderKernel (R : \u211d) : Space \u2192 \u211d := scaled R remainderBase"
+        },
+        {
+          "line": 166,
+          "kind": "theorem",
+          "text": "theorem nearKernel_memLp {R : \u211d} (hR : 0 < R) : MemLp (nearKernel R) (6 / 5) :="
+        },
+        {
+          "line": 169,
+          "kind": "theorem",
+          "text": "theorem remainderKernel_memLp {R : \u211d} (hR : 0 < R) : MemLp (remainderKernel R) 2 :="
+        },
+        {
+          "line": 173,
+          "kind": "theorem",
+          "text": "theorem nearKernel_lpNorm {R : \u211d} (hR : 0 < R) :"
+        },
+        {
+          "line": 181,
+          "kind": "theorem",
+          "text": "theorem remainderKernel_lpNorm {R : \u211d} (hR : 0 < R) :"
+        },
+        {
+          "line": 189,
+          "kind": "theorem",
+          "text": "theorem nearKernel_eq {R : \u211d} (hR : 0 < R) (x : Space) :"
+        },
+        {
+          "line": 203,
+          "kind": "theorem",
+          "text": "theorem remainderKernel_eq {R : \u211d} (hR : 0 < R) (x : Space) :"
+        },
+        {
+          "line": 220,
+          "kind": "theorem",
+          "text": "theorem sixth_power_difference {a b L d : \u211d} (ha : 0 \u2264 a) (hb : 0 \u2264 b)"
+        },
+        {
+          "line": 240,
+          "kind": "theorem",
+          "text": "theorem cutoff_kernel_bound {R L a b : \u211d} (hR : 0 < R) (hL : 1 \u2264 L)"
+        }
+      ],
+      "keyword_lines": {
+        "pressure": [
+          1,
+          4,
+          14,
+          234,
+          275
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "R3PressureKernel.lean",
+      "bytes": 7224,
+      "lines": 168,
+      "imports": [
+        "import NavierStokes.ComparatorR3Bridge",
+        "import Mathlib.MeasureTheory.Constructions.HaarToSphere",
+        "import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals"
+      ],
+      "declarations": [
+        {
+          "line": 21,
+          "kind": "def",
+          "text": "def baseKernel (x : Space) : \u211d :="
+        },
+        {
+          "line": 24,
+          "kind": "def",
+          "text": "def baseMoment (x : Space) : \u211d :="
+        },
+        {
+          "line": 27,
+          "kind": "theorem",
+          "text": "theorem baseKernel_nonneg (x : Space) : 0 \u2264 baseKernel x := by"
+        },
+        {
+          "line": 31,
+          "kind": "theorem",
+          "text": "theorem baseMoment_eq (x : Space) : baseKernel x ^ (4 / 3 : \u211d) = baseMoment x := by"
+        },
+        {
+          "line": 35,
+          "kind": "theorem",
+          "text": "theorem baseMoment_integrable : Integrable baseMoment := by"
+        },
+        {
+          "line": 75,
+          "kind": "def",
+          "text": "def kernel (R : \u211d) (x : Space) : \u211d := R ^ (-3 : \u211d) * baseKernel (R\u207b\u00b9 \u2022 x)"
+        },
+        {
+          "line": 77,
+          "kind": "theorem",
+          "text": "theorem kernel_eq_majorant {R : \u211d} (hR : 0 < R) (x : Space) :"
+        },
+        {
+          "line": 97,
+          "kind": "theorem",
+          "text": "theorem kernel_nonneg {R : \u211d} (hR : 0 < R) (x : Space) : 0 \u2264 kernel R x :="
+        },
+        {
+          "line": 100,
+          "kind": "theorem",
+          "text": "theorem kernel_moment {R : \u211d} (hR : 0 < R) (x : Space) :"
+        },
+        {
+          "line": 106,
+          "kind": "theorem",
+          "text": "theorem kernel_moment_integrable {R : \u211d} (hR : 0 < R) :"
+        },
+        {
+          "line": 113,
+          "kind": "theorem",
+          "text": "theorem integral_kernel_moment {R : \u211d} (hR : 0 < R) :"
+        },
+        {
+          "line": 121,
+          "kind": "theorem",
+          "text": "theorem kernel_measurable (R : \u211d) : Measurable (kernel R) := by"
+        },
+        {
+          "line": 126,
+          "kind": "theorem",
+          "text": "theorem kernel_memLp {R : \u211d} (hR : 0 < R) : MemLp (kernel R) (4 / 3) := by"
+        },
+        {
+          "line": 133,
+          "kind": "theorem",
+          "text": "theorem kernel_lpNorm {R : \u211d} (hR : 0 < R) :"
+        },
+        {
+          "line": 152,
+          "kind": "theorem",
+          "text": "theorem power_six_difference {a b d : \u211d} (ha : 0 \u2264 a) (hb : 0 \u2264 b) (hd : 0 \u2264 d)"
+        }
+      ],
+      "keyword_lines": {
+        "moment": [
+          9,
+          24,
+          31,
+          32,
+          35,
+          100,
+          101,
+          103,
+          106,
+          108,
+          109,
+          111,
+          113,
+          114,
+          115,
+          116,
+          130,
+          135,
+          140,
+          142
+        ],
+        "pressure": [
+          8,
+          16,
+          148,
+          168
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "R3SmoothPressure.lean",
+      "bytes": 7032,
+      "lines": 146,
+      "imports": [
+        "import NavierStokes.R3WeakPressure"
+      ],
+      "declarations": [
+        {
+          "line": 18,
+          "kind": "theorem",
+          "text": "theorem represents_zero : Represents (0 : \ud835\udce2'(Domain, \u2102)) (fun _ => 0) := by"
+        },
+        {
+          "line": 22,
+          "kind": "theorem",
+          "text": "theorem Represents.congr {T : \ud835\udce2'(Domain, \u2102)} {f g : Domain \u2192 \u2102}"
+        },
+        {
+          "line": 25,
+          "kind": "theorem",
+          "text": "theorem Represents.add {S T : \ud835\udce2'(Domain, \u2102)} {f g : Domain \u2192 \u2102}"
+        },
+        {
+          "line": 35,
+          "kind": "theorem",
+          "text": "theorem Represents.neg {T : \ud835\udce2'(Domain, \u2102)} {f : Domain \u2192 \u2102}"
+        },
+        {
+          "line": 41,
+          "kind": "theorem",
+          "text": "theorem Represents.sub {S T : \ud835\udce2'(Domain, \u2102)} {f g : Domain \u2192 \u2102}"
+        },
+        {
+          "line": 46,
+          "kind": "theorem",
+          "text": "theorem Represents.sum {\u03b9 : Type*} (s : Finset \u03b9) (T : \u03b9 \u2192 \ud835\udce2'(Domain, \u2102))"
+        },
+        {
+          "line": 57,
+          "kind": "def",
+          "text": "def functionLaplacian (f : Domain \u2192 \u2102) (z : Domain) : \u2102 :="
+        },
+        {
+          "line": 60,
+          "kind": "theorem",
+          "text": "theorem functionLaplacian_contDiff {f : Domain \u2192 \u2102} (hf : ContDiff \u211d \u221e f) :"
+        },
+        {
+          "line": 64,
+          "kind": "theorem",
+          "text": "theorem Represents.spatialLaplacian {T : \ud835\udce2'(Domain, \u2102)} {f : Domain \u2192 \u2102}"
+        },
+        {
+          "line": 74,
+          "kind": "def",
+          "text": "def functionDivergence (U : Fin 3 \u2192 Domain \u2192 \u2102) (z : Domain) : \u2102 :="
+        },
+        {
+          "line": 77,
+          "kind": "theorem",
+          "text": "theorem divergence_zero_of_smooth (U : Fin 3 \u2192 Domain \u2192 \u2102)"
+        },
+        {
+          "line": 90,
+          "kind": "def",
+          "text": "def functionMomentum (U V : Fin 3 \u2192 Domain \u2192 \u2102) (G : Fin 3 \u2192 Fin 3 \u2192 Domain \u2192 \u2102)"
+        },
+        {
+          "line": 95,
+          "kind": "theorem",
+          "text": "theorem represents_momentumGradient"
+        },
+        {
+          "line": 124,
+          "kind": "theorem",
+          "text": "theorem smooth_pressure_gradient"
+        }
+      ],
+      "keyword_lines": {
+        "moment": [
+          4,
+          90,
+          95,
+          101,
+          103,
+          121,
+          131,
+          138,
+          139
+        ],
+        "pressure": [
+          1,
+          4,
+          7,
+          12,
+          15,
+          121,
+          124,
+          133,
+          140,
+          146
+        ],
+        "support": [
+          32,
+          33,
+          52
+        ],
+        "tsum": [
+          51,
+          119
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "LocalHeatFormula.lean",
+      "bytes": 7407,
+      "lines": 140,
+      "imports": [
+        "import NavierStokes.LocalHeatPressure",
+        "import NavierStokes.DirectAngularDiagonal"
+      ],
+      "declarations": [
+        {
+          "line": 22,
+          "kind": "theorem",
+          "text": "theorem exteriorProfile_smooth (C : \u211d) {h : \u211d} (hh : 0 < h) :"
+        },
+        {
+          "line": 31,
+          "kind": "theorem",
+          "text": "theorem exteriorProfile_iteratedDerivWithin (C : \u211d) {h : \u211d} (hh : 0 < h)"
+        },
+        {
+          "line": 50,
+          "kind": "theorem",
+          "text": "theorem exteriorProfile_derivative_bound (C : \u211d) {h : \u211d} (hh : 0 < h)"
+        },
+        {
+          "line": 59,
+          "kind": "theorem",
+          "text": "theorem exteriorProfile_all_derivatives_bounded (C : \u211d) {h : \u211d} (hh : 0 < h) (n : \u2115) :"
+        },
+        {
+          "line": 69,
+          "kind": "theorem",
+          "text": "theorem amplitude_formula (C h \u03c4 : \u211d) {r : \u211d} (hr : 0 < r) :"
+        },
+        {
+          "line": 82,
+          "kind": "theorem",
+          "text": "theorem amplitude_heat_equation (C : \u211d) {h \u03c4 r : \u211d}"
+        },
+        {
+          "line": 95,
+          "kind": "theorem",
+          "text": "theorem amplitude_eq_heatAmplitude (C h t r : \u211d) :"
+        },
+        {
+          "line": 98,
+          "kind": "theorem",
+          "text": "theorem heatCoefficient_radius (C h t z : \u211d) {r : \u211d} (hr : 0 < r) :"
+        },
+        {
+          "line": 106,
+          "kind": "theorem",
+          "text": "theorem heatVelocity_formula (C h : \u211d) {w : ProblemStatement.SpaceTime}"
+        },
+        {
+          "line": 117,
+          "kind": "theorem",
+          "text": "theorem heatVelocity_eq_angularField (C h : \u211d) {w : ProblemStatement.SpaceTime}"
+        },
+        {
+          "line": 128,
+          "kind": "theorem",
+          "text": "theorem pressure_radius_integral (C h \u03c4 z : \u211d) {r : \u211d} (hr : 0 < r) :"
+        },
+        {
+          "line": 134,
+          "kind": "theorem",
+          "text": "theorem pressure_integrand_integrable (C : \u211d) {h \u03c4 r : \u211d}"
+        }
+      ],
+      "keyword_lines": {
+        "pressure": [
+          1,
+          128,
+          129,
+          132,
+          134,
+          138
+        ],
+        "residual": [
+          110,
+          124
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "NaturalAxisJointAnalytic.lean",
+      "bytes": 8916,
+      "lines": 163,
+      "imports": [
+        "import NavierStokes.AxisJointAnalytic",
+        "import NavierStokes.NaturalEntrance"
+      ],
+      "declarations": [
+        {
+          "line": 22,
+          "kind": "theorem",
+          "text": "theorem CoefficientProfile.scaled_analytic {h j \u03c3 \u039b C : \u211d} {P0 : \u211d \u2192 \u211d}"
+        },
+        {
+          "line": 51,
+          "kind": "theorem",
+          "text": "theorem amplitude_analytic {h j \u03c3 : \u211d} {P0 : \u211d \u2192 \u211d}"
+        },
+        {
+          "line": 63,
+          "kind": "theorem",
+          "text": "theorem pullback_analytic {F : \u211d \u00d7 \u211d \u2192 \u211d}"
+        },
+        {
+          "line": 70,
+          "kind": "theorem",
+          "text": "theorem affineProfile_analytic {b : \u211d \u2192 \u211d}"
+        },
+        {
+          "line": 78,
+          "kind": "theorem",
+          "text": "theorem angularProfile_analytic {a : \u211d \u2192 \u211d}"
+        },
+        {
+          "line": 87,
+          "kind": "theorem",
+          "text": "theorem CoefficientProfile.natural_analytic {h j \u03c3 \u039b C : \u211d} {P0 : \u211d \u2192 \u211d}"
+        },
+        {
+          "line": 106,
+          "kind": "theorem",
+          "text": "theorem pressureDatum_analytic {g a : \u211d \u2192 \u211d} {cap : \u211d} (hp : PressureDatum.Admissible g a cap) :"
+        },
+        {
+          "line": 117,
+          "kind": "theorem",
+          "text": "theorem printed_rectangle_subset_strip :"
+        },
+        {
+          "line": 126,
+          "kind": "theorem",
+          "text": "theorem exists_common_joint_analytic_profiles {h j : \u211d}"
+        }
+      ],
+      "keyword_lines": {
+        "pressure": [
+          7,
+          28,
+          42,
+          43,
+          45,
+          46,
+          85,
+          104,
+          106,
+          107,
+          109,
+          110,
+          113,
+          129,
+          134,
+          136,
+          144,
+          152,
+          160
+        ],
+        "Witness": [
+          6
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "InitialHarmonicContinuation.lean",
+      "bytes": 79605,
+      "lines": 1459,
+      "imports": [
+        "import NavierStokes.ActualPrimaryBounds",
+        "import NavierStokes.ActualPrimaryCoherence",
+        "import NavierStokes.WaveStageContinuation",
+        "import NavierStokes.GenericEndpointExtension"
+      ],
+      "declarations": [
+        {
+          "line": 22,
+          "kind": "abbrev",
+          "text": "abbrev Native := ActualSignedGeometry.Native"
+        },
+        {
+          "line": 23,
+          "kind": "abbrev",
+          "text": "abbrev Plane := TorusInverse.Plane"
+        },
+        {
+          "line": 24,
+          "kind": "abbrev",
+          "text": "abbrev Point := LocalSignedRequest.Point"
+        },
+        {
+          "line": 25,
+          "kind": "abbrev",
+          "text": "abbrev Spatial := \u211d \u00d7 (\u211d \u00d7 Plane)"
+        },
+        {
+          "line": 26,
+          "kind": "abbrev",
+          "text": "abbrev Model := \u211d \u00d7 Spatial"
+        },
+        {
+          "line": 35,
+          "kind": "theorem",
+          "text": "theorem nativeMap_smooth : ContDiff \u211d \u221e nativeMap := by"
+        },
+        {
+          "line": 41,
+          "kind": "theorem",
+          "text": "theorem nativeMap_time {z : Model} (hz : z \u2208 modelStrip) : 0 < (nativeMap z).1.2.2 := by"
+        },
+        {
+          "line": 45,
+          "kind": "theorem",
+          "text": "theorem nativeMap_q {z : Model} (hz : z \u2208 modelStrip) :"
+        },
+        {
+          "line": 55,
+          "kind": "theorem",
+          "text": "theorem nativeMap_radius {z : Model} (hz : z \u2208 modelStrip) :"
+        },
+        {
+          "line": 68,
+          "kind": "theorem",
+          "text": "theorem envelope_le_one (j : Fin 2) (L : ActualPrimary.Label B N0) {x : Native}"
+        },
+        {
+          "line": 88,
+          "kind": "theorem",
+          "text": "theorem flat_factor_bound (p : \u2115) : \u2203 K : \u211d, 0 \u2264 K \u2227 \u2200 x : Native,"
+        },
+        {
+          "line": 106,
+          "kind": "theorem",
+          "text": "theorem zero_jet_off_core {E : Type*} [NormedAddCommGroup E] [NormedSpace \u211d E]"
+        },
+        {
+          "line": 119,
+          "kind": "theorem",
+          "text": "theorem native_bounded_of_weighted"
+        },
+        {
+          "line": 177,
+          "kind": "theorem",
+          "text": "theorem attached_velocity_bounded (j : Fin 2) (L : ActualPrimary.Label B N0) (m : \u2115) :"
+        },
+        {
+          "line": 188,
+          "kind": "theorem",
+          "text": "theorem attached_pressure_bounded (j : Fin 2) (L : ActualPrimary.Label B N0) (m : \u2115) :"
+        },
+        {
+          "line": 205,
+          "kind": "theorem",
+          "text": "theorem attached_zero_outside_band (j : Fin 2) (L : ActualPrimary.Label B N0) {x : Native}"
+        },
+        {
+          "line": 223,
+          "kind": "def",
+          "text": "def NativeSupport {E : Type*} [Zero E] (L : ActualPrimary.Label B N0) (f : Native \u2192 E) : Prop :="
+        },
+        {
+          "line": 231,
+          "kind": "theorem",
+          "text": "theorem attached_velocity_support (j : Fin 2) (L : ActualPrimary.Label B N0) :"
+        },
+        {
+          "line": 244,
+          "kind": "theorem",
+          "text": "theorem attached_pressure_support (j : Fin 2) (L : ActualPrimary.Label B N0) :"
+        },
+        {
+          "line": 262,
+          "kind": "theorem",
+          "text": "theorem spatialSupport_compact (L : ActualPrimary.Label B N0) : IsCompact (spatialSupport L) :="
+        },
+        {
+          "line": 265,
+          "kind": "theorem",
+          "text": "theorem modelStrip_open : IsOpen modelStrip := isOpen_Ioo.prod isOpen_univ"
+        },
+        {
+          "line": 269,
+          "kind": "theorem",
+          "text": "theorem modelSource_smooth {E : Type*} [NormedAddCommGroup E] [NormedSpace \u211d E]"
+        },
+        {
+          "line": 274,
+          "kind": "theorem",
+          "text": "theorem modelSource_support {E : Type*} [Zero E] (L : ActualPrimary.Label B N0)"
+        },
+        {
+          "line": 284,
+          "kind": "theorem",
+          "text": "theorem modelSource_zero_jet_off_support {E : Type*} [NormedAddCommGroup E] [NormedSpace \u211d E]"
+        },
+        {
+          "line": 297,
+          "kind": "theorem",
+          "text": "theorem modelSource_bounded {E : Type*} [NormedAddCommGroup E] [NormedSpace \u211d E]"
+        },
+        {
+          "line": 329,
+          "kind": "theorem",
+          "text": "theorem velocity_model_bounded (j : Fin 2) (L : ActualPrimary.Label B N0) (m : \u2115) :"
+        },
+        {
+          "line": 335,
+          "kind": "theorem",
+          "text": "theorem pressure_model_bounded (j : Fin 2) (L : ActualPrimary.Label B N0) (m : \u2115) :"
+        },
+        {
+          "line": 355,
+          "kind": "theorem",
+          "text": "theorem stableDomain_open : IsOpen stableDomain :="
+        },
+        {
+          "line": 359,
+          "kind": "theorem",
+          "text": "theorem nativeQ_pos {x : Native} (hx : x \u2208 stableDomain) : 0 < nativeQ x :="
+        },
+        {
+          "line": 362,
+          "kind": "theorem",
+          "text": "theorem nativeQ_smoothAt {x : Native} (hx : x \u2208 stableDomain) : ContDiffAt \u211d \u221e nativeQ x :="
+        },
+        {
+          "line": 368,
+          "kind": "theorem",
+          "text": "theorem nativeCoordinates_smooth : ContDiffOn \u211d \u221e nativeCoordinates stableDomain := by"
+        },
+        {
+          "line": 378,
+          "kind": "theorem",
+          "text": "theorem nativeQ_forward {x : Native} (hx : x \u2208 stableDomain) :"
+        },
+        {
+          "line": 388,
+          "kind": "theorem",
+          "text": "theorem nativeMap_coordinates {x : Native} (hx : x \u2208 stableDomain) :"
+        },
+        {
+          "line": 399,
+          "kind": "theorem",
+          "text": "theorem positive_mem_stable {x : Native} (ht : 0 < x.1.2.2) : x \u2208 stableDomain :="
+        },
+        {
+          "line": 404,
+          "kind": "theorem",
+          "text": "theorem nativeCoordinates_mem {x : Native} (ht : 0 < x.1.2.2) : nativeCoordinates x \u2208 modelStrip := by"
+        },
+        {
+          "line": 425,
+          "kind": "structure",
+          "text": "structure ModelContinuation (L : ActualPrimary.Label B N0) (f : Native \u2192 E) where"
+        },
+        {
+          "line": 437,
+          "kind": "theorem",
+          "text": "theorem native_smooth : ContDiffOn \u211d \u221e e.native stableDomain :="
+        },
+        {
+          "line": 440,
+          "kind": "theorem",
+          "text": "theorem native_agrees {x : Native} (ht : 0 < x.1.2.2) : e.native x = f x := by"
+        },
+        {
+          "line": 444,
+          "kind": "theorem",
+          "text": "theorem native_core {x : Native} (hn : e.native x \u2260 0) : x.2 \u2208 (ActualPrimary.clockWindow L).core :="
+        },
+        {
+          "line": 447,
+          "kind": "theorem",
+          "text": "theorem native_radial {x : Native} (hx : x \u2208 stableDomain) (hn : e.native x \u2260 0) :"
+        },
+        {
+          "line": 461,
+          "kind": "theorem",
+          "text": "theorem scalarSlope_scale {Q q : \u211d} (hQ : 0 < Q) (hq : 0 < q) (a z : \u211d) :"
+        },
+        {
+          "line": 473,
+          "kind": "theorem",
+          "text": "theorem stableTarget_scale {a Q : \u211d} (hQ : 0 < Q) {p : Plane}"
+        },
+        {
+          "line": 483,
+          "kind": "theorem",
+          "text": "theorem stableQ_scale {a Q : \u211d} (ha : 0 < a) (ha1 : a < 1) (hQ : 0 < Q) {p : Plane}"
+        },
+        {
+          "line": 522,
+          "kind": "theorem",
+          "text": "theorem periodized_smooth (e : ModelContinuation L f) (j : Fin 2) :"
+        },
+        {
+          "line": 542,
+          "kind": "theorem",
+          "text": "theorem periodized_agrees (e : ModelContinuation L f) (j : Fin 2) {x : Native}"
+        },
+        {
+          "line": 549,
+          "kind": "theorem",
+          "text": "theorem periodized_radial (e : ModelContinuation L f) (j : Fin 2) {x : Native}"
+        },
+        {
+          "line": 560,
+          "kind": "theorem",
+          "text": "theorem periodized_periodic (e : ModelContinuation L f) (j : Fin 2)"
+        },
+        {
+          "line": 615,
+          "kind": "abbrev",
+          "text": "abbrev Absolute := ActualPrimaryCoherence.Absolute"
+        },
+        {
+          "line": 623,
+          "kind": "theorem",
+          "text": "theorem absoluteDomain_open : IsOpen absoluteDomain :="
+        },
+        {
+          "line": 627,
+          "kind": "theorem",
+          "text": "theorem positiveAbsoluteDomain_open : IsOpen positiveAbsoluteDomain :="
+        },
+        {
+          "line": 635,
+          "kind": "theorem",
+          "text": "theorem absoluteLength_pos {x : Absolute} (hx : x \u2208 absoluteDomain) : 0 < absoluteLength x :="
+        },
+        {
+          "line": 638,
+          "kind": "theorem",
+          "text": "theorem absoluteLength_smooth : ContDiffOn \u211d \u221e absoluteLength absoluteDomain := by"
+        },
+        {
+          "line": 656,
+          "kind": "theorem",
+          "text": "theorem nativeArgument_smooth (L : ActualPrimary.Label B N0) : ContDiff \u211d \u221e (nativeArgument L) :="
+        },
+        {
+          "line": 659,
+          "kind": "theorem",
+          "text": "theorem nativeArgument_mem (L : ActualPrimary.Label B N0) {x : Absolute}"
+        },
+        {
+          "line": 670,
+          "kind": "theorem",
+          "text": "theorem nativeArgument_q (L : ActualPrimary.Label B N0) {x : Absolute}"
+        },
+        {
+          "line": 691,
+          "kind": "theorem",
+          "text": "theorem ModelContinuation.absolute_smooth (e : ModelContinuation L f) (j : Fin 2) (c : \u211d) :"
+        },
+        {
+          "line": 696,
+          "kind": "theorem",
+          "text": "theorem ModelContinuation.absolute_supported (e : ModelContinuation L f) (j : Fin 2) (c : \u211d)"
+        },
+        {
+          "line": 726,
+          "kind": "theorem",
+          "text": "theorem absoluteAmplitude_smooth (j : Fin 2) (L : ActualPrimary.Label B N0) :"
+        },
+        {
+          "line": 730,
+          "kind": "theorem",
+          "text": "theorem absolutePressure_smooth (j : Fin 2) (L : ActualPrimary.Label B N0) :"
+        },
+        {
+          "line": 734,
+          "kind": "theorem",
+          "text": "theorem absoluteAmplitude_agrees (j : Fin 2) (L : ActualPrimary.Label B N0) {x : Absolute}"
+        },
+        {
+          "line": 740,
+          "kind": "theorem",
+          "text": "theorem absolutePressure_agrees (j : Fin 2) (L : ActualPrimary.Label B N0) {x : Absolute}"
+        },
+        {
+          "line": 746,
+          "kind": "theorem",
+          "text": "theorem absoluteAmplitude_supported (j : Fin 2) (L : ActualPrimary.Label B N0) {x : Absolute}"
+        },
+        {
+          "line": 752,
+          "kind": "theorem",
+          "text": "theorem absolutePressure_supported (j : Fin 2) (L : ActualPrimary.Label B N0) {x : Absolute}"
+        },
+        {
+          "line": 774,
+          "kind": "theorem",
+          "text": "theorem absolutePhase_smooth (j : Fin 2) (L : ActualPrimary.Label B N0) :"
+        },
+        {
+          "line": 786,
+          "kind": "theorem",
+          "text": "theorem absolutePhase_agrees (j : Fin 2) (L : ActualPrimary.Label B N0) {x : Absolute}"
+        },
+        {
+          "line": 793,
+          "kind": "theorem",
+          "text": "theorem absolutePhase_angular (j : Fin 2) (L : ActualPrimary.Label B N0) :"
+        },
+        {
+          "line": 824,
+          "kind": "theorem",
+          "text": "theorem absoluteCutAmplitude_smooth (j : Fin 2) (L : ActualPrimary.Label B N0) :"
+        },
+        {
+          "line": 828,
+          "kind": "theorem",
+          "text": "theorem absoluteCutPressure_smooth (j : Fin 2) (L : ActualPrimary.Label B N0) :"
+        },
+        {
+          "line": 832,
+          "kind": "theorem",
+          "text": "theorem absoluteRadial_smooth :"
+        },
+        {
+          "line": 840,
+          "kind": "theorem",
+          "text": "theorem absoluteNormal_smooth (j : Fin 2) (L : ActualPrimary.Label B N0) :"
+        },
+        {
+          "line": 850,
+          "kind": "theorem",
+          "text": "theorem absoluteNormal_ne (j : Fin 2) (L : ActualPrimary.Label B N0) {x : Absolute}"
+        },
+        {
+          "line": 870,
+          "kind": "theorem",
+          "text": "theorem absoluteExactAmplitude_smooth_positive (j : Fin 2) (L : ActualPrimary.Label B N0) :"
+        },
+        {
+          "line": 883,
+          "kind": "theorem",
+          "text": "theorem absoluteGaussian_smooth (j : Fin 2) (L : ActualPrimary.Label B N0) :"
+        },
+        {
+          "line": 896,
+          "kind": "def",
+          "text": "def AbsoluteSupported (f : Absolute \u2192 E) : Prop :="
+        },
+        {
+          "line": 902,
+          "kind": "theorem",
+          "text": "theorem zero_germ_of_absoluteSupported {f : Absolute \u2192 E} (hf : AbsoluteSupported f)"
+        },
+        {
+          "line": 924,
+          "kind": "theorem",
+          "text": "theorem outside_absolute_shell_of_nonpositive {x : Absolute} (hx : x \u2208 absoluteDomain)"
+        },
+        {
+          "line": 934,
+          "kind": "theorem",
+          "text": "theorem absoluteCutAmplitude_supported (j : Fin 2) (L : ActualPrimary.Label B N0) :"
+        },
+        {
+          "line": 941,
+          "kind": "theorem",
+          "text": "theorem absoluteCutPressure_supported (j : Fin 2) (L : ActualPrimary.Label B N0) :"
+        },
+        {
+          "line": 948,
+          "kind": "theorem",
+          "text": "theorem absoluteGaussian_supported (j : Fin 2) (L : ActualPrimary.Label B N0) :"
+        },
+        {
+          "line": 955,
+          "kind": "theorem",
+          "text": "theorem absoluteExactAmplitude_tsupport (j : Fin 2) (L : ActualPrimary.Label B N0) :"
+        },
+        {
+          "line": 963,
+          "kind": "theorem",
+          "text": "theorem absoluteExactAmplitude_supported (j : Fin 2) (L : ActualPrimary.Label B N0) :"
+        },
+        {
+          "line": 973,
+          "kind": "theorem",
+          "text": "theorem absoluteExactAmplitude_smooth (j : Fin 2) (L : ActualPrimary.Label B N0) :"
+        },
+        {
+          "line": 991,
+          "kind": "theorem",
+          "text": "theorem realizedCoefficient_eqOn {U : Set E} (hU : IsOpen U) (K : \u211d)"
+        },
+        {
+          "line": 1012,
+          "kind": "theorem",
+          "text": "theorem absoluteExactAmplitude_agrees (j : Fin 2) (L : ActualPrimary.Label B N0) {x : Absolute}"
+        },
+        {
+          "line": 1021,
+          "kind": "theorem",
+          "text": "theorem absoluteCutPressure_agrees (j : Fin 2) (L : ActualPrimary.Label B N0) {x : Absolute}"
+        },
+        {
+          "line": 1026,
+          "kind": "theorem",
+          "text": "theorem absoluteGaussian_agrees (j : Fin 2) (L : ActualPrimary.Label B N0) {x : Absolute}"
+        },
+        {
+          "line": 1042,
+          "kind": "theorem",
+          "text": "theorem absoluteLift_smooth (n : \u2115) : ContDiff \u211d \u221e (absoluteLift n) :="
+        },
+        {
+          "line": 1045,
+          "kind": "theorem",
+          "text": "theorem absoluteLift_mem (n : \u2115) {x : Point}"
+        },
+        {
+          "line": 1054,
+          "kind": "theorem",
+          "text": "theorem absoluteLift_length (n : \u2115) {x : Point}"
+        },
+        {
+          "line": 1076,
+          "kind": "theorem",
+          "text": "theorem chartValue_smooth (a : \u211d) {f : Absolute \u2192 E} (hf : ContDiffOn \u211d \u221e f absoluteDomain) (n : \u2115) :"
+        },
+        {
+          "line": 1080,
+          "kind": "theorem",
+          "text": "theorem chartValue_supported (a : \u211d) {f : Absolute \u2192 E} (hf : AbsoluteSupported f) (n : \u2115) :"
+        },
+        {
+          "line": 1142,
+          "kind": "theorem",
+          "text": "theorem chartPhase_smooth (j : Fin 2) (L : ActualPrimary.Label B N0) (n : \u2115) :"
+        },
+        {
+          "line": 1149,
+          "kind": "theorem",
+          "text": "theorem chartPhase_agrees (j : Fin 2) (L : ActualPrimary.Label B N0) (n : \u2115) :"
+        },
+        {
+          "line": 1207,
+          "kind": "abbrev",
+          "text": "abbrev Index (B N0 : \u2115) := ActualPrimary.Label B N0 \u00d7 Fin 2"
+        },
+        {
+          "line": 1254,
+          "kind": "theorem",
+          "text": "theorem absoluteDeck_slow (n : \u2115) (k : TorusInverse.Frequency) : (absoluteDeck n k).1.1 = 0 := by"
+        },
+        {
+          "line": 1258,
+          "kind": "theorem",
+          "text": "theorem absolute_periodic_of_chart {E : Type*} {f : Absolute \u2192 E} (n : \u2115) (k : TorusInverse.Frequency)"
+        },
+        {
+          "line": 1266,
+          "kind": "theorem",
+          "text": "theorem ModelContinuation.absolute_chart_periodic {E : Type} [NormedAddCommGroup E] [NormedSpace \u211d E]"
+        },
+        {
+          "line": 1279,
+          "kind": "theorem",
+          "text": "theorem absoluteAmplitude_periodic (j : Fin 2) (L : ActualPrimary.Label B N0) (n : \u2115)"
+        },
+        {
+          "line": 1286,
+          "kind": "theorem",
+          "text": "theorem absolutePressure_periodic (j : Fin 2) (L : ActualPrimary.Label B N0) (n : \u2115)"
+        },
+        {
+          "line": 1293,
+          "kind": "theorem",
+          "text": "theorem absoluteCutoff_periodic (j : Fin 2) (L : ActualPrimary.Label B N0) (n : \u2115)"
+        },
+        {
+          "line": 1301,
+          "kind": "theorem",
+          "text": "theorem absolutePhase_periodic (j : Fin 2) (L : ActualPrimary.Label B N0) (n : \u2115)"
+        },
+        {
+          "line": 1312,
+          "kind": "theorem",
+          "text": "theorem absoluteExactAmplitude_periodic (j : Fin 2) (L : ActualPrimary.Label B N0) (n : \u2115)"
+        },
+        {
+          "line": 1332,
+          "kind": "theorem",
+          "text": "theorem absoluteGaussian_periodic (j : Fin 2) (L : ActualPrimary.Label B N0) (n : \u2115)"
+        },
+        {
+          "line": 1342,
+          "kind": "theorem",
+          "text": "theorem absoluteCutPressure_periodic (j : Fin 2) (L : ActualPrimary.Label B N0) (n : \u2115)"
+        },
+        {
+          "line": 1348,
+          "kind": "theorem",
+          "text": "theorem absoluteLift_add_deck (n : \u2115) (k : TorusInverse.Frequency) (x : Point) :"
+        },
+        {
+          "line": 1354,
+          "kind": "theorem",
+          "text": "theorem chartValue_periodic {E : Type*} [NormedAddCommGroup E] [NormedSpace \u211d E]"
+        },
+        {
+          "line": 1363,
+          "kind": "theorem",
+          "text": "theorem velocityField_periodic (j : Fin 2) (L : ActualPrimary.Label B N0) (n : \u2115)"
+        },
+        {
+          "line": 1369,
+          "kind": "theorem",
+          "text": "theorem pressureField_periodic (j : Fin 2) (L : ActualPrimary.Label B N0) (n : \u2115)"
+        },
+        {
+          "line": 1375,
+          "kind": "theorem",
+          "text": "theorem gaussianField_periodic (j : Fin 2) (L : ActualPrimary.Label B N0) (n : \u2115)"
+        },
+        {
+          "line": 1381,
+          "kind": "theorem",
+          "text": "theorem chartPhase_periodic (j : Fin 2) (L : ActualPrimary.Label B N0) (n : \u2115)"
+        },
+        {
+          "line": 1393,
+          "kind": "theorem",
+          "text": "theorem chartValue_band {E : Type*} [NormedAddCommGroup E] [NormedSpace \u211d E]"
+        },
+        {
+          "line": 1405,
+          "kind": "theorem",
+          "text": "theorem pairField_periodic {coord a b : \u211d} {W : OffplaneCorrectionExtensions.Window coord a b}"
+        },
+        {
+          "line": 1416,
+          "kind": "structure",
+          "text": "structure HarmonicPeriodicAt {coord a b : \u211d} {W : OffplaneCorrectionExtensions.Window coord a b}"
+        },
+        {
+          "line": 1428,
+          "kind": "theorem",
+          "text": "theorem harmonicPrimitives_periodic (l : Index B N0) (n : \u2115)"
+        },
+        {
+          "line": 1439,
+          "kind": "theorem",
+          "text": "theorem active_index_le {n : \u2115} {l : Index B N0}"
+        },
+        {
+          "line": 1452,
+          "kind": "theorem",
+          "text": "theorem active_harmonicPrimitives_periodic (n : \u2115) (l : Index B N0)"
+        }
+      ],
+      "keyword_lines": {
+        "curl": [
+          719,
+          760,
+          815,
+          874,
+          876,
+          888,
+          957,
+          960,
+          961,
+          994,
+          995,
+          1000,
+          1001,
+          1003,
+          1005,
+          1008
+        ],
+        "period": [
+          503,
+          519,
+          522,
+          523,
+          531,
+          542,
+          544,
+          549,
+          550,
+          558,
+          560,
+          562,
+          563,
+          566,
+          573,
+          689,
+          693,
+          700,
+          703,
+          737,
+          743,
+          770,
+          781,
+          789,
+          803,
+          806,
+          821,
+          1018,
+          1023,
+          1024,
+          1030,
+          1120,
+          1242,
+          1258,
+          1266,
+          1273,
+          1276,
+          1279,
+          1283,
+          1284,
+          1286,
+          1290,
+          1291,
+          1293,
+          1296,
+          1297,
+          1298,
+          1299,
+          1301,
+          1305,
+          1307,
+          1310,
+          1312,
+          1320,
+          1322,
+          1323,
+          1332,
+          1337,
+          1339,
+          1340,
+          1342,
+          1346,
+          1354,
+          1363,
+          1367,
+          1369,
+          1373,
+          1375,
+          1379,
+          1381,
+          1385,
+          1387,
+          1405,
+          1416,
+          1428,
+          1430,
+          1431,
+          1432,
+          1433,
+          1434,
+          1435,
+          1437,
+          1451,
+          1452,
+          1454,
+          1455
+        ],
+        "pressure": [
+          9,
+          188,
+          190,
+          193,
+          194,
+          197,
+          207,
+          215,
+          216,
+          220,
+          244,
+          245,
+          247,
+          335,
+          337,
+          338,
+          339,
+          606,
+          607,
+          608,
+          609,
+          722,
+          723,
+          730,
+          731,
+          740,
+          741,
+          742,
+          752,
+          753,
+          805,
+          806,
+          828,
+          829,
+          830,
+          941,
+          942,
+          944,
+          946,
+          1021,
+          1022,
+          1023,
+          1024,
+          1109,
+          1111,
+          1112,
+          1113,
+          1114,
+          1118,
+          1121,
+          1233,
+          1286,
+          1289,
+          1342,
+          1345,
+          1346,
+          1369,
+          1372,
+          1373,
+          1420,
+          1433
+        ],
+        "support": [
+          223,
+          231,
+          232,
+          244,
+          245,
+          257,
+          262,
+          274,
+          275,
+          276,
+          284,
+          285,
+          286,
+          290,
+          293,
+          300,
+          307,
+          310,
+          326,
+          333,
+          339,
+          429,
+          445,
+          450,
+          517,
+          527,
+          581,
+          599,
+          604,
+          609,
+          696,
+          746,
+          750,
+          752,
+          756,
+          890,
+          896,
+          902,
+          934,
+          935,
+          937,
+          941,
+          942,
+          944,
+          948,
+          949,
+          951,
+          955,
+          956,
+          958,
+          959,
+          960,
+          961,
+          963,
+          964,
+          967,
+          969,
+          970,
+          980,
+          983,
+          1080,
+          1081,
+          1102,
+          1114,
+          1132,
+          1170,
+          1187,
+          1189
+        ],
+        "NativeBounds": [
+          64,
+          199
+        ],
+        "tsum": [
+          545,
+          558
+        ],
+        "residual": [
+          1417
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "LocalPotentialRebundle.lean",
+      "bytes": 15107,
+      "lines": 271,
+      "imports": [
+        "import NavierStokes.LocalAngularGrowth",
+        "import NavierStokes.LocalHeatExterior",
+        "import NavierStokes.LocalAngularScalar"
+      ],
+      "declarations": [
+        {
+          "line": 20,
+          "kind": "abbrev",
+          "text": "abbrev basePotential : VelocityField :="
+        },
+        {
+          "line": 24,
+          "kind": "def",
+          "text": "def removedPotential : VelocityField := LocalHeatExterior.axialPart basePotential"
+        },
+        {
+          "line": 26,
+          "kind": "def",
+          "text": "def potential (a : \u2115 \u2192 \u2115) : VelocityField :="
+        },
+        {
+          "line": 29,
+          "kind": "def",
+          "text": "def direct (a : \u2115 \u2192 \u2115) : VelocityField :="
+        },
+        {
+          "line": 32,
+          "kind": "def",
+          "text": "def pressure (a : \u2115 \u2192 \u2115) : PressureField :="
+        },
+        {
+          "line": 36,
+          "kind": "def",
+          "text": "def velocity (a : \u2115 \u2192 \u2115) : VelocityField :="
+        },
+        {
+          "line": 40,
+          "kind": "def",
+          "text": "def angularScalar (a : \u2115 \u2192 \u2115) : DirectAngularDiagonal.Coefficient :="
+        },
+        {
+          "line": 46,
+          "kind": "theorem",
+          "text": "theorem direct_eq_angularField {a : \u2115 \u2192 \u2115}"
+        },
+        {
+          "line": 65,
+          "kind": "theorem",
+          "text": "theorem spatialCurl_sub {A J : VelocityField} {w : SpaceTime}"
+        },
+        {
+          "line": 72,
+          "kind": "theorem",
+          "text": "theorem removedPotential_smooth : ContDiffOn \u211d \u221e removedPotential PhysicalWaveSum.preterminal :="
+        },
+        {
+          "line": 78,
+          "kind": "theorem",
+          "text": "theorem potential_smooth {a : \u2115 \u2192 \u2115}"
+        },
+        {
+          "line": 85,
+          "kind": "theorem",
+          "text": "theorem direct_smooth {a : \u2115 \u2192 \u2115}"
+        },
+        {
+          "line": 96,
+          "kind": "theorem",
+          "text": "theorem velocity_eq_original {a : \u2115 \u2192 \u2115}"
+        },
+        {
+          "line": 111,
+          "kind": "theorem",
+          "text": "theorem velocity_eq_original_germ {a : \u2115 \u2192 \u2115}"
+        },
+        {
+          "line": 121,
+          "kind": "theorem",
+          "text": "theorem residual_eq_original_germ {a : \u2115 \u2192 \u2115}"
+        },
+        {
+          "line": 133,
+          "kind": "theorem",
+          "text": "theorem sum_eq_first {V : Type*} [NormedAddCommGroup V] [NormedSpace \u211d V]"
+        },
+        {
+          "line": 146,
+          "kind": "theorem",
+          "text": "theorem selectedPotential_eq_base {a : \u2115 \u2192 \u2115} {w : SpaceTime}"
+        },
+        {
+          "line": 156,
+          "kind": "theorem",
+          "text": "theorem selectedDirect_eq_zero {a : \u2115 \u2192 \u2115} {w : SpaceTime}"
+        },
+        {
+          "line": 167,
+          "kind": "theorem",
+          "text": "theorem pressure_eq_base {a : \u2115 \u2192 \u2115} {w : SpaceTime}"
+        },
+        {
+          "line": 180,
+          "kind": "theorem",
+          "text": "theorem exterior {a : \u2115 \u2192 \u2115} {w : SpaceTime}"
+        },
+        {
+          "line": 206,
+          "kind": "theorem",
+          "text": "theorem extension_sub {A J : VelocityField} {x : Space}"
+        },
+        {
+          "line": 220,
+          "kind": "theorem",
+          "text": "theorem extension_add {A J : VelocityField} {x : Space}"
+        },
+        {
+          "line": 234,
+          "kind": "theorem",
+          "text": "theorem extension_curl {A : VelocityField} {x : Space}"
+        },
+        {
+          "line": 253,
+          "kind": "theorem",
+          "text": "theorem removedPotential_awayExtensions : JointResidualLimits.AwayExtensions removedPotential :="
+        },
+        {
+          "line": 258,
+          "kind": "theorem",
+          "text": "theorem awayExtensions {a : \u2115 \u2192 \u2115}"
+        }
+      ],
+      "keyword_lines": {
+        "curl": [
+          30,
+          43,
+          53,
+          57,
+          62,
+          65,
+          67,
+          68,
+          69,
+          92,
+          103,
+          105,
+          198,
+          234,
+          236,
+          237,
+          244,
+          251,
+          269
+        ],
+        "period": [
+          37,
+          101,
+          108,
+          116
+        ],
+        "pressure": [
+          32,
+          34,
+          81,
+          88,
+          99,
+          114,
+          124,
+          126,
+          130,
+          167,
+          172,
+          176,
+          190,
+          202
+        ],
+        "tsum": [
+          139,
+          165
+        ],
+        "residual": [
+          69,
+          121,
+          126,
+          127,
+          131,
+          148,
+          158,
+          169,
+          182,
+          207,
+          208,
+          209,
+          221,
+          222,
+          223,
+          235,
+          236,
+          253,
+          259,
+          260,
+          261,
+          262
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "PeriodizePDE.lean",
+      "bytes": 7408,
+      "lines": 153,
+      "imports": [
+        "import NavierStokes.PeriodicLocalization",
+        "import NavierStokes.PeriodizeLatticeCover",
+        "import NavierStokes.ResidualRegularity",
+        "import NavierStokes.R3.ProblemStatement"
+      ],
+      "declarations": [
+        {
+          "line": 26,
+          "kind": "theorem",
+          "text": "theorem periodize_sub_lattice (f : SpaceTime \u2192 V) (t : \u211d) (x : Space) (n : Lattice) :"
+        },
+        {
+          "line": 32,
+          "kind": "theorem",
+          "text": "theorem periodize_eventuallyEq_translate {r : \u211d} {f : SpaceTime \u2192 V}"
+        },
+        {
+          "line": 46,
+          "kind": "theorem",
+          "text": "theorem space_fderiv_translate (f : SpaceTime \u2192 V) (n : Lattice) (t : \u211d) (x : Space) :"
+        },
+        {
+          "line": 53,
+          "kind": "theorem",
+          "text": "theorem temporalDerivative_translate (u : VelocityField) (n : Lattice)"
+        },
+        {
+          "line": 57,
+          "kind": "theorem",
+          "text": "theorem spatialDerivative_translate (u : VelocityField) (n : Lattice)"
+        },
+        {
+          "line": 62,
+          "kind": "theorem",
+          "text": "theorem spatialDivergence_translate (u : VelocityField) (n : Lattice)"
+        },
+        {
+          "line": 67,
+          "kind": "theorem",
+          "text": "theorem advection_translate (u : VelocityField) (n : Lattice)"
+        },
+        {
+          "line": 72,
+          "kind": "theorem",
+          "text": "theorem pressureGradient_translate (p : PressureField) (n : Lattice)"
+        },
+        {
+          "line": 77,
+          "kind": "theorem",
+          "text": "theorem spatialLaplacian_translate (u : VelocityField) (n : Lattice)"
+        },
+        {
+          "line": 91,
+          "kind": "theorem",
+          "text": "theorem residual_translate (\u03bd : \u211d) (u : VelocityField) (p : PressureField)"
+        },
+        {
+          "line": 100,
+          "kind": "theorem",
+          "text": "theorem residual_viscosity_congr (\u03bd : \u211d) {u v : VelocityField} {p q : PressureField}"
+        },
+        {
+          "line": 111,
+          "kind": "theorem",
+          "text": "theorem spatialDivergence_congr {u v : VelocityField} {z : SpaceTime}"
+        },
+        {
+          "line": 117,
+          "kind": "theorem",
+          "text": "theorem divergence_free_periodize {r : \u211d} {u : VelocityField} {times : Set \u211d}"
+        },
+        {
+          "line": 133,
+          "kind": "theorem",
+          "text": "theorem navier_stokes_periodize {r \u03bd : \u211d} {u f : VelocityField} {p : PressureField}"
+        }
+      ],
+      "keyword_lines": {
+        "period": [
+          1,
+          2,
+          7,
+          11,
+          18,
+          25,
+          26,
+          27,
+          29,
+          32,
+          35,
+          39,
+          40,
+          115,
+          117,
+          120,
+          127,
+          133,
+          140,
+          147,
+          148,
+          149,
+          153
+        ],
+        "pressure": [
+          9,
+          72,
+          74,
+          75,
+          91,
+          97,
+          100,
+          108,
+          133
+        ],
+        "support": [
+          33,
+          118,
+          134,
+          135
+        ],
+        "residual": [
+          3,
+          91,
+          93,
+          94,
+          95,
+          100,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          113,
+          137,
+          139,
+          150
+        ],
+        "force": [
+          9,
+          131
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "ComparatorR3Theorem.lean",
+      "bytes": 2144,
+      "lines": 46,
+      "imports": [
+        "import NavierStokes.R3FiniteEnergyComparison",
+        "import NavierStokes.R3ActualCandidate",
+        "import NavierStokes.R3.Theorem",
+        "import NavierStokes.R3.ComparatorBridge"
+      ],
+      "declarations": [
+        {
+          "line": 21,
+          "kind": "theorem",
+          "text": "theorem option_C_of_compact_candidate"
+        },
+        {
+          "line": 38,
+          "kind": "theorem",
+          "text": "theorem navier_stokes_breakdown_R3 (\u03bd : \u211d) (h\u03bd : \u03bd > 0) :"
+        }
+      ],
+      "keyword_lines": {
+        "pressure": [
+          22
+        ],
+        "support": [
+          9,
+          27,
+          30,
+          31
+        ],
+        "force": [
+          11,
+          25,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          41
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "ComparatorTheorem.lean",
+      "bytes": 2766,
+      "lines": 55,
+      "imports": [
+        "import NavierStokes.ComparatorBridge",
+        "import NavierStokes.ActualCandidateAssembly",
+        "import NavierStokes.CandidateConsequences",
+        "import NavierStokes.PeriodicPaperComparator"
+      ],
+      "declarations": [
+        {
+          "line": 25,
+          "kind": "theorem",
+          "text": "theorem option_D_of_candidate {u : VelocityField} {p : PressureField} {f : VelocityField}"
+        },
+        {
+          "line": 47,
+          "kind": "theorem",
+          "text": "theorem navier_stokes_breakdown_periodic (\u03bd : \u211d) (h\u03bd : \u03bd > 0) :"
+        }
+      ],
+      "keyword_lines": {
+        "period": [
+          4,
+          7,
+          9,
+          28,
+          29,
+          32,
+          33,
+          38,
+          42,
+          47,
+          50,
+          51,
+          52
+        ],
+        "pressure": [
+          25,
+          42
+        ],
+        "support": [
+          34,
+          35
+        ],
+        "force": [
+          10,
+          11,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          37,
+          38,
+          50
+        ],
+        "CandidateProperties": [
+          26
+        ],
+        "Witness": [
+          23
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "LocalPaperTheorem.lean",
+      "bytes": 10631,
+      "lines": 186,
+      "imports": [
+        "import NavierStokes.LocalPotentialRebundle",
+        "import NavierStokes.LocalResidualFlatness",
+        "import NavierStokes.LocalScheduleWitness",
+        "import NavierStokes.LocalScheduleAngular",
+        "import NavierStokes.LocalScaleApproach",
+        "import NavierStokes.LocalJetBounds",
+        "import NavierStokes.LocalPaperDomain"
+      ],
+      "declarations": [
+        {
+          "line": 26,
+          "kind": "def",
+          "text": "def UniformJetsOnCompacts {V : Type*} [NormedAddCommGroup V] [NormedSpace \u211d V]"
+        },
+        {
+          "line": 34,
+          "kind": "def",
+          "text": "def UniformJetsOnScaleStrips {V : Type*} [NormedAddCommGroup V] [NormedSpace \u211d V]"
+        },
+        {
+          "line": 42,
+          "kind": "def",
+          "text": "def AngularRayGrowth (h Xa : \u211d) (u : VelocityField) : Prop :="
+        },
+        {
+          "line": 53,
+          "kind": "structure",
+          "text": "structure Properties (h qstar Xa Xext heatNormalization : \u211d)"
+        },
+        {
+          "line": 86,
+          "kind": "theorem",
+          "text": "theorem uniformJetsOnCompacts_of_extensions {V : Type*} [NormedAddCommGroup V]"
+        },
+        {
+          "line": 93,
+          "kind": "theorem",
+          "text": "theorem uniformJetsOnScaleStrips_of_extensions {V : Type*} [NormedAddCommGroup V]"
+        },
+        {
+          "line": 100,
+          "kind": "theorem",
+          "text": "theorem selected_exterior_residual_zero {a : \u2115 \u2192 \u2115}"
+        },
+        {
+          "line": 128,
+          "kind": "theorem",
+          "text": "theorem properties_of_schedule {a : \u2115 \u2192 \u2115} (hs : LocalScheduleWitness.Selected a)"
+        },
+        {
+          "line": 179,
+          "kind": "theorem",
+          "text": "theorem local_theorem :"
+        }
+      ],
+      "keyword_lines": {
+        "curl": [
+          65
+        ],
+        "pressure": [
+          54,
+          61,
+          69,
+          72,
+          82,
+          107,
+          117,
+          118,
+          121,
+          131,
+          135,
+          149,
+          155,
+          160,
+          161,
+          181
+        ],
+        "residual": [
+          2,
+          12,
+          67,
+          68,
+          69,
+          73,
+          77,
+          83,
+          89,
+          96,
+          100,
+          102,
+          106,
+          122,
+          123,
+          127,
+          129,
+          148,
+          162,
+          174,
+          183
+        ],
+        "Witness": [
+          3,
+          128,
+          138
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "R3/ParabolicSupport.lean",
+      "bytes": 2989,
+      "lines": 71,
+      "imports": [
+        "import NavierStokes.R3.SpatialSupportScaling"
+      ],
+      "declarations": [
+        {
+          "line": 7,
+          "kind": "class",
+          "text": "class. A sufficiently large spatial dilation puts any compact spatial support"
+        },
+        {
+          "line": 18,
+          "kind": "theorem",
+          "text": "theorem isCompact_affineSpacetime_image {K : Set SpaceTime} (hK : IsCompact K)"
+        },
+        {
+          "line": 26,
+          "kind": "theorem",
+          "text": "theorem CompactPositiveTimeSupport.affineScale {f : VelocityField}"
+        },
+        {
+          "line": 56,
+          "kind": "theorem",
+          "text": "theorem exists_spatialScale_into_quarterCube {K : Set Space} (hK : IsCompact K) :"
+        }
+      ],
+      "keyword_lines": {
+        "support": [
+          1,
+          4,
+          7,
+          25,
+          26,
+          27,
+          29,
+          31,
+          32,
+          34,
+          35,
+          38,
+          48
+        ],
+        "force": [
+          6
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "SharpGluedStageBounds.lean",
+      "bytes": 11814,
+      "lines": 178,
+      "imports": [
+        "import NavierStokes.GluedStageEstimates",
+        "import NavierStokes.SharpPhysicalLogBounds",
+        "import NavierStokes.SharpWaveStageBounds",
+        "import NavierStokes.SharpMeanStageBounds"
+      ],
+      "declarations": [
+        {
+          "line": 45,
+          "kind": "theorem",
+          "text": "theorem signedMeanPotential_printed_bound {qbig : \u211d} (hq : qbig \u2264 ChartScales.Q N) (j m : \u2115) :"
+        },
+        {
+          "line": 72,
+          "kind": "theorem",
+          "text": "theorem signedMeanPressure_printed_bound {qbig : \u211d} (hq : qbig \u2264 ChartScales.Q N) (j m : \u2115) :"
+        },
+        {
+          "line": 90,
+          "kind": "theorem",
+          "text": "theorem direct_printed_bound {qbig : \u211d} (hq : qbig \u2264 ChartScales.Q N) (j m : \u2115) :"
+        },
+        {
+          "line": 99,
+          "kind": "theorem",
+          "text": "theorem signedMeanCurl_printed_bound {qbig : \u211d} (hq : qbig \u2264 ChartScales.Q N) (j m : \u2115) :"
+        },
+        {
+          "line": 135,
+          "kind": "theorem",
+          "text": "theorem potential_printed_bound {qbig : \u211d} (hq : qbig \u2264 ChartScales.Q N)"
+        },
+        {
+          "line": 147,
+          "kind": "theorem",
+          "text": "theorem pressure_printed_bound {qbig : \u211d} (hq : qbig \u2264 ChartScales.Q N)"
+        },
+        {
+          "line": 159,
+          "kind": "theorem",
+          "text": "theorem curl_printed_bound {qbig : \u211d} (hq : qbig \u2264 ChartScales.Q N)"
+        }
+      ],
+      "keyword_lines": {
+        "curl": [
+          99,
+          100,
+          102,
+          104,
+          108,
+          110,
+          111,
+          113,
+          119,
+          120,
+          121,
+          129,
+          131,
+          133,
+          159,
+          162,
+          164,
+          168,
+          170,
+          171,
+          174
+        ],
+        "pressure": [
+          28,
+          29,
+          30,
+          32,
+          33,
+          72,
+          73,
+          75,
+          76,
+          77,
+          78,
+          81,
+          83,
+          84,
+          87,
+          88,
+          147,
+          148,
+          152,
+          154,
+          155,
+          157
+        ],
+        "StageEstimates": [
+          1,
+          11,
+          19,
+          46,
+          62,
+          73,
+          91,
+          100,
+          114,
+          115,
+          137,
+          140,
+          142,
+          145,
+          149,
+          152,
+          154,
+          157,
+          161,
+          164,
+          166,
+          167,
+          172
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "SharpParticularGluing.lean",
+      "bytes": 5905,
+      "lines": 102,
+      "imports": [
+        "import NavierStokes.GluedStageEstimates",
+        "import NavierStokes.SharpPhysicalLogBounds"
+      ],
+      "declarations": [
+        {
+          "line": 12,
+          "kind": "theorem",
+          "text": "theorem glued_bound_of_local {V : Type*} [NormedAddCommGroup V] [NormedSpace \u211d V]"
+        },
+        {
+          "line": 44,
+          "kind": "theorem",
+          "text": "theorem localPotential_bound_of_modes (m : \u2115) {r : \u211d}"
+        },
+        {
+          "line": 72,
+          "kind": "theorem",
+          "text": "theorem localPressure_bound_of_modes (m : \u2115) {r : \u211d}"
+        }
+      ],
+      "keyword_lines": {
+        "pressure": [
+          72,
+          76,
+          80,
+          90
+        ],
+        "StageEstimates": [
+          1
+        ],
+        "residual": [
+          56,
+          84
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "WholeDomainInitializationBounds.lean",
+      "bytes": 7895,
+      "lines": 128,
+      "imports": [
+        "import NavierStokes.WholeDomainActualStageBounds",
+        "import NavierStokes.SharpPhysicalLogBounds"
+      ],
+      "declarations": [
+        {
+          "line": 36,
+          "kind": "theorem",
+          "text": "theorem initialPotential_bound (B N0 m : \u2115) :"
+        },
+        {
+          "line": 43,
+          "kind": "theorem",
+          "text": "theorem initialPressure_bound (B N0 m : \u2115) :"
+        },
+        {
+          "line": 50,
+          "kind": "theorem",
+          "text": "theorem initialDirect_bound (B N0 m : \u2115) :"
+        },
+        {
+          "line": 70,
+          "kind": "theorem",
+          "text": "theorem initial_velocity_of_base_bound (B N0 : \u2115)"
+        },
+        {
+          "line": 111,
+          "kind": "theorem",
+          "text": "theorem initial_pressure_of_base_bound (B N0 : \u2115)"
+        }
+      ],
+      "keyword_lines": {
+        "curl": [
+          83,
+          86,
+          98,
+          104,
+          107,
+          109
+        ],
+        "pressure": [
+          22,
+          32,
+          33,
+          34,
+          43,
+          44,
+          45,
+          46,
+          47,
+          67,
+          68,
+          111,
+          114,
+          115,
+          116,
+          118,
+          119,
+          122,
+          124
+        ],
+        "StageEstimates": [
+          75,
+          77,
+          81,
+          101,
+          117,
+          120
+        ]
+      },
+      "sorry_token_lines": []
+    }
+  ],
+  "file_count": 15
+}

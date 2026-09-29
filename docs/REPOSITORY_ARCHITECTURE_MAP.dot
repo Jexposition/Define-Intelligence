@@ -1,0 +1,39 @@
+digraph RepositoryArchitecture {
+  rankdir=LR;
+  graph [fontname=Helvetica, bgcolor=white];
+  node [shape=box, style=filled, fontname=Helvetica];
+  edge [fontname=Helvetica, color="#555555"];
+  tree [label="Inventory tree", fillcolor="#e8f1ff"];
+  source [label="Live source", fillcolor="#e8f1ff"];
+  parse [label="Source declarations
+and imports", fillcolor="#eef7e8"];
+  env [label="Compiled Lean
+environment", fillcolor="#eef7e8"];
+  join [label="Exact-name join", fillcolor="#fff3d6"];
+  witness [label="ActualCandidateAssembly
+selected_witness", fillcolor="#f8e1ed"];
+  rank [label="FiveRows / Debt /
+scaleDebt", fillcolor="#f8e1ed"];
+  moments [label="PositiveOrderMoments
+and barMoment", fillcolor="#f8e1ed"];
+  periodic [label="periodicVelocity", fillcolor="#f8e1ed"];
+  r3 [label="R3 candidate
+packaging", fillcolor="#f8e1ed"];
+  endpoint [label="NavierStokesR3.
+theorem_1_1", fillcolor="#d8f0dc"];
+  gap [label="CTR-005 value-level
+transport obligation", fillcolor="#ffe0e0"];
+  tree -> source [label="inventory -> contents"];
+  source -> parse [label="parse"];
+  source -> env [label="compile"];
+  env -> join [label="exact declarations"];
+  join -> witness [label="selected route"];
+  witness -> rank [label="rank route"];
+  rank -> moments [label="moment route"];
+  witness -> periodic [label="assembly route"];
+  witness -> r3 [label="packaging route"];
+  r3 -> endpoint [label="formal predicate"];
+  moments -> gap [label="reachability != value equality"] [style=dashed];
+  periodic -> gap [label="support transport not inferred"] [style=dashed];
+  gap -> endpoint [label="review burden"] [style=dashed];
+}

@@ -39,9 +39,10 @@ false.
 
 This is a selected-path specification failure supporting CTR-005. It is
 stronger than an import-graph observation and narrower than a kernel-level
-refutation. The affirmative burden remains with the authors: they must expose
-the missing field-level transport theorem before the paper's five-moment
-mechanism can be treated as established by the exported endpoint.
+refutation. The exported endpoint does not establish the paper's five-moment
+mechanism because the required field-level transport theorem is absent from
+the current record. This is an adverse correspondence finding, not a request
+for the authors to repair or complete the claim.
 
 ## Build validation
 

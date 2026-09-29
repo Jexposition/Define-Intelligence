@@ -1,0 +1,62 @@
+{
+  "date": "2026-09-29",
+  "priority": 144,
+  "scope": "direct raw-source review of five Euler compact-translation, bounded-map, and mean-zero modules",
+  "classification": "source_reviewed",
+  "files": [
+    {
+      "file": "Euler/CylinderCompactTranslation.lean",
+      "imports": ["Euler.LpCylinderTranslation", "Euler.LpDominatedDerivative", "Euler.IsometricActionCalculus", "Mathlib.Analysis.Calculus.MeanValue"],
+      "anchors": "28-44; 47-103; 124-166",
+      "declarations": ["CompactField", "continuous", "toLp", "toLp_ae", "derivative", "derivative_bound", "translation_support", "increment_bound", "hasFDerivAt_zero", "derivativeMap_translation", "translation_hasFDerivAt", "translation_fderiv", "translation_contDiff"],
+      "finding": "Compact smooth cylinder fields have genuine L2 translation orbits, support control, dominated Frechet differentiation, and smoothness."
+    },
+    {
+      "file": "Euler/CylinderCompactBounds.lean",
+      "imports": ["Euler.CylinderCompactTranslation", "Euler.ParameterSobolevCoefficient"],
+      "anchors": "24-39; 52-89; 97-114",
+      "declarations": ["supportMass", "derivative_support", "toLp_norm_le", "norm_iteratedFDeriv_translation_le", "translation_gevrey", "translation_block_bound"],
+      "finding": "Compact support and local derivative bounds become L2 translation/Gevrey and block estimates through a fixed support mass."
+    },
+    {
+      "file": "Euler/CylinderConstantMap.lean",
+      "imports": ["Euler.LpCylinderTranslation", "Euler.ParameterSobolevLinear"],
+      "anchors": "18-41; 52-75",
+      "declarations": ["map", "map_ae", "map_norm", "map_comp", "map_id", "map_translation", "pathMap", "pathMap_norm", "pathMap_translation", "pathMap_orbit_contDiff"],
+      "finding": "Fixed bounded linear maps preserve cylinder L2 classes, translations, paths, and regularity with norm control."
+    },
+    {
+      "file": "Euler/CylinderConstantMapBounds.lean",
+      "imports": ["Euler.CylinderConstantMap"],
+      "anchors": "1; 18-32",
+      "declarations": ["pathMap_block_bound"],
+      "finding": "External-word block bounds propagate through a fixed bounded map up to the operator norm."
+    },
+    {
+      "file": "Euler/CylinderCorrectorMeanZero.lean",
+      "imports": ["Euler.CylinderSlowCurl", "Euler.CylinderPotentialPath", "Euler.CylinderAngleAverageTime"],
+      "anchors": "19-31; 37-60; 66-80",
+      "declarations": ["average_primitive", "pathAverage_primitive", "derivativePath_zero", "pathAverage_derivativePath", "pathAverage_potentialPath", "potentialPath_mean_zero", "pathAverage_slowCurl", "slowCurl_mean_zero"],
+      "finding": "The angular average is preserved by primitive, potential-path, and slow-curl operations under explicit smoothness and zero-mean premises; this is not the five-observable selected NS transport theorem."
+    }
+  ],
+  "dependent_imports": [
+    "Euler/CylinderPathBilinear.lean",
+    "Euler/CylinderScalarPrimitive.lean",
+    "Euler/CylinderRetractRepresentative.lean",
+    "Euler/PacketTerminalDatum.lean",
+    "Euler/PacketCylinderFieldBounds.lean",
+    "Euler/PacketCylinderScalarGradientBounds.lean",
+    "Euler/PacketTerminalDatumBounds.lean",
+    "Euler/TransversePacketCorrectorMean.lean",
+    "Euler/TransversePacketJoinedCorrectorSupport.lean",
+    "Euler/TransversePacketPrimaryCorrector.lean"
+  ],
+  "endpoint_test": {
+    "selected_navier_stokes_symbols_found_in_reviewed_files": false,
+    "angular_mean_preservation": "proved conditionally",
+    "barMoment_or_five_observable_transport": "not stated",
+    "global_pressure_poisson_endpoint": "not stated",
+    "false_or_nonzero_defect": "not obtained"
+  }
+}

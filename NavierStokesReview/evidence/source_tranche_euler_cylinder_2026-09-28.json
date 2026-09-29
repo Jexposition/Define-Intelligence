@@ -1,0 +1,840 @@
+{
+  "tool": "source_tranche_summary.py",
+  "scope": "source navigation only; not a theorem prover or absence detector",
+  "root": ".",
+  "files": [
+    {
+      "file": "Euler/ComparatorEvolutionIdentification.lean",
+      "bytes": 6326,
+      "lines": 131,
+      "imports": [
+        "import Euler.ComparatorTimeShift",
+        "import Euler.EvolutionTimeShift",
+        "import Euler.OrdinaryEulerUniqueness",
+        "import Mathlib.Topology.Order.IntermediateValue"
+      ],
+      "declarations": [
+        {
+          "line": 30,
+          "kind": "def",
+          "text": "def HasLocalEvolutionAtCompactCurl (v : Space \u2192 \u211d \u2192 Space) : Prop :="
+        },
+        {
+          "line": 37,
+          "kind": "def",
+          "text": "def CompactCurlLocalUpgrade : Prop :="
+        },
+        {
+          "line": 43,
+          "kind": "theorem",
+          "text": "theorem hasLocalEvolutionAtCompactCurl_of_upgrade"
+        },
+        {
+          "line": 52,
+          "kind": "theorem",
+          "text": "theorem evolution_field_eq_of_local_evolution"
+        }
+      ],
+      "keyword_lines": {
+        "curl": [
+          19,
+          30,
+          31,
+          37,
+          39,
+          43,
+          45,
+          56,
+          57,
+          91,
+          94
+        ],
+        "support": [
+          31,
+          39,
+          56,
+          91
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "Euler/ComparatorIdentification.lean",
+      "bytes": 1986,
+      "lines": 46,
+      "imports": [
+        "import Euler.ComparatorEvolutionIdentification",
+        "import Euler.OrdinaryEulerMaximal"
+      ],
+      "declarations": [
+        {
+          "line": 17,
+          "kind": "theorem",
+          "text": "theorem maximalVelocity_eq_of_local_evolution"
+        },
+        {
+          "line": 38,
+          "kind": "theorem",
+          "text": "theorem maximalVelocity_eq_of_compactCurlLocalUpgrade"
+        }
+      ],
+      "keyword_lines": {
+        "curl": [
+          10,
+          19,
+          20,
+          27,
+          38,
+          40,
+          41,
+          44
+        ],
+        "support": [
+          19,
+          26,
+          40
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "Euler/ComparatorLocalEvolution.lean",
+      "bytes": 4704,
+      "lines": 99,
+      "imports": [
+        "import Euler.ComparatorEvolutionIdentification",
+        "import Euler.ComparatorLocalCompactVorticity",
+        "import Euler.ComparatorTruncationFamily",
+        "import Euler.ComparatorUniformSpatialJets",
+        "import Euler.DivCurlTensorRecovery",
+        "import Euler.CompactVorticityTimeUpgrade",
+        "import Euler.CompactProjectedEulerLaw"
+      ],
+      "declarations": [
+        {
+          "line": 31,
+          "kind": "def",
+          "text": "def recoveredVelocity (h : EulerExistenceAndSmoothnessR3 u\u2080 v p)"
+        },
+        {
+          "line": 49,
+          "kind": "theorem",
+          "text": "theorem recoveredVelocity_jetLp_uniform (h : EulerExistenceAndSmoothnessR3 u\u2080 v p)"
+        },
+        {
+          "line": 64,
+          "kind": "theorem",
+          "text": "theorem exists_evolution_of_commonCompactCurl"
+        },
+        {
+          "line": 91,
+          "kind": "theorem",
+          "text": "theorem compactCurlLocalUpgrade : CompactCurlLocalUpgrade := by"
+        }
+      ],
+      "keyword_lines": {
+        "curl": [
+          5,
+          24,
+          33,
+          35,
+          43,
+          51,
+          58,
+          64,
+          67,
+          91,
+          95
+        ],
+        "support": [
+          30,
+          33,
+          39,
+          43,
+          45,
+          51,
+          53,
+          56,
+          59,
+          62,
+          67,
+          70,
+          76,
+          89,
+          93,
+          96
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "Euler/ComparatorMaximalSolution.lean",
+      "bytes": 5617,
+      "lines": 113,
+      "imports": [
+        "import Euler.ComparatorSobolevEvolution",
+        "import Euler.ComparatorMaximalFields"
+      ],
+      "declarations": [
+        {
+          "line": 17,
+          "kind": "def",
+          "text": "def maximalDerivativeField (t : L.Time) : SmoothL2Field Space :="
+        },
+        {
+          "line": 20,
+          "kind": "theorem",
+          "text": "theorem maximalDerivativeField_eq_evolution (S : \u211d) (hS : 0 < S)"
+        },
+        {
+          "line": 27,
+          "kind": "theorem",
+          "text": "theorem maximalDerivativeField_jet_continuous (n : \u2115) :"
+        },
+        {
+          "line": 34,
+          "kind": "def",
+          "text": "def maximalDerivativeExtension (x : Space) (t : \u211d) : Space :="
+        },
+        {
+          "line": 37,
+          "kind": "theorem",
+          "text": "theorem maximalDerivativeExtension_eq (t : L.Time) :"
+        },
+        {
+          "line": 42,
+          "kind": "theorem",
+          "text": "theorem maximalVelocityExtension_eq_evolution (S : \u211d) (hS : 0 < S)"
+        },
+        {
+          "line": 48,
+          "kind": "theorem",
+          "text": "theorem maximalVelocityExtension_sobolevSmooth :"
+        },
+        {
+          "line": 53,
+          "kind": "theorem",
+          "text": "theorem maximalDerivativeExtension_sobolevSmooth :"
+        },
+        {
+          "line": 58,
+          "kind": "theorem",
+          "text": "theorem maximalVelocityExtension_hasDerivAt (t : \u211d) (ht : t \u2208 Ioo 0 L.duration) :"
+        },
+        {
+          "line": 82,
+          "kind": "theorem",
+          "text": "theorem maximal_sobolevSolution :"
+        },
+        {
+          "line": 107,
+          "kind": "theorem",
+          "text": "theorem maximal_sobolev_existence_iff (T : \u211d) (hT : 0 < T) :"
+        }
+      ],
+      "keyword_lines": {
+        "pressure": [
+          18,
+          25,
+          84,
+          91,
+          92,
+          100,
+          101,
+          103
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "Euler/ComparatorSingularityNorms.lean",
+      "bytes": 2025,
+      "lines": 46,
+      "imports": [
+        "import Euler.SolutionDefinitions",
+        "import Euler.EulerSingularity"
+      ],
+      "declarations": [
+        {
+          "line": 16,
+          "kind": "theorem",
+          "text": "theorem vorticity_eq_vectorCurl (u : Space \u2192 Space) (hu : ContDiff \u211d \u221e u) :"
+        },
+        {
+          "line": 21,
+          "kind": "theorem",
+          "text": "theorem iSup_ofReal_norm_boundedContinuousFunction"
+        },
+        {
+          "line": 27,
+          "kind": "theorem",
+          "text": "theorem velocityC1Norm_eq (A : SmoothL2Field Space) :"
+        },
+        {
+          "line": 38,
+          "kind": "theorem",
+          "text": "theorem vorticityNorm_eq (A : SmoothL2Field Space) :"
+        }
+      ],
+      "keyword_lines": {
+        "curl": [
+          11,
+          16,
+          17,
+          19,
+          41
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "Euler/ContinuousAccelerationForcing.lean",
+      "bytes": 3569,
+      "lines": 68,
+      "imports": [
+        "import Euler.ContinuousPathComposition"
+      ],
+      "declarations": [
+        {
+          "line": 26,
+          "kind": "def",
+          "text": "def forcing (Q Q\u2081 : P \u2192 C(K,U \u2192L[\u211d] E)) (f : P \u2192 C(K,E)) (v : P \u2192 C(K,U)) (x : P) : C(K,U) :="
+        },
+        {
+          "line": 30,
+          "kind": "theorem",
+          "text": "theorem forcing_contDiff (Q Q\u2081 : P \u2192 C(K,U \u2192L[\u211d] E)) (f : P \u2192 C(K,E)) (v : P \u2192 C(K,U))"
+        },
+        {
+          "line": 37,
+          "kind": "theorem",
+          "text": "theorem forcing_bound (Q Q\u2081 : P \u2192 C(K,U \u2192L[\u211d] E)) (f : P \u2192 C(K,E)) (v : P \u2192 C(K,U))"
+        }
+      ],
+      "keyword_lines": {},
+      "sorry_token_lines": []
+    },
+    {
+      "file": "Euler/ContinuousAccelerationGevrey.lean",
+      "bytes": 4200,
+      "lines": 81,
+      "imports": [
+        "import Euler.ContinuousGramAcceleration",
+        "import Euler.ContinuousGramGevrey",
+        "import Euler.ContinuousAccelerationForcing"
+      ],
+      "declarations": [
+        {
+          "line": 32,
+          "kind": "theorem",
+          "text": "theorem acceleration_eq_solve :"
+        },
+        {
+          "line": 41,
+          "kind": "theorem",
+          "text": "theorem acceleration_contDiff {n : \u2115\u221e\u03c9}"
+        },
+        {
+          "line": 52,
+          "kind": "theorem",
+          "text": "theorem acceleration_gevrey"
+        }
+      ],
+      "keyword_lines": {},
+      "sorry_token_lines": []
+    },
+    {
+      "file": "Euler/ContinuousAccelerationSobolev.lean",
+      "bytes": 4651,
+      "lines": 80,
+      "imports": [
+        "import Euler.ContinuousAccelerationGevrey",
+        "import Euler.ContinuousGramSobolev",
+        "import Euler.ParameterSobolevAcceleration"
+      ],
+      "declarations": [
+        {
+          "line": 26,
+          "kind": "theorem",
+          "text": "theorem forcing_block_bound (directions : \u03b9 \u2192 P) (hd : \u2200 i, \u2016directions i\u2016 \u2264 1) (q : \u2115)"
+        },
+        {
+          "line": 52,
+          "kind": "theorem",
+          "text": "theorem acceleration_block_bound (directions : \u03b9 \u2192 P) (hd : \u2200 i, \u2016directions i\u2016 \u2264 1) (q : \u2115)"
+        }
+      ],
+      "keyword_lines": {},
+      "sorry_token_lines": []
+    },
+    {
+      "file": "Euler/CurlMatrixSymmetry.lean",
+      "bytes": 2195,
+      "lines": 52,
+      "imports": [
+        "import Euler.MeanBoundaryOperator",
+        "import Mathlib.Analysis.InnerProductSpace.Symmetric"
+      ],
+      "declarations": [
+        {
+          "line": 12,
+          "kind": "theorem",
+          "text": "theorem curlMatrix_eq_zero_iff_isSymmetric (A : Space \u2192L[\u211d] Space) :"
+        }
+      ],
+      "keyword_lines": {
+        "curl": [
+          11,
+          12,
+          13,
+          49
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "Euler/CurlTransportAlgebra.lean",
+      "bytes": 6503,
+      "lines": 123,
+      "imports": [
+        "import Euler.MeanVectorIdentities",
+        "import Euler.MeanScalarProductDerivatives"
+      ],
+      "declarations": [
+        {
+          "line": 14,
+          "kind": "theorem",
+          "text": "theorem fderiv_apply_coordinate_sum (f : Space \u2192 Space) (hf : ContDiff \u211d \u221e f)"
+        },
+        {
+          "line": 29,
+          "kind": "theorem",
+          "text": "theorem vectorCurl_convection (u : Space \u2192 Space) (hu : ContDiff \u211d \u221e u) (x : Space) :"
+        },
+        {
+          "line": 85,
+          "kind": "theorem",
+          "text": "theorem vectorCurl_convection_of_divergence_zero (u : Space \u2192 Space)"
+        },
+        {
+          "line": 92,
+          "kind": "theorem",
+          "text": "theorem vectorCurl_gradient_zero (p : Space \u2192 \u211d) (hp : ContDiff \u211d \u221e p) (x : Space) :"
+        },
+        {
+          "line": 98,
+          "kind": "theorem",
+          "text": "theorem vectorCurl_neg (f : Space \u2192 Space) (hf : Differentiable \u211d f) :"
+        },
+        {
+          "line": 102,
+          "kind": "theorem",
+          "text": "theorem vectorCurl_sub (f g : Space \u2192 Space)"
+        },
+        {
+          "line": 109,
+          "kind": "theorem",
+          "text": "theorem vectorCurl_euler_rhs (u : Space \u2192 Space) (p : Space \u2192 \u211d)"
+        }
+      ],
+      "keyword_lines": {
+        "curl": [
+          4,
+          8,
+          10,
+          28,
+          29,
+          30,
+          31,
+          32,
+          53,
+          54,
+          57,
+          73,
+          74,
+          75,
+          76,
+          78,
+          84,
+          85,
+          87,
+          88,
+          89,
+          91,
+          92,
+          93,
+          95,
+          98,
+          99,
+          100,
+          102,
+          104,
+          105,
+          108,
+          109,
+          112,
+          113,
+          118,
+          119,
+          120,
+          121,
+          123
+        ],
+        "pressure": [
+          108
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "Euler/CylinderAngleAverage.lean",
+      "bytes": 8844,
+      "lines": 214,
+      "imports": [
+        "import Euler.LpCylinderRectangular",
+        "import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic"
+      ],
+      "declarations": [
+        {
+          "line": 21,
+          "kind": "def",
+          "text": "def angleCurve (u : CylinderL2 P V) (s : \u211d) : CylinderL2 P V :="
+        },
+        {
+          "line": 25,
+          "kind": "theorem",
+          "text": "theorem angleCurve_continuous (u : CylinderL2 P V) : Continuous (angleCurve P u) :="
+        },
+        {
+          "line": 28,
+          "kind": "def",
+          "text": "def averageIntegral (u : CylinderL2 P V) : CylinderL2 P V :="
+        },
+        {
+          "line": 32,
+          "kind": "theorem",
+          "text": "theorem averageIntegral_add (u v : CylinderL2 P V) :"
+        },
+        {
+          "line": 45,
+          "kind": "theorem",
+          "text": "theorem averageIntegral_smul (r : \u211d) (u : CylinderL2 P V) :"
+        },
+        {
+          "line": 56,
+          "kind": "theorem",
+          "text": "theorem averageIntegral_norm (u : CylinderL2 P V) : \u2016averageIntegral P u\u2016 \u2264 \u2016u\u2016 := by"
+        },
+        {
+          "line": 69,
+          "kind": "def",
+          "text": "def averageLinear : CylinderL2 P V \u2192\u2097[\u211d] CylinderL2 P V where"
+        },
+        {
+          "line": 75,
+          "kind": "def",
+          "text": "def average : CylinderL2 P V \u2192L[\u211d] CylinderL2 P V :="
+        },
+        {
+          "line": 85,
+          "kind": "theorem",
+          "text": "theorem average_norm : \u2016average (V := V) P\u2016 \u2264 1 :="
+        },
+        {
+          "line": 90,
+          "kind": "theorem",
+          "text": "theorem average_translation (a : LiftTangent) (u : CylinderL2 P V) :"
+        },
+        {
+          "line": 106,
+          "kind": "def",
+          "text": "def pathAverage : C(K,CylinderL2 P V) \u2192L[\u211d] C(K,CylinderL2 P V) :="
+        },
+        {
+          "line": 114,
+          "kind": "theorem",
+          "text": "theorem pathAverage_norm : \u2016pathAverage (K := K) (V := V) P\u2016 \u2264 1 := by"
+        },
+        {
+          "line": 123,
+          "kind": "theorem",
+          "text": "theorem pathAverage_translation (a : LiftTangent) (u : C(K,CylinderL2 P V)) :"
+        },
+        {
+          "line": 137,
+          "kind": "theorem",
+          "text": "theorem average_intertwines (L : CylinderL2 P E \u2192L[\u211d] CylinderL2 P F)"
+        },
+        {
+          "line": 157,
+          "kind": "theorem",
+          "text": "theorem average_fullOperator (A : Space \u2192\u1d47 E \u2192L[\u211d] F) (u : CylinderL2 P E) :"
+        },
+        {
+          "line": 165,
+          "kind": "theorem",
+          "text": "theorem pathAverage_fullMultiplier (A : C(K,Space \u2192\u1d47 E \u2192L[\u211d] F))"
+        },
+        {
+          "line": 180,
+          "kind": "theorem",
+          "text": "theorem average_mem (u : Supported P V S hS) :"
+        },
+        {
+          "line": 199,
+          "kind": "def",
+          "text": "def supportedAverage : Supported P V S hS \u2192L[\u211d] Supported P V S hS :="
+        },
+        {
+          "line": 206,
+          "kind": "theorem",
+          "text": "theorem supportedAverage_norm : \u2016supportedAverage (V := V) P S hS\u2016 \u2264 1 := by"
+        }
+      ],
+      "keyword_lines": {
+        "support": [
+          4,
+          12,
+          174,
+          179,
+          180,
+          181,
+          182,
+          187,
+          190,
+          192,
+          193,
+          199,
+          200,
+          201,
+          203,
+          204,
+          206,
+          212
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "Euler/CylinderAngleAverageEvolution.lean",
+      "bytes": 5085,
+      "lines": 111,
+      "imports": [
+        "import Euler.CylinderAngleAverage",
+        "import Euler.LpCylinderCoefficientTime",
+        "import Euler.LinearDuhamelNaturality",
+        "import Euler.LinearDuhamelOperator"
+      ],
+      "declarations": [
+        {
+          "line": 25,
+          "kind": "theorem",
+          "text": "theorem supportedAverage_operator (A : Space \u2192\u1d47 E \u2192L[\u211d] F) (u : Supported P E S hS) :"
+        },
+        {
+          "line": 46,
+          "kind": "def",
+          "text": "def supportedPathAverage : C(K,Supported P V S hS) \u2192L[\u211d] C(K,Supported P V S hS) :="
+        },
+        {
+          "line": 54,
+          "kind": "theorem",
+          "text": "theorem include_supportedPathAverage (p : C(K,Supported P V S hS)) :"
+        },
+        {
+          "line": 57,
+          "kind": "theorem",
+          "text": "theorem supportedPathAverage_norm : \u2016supportedPathAverage (K := K) (V := V) P S hS\u2016 \u2264 1 := by"
+        },
+        {
+          "line": 75,
+          "kind": "theorem",
+          "text": "theorem solution_average (f : C(Icc (0 : \u211d) T,Supported P V S hS)) (a\u2080 : Supported P V S hS) :"
+        },
+        {
+          "line": 86,
+          "kind": "theorem",
+          "text": "theorem solution_average_zero (f : C(Icc (0 : \u211d) T,Supported P V S hS))"
+        },
+        {
+          "line": 101,
+          "kind": "theorem",
+          "text": "theorem solution_full_average_zero (f : C(Icc (0 : \u211d) T,Supported P V S hS))"
+        }
+      ],
+      "keyword_lines": {
+        "support": [
+          6,
+          25,
+          26,
+          27,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          46,
+          47,
+          50,
+          51,
+          54,
+          55,
+          57,
+          75,
+          76,
+          77,
+          78,
+          80,
+          81,
+          82,
+          83,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          98,
+          101,
+          102,
+          108
+        ],
+        "force": [
+          74
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "Euler/CylinderAngleAverageRepresentative.lean",
+      "bytes": 4931,
+      "lines": 100,
+      "imports": [
+        "import Euler.CylinderAngleAverage",
+        "import Euler.CylinderAngleRepresentative"
+      ],
+      "declarations": [
+        {
+          "line": 16,
+          "kind": "theorem",
+          "text": "theorem average_full_translation (a : LiftDomain P) (u : LiftL2 P) :"
+        },
+        {
+          "line": 22,
+          "kind": "def",
+          "text": "def sobolevAverage (q : \u2115) : SobolevSpace P q \u2192L[\u211d] SobolevSpace P q :="
+        },
+        {
+          "line": 25,
+          "kind": "theorem",
+          "text": "theorem sobolevAverage_norm (q : \u2115) : \u2016sobolevAverage P q\u2016 \u2264 1 :="
+        },
+        {
+          "line": 28,
+          "kind": "theorem",
+          "text": "theorem sobolevAngleCurve_continuous {q : \u2115} (u : SobolevSpace P q) :"
+        },
+        {
+          "line": 32,
+          "kind": "theorem",
+          "text": "theorem sobolevAverage_eq_integral {q : \u2115} (u : SobolevSpace P q) :"
+        },
+        {
+          "line": 43,
+          "kind": "theorem",
+          "text": "theorem pointEvaluation_average_kernel (u : SobolevSpace P 3) (x : LiftDomain P) :"
+        },
+        {
+          "line": 55,
+          "kind": "theorem",
+          "text": "theorem pointEvaluation_average_mean (u : SobolevSpace P 3)"
+        },
+        {
+          "line": 72,
+          "kind": "theorem",
+          "text": "theorem average_eq_zero_iff (u : SobolevSpace P 3)"
+        }
+      ],
+      "keyword_lines": {
+        "period": [
+          65,
+          68
+        ],
+        "pressure": [
+          11
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "Euler/CylinderDirichletEquation.lean",
+      "bytes": 5101,
+      "lines": 99,
+      "imports": [
+        "import Euler.CylinderDirichletMean",
+        "import Euler.TransverseNormalResidual"
+      ],
+      "declarations": [
+        {
+          "line": 28,
+          "kind": "theorem",
+          "text": "theorem coordinate_equation_ae (t : Icc (0 : \u211d) T) :"
+        },
+        {
+          "line": 63,
+          "kind": "theorem",
+          "text": "theorem physicalVelocity_ae (t : Icc (0 : \u211d) T) :"
+        },
+        {
+          "line": 68,
+          "kind": "theorem",
+          "text": "theorem physicalDerivative_ae (t : Icc (0 : \u211d) T) :"
+        },
+        {
+          "line": 82,
+          "kind": "theorem",
+          "text": "theorem physical_balance_ae"
+        }
+      ],
+      "keyword_lines": {
+        "residual": [
+          2,
+          9,
+          18
+        ]
+      },
+      "sorry_token_lines": []
+    },
+    {
+      "file": "Euler/CylinderDirichletPhysicalBounds.lean",
+      "bytes": 7856,
+      "lines": 135,
+      "imports": [
+        "import Euler.CylinderDirichletRegularity",
+        "import Euler.CylinderActionWords",
+        "import Euler.LpCylinderPathBounds",
+        "import Euler.TransverseFixedSobolev",
+        "import Euler.FixedEvolutionSobolev",
+        "import Euler.CylinderDirichletSobolev",
+        "import Euler.CylinderDirichletTimeBounds",
+        "import Euler.LpCylinderRectangularRegularity"
+      ],
+      "declarations": [
+        {
+          "line": 66,
+          "kind": "theorem",
+          "text": "theorem physicalVelocity_block_bound (hT1 : T \u2264 1)"
+        },
+        {
+          "line": 89,
+          "kind": "theorem",
+          "text": "theorem physicalDerivative_block_bound (hT1 : T \u2264 1)"
+        }
+      ],
+      "keyword_lines": {},
+      "sorry_token_lines": []
+    }
+  ],
+  "file_count": 15
+}

@@ -1,0 +1,35 @@
+{
+  "priority": 134,
+  "date": "2026-09-28",
+  "scope": "ComparatorChallenges admissions and Euler/EulerProof source foundation",
+  "sources": [
+    {
+      "path": "ComparatorChallenges/NavierStokes.lean",
+      "sha256": "2f81f812237135d56db34771d218cb6e9df37775619f98692608950671e70381",
+      "anchors": ["21-35", "273-284"],
+      "finding": "Standalone Mathlib-only comparator; intentional sorry bodies at navier_stokes_breakdown_R3 and navier_stokes_breakdown_periodic.",
+      "classification": "repository_metadata_defect_not_active_endpoint_contamination"
+    },
+    {
+      "path": "ComparatorChallenges/Euler.lean",
+      "sha256": "fc943d55794962ec2df62fefb316c4e3bf068c175247ef12747a03ee5dc179bb",
+      "anchors": ["21-35", "85-88", "170-184"],
+      "finding": "Standalone Mathlib-only Euler comparator; intentional sorry bodies at euler_breakdown_R3 and exists_compact_smooth_euler_singularity.",
+      "classification": "repository_metadata_defect_not_active_endpoint_contamination"
+    },
+    {
+      "path": "Euler/EulerProof.lean",
+      "sha256": "984e46e90aa982c4588b14929b0b7da19ca270b33fe6a77ee04ed85aeb29f5ad",
+      "line_count": 20755,
+      "import_count": 91,
+      "declaration_count": 1202,
+      "admitted_token_matches": 0,
+      "anchors": ["12489-12545", "12621-12720", "18240-18265", "18420-18473", "18487-18560", "18934-19005", "20519-20745"],
+      "finding": "Extensive Euler analytic, Sobolev, pressure, packet, scale, and parameterised ODE infrastructure; this tranche does not identify a final CMI Euler breakdown theorem or selected Navier-Stokes five-observable transport theorem.",
+      "classification": "external_euler_infrastructure_reviewed_not_semantically_cleared"
+    }
+  ],
+  "overall_finding": "The four comparator admissions are a repository metadata defect, not evidence of active endpoint contamination without an import edge. EulerProof is admitted-token-free but its reviewed declarations have narrower conditional/ODE/analytic scopes than a final CMI endpoint.",
+  "escalation": "none",
+  "absence_scope": "bounded source review only; no repository-wide absence theorem"
+}

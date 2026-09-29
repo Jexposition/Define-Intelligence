@@ -1,0 +1,35 @@
+{
+  "schema": "source-tranche-review/v1",
+  "date": "2026-09-29",
+  "priority": 148,
+  "scope": "Euler cylinder graph, path, product, heat, measure, and support infrastructure",
+  "method": "Direct source inspection with declaration and import anchors",
+  "classification": {
+    "positive_infrastructure": true,
+    "captured_navierstokes_r3_endpoint": false,
+    "selected_field_five_observable_transport_found": false,
+    "nonzero_selected_field_defect_proved": false,
+    "false_proved": false
+  },
+  "token_scan": {
+    "files": 12,
+    "sorry": 0,
+    "admit": 0,
+    "axiom": 0
+  },
+  "records": [
+    {"path":"Euler/CylinderGraphRealization.lean","anchors":"18-24; 26-38; 41-65","finding":"Constructs an L2 graph representative on a prescribed phase graph, with ae representative and norm bound. No selected witness or radial moment transport."},
+    {"path":"Euler/CylinderHeatEquation.lean","anchors":"17-75; 78-135","finding":"Defines finite real heat products and proves linearity, continuity, strong derivative, and generator identities. No selected Navier-Stokes transport."},
+    {"path":"Euler/CylinderLocalSupport.lean","anchors":"25-43; 47-58; 64-97","finding":"Proves support preservation for primitives, derivatives, potential paths, and slow curls, plus derivative vanishing outside closed support. No moment cancellation identity."},
+    {"path":"Euler/CylinderMeasureDescent.lean","anchors":"32-48; 50-79; 81-89","finding":"Proves fundamental-strip, covering-map measure preservation, quotient measure, and deck-equivariant descent. No torus-average/barMoment identity."},
+    {"path":"Euler/CylinderPathAdvection.lean","anchors":"17-30; 32-43; 62-82","finding":"Constructs p dot grad q, proves orbit smoothness, ae and pointwise representation, and majorant. No selected endpoint transport."},
+    {"path":"Euler/CylinderPathBilinear.lean","anchors":"15-32; 39-66; 80-90","finding":"Constructs generic bilinear products by three component decomposition and proves ae/pointwise reconstruction. No paper observable equality."},
+    {"path":"Euler/CylinderPathBilinearBounds.lean","anchors":"23-44","finding":"Proves block and majorant bounds for bilinear paths. Rate control is not radial moment transport."},
+    {"path":"Euler/CylinderPathDerivativeProduct.lean","anchors":"21-56","finding":"Constructs derivative-product paths and proves smoothness, pointwise representation, and derivative-shift majorants. No selected endpoint bridge."},
+    {"path":"Euler/CylinderPathIntegral.lean","anchors":"18-30; 32-49","finding":"Proves translation commutes with time integration and derives smooth translated paths from derivative data. No CMI endpoint result."},
+    {"path":"Euler/CylinderPathProduct.lean","anchors":"42-58; 68-116","finding":"Defines bounded bilinear path application and proves norm, smoothness, ae, and pointwise product realization. No five-observable transport."},
+    {"path":"Euler/CylinderPathProductBounds.lean","anchors":"34-46; 48-58; 62-109","finding":"Proves Sobolev, block, and majorant bounds for products. Quantitative bounds do not imply global radial identities."},
+    {"path":"Euler/CylinderPathProductSupport.lean","anchors":"19-35; 46-82","finding":"Proves scalar, bilinear, derivative-product, and advection support preservation. No integrated radial moment or pressure-Poisson conclusion."}
+  ],
+  "absence_boundary": "No declaration in this tranche mentions barMoment, FiveRowRank, PositiveOrderMoments, selected_witness, CandidateProperties, or the five-observable tuple. This is tranche-level evidence, not a repository-wide nonexistence proof."
+}

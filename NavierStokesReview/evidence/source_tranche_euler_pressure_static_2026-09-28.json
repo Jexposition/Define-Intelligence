@@ -1,0 +1,43 @@
+{
+  "tool": "direct source review",
+  "priority": 138,
+  "scope": "Five Euler modules directly read and cross-checked against the current source map; not a whole-Euler completion claim.",
+  "files": [
+    {
+      "file": "Euler/StaticEulerSolution.lean",
+      "anchors": [24, 32, 60, 78, 116, 158],
+      "imports": ["Euler.StaticEulerCorrection", "Euler.ConstantEulerGraph", "Euler.EulerTimeRescaling", "Euler.LpSmoothFieldAlgebra", "Euler.PacketFieldGraphBounds"],
+      "dependents": ["Euler.StaticEulerParity", "Euler.StaticEulerRegularity"],
+      "finding": "Rescaled local Euler field with interior zero residual, divergence-free identity, continuity, and smoothness; not the Navier-Stokes selected endpoint."
+    },
+    {
+      "file": "Euler/AllOrderDriftPressure.lean",
+      "anchors": [20, 37, 56, 95, 116, 157, 174],
+      "imports": ["Euler.AllOrderDriftFinite", "Euler.CorrectionAssemblyPressureParity"],
+      "dependents": ["Euler.AllOrderDriftEquation", "Euler.CorrectionAssemblySourceTower", "Euler.PacketPhysicalCorrectionPotential"],
+      "finding": "Common lifted pressure, point representative, graph pressure, radial scalar potential, smoothness, parity, and gradient recovery; no global Navier-Stokes Poisson endpoint."
+    },
+    {
+      "file": "Euler/CorrectionAssemblyPressureParity.lean",
+      "anchors": [13, 25, 43, 53, 62, 71, 81],
+      "imports": ["Euler.CorrectionAssemblyParity", "Euler.CorrectionAssemblyReconstruction"],
+      "dependents": ["Euler.AllOrderDriftPressure"],
+      "finding": "Graph reflection, pressure oddness, normalized-potential evenness, and uniqueness under a fixed gradient field."
+    },
+    {
+      "file": "Euler/CorrectionAssemblyReconstruction.lean",
+      "anchors": [21, 27, 34, 41, 52, 64, 73, 88, 96],
+      "imports": ["Euler.CorrectionAssemblyPressure", "Euler.CanonicalGraphPotential", "Euler.CommonPressureRepresentative"],
+      "dependents": ["Euler.CorrectionAssemblyPressureParity", "Euler.CorrectionAssemblyTime"],
+      "finding": "Finite-family pressure representative and graph potential reconstructed from the stated lifted-space hypotheses."
+    },
+    {
+      "file": "Euler/ExactLiftedGraphPressure.lean",
+      "anchors": [20, 29, 36, 52, 60, 68, 75],
+      "imports": ["Euler.ExactLiftedJointDifferentiability", "Euler.CanonicalGraphPotential", "Euler.CommonPressureRepresentative", "Euler.GraphDivergence"],
+      "dependents": ["Euler.ConstantEulerGraph", "Euler.PacketExactPhysicalMomentum", "Euler.PacketExactPressureError", "Euler.PacketForwardExactFields"],
+      "finding": "Exact lifted packet graph pressure and potential with graph divergence-free identity; remains an Euler graph-local result."
+    }
+  ],
+  "classification": "intermediate Euler mathematics; no selected Navier-Stokes bridge or contradiction"
+}

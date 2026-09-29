@@ -93,7 +93,7 @@ The counter-paper must use a split conclusion:
 - **Formal refutation:** not obtained by the residual-feedback, mirror-force,
   pressure-support, or generic moment-blindness arguments alone.
 
-The burden remains on the authors to make the selected-field five-moment
-transport explicit if that mechanism is part of the advertised proof. The
-review must not convert that missing exposition/identification into a false
+The advertised solution claim is not established because the selected-field
+five-moment transport is not present in the current record. The review must
+not convert that missing exposition/identification into a false
 claim that the C/D theorem itself has already been contradicted.

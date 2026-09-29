@@ -1,0 +1,23 @@
+import Lean
+
+#check Lean.Environment
+#check Lean.Environment.constants
+#check Lean.Environment.find?
+#check Lean.Declaration
+#check Lean.ConstantInfo
+#check Lean.ConstantInfo.type
+#check Lean.ConstantInfo.value?
+#print Lean.ConstMap
+#print Lean.Environment
+#check Lean.SMap
+#check Lean.SMap.fold
+#check Lean.SMap.forM
+#check Lean.SMap.toList
+#check Lean.Json
+#check Lean.Json.mkObj
+#check Lean.Json.compress
+#check Lean.Json.str
+#check Lean.Json.arr
+#check Lean.SMap.toList
+#check Lean.Expr.getUsedConstants
+#check Lean.NameSet

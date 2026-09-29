@@ -27,7 +27,7 @@ These are not interchangeable propositions.
 |---|---|---|
 | Identify the paper tuple `$(M,I,J,S,C_p)$` with the selected fields | `ActualCandidateAssembly.Witness` exports no equality to `PositiveOrderMoments.moments`, `FiveProfileMoments.physicalMoments`, `FiveRowRank.FiveRows`, or the paper tuple | The paper's advertised five-moment construction is not established for the exported candidate. |
 | Carry that identity into the residual and force | `CandidateProperties` records the residual identity, but `Witness` does not expose the missing moment-to-residual transport theorem | The selected endpoint cannot by itself certify the paper's stated mechanism. |
-| Establish the analytic premises for the same selected fields | The endpoint consumes residual-jet, extension, comparison, energy, and blow-up data, but no single exported composition theorem identifies all of them with the paper's construction | The authors must provide the source-linked composition proof. |
+| Establish the analytic premises for the same selected fields | The endpoint consumes residual-jet, extension, comparison, energy, and blow-up data, but no single exported composition theorem identifies all of them with the paper's construction | The inspected record does not establish the source-linked composition. |
 | Justify “given, externally applied force” | The formal candidate predicate contains smoothness, support, residual, energy, and blow-up conditions, but no independence or prescribed-data predicate | Residual provenance is a substantive admissibility objection to the paper's interpretation, not by itself a Lean `False`. |
 
 ## Finding

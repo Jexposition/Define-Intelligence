@@ -1,69 +1,266 @@
-# **DEFINE INTELLIGENCE.**
+# Selected-field correspondence in the OpenAI Navier–Stokes formalisation
 
+**Independent source-level review and formal audit**
+**Jexposition, 26 September 2026**
 
-**Epistemological Vacuity and Structural Instability in Automated Blowup Constructions for the 3D Navier-Stokes Equations**
+## How to read this document
 
-# Notes on the Logical Inconsistencies in the Formalised Navier-Stokes Blowup Constructon  
+This file contains a research paper followed by its preserved source-audit
+dossier. The paper is the argument; the dossier is the provenance record. The
+dossier is retained in full so that a mathematician can inspect the source
+declarations, theorem signatures, endpoint traces, counter-probes, and later
+corrections without treating a chronological work log as the paper's logical
+order.
 
-**Author:** $JΣXP$   
+### Companion review and control documents
 
+- [Companion peer review](OpenAI_NavierStokes_Peer_Review_v1.md)
+- [CMI first-review plan](OpenAI_NavierStokes_CMI_First_Review_Plan.md)
+- [Workspace goal and control rules](REVIEW_AUDIT_WORKSPACE_GOAL.md)
+- [Semantic correspondence map](SEMANTIC_CORRESPONDENCE_MAP.md)
 
-**Independent research initiative:** Jexposition 
-**A keyboard cannot generate intellect exceeding that of its typist.**
+### Main manuscript route
 
-**A thousand AI agents have proven to be that of an insufficient sum.**  
-**If the objective is to produce works comparable to Shakespeare using only monkeys and typewriters, a vastly greater quantity of both monkeys and typewriters are therefore required.**
+Read the following sections in order for the publication-level argument:
+
+1. [Executive verdict](#executive-verdict)
+2. [Abstract](#abstract)
+3. [Review question and standard](#1-review-question-and-standard)
+4. [Source and method](#2-source-and-method)
+5. [What the formal endpoint does establish](#3-what-the-formal-endpoint-does-establish)
+6. [Force construction and the smoothness attack](#4-force-construction-and-the-smoothness-attack)
+7. [The five-moment correspondence objection](#6-the-five-moment-correspondence-objection)
+8. [Pressure and localisation](#7-pressure-and-localisation)
+9. [External-force causality](#10-external-force-causality)
+10. [Verdict](#11-verdict)
+11. [References and evidence](#references-and-evidence)
+12. [Technical appendices](#appendix-a-technical-findings-supporting-the-verdict)
+
+The detailed material after the appendices is explicitly labelled [Evidence
+dossier](#evidence-dossier). It supports, qualifies, or records revisions to
+the main argument; it is not a second chronological manuscript and it does not
+silently change the verdict.
+
+### Claim-status discipline
+
+The paper preserves the following distinctions throughout:
+
+| Layer | Established by the current record | Not established by the current record |
+|---|---|---|
+| CMI wording | The forced alternatives are existential mathematical targets, with Fefferman's forward Cauchy framing as part of their interpretation. | A provenance objection alone is not a kernel-level contradiction of an existential proposition. |
+| Lean endpoint | The inspected endpoint has a substantial forced candidate, comparison machinery, and standard foundational dependencies. | Kernel checking alone does not prove that the endpoint is the paper's advertised construction. |
+| Upstream mechanism | Genuine reduced-profile, rank, moment, curl, localisation, pressure, and energy results occur in the source tree. | Reachability or local certificates do not by themselves prove final selected-field transport. |
+| Selected-field correspondence | The review identifies the missing selected-path identification as CTR-005. The paper itself uses the five cumulative moments as premises for exterior matching, stress-tail removal, and the later five-equation correction cycle. | No selected-field theorem has yet been established carrying those identities through the complete production field. Therefore the paper's advertised mechanism is unsupported on the formal record, even though no nonzero defect, impossibility theorem, or `False` has yet been proved. |
+| Force and pressure semantics | Residual provenance and absolute-pressure representation are material semantic audit questions. | Neither is promoted to an unconditional formal refutation without a direct theorem establishing that stronger claim. |
+
+This is a source-grounded audit, not a compiler-status report. Numerical
+experiments, plots, and interface countermodels are used as diagnostics and
+never substituted for a theorem about the concrete selected field.
+
+<details>
+<summary>Audit control record and dated evidence updates</summary>
+
+The following material is retained for provenance. It is not part of the
+publication argument; read the Executive Verdict below for the paper's actual
+line of reasoning.
+
+## Audit status and revision record
+
+The following subsections document the current audit state and dated evidence
+updates. They are control information for the paper, not additional arguments.
+
+### Live audit state (2026-09-29)
+
+The authoritative register currently records 2,790 indexed modules, 588
+modules in the captured Navier–Stokes endpoint closure, 901 evidence-inspected
+rows, 1,882 source-indexed rows still queued for semantic review, 0 missing
+project import edges, 10 source rows containing a `sorry` token, and 73
+supplemental evidence records. “Outside the captured endpoint closure” is a
+scope label, not a claim that a module is dead or unreachable in OpenAI’s own
+build graph. Earlier addenda retain historical tranche counts. The remaining
+selected-field composition and full-repository coverage are not yet closed.
+
+### Audit evidence update: Priority 154–155 source tranches (2026-09-29)
+
+The latest source reviews and machine-readable evidence are part of the
+paper-to-code record:
+
+- [Priority 154: Euler transport, frame, and heat-source review](../NavierStokesReview/src/audit/priority_154_euler_transport_frame_heat_source_review_2026-09-29.md)
+- [Priority 154 machine-readable evidence](../NavierStokesReview/evidence/source_tranche_euler_transport_frame_heat_2026-09-29.json)
+- [Priority 155: Euler Gaussian and Gevrey review](../NavierStokesReview/src/audit/priority_155_euler_gaussian_gevrey_source_review_2026-09-29.md)
+- [Priority 155 machine-readable evidence](../NavierStokesReview/evidence/source_tranche_euler_gaussian_gevrey_2026-09-29.json)
+- [Current semantic coverage register](../NavierStokesReview/evidence/semantic_coverage_register_full_2026-09-29.md)
+
+The two tranches add positive evidence for conditional Euler transport,
+Gaussian heat, composition, continuation, compactness, and flow/Gevrey bounds.
+They do not establish the selected Navier–Stokes endpoint or a final Cartesian
+transport theorem for `(M,I,J,S,C_p)`. They do not prove a nonzero moment
+defect, impossibility, or kernel `False`; the defensible status remains
+`CTR-005`: selected-field paper-to-code correspondence not established.
+
+> Audit addendum (2026-09-28): Priority 84 source review found exact positive-axis, radial-heat, release-moment, and torus-average intermediate theorems in the live source tree. These are not treated as proof of the complete selected Cartesian `(M,I,J,S,C_p)` transport. See `NavierStokesReview/src/audit/priority_84_axis_heat_release_torus_source_review_2026-09-28.md`.
+
+> Audit addendum (Priority 85, 2026-09-28): `RepairConeBounds` contains a genuine reduced-profile five-coordinate moment equality and physical five-row/stock transport under explicit chart hypotheses. The review therefore does not claim that five-moment mathematics is absent repository-wide. The open correspondence question is the final composition into the selected Cartesian field and public `Witness`; see `NavierStokesReview/src/audit/priority_85_signed_geometry_repair_cone_source_review_2026-09-28.md`.
+
+> Audit addendum (Priority 86, 2026-09-28): `BaseRankPatch.five_rows` supplies a direct local `FiveRowRank.FiveRows` theorem for the full final base, with accompanying cycle-induction, rank-state, compensation, and mean-stage results. These local bridges are not treated as the final whole-space selected-Cartesian composition. See `NavierStokesReview/src/audit/priority_86_rank_cycle_compensation_source_review_2026-09-28.md`.
+
+### Historical source-tier snapshot: primary bounds, slow-axis, moving moments, and pressure tests
+
+The next four inspections cover `ActualPrimaryBounds.lean`,
+`ActualSlowAxis.lean`, `MovingMomentBounds.lean`, and
+`R3/PressureTestBounds.lean`. They add native velocity/pressure jet and
+periodised copy-sum bounds, reduced slow-axis and axis-jet identities,
+moving-strip pressure-mass/radial-moment class bounds, rank-stage support
+closure, and Fourier/H3/Riesz-test estimates for comparative pressure recovery.
+
+These are concrete intermediate results. They do not prove the final selected
+Cartesian field's `(M,I,J,S,C_p)` after the complete sum/curl/localisation,
+periodisation, torus-average, radial-pullback, support/integrability, and axis
+route. Comparative pressure-test estimates are not an absolute selected
+pressure-Poisson representative. No impossibility theorem or kernel `False`
+was obtained. The live register now contains 93 explicit source reviews and
+505 reachable modules awaiting semantic classification.
+
+### Historical source-tier snapshot: R3 breakdown, primary coherence, mean bounds, and signed waves
+
+The next source pass inspected `R3/CandidateBreakdown.lean`,
+`ActualPrimaryCoherence.lean`, `MeanMomentBounds.lean`, and
+`PhysicalSignedWave.lean`. The R3 module proves the formal no-global-competitor
+consequence and a uniform (L^2) square bound. The primary-coherence module
+proves positive-radius global potential representations, periodicity,
+smoothness, axis-zero germs, and component-level Cartesian-curl identities.
+The mean-bound module proves torus-average, radial-weight, pressure-mass, and
+radial-moment class identities. The signed-wave module proves concrete
+potential, cutoff, pressure, periodicity, smoothness, and Cartesian-curl
+identities for wave and primary components.
+
+These are substantive intermediate results. They do not prove the final
+selected `ASum`/`BSum`/`PSum` field's `(M,I,J,S,C_p)` after the complete
+sum/curl/localisation/periodisation/torus-average/radial-pullback,
+support/integrability, and axis route. A cutoff-gradient commutator remains a
+term to evaluate, not a proved nonzero defect. No impossibility theorem or
+kernel `False` was obtained. The live register now contains 89 explicit source
+reviews and 509 reachable modules awaiting semantic classification.
+
+</details>
 
 ## Executive verdict
 
-OpenAI's published claim to have solved the Navier–Stokes problem is **rejected
-as unestablished on the inspected record**. This is a paper-level negative
-finding, not a request for a compiler error. OpenAI claimed a solution of the
-Navier–Stokes problem, so the burden is to exhibit one selected construction
-whose equations, regularity, force, and load-bearing five-moment mechanism are
-the same object. The source does export an R³ C/D-shaped theorem, but that
-export does not identify its selected fields with the construction used in the
-paper. That selected-field transport is not exposed. The result is a
-publication-blocking failure of the affirmative solution record. The narrower
-statement that no kernel-level `False` has yet been derived is only a status of
-the review's stronger contradiction search; it is not an acceptance of the
-published solution.
+OpenAI's published claim is **not established on the inspected
+paper-to-code record**. The repository contains a substantial Lean endpoint
+with a forced whole-space breakdown proposition, and the inspected endpoint
+has standard foundational axiom dependencies. Those facts do not establish
+that the endpoint is the five-moment construction described in the paper.
+
+The load-bearing finding is CTR-005: the exported `selected_witness` does not
+expose a theorem identifying the paper's five cumulative quantities
+
+$$
+(M,I,J,S,C_p)
+$$
+
+with the final Cartesian velocity, pressure, residual, and force used by the
+whole-space endpoint. This is a failure to discharge the affirmative burden
+of the published solution claim. It is distinct from a kernel-level
+refutation: the review has not proved `False` from the selected endpoint and
+therefore does not describe the literal existential C/D proposition as
+formally refuted.
+
+This omission matters because the paper does not use the five quantities as
+decorative profile labels. It uses their matching to preserve the heat
+exterior, remove integrated pressure and stress tails, restore the profiles
+after modulation, and close the later five-equation correction cycle. The
+formal record therefore fails to establish the downstream conclusions for the
+exported fields, while still falling short of a proof that those conclusions
+are mathematically false.
 
 ## Abstract
 
 OpenAI presents its paper and public announcement as a solution of the
-Navier–Stokes existence and smoothness problem, specifically by claiming the
-forced alternatives in Charles Fefferman's Clay Mathematics Institute
-formulation. This paper therefore evaluates that affirmative solution claim,
-not an optional implementation detail. The review separates kernel validity,
-the exported endpoint specification, and whether the endpoint is the
-five-moment construction used to justify the advertised solution.
+Navier–Stokes existence and smoothness problem by claiming the forced
+alternatives in Charles Fefferman's Clay Mathematics Institute formulation.
+This paper audits that claim at three levels: Lean-kernel validity, the exact
+proposition exported by the repository, and semantic correspondence between
+that proposition and the construction described in the paper.
 
-The inspected endpoint is not refuted by a compiler error or by the use of an
-external force. The repository contains a genuine five-coordinate upstream
-moment repair, a selected forced candidate, and a standard-axiom-only
-dependency report for the inspected headline declarations. The decisive
-adverse result is narrower: the exported `selected_witness` does not expose a
-field-level equality identifying the paper's $(M,I,J,S,C_p)$ moments with the
-selected velocity, pressure, residual, and force. A zero-sorry probe proves
-that the witness type does not entail an arbitrary five-moment certificate.
+The source contains genuine five-coordinate repair mathematics, a selected
+forced candidate, whole-space comparison infrastructure, and standard-axiom
+dependency reports for the inspected endpoint. The adverse result is more
+specific than a compiler objection: the final witness does not expose a
+field-level transport theorem carrying the paper's named moments
+\((M,I,J,S,C_p)\) through the selected Cartesian fields, residual estimates,
+pressure recovery, force extension, and final C/D consequences. Zero-sorry
+review probes establish interface non-implication, not emptiness of the
+selected witness; the missing result is a concrete selected-path composition
+theorem.
 
-That is a load-bearing failure of the authors' advertised five-moment proof
-record. The publication-level verdict is therefore **the paper's claimed
-solution is not established by the exposed selected-field correspondence**.
-The inspected R³ theorem is a separate level: it exports a literal C/D-shaped
-proposition, but that fact does not establish that the proposition is the
-five-moment Navier–Stokes solution described and marketed in the paper. This
-paper does not claim that the literal endpoint has already been formally
-refuted; it rejects the published solution claim because its affirmative proof
-record is incomplete at the load-bearing composition boundary.
+This is a load-bearing failure of the advertised five-moment proof record.
+The publication-level verdict is therefore **not established as a CMI solution
+due to a selected-field correspondence failure**. The inspected R³ theorem is
+a separate level: it exports a literal C/D-shaped proposition, but that fact
+does not establish that the proposition is the five-moment Navier–Stokes
+solution described and marketed in the paper.
+
+The review also separates objections that do not presently refute the claim.
+Residual-defined forcing is a provenance concern, but the formal C/D predicate
+contains no independence axiom. The exact Newtonian energy identity and
+solenoidal assembly remove broad energy-mismatch and raw-stage-divergence
+objections. Compact pressure support alone does not imply pressure or velocity
+triviality. The off-axis chart and on-axis limit are both represented, but
+their complete transport into the final radial moment remains unproved.
 
 The phrase **not formally refuted** reports only that the review has not yet
-derived `False` from the selected Lean endpoint; it is not evidence that the
-missing bridge is true. A formal refutation would require a zero-sorry
-contradiction on the selected dependency path or a false mandatory premise
-proved for the selected fields. That stronger result remains a separate
-research target.
+derived `False` from the selected Lean endpoint. A formal refutation would
+require a zero-sorry contradiction on the selected dependency path or a false
+mandatory premise proved for the selected fields. That stronger result remains
+a separate research target, and its absence is not affirmative evidence for
+the published claim.
+
+### CMI wording and the residual-construction nuance
+
+The official Fefferman statement describes \(f_i(x,t)\) as the components of a
+given, externally applied force and imposes global smoothness, spatial decay
+or periodicity, and energy conditions on the relevant alternatives. That
+language supplies the physical interpretation of the data, but Alternatives
+(C) and (D) are existential mathematical propositions. They do not introduce
+a formal independence predicate saying that a term called \(f\) may not have
+been designed from a selected solution.
+
+This matters because OpenAI's own Navier--Stokes paper explicitly uses the
+residual-design route: it chooses a flow and pressure, defines the momentum
+residual as the force before the singular time, and makes smooth cancellation
+of that residual the central construction problem. Consequently, the review
+does not claim that residual-defined forcing is automatically forbidden by the
+literal CMI quantifier. The correct audit conclusion is more exact: the
+current record does not establish that the selected Lean field is the field
+described by the paper, with the five cumulative moments, stage corrections,
+pressure construction, localisation, all-order residual cancellation, and
+whole-space obstruction transported into the exported witness. This is a
+reason to reject the advertised proof claim on the present record, not a
+request for OpenAI to repair it. The active research task is to falsify the
+construction where possible or independently complete the missing calculation
+without treating the claim as provisionally valid.
+
+The same distinction applies to the companion Euler paper. Its parent--child
+construction asserts exact smooth stage solutions and a stability-based limit.
+Nested time intervals alone do not establish a temporal kink or a Zeno failure;
+those must be proved from the actual Lean stage-matching and summability
+identities. The source-grounded wording and page-level crosswalk are recorded
+in `NavierStokesReview/evidence/paper_nuance_crosswalk_2026-09-27.md`.
+
+### Source-to-claim correspondence map
+
+The accompanying [`SEMANTIC_CORRESPONDENCE_MAP.md`](SEMANTIC_CORRESPONDENCE_MAP.md)
+is part of the evidence presentation, not a build-status appendix. It maps the
+paper's base profile, pulse/correction mechanism, five moments, pressure,
+residual force, localisation, and R3 packaging to the declarations that
+construct them. It also states the exact transport obligations required before
+the Lean endpoint can be identified with the paper's advertised construction.
+The key distinction is between a theorem about an individual stage or finite
+prefix and a theorem about the final selected Cartesian field after the actual
+`tsum`, curl-cutoff commutator, torus averaging, radial integration, pressure
+assembly, and whole-space packaging. The former is positive source evidence;
+the latter is the load-bearing correspondence question under CTR-005.
 
 ### Burden of proof for the advertised solution
 
@@ -83,14 +280,14 @@ by the theorem. A repository-wide collection of supporting modules cannot
 carry that burden if the final witness does not identify the paper's
 load-bearing objects with the selected fields.
 
-Accordingly, this paper rejects the advertised solution claim on the inspected
-record. That conclusion does not depend on first proving a contradiction in
+Accordingly, this paper finds the advertised solution claim not established
+on the inspected record. That conclusion does not depend on first proving a contradiction in
 Lean. A zero-sorry `False` theorem would be a stronger disproof of the source
 endpoint; it is not a prerequisite for finding that the affirmative paper has
 failed to establish its claimed solution. The distinction is deliberate:
 absence of a formal refutation is not positive evidence for the published
-claim, and the unresolved correspondence remains the authors' burden to
-discharge.
+claim. The unresolved correspondence is an adverse defect in the advertised
+paper-to-code claim on the present record.
 
 This is not a review of an optional implementation detail. OpenAI's public
 announcement presents the work as a solution of the Navier–Stokes existence
@@ -101,6 +298,58 @@ velocity blow-up, and the resulting nonexistence conclusion. The adverse
 finding in this paper therefore addresses the claim OpenAI actually published:
 the inspected record does not establish that the selected endpoint is the
 five-moment Navier–Stokes construction used to support that solution claim.
+
+## Formal obligations and independent analytical context
+
+The correspondence claim can be stated as one missing selected-path theorem.
+For the actual exported fields (u,p,f), let
+
+$$
+\mathcal M(u,p,f)=(M(u),I(u),J(u),S(u,p,f),C_p(u,p,f)).
+$$
+
+The paper's mechanism requires a theorem of the following form, with every
+map and domain instantiated rather than left as an interface parameter:
+
+$$
+\begin{aligned}
+&\mathcal M(u,p,f)(t)=\operatorname{promoteDebt}(d_t),\\
+&\operatorname{promoteDebt}(P,J_\theta,J_z)
+   =(0,0,-P,-J_\theta,-J_z),\\
+&\text{and these equalities are transported through}\quad
+\texttt{StateRealization.chartIdentity},\ \texttt{CandidateProperties},\
+\text{and the exported }\texttt{selected\_witness}.
+\end{aligned}
+$$
+
+The inspected source proves substantial upstream algebra and selected stage
+invariants, but it does not expose this complete equality for the final mixed
+Cartesian field. The following obligations therefore remain distinct:
+
+| Obligation | Required selected theorem | Current classification |
+|---|---|---|
+| Five-moment transport | Compute ((M,I,J,S,C_p)) on the exported (u,p,f) and identify the promoted debt | Open; CTR-005 |
+| Absolute pressure semantics | Establish the selected global Poisson/Leray representative, not only pressure differences | Open comparative audit; not a compact-support contradiction |
+| Chart scope | Transport the (r>0) chart identity to the axis limit used by `origin_blowup` | Local identities proved; complete composition open |
+| Field-level calculation | Evaluate the actual curl/localisation, torus average, `barMoment`, and infinite `tsum` | Open; CALC-26--36 are partial completions |
+| Force provenance | Formalise any stronger independence or forward-data admissibility predicate before using it as a disproof | Provenance objection only; CTR-012 |
+| Admission scope | Separate repository-wide `sorry` metadata from the selected endpoint's axiom report | Four challenge-file admissions are outside the inspected endpoint |
+
+This formulation prevents a type-level countermodel from being mistaken for a
+counterexample to the concrete selected field. Conversely, it prevents the
+existence of upstream modules from being treated as proof that their invariants
+reach the exported endpoint.
+
+Independent analytical context is relevant but not dispositive. Constantin,
+Ignatova, and Vicol study real-analytic forcing under anisotropic Type II
+bounds and exact axisymmetry in the collapsing core. They prove regularity at
+the putative singular point in that analytic class and derive that a force
+with the OpenAI-type properties, if bounded in local (C^2) up to the
+singular time, cannot be real analytic or vanish identically near the point.
+This is consistent with a smooth, cutoff-based non-analytic force. It does
+not refute the literal smooth-forced C/D alternative, but it places the
+construction in a narrow non-analytic forced class. The paper is available at
+[arXiv:2609.20803](https://arxiv.org/abs/2609.20803).
 
 ## A selected-path obstruction to residual cancellation
 
@@ -177,7 +426,7 @@ below are tied either to source declarations or to zero-sorry Lean probes.
 The audit followed the selected path:
 
 $$
-\texttt{ActualCandidateAssembly.selected\textttwitness}
+\texttt{ActualCandidateAssembly.selected\_witness}
 \to
 \texttt{GermCandidateAssembly}
 \to
@@ -360,6 +609,44 @@ This means the witness envelope cannot certify the paper's five-moment
 transport by its type alone. It does not prove that the concrete selected
 velocity violates the five integrals. That second statement needs a
 field-level computation.
+
+### Why the missing bridge is load-bearing
+
+The issue is not simply that the tuple `(M,I,J,S,C_p)` is absent from the
+public proposition. The supplied OpenAI paper uses the five cumulative radial
+integrals as premises in several later arguments. In Section 4.2 and Lemma
+4.4, matching the five integrals is used to preserve the outer pressure and
+velocity fields and to remove integrated stress outside the joining annulus.
+Appendix A uses the total moment identities to remove radial stress tails.
+Section 5 and Appendix B restore the five integrals after joining and shear
+modulation. Section 8 then solves a five-equation correction system: two
+equations preserve zero angular-momentum and axial-flux integrals, while
+three cancel the defects `(P,J_θ,J_z)`. Section 9 uses those preserved
+identities in the residual-improvement cycle. [OpenAI, 2026, Sections 4.2,
+5, 8–9 and Appendix A]
+
+This makes CTR-005 a proof-engine correspondence failure, not a missing
+explanatory label. If Lean does not prove that the final selected Cartesian
+fields carry the required identities, then the formal record does not
+establish that the paper's exterior matching, stress-tail cancellation,
+modulation repair, or correction-cycle conclusions apply to those fields.
+The point is conditional in exactly one direction: absence of the transport
+theorem does not prove that the identities are false, but it does prevent the
+paper's downstream arguments from being verified for the exported witness.
+The current status is therefore **not established**, not `False`.
+
+| Paper dependency | Role of the five moments in the paper | Status at the selected Lean endpoint |
+| --- | --- | --- |
+| Exterior matching | Preserves the heat-exterior pressure and velocity beyond the joining radius | No selected-field transport theorem established |
+| Stress-tail removal | Uses total moment identities to eliminate radial stress tails | Not connected to the exported Cartesian field |
+| Modulation repair | Restores all five integrals after high-frequency modulation | Upstream repair algebra exists; final-field application is unproved |
+| Correction cycle | Preserves two rows and cancels three defects `(P,J_θ,J_z)` | Runtime three-debt repair is present; its identification with the paper's five selected-field identities is unproved |
+
+Source-level evidence for this distinction is retained in the [selected
+endpoint moment transport obstruction](../NavierStokesReview/evidence/selected_endpoint_moment_transport_obstruction_2026-09-25.md),
+the [selected moment transport source trace](../NavierStokesReview/evidence/selected_moment_transport_source_trace_2026-09-25.md),
+the [full selected transport audit](../NavierStokesReview/evidence/selected_transport_audit_full_2026-09-28.md),
+and the [load-bearing paper dependency matrix](../NavierStokesReview/evidence/paper_moment_dependency_matrix_2026-09-29.md).
 
 ### The profile-tail collision route and its exact limit
 
@@ -621,22 +908,20 @@ The resulting verdict is:
 > witness has not yet been proved.**
 
 The two clauses have different logical roles. The first is the review verdict:
-the authors have not discharged the burden of showing that the exported
-candidate is the five-moment construction described in the paper and that the
-required analytic premises hold for that same candidate. The second is a
-narrow statement about the present refutation programme: no zero-sorry proof of
-`False` has yet been derived from the selected endpoint. Absence of that
-refutation is not affirmative evidence for the authors' claim, and the review
-does not carry an equal burden to manufacture the authors' missing composition
-theorem.
+the source record has not established that the exported candidate is the
+five-moment construction described in the paper or that the required analytic
+premises hold for that same candidate. The second is a narrow statement about
+the present refutation programme: no zero-sorry proof of `False` has yet been
+derived from the selected endpoint. Absence of that refutation is not
+affirmative evidence for the published claim.
 
-The burden is asymmetric. OpenAI must establish the central solution claim made in the
-paper: that the selected fields are the advertised five-moment construction
-and that the analytic premises used by the endpoint hold for those same
-fields. The reviewer need not prove the negation of the literal existential
-endpoint before concluding that this published claim has not been established.
-The missing composition theorem is therefore a substantive negative review
-finding, not a neutral request for optional documentation.
+The review can therefore reject the advertised solution claim without first
+proving the negation of the literal existential endpoint. The missing
+composition theorem is a substantive negative finding, not a neutral request
+for optional documentation. The next work is adversarial source analysis:
+derive a concrete contradiction if the selected field cannot carry the paper's
+premises, or independently close the calculation only if the source supports
+it.
 
 The load-bearing objection is CTR-005: the missing selected-path transport of
 the paper's five moments into the actual velocity, pressure, residual, and
@@ -962,6 +1247,67 @@ five-moment transport requirements.
 Evidence: `global_germ_transport_audit_2026-09-24.md`,
 `endpoint_contract_nonimplication_2026-09-24.md`.
 
+## Evidence dossier
+
+The material below is a preserved source and audit dossier. It is deliberately
+not deleted or compressed: its purpose is to retain the declarations, source
+paths, tranche reviews, calculations, probe results, corrections, and unresolved
+questions needed for reproducibility. It should be read after the main
+manuscript and appendices, not as a chronological substitute for them.
+
+Each dossier section has one of four roles:
+
+- **positive source evidence**, showing what the formalisation genuinely proves;
+- **correspondence analysis**, testing whether those results reach the advertised
+  selected Cartesian field;
+- **semantic analysis**, comparing the endpoint with the CMI and paper-level
+  interpretation; or
+- **open calculation**, recording a test that has not yet yielded a theorem.
+
+The dossier therefore preserves important work without inflating an open
+calculation into a refutation. In particular, the current classification
+remains `CTR-005` / selected-field paper-to-code correspondence not
+established. A nonzero commutator defect, an impossibility theorem, or a kernel
+derivation of `False` would require its own direct evidence and would be
+recorded as a status change rather than inferred from this heading.
+
+### Dossier navigation
+
+| Evidence lane | What it is for |
+|---|---|
+| Global germ and endpoint transport | Records the positive selected-path chain and its exact packaging boundary. |
+| Moment, rank, and localisation analyses | Separates reduced-profile certificates from final Cartesian transport. |
+| Pressure and force provenance | Separates comparative pressure results and residual-designed forcing from stronger semantic claims. |
+| Euler companion audits | Keeps the Euler interval and Gaussian/Gevrey analyses separate from the Navier–Stokes endpoint. |
+| Repository coverage and source tranches | Records which source files were inspected, what was found, and what remains open. |
+
+### Figures and tables for the paper version
+
+The publication version should render, rather than merely mention, the
+following reader-facing objects. They are explanatory figures, not evidence
+seals:
+
+1. **Figure 1: Three-layer correspondence map.** Fefferman's CMI target,
+   OpenAI's paper mechanism, and the Lean endpoint, with each claimed bridge
+   labelled `proved`, `partially proved`, or `not established`.
+2. **Figure 2: Selected-field pipeline.** Reduced profile certificates,
+   potential lift, curl, localisation, series summation, periodisation,
+   torus-average/radial pullback, and the public `Witness` boundary.
+3. **Figure 3: Force provenance.** The forward Cauchy direction
+   `(u_0,f) -> (u,p)` beside the residual construction `(u,p) -> f`.
+4. **Figure 4: Coverage and evidence map.** Endpoint closure versus the
+   repository-wide inventory, without using “unreachable” as a synonym for
+   dead code.
+5. **Table 1: Claim-status matrix.** CTR-005, CTR-012, pressure semantics,
+   axiom hygiene, and the retracted objections.
+6. **Table 2: Source-to-claim register.** Each load-bearing paper assertion,
+   its Lean declarations, the exact transport theorem required, and its current
+   evidence status.
+
+No toy numerical scan is presented as proof of the selected Lean field. Any
+future plot must identify its exact field-level input, discretisation,
+convergence checks, and the proposition it can and cannot support.
+
 ## Global germ transport: what the source does and does not connect
 
 The selected construction contains a genuine transport chain before the final
@@ -1021,8 +1367,8 @@ false, before declining to accept a paper whose central construction has not
 been transported into its exported endpoint. The primary conclusion is
 therefore: the public five-moment solution claim is **not established** by the
 source as presently exposed. The literal endpoint is materially populated,
-but that narrower fact does not discharge the authors' burden for the published
-solution claim. A `False` theorem would be a separate, stronger
+but that narrower fact does not establish the published solution claim. A
+`False` theorem would be a separate, stronger
 result, not a prerequisite for this conclusion.
 
 Evidence: `NavierStokesReview/evidence/official_claim_transport_matrix_2026-09-24.md`.
@@ -1033,10 +1379,10 @@ The relevant review decision is not a vote on whether Lean can type-check the
 exported endpoint. It is whether the inspected record establishes the claim
 that OpenAI presents to readers: that the selected five-moment construction is
 the construction proving a CMI Navier–Stokes alternative. On that question the
-burden is asymmetric. OpenAI must exhibit the selected-field composition and
-transport theorems; the reviewer does not have to prove the negation of the
-literal existential endpoint before declining acceptance of the advertised
-solution claim.
+burden is asymmetric. The review may reject the advertised solution claim
+because the inspected source record does not establish the selected-field
+composition and transport. The reviewer does not have to prove the negation of
+the literal existential endpoint before making that adverse finding.
 
 The correct publication conclusion is therefore **do not accept the published
 CMI-solution claim on the inspected record**. The reason is affirmative and
@@ -1333,12 +1679,11 @@ axis and outer-support terms are included. Until that calculation is proved in
 Lean, this paper makes no unsupported claim that `Delta m ≠ 0` or that the
 selected witness yields `False`.
 
-The burden remains with the authors because their published theorem claims
-that the selected construction establishes the five-moment cancellation and
-the CMI alternatives. The source-backed result is therefore a strengthened
-publication objection: the advertised solution remains **NOT ESTABLISHED**
-until the selected Cartesian-to-radial transport theorem and its numerical or
-symbolic consequences are exhibited.
+The source-backed result is therefore a strengthened publication objection:
+the advertised solution remains **NOT ESTABLISHED** because the inspected
+record does not establish the selected Cartesian-to-radial transport theorem
+or its numerical or symbolic consequences. This is an adverse conclusion, not
+an invitation to treat the claim as pending repair.
 
 Evidence: `NavierStokesReview/evidence/selected_direct_prefix_field_2026-09-25.md`.
 
@@ -1442,6 +1787,101 @@ claim remains **NOT ESTABLISHED** until the complete selected-field
 calculation is supplied.
 
 Evidence: `NavierStokesReview/evidence/selected_cutoff_curl_commutator_2026-09-25.md`.
+
+## A precise remaining calculation
+
+The selected support estimates and the spatial cutoff are not interchangeable.
+The support estimates constrain a similarity radius by
+
+$$r(w)\leq C\sqrt{q(w)},$$
+
+whereas the cutoff is identically one only under the Cartesian inequalities
+
+$$x_0^2+x_1^2<\frac1{32},\qquad |x_2|<\frac18.$$
+
+The current source record does not transport the former condition into the
+latter for the selected production stages. Therefore the published
+order-two moment cancellation for the uncut direct profile cannot be used as
+the value of the cutoff-weighted production moment. The remaining calculation
+must retain the cutoff, its torus average, and its axis and outer-support
+terms. This is a concrete CTR-005 burden of proof, not yet a proof that the
+weighted moment is nonzero.
+
+Evidence: `NavierStokesReview/evidence/selected_support_plateau_gate_2026-09-25.md`.
+
+## The scalar-moment interface is a separate theorem
+
+The paper's five-moment narrative uses radial scalar profiles, whereas the
+selected endpoint exports a Cartesian velocity field assembled from potential
+and direct branches. These are not interchangeable by notation alone. The
+definition of `barMoment` requires a scalar family on
+`PressureStream.Lift P`; it then averages the two auxiliary coordinates before
+integrating in the radial variable.
+
+The review completion
+`NavierStokesReview/src/completions/SelectedBarMomentInterface.lean` makes the
+required transport theorem explicit. Given a map
+
+$$
+\phi : \operatorname{Point}(P) \to \operatorname{SpaceTime}
+$$
+
+and a scalar identification
+
+$$
+g_j(q)=\bigl(u_j(\phi(q))\bigr)_1,
+$$
+
+it proves
+
+$$
+\operatorname{barMoment}_k(g_j)(n,p)
+= \int r^k\,\operatorname{torusAverage}
+  \bigl(q\mapsto (u_j(\phi(q)))_1\bigr)(r,p)\,dr.
+$$
+
+This is a formal interface expansion, not the missing physical conclusion.
+The selected endpoint still needs a source-level identification of `φ`, the
+scalar profile, the production `tsum`, the axis and outer-support limits, and
+the resulting numerical moment. Until those steps are proved, the published
+five-moment solution claim remains **NOT ESTABLISHED**. No nonzero remainder and
+no `False` theorem is asserted here.
+
+Evidence: `NavierStokesReview/evidence/selected_barMoment_interface_2026-09-25.md`.
+
+## A selected positive-stage component calculation
+
+The source audit has now transported one component of the actual selected
+positive-potential stage into the production chart.  For every valid chart
+point of positive radius and every successor stage, the review completion
+`SelectedPotentialChartComponent.lean` proves
+
+$$
+\bigl(\operatorname{curl}(A_{j+1})\bigr)_1
+ = \bigl(\operatorname{chartWaveParts}_{j+1}\bigr)_1
+   + \bigl(\operatorname{chartStreamParts}_{j+1}\bigr)_1.
+$$
+
+This closes a genuine field-level transport step.  It also narrows the
+remaining objection: the selected wave and stream terms are present in the
+production component, so the next calculation must carry both terms through
+the scalar radial projection, torus average, cutoff commutator, and boundary
+limits.  The theorem does not yet evaluate `barMoment`, prove a nonzero
+remainder, or derive `False`.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_chart_component_2026-09-25.md`.
+
+The first Cartesian component is also explicit. The commutator contributes
+
+$$
+\bigl((\nabla\chi)\times A\bigr)_0
+  =(D_1\chi)A_2-(D_2\chi)A_1.
+$$
+
+The published construction therefore cannot pass from the cut-stage chart
+formula to a scalar radial moment by dropping this term. The present result
+identifies the integrand that must be transported; it does not yet establish
+its integral's sign or non-vanishing.
 
 ## Positive-radius recovery and the axis obligation
 
@@ -1588,3 +2028,1922 @@ while preserving the distinction between a missing semantic bridge and a
 formal contradiction.
 
 Evidence: `NavierStokesReview/evidence/selected_potential_stage_chart_transport_2026-09-25.md`.
+
+## The selected radial input is a rotated Cartesian component
+
+The source construction does not expose the scalar radial moment directly
+from the exported Cartesian field. On the valid positive-radius polar chart,
+the frame identity gives
+
+$$
+u_1(t,x)=\sin(\theta)u_0^{\mathrm{cyl}}(t,x)
+          +\cos(\theta)u_1^{\mathrm{cyl}}(t,x).
+$$
+
+The review completion transports this identity through the source
+`velocity_polar_forward` theorem. This is a useful narrowing of the remaining
+correspondence problem: before `barMoment_apply` can be used, the rotated
+Cartesian component must be connected to the torus-averaged scalar profile,
+and that connection must survive the cutoff, spatial curl, summation, axis
+limit, and outer-support boundary.
+
+The identity itself does not imply a nonzero shell contribution. Symmetry,
+boundary terms, or cancellation may still make the selected radial value
+zero. Accordingly, this result strengthens the transport specification but
+does not establish `Delta m ≠ 0` or `False`. The published solution claim
+remains **NOT ESTABLISHED** until OpenAI exhibits the complete selected-field
+correspondence required by its paper.
+
+Evidence: `NavierStokesReview/evidence/selected_cylindrical_component_transport_2026-09-25.md`.
+
+## Base-profile connection to the selected blow-up branch
+
+The audit does not rely on treating the base potential as an opaque symbol.
+The source defines the constructed potential from `TailGaugePotential`, proves
+that its Euclidean curl equals the selected slow-base velocity before the
+terminal time, and proves that the norm of that velocity tends to infinity on
+the spatial axis. The review completion transports this exact identity to the
+constructed potential.
+
+In symbols, for (t<1),
+
+$$
+\operatorname{curl}(A_{\mathrm{selected}})(t,x)
+=u_{\mathrm{slow}}(t,x),
+$$
+
+and
+
+$$
+\|u_{\mathrm{slow}}(t,0)\|\to\infty
+\quad (t\to1^{-}).
+$$
+
+This is positive evidence for the selected base branch, not a completion of
+the paper's five-moment argument. The unresolved step remains the exact
+composition of the full mixed Cartesian field with the torus-average and
+radial `barMoment` operator after localisation, curl, summation, and boundary
+passage. The present record therefore continues to reject the published
+solution claim as **NOT ESTABLISHED**, while not claiming a kernel-level
+`False`.
+
+Evidence: `NavierStokesReview/evidence/selected_base_profile_transport_2026-09-25.md`.
+
+## Direct-branch component transport
+
+The selected direct branch can now be followed one component further than the
+paper's abstract profile notation.  On a valid polar chart, the source frame
+does not identify the Cartesian component with the angular profile by
+definition.  It gives
+
+$$
+u^{\mathrm{direct}}_{j,1}(w)
+=\cos(\theta(w))\,Q_n^{-A(h)}
+\,a_j\!\left(\operatorname{swapCylinder}\bigl(G_n(\operatorname{polarCoordinates}(w))\bigr)_1\right),
+$$
+
+where $a_j$ is the selected `angularNativeStages` profile.  The `swapCylinder`
+reindexing is part of the source implementation; omitting it changes the
+profile argument and fails to reproduce the field definition.  This formula
+is therefore a concrete requirement on any claimed transport from the
+Cartesian endpoint to the scalar radial moments $(M,I,J,S,C_p)$.
+
+The result is positive selected-field evidence, not by itself a refutation.
+It closes only the component map for the direct branch.  A proof of the
+published construction still has to transport the full two-branch field,
+
+$$
+\operatorname{curl}\!\left(\sum_j \chi_j A_j\right)
+ +\sum_j \chi_j B_j,
+$$
+
+through torus averaging, radial integration, the axis branch, and the outer
+support boundary.  No selected nonzero remainder or kernel contradiction is
+claimed until that calculation is completed.  Conversely, the paper's
+five-moment narrative cannot be accepted as a proof of the exported field
+without this composition theorem.
+
+Evidence: `NavierStokesReview/evidence/selected_physical_component_transport_2026-09-25.md`.
+
+## Direct-branch radial moment calculation
+
+The direct angular branch can now be followed from its Cartesian component to
+the scalar moment system without suppressing the coordinate map.  For a
+positive-radius cylindrical point (p), the selected component satisfies
+
+$$
+u^{\mathrm{direct}}_{j,1}(\operatorname{radialSection}(p))
+=\operatorname{meanField}_{j}(\operatorname{radialSection}(p)).
+$$
+
+The corresponding native scalar (a_j) is the selected angular stage.  The
+source invariant and the exact definition of `barMoment` give
+
+$$
+\operatorname{barMoment}_2(a_j)(n,s)
+=\int_{\mathbb R} r^2
+\operatorname{torusAverage}(a_j(n))(r,s)\,dr=0
+$$
+
+for (s) in the selected carrier.  This is a genuine selected-path result,
+not a numerical assertion.  It also narrows the counter-paper's target: the
+direct scalar branch does not supply the proposed nonzero remainder under
+these hypotheses.  The unresolved issue is the curled potential summand in
+
+$$
+u_{\mathrm{selected}}
+=\nabla\times A_{\mathrm{sum}}+B_{\mathrm{sum}}.
+$$
+
+The paper's solution claim still cannot be accepted without transporting that
+potential branch through the same torus average, radial integration, axis and
+outer-support limits, and final sum.  No claim of `\Delta m\ne0` or `False` is
+made until that selected calculation is completed.
+
+Evidence: `NavierStokesReview/evidence/selected_direct_radial_moment_bridge_2026-09-25.md`.
+
+## The graph-to-torus gap in the selected moment calculation
+
+The source code distinguishes between the physical graph used to construct a
+selected mean field and the torus average used by the moment operator. The
+radial construction evaluates a coefficient on one positive-radial section,
+
+$$
+\operatorname{radialSection}(R,s)=\bigl(t,(R,0,s)\bigr),
+$$
+
+and the source proves that this section preserves the selected physical graph.
+By contrast, `barMoment_apply` evaluates
+
+$$
+\int R^2\operatorname{torusAverage}(f_n)(R,s)\,dR,
+$$
+
+where `torusAverage` integrates over all auxiliary coordinates. The direct
+native scalar branch has a proved zero order-two moment, but the curled
+potential branch has not been identified with the same torus-averaged scalar.
+The missing graph-to-torus equality is therefore part of the unresolved
+selected-field bridge required before the paper's five-moment narrative can
+support the exported endpoint.
+
+This distinction preserves the correct verdict. The repository compiles, and
+the direct branch has positive selected-path evidence. The advertised
+Navier--Stokes solution remains **NOT ESTABLISHED** because the full mixed
+field has not been transported through the moment operator. No kernel-level
+`False` is claimed on this evidence alone.
+
+Evidence: `NavierStokesReview/evidence/selected_torus_average_representation_gap_2026-09-25.md`.
+
+## The selected mean stream does enter the curled branch
+
+The audit has now closed one possible overstatement. The actual mean stream
+is not dead code: `ActualCandidateAssembly.stream_on_chart`, specialised in
+`SelectedStreamCurlChartTransport.lean`, identifies the spatial curl of each
+selected `streamMeanStages` field with the corresponding `chartStreamParts`
+field on the production chart. In symbols,
+
+$$
+\nabla\times \operatorname{streamMeanStages}_j
+=\operatorname{chartStreamParts}_j.
+$$
+
+This is genuine selected-field transport. It does not, however, identify the
+resulting vector field with the scalar `Point → ℝ` function on which
+`barMoment_apply` operates. The remaining proof obligation is therefore not
+that the mean stream is unused, but that its chart/curl representation is
+correctly reduced to the torus-averaged scalar moment, including axis and
+outer-support terms. Until that calculation is supplied, the full advertised
+five-moment conclusion remains unestablished.
+
+Evidence: `NavierStokesReview/evidence/selected_stream_curl_chart_transport_2026-09-25.md`.
+
+## Rank correction is active, but its endpoint moment meaning is unproved
+
+The latest source trace corrects a possible overstatement in this review. The
+rank machinery is not disconnected from the selected stream. In
+`ActualCandidateConstruction.lean:459-470`, the selected successor stream is
+assembled from a temporal potential and a rank potential. The source identity
+`streamMeanStages_succ` (`:492-494`) then identifies that field with the
+corresponding `CycleData.streamFamily`.
+
+The rank mass constraint is also used rather than merely declared. In
+`LocalRankDefect.lean:590-604`, `desired_mass_zero` is consumed by the
+construction of `rankPotential`; the fixed-stream form at `:606-618` consumes
+the same identity again. Thus the correct criticism is not that the rank
+correction is dead code.
+
+The remaining problem is at the exported semantic level. The selected stream
+decomposes as
+
+$$
+(mathrm{streamFamily}_j)_{mathrm{angular}}
+ =(mathrm{temporalFamily}_j)_{mathrm{angular}}
+  +(mathrm{rankFamily}_j)_{mathrm{angular}},
+$$
+
+and `CycleData.stream_moving` (`ActualMeanPhysicalData.lean:915-917`) exports
+only a `MovingField`: smoothness, radial support, and auxiliary-coordinate
+periodicity. The selected stream is then transported through a Cartesian curl
+on the production chart. By contrast,
+`DefectIncrementBounds.barMoment_apply` (`:214-220`) requires a scalar field
+whose auxiliary coordinates have first been integrated by
+`PressureStream.torusAverage`.
+
+No selected theorem presently identifies the curled, assembled stream with
+that scalar torus-average input, including the axis, outer-support, and
+summation limits. This is a concrete endpoint correspondence failure under
+CTR-005. It is stronger than a generic “missing bridge” description because
+the source shows exactly where the rank data enters and exactly where the
+exported type stops. It still does not prove a nonzero remainder or Lean
+`False`; the next required result is an actual selected value or inequality
+for the mixed field's `barMoment`.
+
+Evidence: `NavierStokesReview/evidence/selected_stream_rank_moment_scope_2026-09-25.md`.
+
+## Selected cutoff--curl calculation
+
+The production potential branch does not curl the uncut profile directly. It
+first forms each cut stage and then sums it. The review completion
+`selected_cut_stage_curl_expansion` proves the exact local identity
+
+$$
+\operatorname{curl}(\chi A)=\chi\operatorname{curl}(A)
+ +\operatorname{curlLinear}\bigl((D\chi)\operatorname{smulRight}A\bigr).
+$$
+
+Here `χ` is the scaled spatial cutoff and `A` is the selected potential
+stage. Thus a radial calculation that replaces the production curl by
+cutoff-times-uncut-curl has omitted a source-level term. The commutator must
+be transported through the Cartesian-to-radial projection, torus average,
+summation, and boundary limits before a five-moment conclusion can be made.
+
+The completion proves the formula only. It does not prove that the selected
+commutator has a nonzero radial moment, nor does it establish `Delta m ≠ 0` or
+`False`. Those remain the next load-bearing calculations.
+
+Evidence: `NavierStokesReview/evidence/selected_cutoff_curl_commutator_2026-09-25.md`.
+## Selected Cartesian-to-radial transport status: 2026-09-25
+
+The review now distinguishes two statements that must not be conflated. The
+chart point used by the physical construction is compatible with the
+pressure-stream point used by the moment definitions; a raw type-domain
+mismatch is therefore not a valid objection.
+
+The unresolved issue is stronger and source-specific. The selected endpoint
+exports Cartesian stage sums and residual consequences. `barMoment` consumes a
+scalar profile on the pressure-stream lift. The review completion
+`SelectedPhysicalPointTransport.lean` proves the exact moment formula after an
+explicit point-to-spacetime map and scalar-profile equality are supplied, but
+the selected endpoint does not currently export that post-curl, post-`tsum`
+identification or its torus-average, axis, and outer-support limits. The
+five-moment mechanism is therefore not yet shown to constrain the selected
+field claimed by the paper.
+
+This is a material correspondence failure and a publication-level burden of
+proof. It is not, by itself, a zero-sorry proof of `False` or of a nonzero
+selected remainder. The active verdict remains **NOT ESTABLISHED AS A CMI
+SOLUTION** unless the review derives a concrete contradiction or independently
+verifies the selected-field transport from the actual source. The current
+record is sufficient to reject the advertised paper-to-code claim, but not to
+assert that the selected identities are false.
+
+Evidence: `NavierStokesReview/evidence/selected_physical_point_transport_2026-09-25.md`.
+
+## Production localisation changes the moment problem
+
+The selected-field calculation identifies a specific point where the paper's
+native moment cancellation cannot be carried across by notation alone. The
+native direct profile has a proved zero order-two radial moment. The exported
+production field is not that profile: on the fundamental cube it is
+
+$$
+u_{\mathrm{prod}}(t,x)=u_{\mathrm{periodic}}(t,x)+\chi(x)v(t,x),
+$$
+
+with `χ` the spatial cutoff, followed by periodisation. The zero-sorry
+theorem `mixed_periodic_velocity_eq_cut_direct_on_unitCube` in
+`NavierStokesReview/src/completions/SelectedProductionDirectCutoff.lean`
+proves this exact identity from the production definitions.
+
+Thus the relevant calculation is not the native identity
+
+$$
+\operatorname{barMoment}_2(v)=0,
+$$
+
+but the cutoff-weighted, post-periodisation quantity. The curl of a cut
+potential also contributes the explicit commutator
+
+$$
+\operatorname{curl}(\chi A)=\chi\operatorname{curl}(A)
+ +(\nabla\chi)\times A.
+$$
+
+Until the selected Cartesian field is transported through the scalar radial
+profile, torus average, and boundary terms, the claimed five-moment repair has
+not been shown for the exported field. This is a source-backed
+correspondence failure and a substantive publication-level objection under
+CTR-005. It is not, at present, a proved `\Delta m\ne0` or kernel-level
+contradiction. The overall review verdict therefore remains NOT ESTABLISHED
+AS A CMI SOLUTION.
+
+Evidence: `NavierStokesReview/evidence/selected_production_direct_cutoff_2026-09-25.md`.
+
+## Support control is not cutoff control
+
+The selected support theorem currently available in the source is radial. It
+bounds `AnnularEndpoint.radius` by a similarity outer radius, whereas the
+spatial cutoff is known to equal one only on the two-coordinate set
+
+$$
+\{x:\operatorname{radialSquare}(x)<1/32\ \wedge\ |x_2|<1/8\}.
+$$
+
+The review completion `SelectedSupportPredicateScope.lean` makes the gap
+explicit at the predicate level: a point on the symmetry axis with axial
+coordinate one satisfies the radial support inequality but is outside the
+cutoff plateau. This is not a claim about the selected smooth field. It is a
+proof that the radial support theorem alone cannot remove the cutoff from the
+selected production field.
+
+Accordingly, the relevant five-moment calculation must retain the cutoff,
+the curl commutator, the torus average, and the boundary terms. The source
+record therefore supports a publication-level correspondence objection under
+CTR-005, but not yet a nonzero selected remainder or Lean `False`.
+
+Evidence: `NavierStokesReview/evidence/selected_support_predicate_scope_2026-09-25.md`.
+## Auxiliary-domain transport gate
+
+The selected Cartesian-to-radial calculation has a more specific obstruction
+than a missing theorem name. `PressureStream.torusAverage` integrates the two
+auxiliary coordinates over the full unit square before `barMoment` performs its
+radial weighting. The selected physical graph, however, is transported through
+`PhysicalResidualBridge.absoluteLift` on the positive-radius chart. Its
+auxiliary coordinate has the form
+
+$$Y=a(r)v_r+t v_t,qquad a(r)\ge 0,$$
+
+where
+
+$$v_r=(1,1-sqrt2),qquad v_t=(sqrt2-1,1).$$
+
+The review completion constructs a linear functional $ρ$ satisfying
+$ρ(v_r)=1$ and $ρ(v_t)=0$. Hence every positive-radius graph point has
+$ρ(Y)\ge0$. The point $Y_0=(0,1/2)$ lies in the unit auxiliary square but
+has $ρ(Y_0)<0$, so it is outside that graph image.
+
+This does not by itself prove a nonzero radial remainder. It proves that the
+published scalar moment calculation cannot be recovered from the selected
+positive-radius graph without an additional global extension or an
+auxiliary-coordinate invariance theorem. Until the selected integrand is
+defined and evaluated over the complete averaging domain, the five-moment
+transport claim remains unverified.
+
+The direct production map is included in this calculation gate. The completion
+proves that `PhysicalMeanJetBounds.physicalPoint` misses an explicit auxiliary
+point in the unit averaging square. Meanwhile, `ActualMeanPhysicalData.Scalar`
+is defined on the full point domain, and `meanField` samples the atlas through
+`physicalPoint`. The remaining theorem must therefore compare the raw scalar
+family consumed by `barMoment` with the scalar profile represented by the
+exported production field. An image miss is a concrete transport obstruction,
+but it is not by itself a proof of a nonzero moment or `False`.
+
+### Valid-band observation boundary
+
+The atlas construction does not evaluate an arbitrary native scalar family at
+every point. `Atlas.physical` selects a valid chart sample when one exists and
+returns zero otherwise. The zero-sorry completion
+`SelectedAtlasPhysicalErasure.lean` proves the corresponding congruence: two
+families that agree at all valid chart samples yield the same selected
+physical field.
+
+This sharpens, but does not complete, the five-moment objection. The native
+`barMoment` integral ranges over the full lifted torus-average domain. A
+remaining transport theorem must connect that domain to the valid chart
+samples, or prove that the omitted values contribute zero. Without that
+theorem, no selected `Δm ≠ 0` or kernel `False` has been established.
+
+Evidence: `NavierStokesReview/evidence/selected_atlas_physical_erasure_2026-09-25.md`.
+
+## The atlas boundary in the selected moment pipeline
+
+The source audit now identifies a precise domain boundary in the exported
+field. `Atlas.Valid` requires a strictly positive first slow coordinate, while
+`Atlas.physical` totalises the atlas by returning zero when no valid sample is
+available. The zero-sorry theorem
+`SelectedAtlasDomainBoundary.atlas_physical_zero_of_nonpositive_slow_coordinate`
+formalises this as
+
+$$z.2.1.1\le0\Longrightarrow
+\operatorname{Atlas.physical}(A,U,d,f,z)=0.$$
+
+The point matters because the advertised moment is computed in a different
+order. `torusAverage` integrates the native scalar family over its full
+auxiliary domain, and `barMoment` then integrates in the radial variable.
+The production atlas observes only valid chart samples before it is supplied
+to the exported field. Consequently, the paper-to-code proof still requires
+an equality between the native scalar consumed by `barMoment` and the
+zero-extended scalar represented by the production atlas, or a theorem that
+the omitted contribution vanishes.
+
+This is a concrete correspondence and domain obligation under CTR-005. It is
+not yet a calculation of a nonzero remainder. In particular, the audit does
+not claim `Delta m ≠ 0` or `False` until the selected native scalar and its
+torus average have been evaluated on the relevant omitted region.
+
+Evidence: `NavierStokesReview/evidence/selected_atlas_domain_boundary_2026-09-25.md`.
+
+## A concrete production weighting in the direct branch
+
+The selected direct branch supplies a more precise calculation target than the
+abstract statement that a transport theorem is missing. The source identifies
+`directStages` with the native angular mean stages, but the production assembly
+then applies `SpatialLocalization.cutPotential`. The zero-sorry completion
+`SelectedProductionDirectScalarGate.lean` proves on a positive radial section
+that
+
+$$
+\bigl(\operatorname{cutPotential}(D_j)\bigr)_1
+=\chi(r,z)m_j(r,z),
+\qquad
+\chi(r,z)=\operatorname{cutoff}(16r^2)\operatorname{cutoff}(4z).
+$$
+
+The upstream order-two `barMoment` identity concerns the unweighted native
+profile $m_j$. It cannot be substituted into the production calculation until
+the cutoff-weighted remainder
+
+$$
+\int r^2\operatorname{torusAverage}((\chi-1)m_j)(r,p)\,dr
+$$
+
+has been evaluated, together with the curled potential branch and the endpoint
+terms. This is now a concrete selected-field calculation under CTR-005. The
+review does not claim a nonzero remainder until that integral is established.
+
+Evidence: `NavierStokesReview/evidence/selected_production_direct_scalar_gate_2026-09-25.md`.
+
+## Atlas pullback of the selected direct component
+
+The field-level calculation has been sharpened one step further. The selected
+direct branch is transported to its native angular stage and then unfolded to
+the atlas-backed scalar evaluated at the physical point. Its first Cartesian
+component is therefore
+
+$$
+D^{\mathrm{dir}}_{j,1}(w)=
+A^{\mathrm{phys}}(\operatorname{physicalPoint}(w))
+\left(\operatorname{angularVector}(\operatorname{radialProjection}(w))\right)_1.
+$$
+
+The production localisation multiplies this by `spatialCutoff`; on the
+positive radial section that factor is
+
+$$
+\chi(r,z)=\operatorname{cutoff}(16r^2)\operatorname{cutoff}(4z).
+$$
+
+This removes one layer of abstraction from the remaining CTR-005 calculation.
+The unresolved question is now whether the atlas-selected, cutoff-weighted
+scalar has the required torus average and radial moment after the complete
+production assembly. The native unweighted zero is not sufficient, but no
+nonzero remainder has yet been proved.
+
+Evidence: `NavierStokesReview/evidence/selected_production_atlas_pullback_2026-09-25.md`.
+## Selected potential branch: a finite local curl identity
+
+The latest source-backed completion follows the selected potential branch
+through the first nontrivial field operation. The selected preterminal
+potential sum is locally a finite prefix, and the spatial-curl operator
+preserves that local equality. Thus, for every preterminal point (x), some
+finite (N) satisfies
+
+\[
+u_{\mathrm{pot}}
+  =_{\mathcal N x}
+\nabla\times\operatorname{partialPotential}_N.
+\]
+
+This is a concrete identity for the selected Cartesian field. It is not an
+assumption about an abstract witness. The proof is recorded in
+`SelectedPotentialPrefixCurlExpansion.lean` and builds with the review tree.
+
+The identity also fixes the next analytical obligation. The finite curl must
+still be expanded into its stage terms, transported through the positive-radius
+chart and axis totalisation, and compared with the scalar family consumed by
+`torusAverage` and `barMoment`. The cutoff/curl commutator remains explicit;
+it has not been set to zero. No nonzero radial remainder or `False` result is
+claimed until that selected calculation is completed.
+
+The central conclusion is therefore unchanged. OpenAI's published assertion
+of a Navier–Stokes solution remains **not established** by the present proof
+record. This completion narrows the unresolved selected-field calculation; it
+does not lower the burden of proof or convert an unproved correspondence into
+an accepted solution.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_partial_curl_2026-09-25.md`.
+
+## Stagewise curl expansion on the physical domain
+
+The selected potential branch has now been expanded one step further. On the
+open physical domain, the selected velocity is eventually equal to a finite
+sum of the curls of the cutoff stages. This is proved without `sorry` in
+`SelectedPotentialStagewiseCurlOnPhysicalDomain.lean`.
+
+For a cutoff stage `χ A`, the spatial curl has the exact form
+
+\[
+\operatorname{curl}(\chi A)
+ = \chi\,\operatorname{curl}(A) + (\nabla\chi)\times A.
+\]
+
+The second term is not a presentation detail. It is the unresolved selected
+remainder that must be transported through the positive-radius chart,
+axis/outer limits, `torusAverage`, and `barMoment`. The review records no
+nonzero value until that calculation is completed. Thus the result strengthens
+the `CTR-005` specification-drift finding without converting it into a kernel
+contradiction.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_stagewise_curl_2026-09-25.md`.
+
+## A concrete scalar representative for the direct branch
+
+The direct branch has now been tied to the scalar domain used by the moment
+operator. `SelectedDirectAtlasScalarRepresentative.lean` defines the selected
+atlas scalar through `Atlas.physical` and the same physical-point map used by
+`meanField`. It proves the corresponding pullback identity and expands
+`barMoment` into the radial integral of the torus average. On the positive
+radius section, the first component of the selected direct stage agrees with
+that scalar.
+
+This is a concrete transport result, not a completed disproof. The exported
+field still combines the direct and potential branches through cutoffs, curl,
+and a natural-number summation. Those terms must be evaluated before a
+nonzero remainder or a contradiction can be claimed.
+
+Evidence: `NavierStokesReview/evidence/selected_direct_atlas_scalar_representative_2026-09-25.md`.
+## Native direct prefix calculation
+
+The selected native direct scalar can now be calculated exactly at finite
+stage depth. If
+
+\[
+m_J(z)=\sum_{j=0}^{J} m_j(z),
+\]
+
+the Lean completion
+`SelectedDirectNativePrefixMoment.lean` proves
+
+\[
+m_J=(\texttt{selectedCycle}\ J).\texttt{state.mean.angular}
+\quad\text{and}\quad
+\operatorname{barMoment}_2(m_J)=0
+\]
+
+on the selected carrier. This is a selected source identity, not a claim
+about an abstract rate interface.
+
+It does not yet evaluate the scalar consumed by the advertised endpoint. The
+production field applies a spatial cutoff to the direct branch and combines it
+with a Cartesian curl of cutoff potential stages. In general,
+
+\[
+\operatorname{barMoment}_2(\chi m_J)\ne
+\operatorname{barMoment}_2(m_J)
+\]
+
+unless the weighted integral is separately proved. The curl branch also
+contains the product-rule contribution
+
+\[
+\nabla\times(\chi A)=\chi(\nabla\times A)+(\nabla\chi)\times A.
+\]
+
+The remaining burden is therefore concrete: transport these production terms
+through the atlas, auxiliary torus average, boundary limits, and final
+`tsum`, then evaluate the resulting selected moment. The present completion
+proves neither `\Delta m\ne0` nor `False`; it removes the native direct prefix
+as the source of an uncomputed remainder.
+
+Evidence: `NavierStokesReview/evidence/selected_direct_native_prefix_moment_2026-09-25.md`.
+
+## Production cutoff and the selected shell remainder
+
+The native direct prefix has an exact order-two zero moment before production
+localisation. The exported direct branch is different: each stage is first
+multiplied by the spatial cutoff used by the production assembly. The review
+completion proves the finite-prefix identity
+
+$$
+\sum_{j=0}^{J}(\chi u_j)_1
+=\chi\sum_{j=0}^{J}(u_j)_1,
+$$
+
+and, on the positive-radius radial section, identifies the uncut sum with the
+selected cycle mean field. Consequently the difference between the produced
+and native components is exactly
+
+$$
+\mathcal{E}_J=(\chi-1)\sum_{j=0}^{J}(u_j)_1.
+$$
+
+This is a concrete selected-field remainder, not a generic objection. It is
+the term that must be carried through the radial projection, torus average,
+and final `tsum` before the paper's five-moment identities can be claimed for
+the exported field. The available source proves only positivity and ordering
+of the moving annulus radii. It does not yet prove a selected nonzero value of
+the weighted integral. Thus the paper's solution claim remains **NOT
+ESTABLISHED**, while this result does not yet constitute a kernel
+contradiction.
+
+Evidence: `NavierStokesReview/evidence/selected_production_direct_prefix_cutoff_2026-09-25.md`.
+
+## The cutoff commutator in the exported potential field
+
+The production field is obtained after spatial localisation. The review
+completion
+`NavierStokesReview/src/completions/SelectedPotentialProductionProductRule.lean`
+proves the selected identity
+
+$$
+V_{\mathrm{prod}}(t,x)=\chi(x)\,\operatorname{curl}A(t,x)
+ +\operatorname{curlLinear}\!\left(D\chi(x)\,A(t,x)\right)
+$$
+
+on the unit cube, where $A$ is the selected potential sum. The second term is
+the commutator created when the spatial curl acts on the cutoff. It must be
+transported into any radial moment calculation. The five-moment discussion
+cannot be identified with the exported field by silently replacing the
+localised curl with the native curl.
+
+This establishes a concrete calculation obligation, not a completed
+contradiction. The selected atlas component, torus average, `barMoment`, and
+infinite-sum transport are still required before the commutator can be given
+a selected value or sign. The paper's claim therefore remains **NOT
+ESTABLISHED** under the present audit, without claiming that this identity
+alone proves `False`.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_production_product_rule_2026-09-25.md`.
+
+## Positive-radius transport of the selected production field
+
+The next source-level completion transports the selected production identity
+to the radial section used by the construction. For the selected schedule and
+points in the stated physical domain, the first Cartesian component satisfies
+
+$$
+V_{\mathrm{prod},1}(t,r,z)=
+\chi(r,z)\,\bigl(\operatorname{curl}A(t,r,0,z)\bigr)_1
+ +\bigl(\operatorname{curlLinear}(D\chi(r,z)\,A(t,r,0,z))\bigr)_1.
+$$
+
+The completion derives the differentiability required by the product rule from
+the repository’s selected schedule and its physical-domain smoothness
+lemmas. This makes the cutoff derivative contribution a selected-field fact,
+not merely a concern about how localisation might behave.
+
+The result does not yet identify this radial-section component with the scalar
+family integrated by `barMoment` over the full lifted averaging domain. That
+step requires an explicit graph/image theorem, boundary control, torus-average
+transport, and passage through the final `tsum`. No sign or nonzero value of
+the commutator has been assumed. The conclusion therefore remains **NOT
+ESTABLISHED**, rather than a claimed kernel contradiction.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_production_radial_scalar_2026-09-25.md`.
+
+## Positive-radius lift: an authenticated local bridge, not the endpoint theorem
+
+The source does contain a legitimate coordinate-type bridge that must be
+credited. `PhysicalResidualTZ.Lift` is definitionally the product
+
+$$
+R × (Plane × Plane),
+$$
+
+which is also the point type used by `PressureStream.Lift` when the slow point
+is `PhysicalGraphBounds.Plane`. On the positive-radius region,
+`ActualMeanPotentialRealization.physicalPoint_forward` identifies the physical
+mean point with `PhysicalResidualTZ.absoluteLiftTZ`. In addition,
+`ActualCandidateAssembly.stageRealizations` identifies each selected stage curl
+with its chart field on the stated chart domain.
+
+This narrows, rather than removes, the remaining objection. These results are
+local and stagewise. They do not supply a theorem that transports the final
+localised `tsum`, including its cutoff-gradient term and axis or outer-support
+limits, into the scalar family consumed by `DefectIncrementBounds.barMoment`.
+The published five-moment conclusion therefore still requires an explicit
+selected-field composition theorem and an evaluated weighted integral. No sign
+or nonzero remainder is inferred from the type compatibility alone.
+
+Evidence: `NavierStokes/PhysicalResidualTZ.lean:19-21,385-452`,
+`NavierStokes/ActualMeanPotentialRealization.lean:20-27,331-358`, and
+`NavierStokes/ActualCandidateAssembly.lean:1059-1088`.
+
+## A typed local bridge into the radial moment operator
+
+The selected production calculation can now be stated in the type required by
+the source moment operator. Let \(q=(R,(T,Z),Y)\) denote a point in the lifted
+physical coordinate space. Define the positive-radial section
+
+$$
+\pi(q)=(T,(R,Z)).
+$$
+
+For the selected schedule \(a\), the review completion defines
+
+$$
+F_a(n,q)=V_{\mathrm{prod}}(a)(n,\pi(q)),
+$$
+
+as a genuine `ScalarField` on the point type consumed by `barMoment`.
+Thus the source definition gives the exact identity
+
+$$
+\operatorname{barMoment}_k(F_a)(n,p)=
+\int_{\mathbb R}r^k\,
+\operatorname{torusAverage}(F_{a,n})(r,p)\,dr.
+$$
+
+On the radial section of the physical chart, the point map agrees with the
+source physical-point construction for \(R>0\), so this is a real selected
+coordinate compatibility result rather than an abstract type alias.
+
+This result narrows the counter-paper's central objection. The issue is no
+longer whether the production component can be assigned a `barMoment` type;
+it can. The unresolved question is whether the full exported velocity,
+
+$$
+U=\operatorname{curl}(\chi A)+\chi B,
+$$
+
+including the term \((\nabla\chi)\times A\), its auxiliary torus average,
+axis and outer-support limits, and the final \(\operatorname{tsum}\), is equal
+to \(F_a\) or to the five profiles used by the paper. Until that selected
+identity and its weighted value are proved, the advertised five-moment
+solution remains **NOT ESTABLISHED**. The local bridge supplies no sign for a
+remainder and no kernel-level `False`.
+
+Evidence:
+`NavierStokesReview/evidence/selected_potential_production_barmoment_section_2026-09-26.md`.
+
+## Finite-prefix production and the remaining numerical gate
+
+The next completion follows the selected field before taking its infinite
+series limit. For a finite prefix (N), the review defines the actual partial
+potential (A_N), applies the source localisation and curl operators, and
+retains the exact commutator
+
+$$
+\operatorname{curl}(\chi A_N)=
+\chi\operatorname{curl}(A_N)+(\nabla\chi)\times A_N.
+$$
+
+The finite production is then represented on the lifted point space accepted
+by the source radial-moment operator. Thus the source definition supplies
+
+$$
+\operatorname{barMoment}_k(F_{a,N})(n,p)=
+\int r^k\,\operatorname{torusAverage}(F_{a,N,n})(r,p)\,dr.
+$$
+
+On the positive-radius physical section, the lifted scalar pulls back to the
+selected finite-prefix production component. This is a concrete transport
+result about the selected construction, not a hypothetical countermodel.
+
+It also identifies the exact unresolved quantity. A refutation would require a
+zero-sorry evaluation of the torus average and weighted integral, including
+the localisation commutator, axis and outer-support terms, followed by a
+proved passage (N\to\infty) to the selected `tsum`. Until that calculation
+produces a selected nonzero remainder and its matching selected invariant, the
+record remains **NOT ESTABLISHED**, rather than a kernel-level `False`.
+
+Evidence:
+`NavierStokesReview/evidence/selected_potential_production_finite_prefix_2026-09-26.md`.
+
+## 2026-09-26: finite-prefix torus-average reduction
+
+The preceding finite-prefix construction can now be reduced through the
+repository's actual torus-average definition. The review scalar is lifted to
+the point type consumed by `barMoment` through `pointToCyl`. Since this map
+ignores the auxiliary `Plane` coordinate, the interval integrations in the
+torus average are exact definitional repetitions:
+
+$$
+\operatorname{torusAverage}(F_{a,N,n})(r,p)
+=F_{a,N,n}\bigl(\operatorname{pointToCyl}(r,(p,(0,0)))\bigr).
+$$
+
+Substitution into the source definition of `barMoment` yields
+
+$$
+\operatorname{barMoment}_k(F_{a,N})(n,p)
+=\int_{\mathbb R} r^k V_{a,N}
+\bigl(\operatorname{pointToCyl}(r,(p,(0,0)))\bigr)\,dr.
+$$
+
+This is a concrete selected finite-prefix transport identity. It does not
+evaluate the weighted integral, prove that its value is nonzero, or establish
+that the review scalar is the full mixed Cartesian field in the published
+endpoint. The axis and outer-support terms and the passage to the selected
+infinite `tsum` remain to be proved. The controlled conclusion therefore
+remains **NOT ESTABLISHED**, not a kernel-level contradiction.
+
+Evidence: `NavierStokesReview/evidence/selected_potential_production_torus_average_2026-09-26.md`.
+
+## Axis scale identity
+
+One previously open coordinate question is settled directly by the source.
+`NavierStokes/AxisPreservation.lean:130-148` proves that on the symmetry axis,
+
+$$
+q_h(t,0)=1-t,\qquad q_h(t,0)\longrightarrow0\quad(t\to1^-).
+$$
+
+This follows from the defining equation for the positive similarity coordinate
+after the axial coordinate is set to zero. It is therefore a genuine selected
+coordinate identity, not a filter-vacuity argument. It does not calculate the
+selected velocity's radial moment. The remaining burden is to transport the
+complete Cartesian `tsum` through the cutoff/curl construction and then
+evaluate its axis, tail, and weighted `barMoment` contributions.
+
+## Finite-prefix cutoff behaviour at the axis endpoint
+
+The review completion SelectedFiniteCutoffEndpoint.lean pulls the source
+finite-cutoff plateau through
+
+$$
+q_h(t,0)=1-t\\longrightarrow0\\qquad(t\\to1^-).
+$$
+
+For every fixed prefix length N, all cutoffs with j < N are therefore equal
+to one on some left neighbourhood of t = 1. This is a concrete endpoint fact
+about finite prefixes. It is not uniform in N, and it does not evaluate the
+infinite Cartesian sum, its curl, the torus average, or the weighted radial
+moment. No nonzero remainder or contradiction is claimed from this fact alone.
+
+Evidence:
+NavierStokesReview/evidence/selected_finite_cutoff_endpoint_2026-09-26.md.
+
+The corresponding source-scope audit records that the local finite-tail and
+all-jet theorems require `0 < q x`, whereas the selected axis limit has
+`q → 0`. The infinite `potentialSum` representative and its transport through
+curl, torus averaging, and `barMoment` therefore remain to be identified.
+This is an explicit proof obligation, not an asserted discontinuity or
+nonzero remainder.
+
+Evidence:
+NavierStokesReview/evidence/selected_tsum_endpoint_scope_2026-09-26.md.
+
+## Selected mixed velocity: separate finite local representatives
+
+The selected endpoint has now been traced through both summation branches. A
+zero-sorry completion proves that, at every point of the source physical
+domain, the curl-generated potential branch is eventually equal to a finite
+curl prefix and the direct branch is eventually equal to its own finite
+potential prefix. The two prefix lengths are independent.
+
+This closes the finite local field representation, but it does not evaluate
+the full selected field through `torusAverage` or `barMoment`. In particular,
+no common truncation index, endpoint interchange, weighted radial value,
+nonzero remainder, or kernel contradiction follows. The selected CMI claim
+therefore remains **NOT ESTABLISHED** on the existing correspondence record,
+while this result supplies the exact finite object required for the next
+calculation.
+
+Evidence:
+`NavierStokesReview/evidence/selected_mixed_velocity_finite_prefix_2026-09-26.md`.
+
+## Localisation of the selected infinite sum
+
+A further zero-sorry completion isolates the local meaning of the selected
+potential `tsum`. At any point where the source production scale is positive,
+and under the source convergence hypothesis on the coefficient sequence, the
+all-jet API supplies one finite prefix that agrees locally with the infinite
+potential at every derivative order:
+
+$$
+\exists N\;\forall k,\qquad
+D^k\operatorname{potentialSum}(z)
+=D^k\operatorname{partialPotential}_N(z)
+\quad\text{eventually near }z.
+$$
+
+This is useful positive evidence: the selected `tsum` has a precise local
+finite-prefix representative on the stated domain. It is not the missing
+selected-field transport theorem. The result does not pass the identity through
+the global Cartesian curl, `torusAverage`, `barMoment`, or the weighted radial
+integral, and it does not evaluate the axis and tail terms. Consequently it
+does not prove a nonzero remainder `Delta m != 0` or a kernel contradiction
+`False`; the advertised five-moment solution remains **NOT ESTABLISHED** until
+those global identifications are supplied.
+
+Evidence:
+`NavierStokesReview/evidence/selected_potential_production_tsum_scope_2026-09-26.md`.
+
+## A conditional periodic-to-radial obstruction
+
+The source construction and the radial moment interface impose different
+geometric structures. The selected Cartesian velocity is obtained from a
+periodised potential, and the source proves unit spatial periodicity. The
+operator `barMoment`, however, is defined on a scalar radial field with bounded
+radial support. The review-side theorem
+`PeriodicRadialSupportObstruction.lean` establishes
+
+$$
+g(r+1,Y)=g(r,Y),qquad
+\operatorname{supp}(g)\subseteq [a,b]
+\quad\Longrightarrow\quad
+g(r,Y)=0.
+$$
+
+This result does not supply the missing premises for the selected endpoint.
+It does not prove that the selected Cartesian field has a bounded radial
+pullback, nor does it identify that pullback with the scalar consumed by
+`barMoment`. It therefore yields no numerical remainder and no kernel
+contradiction. It sharpens the unresolved selected-field issue: the inspected
+record does not transport the periodised Cartesian field into the radial
+observable with compatible support, nor does it state and justify a different
+scalar extension. Until that identification is proved in the source, the
+advertised five-moment paper-to-code correspondence remains **NOT
+ESTABLISHED**.
+
+Evidence:
+`NavierStokesReview/evidence/periodic_radial_support_obstruction_2026-09-26.md`.
+
+## Mixed endpoint and radial observables
+
+The selected whole-space velocity is assembled from two branches. The
+potential branch is localised, while the direct branch is cut and periodised
+separately. A zero-sorry review completion proves the first-component
+identity on the radial section
+
+$$
+u_{\mathrm{mixed},1}(p)=u_{\mathrm{potential},1}(p)+
+\left(\operatorname{periodize}\bigl(\operatorname{cutPotential}
+u_{\mathrm{direct}}\bigr)(p)\right)_1.
+$$
+
+This is a precise scope result, not an assertion that the direct contribution
+is nonzero. It does show that a potential-only scalar calculation cannot be
+silently identified with the exported mixed field. A complete paper-to-code
+transport theorem would still have to map the direct summand to the scalar
+radial observable consumed by `barMoment`, justify the common endpoint and
+the axis and tail terms, and evaluate the weighted integral. Until then,
+CTR-005 remains a load-bearing correspondence failure; this completion does
+not establish `Δm ≠ 0` or a kernel-level `False` theorem.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_production_radial_component_2026-09-26.md`.
+
+### Mixed endpoint observable
+
+The selected endpoint is not merely a potential-only field. The review-side
+completion `SelectedMixedProductionBarMoment.lean` defines the first Cartesian
+component of the actual mixed periodic velocity on the scalar-family domain
+used by the repository's radial observable and proves
+
+$$
+\operatorname{barMoment}_k(\widetilde u)(n,p)
+=
+\int_{\mathbb R} r^k\,
+\operatorname{torusAverage}(\widetilde u_n)(r,p)\,dr.
+$$
+
+On the positive-radius physical section, this scalar is exactly the selected
+mixed component. The theorem therefore closes a real domain and coordinate
+transport step. It does not evaluate the integral, prove a nonzero remainder,
+or identify the result with the five paper moments. The remaining issue is the
+value-level calculation for the cut, periodised direct branch together with
+the axis, tail, and infinite-sum limits.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_production_barMoment_2026-09-26.md`.
+
+### Conditional linearity of the mixed radial observable
+
+The review-side completion `SelectedMixedProductionBarMomentLinearity.lean`
+also proves the exact pointwise decomposition of the selected scalar family
+into its potential and direct branches. Under explicit common `Shell`
+hypotheses, the source linearity theorem gives
+
+$$
+\operatorname{barMoment}_k(\widetilde u)
+= \operatorname{barMoment}_k(\widetilde u_{\mathrm{potential}})
++ \operatorname{barMoment}_k(\widetilde u_{\mathrm{direct}}).
+$$
+
+This is a genuine algebraic completion, but the selected endpoint does not
+export the required common `Shell` premises for the complete infinite-sum
+branches. The result therefore does not evaluate the weighted integral, prove
+a nonzero localisation commutator, identify the observable with the five
+paper moments, or derive `False`. It narrows CTR-005 to the missing value-level
+and selected-path transport obligations.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_barmoment_linearity_2026-09-26.md`.
+
+### What the selected witness actually exports
+
+The source-path audit corrects a filename ambiguity without weakening the
+substantive objection. The current tree has no `SelectedCandidate.lean` file.
+The selected witness is `ActualCandidateAssembly.selected_witness` at
+`NavierStokes/ActualCandidateAssembly.lean:1177`, and its `hc` component is the
+`CandidateProperties` structure consumed by `selected_candidate` at lines
+1177--1185. The structure is not itself existential; the surrounding
+`candidateStatement` supplies the existential quantifiers.
+
+The exported record genuinely contains smoothness, compact support, the
+Navier--Stokes residual equation, divergence-freeness, a uniform finite-energy
+bound, and the stated speed blow-up. The R3 construction obtains the energy
+field through `CompactEnergy.uniform_finite_energy` and uses a spatially
+compactified, smoothly time-cut-off force. The remaining correspondence issue
+is narrower and more consequential: no exported field of `hc` identifies the
+five paper moments `(M,I,J,S,C_p)` with the final Cartesian field or proves
+that the periodic `barMoment` survives the R3 compactification. This is a
+load-bearing selected-path transport obligation, not a claim that the energy
+theorems are missing and not, by itself, a kernel-level contradiction.
+
+The R3 packaging boundary has also been checked directly. A zero-sorry
+completion constructs a nonzero abstract five-coordinate payload alongside
+the exported R3 candidate, because `CandidateProperties` contains no such
+payload. This proves a limitation of the exported interface, not a numerical
+claim about the selected field. The paper therefore keeps the decisive
+field-level question open: evaluate the selected `barMoment` after the
+periodic-to-whole-space construction, or derive a contradiction from an
+explicit equality.
+
+Evidence: `NavierStokesReview/evidence/selected_r3_packaging_boundary_2026-09-26.md`.
+
+## Source-path reconciliation and a conditional integral result
+
+One secondary source report cited a module named `SelectedCandidate.lean`.
+That name is not present in the current tree or reachable Git history. The
+actual selected path is `ActualCandidateAssembly.selected_witness` and
+`ActualCandidateAssembly.selected_candidate` at
+`NavierStokes/ActualCandidateAssembly.lean:1177-1184`, followed by the R3
+wrappers in `NavierStokes/R3/ActualCandidate.lean:127-151` and the exported
+theorems in `NavierStokes/R3/Theorem.lean:26-80`. The energy declarations are
+not missing: `uniform_finite_energy` is at
+`NavierStokes/R3/CompactEnergy.lean:343`, and
+`theorem_1_1_with_dissipation` is at `NavierStokes/R3/Theorem.lean:66`.
+Accordingly, a filename error must not be promoted into an energy-proof
+objection.
+
+The review also formalises one conditional consequence of the radial integral
+definition. If a scalar pullback $g$ is unit-periodic and strictly positive
+on a fundamental interval, then $g$ is not globally Bochner-integrable:
+
+$$
+g(r+1)=g(r),\quad 0<g(r)\ (0<r<1)
+\quad\Longrightarrow\quad
+\neg\operatorname{Integrable}(g).
+$$
+
+In Lean, `MeasureTheory.integral_undef` consequently gives
+
+$$
+\int_{\mathbb R} g(r)\,dr=0
+$$
+
+for that non-integrable branch. The theorem is instantiated for the selected
+mixed radial pullback only under its positivity premise. The selected source
+does not prove that premise, and the result does not evaluate the weighted
+cases $r^k g(r)$ for $k>0$. It is therefore an exact semantic branch of
+the audit, not a selected-field contradiction.
+
+Evidence:
+`NavierStokesReview/evidence/source_path_reconciliation_2026-09-26.md`;
+`NavierStokesReview/evidence/periodic_global_integral_semantics_2026-09-26.md`.
+
+The auxiliary torus average of this scalar pullback is independent of the
+auxiliary coordinate. Consequently the selected mixed observable is reduced
+to the literal radial expression
+
+$$
+\operatorname{barMoment}_k(\widetilde u)(n,p)
+=
+\int_{\mathbb R} r^k\,
+u_{\mathrm{mixed},1}\bigl(\operatorname{pointToCyl}(r,(p,(0,0)))\bigr)\,dr.
+$$
+
+The integrand is the sum of the potential component and the cut,
+periodised direct component. This is a concrete calculation target, not yet a
+computed value: no nonzero remainder or contradiction follows until the
+direct term and the endpoint/interchange conditions are evaluated.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_production_torus_average_2026-09-26.md`.
+
+### Periodisation versus radial support
+
+The selected mixed pullback entering the radial observable is unit-periodic in
+the integration variable:
+
+$$
+g_a(r+1,p)=g_a(r,p).
+$$
+
+The review completion also proves the exact conditional implication
+
+$$
+\operatorname{RadiallySupported}_{[\alpha,\beta]}(g_a)
+\Longrightarrow g_a\equiv 0.
+$$
+
+This does not by itself refute the exported theorem, because the selected
+`Witness` does not export bounded radial support for the periodised mixed
+pullback, and the completion does not prove that the pullback is nonzero. It
+does, however, make the remaining field-level defect precise: the inspected
+record does not supply a valid support/integrability interpretation for
+applying the radial moment machinery to the periodised endpoint, nor does it
+evaluate the observable under a different justified restriction.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_radial_periodicity_2026-09-26.md`.
+
+### Mixed endpoint observable
+
+The selected endpoint is not merely a potential-only field. The review-side
+completion `SelectedMixedProductionBarMoment.lean` defines the first Cartesian
+component of the actual mixed periodic velocity on the scalar-family domain
+used by the repository's radial observable and proves
+
+$$
+\operatorname{barMoment}_k(\widetilde u)(n,p)
+=
+\int_{\mathbb R} r^k\,
+\operatorname{torusAverage}(\widetilde u_n)(r,p)\,dr.
+$$
+
+On the positive-radius physical section, this scalar is exactly the selected
+mixed component. The theorem therefore closes a real domain and coordinate
+transport step. It does not evaluate the integral, prove a nonzero remainder,
+or identify the result with the five paper moments. The remaining issue is the
+value-level calculation for the cut, periodised direct branch together with
+the axis, tail, and infinite-sum limits.
+
+Evidence: `NavierStokesReview/evidence/selected_mixed_production_barMoment_2026-09-26.md`.
+## Source authority and endpoint map
+
+The source audit was reconciled against the extracted repository tree and the checked-out Lean files. The current source contains both root-level R3 wrapper modules and detailed modules under `NavierStokes/R3/`. In particular, `NavierStokes/R3/ActualCandidate.lean` packages the selected construction, while `NavierStokes/R3/Theorem.lean` exports the existential endpoint. The root files `NavierStokes/R3.lean`, `NavierStokes/R3PressureFourier.lean`, `NavierStokes/R3EnergyNorms.lean`, and `NavierStokes/R3EnergyBoundary.lean` are also present and must not be conflated with the detailed `R3/` paths.
+
+The exported contract is substantive. `CandidateProperties` requires smoothness, spatial periodicity, zero initial velocity, positive-time force support, incompressibility, the Navier–Stokes residual identity, and unbounded speed. The R3 packaging additionally supplies the finite-energy and dissipation conclusions. The audit therefore does not argue that the endpoint is an empty wrapper or that these files are absent.
+
+The unresolved issue is transport of the paper’s named five moments into that exported field. The upstream moment and rank modules are present, and the review has verified several algebraic and finite-prefix identities. What remains unproved is a single selected-path theorem identifying the complete Cartesian field produced by the infinite assembly with the five radial quantities `(M, I, J, S, C_p)`. This is the precise scope of CTR-005.
+
+The pressure modules require the same calibration. `NavierStokes/R3/PressureRecovery.lean` proves comparison pressure-gradient identities against compact smooth tests under explicit hypotheses on two velocity-pressure pairs. `NavierStokes/R3/ActualPressureFlux.lean` derives a comparison flux identity from that result. These are positive formal results, not absent infrastructure. They do not, without an additional selected-field theorem, establish an absolute global pressure representative or transport the five paper moments into the selected endpoint. The current conclusion is therefore **not established as a CMI solution because the load-bearing cross-layer correspondence remains unproved**, not because the source tree fails to contain R3, energy, or pressure modules.
+
+Source-map evidence: `NavierStokesReview/evidence/source_tree_logic_map_2026-09-26.md` and `source_tree_logic_map_2026-09-26.json`.
+
+## Periodisation and the radial observable
+
+The selected-field calculation contains a domain transition that must be made
+explicit. The source first forms a compactly supported cut potential and then
+periodises the potential and direct branches. In symbols,
+
+$$
+\text{cutPotential}
+\;\longrightarrow\;
+\text{periodicVelocity}
+\;\longrightarrow\;
+\text{barMoment}.
+$$
+
+The first object has a compact support theorem, but the second is unit-periodic.
+The final `barMoment` is a global Bochner integral in the real radial variable.
+Consequently, compact support before periodisation does not imply radial support
+or integrability of the selected pullback after periodisation. The review has
+proved the relevant periodicity and the conditional support obstruction, but it
+has not proved the missing support/integrability transport or a nonzero value.
+This is a concrete remaining burden under CTR-005, not an unconditional
+contradiction.
+## Reproducible source and dependency mapping
+
+The audit infrastructure now separates four claims that are often conflated. The extracted tree fixes the inventory baseline; the live checkout fixes file contents and hashes; source parsing supplies navigation diagnostics; and the compiled Lean environment supplies the declaration-level dependency closure for `NavierStokesR3.theorem_1_1`. The last layer follows elaborated constants from `ConstantInfo` expressions and is the only layer used for endpoint reachability claims.
+
+The 2026-09-26 run produced 30,721 project declarations and 327,757 compiled-environment edges in the endpoint closure. It also produced 50,191 source declarations and 186,194 token-reference diagnostics after the namespace parser correction. These are different observables. The source-token graph is useful for locating candidates, but cannot establish a kernel dependency. The endpoint closure contained no reachable `sorryAx` users; this does not imply that every repository file is free of `sorry`.
+
+This strengthens the method without changing the mathematical verdict. The exported endpoint’s kernel-level validity remains distinct from the unproved selected-field transport theorem required to identify the complete Cartesian assembly with the paper’s five named moments. The reproducibility procedure is recorded in `NavierStokesReview/evidence/hardened_mapping_method_2026-09-26.md`.
+
+The endpoint route audit corrects an important possible overstatement. `FiveRowRank`, `PositiveOrderMoments`, `MeanRankUpdate`, `MixedPeriodicAssembly`, and `DefectIncrementBounds.barMoment` are reachable in the compiled environment; they are not established as dead or orphaned branches. What remains unproved is the stronger field-level statement: that the values computed by those upstream constructions are equal to the five named moments of the final assembled Cartesian witness after localisation, curl, periodisation, summation, and R³ packaging. The review consequently records a correspondence obligation, not a kernel contradiction.
+
+### Endpoint signature cross-examination
+
+The raw source check adds an important qualification to the preceding finding.
+`ActualCandidateAssembly.Witness` (`ActualCandidateAssembly.lean:1121-1151`)
+is a proposition-valued definition built from nested existentials and
+conjunctions, not a structure with named five-moment fields. Its selected
+payload includes a stage schedule, three away extensions, a forcing field,
+`CandidateProperties`, `CandidateConsequences`, the H³ blow-up limit, force
+jet bounds, and endpoint jet identities. It contains no explicit
+`PositiveOrderMoments.Debt`, `FiveRowRank.FiveRows`, `barMoment`, or equality
+identifying `(M,I,J,S,C_p)` with the final Cartesian field.
+
+This does not make the upstream moment modules irrelevant or dead. The
+selected closure reaches them. It establishes a precise correspondence
+failure instead: the exported endpoint does not state or prove the equality
+that carries their values through the assembled `tsum`, curl, localisation,
+periodisation, and radial observable. The interface-blindness probe only shows
+that `StageEstimates` alone cannot determine a five-coordinate debt; it does
+not show that the selected physical field is zero. The exact source ledger is
+`NavierStokesReview/evidence/claim_cross_examination_2026-09-27.md`.
+
+Evidence: `NavierStokesReview/evidence/selected_endpoint_routes_2026-09-26.md`.
+
+## Reproducibility control for the code audit
+
+The mapping was rebuilt with a four-layer authority model: the extracted tree
+is a hashed inventory snapshot; the live checkout supplies file identity;
+source parsing supplies navigation; and the compiled Lean environment supplies
+elaborated declaration reachability. The validator also checks source-hash
+drift and records the workspace state.
+
+The captured run reaches the moment, periodisation, radial-observable, and R³
+packaging declarations from `NavierStokesR3.theorem_1_1`. It records 22,958
+exact source joins and retains 3 ambiguous and 7,760 unmatched environment
+nodes rather than guessing. The endpoint closure has zero reachable `sorryAx`
+users. These controls strengthen reproducibility but do not prove the missing
+field-level equality between the final Cartesian assembly and the paper's five
+named moments.
+
+Method and reproduction: `docs/REVIEW_MAPPING_METHOD.md` and
+`NavierStokesReview/src/audit/run_hardened_audit.ps1`.
+
+## Reproducible repository mapping
+
+The audit distinguishes inventory identity, source navigation, and elaborated
+dependency. The extracted tree is hashed as an inventory snapshot; the live
+checkout supplies file contents and hashes; source parsing supplies namespace-
+aware declaration spans and token diagnostics; and the compiled Lean
+environment supplies endpoint dependency evidence. The tree reconciliation
+layer records 3,021 tree file entries, 3,058 live files, 2,997 unique
+basename resolutions, 24 ambiguous entries, and no missing basenames. It
+never assigns an ambiguous rendered tree entry to a path by guesswork.
+
+For the selected endpoint, the run records 30,721 compiled declarations,
+327,757 raw environment edges, 22,958 exact source-name matches, and 227,128
+source-located joined edges, with zero reachable `sorryAx` users. These
+measurements establish reproducible navigation and endpoint scope. They do
+not establish that the five named paper moments equal the values of the final
+assembled Cartesian field after localisation, curl, periodisation, summation,
+and radial projection. That remains the load-bearing selected-path theorem.
+
+To make that boundary auditable, the review includes a machine-readable claim
+register at `NavierStokesReview/config/review_claims.json`, checked by
+`claim_register.py`. The current register marks the endpoint route and axiom
+hygiene as supported, force provenance as conditional, and CTR-005 as open. A
+green structural register is not evidence that the missing Cartesian-to-radial
+value equality has been proved.
+
+## Complete repository map and evidence boundary
+
+The audit now publishes a complete module map rather than relying on filenames
+or a partial route list. The 2026-09-26 run accounts for all 2,790 Lean
+modules, records 50,191 source declarations and 30,721 compiled project
+declarations, and joins 22,958 compiled declarations to source spans exactly.
+It retains three ambiguous joins and 7,760 unmatched environment nodes instead
+of assigning them by guesswork. The captured endpoint has zero reachable
+`sorryAx` users.
+
+The current source map is available as machine-readable JSON and
+human-readable Markdown under
+`NavierStokesReview/evidence/hardened_source_map_2026-09-29.*`; its authority
+order and reproduction command are in `docs/REPOSITORY_MAP_GUIDE.md`. This improves
+source accountability and corrects path-level underclaims. It does not prove
+that the final Cartesian field has the paper's five named moment values. That
+value-level transport theorem remains the load-bearing CTR-005 question.
+
+For human-readable source navigation, use `docs/REPOSITORY_ARCHITECTURE_MAP.html`; for the mathematical notation and endpoint route, use `docs/MATHEMATICAL_SPECIFICATION.md`; and for evidence authority and regeneration rules, use `docs/REPOSITORY_MAP_GUIDE.md` and `docs/REVIEW_DOCUMENT_CONTROL.md`.
+
+## Current verification boundary
+
+The source audit must be read at two levels. First, the repository genuinely
+contains substantive five-moment and rank mathematics. `PositiveOrderMoments`
+defines a five-coordinate debt and proves exact repair identities;
+`FiveRowRank` defines the three-coordinate physical rank interface; and the
+selected upstream route reaches both families, `MeanRankUpdate`, the mixed
+periodic velocity, and `barMoment`. It is therefore inaccurate to describe the
+five-moment branch as absent or dead.
+
+Second, the exported endpoint still does not state the field-level identity
+needed by the paper. `ActualCandidateAssembly.Witness` is a nested existential
+proposition (`ActualCandidateAssembly.lean:1121-1151`). Its payload contains a
+stage schedule, away extensions, forcing, `CandidateProperties`,
+`CandidateConsequences`, the H³ limit, force-jet bounds, and endpoint jets. It
+does not contain a `Debt`, `FiveRows`, `barMoment`, or an equality of the form
+
+\[
+  (M,I,J,S,C_p) = \mathcal{O}(u_{\mathrm{selected}},p_{\mathrm{selected}},f).
+\]
+
+The selected theorem at `ActualCandidateAssembly.lean:1177-1181` merely fixes
+the construction parameters and invokes `witness`. Thus imports and upstream
+repair identities establish reachability, not transport of their values
+through the complete `tsum`, curl, localisation, periodisation, and radial
+observable. This remains the load-bearing CTR-005 burden of proof.
+
+The post-clean build status is also controlled. An aggregate fresh rebuild and
+a bounded `NavierStokes.R3.Theorem` rebuild exceeded their execution limits
+without emitting a Lean error. They are recorded as incomplete verification,
+not as Lean failures or successes. The last completed compiled closure is the
+dated 2026-09-26 export. See
+`NavierStokesReview/evidence/fresh_build_status_2026-09-27.md`.
+
+## Current source-coverage boundary: 2026-09-27
+
+A source-only refresh now accounts for 2,790 Lean modules and 50,191 parsed
+declarations in the current checkout. It records 3,021 extracted-tree entries,
+2,997 unique-basename resolutions, 24 explicit ambiguities, and no missing
+basenames. The scan finds no `unsafe`, `axiom`, or `admit` declarations. Four
+actual `sorry` bodies remain in the standalone comparator challenge files;
+the other six literal-token hits are explanatory comments, not proof holes.
+
+This is repository inventory evidence, not a replacement for the compiled
+endpoint closure. The latest completed closure is still dated 2026-09-26, and
+the post-clean rebuild is incomplete. The source census therefore strengthens
+file accountability without upgrading CTR-005 or converting the selected-field
+correspondence gap into a kernel contradiction.
+
+## Current route-scope clarification: 2026-09-27
+
+The audit does not classify the five-moment branch as absent. Direct source
+inspection shows that `PositiveOrderMoments` contributes slow-base and exterior
+primitive identities, while `FiveRowRank`, `MeanRankUpdate`, and `barMoment`
+occur in correction-state and stage-invariant routes reachable from the
+selected endpoint. The remaining question is whether a declaration transports
+those identities through the actual `potentialSum`, spatial curl,
+localisation, periodisation, torus averaging, and final Cartesian packaging.
+
+The endpoint constructor instead passes smoothness, divergence, joint residual
+jets, away extensions, and origin blow-up to
+`CandidateConsequences.mixed_exists_force_with_consequences`. Its exported
+proposition contains no equality identifying the final `ASum`, `BSum`, or
+`PSum` fields with `(M,I,J,S,C_p)`. Accordingly, this manuscript treats
+CTR-005 as a selected-field transport obligation, not as a claim that the
+upstream correction mathematics is dead code.
+
+## Partial bridge inventory: 2026-09-27
+
+The review-side completion layer contains genuine intermediate results that
+must be distinguished from the missing endpoint theorem. It proves
+finite-prefix curl expansions, the cutoff-gradient commutator, local radial
+scalar formulae, torus-average and radial reductions, and typed `barMoment`
+pullbacks. It also proves selected cycle/base moment facts. These results do
+not, by themselves, evaluate the final infinite mixed Cartesian field or
+identify its value with `(M,I,J,S,C_p)`.
+
+The exact declarations and coordinates are recorded in
+`NavierStokesReview/evidence/selected_transport_bridge_inventory_2026-09-27.md`.
+The required theorem remains a value-level equality after `potentialSum`, curl,
+localisation, periodisation, `torusAverage`, radial pullback, `barMoment`, and
+axis/whole-space extension. No nonzero remainder has yet been calculated, so
+the calibrated conclusion is an open correspondence obligation, not a
+ kernel-level contradiction.
+
+## Global cross-layer audit
+
+The review was extended beyond the moment branch. The source proves a forced
+whole-space energy identity and a uniform pre-singular finite-energy estimate
+(`R3/CompactEnergy.lean:201-377`). It also proves smooth spatial
+localisation, periodisation, divergence freedom, local agreement, origin
+agreement, and residual-jet transfer (`MixedPeriodicAssembly.lean:51-245`).
+The activation layer is smooth and agrees with the underlying field after
+time `3/4` (`TimeLocalization.lean:27-160`). These results remove the earlier
+energy-missing and cutoff-discontinuity objections.
+
+Pressure recovery has a narrower scope. `PressureRecovery.gradient_recovery`
+and `ActualPressureFlux.pressure_flux_eq_canonical` compare pressure
+differences under equal-residual hypotheses. They do not, at the inspected
+export boundary, provide a standalone absolute Poisson/Leray representation
+for the selected pressure. Likewise, `CandidateFromLimits.force` is defined
+from traced residual jets and is equal to the activated residual before time
+one. This is evidence for force provenance and path dependence, not a literal
+kernel contradiction of an existential force statement.
+
+The complete lane-by-lane source ledger is
+`NavierStokesReview/evidence/global_cross_layer_audit_2026-09-27.md`.
+
+## Direct check of the proposed moment-transport junctions
+
+The source audit also checked the architectural locations where a differently
+named transport theorem would have to occur. The result is mixed, not empty.
+`LocalPaperTheorem.lean:128-176` proves the selected local schedule and its
+residual/exterior properties, while `PaperLocalization.lean:28-48` packages
+local agreement with a compact candidate. `EntranceAlignedBase.lean:666-671`
+proves a five-moment identity for the aligned base history. Separately,
+`CorrectionState.lean:449-476` and `DefectIncrementBounds.lean:621-646,
+775-813` prove `FiveRowRank.FiveRows`, correction-moment vanishing, and
+stage-level preservation.
+
+Those are genuine local results. They do not state the missing composition
+
+\[
+  (M,I,J,S,C_p)(u_{\mathrm{selected}},p,f)
+  = (M,I,J,S,C_p)_{\mathrm{paper}}
+\]
+
+for the final field assembled through `potentialSum`, curl, localisation,
+periodisation, torus averaging, and radial integration. The endpoint
+`ActualCandidateAssembly.Witness` still exports the schedule, assembled sums,
+regularity, residual, energy, blow-up, and boundary-jet predicates without
+that value-level equality. Thus the audit confirms real upstream mathematics
+and a real selected-path correspondence obligation at the same time.
+
+The upstream route is stronger than this short junction list alone.
+`GlobalSlowProfiles.profiles_moments`
+(`GlobalSlowProfiles.lean:1043-1060`) proves all five rows for the constructed
+positive-order profile sequence. `GlobalStressSupport.moments_zero`
+(`GlobalStressSupport.lean:144-157`) transfers them to the axial and angular
+histories, and `AssembledSlowBase.lean:592-617` uses the zero mass row to
+prove an exterior primitive vanishes. These are transported local results;
+the unresolved step is their identification with the final mixed Cartesian
+fields after the complete assembly and projection chain.
+
+## Current reproducibility boundary
+
+The source census was refreshed on 2026-09-27 and indexed 2,790 Lean modules
+and 50,191 declarations. A fresh compiled-environment replay could not yet be
+completed because the current `.lake` directory lacks the endpoint object
+`NavierStokes/R3/Theorem.olean`; a bounded rebuild attempt timed out. The
+earlier compiled dependency join is consequently treated as a dated snapshot,
+not as a fresh replay of the current checkout. This affects the status of the
+compiler-closure evidence, not the source-level finding that upstream moment
+theorems exist while the final selected-field value equality remains
+unestablished. Full details are in
+`NavierStokesReview/evidence/fresh_environment_replay_2026-09-27.md`.
+
+## Reachable outgoing-profile identities
+
+The selected source closure also contains a distinct outgoing-profile route:
+
+```text
+ActualCandidateAssembly
+→ InitialPhysicalData → ActualPrimaryBounds → CorrectionInitialization
+→ MeanRankUpdate → FiveProfileMoments → UniformAngularReset
+→ OutgoingTail → OutgoingSchedule
+```
+
+`OutgoingSchedule.lean:739-747` defines the scalar `massMoment` and
+`angularMoment` integrals. The theorems at `OutgoingSchedule.lean:846-927`
+prove their endpoint cancellation, and `OutgoingTail.lean:908-923` preserves
+the corresponding two identities through the extended angular profile. This
+is genuine reachable profile mathematics and must be included in any account
+of the construction.
+
+It does not, by itself, close the selected-field correspondence. The cited
+identities concern two scalar outgoing-profile quantities used by the
+correction/rank route. They do not identify the complete five named
+observables with the final `ASum`, `BSum`, and `PSum` Cartesian fields after
+curl, localisation, periodisation, infinite summation, torus averaging, and
+radial pullback. The publication claim therefore remains **NOT ESTABLISHED**
+until that final value-level identification is supplied.
+
+## Endpoint assembly: what is proved and what is not
+
+The source review does not characterise the final construction as disconnected.
+`TailGaugePotential.finalPotential` is built from
+`FinalSlowBase.vectorPotential`, and `finalPotential_sameCurl` identifies its
+curl with `FinalSlowBase.velocity` on the pre-terminal region
+(`TailGaugePotential.lean:433-450`). The initial potential is then decomposed
+into the slow-base field, initial curl data, and direct angular data
+(`ActualPhysicalStageBounds.lean:616-656`).
+
+`ActualCandidateAssembly.lean:205-211` defines the zeroth potential from the
+final base plus the initial increment. Its stage family, successor laws,
+positive-stage curl/chart equalities, pressure equalities, and
+`stageRealizations` are supplied at `:531-568` and `:1003-1077`. The exported
+endpoint forms `ASum`, `BSum`, and `PSum` at `:1125-1151`, then applies
+localisation, periodisation, and time activation before checking
+`CandidateProperties`. `MixedPeriodicAssembly` supplies corresponding field
+smoothness, periodicity, local equality, and divergence-transfer results.
+
+The unresolved point is therefore not whether Cartesian fields are assembled.
+It is whether the paper's named observables are evaluated on those final fields
+after all of those operations. The reachable moment declarations prove
+profile/history identities such as `massMoment_endpoint` and
+`angularMoment_endpoint` (`OutgoingSchedule.lean:739-950`) and outgoing-tail
+preservation (`OutgoingTail.lean:908-923`). The audit has not found a theorem
+identifying those scalars with the five named observables of the activated,
+periodised `ASum`/`BSum`/`PSum` field. This remains a selected-field
+value-level correspondence obligation, not a dead-code claim.
+
+The audit also confirms a genuine logarithmic profile/history bridge.
+`NominalConeAssembly.lean:366-446` proves chart identities for the outgoing
+quantities \(M,J,I,S\), while `Witness.log_histories`
+(`NominalConeAssembly.lean:452-470`) maps them to the outgoing and heat-switch
+histories; parameter transport continues at `:596-667`. These results are
+part of the actual upstream construction. Their codomain is profile/history
+data, however, not the final activated Cartesian `ASum`/`BSum`/`PSum` field.
+They therefore strengthen the positive source record without supplying the
+remaining endpoint observable calculation.
+
+The scope of the finite-modification record is narrower than the full paper
+mechanism. `AssembledSlowBase.FiniteModification`
+(`AssembledSlowBase.lean:1514-1529`) stores field and pressure agreement
+together with one explicit mass equality. The remaining local profile and
+rank identities are supplied by separate theorems. This is not evidence that
+the five-moment construction is absent; it is evidence that the record itself
+is not the final five-moment certificate for the selected Cartesian field.
+
+## Local Cartesian coherence
+
+The source also contains a genuine local Cartesian realisation layer in
+`ActualPrimaryCoherence.lean:1866-1940`. It defines Cartesian potentials and
+their spatial curls, and proves smoothness, axis behaviour, the piece-to-
+Cartesian velocity relation, the corresponding pressure representation, and
+divergence-freeness on the stated domains. The review therefore does not claim
+that the Cartesian field layer is absent. The remaining question is whether
+the five profile observables are evaluated on the final mixed
+`ASum`/`BSum`/`PSum` fields after the complete endpoint composition.
+
+## Paper-grounded significance of the missing selected-field theorem
+
+The paper itself establishes why the remaining transport question is
+load-bearing. In Section 4.2, equation (4.15), the authors define the five
+cumulative radial quantities \(M,I,J,S,C_p\); Lemma 4.4 says that matching them
+at a joining radius preserves the radially integrated exterior pressure, radial
+velocity, and stress. Section 5.2, equations (5.10)--(5.11), then uses a
+five-equation correction system to remove exterior pressure and stress terms.
+The localisation sections further state that spatial cutoffs are applied to
+vector potentials before differentiation so incompressibility is retained, and
+that the cutoff/curl contributions are included in the full residual.
+
+Accordingly, the audit does not ask for a cosmetic restatement of an upstream
+profile lemma. The required selected-path theorem must evaluate the advertised
+observables on the final Cartesian field after the concrete sequence
+
+\[
+\text{profile stages}\;\longrightarrow\;\texttt{tsum/potentialSum}
+\longrightarrow\;\operatorname{curl}
+\longrightarrow\text{cutoffs and periodisation}
+\longrightarrow\text{torus average and radial pullback}
+\longrightarrow\;(M,I,J,S,C_p).
+\]
+
+The source contains genuine upstream certificates, rank identities, outgoing
+profile identities, and local Cartesian curl constructions. The inspected
+endpoint still exposes no theorem with this final input/output relation. This
+supports CTR-005 as a failure to establish that the Lean endpoint formalises
+the paper's advertised mechanism. It does not, by itself, prove that the
+selected field has an incorrect moment, produce a nonzero remainder, or derive
+kernel-level `False`. Those stronger conclusions require a completed field-level
+calculation or an impossibility theorem.
+## Partial bridges found in the review tree do not close the selected-field theorem
+
+The review must distinguish absence of an endpoint theorem from absence of all intermediate work. The source tree contains real partial constructions: a typed selected mixed scalar pullback, an exact auxiliary torus-average reduction, a finite-prefix/`tsum` jet-scope result, a cutoff--curl commutator identity, and a positive-radius Cartesian recovery formula. These results make the remaining obligation more precise; they do not make it disappear.
+
+The outstanding theorem is still the value-level statement for the final activated Cartesian field, with every operation in the paper's route represented:
+
+\[
+u_{\mathrm{selected}}
+\xrightarrow{\mathrm{component/pullback}}
+\operatorname{torusAverage}
+\xrightarrow{\mathrm{radial\ integral}}
+(M,I,J,S,C_p).
+\]
+
+The completion `PeriodicGlobalIntegral.selected_mixed_barMoment_zero_of_positive_pullback` must not be cited as that theorem. It assumes strict positivity of a periodic pullback on a fundamental interval, derives non-integrability, and uses the convention `integral_undef` to return zero. The positivity premise is not proved for the selected field, so the result is a conditional semantic warning about the global Bochner-integral definition, not a physical moment evaluation.
+
+Accordingly, the calibrated conclusion is: upstream moment certificates and review-side partial bridges are genuine, but the paper-to-endpoint transport of the five cumulative moments remains unestablished on the inspected Lean record. This is a correspondence failure, not yet a kernel-level contradiction.
+
+## Source-tier re-audit: profile, rank, localisation, and selected construction
+
+The higher-priority source tier narrows the finding further. `PositiveOrderMoments.lean:21-23,77-84,192-301` defines a genuine five-coordinate debt and proves exact profile-level repair and target-moment identities. Its later pressure and flux theorems require explicit zero-moment hypotheses. `MeanRankUpdate.lean:24-44,137-169,195-200` separately defines the three-coordinate physical debt, scaling, and `FiveRows` for correction increments. These are substantive certificates, not dead imports, but their codomains are profile or correction layers rather than the exported selected Cartesian field.
+
+`ActualCandidateConstruction.lean:205-257,289-345,832-970` constructs the selected cycle, chart velocity and pressure stages, direct and stream mean stages, and potential-stage field equalities. `SpatialLocalization.lean:164-203,209-290,313-340` then proves the actual cutoff-before-curl identity, exposes the cutoff-gradient commutator, periodises the fields, and establishes local equality, periodicity, divergence freedom, and residual equality. These results validate substantial intermediate mathematics and also show why the remaining theorem is nontrivial: the commutator and all subsequent transformations must be included in any moment calculation.
+
+The pressure-side source is similarly substantive but scoped. `GlobalSlowProfiles.lean:167-205,281-334,337-400` proves reduced profile/history and cutoff-lift identities, while `TerminalPressure.lean:39-145,149-239,406-627` proves smoothness, integrability, and derivative identities for a canonical presingular heat-tail pressure on its stated positive-radius domain. Neither inspected path supplies the absolute final-field Poisson/moment identity required to identify the exported whole-space witness with the paper's five observables.
+
+Thus the strengthened conclusion is not that OpenAI lacks the five-moment engine. The source contains real local engines and several transformations. The unresolved burden is the composed selected-path theorem:
+
+\[
+\text{profile/correction certificates}
+\to \text{selected stages}
+\to \texttt{tsum/potentialSum}
+\to \operatorname{curl}(\chi A)
+\to \text{periodisation}
+\to \text{torusAverage/radial pullback}
+\to (M,I,J,S,C_p).
+\]
+
+Until that value-level statement, or a concrete impossibility theorem for it, is proved, the appropriate classification remains **not established as paper-to-code correspondence**, not unconditional formal refutation.
+
+## Correction and residual tier: what the additional source review establishes
+
+The next source tier does not weaken the audit by revealing empty scaffolding. `InitialPhysicalData.lean:40-114,141-211,258-355,404-488,535-572,589-685` constructs selected physical coefficients, carriers, pressure coefficients, and support/domain facts. `CorrectionStep.lean:66-225,231-342,396-519,611-739,1024-1110,1173-1190` retains the nonlinear covariance, transport, pressure, and residual cross-terms of a correction cycle. `BaseResidual.lean:36-116,611-666,708-739,776-826,842-910,1024-1110` constructs asymptotic slow-base sums, Cartesian prefixes, spatial-curl rate bounds, pressure prefixes, and axis/growth estimates.
+
+These are positive source findings. They show that the correction, physical-data, and residual layers are mathematically populated and feed substantial intermediate constructions. They still do not supply the final value-level equality
+
+\[
+  \operatorname{Moments}(u_{\mathrm{selected}},p_{\mathrm{selected}},f)
+  =(M,I,J,S,C_p)
+\]
+
+after the complete `tsum`/`potentialSum`, curl, localisation, periodisation, torus-average, radial-pullback, support/integrability, and axis-extension route. The appropriate conclusion is therefore neither that the mechanism is absent nor that a nonzero defect has been found. The current source record leaves the selected-field transport unestablished; the advertised paper-to-Lean correspondence is rejected on this record unless direct evidence changes it.
+
+## Further source tier: slow residuals, stress primitives, resets, and chart transport
+
+The next five priority-ranked modules were inspected directly. `SlowBorelBase.lean`
+constructs smooth slow series with finite-prefix, tail, derivative, and sum-map
+bounds, including pressure and stress coefficient data. `SlowResidualMatching.lean`
+provides reduced slow residual and stress primitives, radial identities, and
+truncation/tail decompositions. `SignedStressPrimitive.lean` constructs compact
+signed bumps with exact weighted moment cancellation and proves physical pullback,
+torus-support, and chart finite-jet properties. `UniformAngularReset.lean`
+proves uniform invertibility and smooth scheduled reset identities for an angular
+moment system. `MeanChartCompatibility.lean` proves scaling and pullback/naturality
+statements for cutoffs, torus averages, pressure, temporal families, source
+moments, and debt/rank data.
+
+These are positive findings: the upstream construction is populated and contains
+substantive correction and transport mathematics. They do not, however, evaluate
+\((M,I,J,S,C_p)\) on the complete selected `ASum`/`BSum`/`PSum` field after
+summation, curl, localisation, periodisation, torus averaging, radial pullback,
+support/integrability, and axis extension. The remaining requirement is a
+composed selected-field theorem or a concrete calculation proving that the
+composition is impossible. This tier supplies neither a nonzero remainder nor
+kernel-level `False`.
+
+The R3 packaging layer was checked separately. `R3/ActualCandidate.lean`
+genuinely packages localized velocity and pressure fields with a smooth
+positive-time force, residual equality, compact support, and finite-energy
+bounds. `ActualInitialization.lean` and `FinalSlowBase.lean` supply populated
+initial and slow-base data, while `TerminalStress.lean` and `MeanResidual.lean`
+provide terminal-stress and angular-mean residual identities. These findings
+strengthen the evidence for a real construction. They do not change the
+endpoint result: the R3 candidate predicate still does not state that the final
+Cartesian field realizes \((M,I,J,S,C_p)\).
+
+The formal contract was also checked at its source definition. `ProblemStatement.lean`
+defines the candidate proposition with smoothness, periodicity, support,
+divergence, residual, energy, initial-value, and speed conditions, and explicitly
+does not assert existence in that module. `PeriodizedWaveBounds.lean` supplies
+local-finite copy-sum and jet bounds; `GaugeMomentBalances.lean` supplies
+measured moving-gauge pressure moments; `BaseExterior.lean` supplies canonical
+heat-exterior identities; and `ActualBaseResidual.lean` supplies fixed-base
+chart and residual identities. These are genuine intermediate results. None
+changes the fact that the final exported contract does not state the selected
+Cartesian equality for the five paper observables.
+
+### Audit calibration after the additional external comments
+
+The latest adversarial comments sharpen the correct research question but also
+contain claims that the source does not yet establish. The Lean source has real
+profile, correction, Cartesian-curl, localisation, residual, energy, and R3
+packaging results. The unresolved issue is narrower and more consequential:
+the inspected endpoint does not export a theorem evaluating the final selected
+Cartesian field against the five paper observables after the full
+`tsum`/`potentialSum`, curl, localisation, periodisation, torus-average,
+radial-pullback, support, integrability, and axis route.
+
+The cutoff-gradient commutator is therefore a required term in the calculation,
+not yet a proved nonzero defect. Similarly, the moment-blindness of the generic
+`StageEstimates` interface does not show that the concrete selected field is
+zero or that all upstream moment-dependent estimates are bypassed. These
+distinctions keep the paper adversarial without converting an open calculation
+into an unsupported kernel refutation. The current classification remains
+**not established as a paper-to-code correspondence under CTR-005** until a
+concrete remainder, impossibility theorem, or complete positive bridge is
+obtained.
+
+### Additional correction/state tier
+
+The subsequent source check found further real intermediate mathematics rather
+than empty scaffolding. `CorrectionState.lean` carries concrete radial pressure
+moments, reconstructed residuals, and rank-model `FiveRows`; `HeatTailEdit.lean`
+proves weighted heat-tail pressure, energy, angular-debt, and jet estimates;
+and `ActualMeanPhysicalData.lean` transports atlas, gauge, rank, temporal, and
+native-jet data through cycle stages. These results narrow the audit but do not
+evaluate the final selected Cartesian field against `(M,I,J,S,C_p)` after the
+full sum/curl/localisation/periodisation/radial-observable composition.
+
+## Latest reachable tier: continuation, slow base, rebase, and rank coherence
+
+The next source pass inspected eight additional reachable modules. The results
+are substantive and refine the audit boundary:
+
+`OffplaneCorrectionExtensions.lean` extends positive-radius slow pressure and
+rank models to supported Cartesian continuation data. `SlowBaseEndpoint.lean`
+lifts profile, potential, velocity, and pressure data to smooth away extensions.
+`ConstructedSlowBase.lean` constructs an axisymmetric potential and its spatial
+curl, then proves finite identities, stress-zero-core statements, jet flatness,
+smoothed divergence-free fields, speed growth, and residual identities for
+nominal and modified scales. `BasePrefixIdentity.lean` proves finite-prefix
+curl/profile, radial-flux, pressure, stress-force, and coefficient-match
+identities. `ActualReferenceRebase.lean` proves rebase and pullback identities
+for actual stage contexts, residual sources, frames, amplitudes, pressures,
+phases, and periodic subcovers. `HarmonicWaveInteraction.lean` proves local
+harmonic-block, zero-mode, convolution, nonlinear-interaction, divergence, and
+residual-difference identities. `ActualPrimaryDynamics.lean` supplies copied
+primary pulse geometry, velocity/pressure germs, cutoff/curl smoothness, and
+local residual formulas. `RankStateCoherence.lean` supplies fibre moments,
+measured debt, normalised rank stages, and `FiveRows` conclusions for correction
+state slices.
+
+This tier rules out another weak description: the repository is not merely a
+collection of disconnected profile names. It contains real local bridges from
+reduced data to Cartesian fields and correction states. It still does not prove
+that the final selected `ASum`/`BSum`/`PSum` field has the paper tuple
+\((M,I,J,S,C_p)\) after summation, curl, localisation, periodisation, torus
+averaging, radial pullback, support/integrability, and the axis limit. The
+cutoff-gradient commutator remains a term that must be evaluated, not a proved
+nonzero defect. The current classification therefore remains **not established
+as a paper-to-code correspondence under CTR-005**, with no kernel `False`
+obtained. The coverage register now contains 85 explicit source reviews and
+513 reachable modules awaiting semantic classification.
+
+## Latest source tier: axisymmetric residual and mean-residual routes
+
+Four further reachable modules were inspected after the continuation and rank
+tier. `AxisymmetricResidual.lean` proves exact regular-axisymmetric Cartesian
+velocity, pressure, divergence, derivative, Laplacian, and Navier--Stokes
+residual formulas, including an on-axis route. `PhysicalParticularWave.lean`
+proves actual particular-wave carrier, potential, curl, pressure, chart-change,
+periodicity, and reference-domain transport identities. `LeadingStress.lean`
+proves reduced angular/axial stress divergence, pressure differentiation,
+positive-radius radial pullback, and physical residual transport. Finally,
+`LiftedMeanResidual.lean` proves smooth angular averaging, periodic invariance,
+conservative flux identities, averaged differential operators, and nonlinear
+residual lifting.
+
+These are real local bridges and further reject the claim that the repository
+contains only disconnected profile names. They still do not evaluate the final
+selected Cartesian field against \((M,I,J,S,C_p)\) after the complete
+sum/curl/localisation/periodisation/torus-average/radial-pullback,
+support/integrability, and axis route. No nonzero remainder, impossibility
+theorem, or kernel `False` was found. The register now records 85 explicit
+source reviews and 513 reachable modules awaiting semantic classification.
+
+## Latest source tier: wave bounds, signed data, and primary residuals
+
+The latest source pass inspected four reachable modules directly.
+`LinearWaveBounds.lean` contains actual wave coefficients, cutoff and curl
+corrections, input bounds, wave classes, exact conditions, and coefficient-level
+harmonic residual identities. `ActualPhysicalStageBounds.lean` derives
+physical-stage smoothness, support, jet, potential, pressure, and gain bounds
+from coherent mean and wave inputs. `ActualSignedWaveData.lean` constructs
+signed support cells, potential and pressure copy families, carriers, source
+amplitudes, frequency identities, and native stage data. `PrimaryResidualClass.lean`
+defines primary correction inputs, invariant angular data, curl-corrected wave
+classes, exact conditions, divergence, linear residual, field projection, and
+smooth primary coefficients.
+
+These declarations are substantive intermediate mathematics. They do not,
+on the inspected source, prove the final selected Cartesian field's
+`(M,I,J,S,C_p)` after the complete `tsum`/`potentialSum`, curl of the
+localised potential, periodisation, torus averaging, radial pullback,
+support and integrability, and axis-limit route. In particular, the source
+does not justify the stronger claim that a cutoff-gradient commutator is
+automatically nonzero. That remains a value-level calculation target. No
+zero-sorry nonzero remainder, impossibility theorem, or kernel `False` was
+obtained in this tier. The coverage register now contains 85 explicit source
+reviews and 513 reachable modules awaiting semantic classification.
+
+## Latest source tier: initial mean, cycle prefixes, and moment resets
+
+The latest source pass inspected four reachable modules directly.
+`ActualInitialMeanEquation.lean` proves initialized angular data, local
+mean/divergence, periodicity, mean-zero, primary-sum divergence, and
+initialized full-divergence identities. `CyclePhysicalPrefixes.lean` defines
+cylindrical and local Cartesian velocity/pressure maps, stage updates, finite
+prefixes, potential/direct splits, and local residual-prefix identities under
+explicit curl-realisation hypotheses. `FiveProfileMoments.lean` contains a
+genuine five-coordinate reduced-profile debt map, exact linear moment maps,
+continuous-linear equivalence, compact correction families, and jet bounds.
+`AngularMomentReset.lean` contains an invertible local angular/pressure reset
+with a pressure-neutral branch and exact endpoint adjustment.
+
+These are substantive intermediate certificates. They do not identify their
+reduced or local moments with the final selected Cartesian `ASum`/`BSum`/`PSum`
+field after `tsum`, curl, localisation, periodisation, torus averaging,
+radial pullback, support/integrability, and the axis limit. No nonzero
+remainder, impossibility theorem, or kernel `False` was obtained. The live
+coverage register now contains 85 explicit source reviews and 513 reachable
+modules awaiting semantic classification.
+### Latest source tier: graph, interaction, axis, pulse, rebasing, and stress review (2026-09-28)
+
+The source audit additionally inspected `GraphCalculus.lean`, `LocalizedMeanInteraction.lean`, `NaturalAxisRange.lean`, `PulseGrowth.lean`, `TorusMeanRequestRebase.lean`, and `BaseStressClasses.lean`. These files contain real off-axis derivative identities, local interaction/rate classes, axis-root and cutoff parameter results, scalar pulse-growth classification, exact request rebasing, and weighted base-stress estimates. They do not state the final selected-field identity evaluating `(M,I,J,S,C_p)` after the complete sum/curl/localisation/periodisation/torus-average/radial route. The register now records 335 evidence-inspected reachable modules and 278 reachable modules still open. No nonzero remainder, impossibility theorem, or kernel `False` is claimed.
+
+## Latest source tier: assembly, geometry, and axis-series review (2026-09-28)
+
+The latest direct source pass inspected `PrimaryFieldAssembly.lean`,
+`R3/ComparisonGronwall.lean`, `UniformHarmonicInteraction.lean`,
+`ActualCycleGeometry.lean`, `ActualPolarCoverage.lean`, and `AxisSeries.lean`.
+These files add genuine periodised vector-field assembly, source and covariance
+identities, comparison/radius bounds, uniform harmonic interaction estimates,
+actual-cycle geometry identifications, axis-aware polar coverage, and explicit
+scalar axis-series analysis. They do not provide the final selected-field
+identity evaluating `(M,I,J,S,C_p)` after the complete sum/curl/localisation,
+periodisation, torus-average, radial-pullback, support/integrability, and axis
+route. The current register records 329 evidence-inspected reachable modules
+and 284 reachable modules still open. No nonzero remainder, impossibility
+theorem, or kernel `False` is claimed from this tier.
+
+### Latest source tier: scales, endpoint coordinates, and R3 comparison estimates (2026-09-28)
+
+The source audit additionally inspected `ChartScales.lean`, `EndpointCoordinates.lean`, `R3/CompactComparisonBounds.lean`, and `R3/ComparisonFiniteEnergy.lean`. These files contain genuine native coefficient/asymptotic bounds, endpoint similarity-coordinate and Cartesian jet agreement, compact comparison estimates, and finite-energy/tensor-difference estimates. They do not state the final selected-field identity evaluating `(M,I,J,S,C_p)` after the complete sum/curl/localisation/periodisation/torus-average/radial route. The register now records 339 evidence-inspected reachable modules and 274 reachable modules still open. No nonzero remainder, impossibility theorem, or kernel `False` is claimed from this tranche.
+### 2026-09-28 priority-69 source tranche: nine modules registered
+
+Direct source review completed for `AnnularEndpoint.lean`, `AxisContraction.lean`, `PhysicalCopyBounds.lean`, `R3/LocalizedFluxEstimates.lean`, `ResetEnergyBounds.lean`, `ScaledActualParticularControl.lean`, `TerminalCone.lean`, `ViscousPropagator.lean`, and `VolterraAnalyticBounds.lean`. These modules add substantive support/germ, periodisation, reduced-axis, tail-energy, cone, coefficient-propagator, and analytic Volterra bounds. They do not state the final selected Cartesian `torusAverage`/`barMoment` transport theorem, and this tranche yields no nonzero defect, impossibility theorem, or kernel `False`.
+
+The regenerated full semantic register now reports **355 evidence-inspected reachable modules** and **258 reachable modules still open**. The authoritative outputs are `NavierStokesReview/evidence/semantic_coverage_register_full_2026-09-27.json`, `.md`, and `.html`, mirrored under `docs/`. Detailed evidence is in `NavierStokesReview/src/audit/priority_69_annular_axis_copy_flux_reset_cone_propagator_source_review_2026-09-28.md`.
+
+### 2026-09-28 priority-70 source tranche: activation, wave regularity, base context, and copy-solve transport
+
+The source audit additionally inspected `ActivationBounds.lean`, `ActualWaveRegularity.lean`, `CommonBaseContext.lean`, and `CopySolveCompatibility.lean`. These files contain genuine activation-factor bounds, smooth actual-wave/curl/tsum regularity, common base/stress context, and generic copy-solve transport. They do not state the final selected-field identity evaluating `(M,I,J,S,C_p)` after the complete sum/curl/localisation/periodisation/torus-average/radial route. The register now records 359 evidence-inspected reachable modules and 254 reachable modules still open. No nonzero remainder, impossibility theorem, or kernel `False` is claimed from this tranche.
+
+### 2026-09-28 priority-71 source tranche: curl realization, diagonal extensions, carrier binding, and finite heads
+
+The source audit additionally inspected `LocalizedCurlRealization.lean`, `MixedDiagonalExtensions.lean`, `ActualCarrierTransport.lean`, and `FiniteHeadClass.lean`. These files contain genuine patchwise curl/divergence and germ identities, potential support/extension, canonical carrier binding, and finite-prefix jet-class transfer. They do not state the final selected-field identity evaluating `(M,I,J,S,C_p)` after the complete sum/curl/localisation/periodisation/torus-average/radial route. The register remains at 359 evidence-inspected reachable modules and 254 reachable modules still open because these rows were previously evidence-classified. No nonzero remainder, impossibility theorem, or kernel `False` is claimed from this tranche.
+
+### 2026-09-28 priority-72 source tranche: pulse, geometry, time averages, and first-order edge
+
+The source audit additionally inspected `CorrectedPulseAmplitude.lean`, `PrimaryGeometryAssembly.lean`, `R3/ComparisonTimeAverages.lean`, and `SlowFirstOrderEdge.lean`. These files contain genuine corrected energy-reset, reduced geometry, finite-energy time-average, and conditional radial-stress results. `SlowFirstOrderEdge` explicitly delegates global moment closure to separate renormalized-moment and slow-order theorems. The tranche does not state the final selected-field identity evaluating `(M,I,J,S,C_p)` after the complete sum/curl/localisation/periodisation/torus-average/radial route. The register now reports 363 evidence-inspected reachable modules and 250 reachable modules still open. No nonzero remainder, impossibility theorem, or kernel `False` is claimed from this tranche.
+
+### 2026-09-28 priority-73 source tranche: base velocity, representatives, context, and reserved patches
+
+The source audit additionally inspected `ActualBaseVelocityBounds.lean`, `BaseContextAssembly.lean`, `PhaseEstimates.lean`, `PrimaryRepresentatives.lean`, `PositiveRepresentatives.lean`, and `ReservedPatches.lean`. These files contain genuine actual coefficient/support and rate identities, reduced stress realisation, phase and representative geometry, and radial `FiveProfileMoments`/`FiveRowRank` patch identities. They do not state the final selected-field identity evaluating `(M,I,J,S,C_p)` after the complete sum/curl/localisation/periodisation/torus-average/radial route. The register now reports **369 evidence-inspected reachable modules and 244 reachable modules still open**. No nonzero remainder, impossibility theorem, or kernel `False` is claimed from this tranche.
+## Audit coverage note: 2026-09-28
+
+The source audit has now directly classified 375 of 588 reachable modules; 238 remain open in the live register. The latest six-module tranche concerns activation collars, particular controls, smooth extensions, local physical bounds, and moving-frame/modal estimates. It does not establish the selected Cartesian transport of `(M,I,J,S,C_p)`, and it does not establish a nonzero defect or kernel contradiction. Evidence: `NavierStokesReview/src/audit/priority_74_activation_control_extension_frame_source_review_2026-09-28.md`.
+## Audit coverage note: 2026-09-28 cutoff/Volterra/wave-interaction tranche
+
+The source audit has now directly classified 381 of 588 reachable modules; 232 remain open in the live register. The latest six-module tranche confirms real summation, angular moment, tail-energy, and separated-curl identities. It does not establish the complete selected Cartesian transport of `(M,I,J,S,C_p)`, nor a nonzero defect or kernel contradiction. Evidence: `NavierStokesReview/src/audit/priority_75_wave_cutoff_volterra_sum_loop_tail_interaction_source_review_2026-09-28.md`.
+## Audit coverage note: 2026-09-28 radial/chart/integral tranche
+
+The source audit has now directly classified 392 of 588 reachable modules; 221 remain open in the live register. The latest eleven-module tranche confirms actual base-radial and radial-integral identities, but does not establish the complete selected Cartesian transport of `(M,I,J,S,C_p)`, a nonzero defect, or a kernel contradiction. Evidence: `NavierStokesReview/src/audit/priority_76_radial_chart_jets_extension_rephase_integral_source_review_2026-09-28.md`.
+
+## Audit coverage note: 2026-09-28 axis/dilation/extension/ODE tranche
+
+The source audit has now directly classified 400 of 588 reachable modules; 213 remain open in the live register. `OutgoingDilation.lean` supplies direct reduced-profile `M`, `I`, `J`, `S`, and axis-datum definitions and identities. This positive evidence narrows, rather than closes, the paper-to-code question: no complete selected Cartesian transport theorem, nonzero defect, or kernel contradiction was established in this tranche. Evidence: `NavierStokesReview/src/audit/priority_77_axis_evaluation_resolvent_phase_gaussian_dilation_extension_ode_source_review_2026-09-28.md`.
+
+### 2026-09-28 priority-78 source tranche
+
+The source audit has now directly classified **414 of 588 reachable modules; 199 remain open**. The latest tranche confirms substantive phase-defect and phase-jet identities, axis harmonic algebra, coefficient/radial weight estimates, polar and edge regularity, stress activation, and weighted Volterra integral regularity. These findings strengthen the intermediate mathematical record but do not establish complete selected Cartesian transport of `(M,I,J,S,C_p)`, a nonzero `Delta m`, impossibility, or a kernel contradiction. Evidence: `NavierStokesReview/src/audit/priority_78_phase_defect_axis_algebra_weighted_volterra_source_review_2026-09-28.md`.
+
+### 2026-09-28 priority-79 source tranche
+
+The source audit has now directly classified **420 of 588 reachable modules; 193 remain open**. The latest tranche confirms substantive axis-operator, chart/component, matching-cone, physical-coordinate, signed-covariance, and moving-edge extension mathematics. These findings strengthen the intermediate record but do not establish complete selected Cartesian transport of `(M,I,J,S,C_p)`, a nonzero `Delta m`, impossibility, or a kernel contradiction. Evidence: `NavierStokesReview/src/audit/priority_79_axis_chart_matching_coordinate_covariance_edge_source_review_2026-09-28.md`.
+## Audit update: reduced radial transport evidence (2026-09-28)
+
+The latest source tranche prevents an overstatement in the manuscript. The repository does contain exact reduced radial pullback identities and weighted `MeanClass` transport (`RadialPullback.lean`, `WeightedRadialPrimitive.lean`), and `ReferencePath.histories` explicitly rebuilds reduced pressure/moment data from a reference path. The unresolved claim is narrower and stronger: the reviewed code does not expose a theorem composing those reduced identities with the selected 3D Cartesian curl, localisation, `tsum`, periodisation, and public `Witness` field so as to establish the paper tuple `(M,I,J,S,C_p)` for the selected endpoint. The manuscript should therefore say “selected endpoint correspondence not established”, not “moment machinery is absent”.
+## Audit update: concrete R3 and reduced-moment bridges (2026-09-28)
+
+The source review now confirms concrete intermediate bridges that the manuscript must acknowledge. `OutgoingSchedule` proves two exact combined reduced moment cancellations; `GaugeRadialResidualBounds` identifies a pressure defect with the auxiliary-torus-averaged zeroth radial mass; `MixedDiagonalResidual` defines the residual from the actual potential sums and proves physical joint zero jets; and `R3CompactCandidate` transfers periodic local properties to compact whole-space fields. The defensible criticism is therefore not that moment machinery is absent. It is that the full five-observable selected-Cartesian composition and its export through `Witness` remain unestablished.
+
+## Audit update: actual debt, exterior, scaling, and entrance layers (2026-09-28)
+
+The latest source review adds further positive evidence. `ActualIntermediateDebtBounds` derives three-component debt from checked correction-step data; `ActualMeanExterior` proves annular exterior vanishing for actual mean and cycle families; the R³ scaling modules establish exact energy and support transformations; `R3ActualCandidate` wraps the selected witness into a compact whole-space candidate; and `NaturalEntrance` proves exact reduced angular and axial source-flux identities. These results must be included in any fair account of the formalisation. They still do not establish the full selected Cartesian `(M,I,J,S,C_p)` transport theorem, so the manuscript retains the calibrated status “selected endpoint correspondence not established”, not an unconditional `False` claim.
+
+## Audit update: localisation and physical-profile components (2026-09-28)
+
+The next six source reviews add exact squared partition normalisation, actual mixed curl-plus-angular field and divergence identities, Gaussian tail and all-order jet bounds, leading-stress edge/exterior controls, signed torus/radial request identities including zero adjusted moments, and a positive pulse covariance cone. These are substantive components of the construction and must not be reduced to a generic rate-interface description. They still do not supply the complete selected Cartesian `(M,I,J,S,C_p)` transport theorem through curl, localisation, `tsum`, periodisation, and public `Witness`; the calibrated conclusion remains correspondence not established.
+
+## Audit update: residual grouping, diagonal rates, and compact force (2026-09-28)
+
+The latest source tranche records genuine axisymmetric and finite local residual grouping, diagonal stage-to-limit jet/curl estimates, compact temporal and spatial force decay, and a uniform pre-singular \(R^3\) compact-force \(L^2\) bound. These results strengthen the regularity and force-admissibility record. `DiagonalResidual` proves all-order flatness order-by-order with stage choices; it is not a fixed-tail weighted radial-moment theorem. The reviewed tranche still does not establish the complete selected Cartesian `(M,I,J,S,C_p)` transport through `Witness`, and does not establish `Delta m != 0`, impossibility, or a kernel contradiction. Evidence: `NavierStokesReview/src/audit/priority_87_residual_grouping_decay_compact_force_source_review_2026-09-28.md`.
+
+## Audit update: profile cones, covers, similarity, and mean updates (2026-09-28)
+
+The latest source tranche confirms actual reduced cone/stress and loop-moment algebra, analytic axis and heat-profile extensions, anisotropic similarity-chart transitions, an explicit Cartesian axisymmetric curl lift with support bounds, periodised-copy solves, and temporal mean updates. These are substantive parts of the formal construction and must be represented as positive intermediate evidence. They still do not expose the complete selected Cartesian `(M,I,J,S,C_p)` equality through the public `Witness`; no `Delta m != 0`, impossibility theorem, or kernel contradiction is asserted. Evidence: `NavierStokesReview/src/audit/priority_88_profile_cone_cover_similarity_mean_source_review_2026-09-28.md`.
+
+## Audit update: moment repair, stress, alias, and curl covariance (priority 89, 2026-09-28)
+
+The latest source tranche confirms compact reduced moment repair, exact abstract repair, torus inverse and alias transport, reduced stress identities, local gauge-mass preservation, and strong cylindrical/Cartesian curl covariance. These are substantive parts of the construction and must not be omitted. The reviewed declarations still do not expose the complete selected Cartesian `(M,I,J,S,C_p)` equality through the public `Witness`; no `Delta m != 0`, impossibility theorem, or kernel contradiction is asserted. Evidence: `NavierStokesReview/src/audit/priority_89_moment_repair_stress_alias_curl_source_review_2026-09-28.md`.
+
+## Audit update: moment matrices, prepared profiles, Gaussian bounds, and smooth repair (priority 90, 2026-09-28)
+
+The latest source tranche confirms nonsingular generalised-power and bump moment matrices, scheduled and prepared outgoing profiles, whole-space Gaussian integrability, and smooth/analytic abstract quadratic repair. These are substantive upstream components and must be represented positively. They still do not expose the complete selected Cartesian `(M,I,J,S,C_p)` equality through the public `Witness`; no `Delta m != 0`, impossibility theorem, or kernel contradiction is asserted. Evidence: `NavierStokesReview/src/audit/priority_90_moment_matrix_prepared_profiles_gaussian_solver_source_review_2026-09-28.md`.
+
+## Audit update: torus inversion and periodic phase assembly (priority 91, 2026-09-28)
+
+## Audit update: R3 energy, force, polar graph, and uniform curl layers (priority 92, 2026-09-28)
+
+The next direct source tranche confirms genuine R3 force-norm and viscous-dissipation accounting, smooth positive-time force support, an off-axis physical polar-graph reconstruction, scalar forced Gronwall estimates, and broad uniform primary/curl rate propagation. These results correct any suggestion that the R3 energy or temporal-cutoff machinery is merely absent. They remain intermediate correspondence evidence: they do not expose the complete selected Cartesian `(M,I,J,S,C_p)` equality through `Witness`; no `Delta m != 0`, impossibility theorem, or kernel contradiction is asserted. Evidence: `NavierStokesReview/src/audit/priority_92_r3_energy_force_polar_graph_uniform_weights_source_review_2026-09-28.md`.
+
+The latest direct source review confirms a substantive parametric torus-inverse layer and a substantive periodic-phase assembly layer. These modules prove smooth parameter/torus regularity, zero-mean and periodicity properties, Fourier inverse and multiplier estimates, rapid decay, finite-jet bounds, compact clock windows, locally finite tsum periodisation, phase/angular-lift identities, geometry transport, and carrier-adapter germ/jet facts. They strengthen the positive construction record. They do not, by themselves, expose the complete selected Cartesian `(M,I,J,S,C_p)` equality through `Witness`; no `Delta m != 0`, impossibility theorem, or kernel contradiction is asserted. Evidence: `NavierStokesReview/src/audit/priority_91_parametric_inverse_periodic_phase_source_review_2026-09-28.md`.
+
+## Audit update: limits, debt matching, lifespan, reindexing, pulse history, and radial flux (priority 93, 2026-09-28)
+
+The latest direct source tranche confirms genuine joint boundary-limit and flat-residual extensions, reduced five-coordinate matching/debt bounds, relative maximal-lifespan consequences, exact reindexing of mean and residual rate classes, explicit pulse energy-history bounds, and an off-axis radial-flux residual identity. These are substantive intermediate components and must not be omitted. They still do not expose the complete selected Cartesian `(M,I,J,S,C_p)` equality through `Witness`; no `Delta m != 0`, impossibility theorem, or kernel contradiction is asserted. Evidence: `NavierStokesReview/src/audit/priority_93_limits_debt_lifespan_reindex_pulse_flux_source_review_2026-09-28.md`.
+## Audit update: limits, debt matching, lifespan, reindexing, pulse history, and radial flux (priority 93, 2026-09-28)
+
+The latest direct source tranche confirms genuine joint boundary-limit and flat-residual extensions, reduced five-coordinate matching/debt bounds, relative maximal-lifespan consequences, exact reindexing of mean and residual rate classes, explicit pulse energy-history bounds, and an off-axis radial-flux residual identity. These are substantive intermediate components and must not be omitted. They still do not expose the complete selected Cartesian `(M,I,J,S,C_p)` equality through `Witness`; no `Delta m != 0`, impossibility theorem, or kernel contradiction is asserted. Evidence: `NavierStokesReview/src/audit/priority_93_limits_debt_lifespan_reindex_pulse_flux_source_review_2026-09-28.md`.
+## Audit update: histories, initial means, harmonic support, exterior prefixes, and signed families (priority 94, 2026-09-28)
+
+The latest direct source tranche confirms genuine reduced history/repair identities, initial mean/covariance/rank data, harmonic coefficient/support calculus, exterior prefix and germ agreement, a local particular-mean covariance gain, and signed potential/pressure support. These are substantive intermediate components and must not be omitted. They still do not expose the complete selected Cartesian `(M,I,J,S,C_p)` equality through `Witness`; no `Delta m != 0`, impossibility theorem, or kernel contradiction is asserted. Evidence: `NavierStokesReview/src/audit/priority_94_histories_means_harmonic_exterior_source_review_2026-09-28.md`.
+
+## Audit update: core support, time localization, comparative pressure, and uniform bounds (priority 96, 2026-09-28)
+
+The latest direct source tranche confirms concrete core/support geometry, signed unmasked and uniform block bounds, off-plane and oscillatory-curl estimates, smooth time localization with an explicit switched residual formula, comparative weak pressure/Poisson identities, compact pressure-flux tests, Riesz test regularity, reduced schedule pressure, and tail/cone control. These are substantive intermediate components and must not be omitted. They still do not expose an absolute selected pressure representative or the complete selected Cartesian `(M,I,J,S,C_p)` equality through `Witness`; no `Delta m != 0`, impossibility theorem, or kernel contradiction is asserted. Evidence: `NavierStokesReview/src/audit/priority_96_core_support_pressure_recovery_localization_source_review_2026-09-28.md`.
+
+## Audit update: local curl and reduced moment bridges (priority 97, 2026-09-28)
+
+The latest direct review identifies genuine local Cartesian-curl and potential-to-velocity identities in `ActualMeanPotentialRealization.lean` and `TailGaugePotential.lean`, together with genuine reduced/chart moment identities in `NominalConeAssembly.lean`. The correct remaining claim is therefore compositional: the source record still does not expose a theorem carrying those identities through the selected global sums, localisation, periodisation, and public `Witness` observables to the final Cartesian `(M,I,J,S,C_p)` equality. No `Delta m != 0`, impossibility theorem, or kernel contradiction is asserted. Evidence: `NavierStokesReview/src/audit/priority_97_local_curl_profile_moment_bridge_source_review_2026-09-28.md`.
+
+## Audit update: signed regularity, gauge/copy transport, support, and axis data (priority 98, 2026-09-28)
+
+The latest direct review confirms signed native regularity, exponent/rate arithmetic, gauge and alias coherence, interval-copy and tangent transport, support preservation, reduced exterior matching, axis pressure data, positive-time signed wave data, and reduced pressure-kernel bounds. These are substantive intermediate components. They still do not expose the complete selected Cartesian `(M,I,J,S,C_p)` equality through `Witness`; no `Delta m != 0`, impossibility theorem, or kernel contradiction is asserted. Evidence: `NavierStokesReview/src/audit/priority_98_signed_gauge_copy_support_axis_transport_source_review_2026-09-28.md`.
+
+## Audit update: carrier, cycle, signed-axis, and pressure-flux review (priority 109, 2026-09-28)
+
+The latest twelve-module review records substantive intermediate transport: current-band support, signed request/amplitude/pressure `tsum` transport, cycle-state coherence, angular curl invariance, dependent-family periodisation, reduced natural-axis bridges, future pressure integrals, physical-stage bounds, and comparative whole-space pressure flux. It does not establish the final selected Cartesian `barMoment` / `(M,I,J,S,C_p)` equality, a nonzero defect, an impossibility theorem, or a kernel contradiction. Evidence: `NavierStokesReview/src/audit/priority_109_carrier_cycle_signed_axis_pressure_source_review_2026-09-28.md`.
+
+## Audit update: cycle coherence, initial state, particular data, and corrected pressure (priority 110, 2026-09-28)
+
+The latest four-module review records substantive intermediate construction: initialized state and band transport, coherent cycle iteration, particular-cycle native source/pressure/Gaussian data, and reduced corrected-pressure matching and bounds. Priority 111 adds cycle preservation, curl-corrected particular realization, and germ/cutoff transport. Priority 112 adds reduced activation stocks, locally finite diagonal `tsum` jet/tail bounds, and compensated outgoing-profile integral identities. Priority 113 adds heated outgoing reduced-profile identities, mode-solenoidal reindexing, and shaped-wait temporal bounds. These results do not establish the final selected Cartesian `barMoment` / `(M,I,J,S,C_p)` equality, a nonzero defect, an impossibility theorem, or a kernel contradiction. Evidence: `NavierStokesReview/src/audit/priority_110_cycle_initial_particular_pressure_source_review_2026-09-28.md`, `NavierStokesReview/src/audit/priority_111_cycle_preservation_particular_realization_source_review_2026-09-28.md`, `NavierStokesReview/src/audit/priority_112_activation_diagonal_extended_heated_source_review_2026-09-28.md`, and `NavierStokesReview/src/audit/priority_113_heated_mode_reindex_shaped_wait_source_review_2026-09-28.md`.

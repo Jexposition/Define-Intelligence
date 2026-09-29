@@ -1,0 +1,24 @@
+{
+  "schema": "source-tranche-review/v1",
+  "date": "2026-09-29",
+  "priority": 151,
+  "scope": "Euler cylinder means, development bridge, divergence-free heat, drift estimates, Duhamel calculus, and scalar commutators",
+  "files": 12,
+  "source_hygiene": {"sorry": 0, "admit": 0, "axiom": 0},
+  "records": [
+    {"path":"Euler/CylinderSpatialMeanPath.lean","anchors":"8; 25-70","finding":"Defines a bounded spatial path mean with translation covariance, norm, differentiability, and block majorants. No selected-field radial moment transport."},
+    {"path":"Euler/CylinderSpatialMeanRepresentative.lean","anchors":"17-64","finding":"Proves continuity, MemLp, and almost-everywhere representative identities for lifted raw means. No CMI observable equality."},
+    {"path":"Euler/CylinderTerminalAmplitude.lean","anchors":"24-47","finding":"Bounds constant-path blocks and terminal amplitudes. No selected Navier-Stokes endpoint theorem."},
+    {"path":"Euler/DevelopmentBridge.lean","anchors":"20-55","finding":"States divergence/development identities and a velocity-field conversion guarded by explicit all-order spatial integrability. The source says the comparator does not provide that hypothesis."},
+    {"path":"Euler/DivergenceFreeHeat.lean","anchors":"17-132","finding":"Proves heat, convolution, and mild-solution preservation of a projected zero-gradient invariant. No five-moment or pressure-Poisson transport."},
+    {"path":"Euler/DriftGlobalInviscidGevrey.lean","anchors":"9-21","finding":"States a global inviscid Gevrey PDE construction under explicit hypotheses. Euler drift infrastructure, not selected Navier-Stokes Witness."},
+    {"path":"Euler/DriftMetricForcing.lean","anchors":"8-19","finding":"States metric correction-forcing bounds using drift, pressure, transport, and coefficient estimates. Not CMI force provenance."},
+    {"path":"Euler/DriftNonlinearEstimate.lean","anchors":"8-45","finding":"Proves drift-loss absorption, polynomial assembly, and correction-forcing bounds. No five-observable equality."},
+    {"path":"Euler/DuhamelDifferentiation.lean","anchors":"9-114","finding":"Defines heat/Duhamel flows and proves continuity, measurability, Lipschitz, and derivative identities. No selected-field moment transport."},
+    {"path":"Euler/DuhamelEquation.lean","anchors":"7-90","finding":"Proves Duhamel decomposition, source-tail differentiation, and inhomogeneous heat derivative identities. Not the exported Navier-Stokes endpoint."},
+    {"path":"Euler/DuhamelPasting.lean","anchors":"8-55","finding":"Proves restart, shifted source, source-integral, and mild-solution gluing identities. No global CMI correspondence theorem."},
+    {"path":"Euler/ExternalScalarCommutator.lean","anchors":"8-120","finding":"Defines scalar commutators and proves smoothness, MemLp, positivity, successor, and convolution bounds. No computed nonzero selected-field defect."}
+  ],
+  "absence_boundary": "No declaration in this tranche mentions barMoment, FiveRowRank, PositiveOrderMoments, selected_witness, CandidateProperties, or an equality identifying a final Cartesian field with (M,I,J,S,C_p). This is tranche-level evidence, not a repository-wide nonexistence proof.",
+  "conditional_bridge": "DevelopmentBridge.velocityField requires an explicit all-order spatial-integrability hypothesis; the source comment states that the Comparator does not provide it."
+}

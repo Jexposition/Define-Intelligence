@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-29",
+  "priority": 143,
+  "scope": "direct raw-source review of five Euler cylinder angle and classical-field modules",
+  "classification": "source_reviewed",
+  "files": [
+    {
+      "file": "Euler/CylinderAnglePrimitive.lean",
+      "imports": ["Euler.CylinderSobolevOperators", "Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic"],
+      "anchors": "15-29; 41-82; 98-101",
+      "declarations": ["angleShift", "kernelCurve", "kernelIntegral", "kernelIntegral_add", "kernelIntegral_smul", "kernelIntegral_norm", "primitiveLinear", "primitive", "primitive_translation", "sobolevPrimitive", "sobolevPrimitive_norm"],
+      "finding": "Bounded angular primitive on cylinder L2, continuous operator structure, norm estimate, translation commutation, and Sobolev lift."
+    },
+    {
+      "file": "Euler/CylinderAngleRepresentative.lean",
+      "imports": ["Euler.CylinderAnglePrimitive", "Euler.AnglePrimitiveKernel", "Euler.SobolevPointEvaluation"],
+      "anchors": "1-3; 16-21; 31-73",
+      "declarations": ["sobolevKernel_continuous", "sobolevPrimitive_eq_integral", "pointEvaluation_translation", "pointEvaluation_primitive_kernel", "pointEvaluation_primitive_classical", "primitive_ae_classical"],
+      "finding": "Sobolev primitive integral and classical representative identities under explicit representative and mean hypotheses."
+    },
+    {
+      "file": "Euler/CylinderAngleWordBounds.lean",
+      "imports": ["Euler.CylinderAnglePrimitive", "Euler.ParameterSobolevProductGevrey", "Euler.LpCylinderOrbit"],
+      "anchors": "1-3; 17-34; 49-74",
+      "declarations": ["primitive_hasDerivWithinAt", "primitive_mixed_translation", "primitive_block_bound", "primitive_block_majorant", "pathPrimitive", "pathPrimitive_norm", "pathPrimitive_block_bound", "pathPrimitive_block_majorant"],
+      "finding": "Angular primitive translation and mixed-word/Gevrey block-bound propagation through a bounded continuous operator."
+    },
+    {
+      "file": "Euler/CylinderBoundedCover.lean",
+      "imports": ["Euler.CylinderSobolevWordBounds", "Euler.SobolevJointEvaluation"],
+      "anchors": "1-2; 24-58; 69-127",
+      "declarations": ["cover", "cover_norm_le", "coverLinear", "coverMap", "coverMap_norm_le", "coverPathMap", "coverPath", "coverOrbit", "coverOrbit_contDiff", "coverOrbit_apply", "coverOrbit_zero"],
+      "finding": "Sobolev cylinder field lifted to bounded continuous functions on the real cover with norm, orbit, and translation identities."
+    },
+    {
+      "file": "Euler/CylinderClassicalWordBounds.lean",
+      "imports": ["Euler.CylinderOrbitSobolev"],
+      "anchors": "1-2; 23-90; 96-140",
+      "declarations": ["strongWord", "strongWord_snoc", "strongWord_translation", "strongWord_smooth", "strongWord_ae", "representative_strongWord", "classicalWord_memLp", "classicalBaseSize_eq", "classicalBlockSize", "classicalBlockSize_eq", "path_classicalBlockSize_le"],
+      "finding": "Actual classical mixed derivatives identified with finite L2 word sums under SmoothOrbit hypotheses; no selected NS endpoint statement."
+    }
+  ],
+  "dependent_imports": [
+    "Euler/CylinderAngleAverageRepresentative.lean",
+    "Euler/CylinderAngleEvolution.lean",
+    "Euler/CylinderScalarRepresentative.lean",
+    "Euler/CylinderSmoothTimeField.lean",
+    "Euler/CylinderScalarPrimitive.lean",
+    "Euler/CylinderTimeWords.lean",
+    "Euler/FieldTowerSmoothTimeField.lean"
+  ],
+  "endpoint_test": {
+    "selected_navier_stokes_symbols_found_in_reviewed_files": false,
+    "barMoment_or_five_observable_transport": "not stated",
+    "global_pressure_poisson_endpoint": "not stated",
+    "false_or_nonzero_defect": "not obtained"
+  }
+}

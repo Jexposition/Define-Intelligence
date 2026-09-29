@@ -1,0 +1,30 @@
+{
+  "schema": "source-tranche-review/v1",
+  "date": "2026-09-29",
+  "priority": 149,
+  "scope": "Euler cylinder path words, physical tensors, support, reflection, scalar primitives, and representatives",
+  "method": "Direct source inspection with declaration/import anchors and token scan",
+  "classification": {
+    "positive_infrastructure": true,
+    "captured_navierstokes_r3_endpoint": false,
+    "selected_field_five_observable_transport_found": false,
+    "nonzero_selected_field_defect_proved": false,
+    "false_proved": false
+  },
+  "token_scan": {"files": 12, "sorry": 0, "admit": 0, "axiom": 0},
+  "records": [
+    {"path":"Euler/CylinderPathWords.lean","anchors":"1; 19-65; 72-126","finding":"Constructs finite translation-word and derivative paths with orbit, ae, pointwise, Sobolev, block, majorant, and time-derivative results. No selected field or five-observable equality."},
+    {"path":"Euler/CylinderPhysicalTensor.lean","anchors":"1-2; 17-46; 50-72","finding":"Pulls cylinder fields back through graph coordinates, proves smoothness, and bounds iterated physical derivatives. No radial moment or pressure-Poisson transport."},
+    {"path":"Euler/CylinderPhysicalTensorDifference.lean","anchors":"1; 14-30","finding":"Transfers pointwise and difference bounds for physical tensors from ae hypotheses. No selected endpoint or moment observable."},
+    {"path":"Euler/CylinderPhysicalTensorLp.lean","anchors":"1; 14-49","finding":"Proves graph-word and physical-tensor Lp membership and norm bounds. Lp control does not imply global radial identities."},
+    {"path":"Euler/CylinderRawSupport.lean","anchors":"1-2; 13-39","finding":"Proves representative support containment and compact support under compactness hypotheses. No moment cancellation."},
+    {"path":"Euler/CylinderReflection.lean","anchors":"1; 12-61; 77-98","finding":"Defines measure-preserving reflection and proves isometry, translation, derivative, test, and gradient identities. No selected Cartesian transport."},
+    {"path":"Euler/CylinderRetractRepresentative.lean","anchors":"1-2; 19-56; 62-80","finding":"Builds retract-based pointwise representatives and proves continuity, smoothness, ae equality, and time derivatives. No selected candidate or five-moment tuple."},
+    {"path":"Euler/CylinderScalarAverage.lean","anchors":"1-2; 15-19","finding":"Proves scalar angular mean-zero for the scalar primitive construction. This is not the paper's five cumulative radial identity."},
+    {"path":"Euler/CylinderScalarClassical.lean","anchors":"1-2; 13-79","finding":"Defines the classical scalar angular primitive and proves cover, mean-zero, smoothness, continuity, and zero-input identities. No selected pressure endpoint."},
+    {"path":"Euler/CylinderScalarParity.lean","anchors":"1-2; 12-15","finding":"Proves joint-even parity of the classical scalar primitive. Parity does not identify selected-field radial observables."},
+    {"path":"Euler/CylinderScalarPrimitive.lean","anchors":"1-2; 20-51; 66-116","finding":"Defines scalar embedding/projection and primitive operators with norm, translation, path smoothness, and block-bound results. No selected-field bridge."},
+    {"path":"Euler/CylinderScalarRepresentative.lean","anchors":"1-4; 22-67","finding":"Proves smooth embedding and ae/constructed-field agreement for the scalar primitive. Exact representative agreement is not selected Navier-Stokes transport."}
+  ],
+  "absence_boundary": "No declaration in this tranche mentions barMoment, FiveRowRank, PositiveOrderMoments, selected_witness, CandidateProperties, or an equality identifying a final Cartesian field with (M,I,J,S,C_p). This is tranche-level evidence, not repository-wide nonexistence proof."
+}

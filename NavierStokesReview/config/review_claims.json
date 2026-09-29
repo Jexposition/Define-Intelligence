@@ -1,0 +1,85 @@
+{
+  "schema": "navier-stokes-review-claim-register/v1",
+  "purpose": "Machine-readable control register for source, compiled-route, and semantic-transport claims.",
+  "claims": [
+    {
+      "id": "MAP-001",
+      "title": "Selected endpoint route map",
+      "status": "supported",
+      "level": "compiled-route",
+      "required_routes": [
+        "NavierStokes.ActualCandidateAssembly.selected_witness",
+        "NavierStokesR3.theorem_1_1"
+      ],
+      "required_source_names": [
+        "NavierStokes.ActualCandidateAssembly.selected_witness",
+        "NavierStokesR3.theorem_1_1"
+      ],
+      "evidence": [
+        "NavierStokesReview/evidence/selected_endpoint_routes_2026-09-26.md",
+        "NavierStokesReview/evidence/query_selected_witness_2026-09-26.md"
+      ],
+      "interpretation": "The captured environment reaches the selected endpoint declarations; this does not prove semantic transport."
+    },
+    {
+      "id": "CTR-005",
+      "title": "Selected five-moment transport",
+      "status": "open",
+      "level": "semantic-transport",
+      "required_routes": [
+        "NavierStokes.ActualCandidateAssembly.selected_witness",
+        "NavierStokes.FiveRowRank.FiveRows",
+        "NavierStokes.PositiveOrderMoments.Debt",
+        "NavierStokes.MeanRankUpdate.scaleDebt",
+        "NavierStokes.DefectIncrementBounds.barMoment"
+      ],
+      "required_source_names": [
+        "NavierStokes.ActualCandidateAssembly.selected_witness",
+        "NavierStokes.FiveRowRank.FiveRows",
+        "NavierStokes.PositiveOrderMoments.Debt",
+        "NavierStokes.MeanRankUpdate.scaleDebt",
+        "NavierStokes.DefectIncrementBounds.barMoment"
+      ],
+      "evidence": [
+        "NavierStokesReview/evidence/selected_moment_transport_source_trace_2026-09-25.md",
+        "NavierStokesReview/evidence/selected_mixed_production_torus_average_2026-09-26.md"
+      ],
+      "interpretation": "Reachability is confirmed, but a zero-sorry equality transporting the named paper moments through the selected Cartesian field, periodisation, tsum, and radial observable remains required."
+    },
+    {
+      "id": "CTR-012",
+      "title": "Residual-force provenance",
+      "status": "conditional",
+      "level": "provenance",
+      "required_routes": [
+        "NavierStokes.ActualCandidateAssembly.selected_witness",
+        "NavierStokesR3.ProblemStatement.CandidateProperties"
+      ],
+      "required_source_names": [
+        "NavierStokes.ActualCandidateAssembly.selected_witness",
+        "NavierStokesR3.ProblemStatement.CandidateProperties"
+      ],
+      "evidence": [
+        "NavierStokesReview/evidence/selected_residual_provenance_2026-09-24.md",
+        "NavierStokesReview/evidence/selected_witness_fixed_force_obstruction_2026-09-24.md"
+      ],
+      "interpretation": "The selected force is residual-derived on the constructed path. Treating that as a literal CMI violation requires an explicit independent-data admissibility predicate; the existential formal endpoint is not thereby contradicted."
+    },
+    {
+      "id": "CTR-032",
+      "title": "Selected endpoint axiom hygiene",
+      "status": "supported",
+      "level": "kernel-metadata",
+      "required_routes": [
+        "NavierStokesR3.theorem_1_1"
+      ],
+      "required_source_names": [
+        "NavierStokesR3.theorem_1_1"
+      ],
+      "evidence": [
+        "NavierStokesReview/evidence/hardened_audit_bundle_2026-09-26.md"
+      ],
+      "interpretation": "The captured selected closure has no reachable sorryAx users. This is endpoint-scoped and is not a repository-wide zero-sorry assertion."
+    }
+  ]
+}
