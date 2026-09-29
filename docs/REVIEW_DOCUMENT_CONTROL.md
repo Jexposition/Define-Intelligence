@@ -2224,15 +2224,18 @@ cross-reference check, and parent-archive manifest required by the active goal.
 
 The private source-of-truth branch is now `review/cmi-first-navier-stokes-2026-09-29`
 at `75d7e7f`. The previous curated public baseline remains at `e321bde` and
-will not be rewritten. The current curated publication target is the new dated
-branch `review/cmi-first-navier-stokes-public-2026-09-30`; it has not yet been
-pushed. The legacy 2026-09-22 branch remains separate.
+was not rewritten. The new dated branch
+`review/cmi-first-navier-stokes-public-2026-09-30` is published at `3d7c36d`.
+The legacy 2026-09-22 branch remains separate.
 
 The current untracked inventory contains 60 entries: 54 evidence artefacts, 3
 draft or root documents, 1 protected OpenAI source file, and 2 miscellaneous
 items. No duplicate SHA-256 content was found. These entries are a triage
 backlog, not a staging queue. The Priority 189 wording correction is source
 checked and linked from the formal paper, peer review, and semantic crosswalk.
+Four oversized JSON ledgers were excluded from the public snapshot because
+GitHub rejects files above its size limit. They remain in the private evidence
+tree and were not deleted.
 
 The next control gate is the full document fetch, SHA-256 inventory,
 supersession matrix, and cross-reference check. Confirmed redundant material

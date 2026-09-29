@@ -4101,9 +4101,9 @@ redundant material be moved to its parent archive with a manifest entry.
 The private source-of-truth branch is now at `75d7e7f`
 (`review/cmi-first-navier-stokes-2026-09-29`). The previous curated public
 baseline remains at `e321bde` (`review/cmi-first-navier-stokes-public-2026-09-29`)
-and will not be rewritten. The current curated publication target is the new
-dated branch `review/cmi-first-navier-stokes-public-2026-09-30`; it has not yet
-been pushed. The legacy
+and was not rewritten. The new dated branch
+`review/cmi-first-navier-stokes-public-2026-09-30` is published at `3d7c36d`.
+The legacy
 `review/cmi-first-navier-stokes-2026-09-22` branch remains untouched.
 
 The current untracked inventory is 60 entries: 54 evidence artefacts, 3 draft
@@ -4111,6 +4111,9 @@ or root documents, 1 protected OpenAI source file, and 2 miscellaneous items.
 No duplicate SHA-256 content was found in the inventory. This is a triage
 backlog, not a staging queue. The protected source file, `$null`, raw scans,
 plots, logs, generated registers, and draft root documents remain uncommitted.
+Four oversized JSON ledgers were excluded from the public snapshot because
+GitHub rejects files above its size limit. They remain in the private evidence
+tree and were not deleted.
 
 The current scoped publication tranche consists of the Priority 189 source
 correction and its links in the paper, peer review, and semantic crosswalk.
