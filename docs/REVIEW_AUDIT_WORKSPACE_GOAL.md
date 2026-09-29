@@ -2775,3 +2775,51 @@ Evidence and source anchors:
 `NavierStokes/ComparatorDefinitions.lean:124-238`;
 `NavierStokes/ComparatorR3Theorem.lean:21-44`;
 `NavierStokesReview/src/audit/priority_180_selected_field_boundary_rebuttal_adjudication_2026-09-29.md`.
+
+## Priority 182 goal control: semantic closure is binding, not optional prose
+
+The Fefferman audit now has a dedicated source record for the word-to-condition
+network. The phrases “given”, “externally applied”, “physically reasonable”,
+“Hence”, “only if”, “Alternatively”, “may look”, “Thus”, “In place of”, “We
+then accept”, “such”, “for which”, and “retaining the heart” are mapped to
+their downstream mathematical obligations. In particular, “may look” grants
+branch choice only; once the periodic branch is selected, `(8),(9),(10),(11)`
+bind it. Whole-space C remains the connected package `(1)--(7)`.
+
+This corrects both possible errors: reducing Fefferman to an equation-only
+existential, and claiming literal C/D failure merely because the manuscript's
+selected-field five-moment transport theorem has not been located. The
+operational C-shaped Lean route and the manuscript-fidelity question remain
+separate layers. The latter remains `NOT ESTABLISHED (CTR-005)` until the
+selected Cartesian velocity, pressure, residual, force, support, moment, and
+global admissibility consequences are connected by source-level theorems.
+
+Primary record:
+`NavierStokesReview/src/audit/priority_182_fefferman_semantic_word_to_condition_closure_2026-09-29.md`.
+Evidence:
+`NavierStokesReview/evidence/source_tranche_priority_182_fefferman_semantic_word_to_condition_closure_2026-09-29.json`.
+
+## Priority 181B goal correction: global radial-integral semantics
+
+The selected mixed radial pullback is periodic on the inspected path, but the
+`barMoment` observable is a global Bochner integral over `ℝ`. This is a
+load-bearing semantic gate, not a completed defect theorem:
+
+\[
+\text{periodic} + \text{radial support} \Rightarrow f=0,
+\qquad
+\text{periodic} + \text{positive on }(0,1)
+\Rightarrow f\notin L^1(\mathbb R).
+\]
+
+The audit must not silently transfer finite-prefix compact support through
+periodisation, nor treat `integral_undef` as the paper's physical moment
+calculation. The next required theorem is a selected-field global-integral
+statement with explicit support and integrability hypotheses. Until that is
+proved, the selected `barMoment` value and the paper-level five-observable
+transport remain **NOT ESTABLISHED (CTR-005)**, without claiming a selected
+nonzero defect, impossibility, literal CMI failure, or `False`.
+
+Evidence:
+`NavierStokesReview/src/audit/priority_181_global_barmoment_integrability_gate_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_181_global_barmoment_integrability_gate_2026-09-29.json`.

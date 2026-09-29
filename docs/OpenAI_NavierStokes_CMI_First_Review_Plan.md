@@ -3623,6 +3623,48 @@ Evidence:
 `NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`;
 `docs/CMI_OpenAI_Full_Semantic_Crosswalk.md`.
 
+## Priority 181B: global `barMoment` integrability gate
+
+- [x] Record that the selected mixed radial pullback is proved periodic on the
+  inspected path, while `barMoment` is a global Bochner integral over the real
+  radial coordinate.
+- [x] Record the conditional support obstruction: periodicity plus radial
+  support forces the pullback to vanish, while periodic positivity on a unit
+  interval forces non-integrability and therefore `integral_undef` at the
+  global integral.
+- [x] Do not convert these conditional facts into a selected defect. The
+  selected path has not yet supplied positivity, global integrability, radial
+  support, or a nonzero `barMoment` value.
+- [ ] Prove the finite-prefix-to-selected-global integration theorem with
+  explicit support/integrability hypotheses before assigning a value to the
+  paper observables `(M,I,J,S,C_p)`.
+
+Evidence:
+`NavierStokesReview/src/audit/priority_181_global_barmoment_integrability_gate_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_181_global_barmoment_integrability_gate_2026-09-29.json`.
+
+## Priority 182: lock the word-to-condition semantic closure
+
+- [x] Read “given”, “externally applied”, “physically reasonable”, “Hence”,
+  “only if”, “Alternatively”, “may look”, “Thus”, “In place of”, “We then
+  accept”, “such”, “for which”, and “retaining the heart” as connected
+  semantic operators in `docs/navierstokes.txt:25-81`.
+- [x] Record that C is the whole-space package `(1)--(7)` and D is the
+  periodic package `(1)--(3),(8)--(11)`, including data-side conditions,
+  global time quantifiers, and accepted-solution conditions.
+- [x] Cross-check the OpenAI manuscript's residual-design, cancellation,
+  correction, moment, summation, localisation, and smooth-force claims
+  against that connected C/D package.
+- [x] Cross-check the Lean comparator definitions and theorem against the
+  connected operational C package rather than equations `(1)--(3)` alone.
+- [ ] Continue the selected-field fidelity audit. The semantic closure does
+  not itself prove a selected mismatch or literal C/D failure.
+
+Primary record:
+`NavierStokesReview/src/audit/priority_182_fefferman_semantic_word_to_condition_closure_2026-09-29.md`.
+Evidence:
+`NavierStokesReview/evidence/source_tranche_priority_182_fefferman_semantic_word_to_condition_closure_2026-09-29.json`.
+
 ## Priority 180: enforce the full Fefferman semantic dependency network
 
 - [ ] Audit Fefferman as a connected specification, not as isolated equation

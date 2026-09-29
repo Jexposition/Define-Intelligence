@@ -1,0 +1,59 @@
+{
+  "priority": 181,
+  "date": "2026-09-29",
+  "status": "source_checked_semantic_gate_not_established",
+  "classification": "CTR-005",
+  "claims": [
+    {
+      "id": "P181-01",
+      "claim": "The selected mixed radial pullback is unit-periodic.",
+      "status": "confirmed_on_inspected_path",
+      "reason": "The selected pullback is defined from the actual mixed periodic velocity and the source proves period-one equality after the cylindrical radial-section pullback.",
+      "sources": [
+        "NavierStokesReview/src/completions/SelectedMixedRadialSupportObstruction.lean:31-35",
+        "NavierStokesReview/src/completions/SelectedMixedRadialPeriodicity.lean:31-58",
+        "NavierStokes/MixedPeriodicAssembly.lean:59-65"
+      ]
+    },
+    {
+      "id": "P181-02",
+      "claim": "The selected `barMoment` observable is a global radial Bochner integral.",
+      "status": "confirmed",
+      "reason": "`barMoment_apply` expands the observable over the real radial coordinate after `PressureStream.torusAverage`.",
+      "sources": ["NavierStokes/DefectIncrementBounds.lean:214-220"]
+    },
+    {
+      "id": "P181-03",
+      "claim": "A nonzero periodic scalar that is positive on one fundamental interval is not globally integrable, and its global Bochner integral is zero under `integral_undef`.",
+      "status": "confirmed_conditionally",
+      "reason": "The review completion proves non-integrability from repeated positive periods and then applies Mathlib's `integral_undef`; the positivity premise is explicit.",
+      "sources": ["NavierStokesReview/src/completions/PeriodicGlobalIntegral.lean:31-55"]
+    },
+    {
+      "id": "P181-04",
+      "claim": "The selected endpoint proves the positivity, global integrability, or radial support premise needed to turn the semantic gate into a selected-field value theorem.",
+      "status": "not_located",
+      "reason": "The inspected selected completions retain these as premises; no selected Witness theorem supplying one of them was found in this tranche.",
+      "sources": [
+        "NavierStokesReview/src/completions/PeriodicGlobalIntegral.lean:57-70",
+        "NavierStokesReview/src/completions/SelectedMixedRadialSupportObstruction.lean:38-45"
+      ]
+    },
+    {
+      "id": "P181-05",
+      "claim": "The global-integral branch proves a nonzero selected moment defect or literal CMI failure.",
+      "status": "not_proved",
+      "reason": "The branch is conditional and exposes an integration-semantics gate; it does not establish a selected nonzero value, mismatch, impossibility theorem, or False.",
+      "sources": [
+        "NavierStokesReview/src/audit/priority_181_global_barmoment_integrability_gate_2026-09-29.md",
+        "NavierStokesReview/evidence/periodic_global_integral_semantics_2026-09-26.md"
+      ]
+    }
+  ],
+  "validation": {
+    "lean_build": "not_run_to_Lean; elan unavailable in current shell",
+    "source_folders_modified": [],
+    "deletions": [],
+    "archive_moves": []
+  }
+}

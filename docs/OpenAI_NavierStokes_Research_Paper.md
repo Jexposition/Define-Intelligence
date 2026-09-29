@@ -4666,3 +4666,47 @@ condition.
 This correction is linked to the source adjudication rather than replacing
 the five-moment audit:
 `NavierStokesReview/src/audit/priority_180_selected_field_boundary_rebuttal_adjudication_2026-09-29.md`.
+
+## Selected-field radial observable: integrability gate
+
+The selected-field audit now records a specific analytic issue at the radial
+observable boundary. `barMoment` is a global Bochner integral over the real
+radial coordinate, while the selected mixed radial pullback is periodic on the
+inspected path. Periodicity alone does not define the paper's intended finite
+radial moment on the whole line. If a periodic pullback is positive on one
+fundamental interval it is not globally integrable; if it is both periodic and
+radially supported, it must vanish. Mathlib's `integral_undef` then yields a
+zero global integral only after non-integrability has been established, which
+is not a physical moment identity.
+
+The current source record does not yet prove the selected support,
+integrability, positivity, or a nonzero global value. Accordingly, the
+paper-level five-moment transport remains **NOT ESTABLISHED (CTR-005)**. This
+does not by itself prove a selected mismatch or literal CMI failure. The next
+mathematical obligation is an explicit finite-prefix-to-selected-global
+integration theorem with the correct radial domain and hypotheses.
+
+Evidence: `NavierStokesReview/src/audit/priority_181_global_barmoment_integrability_gate_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_181_global_barmoment_integrability_gate_2026-09-29.json`.
+## Current semantic control: Fefferman's connected admissibility package
+
+The CMI specification is not being treated as an equation-only shell. The
+source-controlled semantic audit maps “given”, “externally applied”, “for
+physically reasonable solutions”, “Hence”, “only if”, “Alternatively”, “may
+look”, “Thus”, “In place of”, “We then accept”, “such”, “for which”, and
+“retaining the heart” to the connected data, branch, global regularity, energy,
+periodicity, and nonexistence obligations. The periodic wording gives branch
+latitude; it does not make the chosen branch's conditions optional.
+
+This matters to the paper's claim in two directions. The OpenAI manuscript
+does contain a substantive residual-cancellation and smooth-force route; the
+review therefore does not call its force a compiler trick. At the same time,
+the manuscript's five-moment and correction mechanism is not credited as
+machine-checked at the final selected Cartesian endpoint until its selected
+field, pressure, residual, force, support, and global C/D consequences are
+connected by explicit source-level transport results. The current status is
+`NOT ESTABLISHED (CTR-005)` for complete manuscript-to-endpoint fidelity,
+not a literal C/D refutation.
+
+Evidence: `NavierStokesReview/src/audit/priority_182_fefferman_semantic_word_to_condition_closure_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_182_fefferman_semantic_word_to_condition_closure_2026-09-29.json`.

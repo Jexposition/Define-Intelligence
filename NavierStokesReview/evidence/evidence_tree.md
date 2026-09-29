@@ -284,5 +284,7 @@
 ├── 📄 priority_177_fefferman_word_connection_adjudication_2026-09-29.md
 ├── 📄 source_tranche_priority_179_fefferman_full_semantic_dependency_network_2026-09-29.json
 ├── 📄 source_tranche_priority_179_latest_force_smoothness_rebuttal_2026-09-29.json
-└── 📄 source_tranche_priority_180_selected_field_boundary_rebuttal_adjudication_2026-09-29.json
+├── 📄 source_tranche_priority_180_selected_field_boundary_rebuttal_adjudication_2026-09-29.json
+├── 📄 source_tranche_priority_181_global_barmoment_integrability_gate_2026-09-29.json
+└── 📄 source_tranche_priority_182_fefferman_semantic_word_to_condition_closure_2026-09-29.json
 ```

@@ -1,0 +1,50 @@
+{
+  "priority": "182",
+  "title": "Fefferman semantic word-to-condition closure",
+  "date": "2026-09-29",
+  "status": "source_grounded_semantic_control_no_literal_c_or_d_failure_inferred",
+  "sources": {
+    "fefferman": [
+      "docs/navierstokes.txt:25-81"
+    ],
+    "openai_manuscript": [
+      "docs/navier-stokes openai.txt:31-47",
+      "docs/navier-stokes openai.txt:109-124",
+      "docs/navier-stokes openai.txt:306-321",
+      "docs/navier-stokes openai.txt:523-546",
+      "docs/navier-stokes openai.txt:695-784"
+    ],
+    "lean": [
+      "NavierStokes/R3/ProblemStatement.lean:90-153",
+      "NavierStokes/CandidateFromLimits.lean:80-214",
+      "NavierStokes/ComparatorDefinitions.lean:146-243",
+      "NavierStokes/ComparatorR3Theorem.lean:21-44"
+    ]
+  },
+  "semantic_edges": [
+    "given -> data side of forward initial-value problem",
+    "externally applied -> physical force provenance",
+    "physically reasonable -> accepted solution class",
+    "Hence -> whole-space decay conditions (4),(5)",
+    "only if -> necessary accepted-solution conditions (6),(7)",
+    "Alternatively/may look -> periodic branch choice",
+    "Thus -> periodic data conditions (8),(9)",
+    "In place of -> substitute (8),(9) for (4),(5) in periodic branch",
+    "We then accept -> periodic accepted-solution conditions (10),(11)",
+    "retaining the heart -> preserve global existence/smoothness question"
+  ],
+  "adjudication": {
+    "connected_c_package": "operational route present on inspected Lean path",
+    "connected_d_package": "periodic branch remains separately scoped",
+    "manuscript_fidelity": "NOT ESTABLISHED (CTR-005)",
+    "literal_c_or_d_failure": "not proved",
+    "residual_force_provenance": "material semantic issue; no separate formal independence predicate located",
+    "named_five_moment_endpoint_identity": "not located for completed selected Cartesian fields"
+  },
+  "non_claims": [
+    "Does not say Fefferman's conditions are optional",
+    "Does not say residual-defined forcing automatically falsifies C or D",
+    "Does not say the selected force is nonsmooth",
+    "Does not treat absence of a named moment tuple as a selected-field mismatch"
+  ]
+}

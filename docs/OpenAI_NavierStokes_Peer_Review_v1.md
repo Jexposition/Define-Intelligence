@@ -4055,3 +4055,48 @@ claiming that the selected C/D proposition has been formally falsified.
 
 Evidence: `NavierStokesReview/src/audit/priority_177_fefferman_word_connection_adjudication_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`.
+
+## Global radial-integral gate in the selected-field audit
+
+The selected mixed radial pullback is periodic on the inspected construction,
+whereas `barMoment` integrates over the unbounded real radial variable. The
+review therefore separates three statements that must not be conflated:
+
+\[
+\text{periodic}+\text{radially supported}\Rightarrow f=0,
+\quad
+\text{periodic}+\text{positive on }(0,1)\Rightarrow f\notin L^1(\mathbb R),
+\quad
+\neg L^1\Rightarrow \int_{\mathbb R}f=0\text{ by `integral_undef`}.
+\]
+
+The selected endpoint does not yet provide the required support,
+integrability, positivity, or nonzero-value premise. Thus this is a real
+semantic gate for the paper's radial observables, not a completed selected
+defect. It strengthens `CTR-005` as a paper-to-endpoint correspondence
+finding while leaving literal C/D failure unproved.
+
+Evidence: `NavierStokesReview/src/audit/priority_181_global_barmoment_integrability_gate_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_181_global_barmoment_integrability_gate_2026-09-29.json`.
+## Current semantic control: Fefferman's connected admissibility package
+
+The review treats Fefferman's wording as a connected specification. “Given”
+and “externally applied” describe the data and physical provenance side of the
+forward problem; “physically reasonable” introduces the accepted class;
+“Hence” links the spatial-growth concern to `(4),(5)`; and “only if” makes
+`(6),(7)` necessary for accepted whole-space solutions. “Alternatively” and
+“may look” select the periodic branch only. “Thus”, “In place of”, and “We
+then accept” bind `(8),(9),(10),(11)` once that branch is selected. The phrase
+“retaining the heart of the problem” carries this network into the four
+alternatives.
+
+Accordingly, the review does not claim that Fefferman asked only for `(1)--(3)`.
+It also does not infer literal C/D failure from the absence of a named final
+five-moment tuple. The inspected Lean route contains a substantive operational
+C-shaped package, while the complete correspondence between the manuscript's
+five-moment correction mechanism and the selected Cartesian endpoint remains
+`NOT ESTABLISHED (CTR-005)`. A literal C/D failure requires a connected failed
+condition, selected value mismatch, impossibility theorem, or contradiction.
+
+Evidence: `NavierStokesReview/src/audit/priority_182_fefferman_semantic_word_to_condition_closure_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_182_fefferman_semantic_word_to_condition_closure_2026-09-29.json`.
