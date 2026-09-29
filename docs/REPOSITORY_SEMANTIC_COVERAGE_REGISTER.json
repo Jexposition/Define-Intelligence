@@ -167,7 +167,7 @@
     },
     "missing_project_import_edges": 0,
     "source_rows_with_sorry_token": 10,
-    "supplemental_evidence_records": 80
+    "supplemental_evidence_records": 82
   },
   "supplemental_evidence": [
     {
@@ -585,6 +585,18 @@
         "evidence"
       ],
       "finding": "Machine-readable Priority 174 force-smoothness rebuttal adjudication with explicit rejected, not-established, and not-proved classifications.",
+      "anchors": "JSON findings and classification fields"
+    },
+    {
+      "path": "NavierStokesReview/evidence/source_tranche_priority_175_lexical_bridge_candidate_classification_2026-09-29.json",
+      "clusters": [
+        "endpoint",
+        "bridge",
+        "moments",
+        "transport",
+        "evidence"
+      ],
+      "finding": "Machine-readable Priority 175 classification of the seven lexical endpoint candidates, preserving the distinction between selected-route evidence and missing paper-specific transport.",
       "anchors": "JSON findings and classification fields"
     },
     {
@@ -1065,6 +1077,17 @@
       ],
       "finding": "Adjudicates the force-smoothness rebuttal: velocity blow-up does not imply divergence of every residual summand; the manuscript describes multiple correction layers; the selected route has an actual residual-jet smooth-force construction; complete five-observable endpoint transport remains CTR-005.",
       "anchors": "docs/navier-stokes openai.txt:109-124,695-733; NavierStokes/CandidateFromLimits.lean:28-112"
+    },
+    {
+      "path": "NavierStokesReview/src/audit/priority_175_lexical_bridge_candidate_classification_2026-09-29.md",
+      "clusters": [
+        "endpoint",
+        "bridge",
+        "moments",
+        "transport"
+      ],
+      "finding": "Declaration-level classification of all seven lexical bridge candidates: rate, germ, axis, and schedule declarations, with no selected Cartesian five-observable transport theorem found.",
+      "anchors": "NavierStokesReview/evidence/selected_endpoint_source_census_2026-09-27.md and cited Lean declarations"
     },
     {
       "path": "NavierStokesReview/src/audit/priority_external_euler_foundation_source_review_2026-09-28.md",

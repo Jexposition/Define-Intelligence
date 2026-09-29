@@ -1,0 +1,61 @@
+{
+  "priority": 175,
+  "date": "2026-09-29",
+  "title": "Declaration-level classification of lexical bridge candidates",
+  "scope": {
+    "census": "NavierStokesReview/evidence/selected_endpoint_source_census_2026-09-27.md",
+    "candidates": 7
+  },
+  "findings": [
+    {
+      "declaration": "ActualPhysicalStageBounds.initialDirect_rate",
+      "location": "NavierStokes/ActualPhysicalStageBounds.lean:594-605",
+      "classification": "jet_rate_estimate",
+      "result": "not_the_five_observable_transport_theorem"
+    },
+    {
+      "declaration": "ActualPhysicalStageBounds.background_from_representations",
+      "location": "NavierStokes/ActualPhysicalStageBounds.lean:724-755",
+      "classification": "finite_background_jet_rate",
+      "result": "not_the_five_observable_transport_theorem"
+    },
+    {
+      "declaration": "GermCandidateAssembly.potentialSum_eq_base_germ",
+      "location": "NavierStokes/GermCandidateAssembly.lean:75-95",
+      "classification": "local_potential_germ_identity",
+      "result": "not_the_five_observable_transport_theorem"
+    },
+    {
+      "declaration": "InitializedPhysicalBackground.directIncrement_rate",
+      "location": "NavierStokes/InitializedPhysicalBackground.lean:92-103",
+      "classification": "initial_direct_field_jet_rate",
+      "result": "not_the_five_observable_transport_theorem"
+    },
+    {
+      "declaration": "MixedAxisPreservation.origin_blowup_global",
+      "location": "NavierStokes/MixedAxisPreservation.lean:470-487",
+      "classification": "axis_blowup_transfer",
+      "result": "not_the_five_observable_transport_theorem"
+    },
+    {
+      "declaration": "MixedCandidateAssembly.StageEstimates.exists_schedule",
+      "location": "NavierStokes/MixedCandidateAssembly.lean:67-91",
+      "classification": "schedule_and_vanishing_jet_packaging",
+      "result": "not_the_five_observable_transport_theorem"
+    },
+    {
+      "declaration": "MixedCandidateWitness.SelectedSchedule",
+      "location": "NavierStokes/MixedCandidateWitness.lean:25-31",
+      "classification": "schedule_predicate",
+      "result": "not_the_five_observable_transport_theorem"
+    }
+  ],
+  "classification": {
+    "lexical_candidates_classified": 7,
+    "selected_field_transport_found_in_candidates": false,
+    "paper_specific_five_moment_transport": "NOT_ESTABLISHED_CTR-005",
+    "selected_field_mismatch": "not_proved",
+    "impossibility_theorem": "not_proved",
+    "lean_kernel_contradiction": "not_proved"
+  }
+}

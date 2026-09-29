@@ -11,9 +11,9 @@ retain it as historical evidence, mark the correction, and use the raw source
 as the controlling record.
 
 Current register counts are 2,794 indexed Lean modules, 588 modules in the
-direct `NavierStokes.R3.Theorem` import closure, 904 evidence-inspected rows,
-1,883 source-indexed rows queued, zero missing project import edges, 10 source
-rows containing a `sorry` token, and 70 supplemental evidence records. The
+direct `NavierStokes.R3.Theorem` import closure, 906 evidence-inspected rows,
+1,881 source-indexed rows queued, zero missing project import edges, 10 source
+rows containing a `sorry` token, and 82 supplemental evidence records. The
 labels `outside captured endpoint closure`, `source-indexed review queued`,
 and `evidence-inspected` are separate dimensions. None is a dead-code,
 invalidity, or theorem-failure label.
@@ -3258,6 +3258,19 @@ the final selected-Cartesian identification of the manuscript observables
 
 Evidence: `NavierStokesReview/src/audit/priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.json`.
+
+### Priority 175: classify all lexical bridge candidates
+
+All seven lexical candidates emitted by the selected-endpoint census have now
+been inspected at declaration level. They classify as rate estimates, local
+potential-germ identities, axis-growth transfer, or schedule/vanishing-jet
+packaging. None identifies the final activated Cartesian velocity, pressure,
+or force with the manuscript observables `(M,I,J,S,C_p)`. This strengthens the
+negative evidence against a hidden theorem under one of those names, but it
+does not prove a selected mismatch or impossibility.
+
+Evidence: `NavierStokesReview/src/audit/priority_175_lexical_bridge_candidate_classification_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_175_lexical_bridge_candidate_classification_2026-09-29.json`.
 
 - [x] Inventory and hash the two source texts and their PDF counterparts.
 - [x] Map Fefferman's equations, force/initial-data decay, global smoothness,

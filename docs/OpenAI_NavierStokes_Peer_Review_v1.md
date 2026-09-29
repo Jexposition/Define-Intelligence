@@ -3869,3 +3869,15 @@ force nonsmoothness theorem has been proved.
 
 Evidence: `NavierStokesReview/src/audit/priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.json`.
+
+## Priority 175: declaration-level bridge-candidate classification
+
+The seven lexical candidates emitted by the endpoint census have now been
+inspected as declarations. They are rate estimates, local potential-germ
+identities, axis-growth transfer, or schedule/vanishing-jet packaging. None
+proves that the final activated Cartesian fields realise `(M,I,J,S,C_p)`.
+This closes the candidate-name search without converting its negative result
+into a selected mismatch, force singularity, or impossibility theorem.
+
+Evidence: `NavierStokesReview/src/audit/priority_175_lexical_bridge_candidate_classification_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_175_lexical_bridge_candidate_classification_2026-09-29.json`.

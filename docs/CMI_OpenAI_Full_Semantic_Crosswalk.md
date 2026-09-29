@@ -1095,3 +1095,14 @@ transport of `(M,I,J,S,C_p)` into `Witness`.
 
 Evidence: `NavierStokesReview/src/audit/priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.json`.
+
+## Priority 175: lexical bridge candidates
+
+Declaration-level inspection of all seven lexical candidates found rate,
+germ, axis, and schedule/vanishing-jet results, but no theorem transporting
+the final activated Cartesian field to `(M,I,J,S,C_p)`. This reinforces the
+CTR-005 correspondence boundary while leaving selected mismatch and literal
+CMI failure unproved.
+
+Evidence: `NavierStokesReview/src/audit/priority_175_lexical_bridge_candidate_classification_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_175_lexical_bridge_candidate_classification_2026-09-29.json`.

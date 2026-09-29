@@ -4470,3 +4470,15 @@ literal failure of Alternative (C).
 
 Evidence: `NavierStokesReview/src/audit/priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.json`.
+
+### Audit update: declaration-level bridge candidates (2026-09-29)
+
+The seven lexical endpoint candidates have been inspected directly. They
+provide rate estimates, local germ equalities, axis-growth transfer, and
+schedule/vanishing-jet packaging, but none identifies the final activated
+Cartesian velocity, pressure, or force with the manuscript's five observables.
+The paper-specific endpoint correspondence therefore remains
+**NOT ESTABLISHED (CTR-005)**. This is not a selected-field defect theorem.
+
+Evidence: `NavierStokesReview/src/audit/priority_175_lexical_bridge_candidate_classification_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_175_lexical_bridge_candidate_classification_2026-09-29.json`.

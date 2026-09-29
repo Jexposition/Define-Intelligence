@@ -275,5 +275,7 @@
 ├── 📄 source_tranche_priority_173_fefferman_c_connected_adjudication_2026-09-29.json
 ├── 📄 priority_173_fefferman_c_connected_adjudication_2026-09-29.md
 ├── 📄 source_tranche_priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.json
-└── 📄 priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.md
+├── 📄 priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.md
+├── 📄 source_tranche_priority_175_lexical_bridge_candidate_classification_2026-09-29.json
+└── 📄 priority_175_lexical_bridge_candidate_classification_2026-09-29.md
 ```

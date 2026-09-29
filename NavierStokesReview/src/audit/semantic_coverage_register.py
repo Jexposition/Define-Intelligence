@@ -27,6 +27,16 @@ EVIDENCE: dict[str, dict[str, Any]] = {
         "finding": "Machine-readable Priority 174 force-smoothness rebuttal adjudication with explicit rejected, not-established, and not-proved classifications.",
         "anchors": "JSON findings and classification fields",
     },
+    "NavierStokesReview/src/audit/priority_175_lexical_bridge_candidate_classification_2026-09-29.md": {
+        "clusters": ["endpoint", "bridge", "moments", "transport"],
+        "finding": "Declaration-level classification of all seven lexical bridge candidates: rate, germ, axis, and schedule declarations, with no selected Cartesian five-observable transport theorem found.",
+        "anchors": "NavierStokesReview/evidence/selected_endpoint_source_census_2026-09-27.md and cited Lean declarations",
+    },
+    "NavierStokesReview/evidence/source_tranche_priority_175_lexical_bridge_candidate_classification_2026-09-29.json": {
+        "clusters": ["endpoint", "bridge", "moments", "transport", "evidence"],
+        "finding": "Machine-readable Priority 175 classification of the seven lexical endpoint candidates, preserving the distinction between selected-route evidence and missing paper-specific transport.",
+        "anchors": "JSON findings and classification fields",
+    },
     "NavierStokesReview/src/audit/priority_173_fefferman_c_connected_adjudication_2026-09-29.md": {
         "clusters": ["cmi", "fefferman", "semantic-network", "force-provenance"],
         "finding": "Connected adjudication of Fefferman Alternative (C): periodicity is a branch choice, physically reasonable is tied to the full data and accepted-solution package, the selected Lean route contains explicit formal C components, and residual force provenance is semantic rather than an unstated independence predicate. Complete manuscript five-moment transport remains CTR-005.",

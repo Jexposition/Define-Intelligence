@@ -11,10 +11,10 @@ and raw source disagree, the raw source wins and the report is corrected with
 an explicit status note.
 
 The current register snapshot is 2,794 indexed Lean modules, 588 modules in
-the directly captured `NavierStokes.R3.Theorem` import closure, 904
-evidence-inspected rows, 1,883 source-indexed rows queued for direct review,
+the directly captured `NavierStokes.R3.Theorem` import closure, 906
+evidence-inspected rows, 1,881 source-indexed rows queued for direct review,
 zero missing project import edges, 10 source rows containing a `sorry` token,
-and 70 supplemental evidence records. These counts are scope metrics, not
+and 82 supplemental evidence records. These counts are scope metrics, not
 claims that outside-closure modules are dead, invalid, or unused by another
 OpenAI root.
 
@@ -2508,3 +2508,14 @@ Evidence:
 
 - `NavierStokesReview/src/audit/priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.md`;
 - `NavierStokesReview/evidence/source_tranche_priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.json`.
+
+Priority 175 classifies all seven lexical bridge candidates from the selected
+endpoint census at declaration level. They are rate, germ, axis, and
+schedule/vanishing-jet declarations, not a theorem transporting the final
+activated Cartesian field to `(M,I,J,S,C_p)`. This closes that lexical queue
+without upgrading the result to a selected mismatch or impossibility theorem.
+
+Evidence:
+
+- `NavierStokesReview/src/audit/priority_175_lexical_bridge_candidate_classification_2026-09-29.md`;
+- `NavierStokesReview/evidence/source_tranche_priority_175_lexical_bridge_candidate_classification_2026-09-29.json`.
