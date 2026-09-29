@@ -1,0 +1,32 @@
+{
+  "priority": 188,
+  "date": "2026-09-30",
+  "title": "Connected CMI compliance versus manuscript fidelity",
+  "status": "source_checked",
+  "classification": {
+    "connected_fefferman_c_d_package": "established_on_inspected_comparator_path",
+    "paper_five_moment_selected_endpoint_fidelity": "not_established_CTR-005",
+    "literal_c_or_d_failure": "not_proved",
+    "selected_nonzero_moment_defect": "not_proved"
+  },
+  "source_anchors": [
+    "docs/navierstokes.txt:25-81,89-184",
+    "docs/navier-stokes openai.txt:31-47,109-124,306-321",
+    "NavierStokes/ComparatorDefinitions.lean:124-243",
+    "NavierStokes/ComparatorR3Theorem.lean:21-44",
+    "docs/CMI_OpenAI_Full_Semantic_Crosswalk.md:Priority 188"
+  ],
+  "controls": [
+    "may look for selects a periodic branch and does not waive its conditions",
+    "Thus, we assume binds periodic data conditions (8) and (9)",
+    "In place of substitutes whole-space data controls, not the PDE or accepted-solution conditions",
+    "We then accept binds periodic solution conditions (10) and (11)",
+    "physically reasonable and retaining the heart of the problem carry connected global meaning"
+  ],
+  "unresolved_gate": "J_flat implies PaperMoments(u_selected,p_selected)=(M,I,J,S,C_p) after selected Cartesian composition",
+  "non_claims": [
+    "Missing moment export is not itself a proof that literal C or D is false",
+    "Residual force provenance is not a separately formalised independence predicate",
+    "Velocity blow-up alone is not a proof that every residual summand diverges"
+  ]
+}

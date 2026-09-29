@@ -1345,3 +1345,119 @@ impossibility theorem, or a contradiction.
 
 Evidence: `NavierStokesReview/src/audit/priority_187_circularity_adjudication_2026-09-30.md`;
 `NavierStokesReview/evidence/source_tranche_priority_187_circularity_adjudication_2026-09-30.json`.
+
+## Priority 188: connected CMI compliance versus manuscript-mechanism fidelity
+
+This section is a correction against any reading of the earlier wording as
+though the audit were checking only the displayed equations or only the final
+existential syntax.
+
+### 188.1 Fefferman's connected meaning
+
+Fefferman's sentence “Alternatively, to rule out problems at infinity, we may
+look for spatially periodic solutions” is permission to choose the periodic
+branch. It is not a waiver. After that choice, “Thus, we assume” binds the
+periodic data conditions `(8),(9)`, “In place of” substitutes those data
+controls for the whole-space decay controls `(4),(5)`, and “We then accept”
+binds the accepted periodic-solution conditions `(10),(11)`. The preceding
+“physically reasonable” sentence supplies the accepted class, and “retaining
+the heart of the problem” carries the global existence/smoothness question
+into the four alternatives.
+
+Thus the relevant propositions are the connected packages:
+
+\[
+\begin{aligned}
+ C &: \exists u^\circ,f\,[\mathrm{Data}_{4,5}(u^\circ,f)
+       \land \neg\exists(p,u)\,\mathrm{Accepted}_{\mathbb R^3}(p,u)],\\
+ D &: \exists u^\circ,f\,[\mathrm{Data}_{8,9}(u^\circ,f)
+       \land \neg\exists(p,u)\,\mathrm{Accepted}_{\mathbb T^3}(p,u)].
+\end{aligned}
+\]
+
+Here `Accepted` includes the Navier--Stokes equation, incompressibility,
+initial data, global smoothness, and, for `C`, the all-time finite-energy
+condition; for `D` it includes the periodic velocity and pressure conditions.
+The formulas are audit notation, not replacements for the source wording.
+
+### 188.2 What the Lean comparator actually encodes
+
+The repository does not define its comparator C/D predicates as bare
+equations `(1)--(3)`. `ComparatorDefinitions.lean` supplies the connected
+components:
+
+| Fefferman requirement | Lean declaration inspected |
+|---|---|
+| smooth, divergence-free initial data | `InitialVelocityCondition` |
+| whole-space data decay `(4)` | `InitialVelocityConditionDecay.decay` |
+| force smoothness and decay `(5)` | `ForceConditionDecay.smooth`, `.decay` |
+| PDE, incompressibility, initial datum | `NavierStokesExistenceAndSmoothness` |
+| global smoothness and whole-space energy | `NavierStokesExistenceAndSmoothnessRn` |
+| periodic data `(8),(9)` | `InitialVelocityConditionPeriodic`, `ForceConditionPeriodic` |
+| periodic accepted solution `(10),(11)` | `NavierStokesExistenceAndSmoothnessPeriodic` |
+
+`ComparatorR3Theorem.navier_stokes_breakdown_R3` and its periodic analogue
+therefore prove propositions with the complete comparator-level C/D package,
+not merely the algebraic PDE block. The correct positive statement is:
+
+> On the inspected source path, Lean proves the repository's formal encoding
+> of the connected forced C/D alternatives, subject to the recorded build and
+> dependency evidence.
+
+That statement is stronger and more precise than “there is a C-shaped
+existential shell”. It also does not certify every sentence of the manuscript.
+
+### 188.3 What the missing moment bridge does and does not imply
+
+The manuscript's five moments remain load-bearing in its own construction. The
+fact that the comparator-level C/D proposition does not name them does not make
+them optional in the manuscript, and it does not show that the selected field
+has a nonzero moment defect. It shows instead that the current public Lean
+contract does not establish the following paper-to-selected-field identity:
+
+\[
+ J_{\mathrm{flat}}
+ \Longrightarrow
+ \operatorname{PaperMoments}(u_{\mathrm{selected}},p_{\mathrm{selected}})
+ =(M,I,J,S,C_p)
+\]
+
+after the actual selected sums, curl, localisation, periodisation, averaging,
+radial integration, support, integrability, and axis limits. Consequently:
+
+* the encoded C/D proposition is not refuted merely because this identity is
+  absent from `Witness`;
+* the manuscript-to-selected-endpoint claim is not established merely because
+  the C/D proposition compiles;
+* the moments cannot be removed from the manuscript's proof explanation; and
+* a literal C/D failure requires a selected failed condition, selected value
+  mismatch, impossibility theorem, or contradiction.
+
+### 188.4 Force provenance is a semantic audit, not an invented predicate
+
+Fefferman calls `f` a “given, externally applied force”. The comparator
+formalises smoothness and decay, but does not add a separate independence or
+causal-provenance predicate. OpenAI's manuscript itself states that for any
+incompressible flow and pressure one can define the residual force, and that
+the actual challenge is to make the total residual and all its derivatives
+extend smoothly through the singular time (`docs/navier-stokes openai.txt`
+`:109--124`). A residual-designed force can therefore be a fixed smooth input
+after construction and still satisfy the displayed existential C/D predicate.
+Whether that construction deserves the manuscript's physical description is a
+separate provenance question. It cannot be converted into literal C/D failure
+without an additional formal condition or a selected counterexample.
+
+The consolidated status is therefore:
+
+| Claim | Status |
+|---|---|
+| Fefferman's C/D requirements are connected, not equation-only | **Established** |
+| Lean comparator encodes those connected formal requirements | **Established on the inspected path** |
+| Lean proves the repository's encoded forced C/D propositions | **Established on the inspected path** |
+| Lean proves the manuscript's complete five-moment mechanism for the selected Cartesian field | **Not established (`CTR-005`)** |
+| The selected force is nonsmooth, or literal C/D is false | **Not proved** |
+
+This is the controlling distinction for the review: the adverse finding is a
+paper-to-code correspondence failure, not a claim that Fefferman's connected
+CMI predicate was reduced to `(1)--(3)` or that the selected C/D theorem has
+already been formally falsified.

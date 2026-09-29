@@ -4273,3 +4273,24 @@ manuscript lists several distinct residual-control operations, so the claim
 that the five equations are its only cancellation mechanism is not established.
 
 Evidence: `NavierStokesReview/src/audit/priority_187_circularity_adjudication_2026-09-30.md`.
+
+## Priority 188: connected CMI compliance and the remaining correspondence gate
+
+Fefferman's “may look for spatially periodic solutions” is a branch choice,
+not a waiver. The connected C/D obligations include the relevant data decay or
+periodicity, the Navier--Stokes equations, incompressibility, the initial
+condition, global smoothness, and the whole-space energy or periodic accepted-
+solution conditions. The comparator definitions and the inspected C/D theorem
+encode that full formal package.
+
+Accordingly, the review records a positive result for the repository's formal
+connected forced C/D propositions. It does not reduce C or D to equations
+`(1)--(3)`. Separately, the manuscript-to-selected-field correspondence for
+the load-bearing five moments remains **NOT ESTABLISHED (CTR-005)** because no
+inspected endpoint theorem identifies the completed selected Cartesian fields
+with `(M,I,J,S,C_p)`. This is not itself a proof that C or D is false; that
+stronger result requires a selected failed connected condition, mismatch,
+impossibility theorem, or contradiction.
+
+Controlling crosswalk: [`CMI_OpenAI_Full_Semantic_Crosswalk.md`](CMI_OpenAI_Full_Semantic_Crosswalk.md),
+Priority 188.
