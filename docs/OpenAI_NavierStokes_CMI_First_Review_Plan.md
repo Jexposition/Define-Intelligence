@@ -3623,6 +3623,31 @@ Evidence:
 `NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`;
 `docs/CMI_OpenAI_Full_Semantic_Crosswalk.md`.
 
+## Priority 186: semantic word-to-condition closure
+
+- [x] Preserve Fefferman's exact connective wording and its mathematical
+  dependencies: “given”, “externally applied”, “physically reasonable”,
+  “Hence”, “only if”, “Alternatively”, “may look”, “Thus”, “In place of”,
+  “We then accept”, “such”, and “retaining the heart of the problem”.
+- [x] Formalise the whole-space target as `(1)--(7)` and the periodic target
+  as `(1)--(3),(8)--(11)`; do not assess C or D from equation labels alone.
+- [x] Record that “may look for” is branch latitude, not a waiver of periodic
+  data or accepted-solution conditions.
+- [x] Crosswalk the connected network to the OpenAI residual, correction,
+  force-extension, energy, and blow-up claims and to the selected Lean
+  comparator predicates.
+- [x] Keep the operational C-shaped Lean route separate from complete
+  Fefferman physical/semantic compliance and manuscript fidelity.
+- [x] Keep `CTR-005 = NOT ESTABLISHED`; do not escalate to literal C/D failure
+  without a selected failed condition, value mismatch, impossibility theorem,
+  or contradiction.
+
+Primary record:
+`NavierStokesReview/src/audit/priority_186_fefferman_full_word_connection_closure_2026-09-30.md`.
+
+Evidence:
+`NavierStokesReview/evidence/source_tranche_priority_186_fefferman_full_word_connection_closure_2026-09-30.json`.
+
 ## Priority 183: adjudicate the force-smoothness rebuttal without collapsing the dependency graph
 
 - [x] Recheck the claim that velocity blow-up forces every summand in
@@ -3944,3 +3969,29 @@ Evidence:
 `NavierStokesReview/src/audit/priority_177_fefferman_word_connection_adjudication_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`;
 `docs/CMI_OpenAI_Full_Semantic_Crosswalk.md`.
+## Priority 187: jet-flatness circularity adjudication
+
+The latest rebuttal correctly treats `(M,I,J,S,C_p)` as load-bearing in the
+manuscript. It overstates the consequence of their missing endpoint export.
+The selected source path constructs actual residual-rate premises from
+`physicalData`, cycle invariants, and `finite_residual_rates`; it then derives
+`VanishingJointJets`, locally uniform residual limits, and `force_smooth`.
+Therefore the audit must not claim that the selected force is nonsmooth merely
+because `Witness` lacks a named five-tuple.
+
+The unresolved gate remains the value-level implication
+
+\[
+J_{\rm flat}\Rightarrow
+\operatorname{PaperMoments}(u_{\rm selected},p_{\rm selected})
+=(M,I,J,S,C_p)
+\]
+
+after the completed `tsum`, curl, localisation, periodisation, torus average,
+radial integral, support, integrability, and axis limits. Keep
+`CTR-005 = NOT ESTABLISHED` for complete manuscript-to-endpoint fidelity. Do
+not promote it to selected mismatch, force nonsmoothness, literal CMI failure,
+impossibility, or `False` without the corresponding value-level theorem.
+
+Evidence: `NavierStokesReview/src/audit/priority_187_circularity_adjudication_2026-09-30.md` and
+`NavierStokesReview/evidence/source_tranche_priority_187_circularity_adjudication_2026-09-30.json`.

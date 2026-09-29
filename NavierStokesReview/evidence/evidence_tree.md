@@ -289,4 +289,5 @@
  ├── 📄 source_tranche_priority_182_fefferman_semantic_word_to_condition_closure_2026-09-29.json
  └── 📄 source_tranche_priority_183_force_smoothness_moment_rebuttal_adjudication_2026-09-29.json
  └── 📄 source_tranche_priority_184_selected_path_foundation_audit_2026-09-29.json
+ ├── 📄 source_tranche_priority_186_fefferman_full_word_connection_closure_2026-09-30.json
 ```

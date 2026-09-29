@@ -4217,3 +4217,59 @@ literal CMI failure, or `False` without the corresponding value-level theorem.
 Evidence:
 `NavierStokesReview/src/audit/priority_185_rebuttal_adjudication_2026-09-30.md`;
 `NavierStokesReview/evidence/source_tranche_priority_185_rebuttal_adjudication_2026-09-30.json`.
+
+## Priority 186: Fefferman's full semantic network is binding
+
+The source-preserving semantic closure is recorded in
+`NavierStokesReview/src/audit/priority_186_fefferman_full_word_connection_closure_2026-09-30.md`.
+This review does not treat “may look for spatially periodic solutions” as a
+waiver. It is branch latitude. “Thus, we assume” binds `(8),(9)`, “In place
+of” replaces only the whole-space data controls `(4),(5)`, and “We then
+accept” binds `(10),(11)`. “Physically reasonable” and “retaining the heart of
+the problem” carry the connected global regularity and energy problem into the
+alternatives.
+
+Accordingly, the C/D audit is against the connected packages, not `(1)--(3)`
+in isolation. The current record supports a substantive operational C-shaped
+Lean route, but it does not establish that the route is the complete selected
+physical construction described by the manuscript. That remains
+`CTR-005 = NOT ESTABLISHED`. No literal C/D failure is inferred without a
+selected failed condition, value mismatch, impossibility theorem, or
+contradiction.
+## Priority 187: adjudication of the jet-flatness circularity rebuttal
+
+The five radial moments remain load-bearing in the manuscript's profile
+matching, modulation restoration, stress propagation, and correction system.
+The latest rebuttal is nevertheless too strong when it says that omission of
+the final tuple makes the Lean force-smoothness proof circular. The selected
+route constructs concrete physical data and residual-rate premises, derives a
+schedule with vanishing joint residual jets, and proves smooth extension of
+the residual-defined force. Thus the following implication is source-backed:
+
+\[
+H_{\rm selected}\Rightarrow J_{\rm flat}\Rightarrow F\in C^\infty.
+\]
+
+The missing implication is different:
+
+\[
+J_{\rm flat}\Rightarrow
+\operatorname{PaperMoments}(u_{\rm selected},p_{\rm selected})
+=(M,I,J,S,C_p).
+\]
+
+No inspected endpoint theorem supplies that completed selected Cartesian,
+pressure, residual, and force identification after the sum, curl,
+localisation, periodisation, averaging, radial integration, and global
+admissibility steps. The paper-to-endpoint claim therefore remains **NOT
+ESTABLISHED (CTR-005)**. This does not prove that the selected force is
+nonsmooth or that the operational C-shaped proposition is false. Such a
+promotion requires a selected mismatch, failed connected condition,
+impossibility theorem, or contradiction.
+
+The claim that velocity blow-up forces every residual summand to diverge is
+also rejected: divergent summands can cancel in the total residual. The
+manuscript lists several distinct residual-control operations, so the claim
+that the five equations are its only cancellation mechanism is not established.
+
+Evidence: `NavierStokesReview/src/audit/priority_187_circularity_adjudication_2026-09-30.md`.

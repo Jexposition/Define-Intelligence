@@ -4815,3 +4815,61 @@ impossibility theorem, or contradiction.
 Evidence:
 `../NavierStokesReview/src/audit/priority_185_rebuttal_adjudication_2026-09-30.md`;
 `../NavierStokesReview/evidence/source_tranche_priority_185_rebuttal_adjudication_2026-09-30.json`.
+
+### Priority 186: source-preserving Fefferman semantic closure
+
+The full word-to-condition network is consolidated in
+[`priority_186_fefferman_full_word_connection_closure_2026-09-30.md`](../NavierStokesReview/src/audit/priority_186_fefferman_full_word_connection_closure_2026-09-30.md)
+and its evidence record
+[`source_tranche_priority_186_fefferman_full_word_connection_closure_2026-09-30.json`](../NavierStokesReview/evidence/source_tranche_priority_186_fefferman_full_word_connection_closure_2026-09-30.json).
+
+The audit reads Fefferman's text as a connected mathematical specification.
+“May look for” permits a periodic branch; it does not waive that branch's
+conditions. “Thus”, “In place of”, and “We then accept” bind `(8),(9)` and
+`(10),(11)`. “Physically reasonable” and “retaining the heart of the problem”
+carry the global decay, smoothness, energy, force, domain, and existence
+meaning into the alternatives. C and D are therefore not assessed from
+`(1)--(3)` alone.
+
+The selected Lean path has an operational C-shaped route, but complete
+manuscript-to-selected-field fidelity remains **NOT ESTABLISHED (CTR-005)**.
+This is a correspondence finding, not a claim that the selected force is
+already nonsmooth or that literal C/D failure follows from the absence of a
+named moment tuple alone. Such a stronger finding requires a selected failed
+condition, value mismatch, impossibility theorem, or contradiction.
+## Priority 187: jet-flatness and five-moment correspondence
+
+The current source audit resolves the apparent circularity dispute. The
+manuscript's five-moment system is necessary to its stated profile matching
+and correction architecture, so the review does not treat it as optional. The
+selected Lean route, however, has a separate residual-flatness proof route:
+
+\[
+H_{\rm selected}\Rightarrow J_{\rm flat}\Rightarrow F\in C^\infty,
+\qquad F=\mathcal R(u_{\rm selected},p_{\rm selected})
+\text{ before the singular time}.
+\]
+
+That route is built from actual physical data, cycle invariants, finite
+residual rates, schedule selection, locally uniform limits, and smooth gluing.
+It is therefore inaccurate to call `force_smooth` a free-standing
+`NativeBounds` assumption or to infer force nonsmoothness from the absence of
+a tuple field.
+
+The unresolved paper-fidelity implication is instead
+
+\[
+J_{\rm flat}\Rightarrow
+\operatorname{PaperMoments}(u_{\rm selected},p_{\rm selected})
+=(M,I,J,S,C_p).
+\]
+
+The endpoint `Witness` does not expose this completed selected-field identity,
+and the current source trace has not found it elsewhere after the full
+Cartesian, sum, curl, localisation, periodisation, torus-average, radial,
+support, integrability, and axis construction. The exact manuscript-to-Lean
+claim is consequently **NOT ESTABLISHED (CTR-005)**. This is stronger than
+saying the moments are unimportant, but weaker and more accurate than claiming
+a selected nonzero defect, a nonsmooth force, or literal CMI failure.
+
+Evidence: `NavierStokesReview/src/audit/priority_187_circularity_adjudication_2026-09-30.md`.

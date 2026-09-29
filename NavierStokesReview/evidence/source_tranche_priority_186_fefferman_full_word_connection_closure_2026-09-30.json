@@ -1,0 +1,55 @@
+{
+  "priority": "186",
+  "title": "Fefferman full word-to-condition connection closure",
+  "date": "2026-09-30",
+  "status": "source_checked_semantic_closure_selected_compliance_open",
+  "sources": {
+    "fefferman": [
+      "docs/navierstokes.txt:25-81",
+      "docs/navierstokes.txt:89-184"
+    ],
+    "openai_manuscript": [
+      "docs/navier-stokes openai.txt:31-47",
+      "docs/navier-stokes openai.txt:109-124",
+      "docs/navier-stokes openai.txt:306-321",
+      "docs/navier-stokes openai.txt:523-546",
+      "docs/navier-stokes openai.txt:695-784",
+      "docs/navier-stokes openai.txt:5944-6506"
+    ],
+    "lean": [
+      "NavierStokes/ComparatorDefinitions.lean:146-243",
+      "NavierStokes/CandidateFromLimits.lean:80-214",
+      "NavierStokes/ComparatorR3Theorem.lean:21-44"
+    ]
+  },
+  "semantic_edges": [
+    "unknown fields -> solution variables",
+    "given initial field -> initial-value datum",
+    "given externally applied force -> physical force provenance",
+    "physically reasonable -> accepted solution class",
+    "Hence -> whole-space data controls (4),(5)",
+    "only if -> necessary whole-space solution controls (6),(7)",
+    "Alternatively/may look -> periodic branch latitude",
+    "Thus -> periodic data controls (8),(9)",
+    "In place of -> substitute (8),(9) for (4),(5), not for the PDE or accepted class",
+    "We then accept -> periodic solution controls (10),(11)",
+    "such smooth physically reasonable solutions -> carries the network into A-D",
+    "retaining the heart -> preserves the global existence/smoothness problem"
+  ],
+  "adjudication": {
+    "connected_whole_space_target": "(1)-(7)",
+    "connected_periodic_target": "(1)-(3),(8)-(11)",
+    "operational_lean_c_shaped_route": "present on inspected path",
+    "complete_manuscript_to_selected_endpoint_fidelity": "NOT ESTABLISHED (CTR-005)",
+    "literal_c_or_d_failure": "not proved",
+    "force_provenance": "material semantic obligation; no separate displayed independence predicate located",
+    "selected_five_moment_transport": "not located after selected curl/localisation/tsum/periodisation/averaging/radial integration"
+  },
+  "non_claims": [
+    "does not treat may look for periodic solutions as a waiver",
+    "does not reduce physically reasonable to equations (1)-(3)",
+    "does not call force_smooth a bare NativeBounds assumption",
+    "does not claim the selected force is nonsmooth",
+    "does not infer literal C or D failure from tuple absence alone"
+  ]
+}

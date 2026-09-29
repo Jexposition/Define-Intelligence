@@ -2950,3 +2950,48 @@ must be published with its resulting remote commit recorded.
 
 Control record:
 `NavierStokesReview/evidence/worktree_triage_2026-09-29.md`.
+
+## Priority 186 semantic closure
+
+The authoritative word-to-condition closure is now:
+`NavierStokesReview/src/audit/priority_186_fefferman_full_word_connection_closure_2026-09-30.md`.
+Its evidence record is:
+`NavierStokesReview/evidence/source_tranche_priority_186_fefferman_full_word_connection_closure_2026-09-30.json`.
+
+This closes the semantic-reading task, not the selected-field task. Fefferman's
+“may look for” opens the periodic branch, while “Thus”, “In place of”, and “We
+then accept” bind its data and accepted-solution conditions. “Physically
+reasonable” and “retaining the heart of the problem” carry the global
+regularity, energy, decay, force, and domain meaning into C and D. The selected
+Lean route is audited against that connected package. The current result is a
+substantive operational C-shaped route plus unresolved
+manuscript-to-selected-field correspondence (`CTR-005`), not a claim that
+tuple absence alone proves literal C/D failure.
+## Priority 187 goal control: jet-flatness is not five-moment transport
+
+The latest circularity rebuttal is adjudicated in the source record
+`NavierStokesReview/src/audit/priority_187_circularity_adjudication_2026-09-30.md`.
+The five moments remain load-bearing in the manuscript. The selected Lean path
+also derives residual-rate premises from actual physical data and invariants,
+constructs vanishing joint residual jets, and proves smooth extension of the
+residual-defined force. Therefore the goal must not claim that omission of the
+final tuple alone proves force nonsmoothness or literal CMI failure.
+
+The controlling unresolved implication is:
+
+\[
+J_{\rm flat}\Rightarrow
+\operatorname{PaperMoments}(u_{\rm selected},p_{\rm selected})
+=(M,I,J,S,C_p)
+\]
+
+after the selected `tsum`, curl, localisation, periodisation, torus average,
+radial integration, support, integrability, and axis limits. Keep
+`CTR-005 = NOT ESTABLISHED` until this value-level gate is closed or a selected
+mismatch is proved. `AX-033` remains a type-level non-entailment result, not a
+physical nonzero-debt counterexample. Do not promote the finding to force
+nonsmoothness, literal C/D failure, impossibility, or `False` without the
+corresponding theorem.
+
+Evidence:
+`NavierStokesReview/evidence/source_tranche_priority_187_circularity_adjudication_2026-09-30.json`.

@@ -1275,3 +1275,24 @@ CTR-005.
 The complete word-to-obligation table and connected whole-space/periodic
 predicates are recorded in
 `NavierStokesReview/src/audit/priority_179_fefferman_full_semantic_dependency_network_2026-09-29.md`.
+
+## Priority 186: full word-to-condition connection closure
+
+The semantic closure is consolidated in one source-controlled record:
+[`priority_186_fefferman_full_word_connection_closure_2026-09-30.md`](../NavierStokesReview/src/audit/priority_186_fefferman_full_word_connection_closure_2026-09-30.md),
+with machine-readable evidence in
+[`source_tranche_priority_186_fefferman_full_word_connection_closure_2026-09-30.json`](../NavierStokesReview/evidence/source_tranche_priority_186_fefferman_full_word_connection_closure_2026-09-30.json).
+
+That record controls the interpretation of “may look for”: it permits
+choosing the periodic branch but does not waive its conditions. “Thus, we
+assume” binds `(8),(9)`, “In place of” substitutes those data controls for
+`(4),(5)` but not for the PDE or accepted-solution requirements, and “We then
+accept” binds `(10),(11)`. “Physically reasonable” and “retaining the heart of
+the problem” carry the connected global admissibility meaning into A--D.
+
+The audit result remains deliberately two-level. The inspected Lean path has
+a substantive operational C-shaped route, but complete manuscript-to-selected
+Cartesian-field fidelity remains **NOT ESTABLISHED (CTR-005)**. The semantic
+closure does not by itself prove that the selected force is nonsmooth or that
+literal C/D is false. Those stronger conclusions require a selected failed
+condition, selected value mismatch, impossibility theorem, or contradiction.
