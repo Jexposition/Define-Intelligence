@@ -47,6 +47,16 @@ EVIDENCE: dict[str, dict[str, Any]] = {
         "finding": "Machine-readable Priority 176 selected-field composition and observable-domain trace, preserving positive endpoint construction and the unestablished paper-specific bridge.",
         "anchors": "JSON findings and classification fields",
     },
+    "NavierStokesReview/src/audit/priority_177_fefferman_word_connection_adjudication_2026-09-29.md": {
+        "clusters": ["cmi", "fefferman", "external-semantics", "methodology"],
+        "finding": "Connected Fefferman word-level adjudication: given force/data, whole-space and periodic branches, accepted-solution conditions, and Alternatives C/D must be audited as connected packages.",
+        "anchors": "docs/navierstokes.txt:25-81; NavierStokes/ComparatorR3Theorem.lean:21-44; NavierStokes/R3/ProblemStatement.lean:90-136",
+    },
+    "NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json": {
+        "clusters": ["cmi", "fefferman", "external-semantics", "methodology", "evidence"],
+        "finding": "Machine-readable Priority 177 connected Fefferman semantic-network adjudication with stronger literal failure claims explicitly left unproved.",
+        "anchors": "JSON findings and stronger_claims_not_proved",
+    },
     "NavierStokesReview/src/audit/priority_173_fefferman_c_connected_adjudication_2026-09-29.md": {
         "clusters": ["cmi", "fefferman", "semantic-network", "force-provenance"],
         "finding": "Connected adjudication of Fefferman Alternative (C): periodicity is a branch choice, physically reasonable is tied to the full data and accepted-solution package, the selected Lean route contains explicit formal C components, and residual force provenance is semantic rather than an unstated independence predicate. Complete manuscript five-moment transport remains CTR-005.",

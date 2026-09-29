@@ -8,7 +8,7 @@ Generated from the hardened source map. This is a review register, not a proof c
 
 - Modules: **2794**; endpoint-graph reachable: **588**; outside that graph: **2206**.
 - Explicitly inspected source records: **906**.
-- Supplemental review artifacts (not Lean module rows): **84**.
+- Supplemental review artifacts (not Lean module rows): **86**.
 - Reachable but not semantically inspected: **0**.
 - Source rows with a `sorry` token: **10**. This is a census flag, not endpoint contamination proof.
 - Missing project import edges recorded by the map: **0**.
@@ -74,6 +74,7 @@ These files are explicit audit evidence but are not counted as Lean modules or e
 | `NavierStokesReview/evidence/source_tranche_priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.json` | Machine-readable Priority 174 force-smoothness rebuttal adjudication with explicit rejected, not-established, and not-proved classifications. |
 | `NavierStokesReview/evidence/source_tranche_priority_175_lexical_bridge_candidate_classification_2026-09-29.json` | Machine-readable Priority 175 classification of the seven lexical endpoint candidates, preserving the distinction between selected-route evidence and missing paper-specific transport. |
 | `NavierStokesReview/evidence/source_tranche_priority_176_selected_field_composition_domain_trace_2026-09-29.json` | Machine-readable Priority 176 selected-field composition and observable-domain trace, preserving positive endpoint construction and the unestablished paper-specific bridge. |
+| `NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json` | Machine-readable Priority 177 connected Fefferman semantic-network adjudication with stronger literal failure claims explicitly left unproved. |
 | `NavierStokesReview/evidence/source_tranche_rebuttal_force_smoothness_moment_boundary_2026-09-29.json` | Machine-readable Priority 161 source adjudication with exact Lean/manuscript anchors and explicit confirmed/not-established boundaries. |
 | `NavierStokesReview/evidence/source_tranche_summary_2026-09-28.json` | Generated source navigation index for 15 endpoint-external OpenAI files, recording imports, declarations, keyword locations, and sorry-token locations. |
 | `NavierStokesReview/src/audit/external_source_profile.py` | Profiles every indexed module outside the captured endpoint closure by source hash, imports, declarations, marker locations, and admitted-token locations. It is explicitly structural inventory, not semantic transport proof. |
@@ -116,6 +117,7 @@ These files are explicit audit evidence but are not counted as Lean modules or e
 | `NavierStokesReview/src/audit/priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.md` | Adjudicates the force-smoothness rebuttal: velocity blow-up does not imply divergence of every residual summand; the manuscript describes multiple correction layers; the selected route has an actual residual-jet smooth-force construction; complete five-observable endpoint transport remains CTR-005. |
 | `NavierStokesReview/src/audit/priority_175_lexical_bridge_candidate_classification_2026-09-29.md` | Declaration-level classification of all seven lexical bridge candidates: rate, germ, axis, and schedule declarations, with no selected Cartesian five-observable transport theorem found. |
 | `NavierStokesReview/src/audit/priority_176_selected_field_composition_domain_trace_2026-09-29.md` | Source-bound trace of selected ASum/BSum/PSum through tsum, Cartesian curl, localisation, periodisation, direct-field addition, and time activation; barMoment remains a distinct pressure-stream observable domain without a final five-observable identity. |
+| `NavierStokesReview/src/audit/priority_177_fefferman_word_connection_adjudication_2026-09-29.md` | Connected Fefferman word-level adjudication: given force/data, whole-space and periodic branches, accepted-solution conditions, and Alternatives C/D must be audited as connected packages. |
 | `NavierStokesReview/src/audit/priority_external_euler_foundation_source_review_2026-09-28.md` | Direct source review of the Euler foundation tranche. It separates repository-root scope from the captured Navier-Stokes endpoint and records no admission tokens in the 11 inspected modules. |
 | `NavierStokesReview/src/audit/probe_logic_contract_audit.py` | Audits review-authored probe declarations for provenance, conditional premises, interface/ghost payloads, fixed-force scope, and conclusion strength. It is a blindside detector, not a Lean proof or absence theorem. |
 | `NavierStokesReview/src/audit/selected_transport_audit.py` | Hardened declaration-level audit instrument. It separates source co-occurrence triage from optional Lean-environment declaration types, records exact selected endpoint signatures, and refuses to promote co-occurrence or historical closure data into transport, defect, or False claims. |

@@ -1118,3 +1118,48 @@ not a selected mismatch or literal CMI refutation.
 
 Evidence: `NavierStokesReview/src/audit/priority_176_selected_field_composition_domain_trace_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_176_selected_field_composition_domain_trace_2026-09-29.json`.
+
+## Priority 177: Fefferman word-level connection adjudication
+
+The latest source-controlled reading records the semantic work carried by
+each connective phrase in `docs/navierstokes.txt:25-81`. “Given” places the
+initial field and force on the data side of the initial-value problem;
+“externally applied” gives the force its physical provenance in the Newton-law
+framing; “For physically reasonable solutions” introduces the admissible
+solution class; and “Hence” connects the growth-at-infinity concern to the
+all-order data restrictions `(4),(5)`.
+
+“Only if” makes `(6),(7)` necessary for an accepted whole-space solution.
+“Alternatively” and “may look” open a second domain-at-infinity branch, but
+“Thus”, “In place of”, and “We then accept” replace the whole-space data and
+acceptance envelope with the periodic package `(8),(9)` and `(10),(11)`.
+Finally, “such smooth, physically reasonable solutions” and “while retaining
+the heart of the problem” carry the entire connected framework into A--D.
+
+This confirms the audit rule: C and D cannot be evaluated by matching only the
+surface existential syntax or only equations `(1)--(3)`. The source meaning is
+the connected data, domain, dynamical, regularity, and energy package. The
+full word-by-word ledger and branch formulas are in
+[`priority_177_fefferman_word_connection_adjudication_2026-09-29.md`](../NavierStokesReview/src/audit/priority_177_fefferman_word_connection_adjudication_2026-09-29.md).
+
+The Lean endpoint has substantive residual-limit and smooth-force machinery,
+but the inspected record still does not identify the complete selected
+Cartesian construction with every manuscript-level five-moment consequence.
+The paper-to-endpoint status therefore remains **NOT ESTABLISHED (CTR-005)**.
+This is not a claim that C is already disproved; a literal C failure requires
+a failed connected premise, selected mismatch, impossibility theorem, or
+contradiction.
+
+Evidence:
+`NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`.
+
+## Priority 177: connected Fefferman wording
+
+The source wording is now mapped as a dependency network: data are “given”,
+the force is “externally applied”, “Hence” introduces decay conditions, “only
+if” defines accepted whole-space solutions, and “Alternatively” introduces a
+periodic branch with its own acceptance conditions. C and D therefore remain
+connected packages in the audit. This does not itself prove their failure.
+
+Evidence: `NavierStokesReview/src/audit/priority_177_fefferman_word_connection_adjudication_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`.

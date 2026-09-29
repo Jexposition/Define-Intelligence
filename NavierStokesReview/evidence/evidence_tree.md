@@ -279,5 +279,7 @@
 ├── 📄 source_tranche_priority_175_lexical_bridge_candidate_classification_2026-09-29.json
 ├── 📄 priority_175_lexical_bridge_candidate_classification_2026-09-29.md
 ├── 📄 source_tranche_priority_176_selected_field_composition_domain_trace_2026-09-29.json
-└── 📄 priority_176_selected_field_composition_domain_trace_2026-09-29.md
+├── 📄 priority_176_selected_field_composition_domain_trace_2026-09-29.md
+├── 📄 source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json
+└── 📄 priority_177_fefferman_word_connection_adjudication_2026-09-29.md
 ```

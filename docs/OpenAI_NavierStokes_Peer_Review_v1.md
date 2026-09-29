@@ -3893,3 +3893,37 @@ This preserves CTR-005 without claiming a selected numerical defect.
 
 Evidence: `NavierStokesReview/src/audit/priority_176_selected_field_composition_domain_trace_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_176_selected_field_composition_domain_trace_2026-09-29.json`.
+
+## Priority 177: word-level CMI connection control
+
+Fefferman's connective wording is part of the mathematical specification.
+“Given” and “externally applied” describe the data/provenance role of the
+force; “For physically reasonable solutions” introduces the accepted class;
+“Hence” connects the growth concern to `(4),(5)`; and “only if” makes `(6),(7)`
+necessary. “Alternatively” and “may look” select the periodic branch, while
+“Thus”, “In place of”, and “We then accept” impose `(8),(9)` and `(10),(11)`
+within that branch. “Retaining the heart of the problem” prevents the audit
+from reducing C or D to an equation-only existential.
+
+The formal endpoint has a real residual-limit, smooth-force, and comparator
+route. The remaining publication-level issue is still the selected-field
+transport of the manuscript's five-moment correction consequences into that
+connected C/D target. The review therefore records **NOT ESTABLISHED
+(CTR-005)** for complete paper-to-endpoint fidelity, without asserting a
+selected mismatch, nonsmooth force, literal C/D failure, or kernel
+contradiction.
+
+Evidence:
+`NavierStokesReview/src/audit/priority_177_fefferman_word_connection_adjudication_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`.
+
+## Priority 177: connected Fefferman specification
+
+The CMI text is audited as a connected specification rather than as isolated
+equation citations. Its wording binds given data, force provenance, whole-space
+or periodic branch conditions, accepted smoothness and energy, and the
+nonexistence target. This supports a stricter paper-level crosswalk while not
+claiming that the selected C/D proposition has been formally falsified.
+
+Evidence: `NavierStokesReview/src/audit/priority_177_fefferman_word_connection_adjudication_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`.

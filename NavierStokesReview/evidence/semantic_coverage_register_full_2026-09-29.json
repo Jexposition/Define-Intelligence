@@ -167,7 +167,7 @@
     },
     "missing_project_import_edges": 0,
     "source_rows_with_sorry_token": 10,
-    "supplemental_evidence_records": 84
+    "supplemental_evidence_records": 86
   },
   "supplemental_evidence": [
     {
@@ -611,6 +611,18 @@
       ],
       "finding": "Machine-readable Priority 176 selected-field composition and observable-domain trace, preserving positive endpoint construction and the unestablished paper-specific bridge.",
       "anchors": "JSON findings and classification fields"
+    },
+    {
+      "path": "NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json",
+      "clusters": [
+        "cmi",
+        "fefferman",
+        "external-semantics",
+        "methodology",
+        "evidence"
+      ],
+      "finding": "Machine-readable Priority 177 connected Fefferman semantic-network adjudication with stronger literal failure claims explicitly left unproved.",
+      "anchors": "JSON findings and stronger_claims_not_proved"
     },
     {
       "path": "NavierStokesReview/evidence/source_tranche_rebuttal_force_smoothness_moment_boundary_2026-09-29.json",
@@ -1113,6 +1125,17 @@
       ],
       "finding": "Source-bound trace of selected ASum/BSum/PSum through tsum, Cartesian curl, localisation, periodisation, direct-field addition, and time activation; barMoment remains a distinct pressure-stream observable domain without a final five-observable identity.",
       "anchors": "NavierStokes/SolenoidalDiagonal.lean, LocalScheduleWitness.lean, MixedPeriodicAssembly.lean, SpatialLocalization.lean, TimeLocalization.lean, DefectIncrementBounds.lean"
+    },
+    {
+      "path": "NavierStokesReview/src/audit/priority_177_fefferman_word_connection_adjudication_2026-09-29.md",
+      "clusters": [
+        "cmi",
+        "fefferman",
+        "external-semantics",
+        "methodology"
+      ],
+      "finding": "Connected Fefferman word-level adjudication: given force/data, whole-space and periodic branches, accepted-solution conditions, and Alternatives C/D must be audited as connected packages.",
+      "anchors": "docs/navierstokes.txt:25-81; NavierStokes/ComparatorR3Theorem.lean:21-44; NavierStokes/R3/ProblemStatement.lean:90-136"
     },
     {
       "path": "NavierStokesReview/src/audit/priority_external_euler_foundation_source_review_2026-09-28.md",

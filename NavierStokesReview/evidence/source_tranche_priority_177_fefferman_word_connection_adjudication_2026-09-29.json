@@ -1,0 +1,52 @@
+{
+  "record": "priority_177_fefferman_word_connection_adjudication",
+  "date": "2026-09-29",
+  "status": "source_grounded_semantic_audit",
+  "sources": {
+    "cmi": [
+      "docs/navierstokes.txt:25-81"
+    ],
+    "crosswalk": [
+      "docs/CMI_OpenAI_Full_Semantic_Crosswalk.md",
+      "NavierStokesReview/src/audit/priority_172_fefferman_semantic_network_2026-09-29.md",
+      "NavierStokesReview/src/audit/priority_173_fefferman_c_connected_adjudication_2026-09-29.md"
+    ],
+    "lean": [
+      "NavierStokes/ComparatorR3Theorem.lean:21-44",
+      "NavierStokes/R3/ProblemStatement.lean:90-136"
+    ]
+  },
+  "findings": [
+    {
+      "id": "F176-1",
+      "claim": "Fefferman's connective wording defines a connected admissibility and acceptance network",
+      "status": "established",
+      "evidence": "'Hence', 'only if', 'Alternatively', 'Thus', 'In place of', 'We then accept', and 'retaining the heart of the problem' connect the displayed conditions to the stated physical problem."
+    },
+    {
+      "id": "F176-2",
+      "claim": "The periodic branch is a branch substitution, not a waiver",
+      "status": "established",
+      "evidence": "The source replaces (4),(5) with (8),(9) and then imposes (10),(11)."
+    },
+    {
+      "id": "F176-3",
+      "claim": "C and D must be audited as connected packages rather than equation-only surface forms",
+      "status": "established_as_semantic_adjudication",
+      "evidence": "C cites (1),(2),(3),(6),(7) while separately requiring data conditions (4),(5); D cites (1),(2),(3),(10),(11) while separately requiring (8),(9)."
+    },
+    {
+      "id": "F176-4",
+      "claim": "The selected Lean route is substantive but does not by itself establish complete manuscript correspondence",
+      "status": "established_on_inspected_record",
+      "evidence": "The endpoint includes residual-limit, smooth-force, pre-singular PDE, energy, and comparator components, while the complete selected-field five-moment transport theorem remains unlocated."
+    }
+  ],
+  "stronger_claims_not_proved": [
+    "literal Alternative (C) is false",
+    "literal Alternative (D) is false",
+    "the selected force is nonsmooth",
+    "the selected five-moment defect is nonzero",
+    "the repository contains a kernel contradiction"
+  ]
+}

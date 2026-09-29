@@ -14,7 +14,7 @@ The current register snapshot is 2,794 indexed Lean modules, 588 modules in
 the directly captured `NavierStokes.R3.Theorem` import closure, 906
 evidence-inspected rows, 1,881 source-indexed rows queued for direct review,
 zero missing project import edges, 10 source rows containing a `sorry` token,
-and 84 supplemental evidence records. These counts are scope metrics, not
+and 86 supplemental evidence records. These counts are scope metrics, not
 claims that outside-closure modules are dead, invalid, or unused by another
 OpenAI root.
 
@@ -2532,3 +2532,66 @@ Evidence:
 
 - `NavierStokesReview/src/audit/priority_176_selected_field_composition_domain_trace_2026-09-29.md`;
 - `NavierStokesReview/evidence/source_tranche_priority_176_selected_field_composition_domain_trace_2026-09-29.json`.
+
+## Priority 177 goal control: preserve Fefferman's semantic network
+
+- [x] Treat every connective phrase in `docs/navierstokes.txt:25-81` as part
+  of the specification, including the branch and acceptance implications of
+  “Alternatively”, “Thus”, “In place of”, and “We then accept”.
+- [x] Record that “physically reasonable” is the connected class formed by
+  the source's force/data framing, decay or periodicity, global smoothness,
+  and energy conditions.
+- [x] Audit C and D as connected packages, not as isolated references to
+  `(1)--(3)`.
+- [x] Keep the selected Lean C-shaped proposition, the manuscript mechanism,
+  and the physical force-provenance interpretation as separate but linked
+  audit layers.
+- [ ] Finish the value-level selected-field transport check needed to decide
+  whether the manuscript's five-moment mechanism discharges the connected
+  force-regularity and C/D admissibility obligations.
+- [ ] Keep `NOT ESTABLISHED (CTR-005)` until that check is complete, while
+  avoiding the opposite underclaim that the moments are unimportant or that
+  the formal endpoint is empty.
+
+Evidence:
+
+- `NavierStokesReview/src/audit/priority_177_fefferman_word_connection_adjudication_2026-09-29.md`
+- `NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`
+- `docs/CMI_OpenAI_Full_Semantic_Crosswalk.md`
+
+## Priority 177 goal control: preserve Fefferman's semantic network
+
+- [x] Treat every connective phrase in `docs/navierstokes.txt:25-81` as part
+  of the specification, including the branch and acceptance implications of
+  “Alternatively”, “Thus”, “In place of”, and “We then accept”.
+- [x] Record that “physically reasonable” is the connected class formed by
+  the source's force/data framing, decay or periodicity, global smoothness,
+  and energy conditions.
+- [x] Audit C and D as connected packages, not as isolated references to
+  `(1)--(3)`.
+- [x] Keep the selected Lean C-shaped proposition, the manuscript mechanism,
+  and the physical force-provenance interpretation as separate but linked
+  audit layers.
+- [ ] Finish the value-level selected-field transport check needed to decide
+  whether the manuscript's five-moment mechanism discharges the connected
+  force-regularity and C/D admissibility obligations.
+- [ ] Keep `NOT ESTABLISHED (CTR-005)` until that check is complete, while
+  avoiding the opposite underclaim that the moments are unimportant or that
+  the formal endpoint is empty.
+
+Evidence:
+
+- `NavierStokesReview/src/audit/priority_177_fefferman_word_connection_adjudication_2026-09-29.md`
+- `NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`
+- `docs/CMI_OpenAI_Full_Semantic_Crosswalk.md`
+
+Priority 177 records Fefferman's connective wording as a semantic dependency
+network. The whole-space and periodic branches, given data, accepted-solution
+conditions, and Alternatives C/D are audited as connected packages. This
+strengthens the CMI crosswalk without converting the current CTR-005
+correspondence finding into a literal C/D failure.
+
+Evidence:
+
+- `NavierStokesReview/src/audit/priority_177_fefferman_word_connection_adjudication_2026-09-29.md`;
+- `NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`.

@@ -13,7 +13,7 @@ as the controlling record.
 Current register counts are 2,794 indexed Lean modules, 588 modules in the
 direct `NavierStokes.R3.Theorem` import closure, 906 evidence-inspected rows,
 1,881 source-indexed rows queued, zero missing project import edges, 10 source
-rows containing a `sorry` token, and 84 supplemental evidence records. The
+rows containing a `sorry` token, and 86 supplemental evidence records. The
 labels `outside captured endpoint closure`, `source-indexed review queued`,
 and `evidence-inspected` are separate dimensions. None is a dead-code,
 invalidity, or theorem-failure label.
@@ -3285,6 +3285,19 @@ five-observable tuple. This keeps CTR-005 active without claiming a mismatch.
 Evidence: `NavierStokesReview/src/audit/priority_176_selected_field_composition_domain_trace_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_176_selected_field_composition_domain_trace_2026-09-29.json`.
 
+### Priority 177: connected Fefferman wording adjudication
+
+The Fefferman source is now recorded as a connected specification. The words
+“given”, “externally applied”, “Hence”, “only if”, “Alternatively”, “In place
+of”, “We then accept”, and “retaining the heart” bind data, domain branch,
+regularity, energy, and nonexistence conditions. This prevents the audit from
+reducing C or D to an isolated existential surface form. The stronger claims
+that literal C/D fail, that the force is nonsmooth, or that a selected defect
+exists remain unproved.
+
+Evidence: `NavierStokesReview/src/audit/priority_177_fefferman_word_connection_adjudication_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`.
+
 - [x] Inventory and hash the two source texts and their PDF counterparts.
 - [x] Map Fefferman's equations, force/initial-data decay, global smoothness,
   energy, periodic branch, and Alternatives A-D.
@@ -3455,32 +3468,181 @@ NavierStokesReview/evidence/source_tranche_priority_169_invariant_force_adjudica
 Evidence: `NavierStokesReview/src/audit/priority_168_full_closure_moment_symbol_census_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_full_closure_moment_symbol_census_2026-09-29.json`.
 
+## Priority 169b: connected CMI endpoint adjudication
+
+- [x] Treat Fefferman's “physically reasonable” wording, the whole-space
+  conditions (4)--(7), and the periodic conditions (8)--(11) as connected
+  requirements rather than isolated equation references.
+- [x] Trace the concrete selected route from PhysicalData and cycle
+  invariants through finite residual rates, vanishing joint jets, smooth force
+  extension, candidate properties, comparison, and the C-shaped comparator
+  proposition.
+- [x] Correct the statement that the selected route accepts empty
+  NativeBounds assumptions.
+- [x] Keep the five-moment result exact: genuine upstream profile/rank
+  machinery exists, but no selected-field theorem transporting
+  (M,I,J,S,Cp) through the complete Cartesian construction was located.
+- [x] Do not infer CMI failure, force nonsmoothness, a nonzero selected defect,
+  or False from that omission alone.
+- [ ] Complete the value-level bridge search and, if possible, prove either
+  the selected transport identity or a selected mismatch/impossibility result.
+- [x] Recompile the four selected-path review probes with the pinned Lake
+  executable. `SelectedMomentBridgeAudit`,
+  `SelectedPhysicalDataMomentInterfaceProbe`, `SelectedWitnessPathProbe`, and
+  `GlobalTransportBridgeProbe` all exited with code 0.
+- [ ] Re-run the imported axiom probe through the pinned Lake environment with
+  an adequate timeout and record the result separately from source compilation.
+- [ ] Finish the value-level trace of `H.debt`, `H.masses`, `FiveRowRank`, and
+  `physicalMoments`; specifically verify whether any theorem identifies the
+  two `ZeroMassesOn` radial constraints with the manuscript's five observables.
+- [ ] Only after the crosswalk and evidence are reconciled, perform document
+  consolidation, cross-check every link, and move superseded material to the
+  non-public archive. Do not delete source material and do not stage archive
+  content in the public commit.
+
+Evidence:
+NavierStokesReview/src/audit/priority_169_connected_cmi_endpoint_adjudication_2026-09-29.md;
+NavierStokesReview/evidence/priority_169_connected_cmi_endpoint_adjudication_2026-09-29.json.
+
+## Priority 171: CUDA 3D curl/cutoff diagnostic
+
+- [x] Run the tracked CUDA-first instrument on full 3D Cartesian volumes,
+  rather than a one-dimensional profile sample.
+- [x] Reconstruct the source cutoff, vector-potential lift, analytic curl,
+  cutoff-gradient commutator, independent finite-difference curl, divergence
+  residual, and full x-y integrated defect curves.
+- [x] Sweep resolutions `[129, 193, 257]`, profile scales `[0.5, 1.0, 2.0]`,
+  and axial modulations `[0.0, 0.25]` on the NVIDIA RTX 4060 Ti, with a
+  plotted report.
+- [x] Record refinement stability and derivative-error qualifications.
+- [x] Keep the interpretation boundary explicit: this is a resolved
+  diagnostic for an explicit profile, not a theorem about `selected_witness`
+  or a proof of selected `Delta m != 0`.
+- [ ] Bind the instrument to the repository's actual selected potential sums,
+  periodisation, `torusAverage`, `barMoment`, and axis definitions before
+  promoting any numerical defect to a selected-field claim.
+
+Evidence:
+`NavierStokesReview/evidence/cutoff_commutator_cuda_full_2026-09-29.md`;
+`NavierStokesReview/evidence/cutoff_commutator_cuda_full_2026-09-29.json`;
+`NavierStokesReview/evidence/cutoff_commutator_cuda_full_2026-09-29.csv`;
+`NavierStokesReview/evidence/cutoff_commutator_cuda_full_2026-09-29.png`.
+
+## Priority 170: invariant-backed residual route versus final observable transport
+
+- [x] Reject the unsupported inference that velocity (L^\infty) blow-up
+  forces every residual summand to diverge.
+- [x] Reject the unsupported claim that the manuscript uses the five moments
+  as its only cancellation operation; retain the connected pulse, covariance,
+  mean, pressure, cutoff, and radial-moment architecture.
+- [x] Trace `H.debt`, `H.masses`, rank geometry, and covariance data into the
+  analytic step and invariant propagation.
+- [x] Trace actual physical data into `finite_residual_rates`,
+  `VanishingJointJets`, and `CandidateFromLimits.force_smooth`.
+- [x] Record that the selected smooth-force route is concrete and
+  invariant-backed, not an empty `NativeBounds` assumption.
+- [x] Preserve CTR-005: no theorem has been located identifying the final
+  selected Cartesian field with the manuscript tuple ((M,I,J,S,C_p)).
+- [ ] Complete the value-level theorem search through `potentialSum`, curl,
+  localisation, periodisation, and activation, or prove a selected mismatch.
+
+Evidence:
+NavierStokesReview/src/audit/priority_170_invariant_debt_to_force_trace_2026-09-29.md;
+NavierStokesReview/evidence/priority_170_invariant_debt_to_force_trace_2026-09-29.json.
+
 ## Priority 171: selected observable type boundary
 
-The selected endpoint is built from actual `potentialSum` terms, mixed
-Cartesian curl/localisation, periodisation, and time activation. The source
-also exposes the cutoff-gradient commutator. Separately,
-`DefectIncrementBounds.barMoment` consumes `ScalarField (Point P)` and
-integrates a `PressureStream.torusAverage`; it is not definitionally an
-observable on the activated Cartesian velocity in `Witness`.
+The P2 source trace now binds the endpoint's actual operator composition. The
+selected `Witness` fields are built from `potentialSum`, mixed curl and
+localisation, periodisation, and time activation. The source also exposes the
+cutoff-gradient commutator. Separately, `DefectIncrementBounds.barMoment`
+consumes `ScalarField (Point P)` and integrates a
+`PressureStream.torusAverage`; it is not definitionally an observable on the
+activated Cartesian velocity in `Witness`.
 
-The remaining obligation is an explicit scalar lift, component identification,
-support and integrability argument, and equality through the completed sum,
-curl, localisation, periodisation, averaging, radial integration, and axis
-extension. This does not prove a selected defect, but it makes P2 a precise
-value-level representation search.
+This is a concrete type/domain boundary. It requires an explicit scalar lift,
+component identification, support and integrability argument, and equality
+through the completed sum, curl, localisation, periodisation, averaging,
+radial integration, and axis extension. The finding does not prove a selected
+defect, but it narrows P2 to a value-level representation theorem rather than
+another import or name search.
 
-- [x] Bind the selected field expressions and operator definitions.
-- [x] Bind the exact `barMoment` domain and radial-integral formula.
-- [ ] Prove or disprove equality with `(M,I,J,S,C_p)`.
-
-Evidence:
-`NavierStokesReview/src/audit/priority_171_selected_observable_type_boundary_2026-09-29.md`;
-`NavierStokesReview/evidence/source_tranche_priority_171_selected_observable_type_boundary_2026-09-29.json`.
-
-Priority 172 connected the force, admissibility, physically reasonable,
-periodic, and whole-space language in `docs/navierstokes.txt:25-81`.
+- [x] Record exact selected field definitions and line anchors.
+- [x] Record the exact `barMoment` domain and application formula.
+- [ ] Prove or disprove the selected-field representation and five-observable
+  equality.
 
 Evidence:
-`NavierStokesReview/src/audit/priority_172_fefferman_semantic_network_2026-09-29.md`;
-`NavierStokesReview/evidence/source_tranche_priority_172_fefferman_semantic_network_2026-09-29.json`.
+NavierStokesReview/src/audit/priority_171_selected_observable_type_boundary_2026-09-29.md;
+NavierStokesReview/evidence/source_tranche_priority_171_selected_observable_type_boundary_2026-09-29.json.
+## Priority 172: Fefferman semantic-network crosswalk
+
+- [x] Keep Fefferman's exact source wording as the controlling record in
+  `docs/navierstokes.txt:25-81`.
+- [x] Map the connective words and dependencies: “given”, “externally
+  applied”, “physically reasonable”, “Hence”, “only if”, “Alternatively”,
+  “Thus”, and “retaining the heart of the problem”.
+- [x] Analyse whole-space C as the connected package `(1)--(7)`, not merely
+  the existential surface syntax, and keep periodic D as the separate
+  `(8)--(11)` package.
+- [x] Record the positive Lean route: concrete residual-limit/jet recurrence,
+  smooth force, pre-singular energy, and global-comparator contradiction.
+- [ ] Trace the manuscript's five-moment repair mechanism through the final
+  selected Cartesian field and the force-regularity proof.
+- [ ] Keep two verdicts separate: the formal C-shaped proposition on the
+  inspected path, and the manuscript-specific paper-to-endpoint identity
+  (`CTR-005`, not established).
+- [ ] Escalate beyond `CTR-005` only after proving a connected premise failure,
+  a selected moment mismatch, an impossibility result, or `False`.
+
+Evidence: `NavierStokesReview/src/audit/priority_172_fefferman_semantic_network_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_172_fefferman_semantic_network_2026-09-29.json`;
+`docs/CMI_OpenAI_Full_Semantic_Crosswalk.md`.
+
+## Priority 177: source-preserving semantic connection audit
+
+- [x] Audit the connective words in `docs/navierstokes.txt:25-81`, including
+  “given”, “externally applied”, “For physically reasonable solutions”,
+  “Hence”, “only if”, “Alternatively”, “may look”, “Thus”, “In place of”,
+  “We then accept”, and “retaining the heart of the problem”.
+- [x] Record the downstream obligation created by each phrase, rather than
+  treating the numbered equations as independent snippets.
+- [x] Treat C as the whole-space package `(1)--(7)` and D as the periodic
+  package `(1)--(3),(8)--(11)`, with the surrounding physical meaning retained.
+- [x] Keep the formal Lean endpoint result separate from complete manuscript
+  fidelity and keep `CTR-005` at **NOT ESTABLISHED**.
+- [ ] Bind the manuscript's five-moment correction consequences to the exact
+  selected Cartesian fields, residual, force, and connected C/D admissibility
+  predicates.
+- [ ] Do not promote this semantic finding to literal C/D failure without a
+  connected failed premise, selected value mismatch, impossibility theorem,
+  or contradiction.
+
+Evidence:
+`NavierStokesReview/src/audit/priority_177_fefferman_word_connection_adjudication_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`;
+`docs/CMI_OpenAI_Full_Semantic_Crosswalk.md`.
+
+## Priority 177: source-preserving semantic connection audit
+
+- [x] Audit the connective words in `docs/navierstokes.txt:25-81`, including
+  “given”, “externally applied”, “For physically reasonable solutions”,
+  “Hence”, “only if”, “Alternatively”, “may look”, “Thus”, “In place of”,
+  “We then accept”, and “retaining the heart of the problem”.
+- [x] Record the downstream obligation created by each phrase, rather than
+  treating the numbered equations as independent snippets.
+- [x] Treat C as the whole-space package `(1)--(7)` and D as the periodic
+  package `(1)--(3),(8)--(11)`, with the surrounding physical meaning retained.
+- [x] Keep the formal Lean endpoint result separate from complete manuscript
+  fidelity and keep `CTR-005` at **NOT ESTABLISHED**.
+- [ ] Bind the manuscript's five-moment correction consequences to the exact
+  selected Cartesian fields, residual, force, and connected C/D admissibility
+  predicates.
+- [ ] Do not promote this semantic finding to literal C/D failure without a
+  connected failed premise, selected value mismatch, impossibility theorem,
+  or contradiction.
+
+Evidence:
+`NavierStokesReview/src/audit/priority_177_fefferman_word_connection_adjudication_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`;
+`docs/CMI_OpenAI_Full_Semantic_Crosswalk.md`.

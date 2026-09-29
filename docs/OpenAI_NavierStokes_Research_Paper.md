@@ -4495,3 +4495,62 @@ has a nonzero defect.
 
 Evidence: `NavierStokesReview/src/audit/priority_176_selected_field_composition_domain_trace_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_176_selected_field_composition_domain_trace_2026-09-29.json`.
+
+## Priority 177: Fefferman's connected semantic requirements
+
+The source-level audit now records the mathematical work carried by the words
+surrounding Fefferman's equations. “Physically reasonable” is connected by
+“Hence” to the whole-space data decay conditions `(4),(5)` and by “only if”
+to global smoothness and bounded energy `(6),(7)`. “Alternatively” and “may
+look” open the periodic branch; “Thus”, “In place of”, and “We then accept”
+make `(8),(9)` and `(10),(11)` the corresponding periodic data and solution
+conditions. “Retaining the heart of the problem” carries this full network,
+not just `(1)--(3)`, into C and D.
+
+This matters directly to the manuscript audit. The selected Lean route is
+substantive and includes a concrete smooth-force and comparison path, but the
+inspected endpoint does not yet identify the completed selected Cartesian
+construction with every manuscript-level consequence of `(M,I,J,S,C_p)`.
+The paper-to-endpoint correspondence therefore remains **NOT ESTABLISHED
+(CTR-005)**. This statement is neither a claim that the moments are optional
+nor a proof that the selected force fails C; it identifies the unresolved
+connected transport obligation.
+
+Evidence:
+`NavierStokesReview/src/audit/priority_177_fefferman_word_connection_adjudication_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`.
+
+## Priority 177: Fefferman's connected semantic requirements
+
+The source-level audit now records the mathematical work carried by the words
+surrounding Fefferman's equations. “Physically reasonable” is connected by
+“Hence” to the whole-space data decay conditions `(4),(5)` and by “only if”
+to global smoothness and bounded energy `(6),(7)`. “Alternatively” and “may
+look” open the periodic branch; “Thus”, “In place of”, and “We then accept”
+make `(8),(9)` and `(10),(11)` the corresponding periodic data and solution
+conditions. “Retaining the heart of the problem” carries this full network,
+not just `(1)--(3)`, into C and D.
+
+This matters directly to the manuscript audit. The selected Lean route is
+substantive and includes a concrete smooth-force and comparison path, but the
+inspected endpoint does not yet identify the completed selected Cartesian
+construction with every manuscript-level consequence of `(M,I,J,S,C_p)`.
+The paper-to-endpoint correspondence therefore remains **NOT ESTABLISHED
+(CTR-005)**. This statement is neither a claim that the moments are optional
+nor a proof that the selected force fails C; it identifies the unresolved
+connected transport obligation.
+
+Evidence:
+`NavierStokesReview/src/audit/priority_177_fefferman_word_connection_adjudication_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`.
+
+### Audit update: connected Fefferman specification (2026-09-29)
+
+The CMI source is treated as a connected semantic package. Its data,
+force-provenance, domain, smoothness, energy, and nonexistence clauses cannot
+be separated without changing the target being audited. The current record
+therefore preserves the adverse CTR-005 correspondence finding while leaving
+literal C/D failure and selected-field mismatch as unproved stronger claims.
+
+Evidence: `NavierStokesReview/src/audit/priority_177_fefferman_word_connection_adjudication_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`.
