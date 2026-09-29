@@ -40,3 +40,48 @@ The selected-field five-moment correspondence remains **not established on
 the current record**. This is an adverse finding against the advertised
 paper-to-Lean claim. It is not a repair request, and it is not by itself a
 proof of a nonzero defect, impossibility, or `False`.
+
+## Live worktree refresh (2026-09-29)
+
+The current main worktree contains **77** status entries: **8 tracked
+modifications** and **69 untracked paths**. This is not a publication batch.
+The tracked modifications are dated evidence bundles and reconciliation maps;
+they require content and provenance checks before staging. The untracked set
+contains source inputs, review evidence, exploratory numerical outputs, build
+logs, tree indexes, scratch material, and one user-owned source file.
+
+The current curated public worktree contains five untracked generated tree or
+closure indexes. They remain outside the public commit until their generation
+inputs and links are verified.
+
+### Duplicate and archive controls
+
+The following exact duplicate groups were identified outside `.lake`, build
+artefacts, and the existing archive:
+
+1. `claim_register_2026-09-26.{json,md}` and
+   `review_claim_register_2026-09-26.{json,md}` are byte-identical tracked
+   pairs. They remain in place because eight current evidence maps refer to
+   both names. A canonical-name decision and link migration are required
+   before any move.
+2. The current semantic-coverage HTML, JSON, and Markdown mirrors in `docs/`
+   and `NavierStokesReview/evidence/` are byte-identical. The `docs/` copies
+   are the public-facing mirrors; the evidence copies remain uncommitted until
+   the evidence-tree links are reconciled.
+
+No duplicate has been deleted or moved in this refresh. The existing local
+archive remains the only archive destination, with its manifest controlling
+provenance. The next consolidation pass must update references before moving
+any historical generated file and must leave `NavierStokes/R3/TestPressure.lean`
+and `scratch_space/` untouched.
+
+### Immediate triage order
+
+1. Verify the eight tracked evidence changes against their source snapshot and
+   current endpoint counts.
+2. Reconcile the evidence tree and document tree with the current semantic
+   coverage register.
+3. Decide the canonical claim-register names and update all references before
+   any archive move.
+4. Promote only source-backed evidence ledgers and formally reviewed results
+   to a curated commit; keep scans, logs, scratch, and user-owned source out.
