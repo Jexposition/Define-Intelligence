@@ -195,3 +195,5 @@ Generated from the curated public-branch worktree on 2026-09-29.
 | `vanishing_joint_jets_and_localisation_trace_2026-09-24.md` | 6,181 |
 | `whole_space_uniqueness_audit_2026-09-24.md` | 3,662 |
 | `worktree_triage_2026-09-29.md` | 3,220 |
+| `cutoff_commutator_resolution_audit_2026-09-29.json` | 5,481 |
+| `cutoff_commutator_resolution_audit_2026-09-29.md` | 2,508 |

@@ -119,6 +119,12 @@ P0 source corrections already established in the live checkout:
 - [x] Keep the result labelled as an exact-cutoff diagnostic profile. It is not
   selected-field evidence and does not escalate CTR-005 until P2--P4 bind the
   actual Lean field.
+- [x] Run a second CUDA refinement audit at 129/193/257/321 points for the
+  scale-1, zero-modulation profile. The signed defect remains stable while the
+  finite-difference curl and divergence errors decrease but remain nonzero.
+  This strengthens the numerical qualification without promoting the profile
+  to selected-field evidence:
+  `NavierStokesReview/evidence/cutoff_commutator_resolution_audit_2026-09-29.{json,md}`.
 
 ### P2. Bind the actual finite selected field
 

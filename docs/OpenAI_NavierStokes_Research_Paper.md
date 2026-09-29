@@ -1340,8 +1340,9 @@ This establishes path dependence of the residual-designed trajectory. It is not
 a contradiction of the literal C/D existential, which asks for one admissible
 force and one trajectory and does not quantify over perturbations. The
 counter-paper's formal conclusion is consequently a failed paper-to-endpoint
-identification until the missing selected-field moment theorem is supplied or
-one of its concrete premises is proved false.
+identification on the current record. This absence does not itself prove a
+false selected identity, but it prevents the paper's mechanism from being
+credited to the exported endpoint.
 
 ## Burden of proof and the underclaim finding
 
@@ -1701,8 +1702,8 @@ is a Cartesian velocity assembled from a scalar coefficient, angular frame,
 localisation, and curl. The paper's Appendix A requires the resulting field
 to have the corresponding radial moments. That requires an explicit selected
 Cartesian-to-radial calculation, including cutoff derivatives and axis and
-tail terms. Until that calculation is supplied, the advertised solution
-remains **NOT ESTABLISHED**; no `Delta m ≠ 0` or kernel `False` is asserted.
+tail terms. The advertised solution therefore remains **NOT ESTABLISHED** on
+the current record; no `Delta m ≠ 0` or kernel `False` is asserted.
 
 Evidence: `NavierStokesReview/evidence/selected_cycle_mass_preservation_2026-09-25.md`.
 
@@ -1783,10 +1784,18 @@ outer-support limits, and finally `barMoment`.
 This strengthens the affirmative burden without overstating the result. The
 review has not yet proved that the selected commutator has a nonzero radial
 moment, so it does not claim `Delta m ≠ 0` or `False`. The published solution
-claim remains **NOT ESTABLISHED** until the complete selected-field
-calculation is supplied.
+claim remains **NOT ESTABLISHED** on the current formal record because the
+complete selected-field calculation is absent from the exported evidence.
 
 Evidence: `NavierStokesReview/evidence/selected_cutoff_curl_commutator_2026-09-25.md`.
+
+The review also records a CUDA refinement calculation on an explicitly
+declared three-dimensional diagnostic profile. Its signed defect is stable
+over 129/193/257/321-point volumes, whereas the independent finite-difference
+curl and divergence errors decrease but remain nonzero. This supports the
+existence of a numerical profile-level mechanism only; it is not the selected
+Lean `tsum` field and does not establish `Delta m \ne 0` for the endpoint.
+Evidence: `NavierStokesReview/evidence/cutoff_commutator_resolution_audit_2026-09-29.md`.
 
 ## A precise remaining calculation
 
@@ -2212,8 +2221,8 @@ resulting vector field with the scalar `Point → ℝ` function on which
 `barMoment_apply` operates. The remaining proof obligation is therefore not
 that the mean stream is unused, but that its chart/curl representation is
 correctly reduced to the torus-averaged scalar moment, including axis and
-outer-support terms. Until that calculation is supplied, the full advertised
-five-moment conclusion remains unestablished.
+outer-support terms. The full advertised five-moment conclusion therefore
+remains unestablished on the current record.
 
 Evidence: `NavierStokesReview/evidence/selected_stream_curl_chart_transport_2026-09-25.md`.
 
@@ -3491,7 +3500,8 @@ correction/rank route. They do not identify the complete five named
 observables with the final `ASum`, `BSum`, and `PSum` Cartesian fields after
 curl, localisation, periodisation, infinite summation, torus averaging, and
 radial pullback. The publication claim therefore remains **NOT ESTABLISHED**
-until that final value-level identification is supplied.
+because that final value-level identification is absent from the current
+formal record.
 
 ## Endpoint assembly: what is proved and what is not
 

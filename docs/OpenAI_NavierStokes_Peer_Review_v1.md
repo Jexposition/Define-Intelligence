@@ -1569,9 +1569,9 @@ claimed here.
 This is nevertheless a sharper counter-paper finding than a bare statement
 that a bridge is absent: the selected stage recurrence has been identified,
 and the exact next operation required to validate the paper's Appendix A
-mechanism is exposed. Until that operation is supplied, the published claim
-of a completed five-moment Navier--Stokes solution remains **NOT
-ESTABLISHED** on the inspected record.
+mechanism is exposed. The published claim of a completed five-moment
+Navier--Stokes solution therefore remains **NOT ESTABLISHED** on the inspected
+record; this is an adverse adjudication, not a repair request.
 
 Evidence: `NavierStokesReview/evidence/selected_direct_prefix_field_2026-09-25.md`.
 
@@ -1665,6 +1665,14 @@ The review records the exact term as an open calculation, not as `Delta m ≠ 0`
 or a kernel contradiction.
 
 Evidence: `NavierStokesReview/evidence/selected_cutoff_curl_commutator_2026-09-25.md`.
+
+A separate CUDA refinement run on an explicitly declared three-dimensional
+diagnostic profile records a stable signed defect over 129/193/257/321-point
+volumes, while its finite-difference curl and divergence errors decrease but
+remain nonzero. This is numerical support for the explicit profile mechanism,
+not a calculation of the selected Lean `tsum` field and not evidence of
+`Delta m ≠ 0` at the endpoint. Evidence:
+`NavierStokesReview/evidence/cutoff_commutator_resolution_audit_2026-09-29.md`.
 
 ## Current calculation gate: support is not the cutoff plateau
 

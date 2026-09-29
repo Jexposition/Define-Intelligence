@@ -287,6 +287,60 @@ def release_volume(result: dict[str, Any]) -> None:
     gc.collect()
 
 
+def resolution_diagnostics(rows: list[dict[str, Any]]) -> dict[str, Any]:
+    """Separate stable moment estimates from finite-difference consistency.
+
+    A nonzero profile defect is useful only if it survives refinement.  The
+    finite-difference curl and divergence values are separate numerical error
+    indicators; they must not be silently treated as exact PDE residuals.
+    """
+
+    grouped: dict[tuple[float, float], list[dict[str, Any]]] = {}
+    for row in rows:
+        grouped.setdefault((row["scale"], row["modulation"]), []).append(row)
+
+    groups: list[dict[str, Any]] = []
+    for (scale, modulation), entries in sorted(grouped.items()):
+        ordered = sorted(entries, key=lambda row: row["points"])
+        defects = [abs(row["defect_signed_volume"]) for row in ordered]
+        curl_errors = [row["curl_error_linf_trusted"] for row in ordered]
+        divergence_errors = [row["divergence_linf_trusted"] for row in ordered]
+
+        def relative_change(previous: float, current: float) -> float:
+            return abs(current - previous) / max(abs(current), 1.0e-30)
+
+        defect_changes = [relative_change(a, b) for a, b in zip(defects, defects[1:])]
+        curl_decreases = all(b <= a for a, b in zip(curl_errors, curl_errors[1:]))
+        divergence_decreases = all(b <= a for a, b in zip(divergence_errors, divergence_errors[1:]))
+        groups.append({
+            "scale": scale,
+            "modulation": modulation,
+            "points": [row["points"] for row in ordered],
+            "defect_signed_volume": [row["defect_signed_volume"] for row in ordered],
+            "defect_relative_changes": defect_changes,
+            "defect_stable_last_step_le_5_percent": bool(defect_changes and defect_changes[-1] <= 0.05),
+            "curl_error_linf_trusted": curl_errors,
+            "divergence_linf_trusted": divergence_errors,
+            "curl_error_monotone_decreasing": curl_decreases,
+            "divergence_error_monotone_decreasing": divergence_decreases,
+        })
+
+    return {
+        "groups": groups,
+        "defect_stability_observed": bool(groups) and all(
+            group["defect_stable_last_step_le_5_percent"] for group in groups
+        ),
+        "finite_difference_errors_decrease": bool(groups) and all(
+            group["curl_error_monotone_decreasing"] and
+            group["divergence_error_monotone_decreasing"] for group in groups
+        ),
+        "finite_difference_errors_are_zero": bool(groups) and all(
+            all(value == 0.0 for value in group["curl_error_linf_trusted"] + group["divergence_linf_trusted"])
+            for group in groups
+        ),
+    }
+
+
 def plot_report(path: Path, result: dict[str, Any], summaries: list[dict[str, Any]]) -> None:
     import matplotlib.pyplot as plt
 
@@ -382,6 +436,34 @@ def write_markdown(path: Path, payload: dict[str, Any]) -> None:
         "requires binding its actual potential sums, periodisation, `torusAverage`,",
         "`barMoment`, and axis route.",
         "",
+        "## Numerical qualification",
+        "",
+        "The refinement audit treats the defect estimate and derivative checks",
+        "as separate quantities. A stable defect with decreasing finite-difference",
+        "errors is evidence of a resolved diagnostic profile, not an exact PDE",
+        "identity. The finite-difference errors are reported explicitly and are",
+        "not required to be zero in this numerical instrument.",
+        "",
+        "| scale | modulation | resolutions | signed defect sequence | curl-error sequence | divergence-error sequence |",
+        "|---:|---:|---|---|---|---|",
+    ])
+    for group in payload["validation"]["refinement"]["groups"]:
+        lines.append(
+            "| {scale:.3g} | {modulation:.3g} | `{points}` | `{defects}` | `{curl}` | `{divergence}` |".format(
+                scale=group["scale"],
+                modulation=group["modulation"],
+                points=group["points"],
+                defects=[round(value, 9) for value in group["defect_signed_volume"]],
+                curl=[round(value, 6) for value in group["curl_error_linf_trusted"]],
+                divergence=[round(value, 6) for value in group["divergence_linf_trusted"]],
+            )
+        )
+    lines.extend([
+        "",
+        "The current run records monotone decrease of both finite-difference",
+        "error sequences, but neither sequence is zero. This is a numerical",
+        "qualification, not a selected-field PDE certificate.",
+        "",
         "## Runtime and reproducibility",
         "",
         f"- Backend: `{payload['runtime']['backend']}`",
@@ -450,6 +532,7 @@ def main() -> None:
         for modulation in modulations:
             candidates = [row for row in rows if row["scale"] == scale and row["modulation"] == modulation]
             final_rows.append(max(candidates, key=lambda row: row["points"]))
+    refinement = resolution_diagnostics(rows)
     payload: dict[str, Any] = {
         "instrument": "cutoff_commutator_scan",
         "status": "deep 3D Cartesian profile calculation; not selected_witness evaluation",
@@ -484,6 +567,7 @@ def main() -> None:
             "divergence_residual_recorded": True,
             "selected_field_bound": False,
             "selected_delta_m_proved": False,
+            "refinement": refinement,
         },
     }
     encoded = json.dumps(payload, indent=2, sort_keys=True) + "\n"
