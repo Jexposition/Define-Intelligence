@@ -1164,6 +1164,42 @@ connected packages in the audit. This does not itself prove their failure.
 Evidence: `NavierStokesReview/src/audit/priority_177_fefferman_word_connection_adjudication_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`.
 
+## Priority 184: connected semantic package versus selected-path foundations
+
+The connected reading established by Priorities 179--182 controls the
+interpretation of the selected endpoint. Fefferman's phrase "we may look for
+spatially periodic solutions" grants a branch choice. It does not waive the
+conditions attached to that branch. The following "Thus", "In place of",
+and "We then accept" clauses bind the periodic route to the full periodic
+package: equations (1)--(3), data conditions (8)--(9), and accepted-solution
+conditions (10)--(11). Likewise, the whole-space route remains the package
+(1)--(7). The later C/D alternatives explicitly refer back to those connected
+conditions, rather than merely naming equations (1)--(3).
+
+The selected-path foundation audit then separates two claims that must not be
+collapsed:
+
+1. The Lean path has a substantive residual-jet, extension, smooth-force,
+   support, energy, and blow-up construction.
+2. The completed selected Cartesian fields have been identified with the
+   manuscript's five reduced-profile observables
+   \((M,I,J,S,C_p)\) after the selected curl, cutoff, series, periodisation,
+   averaging, and radial-integration operations.
+
+The source check supports the first claim in the inspected path but has not
+located the second. `noncomputable` definitions and standard
+`Classical.choice` do not supply the missing identification. Conversely,
+absence of that named identity alone does not prove that the selected force is
+nonsmooth or that the connected CMI package fails. A literal C/D failure
+requires a failed condition, a selected mismatch, an impossibility theorem,
+or a contradiction. The current paper-to-endpoint classification therefore
+remains `CTR-005 = NOT ESTABLISHED`, while the CMI semantic audit remains
+connected and branch-complete rather than equation-only.
+
+Evidence:
+`NavierStokesReview/src/audit/priority_184_selected_path_foundation_audit_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_184_selected_path_foundation_audit_2026-09-29.json`.
+
 ## Priority 179: full Fefferman semantic dependency network
 
 The source pass has been expanded from the earlier connective-word ledger to
