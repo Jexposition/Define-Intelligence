@@ -3666,6 +3666,37 @@ an impossibility theorem, a false mandatory CMI premise, or a selected-path
 
 Evidence: `NavierStokesReview/src/audit/priority_163_full_cmi_dependency_crosswalk_adjudication_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_full_cmi_dependency_crosswalk_2026-09-29.json`.
+## Priority 169: declaration-level adjudication of the force-smoothness rebuttal
+
+The latest source check rejects the rebuttal's stronger assertions while
+retaining its central correspondence concern. The manuscript explicitly says
+that individual residual terms may diverge while their sum and all derivatives
+extend smoothly through the singular time. It also describes pulse-flux
+cancellation, covariance correction, auxiliary-time inversion, further
+correction, and five radial moment equations as distinct connected operations.
+Therefore velocity blow-up does not imply divergence of every residual summand,
+and the five moments are not the manuscript's sole cancellation route.
+
+The Lean route is stronger than an unsupported generic rate assumption.
+ActualCandidateAssembly.estimates consumes concrete physical data;
+ActualCycleResidualBounds.finite_residual_rates consumes the actual cycle
+invariant and physical fields; physical_vanishingJointJets derives endpoint
+residual flatness; and CandidateFromLimits.force_smooth derives the smooth force
+extension. The invariant contains genuine debt, mass, rank-row, pressure, and
+radial-moment controls.
+
+The adverse finding remains material. The inspected Witness endpoint does not
+expose a theorem identifying the completed activated Cartesian field and force
+construction with the manuscript's full (M,I,J,S,Cp) semantics after the
+complete sum, curl, localisation, periodisation, pressure, and endpoint
+operations. Thus CTR-005 remains NOT ESTABLISHED complete paper-to-endpoint
+correspondence. This does not prove a selected mismatch, nonsmooth force,
+literal CMI failure, or kernel False.
+
+Evidence:
+NavierStokesReview/src/audit/priority_169_declaration_level_invariant_force_adjudication_2026-09-29.md;
+NavierStokesReview/evidence/source_tranche_priority_169_invariant_force_adjudication_2026-09-29.json.
+
 ## Source-adjudication update: connected CMI semantics (2026-09-29)
 
 The review treats Fefferman's “physically reasonable” wording as a connected

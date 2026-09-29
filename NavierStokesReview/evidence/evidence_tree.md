@@ -258,7 +258,8 @@
 ├── 📄 tree_reconciliation_2026-09-27.md
 ├── 📄 vanishing_joint_jets_and_localisation_trace_2026-09-24.md
 ├── 📄 whole_space_uniqueness_audit_2026-09-24.md
-└── 📄 source_tranche_full_closure_moment_symbol_census_2026-09-29.json
+├── 📄 source_tranche_full_closure_moment_symbol_census_2026-09-29.json
+└── 📄 source_tranche_priority_169_invariant_force_adjudication_2026-09-29.json
 ```
 ├── 📄 repository_map_2026-09-27.dot
 ├── 📄 repository_map_2026-09-27.json

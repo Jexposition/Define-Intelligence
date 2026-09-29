@@ -143,6 +143,7 @@
 ├── 📄 priority_167_selected_field_composition_trace_2026-09-29.md
 ├── 📄 priority_168_fefferman_physical_admissibility_and_force_chain_2026-09-29.md
 ├── 📄 priority_168_full_closure_moment_symbol_census_2026-09-29.md
+├── 📄 priority_169_declaration_level_invariant_force_adjudication_2026-09-29.md
 ├── 📄 snapshot_compare.py
 ├── 📄 source_tranche_summary.py
 ├── 📄 source_tree_map.py

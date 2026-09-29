@@ -3367,5 +3367,28 @@ correspondence is not established. The census alone is not evidence of a
 nonzero defect, force nonsmoothness, or failure of the literal existential
 endpoint.
 
+## Priority 169: declaration-level adjudication of the force-smoothness rebuttal
+
+- [x] Reject the unsupported implication that velocity blow-up forces every
+  summand of the momentum residual to diverge.
+- [x] Reject the unsupported claim that the five moments are the manuscript's
+  only cancellation route; retain their load-bearing role in matching,
+  pressure/stress propagation, modulation repair, and cycle compatibility.
+- [x] Confirm that the selected rate-to-flatness-to-force route consumes concrete
+  cycle invariants and physical data rather than an empty NativeBounds premise.
+- [x] Confirm the positive correction-state controls: three-component debt,
+  two zero-mass constraints, FiveRowRank rows, and radial pressure/flux
+  identities.
+- [x] Retain CTR-005 as the missing final selected-field semantic
+  identification, not as a claim that the moment machinery is absent.
+- [ ] Trace H.debt, H.masses, and FiveRowRank rows through physicalData,
+  potentialSum, curl, localisation, periodisation, activation, and a
+  value-level comparison with (M,I,J,S,Cp).
+- [ ] Do not escalate to selected mismatch, nonsmooth force, literal CMI
+  failure, or False without a direct theorem.
+
+Evidence: NavierStokesReview/src/audit/priority_169_declaration_level_invariant_force_adjudication_2026-09-29.md;
+NavierStokesReview/evidence/source_tranche_priority_169_invariant_force_adjudication_2026-09-29.json.
+
 Evidence: `NavierStokesReview/src/audit/priority_168_full_closure_moment_symbol_census_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_full_closure_moment_symbol_census_2026-09-29.json`.

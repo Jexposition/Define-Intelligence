@@ -1,0 +1,61 @@
+{
+  "priority": "169",
+  "date": "2026-09-29",
+  "title": "Declaration-level invariant and force adjudication",
+  "status": "source_checked",
+  "repository": "openai/NavierStokesAndEuler",
+  "endpoint": "NavierStokes.R3.Theorem",
+  "closure_modules": 588,
+  "claims": [
+    {
+      "claim": "Velocity blow-up implies every residual summand diverges",
+      "status": "rejected",
+      "reason": "The manuscript explicitly permits divergent individual terms with smooth cancellation of the total residual and its derivatives.",
+      "sources": ["docs/navier-stokes openai.txt:108-124"]
+    },
+    {
+      "claim": "The five moments are the only residual cancellation mechanism",
+      "status": "rejected",
+      "reason": "Section 3.4 separately describes wave-amplitude cancellation, covariance correction, auxiliary-time inversion, and five radial moment correction.",
+      "sources": ["docs/navier-stokes openai.txt:711-735", "docs/navier-stokes openai.txt:8391-8518"]
+    },
+    {
+      "claim": "The selected force is derived from an empty generic NativeBounds assumption",
+      "status": "rejected",
+      "reason": "Actual stage estimates consume concrete physical data, cycle invariants, residual rates, and extension data before VanishingJointJets and force_smooth are derived.",
+      "sources": [
+        "NavierStokes/ActualCandidateAssembly.lean:1090-1096",
+        "NavierStokes/ActualCycleResidualBounds.lean:1015-1030",
+        "NavierStokes/ActualCycleResidualBounds.lean:1158-1172",
+        "NavierStokes/ActualCycleResidualBounds.lean:1190-1206",
+        "NavierStokes/ActualStageEstimates.lean:347-403",
+        "NavierStokes/MixedDiagonalResidual.lean:168-266",
+        "NavierStokes/CandidateFromLimits.lean:47-87"
+      ]
+    },
+    {
+      "claim": "Five-moment machinery is absent or dead",
+      "status": "rejected",
+      "reason": "The direct endpoint closure contains active correction-state, rank, radial-moment, and terminal-compensation declarations.",
+      "sources": [
+        "NavierStokes/CorrectionStep.lean:9408-9461",
+        "NavierStokes/CorrectionState.lean:449-458",
+        "NavierStokes/StateMomentBalances.lean:956-1007",
+        "NavierStokes/GaugeMassPreservation.lean:140-142"
+      ]
+    },
+    {
+      "claim": "The public selected endpoint exports the final Cartesian five-observable equality",
+      "status": "not_located",
+      "reason": "Witness exports selected sums, extensions, force regularity, consequences, blow-up, decay, and boundary limits, but the inspected declaration has no named equality identifying the completed field with (M,I,J,S,Cp).",
+      "sources": ["NavierStokes/ActualCandidateAssembly.lean:1121-1151"]
+    },
+    {
+      "claim": "The selected field has a nonzero moment defect, the force is nonsmooth, or literal Alternative C is false",
+      "status": "not_proved",
+      "reason": "This tranche found no selected value-level mismatch, impossibility theorem, failed mandatory CMI premise, or selected-path False."
+    }
+  ],
+  "verdict": "CTR-005 remains NOT ESTABLISHED as complete paper-to-endpoint correspondence; no formal refutation is claimed.",
+  "next_test": "Trace H.debt, H.masses, and FiveRowRank rows through physicalData, potentialSum, curl, localisation, periodisation, activation, and a value-level comparison with the manuscript tuple."
+}

@@ -883,3 +883,95 @@ realise every five-moment identity claimed by the manuscript.  That is the
 precise remaining correspondence question.  It must neither be weakened into
 “the moments do not matter” nor overstated into “the force is already proved
 nonsmooth”.
+You are correct: “may look for spatially periodic solutions” introduces an alternative formulation; it does not make the periodic requirements optional.
+
+The semantic structure is:
+
+\[
+\text{equations (1)--(3)}
++
+\begin{cases}
+(4),(5),(6),(7), & \mathbb R^3\text{ branch},\\
+(8),(9),(10),(11), & \mathbb R^3/\mathbb Z^3\text{ branch}.
+\end{cases}
+\]
+
+Once the periodic branch is chosen, (8)–(11) are mandatory. Likewise, “physically reasonable” means the connected class defined by:
+
+- given initial data and externally applied force;
+- incompressibility;
+- spatial decay or periodicity;
+- global \(C^\infty\) smoothness;
+- bounded energy for every \(t\ge 0\).
+
+“Retaining the heart of the problem” means retaining the global existence-versus-breakdown question in that accepted class. A local PDE identity, a pre-singular construction, or a merely formal residual is not enough.
+
+The source-checked Lean result is now stated precisely:
+
+1. `navier_stokes_breakdown_R3` does encode the whole-space C-shaped proposition: decaying \(u_0\), decaying smooth \(f\), and no global smooth bounded-energy competitor for the same data.
+
+2. The force decay is derived from smooth compact support, not inserted as an empty assumption.
+
+3. The selected force route is concrete:
+
+\[
+\text{physical cycle data}
+\to
+\text{residual rates}
+\to
+\text{vanishing residual jets}
+\to
+\text{smooth force extension}.
+\]
+
+4. The remaining gap is different:
+
+\[
+\text{paper's five-moment mechanism}
+\not\Rightarrow_{\text{currently located}}
+\text{final selected Cartesian field and force realise }(M,I,J,S,C_p).
+\]
+
+Therefore the accurate conclusion is:
+
+> The repository contains a formal proof of its encoded whole-space forced breakdown proposition, but the current record does not yet establish that this Lean proof is the complete proof described in OpenAI’s manuscript, including the manuscript’s five-moment physical mechanism.
+
+That is not saying the moments are unimportant. It is saying the Lean source currently proves a stronger residual-rate route without exposing the theorem that identifies that route with the paper’s stated five-moment construction.
+
+I also checked the extracted OpenAI manuscript and did not find the exact claim that the construction “would never occur in physical reality.” I will not attribute that statement without the precise page passage.
+
+## Priority 169 declaration-level correction
+
+The latest source adjudication rejects two overstatements in the current
+rebuttal literature. First, velocity blow-up does not imply divergence of every
+individual residual summand, because the manuscript explicitly permits
+cancellation in the total residual. Second, the five moments are load-bearing
+but not the manuscript's sole cancellation operation: pulse-flux cancellation,
+covariance correction, auxiliary-time inversion, further residual correction,
+and five radial moment equations are all connected in Section 3.4.
+
+The Lean force route is also concrete. Actual physical data and cycle
+invariants feed finite residual rates, those rates feed vanishing joint jets,
+and compatible residual limits feed a smooth force extension. This route must
+not be described as an empty NativeBounds assumption.
+
+The adverse correspondence finding remains unchanged. The inspected public
+Witness does not expose a theorem identifying the completed activated Cartesian
+field and force with every manuscript-level consequence of (M,I,J,S,Cp).
+Therefore CTR-005 remains NOT ESTABLISHED as complete paper-to-endpoint
+correspondence. The current record does not prove a selected nonzero defect,
+nonsmooth force, literal CMI failure, or kernel False.
+
+Evidence: NavierStokesReview/src/audit/priority_169_declaration_level_invariant_force_adjudication_2026-09-29.md;
+NavierStokesReview/evidence/source_tranche_priority_169_invariant_force_adjudication_2026-09-29.json.
+
+Updated:
+
+- [full semantic crosswalk](<D:/Research Lab/Jexposition/Define Intelligence/Define-Intelligence-github/docs/CMI_OpenAI_Full_Semantic_Crosswalk.md>)
+- [Priority 168b audit](<D:/Research Lab/Jexposition/Define Intelligence/Define-Intelligence-github/NavierStokesReview/src/audit/priority_168_fefferman_physical_admissibility_and_force_chain_2026-09-29.md>)
+- [workspace goal](<D:/Research Lab/Jexposition/Define Intelligence/Define-Intelligence-github/docs/REVIEW_AUDIT_WORKSPACE_GOAL.md>)
+- [review plan](<D:/Research Lab/Jexposition/Define Intelligence/Define-Intelligence-github/docs/OpenAI_NavierStokes_CMI_First_Review_Plan.md>)
+
+Validation passed: JSON parsed, whitespace check passed, and no hanging Lean, Lake, or Python processes remain.
+
+Next action: continue tracing whether the invariant-backed residual rates are definitionally or theoremically derived from the manuscript’s five observables.

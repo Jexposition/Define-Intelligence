@@ -4256,6 +4256,38 @@ is the paper's five-observable construction. This is `CTR-005`, not a claim
 that the upstream moment machinery is absent.
 
 Evidence: `NavierStokesReview/src/audit/priority_168_full_closure_moment_symbol_census_2026-09-29.md`.
+## Priority 169 source correction: force smoothness and five-moment scope
+
+The audit must not state that the infinity norm blow-up forces every individual
+term of
+
+  f = partial_t u + (u dot grad)u - nu Delta u + grad p
+
+to diverge. The manuscript explicitly allows divergent summands with smooth
+cancellation of the total residual and its derivatives. It also presents
+wave-flux, covariance, auxiliary-time, further-correction, and five-moment
+operations as connected parts of the residual construction. The five moments
+are load-bearing for profile matching, pressure/stress propagation, modulation
+repair, and cycle compatibility, but the source does not support calling them
+the sole cancellation mechanism.
+
+The Lean source provides a concrete residual-rate and flatness route: cycle
+invariants and physical data feed finite residual rates, those rates feed
+vanishing joint jets, and compatible residual limits feed a smooth force
+extension. This corrects any description of the endpoint as accepting empty
+NativeBounds assumptions.
+
+The remaining adverse conclusion is narrower and still important. The public
+selected endpoint does not expose a theorem identifying the completed Cartesian
+field and force with every manuscript-level consequence of (M,I,J,S,Cp). The
+manuscript-to-endpoint correspondence therefore remains NOT ESTABLISHED under
+CTR-005. The current record does not prove a selected nonzero defect, nonsmooth
+force, literal CMI failure, or kernel False.
+
+Evidence:
+NavierStokesReview/src/audit/priority_169_declaration_level_invariant_force_adjudication_2026-09-29.md;
+NavierStokesReview/evidence/source_tranche_priority_169_invariant_force_adjudication_2026-09-29.json.
+
 ## Audit boundary update: physical admissibility and endpoint correspondence (2026-09-29)
 
 The manuscript audit now cross-references Fefferman's connected meaning of

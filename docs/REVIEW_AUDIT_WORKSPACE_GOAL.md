@@ -2291,3 +2291,37 @@ The next gate is declaration-level tracing from `ActualCandidateAssembly`
 through the concrete estimates, vanishing jets, `tsum`, mixed curl/cutoff,
 periodisation, and time activation. Import reachability must not be reported as
 proof-term transport, but neither may it be reported as absence.
+
+## Priority 169 correction: invariant-backed force route and five-moment scope
+
+The latest declaration-level adjudication rejects the claim that the selected
+force is obtained from an empty generic rate interface. The selected route
+consumes concrete CycleAnalyticInvariant data, physical fields, residual rates,
+compatible vanishing joint jets, and endpoint extension data.
+
+The same adjudication rejects two stronger manuscript claims made in the
+rebuttal: velocity blow-up does not imply termwise divergence of every residual
+summand, and the five moments are not the sole cancellation operation in the
+manuscript. The paper itself describes pulse-flux cancellation, covariance
+correction, auxiliary-time inversion, further residual correction, and five
+radial moment equations as connected operations.
+
+The positive and adverse findings must both remain visible:
+
+- the cycle invariant contains genuine three-component debt, two zero-mass
+  constraints, FiveRowRank rows, and radial pressure/flux identities;
+- the public selected Witness still does not expose a theorem identifying the
+  completed Cartesian fields with the manuscript's (M,I,J,S,Cp);
+- this keeps CTR-005 at NOT ESTABLISHED complete paper-to-endpoint
+  correspondence;
+- it does not prove a selected nonzero defect, nonsmooth force, literal CMI
+  failure, or kernel False.
+
+Next work is declaration-level value tracing, not another import census:
+H.debt, H.masses, and FiveRowRank must be followed through physicalData,
+potentialSum, curl, localisation, periodisation, activation, and a value-level
+comparison with the manuscript observables.
+
+Evidence:
+NavierStokesReview/src/audit/priority_169_declaration_level_invariant_force_adjudication_2026-09-29.md;
+NavierStokesReview/evidence/source_tranche_priority_169_invariant_force_adjudication_2026-09-29.json.
