@@ -89,13 +89,30 @@ updates. They are control information for the paper, not additional arguments.
 ### Live audit state (2026-09-29)
 
  The authoritative register currently records 2,794 indexed modules, 588
- modules in the captured Navier–Stokes endpoint closure, 904 evidence-inspected
- rows, 1,883 source-indexed rows still queued for semantic review, 0 missing
- project import edges, 10 source rows containing a `sorry` token, and 70
+ modules in the captured Navier–Stokes endpoint closure, 906 evidence-inspected
+ rows, 1,881 source-indexed rows still queued for semantic review, 0 missing
+ project import edges, 10 source rows containing a `sorry` token, and 86
  supplemental evidence records. “Outside the captured endpoint closure” is a
 scope label, not a claim that a module is dead or unreachable in OpenAI’s own
 build graph. Earlier addenda retain historical tranche counts. The remaining
 selected-field composition and full-repository coverage are not yet closed.
+
+### Audit evidence update: Priority 179 force-smoothness rebuttal
+
+The latest rebuttal was checked against the manuscript's explicit residual and
+correction passages and the selected Lean force path. The five-moment equations
+are load-bearing in the written profile/correction mechanism, but the source
+does not establish that they are the only cancellation operation. Nor does
+velocity blow-up alone prove termwise divergence of every residual summand.
+The selected Lean route derives `force_smooth` from concrete residual
+derivative recurrence and locally uniform endpoint limits. The unresolved
+publication-level issue remains the final selected-field identification with
+the manuscript observables `(M,I,J,S,C_p)`, so the classification remains
+**NOT ESTABLISHED (CTR-005)** without asserting a selected mismatch or force
+nonsmoothness.
+
+Evidence: `../NavierStokesReview/src/audit/priority_179_latest_force_smoothness_rebuttal_2026-09-29.md`;
+`../NavierStokesReview/evidence/source_tranche_priority_179_latest_force_smoothness_rebuttal_2026-09-29.json`.
 
 ### Audit evidence update: Priority 154–155 source tranches (2026-09-29)
 

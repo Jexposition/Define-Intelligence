@@ -7,10 +7,10 @@ Read the [research paper's Executive Verdict](OpenAI_NavierStokes_Research_Paper
 ## Live audit state (2026-09-29)
 
 The authoritative register currently records 2,794 indexed modules, 588
-modules in the captured Navier–Stokes endpoint closure, 904
-evidence-inspected rows, 1,883 source-indexed rows still queued for semantic
+modules in the captured Navier–Stokes endpoint closure, 906
+evidence-inspected rows, 1,881 source-indexed rows still queued for semantic
 review, 0 missing project import edges, 10 source rows containing a `sorry`
-token, and 70 supplemental evidence records. “Outside the captured endpoint
+token, and 86 supplemental evidence records. “Outside the captured endpoint
 closure” is a scope label, not a claim that a module is dead or unreachable
 in OpenAI’s own build graph. The full-repository review remains active.
 
@@ -3916,6 +3916,45 @@ contradiction.
 Evidence:
 `NavierStokesReview/src/audit/priority_177_fefferman_word_connection_adjudication_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`.
+
+## Priority 179: no isolated C reading
+
+The review now treats Fefferman's CMI statement as a semantic dependency
+network. “May look” is branch latitude, not a waiver. In the selected
+periodic branch, “Thus”, “In place of”, and “We then accept” make `(8),(9)`
+and `(10),(11)` binding. In the whole-space branch, “Hence” and “only if” bind
+`(4),(5)` and `(6),(7)`. The phrases “physically reasonable” and “retaining
+the heart of the problem” carry those conditions into the alternatives.
+
+Accordingly, the review does not claim that a formal C-shaped route is enough
+to establish the manuscript's full physical proof. It records the stronger
+paper-to-endpoint requirement and keeps `CTR-005` at **NOT ESTABLISHED** until
+the selected fields, force, pressure, and five-moment mechanism are connected
+by a value-level theorem. It does not convert that missing correspondence
+into an unsupported literal C/D refutation.
+
+Source-complete record:
+[`priority_179_fefferman_full_semantic_dependency_network_2026-09-29.md`](../NavierStokesReview/src/audit/priority_179_fefferman_full_semantic_dependency_network_2026-09-29.md).
+
+## Priority 180: force-smoothness rebuttal control
+
+The latest source check preserves the important adverse point that the
+manuscript's five-moment equations are load-bearing. It rejects three stronger
+claims not proved by the source: velocity blow-up does not imply termwise
+divergence of every residual summand; the five equations are not shown to be
+the manuscript's only cancellation operation; and `force_smooth` is not a
+free-standing `NativeBounds` assumption on the selected path. The Lean route
+derives smooth forcing from concrete residual recurrence and locally uniform
+jet limits.
+
+The paper-to-endpoint issue remains material and adverse: the inspected public
+`Witness` does not identify the completed activated Cartesian fields with
+`(M,I,J,S,C_p)`. The review therefore retains **NOT ESTABLISHED (CTR-005)**,
+without claiming a selected nonzero defect, force nonsmoothness, impossibility,
+literal C/D failure, or `False`.
+
+Evidence: `NavierStokesReview/src/audit/priority_179_latest_force_smoothness_rebuttal_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_179_latest_force_smoothness_rebuttal_2026-09-29.json`.
 
 ## Priority 177: connected Fefferman specification
 

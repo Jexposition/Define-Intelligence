@@ -1,0 +1,38 @@
+{
+  "priority": 179,
+  "date": "2026-09-29",
+  "title": "Latest force-smoothness rebuttal adjudication",
+  "status": "source_checked_no_escalation",
+  "question": "Whether residual-term divergence and force smoothness require a proved final five-moment transport theorem at the selected Witness boundary",
+  "findings": {
+    "five_moments_load_bearing_in_manuscript": true,
+    "termwise_residual_divergence_from_velocity_blowup": "not_proved",
+    "five_moments_only_cancellation_mechanism": "not_established_and_overstated",
+    "selected_force_smoothness_route": "source_established_from_concrete_residual_limits",
+    "final_selected_cartesian_five_observable_identity": "not_located",
+    "selected_nonzero_defect": "not_proved",
+    "literal_cmi_c_or_d_failure": "not_proved",
+    "lean_contradiction": "not_proved"
+  },
+  "formal_logic": {
+    "selected_route": "H_selected -> J_flat -> F_smooth",
+    "missing_implication": "J_flat -> PaperMoments(selected_velocity, selected_pressure) = (M,I,J,S,C_p)",
+    "classification": "NOT_ESTABLISHED (CTR-005)"
+  },
+  "manuscript_anchors": [
+    "docs/navier-stokes openai.txt:109-124",
+    "docs/navier-stokes openai.txt:523-546",
+    "docs/navier-stokes openai.txt:695-735",
+    "docs/navier-stokes openai.txt:746-784",
+    "docs/navier-stokes openai.txt:6101-6153"
+  ],
+  "lean_anchors": [
+    "NavierStokes/ActualCandidateAssembly.lean:1079-1098",
+    "NavierStokes/ActualCandidateAssembly.lean:1121-1151",
+    "NavierStokes/MixedCandidateAssembly.lean:67-90",
+    "NavierStokes/CandidateFromLimits.lean:47-55",
+    "NavierStokes/CandidateFromLimits.lean:80-112",
+    "NavierStokes/DefectIncrementBounds.lean:214-220"
+  ],
+  "evidence_boundary": "The report distinguishes a concrete residual-jet construction from the unlocated final paper-observable representation theorem. It does not infer a physical countermodel from an abstract debt parameter."
+}
