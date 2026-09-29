@@ -3881,3 +3881,15 @@ into a selected mismatch, force singularity, or impossibility theorem.
 
 Evidence: `NavierStokesReview/src/audit/priority_175_lexical_bridge_candidate_classification_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_175_lexical_bridge_candidate_classification_2026-09-29.json`.
+
+## Priority 176: selected-field composition and observable domain
+
+The selected route is source-bound through `tsum`, Cartesian curl, cutoff,
+periodisation, direct-field addition, and time activation. This confirms a
+genuine composed endpoint. The unresolved issue is narrower and exact:
+`barMoment` is a pressure-stream radial integral, and the inspected source has
+not identified it with the final activated Cartesian five-observable tuple.
+This preserves CTR-005 without claiming a selected numerical defect.
+
+Evidence: `NavierStokesReview/src/audit/priority_176_selected_field_composition_domain_trace_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_176_selected_field_composition_domain_trace_2026-09-29.json`.

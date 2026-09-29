@@ -13,7 +13,7 @@ as the controlling record.
 Current register counts are 2,794 indexed Lean modules, 588 modules in the
 direct `NavierStokes.R3.Theorem` import closure, 906 evidence-inspected rows,
 1,881 source-indexed rows queued, zero missing project import edges, 10 source
-rows containing a `sorry` token, and 82 supplemental evidence records. The
+rows containing a `sorry` token, and 84 supplemental evidence records. The
 labels `outside captured endpoint closure`, `source-indexed review queued`,
 and `evidence-inspected` are separate dimensions. None is a dead-code,
 invalidity, or theorem-failure label.
@@ -3271,6 +3271,19 @@ does not prove a selected mismatch or impossibility.
 
 Evidence: `NavierStokesReview/src/audit/priority_175_lexical_bridge_candidate_classification_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_175_lexical_bridge_candidate_classification_2026-09-29.json`.
+
+### Priority 176: selected-field composition and observable-domain trace
+
+The exact selected route is now source-bound from `potentialSum` through
+`ASum`/`BSum`/`PSum`, Cartesian curl, cutoff, periodisation, direct-field
+addition, and time activation. The selected smooth-force and blow-up route is
+therefore a genuine composed construction. The remaining boundary is the
+observable domain: `barMoment` integrates a pressure-stream scalar field, and
+no inspected theorem identifies it with the final activated Cartesian
+five-observable tuple. This keeps CTR-005 active without claiming a mismatch.
+
+Evidence: `NavierStokesReview/src/audit/priority_176_selected_field_composition_domain_trace_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_176_selected_field_composition_domain_trace_2026-09-29.json`.
 
 - [x] Inventory and hash the two source texts and their PDF counterparts.
 - [x] Map Fefferman's equations, force/initial-data decay, global smoothness,

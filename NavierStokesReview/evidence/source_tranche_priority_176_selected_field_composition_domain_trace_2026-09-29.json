@@ -1,0 +1,60 @@
+{
+  "priority": 176,
+  "date": "2026-09-29",
+  "title": "Selected field composition and observable-domain trace",
+  "scope": {
+    "selected_route": [
+      "LocalScheduleWitness.potentialSum",
+      "LocalScheduleWitness.directSum",
+      "LocalScheduleWitness.pressureSum",
+      "MixedPeriodicAssembly.periodicVelocity",
+      "SpatialLocalization.periodicVelocity",
+      "SpatialLocalization.periodicPressure",
+      "TimeLocalization.activatedVelocity",
+      "TimeLocalization.activatedPressure"
+    ],
+    "observable": "DefectIncrementBounds.barMoment"
+  },
+  "findings": [
+    {
+      "claim": "The selected endpoint is only a generic rate interface with no composed field.",
+      "status": "rejected",
+      "reason": "The source defines selected sums, Cartesian curl/localisation, periodisation, direct-field addition, pressure periodisation, and time activation, and packages those same fields into CandidateProperties.",
+      "evidence": [
+        "NavierStokes/LocalScheduleWitness.lean:22-34",
+        "NavierStokes/LocalScheduleWitness.lean:131-163",
+        "NavierStokes/MixedPeriodicAssembly.lean:28-49",
+        "NavierStokes/SpatialLocalization.lean:210-296",
+        "NavierStokes/TimeLocalization.lean:27-31"
+      ]
+    },
+    {
+      "claim": "The selected smooth-force and blow-up route is attached to the composed activated field.",
+      "status": "established_on_inspected_path",
+      "reason": "The selected periodic candidate consumes the actual sums and returns CandidateProperties, smooth forcing, residual consequences, endpoint limits, and the axis-growth route; time activation preserves late residual equality and speed unboundedness.",
+      "evidence": [
+        "NavierStokes/LocalScheduleWitness.lean:109-163",
+        "NavierStokes/TimeLocalization.lean:127-193"
+      ]
+    },
+    {
+      "claim": "barMoment is definitionally the five-observable functional of the final activated Cartesian field.",
+      "status": "not_established",
+      "reason": "barMoment consumes ScalarField (Point P), averages a pressure-stream scalar field, and integrates in the radial variable. No inspected theorem identifies that input with the final activated Cartesian velocity/pressure observables.",
+      "evidence": [
+        "NavierStokes/DefectIncrementBounds.lean:214-220",
+        "NavierStokes/DefectIncrementBounds.lean:232-297",
+        "NavierStokes/DefectIncrementBounds.lean:607-619"
+      ]
+    }
+  ],
+  "classification": {
+    "selected_composition": "SOURCE_BOUND",
+    "selected_residual_jet_and_smooth_force_route": "ESTABLISHED_ON_INSPECTED_PATH",
+    "final_paper_specific_five_observable_transport": "NOT_ESTABLISHED_CTR-005",
+    "selected_field_mismatch": "not_proved",
+    "force_nonsmoothness": "not_proved",
+    "literal_cmi_failure": "not_proved",
+    "lean_kernel_contradiction": "not_proved"
+  }
+}

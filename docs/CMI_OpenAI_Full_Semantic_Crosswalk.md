@@ -1106,3 +1106,15 @@ CMI failure unproved.
 
 Evidence: `NavierStokesReview/src/audit/priority_175_lexical_bridge_candidate_classification_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_175_lexical_bridge_candidate_classification_2026-09-29.json`.
+
+## Priority 176: selected composition and observable domain
+
+The selected construction is source-bound through the actual sums, curl,
+localisation, periodisation, direct-field addition, and time activation. The
+remaining correspondence boundary is that `barMoment` has a pressure-stream
+radial-integral type, with no inspected theorem identifying it with the final
+activated Cartesian `(M,I,J,S,C_p)` tuple. This is a correspondence finding,
+not a selected mismatch or literal CMI refutation.
+
+Evidence: `NavierStokesReview/src/audit/priority_176_selected_field_composition_domain_trace_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_176_selected_field_composition_domain_trace_2026-09-29.json`.

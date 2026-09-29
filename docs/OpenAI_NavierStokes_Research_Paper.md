@@ -4482,3 +4482,16 @@ The paper-specific endpoint correspondence therefore remains
 
 Evidence: `NavierStokesReview/src/audit/priority_175_lexical_bridge_candidate_classification_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_175_lexical_bridge_candidate_classification_2026-09-29.json`.
+
+### Audit update: selected-field composition boundary (2026-09-29)
+
+The source trace confirms that the selected sums are genuinely composed into
+Cartesian, localised, periodised, time-activated fields and used by the
+smooth-force and blow-up endpoint. It does not, however, identify the
+pressure-stream `barMoment` domain with the final activated Cartesian
+five-observable tuple. The exact paper-to-endpoint correspondence therefore
+remains **NOT ESTABLISHED (CTR-005)**, without a claim that the selected field
+has a nonzero defect.
+
+Evidence: `NavierStokesReview/src/audit/priority_176_selected_field_composition_domain_trace_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_176_selected_field_composition_domain_trace_2026-09-29.json`.

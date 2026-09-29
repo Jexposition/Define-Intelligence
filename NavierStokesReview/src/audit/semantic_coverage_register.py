@@ -37,6 +37,16 @@ EVIDENCE: dict[str, dict[str, Any]] = {
         "finding": "Machine-readable Priority 175 classification of the seven lexical endpoint candidates, preserving the distinction between selected-route evidence and missing paper-specific transport.",
         "anchors": "JSON findings and classification fields",
     },
+    "NavierStokesReview/src/audit/priority_176_selected_field_composition_domain_trace_2026-09-29.md": {
+        "clusters": ["endpoint", "composition", "periodisation", "activation", "moments"],
+        "finding": "Source-bound trace of selected ASum/BSum/PSum through tsum, Cartesian curl, localisation, periodisation, direct-field addition, and time activation; barMoment remains a distinct pressure-stream observable domain without a final five-observable identity.",
+        "anchors": "NavierStokes/SolenoidalDiagonal.lean, LocalScheduleWitness.lean, MixedPeriodicAssembly.lean, SpatialLocalization.lean, TimeLocalization.lean, DefectIncrementBounds.lean",
+    },
+    "NavierStokesReview/evidence/source_tranche_priority_176_selected_field_composition_domain_trace_2026-09-29.json": {
+        "clusters": ["endpoint", "composition", "periodisation", "activation", "moments", "evidence"],
+        "finding": "Machine-readable Priority 176 selected-field composition and observable-domain trace, preserving positive endpoint construction and the unestablished paper-specific bridge.",
+        "anchors": "JSON findings and classification fields",
+    },
     "NavierStokesReview/src/audit/priority_173_fefferman_c_connected_adjudication_2026-09-29.md": {
         "clusters": ["cmi", "fefferman", "semantic-network", "force-provenance"],
         "finding": "Connected adjudication of Fefferman Alternative (C): periodicity is a branch choice, physically reasonable is tied to the full data and accepted-solution package, the selected Lean route contains explicit formal C components, and residual force provenance is semantic rather than an unstated independence predicate. Complete manuscript five-moment transport remains CTR-005.",

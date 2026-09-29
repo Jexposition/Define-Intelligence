@@ -14,7 +14,7 @@ The current register snapshot is 2,794 indexed Lean modules, 588 modules in
 the directly captured `NavierStokes.R3.Theorem` import closure, 906
 evidence-inspected rows, 1,881 source-indexed rows queued for direct review,
 zero missing project import edges, 10 source rows containing a `sorry` token,
-and 82 supplemental evidence records. These counts are scope metrics, not
+and 84 supplemental evidence records. These counts are scope metrics, not
 claims that outside-closure modules are dead, invalid, or unused by another
 OpenAI root.
 
@@ -2519,3 +2519,16 @@ Evidence:
 
 - `NavierStokesReview/src/audit/priority_175_lexical_bridge_candidate_classification_2026-09-29.md`;
 - `NavierStokesReview/evidence/source_tranche_priority_175_lexical_bridge_candidate_classification_2026-09-29.json`.
+
+Priority 176 source-binds the selected composition from `potentialSum` through
+Cartesian curl, localisation, periodisation, direct-field addition, and time
+activation. It also records the exact domain mismatch that remains: `barMoment`
+is a pressure-stream radial integral and has not been identified with the final
+activated Cartesian `(M,I,J,S,C_p)` observables. The selected construction and
+smooth-force route remain positive source findings; the paper-specific bridge
+remains **NOT ESTABLISHED (CTR-005)**.
+
+Evidence:
+
+- `NavierStokesReview/src/audit/priority_176_selected_field_composition_domain_trace_2026-09-29.md`;
+- `NavierStokesReview/evidence/source_tranche_priority_176_selected_field_composition_domain_trace_2026-09-29.json`.

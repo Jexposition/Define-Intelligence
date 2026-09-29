@@ -148,7 +148,8 @@
 ├── 📄 priority_172_fefferman_semantic_network_2026-09-29.md
 ├── 📄 priority_173_fefferman_c_connected_adjudication_2026-09-29.md
 ├── 📄 priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.md
-└── 📄 priority_175_lexical_bridge_candidate_classification_2026-09-29.md
+├── 📄 priority_175_lexical_bridge_candidate_classification_2026-09-29.md
+└── 📄 priority_176_selected_field_composition_domain_trace_2026-09-29.md
 ├── 📄 snapshot_compare.py
 ├── 📄 source_tranche_summary.py
 ├── 📄 source_tree_map.py
