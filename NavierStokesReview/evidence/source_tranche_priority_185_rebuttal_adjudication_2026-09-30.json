@@ -1,0 +1,44 @@
+{
+  "priority": 185,
+  "date": "2026-09-30",
+  "title": "Adjudication of five-moment smoothness rebuttal",
+  "status": "source_checked",
+  "classification": "CTR-005_NOT_ESTABLISHED",
+  "claims": {
+    "five_moments_load_bearing_in_manuscript": "confirmed",
+    "velocity_blowup_implies_termwise_residual_divergence": "rejected",
+    "five_moments_are_only_cancellation_mechanism": "not_established",
+    "force_smooth_is_bare_nativebounds_assumption": "rejected",
+    "selected_witness_exports_final_five_observable_identity": "not_established",
+    "selected_nonzero_moment_defect": "not_proved",
+    "selected_force_nonsmooth": "not_proved",
+    "literal_cmi_failure": "not_proved",
+    "lean_false": "not_proved"
+  },
+  "selected_force_chain": [
+    "ActualCandidateAssembly.physicalData",
+    "GluedStageEstimates.actualStageEstimates",
+    "ActualCycleResidualBounds.finite_residual_rates",
+    "MixedCandidateAssembly.StageEstimates.exists_schedule",
+    "VanishingJointJets",
+    "MixedPeriodicAssembly.boundaryLimits_locallyUniform",
+    "MixedPeriodicAssembly.exists_candidate_force",
+    "CandidateFromLimits.force_smooth"
+  ],
+  "open_bridge": "J_flat -> PaperMoments(u_selected,p_selected)=(M,I,J,S,C_p) after tsum,curl,localisation,periodisation,torusAverage,global radial integration and axis hypotheses",
+  "source_anchors": [
+    "NavierStokes/CandidateFromLimits.lean:80-112",
+    "NavierStokes/ActualCycleResidualBounds.lean:1015-1037",
+    "NavierStokes/ActualCycleResidualBounds.lean:1156-1172",
+    "NavierStokes/GluedStageEstimates.lean:684-725",
+    "NavierStokes/MixedCandidateAssembly.lean:67-91",
+    "NavierStokes/GermCandidateAssembly.lean:264-271",
+    "NavierStokes/ActualCandidateAssembly.lean:1079-1098,1121-1151,1177-1180",
+    "NavierStokesReview/src/completions/SelectedPotentialProductionFinitePrefix.lean",
+    "NavierStokesReview/src/completions/SelectedPotentialProductionTsumScope.lean",
+    "NavierStokesReview/src/completions/SelectedMixedProductionTorusAverage.lean",
+    "NavierStokesReview/src/extensions/SelectedEndpointMomentTransportObstruction.lean",
+    "docs/navier-stokes openai.txt:109-124,492-496,539-546,695-784"
+  ],
+  "build_note": "No fresh Lean rebuild claimed because lean, lake and elan are unavailable in the current shell."
+}

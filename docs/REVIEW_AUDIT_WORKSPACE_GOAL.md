@@ -2748,7 +2748,7 @@ false.
 The adverse finding remains important but has a different target:
 
 \[
-\text{operational C is proved on the inspected Lean path}
+\text{an operational C-shaped proposition is proved on the inspected Lean path}
 \quad\neq\quad
 \text{the manuscript's five-moment proof is machine-checked end to end}.
 \]
@@ -2756,14 +2756,17 @@ The adverse finding remains important but has a different target:
 The work must therefore report both layers separately:
 
 1. **CMI predicate layer:** verify the complete connected Fefferman package and
-   its axiom/build status.
+   its axiom/build status. Do not relabel an operational C-shaped proposition
+   as full CMI compliance while the source-level physical meaning of “given,
+   externally applied” remains unmodelled at the selected endpoint.
 2. **Manuscript-fidelity layer:** trace the selected Cartesian velocity,
    pressure, residual, force, localisation, periodisation, sums, and five
    moments through the exported endpoint.
 3. **Physical-provenance layer:** record the meaning of “given, externally
-   applied” and the residual-defined-force construction without inventing a
-   formal independence axiom that Fefferman's displayed C formula does not
-   state.
+   applied” and the residual-defined-force construction. Treat this as a
+   compliance obligation and unresolved semantic boundary; do not invent a
+   formal independence axiom, but also do not claim that the wording is
+   irrelevant because the displayed C formula has existential syntax.
 
 Do not call the operational C proposition falsified merely because the
 manuscript-fidelity theorem is absent. Conversely, do not call OpenAI's
@@ -2790,9 +2793,12 @@ This corrects both possible errors: reducing Fefferman to an equation-only
 existential, and claiming literal C/D failure merely because the manuscript's
 selected-field five-moment transport theorem has not been located. The
 operational C-shaped Lean route and the manuscript-fidelity question remain
-separate layers. The latter remains `NOT ESTABLISHED (CTR-005)` until the
-selected Cartesian velocity, pressure, residual, force, support, moment, and
-global admissibility consequences are connected by source-level theorems.
+separate layers. Full Fefferman physical/semantic compliance remains `NOT
+ESTABLISHED (CTR-005)` until the selected Cartesian velocity, pressure,
+residual, force provenance, support, moment, and global admissibility
+consequences are connected by source-level theorems. The phrase “externally
+applied” is therefore an unresolved compliance obligation, not irrelevant
+prose and not an invented formal independence axiom.
 
 Primary record:
 `NavierStokesReview/src/audit/priority_182_fefferman_semantic_word_to_condition_closure_2026-09-29.md`.
@@ -2887,6 +2893,37 @@ impossibility theorem closes the gate.
 Evidence:
 `NavierStokesReview/src/audit/priority_184_selected_path_foundation_audit_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_184_selected_path_foundation_audit_2026-09-29.json`.
+
+## Priority 185 goal control: adjudicate the five-moment smoothness rebuttal
+
+The five moments remain load-bearing in the manuscript. The audit must not
+call them optional, removable, or irrelevant. The current source check also
+rejects three stronger claims in the latest rebuttal: velocity blow-up does
+not imply termwise divergence of every residual summand; the manuscript does
+not establish the five equations as its only cancellation operation; and
+`CandidateFromLimits.force_smooth` is not a bare `NativeBounds` assumption.
+
+The selected Lean route is source-traced through actual physical data,
+`finite_residual_rates`, `StageEstimates.exists_schedule`, vanishing joint
+jets, locally uniform boundary limits, and the smooth force extension. The
+unresolved correspondence is the value-level implication
+
+\[
+J_{\rm flat}\Rightarrow
+\operatorname{PaperMoments}(u_{\rm selected},p_{\rm selected})
+=(M,I,J,S,C_p)
+\]
+
+after `tsum`, curl, localisation, periodisation, torus averaging, radial
+integration, and the required global support/integrability and axis
+hypotheses. `AX-033` remains type-level non-entailment, not a physical
+nonzero-debt counterexample. Keep `CTR-005 = NOT ESTABLISHED`; do not promote
+it to literal CMI failure without a selected mismatch, failed connected
+condition, impossibility theorem, or contradiction.
+
+Evidence:
+`NavierStokesReview/src/audit/priority_185_rebuttal_adjudication_2026-09-30.md`;
+`NavierStokesReview/evidence/source_tranche_priority_185_rebuttal_adjudication_2026-09-30.json`.
 
 ## Priority 183 goal control: consolidation before publication
 

@@ -3677,6 +3677,32 @@ Evidence:
 `NavierStokesReview/src/audit/priority_184_selected_path_foundation_audit_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_184_selected_path_foundation_audit_2026-09-29.json`.
 
+## Priority 185: five-moment smoothness rebuttal adjudication
+
+- [x] Confirm that the manuscript treats `(M,I,J,S,C_p)` as load-bearing for
+  profile matching, modulation repair, and finite-dimensional compatibility.
+- [x] Reject the unsupported inference that velocity blow-up forces every
+  summand of the momentum residual to diverge.
+- [x] Reject the unsupported claim that the five equations are the manuscript's
+  only residual-cancellation operation. Preserve the separate wave,
+  covariance, auxiliary-time, pressure, cutoff, nonlinear, summation, and
+  flatness operations described in the manuscript.
+- [x] Trace the selected force route from actual `PhysicalData` through
+  `finite_residual_rates`, `StageEstimates.exists_schedule`, vanishing joint
+  jets, boundary limits, and `CandidateFromLimits.force_smooth`.
+- [x] Preserve the adverse finding that no selected endpoint declaration yet
+  identifies the completed Cartesian fields with the paper's five observables.
+- [ ] Complete the value-level theorem after `tsum`, curl, localisation,
+  periodisation, torus averaging, radial integration, support/integrability,
+  and axis totalisation.
+- [ ] Escalate only if a selected mismatch, impossibility theorem, or failed
+  connected CMI condition is proved. Do not infer literal CMI failure from
+  endpoint non-entailment alone.
+
+Evidence:
+`NavierStokesReview/src/audit/priority_185_rebuttal_adjudication_2026-09-30.md`;
+`NavierStokesReview/evidence/source_tranche_priority_185_rebuttal_adjudication_2026-09-30.json`.
+
 ## Priority 183: consolidation gate and numerical-evidence classification
 
 - [x] Recount the current worktree rather than relying on the earlier report of
@@ -3759,15 +3785,19 @@ Evidence:
   only.
 - [ ] Treat “Thus, we assume”, “In place of”, and “We then accept” as binding
   the periodic package (8),(9),(10),(11) once that branch is selected.
-- [ ] Test C against the connected whole-space package (1)--(7), and D against
+- [x] Test C against the connected whole-space package (1)--(7), and D against
   (1)--(3),(8)--(11), including the global time quantifiers and accepted
   solution class.
 - [ ] Crosswalk those complete predicates to the OpenAI manuscript's actual
   selected force, velocity, pressure, localisation, moment correction, residual
   regularity, and energy claims.
-- [ ] Do not call the CMI claim established from a surface Lean existential;
-  do not call it literally false without a failed connected premise, selected
-  mismatch, impossibility theorem, or contradiction.
+- [x] Do not call the CMI claim established from a surface Lean existential.
+- [x] Do not call it literally false without a failed connected premise,
+  selected mismatch, impossibility theorem, or contradiction.
+- [x] Record the sharper status: an operational C-shaped proposition is
+  encoded on the inspected path, but full Fefferman physical/semantic
+  compliance is **NOT ESTABLISHED** while external-force provenance and the
+  selected manuscript mechanism remain unconnected.
 
 Primary record:
 `NavierStokesReview/src/audit/priority_179_fefferman_full_semantic_dependency_network_2026-09-29.md`.
@@ -3874,7 +3904,8 @@ Evidence:
 - [x] Verify the comparator definitions for initial-data decay `(4)`, force
   smoothness and decay `(5)`, and accepted-solution conditions `(6),(7)`.
 - [x] Record that the inspected comparator theorem proves the corresponding
-  operational C-shaped existential/nonexistence proposition.
+  operational C-shaped existential/nonexistence proposition, without calling
+  that full CMI compliance.
 - [x] Distinguish the operational C result from the stronger claim that Lean
   verifies the manuscript's exact five-moment proof mechanism.
 - [x] Do not infer `not C` from the absence of a final moment-export theorem.

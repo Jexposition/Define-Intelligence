@@ -1144,11 +1144,14 @@ full word-by-word ledger and branch formulas are in
 
 The Lean endpoint has substantive residual-limit and smooth-force machinery,
 but the inspected record still does not identify the complete selected
-Cartesian construction with every manuscript-level five-moment consequence.
-The paper-to-endpoint status therefore remains **NOT ESTABLISHED (CTR-005)**.
-This is not a claim that C is already disproved; a literal C failure requires
-a failed connected premise, selected mismatch, impossibility theorem, or
-contradiction.
+Cartesian construction with every manuscript-level five-moment consequence,
+and it does not model “given, externally applied” as an independent force-data
+provenance condition. The paper-to-endpoint status therefore remains **NOT
+ESTABLISHED (CTR-005)**. The inspected path establishes an operational
+C-shaped proposition, not full Fefferman physical/semantic compliance. This is
+not yet a value-level proof that C is false; a literal C failure requires a
+demonstrated failed connected premise, selected mismatch, impossibility
+theorem, or contradiction.
 
 Evidence:
 `NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`.
@@ -1199,6 +1202,37 @@ connected and branch-complete rather than equation-only.
 Evidence:
 `NavierStokesReview/src/audit/priority_184_selected_path_foundation_audit_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_184_selected_path_foundation_audit_2026-09-29.json`.
+
+## Priority 185: five-moment mechanism versus selected force route
+
+The manuscript's five moments remain load-bearing for profile matching,
+modulation restoration, and finite-dimensional compatibility correction. The
+source does not support the stronger claim that velocity blow-up forces every
+residual summand to diverge or that the five equations are the only
+cancellation operation. It also does not support describing the selected
+`force_smooth` theorem as a bare `NativeBounds` assumption: the selected path
+derives residual rates from actual physical data and invariants, produces
+vanishing joint jets, transports them through the periodic assembly, and then
+constructs the smooth force extension.
+
+The unresolved correspondence remains the completed value-level identity
+
+\[
+J_{\rm flat}\Rightarrow
+\operatorname{PaperMoments}(u_{\rm selected},p_{\rm selected})
+=(M,I,J,S,C_p).
+\]
+
+No inspected selected-endpoint theorem proves this after the actual `tsum`,
+curl, localisation, periodisation, torus average, global radial integral, and
+support/integrability hypotheses. The result remains `CTR-005 = NOT
+ESTABLISHED` for complete manuscript-to-endpoint fidelity. This is not a
+selected mismatch or literal CMI failure unless the corresponding value-level
+or connected-condition theorem is proved.
+
+Evidence:
+`NavierStokesReview/src/audit/priority_185_rebuttal_adjudication_2026-09-30.md`;
+`NavierStokesReview/evidence/source_tranche_priority_185_rebuttal_adjudication_2026-09-30.json`.
 
 ## Priority 179: full Fefferman semantic dependency network
 

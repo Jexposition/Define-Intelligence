@@ -210,9 +210,42 @@ The separate correspondence question remains exact: the inspected public
 endpoint does not expose a theorem identifying the completed selected
 Cartesian velocity, pressure, residual, and force with all manuscript-level
 five-moment consequences. This is **NOT ESTABLISHED (CTR-005)** for
-paper-to-endpoint fidelity. It is not, without a further selected-field
-theorem, proof of a nonzero defect, a nonsmooth force, literal C/D failure, or
-`False`.
+paper-to-endpoint fidelity.
+
+This must not be reported as “the repository has solved Fefferman C” merely
+because `ComparatorR3Theorem.navier_stokes_breakdown_R3` has the surface shape
+of the C quantifiers. The operational proposition and the source-level
+physical specification are different targets:
+
+\[
+\begin{aligned}
+\text{operational C-shaped encoding}
+&= \exists u^o,f\;[\text{Lean data predicates}\land
+  \neg\exists(p,u)\;\text{Lean competitor predicate},\\
+\text{full Fefferman compliance}
+&= \text{the same data and fields satisfy the connected meaning of}
+  \text{“given, externally applied”, “physically reasonable”,}\
+&\qquad (4),(5),(6),(7)\text{ and the global nonexistence claim.}
+\end{aligned}
+\]
+
+The selected path proves substantial formal predicates in the first line. The
+source audit has not established the second line because the force is defined
+through `CandidateFromLimits.force` as a smooth extension of the selected
+residual, while no field in the inspected endpoint records the external-force
+provenance or identifies the selected construction with the manuscript's
+complete five-moment cancellation and physical interpretation. This is a
+semantic compliance gap, not a claim that smoothness follows only from an
+assumed `NativeBounds` field.
+
+Conversely, the absence of an external-provenance field or a final moment
+identity is not by itself a value-level proof that the selected force fails
+Fefferman's conditions. A literal C/D refutation still requires a demonstrated
+failed connected condition, selected value mismatch, impossibility theorem, or
+contradiction. Until that stronger result is obtained, the correct status is
+**FULL CMI COMPLIANCE NOT ESTABLISHED**, with the operational C-shaped route
+recorded as **FORMALLY ENCODED ON THE INSPECTED PATH**, not as a solved CMI
+alternative.
 
 ## 5. Adjudication rules applied from this network
 

@@ -4782,3 +4782,36 @@ stronger conclusions require a value-level mismatch or impossibility result.
 Evidence:
 `../NavierStokesReview/src/audit/priority_184_selected_path_foundation_audit_2026-09-29.md`;
 `../NavierStokesReview/evidence/source_tranche_priority_184_selected_path_foundation_audit_2026-09-29.json`.
+
+### Priority 185 source correction: moments, residual cancellation, and force smoothness
+
+The five cumulative moments remain a load-bearing part of the manuscript's
+profile matching, modulation restoration, and compatibility correction. The
+audit must not understate that dependence. The source also prevents three
+stronger claims: \(L^\infty\) velocity blow-up does not by itself imply
+termwise divergence of every residual summand; the manuscript does not make
+the five equations its only cancellation operation; and the selected Lean
+`force_smooth` proof is not a bare `NativeBounds` assumption. The selected
+path derives residual rates from actual physical data and invariants, obtains
+vanishing joint jets, and constructs a smooth force extension agreeing with
+the activated residual before the singular time.
+
+The remaining paper-to-code gap is value-level and specific. The inspected
+endpoint still does not prove
+
+\[
+J_{\rm flat}\Rightarrow
+\operatorname{PaperMoments}(u_{\rm selected},p_{\rm selected})
+=(M,I,J,S,C_p)
+\]
+
+after the completed series, curl, localisation, periodisation, torus
+averaging, radial integration, and global support/integrability arguments.
+This leaves complete manuscript fidelity **NOT ESTABLISHED (CTR-005)**. It is
+not a proof that the selected force is nonsmooth or that the connected CMI
+alternative is false. Those require a selected mismatch, failed condition,
+impossibility theorem, or contradiction.
+
+Evidence:
+`../NavierStokesReview/src/audit/priority_185_rebuttal_adjudication_2026-09-30.md`;
+`../NavierStokesReview/evidence/source_tranche_priority_185_rebuttal_adjudication_2026-09-30.json`.

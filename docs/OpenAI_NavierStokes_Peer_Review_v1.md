@@ -4186,3 +4186,34 @@ failure has not been proved merely by the missing endpoint identity.
 Evidence:
 `NavierStokesReview/src/audit/priority_184_selected_path_foundation_audit_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_184_selected_path_foundation_audit_2026-09-29.json`.
+
+## Priority 185: adjudication of the five-moment smoothness rebuttal
+
+The manuscript's five moments are load-bearing and remain part of the adverse
+review. The source check nevertheless rejects the rebuttal's stronger claims.
+Velocity blow-up does not entail termwise divergence of every residual term,
+because the manuscript explicitly arranges cancellation in the total
+residual. The manuscript also describes several distinct residual operations,
+so it does not establish that the five equations are the only cancellation
+route. Finally, the selected Lean route does not obtain `force_smooth` from a
+free-standing generic rate contract. It derives concrete residual rates from
+the actual cycle invariant and physical data, obtains vanishing joint jets,
+and then applies the smooth extension construction.
+
+The unresolved issue is still decisive for the paper-to-code claim:
+
+\[
+J_{\rm flat}\Rightarrow
+\operatorname{PaperMoments}(u_{\rm selected},p_{\rm selected})
+=(M,I,J,S,C_p)
+\]
+
+has not been established after the selected infinite sum, curl, localisation,
+periodisation, torus average, and global radial integral. The current record
+therefore supports `CTR-005 = NOT ESTABLISHED` for complete manuscript
+fidelity. It does not support a selected nonzero defect, nonsmooth force,
+literal CMI failure, or `False` without the corresponding value-level theorem.
+
+Evidence:
+`NavierStokesReview/src/audit/priority_185_rebuttal_adjudication_2026-09-30.md`;
+`NavierStokesReview/evidence/source_tranche_priority_185_rebuttal_adjudication_2026-09-30.json`.
