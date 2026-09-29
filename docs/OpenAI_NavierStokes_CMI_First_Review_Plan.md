@@ -3415,3 +3415,10 @@ value-level representation search.
 Evidence:
 `NavierStokesReview/src/audit/priority_171_selected_observable_type_boundary_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_171_selected_observable_type_boundary_2026-09-29.json`.
+
+Priority 172 connected the force, admissibility, physically reasonable,
+periodic, and whole-space language in `docs/navierstokes.txt:25-81`.
+
+Evidence:
+`NavierStokesReview/src/audit/priority_172_fefferman_semantic_network_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_172_fefferman_semantic_network_2026-09-29.json`.

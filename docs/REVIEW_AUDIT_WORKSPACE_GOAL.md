@@ -2343,3 +2343,14 @@ five observables can be credited to the endpoint.
 Evidence:
 `NavierStokesReview/src/audit/priority_171_selected_observable_type_boundary_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_171_selected_observable_type_boundary_2026-09-29.json`.
+
+Priority 172 control: read `docs/navierstokes.txt:25-81` as one connected
+specification. Keep the inspected C-shaped Lean route separate from the
+complete paper-to-endpoint claim, and keep `CTR-005` at **NOT ESTABLISHED**
+until the selected Cartesian field is linked to the full five-observable
+semantics. Do not promote this gap to a selected mismatch, force
+nonsmoothness, literal CMI failure, or `False` without a direct theorem.
+
+Evidence:
+`NavierStokesReview/src/audit/priority_172_fefferman_semantic_network_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_172_fefferman_semantic_network_2026-09-29.json`.

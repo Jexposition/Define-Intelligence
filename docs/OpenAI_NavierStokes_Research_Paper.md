@@ -4317,3 +4317,10 @@ by `Witness`. A source-level theorem must provide the scalar and component
 pullback, convergence, support and integrability, and equality with the
 completed selected field before the manuscript quantities can be credited to
 the endpoint. No selected nonzero defect has been established.
+
+Priority 172 binds this endpoint question to the connected CMI source
+semantics rather than isolating Alternative (C).
+
+Evidence:
+`NavierStokesReview/src/audit/priority_172_fefferman_semantic_network_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_172_fefferman_semantic_network_2026-09-29.json`.

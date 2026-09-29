@@ -1,0 +1,21 @@
+{
+  "priority": 172,
+  "date": "2026-09-29",
+  "source": "docs/navierstokes.txt",
+  "source_lines": "25-81",
+  "audit": "NavierStokesReview/src/audit/priority_172_fefferman_semantic_network_2026-09-29.md",
+  "claims": {
+    "F1_force_initial_data_network": "established",
+    "F2_admissibility_and_physical_reasonableness": "established",
+    "F3_periodic_and_whole_space_branches_separated": "established",
+    "LEAN_C_shaped_endpoint_on_inspected_path": "established",
+    "CTR_005_selected_field_five_observable_transport": "not_established",
+    "selected_mismatch_force_nonsmoothness_or_false": "not_proved"
+  },
+  "validation": {
+    "exact_source_wording_preserved": true,
+    "upstream_openai_source_modified": false,
+    "semantic_connections_recorded": true,
+    "whole_space_and_periodic_branches_kept_separate": true
+  }
+}

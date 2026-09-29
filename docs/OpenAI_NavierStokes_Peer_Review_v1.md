@@ -3727,3 +3727,11 @@ domains and transport the observable through the completed operator chain.
 That theorem has not been located in the inspected source. This sustains
 CTR-005 as a paper-to-endpoint correspondence gap, but it is not a proof of a
 nonzero selected defect or literal CMI failure.
+
+Priority 172 records the connected Fefferman semantic network and keeps the
+inspected C-shaped Lean route separate from the unestablished selected-field
+five-observable bridge.
+
+Evidence:
+`NavierStokesReview/src/audit/priority_172_fefferman_semantic_network_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_172_fefferman_semantic_network_2026-09-29.json`.
