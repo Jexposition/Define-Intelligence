@@ -8,3 +8,8 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 NavierStokesReview/results/BUILD_*.txt
+
+# Local-only audit material. These paths are retained on disk and are never
+# part of the curated public evidence branch.
+NavierStokesReview/evidence/archive/
+scratch_space/

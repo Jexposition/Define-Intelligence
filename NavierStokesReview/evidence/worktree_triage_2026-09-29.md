@@ -86,3 +86,24 @@ and `scratch_space/` untouched.
    any archive move.
 4. Promote only source-backed evidence ledgers and formally reviewed results
    to a curated commit; keep scans, logs, scratch, and user-owned source out.
+
+## Live refresh after semantic-closure commit
+
+The current checkout was rechecked on 2026-09-29 after commit `dd83127`.
+There were 61 untracked path entries before local-only paths were ignored.
+That count includes directory entries, not every file beneath them. The
+entries are classified as follows:
+
+| Class | Entries | Current decision |
+|---|---|---|
+| Protected user material | `$null`; `NavierStokes/R3/TestPressure.lean`; `scratch_space/` | Leave untouched, unstaged, and unpublished. `scratch_space/` is now ignored, not deleted. |
+| Existing local archive | `NavierStokesReview/evidence/archive/` | Retain in place under the evidence parent. Its consolidation manifest remains the authority. It is now ignored and will not enter a public commit. |
+| Current canonical CUDA evidence | `cutoff_commutator_cuda_full_2026-09-29.{csv,json,md,png}`; `cutoff_commutator_resolution_audit_2026-09-29.{json,md}`; `src/audit/cutoff_commutator_scan.py` | Already tracked and linked. The calculation is a 3D CUDA diagnostic, not a selected-field theorem. The reported divergence and finite-difference errors remain part of its qualification. |
+| Legacy cutoff scans | All `cutoff_commutator_debug*`, `cutoff_commutator_deep*`, `cutoff_commutator_profile*`, and `cutoff_commutator_source_scan*` files dated 2026-09-27 | Hold outside publication. Move only after a reference audit to `NavierStokesReview/evidence/archive/` with an updated manifest. Do not present the profile scan as selected-field evidence. |
+| Build and replay outputs | `controlled_build_Theorem_*`, `environment_build_*`, `fresh_build_status_*`, and `fresh_environment_replay_*` | Retain only where a current evidence ledger cites the exact run. Empty or superseded logs remain local until the reference and hash audit is complete. |
+| Generated source registers | `global_cross_layer_audit_*`, `hardened_audit_bundle_*`, `hardened_source_map_*`, reachable-tier reports, selected-endpoint census, selected-transport audit, semantic-coverage registers, and tree reconciliation | Do not bulk-stage. Reconcile counts, source snapshot, mirror paths, and current semantic status first. Large generated JSON and HTML remain outside the curated commit unless explicitly justified. |
+| Historical intake and duplicate source text | `agent_log5_cross_exam_*`, `claim_cross_examination_*`, `docs/OpenAI_NavierStokes_Final_Falsification_Report.md`, `docs/navierstokes.md`, and the zero-byte `docs/Define inteligence tree.md` | Preserve for provenance, but do not cite or publish as authority. Archive only in the parent folder after link and hash checks. |
+
+The canonical 3D CUDA record is therefore not being mistaken for a toy scan,
+and the legacy profile-level results are not being promoted into a proof.
+No file was deleted or moved by this refresh.

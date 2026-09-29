@@ -41,6 +41,15 @@
     "residual_force_provenance": "material semantic issue; no separate formal independence predicate located",
     "named_five_moment_endpoint_identity": "not located for completed selected Cartesian fields"
   },
+  "specific_word_adjudication": {
+    "may_look_for": "opens the periodic formulation; it does not waive its subsequent conditions",
+    "thus_we_assume": "binds periodic data conditions (8),(9) after branch selection",
+    "in_place_of": "substitutes the periodic data controls for whole-space (4),(5), not for the PDE or accepted-solution conditions",
+    "we_then_accept": "binds periodic accepted-solution conditions (10),(11)",
+    "physically_reasonable": "connected admissibility label for the displayed data, smoothness, energy, and domain conditions",
+    "force_provenance": "physical interpretation and audit obligation, but no separately quantified independence predicate found in displayed C/D",
+    "non_contradictory_result": "operational C-shaped predicate may be established while complete manuscript-to-selected-field fidelity remains unresolved"
+  },
   "non_claims": [
     "Does not say Fefferman's conditions are optional",
     "Does not say residual-defined forcing automatically falsifies C or D",

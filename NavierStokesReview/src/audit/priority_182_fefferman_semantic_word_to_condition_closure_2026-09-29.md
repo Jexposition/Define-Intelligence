@@ -172,6 +172,53 @@ A literal C/D refutation requires a connected failed premise, a selected
 value mismatch, an impossibility theorem, or a contradiction. The present
 semantic network alone does not supply that stronger result.
 
+## 6. Adjudication of the specific reading of “may look”
+
+The phrase “Alternatively, to rule out problems at infinity, we may look for
+spatially periodic solutions” is not a suggestion that a solver may drop the
+physical or mathematical conditions. It performs one precise operation: it
+opens a second domain formulation. The subsequent words are binding within
+that formulation:
+
+\[
+\text{may look for}
+\;\longrightarrow\;
+\text{Thus, assume }(8),(9)
+\;\longrightarrow\;
+\text{In place of }(4),(5)
+\;\longrightarrow\;
+\text{accept only }(10),(11).
+\]
+
+For the whole-space branch, no such substitution occurs. Conditions (4) and
+(5) remain the data requirements, and (6) and (7) remain necessary conditions
+for an accepted global solution. “Physically reasonable” is therefore a
+connected admissibility label for the displayed conditions and the preceding
+Newton-law/force framing. It is not an invitation to audit only (1)--(3).
+
+The source record also fixes the boundary of the force-provenance claim. The
+words “given, externally applied force” provide physical provenance and a
+forward-problem interpretation. They do not, in the displayed C or D formula,
+introduce a separately quantified predicate saying that `f` must be generated
+independently of every selected trajectory. The manuscript itself explicitly
+says that one may define the force as the residual and then makes smooth
+extension of the total residual the central analytic challenge. Consequently:
+
+1. residual design is a serious physical-semantics question;
+2. residual design alone is not a proved failure of the displayed C/D
+   predicate;
+3. the formal C route must still prove the complete decay, smoothness, PDE,
+   incompressibility, initial-data, energy, and nonexistence package; and
+4. the five-moment mechanism remains load-bearing in the manuscript, but the
+   absence of a named final tuple in `Witness` is not itself a selected-field
+   mismatch or a literal CMI failure.
+
+This is the non-contradictory reading of the evidence. The operational Lean
+proposition can satisfy the displayed C-shaped target while the review still
+finds the manuscript-to-selected-field proof correspondence incomplete. The
+two claims concern different predicates and must not be reported as if they
+were the same proposition.
+
 ## Evidence
 
 * `docs/navierstokes.txt:25-81`
