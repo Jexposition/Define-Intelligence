@@ -1,5 +1,40 @@
 # CMI-first review plan: OpenAI Navier–Stokes claim
 
+## Evidence authority, scope, and maintenance lock (2026-09-29)
+
+This plan is an execution control, not a substitute for source inspection.
+The tree files, dated reports, and previous agent notes identify work already
+attempted; they do not prove their own conclusions. For every open or adverse
+claim, re-read the raw Lean declarations and the frozen CMI/OpenAI source
+passages before updating the manuscript. If a prior report is contradicted,
+retain it as historical evidence, mark the correction, and use the raw source
+as the controlling record.
+
+Current register counts are 2,794 indexed Lean modules, 588 modules in the
+direct `NavierStokes.R3.Theorem` import closure, 904 evidence-inspected rows,
+1,883 source-indexed rows queued, zero missing project import edges, 10 source
+rows containing a `sorry` token, and 70 supplemental evidence records. The
+labels `outside captured endpoint closure`, `source-indexed review queued`,
+and `evidence-inspected` are separate dimensions. None is a dead-code,
+invalidity, or theorem-failure label.
+
+The current mathematical source trace has two distinct routes. Moment/rank
+repair feeds coefficient matching, `BaseResidual.FiniteIdentities`, residual
+jet/all-order-flatness estimates, and selected physical data. Separately,
+`GermCandidateAssembly.origin_blowup` derives the axis-growth conjunct from
+the base asymptotic. The fact that the latter theorem has a shorter local
+argument does not establish independence from the former construction. The
+remaining audit is the exact paper/CMI crosswalk through the selected mixed
+fields, `tsum`, curl, localisation, periodisation, pressure, force, support,
+and endpoint limits.
+
+No cleanup move may occur until the relevant documents have been fetched,
+consolidated, cross-checked, and fact-checked. No deletion is permitted.
+Confirmed redundant material may only be moved to the designated non-committed
+archive with an old-path/new-path/reason/SHA-256 manifest. Commit only scoped,
+reviewed tranches; never stage the whole worktree; leave `NavierStokes/` and
+user scratch material untouched.
+
 ## Controlling input and execution lock
 
 `scratch_space/notes3.md` is a required input to this plan, not a result. Its
@@ -13,6 +48,24 @@ diagnostic, P2 selected finite-field binding, P3 infinite/coordinate closure,
 P4 five-moment decision, then P5 verdict escalation. CUDA is used to make the
 three-dimensional calculation large and informative; CPU/GPU comparison is
 not a deliverable. A CPU path exists only as a no-CUDA fallback.
+
+### Reclassification gate after raw source adjudication (2026-09-29)
+
+The P4 decision must not ask only whether `Witness` re-exports a named
+five-tuple. Raw source now shows the active chain
+
+\[
+\text{profile moments/rank repair}
+\Rightarrow \text{coefficient matches}
+\Rightarrow \text{finite Cartesian residual identity}
+\Rightarrow \text{selected residual and candidate data}.
+\]
+
+Therefore the old hypothesis “moment/rank restoration is absent from the
+selected proof” is withdrawn. P4 now tests the exact scope of the paper's
+consequences against the selected fields, pressure, force, support, and CMI
+conditions. Escalation to refutation requires a proved concrete mismatch,
+impossibility, or `False`, not the absence of a repeated tuple field.
 
 `scratch_space/notes4.md` is a second controlling recovery input. It records
 the strategic branch that this workspace is not a free repair handoff to
@@ -127,6 +180,19 @@ P0 source corrections already established in the live checkout:
   `NavierStokesReview/evidence/cutoff_commutator_resolution_audit_2026-09-29.{json,md}`.
 
 ### P2. Bind the actual finite selected field
+
+The direct production-source operator trace is recorded in
+`NavierStokesReview/evidence/selected_field_operator_trace_2026-09-29.md`.
+It confirms the actual `tsum`/curl/localisation/periodisation route and the
+type boundary of `barMoment`; it does not close the finite-field value
+calculation or establish a defect.
+
+The adjacent correction-state boundary review is recorded in
+`NavierStokesReview/src/audit/priority_162_barmoment_correction_state_vs_selected_field_source_review_2026-09-29.md`
+and its machine-readable record
+`NavierStokesReview/evidence/source_tranche_barmoment_correction_state_vs_selected_field_2026-09-29.json`.
+It confirms genuine `barMoment`/`FiveRows` identities for correction-state
+fields while keeping the final activated Cartesian-field identification open.
 
 - [ ] Evaluate the exact finite `ASum`/`BSum`/`PSum` prefix, including direct
   and localised potential branches, in source order.
@@ -2985,3 +3051,242 @@ file was modified and no local file was deleted.
   unresolved.
 - [ ] Continue later publication in separately verified tranches; never use
   blind staging to reduce the remaining local backlog.
+## Compile-boundary correction: blow-up route versus five-moment correspondence (2026-09-29)
+
+The selected proof term is not moment-free. Declaration-level closure from
+`ActualCandidateAssembly.selected_witness` reaches genuine
+`PositiveOrderMoments`, `FiveProfileMoments`, `FiveRowRank`, `barMoment`,
+profile-repair, primitive-cancellation, and physical-data declarations. The
+earlier formulation that the endpoint bypasses the five-moment machinery is
+withdrawn.
+
+The formal blow-up predicate has a separate explicit route:
+`GermCandidateAssembly.origin_blowup` (`GermCandidateAssembly.lean:146-159`)
+uses the base-axis asymptotic supplied by `FinalSlowBase.axis_tendsto`
+(`FinalSlowBase.lean:372-378`) and is passed as `haxis` to
+`CandidateConsequences.mixed_exists_force_with_consequences`
+(`GermCandidateAssembly.lean:264-271`). This explains why the endpoint can
+prove speed blow-up without returning a five-moment tuple in `Witness`.
+
+The remaining adverse question is not whether blow-up is present. It is whether
+the completed selected mixed Cartesian velocity, pressure, residual, and force
+are proved to realise the paper's final \((M,I,J,S,C_p)\) observables. The
+active plan must therefore distinguish:
+
+- internal moment/rank dependencies used to construct the selected stages and
+  estimates;
+- the independent base-axis route proving blow-up; and
+- the still-unclosed final selected-field observable identity.
+
+No `Delta m != 0`, impossibility theorem, or `False` is inferred from the
+missing result-type field. The full source-level re-audit is recorded in
+`NavierStokesReview/evidence/selected_endpoint_compile_boundary_reaudit_2026-09-29.md`.
+
+Required follow-up: audit the residual, support, localisation, periodisation,
+and pressure premises against the paper's Appendix C mechanism, while checking
+for hidden `noncomputable`, vacuous, admitted, unsafe, or custom-axiom escape
+routes. A successful endpoint compile is evidence about the stated Lean
+proposition, not automatic evidence of exact paper correspondence.
+
+## Source adjudication correction: profile-level moments and active dependencies
+
+- [x] Withdraw the overstrong claim that moment/rank restoration is absent or
+  bypassed in the selected construction.
+- [x] Record the direct chain
+  `PositiveOrderMoments` -> `GlobalStressSupport` -> `EntranceAlignedBase` ->
+  `FinalSlowBase` -> `BasePrefixIdentity`/`ConstructedSlowBase` ->
+  `BaseResidual` jet-flatness obligations.
+- [x] Distinguish the local `origin_blowup` conjunct from the complete candidate
+  conjunction; its lack of a tuple argument does not prove mechanism
+  independence.
+- [x] Withdraw the literal final-Cartesian tuple equality as the sole CTR-005
+  criterion. The paper’s `(M,I,J,S,C_p)` quantities are reduced-profile
+  cumulative integrals used in joins and correction stages.
+- [ ] Complete the remaining adverse crosswalk from those profile identities
+  through the selected mixed stages, `tsum`, curl, localisation, periodisation,
+  pressure, force, support, and endpoint limits.
+- [ ] Escalate only on a direct selected mismatch, impossibility theorem, false
+  mandatory premise, or selected-path `False`; never infer it from a missing
+  field name or from an interface non-implication alone.
+
+Evidence: `NavierStokesReview/evidence/selected_profile_moment_dependency_adjudication_2026-09-29.md`.
+
+## Priority 161: rebuttal adjudication of force smoothness and moment transport (2026-09-29)
+
+The supplied rebuttal was checked against the raw Lean declarations, the
+extracted OpenAI manuscript, and the extracted CMI specification. The source
+confirms that `Witness` does not export a named final `(M,I,J,S,C_p)` equality,
+and the manuscript confirms that the five reduced-profile moments are
+load-bearing for matching and correction. It does **not** confirm that
+`NativeBounds` or `StageEstimates` are accepted from thin air: selected
+`actualStageEstimates` consumes concrete physical data, and
+`LocalResidualFlatness.selected_schedule` derives all residual jet rates.
+
+The source also shows that `CandidateFromLimits.force_smooth` is derived from
+full locally uniform residual derivative limits, not asserted as a free force
+regularity premise. The rebuttal's stronger claims that the manuscript states
+an explicit Fredholm/adjoint/Laurent “if and only if” theorem, that the five
+moments are the sole cancellation mechanism, and that every individual
+residual term diverges at `t=1` were not found in the extracted manuscript and
+are not carried by the inspected Lean declarations.
+
+Adverse conclusion retained: the complete paper-to-exported-endpoint
+five-observable correspondence remains **not established** (`CTR-005`). This
+is not a repair handoff and not a claim that the selected field is wrong. No
+nonzero selected defect, force nonsmoothness, impossibility theorem, or
+`False` is recorded.
+
+- [x] Record the raw source adjudication in
+  `NavierStokesReview/src/audit/priority_161_rebuttal_force_smoothness_moment_boundary_adjudication_2026-09-29.md`.
+- [x] Record machine-readable evidence in
+  `NavierStokesReview/evidence/source_tranche_rebuttal_force_smoothness_moment_boundary_2026-09-29.json`.
+- [x] Regenerate the semantic register: 2,790 indexed, 588 endpoint-reachable,
+  903 evidence-inspected, 1,880 queued, and zero missing project import edges.
+- [ ] Continue the selected-field adverse trace through the exact moment,
+  curl, localisation, periodisation, pressure, and force declarations before
+  any stronger falsification status is considered.
+
+## Priority 163: full CMI dependency crosswalk, not isolated Alternative (C)
+
+The audit must evaluate Fefferman's complete admissibility conditions together
+with the manuscript's full construction. It must not infer that the literal
+forced branch fails merely because `Witness` does not export a named final
+`(M,I,J,S,C_p)` equality. Conversely, it must not treat a compiled comparator
+proposition as proof that the manuscript's complete five-moment mechanism has
+been transported to the selected endpoint.
+
+- [x] Cross-check Fefferman's force smoothness/decay, initial-data decay,
+  global smoothness, and bounded-energy conditions against the comparator
+  predicate.
+- [x] Confirm that the manuscript makes the five reduced-profile moments
+  load-bearing for matching, correction, pressure, and stress propagation.
+- [x] Confirm that velocity blow-up alone does not prove termwise divergence of
+  every residual summand.
+- [x] Confirm that the selected route derives force smoothness from concrete
+  physical data, residual rates, derivative recurrence, boundary limits, and
+  smooth extension rather than from a bare empty interface.
+- [x] Record the literal forced CMI crosswalk probe and its standard axiom
+  report.
+- [x] Record the unresolved final selected-field semantic correspondence.
+- [ ] Trace the complete selected composition through `tsum`, curl,
+  localisation, periodisation, pressure, force, support, and endpoint limits.
+- [ ] Escalate to a formal refutation only after a selected mismatch,
+  impossibility theorem, false mandatory CMI premise, or selected-path `False`.
+
+Evidence: `NavierStokesReview/src/audit/priority_163_full_cmi_dependency_crosswalk_adjudication_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_full_cmi_dependency_crosswalk_2026-09-29.json`.
+
+## Priority 164: prove the complete formal Alternative (C) route
+
+- [x] Add and compile a direct zero-sorry completion that destructures
+  `NavierStokesR3.theorem_1_1` and applies `comparator_of_breakdown`.
+- [x] Verify that the result includes initial-data decay, smooth force decay,
+  and exclusion of every global smooth finite-energy competitor.
+- [x] Record the successful axiom report and the pre-existing full-build
+  blocker separately.
+- [ ] Keep the positive Alternative (C) theorem separate from the remaining
+  manuscript-fidelity audit: trace whether every load-bearing five-moment
+  consequence is identified with the selected endpoint construction.
+
+Evidence: `NavierStokesReview/evidence/priority_164_direct_cmi_alternative_c_proof_2026-09-29.md`;
+`NavierStokesReview/evidence/priority_164_direct_cmi_alternative_c_proof_2026-09-29.json`.
+
+## Priority 164: invariant-backed residual rates versus final observable transport
+
+- [x] Inspect the exact `CycleAnalyticInvariant` record rather than treating
+  `StageEstimates` as unsupported generic input.
+- [x] Confirm that the invariant carries concrete `debt`, `masses`, residual,
+  representation, regularity, support, and periodicity obligations.
+- [x] Record that `debt` is the three-component radial defect
+  \((P,J_\theta,J_z)\), while `masses` supplies two separate zero-mass
+  constraints.
+- [x] Trace those obligations into `finite_residual_rates`, `StageEstimates`,
+  the selected schedule, vanishing joint jets, and `force_smooth`.
+- [x] Preserve the distinction: this is real upstream moment/rank-dependent
+  machinery, but it is not a theorem identifying the completed selected
+  Cartesian field with \((M,I,J,S,C_p)\).
+- [ ] Continue the adverse selected-field trace through the actual `tsum`, curl,
+  localisation, periodisation, pressure, force, support, and endpoint values.
+
+Evidence: `NavierStokesReview/src/audit/priority_164_cycle_invariant_residual_jet_trace_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_cycle_invariant_residual_jet_trace_2026-09-29.json`.
+
+## Priority 165: source-complete Fefferman/OpenAI semantic crosswalk
+
+The controlling whole-source document is
+`docs/CMI_OpenAI_Full_Semantic_Crosswalk.md`.
+
+It is the source ledger for the complete Fefferman specification and the
+complete extracted OpenAI manuscript. It records source hashes, every
+manuscript section heading from Sections 1 through 10 and Appendices A-C,
+Fefferman's equations, admissibility conditions, alternatives, definitions,
+and the dependency relations that must hold before a CMI claim can be
+credited.
+
+- [x] Inventory and hash the two source texts and their PDF counterparts.
+- [x] Map Fefferman's equations, force/initial-data decay, global smoothness,
+  energy, periodic branch, and Alternatives A-D.
+- [x] Map every OpenAI section and appendix to its mathematical role and to
+  the selected Lean construction where a source declaration was inspected.
+- [x] Separate the real selected rate/flatness chain from the unsupported
+  claim that the endpoint is merely fed empty NativeBounds.
+- [x] Separate the compiled Fefferman-shaped C proposition from complete
+  paper-to-code fidelity.
+- [ ] Trace the selected field through the full composition: profile data,
+  actual cycles, tsum, Cartesian curl, localisation, periodisation,
+  pressure, force extension, and endpoint limits.
+- [ ] For every manuscript load-bearing identity, record either the exact
+  selected Lean theorem that proves it or a bounded NOT LOCATED result with
+  the searched declarations and source paths.
+- [ ] Do not call the selected force nonsmooth, the moments false, or the
+  paper formally refuted without a direct selected-field mismatch,
+  impossibility theorem, failed mandatory CMI premise, or selected-path
+  False.
+
+Work locations are fixed as follows. The upstream formalisation is read-only
+for this audit at `openai/NavierStokesAndEuler`. Review probes, completions,
+refutations, semantic notes, and evidence belong only under
+`NavierStokesReview/src/audit`, `src/completions`, `src/extensions`,
+`src/external_semantic`, `src/external-semantic`, `src/probes`,
+`src/refutations`, and `NavierStokesReview/evidence`.
+
+## Priority 163: full CMI dependency crosswalk, not isolated Alternative (C)
+
+The audit must evaluate Fefferman's complete admissibility conditions together
+with the manuscript's full construction. It must not infer that the literal
+forced branch fails merely because `Witness` does not export a named final
+`(M,I,J,S,C_p)` equality. Conversely, it must not treat a compiled comparator
+proposition as proof that the manuscript's complete five-moment mechanism has
+been transported to the selected endpoint.
+
+- [x] Cross-check Fefferman's force smoothness/decay, initial-data decay,
+  global smoothness, and bounded-energy conditions against the comparator
+  predicate.
+- [x] Confirm that the manuscript makes the five reduced-profile moments
+  load-bearing for matching, correction, pressure, and stress propagation.
+- [x] Confirm that velocity blow-up alone does not prove termwise divergence of
+  every residual summand.
+- [x] Confirm that the selected route derives force smoothness from concrete
+  physical data, residual rates, derivative recurrence, boundary limits, and
+  smooth extension rather than from a bare empty interface.
+- [x] Record the literal forced CMI crosswalk probe and its standard axiom
+  report.
+- [x] Record the unresolved final selected-field semantic correspondence.
+- [ ] Trace the complete selected composition through `tsum`, curl,
+  localisation, periodisation, pressure, force, support, and endpoint limits.
+- [ ] Escalate to a formal refutation only after a selected mismatch,
+  impossibility theorem, false mandatory CMI premise, or selected-path `False`.
+
+Evidence: `NavierStokesReview/src/audit/priority_163_full_cmi_dependency_crosswalk_adjudication_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_full_cmi_dependency_crosswalk_2026-09-29.json`.
+
+## Priority 166: adjudicate the five-moment force-smoothness rebuttal
+
+- [x] Re-read the manuscript passages stating that residual summands may diverge while the residual and all derivatives extend smoothly.
+- [x] Re-read the connected pulse-flux, further-correction, localisation, and five-moment operations rather than treating the moments as an isolated mechanism.
+- [x] Confirm that `actualStageEstimates`, `finite_residual_rates`, cycle invariants, and `force_smooth` form a concrete rate/flatness route.
+- [x] Preserve the endpoint finding that `Witness` does not expose the full selected Cartesian five-observable correspondence.
+- [x] Reject the unsupported claims that blow-up forces termwise divergence, that five moments are the only cancellation route, or that `AX-033` proves a physical nonzero moment defect.
+- [ ] Continue the selected-field calculation through the complete mixed `tsum`, curl, localisation, periodisation, pressure, force, support, and endpoint composition.
+
+Evidence: `NavierStokesReview/evidence/agent_log_rebuttal_adjudication_2026-09-29.md`.

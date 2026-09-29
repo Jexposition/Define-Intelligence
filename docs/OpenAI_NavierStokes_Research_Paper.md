@@ -50,12 +50,29 @@ The paper preserves the following distinctions throughout:
 | CMI wording | The forced alternatives are existential mathematical targets, with Fefferman's forward Cauchy framing as part of their interpretation. | A provenance objection alone is not a kernel-level contradiction of an existential proposition. |
 | Lean endpoint | The inspected endpoint has a substantial forced candidate, comparison machinery, and standard foundational dependencies. | Kernel checking alone does not prove that the endpoint is the paper's advertised construction. |
 | Upstream mechanism | Genuine reduced-profile, rank, moment, curl, localisation, pressure, and energy results occur in the source tree. | Reachability or local certificates do not by themselves prove final selected-field transport. |
-| Selected-field correspondence | The review identifies the missing selected-path identification as CTR-005. The paper itself uses the five cumulative moments as premises for exterior matching, stress-tail removal, and the later five-equation correction cycle. | No selected-field theorem has yet been established carrying those identities through the complete production field. Therefore the paper's advertised mechanism is unsupported on the formal record, even though no nonzero defect, impossibility theorem, or `False` has yet been proved. |
+| Selected-field correspondence | Raw source tracing now establishes an active profile-moment/rank-repair → coefficient-matching → finite-Cartesian-residual → selected-physical-data chain. The paper's five quantities are used as reduced-profile invariants and their consequences feed the construction. | The public `Witness` does not re-export a named five-tuple certificate, and the audit has not yet established that every paper-level narrative assertion is semantically identical to the CMI endpoint. Tuple absence is not, by itself, a failed proof or a refutation. |
 | Force and pressure semantics | Residual provenance and absolute-pressure representation are material semantic audit questions. | Neither is promoted to an unconditional formal refutation without a direct theorem establishing that stronger claim. |
 
 This is a source-grounded audit, not a compiler-status report. Numerical
 experiments, plots, and interface countermodels are used as diagnostics and
 never substituted for a theorem about the concrete selected field.
+
+### Current source adjudication (2026-09-29)
+
+The earlier formulation of CTR-005 as “the five-moment restoration is missing
+from the selected proof” is withdrawn. Direct inspection of the raw Lean chain
+shows that the reduced-profile moment and rank machinery is consumed in
+coefficient matching, that the resulting `BaseResidual.FiniteIdentities` feed
+the residual and all-order-flatness estimates, and that those estimates enter
+the selected physical-data and candidate construction. The separate
+axis-asymptotic proof of velocity growth is only one conjunct; it does not
+show that the repair chain is dispensable from the full candidate.
+
+The remaining question is narrower and must be tested against the exact CMI
+and paper statements: whether every advertised consequence has the required
+scope for the final selected fields, pressure, force, support, and global
+interpretation. The current record contains no proved nonzero moment defect,
+impossibility theorem, or kernel-level `False`.
 
 <details>
 <summary>Audit control record and dated evidence updates</summary>
@@ -71,11 +88,11 @@ updates. They are control information for the paper, not additional arguments.
 
 ### Live audit state (2026-09-29)
 
-The authoritative register currently records 2,790 indexed modules, 588
-modules in the captured Navier–Stokes endpoint closure, 901 evidence-inspected
-rows, 1,882 source-indexed rows still queued for semantic review, 0 missing
-project import edges, 10 source rows containing a `sorry` token, and 73
-supplemental evidence records. “Outside the captured endpoint closure” is a
+ The authoritative register currently records 2,794 indexed modules, 588
+ modules in the captured Navier–Stokes endpoint closure, 904 evidence-inspected
+ rows, 1,883 source-indexed rows still queued for semantic review, 0 missing
+ project import edges, 10 source rows containing a `sorry` token, and 70
+ supplemental evidence records. “Outside the captured endpoint closure” is a
 scope label, not a claim that a module is dead or unreachable in OpenAI’s own
 build graph. Earlier addenda retain historical tranche counts. The remaining
 selected-field composition and full-repository coverage are not yet closed.
@@ -146,25 +163,31 @@ reviews and 509 reachable modules awaiting semantic classification.
 
 ## Executive verdict
 
-OpenAI's published claim is **not established on the inspected
-paper-to-code record**. The repository contains a substantial Lean endpoint
-with a forced whole-space breakdown proposition, and the inspected endpoint
-has standard foundational axiom dependencies. Those facts do not establish
-that the endpoint is the five-moment construction described in the paper.
+OpenAI's published claim is **not yet established as an exact CMI/paper
+correspondence**, but the reason must be stated correctly. The repository
+contains a substantial Lean endpoint with a forced whole-space breakdown
+proposition, and the inspected endpoint has standard foundational axiom
+dependencies. Raw source tracing also shows that the five-moment and rank
+repair machinery is used internally to obtain coefficient matching, finite
+Cartesian residual identities, residual estimates, selected physical data,
+and candidate properties.
 
-The load-bearing finding is CTR-005: the exported `selected_witness` does not
-expose a theorem identifying the paper's five cumulative quantities
+The remaining issue is not that the repair engine is absent. The exported
+`selected_witness` does not expose a separate named theorem identifying the
+paper's five cumulative quantities
 
 $$
 (M,I,J,S,C_p)
 $$
 
 with the final Cartesian velocity, pressure, residual, and force used by the
-whole-space endpoint. This is a failure to discharge the affirmative burden
-of the published solution claim. It is distinct from a kernel-level
-refutation: the review has not proved `False` from the selected endpoint and
-therefore does not describe the literal existential C/D proposition as
-formally refuted.
+whole-space endpoint. That absence is a packaging and correspondence question,
+not evidence that the five-moment engine was bypassed. It becomes adverse
+only if a specific paper or CMI condition requires a stronger whole-space
+identity than the proved finite-residual and candidate consequences provide.
+It is distinct from a kernel-level refutation: the review has not proved
+`False` from the selected endpoint and does not describe the literal
+existential C/D proposition as formally refuted.
 
 This omission matters because the paper does not use the five quantities as
 decorative profile labels. It uses their matching to preserve the heat
@@ -194,12 +217,13 @@ review probes establish interface non-implication, not emptiness of the
 selected witness; the missing result is a concrete selected-path composition
 theorem.
 
-This is a load-bearing failure of the advertised five-moment proof record.
-The publication-level verdict is therefore **not established as a CMI solution
-due to a selected-field correspondence failure**. The inspected R³ theorem is
-a separate level: it exports a literal C/D-shaped proposition, but that fact
-does not establish that the proposition is the five-moment Navier–Stokes
-solution described and marketed in the paper.
+The publication-level verdict therefore remains **not yet established as an
+exact CMI solution**, but not because raw source shows that the moment/rank
+engine is missing. The inspected R³ theorem exports a literal C/D-shaped
+proposition and the selected construction uses substantial upstream analytic
+machinery. The remaining task is to compare the proposition and its proved
+consequences with every load-bearing claim in the paper and with Fefferman's
+CMI conditions.
 
 The review also separates objections that do not presently refute the claim.
 Residual-defined forcing is a provenance concern, but the formal C/D predicate
@@ -280,14 +304,16 @@ by the theorem. A repository-wide collection of supporting modules cannot
 carry that burden if the final witness does not identify the paper's
 load-bearing objects with the selected fields.
 
-Accordingly, this paper finds the advertised solution claim not established
-on the inspected record. That conclusion does not depend on first proving a contradiction in
-Lean. A zero-sorry `False` theorem would be a stronger disproof of the source
-endpoint; it is not a prerequisite for finding that the affirmative paper has
-failed to establish its claimed solution. The distinction is deliberate:
-absence of a formal refutation is not positive evidence for the published
-claim. The unresolved correspondence is an adverse defect in the advertised
-paper-to-code claim on the present record.
+Accordingly, the exact CMI/paper correspondence remains not independently
+established on the inspected record. This is not because the raw source lacks
+the moment/rank engine: the selected construction uses it through coefficient
+matching, finite residual identities, residual estimates, and candidate-data
+theorems. The remaining question is whether every paper consequence and CMI
+condition has the same scope for the final selected fields. A zero-sorry
+`False`, a proved selected-field mismatch, or an impossibility theorem would be
+a stronger refutation; none has been obtained here. The distinction is
+deliberate: absence of a formal refutation is not positive evidence for the
+published claim, but tuple omission is not a refutation either.
 
 This is not a review of an optional implementation detail. OpenAI's public
 announcement presents the work as a solution of the Navier–Stokes existence
@@ -301,7 +327,8 @@ five-moment Navier–Stokes construction used to support that solution claim.
 
 ## Formal obligations and independent analytical context
 
-The correspondence claim can be stated as one missing selected-path theorem.
+The remaining correspondence audit is a set of exact selected-path scope tests,
+not a presumption that one named theorem is absent.
 For the actual exported fields (u,p,f), let
 
 $$
@@ -322,13 +349,15 @@ $$
 \end{aligned}
 $$
 
-The inspected source proves substantial upstream algebra and selected stage
-invariants, but it does not expose this complete equality for the final mixed
-Cartesian field. The following obligations therefore remain distinct:
+The inspected source proves substantial upstream algebra, selected stage
+invariants, finite residual identities, and candidate consequences. It does
+not expose the following stronger observables as one named final-field tuple,
+so the remaining audit is about scope and composition rather than an assumed
+omission of the underlying mechanism:
 
 | Obligation | Required selected theorem | Current classification |
 |---|---|---|
-| Five-moment transport | Compute ((M,I,J,S,C_p)) on the exported (u,p,f) and identify the promoted debt | Open; CTR-005 |
+| Five-moment correspondence | Check the exact scope of the profile invariants, finite residual identity, selected fields, and paper consequences | Active semantic crosswalk; tuple absence alone is not CTR-005 refutation |
 | Absolute pressure semantics | Establish the selected global Poisson/Leray representative, not only pressure differences | Open comparative audit; not a compact-support contradiction |
 | Chart scope | Transport the (r>0) chart identity to the axis limit used by `origin_blowup` | Local identities proved; complete composition open |
 | Field-level calculation | Evaluate the actual curl/localisation, torus average, `barMoment`, and infinite `tsum` | Open; CALC-26--36 are partial completions |
@@ -385,9 +414,10 @@ $$
 $$
 
 This is a formal certificate of residual cancellation, not a proof of force
-singularity. It closes the force-explosion route and moves the live
-falsification target back to CTR-005: the missing selected-path transport of
-the paper's five moments and absolute pressure semantics.
+singularity. It closes the force-explosion route and moves the live audit to
+the exact selected-field/CMI semantic crosswalk, including pressure
+representation and any paper consequence not proved for the selected fields.
+It does not establish that the moment engine is missing.
 
 ## 1. Review question and standard
 
@@ -531,12 +561,31 @@ neighbourhood of the origin. The comparison is made with the complete
 Navier--Stokes residual, so the temporal derivative, advection, Laplacian, and
 pressure-gradient terms are not projected away.
 
-This regularity result does not resolve the review's central objection. The
-localisation files contain no debt-vector parameter and no equality to the
-paper's `(M,I,J,S,C_p)` moments. They provide debt-blind field identities, not
-the missing selected moment-realisation theorem.
+This regularity result does not by itself settle the full paper/CMI semantic
+crosswalk. The localisation files do not take the paper tuple as an explicit
+parameter or re-export it as a named field equality. That is a scope fact about
+the interface, not proof that the localisation or the upstream repair data are
+irrelevant to the selected residual construction.
 
 ## 6. The five-moment correspondence objection
+
+### Status correction
+
+This section records a live correspondence audit, not a finding that the
+five-moment mechanism is absent. Raw source inspection establishes the chain
+
+\[
+\text{profile moments/rank repair}
+\Rightarrow \text{coefficient matching}
+\Rightarrow \text{finite Cartesian residual identity}
+\Rightarrow \text{selected residual and candidate data}.
+\]
+
+The question is whether any particular paper assertion requires an additional
+identity for the completed whole-space field that is not among those proved
+consequences. The public `Witness` not repeating a named tuple is not enough to
+answer that question adversely. A concrete mismatch, impossibility theorem,
+or stronger CMI-semantic failure would be required for escalation.
 
 The upstream five-moment machinery is substantive. In
 `PositiveOrderMoments.lean`, the history debt is
@@ -894,8 +943,12 @@ The formal review establishes the following.
    standard-axiom-only in the inspected dependency reports.
 2. The force is selected from the candidate residual and remains active near
    the singular time.
-3. The repository contains genuine five-row repair mathematics, but the
-   selected witness does not expose the paper's five-moment transport theorem.
+3. The repository contains genuine five-row and profile-moment repair
+   mathematics, and raw source tracing shows that it feeds coefficient
+   matching, finite Cartesian residual identities, residual estimates, and
+   selected candidate data. The public `Witness` does not repeat the named
+   profile tuple as a field, but that packaging fact is not evidence that the
+   repair engine was bypassed.
 4. The force-smoothness attack has a proved conditional contradiction, but its
    required selected-field lower bound is missing.
 5. The pressure chain has comparison infrastructure, but compact support alone
@@ -903,33 +956,33 @@ The formal review establishes the following.
 
 The resulting verdict is:
 
-> **The OpenAI claim is not established as a CMI solution by the inspected
-> paper-to-code correspondence. A formal contradiction to the selected Lean
-> witness has not yet been proved.**
+> **The inspected record does not yet establish exact identity between the
+> published paper's full CMI argument and the exported Lean endpoint. The
+> endpoint is nevertheless a substantial formally checked forced breakdown
+> proposition, and no formal contradiction to its selected witness has yet
+> been proved.**
 
 The two clauses have different logical roles. The first is the review verdict:
-the source record has not established that the exported candidate is the
-five-moment construction described in the paper or that the required analytic
-premises hold for that same candidate. The second is a narrow statement about
-the present refutation programme: no zero-sorry proof of `False` has yet been
-derived from the selected endpoint. Absence of that refutation is not
-affirmative evidence for the published claim.
+the exact scope of every paper consequence and CMI condition has not yet been
+independently matched to the selected fields. It is not a finding that the
+moment/rank mechanism is absent. The second is a narrow statement about the
+present refutation programme: no zero-sorry proof of `False`, selected-field
+mismatch, or impossibility theorem has yet been derived from the endpoint.
 
-The review can therefore reject the advertised solution claim without first
-proving the negation of the literal existential endpoint. The missing
-composition theorem is a substantive negative finding, not a neutral request
-for optional documentation. The next work is adversarial source analysis:
-derive a concrete contradiction if the selected field cannot carry the paper's
-premises, or independently close the calculation only if the source supports
-it.
+The review must therefore not call the literal existential endpoint formally
+refuted merely because its public envelope does not repeat the profile tuple.
+The next work is adversarial source analysis: test each paper consequence and
+CMI condition on the selected fields, derive a concrete mismatch or
+impossibility if one exists, and credit a positive bridge if the raw source
+supplies it.
 
-The load-bearing objection is CTR-005: the missing selected-path transport of
-the paper's five moments into the actual velocity, pressure, residual, and
-force. The review should be upgraded to a formal refutation only after a
-zero-sorry theorem derives `False` from the selected witness and its actual
-premises, or proves a false mandatory endpoint predicate.
+The surviving adverse classification is a scoped correspondence question,
+not the earlier claim that selected-path moment restoration is missing. The
+review should be upgraded to a formal refutation only after a zero-sorry
+theorem derives `False`, proves a false mandatory endpoint predicate, or
+establishes a concrete mismatch for the selected field.
 
-## 12. Closure correction and the surviving counter-argument
+## 12. Current closure and remaining counter-arguments
 
 The five-moment objection is not that the repository lacks five-moment
 mathematics. A transitive import traversal rooted at
@@ -937,20 +990,21 @@ mathematics. A transitive import traversal rooted at
 positive-order, profile, and rank subsystems. The source contains exact repair
 identities and uses rank/debt data upstream of the selected endpoint.
 
-The counter-argument is instead about semantic transport. The public `Witness`
-proposition exposes the selected schedule, mixed sums, extensions, force,
-candidate properties, consequences, blow-up norm, force decay, and boundary
-jets. It does not expose an equality identifying the final mixed fields with
-the paper's five quantities
+The remaining audit question is about semantic scope, not whether the engine
+was used. The public `Witness` proposition exposes the selected schedule, mixed
+sums, extensions, force, candidate properties, consequences, blow-up norm,
+force decay, and boundary jets. It does not repeat an equality identifying the
+final mixed fields with the paper's five quantities
 
 $$
 (M,I,J,S,C_p),
 $$
 
-nor a theorem carrying that equality into the residual, pressure, force, and
-all-order jet estimates. The direct-germ interface is therefore weaker than
-the paper's advertised five-moment semantics even though the upstream repair
-system is substantive.
+as a named public field. That does not show that the equality was needed as a
+direct argument at this boundary: upstream theorems can be used to prove the
+residual, pressure, force, and all-order jet estimates without being re-exported
+as fields. It does show that the public proposition alone is not a convenient
+certificate of the paper's named observables.
 
 The paper itself makes this correspondence indispensable. Its notation table
 defines $m=(M,I,J,S,C_p)$ as the five cumulative radial integrals preserving
@@ -959,15 +1013,13 @@ then states that vanishing five moments remove the exterior pressure and stress
 tails, solves for five correction coefficients, and uses exact matching to
 preserve the subsequent outer fields. Appendix A repeats that the moment
 matching and the axis pressure datum preserve every subsequent outer field.
-Those are load-bearing assertions in the proof of the advertised solution,
-not informal physical commentary. The selected endpoint must therefore expose
-the corresponding identities for the actual selected fields.
-
-This is a genuine paper-to-endpoint correspondence failure and the strongest
-current counter-paper result. It is not yet a formal `False` theorem: the
-review has not shown that the concrete selected fields violate one of those
-integral identities. The decisive next step is a field-level transport theorem
-or a zero-sorry counterexample to one of its concrete equalities.
+Those are load-bearing assertions in the paper, not informal physical
+commentary. The decisive audit question is whether the proved reduced-profile
+and finite-residual consequences have the same mathematical scope as those
+assertions after the selected mixed stages and whole-space packaging. The
+public absence of a tuple field does not answer that question either way.
+The decisive next step is therefore a source-grounded scope theorem or a
+zero-sorry counterexample to one of the concrete equalities.
 
 Evidence: `NavierStokesReview/evidence/selected_moment_transport_closure_2026-09-24.md`.
 
@@ -987,9 +1039,9 @@ the compact perturbation theorem cannot be substituted into the endpoint by
 type unification, and no `False` theorem follows from the zero rows alone.
 This negative result is useful: it removes an attractive but invalid shortcut
 and leaves the substantive paper-to-code question in its proper form. The
-missing theorem is a selected-path transport identity from
-$(M,I,J,S,C_p)$ through the correction state and mixed sums into the residual,
-pressure, and force. Evidence:
+remaining test is whether the selected-path identities already proved for the
+correction state and mixed sums have the same scope as the paper's named
+observables in the residual, pressure, and force. Evidence:
 `NavierStokesReview/evidence/five_row_collision_boundary_2026-09-24.md`.
 
 The runtime scope is now checked separately. `MeanRankUpdate.scaleDebt` has
@@ -997,8 +1049,9 @@ three debt coordinates, and `FiveRows` constrains only two radial moments of
 the correction functions before applying its three debt equations. A compiled
 completion constructs a nonzero debt satisfying the full predicate. Thus the
 review does not claim that the runtime rows hard-code total kinetic energy to
-zero. The unresolved issue is the selected-path transport of the internal
-correction data into the exported field and the paper's five named moments.
+zero. The unresolved issue is the exact scope of the selected-path transport
+of the internal correction data into the exported field and the paper's five
+named moments.
 Evidence: `NavierStokesReview/evidence/mean_rank_update_scope_2026-09-24.md`.
 
 ### A conditional correction-moment obstruction
@@ -1132,8 +1185,9 @@ mathematical question. It also formulates alternatives C and D existentially,
 with smooth force data satisfying the stated decay conditions. A perturbation
 test or a sign-reversed force therefore cannot, by itself, refute the selected
 existential witness. The decisive formal target remains a false mandatory
-premise or a missing selected-path identity, especially the transport of the
-five named moments and pressure semantics into the exported endpoint.
+premise, a concrete selected-field mismatch, or a proved scope failure in the
+transport of the five named moments and pressure semantics into the exported
+endpoint.
 
 ## References and evidence
 
@@ -1338,11 +1392,40 @@ boundary. It pairs the selected candidate's full `Consequences` bundle with a
 zero-sorry failure of a fixed-force, same-initial-datum perturbation predicate.
 This establishes path dependence of the residual-designed trajectory. It is not
 a contradiction of the literal C/D existential, which asks for one admissible
-force and one trajectory and does not quantify over perturbations. The
-counter-paper's formal conclusion is consequently a failed paper-to-endpoint
-identification on the current record. This absence does not itself prove a
-false selected identity, but it prevents the paper's mechanism from being
-credited to the exported endpoint.
+force and one trajectory and does not quantify over perturbations.
+
+The endpoint's blow-up conclusion must be stated precisely. The selected proof
+does prove a formal blow-up predicate: `GermCandidateAssembly.origin_blowup`
+(`GermCandidateAssembly.lean:146-159`) transports the origin asymptotic to the
+mixed field, and `FinalSlowBase.axis_tendsto`
+(`FinalSlowBase.lean:372-378`) derives the base-axis divergence from the leading
+profile. That local axis-limit route does not require its own type to repeat a
+five-moment tuple. It does **not** show that the paper's restoration mechanism
+can be removed from the selected construction. The full selected proof term
+genuinely uses moment and rank machinery upstream through `estimates`,
+`physicalData`, profile repair, primitive cancellation, and five-row
+constructions. Thus the review is not claiming that the endpoint is empty or
+that its blow-up predicate was proved independently of the construction.
+
+The unresolved issue is instead an exact identity question. The current source
+record does not expose a theorem identifying the completed selected mixed
+Cartesian velocity, pressure, residual, and force with the paper's five global
+observables. The endpoint therefore proves a formal C/D-shaped candidate while
+leaving the paper's claimed five-moment interpretation unestablished at the
+final field boundary. This does not prove that the selected integrals are
+false; it means that a concrete field-level mismatch, impossibility theorem, or
+false mandatory premise would still be needed for a kernel-level refutation.
+
+The corrected counter-paper conclusion is consequently a failed
+paper-to-endpoint identification on the current record, not a claim that the
+selected blow-up proposition has no proof. The distinction is documented in
+`NavierStokesReview/evidence/selected_endpoint_compile_boundary_reaudit_2026-09-29.md`.
+
+The direct operator-level source trace is separately recorded in
+`NavierStokesReview/evidence/selected_field_operator_trace_2026-09-29.md`.
+It confirms the selected sum, curl, cutoff, periodisation, and observable
+interfaces without treating the explicit cutoff commutator as a proved global
+moment defect.
 
 ## Burden of proof and the underclaim finding
 
@@ -3956,3 +4039,171 @@ The latest twelve-module review records substantive intermediate transport: curr
 ## Audit update: cycle coherence, initial state, particular data, and corrected pressure (priority 110, 2026-09-28)
 
 The latest four-module review records substantive intermediate construction: initialized state and band transport, coherent cycle iteration, particular-cycle native source/pressure/Gaussian data, and reduced corrected-pressure matching and bounds. Priority 111 adds cycle preservation, curl-corrected particular realization, and germ/cutoff transport. Priority 112 adds reduced activation stocks, locally finite diagonal `tsum` jet/tail bounds, and compensated outgoing-profile integral identities. Priority 113 adds heated outgoing reduced-profile identities, mode-solenoidal reindexing, and shaped-wait temporal bounds. These results do not establish the final selected Cartesian `barMoment` / `(M,I,J,S,C_p)` equality, a nonzero defect, an impossibility theorem, or a kernel contradiction. Evidence: `NavierStokesReview/src/audit/priority_110_cycle_initial_particular_pressure_source_review_2026-09-28.md`, `NavierStokesReview/src/audit/priority_111_cycle_preservation_particular_realization_source_review_2026-09-28.md`, `NavierStokesReview/src/audit/priority_112_activation_diagonal_extended_heated_source_review_2026-09-28.md`, and `NavierStokesReview/src/audit/priority_113_heated_mode_reindex_shaped_wait_source_review_2026-09-28.md`.
+
+## Adjudication correction: profile moments are active dependencies
+
+The earlier formulation that the five-moment/rank restoration is “missing”, “bypassed”, or wholly outside the selected proof tree is withdrawn. The paper defines `(M,I,J,S,C_p)` as cumulative radial integrals of reduced profile variables used to preserve pressure, radial velocity, stress, and correction-cycle compatibility at profile joins. It does not follow that the public `Witness` must contain a literal final-Cartesian tuple field.
+
+The live source records an active dependency chain from `PositiveOrderMoments.moments_zero` through `GlobalStressSupport.conservative_moments_zero`, `EntranceAlignedBase.aligned_finiteIdentities`, `FinalSlowBase.finiteIdentities`, and `BaseResidual` finite-identity/jet-flatness theorems. These identities are therefore part of the selected construction and cannot be described as dispensable merely because `GermCandidateAssembly.origin_blowup` proves the axis-limit conjunct through `FinalSlowBase.axis_tendsto`.
+
+The remaining adverse question is the complete paper-to-endpoint composition: whether the paper’s reduced-profile identities and their stated consequences are semantically carried through the selected mixed stages, `tsum`, curl, localisation, periodisation, pressure, force, support, and axis/whole-space limits. The review must not infer a nonzero defect, impossibility, or `False` from the absence of a tuple field. Conversely, compilation of the existential endpoint does not by itself establish that complete semantic composition. Evidence: `NavierStokesReview/evidence/selected_profile_moment_dependency_adjudication_2026-09-29.md`.
+
+## Force smoothness and the five-moment correspondence boundary
+
+The raw source resolves an important distinction. The selected Lean route does
+not take `NativeBounds` from an empty interface: actual physical data are used
+to construct the stage estimates, residual rates are derived, and the force is
+made smooth from full residual derivative limits. This positive construction
+does not close the separate paper-to-endpoint question. No inspected theorem
+identifies those final rate/limit objects with every reduced-profile moment
+consequence used in the manuscript after the complete mixed Cartesian,
+`tsum`, curl, localisation, periodisation, pressure, and force composition.
+
+The manuscript does contain load-bearing five-moment matching and correction,
+but the stronger rebuttal language claiming an explicit
+Fredholm-adjoint-Laurent “if and only if” theorem, a sole cancellation route,
+or divergence of every individual residual term was not found in the
+extracted text. The controlled conclusion is therefore **not established as
+complete paper-to-code correspondence**, not a claim that the selected force
+is already shown nonsmooth or that the endpoint is formally `False`.
+
+Evidence: `NavierStokesReview/src/audit/priority_161_rebuttal_force_smoothness_moment_boundary_adjudication_2026-09-29.md` and `NavierStokesReview/evidence/source_tranche_rebuttal_force_smoothness_moment_boundary_2026-09-29.json`.
+
+## Audit control: full CMI dependency crosswalk
+
+The paper-to-code review must preserve the relationships among Fefferman's
+admissibility conditions, the residual-defined force, the five reduced-profile
+moments, and the final Lean endpoint. The current source supports the claim
+that the manuscript uses `(M,I,J,S,C_p)` as load-bearing matching and repair
+data. It does not support the stronger assertion that velocity blow-up alone
+proves every residual summand diverges, or that the extracted paper states a
+sole-mechanism Fredholm/adjoint/Laurent “if and only if” theorem.
+
+The Lean route derives a smooth force from concrete physical data, residual
+rate bounds, derivative recurrence, locally uniform boundary limits, and smooth
+extension. The adverse finding remains that the public `Witness` does not
+expose the complete selected-field semantic correspondence to every
+paper-level moment consequence. This is **NOT ESTABLISHED** correspondence,
+not a proof that the selected force is nonsmooth or that the literal forced
+CMI predicate is false.
+
+The required next calculation is the complete selected-field trace through
+`tsum`, curl, localisation, periodisation, pressure, force, support, and
+endpoint limits. Escalation requires a direct selected mismatch, impossibility
+theorem, false mandatory CMI premise, or selected-path `False`.
+
+Evidence: `NavierStokesReview/src/audit/priority_163_full_cmi_dependency_crosswalk_adjudication_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_full_cmi_dependency_crosswalk_2026-09-29.json`.
+
+## Priority 164: formal CMI Alternative (C) result and manuscript-fidelity boundary
+
+The current Lean record contains a direct zero-sorry proof of the forced
+whole-space Alternative (C) proposition. The proof establishes the complete
+formal comparator requirements and excludes every global smooth finite-energy
+competitor for the same force and initial data. This confirms the positive
+formal result and must not be described as a mere existential shell.
+
+The manuscript-fidelity question remains distinct. The paper uses the five
+moments as load-bearing profile matching and correction data, while the public
+endpoint does not expose a separate final-Cartesian identity for every such
+consequence. The correct conclusion is therefore: formal Alternative (C) is
+proved by the current Lean route; complete equivalence between that route and
+every paper-level mechanism remains unestablished until the selected-field
+transport is proved or a direct mismatch is found.
+
+Evidence: `NavierStokesReview/evidence/priority_164_direct_cmi_alternative_c_proof_2026-09-29.md`;
+`NavierStokesReview/evidence/priority_164_direct_cmi_alternative_c_proof_2026-09-29.json`.
+
+The subsequent Priority 162 source review records the correction-state
+boundary separately: its `barMoment` and `FiveRows` identities are genuine,
+but their identification with the final activated Cartesian field remains
+unclosed. Evidence:
+`NavierStokesReview/src/audit/priority_162_barmoment_correction_state_vs_selected_field_source_review_2026-09-29.md`
+and
+`NavierStokesReview/evidence/source_tranche_barmoment_correction_state_vs_selected_field_2026-09-29.json`.
+
+## Source-complete control note: preserve the manuscript's connected logic
+
+The manuscript is not to be reduced to a log of isolated declarations or to
+the endpoint's existential wrapper. The complete section and appendix map is
+[`CMI_OpenAI_Full_Semantic_Crosswalk.md`](CMI_OpenAI_Full_Semantic_Crosswalk.md).
+It must be read together with Fefferman's complete CMI specification, not as
+a substitute for it.
+
+For the audit, the manuscript's five-moment definitions, modulation errors,
+correction bumps, matching, pressure/stress consequences, cycle defects,
+localisation, and force regularity remain connected claims. The Lean record
+shows genuine upstream cycle and rate/flatness machinery, so the review must
+not claim that the force route is a bare unsupported NativeBounds premise.
+The adverse finding is narrower and stronger than that: the inspected
+selected endpoint does not expose the final semantic identity transporting
+the manuscript's cumulative observables through the completed Cartesian
+construction. Until that selected-field bridge is located or disproved by a
+direct calculation, the complete paper-to-code claim is not established; a
+compiled C-shaped proposition is not sufficient evidence for the whole
+manuscript.
+
+This control note is linked to the source-complete ledger and the evidence
+files listed in the peer-review control document. No statement here should be
+read as a value-level proof that the selected moments are nonzero or that the
+selected force is nonsmooth without a direct theorem.
+
+The subsequent invariant trace corrects the endpoint interpretation. The
+`CycleAnalyticInvariant` record contains concrete correction-state obligations,
+including a three-component radial defect \((P,J_\theta,J_z)\), two zero-mass
+constraints, residual classes, smoothness, support, periodicity, and state
+reconstruction. Those data genuinely feed the residual-rate and smooth-force
+route. The endpoint therefore cannot fairly be described as deriving force
+smoothness from an unsupported `NativeBounds` premise.
+
+The same trace does not locate the different theorem still required for the
+paper-level claim: an equality identifying the completed selected Cartesian
+field, after `tsum`, curl, localisation, periodisation, pressure, and force
+extension, with \((M,I,J,S,C_p)\). The review status consequently remains
+**NOT ESTABLISHED AS COMPLETE PAPER-TO-CODE CORRESPONDENCE**, not a claim that
+the selected force has already been shown nonsmooth. Evidence:
+`NavierStokesReview/src/audit/priority_164_cycle_invariant_residual_jet_trace_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_cycle_invariant_residual_jet_trace_2026-09-29.json`.
+
+## Adjudication of the five-moment smoothness rebuttal
+
+The latest rebuttal is correct that the five cumulative quantities
+\((M,I,J,S,C_p)\) are load-bearing in the manuscript's profile matching and
+correction architecture. It is not correct to strengthen that observation
+into the claim that they are the manuscript's only residual-cancellation
+mechanism. The manuscript says that individual residual terms may diverge
+while their sum and all derivatives extend smoothly through the singular time
+(`docs/navier-stokes openai.txt:108-113`). It then describes pulse-flux
+cancellation of the leading singular stress, further correction of remaining
+singular errors, heat-exterior localisation, and the five radial moment
+equations as connected parts of the construction
+(`docs/navier-stokes openai.txt:118-123,287-319,711-735`).
+
+In particular, \(\|u(t)\|_\infty\to\infty\) does not logically imply that each
+term in
+
+\[
+f=\partial_tu+(u\cdot\nabla)u-\nu\Delta u+\nabla p
+\]
+
+diverges. A sum can remain smooth when its summands have cancelling singular
+parts. The relevant mathematical question is whether the construction proves
+the required cancellations and extension, not whether velocity blow-up by
+itself forces termwise divergence.
+
+The adverse paper-to-code finding remains narrower and material. The
+inspected `Witness` contract does not expose a theorem identifying the
+completed selected Cartesian field and its residual/force construction with
+every five-moment consequence used by the manuscript after the actual cycle,
+infinite summation, curl, localisation, periodisation, pressure, and endpoint
+limits. This leaves the complete manuscript-to-endpoint correspondence
+**NOT ESTABLISHED**. It does not prove that the selected force is nonsmooth,
+that the selected moments are nonzero, or that the literal forced CMI
+proposition is false, because the Lean source also contains a concrete
+cycle-invariant and residual-jet route to smooth force data.
+
+This distinction is central to the paper's claim. The audit rejects both
+understatements: the moments are not optional bookkeeping, and the compiled
+endpoint is not automatically equivalent to the entire manuscript merely
+because it contains a C-shaped existential proposition. Evidence:
+`NavierStokesReview/evidence/agent_log_rebuttal_adjudication_2026-09-29.md`.
