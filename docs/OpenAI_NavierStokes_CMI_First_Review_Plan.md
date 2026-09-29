@@ -3290,3 +3290,25 @@ Evidence: `NavierStokesReview/src/audit/priority_163_full_cmi_dependency_crosswa
 - [ ] Continue the selected-field calculation through the complete mixed `tsum`, curl, localisation, periodisation, pressure, force, support, and endpoint composition.
 
 Evidence: `NavierStokesReview/evidence/agent_log_rebuttal_adjudication_2026-09-29.md`.
+
+## Priority 167: selected-field composition trace
+
+- [x] Trace the selected raw stage records into `StageEstimates` and the
+  schedule theorem.
+- [x] Trace the rate-to-`VanishingJointJets` step separately from the
+  manuscript's five-observable identities.
+- [x] Trace the actual `potentialSum`/`tsum`, mixed curl, cutoff commutator,
+  periodisation, time activation, and force-extension declarations.
+- [x] Search the bounded selected-path declaration set for a final theorem
+  identifying the completed Cartesian fields with `(M,I,J,S,C_p)`.
+- [ ] Continue the repository-wide search only where a declaration-level
+  dependency can reach the selected endpoint; do not treat unrelated module
+  reachability as endpoint transport.
+
+The bounded trace confirms a genuine concrete rate-to-flatness and smooth-force
+route, while leaving the final selected-field five-observable identification
+unlocated. It does not prove a nonzero defect, force nonsmoothness, or literal
+Alternative (C) failure.
+
+Evidence: `NavierStokesReview/src/audit/priority_167_selected_field_composition_trace_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_selected_field_composition_trace_2026-09-29.json`.

@@ -1,0 +1,60 @@
+{
+  "priority": 167,
+  "title": "Selected-field composition trace",
+  "date": "2026-09-29",
+  "status": "source_traced",
+  "decision": {
+    "selected_stage_data_are_concrete": true,
+    "actual_tsum_is_present": true,
+    "curl_cutoff_commutator_is_explicit": true,
+    "periodisation_and_time_activation_are_present": true,
+    "force_smoothness_route_is_concrete": true,
+    "final_selected_M_I_J_S_Cp_identity": "not_located",
+    "selected_moment_defect": "not_proved",
+    "force_nonsmoothness": "not_proved",
+    "alternative_c_failure": "not_proved",
+    "complete_paper_to_endpoint_correspondence": "not_established"
+  },
+  "selected_path": [
+    "ActualCandidateAssembly.physicalData",
+    "GluedStageEstimates.actualStageEstimates",
+    "StageEstimates.exists_schedule",
+    "MixedDiagonalResidual.exists_physical_schedule_residual_zero",
+    "SolenoidalDiagonal.potentialSum",
+    "MixedPeriodicAssembly.periodicVelocity",
+    "SpatialLocalization.periodicVelocity",
+    "TimeLocalization.activatedVelocity",
+    "CandidateFromLimits.force_smooth",
+    "ActualCandidateAssembly.Witness"
+  ],
+  "searched_files": [
+    "NavierStokes/ActualCandidateAssembly.lean",
+    "NavierStokes/GermCandidateAssembly.lean",
+    "NavierStokes/MixedCandidateAssembly.lean",
+    "NavierStokes/MixedPeriodicAssembly.lean",
+    "NavierStokes/CandidateFromLimits.lean",
+    "NavierStokes/GermEndpointInputs.lean",
+    "NavierStokes/ActualEndpointInputs.lean",
+    "NavierStokes/TimeLocalization.lean",
+    "NavierStokes/SpatialLocalization.lean",
+    "NavierStokes/SolenoidalDiagonal.lean"
+  ],
+  "searched_symbols": [
+    "FiveProfileMoments",
+    "PositiveOrderMoments",
+    "FiveRowRank",
+    "physicalMoments",
+    "Moments("
+  ],
+  "source_refs": [
+    "NavierStokes/ActualCandidateAssembly.lean:1079-1151",
+    "NavierStokes/MixedCandidateAssembly.lean:27-91",
+    "NavierStokes/MixedDiagonalResidual.lean:197-268",
+    "NavierStokes/GermCandidateAssembly.lean:161-271",
+    "NavierStokes/SolenoidalDiagonal.lean:31-178",
+    "NavierStokes/SpatialLocalization.lean:164-217,312-365",
+    "NavierStokes/MixedPeriodicAssembly.lean:27-101,231-368",
+    "NavierStokes/CandidateFromLimits.lean:35-57,80-112"
+  ],
+  "conclusion": "The selected endpoint has a genuine concrete rate-to-flatness and smooth-force path, but the bounded selected-path trace does not locate a theorem identifying the completed Cartesian fields with the manuscript's five cumulative observables. This is CTR-005, not a selected mismatch or formal refutation."
+}

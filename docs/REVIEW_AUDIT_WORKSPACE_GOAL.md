@@ -2194,3 +2194,31 @@ Alternative (C) fails.
   `NavierStokes` formalisation.
 
 Evidence: `NavierStokesReview/evidence/agent_log_rebuttal_adjudication_2026-09-29.md`.
+
+## Priority 167 goal control: selected-field composition
+
+The selected-path trace now records the declarations inspected from the
+concrete stage data through `potentialSum`, mixed curl/localisation,
+periodisation, time activation, residual limits, and force extension. The
+trace confirms that the smooth-force route is derived from actual finite-stage
+rate and extension obligations. It does not locate a final theorem asserting
+
+\[
+\operatorname{Moments}(u_{\mathrm{selected}},p_{\mathrm{selected}},f_{\mathrm{selected}})
+ =(M,I,J,S,C_p).
+\]
+
+This preserves the exact scope of `CTR-005`: the complete paper-to-endpoint
+correspondence remains **NOT ESTABLISHED**. The result is not a value-level
+moment mismatch, an impossibility theorem, force nonsmoothness, or a proof
+that literal Alternative (C) fails.
+
+- [x] Record the selected `tsum` and finite-prefix/all-jet source path.
+- [x] Record the cutoff-gradient commutator and plateau equivalences.
+- [x] Record the concrete rate-to-vanishing-jets-to-force-smoothness path.
+- [x] Record the bounded negative search and its limits.
+- [ ] Continue only with declarations capable of reaching the selected
+  endpoint, followed by a full source cross-check before any escalation.
+
+Evidence: `NavierStokesReview/src/audit/priority_167_selected_field_composition_trace_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_selected_field_composition_trace_2026-09-29.json`.

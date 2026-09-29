@@ -232,6 +232,7 @@
 ├── 📄 direct_endpoint_closure_validation_2026-09-29.md
 ├── 📄 worktree_triage_2026-09-29.md
 ├── 📄 source_tranche_cycle_invariant_residual_jet_trace_2026-09-29.json
+├── 📄 source_tranche_selected_field_composition_trace_2026-09-29.json
 ├── 📄 semantic_transport_pressure_audit_2026-09-23.md
 ├── 📄 source_path_reconciliation_2026-09-26.md
 ├── 📄 source_tranche_comparator_eulerproof_2026-09-28.json

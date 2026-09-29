@@ -4207,3 +4207,18 @@ understatements: the moments are not optional bookkeeping, and the compiled
 endpoint is not automatically equivalent to the entire manuscript merely
 because it contains a C-shaped existential proposition. Evidence:
 `NavierStokesReview/evidence/agent_log_rebuttal_adjudication_2026-09-29.md`.
+
+## Selected-field composition trace
+
+The source trace following the latest adjudication confirms the distinction
+required by the manuscript audit. The selected Lean construction genuinely
+uses concrete cycle data, finite residual rates, locally finite `tsum`s,
+Cartesian curl and cutoff operations, periodisation, time activation, and
+smooth residual-force extension. The inspected public endpoint nevertheless
+does not export the separate semantic theorem transporting the manuscript's
+five cumulative observables through that completed composition. The correct
+status remains **NOT ESTABLISHED AS COMPLETE PAPER-TO-ENDPOINT
+CORRESPONDENCE**, rather than a claim that a selected moment defect or force
+nonsmoothness has been proved. Evidence:
+`NavierStokesReview/src/audit/priority_167_selected_field_composition_trace_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_selected_field_composition_trace_2026-09-29.json`.

@@ -3572,6 +3572,21 @@ consumes the cycle invariant and residual data, and `CandidateFromLimits`
 derives the smooth force from residual derivative limits. Evidence:
 `NavierStokesReview/evidence/agent_log_rebuttal_adjudication_2026-09-29.md`.
 
+## Priority 167: selected-field composition trace
+
+The subsequent declaration-level trace confirms that the selected endpoint is
+not an empty rate wrapper. Concrete stage data feed `StageEstimates`; the
+schedule theorem derives vanishing joint residual jets; actual `potentialSum`
+terms are locally finite `tsum`s; the mixed construction applies the Cartesian
+curl, cutoff, periodisation, and time activation; and the force is obtained by
+smooth residual extension. The trace still does not locate a theorem
+identifying the completed selected Cartesian fields with the manuscript's
+five cumulative observables `(M,I,J,S,C_p)`. This strengthens the bounded
+`CTR-005` finding without changing it into a selected mismatch or a formal
+refutation. Evidence:
+`NavierStokesReview/src/audit/priority_167_selected_field_composition_trace_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_selected_field_composition_trace_2026-09-29.json`.
+
 The resulting classification is exact:
 
 | Question | Current record |
