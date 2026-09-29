@@ -1,0 +1,35 @@
+{
+  "id": "priority_187_circularity_adjudication_2026-09-30",
+  "date": "2026-09-30",
+  "status": "source_checked",
+  "question": "Does the missing exported five-moment identity make the selected force-smoothness proof circular or prove that Fefferman compliance fails?",
+  "findings": [
+    {
+      "claim": "The manuscript's five moments are load-bearing.",
+      "status": "confirmed",
+      "sources": ["docs/navier-stokes openai.txt:488-496", "docs/navier-stokes openai.txt:523-546", "docs/navier-stokes openai.txt:727-784", "docs/navier-stokes openai.txt:8451-8517"]
+    },
+    {
+      "claim": "Velocity blow-up implies every residual summand diverges.",
+      "status": "rejected",
+      "reason": "Divergent summands may cancel in the total residual; a selected lower-bound or uncancelled coefficient is required."
+    },
+    {
+      "claim": "force_smooth is obtained from a bare NativeBounds assumption.",
+      "status": "rejected_as_stated",
+      "sources": ["NavierStokes/ActualCandidateAssembly.lean:1090-1098", "NavierStokes/GluedStageEstimates.lean:684-744", "NavierStokes/ActualCycleResidualBounds.lean:1158-1206", "NavierStokes/MixedCandidateAssembly.lean:67-91", "NavierStokes/CandidateFromLimits.lean:39-55,80-112"]
+    },
+    {
+      "claim": "The selected endpoint exports the manuscript's final five-observable identity.",
+      "status": "not_established",
+      "sources": ["NavierStokes/ActualCandidateAssembly.lean:1121-1151", "NavierStokes/ActualCandidateAssembly.lean:1177-1181"]
+    },
+    {
+      "claim": "The omitted identity alone proves force nonsmoothness or literal CMI failure.",
+      "status": "not_established",
+      "reason": "The endpoint has an explicit conditional smooth-force theorem; a selected mismatch, failed connected condition, impossibility theorem, or contradiction is still required."
+    }
+  ],
+  "classification": "CTR-005 remains NOT_ESTABLISHED as complete manuscript-to-endpoint correspondence; no selected mismatch, force-nonsmoothness theorem, literal CMI failure, impossibility theorem, or False was derived.",
+  "next_gate": "Prove or refute the selected value-level implication from the actual residual-jet/invariant chain to the completed Cartesian five-observable identity, including tsum, curl, localisation, periodisation, torus averaging, radial integration, support, integrability, and axis limits."
+}

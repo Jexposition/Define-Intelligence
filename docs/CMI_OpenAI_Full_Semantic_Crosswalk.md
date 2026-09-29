@@ -1296,3 +1296,52 @@ Cartesian-field fidelity remains **NOT ESTABLISHED (CTR-005)**. The semantic
 closure does not by itself prove that the selected force is nonsmooth or that
 literal C/D is false. Those stronger conclusions require a selected failed
 condition, selected value mismatch, impossibility theorem, or contradiction.
+
+## Priority 187: load-bearing moments versus the selected force proof
+
+The source audit now separates two propositions that had been incorrectly
+collapsed. The manuscript's five quantities `(M,I,J,S,C_p)` are load-bearing:
+they control profile matching, modulation restoration, stress propagation, and
+the finite-dimensional correction system. They therefore cannot be removed
+from the paper's mathematical explanation without changing the construction
+being claimed.
+
+The selected Lean path nevertheless contains a distinct residual-jet route.
+Actual physical data and cycle invariants feed finite residual-rate theorems;
+those produce a schedule and vanishing joint residual jets; the limit and
+gluing theorems then establish smoothness of the residual-defined force. In
+schematic form:
+
+\[
+H_{\mathrm{selected}}\Rightarrow J_{\mathrm{flat}}
+\Rightarrow F\in C^\infty,
+\qquad F=\mathcal R(u_{\mathrm{selected}},p_{\mathrm{selected}})
+\text{ before the singular time}.
+\]
+
+This prevents two opposite errors. First, velocity blow-up alone does not
+prove that every residual summand diverges, because singular summands can
+cancel in their total. Secondly, a smooth-force theorem derived from residual
+jets is not automatically the manuscript's five-moment theorem.
+
+The unresolved correspondence gate is the selected-field implication
+
+\[
+J_{\mathrm{flat}}
+\stackrel{?}{\Longrightarrow}
+\operatorname{PaperMoments}(u_{\mathrm{selected}},p_{\mathrm{selected}})
+=(M,I,J,S,C_p).
+\]
+
+after the selected sums, curl, localisation, periodisation, torus averaging,
+radial integration, support, integrability, and axis limits. `Witness` does
+not expose this completed identity, and the present source trace has not
+located it elsewhere. The correct classification is therefore
+`CTR-005 = NOT ESTABLISHED` for complete manuscript-to-selected-endpoint
+fidelity. This is not a proof that the selected force is nonsmooth or that
+Fefferman Alternative (C) or (D) is false. Those stronger classifications
+require a selected failed connected condition, a value-level mismatch, an
+impossibility theorem, or a contradiction.
+
+Evidence: `NavierStokesReview/src/audit/priority_187_circularity_adjudication_2026-09-30.md`;
+`NavierStokesReview/evidence/source_tranche_priority_187_circularity_adjudication_2026-09-30.json`.

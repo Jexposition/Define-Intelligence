@@ -161,6 +161,7 @@
  └── 📄 priority_183_force_smoothness_moment_rebuttal_adjudication_2026-09-29.md
  └── 📄 priority_184_selected_path_foundation_audit_2026-09-29.md
  ├── 📄 priority_186_fefferman_full_word_connection_closure_2026-09-30.md
+ ├── 📄 priority_187_circularity_adjudication_2026-09-30.md
 ├── 📄 snapshot_compare.py
 ├── 📄 source_tranche_summary.py
 ├── 📄 source_tree_map.py
