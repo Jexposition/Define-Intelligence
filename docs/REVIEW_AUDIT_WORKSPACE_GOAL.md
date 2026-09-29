@@ -1891,3 +1891,13 @@ as the endpoint closure without qualification. Outside-closure status is a
 scope label only. It is not evidence that a module is dead, invalid, or absent
 from OpenAI's build graph. This distinction must remain linked in future maps,
 coverage reports, and manuscript references.
+
+## Priority 160: curated public publication record (2026-09-29)
+
+The adverse audit has a separate curated public branch,
+`review/cmi-first-navier-stokes-curated-2026-09-29`, based on the public remote
+tip. Commit `2ac298e` publishes the verified paper, review, plans, endpoint
+closure evidence, source maps, probes, and audit indexes. The historical
+working branch was not force-pushed or rewritten. No OpenAI source file was
+modified and no local file was deleted. Future publication must proceed in
+reviewed tranches, with link and file-size checks, rather than blind staging.

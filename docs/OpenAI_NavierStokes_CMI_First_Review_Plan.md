@@ -2936,11 +2936,11 @@ record.**
 - [ ] Report any contradiction as an audit result, not as a proposed repair
   task for OpenAI.
 
-The matrix and reader-facing wording are committed locally. The controlling
-goal identifies `review/cmi-first-navier-stokes-2026-09-22` as the public
-review branch. Publication remains gated until only curated, verified work is
-committed; exploratory scans, scratch material, user-owned source, and stale
-generated artefacts must not be included.
+The matrix and reader-facing wording are committed locally. The historical
+working branch remains `review/cmi-first-navier-stokes-2026-09-22`; the first
+curated public tranche is published separately as
+`review/cmi-first-navier-stokes-curated-2026-09-29`. Exploratory scans, scratch
+material, user-owned source, and stale generated artefacts remain excluded.
 
 ## Priority 159: reconcile endpoint closure with repository inventory (2026-09-29)
 
@@ -2957,3 +2957,20 @@ dead-code or validity classification. The authoritative record is
   invalid, or absent from OpenAI's repository.
 - [ ] Keep this distinction linked from later source reviews and manuscript
   summaries.
+
+## Priority 160: publish only the verified adverse-audit tranche (2026-09-29)
+
+The curated branch `review/cmi-first-navier-stokes-curated-2026-09-29` is based
+on the public remote tip rather than the oversized local history. Commit
+`2ac298e` publishes the current paper, peer review, controlling plans, source
+maps, endpoint evidence, review probes, and linkable audit indexes. The
+existing working branch was not force-pushed or rewritten. No OpenAI source
+file was modified and no local file was deleted.
+
+- [x] Commit the curated tranche as `2ac298e`.
+- [x] Push the curated branch to the public repository.
+- [x] Confirm no staged file reaches GitHub's 100 MB hard limit.
+- [x] Run the curated Markdown link audit; zero normal relative links remain
+  unresolved.
+- [ ] Continue later publication in separately verified tranches; never use
+  blind staging to reduce the remaining local backlog.
