@@ -144,6 +144,8 @@
 ├── 📄 priority_168_fefferman_physical_admissibility_and_force_chain_2026-09-29.md
 ├── 📄 priority_168_full_closure_moment_symbol_census_2026-09-29.md
 ├── 📄 priority_169_declaration_level_invariant_force_adjudication_2026-09-29.md
+├── 📄 priority_169_connected_cmi_endpoint_adjudication_2026-09-29.md
+├── 📄 priority_170_invariant_debt_to_force_trace_2026-09-29.md
 ├── 📄 priority_171_selected_observable_type_boundary_2026-09-29.md
 ├── 📄 priority_172_fefferman_semantic_network_2026-09-29.md
 ├── 📄 priority_173_fefferman_c_connected_adjudication_2026-09-29.md
@@ -151,7 +153,9 @@
 ├── 📄 priority_175_lexical_bridge_candidate_classification_2026-09-29.md
 ├── 📄 priority_176_selected_field_composition_domain_trace_2026-09-29.md
 ├── 📄 priority_177_fefferman_word_connection_adjudication_2026-09-29.md
-└── 📄 priority_179_latest_force_smoothness_rebuttal_2026-09-29.md
+├── 📄 priority_179_fefferman_full_semantic_dependency_network_2026-09-29.md
+├── 📄 priority_179_latest_force_smoothness_rebuttal_2026-09-29.md
+└── 📄 priority_180_selected_field_boundary_rebuttal_adjudication_2026-09-29.md
 ├── 📄 snapshot_compare.py
 ├── 📄 source_tranche_summary.py
 ├── 📄 source_tree_map.py

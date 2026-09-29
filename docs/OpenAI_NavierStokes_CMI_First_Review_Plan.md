@@ -3720,6 +3720,54 @@ Evidence:
 `NavierStokesReview/src/audit/priority_179_latest_force_smoothness_rebuttal_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_179_latest_force_smoothness_rebuttal_2026-09-29.json`.
 
+## Priority 180: selected-field boundary adjudication
+
+- [x] Recheck whether the latest rebuttal's termwise-divergence premise follows
+  from velocity blow-up. It does not; the manuscript allows cancellation in the
+  total residual.
+- [x] Recheck whether the manuscript establishes the five-moment block as the
+  only cancellation operation. It does not exclude the coupled wave,
+  covariance, auxiliary-time, pressure, cutoff, nonlinear, summation, and
+  flatness operations.
+- [x] Trace `PhysicalData` -> actual `StageEstimates` -> selected schedule ->
+  `VanishingJointJets` -> residual limits -> `force_smooth` from source.
+- [x] Record that the force proof is substantive and conditional, not a bare
+  `NativeBounds` axiom.
+- [x] Preserve the separate unresolved obligation: identify the final selected
+  Cartesian field and pressure with the manuscript's `(M,I,J,S,C_p)` after
+  `tsum`, curl, localisation, periodisation, averaging, radial pullback, and
+  axis totalisation.
+- [ ] Attempt the next review-side finite-prefix-to-integral limit theorem with
+  explicit integrability and axis hypotheses. Do not infer a defect from the
+  commutator alone.
+
+Evidence:
+`NavierStokesReview/src/audit/priority_180_selected_field_boundary_rebuttal_adjudication_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_180_selected_field_boundary_rebuttal_adjudication_2026-09-29.json`.
+
+## Priority 181: adjudicate the connected C package before claiming failure
+
+- [x] Treat Fefferman's “physically reasonable” class as the connected
+  whole-space package `(1)--(7)`, not as equations `(1)--(3)` alone.
+- [x] Verify the comparator definitions for initial-data decay `(4)`, force
+  smoothness and decay `(5)`, and accepted-solution conditions `(6),(7)`.
+- [x] Record that the inspected comparator theorem proves the corresponding
+  operational C-shaped existential/nonexistence proposition.
+- [x] Distinguish the operational C result from the stronger claim that Lean
+  verifies the manuscript's exact five-moment proof mechanism.
+- [x] Do not infer `not C` from the absence of a final moment-export theorem.
+- [ ] Continue the selected-field transport audit as a fidelity question and
+  test whether the manuscript mechanism is definitionally or theoremically
+  connected to the route that proves the operational C package.
+- [ ] Escalate to literal C failure only after a connected failed premise,
+  selected value mismatch, impossibility theorem, or contradiction is proved.
+
+Primary sources:
+`NavierStokes/ComparatorDefinitions.lean:124-238`;
+`NavierStokes/ComparatorR3Theorem.lean:21-44`;
+`docs/navierstokes.txt:25-81`;
+`docs/navier-stokes openai.txt:109-124,306-321`.
+
 ## Priority 177: source-preserving semantic connection audit
 
 - [x] Audit the connective words in `docs/navierstokes.txt:25-81`, including

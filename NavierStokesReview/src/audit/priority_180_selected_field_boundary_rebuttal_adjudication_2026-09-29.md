@@ -1,6 +1,6 @@
 # Priority 180: selected-field boundary and smooth-force rebuttal adjudication
 
-**Date:** 2026-09-29
+**Date:** 2026-09-29  
 **Status:** source-checked; `CTR-005` remains **NOT ESTABLISHED**; no selected
 defect or literal C/D failure has been proved.
 

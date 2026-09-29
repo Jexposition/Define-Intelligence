@@ -3953,8 +3953,97 @@ The paper-to-endpoint issue remains material and adverse: the inspected public
 without claiming a selected nonzero defect, force nonsmoothness, impossibility,
 literal C/D failure, or `False`.
 
+## Connected CMI adjudication: the endpoint must not be over- or under-claimed
+
+The source-controlled Fefferman reading is now applied to the complete
+connected target. “For physically reasonable solutions” introduces the
+accepted class; “Hence” links the spatial-growth concern to `(4),(5)`; and
+“only if” makes `(6),(7)` necessary for accepted whole-space solutions.
+“Alternatively ... may look for” selects the periodic branch without waiving
+its conditions; “Thus”, “In place of”, and “We then accept” bind `(8),(9)` and
+`(10),(11)` within that branch. “Such smooth, physically reasonable
+solutions” and “retaining the heart of the problem” carry this network into
+the alternatives.
+
+The source trace also corrects the direction of the audit conclusion. The
+Lean comparator does not merely match the outer existential syntax. Its
+`InitialVelocityConditionDecay` encodes initial-data smoothness,
+divergence-freeness, and all-order decay; `ForceConditionDecay` encodes force
+smoothness and all-order space-time decay; and
+`NavierStokesExistenceAndSmoothnessRn` encodes the PDE, incompressibility,
+initial condition, global smoothness, square-integrability, and uniform energy
+requirements for a competing global solution. The comparator theorem derives
+the corresponding whole-space existential/nonexistence proposition.
+
+Therefore the review must state both conclusions, without collapsing either:
+
+1. **Operational C result:** the inspected Lean path proves the connected
+   whole-space C-shaped proposition, subject to its recorded build and axiom
+   status.
+2. **Manuscript-fidelity result:** the inspected public endpoint does not yet
+   identify the completed selected Cartesian fields, pressure, force, and
+   residual with every manuscript-level consequence of the five-moment
+   mechanism after the full sum, curl, localisation, periodisation, averaging,
+   and packaging chain. The claim that Lean verifies the manuscript's exact
+   five-moment proof is therefore **NOT ESTABLISHED (CTR-005)**.
+
+The second conclusion is not a proof that operational C is false. Conversely,
+the first conclusion is not proof that the Lean route is the manuscript's
+five-moment route. Fefferman's words “given” and “externally applied” preserve
+a material physical-provenance objection, but the displayed C predicate does
+not state a separate independence-from-trajectory axiom. The manuscript also
+explicitly discusses defining the force from the residual and arranging smooth
+cancellation of the total residual. A literal C refutation therefore requires
+a failed connected premise, a concrete selected mismatch, an impossibility
+theorem, or a contradiction, not merely the absence of the final moment
+identity.
+
+Evidence: `NavierStokesReview/src/audit/priority_180_selected_field_boundary_rebuttal_adjudication_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_180_selected_field_boundary_rebuttal_adjudication_2026-09-29.json`;
+`NavierStokes/ComparatorDefinitions.lean:124-238`;
+`NavierStokes/ComparatorR3Theorem.lean:21-44`.
+
 Evidence: `NavierStokesReview/src/audit/priority_179_latest_force_smoothness_rebuttal_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_179_latest_force_smoothness_rebuttal_2026-09-29.json`.
+
+## Priority 180: selected-field boundary adjudication
+
+The latest rebuttal correctly insists that the manuscript's five-moment
+system is load-bearing. The review therefore does not describe
+`(M,I,J,S,C_p)` as optional notation or as removable from the paper's
+construction. It does, however, reject three stronger inferences that the
+current source record does not prove: `||u||_∞ → ∞` does not imply that every
+summand of the residual diverges; the manuscript does not establish that the
+five equations are its only cancellation operation; and the Lean theorem
+`force_smooth` is not a bare `NativeBounds` assumption.
+
+The selected Lean path is substantive. Concrete residual recurrence,
+vanishing joint jets, locally uniform endpoint limits, and the smooth force
+extension provide a conditional chain of the form
+
+\[
+  H_{\mathrm{selected}} \Rightarrow J_{\mathrm{flat}}
+  \Rightarrow F\in C^\infty,
+  \qquad F=\mathcal R(u,p)\text{ for }0\leq t<1.
+\]
+
+The unresolved paper-to-endpoint obligation is different:
+
+\[
+  J_{\mathrm{flat}} \Rightarrow
+  \operatorname{PaperMoments}(u_{\mathrm{selected}},p_{\mathrm{selected}})
+  =(M,I,J,S,C_p).
+\]
+
+The inspected `Witness` does not state that final selected-field identity.
+Thus the current record establishes **NOT ESTABLISHED (CTR-005)** for the
+claim that the exported endpoint machine-checks the manuscript's complete
+five-moment mechanism. It does not yet establish a nonzero selected defect,
+force nonsmoothness, an impossibility theorem, a literal C/D failure, or
+`False`.
+
+Evidence: `NavierStokesReview/src/audit/priority_180_selected_field_boundary_rebuttal_adjudication_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_180_selected_field_boundary_rebuttal_adjudication_2026-09-29.json`.
 
 ## Priority 177: connected Fefferman specification
 

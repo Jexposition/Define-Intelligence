@@ -2671,6 +2671,39 @@ Evidence:
 - `NavierStokesReview/src/audit/priority_179_latest_force_smoothness_rebuttal_2026-09-29.md`
 - `NavierStokesReview/evidence/source_tranche_priority_179_latest_force_smoothness_rebuttal_2026-09-29.json`
 
+## Priority 180: selected-field boundary adjudication
+
+The latest rebuttal is only partly supported. The manuscript's five-moment
+system is load-bearing, but velocity blow-up does not prove termwise divergence
+of every residual summand, and the source does not establish that the five
+equations are the only cancellation operation. On the selected Lean path,
+`PhysicalData`, actual stage estimates, schedule construction,
+`VanishingJointJets`, residual derivative limits, and `force_smooth` form a
+real conditional chain. The unresolved implication is instead:
+
+\[
+J_{\mathrm{flat}}
+\Longrightarrow
+\operatorname{PaperMoments}(u_{\mathrm{selected}},p_{\mathrm{selected}})
+ =(M,I,J,S,C_p).
+\]
+
+- [x] Audit the selected force-smoothness chain against the production source.
+- [x] Reject the claim that `force_smooth` is merely a free-standing generic
+  `NativeBounds` assumption.
+- [x] Preserve the paper-to-endpoint finding: the exported `Witness` still has
+  no inspected final Cartesian five-observable equality.
+- [ ] Prove or fail the next finite-prefix-to-integral limit attempt with all
+  integrability, support, averaging, and axis premises explicit.
+- [ ] Do not escalate `CTR-005` to selected mismatch, force nonsmoothness,
+  literal C/D failure, or `False` without a selected value theorem or
+  impossibility result.
+
+Evidence:
+
+- `NavierStokesReview/src/audit/priority_180_selected_field_boundary_rebuttal_adjudication_2026-09-29.md`;
+- `NavierStokesReview/evidence/source_tranche_priority_180_selected_field_boundary_rebuttal_adjudication_2026-09-29.json`.
+
 ## Priority 180: Fefferman's full connected specification is controlling
 
 The audit must treat Fefferman's wording as a semantic dependency network.
@@ -2700,3 +2733,45 @@ Therefore:
 
 Primary source-network record:
 `NavierStokesReview/src/audit/priority_179_fefferman_full_semantic_dependency_network_2026-09-29.md`.
+
+## Priority 181 goal correction: do not conflate CMI failure with paper-fidelity failure
+
+The controlling audit distinction is now explicit. Fefferman's “physically
+reasonable” wording is connected to the operational whole-space package
+`(1)--(7)`, and the periodic branch is connected to `(1)--(3),(8)--(11)`.
+The inspected comparator definitions and theorem encode the whole-space data,
+smoothness, PDE, incompressibility, initial condition, integrability, and
+uniform-energy clauses of C. Therefore the absence of a final
+five-moment-equality field in `Witness` is not, by itself, a proof that C is
+false.
+
+The adverse finding remains important but has a different target:
+
+\[
+\text{operational C is proved on the inspected Lean path}
+\quad\neq\quad
+\text{the manuscript's five-moment proof is machine-checked end to end}.
+\]
+
+The work must therefore report both layers separately:
+
+1. **CMI predicate layer:** verify the complete connected Fefferman package and
+   its axiom/build status.
+2. **Manuscript-fidelity layer:** trace the selected Cartesian velocity,
+   pressure, residual, force, localisation, periodisation, sums, and five
+   moments through the exported endpoint.
+3. **Physical-provenance layer:** record the meaning of “given, externally
+   applied” and the residual-defined-force construction without inventing a
+   formal independence axiom that Fefferman's displayed C formula does not
+   state.
+
+Do not call the operational C proposition falsified merely because the
+manuscript-fidelity theorem is absent. Conversely, do not call OpenAI's
+machine-checking claim complete merely because the operational C proposition
+compiles. A literal C/D refutation requires a connected failed condition,
+selected mismatch, impossibility theorem, or contradiction.
+
+Evidence and source anchors:
+`NavierStokes/ComparatorDefinitions.lean:124-238`;
+`NavierStokes/ComparatorR3Theorem.lean:21-44`;
+`NavierStokesReview/src/audit/priority_180_selected_field_boundary_rebuttal_adjudication_2026-09-29.md`.

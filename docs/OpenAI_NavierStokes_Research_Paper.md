@@ -4571,3 +4571,77 @@ literal C/D failure and selected-field mismatch as unproved stronger claims.
 
 Evidence: `NavierStokesReview/src/audit/priority_177_fefferman_word_connection_adjudication_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`.
+
+## Priority 180: five-moment mechanism and selected-field transport
+
+The manuscript-level conclusion must not be weakened into the claim that the
+five cumulative moments are dispensable. They are load-bearing constraints in
+the profile matching and correction architecture. The source audit also does
+not justify the stronger claim that velocity blow-up forces termwise
+divergence of every residual summand, or that the five equations are the only
+operation involved in the manuscript's complete cancellation and flatness
+argument.
+
+The Lean endpoint has a real conditional smoothness route. Its residual
+recurrence, vanishing joint jets, and locally uniform endpoint limits support
+
+\[
+  H_{\mathrm{selected}} \Rightarrow J_{\mathrm{flat}}
+  \Rightarrow F\in C^\infty,
+  \qquad F=\mathcal R(u,p)\text{ before the singular time}.
+\]
+
+That implication does not replace the missing paper-to-code identification:
+
+\[
+  J_{\mathrm{flat}} \Rightarrow
+  \operatorname{PaperMoments}(u_{\mathrm{selected}},p_{\mathrm{selected}})
+  =(M,I,J,S,C_p).
+\]
+
+The inspected `ActualCandidateAssembly.Witness` exports no theorem giving that
+completed identity after the selected `tsum`, curl, localisation,
+periodisation, averaging, and radial/axis constructions. Consequently the
+research-paper claim that the exported Lean endpoint machine-checks the
+manuscript's five-moment physical mechanism remains **NOT ESTABLISHED
+(CTR-005)**. This is a correspondence finding, not a proof that the selected
+field has a nonzero defect or that Fefferman's literal C/D proposition has
+already been refuted.
+
+Evidence: `NavierStokesReview/src/audit/priority_180_selected_field_boundary_rebuttal_adjudication_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_180_selected_field_boundary_rebuttal_adjudication_2026-09-29.json`.
+
+### Adjudication correction: operational C versus manuscript fidelity
+
+The connected Fefferman reading must not be used to make the opposite
+overclaim. “Physically reasonable” is not an invitation to discard the
+conditions surrounding the alternatives, but the displayed whole-space C
+predicate is operationally represented by initial-data decay `(4)`, force
+smoothness and decay `(5)`, and accepted-solution conditions `(1)--(3),(6),(7)`.
+The comparator definitions implement these clauses, and
+`NavierStokes.Comparator.navier_stokes_breakdown_R3` proves the corresponding
+existential/nonexistence proposition on the inspected route.
+
+The exact logical status is therefore:
+
+\[
+\text{Lean proves the inspected operational C proposition}
+\quad\text{but}
+\quad
+\text{the inspected endpoint does not yet prove identity with every step of
+the manuscript's five-moment mechanism}.
+\]
+
+The second statement is a paper-to-code fidelity limitation, not a proof that
+the operational C proposition is false. The manuscript itself states that the
+force may be defined as the momentum residual and that the total residual can
+be made smooth by cancellation, so the mere fact that the force was designed
+from the trajectory is not a formal disqualification under Fefferman's
+displayed existential C formula. It remains a physical-provenance question
+because Fefferman describes the force as “given” and “externally applied”.
+That semantic concern must be reported, but it cannot replace a proved failed
+condition.
+
+This correction is linked to the source adjudication rather than replacing
+the five-moment audit:
+`NavierStokesReview/src/audit/priority_180_selected_field_boundary_rebuttal_adjudication_2026-09-29.md`.
