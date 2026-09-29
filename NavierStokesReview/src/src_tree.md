@@ -134,6 +134,7 @@
 │  ├── 📄 priority_164_cycle_invariant_residual_jet_trace_2026-09-29.md
 │  ├── 📄 priority_167_selected_field_composition_trace_2026-09-29.md
 │  ├── 📄 priority_168_full_closure_moment_symbol_census_2026-09-29.md
+│  ├── 📄 priority_168_fefferman_physical_admissibility_and_force_chain_2026-09-29.md
 │  ├── 📄 priority_external_euler_foundation_source_review_2026-09-28.md
 │  ├── 📄 probe_logic_contract_audit.py
 │  ├── 📄 r3_analytical_module_classification_2026-09-27.md

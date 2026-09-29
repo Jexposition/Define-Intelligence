@@ -150,6 +150,32 @@ is source-supported, whereas
 
 has not yet been located or proved on the inspected record.
 
+## Scope of the encoded whole-space C-shaped proposition
+
+The comparator route is also more than a bare existential wrapper.  The
+inspected declarations state the following connected object:
+
+```text
+NavierStokesR3.theorem_1_1
+  -> CandidateProperties u p f K
+  -> compact, smooth force
+  -> forceConditionDecay_of_compact
+  -> no Nonempty (GlobalFiniteEnergySolution ν f)
+  -> comparator_of_breakdown
+  -> navier_stokes_breakdown_R3
+```
+
+`ComparatorR3Theorem.navier_stokes_breakdown_R3` explicitly quantifies a
+decaying initial datum and force and excludes a comparator solution satisfying
+the encoded whole-space equations, smoothness, and global bounded-energy
+conditions.  `ComparatorR3Bridge.comparator_of_breakdown` proves the force
+decay from smooth compact support and converts any comparator solution into a
+`GlobalFiniteEnergySolution` with the same viscosity, force, and zero datum.
+This establishes the scope of the formal C-shaped proposition on the
+inspected Lean path.  It does not transform that proposition into a proof that
+the manuscript's specific five-moment explanation has been transported to the
+selected endpoint.
+
 The second missing implication is a paper-to-code correspondence gap.  It is
 not evidence that the first implication is false, and it is not evidence that
 the selected force violates Fefferman's conditions.

@@ -1,0 +1,26 @@
+{
+  "priority": "168b",
+  "date": "2026-09-29",
+  "status": "source_checked",
+  "decision": {
+    "fefferman_physically_reasonable_is_connected": true,
+    "periodic_branch_conditions_are_mandatory_after_branch_selection": true,
+    "actual_stage_data_are_concrete": true,
+    "force_smoothness_is_derived_from_residual_limits": true,
+    "final_paper_five_observable_transport": "not_located",
+    "selected_force_nonsmoothness": "not_proved",
+    "alternative_c_failure": "not_proved",
+    "complete_paper_to_endpoint_correspondence": "not_established"
+  },
+  "fefferman_source": "docs/navierstokes.txt:25-81,94-102",
+  "openai_source": "docs/navier-stokes openai.txt:109-124,760-784,830-873,984-1024",
+  "lean_source_refs": [
+    "NavierStokes/ActualCandidateAssembly.lean:1079-1185",
+    "NavierStokes/ActualStageEstimates.lean:344-404",
+    "NavierStokes/ActualCycleResidualBounds.lean:1156-1210",
+    "NavierStokes/MixedPeriodicAssembly.lean:310-366",
+    "NavierStokes/CandidateFromLimits.lean:45-112",
+    "NavierStokes/CorrectionState.lean:241-251"
+  ],
+  "conclusion": "Fefferman's data, equation, smoothness, energy, and branch conditions are connected requirements. The selected Lean force route is concrete and derived through residual rates and vanishing jets, not a free NativeBounds assumption. The inspected endpoint still does not locate a theorem identifying the completed selected Cartesian construction with every manuscript-level (M,I,J,S,Cp) consequence. This is CTR-005 correspondence non-establishment, not a selected mismatch or formal refutation."
+}
