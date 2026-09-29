@@ -3623,6 +3623,54 @@ Evidence:
 `NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`;
 `docs/CMI_OpenAI_Full_Semantic_Crosswalk.md`.
 
+## Priority 180: enforce the full Fefferman semantic dependency network
+
+- [ ] Audit Fefferman as a connected specification, not as isolated equation
+  citations: unknowns and equations -> given initial datum/force -> Newton-law
+  physical framing -> “physically reasonable” class -> whole-space or periodic
+  branch -> data conditions -> accepted global solution conditions -> A--D.
+- [ ] Preserve the exact force/data meaning of “given” and “externally
+  applied”; distinguish physical provenance from a formally stated force-
+  independence predicate.
+- [ ] Treat “Hence” as the link from growth at spatial infinity to (4),(5),
+  “only if” as necessity of (6),(7), and “may look for” as branch latitude
+  only.
+- [ ] Treat “Thus, we assume”, “In place of”, and “We then accept” as binding
+  the periodic package (8),(9),(10),(11) once that branch is selected.
+- [ ] Test C against the connected whole-space package (1)--(7), and D against
+  (1)--(3),(8)--(11), including the global time quantifiers and accepted
+  solution class.
+- [ ] Crosswalk those complete predicates to the OpenAI manuscript's actual
+  selected force, velocity, pressure, localisation, moment correction, residual
+  regularity, and energy claims.
+- [ ] Do not call the CMI claim established from a surface Lean existential;
+  do not call it literally false without a failed connected premise, selected
+  mismatch, impossibility theorem, or contradiction.
+
+Primary record:
+`NavierStokesReview/src/audit/priority_179_fefferman_full_semantic_dependency_network_2026-09-29.md`.
+
+## Priority 179: full semantic dependency network
+
+- [x] Read the complete supplied Fefferman source as a connected semantic
+  network, not as isolated equation snippets.
+- [x] Record that “may look” permits the periodic branch, while “Thus”, “In
+  place of”, and “We then accept” make the chosen branch's conditions binding.
+- [x] Carry “physically reasonable” and “retaining the heart of the problem”
+  into the C/D crosswalk.
+- [x] Evaluate C as the whole-space package `(1)--(7)` and D as the periodic
+  package `(1)--(3),(8)--(11)`.
+- [ ] Complete the selected-field value-level crosswalk from OpenAI's moment,
+  stress, pressure, localisation, residual, and force mechanism to the
+  connected C/D conditions.
+- [ ] Do not call the formal C-shaped proposition a complete verification of
+  the manuscript until that selected-field correspondence is established.
+
+Primary record:
+`NavierStokesReview/src/audit/priority_179_fefferman_full_semantic_dependency_network_2026-09-29.md`.
+Evidence:
+`NavierStokesReview/evidence/source_tranche_priority_179_fefferman_full_semantic_dependency_network_2026-09-29.json`.
+
 ## Priority 178: current register and semantic-network control
 
 - [x] Regenerate the authoritative register and its JSON, Markdown, and HTML
@@ -3648,6 +3696,29 @@ Validation record: `semantic_coverage_register_full_2026-09-29.*` and
 artifacts. `CTR-005` remains **NOT ESTABLISHED**, not escalated to literal C/D
 failure without a connected failed premise, selected mismatch, impossibility
 theorem, or contradiction.
+
+## Priority 179: latest force-smoothness rebuttal adjudication
+
+- [x] Recheck the claim that velocity blow-up forces every residual summand to
+  diverge. The manuscript supports cancellation of the total residual, not
+  termwise divergence (`docs/navier-stokes openai.txt:109--124`).
+- [x] Recheck the claim that the five moments are the only cancellation
+  mechanism. The manuscript describes wave, covariance, auxiliary-time,
+  pressure, radial, cutoff, nonlinear, summation, and flatness operations in
+  addition to the five-equation block (`:695--784`).
+- [x] Recheck `CandidateFromLimits.force_smooth`. The selected path derives it
+  from concrete residual derivative recurrence and locally uniform limits; it
+  is not a free-standing `NativeBounds` premise.
+- [x] Preserve the adverse correspondence result: the endpoint still does
+  not expose a theorem identifying the completed selected Cartesian fields
+  with `(M,I,J,S,C_p)`.
+- [ ] Continue the value-level selected-field transport calculation. The
+  present adjudication does not prove a selected defect, force nonsmoothness,
+  impossibility, or literal C/D failure.
+
+Evidence:
+`NavierStokesReview/src/audit/priority_179_latest_force_smoothness_rebuttal_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_179_latest_force_smoothness_rebuttal_2026-09-29.json`.
 
 ## Priority 177: source-preserving semantic connection audit
 

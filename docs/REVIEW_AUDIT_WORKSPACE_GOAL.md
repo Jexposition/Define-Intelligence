@@ -2618,3 +2618,85 @@ parse to equal objects; the register reports `missing_project_import_edges = 0`.
 The consolidation/archive gate remains closed until the complete document set
 has been fetched, read, cross-checked, and fact-checked. No deletion is
 permitted; confirmed redundancy may only be moved later with a SHA-256 manifest.
+
+## Priority 179 goal control: source-complete Fefferman semantics
+
+The audit now explicitly treats Fefferman's text as a connected semantic
+network. “For physically reasonable solutions” introduces the accepted class;
+“Hence” connects spatial-growth control to `(4),(5)`; and “only if” makes
+`(6),(7)` necessary for accepted whole-space solutions. “Alternatively” and
+“may look” permit branch selection only. Once the periodic branch is selected,
+“Thus”, “In place of”, and “We then accept” bind `(8),(9)` and `(10),(11)`.
+The phrase “such smooth, physically reasonable solutions” carries the full
+network into A--D, and “retaining the heart of the problem” preserves the
+global existence/smoothness question.
+
+The controlling source-network record is:
+`NavierStokesReview/src/audit/priority_179_fefferman_full_semantic_dependency_network_2026-09-29.md`.
+Its evidence record is:
+`NavierStokesReview/evidence/source_tranche_priority_179_fefferman_full_semantic_dependency_network_2026-09-29.json`.
+
+The work boundary is explicit: the inspected Lean path has a substantive
+connected C-shaped route, while the OpenAI manuscript's complete selected-field
+five-moment/stress/pressure/force correspondence remains **NOT ESTABLISHED
+(CTR-005)**. This is neither a claim that those mathematical dependencies are
+optional nor a claim that literal C/D failure has already been proved.
+
+## Priority 179: force-smoothness rebuttal control
+
+The latest rebuttal was checked against the manuscript's residual and
+correction passages and the selected Lean force path. It is correct that the
+five-moment equations are load-bearing in the written profile/correction
+mechanism. It is not source-established that they are the only cancellation
+route, that velocity blow-up forces termwise residual divergence, or that
+`CandidateFromLimits.force_smooth` is an unlinked generic contract. The
+selected path derives smooth forcing from concrete residual derivative limits.
+
+The unresolved finding remains exact:
+
+\[
+H_{\mathrm{selected}}\Rightarrow J_{\mathrm{flat}}\Rightarrow F_{\mathrm{smooth}},
+\qquad
+J_{\mathrm{flat}}\not\Rightarrow
+\operatorname{PaperMoments}(u_{\mathrm{selected}},p_{\mathrm{selected}})
+=(M,I,J,S,C_p)
+\]
+
+The final implication is not currently exported or source-located. Therefore
+`CTR-005` remains **NOT ESTABLISHED**, while selected mismatch, force
+nonsmoothness, impossibility, literal C/D failure, and `False` remain unproved.
+
+Evidence:
+
+- `NavierStokesReview/src/audit/priority_179_latest_force_smoothness_rebuttal_2026-09-29.md`
+- `NavierStokesReview/evidence/source_tranche_priority_179_latest_force_smoothness_rebuttal_2026-09-29.json`
+
+## Priority 180: Fefferman's full connected specification is controlling
+
+The audit must treat Fefferman's wording as a semantic dependency network.
+“Given” and “externally applied” define the data/provenance side of the
+forward problem; “For physically reasonable solutions” introduces the accepted
+class; “Hence” connects the concern about growth at infinity to (4),(5); and
+“only if” makes (6),(7) necessary for accepted whole-space solutions.
+
+“Alternatively” and “may look for” permit choosing the periodic branch only.
+After that choice, “Thus, we assume” binds (8),(9), “In place of” substitutes
+those data controls for (4),(5), and “We then accept” binds (10),(11). The
+phrase “such smooth, physically reasonable solutions” and “retaining the heart
+of the problem” carry the complete package into alternatives (A)--(D).
+
+Therefore:
+
+- C is audited as the connected whole-space package (1)--(7), not as an
+  existential shell containing only (1)--(3).
+- D is audited as the connected periodic package (1)--(3),(8)--(11), not as an
+  optional variant where periodicity or smoothness can be omitted.
+- The Lean endpoint, the OpenAI manuscript mechanism, and Fefferman's physical
+  specification are recorded as linked but distinct layers.
+- The selected-field five-moment, stress, pressure, residual, force, and global
+  admissibility transport remains the decisive paper-to-code task. Its absence
+  is material to the advertised proof claim; it is not evidence that the
+  moments are optional, and it is not alone a selected-value contradiction.
+
+Primary source-network record:
+`NavierStokesReview/src/audit/priority_179_fefferman_full_semantic_dependency_network_2026-09-29.md`.

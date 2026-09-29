@@ -1163,3 +1163,45 @@ connected packages in the audit. This does not itself prove their failure.
 
 Evidence: `NavierStokesReview/src/audit/priority_177_fefferman_word_connection_adjudication_2026-09-29.md`;
 `NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`.
+
+## Priority 179: full Fefferman semantic dependency network
+
+The source pass has been expanded from the earlier connective-word ledger to
+the full dependency order. “For physically reasonable solutions” introduces
+the accepted class; “Hence” connects the spatial-growth concern to `(4),(5)`;
+and “only if” makes `(6),(7)` necessary for accepted whole-space solutions.
+“Alternatively ... may look” permits selecting the periodic branch. Once that
+branch is selected, “Thus, we assume”, “In place of”, and “We then accept”
+bind `(8),(9)` and `(10),(11)` as its data and accepted-solution conditions.
+The later phrase “such smooth, physically reasonable solutions” carries this
+entire network into A--D, while “retaining the heart of the problem” preserves
+the global existence/smoothness question.
+
+The resulting audit target is therefore C as `(1)--(7)` and D as
+`(1)--(3),(8)--(11)`, not either displayed equation block in isolation. The
+full source-preserving network, formulas, and Lean/OpenAI crosswalk are in
+[`priority_179_fefferman_full_semantic_dependency_network_2026-09-29.md`](../NavierStokesReview/src/audit/priority_179_fefferman_full_semantic_dependency_network_2026-09-29.md).
+
+Evidence:
+`NavierStokesReview/evidence/source_tranche_priority_179_fefferman_full_semantic_dependency_network_2026-09-29.json`.
+
+## Priority 180: “may look for” is branch latitude, not a waiver
+
+The phrase “Alternatively, to rule out problems at infinity, we may look for
+spatially periodic solutions” opens a branch. It does not waive the conditions
+of that branch. The next words, “Thus, we assume”, impose (8) and (9) on the
+periodic data; “In place of” replaces the whole-space decay controls (4) and
+(5) with those periodic data controls; and “We then accept” imposes (10) and
+(11) on the periodic solution. The periodic branch remains a complete
+physically reasonable branch of the same problem.
+
+The review therefore does not call a declaration CMI-compliant from equations
+(1)--(3), or from existential syntax alone. It records separately whether the
+Lean predicate includes Fefferman's connected package and whether the selected
+construction is semantically the manuscript's construction. The first is a
+formal-encoding result; the second is the paper-to-code result at issue in
+CTR-005.
+
+The complete word-to-obligation table and connected whole-space/periodic
+predicates are recorded in
+`NavierStokesReview/src/audit/priority_179_fefferman_full_semantic_dependency_network_2026-09-29.md`.

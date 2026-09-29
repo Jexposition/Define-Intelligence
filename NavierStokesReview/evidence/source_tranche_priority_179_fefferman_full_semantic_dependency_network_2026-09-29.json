@@ -1,0 +1,47 @@
+{
+  "record_id": "priority_179_fefferman_full_semantic_dependency_network_2026-09-29",
+  "date": "2026-09-29",
+  "status": "source_grounded_semantic_crosswalk",
+  "source_files": [
+    "docs/navierstokes.txt",
+    "docs/navierstokes.pdf",
+    "docs/navier-stokes openai.txt",
+    "NavierStokes/R3/ProblemStatement.lean",
+    "NavierStokes/CandidateFromLimits.lean",
+    "NavierStokes/ComparatorR3Theorem.lean"
+  ],
+  "semantic_edges": [
+    {"phrase": "given", "edge": "problem data -> initial-value problem"},
+    {"phrase": "externally applied", "edge": "physical force provenance -> audit obligation"},
+    {"phrase": "For physically reasonable solutions", "edge": "physical solution class -> admissibility conditions"},
+    {"phrase": "Hence", "edge": "growth at infinity -> whole-space data decay (4),(5)"},
+    {"phrase": "only if", "edge": "accepted whole-space solution -> global smoothness and energy (6),(7)"},
+    {"phrase": "Alternatively / may look", "edge": "branch choice -> periodic domain branch"},
+    {"phrase": "Thus, we assume", "edge": "periodic branch -> data conditions (8),(9)"},
+    {"phrase": "In place of", "edge": "periodic data conditions replace whole-space decay conditions"},
+    {"phrase": "We then accept", "edge": "periodic branch -> accepted solution conditions (10),(11)"},
+    {"phrase": "retaining the heart of the problem", "edge": "solver latitude -> preserved global existence/smoothness question"},
+    {"phrase": "for which there exist no solutions", "edge": "fixed admissible data -> global nonexistence target"},
+    {"phrase": "Here", "edge": "definitions of datum, force, viscosity, and Laplacian -> interpretation of equations"},
+    {"phrase": "such smooth, physically reasonable solutions", "edge": "connected admissibility network -> alternatives A-D"},
+    {"phrase": "in place of", "edge": "periodic data controls replace whole-space decay controls without replacing the PDE"},
+    {"phrase": "we then accept", "edge": "selected periodic branch -> periodic accepted-solution predicate"},
+    {"phrase": "while retaining the heart", "edge": "solver latitude -> preservation of the global existence/smoothness problem"}
+  ],
+  "adjudications": {
+    "whole_space_C": "connected package (1)-(7)",
+    "periodic_D": "connected package (1)-(3),(8)-(11)",
+    "lean_connected_C_route": "established_on_inspected_path",
+    "manuscript_five_moment_selected_field_transport": "not_established_CTR-005",
+    "literal_C_or_D_failure": "not_proved",
+    "selected_nonzero_defect": "not_proved",
+    "kernel_contradiction": "not_proved"
+  },
+  "notes": [
+    "The word may permits branch selection; it does not make conditions in the selected branch optional.",
+    "The source wording is preserved; this record maps semantic dependencies without rewriting Fefferman.",
+    "The record does not invent an explicit force-independence predicate absent from the displayed C/D formulas.",
+    "The connected audit target is C=(1)-(7) and D=(1)-(3),(8)-(11), not equations (1)-(3) alone.",
+    "A complete paper-to-code claim additionally requires the selected OpenAI fields and force to be identified with the manuscript mechanism; that is the CTR-005 transport question."
+  ]
+}
