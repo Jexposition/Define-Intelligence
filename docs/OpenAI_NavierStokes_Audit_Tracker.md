@@ -1629,7 +1629,10 @@ This record also closes three invalid shortcuts: correction zero rows are not
 total kinetic-energy identities; smooth localisation is not a discontinuity;
 and fixed-force perturbation brittleness is not by itself a contradiction of
 the existential C/D proposition. The affirmative five-moment selected-field
-transport remains the authors' burden.
+transport is absent from the inspected record, so the advertised
+paper-to-Lean correspondence is rejected on the present record. This remains
+an active target for adverse field-level testing, not a request for the
+claimant to repair the source.
 
 ## CTR-048: selected finite-prefix transport is non-vacuous
 

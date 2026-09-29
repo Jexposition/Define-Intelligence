@@ -273,8 +273,10 @@ definitions belong under `NavierStokesReview/`.
 
 ## 1. Review standard
 
-The burden of proof is on the authors because the public claim is a solution
-of the Navier–Stokes problem, not merely a compiling Lean development.
+The public claim is evaluated against the source record, not against a future
+revision or a promise of additional work. A compiling Lean development is not
+treated as the advertised solution unless the inspected source actually
+identifies its selected field with the paper's load-bearing construction.
 
 Current verdict:
 
@@ -287,8 +289,10 @@ zero-sorry, source-anchored theorem showing at least one of:
 2. the selected exported field fails its PDE, regularity, or domain predicate;
 3. an exact selected identity contradicts the published construction.
 
-An absent bridge is a serious failure of establishment and remains the
-authors’ burden. It is not Lean `False` by itself.
+An absent bridge is a present-record failure of establishment. It is not Lean
+`False` by itself, but it is sufficient to reject the advertised
+paper-to-Lean claim unless a stronger source-level falsification supersedes
+that classification.
 
 ## 1A. Semantic correspondence is the primary work product
 
@@ -1345,10 +1349,11 @@ periodic-to-radial conversion, and the axis limit. The target outcomes are:
   to the next paper claim.
 
 Do not classify a missing theorem as `False` merely because it is absent, and
-do not downgrade the investigation to a documentation request merely because
-the authors could attempt to add it. `CTR-005` remains `Open` until one of the
-three outcomes is established. The review continues independently of any
-future OpenAI response, repository revision, or claimed repair.
+do not downgrade the investigation to a documentation request. `CTR-005`
+already rejects the advertised paper-to-Lean correspondence on the present
+record. It remains an active falsification target until one of the three
+outcomes is established. The review continues independently of any future
+OpenAI response, repository revision, or claimed repair.
 
 The same rule applies to CTR-012 and pressure semantics: use the fixed-force
 perturbation and comparative-pressure results as adversarial tests, but do not

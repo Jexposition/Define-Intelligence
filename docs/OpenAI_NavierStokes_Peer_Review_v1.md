@@ -104,9 +104,8 @@ instead extracted from `ActualCandidateAssembly.Witness` and then passed
 through the R³ localisation layer. `PaperLocalization` proves local agreement
 of velocity and pressure on an open set at late times, but the combined result
 does not state equality of the forces or identify the five named moments with
-the exported residual. The paper therefore needs an explicit composition
-theorem before it can claim that its local five-moment construction is the
-object used by the CMI endpoint.
+the exported residual. The inspected record therefore does not establish that
+the local five-moment construction is the object used by the CMI endpoint.
 
 This strengthens CTR-005 as a source-level failure of the authors' affirmative
 proof record. It is sufficient to withhold acceptance of the paper's advertised

@@ -481,8 +481,8 @@ The required falsification order is:
    the whole publication.
 
 This rule prevents two opposite errors: treating every missing bridge as a
-kernel refutation, and treating every open bridge as a free opportunity for
-the authors to repair the claim while the audit waits.
+kernel refutation, and treating every open bridge as a neutral or repairable
+future opportunity while the adverse audit waits.
 
 The untracked `NavierStokes/R3/TestPressure.lean` was elaborated directly and
 fails at import resolution: line 1 requests `NavierStokes.R3.PressureRecovery`,
