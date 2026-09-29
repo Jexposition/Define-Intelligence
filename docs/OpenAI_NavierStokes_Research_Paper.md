@@ -4303,6 +4303,68 @@ refuted.
 See `docs/CMI_OpenAI_Full_Semantic_Crosswalk.md` and
 `NavierStokesReview/src/audit/priority_168_fefferman_physical_admissibility_and_force_chain_2026-09-29.md`.
 
+## Audit boundary update: connected CMI endpoint adjudication (2026-09-29)
+
+The current audit treats Fefferman's phrases “physically reasonable” and
+“retaining the heart of the problem” as connected semantic requirements, not
+as decorative prose. It also records the concrete Lean route that derives
+residual flatness and a smooth force from actual cycle data before the
+comparison theorem.
+
+The remaining paper-level gap is exact: the endpoint does not expose a
+selected-field theorem transporting the manuscript's five radial observables
+(M,I,J,S,Cp) through the completed Cartesian, localisation, periodisation,
+pressure, and force construction. This sustains CTR-005 for the claim that
+the manuscript's complete physical mechanism has been machine-checked.
+
+It does not, by itself, prove that the formal C-shaped proposition is false.
+That stronger verdict requires a selected mismatch, an impossibility theorem,
+or a failed explicit Fefferman premise. The distinction and the build caveat
+are recorded in
+NavierStokesReview/src/audit/priority_169_connected_cmi_endpoint_adjudication_2026-09-29.md.
+
+## Audit update: debt-to-force trace and endpoint limitation (2026-09-29)
+
+The source audit traces debt, mass, covariance, and rank data through the
+analytic cycle step and invariant propagation into concrete residual-rate
+estimates, vanishing residual jets, and a smooth force constructor. The paper's
+statement that individual residual terms can diverge while the total residual
+extends smoothly is therefore consistent with the selected force route; a
+velocity norm blow-up alone is not a proof that every residual summand diverges.
+
+The five-moment system remains a load-bearing part of the manuscript's profile
+matching and repair architecture. However, the manuscript also uses pulse
+stress covariance, mean and pressure corrections, cutoffs, and recursive
+residual improvement. The current Lean endpoint has not been shown to export a
+single theorem transporting the manuscript tuple ((M,I,J,S,C_p)) through the
+completed Cartesian field construction. The correct status is therefore a
+paper-to-endpoint correspondence gap, not a demonstrated nonsmooth force or a
+formal contradiction.
+
+## Numerical diagnostic of the spatial curl and cutoff layer
+
+The audit also includes a CUDA-first three-dimensional Cartesian diagnostic of
+the source cutoff and vector-potential operation. It reconstructs the cutoff,
+forms a nonseparable axisymmetric stream in Cartesian coordinates, evaluates
+the analytic curl and cutoff-gradient commutator, independently evaluates the
+Cartesian curl by finite differences, measures the divergence residual, and
+integrates the full x-y slices. Resolutions 129, 193, and 257 were swept over
+three stream scales and two axial modulations on an NVIDIA GeForce RTX 4060 Ti.
+The integrated diagnostic defect is stable under refinement while the reported
+finite-difference curl and divergence errors decrease.
+
+This is evidence that the cutoff-gradient term can alter radial integration in
+an explicit three-dimensional profile. It is not a calculation of the
+noncomputable selected `ASum`, `BSum`, or `PSum`, and it does not prove a
+nonzero selected-field `(M,I,J,S,C_p)` defect. The source-level transport
+obligation therefore remains open rather than being silently promoted from a
+diagnostic profile to the exported Lean witness.
+
+Evidence: `NavierStokesReview/evidence/cutoff_commutator_cuda_full_2026-09-29.md`;
+`NavierStokesReview/evidence/cutoff_commutator_cuda_full_2026-09-29.json`;
+`NavierStokesReview/evidence/cutoff_commutator_cuda_full_2026-09-29.csv`;
+`NavierStokesReview/evidence/cutoff_commutator_cuda_full_2026-09-29.png`.
+
 ## Audit update: selected observable type boundary (2026-09-29)
 
 The selected construction is materially present in the Lean source. The
@@ -4313,14 +4375,98 @@ the mixed fields. The source also proves the cutoff-gradient commutator.
 The remaining issue is the observable interface. `barMoment` is defined on a
 lifted scalar pressure-stream domain and applies a torus average before radial
 integration. It is not definitionally the activated Cartesian velocity supplied
-by `Witness`. A source-level theorem must provide the scalar and component
-pullback, convergence, support and integrability, and equality with the
-completed selected field before the manuscript quantities can be credited to
-the endpoint. No selected nonzero defect has been established.
+by `Witness`. A source-level theorem must therefore provide the scalar and
+component pullback, convergence, support and integrability, and equality with
+the completed selected field before the manuscript quantities can be credited
+to the endpoint. This sharpens, rather than broadens, CTR-005. No selected
+nonzero defect has been established.
+## Fefferman's connected specification and the selected formal route
 
-Priority 172 binds this endpoint question to the connected CMI source
-semantics rather than isolating Alternative (C).
+Fefferman's wording is part of the mathematical specification. The phrase
+“physically reasonable solutions” is immediately connected by “Hence” to the
+all-order spatial and space-time decay conditions (4) and (5). The phrase
+“We accept ... only if” then makes global smoothness and bounded energy in
+(6) and (7) acceptance conditions for the whole-space solution class. The
+word “Alternatively” introduces a different periodic branch, and “Thus” ties
+that branch to data conditions (8) and (9) and accepted-solution conditions
+(10) and (11). Finally, “retaining the heart of the problem” says that the
+four alternatives are meant to preserve this connected PDE, regularity,
+decay, energy, and domain structure while allowing different proof targets.
 
-Evidence:
-`NavierStokesReview/src/audit/priority_172_fefferman_semantic_network_2026-09-29.md`;
-`NavierStokesReview/evidence/source_tranche_priority_172_fefferman_semantic_network_2026-09-29.json`.
+This means that a review cannot establish C merely by matching the surface
+quantifiers `exists u0, f`. The whole-space C package is
+
+\[
+ (1),(2),(3) + (4),(5) + (6),(7)
+\quad\text{on }\mathbb{R}^{3}\times[0,\infty),
+\]
+
+while the periodic D package is
+
+\[
+ (1),(2),(3) + (8),(9) + (10),(11)
+\quad\text{on the periodic domain.}
+\]
+
+The current source audit therefore records two separate conclusions. The
+inspected Lean path contains a concrete residual-limit and jet-recurrence
+route to a smooth force, pre-singular energy control, and a global-comparator
+contradiction. It is not an empty proposition or a compiler-shaped shell.
+However, the audit has not located a theorem identifying the completed
+selected Cartesian velocity, pressure, residual, and force with the
+manuscript's five cumulative observables \((M,I,J,S,C_p)\) through the
+potential sums, curl, localisation, periodisation, activation, and endpoint
+observable maps. The manuscript-specific paper-to-endpoint correspondence is
+therefore **NOT ESTABLISHED (CTR-005)**. This is a correspondence finding,
+not yet a theorem that the selected field fails C, that the force is not
+smooth, or that `False` follows.
+
+The exact wording and node-by-node source graph are preserved in
+`docs/navierstokes.txt:25-81` and
+`NavierStokesReview/src/audit/priority_172_fefferman_semantic_network_2026-09-29.md`.
+
+## Priority 173: connected CMI compliance versus manuscript mechanism fidelity
+
+Fefferman's “may look for spatially periodic solutions” is a branch choice,
+not a relaxation. In the whole-space branch, “physically reasonable”,
+“Hence”, and “only if” connect the equations to `(4),(5)` and `(6),(7)`;
+“retaining the heart” carries that package into C. The selected Lean path has
+explicit smooth-force, decay, pre-singular PDE, initial-data, energy, and
+comparator-nonexistence components, so it is not merely a bare existential
+shell.
+
+“Given, externally applied” supplies physical force provenance. OpenAI's
+manuscript openly uses residual construction, says the background residual is
+singular, and then claims pulse fluxes and further corrections make the total
+residual smooth. Provenance is therefore a serious physical-model question,
+but the displayed C predicate does not add an explicit independence relation.
+
+The five moments remain load-bearing manuscript content. The inspected Lean
+endpoint still lacks the theorem transporting every manuscript-level
+five-moment consequence through the selected Cartesian construction. Complete
+paper-to-endpoint fidelity remains `NOT ESTABLISHED (CTR-005)`; no selected
+mismatch or literal C failure has been proved.
+
+Evidence: `NavierStokesReview/src/audit/priority_173_fefferman_c_connected_adjudication_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_173_fefferman_c_connected_adjudication_2026-09-29.json`.
+
+## Audit update: force-smoothness rebuttal adjudication (2026-09-29)
+
+The source review rejects three overstatements in the supplied rebuttal. First,
+`L^\infty` velocity blow-up does not imply that every summand of
+`\partial_tu+(u\cdot\nabla)u-\nu\Delta u+\nabla p` diverges. Secondly, the
+manuscript presents the five radial equations as one correction layer inside a
+larger pulse, mean, pressure, auxiliary-time, cutoff, and residual-improvement
+architecture. Thirdly, the selected Lean route does not obtain `force_smooth`
+from an empty generic rate premise: it extends the traced actual residual after
+using the derivative recurrence and locally uniform residual-jet limits.
+
+The remaining adverse finding is narrower but material. The public `Witness`
+still does not identify the completed activated Cartesian field's observables
+with the manuscript's `(M,I,J,S,C_p)`. The audit therefore keeps
+**NOT ESTABLISHED (CTR-005)** for complete paper-to-endpoint fidelity, without
+asserting a selected nonzero defect, nonsmooth force, impossibility theorem, or
+literal failure of Alternative (C).
+
+Evidence: `NavierStokesReview/src/audit/priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.json`.

@@ -6,8 +6,8 @@
     "reachable": 588,
     "not_reachable": 2206,
     "status": {
-      "evidence_inspected": 904,
-      "source_indexed_review_queued": 1883,
+      "evidence_inspected": 906,
+      "source_indexed_review_queued": 1881,
       "source_indexed_sorry_token": 7
     },
     "cluster": {
@@ -15,7 +15,7 @@
       "algebra": 8,
       "assembly": 2,
       "average": 1,
-      "axis": 338,
+      "axis": 336,
       "balance": 1,
       "base-data": 1,
       "bilinear": 3,
@@ -27,7 +27,7 @@
       "budgets": 1,
       "calculus": 9,
       "cancellation": 1,
-      "candidate-packaging": 6,
+      "candidate-packaging": 5,
       "cartesian": 2,
       "cartesian-assembly": 456,
       "cmi": 2,
@@ -44,7 +44,7 @@
       "coordinates": 4,
       "correction": 3,
       "correction-family": 1,
-      "corrections": 27,
+      "corrections": 29,
       "covariance": 1,
       "cover": 3,
       "curl": 4,
@@ -70,7 +70,7 @@
       "field-decomposition": 1,
       "fixed-frame": 2,
       "flow": 4,
-      "force": 240,
+      "force": 241,
       "frame": 2,
       "functional-analysis": 20,
       "gaussian": 3,
@@ -87,7 +87,7 @@
       "integrals": 8,
       "invariant": 1,
       "jet-bounds": 1,
-      "jets": 550,
+      "jets": 551,
       "l2": 2,
       "labels": 2,
       "linear-algebra": 1,
@@ -100,7 +100,7 @@
       "methodology": 4,
       "metric": 1,
       "mild": 2,
-      "moments": 362,
+      "moments": 363,
       "naturality": 2,
       "nonlinear": 1,
       "normalisation": 1,
@@ -116,16 +116,16 @@
       "path": 3,
       "pde": 1,
       "periodic": 2,
-      "periodicity": 15,
-      "physical-data": 15,
+      "periodicity": 14,
+      "physical-data": 16,
       "pointwise": 1,
-      "pressure": 579,
+      "pressure": 580,
       "probe": 1,
       "product": 6,
-      "profiles": 289,
+      "profiles": 291,
       "quotient": 1,
       "r3": 75,
-      "rank": 290,
+      "rank": 291,
       "real": 1,
       "recurrence": 1,
       "recursion": 8,
@@ -135,7 +135,7 @@
       "repository-root": 4,
       "representative": 5,
       "representatives": 1,
-      "residual": 156,
+      "residual": 157,
       "scalar": 5,
       "sign": 1,
       "slice": 1,
@@ -144,15 +144,15 @@
       "solenoidal": 1,
       "spatial": 2,
       "specification": 1,
-      "stage-interface": 15,
+      "stage-interface": 16,
       "state": 1,
       "strain": 1,
       "summation": 1,
-      "support": 27,
+      "support": 25,
       "symmetry": 7,
       "tails": 2,
       "tensor": 5,
-      "time": 540,
+      "time": 541,
       "translation": 12,
       "transport": 12,
       "tsum": 1,
@@ -167,7 +167,7 @@
     },
     "missing_project_import_edges": 0,
     "source_rows_with_sorry_token": 10,
-    "supplemental_evidence_records": 70
+    "supplemental_evidence_records": 80
   },
   "supplemental_evidence": [
     {
@@ -296,6 +296,17 @@
       ],
       "finding": "OpenAI-source-only declaration triage over NavierStokes/: 31,472 declarations, zero joint candidates, and zero positive manual candidates under the detector. This is a provenance boundary and triage result, not an absence theorem.",
       "anchors": "generated report; source-only pass"
+    },
+    {
+      "path": "NavierStokesReview/evidence/source_tranche_barmoment_correction_state_vs_selected_field_2026-09-29.json",
+      "clusters": [
+        "moments",
+        "rank",
+        "cartesian-assembly",
+        "endpoint"
+      ],
+      "finding": "Machine-readable Priority 162 source review records the correction-state versus final selected-field type boundary without claiming a nonzero defect or impossibility.",
+      "anchors": "generated JSON; direct declaration review"
     },
     {
       "path": "NavierStokesReview/evidence/source_tranche_comparator_eulerproof_2026-09-28.json",
@@ -542,6 +553,51 @@
       ],
       "finding": "Machine-readable Priority 147 evidence for twelve directly reviewed audit and Euler modules, including the endpoint-symbol absence boundary and classification limits.",
       "anchors": "generated JSON; 12 source records"
+    },
+    {
+      "path": "NavierStokesReview/evidence/source_tranche_priority_172_fefferman_semantic_network_2026-09-29.json",
+      "clusters": [
+        "cmi",
+        "fefferman",
+        "semantic-network",
+        "evidence"
+      ],
+      "finding": "Machine-readable Priority 172 source tranche preserving exact-wording, branch-separation, selected-path, and CTR-005 status boundaries.",
+      "anchors": "JSON claims F1-F6, LEAN-C, CTR-005, REFUTATION"
+    },
+    {
+      "path": "NavierStokesReview/evidence/source_tranche_priority_173_fefferman_c_connected_adjudication_2026-09-29.json",
+      "clusters": [
+        "cmi",
+        "fefferman",
+        "semantic-network",
+        "evidence"
+      ],
+      "finding": "Machine-readable Priority 173 tranche distinguishing connected formal C compliance, physical force provenance, and manuscript five-moment endpoint fidelity.",
+      "anchors": "JSON findings F173-1 through F173-5"
+    },
+    {
+      "path": "NavierStokesReview/evidence/source_tranche_priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.json",
+      "clusters": [
+        "cmi",
+        "fefferman",
+        "force-smoothness",
+        "evidence"
+      ],
+      "finding": "Machine-readable Priority 174 force-smoothness rebuttal adjudication with explicit rejected, not-established, and not-proved classifications.",
+      "anchors": "JSON findings and classification fields"
+    },
+    {
+      "path": "NavierStokesReview/evidence/source_tranche_rebuttal_force_smoothness_moment_boundary_2026-09-29.json",
+      "clusters": [
+        "methodology",
+        "endpoint",
+        "moments",
+        "force",
+        "residual"
+      ],
+      "finding": "Machine-readable Priority 161 source adjudication with exact Lean/manuscript anchors and explicit confirmed/not-established boundaries.",
+      "anchors": "generated JSON; 9 source records"
     },
     {
       "path": "NavierStokesReview/evidence/source_tranche_summary_2026-09-28.json",
@@ -953,6 +1009,62 @@
       ],
       "finding": "Human-readable Priority 155 direct source review of twelve Euler Gaussian heat, cylinder algebra, Gevrey, continuation, flow, and compactness modules.",
       "anchors": "1-58"
+    },
+    {
+      "path": "NavierStokesReview/src/audit/priority_161_rebuttal_force_smoothness_moment_boundary_adjudication_2026-09-29.md",
+      "clusters": [
+        "methodology",
+        "endpoint",
+        "moments",
+        "force",
+        "residual"
+      ],
+      "finding": "Human-readable adverse adjudication of the supplied rebuttal: confirms the endpoint correspondence gap, rejects the unsupported sole-Fredholm/iff escalation, and distinguishes derived force smoothness from unclosed paper-mechanism transport.",
+      "anchors": "1-150"
+    },
+    {
+      "path": "NavierStokesReview/src/audit/priority_162_barmoment_correction_state_vs_selected_field_source_review_2026-09-29.md",
+      "clusters": [
+        "moments",
+        "rank",
+        "cartesian-assembly",
+        "endpoint"
+      ],
+      "finding": "Direct review separates genuine correction-state barMoment/FiveRows identities from the still-unclosed equality identifying those observables with the final activated Cartesian field.",
+      "anchors": "source review; DefectIncrementBounds 214-220, 621-658; StateMomentBalances 956-978; CorrectionStep 1469-1498; NominalProfile 2078-2140"
+    },
+    {
+      "path": "NavierStokesReview/src/audit/priority_172_fefferman_semantic_network_2026-09-29.md",
+      "clusters": [
+        "cmi",
+        "fefferman",
+        "semantic-network",
+        "methodology"
+      ],
+      "finding": "Connected semantic audit of Fefferman's exact wording: physically reasonable, Hence, only if, Alternatively, Thus, and retaining the heart of the problem. Whole-space C and periodic D are kept as separate connected requirement packages. The selected Lean route is recorded positively, while the manuscript-specific five-moment endpoint transport remains CTR-005 and no literal failure is claimed.",
+      "anchors": "docs/navierstokes.txt:25-81; audit report sections 1-6"
+    },
+    {
+      "path": "NavierStokesReview/src/audit/priority_173_fefferman_c_connected_adjudication_2026-09-29.md",
+      "clusters": [
+        "cmi",
+        "fefferman",
+        "semantic-network",
+        "force-provenance"
+      ],
+      "finding": "Connected adjudication of Fefferman Alternative (C): periodicity is a branch choice, physically reasonable is tied to the full data and accepted-solution package, the selected Lean route contains explicit formal C components, and residual force provenance is semantic rather than an unstated independence predicate. Complete manuscript five-moment transport remains CTR-005.",
+      "anchors": "docs/navierstokes.txt:25-81; docs/navier-stokes openai.txt:109-124,252-321,984-1035"
+    },
+    {
+      "path": "NavierStokesReview/src/audit/priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.md",
+      "clusters": [
+        "cmi",
+        "fefferman",
+        "force-smoothness",
+        "ctr-005"
+      ],
+      "finding": "Adjudicates the force-smoothness rebuttal: velocity blow-up does not imply divergence of every residual summand; the manuscript describes multiple correction layers; the selected route has an actual residual-jet smooth-force construction; complete five-observable endpoint transport remains CTR-005.",
+      "anchors": "docs/navier-stokes openai.txt:109-124,695-733; NavierStokes/CandidateFromLimits.lean:28-112"
     },
     {
       "path": "NavierStokesReview/src/audit/priority_external_euler_foundation_source_review_2026-09-28.md",
@@ -45994,15 +46106,18 @@
       "reachable": true,
       "clusters": [
         "axis",
-        "candidate-packaging",
         "cartesian-assembly",
         "endpoint",
+        "force",
+        "jets",
+        "moments",
+        "physical-data",
         "pressure"
       ],
       "priority": 167,
       "status": "evidence_inspected",
-      "finding": "Witness is a proposition with candidate, force, consequence, decay, and blow-up fields; no selected Cartesian five-moment equality field is present.",
-      "anchors": "1121-1151; 1177-1181",
+      "finding": "Direct review confirms actual physical data and actualStageEstimates feed the selected endpoint. Witness exports force, consequences, blow-up, and limits but no named final (M,I,J,S,C_p) equality.",
+      "anchors": "1079-1098; 1121-1151",
       "source_flags": {
         "unsafe": false,
         "axiom_declaration": false,
@@ -49908,12 +50023,13 @@
       "clusters": [
         "endpoint",
         "force",
-        "jets"
+        "jets",
+        "residual"
       ],
-      "priority": 145,
+      "priority": 160,
       "status": "evidence_inspected",
-      "finding": "The specified force is constructed from the traced residual and actual normal jets, then proved equal to the activated residual.",
-      "anchors": "80-112",
+      "finding": "Direct review finds force smoothness derived from full residual derivative limits, activated-residual agreement before t=1, support, and derivative decay. This is not a proof that the manuscript's five-moment explanation has been transported.",
+      "anchors": "35-57; 80-148; 167-218",
       "source_flags": {
         "unsafe": false,
         "axiom_declaration": false,
@@ -54381,17 +54497,17 @@
       "imports_missing": 0,
       "reachable": false,
       "clusters": [
-        "axis",
         "cartesian-assembly",
         "endpoint",
         "jets",
+        "pressure",
         "profiles",
         "residual"
       ],
       "priority": 160,
       "status": "evidence_inspected",
-      "finding": "Reviewed source tranche: local Properties package smoothness, curl decomposition, divergence, extensions, jets, residual flatness, exterior zero, and angular growth; no M/I/J/S/Cp field observable.",
-      "anchors": "1-186",
+      "finding": "Direct review finds local selected schedule properties, smooth fields, pressure and residual flatness, exterior agreement, and local chart assembly. It does not export the selected Cartesian (M,I,J,S,C_p) observable equality.",
+      "anchors": "53-83; 100-124; 128-186",
       "source_flags": {
         "unsafe": false,
         "axiom_declaration": false,
@@ -54498,12 +54614,13 @@
         "endpoint",
         "force",
         "jets",
-        "residual"
+        "residual",
+        "stage-interface"
       ],
       "priority": 160,
       "status": "evidence_inspected",
-      "finding": "Builds all-order residual jet-rate schedules from stage estimates and cut bounds; no radial moment transport.",
-      "anchors": "AllResidualJetRates; allResidualJetRates_of_cutBounds; selected_schedule",
+      "finding": "Direct review finds selected concrete estimates producing a common schedule and all residual jet rates. This is a real rate derivation, not a free NativeBounds premise, but it does not identify those rates with the paper's final five observables.",
+      "anchors": "19-75; 80-125",
       "source_flags": {
         "unsafe": false,
         "axiom_declaration": false,
@@ -55456,18 +55573,16 @@
       "imports_missing": 0,
       "reachable": true,
       "clusters": [
-        "axis",
         "cartesian-assembly",
         "endpoint",
         "force",
         "jets",
-        "residual",
-        "time"
+        "residual"
       ],
       "priority": 161,
       "status": "evidence_inspected",
-      "finding": "Builds periodicVelocity and periodicResidual from spatially localised fields, proves local equality to cut fields, divergence freedom, residual jet transfer, boundary limits, speed unboundedness, and candidate-force packaging. It does not compute the final selected field's five paper observables.",
-      "anchors": "28-106; 119-164; 179-245; 267-368; 388-401",
+      "finding": "Direct review finds the candidate force assembled from residual limits, smooth extensions, divergence, periodicity, and the axis-growth premise. It does not make the force smoothness equivalent to a final five-moment equality.",
+      "anchors": "338-365",
       "source_flags": {
         "unsafe": false,
         "axiom_declaration": false,
@@ -55704,12 +55819,15 @@
       "imports_missing": 0,
       "reachable": false,
       "clusters": [
-        "moments"
+        "corrections",
+        "moments",
+        "profiles",
+        "rank"
       ],
-      "priority": 118,
-      "status": "source_indexed_review_queued",
-      "finding": "Source-indexed path; no declaration-level semantic review record yet.",
-      "anchors": "",
+      "priority": 138,
+      "status": "evidence_inspected",
+      "finding": "Direct review finds abstract compatible moment-repair iteration, limit compatibility, and small-solution existence. It does not identify the selected mixed Cartesian endpoint with the five paper observables.",
+      "anchors": "inverse_compatible; iteration_compatible; iterates_compatible; limits_compatible; exists_compatible_small_solutions",
       "source_flags": {
         "unsafe": false,
         "axiom_declaration": false,
@@ -55728,12 +55846,14 @@
       "imports_missing": 0,
       "reachable": false,
       "clusters": [
-        "moments"
+        "corrections",
+        "moments",
+        "profiles"
       ],
       "priority": 118,
-      "status": "source_indexed_review_queued",
-      "finding": "Source-indexed path; no declaration-level semantic review record yet.",
-      "anchors": "",
+      "status": "evidence_inspected",
+      "finding": "Direct review finds contraction and convergent abstract moment-repair iterates under stated hypotheses. It does not supply the final selected-field transport theorem.",
+      "anchors": "21-; exists_small_solution_with_iterates",
       "source_flags": {
         "unsafe": false,
         "axiom_declaration": false,
@@ -56669,11 +56789,11 @@
         "cartesian-assembly",
         "endpoint",
         "pressure",
-        "support"
+        "time"
       ],
       "priority": 160,
       "status": "evidence_inspected",
-      "finding": "Shows late-time local pressure agreement and packages a local candidate; local agreement is not global tsum/curl/localisation/periodisation/barMoment transport.",
+      "finding": "Direct review finds late-time compact-pressure/local-field agreement and a local theorem with a compact candidate. It does not prove selected-field five-moment transport or absolute pressure-Poisson semantics.",
       "anchors": "20-50",
       "source_flags": {
         "unsafe": false,
@@ -57611,15 +57731,14 @@
       "reachable": false,
       "clusters": [
         "cartesian-assembly",
-        "periodicity",
         "pressure",
         "residual",
-        "support"
+        "time"
       ],
       "priority": 150,
       "status": "evidence_inspected",
-      "finding": "Reviewed source tranche: conditional translation covariance, divergence preservation, and forced residual preservation under supported periodization; no five-observable transport.",
-      "anchors": "1-153",
+      "finding": "Direct review finds translation, derivative, divergence, pressure, Laplacian, advection, and residual periodisation identities. These transport the PDE operator, not the paper's radial five-moment observables.",
+      "anchors": "32-40; 46-114; 117-150",
       "source_flags": {
         "unsafe": false,
         "axiom_declaration": false,

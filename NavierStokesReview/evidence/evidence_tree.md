@@ -62,6 +62,10 @@
 ├── 📄 cutoff_commutator_source_scan_2026-09-27.md
 ├── 📄 cutoff_commutator_resolution_audit_2026-09-29.json
 ├── 📄 cutoff_commutator_resolution_audit_2026-09-29.md
+├── 📄 cutoff_commutator_cuda_full_2026-09-29.csv
+├── 📄 cutoff_commutator_cuda_full_2026-09-29.json
+├── 📄 cutoff_commutator_cuda_full_2026-09-29.md
+├── 📄 cutoff_commutator_cuda_full_2026-09-29.png
 ├── 📄 download_snapshot_comparison.json
 ├── 📄 endpoint_contract_nonimplication_2026-09-24.md
 ├── 📄 environment_build_Theorem_2026-09-28.err.log
@@ -260,10 +264,16 @@
 ├── 📄 whole_space_uniqueness_audit_2026-09-24.md
 ├── 📄 source_tranche_full_closure_moment_symbol_census_2026-09-29.json
 ├── 📄 source_tranche_priority_169_invariant_force_adjudication_2026-09-29.json
-├── 📄 source_tranche_priority_171_selected_observable_type_boundary_2026-09-29.json
-└── 📄 source_tranche_priority_172_fefferman_semantic_network_2026-09-29.json
-```
+├── 📄 priority_169_connected_cmi_endpoint_adjudication_2026-09-29.json
+├── 📄 priority_170_invariant_debt_to_force_trace_2026-09-29.json
 ├── 📄 repository_map_2026-09-27.dot
 ├── 📄 repository_map_2026-09-27.json
 ├── 📄 repository_map_2026-09-27.md
 ├── 📄 repository_map_2026-09-27.tex
+├── 📄 source_tranche_priority_171_selected_observable_type_boundary_2026-09-29.json
+├── 📄 source_tranche_priority_172_fefferman_semantic_network_2026-09-29.json
+├── 📄 source_tranche_priority_173_fefferman_c_connected_adjudication_2026-09-29.json
+├── 📄 priority_173_fefferman_c_connected_adjudication_2026-09-29.md
+├── 📄 source_tranche_priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.json
+└── 📄 priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.md
+```

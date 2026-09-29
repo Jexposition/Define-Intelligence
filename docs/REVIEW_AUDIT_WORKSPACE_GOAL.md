@@ -2326,31 +2326,185 @@ Evidence:
 NavierStokesReview/src/audit/priority_169_declaration_level_invariant_force_adjudication_2026-09-29.md;
 NavierStokesReview/evidence/source_tranche_priority_169_invariant_force_adjudication_2026-09-29.json.
 
-## Priority 171 goal control: selected observable domain
+## Priority 169b goal control: connected CMI endpoint adjudication
 
-The selected endpoint is a genuine `potentialSum`/curl/localisation/
-periodisation/time-activation construction. The remaining boundary is that
-`barMoment` is defined on `ScalarField (Point P)` through
-`PressureStream.torusAverage`, while `Witness` supplies activated Cartesian
-fields. A representation and transport theorem is required before the paper's
-five observables can be credited to the endpoint.
+Fefferman's “physically reasonable” language is now treated as a connected
+acceptance specification. For the whole-space branch, the force and initial
+data conditions (4)--(5) and the accepted solution conditions (6)--(7) must
+be considered together. The periodic wording introduces a branch choice, but
+once selected, (8)--(11) remain mandatory.
 
-- [x] Bind the selected field and operator definitions.
-- [x] Bind the `barMoment` domain and radial formula.
-- [ ] Resolve the value-level equality with `(M,I,J,S,C_p)`.
-- [ ] Keep CTR-005 at **NOT ESTABLISHED** until that obligation is resolved.
+The selected Lean route is concrete: actual physical data and cycle invariants
+feed finite residual rates; those rates feed vanishing joint residual jets;
+the endpoint extension proves a smooth force; candidate properties and
+whole-space comparison then feed the C-shaped existential proposition.
+
+The adverse finding remains CTR-005. No selected-field theorem has been
+located that transports the manuscript's five observables (M,I,J,S,Cp)
+through the completed sums, Cartesian curl, localisation, periodisation,
+pressure, and force construction. This omission establishes a
+paper-to-endpoint correspondence gap. It does not, without a selected-value
+mismatch or impossibility theorem, establish that the force is nonsmooth or
+that Fefferman Alternative (C) is false.
+
+The next required work is a value-level bridge search and an imported axiom
+replay using the pinned Lake executable. The timeout of an axiom replay must
+not be reported as an axiom failure.
+
+The selected-path probe replay is now source-checked: the four endpoint and
+moment-interface probes compiled with exit code 0. This confirms the audit
+boundary, not a selected nonzero moment defect. The remaining bridge search
+must follow `H.debt`, `H.masses`, `FiveRowRank`, `physicalMoments`, the selected
+potential sums, curl/localisation, periodisation, activation, pressure, and
+force extension. In particular, `ZeroMassesOn` must not be silently treated as
+the five-component `(M,I,J,S,C_p)` identity because its declaration exposes
+two radial mean constraints.
+
+After the semantic crosswalk is complete, consolidate the controlling
+documents, cross-check every evidence link and claim status, and only then
+move superseded material to a non-public archive. No source material is to be
+deleted, and archive content must not enter the public commit.
 
 Evidence:
-`NavierStokesReview/src/audit/priority_171_selected_observable_type_boundary_2026-09-29.md`;
-`NavierStokesReview/evidence/source_tranche_priority_171_selected_observable_type_boundary_2026-09-29.json`.
+NavierStokesReview/src/audit/priority_169_connected_cmi_endpoint_adjudication_2026-09-29.md;
+NavierStokesReview/evidence/priority_169_connected_cmi_endpoint_adjudication_2026-09-29.json.
 
-Priority 172 control: read `docs/navierstokes.txt:25-81` as one connected
-specification. Keep the inspected C-shaped Lean route separate from the
-complete paper-to-endpoint claim, and keep `CTR-005` at **NOT ESTABLISHED**
-until the selected Cartesian field is linked to the full five-observable
-semantics. Do not promote this gap to a selected mismatch, force
-nonsmoothness, literal CMI failure, or `False` without a direct theorem.
+## Priority 170 goal control: invariant-backed force route and remaining bridge
+
+The audit now distinguishes three propositions. The concrete selected route
+derives residual rates from actual invariant and physical data, propagates them
+to vanishing residual jets, and constructs a smooth force. This is not an empty
+top-level rate assumption. Separately, the exported `Witness` still lacks a
+theorem identifying the completed selected Cartesian fields with the manuscript
+observables ((M,I,J,S,C_p)). The latter remains CTR-005.
+
+Do not infer from the missing identity that the selected force is nonsmooth, the
+formal C-shaped endpoint is false, or Lean contains a contradiction. Those
+stronger findings require a selected-value mismatch, impossibility theorem, or
+failed explicit Fefferman premise. Continue the value-level search through the
+actual sums, curl, localisation, periodisation, pressure, and activation.
 
 Evidence:
-`NavierStokesReview/src/audit/priority_172_fefferman_semantic_network_2026-09-29.md`;
-`NavierStokesReview/evidence/source_tranche_priority_172_fefferman_semantic_network_2026-09-29.json`.
+NavierStokesReview/src/audit/priority_170_invariant_debt_to_force_trace_2026-09-29.md;
+NavierStokesReview/evidence/priority_170_invariant_debt_to_force_trace_2026-09-29.json.
+
+## Priority 171 goal control: resolved 3D diagnostic, not selected-field proof
+
+The tracked `cutoff_commutator_scan.py` instrument has now run on the CUDA
+device using full three-dimensional Cartesian volumes. It swept three grid
+resolutions, three stream scales, and two axial modulations, and emitted a
+plot plus JSON, CSV, and Markdown evidence. The numerical defect is stable
+for the declared diagnostic profile and the independently computed finite-
+difference curl and divergence errors decrease under refinement.
+
+This result is useful evidence that the explicit cutoff-gradient commutator
+can alter a declared profile's integrated mass curve. It is not evidence that
+the exact selected Lean field has nonzero `(M,I,J,S,C_p)` defect. The output
+must remain linked as a diagnostic boundary until the actual `ASum`/`BSum`/
+`PSum`, periodisation, `torusAverage`, `barMoment`, and axis route are bound
+to the instrument.
+
+Evidence:
+
+- `NavierStokesReview/evidence/cutoff_commutator_cuda_full_2026-09-29.md`
+- `NavierStokesReview/evidence/cutoff_commutator_cuda_full_2026-09-29.json`
+- `NavierStokesReview/evidence/cutoff_commutator_cuda_full_2026-09-29.csv`
+- `NavierStokesReview/evidence/cutoff_commutator_cuda_full_2026-09-29.png`
+
+## Priority 171 goal control: bind the selected observable domain
+
+The live source trace confirms that the selected endpoint is not merely a
+profile alias: `Witness` constructs actual `potentialSum` fields, applies the
+mixed Cartesian curl/localisation and periodisation route, and time-activates
+the resulting velocity and pressure. It also confirms a precise remaining
+boundary. `DefectIncrementBounds.barMoment` is defined on
+`ScalarField (Point P)` and uses `PressureStream.torusAverage`, whereas the
+endpoint supplies activated Cartesian fields. The missing work is therefore an
+explicit representation and transport theorem, not an assumption that the
+upstream moment modules are dead.
+
+- [x] Bind `Witness` `ASum`/`BSum`/`PSum` and the selected field expressions.
+- [x] Bind `potentialSum`, cutoff commutator, periodisation, and activation.
+- [x] Bind the exact `barMoment` domain and radial-integral formula.
+- [ ] Construct or refute the value-level representation from the completed
+  selected Cartesian fields to `(M,I,J,S,C_p)`.
+- [ ] Keep CTR-005 at **NOT ESTABLISHED** until that value-level obligation is
+  resolved; do not infer a defect from the type boundary alone.
+
+Evidence:
+
+- `NavierStokesReview/src/audit/priority_171_selected_observable_type_boundary_2026-09-29.md`
+- `NavierStokesReview/evidence/source_tranche_priority_171_selected_observable_type_boundary_2026-09-29.json`
+## Priority 172 goal control: Fefferman's connected semantic specification
+
+The audit must treat Fefferman's wording as a connected specification, not as
+isolated equation citations. The source chain is:
+
+```text
+fluid model and unknowns
+  -> given initial datum and given externally applied force
+  -> Newton-law and incompressibility interpretation
+  -> "physically reasonable" growth restriction
+  -> Hence: all-order decay conditions (4),(5)
+  -> "only if": global smoothness and bounded energy (6),(7)
+  -> Alternatively / Thus: a separate periodic branch (8),(9)
+  -> accepted periodic solutions (10),(11)
+  -> "retaining the heart": alternatives (A)--(D) quantify over the
+     connected data, equation, regularity, domain, and energy package
+```
+
+- [x] Preserve Fefferman's exact wording in `docs/navierstokes.txt:25-81`;
+  do not paraphrase the requirements into a C-only equation checklist.
+- [x] Define the semantic role of “physically reasonable”, “only if”,
+  “Alternatively”, “Thus”, and “retaining the heart” in the audit record.
+- [x] Cross-reference the whole-space C package `(4),(5),(6),(7)` and the
+  periodic D package `(8),(9),(10),(11)` as separate connected branches.
+- [x] Record that the inspected Lean route has a concrete residual-limit,
+  smooth-force, and comparator construction, rather than an empty shell.
+- [ ] Trace whether the manuscript's five-moment repair identities are linked
+  to the final selected fields and to the all-order force regularity route.
+- [ ] Do not promote `CTR-005` to a literal C/D failure without a failed
+  connected premise, selected mismatch, impossibility theorem, or contradiction.
+
+Evidence:
+
+- `NavierStokesReview/src/audit/priority_172_fefferman_semantic_network_2026-09-29.md`;
+- `NavierStokesReview/evidence/source_tranche_priority_172_fefferman_semantic_network_2026-09-29.json`;
+- `docs/CMI_OpenAI_Full_Semantic_Crosswalk.md`.
+
+## Priority 173 goal control: connected CMI package and force provenance
+
+- [x] Treat “may look for spatially periodic solutions” as a branch choice,
+  not a waiver of `(8)--(11)`.
+- [x] Audit C as the connected whole-space package `(1)--(7)`, including
+  data decay `(4),(5)`, accepted global smoothness `(6)`, and bounded energy
+  `(7)`, rather than only matching existential symbols.
+- [x] Verify the selected Lean route has explicit smooth-force, decay,
+  pre-singular PDE, initial-data, energy, and comparator-nonexistence records.
+- [x] Treat “given, externally applied” as physical force provenance, without
+  inventing a formal independence predicate absent from the displayed C target.
+- [x] Correct the manuscript reading: its background residual is stated to be
+  singular, then pulses and further corrections are claimed to make the total
+  residual smooth.
+- [x] Preserve `CTR-005`: complete manuscript five-moment transport into the
+  selected endpoint remains unestablished.
+- [ ] Trace the five-moment-dependent residual estimates into the exact
+  hypotheses used by `CandidateFromLimits`.
+
+Evidence:
+
+- `NavierStokesReview/src/audit/priority_173_fefferman_c_connected_adjudication_2026-09-29.md`;
+- `NavierStokesReview/evidence/source_tranche_priority_173_fefferman_c_connected_adjudication_2026-09-29.json`.
+
+Priority 174 adjudicates the force-smoothness rebuttal against the selected
+source path. It preserves the distinction between a concrete residual-jet
+construction and the still-missing final selected-Cartesian five-observable
+identity. It prohibits the unsupported inferences that velocity blow-up forces
+every residual summand to diverge, that five moments are the only cancellation
+operation in the manuscript, or that `force_smooth` is an unlinked generic
+contract.
+
+Evidence:
+
+- `NavierStokesReview/src/audit/priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.md`;
+- `NavierStokesReview/evidence/source_tranche_priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.json`.

@@ -3216,12 +3216,48 @@ Evidence: `NavierStokesReview/src/audit/priority_164_cycle_invariant_residual_je
 The controlling whole-source document is
 `docs/CMI_OpenAI_Full_Semantic_Crosswalk.md`.
 
+## Priority 173: connected CMI package and force-provenance adjudication
+
+- [x] Treat “may look for spatially periodic solutions” as a branch choice,
+  not permission to omit `(8)--(11)`.
+- [x] Audit C as the connected whole-space package `(1)--(7)`, including
+  data decay, global smoothness, bounded energy, and the same-data
+  nonexistence conclusion.
+- [x] Record the selected Lean route through smooth force, force decay,
+  pre-singular PDE, initial data, energy, and comparator exclusion.
+- [x] Record “given, externally applied” as a physical provenance condition,
+  while not inventing an independence predicate absent from C's formal text.
+- [x] Correct the manuscript reading: background residual failure is followed
+  by claimed pulse and further-correction cancellation.
+- [x] Keep formal C-shaped compliance separate from manuscript five-moment
+  mechanism fidelity: the latter remains `NOT ESTABLISHED (CTR-005)`.
+- [ ] Trace five-moment/rank data into the exact residual-rate hypotheses
+  used by `CandidateFromLimits`.
+
+Evidence: `NavierStokesReview/src/audit/priority_173_fefferman_c_connected_adjudication_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_173_fefferman_c_connected_adjudication_2026-09-29.json`.
+
 It is the source ledger for the complete Fefferman specification and the
 complete extracted OpenAI manuscript. It records source hashes, every
 manuscript section heading from Sections 1 through 10 and Appendices A-C,
 Fefferman's equations, admissibility conditions, alternatives, definitions,
 and the dependency relations that must hold before a CMI claim can be
 credited.
+
+### Priority 174: force-smoothness rebuttal adjudication
+
+The force-smoothness rebuttal has been source-checked against the actual
+selected Lean route. The audit now records that `force_smooth` consumes the
+traced actual residual, derivative recurrence, and locally uniform residual-jet
+limits; it is not an empty `NativeBounds` assumption. The audit also records
+that velocity blow-up does not imply divergence of every residual summand and
+that the manuscript presents the five radial equations as one correction layer
+within a larger residual-cancellation architecture. The missing result remains
+the final selected-Cartesian identification of the manuscript observables
+`(M,I,J,S,C_p)`, not a proved force singularity.
+
+Evidence: `NavierStokesReview/src/audit/priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.json`.
 
 - [x] Inventory and hash the two source texts and their PDF counterparts.
 - [x] Map Fefferman's equations, force/initial-data decay, global smoothness,

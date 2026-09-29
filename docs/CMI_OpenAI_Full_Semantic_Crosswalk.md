@@ -559,6 +559,25 @@ This proves only:
 * upstream debt and correction data remain real and are used;
 * the complete value-level transport theorem remains unlocated or unproved in this audit.
 
+The intermediate names must also be kept distinct. `CorrectionState.ZeroMasses`
+and `GaugeMassPreservation.ZeroMassesOn` expose two radial mean constraints:
+
+\[
+\operatorname{radialMoment}_2(u^{\rm mean}.\mathrm{angular})=0,
+\qquad
+\operatorname{radialMoment}_1(u^{\rm mean}.\mathrm{axial})=0.
+\]
+
+`FiveProfileMoments.physicalMoments`, by contrast, is a five-component vector
+of profile integrals. `FiveRowRank.FiveRows` is another finite-dimensional
+five-row repair predicate. The source contains genuine relationships among
+these intermediate structures, but the inspected selected path contains no
+theorem identifying the two `ZeroMassesOn` constraints, the three-component
+cycle debt, or the `FiveRowRank` rows with the final selected-field vector
+\((M,I,J,S,C_p)\). Treating “zero masses”, “zero debt”, “five rows”, and the
+paper's five cumulative observables as interchangeable would therefore be a
+new overclaim.
+
 ### 5.4 Force smoothness does not settle manuscript fidelity
 
 The actual Lean route has the structure
@@ -938,6 +957,15 @@ Therefore the accurate conclusion is:
 
 That is not saying the moments are unimportant. It is saying the Lean source currently proves a stronger residual-rate route without exposing the theorem that identifies that route with the paper’s stated five-moment construction.
 
+The CUDA diagnostic is consistent with the need for this boundary to be
+checked. On an explicit nonseparable axisymmetric stream and the source
+cutoff, the three-dimensional calculation produces a stable integrated
+commutator defect across the tested resolutions, scales, and modulations.
+That demonstrates a mechanism in the declared diagnostic profile. It does not
+identify the profile with the selected `ASum`/`BSum`/`PSum`, nor does it prove
+that the selected Lean field has a nonzero defect. The full selected-field
+binding remains a separate mathematical obligation.
+
 I also checked the extracted OpenAI manuscript and did not find the exact claim that the construction “would never occur in physical reality.” I will not attribute that statement without the precise page passage.
 
 ## Priority 169 declaration-level correction
@@ -975,3 +1003,95 @@ Updated:
 Validation passed: JSON parsed, whitespace check passed, and no hanging Lean, Lake, or Python processes remain.
 
 Next action: continue tracing whether the invariant-backed residual rates are definitionally or theoremically derived from the manuscript’s five observables.
+## Priority 172: Fefferman's complete semantic dependency network
+
+The audit now records Fefferman's specification as a connected semantic
+network rather than as isolated equation references. The controlling source
+text is `docs/navierstokes.txt:25-81`; the detailed node-and-edge record is
+[`priority_172_fefferman_semantic_network_2026-09-29.md`](../NavierStokesReview/src/audit/priority_172_fefferman_semantic_network_2026-09-29.md).
+
+The critical connections are:
+
+1. The Newton-law explanation of (1), the incompressibility explanation of
+   (2), and the description of `u^o` and `f` as given data define the physical
+   problem object before any alternative is stated.
+2. “For physically reasonable solutions ... Hence” connects the stated
+   physical concern about growth at spatial infinity to the all-order data
+   conditions (4) and (5).
+3. “We accept ... only if” makes global smoothness (6) and bounded energy (7)
+   necessary for an accepted whole-space solution, not optional annotations.
+4. “Alternatively ... we may look for spatially periodic solutions” introduces
+   a separate branch. “Thus” changes the data conditions to (8), (9), and the
+   next “We then accept” applies (10), (11) to the periodic solution class.
+5. “Such smooth, physically reasonable solutions” and “retaining the heart of
+   the problem” carry this complete framework into A--D. C and D therefore
+   cannot be audited by citing only (1)--(3).
+
+The selected Lean path does contain a concrete residual-limit-to-smooth-force
+route and a whole-space comparison contradiction. That is why the audit must
+not call the C-shaped proposition a compiler trick or an empty endpoint. The
+remaining finding is narrower and still material: no inspected theorem
+identifies the completed selected Cartesian field, pressure, and force with
+every manuscript-level consequence of `(M,I,J,S,C_p)` after the selected
+sum/curl/localisation/periodisation/activation chain. This leaves the
+paper-specific mechanism `NOT ESTABLISHED (CTR-005)`.
+
+This does not, by itself, prove that the formal C-shaped proposition is false.
+It also does not prove that the manuscript mechanism is machine-checked. A
+literal C failure requires a selected failed admissibility premise, a concrete
+selected mismatch, an impossibility theorem, or a contradiction. The complete
+adjudication and exact evidence boundary are in Priority 172.
+## Priority 173: connected Alternative (C) adjudication after the full semantic reading
+
+The phrase “may look for spatially periodic solutions” is a branch choice. It
+does not waive Fefferman's requirements. Once the whole-space branch is
+selected, C carries the connected package `(1)--(7)`; once the periodic branch
+is selected, D carries `(8)--(11)`. The phrase “physically reasonable” is
+defined operationally in the source by the connected data decay or periodicity,
+global smoothness, and energy conditions. The exact wording remains in
+`docs/navierstokes.txt:25-81`; this audit does not replace it with a shorter
+equation-only paraphrase.
+
+The complete adjudication is recorded in
+`NavierStokesReview/src/audit/priority_173_fefferman_c_connected_adjudication_2026-09-29.md`.
+Its key distinction is:
+
+\[
+\text{formal C-shaped proposition}
+\neq
+\text{proof that Lean reproduces the manuscript's five-moment mechanism}.
+\]
+
+The selected Lean route contains explicit smooth-force, decay, pre-singular
+PDE, initial-data, energy, and comparator-nonexistence components. Therefore
+the formal C-shaped proposition cannot be described as only an existential
+wrapper. At the same time, Fefferman's words “given, externally applied” carry
+a physical force-provenance meaning that is not encoded as a separate formal
+independence predicate. Residual-defined forcing is consequently a material
+semantic objection, but not by itself a proof that the displayed C predicate
+is false.
+
+The OpenAI manuscript itself says that the uncorrected background residual is
+singular and then claims that pulse fluxes and further corrections make the
+total residual smooth. It does not support the stronger statement that the
+full corrected construction “would never occur in physical reality”. The
+remaining paper-to-endpoint finding is narrower and stronger: the manuscript's
+five-moment matching and correction mechanism is load-bearing, but no inspected
+theorem transports every such consequence through the selected Cartesian
+fields, sums, curl, localisation, periodisation, pressure, force, and endpoint
+comparison. That remains `NOT ESTABLISHED (CTR-005)`, without claiming a
+selected mismatch or literal C failure.
+
+Evidence: `NavierStokesReview/evidence/source_tranche_priority_173_fefferman_c_connected_adjudication_2026-09-29.json`.
+
+## Priority 174: force-smoothness rebuttal
+
+Priority 174 source-checks the claim that the selected force is smooth only by
+an unlinked jet interface. The selected route instead consumes the actual
+residual recurrence and locally uniform derivative limits. The manuscript also
+does not support the stronger claim that five moments are its only cancellation
+operation. The unresolved correspondence is the final selected-Cartesian
+transport of `(M,I,J,S,C_p)` into `Witness`.
+
+Evidence: `NavierStokesReview/src/audit/priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.md`;
+`NavierStokesReview/evidence/source_tranche_priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.json`.

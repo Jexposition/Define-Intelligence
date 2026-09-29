@@ -1,0 +1,56 @@
+{
+  "record": "priority_173_fefferman_c_connected_adjudication",
+  "date": "2026-09-29",
+  "status": "source_grounded_adjudication",
+  "sources": {
+    "cmi": "docs/navierstokes.txt:25-81",
+    "openai_manuscript": [
+      "docs/navier-stokes openai.txt:109-124",
+      "docs/navier-stokes openai.txt:252-321",
+      "docs/navier-stokes openai.txt:984-1035"
+    ],
+    "lean": [
+      "NavierStokes/ComparatorR3Theorem.lean:21-44",
+      "NavierStokes/R3/ProblemStatement.lean:90-136",
+      "NavierStokes/R3/ComparatorBridge.lean:22-88"
+    ]
+  },
+  "findings": [
+    {
+      "id": "F173-1",
+      "claim": "Fefferman's 'may look for spatially periodic solutions' is a branch choice, not a waiver",
+      "status": "established",
+      "evidence": "The source replaces (4),(5) with (8),(9) and then imposes (10),(11)."
+    },
+    {
+      "id": "F173-2",
+      "claim": "Fefferman's physically reasonable language connects data admissibility to global accepted-solution conditions",
+      "status": "established",
+      "evidence": "'Hence' links growth concern to (4),(5); 'only if' makes (6),(7) necessary."
+    },
+    {
+      "id": "F173-3",
+      "claim": "The selected Lean path proves more than a bare existential wrapper",
+      "status": "established_on_inspected_path",
+      "evidence": "CandidateProperties, force decay bridge, comparator target, and nonexistence theorem are all explicit."
+    },
+    {
+      "id": "F173-4",
+      "claim": "Residual force provenance is a semantic physical objection but not an explicit formal independence predicate in C",
+      "status": "established_as_adjudication",
+      "evidence": "The displayed C predicate requires smooth f satisfying (4),(5), not an independence relation from the constructed trajectory."
+    },
+    {
+      "id": "F173-5",
+      "claim": "The manuscript's complete five-moment paper-to-endpoint correspondence is exported",
+      "status": "not_established_CTR_005",
+      "evidence": "No inspected theorem identifies completed selected Cartesian fields with every manuscript five-moment consequence."
+    }
+  ],
+  "negative_claims_not_proved": [
+    "literal Alternative (C) is false",
+    "the selected force is nonsmooth",
+    "the selected concrete five-moment defect is nonzero",
+    "the repository contains a kernel contradiction"
+  ]
+}

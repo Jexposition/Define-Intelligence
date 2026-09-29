@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-29
 **Repository:** `Jexposition/Define-Intelligence`
-**Branch:** `review/cmi-first-navier-stokes-2026-09-22`
+**Branch:** `review/cmi-first-navier-stokes-2026-09-29`
 
 ## Purpose
 
@@ -41,16 +41,17 @@ the current record**. This is an adverse finding against the advertised
 paper-to-Lean claim. It is not a repair request, and it is not by itself a
 proof of a nonzero defect, impossibility, or `False`.
 
-## Live worktree refresh (2026-09-29)
+## Live worktree refresh (2026-09-29, refreshed)
 
-The current main worktree contains **77** status entries: **8 tracked
-modifications** and **69 untracked paths**. This is not a publication batch.
+The current worktree contains a mixed set of tracked documentation/register
+changes and untracked evidence, scans, source inputs, and scratch material.
+This is not a publication batch.
 The tracked modifications are dated evidence bundles and reconciliation maps;
 they require content and provenance checks before staging. The untracked set
 contains source inputs, review evidence, exploratory numerical outputs, build
 logs, tree indexes, scratch material, and one user-owned source file.
 
-The current curated public worktree contains five untracked generated tree or
+The current curated public worktree contains untracked generated tree or
 closure indexes. They remain outside the public commit until their generation
 inputs and links are verified.
 

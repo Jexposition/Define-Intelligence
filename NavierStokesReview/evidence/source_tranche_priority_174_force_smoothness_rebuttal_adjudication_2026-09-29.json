@@ -1,0 +1,74 @@
+{
+  "priority": 174,
+  "date": "2026-09-29",
+  "title": "Force smoothness rebuttal adjudication",
+  "scope": {
+    "paper": [
+      "docs/navier-stokes openai.txt",
+      "docs/navierstokes.txt"
+    ],
+    "lean": [
+      "NavierStokes/CandidateFromLimits.lean",
+      "NavierStokes/ActualCandidateAssembly.lean",
+      "NavierStokes/MixedCandidateWitness.lean",
+      "NavierStokes/MixedCandidateAssembly.lean",
+      "NavierStokes/GluedStageEstimates.lean",
+      "NavierStokes/ActualCycleResidualBounds.lean",
+      "NavierStokes/DefectIncrementBounds.lean"
+    ]
+  },
+  "findings": [
+    {
+      "claim": "Velocity L-infinity blow-up implies every summand of the momentum residual diverges.",
+      "status": "rejected",
+      "reason": "The implication is not valid in general, and the manuscript explicitly allows divergent individual terms whose sum and derivatives extend smoothly.",
+      "evidence": ["docs/navier-stokes openai.txt:109-124"]
+    },
+    {
+      "claim": "The five-moment system is the only cancellation mechanism in the manuscript.",
+      "status": "rejected",
+      "reason": "The manuscript describes a multi-stage correction architecture including pulse stress cancellation, signed amplitudes, auxiliary-time inversion, pressure/mean correction, radial corrections, cutoffs, and residual recomputation. The five radial equations are one explicit correction step.",
+      "evidence": ["docs/navier-stokes openai.txt:695-733", "docs/navier-stokes openai.txt:291-303"]
+    },
+    {
+      "claim": "force_smooth is derived from an unlinked or free-standing NativeBounds interface.",
+      "status": "rejected",
+      "reason": "The force is built from a traced actual residual. Smoothness consumes the actual derivative recurrence and locally uniform residual-jet limits. The selected assembly supplies physicalData, actualStageEstimates, and a schedule containing VanishingJointJets.",
+      "evidence": [
+        "NavierStokes/CandidateFromLimits.lean:28-55",
+        "NavierStokes/CandidateFromLimits.lean:80-112",
+        "NavierStokes/ActualCandidateAssembly.lean:1079-1098",
+        "NavierStokes/MixedCandidateWitness.lean:26-31",
+        "NavierStokes/MixedCandidateAssembly.lean:76-88"
+      ]
+    },
+    {
+      "claim": "The final selected endpoint proves the paper-specific five-observable transport identity.",
+      "status": "not_established",
+      "reason": "Witness packages the selected sums, extensions, forcing, CandidateProperties, CandidateConsequences, derivative limits, and blow-up, but no inspected declaration identifies the final activated Cartesian observables with (M,I,J,S,Cp). Intermediate barMoment and FiveRows identities are not definitionally final-field identities.",
+      "evidence": [
+        "NavierStokes/ActualCandidateAssembly.lean:1121-1151",
+        "NavierStokes/ActualCandidateAssembly.lean:1177-1180",
+        "NavierStokes/DefectIncrementBounds.lean:214-220",
+        "NavierStokes/DefectIncrementBounds.lean:773-797"
+      ]
+    },
+    {
+      "claim": "The missing endpoint identity alone proves the selected force is nonsmooth or Fefferman Alternative (C) is false.",
+      "status": "not_proved",
+      "reason": "Non-entailment at the Witness type is a paper-to-code correspondence gap, not a value-level counterexample. A selected mismatch, impossibility theorem, or failed residual bound has not been derived.",
+      "evidence": [
+        "NavierStokes/CandidateFromLimits.lean:86-112",
+        "NavierStokes/ActualCandidateAssembly.lean:1121-1151"
+      ]
+    }
+  ],
+  "classification": {
+    "selected_residual_jet_and_smooth_force_route": "established_on_inspected_path",
+    "paper_specific_five_moment_transport_to_selected_cartesian_field": "NOT_ESTABLISHED_CTR-005",
+    "selected_field_mismatch": "not_proved",
+    "force_nonsmoothness": "not_proved",
+    "literal_cmi_alternative_c_failure": "not_proved",
+    "lean_kernel_contradiction": "not_proved"
+  }
+}

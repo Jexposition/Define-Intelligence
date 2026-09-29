@@ -7,8 +7,8 @@ Generated from the hardened source map. This is a review register, not a proof c
 `reachable` means that the source import graph reaches the module from captured roots. `evidence_inspected` means that an explicit source-and-line review record exists in this register. Neither status alone proves that a paper-level mathematical identity is transported to the exported endpoint.
 
 - Modules: **2794**; endpoint-graph reachable: **588**; outside that graph: **2206**.
-- Explicitly inspected source records: **904**.
-- Supplemental review artifacts (not Lean module rows): **70**.
+- Explicitly inspected source records: **906**.
+- Supplemental review artifacts (not Lean module rows): **80**.
 - Reachable but not semantically inspected: **0**.
 - Source rows with a `sorry` token: **10**. This is a census flag, not endpoint contamination proof.
 - Missing project import edges recorded by the map: **0**.
@@ -48,6 +48,7 @@ These files are explicit audit evidence but are not counted as Lean modules or e
 | `NavierStokesReview/evidence/selected_transport_audit_full_2026-09-28.md` | Full-workspace declaration triage after comment stripping: 34,583 declarations, 11 joint candidates, all 11 auditor-authored review completions, and no promoted transport/disproof result. |
 | `NavierStokesReview/evidence/selected_transport_audit_openai_source_2026-09-28.json` | Machine-readable OpenAI-source-only selected-transport audit; all escalation verdict flags remain false. |
 | `NavierStokesReview/evidence/selected_transport_audit_openai_source_2026-09-28.md` | OpenAI-source-only declaration triage over NavierStokes/: 31,472 declarations, zero joint candidates, and zero positive manual candidates under the detector. This is a provenance boundary and triage result, not an absence theorem. |
+| `NavierStokesReview/evidence/source_tranche_barmoment_correction_state_vs_selected_field_2026-09-29.json` | Machine-readable Priority 162 source review records the correction-state versus final selected-field type boundary without claiming a nonzero defect or impossibility. |
 | `NavierStokesReview/evidence/source_tranche_comparator_eulerproof_2026-09-28.json` | Machine-readable Priority 134 source identity, declaration counts, admitted-token results, and bounded classifications for the comparator and Euler foundation tranche. |
 | `NavierStokesReview/evidence/source_tranche_euler_compact_meanzero_2026-09-29.json` | Machine-readable Priority 144 evidence for five directly reviewed Euler compact-translation, bounded-map, and mean-zero modules and their import consumers. |
 | `NavierStokesReview/evidence/source_tranche_euler_continuous_gram_2026-09-29.json` | Machine-readable Priority 141 evidence for five directly reviewed Euler continuous Gram/tensor modules and their import consumers. |
@@ -68,6 +69,10 @@ These files are explicit audit evidence but are not counted as Lean modules or e
 | `NavierStokesReview/evidence/source_tranche_external_moment_realization_junction_2026-09-28.json` | Machine-readable Priority 135 source identities, hashes, anchors, positive results, and bounded final-bridge classifications for twelve external junction files. |
 | `NavierStokesReview/evidence/source_tranche_external_ns_junction_2026-09-28.json` | Generated line-addressed source navigation index for the fifteen Priority 132 endpoint-external OpenAI Navier-Stokes junction files. |
 | `NavierStokesReview/evidence/source_tranche_external_semantic_euler_drift_pressure_2026-09-29.json` | Machine-readable Priority 147 evidence for twelve directly reviewed audit and Euler modules, including the endpoint-symbol absence boundary and classification limits. |
+| `NavierStokesReview/evidence/source_tranche_priority_172_fefferman_semantic_network_2026-09-29.json` | Machine-readable Priority 172 source tranche preserving exact-wording, branch-separation, selected-path, and CTR-005 status boundaries. |
+| `NavierStokesReview/evidence/source_tranche_priority_173_fefferman_c_connected_adjudication_2026-09-29.json` | Machine-readable Priority 173 tranche distinguishing connected formal C compliance, physical force provenance, and manuscript five-moment endpoint fidelity. |
+| `NavierStokesReview/evidence/source_tranche_priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.json` | Machine-readable Priority 174 force-smoothness rebuttal adjudication with explicit rejected, not-established, and not-proved classifications. |
+| `NavierStokesReview/evidence/source_tranche_rebuttal_force_smoothness_moment_boundary_2026-09-29.json` | Machine-readable Priority 161 source adjudication with exact Lean/manuscript anchors and explicit confirmed/not-established boundaries. |
 | `NavierStokesReview/evidence/source_tranche_summary_2026-09-28.json` | Generated source navigation index for 15 endpoint-external OpenAI files, recording imports, declarations, keyword locations, and sorry-token locations. |
 | `NavierStokesReview/src/audit/external_source_profile.py` | Profiles every indexed module outside the captured endpoint closure by source hash, imports, declarations, marker locations, and admitted-token locations. It is explicitly structural inventory, not semantic transport proof. |
 | `NavierStokesReview/src/audit/priority_117_periodic_compact_field_identity_review_2026-09-28.md` | Separates the compact R3 velocity from the periodic velocity used by the selected radial pullback. Local inner-cube equality does not transport compact support globally. This blocks an automatic application of the periodic-support obstruction and records the exact field-identity obligation. |
@@ -102,6 +107,11 @@ These files are explicit audit evidence but are not counted as Lean modules or e
 | `NavierStokesReview/src/audit/priority_153_euler_finite_grade_endpoint_source_review_2026-09-29.md` | Human-readable Priority 153 direct source review of twelve Euler finite-grade, tensor-path, quadratic-Cauchy, and fixed-endpoint modules. |
 | `NavierStokesReview/src/audit/priority_154_euler_transport_frame_heat_source_review_2026-09-29.md` | Human-readable Priority 154 direct source review of twelve Euler transport, frame, flow, mild-evolution, and Gaussian-heat modules. |
 | `NavierStokesReview/src/audit/priority_155_euler_gaussian_gevrey_source_review_2026-09-29.md` | Human-readable Priority 155 direct source review of twelve Euler Gaussian heat, cylinder algebra, Gevrey, continuation, flow, and compactness modules. |
+| `NavierStokesReview/src/audit/priority_161_rebuttal_force_smoothness_moment_boundary_adjudication_2026-09-29.md` | Human-readable adverse adjudication of the supplied rebuttal: confirms the endpoint correspondence gap, rejects the unsupported sole-Fredholm/iff escalation, and distinguishes derived force smoothness from unclosed paper-mechanism transport. |
+| `NavierStokesReview/src/audit/priority_162_barmoment_correction_state_vs_selected_field_source_review_2026-09-29.md` | Direct review separates genuine correction-state barMoment/FiveRows identities from the still-unclosed equality identifying those observables with the final activated Cartesian field. |
+| `NavierStokesReview/src/audit/priority_172_fefferman_semantic_network_2026-09-29.md` | Connected semantic audit of Fefferman's exact wording: physically reasonable, Hence, only if, Alternatively, Thus, and retaining the heart of the problem. Whole-space C and periodic D are kept as separate connected requirement packages. The selected Lean route is recorded positively, while the manuscript-specific five-moment endpoint transport remains CTR-005 and no literal failure is claimed. |
+| `NavierStokesReview/src/audit/priority_173_fefferman_c_connected_adjudication_2026-09-29.md` | Connected adjudication of Fefferman Alternative (C): periodicity is a branch choice, physically reasonable is tied to the full data and accepted-solution package, the selected Lean route contains explicit formal C components, and residual force provenance is semantic rather than an unstated independence predicate. Complete manuscript five-moment transport remains CTR-005. |
+| `NavierStokesReview/src/audit/priority_174_force_smoothness_rebuttal_adjudication_2026-09-29.md` | Adjudicates the force-smoothness rebuttal: velocity blow-up does not imply divergence of every residual summand; the manuscript describes multiple correction layers; the selected route has an actual residual-jet smooth-force construction; complete five-observable endpoint transport remains CTR-005. |
 | `NavierStokesReview/src/audit/priority_external_euler_foundation_source_review_2026-09-28.md` | Direct source review of the Euler foundation tranche. It separates repository-root scope from the captured Navier-Stokes endpoint and records no admission tokens in the 11 inspected modules. |
 | `NavierStokesReview/src/audit/probe_logic_contract_audit.py` | Audits review-authored probe declarations for provenance, conditional premises, interface/ghost payloads, fixed-force scope, and conclusion strength. It is a blindside detector, not a Lean proof or absence theorem. |
 | `NavierStokesReview/src/audit/selected_transport_audit.py` | Hardened declaration-level audit instrument. It separates source co-occurrence triage from optional Lean-environment declaration types, records exact selected endpoint signatures, and refuses to promote co-occurrence or historical closure data into transport, defect, or False claims. |
@@ -115,7 +125,7 @@ These files are explicit audit evidence but are not counted as Lean modules or e
 | `algebra` | 8 |
 | `assembly` | 2 |
 | `average` | 1 |
-| `axis` | 338 |
+| `axis` | 336 |
 | `balance` | 1 |
 | `base-data` | 1 |
 | `bilinear` | 3 |
@@ -127,7 +137,7 @@ These files are explicit audit evidence but are not counted as Lean modules or e
 | `budgets` | 1 |
 | `calculus` | 9 |
 | `cancellation` | 1 |
-| `candidate-packaging` | 6 |
+| `candidate-packaging` | 5 |
 | `cartesian` | 2 |
 | `cartesian-assembly` | 456 |
 | `cmi` | 2 |
@@ -144,7 +154,7 @@ These files are explicit audit evidence but are not counted as Lean modules or e
 | `coordinates` | 4 |
 | `correction` | 3 |
 | `correction-family` | 1 |
-| `corrections` | 27 |
+| `corrections` | 29 |
 | `covariance` | 1 |
 | `cover` | 3 |
 | `curl` | 4 |
@@ -170,7 +180,7 @@ These files are explicit audit evidence but are not counted as Lean modules or e
 | `field-decomposition` | 1 |
 | `fixed-frame` | 2 |
 | `flow` | 4 |
-| `force` | 240 |
+| `force` | 241 |
 | `frame` | 2 |
 | `functional-analysis` | 20 |
 | `gaussian` | 3 |
@@ -187,7 +197,7 @@ These files are explicit audit evidence but are not counted as Lean modules or e
 | `integrals` | 8 |
 | `invariant` | 1 |
 | `jet-bounds` | 1 |
-| `jets` | 550 |
+| `jets` | 551 |
 | `l2` | 2 |
 | `labels` | 2 |
 | `linear-algebra` | 1 |
@@ -200,7 +210,7 @@ These files are explicit audit evidence but are not counted as Lean modules or e
 | `methodology` | 4 |
 | `metric` | 1 |
 | `mild` | 2 |
-| `moments` | 362 |
+| `moments` | 363 |
 | `naturality` | 2 |
 | `nonlinear` | 1 |
 | `normalisation` | 1 |
@@ -216,16 +226,16 @@ These files are explicit audit evidence but are not counted as Lean modules or e
 | `path` | 3 |
 | `pde` | 1 |
 | `periodic` | 2 |
-| `periodicity` | 15 |
-| `physical-data` | 15 |
+| `periodicity` | 14 |
+| `physical-data` | 16 |
 | `pointwise` | 1 |
-| `pressure` | 579 |
+| `pressure` | 580 |
 | `probe` | 1 |
 | `product` | 6 |
-| `profiles` | 289 |
+| `profiles` | 291 |
 | `quotient` | 1 |
 | `r3` | 75 |
-| `rank` | 290 |
+| `rank` | 291 |
 | `real` | 1 |
 | `recurrence` | 1 |
 | `recursion` | 8 |
@@ -235,7 +245,7 @@ These files are explicit audit evidence but are not counted as Lean modules or e
 | `repository-root` | 4 |
 | `representative` | 5 |
 | `representatives` | 1 |
-| `residual` | 156 |
+| `residual` | 157 |
 | `scalar` | 5 |
 | `sign` | 1 |
 | `slice` | 1 |
@@ -244,15 +254,15 @@ These files are explicit audit evidence but are not counted as Lean modules or e
 | `solenoidal` | 1 |
 | `spatial` | 2 |
 | `specification` | 1 |
-| `stage-interface` | 15 |
+| `stage-interface` | 16 |
 | `state` | 1 |
 | `strain` | 1 |
 | `summation` | 1 |
-| `support` | 27 |
+| `support` | 25 |
 | `symmetry` | 7 |
 | `tails` | 2 |
 | `tensor` | 5 |
-| `time` | 540 |
+| `time` | 541 |
 | `translation` | 12 |
 | `transport` | 12 |
 | `tsum` | 1 |
@@ -2128,7 +2138,7 @@ This queue is an order of inspection, not a negative finding. A high score means
 | `NavierStokes.ActualBasePressureBounds` | `NavierStokes/ActualBasePressureBounds.lean` | 151 | 8 | false | 106 | pressure | `source_indexed_review_queued` | Source-indexed path; no declaration-level semantic review record yet. |
 | `NavierStokes.ActualBaseResidual` | `NavierStokes/ActualBaseResidual.lean` | 954 | 74 | true | 159 | axis, cartesian-assembly, force, jets, moments, pressure, residual, time | `evidence_inspected` | 28-113; 116-218; 247-317; 332-384; 479-507: Proves residual germ congruence and invariance, coordinate/chart identities, and defines scaled base pressure, error, velocity, and stress fields with smoothness claims. This is a real fixed-base Cartesian/chart residual layer, not an evaluation of the final selected five observables. |
 | `NavierStokes.ActualBaseVelocityBounds` | `NavierStokes/ActualBaseVelocityBounds.lean` | 557 | 52 | true | 115 | cartesian-assembly, energy, profiles, time | `evidence_inspected` | 415-449; 473-544; 546-557: Source-reviewed: derives actual exterior coefficient properties, leading-velocity agreement, finite-jet bounds, middle-region rates, and outer-region rates for the constructed slow-base velocity. The source notes that support and zero-mass identities come from coefficient construction, but it does not state the final Cartesian tsum-to-barMoment five-observable transport theorem. |
-| `NavierStokes.ActualCandidateAssembly` | `NavierStokes/ActualCandidateAssembly.lean` | 1187 | 103 | true | 167 | axis, candidate-packaging, cartesian-assembly, endpoint, pressure | `evidence_inspected` | 1121-1151; 1177-1181: Witness is a proposition with candidate, force, consequence, decay, and blow-up fields; no selected Cartesian five-moment equality field is present. |
+| `NavierStokes.ActualCandidateAssembly` | `NavierStokes/ActualCandidateAssembly.lean` | 1187 | 103 | true | 167 | axis, cartesian-assembly, endpoint, force, jets, moments, physical-data, pressure | `evidence_inspected` | 1079-1098; 1121-1151: Direct review confirms actual physical data and actualStageEstimates feed the selected endpoint. Witness exports force, consequences, blow-up, and limits but no named final (M,I,J,S,C_p) equality. |
 | `NavierStokes.ActualCandidateConstruction` | `NavierStokes/ActualCandidateConstruction.lean` | 972 | 126 | true | 167 | cartesian-assembly, endpoint, moments, pressure, time | `evidence_inspected` | 205-257; 289-345; 832-970: Constructs the selected cycle, chart velocity/pressure stages, direct and stream mean stages, and potential-stage fields. The checked stage equalities stop at local/chart/stage identities; they do not export the final Cartesian field's five-moment tuple. |
 | `NavierStokes.ActualCarrierGeometry` | `NavierStokes/ActualCarrierGeometry.lean` | 357 | 29 | true | 113 | axis, cartesian-assembly | `evidence_inspected` | 50-342; cell_geometry, labelCarrier_*, geometry_liftedSupport, labelCarrier_disjoint: Builds signed-label carrier cells, phase/log bands, physical boxes, support lifting, injectivity, and disjointness under threshold hypotheses; no radial moment or Witness transport theorem is present. |
 | `NavierStokes.ActualCarrierTransport` | `NavierStokes/ActualCarrierTransport.lean` | 66 | 6 | true | 112 | cartesian-assembly, profiles | `evidence_inspected` | 1-10; 19-28; 32-64: Source-reviewed: identifies primitive carrier geometry, lengths, cutoffs, and fixed/canonical parameter records by definitional equalities and native-cutoff transport. No field, curl, radial observable, moment, or endpoint Witness theorem is stated. |
@@ -2271,7 +2281,7 @@ This queue is an order of inspection, not a negative finding. A high score means
 | `NavierStokes.BoundaryCoordinates` | `NavierStokes/BoundaryCoordinates.lean` | 488 | 51 | false | 2 | unclassified | `source_indexed_review_queued` | Source-indexed path; no declaration-level semantic review record yet. |
 | `NavierStokes.CandidateAssembly` | `NavierStokes/CandidateAssembly.lean` | 231 | 16 | false | 160 | cartesian-assembly, endpoint, force, pressure, residual | `evidence_inspected` | 25-227: Conditionally assembles a residual-derived early force with a supplied late force and packages CandidateProperties; it does not construct the input fields or export five-observable transport. |
 | `NavierStokes.CandidateConsequences` | `NavierStokes/CandidateConsequences.lean` | 217 | 16 | true | 160 | endpoint, force, global-assembly, jets, pressure | `evidence_inspected` | 185-215: The global consequence theorem consumes smoothness, divergence, residual-flatness, extensions, and axis blow-up premises; its conclusion is not a five-moment transport theorem. |
-| `NavierStokes.CandidateFromLimits` | `NavierStokes/CandidateFromLimits.lean` | 222 | 18 | true | 145 | endpoint, force, jets | `evidence_inspected` | 80-112: The specified force is constructed from the traced residual and actual normal jets, then proved equal to the activated residual. |
+| `NavierStokes.CandidateFromLimits` | `NavierStokes/CandidateFromLimits.lean` | 222 | 18 | true | 160 | endpoint, force, jets, residual | `evidence_inspected` | 35-57; 80-148; 167-218: Direct review finds force smoothness derived from full residual derivative limits, activated-residual agreement before t=1, support, and derivative decay. This is not a proof that the manuscript's five-moment explanation has been transported. |
 | `NavierStokes.CartesianCopySource` | `NavierStokes/CartesianCopySource.lean` | 187 | 22 | true | 113 | axis, cartesian-assembly | `evidence_inspected` | 20 onward; pullStrip, rotationMap, rotationMap_smooth, rotationMap_jets, rotatedSource: Pulls source profiles into Cartesian coordinates through rotation and annular jet bounds. rotationMap_smooth is explicitly off-axis, requiring y ≠ 0; no global moment bridge is supplied. |
 | `NavierStokes.CauchyRestriction` | `NavierStokes/CauchyRestriction.lean` | 302 | 33 | true | 51 | profiles | `evidence_inspected` | 24-296; restrictionLinear, cauchyMap, derivativeCLM, derivativeCLM_apply_integral: Develops bounded disk restrictions, Cauchy maps, derivative continuous linear maps, and complex integral identities; it is not a selected Navier-Stokes moment theorem. |
 | `NavierStokes.ChartScales` | `NavierStokes/ChartScales.lean` | 309 | 51 | true | 74 | axis, jets, profiles, time | `evidence_inspected` | 5-34; 122-208; 210-255; 257-307: Source-reviewed: native chart scales, coefficient identities, carrier bounds, and asymptotic decay are substantive; no selected-field radial-moment transport theorem is stated here. |
@@ -2439,11 +2449,11 @@ This queue is an order of inspection, not a negative finding. A high score means
 | `NavierStokes.LocalMeanPhysicalBounds` | `NavierStokes/LocalMeanPhysicalBounds.lean` | 324 | 19 | true | 131 | axis, cartesian-assembly, jets, residual | `evidence_inspected` | 25-107; 136-232; 250-320: Source-reviewed: supplies local field and angular-field germs, smoothness, curl bounds, local-band jet bounds, and sublevel estimates on the normalized slow region. No barMoment/torusAverage composition or final selected-field five-moment theorem is stated. |
 | `NavierStokes.LocalPaperDomain` | `NavierStokes/LocalPaperDomain.lean` | 96 | 11 | false | 66 | axis | `source_indexed_review_queued` | Source-indexed path; no declaration-level semantic review record yet. |
 | `NavierStokes.LocalPaperHeat` | `NavierStokes/LocalPaperHeat.lean` | 74 | 5 | false | 0 | unclassified | `source_indexed_review_queued` | Source-indexed path; no declaration-level semantic review record yet. |
-| `NavierStokes.LocalPaperTheorem` | `NavierStokes/LocalPaperTheorem.lean` | 186 | 9 | false | 160 | axis, cartesian-assembly, endpoint, jets, profiles, residual | `evidence_inspected` | 1-186: Reviewed source tranche: local Properties package smoothness, curl decomposition, divergence, extensions, jets, residual flatness, exterior zero, and angular growth; no M/I/J/S/Cp field observable. |
+| `NavierStokes.LocalPaperTheorem` | `NavierStokes/LocalPaperTheorem.lean` | 186 | 9 | false | 160 | cartesian-assembly, endpoint, jets, pressure, profiles, residual | `evidence_inspected` | 53-83; 100-124; 128-186: Direct review finds local selected schedule properties, smooth fields, pressure and residual flatness, exterior agreement, and local chart assembly. It does not export the selected Cartesian (M,I,J,S,C_p) observable equality. |
 | `NavierStokes.LocalPhysicalCopyBounds` | `NavierStokes/LocalPhysicalCopyBounds.lean` | 854 | 47 | true | 144 | axis, cartesian-assembly, jets, moments, time | `evidence_inspected` | 27-71; 83-150; 198-340; 401-499; 522-850: Proves smooth patch and germ extension lemmas, support geometry, local and weighted jet bounds, locally finite periodised copy sums, and vector-sum regularity. It is concrete physical copy/support infrastructure, not a five-observable transport theorem. |
 | `NavierStokes.LocalPotentialRebundle` | `NavierStokes/LocalPotentialRebundle.lean` | 271 | 25 | false | 151 | cartesian-assembly, commutator, pressure, residual, tsum | `evidence_inspected` | 1-271: Reviewed source tranche: selected schedule rebundling, pointwise exterior finite-sum collapse, curl/extension identities, and exterior field identities; no global tsum/radial observable interchange. |
 | `NavierStokes.LocalRankDefect` | `NavierStokes/LocalRankDefect.lean` | 1044 | 97 | true | 161 | axis, cartesian-assembly, corrections, moments, pressure, rank | `evidence_inspected` | 25-213; 430-464; 590-608; 743-808: Defines local-shell and local-rank operators on the open slow domain, proves local smoothness/divergence properties, and derives zero `barMoment` rows for rank increments and updated local means. These conclusions are explicitly local correction identities and are not evaluations of the final selected Cartesian field. |
-| `NavierStokes.LocalResidualFlatness` | `NavierStokes/LocalResidualFlatness.lean` | 131 | 5 | false | 160 | endpoint, force, jets, residual | `evidence_inspected` | AllResidualJetRates; allResidualJetRates_of_cutBounds; selected_schedule: Builds all-order residual jet-rate schedules from stage estimates and cut bounds; no radial moment transport. |
+| `NavierStokes.LocalResidualFlatness` | `NavierStokes/LocalResidualFlatness.lean` | 131 | 5 | false | 160 | endpoint, force, jets, residual, stage-interface | `evidence_inspected` | 19-75; 80-125: Direct review finds selected concrete estimates producing a common schedule and all residual jet rates. This is a real rate derivation, not a free NativeBounds premise, but it does not identify those rates with the paper's final five observables. |
 | `NavierStokes.LocalResidualGrouping` | `NavierStokes/LocalResidualGrouping.lean` | 356 | 17 | true | 150 | axis, cartesian-assembly, force, jets, residual | `evidence_inspected` | 20-61; 70-143; 145-338: Proves finite-sum nonlinear residual identities under disjoint-support and smoothness hypotheses, grouped good-residual formulas, and angular-mean extraction/reconstruction. This is a concrete local residual assembly result; it does not identify the final global selected Cartesian field with the five paper observables. |
 | `NavierStokes.LocalScaleApproach` | `NavierStokes/LocalScaleApproach.lean` | 107 | 5 | false | 0 | unclassified | `source_indexed_review_queued` | Source-indexed path; no declaration-level semantic review record yet. |
 | `NavierStokes.LocalScaleGeometry` | `NavierStokes/LocalScaleGeometry.lean` | 62 | 5 | false | 60 | time | `source_indexed_review_queued` | Source-indexed path; no declaration-level semantic review record yet. |
@@ -2478,7 +2488,7 @@ This queue is an order of inspection, not a negative finding. A high score means
 | `NavierStokes.MixedDiagonalResidual` | `NavierStokes/MixedDiagonalResidual.lean` | 268 | 13 | true | 150 | cartesian-assembly, force, jets, pressure, residual, time | `evidence_inspected` | 21-50; 52-115; 125-198; 200-264: Defines the mixed velocity, pressure, and residual from the actual potential sums, proves definitional equality with `MixedPeriodicAssembly.originalResidual`, establishes smoothness and residual jet rates, and derives physical joint zero jets from finite-stage inputs. These are concrete series/residual bridges, but the module exports no equality from the assembled field to the complete paper five-moment tuple. |
 | `NavierStokes.MixedDiagonalSchedule` | `NavierStokes/MixedDiagonalSchedule.lean` | 344 | 25 | true | 134 | cartesian-assembly, pressure, profiles, time | `evidence_inspected` | source-indexed declaration review: Defines mixed diagonal schedule data and proves its schedule/support relationships. It is scheduling infrastructure, not a value-level Cartesian-to-radial bridge. |
 | `NavierStokes.MixedFiniteBackground` | `NavierStokes/MixedFiniteBackground.lean` | 194 | 11 | true | 112 | cartesian-assembly, jets, physical-data | `evidence_inspected` | 25-136; raw finite-prefix/background jet rates: Builds finite-prefix backgrounds and their jet rates, including stageVelocity. It supports the rate interface but exposes no selected-field five-moment equality. |
-| `NavierStokes.MixedPeriodicAssembly` | `NavierStokes/MixedPeriodicAssembly.lean` | 414 | 35 | true | 161 | axis, cartesian-assembly, endpoint, force, jets, residual, time | `evidence_inspected` | 28-106; 119-164; 179-245; 267-368; 388-401: Builds periodicVelocity and periodicResidual from spatially localised fields, proves local equality to cut fields, divergence freedom, residual jet transfer, boundary limits, speed unboundedness, and candidate-force packaging. It does not compute the final selected field's five paper observables. |
+| `NavierStokes.MixedPeriodicAssembly` | `NavierStokes/MixedPeriodicAssembly.lean` | 414 | 35 | true | 161 | cartesian-assembly, endpoint, force, jets, residual | `evidence_inspected` | 338-365: Direct review finds the candidate force assembled from residual limits, smooth extensions, divergence, periodicity, and the axis-growth premise. It does not make the force smoothness equivalent to a final five-moment equality. |
 | `NavierStokes.ModeSolenoidalReindex` | `NavierStokes/ModeSolenoidalReindex.lean` | 101 | 7 | true | 132 | cartesian-assembly, jets, rank | `evidence_inspected` | 1-20; 22-63; 92-97: Proves linear-equivalence reindexing identities for harmonic amplitudes, single modes, lift and angular directions, cylindrical divergence, and mode-solenoidal structure. This preserves a local mode-level divergence-free property under reindexing, not a global selected-field radial observable identity. |
 | `NavierStokes.ModulatedCone` | `NavierStokes/ModulatedCone.lean` | 1503 | 61 | true | 144 | jets, moments, profiles, rank | `evidence_inspected` | 623-730; 966-1016; 1018-1080: Indexes five profile-history rows, proves localized C/n history and derivative bounds, constructs profile repair preserving exterior radial germs, and derives five-row jet estimates. These remain profile-level identities, not selected Cartesian moment transport. |
 | `NavierStokes.ModulatedExterior` | `NavierStokes/ModulatedExterior.lean` | 536 | 37 | true | 157 | axis, moments, pressure, profiles, residual | `evidence_inspected` | 28-126; 144-307; 325-370; 444-513: Proves reduced exterior integral/pressure matching, heat-exterior identities, residual and residual-jet vanishing, and terminal extension. This is substantive reduced exterior evidence, not the selected Cartesian/localised/periodised five-moment theorem. |
@@ -2487,8 +2497,8 @@ This queue is an order of inspection, not a negative finding. A high score means
 | `NavierStokes.ModulatedProfileJetRates` | `NavierStokes/ModulatedProfileJetRates.lean` | 443 | 10 | false | 137 | corrections, jets, moments, profiles, residual | `evidence_inspected` | SmoothRepairFamily.solves; exists_smooth_repair_family; exists_with_moment_repair_all_jets: Proves exact reduced-profile physical moment repair/restoration, cone membership, exterior profileRows equality, and derivative rates; it does not output a theorem about the final selected Cartesian field. |
 | `NavierStokes.ModulatedStockBounds` | `NavierStokes/ModulatedStockBounds.lean` | 338 | 19 | true | 118 | jets, moments, profiles | `evidence_inspected` | 21-74; stock-data/profile-coordinate declarations: Defines stock profile data, profile coordinates, and stock smoothness bounds for modulation. The inspected declarations do not transport those profile identities into the final Cartesian field. |
 | `NavierStokes.MomentRepair` | `NavierStokes/MomentRepair.lean` | 257 | 21 | true | 139 | moments, profiles, rank | `evidence_inspected` | 29-85; 94-124; 130-173; 201-206: Defines abstract finite linear moment repair and proves exact matching, uniqueness, idempotence, support preservation, and contraction-side correction estimates under explicit nonsingularity hypotheses. It is generic finite-dimensional repair algebra; no selected-field composition is asserted. |
-| `NavierStokes.MomentRepairPicard` | `NavierStokes/MomentRepairPicard.lean` | 105 | 6 | false | 118 | moments | `source_indexed_review_queued` | Source-indexed path; no declaration-level semantic review record yet. |
-| `NavierStokes.MomentRepairPicardConvergence` | `NavierStokes/MomentRepairPicardConvergence.lean` | 75 | 1 | false | 118 | moments | `source_indexed_review_queued` | Source-indexed path; no declaration-level semantic review record yet. |
+| `NavierStokes.MomentRepairPicard` | `NavierStokes/MomentRepairPicard.lean` | 105 | 6 | false | 138 | corrections, moments, profiles, rank | `evidence_inspected` | inverse_compatible; iteration_compatible; iterates_compatible; limits_compatible; exists_compatible_small_solutions: Direct review finds abstract compatible moment-repair iteration, limit compatibility, and small-solution existence. It does not identify the selected mixed Cartesian endpoint with the five paper observables. |
+| `NavierStokes.MomentRepairPicardConvergence` | `NavierStokes/MomentRepairPicardConvergence.lean` | 75 | 1 | false | 118 | corrections, moments, profiles | `evidence_inspected` | 21-; exists_small_solution_with_iterates: Direct review finds contraction and convergent abstract moment-repair iterates under stated hypotheses. It does not supply the final selected-field transport theorem. |
 | `NavierStokes.MovingFrameODE` | `NavierStokes/MovingFrameODE.lean` | 850 | 79 | true | 135 | axis, cartesian-assembly, energy, residual | `evidence_inspected` | 28-106; 158-227; 245-341; 368-469; 678-840: Source-reviewed: defines the packed moving frame, normal/tangent motion, projected ODE, smooth frame reconstruction, modal equations, operator bounds, and modal energy estimates. This is frame kinematics/modal algebra, not radial observable transport to the selected Cartesian endpoint. |
 | `NavierStokes.MovingMomentBounds` | `NavierStokes/MovingMomentBounds.lean` | 384 | 22 | true | 156 | moments, pressure, profiles, rank, residual | `evidence_inspected` | 30-104; 118-228; 298-359: Proves moving-strip pressure-mass and radial-moment class bounds, support closure under differential operators, and rank-stage defect classes under explicit local geometry and increment hypotheses. These are local moving-profile and correction estimates, not a final selected whole-space five-observable equality. |
 | `NavierStokes.NativeBandExtension` | `NavierStokes/NativeBandExtension.lean` | 1015 | 78 | true | 160 | axis, cartesian-assembly, jets, moments, pressure, profiles, time | `evidence_inspected` | 45-131; 179-265; 297-355; 501-580: Proves support-endpoint jets, strict-cone continuity, phase velocity/pressure regularity, closed-band regularity, and zero germs. No barMoment or final five-observable endpoint identity is present in the reviewed declarations. |
@@ -2523,7 +2533,7 @@ This queue is an order of inspection, not a negative finding. A high score means
 | `NavierStokes.OutgoingSchedule` | `NavierStokes/OutgoingSchedule.lean` | 1013 | 125 | true | 126 | axis, moments, profiles, time | `evidence_inspected` | 22-188; 289-318; 546-625; 633-715; 739-927; 929-994: Constructs the outgoing radial/angular pulse and proves exact pulse moment identities, prefix closure, and endpoint cancellation. `massMoment_endpoint` and `angularMoment_endpoint` prove two combined log-coordinate moments vanish, with `exact_axial_moments` packaging them and post-pulse persistence. This is a genuine reduced-profile moment bridge, but it is not the complete five-observable Cartesian/torus/Witness transport theorem. |
 | `NavierStokes.OutgoingTail` | `NavierStokes/OutgoingTail.lean` | 1000 | 148 | true | 147 | jets, moments, rank, time | `evidence_inspected` | imports and tail/flattening declarations: Defines smooth outgoing-tail flattening data and tail coefficient bounds. It contributes to stage estimates and does not state a five-observable endpoint transport theorem. |
 | `NavierStokes.PaperAdditionalResults` | `NavierStokes/PaperAdditionalResults.lean` | 30 | 0 | false | 0 | unclassified | `source_indexed_review_queued` | Source-indexed path; no declaration-level semantic review record yet. |
-| `NavierStokes.PaperLocalization` | `NavierStokes/PaperLocalization.lean` | 52 | 2 | false | 160 | cartesian-assembly, endpoint, pressure, support | `evidence_inspected` | 20-50: Shows late-time local pressure agreement and packages a local candidate; local agreement is not global tsum/curl/localisation/periodisation/barMoment transport. |
+| `NavierStokes.PaperLocalization` | `NavierStokes/PaperLocalization.lean` | 52 | 2 | false | 160 | cartesian-assembly, endpoint, pressure, time | `evidence_inspected` | 20-50: Direct review finds late-time compact-pressure/local-field agreement and a local theorem with a compact candidate. It does not prove selected-field five-moment transport or absolute pressure-Poisson semantics. |
 | `NavierStokes.PaperResults` | `NavierStokes/PaperResults.lean` | 4 | 0 | false | 0 | unclassified | `source_indexed_review_queued` | Source-indexed path; no declaration-level semantic review record yet. |
 | `NavierStokes.ParameterizedMomentRepair` | `NavierStokes/ParameterizedMomentRepair.lean` | 95 | 2 | false | 118 | moments | `source_indexed_review_queued` | Source-indexed path; no declaration-level semantic review record yet. |
 | `NavierStokes.ParametricEvenDescent` | `NavierStokes/ParametricEvenDescent.lean` | 378 | 36 | true | 67 | axis, profiles | `evidence_inspected` | 47-367; radialReduce_integral, even_radialReduce, descend_localized_eventuallyEq: Provides even radial descent, localised smoothness, and axis-local derivative identities; no selected Cartesian moment transport. |
@@ -2559,7 +2569,7 @@ This queue is an order of inspection, not a negative finding. A high score means
 | `NavierStokes.PeriodicViscosity` | `NavierStokes/PeriodicViscosity.lean` | 78 | 1 | false | 112 | cartesian-assembly | `source_indexed_review_queued` | Source-indexed path; no declaration-level semantic review record yet. |
 | `NavierStokes.PeriodicViscosityUniqueness` | `NavierStokes/PeriodicViscosityUniqueness.lean` | 113 | 6 | false | 112 | cartesian-assembly | `source_indexed_review_queued` | Source-indexed path; no declaration-level semantic review record yet. |
 | `NavierStokes.PeriodizeLatticeCover` | `NavierStokes/PeriodizeLatticeCover.lean` | 27 | 1 | false | 112 | cartesian-assembly | `source_indexed_review_queued` | Source-indexed path; no declaration-level semantic review record yet. |
-| `NavierStokes.PeriodizePDE` | `NavierStokes/PeriodizePDE.lean` | 153 | 14 | false | 150 | cartesian-assembly, periodicity, pressure, residual, support | `evidence_inspected` | 1-153: Reviewed source tranche: conditional translation covariance, divergence preservation, and forced residual preservation under supported periodization; no five-observable transport. |
+| `NavierStokes.PeriodizePDE` | `NavierStokes/PeriodizePDE.lean` | 153 | 14 | false | 150 | cartesian-assembly, pressure, residual, time | `evidence_inspected` | 32-40; 46-114; 117-150: Direct review finds translation, derivative, divergence, pressure, Laplacian, advection, and residual periodisation identities. These transport the PDE operator, not the paper's radial five-moment observables. |
 | `NavierStokes.PeriodizedWaveBounds` | `NavierStokes/PeriodizedWaveBounds.lean` | 1682 | 126 | true | 159 | cartesian-assembly, force, jets, pressure, profiles, rank, time | `evidence_inspected` | 30-183; 188-289; 303-344: Proves local-finite support-cell and copy-sum germ, support, jet, and whole-lift bounds, including cutoff derivative/source terms. These results control periodised wave sums but do not evaluate the selected field's radial five moments. |
 | `NavierStokes.PhaseCalculus` | `NavierStokes/PhaseCalculus.lean` | 310 | 40 | true | 114 | axis, cartesian-assembly, jets, time | `evidence_inspected` | 39-117; 122-224; 226-305: Defines the actual phase, proves its Frechet derivatives, material-operator cancellation, harmonic periodicity, off-axis smoothness, and nonvanishing under comparison hypotheses. It contains no global radial-moment equality. |
 | `NavierStokes.PhaseEstimates` | `NavierStokes/PhaseEstimates.lean` | 1077 | 78 | true | 117 | axis, cartesian-assembly, time | `evidence_inspected` | 440-475; 950-971; 985-1000: Source-reviewed: proves representative normal-velocity, slope, phase, direction, angular-velocity, and uniform radial-slope bounds. These are quantitative phase/parameter estimates; no radial integral evaluator or selected-field five-moment transport theorem is stated. |
