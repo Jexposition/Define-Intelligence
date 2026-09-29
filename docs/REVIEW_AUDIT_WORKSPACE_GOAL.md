@@ -2595,3 +2595,26 @@ Evidence:
 
 - `NavierStokesReview/src/audit/priority_177_fefferman_word_connection_adjudication_2026-09-29.md`;
 - `NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`.
+
+## Priority 178 goal control: register and semantic-network state
+
+The regenerated authoritative register now records **2,794 indexed modules,
+588 captured endpoint-closure modules, 2,206 modules outside that captured
+closure, 906 evidence-inspected rows, 1,881 source-indexed review-queued rows,
+7 source-indexed rows containing a `sorry` token, 0 missing project import
+edges, and 86 supplemental evidence records**. “Outside the captured closure”
+remains an inventory label, not a dead-code claim or a claim about OpenAI's
+own build graph.
+
+The Fefferman semantic-network audit is complete for the currently supplied
+source text: C is evaluated as the connected whole-space package `(1)--(7)`;
+D as `(1)--(3),(8)--(11)`; and “may look for” is recorded as branch latitude,
+not as permission to omit the selected branch's conditions. The full
+manuscript-to-selected-field transport check remains open. `CTR-005` therefore
+stays **NOT ESTABLISHED**, with no unsupported promotion to literal C/D failure.
+
+Validation: the evidence JSON and `docs/REPOSITORY_SEMANTIC_COVERAGE_REGISTER.json`
+parse to equal objects; the register reports `missing_project_import_edges = 0`.
+The consolidation/archive gate remains closed until the complete document set
+has been fetched, read, cross-checked, and fact-checked. No deletion is
+permitted; confirmed redundancy may only be moved later with a SHA-256 manifest.

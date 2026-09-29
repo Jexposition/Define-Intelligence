@@ -3623,6 +3623,32 @@ Evidence:
 `NavierStokesReview/evidence/source_tranche_priority_177_fefferman_word_connection_adjudication_2026-09-29.json`;
 `docs/CMI_OpenAI_Full_Semantic_Crosswalk.md`.
 
+## Priority 178: current register and semantic-network control
+
+- [x] Regenerate the authoritative register and its JSON, Markdown, and HTML
+  outputs from the current source map.
+- [x] Confirm the current counts: 2,794 indexed modules, 588 captured
+  endpoint-closure modules, 906 evidence-inspected rows, 1,881 queued rows,
+  7 source-indexed `sorry`-token rows, 0 missing project import edges, and 86
+  supplemental evidence records.
+- [x] Confirm the `docs/` JSON mirror is structurally equal to the evidence
+  JSON mirror.
+- [x] Preserve Fefferman's full semantic network: “may look for” opens the
+  periodic branch, while “Thus”, “In place of”, and “We then accept” bind the
+  selected branch's data and accepted-solution conditions.
+- [ ] Continue the value-level transport audit from the selected Cartesian
+  field, pressure, residual, and force into the manuscript's five-moment
+  consequences and the connected C/D package.
+- [ ] Keep the cleanup/archive gate closed until full document consolidation,
+  cross-checking, and fact-checking are complete. Never delete; later move
+  only confirmed redundant material with a SHA-256 manifest, outside commits.
+
+Validation record: `semantic_coverage_register_full_2026-09-29.*` and
+`docs/REPOSITORY_SEMANTIC_COVERAGE_REGISTER.*` are the current register
+artifacts. `CTR-005` remains **NOT ESTABLISHED**, not escalated to literal C/D
+failure without a connected failed premise, selected mismatch, impossibility
+theorem, or contradiction.
+
 ## Priority 177: source-preserving semantic connection audit
 
 - [x] Audit the connective words in `docs/navierstokes.txt:25-81`, including
