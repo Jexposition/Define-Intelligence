@@ -474,3 +474,31 @@ are recorded in
 This closes the stale-environment coverage issue for the six selected
 Navier--Stokes roots. It does not prove selected-field transport of
 `(M,I,J,S,C_p)` and does not alter `CTR-005: NOT ESTABLISHED`.
+
+## Current tree reconciliation: Priority 214 (2026-09-30)
+
+The historical `review_tree_reconciliation_2026-09-30.md` remains a dated
+pre-disposition snapshot and is not the current tree authority. The corrected
+replay is recorded in:
+
+- `tree_reconciliation_current_2026-09-30.json`
+- `tree_reconciliation_current_2026-09-30.md`
+- `../src/audit/tree_reconciliation.py`
+
+The replay uses the current checkout as the path authority, strips only the
+`(historical archive)` display annotation from tree labels, and reconciles
+rendered relative prefixes by basename without inferring an ambiguous path.
+It found 49 tree entries, 47 file entries, 3,466 current checkout files, 45
+unique basename resolutions, 0 missing basenames, and 2 ambiguous entries.
+The two ambiguous entries are retained as explicit obligations:
+`ARCHIVE_MANIFEST_2026-09-30.md` has three current candidates, and
+`deep_semantics_audit.md` has two. This is navigation evidence only; it does
+not establish import reachability, theorem use, or semantic coverage.
+
+The reconciliation correction does not change the scientific disposition.
+The selected construction has genuine internal invariant, residual-rate,
+force-extension, physical-data, and axis-blow-up routes, while the complete
+selected-field identification with the manuscript's `(M,I,J,S,C_p)` remains
+`CTR-005: NOT ESTABLISHED`. No selected-field defect, impossibility theorem,
+force nonsmoothness, literal CMI failure, compiler-cheat claim, or `False` is
+asserted.

@@ -1,5 +1,19 @@
 # Independent peer review of the OpenAI Navier–Stokes formalisation
 
+## Current control correction: Priority 214 (2026-09-30)
+
+The current tree reconciliation is
+`../NavierStokesReview/evidence/tree_reconciliation_current_2026-09-30.md`.
+It supersedes the dated tree snapshot for current bookkeeping only: 49 tree
+entries, 47 file entries, 3,466 checkout files, 45 unique basename
+resolutions, 0 missing basenames, and 2 explicit ambiguities. The older
+report remains historical evidence. The current Git inventory contains two
+intentional untracked rows: the protected `NavierStokes/R3/TestPressure.lean`
+source file and the raw 366 MB environment-closure JSON, which remains local
+by design. This control correction does not change `CTR-005: NOT ESTABLISHED`
+or promote a selected-field defect, force-nonsmoothness result, literal CMI
+failure, impossibility theorem, compiler-cheat claim, or `False`.
+
 ## Current source correction: Priority 203 (2026-09-30)
 
 The latest cross-file trace confirms that the selected construction contains a
@@ -4425,7 +4439,7 @@ are linked at:
 
 - `../NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md`
 - `../NavierStokesReview/evidence/untracked_consolidation_matrix_2026-09-30.md`
-- `../NavierStokesReview/evidence/review_tree_reconciliation_2026-09-30.md`
+- `../NavierStokesReview/evidence/tree_reconciliation_current_2026-09-30.md`
 
 The scientific control finding is unchanged and source-bounded: the upstream
 moment/rank/curl/localisation/residual machinery is genuine and active; the

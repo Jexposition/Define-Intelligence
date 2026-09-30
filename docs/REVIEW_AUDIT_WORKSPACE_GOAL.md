@@ -1,5 +1,21 @@
 # Review audit workspace goal
 
+## Current tree authority: Priority 214 (2026-09-30)
+
+The corrected live tree reconciliation is recorded in
+`NavierStokesReview/evidence/tree_reconciliation_current_2026-09-30.md` and
+its JSON companion. The parser correction removes only rendered
+`(historical archive)` labels and handles displayed relative prefixes by
+basename; it does not manufacture paths from ambiguous names. The live
+result is 49 tree entries, 47 file entries, 3,466 checkout files, 45 unique
+resolutions, 0 missing basenames, and 2 explicit ambiguities. The older
+`review_tree_reconciliation_2026-09-30.md` remains historical evidence.
+
+This closes the tree-parser false-missing issue, not the scientific audit.
+The documentation consolidation gate remains open until current links,
+cross-references, source checks, and SHA-256 records are rerun together.
+No deletion or archive move is authorised from this result alone.
+
 ## Current publication and environment authority: Priority 213 (2026-09-30)
 
 The live six-root Navier–Stokes environment closure is recorded in
@@ -164,7 +180,7 @@ The controlling live evidence is:
 
 - `NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md`
 - `NavierStokesReview/evidence/untracked_consolidation_matrix_2026-09-30.md`
-- `NavierStokesReview/evidence/review_tree_reconciliation_2026-09-30.md`
+- `NavierStokesReview/evidence/tree_reconciliation_current_2026-09-30.md`
 
 The scientific objective remains source-first and falsification-oriented:
 verify whether the mathematics in Fefferman's CMI specification and
@@ -3593,7 +3609,7 @@ tree-index, and SHA-256 disposition pass before any archive move, scoped
 staging, private commit, or public publication.
 
 Current exact evidence anchors are recorded in
-`NavierStokesReview/evidence/review_tree_reconciliation_2026-09-30.md`,
+`NavierStokesReview/evidence/tree_reconciliation_current_2026-09-30.md`,
 `NavierStokesReview/evidence/latest_rebuttal_manual_review_tranche_2026-09-30.md`,
 `NavierStokesReview/evidence/hardened_source_map_2026-09-29.md`, and the
 2026-09-29 full semantic register. Older brace or wildcard filename notation

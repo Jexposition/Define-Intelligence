@@ -33,6 +33,9 @@ def sha256(path: Path) -> str:
 
 def clean_name(name: str) -> str:
     name = ANSI_RE.sub("", name).strip()
+    # `docs/doc_tree.md` annotates historical entries after the filename.
+    # The annotation is presentation metadata, not part of the checkout path.
+    name = re.sub(r"\s+\(historical archive\)\s*$", "", name)
     if name.endswith("/"):
         name = name[:-1]
     return name
@@ -83,12 +86,17 @@ def reconcile(repo: Path, tree: Path) -> dict[str, Any]:
     ambiguous: list[dict[str, Any]] = []
     missing: list[dict[str, Any]] = []
     for entry in tree_files:
-        candidates = by_basename.get(entry["name"], [])
+        # Tree entries may include a rendered relative prefix such as
+        # `archive/`.  Reconcile by the actual basename while retaining the
+        # original tree label in the evidence record.
+        basename = Path(entry["name"]).name
+        candidates = by_basename.get(basename, [])
         if len(candidates) == 1:
             resolved.append(
                 {
                     "tree_line": str(entry["line"]),
-                    "basename": entry["name"],
+                    "tree_name": entry["name"],
+                    "basename": basename,
                     "current_path": candidates[0],
                     "resolution": "unique-current-basename",
                 }

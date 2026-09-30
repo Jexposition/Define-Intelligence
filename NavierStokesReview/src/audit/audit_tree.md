@@ -205,7 +205,7 @@ census has 817 files, and the Priority 201 JSON contains an unresolved 2,796
 headline total until a root-explicit rerun is completed.
 
 The exact current-index reconciliation is recorded in
-`NavierStokesReview/evidence/review_tree_reconciliation_2026-09-30.md`.
+`NavierStokesReview/evidence/tree_reconciliation_current_2026-09-30.md`.
 The nested audit index is a historical navigation snapshot: current review
 records from the 145–163 and 179–198 tranches are present on disk even where
 this tree has not yet been regenerated. This does not classify any theorem as

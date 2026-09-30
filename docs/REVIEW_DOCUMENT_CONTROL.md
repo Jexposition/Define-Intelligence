@@ -1,5 +1,16 @@
 # Navier–Stokes review document control
 
+## Priority 214 tree-reconciliation correction (2026-09-30)
+
+The current tree evidence is
+`NavierStokesReview/evidence/tree_reconciliation_current_2026-09-30.md`.
+The parser correction removes only rendered archive annotations and retains
+ambiguous basename matches as unresolved obligations. The live replay found
+zero missing tree basenames, 45 unique resolutions, and two explicit
+ambiguities. The older tree reconciliation report is historical and remains
+unchanged. This bookkeeping result does not alter `CTR-005: NOT ESTABLISHED`
+or authorise an archive move.
+
 ## Probe replay control: Priority 210 (2026-09-30)
 
 The selected endpoint replay is recorded in the Priority 210 evidence and
@@ -24,7 +35,7 @@ Current disposition evidence:
 
 - `NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md`
 - `NavierStokesReview/evidence/untracked_consolidation_matrix_2026-09-30.md`
-- `NavierStokesReview/evidence/review_tree_reconciliation_2026-09-30.md`
+- `NavierStokesReview/evidence/tree_reconciliation_current_2026-09-30.md`
 
 Current scientific control: genuine upstream moment/rank/curl/localisation,
 residual, pressure, and force machinery is present; the selected export does

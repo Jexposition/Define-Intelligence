@@ -1,5 +1,25 @@
 # CMI-first review plan: OpenAI Navier–Stokes claim
 
+## Priority 214: corrected tree and documentation-control replay (2026-09-30)
+
+The current tree reconciliation is recorded in
+`NavierStokesReview/evidence/tree_reconciliation_current_2026-09-30.md` and
+`NavierStokesReview/evidence/tree_reconciliation_current_2026-09-30.json`.
+The corrected parser is
+`NavierStokesReview/src/audit/tree_reconciliation.py`. It now treats archive
+annotations as display metadata, retains rendered labels for auditability, and
+refuses to infer a path when a basename is ambiguous. The live result is 49
+tree entries, 47 file entries, 3,466 checkout files, 45 unique resolutions, 0
+missing basenames, and 2 ambiguities. The historical reconciliation report is
+not overwritten.
+
+Next control action: rerun the full document cross-reference, active-link,
+source-fact-check, and SHA-256 gate against this current tree before any
+additional archival move. Keep the two ambiguous names as review obligations;
+do not resolve them by deleting or renaming files. The scientific status stays
+`CTR-005: NOT ESTABLISHED`: this bookkeeping correction does not prove or
+disprove selected-field moment transport.
+
 ## Current publication and environment authority: Priority 213 (2026-09-30)
 
 The live six-root Navier–Stokes environment closure is recorded in

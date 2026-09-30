@@ -1,5 +1,17 @@
 # Selected-field correspondence in the OpenAI Navier–Stokes formalisation
 
+## Current control correction: Priority 214 (2026-09-30)
+
+The current bookkeeping evidence is
+`../NavierStokesReview/evidence/tree_reconciliation_current_2026-09-30.md`.
+It records 49 tree entries, 47 file entries, 3,466 checkout files, 45 unique
+basename resolutions, 0 missing basenames, and 2 explicit ambiguities. The
+older reconciliation report remains historical evidence. The live private
+checkout intentionally retains two untracked rows: protected OpenAI source
+`NavierStokes/R3/TestPressure.lean` and the local raw environment-closure JSON.
+Neither is staged or edited. This bookkeeping correction leaves the scientific
+status at `CTR-005: NOT ESTABLISHED`.
+
 ## Document control and current evidence
 
 This reader-facing paper is controlled by
@@ -1303,7 +1315,7 @@ This paper is a reader-facing synthesis, not a chronological agent log. The
 current source-of-truth control is
 `REVIEW_DOCUMENT_CONTROL.md`, with the companion peer review in
 `OpenAI_NavierStokes_Peer_Review_v1.md` and the current evidence reconciliation
-in `../NavierStokesReview/evidence/review_tree_reconciliation_2026-09-30.md`.
+in `../NavierStokesReview/evidence/tree_reconciliation_current_2026-09-30.md`.
 The review branch is
 `review/cmi-first-navier-stokes-reconciled-2026-09-30`; the separate public
 review branch is
