@@ -1,0 +1,27 @@
+{
+  "priority": 202,
+  "date": "2026-09-30",
+  "status": "positive_actual_invariant_trace_compiled",
+  "sources": {
+    "radial_moment_and_debt": "NavierStokes/CorrectionState.lean:226-250",
+    "two_zero_masses": "NavierStokes/GaugeMassPreservation.lean:140-142",
+    "cycle_invariant": "NavierStokes/CorrectionStep.lean:9408-9448",
+    "actual_stage_invariant": "NavierStokes/ActualCyclePreservation.lean:826-828",
+    "mass_preservation": "NavierStokes/DefectIncrementBounds.lean:799-813; NavierStokes/CorrectionStep.lean:5322-5342",
+    "rank_debt": "NavierStokes/DefectIncrementBounds.lean:714-870",
+    "compiled_probe": "NavierStokesReview/src/probes/ActualMomentPreservationTrace.lean:25-48"
+  },
+  "findings": {
+    "actual_cycle_carries_two_zero_mean_masses": true,
+    "actual_cycle_carries_three_debt_classes": true,
+    "mass_preservation_is_proved_through_actual_correction": true,
+    "rank_rows_and_debt_are_actual_constructional_data": true,
+    "final_selected_cartesian_M_I_J_S_Cp_identity_located": false,
+    "internal_invariant_mapped_to_paper_tuple": false,
+    "selected_nonzero_moment_defect_proved": false,
+    "force_nonsmoothness_proved": false,
+    "literal_forced_cmi_endpoint_refuted": false
+  },
+  "verdict": "CTR-005: NOT ESTABLISHED for complete manuscript-to-selected-endpoint correspondence",
+  "interpretation": "The earlier endpoint description must be strengthened: the selected path carries a genuine two-plus-three internal moment/debt invariant. The unresolved issue is its explicit identification with the paper tuple after final Cartesian transformations and export, not absence of all moment machinery."
+}

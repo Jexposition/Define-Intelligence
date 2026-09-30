@@ -765,3 +765,14 @@ or axis results, not a final five-moment identity. Compiled review-side
 the selected Cartesian transport theorem. The controlled status remains
 `CTR-005: NOT ESTABLISHED`, with no selected defect or literal CMI refutation
 claimed.
+## Priority 202 actual invariant correction (2026-09-30)
+
+The compiled trace at
+`../NavierStokesReview/src/audit/priority_202_actual_moment_invariant_trace_2026-09-30.md`
+records the positive internal bridge: the actual cycle invariant contains two
+preserved mean masses and three residual-debt classes. Therefore the map must
+not describe the selected path as moment-free. The unresolved edge is the
+explicit identification of this internal two-plus-three structure with the
+paper tuple `(M,I,J,S,Cp)` after Cartesian curl, localisation, summation, and
+force export. `CTR-005` remains a correspondence status, not a selected-field
+defect theorem.

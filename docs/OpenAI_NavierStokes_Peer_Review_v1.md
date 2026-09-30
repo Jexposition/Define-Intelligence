@@ -4434,3 +4434,12 @@ Cartesian fields with `(M,I,J,S,Cp)`. Two review-side `barMoment` identities
 compile only with caller-supplied pullback data. This strengthens `CTR-005`
 as a paper-to-endpoint correspondence finding, while not proving a selected
 field defect or literal CMI failure.
+## Live audit result: Priority 202 actual invariant trace (2026-09-30)
+
+The latest positive source correction is recorded in
+`../NavierStokesReview/src/audit/priority_202_actual_moment_invariant_trace_2026-09-30.md`.
+The actual correction cycle carries two preserved mean-mass identities and
+three residual-debt classes. The review therefore does not claim that the
+selected path lacks moment machinery. The unresolved correspondence question
+is whether those internal coordinates are explicitly identified with the
+paper's `(M,I,J,S,Cp)` after the final Cartesian transformations and export.

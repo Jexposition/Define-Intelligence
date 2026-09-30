@@ -1,5 +1,6 @@
 ```markdown
 . 📂 evidence
+├── 📄 source_tranche_priority_202_actual_moment_invariant_trace_2026-09-30.json
 ├── 📄 source_tranche_priority_201_selected_closure_census_2026-09-30.json
 ├── 📄 selected_endpoint_source_census_2026-09-30.json
 ├── 📄 selected_endpoint_source_census_2026-09-30.md

@@ -1,5 +1,16 @@
 # CMI-first review plan: OpenAI Navier–Stokes claim
 
+## Priority 202 actual invariant correction: 2026-09-30
+
+The current source trace is recorded in
+`NavierStokesReview/src/audit/priority_202_actual_moment_invariant_trace_2026-09-30.md`.
+It verifies a genuine internal two-plus-three invariant on the actual cycle:
+two zero mean masses and three residual-debt classes. Future audit language
+must preserve that positive result. The open task is to search for the exact
+identification of those internal coordinates with the paper's `(M,I,J,S,Cp)`
+through the final selected Cartesian field, rather than claiming that all
+moment transport is absent.
+
 ## Priority 201 closure census and candidate disposition: 2026-09-30
 
 Run record:

@@ -1,5 +1,16 @@
 # Review audit workspace goal
 
+## Priority 202 correction: actual internal moment invariant: 2026-09-30
+
+The compiled positive trace is recorded in
+`NavierStokesReview/src/audit/priority_202_actual_moment_invariant_trace_2026-09-30.md`.
+It proves that the actual cycle carries two preserved mean-mass identities
+and three residual-debt components. This corrects any wording suggesting that
+the selected path has no moment mechanism. The remaining `CTR-005` question
+is narrower: the inspected export still has no theorem identifying this
+internal two-plus-three structure with the manuscript's named `(M,I,J,S,Cp)`
+after the final Cartesian curl, localisation, summation, and force export.
+
 ## Priority 201 closure census: 2026-09-30
 
 The current full-source census and compiled review-side candidate disposition

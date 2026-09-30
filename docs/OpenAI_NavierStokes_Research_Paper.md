@@ -1321,3 +1321,12 @@ load-bearing, but records that the inspected selected endpoint still lacks a
 named final moment-identification theorem. This is `CTR-005: NOT ESTABLISHED`
 for exact manuscript-to-selected-endpoint correspondence, not a claim that
 the selected physical field has a proved nonzero defect.
+## Live audit result: Priority 202 actual invariant trace (2026-09-30)
+
+The current positive trace is linked at
+`../NavierStokesReview/src/audit/priority_202_actual_moment_invariant_trace_2026-09-30.md`.
+It establishes that the actual correction cycle transports two zero mean
+masses and carries three residual-debt components. This is genuine internal
+moment-related mathematics. The paper-to-endpoint gap remains the missing
+explicit identification with `(M,I,J,S,Cp)` for the final Cartesian field,
+not the absence of all internal moment machinery.
