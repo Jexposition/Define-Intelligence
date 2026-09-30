@@ -4,8 +4,8 @@
 
 The private/public release state is recorded in
 `../NavierStokesReview/src/audit/priority_226_release_state_2026-10-01.md`.
-The private curated tip is `0fbd409`; the verified public remote tip is
-`6199aab`.
+That file is a dated release snapshot; read Git at each release gate for the
+current private and public refs.
 
 ## Priority 225: selected mixed `barMoment` shell gate (2026-10-01)
 

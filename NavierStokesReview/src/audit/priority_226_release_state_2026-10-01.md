@@ -1,7 +1,7 @@
-# Priority 226: curated release state
+# Priority 226: curated release-state snapshot
 
 Date: 2026-10-01
-Status: verified release control
+Status: verified release-control snapshot
 
 ## Branches
 
@@ -14,10 +14,13 @@ Status: verified release control
 - Public local and remote tip:
   `6199aabad0f8cf7af6ad38383099f2c7303b4885`
 
-The public remote ref was verified after push. Only the curated audit,
+The public remote ref was verified after push at the snapshot gate. Only the curated audit,
 evidence, control, and tree files from the Priority 224–225 pass were
 published. The protected `NavierStokes/R3/TestPressure.lean` file and the raw
 environment-closure JSON were not staged or published.
+
+This record is a dated release snapshot. Later control commits change the
+branch tip; current refs must always be read from Git at the release gate.
 
 ## Scientific status
 

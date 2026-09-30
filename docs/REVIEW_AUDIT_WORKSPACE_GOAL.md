@@ -4,7 +4,8 @@
 
 The verified private/public branch state is recorded in
 `../NavierStokesReview/src/audit/priority_226_release_state_2026-10-01.md`.
-Private curated tip: `0fbd409`. Public remote tip: `6199aab`.
+The file is a dated snapshot. Read the private and public Git refs at each
+release gate rather than treating embedded commit IDs as live values.
 
 ## Priority 225: selected mixed `barMoment` shell gate (2026-10-01)
 
