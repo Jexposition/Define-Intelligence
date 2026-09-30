@@ -2638,3 +2638,23 @@ but no located production theorem identifying the final selected Cartesian
 fields with `(M,I,J,S,C_p)`. `CTR-005` remains `NOT ESTABLISHED`; this record
 does not assert a nonzero defect, force nonsmoothness, literal CMI failure,
 impossibility theorem, compiler escape, or `False`.
+## Publication and control reconciliation: Priority 215 (2026-10-01)
+
+The current documentation reconciliation is committed privately as `0a03e2a`
+on `review/cmi-first-navier-stokes-reconciled-2026-09-30` and mirrored to the
+public branch as `528bf2e` on
+`review/cmi-first-navier-stokes-disposition-public-2026-09-30`. The public
+remote ref was verified after the push. This supersedes the older Priority 213
+commit identifiers above; those entries remain historical records.
+
+The four updated documents are the CMI review plan, workspace goal, peer-review
+draft, and research-paper draft. They now link the fresh 2026-09-30 NS
+environment closure and whole-tree selected-transport census, and they state
+the current disposition without upgrading it: `CTR-005: NOT ESTABLISHED`.
+
+The private worktree still contains exactly two intentional untracked paths:
+protected `NavierStokes/R3/TestPressure.lean` and the raw 366 MB closure JSON.
+Neither was staged, modified, moved, deleted, or published. No Lean/Lake/Elan
+processes were running at the final check. Full document consolidation,
+source-first fact-checking, link/lint verification, and the non-destructive
+archive gate remain open.
