@@ -1,5 +1,23 @@
 # CMI-first review plan: OpenAI Navier–Stokes claim
 
+## Priority 218: selected-endpoint crosswalk replay (2026-10-01)
+
+The latest source-bound replay is recorded in
+`NavierStokesReview/src/audit/priority_218_selected_endpoint_crosswalk_replay_2026-10-01.md`
+and
+`NavierStokesReview/evidence/selected_endpoint_crosswalk_replay_2026-10-01.md`.
+It confirms that the selected route is substantive and that
+`CandidateFromLimits` derives smooth force from actual residual-jet limits,
+recurrence, and extension. It also confirms that no consumed production
+declaration has been located for the completed selected-field identity with
+`(M,I,J,S,C_p)`.
+
+This updates the active test without changing the verdict:
+`CTR-005: NOT ESTABLISHED`. The next scientific task is still the value-level
+selected-field transport calculation. No nonzero defect, force
+nonsmoothness, literal CMI failure, impossibility theorem, compiler escape,
+or `False` is authorised by this replay.
+
 ## Live control override: Priority 217 release state (2026-10-01)
 
 This section overrides older publication snapshots below. The current private

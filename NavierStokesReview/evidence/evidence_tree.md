@@ -1,5 +1,6 @@
 ```markdown
 . 📂 evidence
+├── 📄 selected_endpoint_crosswalk_replay_2026-10-01.md
 ├── 📄 document_consolidation_census_2026-10-01.md
 ├── 📄 priority_210_selected_endpoint_probe_replay_2026-09-30.md
 ├── 📄 source_tranche_priority_203_internal_to_endpoint_crossfile_trace_2026-09-30.json

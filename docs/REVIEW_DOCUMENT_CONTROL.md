@@ -1,5 +1,24 @@
 # Navier–Stokes review document control
 
+## Priority 218 source crosswalk replay (2026-10-01)
+
+The live source replay is recorded in
+`../NavierStokesReview/src/audit/priority_218_selected_endpoint_crosswalk_replay_2026-10-01.md`
+and
+`../NavierStokesReview/evidence/selected_endpoint_crosswalk_replay_2026-10-01.md`.
+It confirms the positive selected invariant, physical-data, residual-rate,
+smooth-force, candidate-consequence, and axis-blow-up route. It also confirms
+the bounded negative result: no consumed production declaration was located
+that identifies the completed selected Cartesian construction with the
+manuscript's full `(M,I,J,S,C_p)` composition.
+
+The replay corrects the force wording: `CandidateFromLimits` derives force
+smoothness from actual residual-jet limits, recurrence, and smooth extension;
+it is not supported to call it an unsupported `NativeBounds` assumption. The
+five-observable endpoint correspondence remains `CTR-005: NOT ESTABLISHED`.
+No nonzero defect, force nonsmoothness, literal CMI failure, impossibility
+theorem, compiler escape, or `False` is recorded.
+
 ## Priority 216 consolidation census (2026-10-01)
 
 The current corpus was re-read against the live source, manuscript and CMI

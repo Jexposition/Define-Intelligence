@@ -1,5 +1,23 @@
 # Review audit workspace goal
 
+## Priority 218: selected-endpoint crosswalk replay (2026-10-01)
+
+The current source replay is recorded in
+`NavierStokesReview/src/audit/priority_218_selected_endpoint_crosswalk_replay_2026-10-01.md`
+and
+`NavierStokesReview/evidence/selected_endpoint_crosswalk_replay_2026-10-01.md`.
+It confirms the real selected invariant-to-physical-data-to-residual-to-force
+and blow-up route, while preserving the bounded finding that the inspected
+production endpoint has no located consumed theorem identifying the completed
+selected Cartesian construction with `(M,I,J,S,C_p)`.
+
+It also corrects the force claim: `force_smooth` is derived from residual-jet
+limits, derivative recurrence, and smooth extension, not shown to be an
+unsupported generic-rate assumption. The controlled status remains
+`CTR-005: NOT ESTABLISHED`. Continue the value-level transport calculation;
+do not promote this replay to a defect, literal CMI failure, impossibility
+theorem, or `False`.
+
 ## Live control override: Priority 217 release state (2026-10-01)
 
 This section overrides older branch and commit snapshots below. The private
