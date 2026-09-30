@@ -1,5 +1,9 @@
 ```markdown
 . 📂 audit
+## Current control record: Priority 224 (2026-10-01)
+
+├── 📄 priority_225_selected_mixed_barmoment_shell_gate_2026-10-01.md
+├── 📄 priority_224_workspace_corpus_regrounding_2026-10-01.md
 ├── 📄 priority_223_source_only_transport_replay_2026-10-01.md
 ├── 📄 priority_222_selected_probe_replay_2026-10-01.md
 ├── 📄 priority_221_fefferman_comparator_crosswalk_2026-10-01.md

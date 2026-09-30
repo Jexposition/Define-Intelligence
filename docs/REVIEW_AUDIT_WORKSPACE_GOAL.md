@@ -1,5 +1,25 @@
 # Review audit workspace goal
 
+## Priority 225: selected mixed `barMoment` shell gate (2026-10-01)
+
+The compiled finite-prefix and conditional-linearity result is recorded in
+`../NavierStokesReview/src/audit/priority_225_selected_mixed_barmoment_shell_gate_2026-10-01.md`
+with evidence at
+`../NavierStokesReview/evidence/selected_mixed_barmoment_shell_gate_2026-10-01.md`.
+It locates the exact remaining support/smoothness gate for the final mixed
+`barMoment` calculation. It does not produce a moment value or a stronger
+refutation. Keep `CTR-005: NOT ESTABLISHED`.
+
+## Priority 224: workspace corpus re-grounding (2026-10-01)
+
+The current corpus re-grounding and active-document control record is
+`../NavierStokesReview/src/audit/priority_224_workspace_corpus_regrounding_2026-10-01.md`.
+It confirms the live scientific disposition and separates current authority
+from historical tranche prose. The selected route is substantive, while the
+complete selected-field `(M,I,J,S,C_p)` correspondence remains
+`CTR-005: NOT ESTABLISHED`. No selected defect, force nonsmoothness, literal
+CMI failure, impossibility theorem, compiler escape, or `False` is established.
+
 ## Priority 223: source-only selected-transport replay (2026-10-01)
 
 The fresh source-only replay is recorded in

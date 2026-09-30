@@ -1,5 +1,25 @@
 # Navier–Stokes review document control
 
+## Priority 225 selected mixed `barMoment` shell gate (2026-10-01)
+
+The compiled review-side completion and exact remaining support gate are
+recorded in
+`../NavierStokesReview/src/audit/priority_225_selected_mixed_barmoment_shell_gate_2026-10-01.md`
+and
+`../NavierStokesReview/evidence/selected_mixed_barmoment_shell_gate_2026-10-01.md`.
+This is a bounded P2 result. The scientific status remains
+`CTR-005: NOT ESTABLISHED`.
+
+## Priority 224 workspace corpus re-grounding (2026-10-01)
+
+The active-document and evidence re-grounding is recorded in
+`../NavierStokesReview/src/audit/priority_224_workspace_corpus_regrounding_2026-10-01.md`.
+It is the current navigation correction for the paper, peer review, semantic
+map, mathematical specification, and tree indexes. The scientific status is
+unchanged: `CTR-005: NOT ESTABLISHED`, with no selected defect, force
+nonsmoothness, literal CMI failure, impossibility theorem, compiler escape, or
+`False` established.
+
 ## Priority 223 source-only selected-transport replay (2026-10-01)
 
 The fresh source-only replay is recorded in

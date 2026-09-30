@@ -1,5 +1,13 @@
 ```markdown
 . 📂 evidence
+## Current control record: Priority 224 (2026-10-01)
+
+- `selected_mixed_barmoment_shell_gate_2026-10-01.md`
+- `../src/audit/priority_224_workspace_corpus_regrounding_2026-10-01.md`
+- `document_consolidation_census_2026-10-01.md`
+- `selected_transport_audit_2026-10-01_source_only.md`
+- `fefferman_comparator_crosswalk_2026-10-01.md`
+
 ├── 📄 selected_transport_audit_2026-10-01_source_only.md
 ├── 📄 selected_transport_audit_2026-10-01_source_only.json
 ├── 📄 selected_probe_replay_2026-10-01.md

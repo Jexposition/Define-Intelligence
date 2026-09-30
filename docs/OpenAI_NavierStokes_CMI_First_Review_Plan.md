@@ -1,5 +1,23 @@
 # CMI-first review plan: OpenAI Navier–Stokes claim
 
+## Priority 225: selected mixed `barMoment` shell gate (2026-10-01)
+
+The six-file pinned-toolchain completion replay is recorded in
+`../NavierStokesReview/src/audit/priority_225_selected_mixed_barmoment_shell_gate_2026-10-01.md`.
+It proves finite-prefix and conditional branch-linearity facts, while leaving
+the final selected `Shell` support/integrability premises explicit. Continue
+P2–P4 without promoting this conditional result to a paper-level equality,
+nonzero defect, or CMI failure.
+
+## Priority 224: workspace corpus re-grounding (2026-10-01)
+
+The active-document and evidence re-grounding is recorded in
+`../NavierStokesReview/src/audit/priority_224_workspace_corpus_regrounding_2026-10-01.md`.
+Use it with Priorities 218, 221, and 223 as the current scientific/control
+layer. Historical tranche prose remains provenance only. The selected route
+is genuine, but complete selected-field `(M,I,J,S,C_p)` correspondence remains
+`CTR-005: NOT ESTABLISHED`; no stronger refutation is inferred.
+
 ## Priority 223: source-only selected-transport replay (2026-10-01)
 
 The source-only replay is recorded in

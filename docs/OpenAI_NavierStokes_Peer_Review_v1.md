@@ -1,5 +1,22 @@
 # Independent peer review of the OpenAI Navier–Stokes formalisation
 
+## Current evidence correction: Priority 225 (2026-10-01)
+
+The latest selected-field gate is
+[`selected_mixed_barmoment_shell_gate_2026-10-01.md`](../NavierStokesReview/evidence/selected_mixed_barmoment_shell_gate_2026-10-01.md).
+It closes finite-prefix and conditional branch-linearity checks while
+preserving the explicit final support/integrability gate. It does not change
+the active disposition: `CTR-005: NOT ESTABLISHED`.
+
+## Current control correction: Priority 224 (2026-10-01)
+
+The current corpus re-grounding is
+[`priority_224_workspace_corpus_regrounding_2026-10-01.md`](../NavierStokesReview/src/audit/priority_224_workspace_corpus_regrounding_2026-10-01.md).
+It supersedes older navigation pointers only. Current endpoint evidence is
+Priorities 218, 221, and 223. The active disposition remains
+`CTR-005: NOT ESTABLISHED`, not a selected-field defect or literal CMI
+failure.
+
 ## Current control correction: Priority 214 (2026-09-30)
 
 The current tree reconciliation is
@@ -32,9 +49,10 @@ Evidence: `NavierStokesReview/src/audit/priority_203_internal_to_endpoint_crossf
 This review is governed by
 [`REVIEW_DOCUMENT_CONTROL.md`](REVIEW_DOCUMENT_CONTROL.md) and
 [`DOCUMENTATION_RECONCILIATION_2026-09-30.md`](DOCUMENTATION_RECONCILIATION_2026-09-30.md).
-Current endpoint findings must be checked against the Priority 186–204 source
-reviews and matching evidence JSON files in `NavierStokesReview/src/audit/`
-and `NavierStokesReview/evidence/`. Dated tranche notes are historical
+Current endpoint findings must be checked against the Priority 218, 221, and
+223 source reviews and matching evidence files in `NavierStokesReview/src/audit/`
+and `NavierStokesReview/evidence/`, together with the earlier 186–204 source
+reviews. Dated tranche notes are historical
 evidence, not competing live verdicts. Priority 204 is scope control only: it
 reconciles the repository census, effective fork register, indexed-file count,
 and selected endpoint closure. Its 29-row disposition ledger is not a count

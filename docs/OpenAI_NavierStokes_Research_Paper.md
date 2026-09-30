@@ -1,5 +1,22 @@
 # Selected-field correspondence in the OpenAI Navier–Stokes formalisation
 
+## Current evidence correction: Priority 225 (2026-10-01)
+
+The latest selected-field gate is
+[`selected_mixed_barmoment_shell_gate_2026-10-01.md`](../NavierStokesReview/evidence/selected_mixed_barmoment_shell_gate_2026-10-01.md).
+It proves finite-prefix and conditional `barMoment` branch facts, but leaves
+the final selected support/integrability hypotheses explicit. It does not
+change the active disposition: `CTR-005: NOT ESTABLISHED`.
+
+## Current control correction: Priority 224 (2026-10-01)
+
+The current corpus re-grounding is
+[`priority_224_workspace_corpus_regrounding_2026-10-01.md`](../NavierStokesReview/src/audit/priority_224_workspace_corpus_regrounding_2026-10-01.md).
+It supersedes older navigation pointers only. The latest selected-path source
+records are Priorities 218, 221, and 223. The active disposition remains
+`CTR-005: NOT ESTABLISHED`: the selected route is substantive, but complete
+manuscript-to-selected-field identification of `(M,I,J,S,C_p)` is not located.
+
 ## Current control correction: Priority 214 (2026-09-30)
 
 The current bookkeeping evidence is

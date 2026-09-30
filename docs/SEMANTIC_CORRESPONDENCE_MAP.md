@@ -1,5 +1,22 @@
 # Semantic correspondence map: OpenAI paper to Lean endpoint
 
+## Priority 225 selected mixed `barMoment` gate (2026-10-01)
+
+The latest review-side completion is recorded in
+`../NavierStokesReview/src/audit/priority_225_selected_mixed_barmoment_shell_gate_2026-10-01.md`.
+It proves finite-prefix and conditional branch decomposition, but not the
+final selected support/integrability premises or the manuscript tuple
+identity. `CTR-005: NOT ESTABLISHED` remains current.
+
+## Priority 224 active navigation correction (2026-10-01)
+
+Use
+[`priority_224_workspace_corpus_regrounding_2026-10-01.md`](../NavierStokesReview/src/audit/priority_224_workspace_corpus_regrounding_2026-10-01.md)
+with Priorities 218, 221, and 223 as the current control layer. Older
+crosswalks remain dated evidence. The selected route is substantive, while
+complete manuscript-to-selected-field `(M,I,J,S,C_p)` correspondence remains
+`CTR-005: NOT ESTABLISHED`.
+
 ## Priority 203 cross-file closure: 2026-09-30
 
 The latest source tranche

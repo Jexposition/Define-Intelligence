@@ -3,6 +3,14 @@
 
 ## Current live-index additions: 2026-09-30
 
+The current corpus-control addition is
+`audit/priority_224_workspace_corpus_regrounding_2026-10-01.md`. The selected
+transport replay and CMI crosswalk remain linked from the audit and evidence
+trees; this index is a navigation aid, not a semantic clearance record.
+
+The current selected mixed `barMoment` gate is
+`audit/priority_225_selected_mixed_barmoment_shell_gate_2026-10-01.md`.
+
 The compact tree below is a historical navigation snapshot. The following
 current review artefacts must be treated as live and discoverable:
 

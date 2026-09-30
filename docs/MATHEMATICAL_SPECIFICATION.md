@@ -1,5 +1,15 @@
 # Mathematical specification and audit navigation
 
+## Current control override: Priority 224 (2026-10-01)
+
+The current corpus re-grounding is
+`../NavierStokesReview/src/audit/priority_224_workspace_corpus_regrounding_2026-10-01.md`.
+The historical register text below is retained for provenance. Current counts,
+scope, and scientific disposition must be read from
+`REVIEW_DOCUMENT_CONTROL.md`, Priorities 218, 221, and 223, and the current
+semantic register. `CTR-005` remains `NOT ESTABLISHED` for complete
+manuscript-to-selected-endpoint fidelity.
+
 ## Historical audit state (2026-09-28)
 
 Current register correction: **2,792 indexed modules, 588 captured
