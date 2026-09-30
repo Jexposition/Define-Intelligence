@@ -10,6 +10,14 @@ and 137 review-side Lean files. The earlier 2,794 and 2,796 figures below
 remain dated snapshots and must not be quoted as current totals. The selected
 scientific disposition remains `CTR-005: NOT ESTABLISHED`.
 
+The private source-of-truth branch is
+`review/cmi-first-navier-stokes-reconciled-2026-09-30` at local commit
+`c3df226`; its remote push timed out and is not claimed as published. The
+separate public branch is
+`review/cmi-first-navier-stokes-disposition-public-2026-09-30` at remote
+commit `080daa1`. The protected untracked
+`NavierStokes/R3/TestPressure.lean` remains untouched and unstaged.
+
 ## Priority 203 internal-to-endpoint cross-file trace: 2026-09-30
 
 The latest source-bound trace is recorded in

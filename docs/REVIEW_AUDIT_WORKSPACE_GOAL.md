@@ -9,6 +9,14 @@ closure, 2,209 rows outside that closure, 817 `NavierStokes/` files, and 137
 review-side Lean files. Earlier 2,794, 2,796, and 2,790 figures below are
 historical snapshots. The scientific status remains `CTR-005: NOT ESTABLISHED`.
 
+The private source-of-truth branch is
+`review/cmi-first-navier-stokes-reconciled-2026-09-30` at local commit
+`c3df226`; its remote push timed out and is not claimed as published. The
+separate public branch is
+`review/cmi-first-navier-stokes-disposition-public-2026-09-30` at remote
+commit `080daa1`. The protected untracked
+`NavierStokes/R3/TestPressure.lean` remains untouched and unstaged.
+
 ## Priority 203: internal invariant to selected endpoint: 2026-09-30
 
 The source-bound cross-file trace is recorded in
