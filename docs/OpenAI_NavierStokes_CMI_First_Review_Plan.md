@@ -4584,7 +4584,7 @@ the scientific finding or open the archive gate.
 ## Priority 205 source-census adjudication
 
 The Priority 205 endpoint census and completion adjudication is recorded in
-\`../NavierStokesReview/evidence/source_tranche_priority_205_endpoint_census_and_completion_adjudication_2026-09-30.md\`
+`../NavierStokesReview/evidence/source_tranche_priority_205_endpoint_census_and_completion_adjudication_2026-09-30.md`
 and its JSON companion. It checked the 588-module selected closure, seven
 lexical production candidates, and the review-side bar-moment completion.
 
@@ -4593,8 +4593,14 @@ physical data, residual-rate estimates, eventual germ equalities, smooth-force
 limits, and axis blow-up are connected. The bounded negative result is also
 real: no inspected production declaration identifies the final selected
 Cartesian velocity, pressure, residual, or force with the manuscript tuple
-\`(M,I,J,S,C_p)\`. The review completion supplies a caller-chosen pullback
-identity and is not that missing transport theorem. Keep \`CTR-005\` at
-\`NOT ESTABLISHED\`; do not upgrade it to a defect, force nonsmoothness, literal
-CMI failure, impossibility, compiler cheat, or \`False\` without a separate
+`(M,I,J,S,C_p)`. The review completion supplies a caller-chosen pullback
+identity and is not that missing transport theorem. Keep `CTR-005` at
+`NOT ESTABLISHED`; do not upgrade it to a defect, force nonsmoothness, literal
+CMI failure, impossibility, compiler cheat, or `False` without a separate
 value-level theorem.
+
+## Release checkpoint after Priority 205 control update (2026-09-30)
+
+The current private audit branch is review/cmi-first-navier-stokes-reconciled-2026-09-30 at local commit 3b6c467. The separate public review branch is review/cmi-first-navier-stokes-disposition-public-2026-09-30 at remote-confirmed commit 5561354.
+
+The three-file control update records the current evidence pointers, fixes the Priority 205 prose insertion, and preserves the archive gate. The protected untracked OpenAI-side path NavierStokes/R3/TestPressure.lean remains untouched, unstaged, and excluded. The next work remains full cross-reference and structural-lint verification, followed by a parent-folder SHA-256 manifest before any non-destructive archive move. No deletion or bulk staging is authorised.

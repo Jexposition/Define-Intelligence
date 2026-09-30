@@ -3599,14 +3599,20 @@ staging, movement, deletion, or a scientific upgrade.
 ## Priority 205 source-census control
 
 The latest selected-closure census is controlled by
-\`NavierStokesReview/evidence/source_tranche_priority_205_endpoint_census_and_completion_adjudication_2026-09-30.md\`
-and \`.json\`, indexed in both the evidence and audit trees. It confirms the
+`NavierStokesReview/evidence/source_tranche_priority_205_endpoint_census_and_completion_adjudication_2026-09-30.md`
+and `.json`, indexed in both the evidence and audit trees. It confirms the
 connected selected route and seven production candidates, but it does not
-locate a final selected-field identity with \`(M,I,J,S,C_p)\`.
+locate a final selected-field identity with `(M,I,J,S,C_p)`.
 
 This is the current calibrated finding: genuine internal invariant and
 residual-to-force machinery exists; complete manuscript-to-selected-field
-transport remains \`CTR-005: NOT ESTABLISHED\`. Review probes and caller-supplied
+transport remains `CTR-005: NOT ESTABLISHED`. Review probes and caller-supplied
 bar-moment identities must not be promoted to a physical defect or a proof of
 CMI failure. Any stronger conclusion requires a separately checked value-level
 calculation or impossibility theorem.
+
+## Release checkpoint after Priority 205 control update (2026-09-30)
+
+The current private audit branch is review/cmi-first-navier-stokes-reconciled-2026-09-30 at local commit 3b6c467. The separate public review branch is review/cmi-first-navier-stokes-disposition-public-2026-09-30 at remote-confirmed commit 5561354.
+
+The three-file control update records the current evidence pointers, fixes the Priority 205 prose insertion, and preserves the archive gate. The protected untracked OpenAI-side path NavierStokes/R3/TestPressure.lean remains untouched, unstaged, and excluded. The next work remains full cross-reference and structural-lint verification, followed by a parent-folder SHA-256 manifest before any non-destructive archive move. No deletion or bulk staging is authorised.
