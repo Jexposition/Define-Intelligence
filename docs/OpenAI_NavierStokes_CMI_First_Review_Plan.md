@@ -4213,3 +4213,9 @@ gap that every residual summand diverges, that the five moments are the sole
 cancellation route, or that Fefferman's force condition has already failed.
 The next proof target is a value-level selected-field moment identity,
 mismatch, impossibility theorem, or connected mandatory-condition failure.
+
+The private untracked corpus is controlled by
+`NavierStokesReview/src/audit/untracked_content_inventory.py`, with the
+SHA-256 snapshot in `NavierStokesReview/evidence/`. The inventory is evidence
+only: it authorises no staging, deletion, or archive move. Every disposition
+must be resolved after document consolidation and cross-reference checks.
