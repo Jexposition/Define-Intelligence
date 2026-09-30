@@ -25,11 +25,14 @@ This override is the current control state. Older 29-, 60-, and 61-row
 disposition paragraphs below are historical snapshots. The current primary
 branch is `review/cmi-first-navier-stokes-reconciled-2026-09-30`; the public
 review branch is `review/cmi-first-navier-stokes-disposition-public-2026-09-30`.
-The current inventory has one untracked row only:
-`NavierStokes/R3/TestPressure.lean`. It is protected OpenAI-side source and
-is not edited or staged. The accidental `$null` diagnostic was moved without
-deletion to the local ignored archive `archive/$null_2026-09-30.txt`; the
-parent-folder archive manifest records its reason and SHA-256.
+The current inventory has two intentional untracked rows:
+`NavierStokes/R3/TestPressure.lean`, protected OpenAI-side source that is not
+edited or staged, and
+`NavierStokesReview/evidence/lean_environment_closure_ns_3d_2026-09-30.json`,
+the raw closure export retained as evidence and excluded from scoped commits.
+The accidental `$null` diagnostic was moved without deletion to the local
+ignored archive `archive/$null_2026-09-30.txt`; the parent-folder archive
+manifest records its reason and SHA-256.
 
 Current disposition evidence:
 
@@ -69,9 +72,11 @@ The current untracked disposition is controlled by
 and its SHA-256 manifest. It contains 29 ledger rows: 24 retained for scoped
 staging, 3 archive-confirmed, 1 provenance hold, and 1 protected OpenAI-source
 row. These ledger rows are not 29 current Git-untracked paths. Git currently
-reports exactly one untracked path, the protected
-NavierStokes/R3/TestPressure.lean; the remaining ledger rows describe
-review-artifact disposition and archive history. Thirty-six artefacts were
+reports exactly two intentional untracked paths: the protected
+NavierStokes/R3/TestPressure.lean and the raw
+`NavierStokesReview/evidence/lean_environment_closure_ns_3d_2026-09-30.json`
+closure export. The remaining ledger rows describe review-artifact disposition
+and archive history. Thirty-six artefacts were
 moved non-destructively into parent-folder archives; no deletion occurred. The
 archive manifests are
 `docs/archive/ARCHIVE_MANIFEST_2026-09-30.md` and
@@ -2434,13 +2439,13 @@ failure, impossibility theorem, compiler escape, or kernel `False` has been
 proved.
 
 The current Git facts are: private branch
-`review/cmi-first-navier-stokes-reconciled-2026-09-30` at a local tip verified
-by Git, private push unconfirmed after timed-out attempts; public branch
+`review/cmi-first-navier-stokes-reconciled-2026-09-30` at local tip `0c0700f`
+before the next documentation-only commit; public branch
 `review/cmi-first-navier-stokes-disposition-public-2026-09-30` with remote tip
-verified by Git and push confirmed. The private worktree has two intentional
-untracked rows: the protected `NavierStokes/R3/TestPressure.lean` source and
-the local generated 366 MB environment-closure JSON. Both remain unstaged; the
-source file remains untouched.
+`e8599b4` verified by Git and push confirmed. The private worktree has two
+intentional untracked rows: the protected `NavierStokes/R3/TestPressure.lean`
+source and the local generated 366 MB environment-closure JSON. Both remain
+unstaged; the source file remains untouched.
 
 The next release gate is a live cross-reference and structural-lint pass,
 followed by a scoped commit. No deletion, bulk staging, or archive movement is
@@ -2449,9 +2454,11 @@ archive manifest is updated.
 
 ## Live inventory correction: 2026-09-30
 
-The regenerated current-worktree inventory contains one untracked path:
-protected `NavierStokes/R3/TestPressure.lean`. Its hash is verified. It is
-untouched, unstaged, and excluded from review commits and archive operations.
+The regenerated current-worktree inventory contains two intentional untracked
+paths: protected `NavierStokes/R3/TestPressure.lean` and the raw closure export
+`NavierStokesReview/evidence/lean_environment_closure_ns_3d_2026-09-30.json`.
+Their hashes are verified. Both are untouched, unstaged, and excluded from
+review commits and archive operations.
 
 The 29-row disposition/consolidation records are historical reviewed-set
 records, and the older 61-entry hold is historical evidence. Neither is the
@@ -2480,11 +2487,12 @@ does not establish a selected nonzero defect, force nonsmoothness, literal CMI
 failure, impossibility, a compiler escape, or False.
 
 Release control is current: private branch
-`review/cmi-first-navier-stokes-reconciled-2026-09-30` remains local with its
-private push unconfirmed; public branch
-`review/cmi-first-navier-stokes-disposition-public-2026-09-30` is remote-confirmed.
-Exact tips are recorded by the release check. The sole untracked path remains the protected
-NavierStokes/R3/TestPressure.lean. It is untouched, unstaged, and excluded.
+`review/cmi-first-navier-stokes-reconciled-2026-09-30` is local at tip
+`0c0700f` before the next documentation-only commit; public branch
+`review/cmi-first-navier-stokes-disposition-public-2026-09-30` is remote-confirmed
+at `e8599b4`. The two intentional untracked paths remain the protected
+NavierStokes/R3/TestPressure.lean and the raw closure export JSON. Both are
+untouched, unstaged, and excluded.
 No archive move is authorised until the consolidation cross-reference, link/lint
 checks, and parent-folder SHA-256 archive manifest are complete.
 

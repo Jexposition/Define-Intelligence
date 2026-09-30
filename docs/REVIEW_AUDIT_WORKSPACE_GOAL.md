@@ -3647,29 +3647,34 @@ field-level results, not consequences of the absence of a named exported
 identity.
 
 The live control state is: private branch
-`review/cmi-first-navier-stokes-reconciled-2026-09-30`, with its local tip
-verified by Git and its push unconfirmed after timed-out attempts; public branch
-`review/cmi-first-navier-stokes-disposition-public-2026-09-30`, with its remote
-tip verified by Git and push confirmed. The only private untracked path is the protected
-`NavierStokes/R3/TestPressure.lean`, which remains untouched and unstaged.
+`review/cmi-first-navier-stokes-reconciled-2026-09-30`, local tip `0c0700f`
+before the next documentation-only commit; public branch
+`review/cmi-first-navier-stokes-disposition-public-2026-09-30`, with remote tip
+`e8599b4` verified and push confirmed. The private worktree has two intentional
+untracked paths: protected `NavierStokes/R3/TestPressure.lean` and the raw
+`NavierStokesReview/evidence/lean_environment_closure_ns_3d_2026-09-30.json`
+closure export. Both remain untouched and unstaged.
 
-The next work order is mandatory: first resolve or document the private push;
-then complete the live cross-reference and structural-lint pass; then make a
-scoped commit; only after consolidation is confirmed may redundant material be
-moved to a parent-folder archive with a SHA-256 manifest. No deletion, bulk
-staging, or OpenAI-source edit is authorised.
+The next work order is mandatory: complete the live cross-reference and
+structural-lint pass, make a scoped documentation commit, mirror it to the
+public review branch, and verify both refs. Only after consolidation is
+confirmed may redundant material be moved to a parent-folder archive with a
+SHA-256 manifest. No deletion, bulk staging, or OpenAI-source edit is
+authorised.
 
 ## Live untracked-state correction: 2026-09-30
 
-The current private worktree has one untracked path only:
-`NavierStokes/R3/TestPressure.lean`. It is a protected OpenAI-tree file, its
-current SHA-256 is verified by the regenerated inventory, and it remains
-untouched, unstaged, and outside the archive workflow.
+The current private worktree has two intentional untracked paths:
+`NavierStokes/R3/TestPressure.lean`, a protected OpenAI-tree file, and the raw
+closure export
+`NavierStokesReview/evidence/lean_environment_closure_ns_3d_2026-09-30.json`.
+Their hashes and dispositions are recorded by the regenerated inventory; both
+remain untouched, unstaged, and outside the archive workflow.
 
 The 29-row `untracked_disposition_manifest` and the 29-row consolidation
 matrix describe a historical reviewed set. The earlier 61-entry hold is also
 historical. Neither number is the current untracked count. The current
-one-entry state is recorded in the regenerated inventory and consolidation
+two-path state is recorded in the regenerated inventory and consolidation
 matrix, which are evidence of bookkeeping state only and do not authorise
 staging, movement, deletion, or a scientific upgrade.
 

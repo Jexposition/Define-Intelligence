@@ -9,8 +9,9 @@ The corrected parser is
 `NavierStokesReview/src/audit/tree_reconciliation.py`. It now treats archive
 annotations as display metadata, retains rendered labels for auditability, and
 refuses to infer a path when a basename is ambiguous. The live result is 49
-tree entries, 47 file entries, 3,466 checkout files, 45 unique resolutions, 0
-missing entries, and 0 ambiguities. The historical reconciliation report is
+tree entries, 47 file entries, 3,466 checkout files, 47 explicit tree-relative
+resolutions, 0 missing entries, and 0 ambiguities. The historical
+reconciliation report is
 not overwritten.
 
 Next control action: rerun the full document cross-reference, active-link,
@@ -4643,9 +4644,9 @@ selected-field theorem.
 Source and workspace state for this checkpoint:
 
 - private branch: `review/cmi-first-navier-stokes-reconciled-2026-09-30`; local
-  tip verified by Git, private push not confirmed after timed-out attempts;
+  tip `0c0700f` verified by Git;
 - public branch: `review/cmi-first-navier-stokes-disposition-public-2026-09-30`;
-  remote tip verified by Git and push confirmed;
+  remote tip `e8599b4` verified by Git and push confirmed;
 - private worktree: two intentional untracked paths, the protected
   `NavierStokes/R3/TestPressure.lean` source and the local generated 366 MB
   environment-closure JSON; neither is staged, and no OpenAI source edits
@@ -4659,18 +4660,17 @@ Source and workspace state for this checkpoint:
   records. The 817-file `NavierStokes/` census remains a separate declared
   source scope.
 
-The next ordered steps are private push-state resolution, full live
-cross-reference and structural-lint verification, a scoped review commit, and
-only then any archive move. Archive operations remain non-destructive and
+The next ordered steps are full live cross-reference and structural-lint
+verification, scoped review commits, and only then any archive move. Archive operations remain non-destructive and
 require a parent-folder manifest containing old path, new path, reason, and
 SHA-256. No deletion or bulk staging is allowed.
 
 ## Live untracked-state correction: 2026-09-30
 
-The regenerated current-worktree inventory contains exactly one untracked
-path, the protected `NavierStokes/R3/TestPressure.lean`. Its current hash is
-verified. It is not part of the review commit, must not be staged, and must
-not be moved or archived.
+The regenerated current-worktree inventory contains exactly two intentional
+untracked paths: the protected `NavierStokes/R3/TestPressure.lean` source and
+the local raw 366 MB environment-closure JSON. Neither is part of the review
+commit or staged; the source must not be moved or archived.
 
 The 29-row consolidation matrix and disposition manifest are retained as
 historical reviewed-set records. The older 61-entry hold is historical as

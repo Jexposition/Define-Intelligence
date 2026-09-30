@@ -17,9 +17,10 @@ old/new paths recorded in the archive manifests. The disposition ledger has
 `NavierStokesReview/evidence/untracked_disposition_manifest_2026-09-30.json`:
 24 retained for scoped staging, 3 archive-confirmed, 1 held for provenance
 review, and 1 protected OpenAI-source file. These are ledger rows, not a count
-of current Git-untracked paths. Git currently reports one untracked path only:
-NavierStokes/R3/TestPressure.lean, which is protected and must not be edited,
-staged, moved, or archived. No deletion occurred. The evidence
+of current Git-untracked paths. Git currently reports two untracked paths:
+the protected `NavierStokes/R3/TestPressure.lean` source and the local raw
+366 MB environment-closure JSON. Neither may be edited or staged; the source
+must not be moved or archived. No deletion occurred. The evidence
 archive manifest is intentionally ignored by the broad repository ignore rule
 and must be force-staged explicitly if included in a scoped documentation
 commit.
@@ -250,26 +251,28 @@ impossibility theorem, compiler escape, or `False`.
 
 The live Git state is explicit. The private branch is
 `review/cmi-first-navier-stokes-reconciled-2026-09-30`; its local tip is
-verified by Git, but its push was not confirmed after two timed-out attempts.
-The public
+`0c0700f` (`Reconcile tree hierarchy resolution evidence`). The separate public
 mirror branch is
 `review/cmi-first-navier-stokes-disposition-public-2026-09-30`; its remote tip
-is verified by Git and its push is confirmed. The private worktree contains exactly one
-untracked protected file, `NavierStokes/R3/TestPressure.lean`; it has not been
-edited or staged. No OpenAI source file is part of the review tranche.
+is verified by Git and its push is confirmed at `e8599b4`. The private worktree
+contains exactly two intentional untracked paths: the protected
+`NavierStokes/R3/TestPressure.lean` source and the local raw environment-closure
+JSON. Neither is staged or edited. No OpenAI source file is part of the review
+tranche.
 
-The next gates are ordered: record or resolve the private push state; complete
-the live cross-reference and structural-lint pass; prepare only a scoped
-review commit; and only then consider further archive moves. Any archive move
+The next gates are ordered: complete the live cross-reference and
+structural-lint pass; prepare only scoped review commits; and only then
+consider further archive moves. Any archive move
 must be non-destructive and manifested with old path, new path, reason, and
 SHA-256. No deletion is permitted.
 
 ## Live untracked-state reconciliation: 2026-09-30
 
 The regenerated read-only inventory and consolidation matrix now describe the
-current private worktree, not the historical review tranche. They contain one
-live untracked path: the protected `NavierStokes/R3/TestPressure.lean` file.
-Its hash is current and verified. The 29-row disposition manifest and the
+current private worktree, not the historical review tranche. They contain two
+live untracked paths: the protected `NavierStokes/R3/TestPressure.lean` file
+and the local raw environment-closure JSON. The source hash is current and
+verified. The 29-row disposition manifest and the
 older 61-entry hold remain historical content-addressed records of earlier
 review states; neither is a count of the current worktree and neither
 authorises staging, movement, or deletion.

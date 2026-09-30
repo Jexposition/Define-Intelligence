@@ -36,9 +36,11 @@ active documents.
 
 ## Protected source and release state
 
-The only private untracked path remains
-`NavierStokes/R3/TestPressure.lean`. It is protected, untouched, unstaged,
-unmoved, and excluded from the archive and review commits. No Lean, Lake,
+The two intentional private untracked paths remain the protected
+`NavierStokes/R3/TestPressure.lean` source and the raw
+`NavierStokesReview/evidence/lean_environment_closure_ns_3d_2026-09-30.json`
+closure export. Both are untouched, unstaged, unmoved, and excluded from the
+archive and review commits. No Lean, Lake,
 Elan, Git, or dotnet build process was running in the final process check.
 
 The private and public branch names are recorded above. Exact commit tips are

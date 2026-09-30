@@ -4431,9 +4431,10 @@ review commit. The separate public review branch is
 `review/cmi-first-navier-stokes-disposition-public-2026-09-30`; its remote
 the remote branch was verified after the latest scoped review push.
 
-The current worktree inventory contains one untracked row only:
-`NavierStokes/R3/TestPressure.lean`. It is protected OpenAI-side source and
-is deliberately not staged or edited. The accidental root `$null` diagnostic
+The current worktree inventory contains two intentional untracked rows: the
+protected `NavierStokes/R3/TestPressure.lean` source and the local raw 366 MB
+environment-closure JSON. The source is deliberately not staged or edited.
+The accidental root `$null` diagnostic
 was moved, without deletion, to the local ignored archive
 `archive/$null_2026-09-30.txt`; its SHA-256 and disposition are recorded in
 `archive/ARCHIVE_MANIFEST_2026-09-30.md`. The current inventory and matrix
