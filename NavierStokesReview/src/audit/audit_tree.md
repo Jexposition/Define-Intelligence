@@ -224,3 +224,16 @@ Fefferman text, OpenAI manuscript, R3 candidate properties, theorem,
 comparator, selected assembly, residual-rate route, and fresh axiom replay.
 It is the current control against isolating Alternative (C) or treating the
 missing named moment identity as either irrelevant or already refuted.
+
+## Current source tranches: Priorities 201--204 (2026-09-30)
+
+- `priority_201_selected_closure_census_2026-09-30.md`
+- `priority_202_actual_moment_invariant_trace_2026-09-30.md`
+- `priority_203_internal_to_endpoint_crossfile_trace_2026-09-30.md`
+- `priority_204_workspace_source_record_reconciliation_2026-09-30.md`
+
+These records are the live continuation of the audit index. They establish
+the positive internal invariant and connected selected route, then record the
+bounded negative result that no final named `(M,I,J,S,C_p)` identity was
+located in the inspected selected closure. The controlled status is
+`CTR-005: NOT ESTABLISHED`; stronger refutation claims remain unproved.

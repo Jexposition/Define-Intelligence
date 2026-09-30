@@ -217,6 +217,13 @@ any artefact.
 - `NavierStokesReview/src/audit/priority_195_four_operation_force_smoothness_adjudication_2026-09-30.md`
 - `NavierStokesReview/src/audit/priority_198_latest_rebuttal_adjudication_2026-09-30.md`
 - `NavierStokesReview/evidence/selected_endpoint_compile_boundary_reaudit_2026-09-29.md`
+- `NavierStokesReview/src/audit/priority_199_selected_endpoint_declaration_crosscheck_2026-09-30.md`
+- `NavierStokesReview/src/audit/priority_200_connected_cmi_manuscript_crosswalk_2026-09-30.md`
+- `NavierStokesReview/src/audit/priority_201_selected_closure_census_2026-09-30.md`
+- `NavierStokesReview/src/audit/priority_202_actual_moment_invariant_trace_2026-09-30.md`
+- `NavierStokesReview/src/audit/priority_203_internal_to_endpoint_crossfile_trace_2026-09-30.md`
+- `NavierStokesReview/src/audit/priority_204_workspace_source_record_reconciliation_2026-09-30.md`
+- `NavierStokesReview/evidence/latest_rebuttal_manual_review_tranche_2026-09-30.md`
 
 ## Authoritative workspace checkpoint: 2026-09-30 continuation
 

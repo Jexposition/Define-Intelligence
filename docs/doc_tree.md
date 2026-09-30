@@ -63,6 +63,11 @@ points are:
 - navier-stokes openai.txt
 - euler.pdf
 - oai_nav_strokes_tree.md
+- REVIEW_DOCUMENT_CONTROL.md
+- REVIEW_AUDIT_WORKSPACE_GOAL.md
+- OpenAI_NavierStokes_CMI_First_Review_Plan.md
+- OpenAI_NavierStokes_Research_Paper.md
+- OpenAI_NavierStokes_Peer_Review_v1.md
 - euler_tree.md
 - archive/ARCHIVE_MANIFEST_2026-09-30.md
 - archive/OpenAI_NavierStokes_Research_Paper_with_dossier_2026-09-30.md

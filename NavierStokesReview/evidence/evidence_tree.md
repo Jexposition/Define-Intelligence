@@ -354,6 +354,23 @@ identification with the manuscript's five-moment construction remains
 `CTR-005: NOT ESTABLISHED`. It does not assert a selected defect or CMI
 refutation.
 
+## Current source tranche: Priorities 201--203 (2026-09-30)
+
+- `source_tranche_priority_201_selected_closure_census_2026-09-30.json`
+- `source_tranche_priority_202_actual_moment_invariant_trace_2026-09-30.json`
+- `source_tranche_priority_203_internal_to_endpoint_crossfile_trace_2026-09-30.json`
+- `../src/audit/priority_201_selected_closure_census_2026-09-30.md`
+- `../src/audit/priority_202_actual_moment_invariant_trace_2026-09-30.md`
+- `../src/audit/priority_203_internal_to_endpoint_crossfile_trace_2026-09-30.md`
+
+These tranches record, respectively, the bounded selected-closure census, the
+positive two-mass/three-debt invariant trace, and the cross-file endpoint test.
+Together they support genuine internal moment/debt machinery and a connected
+residual-to-force route, while keeping the final manuscript observable
+identification at `CTR-005: NOT ESTABLISHED`. They do not assert a selected
+nonzero defect, force nonsmoothness, literal CMI failure, impossibility, or
+`False`.
+
 ## Current control tranche: Priority 204 (2026-09-30)
 
 - `source_tranche_priority_204_workspace_source_record_reconciliation_2026-09-30.json`
