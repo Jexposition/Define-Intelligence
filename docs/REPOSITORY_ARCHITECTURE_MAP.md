@@ -1,6 +1,12 @@
 # Human-readable repository architecture map
 
-## Live audit state (2026-09-28)
+> **State-control note (2026-09-30):** This file preserves dated architecture
+> snapshots and source-review chronology. Its embedded coverage counts are not
+> the live register. For current counts and the controlling scientific status,
+> use [`DOCUMENTATION_RECONCILIATION_2026-09-30.md`](DOCUMENTATION_RECONCILIATION_2026-09-30.md)
+> and [`SEMANTIC_CORRESPONDENCE_MAP.md`](SEMANTIC_CORRESPONDENCE_MAP.md).
+
+## Historical audit state (2026-09-28)
 
 The current semantic register reports 2,790 indexed modules, 588 reachable,
 613 evidence-inspected, 0 reachable-open, and 0 missing project import edges.

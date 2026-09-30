@@ -304,3 +304,19 @@
  ├── 📄 untracked_content_inventory_2026-09-30.json
  └── 📄 untracked_content_inventory_2026-09-30.md
 ```
+
+## Reconciliation additions: 2026-09-30
+
+This tree is retained as a navigation index, not as the authority for coverage counts. The effective register and current source findings are controlled by:
+
+- `docs/DOCUMENTATION_RECONCILIATION_2026-09-30.md`
+- `evidence/semantic_coverage_register_full_2026-09-29.json`
+- `evidence/source_tranche_priority_198_latest_rebuttal_adjudication_2026-09-30.json`
+- `evidence/latest_rebuttal_manual_review_tranche_2026-09-30.md`
+
+The current tree reconciliation found entries created after the previous tree snapshot, including the Priority 186–198 source tranches, the full CMI dependency crosswalk, the selected-field operator trace, the selected-endpoint compile-boundary re-audit, the paper moment-dependency matrix, the physical-projection adjudication, and the untracked-content consolidation matrix. Older count claims remain historical until regenerated from the current register.
+
+The exact current-index reconciliation is recorded in
+`evidence/review_tree_reconciliation_2026-09-30.md`. It records 314 current
+evidence files, 25 current files absent from this snapshot, and 6 stale
+index-only basenames. Those differences are navigation bookkeeping only.

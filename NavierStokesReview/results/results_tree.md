@@ -48,3 +48,10 @@
 ├── 📄 selected_moment_bridge_probe_2026-09-23.txt
 └── 📄 semantic_transport_pressure_probe_2026-09-23.txt
 ```
+
+## Reconciliation note
+
+The current results directory contains 48 files including this index. The
+index lists the 47 result artefacts; the self-entry is intentionally omitted.
+The authoritative cross-directory comparison is
+`NavierStokesReview/evidence/review_tree_reconciliation_2026-09-30.md`.

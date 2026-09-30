@@ -1,5 +1,15 @@
 # Selected-field correspondence in the OpenAI Navier–Stokes formalisation
 
+## Document control and current evidence
+
+This reader-facing paper is controlled by
+[`REVIEW_DOCUMENT_CONTROL.md`](REVIEW_DOCUMENT_CONTROL.md) and
+[`DOCUMENTATION_RECONCILIATION_2026-09-30.md`](DOCUMENTATION_RECONCILIATION_2026-09-30.md).
+The current evidence boundary is recorded in the Priority 186–198 source
+reviews under `NavierStokesReview/src/audit/` and their matching JSON records
+under `NavierStokesReview/evidence/`. The paper is not a chronological log and
+must not be updated from a historical register count.
+
 **Independent source-level review and formal audit**
 **Jexposition, 26 September 2026**
 
@@ -73,6 +83,12 @@ and paper statements: whether every advertised consequence has the required
 scope for the final selected fields, pressure, force, support, and global
 interpretation. The current record contains no proved nonzero moment defect,
 impossibility theorem, or kernel-level `False`.
+
+The 2026-09-30 endpoint axiom replay is recorded in
+[`selected_endpoint_compile_boundary_reaudit_2026-09-29.md`](../NavierStokesReview/evidence/selected_endpoint_compile_boundary_reaudit_2026-09-29.md).
+It reports only `propext`, `Classical.choice`, and `Quot.sound` for the
+queried endpoints. That narrows the axiom-integrity question; it does not
+close the separate selected-field moment correspondence.
 
 
 ## Executive verdict

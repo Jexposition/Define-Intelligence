@@ -1,5 +1,17 @@
 # Review audit workspace goal
 
+## Documentation recovery checkpoint: 2026-09-30
+
+Before any new mathematical conclusion, reconcile the current goal, plan,
+reader-facing paper, peer review, crosswalk, document-control map, register,
+evidence tree, and audit tree through
+`docs/DOCUMENTATION_RECONCILIATION_2026-09-30.md`. The effective register is
+the 2026-09-29 full JSON mirror: 2,794 indexed, 588 captured endpoint modules,
+906 evidence-inspected, 1,881 queued, 0 missing project import edges, and 86
+supplemental records. Older counts embedded in dated sections remain history,
+not live state. No source conclusion is to be made from an unlinked or stale
+document.
+
 ## Source-authority rule and current execution state (2026-09-29)
 
 The documentation tree is an index of prior work, not evidence by itself.
@@ -45,14 +57,15 @@ logs. Source tranches belong in `NavierStokesReview/src/audit/`; machine
 evidence belongs in `NavierStokesReview/evidence/`; exploratory scans, scratch
 material, user-owned source, and build logs remain outside curated commits.
 
-## Live audit state (2026-09-28)
+## Current audit state (2026-09-30)
 
 The register currently records 2,794 indexed modules, 588 captured
-endpoint-closure modules, 904 evidence-inspected rows, 1,883
+endpoint-closure modules, 906 evidence-inspected rows, 1,881
 source-indexed rows queued, 0 missing project import edges, 10 source rows
-with a `sorry` token, and 70 supplemental evidence records. This is progress,
-not completion: the full-repository goal remains active until the remaining
-indexed modules and endpoint requirements are classified.
+with a `sorry` token, and 86 supplemental evidence records. The 61-entry
+manual consolidation review is complete, but the full-repository and
+paper-to-endpoint correspondence goals remain active until the remaining
+declaration-level requirements are classified.
 
 ## Controlling input lock
 
@@ -3233,7 +3246,7 @@ remain for provenance.
   remote branch ref during this update. Exact refs remain Git-derived rather
   than embedded as self-invalidating hashes.
 - The legacy 2026-09-22 branch is not modified.
-- The refreshed SHA-256 inventory records 60 untracked entries under
+- The refreshed SHA-256 inventory records 61 untracked entries under
   `NavierStokesReview/evidence/`. These entries remain controlled triage, not
   a bulk-commit target.
 - No OpenAI source file is to be edited, staged, deleted, or archived as part
@@ -3273,7 +3286,7 @@ an integrity/disposition matrix:
 - `NavierStokesReview/evidence/untracked_consolidation_matrix_2026-09-30.json`;
 - `NavierStokesReview/evidence/untracked_consolidation_matrix_2026-09-30.md`.
 
-All 60 entries are integrity-verified and remain on
+All 61 entries are integrity-verified and remain on
 `HOLD_NO_STAGE_NO_MOVE`. Before any cleanup, the work must fetch and read the
 documents, compare claims against the canonical paper and audit ledgers,
 record retain/merge/supersede decisions, and update the parent-folder archive
@@ -3308,3 +3321,80 @@ The eight manually reviewed evidence entries are listed in
 The remaining untracked corpus must be reviewed and cross-referenced before
 any archive move or scoped staging. No deletion, bulk staging, or OpenAI source
 edit is authorised.
+
+## Priority 199 goal control: endpoint axiom replay
+
+On 2026-09-30, `lake env lean
+NavierStokesReview/src/audit/WholeSpaceAxiomAudit.lean` was rerun from the
+repository root. The queried endpoints report only `propext`,
+`Classical.choice`, and `Quot.sound`, and the replay left no Lean-related
+process running. This confirms the narrow axiom footprint; it does not prove
+that the complete manuscript mechanism is transported into the selected
+Cartesian endpoint. The active scientific conclusion remains
+`CTR-005 = NOT ESTABLISHED` for complete paper-to-endpoint fidelity.
+
+The live worktree currently has 61 untracked entries. This supersedes older
+60-entry control snapshots for current-state reporting. No untracked entry may
+be staged, moved, or deleted until the consolidation and SHA-256 disposition
+gate is complete.
+
+## Priority 200 goal control: build and CUDA diagnostic tranche
+
+The manual review ledger now covers 35 of the 61 held untracked entries,
+leaving 26 for the next tranche. This is a historical snapshot; the current
+completion is recorded below.
+
+## Priority 201: complete the 61-entry manual evidence review (2026-09-30)
+
+The source-first manual review is now complete for all 61 held untracked
+entries. The synchronised consolidation matrix records 61 reviewed rows and
+0 remaining rows. The review results are recorded in
+`NavierStokesReview/evidence/latest_rebuttal_manual_review_tranche_2026-09-30.md`
+and the JSON/Markdown consolidation matrices beside it. Every row remains
+`HOLD_NO_STAGE_NO_MOVE`: review completion is not permission to stage, move,
+archive, or delete anything.
+
+The review did not upgrade the scientific claim. It confirms the current
+evidence boundary: upstream profile, rank, moment, curl, localisation,
+pressure, energy, residual-rate, and force machinery is substantive and
+reachable; the exported `ActualCandidateAssembly.Witness` still has no
+separate theorem identifying the final selected Cartesian fields with
+`(M,I,J,S,C_p)`. The current classification therefore remains
+`CTR-005: NOT ESTABLISHED`, not a proved nonzero defect, impossibility,
+`False`, or compiler-cheat claim. The CMI and paper-level conditions remain a
+connected correspondence question, not a licence to isolate Alternative (C)
+from the rest of the stated construction.
+
+The next gate is cross-reference and tree-index reconciliation, followed by a
+scoped release review. Protected OpenAI source remains read-only. No archive,
+move, deletion, staging, commit, or push is authorised by this ledger entry.
+
+The controlled build pair records a successful 9,350-job build ending at
+`NavierStokes.R3.Theorem`, with an empty error stream. This confirms the build
+record only; it does not prove the full paper-to-endpoint correspondence.
+
+The `cutoff_commutator_debug`, `debug2`, and `debug3` families are retained as
+CUDA-backed 3D profile diagnostics. They show a resolved commutator in the
+declared profile and source cutoff, while explicitly recording
+`selected_delta_m_proved: false` and `selected_field_bound: false`. They must
+not be promoted to a selected-field mismatch, a formal nonzero \(\Delta m\),
+or a failed CMI condition.
+
+The same tranche now also covers the resolved `deep` sweep, lower-resolution
+`deep_test`, high-resolution profile scan, and full-source route scan. The
+profile scan is still a declared-profile diagnostic, not the selected Lean
+`tsum`; the source scan is lexical triage, not a transport theorem.
+
+The hashes and dispositions are recorded in
+`NavierStokesReview/evidence/latest_rebuttal_manual_review_tranche_2026-09-30.md`.
+All 61 entries remain `HOLD_NO_STAGE_NO_MOVE`; the manual content-review gate
+has 0 remaining entries. The next cleanup gate is the full cross-reference,
+tree-index, and SHA-256 disposition pass before any archive move, scoped
+staging, private commit, or public publication.
+
+Current exact evidence anchors are recorded in
+`NavierStokesReview/evidence/review_tree_reconciliation_2026-09-30.md`,
+`NavierStokesReview/evidence/latest_rebuttal_manual_review_tranche_2026-09-30.md`,
+`NavierStokesReview/evidence/hardened_source_map_2026-09-29.md`, and the
+2026-09-29 full semantic register. Older brace or wildcard filename notation
+is historical shorthand and must not be treated as a missing-file finding.

@@ -1,5 +1,15 @@
 # Independent peer review of the OpenAI Navier–Stokes formalisation
 
+## Document control and current evidence
+
+This review is governed by
+[`REVIEW_DOCUMENT_CONTROL.md`](REVIEW_DOCUMENT_CONTROL.md) and
+[`DOCUMENTATION_RECONCILIATION_2026-09-30.md`](DOCUMENTATION_RECONCILIATION_2026-09-30.md).
+Current endpoint findings must be checked against the Priority 186–198 source
+reviews and matching evidence JSON files in `NavierStokesReview/src/audit/`
+and `NavierStokesReview/evidence/`. Dated tranche notes are historical
+evidence, not competing live verdicts.
+
 This review is the decision document accompanying the [research paper](OpenAI_NavierStokes_Research_Paper.md). The paper presents the publication-level argument; this file records the review decision, source-level findings, corrections to earlier objections, and questions that remain open. The detailed evidence is retained in the [NavierStokesReview evidence dossier](../NavierStokesReview/evidence/evidence_tree.md) and the linked source reviews.
 
 Read the [research paper's Executive Verdict](OpenAI_NavierStokes_Research_Paper.md#executive-verdict) for the argument in manuscript order. Do not treat the dated audit state below as a substitute for that argument.
@@ -521,6 +531,13 @@ $$
 $$
 
 Those conditions cannot be used as CMI disproof criteria without an additional theorem or admissibility assumption. In the forced alternatives, the external body force is not an internal stress. It may inject net momentum, and incompressibility is imposed on the velocity field rather than on the body force. The repository's `CandidateProperties` likewise requires force smoothness, positive-time support, rapid decay, the Navier–Stokes residual identity, and the stated energy/blow-up consequences, but not either proposed conservation identity.
+
+The endpoint axiom replay was rerun on 2026-09-30 and is recorded in
+[`selected_endpoint_compile_boundary_reaudit_2026-09-29.md`](../NavierStokesReview/evidence/selected_endpoint_compile_boundary_reaudit_2026-09-29.md).
+It reports only `propext`, `Classical.choice`, and `Quot.sound` for the
+queried endpoint declarations. This confirms the narrow foundational footprint
+without converting the missing selected-field moment identity into a kernel
+contradiction.
 
 The code inspection also answers the implementation question. `PositiveTimeForce.force` contains no pressure gradient; it is only `timeCutoff z.1 • f z`. The pressure gradient enters through `navierStokesResidual` in `CandidateFromLimits.force`, which agrees with the activated residual before `t = 1` and is smoothly extended at the endpoint. Therefore the proposed momentum/divergence test does not refute the formal C/D proposition. It remains a legitimate physical-provenance concern because the force is selected from the candidate residual.
 

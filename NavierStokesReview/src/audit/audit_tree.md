@@ -179,3 +179,24 @@
 ├── 📄 unresolved_reachable_module_classification_2026-09-27.md
 └── 📄 verify_sweep.py
 ```
+
+## Reconciliation additions: 2026-09-30
+
+The current audit control point is `docs/DOCUMENTATION_RECONCILIATION_2026-09-30.md`. The current semantic findings are recorded in:
+
+- `priority_186_fefferman_full_word_connection_closure_2026-09-30.md`
+- `priority_187_circularity_adjudication_2026-09-30.md`
+- `priority_188_connected_cmi_compliance_2026-09-30.md`
+- `priority_189_openai_physical_wording_source_check_2026-09-30.md`
+- `priority_194_residual_cancellation_and_endpoint_adjudication_2026-09-30.md`
+- `priority_195_four_operation_force_smoothness_adjudication_2026-09-30.md`
+- `priority_198_latest_rebuttal_adjudication_2026-09-30.md`
+
+These records converge on the same bounded conclusion: the inspected comparator and residual path establishes a connected forced blow-up contract, while the complete paper-to-selected-field five-moment correspondence remains `NOT ESTABLISHED (CTR-005)`. No value-level nonzero defect, impossibility theorem, or kernel contradiction is asserted by this index.
+
+The exact current-index reconciliation is recorded in
+`NavierStokesReview/evidence/review_tree_reconciliation_2026-09-30.md`.
+The nested audit index is a historical navigation snapshot: current review
+records from the 145–163 and 179–198 tranches are present on disk even where
+this tree has not yet been regenerated. This does not classify any theorem as
+unreachable or absent.

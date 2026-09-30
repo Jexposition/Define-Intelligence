@@ -1,5 +1,14 @@
 # CMI-first review plan: OpenAI Navier–Stokes claim
 
+## Documentation control checkpoint: 2026-09-30
+
+The workspace has been reconciled before further endpoint adjudication. The
+controlling ledger is
+`docs/DOCUMENTATION_RECONCILIATION_2026-09-30.md`; it links the effective
+2026-09-29 register, current source tranches through Priority 198, and the
+tree-index drift. Historical register counts remain historical. No paper edit,
+archive move, or verdict escalation is authorised from a stale section alone.
+
 ## Evidence authority, scope, and maintenance lock (2026-09-29)
 
 This plan is an execution control, not a substitute for source inspection.
@@ -4309,5 +4318,86 @@ The controlled conclusion is deliberately two-sided:
    without a proven force nonsmoothness result, failed connected CMI condition,
    impossibility theorem, or `False`.
 
-The remaining 60-entry corpus stays on `HOLD_NO_STAGE_NO_MOVE`. Manual review
+The remaining 61-entry corpus stays on `HOLD_NO_STAGE_NO_MOVE`. Manual review
 must continue from the tranche ledger before any archive move or scoped staging.
+
+## Priority 199: live endpoint replay and control-state correction
+
+The endpoint axiom replay was rerun on 2026-09-30 from the repository root:
+
+```text
+lake env lean NavierStokesReview/src/audit/WholeSpaceAxiomAudit.lean
+```
+
+It reports `[propext, Classical.choice, Quot.sound]` for
+`NavierStokesR3.theorem_1_1`, the queried whole-space uniqueness endpoints, and
+`NavierStokes.PeriodicPaper.periodic_corollary`. No `lake`, `elan`, `lean`, or
+`dotnet` process remains. The result is recorded in
+`NavierStokesReview/evidence/selected_endpoint_compile_boundary_reaudit_2026-09-29.md`.
+
+This confirms the narrow queried-endpoint axiom footprint. It does not close
+`CTR-005`, because the public `Witness` still does not export the complete
+selected-field identity for `(M,I,J,S,C_p)`. The current private worktree has
+61 untracked entries; older 60-entry paragraphs are historical control
+
+## Priority 200: manual review tranche for build and CUDA diagnostics (2026-09-30)
+
+The manual ledger now covers 35 of 61 held untracked entries, leaving 26 for
+the next tranche. This is a historical snapshot; the current completion is
+recorded below.
+
+## Priority 201: complete the 61-entry manual evidence review (2026-09-30)
+
+The source-first manual review is now complete for all 61 held untracked
+entries. The synchronised consolidation matrix records 61 reviewed rows and
+0 remaining rows. The detailed dispositions are in
+`NavierStokesReview/evidence/latest_rebuttal_manual_review_tranche_2026-09-30.md`
+and the adjacent JSON/Markdown consolidation matrices. All rows remain
+`HOLD_NO_STAGE_NO_MOVE` until cross-reference, explicit disposition, and
+release approval are complete.
+
+This pass confirms rather than broadens the scientific finding. The repository
+contains substantive upstream profile, rank, moment, curl, localisation,
+pressure, energy, residual-rate, and force machinery. The selected
+`ActualCandidateAssembly.Witness` still does not export a separate theorem
+identifying the final Cartesian velocity/pressure/residual/force with
+`(M,I,J,S,C_p)`. The defensible status remains
+`CTR-005: NOT ESTABLISHED`: no selected-field nonzero defect, impossibility,
+kernel contradiction, force nonsmoothness, or compiler-cheat theorem has been
+proved. The CMI formulation and the manuscript must continue to be audited as
+a connected construction.
+
+Next: reconcile all document/evidence/audit/results tree indexes and all
+cross-references, then prepare a scoped commit review. Do not modify OpenAI
+source, archive, move, delete, stage, commit, or push from this entry alone.
+
+The controlled build pair records a successful 9,350-job build ending at
+`NavierStokes.R3.Theorem`, with an empty error stream. This is compilation
+evidence only and does not establish complete manuscript correspondence.
+
+The reviewed `cutoff_commutator_debug`, `debug2`, and `debug3` artefacts are
+retained as CUDA-backed 3D profile diagnostics. They reconstruct the declared
+`SpatialLocalization` cutoff and Cartesian curl and produce resolved annular
+profile defects, but their own validation says `selected_delta_m_proved:
+false` and `selected_field_bound: false`. They cannot be promoted to a
+selected-field mismatch, a formal \(\Delta m\ne0\) theorem, or a CMI failure.
+
+The same tranche also reviewed the resolved `deep` sweep, lower-resolution
+`deep_test`, high-resolution profile scan, and full-source route scan. The
+profile plots remain declared-profile diagnostics, not selected-field proofs;
+the source scan remains lexical triage, not transport evidence.
+
+Evidence, plots, and SHA-256 dispositions are recorded in
+`NavierStokesReview/evidence/latest_rebuttal_manual_review_tranche_2026-09-30.md`.
+All 61 entries remain `HOLD_NO_STAGE_NO_MOVE`; the manual content-review gate
+has 0 remaining entries. The next cleanup gate is the full cross-reference,
+tree-index, and SHA-256 disposition pass.
+
+Current cross-reference anchors for that gate are the exact files
+`NavierStokesReview/evidence/cutoff_commutator_deep_2026-09-27.md`,
+`NavierStokesReview/evidence/cutoff_commutator_resolution_audit_2026-09-29.md`,
+`NavierStokesReview/evidence/hardened_source_map_2026-09-29.json`,
+`NavierStokesReview/evidence/hardened_source_map_2026-09-29.md`, and the
+dated full registers for 2026-09-27, 2026-09-28, and 2026-09-29. Braced
+filename notation in older historical paragraphs is shorthand, not a literal
+path.

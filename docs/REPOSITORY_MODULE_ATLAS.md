@@ -1,14 +1,15 @@
 # Complete Lean module atlas
 
-## Live semantic-status pointer (2026-09-28)
+## Historical semantic-status pointer (2026-09-28)
 
 Current register correction: **2,792 indexed, 588 captured endpoint-closure,
 745 evidence-inspected, 2,040 queued, and 0 missing project import edges**.
 The latest direct source review is
 priority_135_external_moment_realization_junction_source_review_2026-09-28.md.
-The older count below is retained for provenance.
+The older count below is retained for provenance. Use
+`DOCUMENTATION_RECONCILIATION_2026-09-30.md` for the live state.
 
-This atlas lists modules; the authoritative inspected/open status is [`REPOSITORY_SEMANTIC_COVERAGE_REGISTER.md`](REPOSITORY_SEMANTIC_COVERAGE_REGISTER.md). Current state: **2,792 indexed, 588 captured endpoint-closure modules, 745 evidence-inspected, 2,040 source-indexed modules queued, 0 missing project import edges**. The latest source tranche is [`priority_135_external_moment_realization_junction_source_review_2026-09-28.md`](../NavierStokesReview/src/audit/priority_135_external_moment_realization_junction_source_review_2026-09-28.md). This live pointer supersedes older historical counts below; historical entries are retained for provenance.
+This atlas lists modules; the authoritative inspected/open status is [`REPOSITORY_SEMANTIC_COVERAGE_REGISTER.md`](REPOSITORY_SEMANTIC_COVERAGE_REGISTER.md). The 2026-09-28 snapshot recorded **2,792 indexed, 588 captured endpoint-closure modules, 745 evidence-inspected, 2,040 source-indexed modules queued, 0 missing project import edges**. The latest source tranche in that snapshot is [`priority_135_external_moment_realization_junction_source_review_2026-09-28.md`](../NavierStokesReview/src/audit/priority_135_external_moment_realization_junction_source_review_2026-09-28.md). Historical entries are retained for provenance; the live state is controlled by the 2026-09-30 reconciliation.
 
 This is the exhaustive, compact index behind the architecture map. Each row is a source-backed inventory record; it is not a theorem summary.
 

@@ -1,16 +1,16 @@
 # Mathematical specification and audit navigation
 
-## Live audit state (2026-09-28)
+## Historical audit state (2026-09-28)
 
 Current register correction: **2,792 indexed modules, 588 captured
 endpoint-closure modules, 745 evidence-inspected modules, 2,040
 source-indexed modules queued, and 0 missing project import edges**. The
 latest direct source review is
 priority_135_external_moment_realization_junction_source_review_2026-09-28.md.
-The older count and tranche sentence below is retained as historical wording;
-this paragraph is the live pointer.
+The older count and tranche sentence below is retained as historical wording.
+Use `DOCUMENTATION_RECONCILIATION_2026-09-30.md` for the live pointer.
 
-The authoritative semantic coverage register is [`REPOSITORY_SEMANTIC_COVERAGE_REGISTER.md`](REPOSITORY_SEMANTIC_COVERAGE_REGISTER.md). Its current state is **2,792 indexed modules, 588 captured endpoint-closure modules, 745 evidence-inspected modules, 2,040 source-indexed modules queued, and 0 missing project import edges**. The latest source tranche is [`priority_135_external_moment_realization_junction_source_review_2026-09-28.md`](../NavierStokesReview/src/audit/priority_135_external_moment_realization_junction_source_review_2026-09-28.md). The evidence is intermediate: it confirms genuine reduced-profile repair and local Cartesian/pressure/residual infrastructure, but does not establish the final selected Cartesian `barMoment` / `(M,I,J,S,C_p)` theorem.
+The authoritative semantic coverage register is [`REPOSITORY_SEMANTIC_COVERAGE_REGISTER.md`](REPOSITORY_SEMANTIC_COVERAGE_REGISTER.md). The 2026-09-28 snapshot recorded **2,792 indexed modules, 588 captured endpoint-closure modules, 745 evidence-inspected modules, 2,040 source-indexed modules queued, and 0 missing project import edges**. The latest source tranche in that snapshot is [`priority_135_external_moment_realization_junction_source_review_2026-09-28.md`](../NavierStokesReview/src/audit/priority_135_external_moment_realization_junction_source_review_2026-09-28.md). The evidence is intermediate: it confirms genuine reduced-profile repair and local Cartesian/pressure/residual infrastructure, but does not establish the final selected Cartesian `barMoment` / `(M,I,J,S,C_p)` theorem. The live 2026-09-30 state is controlled by the reconciliation document above.
 
 > This is a reading layer over the captured Lean source and environment maps. It translates only metadata that was actually extracted. It is not a replacement proof and it does not infer a theorem from a filename.
 

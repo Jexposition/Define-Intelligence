@@ -184,3 +184,31 @@ failure is not part of the OpenAI endpoint and is recorded separately rather
 than used as evidence for CTR-005. This report does not treat the finding as a
 request for OpenAI to repair the work; it records the present evidentiary
 status of the advertised CMI claim.
+
+## 2026-09-30 endpoint axiom replay
+
+The tracked audit surface `NavierStokesReview/src/audit/WholeSpaceAxiomAudit.lean`
+was replayed from the repository root with:
+
+```text
+lake env lean NavierStokesReview/src/audit/WholeSpaceAxiomAudit.lean
+```
+
+The compiler reported the following axiom footprints:
+
+```text
+NavierStokesR3.theorem_1_1:
+  [propext, Classical.choice, Quot.sound]
+NavierStokesR3.WholeSpaceUniqueness.classical_uniqueness_on_Icc:
+  [propext, Classical.choice, Quot.sound]
+NavierStokesR3.WholeSpaceUniqueness.candidate_global_agrees_before_one:
+  [propext, Classical.choice, Quot.sound]
+NavierStokes.PeriodicPaper.periodic_corollary:
+  [propext, Classical.choice, Quot.sound]
+```
+
+No `sorryAx`, custom axiom, `unsafe`, or `implemented_by` declaration was
+introduced by this replay. This supports the narrow axiom-integrity claim for
+the queried endpoints. It does not prove the complete manuscript
+correspondence or supply the missing selected-field five-observable identity.
+The replay left no `lake`, `elan`, `lean`, or `dotnet` process running.

@@ -1,10 +1,21 @@
 # Navier–Stokes review document control
 
+## Effective documentation snapshot: 2026-09-30
+
+The current documentation reconciliation is
+[`DOCUMENTATION_RECONCILIATION_2026-09-30.md`](DOCUMENTATION_RECONCILIATION_2026-09-30.md).
+The effective register is the 2026-09-29 full JSON mirror and its root copy:
+2,794 indexed modules, 588 captured endpoint modules, 906 evidence-inspected
+rows, 1,881 queued rows, 0 missing project import edges, and 86 supplemental
+records. Historical 2,790 and 2,792 counts below are dated records, not live
+counts. The register also contains an unresolved ten-versus-seven `sorry`
+token field discrepancy.
+
 **Status:** active source-of-truth map  
-**Updated:** 2026-09-29
+**Updated:** 2026-09-30
 **Review root:** `Define-Intelligence-github`
 
-**Live register state (2026-09-29):** 2,794 indexed fork modules; 588
+**Historical register state (2026-09-29):** 2,794 indexed fork modules; 588
 reachable modules in the exact `NavierStokes.R3.Theorem` project import
 closure; 904 evidence-inspected rows; 1,883 source-indexed review-queued
 rows; 7 rows classified with a source-indexed `sorry` token; 0 missing
@@ -14,6 +25,19 @@ the JSON/Markdown/HTML trio under
 `NavierStokesReview/evidence/semantic_coverage_register_full_2026-09-29.*`,
 with the generated Markdown/HTML/JSON mirrors under `docs/`. Historical counts
 below remain unchanged for audit provenance.
+
+**Current control state (2026-09-30):** 2,794 indexed modules; 588 captured
+endpoint modules; 906 evidence-inspected rows; 1,881 source-indexed review-
+queued rows; 0 missing project import edges; 86 supplemental evidence records;
+and an unresolved seven-versus-ten `sorry`-token metric discrepancy. The
+current worktree has 61 untracked entries, all held pending consolidation.
+
+The manual consolidation ledger has now reviewed all 61 entries and records 0
+remaining. The JSON and Markdown consolidation matrices are synchronised to
+that ledger with 61 reviewed rows and 0 pending rows. This changes only
+evidence bookkeeping: all entries remain `HOLD_NO_STAGE_NO_MOVE` until
+document cross-reference checks, explicit retain/merge/supersede decisions,
+and release approval are complete.
 
 ## Authority
 
@@ -64,9 +88,9 @@ analytic, and ODE scopes. It does not establish endpoint contamination, a
 final Euler CMI theorem, selected-field five-observable transport, a nonzero
 defect, impossibility, or `False`.
 
-## Priority 133 live correction
+## Priority 133 live correction (historical snapshot: 2026-09-28)
 
-The current register state is **2,792 indexed; 588 captured endpoint-closure;
+The 2026-09-28 register state was **2,792 indexed; 588 captured endpoint-closure;
 731 evidence-inspected; 2,052 queued; 0 missing project import edges; 10
 source rows with a sorry token; and 36 supplemental audit artifacts**. The
 latest external structural profile is
@@ -2272,7 +2296,7 @@ supersession matrix, cross-reference audit, and parent-folder archive manifest
 remain mandatory before any archive move. No deletion or bulk staging is
 authorised.
 
-## Priority 196: authoritative live state after inventory publication (2026-09-30)
+## Priority 196: historical control snapshot after inventory publication (2026-09-30)
 
 The current private source-of-truth branch is
 `review/cmi-first-navier-stokes-2026-09-29`. The dated public branch is
@@ -2294,3 +2318,30 @@ the manuscript's transported `(M,I,J,S,Cp)` observables. The latest source
 adjudication also records that the manuscript lists four residual operations,
 so the stronger claim that the five-moment equations are the sole
 force-smoothness mechanism is not authorised by the inspected text.
+
+## Evidence-control entry: priority 199 endpoint axiom replay
+
+The 2026-09-30 replay of
+`NavierStokesReview/src/audit/WholeSpaceAxiomAudit.lean` reported only
+`propext`, `Classical.choice`, and `Quot.sound` for the queried whole-space
+and periodic endpoints. The result is recorded in
+`NavierStokesReview/evidence/selected_endpoint_compile_boundary_reaudit_2026-09-29.md`.
+This confirms the narrow queried-endpoint axiom footprint and does not close
+the separate selected-field `(M,I,J,S,C_p)` correspondence.
+
+## Documentation reconciliation checkpoint: 2026-09-30
+
+The Priority 196 entry above is a historical control snapshot and must not be
+read as the current worktree count. The current documentation authority is
+`docs/DOCUMENTATION_RECONCILIATION_2026-09-30.md`, which records 61 untracked
+path entries: 54 evidence artefacts, 4 documents, 1 protected OpenAI-tree file,
+and 2 other/root entries. The 61-entry set remains
+`HOLD_NO_STAGE_NO_MOVE` pending individual provenance, content-addressed
+classification, cross-reference, and archive decisions. No deletion, bulk
+staging, or archive move is authorised.
+
+The effective register remains
+`NavierStokesReview/evidence/semantic_coverage_register_full_2026-09-29.json`
+with its root mirror in `docs/REPOSITORY_SEMANTIC_COVERAGE_REGISTER.json`.
+Its unresolved seven-versus-ten `sorry`-token metric discrepancy remains
+open and is not silently resolved by this documentation update.

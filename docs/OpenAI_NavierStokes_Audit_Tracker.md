@@ -1,6 +1,6 @@
 # OpenAI Navier–Stokes Counter-Paper Evidence Tracker
 
-## Live register state (2026-09-29)
+## Register state snapshot (2026-09-29)
 
 The authoritative register currently records 2,794 indexed modules, 588
 modules in the directly captured `NavierStokes.R3.Theorem` closure, 904
@@ -10,6 +10,9 @@ and 0 missing project import edges. Historical tranche counts below are kept
 as provenance; they are not the current total. Closure membership,
 evidence-inspection status, and declaration-level theorem use are separate
 measurements.
+
+The live 2026-09-30 register state is controlled by
+`DOCUMENTATION_RECONCILIATION_2026-09-30.md` and the 2026-09-29 full register.
 
 This document is the working ledger for the counter-paper. It records evidence, status, and the next falsification test. It is intentionally a tracker. The argument itself is written in `OpenAI_NavierStokes_Research_Paper.md`.
 

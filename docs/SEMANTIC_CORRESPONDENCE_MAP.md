@@ -1,6 +1,15 @@
 # Semantic correspondence map: OpenAI paper to Lean endpoint
 
-**Updated:** 2026-09-28
+## Effective register and reconciliation control: 2026-09-30
+
+Use [`DOCUMENTATION_RECONCILIATION_2026-09-30.md`](DOCUMENTATION_RECONCILIATION_2026-09-30.md)
+and the 2026-09-29 full register as the live state. The current counts are
+2,794 indexed modules, 588 captured endpoint modules, 906 evidence-inspected
+rows, 1,881 queued rows, 0 missing project import edges, and 86 supplemental
+records. The dated coverage sections below preserve review chronology and must
+not be read as current totals.
+
+**Updated:** 2026-09-30
 **Purpose:** make the mathematical content of the Lean source reviewable without
 requiring a reader to infer the construction from filenames or from a successful
 build.
@@ -13,9 +22,9 @@ reachable declaration, or a successful theorem application proves only that a
 formal object is connected to the endpoint. It does not prove that the object
 has the interpretation assigned to it in the paper.
 
-## Live coverage state (2026-09-28)
+## Historical coverage state (2026-09-28)
 
-The authoritative register now records 2,790 indexed modules, 588 reachable
+The 2026-09-28 register recorded 2,790 indexed modules, 588 reachable
 modules, 613 evidence-inspected modules, 0 reachable modules still open, and 0
 missing project import edges. Priority 114 completed the reachable closure:
 [`priority_114_final_reachable_eight_source_review_2026-09-28.md`](../NavierStokesReview/src/audit/priority_114_final_reachable_eight_source_review_2026-09-28.md).
@@ -23,6 +32,11 @@ These eight modules add genuine reduced moment, curl, periodisation, and jet
 results, but do not close the final selected Cartesian radial-observable
 composition. The remaining work is the indexed-but-unreachable source tree
 and the complete endpoint requirement cross-check.
+
+For the live 2026-09-30 state, use
+[`DOCUMENTATION_RECONCILIATION_2026-09-30.md`](DOCUMENTATION_RECONCILIATION_2026-09-30.md)
+and the 2026-09-29 full semantic register. “Unreachable” in the historical
+paragraph above is a scoped endpoint-closure label, not a dead-code claim.
 
 This map therefore records, for every load-bearing part of the claim:
 

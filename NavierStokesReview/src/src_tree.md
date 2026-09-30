@@ -308,3 +308,12 @@
 │  ├── 📄 CTR005ProfileTailCollisionScope.lean
 │  └── 📄 SelectedPeriodicSupportTransportGate.lean
 ```
+
+## Reconciliation note
+
+The exact current-index reconciliation is recorded in
+`NavierStokesReview/evidence/review_tree_reconciliation_2026-09-30.md`.
+The source index is a navigation snapshot and is not the authority for
+semantic coverage, endpoint reachability, or theorem transport. Current audit
+records absent from the older snapshot remain present on disk and are listed
+by the reconciliation record.
