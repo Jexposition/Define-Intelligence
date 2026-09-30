@@ -1,6 +1,6 @@
 # Latest rebuttal manual-review tranche
 
-Date: 2026-09-30  
+Date: 2026-09-30
 Status: reviewed; no staging or archive move authorised by this ledger alone
 
 This tranche records source review of eight existing untracked artefacts. The

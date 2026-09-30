@@ -1,6 +1,6 @@
 # Priority 198: adjudication of the latest five-moment rebuttal
 
-Date: 2026-09-30  
+Date: 2026-09-30
 Status: source-adjudicated; no final CMI refutation asserted
 
 ## Question audited
