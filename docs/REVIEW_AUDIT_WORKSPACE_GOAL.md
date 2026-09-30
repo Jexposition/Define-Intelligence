@@ -3220,3 +3220,30 @@ therefore become a proven failure merely because the final Witness omits a
 named moment tuple. Complete paper-to-selected-endpoint fidelity remains
 `CTR-005: NOT ESTABLISHED` until the selected-field identity or a connected
 mandatory-condition failure is proved.
+
+## Priority 196 goal control: authoritative repository and publication state
+
+This block supersedes earlier live-state entries that contain older commit
+hashes or say that the dated public branch is unpublished. Historical entries
+remain for provenance.
+
+- Private source-of-truth: `review/cmi-first-navier-stokes-2026-09-29` at
+  `163664463bd5a9dd673c47d3f319ad8326abe5c5`.
+- Public review branch:
+  `review/cmi-first-navier-stokes-public-2026-09-30` at
+  `dc2e686047620521ee08940e1eaaf1df7f829173`, verified against the remote
+  branch ref.
+- The legacy 2026-09-22 branch is not modified.
+- The latest committed SHA-256 inventory records 60 untracked entries under
+  `NavierStokesReview/evidence/`, while the live worktree now has 62 because
+  `$null` and the dated publication extract appeared after that snapshot.
+  Refresh and reconcile the inventory before any archive decision. These
+  paths remain controlled triage, not a bulk-commit target.
+- No OpenAI source file is to be edited, staged, deleted, or archived as part
+  of this review. Consolidation must precede archiving, and every archive move
+  must remain in the parent folder's archive with an old path, new path,
+  reason, and SHA-256 manifest entry.
+- The scientific verdict remains `CTR-005: NOT ESTABLISHED` for complete
+  manuscript-to-selected-endpoint fidelity. The current record does not yet
+  prove a selected-field moment mismatch, impossibility theorem, failed
+  connected CMI condition, or contradiction.
