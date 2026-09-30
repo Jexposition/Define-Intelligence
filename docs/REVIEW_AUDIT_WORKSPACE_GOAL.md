@@ -1,5 +1,17 @@
 # Review audit workspace goal
 
+## Priority 221: Fefferman comparator crosswalk (2026-10-01)
+
+The current CMI crosswalk is recorded in
+`NavierStokesReview/src/audit/priority_221_fefferman_comparator_crosswalk_2026-10-01.md`
+and
+`NavierStokesReview/evidence/fefferman_comparator_crosswalk_2026-10-01.md`.
+It verifies that the comparator layer explicitly carries Fefferman's relevant
+initial-data, force, global-solution, and energy conditions. It does not prove
+the selected Cartesian five-observable transport identity. Keep the controlled
+status at `CTR-005: NOT ESTABLISHED`; do not upgrade this positive comparator
+result into a full paper verification or a literal CMI refutation.
+
 ## Live branch-control override: Priority 220 (2026-10-01)
 
 The private source-of-truth branch is

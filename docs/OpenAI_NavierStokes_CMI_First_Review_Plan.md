@@ -1,5 +1,19 @@
 # CMI-first review plan: OpenAI Navier–Stokes claim
 
+## Priority 221: Fefferman comparator crosswalk (2026-10-01)
+
+The CMI crosswalk is recorded in
+`NavierStokesReview/src/audit/priority_221_fefferman_comparator_crosswalk_2026-10-01.md`
+and
+`NavierStokesReview/evidence/fefferman_comparator_crosswalk_2026-10-01.md`.
+It confirms explicit Lean comparator structures for Fefferman's initial-data,
+force-decay, global smoothness, and global-energy conditions, plus the mapping
+from `theorem_1_1` to Alternative (C). This is positive formal evidence, not
+a clearance of the selected-field `(M,I,J,S,C_p)` correspondence.
+
+Keep `CTR-005: NOT ESTABLISHED` for complete paper-to-endpoint fidelity. The
+next task remains the value-level selected-field transport calculation.
+
 ## Live branch-control override: Priority 220 (2026-10-01)
 
 The private source-of-truth branch is

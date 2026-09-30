@@ -1,5 +1,21 @@
 # Navier–Stokes review document control
 
+## Priority 221 Fefferman comparator crosswalk (2026-10-01)
+
+The CMI crosswalk is recorded in
+`../NavierStokesReview/src/audit/priority_221_fefferman_comparator_crosswalk_2026-10-01.md`
+and
+`../NavierStokesReview/evidence/fefferman_comparator_crosswalk_2026-10-01.md`.
+It confirms that the comparator layer explicitly encodes initial-data decay,
+force smoothness and decay, global smoothness, global energy, and the forced
+Alternative (C) quantifiers. This clears the inaccurate claim that the CMI
+comparator is an empty existential shell.
+
+It does not close the separate selected-field `(M,I,J,S,C_p)` correspondence.
+The controlled scientific status remains `CTR-005: NOT ESTABLISHED`, with no
+literal CMI failure, selected defect, force nonsmoothness, impossibility
+theorem, or `False` established by this crosswalk.
+
 ## Priority 220 live branch-control state (2026-10-01)
 
 The private source-of-truth branch is
