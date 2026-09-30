@@ -6,8 +6,16 @@ The workspace has been reconciled before further endpoint adjudication. The
 controlling ledger is
 `docs/DOCUMENTATION_RECONCILIATION_2026-09-30.md`; it links the effective
 2026-09-29 register, current source tranches through Priority 198, and the
-tree-index drift. Historical register counts remain historical. No paper edit,
-archive move, or verdict escalation is authorised from a stale section alone.
+tree-index drift. Historical register counts remain historical. The current
+workspace disposition is controlled by
+`NavierStokesReview/evidence/untracked_consolidation_matrix_2026-09-30.md` and
+`NavierStokesReview/evidence/untracked_disposition_manifest_2026-09-30.json`.
+Thirty-six redundant or superseded artefacts have been moved non-destructively
+to parent-folder archives with SHA-256 manifests; no file was deleted. The
+current live set is 29 rows: 24 retained for scoped staging, 3 archive-confirmed,
+1 held for provenance review, and 1 protected OpenAI-source file that must not
+be staged. No paper edit or verdict escalation is authorised from a stale
+section alone.
 
 ## Evidence authority, scope, and maintenance lock (2026-09-29)
 
@@ -37,12 +45,29 @@ remaining audit is the exact paper/CMI crosswalk through the selected mixed
 fields, `tsum`, curl, localisation, periodisation, pressure, force, support,
 and endpoint limits.
 
-No cleanup move may occur until the relevant documents have been fetched,
-consolidated, cross-checked, and fact-checked. No deletion is permitted.
-Confirmed redundant material may only be moved to the designated non-committed
-archive with an old-path/new-path/reason/SHA-256 manifest. Commit only scoped,
-reviewed tranches; never stage the whole worktree; leave `NavierStokes/` and
-user scratch material untouched.
+The consolidation gate has now been executed for the reviewed live set. The
+archive manifests are `docs/archive/ARCHIVE_MANIFEST_2026-09-30.md` and
+`NavierStokesReview/evidence/archive/ARCHIVE_MANIFEST_2026-09-30.md`.
+No deletion is permitted. Future moves still require an old-path/new-path,
+reason, and SHA-256 manifest. Commit only scoped, reviewed tranches; never
+stage the whole worktree; leave `NavierStokes/` and user scratch material
+untouched.
+
+## Current cleanup gate: completed disposition, pending scoped release
+
+The canonical inventory and disposition scripts are:
+
+- `NavierStokesReview/src/audit/untracked_content_inventory.py`
+- `NavierStokesReview/src/audit/untracked_consolidation_matrix.py`
+
+The next action is to stage only the 24 `STAGE_RETAINED` rows plus the
+controlling documentation, matrix, disposition manifest, and archive
+manifests. `$null` remains held for provenance review. The protected
+`NavierStokes/R3/TestPressure.lean` file remains outside the commit. The
+selected scientific finding is unchanged: upstream moment/rank machinery is
+real and active, but the full paper-to-selected-endpoint moment identification
+remains `CTR-005: NOT ESTABLISHED`; no nonzero selected-field defect or `False`
+has been proved.
 
 ## Controlling input and execution lock
 
@@ -4346,15 +4371,14 @@ The manual ledger now covers 35 of 61 held untracked entries, leaving 26 for
 the next tranche. This is a historical snapshot; the current completion is
 recorded below.
 
-## Priority 201: complete the 61-entry manual evidence review (2026-09-30)
+## Priority 201: complete the 61-entry manual evidence review (historical snapshot)
 
-The source-first manual review is now complete for all 61 held untracked
-entries. The synchronised consolidation matrix records 61 reviewed rows and
-0 remaining rows. The detailed dispositions are in
+The source-first manual review was completed for the then-current 61 held
+untracked entries. The current detailed dispositions are in
 `NavierStokesReview/evidence/latest_rebuttal_manual_review_tranche_2026-09-30.md`
-and the adjacent JSON/Markdown consolidation matrices. All rows remain
-`HOLD_NO_STAGE_NO_MOVE` until cross-reference, explicit disposition, and
-release approval are complete.
+and the current 29-row JSON/Markdown consolidation matrix. The 61-entry hold
+is retained as historical evidence and does not describe the current staging
+or archive state.
 
 This pass confirms rather than broadens the scientific finding. The repository
 contains substantive upstream profile, rank, moment, curl, localisation,
@@ -4367,9 +4391,9 @@ kernel contradiction, force nonsmoothness, or compiler-cheat theorem has been
 proved. The CMI formulation and the manuscript must continue to be audited as
 a connected construction.
 
-Next: reconcile all document/evidence/audit/results tree indexes and all
-cross-references, then prepare a scoped commit review. Do not modify OpenAI
-source, archive, move, delete, stage, commit, or push from this entry alone.
+The document/evidence/audit/results tree-index reconciliation is complete.
+Next: prepare the scoped commit review from the disposition manifest. Do not
+modify OpenAI source, delete files, or stage the protected source row.
 
 The controlled build pair records a successful 9,350-job build ending at
 `NavierStokes.R3.Theorem`, with an empty error stream. This is compilation

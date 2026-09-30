@@ -57,6 +57,27 @@ logs. Source tranches belong in `NavierStokesReview/src/audit/`; machine
 evidence belongs in `NavierStokesReview/evidence/`; exploratory scans, scratch
 material, user-owned source, and build logs remain outside curated commits.
 
+## Current workspace disposition override (2026-09-30)
+
+The pre-cleanup 61-entry hold is historical. The current live disposition is
+the 29-row matrix and SHA-256 manifest at
+`NavierStokesReview/evidence/untracked_consolidation_matrix_2026-09-30.md`
+and
+`NavierStokesReview/evidence/untracked_disposition_manifest_2026-09-30.json`.
+It records 24 `STAGE_RETAINED` rows, 3 `ARCHIVE_CONFIRMED` rows, 1
+`HOLD_PROVENANCE_REVIEW` row (`$null`), and 1
+`PROTECTED_DO_NOT_STAGE` OpenAI-source row. Thirty-six artefacts were moved
+without deletion into parent-folder archives and are recorded in
+`docs/archive/ARCHIVE_MANIFEST_2026-09-30.md` and
+`NavierStokesReview/evidence/archive/ARCHIVE_MANIFEST_2026-09-30.md`.
+
+This override does not alter the scientific conclusion. The five-moment and
+rank machinery is genuine and active upstream; the selected endpoint still
+lacks an exported theorem identifying the final Cartesian observables with
+the paper tuple `(M, I, J, S, C_p)`. The live status remains
+`CTR-005: NOT ESTABLISHED`, not a proved nonzero defect, impossibility, or
+kernel contradiction.
+
 ## Current audit state (2026-09-30)
 
 The register currently records 2,794 indexed modules, 588 captured
@@ -65,7 +86,10 @@ source-indexed rows queued, 0 missing project import edges, 10 source rows
 with a `sorry` token, and 86 supplemental evidence records. The 61-entry
 manual consolidation review is complete, but the full-repository and
 paper-to-endpoint correspondence goals remain active until the remaining
-declaration-level requirements are classified.
+declaration-level requirements are classified. For current cleanup state, the
+61-entry review is superseded by the 29-row disposition matrix: 24 retained,
+3 archive-confirmed, 1 provenance hold, and 1 protected source row. Thirty-six
+files were moved non-destructively; none was deleted.
 
 ## Controlling input lock
 
@@ -3344,15 +3368,13 @@ The manual review ledger now covers 35 of the 61 held untracked entries,
 leaving 26 for the next tranche. This is a historical snapshot; the current
 completion is recorded below.
 
-## Priority 201: complete the 61-entry manual evidence review (2026-09-30)
+## Priority 201: complete the 61-entry manual evidence review (historical snapshot)
 
-The source-first manual review is now complete for all 61 held untracked
-entries. The synchronised consolidation matrix records 61 reviewed rows and
-0 remaining rows. The review results are recorded in
+The source-first manual review was completed for the then-current 61 held
+untracked entries. The current synchronised disposition is now recorded in
 `NavierStokesReview/evidence/latest_rebuttal_manual_review_tranche_2026-09-30.md`
-and the JSON/Markdown consolidation matrices beside it. Every row remains
-`HOLD_NO_STAGE_NO_MOVE`: review completion is not permission to stage, move,
-archive, or delete anything.
+and the 29-row JSON/Markdown consolidation matrix. The 61-row hold is retained
+as historical evidence; it is not the current staging or archive state.
 
 The review did not upgrade the scientific claim. It confirms the current
 evidence boundary: upstream profile, rank, moment, curl, localisation,
@@ -3365,9 +3387,10 @@ separate theorem identifying the final selected Cartesian fields with
 connected correspondence question, not a licence to isolate Alternative (C)
 from the rest of the stated construction.
 
-The next gate is cross-reference and tree-index reconciliation, followed by a
-scoped release review. Protected OpenAI source remains read-only. No archive,
-move, deletion, staging, commit, or push is authorised by this ledger entry.
+The cross-reference and tree-index reconciliation is complete. The remaining
+gate is scoped release review: protected OpenAI source remains read-only, no
+deletion is permitted, and only disposition-approved review files may be
+staged.
 
 The controlled build pair records a successful 9,350-job build ending at
 `NavierStokes.R3.Theorem`, with an empty error stream. This confirms the build

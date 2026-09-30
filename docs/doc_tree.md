@@ -1,6 +1,6 @@
 ```markdown
 . 📂 docs
-├── 📄 Define inteligence tree.md
+├── 📄 archive/Define inteligence tree_2026-09-30.md  (historical archive)
 ├── 📄 Define intelligence Tree.md
 ├── 📄 Euler_Parent_Child_Interval_Audit.md
 ├── 📄 LEAN_DECLARATION_INDEX.md
@@ -9,7 +9,7 @@
 ├── 📄 OpenAI_NavierStokes_Audit_Tracker.md
 ├── 📄 OpenAI_NavierStokes_Axiom_Ledger.md
 ├── 📄 OpenAI_NavierStokes_CMI_First_Review_Plan.md
-├── 📄 OpenAI_NavierStokes_Final_Falsification_Report.md  (quarantined historical intake)
+├── 📄 archive/OpenAI_NavierStokes_Final_Falsification_Report_2026-09-30.md  (historical archive)
 ├── 📄 CMI_OpenAI_Full_Semantic_Crosswalk.md
 ├── 📄 OpenAI_NavierStokes_Input_Document_Synthesis.md
 ├── 📄 OpenAI_NavierStokes_Peer_Review_v1.md

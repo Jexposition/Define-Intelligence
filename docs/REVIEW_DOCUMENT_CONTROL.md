@@ -15,6 +15,19 @@ token field discrepancy.
 **Updated:** 2026-09-30
 **Review root:** `Define-Intelligence-github`
 
+## Current cleanup disposition
+
+The current untracked disposition is controlled by
+`NavierStokesReview/evidence/untracked_consolidation_matrix_2026-09-30.md`
+and its SHA-256 manifest. It contains 29 live rows: 24 retained for scoped
+staging, 3 archive-confirmed, 1 provenance hold, and 1 protected OpenAI-source
+row. Thirty-six artefacts were moved non-destructively into parent-folder
+archives; no deletion occurred. The archive manifests are
+`docs/archive/ARCHIVE_MANIFEST_2026-09-30.md` and
+`NavierStokesReview/evidence/archive/ARCHIVE_MANIFEST_2026-09-30.md`.
+Older 59-, 60-, and 61-entry hold sections below are historical control
+snapshots and must not be read as the current disposition.
+
 **Historical register state (2026-09-29):** 2,794 indexed fork modules; 588
 reachable modules in the exact `NavierStokes.R3.Theorem` project import
 closure; 904 evidence-inspected rows; 1,883 source-indexed review-queued

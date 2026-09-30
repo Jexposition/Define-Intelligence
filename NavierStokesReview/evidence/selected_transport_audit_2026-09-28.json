@@ -1,0 +1,297 @@
+{
+  "environment": null,
+  "environment_rows": 0,
+  "environment_rows_detail": [],
+  "environment_supplied": false,
+  "instrument": "selected_transport_audit",
+  "repo_root": "D:/Research Lab/Jexposition/Define Intelligence/Define-Intelligence-github",
+  "roots": [
+    "NavierStokesR3.theorem_1_1",
+    "NavierStokes.ActualCandidateAssembly.selected_witness"
+  ],
+  "source_candidates": [
+    {
+      "body_field_terms": [],
+      "body_moment_terms": [],
+      "body_transform_terms": [],
+      "category": "moment_field_equality_candidate",
+      "end_line": 76,
+      "equality_terms": [
+        "="
+      ],
+      "field_terms": [
+        "selectedMixedRadialPullback"
+      ],
+      "kind": "theorem",
+      "line": 57,
+      "module": "NavierStokesReview.src.completions.PeriodicGlobalIntegral",
+      "moment_terms": [
+        "barMoment"
+      ],
+      "name": "NavierStokesReview.PeriodicGlobalIntegral.selected_mixed_barMoment_zero_of_positive_pullback",
+      "path": "NavierStokesReview/src/completions/PeriodicGlobalIntegral.lean",
+      "source_excerpt": "theorem selected_mixed_barMoment_zero_of_positive_pullback\n    (a : \u2115 \u2192 \u2115) (n : \u2115) (p : NavierStokes.PhysicalResidualBridge.Plane)\n    (hpositive : \u2200 r : \u211d, r \u2208 Ioo (0 : \u211d) 1 \u2192\n      0 < selectedMixedRadialPullback a (r, p)) :\n    NavierStokes.DefectIncrementBounds.barMoment 0\n        (selectedMixedProductionPointScalar a) n p = 0 := by\n  rw [selected_mixed_barMoment_radial_reduction]\n  have hnonintegrable : \u00ac Integrable\n      (fun r : \u211d => selectedMixedRadialPullback a (r, p)) :=\n    not_integrable_of_periodic_positive_on_fundamental_interval\n      (fun r => selected_mixed_radial_pullback_periodic a r p) hpositive\n  have hintegrand :\n      (fun r : \u211d => r ^ 0 * selectedMixedProductionScalar a\n        (pointToCyl (r, (p, (0, 0))))) =\n        (fun r : \u211d => selectedMixedRadialPullback a (r, p)) := by\n    funext r\n    simp [selectedMixedRadialPullback]\n  rw [hintegrand, MeasureTheory.integral_undef hnonintegrable]\n\nend NavierStokesReview.PeriodicGlobalIntegral",
+      "transform_terms": [],
+      "tuple_terms": []
+    },
+    {
+      "body_field_terms": [],
+      "body_moment_terms": [],
+      "body_transform_terms": [],
+      "category": "moment_field_equality_candidate",
+      "end_line": 27,
+      "equality_terms": [
+        "="
+      ],
+      "field_terms": [
+        "selectedPotentialStages"
+      ],
+      "kind": "def",
+      "line": 24,
+      "module": "NavierStokesReview.src.completions.SelectedBarMomentInterface",
+      "moment_terms": [
+        "barMoment"
+      ],
+      "name": "NavierStokesReview.SelectedBarMomentInterface.selectedPotentialComponent",
+      "path": "NavierStokesReview/src/completions/SelectedBarMomentInterface.lean",
+      "source_excerpt": "noncomputable def selectedPotentialComponent (j : \u2115) : SpaceTime \u2192 \u211d :=\n  fun z => (ActualCandidateAssembly.selectedPotentialStages j z) 1\n\n/- Pull a spacetime scalar field back to the scalar-family domain of `barMoment`. -/",
+      "transform_terms": [],
+      "tuple_terms": []
+    },
+    {
+      "body_field_terms": [],
+      "body_moment_terms": [],
+      "body_transform_terms": [],
+      "category": "moment_field_equality_candidate",
+      "end_line": 45,
+      "equality_terms": [
+        "="
+      ],
+      "field_terms": [
+        "selected_witness"
+      ],
+      "kind": "theorem",
+      "line": 32,
+      "module": "NavierStokesReview.src.completions.SelectedBarMomentInterface",
+      "moment_terms": [
+        "barMoment"
+      ],
+      "name": "NavierStokesReview.SelectedBarMomentInterface.selected_component_barMoment_apply",
+      "path": "NavierStokesReview/src/completions/SelectedBarMomentInterface.lean",
+      "source_excerpt": "theorem selected_component_barMoment_apply\n    {P : Type} [NormedAddCommGroup P] [NormedSpace \u211d P]\n    (\u03c6 : Point P \u2192 SpaceTime) (j k n : \u2115) (p : P) :\n    barMoment k (pullbackScalar \u03c6 (selectedPotentialComponent j)) n p =\n      \u222b r, r ^ k * PressureStream.torusAverage\n        (fun q => selectedPotentialComponent j (\u03c6 q)) (r, p) := by\n  rw [barMoment_apply]\n  rfl\n\n/-\nThe exact data needed for a selected-field `barMoment` comparison is explicit:\none must provide a point-to-spacetime map and a scalar pullback.  The\nproduction `selected_witness` does not export either object as a field.\n-/",
+      "transform_terms": [
+        "torusAverage"
+      ],
+      "tuple_terms": []
+    },
+    {
+      "body_field_terms": [],
+      "body_moment_terms": [],
+      "body_transform_terms": [],
+      "category": "moment_field_equality_candidate",
+      "end_line": 40,
+      "equality_terms": [
+        "="
+      ],
+      "field_terms": [
+        "VelocityField"
+      ],
+      "kind": "theorem",
+      "line": 30,
+      "module": "NavierStokesReview.src.completions.SelectedR3PackagingBoundary",
+      "moment_terms": [
+        "Debt"
+      ],
+      "name": "NavierStokesReview.SelectedR3PackagingBoundary.selected_r3_candidate_compatible_with_nonzero_five_payload",
+      "path": "NavierStokesReview/src/completions/SelectedR3PackagingBoundary.lean",
+      "source_excerpt": "theorem selected_r3_candidate_compatible_with_nonzero_five_payload :\n    \u2203 d : Debt, d \u2260 0 \u2227\n      \u2203 (u : NavierStokesR3.ProblemStatement.VelocityField)\n        (p : NavierStokesR3.ProblemStatement.PressureField)\n        (f : NavierStokesR3.ProblemStatement.VelocityField)\n        (K : Set NavierStokesR3.ProblemStatement.Space),\n        NavierStokesR3.ProblemStatement.CandidateProperties 1 u p f K := by\n  obtain \u27e8u, p, f, K, hc\u27e9 :=\n    NavierStokesR3.ActualCandidate.selected_candidate_one\n  exact \u27e8witnessDebt, witnessDebt_ne_zero, u, p, f, K, hc\u27e9",
+      "transform_terms": [],
+      "tuple_terms": []
+    },
+    {
+      "body_field_terms": [],
+      "body_moment_terms": [],
+      "body_transform_terms": [],
+      "category": "moment_field_equality_candidate",
+      "end_line": 41,
+      "equality_terms": [
+        "="
+      ],
+      "field_terms": [
+        "selected_witness"
+      ],
+      "kind": "theorem",
+      "line": 37,
+      "module": "NavierStokesReview.src.extensions.SelectedEndpointMomentTransportObstruction",
+      "moment_terms": [
+        "Debt"
+      ],
+      "name": "NavierStokesReview.SelectedEndpointMomentTransportObstruction.selected_witness_compatible_with_nonzero_five_payload",
+      "path": "NavierStokesReview/src/extensions/SelectedEndpointMomentTransportObstruction.lean",
+      "source_excerpt": "theorem selected_witness_compatible_with_nonzero_five_payload :\n    \u2203 d : Debt, d \u2260 0 \u2227\n      Witness selectedBudget selectedThreshold selectedThreshold_geometry := by\n  exact \u27e8witnessDebt, witnessDebt_ne_zero, selected_witness\u27e9",
+      "transform_terms": [],
+      "tuple_terms": []
+    },
+    {
+      "body_field_terms": [],
+      "body_moment_terms": [],
+      "body_transform_terms": [],
+      "category": "moment_field_equality_candidate",
+      "end_line": 49,
+      "equality_terms": [
+        "="
+      ],
+      "field_terms": [
+        "selected_witness"
+      ],
+      "kind": "theorem",
+      "line": 42,
+      "module": "NavierStokesReview.src.extensions.SelectedEndpointMomentTransportObstruction",
+      "moment_terms": [
+        "Debt"
+      ],
+      "name": "NavierStokesReview.SelectedEndpointMomentTransportObstruction.selected_witness_does_not_export_five_moment_transport",
+      "path": "NavierStokesReview/src/extensions/SelectedEndpointMomentTransportObstruction.lean",
+      "source_excerpt": "theorem selected_witness_does_not_export_five_moment_transport :\n    \u00ac (Witness selectedBudget selectedThreshold selectedThreshold_geometry \u2192\n      \u2200 d : Debt, d = 0) := by\n  intro h\n  have hd : witnessDebt = 0 := h selected_witness witnessDebt\n  exact witnessDebt_ne_zero hd\n\nend NavierStokesReview.SelectedEndpointMomentTransportObstruction",
+      "transform_terms": [],
+      "tuple_terms": []
+    },
+    {
+      "body_field_terms": [],
+      "body_moment_terms": [],
+      "body_transform_terms": [],
+      "category": "moment_field_equality_candidate",
+      "end_line": 36,
+      "equality_terms": [
+        "="
+      ],
+      "field_terms": [
+        "selected_witness"
+      ],
+      "kind": "theorem",
+      "line": 23,
+      "module": "NavierStokesReview.src.probes.ActualCandidateAssemblyIsolationProbe",
+      "moment_terms": [
+        "PositiveOrderMoments",
+        "Debt"
+      ],
+      "name": "NavierStokesReview.ActualCandidateAssemblyIsolationProbe.selected_candidate_isolation",
+      "path": "NavierStokesReview/src/probes/ActualCandidateAssemblyIsolationProbe.lean",
+      "source_excerpt": "theorem selected_candidate_isolation :\n    \u2203 (_w : Witness ActualCandidateConstruction.selectedBudget ActualCandidateConstruction.selectedThreshold\n      ActualCandidateConstruction.selectedThreshold_geometry), \n    True := by\n  exact \u27e8selected_witness, trivial\u27e9\n\n/- The omitted bridge is a proposition-level observation, not a theorem that\n   the upstream candidate is invalid. The exported `Witness` type contains\n   the schedule, away extensions, forcing, `CandidateProperties`, generic\n   consequences, derivative growth, and boundary jets. It does not contain a\n   field of type `PositiveOrderMoments.Debt` or an equality relating such a\n   debt to the selected sums. -/\n\nend NavierStokesReview.ActualCandidateAssemblyIsolationProbe",
+      "transform_terms": [],
+      "tuple_terms": []
+    },
+    {
+      "body_field_terms": [],
+      "body_moment_terms": [],
+      "body_transform_terms": [],
+      "category": "moment_field_equality_candidate",
+      "end_line": 53,
+      "equality_terms": [
+        "="
+      ],
+      "field_terms": [
+        "selected_witness"
+      ],
+      "kind": "theorem",
+      "line": 42,
+      "module": "NavierStokesReview.src.probes.FiveRowCollisionBoundaryProbe",
+      "moment_terms": [
+        "FiveRows",
+        "FiveRowRank"
+      ],
+      "name": "NavierStokesReview.FiveRowCollisionBoundaryProbe.selected_witness_and_nonzero_rank_debt_coexist",
+      "path": "NavierStokesReview/src/probes/FiveRowCollisionBoundaryProbe.lean",
+      "source_excerpt": "theorem selected_witness_and_nonzero_rank_debt_coexist :\n    \u2203 _w : Witness ActualCandidateConstruction.selectedBudget\n        ActualCandidateConstruction.selectedThreshold\n        ActualCandidateConstruction.selectedThreshold_geometry,\n      FiveRowRank.FiveRows (FiveRowRank.background 1 1) (fun _ => 0)\n        nonzeroThreeDebt\n        (FiveRowRank.deltaV 1 1 1 2 nonzeroThreeDebt)\n        (FiveRowRank.gamma 1 1 1 2 nonzeroThreeDebt) \u2227\n      nonzeroThreeDebt \u2260 0 := by\n  exact \u27e8selected_witness, fiveRows_admits_nonzero_debt, nonzeroThreeDebt_ne_zero\u27e9\n\nend NavierStokesReview.FiveRowCollisionBoundaryProbe",
+      "transform_terms": [],
+      "tuple_terms": []
+    },
+    {
+      "body_field_terms": [],
+      "body_moment_terms": [],
+      "body_transform_terms": [],
+      "category": "moment_field_equality_candidate",
+      "end_line": 41,
+      "equality_terms": [
+        "="
+      ],
+      "field_terms": [
+        "selected_witness"
+      ],
+      "kind": "theorem",
+      "line": 32,
+      "module": "NavierStokesReview.src.probes.SelectedWitnessAttackBoundaryProbe",
+      "moment_terms": [
+        "Debt"
+      ],
+      "name": "NavierStokesReview.SelectedWitnessAttackBoundaryProbe.selected_witness_does_not_entail_zero_five_debt",
+      "path": "NavierStokesReview/src/probes/SelectedWitnessAttackBoundaryProbe.lean",
+      "source_excerpt": "theorem selected_witness_does_not_entail_zero_five_debt :\n    \u00ac (Witness ActualCandidateConstruction.selectedBudget\n        ActualCandidateConstruction.selectedThreshold\n        ActualCandidateConstruction.selectedThreshold_geometry \u2192\n        \u2200 d : Debt, d = 0) := by\n  intro h\n  have hd : nonzeroDebt = 0 := h selected_witness nonzeroDebt\n  have hd0 := congrFun hd (0 : Fin 5)\n  norm_num [nonzeroDebt] at hd0",
+      "transform_terms": [],
+      "tuple_terms": []
+    },
+    {
+      "body_field_terms": [],
+      "body_moment_terms": [],
+      "body_transform_terms": [],
+      "category": "moment_field_equality_candidate",
+      "end_line": 45,
+      "equality_terms": [
+        "="
+      ],
+      "field_terms": [
+        "selected_witness"
+      ],
+      "kind": "theorem",
+      "line": 39,
+      "module": "NavierStokesReview.src.probes.SelectedWitnessInhabitationProbe",
+      "moment_terms": [
+        "Debt"
+      ],
+      "name": "NavierStokesReview.SelectedWitnessInhabitationProbe.selected_witness_signature_ignores_five_debt",
+      "path": "NavierStokesReview/src/probes/SelectedWitnessInhabitationProbe.lean",
+      "source_excerpt": "theorem selected_witness_signature_ignores_five_debt (d : Debt) :\n    \u2203 w : Witness NavierStokes.ActualCandidateConstruction.selectedBudget\n        NavierStokes.ActualCandidateConstruction.selectedThreshold\n        NavierStokes.ActualCandidateConstruction.selectedThreshold_geometry, d = d := by\n  exact \u27e8selected_witness, rfl\u27e9\n\nend NavierStokesReview.SelectedWitnessInhabitationProbe",
+      "transform_terms": [],
+      "tuple_terms": []
+    },
+    {
+      "body_field_terms": [],
+      "body_moment_terms": [],
+      "body_transform_terms": [],
+      "category": "moment_field_equality_candidate",
+      "end_line": 49,
+      "equality_terms": [
+        "="
+      ],
+      "field_terms": [
+        "VelocityField"
+      ],
+      "kind": "theorem",
+      "line": 37,
+      "module": "NavierStokesReview.src.probes.SelectedWitnessPathProbe",
+      "moment_terms": [
+        "Debt"
+      ],
+      "name": "NavierStokesReview.SelectedWitnessPathProbe.selected_r3_envelope_coexists_with_unconstrained_five_debt",
+      "path": "NavierStokesReview/src/probes/SelectedWitnessPathProbe.lean",
+      "source_excerpt": "theorem selected_r3_envelope_coexists_with_unconstrained_five_debt :\n    \u2203 u : NavierStokes.ProblemStatement.VelocityField,\n      \u2203 p : NavierStokes.ProblemStatement.PressureField,\n      \u2203 f : NavierStokes.ProblemStatement.VelocityField,\n      \u2203 d : Debt, NavierStokes.R3CompactCandidate.Properties u p f \u2227 d \u2260 0 := by\n  obtain \u27e8u, p, f, h\u27e9 := NavierStokes.R3CompactCandidate.selected_compact_candidate\n  let d : Debt := fun _ => 1\n  refine \u27e8u, p, f, d, h, ?_\u27e9\n  intro hd\n  have hd0 := congrFun hd (0 : Fin 5)\n  norm_num [d] at hd0\n\nend NavierStokesReview.SelectedWitnessPathProbe",
+      "transform_terms": [],
+      "tuple_terms": []
+    }
+  ],
+  "source_declarations": 33986,
+  "source_files_with_audit_terms": 845,
+  "source_joint_candidates": 11,
+  "source_manual_candidates": 0,
+  "source_roots": [
+    "D:/Research Lab/Jexposition/Define Intelligence/Define-Intelligence-github"
+  ],
+  "status": "conservative source and optional Lean-environment triage; not a theorem",
+  "verdict": {
+    "absence_claim_permitted": false,
+    "kernel_false_proved": false,
+    "selected_delta_m_proved": false,
+    "selected_transport_disproved": false,
+    "selected_transport_proved": false
+  }
+}

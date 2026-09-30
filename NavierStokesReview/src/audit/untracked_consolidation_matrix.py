@@ -52,10 +52,23 @@ def main() -> None:
     parser.add_argument("--inventory", type=Path, required=True)
     parser.add_argument("--json", type=Path, required=True)
     parser.add_argument("--markdown", type=Path, required=True)
+    parser.add_argument(
+        "--disposition-manifest",
+        type=Path,
+        default=None,
+        help="Optional reviewed path-disposition JSON manifest.",
+    )
     args = parser.parse_args()
 
     repo = args.repo.resolve()
     inventory = json.loads(args.inventory.read_text(encoding="utf-8"))
+    dispositions = {}
+    if args.disposition_manifest is not None:
+        disposition_payload = json.loads(args.disposition_manifest.read_text(encoding="utf-8"))
+        dispositions = {
+            row["path"]: row
+            for row in disposition_payload.get("rows", [])
+        }
     duplicate_groups: dict[str, list[str]] = defaultdict(list)
     for item in inventory["records"]:
         duplicate_groups[item["sha256"]].append(item["path"])
@@ -68,6 +81,7 @@ def main() -> None:
         current_sha = digest(path) if exists else None
         integrity = "verified_current_hash" if exists and current_sha == item["sha256"] else "missing_or_changed"
         duplicates = duplicate_groups[item["sha256"]]
+        disposition = dispositions.get(relative, {})
         rows.append(
             {
                 "path": relative,
@@ -78,10 +92,19 @@ def main() -> None:
                 "duplicate_paths": duplicates if len(duplicates) > 1 else [],
                 "tracked_reference_count": len(item.get("referenced_by_tracked_files", [])),
                 "worktree_reference_count": len(item.get("referenced_by_worktree_files", [])),
-                "content_review_status": "pending_manual_source_review",
-                "disposition_gate": "HOLD_NO_STAGE_NO_MOVE",
-                "archive_target_if_later_approved": archive_target(relative),
-                "review_question": review_question(relative, item["category"]),
+                "content_review_status": disposition.get(
+                    "content_review_status", "pending_manual_source_review"
+                ),
+                "disposition_gate": disposition.get(
+                    "disposition_gate", "HOLD_NO_STAGE_NO_MOVE"
+                ),
+                "archive_target_if_later_approved": disposition.get(
+                    "archive_target_if_later_approved", archive_target(relative)
+                ),
+                "review_question": disposition.get(
+                    "review_question", review_question(relative, item["category"])
+                ),
+                "disposition_reason": disposition.get("disposition_reason"),
             }
         )
 
@@ -99,6 +122,7 @@ def main() -> None:
         ).stdout.strip(),
         "count": len(rows),
         "integrity_verified_count": sum(row["integrity_status"] == "verified_current_hash" for row in rows),
+        "disposition_manifest": str(args.disposition_manifest) if args.disposition_manifest else None,
         "rows": rows,
     }
     args.json.parent.mkdir(parents=True, exist_ok=True)
@@ -113,7 +137,7 @@ def main() -> None:
         f"Entries: **{len(rows)}**",
         f"Current hashes verified: **{payload['integrity_verified_count']} / {len(rows)}**",
         "",
-        "This is a consolidation gate, not an archive instruction. Every row remains on hold until manual content review, source cross-reference, and document-control confirmation are complete.",
+        "This is a consolidation gate. Rows marked `STAGE_RETAINED`, `ARCHIVE_CONFIRMED`, or `PROTECTED_DO_NOT_STAGE` have an explicit reviewed disposition; rows marked `HOLD_PROVENANCE_REVIEW` remain open.",
         "",
         "| Path | Category | Integrity | Tracked refs | Worktree refs | Duplicate paths | Content review | Gate |",
         "| --- | --- | --- | ---: | ---: | ---: | --- | --- |",
@@ -127,11 +151,11 @@ def main() -> None:
     lines.extend(
         [
             "",
-            "## Required review before any archive move",
+            "## Disposition rules",
             "",
             "1. Read each entry and compare it with the canonical paper, audit ledger, plan, and evidence documents.",
             "2. Record whether its claims are retained, merged, superseded, or rejected by source evidence; do not infer this from filenames.",
-            "3. Update the archive manifest with old path, new path, reason, and SHA-256 only after confirmation.",
+            "3. Archive moves require an old path, new path, reason, and SHA-256 in the parent-folder archive manifest.",
             "4. Stage only explicitly approved paths. Protected OpenAI source remains outside this consolidation workflow.",
         ]
     )

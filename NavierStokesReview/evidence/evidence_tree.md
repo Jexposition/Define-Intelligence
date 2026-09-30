@@ -316,7 +316,13 @@ This tree is retained as a navigation index, not as the authority for coverage c
 
 The current tree reconciliation found entries created after the previous tree snapshot, including the Priority 186–198 source tranches, the full CMI dependency crosswalk, the selected-field operator trace, the selected-endpoint compile-boundary re-audit, the paper moment-dependency matrix, the physical-projection adjudication, and the untracked-content consolidation matrix. Older count claims remain historical until regenerated from the current register.
 
-The exact current-index reconciliation is recorded in
+The exact pre-disposition index reconciliation is recorded in
 `evidence/review_tree_reconciliation_2026-09-30.md`. It records 314 current
 evidence files, 25 current files absent from this snapshot, and 6 stale
 index-only basenames. Those differences are navigation bookkeeping only.
+
+The post-disposition live evidence set is controlled separately by
+`evidence/untracked_disposition_manifest_2026-09-30.json` and
+`evidence/untracked_consolidation_matrix_2026-09-30.md`. Superseded evidence
+is retained under `evidence/archive/` with
+`evidence/archive/ARCHIVE_MANIFEST_2026-09-30.md`; no evidence was deleted.

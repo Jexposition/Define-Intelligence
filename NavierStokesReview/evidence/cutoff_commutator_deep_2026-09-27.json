@@ -1,0 +1,615 @@
+{
+  "final_rows": [
+    {
+      "backend": "gpu",
+      "commutator_mass_linf": 0.2436725407516204,
+      "curl_error_linf_trusted": 0.16210952996149255,
+      "defect_l1": 0.08408885791968107,
+      "defect_linf": 0.24367254075162043,
+      "defect_signed_volume": -0.08408885791968107,
+      "divergence_linf_trusted": 2.237489709496103,
+      "local_mass_linf": 2.3085151912489478e-07,
+      "modulation": 0.0,
+      "points": 257,
+      "product_rule_max_error": 0.03807986194540394,
+      "scale": 0.5,
+      "weighted_mass_linf": 0.24367277160313955
+    },
+    {
+      "backend": "gpu",
+      "commutator_mass_linf": 0.3045906759395255,
+      "curl_error_linf_trusted": 0.20263691245186577,
+      "defect_l1": 0.0889011551905182,
+      "defect_linf": 0.3045906759395255,
+      "defect_signed_volume": -0.0889011551905182,
+      "divergence_linf_trusted": 2.0081635641189575,
+      "local_mass_linf": 2.885643989121358e-07,
+      "modulation": 0.25,
+      "points": 257,
+      "product_rule_max_error": 0.04759982743175494,
+      "scale": 0.5,
+      "weighted_mass_linf": 0.3045909645039244
+    },
+    {
+      "backend": "gpu",
+      "commutator_mass_linf": 0.280882870280325,
+      "curl_error_linf_trusted": 0.19128763968405738,
+      "defect_l1": 0.10310328771675273,
+      "defect_linf": 0.28088287028032505,
+      "defect_signed_volume": -0.10310328771675273,
+      "divergence_linf_trusted": 2.9421551170339333,
+      "local_mass_linf": 2.731229838476767e-07,
+      "modulation": 0.0,
+      "points": 257,
+      "product_rule_max_error": 0.044928269947944174,
+      "scale": 1.0,
+      "weighted_mass_linf": 0.2808831434033089
+    },
+    {
+      "backend": "gpu",
+      "commutator_mass_linf": 0.35110358785040624,
+      "curl_error_linf_trusted": 0.23910954960507158,
+      "defect_l1": 0.12202085276908345,
+      "defect_linf": 0.3511035878504063,
+      "defect_signed_volume": -0.12202085276908345,
+      "divergence_linf_trusted": 3.332698625673843,
+      "local_mass_linf": 3.414037298138514e-07,
+      "modulation": 0.25,
+      "points": 257,
+      "product_rule_max_error": 0.05616033743493022,
+      "scale": 1.0,
+      "weighted_mass_linf": 0.3511039292541361
+    },
+    {
+      "backend": "gpu",
+      "commutator_mass_linf": 0.2910521386639858,
+      "curl_error_linf_trusted": 0.1993671827825067,
+      "defect_l1": 0.10855866292035768,
+      "defect_linf": 0.2910521386639858,
+      "defect_signed_volume": -0.10855866292035768,
+      "divergence_linf_trusted": 3.1615246654921325,
+      "local_mass_linf": 2.848385108629838e-07,
+      "modulation": 0.0,
+      "points": 257,
+      "product_rule_max_error": 0.04682446668420507,
+      "scale": 2.0,
+      "weighted_mass_linf": 0.2910524235024967
+    },
+    {
+      "backend": "gpu",
+      "commutator_mass_linf": 0.36381517332998226,
+      "curl_error_linf_trusted": 0.24920897847813345,
+      "defect_l1": 0.13373612504473148,
+      "defect_linf": 0.3638151733299823,
+      "defect_signed_volume": -0.13373612504473148,
+      "divergence_linf_trusted": 3.8423170711483827,
+      "local_mass_linf": 3.560481385805458e-07,
+      "modulation": 0.25,
+      "points": 257,
+      "product_rule_max_error": 0.05853058335525632,
+      "scale": 2.0,
+      "weighted_mass_linf": 0.3638155293781209
+    }
+  ],
+  "instrument": "cutoff_commutator_scan",
+  "parameters": {
+    "backend": "gpu",
+    "domain": {
+      "x": [
+        -0.5,
+        0.5
+      ],
+      "y": [
+        -0.5,
+        0.5
+      ],
+      "z": [
+        -0.5,
+        0.5
+      ]
+    },
+    "modulations": [
+      0.0,
+      0.25
+    ],
+    "profile_scales": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "resolutions": [
+      129,
+      193,
+      257
+    ],
+    "trusted_radius": 0.1
+  },
+  "plot": "NavierStokesReview\\evidence\\cutoff_commutator_deep_2026-09-27.png",
+  "rows": [
+    {
+      "backend": "gpu",
+      "commutator_mass_linf": 0.2436725407516204,
+      "curl_error_linf_trusted": 0.16210952996149255,
+      "defect_l1": 0.08408885791968107,
+      "defect_linf": 0.24367254075162043,
+      "defect_signed_volume": -0.08408885791968107,
+      "divergence_linf_trusted": 2.237489709496103,
+      "local_mass_linf": 2.3085151912489478e-07,
+      "modulation": 0.0,
+      "points": 257,
+      "product_rule_max_error": 0.03807986194540394,
+      "scale": 0.5,
+      "weighted_mass_linf": 0.24367277160313955
+    },
+    {
+      "backend": "gpu",
+      "commutator_mass_linf": 0.24365378349941114,
+      "curl_error_linf_trusted": 0.5001702711365729,
+      "defect_l1": 0.08408238780067112,
+      "defect_linf": 0.24365378349941114,
+      "defect_signed_volume": -0.08408238780067112,
+      "divergence_linf_trusted": 6.908111588788191,
+      "local_mass_linf": 1.9352961870439892e-05,
+      "modulation": 0.0,
+      "points": 129,
+      "product_rule_max_error": 0.11594496529636764,
+      "scale": 0.5,
+      "weighted_mass_linf": 0.24367313646128158
+    },
+    {
+      "backend": "gpu",
+      "commutator_mass_linf": 0.24367614246698155,
+      "curl_error_linf_trusted": 0.2660774679046204,
+      "defect_l1": 0.08409010074134618,
+      "defect_linf": 0.24367614246698155,
+      "defect_signed_volume": -0.08409010074134618,
+      "divergence_linf_trusted": 3.674415996075311,
+      "local_mass_linf": 3.371723136525763e-06,
+      "modulation": 0.0,
+      "points": 193,
+      "product_rule_max_error": 0.062410024779103554,
+      "scale": 0.5,
+      "weighted_mass_linf": 0.24367277074384502
+    },
+    {
+      "backend": "gpu",
+      "commutator_mass_linf": 0.3045906759395255,
+      "curl_error_linf_trusted": 0.20263691245186577,
+      "defect_l1": 0.0889011551905182,
+      "defect_linf": 0.3045906759395255,
+      "defect_signed_volume": -0.0889011551905182,
+      "divergence_linf_trusted": 2.0081635641189575,
+      "local_mass_linf": 2.885643989121358e-07,
+      "modulation": 0.25,
+      "points": 257,
+      "product_rule_max_error": 0.04759982743175494,
+      "scale": 0.5,
+      "weighted_mass_linf": 0.3045909645039244
+    },
+    {
+      "backend": "gpu",
+      "commutator_mass_linf": 0.30456722937426395,
+      "curl_error_linf_trusted": 0.6252128389207163,
+      "defect_l1": 0.08889431585489058,
+      "defect_linf": 0.3045672293742639,
+      "defect_signed_volume": -0.08889431585489058,
+      "divergence_linf_trusted": 6.202113055486864,
+      "local_mass_linf": 2.4191202338028073e-05,
+      "modulation": 0.25,
+      "points": 129,
+      "product_rule_max_error": 0.14493120662045958,
+      "scale": 0.5,
+      "weighted_mass_linf": 0.30459142057660193
+    },
+    {
+      "backend": "gpu",
+      "commutator_mass_linf": 0.30459517808372694,
+      "curl_error_linf_trusted": 0.3325968348807755,
+      "defect_l1": 0.08890246910228358,
+      "defect_linf": 0.30459517808372694,
+      "defect_signed_volume": -0.08890246910228358,
+      "divergence_linf_trusted": 3.30680521925,
+      "local_mass_linf": 4.214653920658288e-06,
+      "modulation": 0.25,
+      "points": 193,
+      "product_rule_max_error": 0.07801253097387946,
+      "scale": 0.5,
+      "weighted_mass_linf": 0.3045909634298063
+    },
+    {
+      "backend": "gpu",
+      "commutator_mass_linf": 0.280882870280325,
+      "curl_error_linf_trusted": 0.19128763968405738,
+      "defect_l1": 0.10310328771675273,
+      "defect_linf": 0.28088287028032505,
+      "defect_signed_volume": -0.10310328771675273,
+      "divergence_linf_trusted": 2.9421551170339333,
+      "local_mass_linf": 2.731229838476767e-07,
+      "modulation": 0.0,
+      "points": 257,
+      "product_rule_max_error": 0.044928269947944174,
+      "scale": 1.0,
+      "weighted_mass_linf": 0.2808831434033089
+    },
+    {
+      "backend": "gpu",
+      "commutator_mass_linf": 0.2808603149857677,
+      "curl_error_linf_trusted": 0.5876463403991399,
+      "defect_l1": 0.10309500936350402,
+      "defect_linf": 0.28086031498576775,
+      "defect_signed_volume": -0.10309500936350402,
+      "divergence_linf_trusted": 9.034792621293661,
+      "local_mass_linf": 2.3347602981435133e-05,
+      "modulation": 0.0,
+      "points": 129,
+      "product_rule_max_error": 0.1362028594287218,
+      "scale": 1.0,
+      "weighted_mass_linf": 0.2808836625887492
+    },
+    {
+      "backend": "gpu",
+      "commutator_mass_linf": 0.2808871571163416,
+      "curl_error_linf_trusted": 0.3127731827060257,
+      "defect_l1": 0.10310486124710642,
+      "defect_linf": 0.2808871571163416,
+      "defect_signed_volume": -0.10310486124710642,
+      "divergence_linf_trusted": 4.811051837021528,
+      "local_mass_linf": 4.014861321009408e-06,
+      "modulation": 0.0,
+      "points": 193,
+      "product_rule_max_error": 0.07334849137240007,
+      "scale": 1.0,
+      "weighted_mass_linf": 0.2808831422550206
+    },
+    {
+      "backend": "gpu",
+      "commutator_mass_linf": 0.35110358785040624,
+      "curl_error_linf_trusted": 0.23910954960507158,
+      "defect_l1": 0.12202085276908345,
+      "defect_linf": 0.3511035878504063,
+      "defect_signed_volume": -0.12202085276908345,
+      "divergence_linf_trusted": 3.332698625673843,
+      "local_mass_linf": 3.414037298138514e-07,
+      "modulation": 0.25,
+      "points": 257,
+      "product_rule_max_error": 0.05616033743493022,
+      "scale": 1.0,
+      "weighted_mass_linf": 0.3511039292541361
+    },
+    {
+      "backend": "gpu",
+      "commutator_mass_linf": 0.35107539373220964,
+      "curl_error_linf_trusted": 0.7345579254989246,
+      "defect_l1": 0.12201105782810291,
+      "defect_linf": 0.35107539373220964,
+      "defect_signed_volume": -0.12201105782810291,
+      "divergence_linf_trusted": 10.245211199859305,
+      "local_mass_linf": 2.918450372679229e-05,
+      "modulation": 0.25,
+      "points": 129,
+      "product_rule_max_error": 0.1702535742859022,
+      "scale": 1.0,
+      "weighted_mass_linf": 0.35110457823593644
+    },
+    {
+      "backend": "gpu",
+      "commutator_mass_linf": 0.351108946395427,
+      "curl_error_linf_trusted": 0.39096647838253196,
+      "defect_l1": 0.12202271493641566,
+      "defect_linf": 0.351108946395427,
+      "defect_signed_volume": -0.12202271493641566,
+      "divergence_linf_trusted": 5.446836007141351,
+      "local_mass_linf": 5.018576651264362e-06,
+      "modulation": 0.25,
+      "points": 193,
+      "product_rule_max_error": 0.09168561421550006,
+      "scale": 1.0,
+      "weighted_mass_linf": 0.35110392781877575
+    },
+    {
+      "backend": "gpu",
+      "commutator_mass_linf": 0.2910521386639858,
+      "curl_error_linf_trusted": 0.1993671827825067,
+      "defect_l1": 0.10855866292035768,
+      "defect_linf": 0.2910521386639858,
+      "defect_signed_volume": -0.10855866292035768,
+      "divergence_linf_trusted": 3.1615246654921325,
+      "local_mass_linf": 2.848385108629838e-07,
+      "modulation": 0.0,
+      "points": 257,
+      "product_rule_max_error": 0.04682446668420507,
+      "scale": 2.0,
+      "weighted_mass_linf": 0.2910524235024967
+    },
+    {
+      "backend": "gpu",
+      "commutator_mass_linf": 0.2910285167108776,
+      "curl_error_linf_trusted": 0.6118040168569618,
+      "defect_l1": 0.10854985250792895,
+      "defect_linf": 0.2910285167108776,
+      "defect_signed_volume": -0.10854985250792895,
+      "divergence_linf_trusted": 9.706853098326393,
+      "local_mass_linf": 2.4471121421688977e-05,
+      "modulation": 0.0,
+      "points": 129,
+      "product_rule_max_error": 0.14179678610138122,
+      "scale": 2.0,
+      "weighted_mass_linf": 0.29105298783229927
+    },
+    {
+      "backend": "gpu",
+      "commutator_mass_linf": 0.2910566165630779,
+      "curl_error_linf_trusted": 0.3256718173750122,
+      "defect_l1": 0.10856033310960103,
+      "defect_linf": 0.29105661656307785,
+      "defect_signed_volume": -0.10856033310960103,
+      "divergence_linf_trusted": 5.169578825399829,
+      "local_mass_linf": 4.1942835839704415e-06,
+      "modulation": 0.0,
+      "points": 193,
+      "product_rule_max_error": 0.0763695935301008,
+      "scale": 2.0,
+      "weighted_mass_linf": 0.2910524222794939
+    },
+    {
+      "backend": "gpu",
+      "commutator_mass_linf": 0.36381517332998226,
+      "curl_error_linf_trusted": 0.24920897847813345,
+      "defect_l1": 0.13373612504473148,
+      "defect_linf": 0.3638151733299823,
+      "defect_signed_volume": -0.13373612504473148,
+      "divergence_linf_trusted": 3.8423170711483827,
+      "local_mass_linf": 3.560481385805458e-07,
+      "modulation": 0.25,
+      "points": 257,
+      "product_rule_max_error": 0.05853058335525632,
+      "scale": 2.0,
+      "weighted_mass_linf": 0.3638155293781209
+    },
+    {
+      "backend": "gpu",
+      "commutator_mass_linf": 0.36378564588859696,
+      "curl_error_linf_trusted": 0.7647550210712024,
+      "defect_l1": 0.13372527212534685,
+      "defect_linf": 0.3637856458885971,
+      "defect_signed_volume": -0.13372527212534685,
+      "divergence_linf_trusted": 11.790542626409778,
+      "local_mass_linf": 3.0588901777105475e-05,
+      "modulation": 0.25,
+      "points": 129,
+      "product_rule_max_error": 0.1772459826267265,
+      "scale": 2.0,
+      "weighted_mass_linf": 0.36381623479037417
+    },
+    {
+      "backend": "gpu",
+      "commutator_mass_linf": 0.3638207707038474,
+      "curl_error_linf_trusted": 0.4070897717187654,
+      "defect_l1": 0.13373818256453784,
+      "defect_linf": 0.3638207707038474,
+      "defect_signed_volume": -0.13373818256453784,
+      "divergence_linf_trusted": 6.27928481844873,
+      "local_mass_linf": 5.242854479971075e-06,
+      "modulation": 0.25,
+      "points": 193,
+      "product_rule_max_error": 0.09546199191262596,
+      "scale": 2.0,
+      "weighted_mass_linf": 0.36381552784936744
+    }
+  ],
+  "runtime": {
+    "backend": "gpu",
+    "cuda_available": true,
+    "cuda_device": "NVIDIA GeForce RTX 4060 Ti",
+    "cupy_imported": true
+  },
+  "source_bindings": {
+    "cut_potential": "NavierStokes/SpatialLocalization.lean:165-171",
+    "cutoff": "NavierStokes/SpatialLocalization.lean:41-53",
+    "periodic_potential": "NavierStokes/SpatialLocalization.lean:210-214",
+    "physical_potential": "NavierStokes/ActualPrimaryCoherence.lean:1633-1871",
+    "product_rule": "NavierStokes/SpatialLocalization.lean:200-208"
+  },
+  "status": "deep 3D Cartesian profile calculation; not selected_witness evaluation",
+  "validation": {
+    "analytic_and_finite_difference_curl": true,
+    "divergence_residual_recorded": true,
+    "exact_source_cutoff_reconstructed": true,
+    "full_3d_cartesian_volume": true,
+    "refinement": {
+      "defect_stability_observed": true,
+      "finite_difference_errors_are_zero": false,
+      "finite_difference_errors_decrease": true,
+      "groups": [
+        {
+          "curl_error_linf_trusted": [
+            0.5001702711365729,
+            0.2660774679046204,
+            0.16210952996149255
+          ],
+          "curl_error_monotone_decreasing": true,
+          "defect_relative_changes": [
+            9.172233838538273e-05,
+            1.4779861397292078e-05
+          ],
+          "defect_signed_volume": [
+            -0.08408238780067112,
+            -0.08409010074134618,
+            -0.08408885791968107
+          ],
+          "defect_stable_last_step_le_5_percent": true,
+          "divergence_error_monotone_decreasing": true,
+          "divergence_linf_trusted": [
+            6.908111588788191,
+            3.674415996075311,
+            2.237489709496103
+          ],
+          "modulation": 0.0,
+          "points": [
+            129,
+            193,
+            257
+          ],
+          "scale": 0.5
+        },
+        {
+          "curl_error_linf_trusted": [
+            0.6252128389207163,
+            0.3325968348807755,
+            0.20263691245186577
+          ],
+          "curl_error_monotone_decreasing": true,
+          "defect_relative_changes": [
+            9.171002195254312e-05,
+            1.4779467854747677e-05
+          ],
+          "defect_signed_volume": [
+            -0.08889431585489058,
+            -0.08890246910228358,
+            -0.0889011551905182
+          ],
+          "defect_stable_last_step_le_5_percent": true,
+          "divergence_error_monotone_decreasing": true,
+          "divergence_linf_trusted": [
+            6.202113055486864,
+            3.30680521925,
+            2.0081635641189575
+          ],
+          "modulation": 0.25,
+          "points": [
+            129,
+            193,
+            257
+          ],
+          "scale": 0.5
+        },
+        {
+          "curl_error_linf_trusted": [
+            0.5876463403991399,
+            0.3127731827060257,
+            0.19128763968405738
+          ],
+          "curl_error_monotone_decreasing": true,
+          "defect_relative_changes": [
+            9.555207662607886e-05,
+            1.5261689404309398e-05
+          ],
+          "defect_signed_volume": [
+            -0.10309500936350402,
+            -0.10310486124710642,
+            -0.10310328771675273
+          ],
+          "defect_stable_last_step_le_5_percent": true,
+          "divergence_error_monotone_decreasing": true,
+          "divergence_linf_trusted": [
+            9.034792621293661,
+            4.811051837021528,
+            2.9421551170339333
+          ],
+          "modulation": 0.0,
+          "points": [
+            129,
+            193,
+            257
+          ],
+          "scale": 1.0
+        },
+        {
+          "curl_error_linf_trusted": [
+            0.7345579254989246,
+            0.39096647838253196,
+            0.23910954960507158
+          ],
+          "curl_error_monotone_decreasing": true,
+          "defect_relative_changes": [
+            9.553228117256913e-05,
+            1.5261058171203967e-05
+          ],
+          "defect_signed_volume": [
+            -0.12201105782810291,
+            -0.12202271493641566,
+            -0.12202085276908345
+          ],
+          "defect_stable_last_step_le_5_percent": true,
+          "divergence_error_monotone_decreasing": true,
+          "divergence_linf_trusted": [
+            10.245211199859305,
+            5.446836007141351,
+            3.332698625673843
+          ],
+          "modulation": 0.25,
+          "points": [
+            129,
+            193,
+            257
+          ],
+          "scale": 1.0
+        },
+        {
+          "curl_error_linf_trusted": [
+            0.6118040168569618,
+            0.3256718173750122,
+            0.1993671827825067
+          ],
+          "curl_error_monotone_decreasing": true,
+          "defect_relative_changes": [
+            9.654172359161199e-05,
+            1.5385130936788433e-05
+          ],
+          "defect_signed_volume": [
+            -0.10854985250792895,
+            -0.10856033310960103,
+            -0.10855866292035768
+          ],
+          "defect_stable_last_step_le_5_percent": true,
+          "divergence_error_monotone_decreasing": true,
+          "divergence_linf_trusted": [
+            9.706853098326393,
+            5.169578825399829,
+            3.1615246654921325
+          ],
+          "modulation": 0.0,
+          "points": [
+            129,
+            193,
+            257
+          ],
+          "scale": 2.0
+        },
+        {
+          "curl_error_linf_trusted": [
+            0.7647550210712024,
+            0.4070897717187654,
+            0.24920897847813345
+          ],
+          "curl_error_monotone_decreasing": true,
+          "defect_relative_changes": [
+            9.653517748952377e-05,
+            1.5384921655806772e-05
+          ],
+          "defect_signed_volume": [
+            -0.13372527212534685,
+            -0.13373818256453784,
+            -0.13373612504473148
+          ],
+          "defect_stable_last_step_le_5_percent": true,
+          "divergence_error_monotone_decreasing": true,
+          "divergence_linf_trusted": [
+            11.790542626409778,
+            6.27928481844873,
+            3.8423170711483827
+          ],
+          "modulation": 0.25,
+          "points": [
+            129,
+            193,
+            257
+          ],
+          "scale": 2.0
+        }
+      ]
+    },
+    "selected_delta_m_proved": false,
+    "selected_field_bound": false
+  }
+}
