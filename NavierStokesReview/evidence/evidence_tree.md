@@ -336,3 +336,13 @@ residual-rate proofs feed the selected endpoint, while `Witness` does not
 export a named final `(M,I,J,S,Cp)` identity. The controlled status remains
 `CTR-005: NOT ESTABLISHED`; no selected defect, force nonsmoothness,
 impossibility, compiler escape, or `False` is asserted.
+## Current source tranche: Priority 200 (2026-09-30)
+
+- `source_tranche_priority_200_connected_cmi_manuscript_crosswalk_2026-09-30.json`
+- `../src/audit/priority_200_connected_cmi_manuscript_crosswalk_2026-09-30.md`
+
+This tranche records the connected result: the literal forced whole-space
+endpoint is supported by the Lean theorem and comparator, while complete
+identification with the manuscript's five-moment construction remains
+`CTR-005: NOT ESTABLISHED`. It does not assert a selected defect or CMI
+refutation.

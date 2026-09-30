@@ -208,3 +208,10 @@ rates, force extension, `Witness`, `selected_witness`, and the axis blow-up
 route. It corrects both directions of overstatement: the endpoint is not an
 empty generic-rate shell, and the missing named final observable identity is
 not itself a selected-field falsification.
+## Current source tranche: Priority 200 (2026-09-30)
+
+`priority_200_connected_cmi_manuscript_crosswalk_2026-09-30.md` joins the
+Fefferman text, OpenAI manuscript, R3 candidate properties, theorem,
+comparator, selected assembly, residual-rate route, and fresh axiom replay.
+It is the current control against isolating Alternative (C) or treating the
+missing named moment identity as either irrelevant or already refuted.

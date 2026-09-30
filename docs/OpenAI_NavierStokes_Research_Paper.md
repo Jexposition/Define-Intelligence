@@ -1276,6 +1276,11 @@ but it is not by itself a proof that the selected force is nonsmooth or that a
 connected CMI alternative is false.
 # Live control checkpoint: 2026-09-30 continuation
 
+The latest connected CMI and manuscript crosswalk is Priority 200:
+`../NavierStokesReview/src/audit/priority_200_connected_cmi_manuscript_crosswalk_2026-09-30.md`.
+It must be read with the raw CMI, manuscript, and R3 endpoint source ranges
+listed there.
+
 This paper is a reader-facing synthesis, not a chronological agent log. The
 current source-of-truth control is
 `REVIEW_DOCUMENT_CONTROL.md`, with the companion peer review in

@@ -1,0 +1,27 @@
+{
+  "priority": 200,
+  "date": "2026-09-30",
+  "status": "connected_crosswalk_source_checked",
+  "sources": {
+    "fefferman": "docs/navierstokes.txt:25-46,74-81",
+    "openai_manuscript": "docs/navier-stokes openai.txt:31-45,109-124,307-321,695-757,2145-2244",
+    "lean_endpoint": "NavierStokes/R3/ProblemStatement.lean:92-153; NavierStokes/R3/Theorem.lean:26-79; NavierStokes/ComparatorR3Theorem.lean:21-44",
+    "selected_assembly": "NavierStokes/ActualCandidateAssembly.lean:1079-1098,1121-1151,1177-1185",
+    "residual_force": "NavierStokes/ActualCycleResidualBounds.lean:1156-1172; NavierStokes/CandidateFromLimits.lean:45-112",
+    "axiom_replay": "NavierStokesReview/src/audit/WholeSpaceAxiomAudit.lean"
+  },
+  "findings": {
+    "literal_forced_cmi_endpoint_supported": true,
+    "whole_formulation_checked_together": true,
+    "manuscript_five_moment_mechanism_load_bearing": true,
+    "concrete_physical_data_feeds_selected_rates": true,
+    "witness_exports_named_final_moment_identity": false,
+    "selected_path_equivalent_moment_transport_located": false,
+    "selected_nonzero_moment_defect_proved": false,
+    "force_nonsmoothness_proved": false,
+    "kernel_contradiction_or_compiler_escape_found": false,
+    "endpoint_axioms_only_standard_foundations": true
+  },
+  "controlled_verdict": "CTR-005: NOT ESTABLISHED for complete manuscript-to-selected-endpoint correspondence",
+  "scope_warning": "The literal formal forced endpoint is supported; this does not by itself establish exact formalisation of every manuscript mechanism. Conversely, the missing named transport theorem does not itself refute the selected endpoint or prove a force defect."
+}

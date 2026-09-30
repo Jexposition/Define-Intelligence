@@ -1,5 +1,19 @@
 # CMI-first review plan: OpenAI Navier–Stokes claim
 
+## Priority 200 continuation state: 2026-09-30
+
+The connected crosswalk has been completed for the current source tranche.
+It confirms the formal forced endpoint and comparator path, then keeps the
+manuscript-mechanism correspondence question separate. The next work is not
+to re-prove the already present literal endpoint or to declare a refutation.
+It is to locate or formalise an equivalent selected-path theorem connecting
+the actual Cartesian, pressure, localisation, summation, residual, and force
+objects to the manuscript's five-moment mechanism. The controlled status
+remains `CTR-005: NOT ESTABLISHED`.
+
+Evidence: `NavierStokesReview/src/audit/priority_200_connected_cmi_manuscript_crosswalk_2026-09-30.md`.
+
+
 ## Live continuation plan: 2026-09-30
 
 The cleanup tranche is complete and the scientific audit continues. Work is

@@ -1,5 +1,18 @@
 # Semantic correspondence map: OpenAI paper to Lean endpoint
 
+## Connected CMI crosswalk: Priority 200 (2026-09-30)
+
+Priority 200 confirms that the Lean R3 theorem and comparator prove a formal
+forced whole-space breakdown proposition matching the connected CMI target.
+The manuscript's five-moment repair remains load-bearing in its written
+construction, and the selected Lean path contains substantial upstream
+physical-data and residual-rate machinery. The inspected `Witness` still does
+not export a named final `(M,I,J,S,Cp)` identity, so complete
+manuscript-to-selected-endpoint equivalence remains `CTR-005: NOT ESTABLISHED`.
+This is neither a proof that the selected field is wrong nor a reason to call
+the literal forced endpoint empty.
+
+
 ## Live declaration cross-check: Priority 199 (2026-09-30)
 
 The current raw-source recheck is recorded in

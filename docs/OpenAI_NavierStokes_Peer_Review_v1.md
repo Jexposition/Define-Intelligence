@@ -4384,6 +4384,11 @@ semantic scope and the exact evidence boundary are controlled by
 [`CMI_OpenAI_Full_Semantic_Crosswalk.md`](CMI_OpenAI_Full_Semantic_Crosswalk.md).
 # Live control checkpoint: 2026-09-30 continuation
 
+The latest connected source crosswalk is Priority 200:
+`../NavierStokesReview/src/audit/priority_200_connected_cmi_manuscript_crosswalk_2026-09-30.md`.
+It confirms the positive literal result and the remaining correspondence
+boundary described below.
+
 This checkpoint supersedes any older header count or branch description in
 this document. The active private review branch is
 `review/cmi-first-navier-stokes-reconciled-2026-09-30` at the current scoped

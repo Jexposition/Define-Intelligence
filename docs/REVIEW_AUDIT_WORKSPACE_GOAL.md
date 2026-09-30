@@ -1,5 +1,20 @@
 # Review audit workspace goal
 
+## Priority 200 scientific control: 2026-09-30
+
+The connected CMI crosswalk is now recorded in
+`NavierStokesReview/src/audit/priority_200_connected_cmi_manuscript_crosswalk_2026-09-30.md`.
+The current source record supports a formal forced whole-space endpoint in
+`R3/ProblemStatement.lean`, `R3/Theorem.lean`, and
+`ComparatorR3Theorem.lean`. It also confirms that the manuscript's
+five-moment repair is load-bearing rather than optional exposition. The
+remaining finding is exact: `Witness` does not export a named final
+`(M,I,J,S,Cp)` identification theorem, so complete manuscript-to-selected-
+endpoint equivalence remains `CTR-005: NOT ESTABLISHED`. Do not turn that
+correspondence gap into a selected-field defect or a literal CMI refutation
+without a separate field-level proof.
+
+
 ## Live continuation control: 2026-09-30
 
 The prior disposition cleanup is complete, but the overall audit goal remains
