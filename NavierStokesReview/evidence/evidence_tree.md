@@ -420,8 +420,31 @@ archive move, protected-source edit, or protected-source staging occurred.
 ## Documentation-control closure: Priority 208 (2026-09-30)
 
 `priority_208_archive_link_lint_closure_2026-09-30.md` records the corrected
-full-corpus link/lint result: 413 Markdown files checked, 0 broken local links,
+full-corpus link/lint result: 415 Markdown files checked, 0 broken local links,
 98 evidence JSON files parsed, and 0 archive-manifest SHA-256 mismatches. It
 closes only the link/lint sub-gate. The broader consolidation and
 cross-reference gate remains open, and `CTR-005` remains
+`NOT ESTABLISHED`.
+
+The 415/98 values above are the Priority 208 gate-time snapshot. The live
+post-Priority-209 replay is 424 Markdown files and 101 evidence JSON files;
+see `priority_209_scope_and_index_reconciliation_2026-09-30.md` for the
+current totals and parser exclusions.
+
+## Current scope and index authority: Priority 209 (2026-09-30)
+
+- `hardened_source_map_2026-09-30.json`
+- `hardened_source_map_2026-09-30.md`
+- `semantic_coverage_register_full_2026-09-30.json`
+- `semantic_coverage_register_full_2026-09-30.md`
+- `source_tranche_priority_209_scope_and_index_reconciliation_2026-09-30.json`
+- `priority_209_scope_and_index_reconciliation_2026-09-30.md`
+- `../src/audit/priority_209_scope_and_index_reconciliation_2026-09-30.md`
+
+Priority 209 is the current scope authority: 2,797 current Lean files, 588
+modules in the selected endpoint closure, 2,209 rows outside that closure,
+817 files under `NavierStokes/`, and 137 review-side Lean files. “Outside
+selected closure” is an audit-root scope label, not a dead-code or OpenAI-build
+claim. Older tree entries and generated `__pycache__`/`.pyc` entries are
+navigation history; no deletion was performed. `CTR-005` remains
 `NOT ESTABLISHED`.

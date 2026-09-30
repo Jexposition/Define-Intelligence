@@ -3,6 +3,10 @@
 The Priority 208 control audit validates the corrected documentation state
 after archive-relative links were repaired. It is not a Lean or PDE result.
 
+The corrected full-corpus pass checked 415 Markdown files and found zero broken
+local targets, parsed 98 evidence JSON files with zero failures, and found zero
+archive-manifest SHA-256 mismatches.
+
 ## Evidence
 
 - Evidence record: `../../evidence/priority_208_archive_link_lint_closure_2026-09-30.md`

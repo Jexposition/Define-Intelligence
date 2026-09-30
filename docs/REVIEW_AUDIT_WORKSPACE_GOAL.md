@@ -3654,9 +3654,40 @@ The first full Markdown-link audit exposed relocation defects in two archived
 manuscript artefacts. Their targets were present in the active documentation,
 evidence, and source trees; the links were repaired and the affected archive
 hashes were updated in `docs/archive/ARCHIVE_MANIFEST_2026-09-30.md`. The
-remaining gate is a corrected full-corpus link/lint and cross-reference pass.
-No deletion, source-tree edit, or additional archive move is authorised before
-that gate closes. The scientific status remains `CTR-005: NOT ESTABLISHED`.
+corrected full-corpus pass checked 415 Markdown files and 98 evidence JSON
+files with zero broken local links, parse failures, or archive hash
+mismatches. The broader document consolidation and fact-check gate remains
+open. No deletion, source-tree edit, or additional archive move is authorised
+before that gate closes. The scientific status remains
+`CTR-005: NOT ESTABLISHED`.
+
+Those are the Priority 208 gate-time counts. The live post-Priority-209 replay
+is 424 Markdown files and 101 evidence JSON files, with the same zero-error
+result. Priority 209 is the current count authority.
 
 Control records: `../NavierStokesReview/evidence/priority_208_archive_link_lint_closure_2026-09-30.md`
 and `../NavierStokesReview/src/audit/priority_208_archive_link_lint_closure_2026-09-30.md`.
+
+## Priority 209: scope and tree-index authority (2026-09-30)
+
+- [x] Regenerate the current source map from the live checkout.
+- [x] Regenerate the semantic register and existing `docs/` mirrors from that
+  source map.
+- [x] Reconcile 2,797 whole-checkout Lean files, 817 `NavierStokes/` files,
+  137 review-side Lean files, and the 588-module selected endpoint closure.
+- [x] Explain the 2,794-to-2,797 register drift and the ten-versus-seven
+  `sorry_token` counts in a machine-readable and human-readable record.
+- [x] Update the evidence, audit, source, and docs navigation indexes.
+- [ ] Continue the full document consolidation, cross-reference, and
+  source-first fact-check gate before any further archive move.
+
+Priority 209 corrects scope and navigation only. It does not change the
+scientific classification: `CTR-005` remains `NOT ESTABLISHED`, and no
+selected defect, force nonsmoothness, literal CMI failure, impossibility,
+compiler escape, or `False` is claimed.
+
+Control records:
+`../NavierStokesReview/evidence/priority_209_scope_and_index_reconciliation_2026-09-30.md`,
+`../NavierStokesReview/evidence/source_tranche_priority_209_scope_and_index_reconciliation_2026-09-30.json`,
+and
+`../NavierStokesReview/src/audit/priority_209_scope_and_index_reconciliation_2026-09-30.md`.

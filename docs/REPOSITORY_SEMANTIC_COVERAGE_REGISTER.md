@@ -6,7 +6,7 @@ Generated from the hardened source map. This is a review register, not a proof c
 
 `reachable` means that the source import graph reaches the module from captured roots. `evidence_inspected` means that an explicit source-and-line review record exists in this register. Neither status alone proves that a paper-level mathematical identity is transported to the exported endpoint.
 
-- Modules: **2794**; endpoint-graph reachable: **588**; outside that graph: **2206**.
+- Modules: **2797**; endpoint-graph reachable: **588**; outside that graph: **2209**.
 - Explicitly inspected source records: **906**.
 - Supplemental review artifacts (not Lean module rows): **86**.
 - Reachable but not semantically inspected: **0**.
@@ -186,7 +186,7 @@ These files are explicit audit evidence but are not counted as Lean modules or e
 | `field-decomposition` | 1 |
 | `fixed-frame` | 2 |
 | `flow` | 4 |
-| `force` | 241 |
+| `force` | 242 |
 | `frame` | 2 |
 | `functional-analysis` | 20 |
 | `gaussian` | 3 |
@@ -216,7 +216,7 @@ These files are explicit audit evidence but are not counted as Lean modules or e
 | `methodology` | 4 |
 | `metric` | 1 |
 | `mild` | 2 |
-| `moments` | 363 |
+| `moments` | 364 |
 | `naturality` | 2 |
 | `nonlinear` | 1 |
 | `normalisation` | 1 |
@@ -2981,6 +2981,7 @@ This queue is an order of inspection, not a negative finding. A high score means
 | `NavierStokesReview.src.completions.SelectedDirectPrefixField` | `NavierStokesReview/src/completions/SelectedDirectPrefixField.lean` | 68 | 3 | false | 0 | unclassified | `source_indexed_review_queued` | Source-indexed path; no declaration-level semantic review record yet. |
 | `NavierStokesReview.src.completions.SelectedDirectRadialMomentBridge` | `NavierStokesReview/src/completions/SelectedDirectRadialMomentBridge.lean` | 51 | 4 | false | 141 | cartesian-assembly, moments | `evidence_inspected` | 19-48; selected_direct_component_one_eq_native_scalar, selected_direct_native_scalar_barMoment_zero, selected_direct_native_scalar_radial_integral_zero: Composes the direct-stage first-component chart identity with the native angular scalar's zero order-two barMoment. The theorem is explicitly scoped to the direct scalar branch and does not identify it with the curl-generated or mixed endpoint velocity. |
 | `NavierStokesReview.src.completions.SelectedDirectStageMomentTransport` | `NavierStokesReview/src/completions/SelectedDirectStageMomentTransport.lean` | 64 | 4 | false | 138 | corrections, moments, rank | `evidence_inspected` | 24-63; selected_angular_native_stage_moment_zero: Transports the selected cycle state's angular zero-moment invariant through native direct-stage differences. This is a correction/state invariant and not a field-level equality for the final mixed Cartesian selected field. |
+| `NavierStokesReview.src.completions.SelectedFeffermanAlternativeCProof` | `NavierStokesReview/src/completions/SelectedFeffermanAlternativeCProof.lean` | 59 | 2 | false | 100 | force | `source_indexed_review_queued` | Source-indexed path; no declaration-level semantic review record yet. |
 | `NavierStokesReview.src.completions.SelectedFieldFinitePrefix` | `NavierStokesReview/src/completions/SelectedFieldFinitePrefix.lean` | 85 | 3 | false | 147 | cartesian-assembly, endpoint, global-assembly | `evidence_inspected` | 19-83: Defines the concrete selected schedule and proves local and all-jet eventual finite-prefix equality for the selected potentialSum; no radial moment evaluation. |
 | `NavierStokesReview.src.completions.SelectedFiniteCutoffEndpoint` | `NavierStokesReview/src/completions/SelectedFiniteCutoffEndpoint.lean` | 45 | 2 | false | 60 | time | `source_indexed_review_queued` | Source-indexed path; no declaration-level semantic review record yet. |
 | `NavierStokesReview.src.completions.SelectedMixedMomentResidualDecomposition` | `NavierStokesReview/src/completions/SelectedMixedMomentResidualDecomposition.lean` | 63 | 4 | false | 155 | candidate-packaging, cartesian-assembly, force, jets, moments | `evidence_inspected` | 1-68: Reduces the selected mixed order-two barMoment to the selected potential branch only under explicit Shell hypotheses and a zero selected direct-branch premise. It does not substitute the native-stage zero theorem, evaluate the potential branch, or derive False. |
@@ -3017,6 +3018,7 @@ This queue is an order of inspection, not a negative finding. A high score means
 | `NavierStokesReview.src.completions.SelectedStreamRankScope` | `NavierStokesReview/src/completions/SelectedStreamRankScope.lean` | 45 | 2 | false | 155 | cartesian-assembly, moments, rank | `evidence_inspected` | 18-41; selected_stream_successor_temporal_rank, selected_stream_successor_moving: Shows that the selected successor stream is assembled from temporal and rank angular families and proves the upstream moving-field premise. It records upstream rank use but supplies no Cartesian curl-to-barMoment endpoint theorem. |
 | `NavierStokesReview.src.completions.SelectedSupportPredicateScope` | `NavierStokesReview/src/completions/SelectedSupportPredicateScope.lean` | 50 | 6 | false | 112 | axis, cartesian-assembly | `evidence_inspected` | 21-48; axialSpike_shrinkingSupport and axialWitness_not_plateau: Provides a zero-sorry interface countermodel showing that a shrinking radial-support predicate alone does not imply the cutoff plateau's axial-coordinate condition. This is a logical support-interface separation, not a countermodel to the selected smooth field. |
 | `NavierStokesReview.src.completions.SelectedTorusLiftImageScope` | `NavierStokesReview/src/completions/SelectedTorusLiftImageScope.lean` | 110 | 13 | false | 141 | axis, cartesian-assembly, moments, time | `evidence_inspected` | 33-107; absoluteLift_auxiliary_radialCoordinate_nonnegative, unreachableAuxiliary_not_in_absoluteLift_image, unreachablePhysicalPoint_not_in_physicalPoint_image: Proves an image restriction for the physical lift: a linear auxiliary radial coordinate is nonnegative on lifted physical points, while an auxiliary point in the integration square lies outside that image. This identifies a sampling/overlap transport obligation; it does not prove a nonzero selected moment or False. |
+| `NavierStokesReview.src.extensions.CMIAlternativeCLiteralCrosswalk` | `NavierStokesReview/src/extensions/CMIAlternativeCLiteralCrosswalk.lean` | 39 | 1 | false | 0 | unclassified | `source_indexed_review_queued` | Source-indexed path; no declaration-level semantic review record yet. |
 | `NavierStokesReview.src.extensions.CompactFixedForcePerturbation` | `NavierStokesReview/src/extensions/CompactFixedForcePerturbation.lean` | 321 | 31 | false | 133 | cartesian-assembly, force | `source_indexed_review_queued` | Source-indexed path; no declaration-level semantic review record yet. |
 | `NavierStokesReview.src.extensions.EndpointContractNonImplication` | `NavierStokesReview/src/extensions/EndpointContractNonImplication.lean` | 27 | 1 | false | 100 | force | `source_indexed_review_queued` | Source-indexed path; no declaration-level semantic review record yet. |
 | `NavierStokesReview.src.extensions.FixedForcePerturbationCompletion` | `NavierStokesReview/src/extensions/FixedForcePerturbationCompletion.lean` | 94 | 4 | false | 100 | force | `source_indexed_review_queued` | Source-indexed path; no declaration-level semantic review record yet. |
@@ -3030,6 +3032,7 @@ This queue is an order of inspection, not a negative finding. A high score means
 | `NavierStokesReview.src.external_semantic.FixedForcePerturbationStability` | `NavierStokesReview/src/external_semantic/FixedForcePerturbationStability.lean` | 39 | 4 | false | 100 | force | `source_indexed_review_queued` | Source-indexed path; no declaration-level semantic review record yet. |
 | `NavierStokesReview.src.probes.ActivePairEmptyBranchProbe` | `NavierStokesReview/src/probes/ActivePairEmptyBranchProbe.lean` | 20 | 1 | false | 0 | unclassified | `source_indexed_review_queued` | Source-indexed path; no declaration-level semantic review record yet. |
 | `NavierStokesReview.src.probes.ActualCandidateAssemblyIsolationProbe` | `NavierStokesReview/src/probes/ActualCandidateAssemblyIsolationProbe.lean` | 36 | 1 | false | 125 | endpoint | `source_indexed_sorry_token` | Source-indexed file contains a `sorry` token; endpoint contamination is not inferred from this row alone. |
+| `NavierStokesReview.src.probes.ActualMomentPreservationTrace` | `NavierStokesReview/src/probes/ActualMomentPreservationTrace.lean` | 53 | 3 | false | 118 | moments | `source_indexed_review_queued` | Source-indexed path; no declaration-level semantic review record yet. |
 | `NavierStokesReview.src.probes.AnalyticObjectionsProbe` | `NavierStokesReview/src/probes/AnalyticObjectionsProbe.lean` | 58 | 3 | false | 126 | energy, force, pressure | `source_indexed_review_queued` | Source-indexed path; no declaration-level semantic review record yet. |
 | `NavierStokesReview.src.probes.AxiomProbe` | `NavierStokesReview/src/probes/AxiomProbe.lean` | 12 | 0 | false | 0 | unclassified | `source_indexed_review_queued` | Source-indexed path; no declaration-level semantic review record yet. |
 | `NavierStokesReview.src.probes.BaseProfileCoreAsymptoticsProbe` | `NavierStokesReview/src/probes/BaseProfileCoreAsymptoticsProbe.lean` | 74 | 0 | false | 118 | moments | `source_indexed_sorry_token` | Source-indexed file contains a `sorry` token; endpoint contamination is not inferred from this row alone. |

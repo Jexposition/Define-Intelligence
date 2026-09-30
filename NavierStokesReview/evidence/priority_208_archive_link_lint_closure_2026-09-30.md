@@ -13,7 +13,7 @@ Navier--Stokes construction and does not alter `CTR-005`.
 
 | Check | Scope | Result |
 | --- | --- | --- |
-| Markdown relative-link resolution | `docs/`, `NavierStokesReview/evidence/`, `results/`, and `src/` | 413 Markdown files checked; 0 broken targets |
+| Markdown relative-link resolution | `docs/`, `NavierStokesReview/evidence/`, `results/`, and `src/` | 415 Markdown files checked; 0 broken targets |
 | Evidence JSON parsing | `NavierStokesReview/evidence/*.json` | 98 files checked; 0 parse failures |
 | Archive manifest verification | All 5 manifest rows with archive paths | 0 missing files; 0 SHA-256 mismatches |
 | Protected-source boundary | `NavierStokes/R3/TestPressure.lean` | Present and unchanged; excluded from review staging |

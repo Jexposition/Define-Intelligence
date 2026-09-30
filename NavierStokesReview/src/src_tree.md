@@ -334,3 +334,17 @@ The source index is a navigation snapshot and is not the authority for
 semantic coverage, endpoint reachability, or theorem transport. Current audit
 records absent from the older snapshot remain present on disk and are listed
 by the reconciliation record.
+
+## Current generated-control addendum: Priority 209 (2026-09-30)
+
+The source tree snapshot above is navigation only. Current control records are
+`audit/priority_209_scope_and_index_reconciliation_2026-09-30.md`,
+`../evidence/hardened_source_map_2026-09-30.json`, and
+`../evidence/semantic_coverage_register_full_2026-09-30.json`.
+
+The three review-side Lean files previously omitted from the 2,794-row
+register are `completions/SelectedFeffermanAlternativeCProof.lean`,
+`extensions/CMIAlternativeCLiteralCrosswalk.lean`, and
+`probes/ActualMomentPreservationTrace.lean`. They are now covered by the
+2,797-row current register. Generated `__pycache__` and `.pyc` entries in the
+older snapshot are excluded artefacts, not source omissions.

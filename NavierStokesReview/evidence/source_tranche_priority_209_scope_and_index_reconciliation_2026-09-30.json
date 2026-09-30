@@ -1,0 +1,76 @@
+{
+  "priority": 209,
+  "date": "2026-09-30",
+  "status": "scope_reconciled_and_register_regenerated",
+  "source_map": "NavierStokesReview/evidence/hardened_source_map_2026-09-30.json",
+  "register": {
+    "path": "NavierStokesReview/evidence/semantic_coverage_register_full_2026-09-30.json",
+    "modules": 2797,
+    "selected_endpoint_closure_modules": 588,
+    "outside_selected_endpoint_closure": 2209,
+    "status_counts": {
+      "evidence_inspected": 906,
+      "source_indexed_review_queued": 1884,
+      "source_indexed_sorry_token": 7
+    },
+    "source_rows_with_sorry_token": 10,
+    "missing_project_import_edges": 0
+  },
+  "explicit_root_census": {
+    "whole_checkout_lean_files": 2797,
+    "NavierStokes_lean_files": 817,
+    "NavierStokesReview_lean_files": 137,
+    "current_files_excluding_git_lake": 3449,
+    "declarations": 50208,
+    "duplicate_current_basenames": 13
+  },
+  "register_drift_reconciled": {
+    "previous_register_modules": 2794,
+    "newer_review_side_files_added": [
+      "NavierStokesReview/src/completions/SelectedFeffermanAlternativeCProof.lean",
+      "NavierStokesReview/src/extensions/CMIAlternativeCLiteralCrosswalk.lean",
+      "NavierStokesReview/src/probes/ActualMomentPreservationTrace.lean"
+    ],
+    "previous_register_included_protected_testpressure": true,
+    "register_only_or_stale_paths": [],
+    "current_register_now_covers_all_current_lean_paths": true
+  },
+  "sorry_token_reconciliation": {
+    "lexical_rows": 10,
+    "classified_source_indexed_sorry_token_rows": 7,
+    "evidence_inspected_rows_with_lexical_token": [
+      "ComparatorChallenges.Euler",
+      "ComparatorChallenges.NavierStokes",
+      "NavierStokesReview.src.completions.SelectedSupportPredicateScope"
+    ],
+    "interpretation": "The ten-row lexical count includes three already evidence-inspected rows; the seven-row status count is the register classification count. These are different measures, not contradictory totals."
+  },
+  "historical_count_reconciliation": {
+    "priority_201_repository_lean_files_field": 2796,
+    "current_authoritative_whole_checkout_count": 2797,
+    "interpretation": "The Priority 201 field is retained as a historical snapshot value and is superseded for current totals by the regenerated root-explicit source map and register."
+  },
+  "current_document_control_replay_after_priority_209": {
+    "markdown_files": 424,
+    "local_links_checked": 62736,
+    "broken_local_links": 0,
+    "evidence_json_files": 101,
+    "evidence_json_parse_errors": 0,
+    "archive_manifest_rows": 5,
+    "unique_archive_artefacts": 4,
+    "archive_sha256_mismatches": 0,
+    "interpretation": "The earlier Priority 208 values 415 Markdown and 98 evidence JSON files were valid at that gate-time snapshot. Priority 209 adds current control artefacts; the live corpus totals are now 424 and 101."
+  },
+  "scientific_disposition": {
+    "ctr_005": "NOT ESTABLISHED",
+    "meaning": "The inspected selected production closure still has no located declaration identifying the completed selected Cartesian fields, pressure, residual, and force with the manuscript tuple (M,I,J,S,C_p).",
+    "prohibited_inferences": [
+      "selected nonzero moment defect",
+      "force nonsmoothness",
+      "literal forced CMI failure",
+      "impossibility theorem",
+      "compiler escape",
+      "kernel False"
+    ]
+  }
+}

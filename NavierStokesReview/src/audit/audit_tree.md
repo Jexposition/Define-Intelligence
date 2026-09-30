@@ -288,3 +288,18 @@ alarm because `docs/doc_tree.md` already uses explicit archive paths.
 link/lint pass and archive-hash verification. It is a documentation-control
 closure, not a mathematical disposition. The broader consolidation gate stays
 open; the controlled scientific finding remains `CTR-005: NOT ESTABLISHED`.
+
+## Scope and index control: Priority 209 (2026-09-30)
+
+`priority_209_scope_and_index_reconciliation_2026-09-30.md` is the current
+scope reconciliation. It supersedes the stale 2,794-row register for current
+totals with a regenerated 2,797-row register, while preserving the bounded
+588-module selected endpoint closure. It records the separate 817-file
+`NavierStokes/` census and 137-file review-side census. The 2,209 rows outside
+the selected closure are outside the captured audit roots, not declared dead
+or unreachable in OpenAI's repository.
+
+The 10 lexical `sorry_token` rows versus 7
+`source_indexed_sorry_token` statuses are reconciled as `10 = 7 + 3`, because
+three lexical rows are already evidence-inspected. This is bookkeeping only;
+`CTR-005` remains `NOT ESTABLISHED`.

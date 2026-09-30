@@ -285,3 +285,33 @@ Current generated records:
 - `NavierStokesReview/evidence/untracked_consolidation_matrix_2026-09-30.md`
 
 The protected file remains outside every review commit and archive operation.
+
+## Scope and tree-index reconciliation: Priority 209 (2026-09-30)
+
+The current source replay resolved the earlier count drift. The regenerated
+root-explicit source map and semantic register now report 2,797 Lean files,
+588 modules in the selected endpoint closure, and 2,209 rows outside that
+closure. A direct `NavierStokes/` census reports 817 files; the review-side
+Lean census reports 137 files. These are distinct scopes and must not be
+quoted as interchangeable totals.
+
+The prior 2,794-row register omitted exactly three newer review-side Lean
+files and included the protected `NavierStokes/R3/TestPressure.lean`. The
+current register includes all 2,797 paths. The historical Priority 201 field
+`repository_lean_files = 2796` is retained as a snapshot value and is
+superseded for current totals by Priority 209.
+
+The lexical ten-versus-seven `sorry_token` discrepancy is also resolved:
+ten rows contain the token, seven carry the specific source-indexed status,
+and three already have `evidence_inspected` status. Thus `10 = 7 + 3`.
+
+Control records:
+
+- `NavierStokesReview/evidence/source_tranche_priority_209_scope_and_index_reconciliation_2026-09-30.json`
+- `NavierStokesReview/evidence/priority_209_scope_and_index_reconciliation_2026-09-30.md`
+- `NavierStokesReview/src/audit/priority_209_scope_and_index_reconciliation_2026-09-30.md`
+- `NavierStokesReview/evidence/hardened_source_map_2026-09-30.json`
+
+This is a bookkeeping and navigation correction only. `CTR-005` remains
+`NOT ESTABLISHED`; no selected defect, force nonsmoothness, literal CMI
+failure, impossibility, compiler escape, or `False` is inferred.

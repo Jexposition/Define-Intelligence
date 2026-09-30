@@ -1,13 +1,13 @@
 {
   "schema": "navier-stokes-semantic-coverage-register/v2",
-  "source_map": "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+  "source_map": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Define-Intelligence-github\\NavierStokesReview\\evidence\\hardened_source_map_2026-09-30.json",
   "counts": {
-    "modules": 2794,
+    "modules": 2797,
     "reachable": 588,
-    "not_reachable": 2206,
+    "not_reachable": 2209,
     "status": {
       "evidence_inspected": 906,
-      "source_indexed_review_queued": 1881,
+      "source_indexed_review_queued": 1884,
       "source_indexed_sorry_token": 7
     },
     "cluster": {
@@ -70,7 +70,7 @@
       "field-decomposition": 1,
       "fixed-frame": 2,
       "flow": 4,
-      "force": 241,
+      "force": 242,
       "frame": 2,
       "functional-analysis": 20,
       "gaussian": 3,
@@ -100,7 +100,7 @@
       "methodology": 4,
       "metric": 1,
       "mild": 2,
-      "moments": 363,
+      "moments": 364,
       "naturality": 2,
       "nonlinear": 1,
       "normalisation": 1,
@@ -68256,6 +68256,30 @@
       }
     },
     {
+      "module": "NavierStokesReview.src.completions.SelectedFeffermanAlternativeCProof",
+      "path": "NavierStokesReview/src/completions/SelectedFeffermanAlternativeCProof.lean",
+      "sha256": "1101ba959a9a3d007bd787494142defcd67f1c7af75a02835a8ee3ba85d21dcc",
+      "lines": 59,
+      "declarations": 2,
+      "imports_resolved": 2,
+      "imports_external": 0,
+      "imports_missing": 0,
+      "reachable": false,
+      "clusters": [
+        "force"
+      ],
+      "priority": 100,
+      "status": "source_indexed_review_queued",
+      "finding": "Source-indexed path; no declaration-level semantic review record yet.",
+      "anchors": "",
+      "source_flags": {
+        "unsafe": false,
+        "axiom_declaration": false,
+        "sorry_token": false,
+        "admit_token": false
+      }
+    },
+    {
       "module": "NavierStokesReview.src.completions.SelectedFieldFinitePrefix",
       "path": "NavierStokesReview/src/completions/SelectedFieldFinitePrefix.lean",
       "sha256": "46992930d6ceace06247d14c446ac76b79674936e9c18d32cb70edadb96c8fb8",
@@ -69171,6 +69195,28 @@
       }
     },
     {
+      "module": "NavierStokesReview.src.extensions.CMIAlternativeCLiteralCrosswalk",
+      "path": "NavierStokesReview/src/extensions/CMIAlternativeCLiteralCrosswalk.lean",
+      "sha256": "1043fd598ff52f2b9c793c0345b4d697f6a170d6d8d1ace77aa571d77d9a02ef",
+      "lines": 39,
+      "declarations": 1,
+      "imports_resolved": 1,
+      "imports_external": 0,
+      "imports_missing": 0,
+      "reachable": false,
+      "clusters": [],
+      "priority": 0,
+      "status": "source_indexed_review_queued",
+      "finding": "Source-indexed path; no declaration-level semantic review record yet.",
+      "anchors": "",
+      "source_flags": {
+        "unsafe": false,
+        "axiom_declaration": false,
+        "sorry_token": false,
+        "admit_token": false
+      }
+    },
+    {
       "module": "NavierStokesReview.src.extensions.CompactFixedForcePerturbation",
       "path": "NavierStokesReview/src/extensions/CompactFixedForcePerturbation.lean",
       "sha256": "d28b9b9ac797715392e6b1e1657debd4955d74782e9238fb283b7e01214b5a92",
@@ -69493,6 +69539,30 @@
         "unsafe": false,
         "axiom_declaration": false,
         "sorry_token": true,
+        "admit_token": false
+      }
+    },
+    {
+      "module": "NavierStokesReview.src.probes.ActualMomentPreservationTrace",
+      "path": "NavierStokesReview/src/probes/ActualMomentPreservationTrace.lean",
+      "sha256": "d795f961d1c5e63097c688b39c678abbcd5cdf6fa5bc9a3e0a2b4c97dd2e52da",
+      "lines": 53,
+      "declarations": 3,
+      "imports_resolved": 2,
+      "imports_external": 0,
+      "imports_missing": 0,
+      "reachable": false,
+      "clusters": [
+        "moments"
+      ],
+      "priority": 118,
+      "status": "source_indexed_review_queued",
+      "finding": "Source-indexed path; no declaration-level semantic review record yet.",
+      "anchors": "",
+      "source_flags": {
+        "unsafe": false,
+        "axiom_declaration": false,
+        "sorry_token": false,
         "admit_token": false
       }
     },

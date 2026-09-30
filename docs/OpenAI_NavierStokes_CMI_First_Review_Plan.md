@@ -4652,7 +4652,7 @@ This gate changes no scientific disposition: `CTR-005` remains
   the active corpus.
 - [x] Recompute the affected archive SHA-256 values and update the parent
   archive manifest.
-- [ ] Rerun the corrected full-corpus Markdown-link audit, separating genuine
+- [x] Rerun the corrected full-corpus Markdown-link audit, separating genuine
   missing targets from mathematical bracket syntax and other parser cases.
 - [ ] Complete the document-by-document consolidation and source fact-check
   before any further archive movement.
@@ -4664,3 +4664,31 @@ nonsmoothness, literal CMI failure, impossibility theorem, compiler escape, or
 
 Control records: `../NavierStokesReview/evidence/priority_208_archive_link_lint_closure_2026-09-30.md`
 and `../NavierStokesReview/src/audit/priority_208_archive_link_lint_closure_2026-09-30.md`.
+
+## Priority 209: scope and index reconciliation (2026-09-30)
+
+- [x] Regenerate `hardened_source_map_2026-09-30.json` from the live
+  `Define-Intelligence-github` checkout.
+- [x] Regenerate the semantic register from the current source map and mirror
+  it into `docs/REPOSITORY_SEMANTIC_COVERAGE_REGISTER.*`.
+- [x] Record separate scopes: 2,797 whole-checkout Lean files, 817 files in
+  `NavierStokes/`, 137 review-side Lean files, and 588 modules in the selected
+  endpoint closure.
+- [x] Reconcile the three newer review-side files omitted by the previous
+  2,794-row register.
+- [x] Reconcile lexical ten versus classified-seven `sorry_token` rows.
+- [x] Update evidence, audit, source, and docs tree indexes.
+- [ ] Finish the full document-by-document consolidation, cross-reference,
+  source fact-check, and structural-lint gate before any further archive move.
+
+The 2,209 rows outside the selected closure are outside the captured audit
+roots, not declared dead or unreachable in OpenAI's wider build graph. This
+control correction does not change `CTR-005: NOT ESTABLISHED` and does not
+promote any selected defect, force nonsmoothness, literal CMI failure,
+impossibility theorem, compiler escape, or `False`.
+
+Control records:
+`../NavierStokesReview/evidence/priority_209_scope_and_index_reconciliation_2026-09-30.md`,
+`../NavierStokesReview/evidence/source_tranche_priority_209_scope_and_index_reconciliation_2026-09-30.json`,
+and
+`../NavierStokesReview/src/audit/priority_209_scope_and_index_reconciliation_2026-09-30.md`.

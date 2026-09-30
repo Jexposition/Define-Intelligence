@@ -2506,10 +2506,39 @@ two archived manuscript artefacts. Their links still targeted the former
 `docs/` parent even though the files now live in `docs/archive/`. The targets
 were verified to exist in the active corpus, and only the relative link paths
 were repaired. No file was deleted, moved, staged, or added to the OpenAI source
-tree. The archive manifest was updated with the post-repair SHA-256 values. A
-corrected link/lint pass remains required before the archive gate can close.
+tree. The archive manifest was updated with the post-repair SHA-256 values. The
+corrected full-corpus pass checked 415 Markdown files and 98 evidence JSON
+files, finding zero broken local links, parse failures, or archive hash
+mismatches. The archive gate remains closed only because the broader document
+consolidation and fact-check gate is still open.
+
+Those are the Priority 208 gate-time counts. After Priority 209 added current
+control artefacts, the live replay is 424 Markdown files and 101 evidence JSON
+files, again with zero broken local links, parse failures, or archive hash
+mismatches. Priority 209 is the current count authority.
 
 The completed sub-gate is recorded in
 `../NavierStokesReview/evidence/priority_208_archive_link_lint_closure_2026-09-30.md`
 and
 `../NavierStokesReview/src/audit/priority_208_archive_link_lint_closure_2026-09-30.md`.
+
+## Scope and index reconciliation: Priority 209 (2026-09-30)
+
+Priority 209 is the current source/register count authority. It regenerated
+the source map and semantic register from the live checkout and records 2,797
+Lean files, 588 selected-closure modules, 2,209 rows outside that selected
+closure, 817 files under `NavierStokes/`, and 137 review-side Lean files.
+“Outside selected closure” is scoped to the chosen audit roots; it is not a
+dead-code or OpenAI-build assertion.
+
+The earlier 2,794-row register omitted three newer review-side files and is
+superseded by the current register. The ten-versus-seven `sorry_token` counts
+are reconciled as lexical rows versus classified status rows (`10 = 7 + 3`).
+
+Control records:
+`../NavierStokesReview/evidence/priority_209_scope_and_index_reconciliation_2026-09-30.md`,
+`../NavierStokesReview/evidence/source_tranche_priority_209_scope_and_index_reconciliation_2026-09-30.json`,
+and
+`../NavierStokesReview/src/audit/priority_209_scope_and_index_reconciliation_2026-09-30.md`.
+No scientific finding changed and no deletion, archive move, or protected-file
+operation occurred.

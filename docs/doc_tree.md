@@ -94,3 +94,18 @@ or literal CMI failure claimed.
 
 Priority 206 records the current archive-manifest and active-link gate. It is
 not a scientific verdict and does not authorise further archive movement.
+
+## Current scope-register control: Priority 209 (2026-09-30)
+
+- `REPOSITORY_SEMANTIC_COVERAGE_REGISTER.json`
+- `REPOSITORY_SEMANTIC_COVERAGE_REGISTER.md`
+- `REPOSITORY_SEMANTIC_COVERAGE_REGISTER.html`
+- `../NavierStokesReview/evidence/hardened_source_map_2026-09-30.json`
+- `../NavierStokesReview/evidence/semantic_coverage_register_full_2026-09-30.json`
+- `../NavierStokesReview/evidence/priority_209_scope_and_index_reconciliation_2026-09-30.md`
+- `../NavierStokesReview/src/audit/priority_209_scope_and_index_reconciliation_2026-09-30.md`
+
+Priority 209 is the current count authority: 2,797 current Lean files, 588
+selected-closure modules, 817 `NavierStokes/` files, and 137 review-side
+Lean files. The tree is navigation only; current generated registers and
+source maps control counts. No deletion or archive move is implied.
