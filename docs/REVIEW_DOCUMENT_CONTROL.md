@@ -2409,8 +2409,8 @@ proved.
 The current Git facts are: private branch
 `review/cmi-first-navier-stokes-reconciled-2026-09-30` at a local tip verified
 by Git, private push unconfirmed after timed-out attempts; public branch
-`review/cmi-first-navier-stokes-disposition-public-2026-09-30` at `3ea3cc1`,
-remote push confirmed. The private worktree has one protected untracked file,
+`review/cmi-first-navier-stokes-disposition-public-2026-09-30` with remote tip
+verified by Git and push confirmed. The private worktree has one protected untracked file,
 `NavierStokes/R3/TestPressure.lean`, which remains untouched and unstaged.
 
 The next release gate is a live cross-reference and structural-lint pass,

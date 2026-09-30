@@ -253,8 +253,8 @@ The live Git state is explicit. The private branch is
 verified by Git, but its push was not confirmed after two timed-out attempts.
 The public
 mirror branch is
-`review/cmi-first-navier-stokes-disposition-public-2026-09-30` at `3ea3cc1`,
-and its remote push is confirmed. The private worktree contains exactly one
+`review/cmi-first-navier-stokes-disposition-public-2026-09-30`; its remote tip
+is verified by Git and its push is confirmed. The private worktree contains exactly one
 untracked protected file, `NavierStokes/R3/TestPressure.lean`; it has not been
 edited or staged. No OpenAI source file is part of the review tranche.
 

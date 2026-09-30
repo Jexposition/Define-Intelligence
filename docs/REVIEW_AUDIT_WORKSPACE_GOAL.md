@@ -3572,8 +3572,8 @@ identity.
 The live control state is: private branch
 `review/cmi-first-navier-stokes-reconciled-2026-09-30`, with its local tip
 verified by Git and its push unconfirmed after timed-out attempts; public branch
-`review/cmi-first-navier-stokes-disposition-public-2026-09-30`, HEAD `3ea3cc1`,
-remote push confirmed. The only private untracked path is the protected
+`review/cmi-first-navier-stokes-disposition-public-2026-09-30`, with its remote
+tip verified by Git and push confirmed. The only private untracked path is the protected
 `NavierStokes/R3/TestPressure.lean`, which remains untouched and unstaged.
 
 The next work order is mandatory: first resolve or document the private push;

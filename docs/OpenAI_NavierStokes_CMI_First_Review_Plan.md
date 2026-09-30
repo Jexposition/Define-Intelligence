@@ -4554,8 +4554,8 @@ Source and workspace state for this checkpoint:
 
 - private branch: `review/cmi-first-navier-stokes-reconciled-2026-09-30`; local
   tip verified by Git, private push not confirmed after timed-out attempts;
-- public branch: `review/cmi-first-navier-stokes-disposition-public-2026-09-30`,
-  HEAD `3ea3cc1`; remote push confirmed;
+- public branch: `review/cmi-first-navier-stokes-disposition-public-2026-09-30`;
+  remote tip verified by Git and push confirmed;
 - private worktree: one protected untracked path only,
   `NavierStokes/R3/TestPressure.lean`; no OpenAI source edits or staging;
 - inventory control: the 2,794 register rows, 817-file `NavierStokes/` census,
