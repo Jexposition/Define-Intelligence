@@ -1,0 +1,27 @@
+{
+  "priority": 199,
+  "date": "2026-09-30",
+  "status": "source_checked_ctr_005_retained",
+  "scope": "selected endpoint declaration cross-check",
+  "source_files": [
+    {"path": "NavierStokes/ActualCandidateAssembly.lean", "lines": "1079-1098,1121-1151,1177-1185"},
+    {"path": "NavierStokes/ActualCycleResidualBounds.lean", "lines": "1156-1172"},
+    {"path": "NavierStokes/CandidateFromLimits.lean", "lines": "45-66,80-112"},
+    {"path": "NavierStokes/GermCandidateAssembly.lean", "lines": "146-159,164-271"},
+    {"path": "NavierStokes/ProblemStatement.lean", "lines": "101-122"}
+  ],
+  "findings": {
+    "concrete_physical_data_feeds_estimates": true,
+    "residual_rates_consume_physical_data": true,
+    "force_smoothness_derived_from_residual_limits": true,
+    "witness_exports_named_M_I_J_S_Cp_identity": false,
+    "origin_blowup_is_a_local_axis_route": true,
+    "whole_candidate_independence_from_moment_repair_proved": false,
+    "selected_nonzero_moment_defect_proved": false,
+    "force_nonsmoothness_proved": false,
+    "compiler_escape_found": false,
+    "false_proved": false
+  },
+  "controlled_verdict": "CTR-005: NOT ESTABLISHED for complete manuscript-to-selected-endpoint correspondence",
+  "interpretation": "The endpoint is a genuine forced candidate proof with active upstream construction dependencies, but the inspected Witness declaration does not export the separate final observable-identification theorem required to credit the complete manuscript mechanism."
+}

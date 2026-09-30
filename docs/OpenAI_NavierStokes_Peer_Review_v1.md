@@ -4382,3 +4382,39 @@ falsification requires a selected failed connected condition, a selected
 value-level mismatch, an impossibility theorem, or a contradiction. The
 semantic scope and the exact evidence boundary are controlled by
 [`CMI_OpenAI_Full_Semantic_Crosswalk.md`](CMI_OpenAI_Full_Semantic_Crosswalk.md).
+# Live control checkpoint: 2026-09-30 continuation
+
+This checkpoint supersedes any older header count or branch description in
+this document. The active private review branch is
+`review/cmi-first-navier-stokes-reconciled-2026-09-30` at the current scoped
+review commit. The separate public review branch is
+`review/cmi-first-navier-stokes-disposition-public-2026-09-30`; its remote
+state was verified against commit `96041c10894f9a81b4e97ff5ccb238e812806315`.
+
+The current worktree inventory contains one untracked row only:
+`NavierStokes/R3/TestPressure.lean`. It is protected OpenAI-side source and
+is deliberately not staged or edited. The accidental root `$null` diagnostic
+was moved, without deletion, to the local ignored archive
+`archive/$null_2026-09-30.txt`; its SHA-256 and disposition are recorded in
+`archive/ARCHIVE_MANIFEST_2026-09-30.md`. The current inventory and matrix
+are linked at:
+
+- `../NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md`
+- `../NavierStokesReview/evidence/untracked_consolidation_matrix_2026-09-30.md`
+- `../NavierStokesReview/evidence/review_tree_reconciliation_2026-09-30.md`
+
+The scientific control finding is unchanged and source-bounded: the upstream
+moment/rank/curl/localisation/residual machinery is genuine and active; the
+exported `Witness` does not repeat a named final equality identifying the
+selected Cartesian fields with the reduced-profile tuple
+`(M,I,J,S,Cp)`. That is `CTR-005: NOT ESTABLISHED` for complete
+paper-to-selected-endpoint correspondence. It is not a proved nonzero
+selected-field defect, impossibility theorem, force nonsmoothness theorem,
+compiler-cheat finding, or `False`. Current adjudication links are:
+
+- `../NavierStokesReview/src/audit/priority_198_latest_rebuttal_adjudication_2026-09-30.md`
+- `../NavierStokesReview/src/audit/priority_193_fefferman_semantic_branch_network_2026-09-30.md`
+- `../NavierStokesReview/evidence/selected_endpoint_compile_boundary_reaudit_2026-09-29.md`
+
+Older register counts and earlier branch names remain historical snapshots;
+they are not live workspace state.

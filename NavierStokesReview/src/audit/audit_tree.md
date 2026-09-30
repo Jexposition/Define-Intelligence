@@ -200,3 +200,11 @@ The nested audit index is a historical navigation snapshot: current review
 records from the 145–163 and 179–198 tranches are present on disk even where
 this tree has not yet been regenerated. This does not classify any theorem as
 unreachable or absent.
+## Current source tranche: Priority 199 (2026-09-30)
+
+`priority_199_selected_endpoint_declaration_crosscheck_2026-09-30.md` is the
+current declaration-level recheck of `physicalData`, `estimates`, residual
+rates, force extension, `Witness`, `selected_witness`, and the axis blow-up
+route. It corrects both directions of overstatement: the endpoint is not an
+empty generic-rate shell, and the missing named final observable identity is
+not itself a selected-field falsification.

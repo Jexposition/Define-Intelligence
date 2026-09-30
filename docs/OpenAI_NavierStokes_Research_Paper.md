@@ -1274,3 +1274,34 @@ also describes additional residual-control operations. The missing final
 selected-field identification therefore remains a genuine correspondence gap,
 but it is not by itself a proof that the selected force is nonsmooth or that a
 connected CMI alternative is false.
+# Live control checkpoint: 2026-09-30 continuation
+
+This paper is a reader-facing synthesis, not a chronological agent log. The
+current source-of-truth control is
+`REVIEW_DOCUMENT_CONTROL.md`, with the companion peer review in
+`OpenAI_NavierStokes_Peer_Review_v1.md` and the current evidence reconciliation
+in `../NavierStokesReview/evidence/review_tree_reconciliation_2026-09-30.md`.
+The review branch is
+`review/cmi-first-navier-stokes-reconciled-2026-09-30`; the separate public
+review branch is
+`review/cmi-first-navier-stokes-disposition-public-2026-09-30`.
+
+The live scientific conclusion remains deliberately calibrated. The source
+tree contains real upstream moment/rank repair, Cartesian residual, pressure,
+localisation, summation, and force-regularity machinery. The selected export
+does not contain a separate named theorem identifying the final Cartesian
+fields with `(M,I,J,S,Cp)`. Therefore complete manuscript-to-selected-endpoint
+correspondence remains `CTR-005: NOT ESTABLISHED`. This wording does not claim
+that the selected field has a nonzero defect, that the force is nonsmooth, or
+that the Lean kernel derives `False`; those stronger propositions require
+their own field-level proofs.
+
+Current control evidence:
+
+- `../NavierStokesReview/evidence/selected_endpoint_compile_boundary_reaudit_2026-09-29.md`
+- `../NavierStokesReview/src/audit/priority_198_latest_rebuttal_adjudication_2026-09-30.md`
+- `../NavierStokesReview/src/audit/priority_193_fefferman_semantic_branch_network_2026-09-30.md`
+- `../NavierStokesReview/evidence/untracked_consolidation_matrix_2026-09-30.md`
+
+Older counts, queued-module totals, and branch names embedded in dated
+sections are historical audit snapshots, not current status.

@@ -1,5 +1,39 @@
 # CMI-first review plan: OpenAI Navier–Stokes claim
 
+## Live continuation plan: 2026-09-30
+
+The cleanup tranche is complete and the scientific audit continues. Work is
+controlled by the current primary branch
+`review/cmi-first-navier-stokes-reconciled-2026-09-30`; the public review
+branch is `review/cmi-first-navier-stokes-disposition-public-2026-09-30`.
+The only current untracked row is the protected OpenAI source file
+`NavierStokes/R3/TestPressure.lean`; never edit or stage it. The local root
+archive is ignored and is not part of the public release.
+
+Next ordered work:
+
+1. Re-read the selected endpoint declarations and current Priority 193/198
+   source tranches against the raw Lean files.
+2. Close the declaration-level crosswalk from `selected_witness` through
+   `PhysicalData`, residual rates, force extension, support, energy, and the
+   CMI comparator, recording exactly which paper observables are named in the
+   types and which are only upstream inputs.
+3. Recheck the full connected Fefferman formulation and the manuscript's
+   moment, pressure, localisation, summation, and residual claims together;
+   do not isolate Alternative (C) from its admissibility conditions.
+4. Run only source-bound, reproducible probes or the declared 3D CUDA
+   diagnostic. Numerical diagnostics cannot be promoted to a selected-field
+   theorem without binding the actual selected field.
+5. Update the evidence record, peer review, research paper, semantic map,
+   trees, and register links together, then make a scoped commit and mirror
+   it to the public review branch after protected-path checks.
+
+The present scientific status remains `CTR-005: NOT ESTABLISHED` for complete
+paper-to-selected-endpoint correspondence. Do not escalate to a nonzero
+defect, impossibility, force nonsmoothness, compiler-cheat, or `False` claim
+without a direct field-level proof.
+
+
 ## Documentation control checkpoint: 2026-09-30
 
 The workspace has been reconciled before further endpoint adjudication. The

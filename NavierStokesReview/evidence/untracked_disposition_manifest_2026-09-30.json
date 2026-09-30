@@ -2,7 +2,6 @@
   "schema": "navier-stokes-untracked-disposition/v1",
   "review_date": "2026-09-30",
   "rows": [
-    {"path":"$null","content_review_status":"provenance_unresolved","disposition_gate":"HOLD_PROVENANCE_REVIEW","disposition_reason":"Unknown root artefact; retain outside the commit until provenance is identified."},
     {"path":"NavierStokes/R3/TestPressure.lean","content_review_status":"protected_source","disposition_gate":"PROTECTED_DO_NOT_STAGE","disposition_reason":"OpenAI source path; untouched and excluded from review-side commits."},
     {"path":"docs/archive/Define inteligence tree_2026-09-30.md","content_review_status":"archive_confirmed","disposition_gate":"ARCHIVE_CONFIRMED","disposition_reason":"Historical generated tree preserved under the parent-folder archive manifest."},
     {"path":"docs/archive/OpenAI_NavierStokes_Final_Falsification_Report_2026-09-30.md","content_review_status":"archive_confirmed","disposition_gate":"ARCHIVE_CONFIRMED","disposition_reason":"Quarantined historical report preserved after its superseded blanket claim was corrected."},

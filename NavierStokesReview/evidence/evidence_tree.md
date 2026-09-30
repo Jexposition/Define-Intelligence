@@ -326,3 +326,13 @@ The post-disposition live evidence set is controlled separately by
 `evidence/untracked_consolidation_matrix_2026-09-30.md`. Superseded evidence
 is retained under `evidence/archive/` with
 `evidence/archive/ARCHIVE_MANIFEST_2026-09-30.md`; no evidence was deleted.
+## Current source tranche: Priority 199 (2026-09-30)
+
+- `source_tranche_priority_199_selected_endpoint_declaration_crosscheck_2026-09-30.json`
+- `../src/audit/priority_199_selected_endpoint_declaration_crosscheck_2026-09-30.md`
+
+This tranche records the raw declaration split: concrete physical data and
+residual-rate proofs feed the selected endpoint, while `Witness` does not
+export a named final `(M,I,J,S,Cp)` identity. The controlled status remains
+`CTR-005: NOT ESTABLISHED`; no selected defect, force nonsmoothness,
+impossibility, compiler escape, or `False` is asserted.

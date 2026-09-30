@@ -1,5 +1,34 @@
 # Review audit workspace goal
 
+## Live continuation control: 2026-09-30
+
+The prior disposition cleanup is complete, but the overall audit goal remains
+active. The current primary branch is
+`review/cmi-first-navier-stokes-reconciled-2026-09-30`; the public release
+branch is `review/cmi-first-navier-stokes-disposition-public-2026-09-30`.
+The current untracked inventory has one protected row,
+`NavierStokes/R3/TestPressure.lean`, which must not be edited or staged. The
+accidental `$null` diagnostic is preserved only in the local ignored parent
+archive `archive/$null_2026-09-30.txt`, with its hash in
+`archive/ARCHIVE_MANIFEST_2026-09-30.md`.
+
+The controlling live evidence is:
+
+- `NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md`
+- `NavierStokesReview/evidence/untracked_consolidation_matrix_2026-09-30.md`
+- `NavierStokesReview/evidence/review_tree_reconciliation_2026-09-30.md`
+
+The scientific objective remains source-first and falsification-oriented:
+verify whether the mathematics in Fefferman's CMI specification and
+OpenAI's manuscript is actually connected to the selected Lean endpoint. The
+current evidence supports `CTR-005: NOT ESTABLISHED` for complete
+paper-to-selected-endpoint identification. It does not yet prove a nonzero
+selected-field moment defect, an impossibility theorem, force
+nonsmoothness, a compiler cheat, or `False`. Continue the endpoint and
+whole-formulation cross-check; do not treat cleanup completion as scientific
+completion.
+
+
 ## Documentation recovery checkpoint: 2026-09-30
 
 Before any new mathematical conclusion, reconcile the current goal, plan,

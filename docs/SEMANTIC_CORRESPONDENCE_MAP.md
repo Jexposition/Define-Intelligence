@@ -1,5 +1,18 @@
 # Semantic correspondence map: OpenAI paper to Lean endpoint
 
+## Live declaration cross-check: Priority 199 (2026-09-30)
+
+The current raw-source recheck is recorded in
+`../NavierStokesReview/src/audit/priority_199_selected_endpoint_declaration_crosscheck_2026-09-30.md`
+and its machine-readable evidence record. It confirms the calibrated split:
+`physicalData`, concrete residual-rate proofs, recurrence limits, and force
+extension feed the selected endpoint; `ActualCandidateAssembly.Witness` does
+not export a named final equality identifying the selected Cartesian fields
+with `(M,I,J,S,Cp)`. This preserves `CTR-005: NOT ESTABLISHED` for complete
+paper-to-selected-endpoint correspondence, without asserting a selected-field
+defect, force nonsmoothness, impossibility, a compiler escape, or `False`.
+
+
 ## Effective register and reconciliation control: 2026-09-30
 
 Use [`DOCUMENTATION_RECONCILIATION_2026-09-30.md`](DOCUMENTATION_RECONCILIATION_2026-09-30.md)

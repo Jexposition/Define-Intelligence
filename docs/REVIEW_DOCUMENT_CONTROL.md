@@ -1,5 +1,31 @@
 # Navier–Stokes review document control
 
+## Live continuation override: 2026-09-30
+
+This override is the current control state. Older 29-, 60-, and 61-row
+disposition paragraphs below are historical snapshots. The current primary
+branch is `review/cmi-first-navier-stokes-reconciled-2026-09-30`; the public
+review branch is `review/cmi-first-navier-stokes-disposition-public-2026-09-30`.
+The current inventory has one untracked row only:
+`NavierStokes/R3/TestPressure.lean`. It is protected OpenAI-side source and
+is not edited or staged. The accidental `$null` diagnostic was moved without
+deletion to the local ignored archive `archive/$null_2026-09-30.txt`; the
+parent-folder archive manifest records its reason and SHA-256.
+
+Current disposition evidence:
+
+- `NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md`
+- `NavierStokesReview/evidence/untracked_consolidation_matrix_2026-09-30.md`
+- `NavierStokesReview/evidence/review_tree_reconciliation_2026-09-30.md`
+
+Current scientific control: genuine upstream moment/rank/curl/localisation,
+residual, pressure, and force machinery is present; the selected export does
+not repeat a named final `(M,I,J,S,Cp)` identification theorem. The complete
+manuscript-to-selected-endpoint correspondence is therefore
+`CTR-005: NOT ESTABLISHED`, while nonzero defect, impossibility,
+nonsmooth-force, compiler-cheat, and `False` claims remain unproved.
+
+
 ## Effective documentation snapshot: 2026-09-30
 
 The current documentation reconciliation is
