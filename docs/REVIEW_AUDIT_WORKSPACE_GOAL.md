@@ -1,14 +1,20 @@
 # Review audit workspace goal
 
+## Live branch-control override: Priority 220 (2026-10-01)
+
+The private source-of-truth branch is
+`review/cmi-first-navier-stokes-reconciled-2026-09-30`. The public review
+branch is
+`review/cmi-first-navier-stokes-disposition-public-2026-09-30`. Exact local
+and remote tips are read from Git during each release gate; commit IDs written
+in older dated sections are historical snapshots, not permanent current-state
+claims.
+
 ## Live release override: Priority 219 (2026-10-01)
 
-The current private source-of-truth tip is `4e5954d` on
-`review/cmi-first-navier-stokes-reconciled-2026-09-30`. The current public
-review tip is `f6d8d56` on
-`review/cmi-first-navier-stokes-disposition-public-2026-09-30`, and the remote
-ref matches. These tips include the Priority 218 selected-endpoint crosswalk
-replay and its linked control updates. Older commit IDs below are historical
-release snapshots.
+The Priority 219 release recorded the branch state after the Priority 218
+selected-endpoint crosswalk replay. Its embedded commit IDs are now historical
+release snapshots; Priority 220 above is the current branch-control authority.
 
 ## Priority 218: selected-endpoint crosswalk replay (2026-10-01)
 

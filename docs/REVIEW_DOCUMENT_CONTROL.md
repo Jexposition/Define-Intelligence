@@ -1,13 +1,20 @@
 # Navier–Stokes review document control
 
+## Priority 220 live branch-control state (2026-10-01)
+
+The private source-of-truth branch is
+`review/cmi-first-navier-stokes-reconciled-2026-09-30`. The public review
+branch is
+`review/cmi-first-navier-stokes-disposition-public-2026-09-30`. Exact local
+and remote tips are read from Git during each release gate. Commit IDs in
+older dated entries are historical snapshots and must not be interpreted as
+current after a later control commit.
+
 ## Priority 219 live release state (2026-10-01)
 
-The current private source-of-truth tip is `4e5954d` on
-`review/cmi-first-navier-stokes-reconciled-2026-09-30`. The current public
-review tip is `f6d8d56` on
-`review/cmi-first-navier-stokes-disposition-public-2026-09-30`, and the remote
-ref matches. These tips include the Priority 218 selected-endpoint crosswalk
-replay. Earlier commit IDs in this control file are historical snapshots.
+The Priority 219 release recorded the branch state after the Priority 218
+selected-endpoint crosswalk replay. Its embedded commit IDs are historical;
+Priority 220 above is the current branch-control authority.
 
 ## Priority 218 source crosswalk replay (2026-10-01)
 
