@@ -3210,3 +3210,13 @@ branch name and verified current Git refs. The next control gate is the full
 document fetch, SHA-256 inventory, supersession matrix, cross-reference audit,
 and parent-folder archive manifest. No deletion, bulk staging, or archive move
 is authorised before that gate.
+
+The latest force-smoothness adjudication is controlled by
+`NavierStokesReview/src/audit/priority_195_four_operation_force_smoothness_adjudication_2026-09-30.md`.
+The active objective is to preserve both sides of the result: the manuscript's
+five-moment repair is mathematically substantive, while the inspected Lean
+path derives smooth forcing from concrete residual-jet data and does not
+therefore become a proven failure merely because the final Witness omits a
+named moment tuple. Complete paper-to-selected-endpoint fidelity remains
+`CTR-005: NOT ESTABLISHED` until the selected-field identity or a connected
+mandatory-condition failure is proved.

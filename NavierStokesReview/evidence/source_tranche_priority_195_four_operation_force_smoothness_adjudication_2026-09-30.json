@@ -1,0 +1,44 @@
+{
+  "priority": 195,
+  "date": "2026-09-30",
+  "status": "source-adjudicated-not-final-refutation",
+  "question": "Does omission of a final selected-field five-moment equality prove that force_smooth is circular or that Fefferman's force condition fails?",
+  "sources": [
+    {
+      "path": "docs/navier-stokes openai.txt",
+      "lines": "695-735",
+      "finding": "The manuscript lists four residual-control operations and recomputes the full residual after each operation; five radial equations are one operation within the broader chain."
+    },
+    {
+      "path": "docs/navierstokes.txt",
+      "lines": "25-81",
+      "finding": "Fefferman connects admissibility to smooth force, decay, physical reasonableness, and the connected C/D alternatives."
+    },
+    {
+      "path": "NavierStokes/ActualCandidateAssembly.lean",
+      "lines": "1079-1098,1121-1151,1177-1185",
+      "finding": "The selected Witness consumes concrete physical data, residual estimates, smooth forcing, consequences, and blow-up, but exports no named final five-observable equality."
+    },
+    {
+      "path": "NavierStokes/ActualCycleResidualBounds.lean",
+      "lines": "1142-1171,1190-1206",
+      "finding": "Residual rates are derived from identified physical data and invariant residual bounds rather than accepted as an unlinked arbitrary NativeBounds value."
+    },
+    {
+      "path": "NavierStokes/CandidateFromLimits.lean",
+      "lines": "80-112",
+      "finding": "The selected force is the smooth extension of the traced actual residual and agrees with the activated residual before the singular time."
+    }
+  ],
+  "claims_supported": [
+    "The five-moment mechanism is substantive and load-bearing in the manuscript.",
+    "The complete final moment identification is not exported at the inspected Witness boundary.",
+    "The selected Lean route has a concrete residual-jet to smooth-force derivation."
+  ],
+  "claims_not_supported": [
+    "Every individual residual summand diverges.",
+    "The five moments are the sole cancellation mechanism.",
+    "Omission of the endpoint equality alone proves nonsmooth force or literal C/D failure."
+  ],
+  "audit_verdict": "CTR-005: NOT ESTABLISHED for complete manuscript-to-selected-endpoint fidelity"
+}

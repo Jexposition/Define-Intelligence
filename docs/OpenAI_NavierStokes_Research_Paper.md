@@ -1221,3 +1221,40 @@ Evidence: `global_germ_transport_audit_2026-09-24.md`,
 The complete source-audit dossier, including the preserved chronology, source tranches, declarations, probe results, and corrections, is maintained separately at [research_paper_evidence_dossier_2026-09-30.md](../NavierStokesReview/evidence/research_paper_evidence_dossier_2026-09-30.md).
 
 The dossier is evidence and provenance, not an additional publication claim.
+## CMI semantic scope and paper-to-code boundary
+
+The CMI target used in this paper is Fefferman's connected formulation, not a
+bare restatement of equations (1)--(3). The source wording is preserved in
+`docs/navierstokes.txt:25-81,89-184`. In particular, “we may look for
+spatially periodic solutions” selects an alternative branch; “thus, we
+assume”, “in place of”, and “we then accept” connect the periodic data and
+solution conditions to that branch. “Physically reasonable” and “retaining
+the heart of the problem” retain the global smoothness and admissibility
+meaning across alternatives C and D.
+
+The exact word-to-condition network and the Lean crosswalk are maintained in
+[`CMI_OpenAI_Full_Semantic_Crosswalk.md`](CMI_OpenAI_Full_Semantic_Crosswalk.md)
+and
+[`priority_193_fefferman_semantic_branch_network_2026-09-30.md`](../NavierStokesReview/src/audit/priority_193_fefferman_semantic_branch_network_2026-09-30.md).
+
+The manuscript's own construction has a second connected dependency: the
+residual-defined force must remain smooth even though individual terms may be
+singular. The profile moments, stress and pressure tail cancellation, wave
+corrections, localisation, summation, and all-order residual estimates belong
+to that mechanism. The present review therefore distinguishes the formal
+comparator-level C/D proposition from complete selected-field reproduction of
+the manuscript mechanism. The latter remains `NOT ESTABLISHED (CTR-005)` until
+the selected Cartesian transport and observable identities are proved or
+refuted by a direct value-level result.
+
+This status is deliberately not weakened into “the moments are optional”, and
+it is not inflated into a literal C/D refutation without a selected failed
+condition, mismatch, impossibility theorem, or contradiction.
+
+The corresponding source adjudication is
+[`priority_195_four_operation_force_smoothness_adjudication_2026-09-30.md`](../NavierStokesReview/src/audit/priority_195_four_operation_force_smoothness_adjudication_2026-09-30.md).
+It records that the five-moment repair is substantive while the manuscript
+also describes additional residual-control operations. The missing final
+selected-field identification therefore remains a genuine correspondence gap,
+but it is not by itself a proof that the selected force is nonsmooth or that a
+connected CMI alternative is false.

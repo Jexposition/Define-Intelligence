@@ -4202,3 +4202,14 @@ branch name and current Git refs, not by hard-coded commit hashes in this
 living plan. The next control gate remains the full document fetch,
 SHA-256 inventory, supersession matrix, cross-reference audit, and parent-folder
 archive manifest. No deletion or bulk staging is authorised.
+
+## Priority 195 adjudication control
+
+The four-operation residual-cancellation finding is recorded in
+`NavierStokesReview/src/audit/priority_195_four_operation_force_smoothness_adjudication_2026-09-30.md`
+and its source tranche JSON. Treat the five-moment mechanism as substantive
+and unresolved at the final selected-field boundary. Do not infer from that
+gap that every residual summand diverges, that the five moments are the sole
+cancellation route, or that Fefferman's force condition has already failed.
+The next proof target is a value-level selected-field moment identity,
+mismatch, impossibility theorem, or connected mandatory-condition failure.

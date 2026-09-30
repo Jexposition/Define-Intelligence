@@ -167,6 +167,7 @@
  ├── 📄 priority_190_connected_cmi_revalidation_2026-09-30.md
  └── 📄 priority_193_fefferman_semantic_branch_network_2026-09-30.md
  ├── 📄 priority_194_residual_cancellation_and_endpoint_adjudication_2026-09-30.md
+ └── 📄 priority_195_four_operation_force_smoothness_adjudication_2026-09-30.md
 ├── 📄 snapshot_compare.py
 ├── 📄 source_tranche_summary.py
 ├── 📄 source_tree_map.py

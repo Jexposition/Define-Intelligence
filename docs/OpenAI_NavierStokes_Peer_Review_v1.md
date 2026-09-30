@@ -3488,6 +3488,13 @@ Evidence: `NavierStokesReview/evidence/source_tranche_full_closure_moment_symbol
 
 The full semantic definitions and section-by-section map are maintained in
 [`CMI_OpenAI_Full_Semantic_Crosswalk.md`](CMI_OpenAI_Full_Semantic_Crosswalk.md).
+
+The force-smoothness adjudication is recorded in
+[`priority_195_four_operation_force_smoothness_adjudication_2026-09-30.md`](../NavierStokesReview/src/audit/priority_195_four_operation_force_smoothness_adjudication_2026-09-30.md).
+It preserves the mathematical importance of the five-moment repair while
+recording that the manuscript describes additional residual-control operations.
+The remaining gap is the final selected-field identification with the
+manuscript's five observables, not a proved failure of the selected force.
 That document is now the controlling reference for the whole Fefferman
 specification and the whole OpenAI manuscript, rather than treating the
 forced Alternative C wrapper as the whole claim.
@@ -4318,3 +4325,43 @@ literal C/D refutation has been proved by this source correction alone.
 
 Evidence: [priority 189 source correction](../NavierStokesReview/src/audit/priority_189_openai_physical_wording_source_check_2026-09-30.md);
 [source tranche](../NavierStokesReview/evidence/source_tranche_priority_189_openai_physical_wording_source_check_2026-09-30.json).
+## Semantic scope of the CMI alternatives
+
+Fefferman's specification must be read as a connected semantic package. The
+sentence “we may look for spatially periodic solutions” permits selection of
+the periodic branch. It does not waive the conditions that follow. “Thus, we
+assume” binds periodic data conditions (8) and (9); “in place of” replaces the
+whole-space decay controls (4) and (5), not the Navier--Stokes equation,
+initial condition, smoothness, or accepted-solution conditions; and “we then
+accept” binds (10) and (11). The phrases “physically reasonable” and
+“retaining the heart of the problem” connect those clauses to the global
+existence and smoothness question.
+
+The full clause network is recorded in
+[`priority_193_fefferman_semantic_branch_network_2026-09-30.md`](../NavierStokesReview/src/audit/priority_193_fefferman_semantic_branch_network_2026-09-30.md),
+with machine-readable source evidence in
+[`source_tranche_priority_193_fefferman_semantic_branch_network_2026-09-30.json`](../NavierStokesReview/evidence/source_tranche_priority_193_fefferman_semantic_branch_network_2026-09-30.json).
+
+This changes the review standard in an important way. A claim that the
+repository proves a CMI alternative must be checked against the connected
+package: admissible data and force, the PDE, incompressibility, initial data,
+global regularity, bounded energy or periodicity, and the global nonexistence
+quantifier. The comparator source contains those formal components. That
+positive result is distinct from the stronger paper-to-selected-field claim.
+
+The OpenAI manuscript makes its own connected obligation explicit: it defines
+the force from the total residual, acknowledges that individual residual terms
+may be singular, and requires the total residual and all Cartesian derivatives
+to extend smoothly through the singular time. Profile extension, five-moment
+stress and pressure-tail cancellation, wave corrections, localisation,
+summation, and flat residual estimates are therefore part of the manuscript's
+claimed mechanism. The current audit has not located a theorem identifying
+that complete mechanism with the selected Cartesian endpoint. That remains
+`CTR-005: NOT ESTABLISHED`.
+
+This finding is not a claim that Fefferman meant equations (1)--(3) only, and
+it is not a claim that literal C or D has already been falsified. Literal
+falsification requires a selected failed connected condition, a selected
+value-level mismatch, an impossibility theorem, or a contradiction. The
+semantic scope and the exact evidence boundary are controlled by
+[`CMI_OpenAI_Full_Semantic_Crosswalk.md`](CMI_OpenAI_Full_Semantic_Crosswalk.md).
