@@ -1,6 +1,6 @@
 # Priority 205: Endpoint Census and Completion Adjudication
 
-Date: 2026-09-30  
+Date: 2026-09-30
 Scope: selected Navier-Stokes endpoint closure and review-side completion
 records
 
