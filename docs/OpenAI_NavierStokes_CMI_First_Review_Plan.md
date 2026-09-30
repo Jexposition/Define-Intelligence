@@ -1,5 +1,18 @@
 # CMI-first review plan: OpenAI Navier–Stokes claim
 
+## Priority 223: source-only selected-transport replay (2026-10-01)
+
+The source-only replay is recorded in
+`NavierStokesReview/src/audit/priority_223_source_only_transport_replay_2026-10-01.md`
+and
+`NavierStokesReview/evidence/selected_transport_audit_2026-10-01_source_only.md`.
+It indexed 31,836 declarations and reproduced the prior bounded result: no
+production declaration was located that binds the completed selected field to
+the manuscript's full `(M,I,J,S,C_p)` transport conclusion. The 3 manual
+candidates are review-side caller-supplied interfaces, not selected-field
+instantiations. This is not an impossibility proof. Keep `CTR-005: NOT
+ESTABLISHED`; the next scientific task remains P2--P4 value-level binding.
+
 ## Priority 222: selected-path probe replay (2026-10-01)
 
 The fresh pinned-toolchain replay is recorded in

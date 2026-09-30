@@ -1,5 +1,18 @@
 # Review audit workspace goal
 
+## Priority 223: source-only selected-transport replay (2026-10-01)
+
+The fresh source-only replay is recorded in
+`NavierStokesReview/src/audit/priority_223_source_only_transport_replay_2026-10-01.md`
+and
+`NavierStokesReview/evidence/selected_transport_audit_2026-10-01_source_only.md`.
+It indexed 31,836 declarations, found 11 joint candidates and 3 manual
+review-side candidates, and found no production selected-field transport
+theorem. This confirms the bounded source-census result only. It does not
+prove impossibility, a nonzero selected defect, force nonsmoothness, literal
+CMI failure, or `False`. Keep `CTR-005: NOT ESTABLISHED` and continue the
+value-level selected-field calculation.
+
 ## Priority 222: selected-path probe replay (2026-10-01)
 
 The fresh pinned-toolchain replay is recorded in

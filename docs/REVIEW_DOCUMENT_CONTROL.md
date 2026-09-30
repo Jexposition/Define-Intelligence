@@ -1,5 +1,18 @@
 # Navier–Stokes review document control
 
+## Priority 223 source-only selected-transport replay (2026-10-01)
+
+The fresh source-only replay is recorded in
+`../NavierStokesReview/src/audit/priority_223_source_only_transport_replay_2026-10-01.md`
+and
+`../NavierStokesReview/evidence/selected_transport_audit_2026-10-01_source_only.md`.
+It indexed 31,836 declarations, found 11 joint candidates and 3 manual
+review-side candidates, and found no production selected-field transport
+declaration under the conservative equality/transport rule. This is a source
+triage result, not a proof by absence. `CTR-005` remains `NOT ESTABLISHED`;
+no selected defect, force nonsmoothness, literal CMI failure, impossibility
+theorem, or `False` is recorded.
+
 ## Priority 222 selected-probe replay (2026-10-01)
 
 The fresh pinned-toolchain replay is recorded in

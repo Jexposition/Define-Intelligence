@@ -1,0 +1,485 @@
+{
+  "environment": null,
+  "environment_rows": 0,
+  "environment_rows_detail": [],
+  "environment_status": "not_supplied",
+  "environment_supplied": false,
+  "instrument": "selected_transport_audit",
+  "missing_environment_roots": [],
+  "repo_root": "D:/Research Lab/Jexposition/Define Intelligence/Define-Intelligence-github",
+  "roots": [
+    "NavierStokesR3.theorem_1_1",
+    "NavierStokes.ActualCandidateAssembly.selected_witness"
+  ],
+  "source_candidates": [
+    {
+      "body_field_terms": [
+        "selectedMixedRadialPullback"
+      ],
+      "body_moment_terms": [],
+      "body_present": true,
+      "body_transform_terms": [],
+      "category": "conditional_or_obstruction_candidate",
+      "end_line": 76,
+      "equality_terms": [
+        "="
+      ],
+      "field_terms": [
+        "selectedMixedRadialPullback"
+      ],
+      "gate_markers": [
+        "hpositive"
+      ],
+      "has_selected_expression": true,
+      "header_field_terms": [
+        "selectedMixedRadialPullback"
+      ],
+      "header_moment_terms": [
+        "barMoment"
+      ],
+      "header_transform_terms": [],
+      "is_proposition": true,
+      "kind": "theorem",
+      "line": 57,
+      "module": "NavierStokesReview.src.completions.PeriodicGlobalIntegral",
+      "moment_terms": [
+        "barMoment"
+      ],
+      "name": "NavierStokesReview.PeriodicGlobalIntegral.selected_mixed_barMoment_zero_of_positive_pullback",
+      "negative_markers": [
+        "not_"
+      ],
+      "origin": "review_completion",
+      "path": "NavierStokesReview/src/completions/PeriodicGlobalIntegral.lean",
+      "source_excerpt": "theorem selected_mixed_barMoment_zero_of_positive_pullback\n    (a : \u2115 \u2192 \u2115) (n : \u2115) (p : NavierStokes.PhysicalResidualBridge.Plane)\n    (hpositive : \u2200 r : \u211d, r \u2208 Ioo (0 : \u211d) 1 \u2192\n      0 < selectedMixedRadialPullback a (r, p)) :\n    NavierStokes.DefectIncrementBounds.barMoment 0\n        (selectedMixedProductionPointScalar a) n p = 0 := by\n  rw [selected_mixed_barMoment_radial_reduction]\n  have hnonintegrable : \u00ac Integrable\n      (fun r : \u211d => selectedMixedRadialPullback a (r, p)) :=\n    not_integrable_of_periodic_positive_on_fundamental_interval\n      (fun r => selected_mixed_radial_pullback_periodic a r p) hpositive\n  have hintegrand :\n      (fun r : \u211d => r ^ 0 * selectedMixedProductionScalar a\n        (pointToCyl (r, (p, (0, 0))))) =\n        (fun r : \u211d => selectedMixedRadialPullback a (r, p)) := by\n    funext r\n    simp [selectedMixedRadialPullback]\n  rw [hintegrand, MeasureTheory.integral_undef hnonintegrable]\n\nend NavierStokesReview.PeriodicGlobalIntegral",
+      "transform_terms": [],
+      "tuple_terms": []
+    },
+    {
+      "body_field_terms": [],
+      "body_moment_terms": [],
+      "body_present": true,
+      "body_transform_terms": [],
+      "category": "manual_transport_candidate",
+      "end_line": 45,
+      "equality_terms": [
+        "="
+      ],
+      "field_terms": [
+        "selectedPotentialComponent"
+      ],
+      "gate_markers": [],
+      "has_selected_expression": true,
+      "header_field_terms": [
+        "selectedPotentialComponent"
+      ],
+      "header_moment_terms": [
+        "barMoment"
+      ],
+      "header_transform_terms": [
+        "torusAverage"
+      ],
+      "is_proposition": true,
+      "kind": "theorem",
+      "line": 32,
+      "module": "NavierStokesReview.src.completions.SelectedBarMomentInterface",
+      "moment_terms": [
+        "barMoment"
+      ],
+      "name": "NavierStokesReview.SelectedBarMomentInterface.selected_component_barMoment_apply",
+      "negative_markers": [],
+      "origin": "review_completion",
+      "path": "NavierStokesReview/src/completions/SelectedBarMomentInterface.lean",
+      "source_excerpt": "theorem selected_component_barMoment_apply\n    {P : Type} [NormedAddCommGroup P] [NormedSpace \u211d P]\n    (\u03c6 : Point P \u2192 SpaceTime) (j k n : \u2115) (p : P) :\n    barMoment k (pullbackScalar \u03c6 (selectedPotentialComponent j)) n p =\n      \u222b r, r ^ k * PressureStream.torusAverage\n        (fun q => selectedPotentialComponent j (\u03c6 q)) (r, p) := by\n  rw [barMoment_apply]\n  rfl\n\n\n\n\n",
+      "transform_terms": [
+        "torusAverage"
+      ],
+      "tuple_terms": []
+    },
+    {
+      "body_field_terms": [
+        "selectedPotentialComponent"
+      ],
+      "body_moment_terms": [],
+      "body_present": true,
+      "body_transform_terms": [],
+      "category": "manual_transport_candidate",
+      "end_line": 67,
+      "equality_terms": [
+        "="
+      ],
+      "field_terms": [
+        "selectedPotentialComponent"
+      ],
+      "gate_markers": [],
+      "has_selected_expression": true,
+      "header_field_terms": [
+        "selectedPotentialComponent"
+      ],
+      "header_moment_terms": [
+        "barMoment"
+      ],
+      "header_transform_terms": [
+        "torusAverage"
+      ],
+      "is_proposition": true,
+      "kind": "theorem",
+      "line": 54,
+      "module": "NavierStokesReview.src.completions.SelectedBarMomentInterface",
+      "moment_terms": [
+        "barMoment"
+      ],
+      "name": "NavierStokesReview.SelectedBarMomentInterface.selected_component_requires_transport_data",
+      "negative_markers": [],
+      "origin": "review_completion",
+      "path": "NavierStokesReview/src/completions/SelectedBarMomentInterface.lean",
+      "source_excerpt": "theorem selected_component_requires_transport_data\n      {P : Type} [NormedAddCommGroup P] [NormedSpace \u211d P] (j : \u2115)\n    (D : SelectedBarMomentTransportData j) (k n : \u2115) (p : P) :\n    barMoment k D.scalarProfile n p =\n      \u222b r, r ^ k * PressureStream.torusAverage\n        (fun q => selectedPotentialComponent j (D.pointToSpaceTime q)) (r, p) := by\n  rw [barMoment_apply]\n  have hprofile : D.scalarProfile n =\n      (fun q => selectedPotentialComponent j (D.pointToSpaceTime q)) := by\n    funext q\n    exact D.scalarProfile_eq_selected n q\n  rw [hprofile]\n\nend NavierStokesReview.SelectedBarMomentInterface",
+      "transform_terms": [
+        "torusAverage"
+      ],
+      "tuple_terms": []
+    },
+    {
+      "body_field_terms": [
+        "selectedPotentialComponent"
+      ],
+      "body_moment_terms": [
+        "barMoment"
+      ],
+      "body_present": true,
+      "body_transform_terms": [
+        "torusAverage"
+      ],
+      "category": "manual_transport_candidate",
+      "end_line": 36,
+      "equality_terms": [
+        "="
+      ],
+      "field_terms": [
+        "selectedPotentialComponent"
+      ],
+      "gate_markers": [],
+      "has_selected_expression": true,
+      "header_field_terms": [],
+      "header_moment_terms": [],
+      "header_transform_terms": [],
+      "is_proposition": true,
+      "kind": "theorem",
+      "line": 28,
+      "module": "NavierStokesReview.src.completions.SelectedPhysicalPointTransport",
+      "moment_terms": [
+        "barMoment"
+      ],
+      "name": "NavierStokesReview.SelectedPhysicalPointTransport.barMoment_transport_requires_selected_scalar",
+      "negative_markers": [],
+      "origin": "review_completion",
+      "path": "NavierStokesReview/src/completions/SelectedPhysicalPointTransport.lean",
+      "source_excerpt": "theorem barMoment_transport_requires_selected_scalar\n    (j : \u2115) (D : SelectedBarMomentTransportData (P := PhysicalResidualBridge.Plane) j)\n    (k n : \u2115) (p : PhysicalResidualBridge.Plane) :\n    DefectIncrementBounds.barMoment k D.scalarProfile n p =\n      \u222b r, r ^ k * PressureStream.torusAverage\n        (fun q => selectedPotentialComponent j (D.pointToSpaceTime q)) (r, p) := by\n  exact selected_component_requires_transport_data j D k n p\n\nend NavierStokesReview.SelectedPhysicalPointTransport",
+      "transform_terms": [
+        "torusAverage"
+      ],
+      "tuple_terms": []
+    },
+    {
+      "body_field_terms": [],
+      "body_moment_terms": [],
+      "body_present": true,
+      "body_transform_terms": [],
+      "category": "conditional_or_obstruction_candidate",
+      "end_line": 40,
+      "equality_terms": [
+        "="
+      ],
+      "field_terms": [
+        "VelocityField"
+      ],
+      "gate_markers": [],
+      "has_selected_expression": false,
+      "header_field_terms": [
+        "VelocityField"
+      ],
+      "header_moment_terms": [
+        "Debt"
+      ],
+      "header_transform_terms": [],
+      "is_proposition": true,
+      "kind": "theorem",
+      "line": 30,
+      "module": "NavierStokesReview.src.completions.SelectedR3PackagingBoundary",
+      "moment_terms": [
+        "Debt"
+      ],
+      "name": "NavierStokesReview.SelectedR3PackagingBoundary.selected_r3_candidate_compatible_with_nonzero_five_payload",
+      "negative_markers": [
+        "compatible"
+      ],
+      "origin": "review_completion",
+      "path": "NavierStokesReview/src/completions/SelectedR3PackagingBoundary.lean",
+      "source_excerpt": "theorem selected_r3_candidate_compatible_with_nonzero_five_payload :\n    \u2203 d : Debt, d \u2260 0 \u2227\n      \u2203 (u : NavierStokesR3.ProblemStatement.VelocityField)\n        (p : NavierStokesR3.ProblemStatement.PressureField)\n        (f : NavierStokesR3.ProblemStatement.VelocityField)\n        (K : Set NavierStokesR3.ProblemStatement.Space),\n        NavierStokesR3.ProblemStatement.CandidateProperties 1 u p f K := by\n  obtain \u27e8u, p, f, K, hc\u27e9 :=\n    NavierStokesR3.ActualCandidate.selected_candidate_one\n  exact \u27e8witnessDebt, witnessDebt_ne_zero, u, p, f, K, hc\u27e9",
+      "transform_terms": [],
+      "tuple_terms": []
+    },
+    {
+      "body_field_terms": [
+        "selected_witness"
+      ],
+      "body_moment_terms": [],
+      "body_present": true,
+      "body_transform_terms": [],
+      "category": "conditional_or_obstruction_candidate",
+      "end_line": 41,
+      "equality_terms": [
+        "="
+      ],
+      "field_terms": [
+        "selected_witness"
+      ],
+      "gate_markers": [],
+      "has_selected_expression": true,
+      "header_field_terms": [],
+      "header_moment_terms": [
+        "Debt"
+      ],
+      "header_transform_terms": [],
+      "is_proposition": true,
+      "kind": "theorem",
+      "line": 37,
+      "module": "NavierStokesReview.src.extensions.SelectedEndpointMomentTransportObstruction",
+      "moment_terms": [
+        "Debt"
+      ],
+      "name": "NavierStokesReview.SelectedEndpointMomentTransportObstruction.selected_witness_compatible_with_nonzero_five_payload",
+      "negative_markers": [
+        "compatible"
+      ],
+      "origin": "review_completion",
+      "path": "NavierStokesReview/src/extensions/SelectedEndpointMomentTransportObstruction.lean",
+      "source_excerpt": "theorem selected_witness_compatible_with_nonzero_five_payload :\n    \u2203 d : Debt, d \u2260 0 \u2227\n      Witness selectedBudget selectedThreshold selectedThreshold_geometry := by\n  exact \u27e8witnessDebt, witnessDebt_ne_zero, selected_witness\u27e9",
+      "transform_terms": [],
+      "tuple_terms": []
+    },
+    {
+      "body_field_terms": [
+        "selected_witness"
+      ],
+      "body_moment_terms": [],
+      "body_present": true,
+      "body_transform_terms": [],
+      "category": "conditional_or_obstruction_candidate",
+      "end_line": 49,
+      "equality_terms": [
+        "="
+      ],
+      "field_terms": [
+        "selected_witness"
+      ],
+      "gate_markers": [],
+      "has_selected_expression": true,
+      "header_field_terms": [],
+      "header_moment_terms": [
+        "Debt"
+      ],
+      "header_transform_terms": [],
+      "is_proposition": true,
+      "kind": "theorem",
+      "line": 42,
+      "module": "NavierStokesReview.src.extensions.SelectedEndpointMomentTransportObstruction",
+      "moment_terms": [
+        "Debt"
+      ],
+      "name": "NavierStokesReview.SelectedEndpointMomentTransportObstruction.selected_witness_does_not_export_five_moment_transport",
+      "negative_markers": [
+        "does_not",
+        "not_"
+      ],
+      "origin": "review_completion",
+      "path": "NavierStokesReview/src/extensions/SelectedEndpointMomentTransportObstruction.lean",
+      "source_excerpt": "theorem selected_witness_does_not_export_five_moment_transport :\n    \u00ac (Witness selectedBudget selectedThreshold selectedThreshold_geometry \u2192\n      \u2200 d : Debt, d = 0) := by\n  intro h\n  have hd : witnessDebt = 0 := h selected_witness witnessDebt\n  exact witnessDebt_ne_zero hd\n\nend NavierStokesReview.SelectedEndpointMomentTransportObstruction",
+      "transform_terms": [],
+      "tuple_terms": []
+    },
+    {
+      "body_field_terms": [
+        "selected_witness"
+      ],
+      "body_moment_terms": [],
+      "body_present": true,
+      "body_transform_terms": [],
+      "category": "moment_field_equality_candidate",
+      "end_line": 53,
+      "equality_terms": [
+        "="
+      ],
+      "field_terms": [
+        "selected_witness"
+      ],
+      "gate_markers": [],
+      "has_selected_expression": true,
+      "header_field_terms": [],
+      "header_moment_terms": [
+        "FiveRows",
+        "FiveRowRank"
+      ],
+      "header_transform_terms": [],
+      "is_proposition": true,
+      "kind": "theorem",
+      "line": 42,
+      "module": "NavierStokesReview.src.probes.FiveRowCollisionBoundaryProbe",
+      "moment_terms": [
+        "FiveRows",
+        "FiveRowRank"
+      ],
+      "name": "NavierStokesReview.FiveRowCollisionBoundaryProbe.selected_witness_and_nonzero_rank_debt_coexist",
+      "negative_markers": [],
+      "origin": "review_completion",
+      "path": "NavierStokesReview/src/probes/FiveRowCollisionBoundaryProbe.lean",
+      "source_excerpt": "theorem selected_witness_and_nonzero_rank_debt_coexist :\n    \u2203 _w : Witness ActualCandidateConstruction.selectedBudget\n        ActualCandidateConstruction.selectedThreshold\n        ActualCandidateConstruction.selectedThreshold_geometry,\n      FiveRowRank.FiveRows (FiveRowRank.background 1 1) (fun _ => 0)\n        nonzeroThreeDebt\n        (FiveRowRank.deltaV 1 1 1 2 nonzeroThreeDebt)\n        (FiveRowRank.gamma 1 1 1 2 nonzeroThreeDebt) \u2227\n      nonzeroThreeDebt \u2260 0 := by\n  exact \u27e8selected_witness, fiveRows_admits_nonzero_debt, nonzeroThreeDebt_ne_zero\u27e9\n\nend NavierStokesReview.FiveRowCollisionBoundaryProbe",
+      "transform_terms": [],
+      "tuple_terms": []
+    },
+    {
+      "body_field_terms": [
+        "selected_witness"
+      ],
+      "body_moment_terms": [],
+      "body_present": true,
+      "body_transform_terms": [],
+      "category": "conditional_or_obstruction_candidate",
+      "end_line": 41,
+      "equality_terms": [
+        "="
+      ],
+      "field_terms": [
+        "selected_witness"
+      ],
+      "gate_markers": [],
+      "has_selected_expression": true,
+      "header_field_terms": [],
+      "header_moment_terms": [
+        "Debt"
+      ],
+      "header_transform_terms": [],
+      "is_proposition": true,
+      "kind": "theorem",
+      "line": 32,
+      "module": "NavierStokesReview.src.probes.SelectedWitnessAttackBoundaryProbe",
+      "moment_terms": [
+        "Debt"
+      ],
+      "name": "NavierStokesReview.SelectedWitnessAttackBoundaryProbe.selected_witness_does_not_entail_zero_five_debt",
+      "negative_markers": [
+        "does_not",
+        "not_",
+        "not_entail"
+      ],
+      "origin": "review_completion",
+      "path": "NavierStokesReview/src/probes/SelectedWitnessAttackBoundaryProbe.lean",
+      "source_excerpt": "theorem selected_witness_does_not_entail_zero_five_debt :\n    \u00ac (Witness ActualCandidateConstruction.selectedBudget\n        ActualCandidateConstruction.selectedThreshold\n        ActualCandidateConstruction.selectedThreshold_geometry \u2192\n        \u2200 d : Debt, d = 0) := by\n  intro h\n  have hd : nonzeroDebt = 0 := h selected_witness nonzeroDebt\n  have hd0 := congrFun hd (0 : Fin 5)\n  norm_num [nonzeroDebt] at hd0",
+      "transform_terms": [],
+      "tuple_terms": []
+    },
+    {
+      "body_field_terms": [
+        "selected_witness"
+      ],
+      "body_moment_terms": [],
+      "body_present": true,
+      "body_transform_terms": [],
+      "category": "conditional_or_obstruction_candidate",
+      "end_line": 45,
+      "equality_terms": [
+        "="
+      ],
+      "field_terms": [
+        "selected_witness"
+      ],
+      "gate_markers": [],
+      "has_selected_expression": true,
+      "header_field_terms": [],
+      "header_moment_terms": [
+        "Debt"
+      ],
+      "header_transform_terms": [],
+      "is_proposition": true,
+      "kind": "theorem",
+      "line": 39,
+      "module": "NavierStokesReview.src.probes.SelectedWitnessInhabitationProbe",
+      "moment_terms": [
+        "Debt"
+      ],
+      "name": "NavierStokesReview.SelectedWitnessInhabitationProbe.selected_witness_signature_ignores_five_debt",
+      "negative_markers": [
+        "ignores"
+      ],
+      "origin": "review_completion",
+      "path": "NavierStokesReview/src/probes/SelectedWitnessInhabitationProbe.lean",
+      "source_excerpt": "theorem selected_witness_signature_ignores_five_debt (d : Debt) :\n    \u2203 w : Witness NavierStokes.ActualCandidateConstruction.selectedBudget\n        NavierStokes.ActualCandidateConstruction.selectedThreshold\n        NavierStokes.ActualCandidateConstruction.selectedThreshold_geometry, d = d := by\n  exact \u27e8selected_witness, rfl\u27e9\n\nend NavierStokesReview.SelectedWitnessInhabitationProbe",
+      "transform_terms": [],
+      "tuple_terms": []
+    },
+    {
+      "body_field_terms": [],
+      "body_moment_terms": [
+        "Debt"
+      ],
+      "body_present": true,
+      "body_transform_terms": [],
+      "category": "conditional_or_obstruction_candidate",
+      "end_line": 49,
+      "equality_terms": [
+        "="
+      ],
+      "field_terms": [
+        "VelocityField"
+      ],
+      "gate_markers": [],
+      "has_selected_expression": false,
+      "header_field_terms": [
+        "VelocityField"
+      ],
+      "header_moment_terms": [
+        "Debt"
+      ],
+      "header_transform_terms": [],
+      "is_proposition": true,
+      "kind": "theorem",
+      "line": 37,
+      "module": "NavierStokesReview.src.probes.SelectedWitnessPathProbe",
+      "moment_terms": [
+        "Debt"
+      ],
+      "name": "NavierStokesReview.SelectedWitnessPathProbe.selected_r3_envelope_coexists_with_unconstrained_five_debt",
+      "negative_markers": [
+        "coexists",
+        "unconstrained"
+      ],
+      "origin": "review_completion",
+      "path": "NavierStokesReview/src/probes/SelectedWitnessPathProbe.lean",
+      "source_excerpt": "theorem selected_r3_envelope_coexists_with_unconstrained_five_debt :\n    \u2203 u : NavierStokes.ProblemStatement.VelocityField,\n      \u2203 p : NavierStokes.ProblemStatement.PressureField,\n      \u2203 f : NavierStokes.ProblemStatement.VelocityField,\n      \u2203 d : Debt, NavierStokes.R3CompactCandidate.Properties u p f \u2227 d \u2260 0 := by\n  obtain \u27e8u, p, f, h\u27e9 := NavierStokes.R3CompactCandidate.selected_compact_candidate\n  let d : Debt := fun _ => 1\n  refine \u27e8u, p, f, d, h, ?_\u27e9\n  intro hd\n  have hd0 := congrFun hd (0 : Fin 5)\n  norm_num [d] at hd0\n\nend NavierStokesReview.SelectedWitnessPathProbe",
+      "transform_terms": [],
+      "tuple_terms": []
+    }
+  ],
+  "source_declarations": 31836,
+  "source_files_with_audit_terms": 691,
+  "source_joint_candidates": 11,
+  "source_joint_candidates_by_origin": {
+    "review_completion": 11
+  },
+  "source_manual_candidates": 3,
+  "source_manual_candidates_by_origin": {
+    "review_completion": 3
+  },
+  "source_roots": [
+    "D:/Research Lab/Jexposition/Define Intelligence/Define-Intelligence-github/NavierStokes",
+    "D:/Research Lab/Jexposition/Define Intelligence/Define-Intelligence-github/NavierStokesReview/src"
+  ],
+  "status": "conservative source and optional Lean-environment triage; not a theorem",
+  "verdict": {
+    "absence_claim_permitted": false,
+    "kernel_false_proved": false,
+    "selected_delta_m_proved": false,
+    "selected_transport_disproved": false,
+    "selected_transport_proved": false
+  }
+}
