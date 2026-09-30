@@ -4459,6 +4459,9 @@ The actual correction cycle carries two preserved mean-mass identities and
 three residual-debt classes. The review therefore does not claim that the
 selected path lacks moment machinery. The unresolved correspondence question
 
+is whether those internal coordinates are explicitly identified with the
+paper's `(M,I,J,S,Cp)` after the final Cartesian transformations and export.
+
 ### Priority 205 endpoint-census adjudication
 
 The source-controlled result is documented in
@@ -4475,5 +4478,3 @@ not an empty or disconnected Lean shell, and the complete paper-to-selected
 field correspondence is still CTR-005: NOT ESTABLISHED. This does not prove a
 nonzero selected defect, nonsmooth force, literal CMI failure, impossibility,
 compiler cheat, or False.
-is whether those internal coordinates are explicitly identified with the
-paper's `(M,I,J,S,Cp)` after the final Cartesian transformations and export.

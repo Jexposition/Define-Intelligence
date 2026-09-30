@@ -74,3 +74,15 @@ points are:
 - archive/OpenAI_NavierStokes_Research_Paper_publication_extract_2026-09-30.md
 
 This section is an index correction, not an archive or deletion instruction.
+
+## Current review-evidence pointers: Priority 205 (2026-09-30)
+
+The current endpoint census and its audit record are maintained outside this
+docs-only tree and are linked here for control:
+
+- ../NavierStokesReview/evidence/source_tranche_priority_205_endpoint_census_and_completion_adjudication_2026-09-30.md
+- ../NavierStokesReview/src/audit/priority_205_endpoint_census_and_completion_adjudication_2026-09-30.md
+
+These are current evidence and audit records, not archive candidates. The
+Priority 205 conclusion is CTR-005: NOT ESTABLISHED, with no selected defect
+or literal CMI failure claimed.

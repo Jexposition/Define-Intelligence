@@ -2434,3 +2434,31 @@ current untracked count. The current bookkeeping authority is the regenerated
 one-entry inventory and matrix listed in the reconciliation ledger. This
 correction changes no scientific conclusion and does not authorise staging,
 movement, deletion, or publication of the protected file.
+
+## Live control override: Priority 205 census and release state (2026-09-30)
+
+The Priority 205 source census is now the current endpoint-search record. It
+audited the 588-module selected closure, seven production lexical candidates,
+the selected bar-moment completion, and the review probe scope. The positive
+result is retained: the selected path contains genuine schedules, physical
+data, residual-rate estimates, germ equalities, smooth-force limits, and an
+axis blow-up route, together with actual internal invariant data consisting
+of two preserved mean-mass identities and three residual-debt classes.
+
+The bounded negative result is also retained: no inspected production
+declaration identifies the completed selected Cartesian velocity, pressure,
+residual, or force with the manuscript tuple (M,I,J,S,C_p). The review-side
+bar-moment completion is caller-supplied pullback data, not a selected-witness
+transport theorem. The current scientific classification is therefore
+CTR-005: NOT ESTABLISHED for complete paper-to-endpoint correspondence. This
+does not establish a selected nonzero defect, force nonsmoothness, literal CMI
+failure, impossibility, a compiler escape, or False.
+
+Release control is current: private branch
+review/cmi-first-navier-stokes-reconciled-2026-09-30 is locally at e80248f
+with private push still unconfirmed; public branch
+review/cmi-first-navier-stokes-disposition-public-2026-09-30 is remote-confirmed
+at 3c93afe. The sole untracked path remains the protected
+NavierStokes/R3/TestPressure.lean. It is untouched, unstaged, and excluded.
+No archive move is authorised until the consolidation cross-reference, link/lint
+checks, and parent-folder SHA-256 archive manifest are complete.
