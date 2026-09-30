@@ -26,12 +26,13 @@ be read as a theorem or import-graph result.
 
 ## Index update after the snapshot
 
-The top-level `NavierStokesReview/src/src_tree.md` now explicitly indexes four
+The top-level `NavierStokesReview/src/src_tree.md` now explicitly indexes five
 live artefacts that were absent from the snapshot comparison:
 
 - `src/audit/priority_201_selected_closure_census_2026-09-30.md`
 - `src/audit/priority_202_actual_moment_invariant_trace_2026-09-30.md`
 - `src/audit/priority_203_internal_to_endpoint_crossfile_trace_2026-09-30.md`
+- `src/audit/priority_204_workspace_source_record_reconciliation_2026-09-30.md`
 - `src/probes/ActualMomentPreservationTrace.lean`
 
 The snapshot counts above remain historical counts from the reconciliation run;

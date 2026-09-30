@@ -30,6 +30,25 @@ The next required work is a direct selected-field identification or mismatch
 proof. No result may be inferred solely from an omitted tuple field or an
 interface non-implication.
 
+## Priority 204: reconcile source-record scopes before quoting totals
+
+The current documentation pass found a count-scope discrepancy that must not
+be allowed to contaminate the scientific audit. The effective fork register
+reports 2,794 rows, the direct `NavierStokes/` census reports 817 source files,
+and the Priority 201 JSON contains a separate `repository_lean_files: 2796`
+field without a matching root definition. The control report is
+`NavierStokesReview/src/audit/priority_204_workspace_source_record_reconciliation_2026-09-30.md`,
+with machine-readable evidence at
+`NavierStokesReview/evidence/source_tranche_priority_204_workspace_source_record_reconciliation_2026-09-30.json`.
+
+Before using repository totals in the paper or public review, regenerate the
+register and endpoint census from explicitly declared roots and publish one
+scope table. This control task does not alter the scientific status:
+`CTR-005: NOT ESTABLISHED`; the positive internal two-plus-three invariant and
+the connected residual/force route remain in force; no selected defect,
+force-nonsmoothness result, literal CMI failure, impossibility theorem,
+compiler escape, or `False` is inferred.
+
 ## Priority 202 correction: actual internal moment invariant: 2026-09-30
 
 The compiled positive trace is recorded in

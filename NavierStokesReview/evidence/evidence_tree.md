@@ -353,3 +353,13 @@ endpoint is supported by the Lean theorem and comparator, while complete
 identification with the manuscript's five-moment construction remains
 `CTR-005: NOT ESTABLISHED`. It does not assert a selected defect or CMI
 refutation.
+
+## Current control tranche: Priority 204 (2026-09-30)
+
+- `source_tranche_priority_204_workspace_source_record_reconciliation_2026-09-30.json`
+- `../src/audit/priority_204_workspace_source_record_reconciliation_2026-09-30.md`
+
+This tranche records an inventory-scope discrepancy between the 2,794-row
+effective register, the 817-file `NavierStokes/` source census, and the
+unresolved 2,796 field in the Priority 201 JSON. It changes no scientific
+verdict and requires a root-explicit count rerun before totals are quoted.

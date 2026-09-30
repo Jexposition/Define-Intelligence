@@ -197,6 +197,12 @@ The current audit control point is `docs/DOCUMENTATION_RECONCILIATION_2026-09-30
 
 These records converge on the same bounded conclusion: the inspected comparator and residual path establishes a connected forced blow-up contract, while the complete paper-to-selected-field five-moment correspondence remains `NOT ESTABLISHED (CTR-005)`. No value-level nonzero defect, impossibility theorem, or kernel contradiction is asserted by this index.
 
+The Priority 204 source-record reconciliation also records a count-scope
+discrepancy: the effective register has 2,794 rows, the direct `NavierStokes/`
+census has 817 files, and the Priority 201 JSON contains an unresolved 2,796
+`repository_lean_files` field. These figures must not be treated as one
+headline total until a root-explicit rerun is completed.
+
 The exact current-index reconciliation is recorded in
 `NavierStokesReview/evidence/review_tree_reconciliation_2026-09-30.md`.
 The nested audit index is a historical navigation snapshot: current review

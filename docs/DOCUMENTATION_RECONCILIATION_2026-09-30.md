@@ -92,9 +92,18 @@ in one proposition.
    that this endpoint contract does not identify those proved fields and
    residual data with the manuscript's transported `(M,I,J,S,C_p)` mechanism.
 10. The 2026-09-30 replay of `WholeSpaceAxiomAudit.lean` reports only
-    `propext`, `Classical.choice`, and `Quot.sound` for the queried whole-space
-    and periodic endpoints. This is an axiom-footprint result, not evidence
-    that the complete manuscript correspondence is proved.
+     `propext`, `Classical.choice`, and `Quot.sound` for the queried whole-space
+     and periodic endpoints. This is an axiom-footprint result, not evidence
+     that the complete manuscript correspondence is proved.
+
+11. The inventory scope requires one further reconciliation. The effective
+    fork register reports 2,794 rows, the direct `NavierStokes/` source census
+    reports 817 files, and the Priority 201 JSON contains a separate
+    `repository_lean_files: 2796` field whose scope is not defined sufficiently
+    to reconcile it with those records. This is recorded in
+    `NavierStokesReview/src/audit/priority_204_workspace_source_record_reconciliation_2026-09-30.md`.
+    Until a root-explicit rerun is complete, these figures must not be merged
+    into one headline count.
 
 ## Historical counts and supersession rule
 

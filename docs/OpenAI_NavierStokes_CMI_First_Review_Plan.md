@@ -24,6 +24,16 @@ theorem, a compiler-cheat claim, or `False`. The next task is to close or
 falsify the remaining selected-field identification with direct declarations,
 not to infer it from the absence of a repeated tuple in `Witness`.
 
+## Priority 204 source-record scope reconciliation: 2026-09-30
+
+Before quoting repository totals, reconcile the effective 2,794-row fork
+register, the 817-file direct `NavierStokes/` census, and the separate 2,796
+`repository_lean_files` field in the Priority 201 JSON. The control report is
+`NavierStokesReview/src/audit/priority_204_workspace_source_record_reconciliation_2026-09-30.md`.
+The rerun must declare its roots and separate fork inventory, endpoint closure,
+OpenAI source files, and review-side Lean files. Do not silently collapse these
+scopes into one number or use the discrepancy as scientific evidence.
+
 ## Priority 202 actual invariant correction: 2026-09-30
 
 The current source trace is recorded in

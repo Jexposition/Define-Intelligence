@@ -1,0 +1,25 @@
+{
+  "priority": 204,
+  "date": "2026-09-30",
+  "status": "control_discrepancy_recorded",
+  "records": {
+    "effective_register_rows": 2794,
+    "direct_navierstokes_source_files": 817,
+    "priority_201_repository_lean_files_field": 2796,
+    "selected_endpoint_closure_modules": 588,
+    "live_navierstokes_source_files": 817,
+    "live_euler_source_files": 1839,
+    "live_comparator_challenges_source_files": 2
+  },
+  "interpretation": "The 2794 register count, 817 NavierStokes-only census, and 2796 Priority-201 JSON field are not currently demonstrated to share one scope.",
+  "scientific_verdict": "No scientific verdict changed. CTR-005 remains NOT ESTABLISHED for complete manuscript-to-selected-endpoint fidelity.",
+  "prohibited_inferences": [
+    "selected nonzero moment defect",
+    "force nonsmoothness",
+    "literal forced CMI failure",
+    "impossibility theorem",
+    "compiler escape",
+    "kernel False"
+  ],
+  "next_action": "Regenerate the register and endpoint census from explicitly declared roots and publish one scope table before quoting repository totals."
+}
