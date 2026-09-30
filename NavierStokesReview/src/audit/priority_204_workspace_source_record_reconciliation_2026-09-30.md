@@ -23,6 +23,13 @@ An independent live count gives 817 files under `NavierStokes/`, 1,839 under
 also include review-side and root mirror rows. These are not interchangeable
 with the `NavierStokes/`-only census.
 
+The root-explicit replay of
+`NavierStokesReview/src/audit/selected_endpoint_source_census.py` was run with
+`--source-root NavierStokes` and returned 817 files, 429,297 source lines,
+35,430 parsed declarations, 588 reachable endpoint modules, 380,791 active
+closure lines, and zero missing local imports. This confirms the 817-file
+scope; it does not regenerate the full 2,794-row register.
+
 ## Scientific disposition
 
 This is an inventory-scope discrepancy, not evidence for or against the

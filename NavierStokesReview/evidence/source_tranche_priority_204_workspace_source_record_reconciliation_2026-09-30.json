@@ -9,9 +9,18 @@
     "selected_endpoint_closure_modules": 588,
     "live_navierstokes_source_files": 817,
     "live_euler_source_files": 1839,
-    "live_comparator_challenges_source_files": 2
+  "live_comparator_challenges_source_files": 2
   },
   "interpretation": "The 2794 register count, 817 NavierStokes-only census, and 2796 Priority-201 JSON field are not currently demonstrated to share one scope.",
+  "root_explicit_census_replay": {
+    "command": "selected_endpoint_source_census.py --repo-root . --source-root NavierStokes",
+    "files": 817,
+    "source_lines": 429297,
+    "parsed_declarations": 35430,
+    "selected_endpoint_closure_modules": 588,
+    "selected_endpoint_active_source_lines": 380791,
+    "missing_local_imports": 0
+  },
   "scientific_verdict": "No scientific verdict changed. CTR-005 remains NOT ESTABLISHED for complete manuscript-to-selected-endpoint fidelity.",
   "prohibited_inferences": [
     "selected nonzero moment defect",
