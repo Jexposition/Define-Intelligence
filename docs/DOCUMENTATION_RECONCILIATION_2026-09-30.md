@@ -12,11 +12,14 @@ It does not replace raw Lean source or the frozen source texts.
 
 The pre-disposition inventory has been reconciled. Thirty-six artefacts were
 moved non-destructively to parent-folder archives, with original hashes and
-old/new paths recorded in the archive manifests. The live untracked set now
-has 29 rows, controlled by
+old/new paths recorded in the archive manifests. The disposition ledger has
+29 rows, controlled by
 `NavierStokesReview/evidence/untracked_disposition_manifest_2026-09-30.json`:
 24 retained for scoped staging, 3 archive-confirmed, 1 held for provenance
-review, and 1 protected OpenAI-source file. No deletion occurred. The evidence
+review, and 1 protected OpenAI-source file. These are ledger rows, not a count
+of current Git-untracked paths. Git currently reports one untracked path only:
+NavierStokes/R3/TestPressure.lean, which is protected and must not be edited,
+staged, moved, or archived. No deletion occurred. The evidence
 archive manifest is intentionally ignored by the broad repository ignore rule
 and must be force-staged explicitly if included in a scoped documentation
 commit.

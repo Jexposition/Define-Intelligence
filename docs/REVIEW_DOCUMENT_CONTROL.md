@@ -45,10 +45,14 @@ token field discrepancy.
 
 The current untracked disposition is controlled by
 `NavierStokesReview/evidence/untracked_consolidation_matrix_2026-09-30.md`
-and its SHA-256 manifest. It contains 29 live rows: 24 retained for scoped
+and its SHA-256 manifest. It contains 29 ledger rows: 24 retained for scoped
 staging, 3 archive-confirmed, 1 provenance hold, and 1 protected OpenAI-source
-row. Thirty-six artefacts were moved non-destructively into parent-folder
-archives; no deletion occurred. The archive manifests are
+row. These ledger rows are not 29 current Git-untracked paths. Git currently
+reports exactly one untracked path, the protected
+NavierStokes/R3/TestPressure.lean; the remaining ledger rows describe
+review-artifact disposition and archive history. Thirty-six artefacts were
+moved non-destructively into parent-folder archives; no deletion occurred. The
+archive manifests are
 `docs/archive/ARCHIVE_MANIFEST_2026-09-30.md` and
 `NavierStokesReview/evidence/archive/ARCHIVE_MANIFEST_2026-09-30.md`.
 Older 59-, 60-, and 61-entry hold sections below are historical control

@@ -5,10 +5,14 @@
 This reader-facing paper is controlled by
 [`REVIEW_DOCUMENT_CONTROL.md`](REVIEW_DOCUMENT_CONTROL.md) and
 [`DOCUMENTATION_RECONCILIATION_2026-09-30.md`](DOCUMENTATION_RECONCILIATION_2026-09-30.md).
-The current evidence boundary is recorded in the Priority 186–203 source
+The current evidence boundary is recorded in the Priority 186–204 source
 reviews under `NavierStokesReview/src/audit/` and their matching JSON records
 under `NavierStokesReview/evidence/`. The paper is not a chronological log and
-must not be updated from a historical register count.
+must not be updated from a historical register count. Priority 204 is scope
+control only and does not change the scientific disposition. Its 29-row
+disposition ledger is historical review-artifact state, not a claim that 29
+files are currently untracked; the live Git state has one protected
+untracked author-side file, as recorded in document control.
 
 The latest cross-file trace confirms that the actual cycle carries two
 preserved mean-mass identities and three residual-debt classes which feed the

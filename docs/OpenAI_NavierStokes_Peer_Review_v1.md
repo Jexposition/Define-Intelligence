@@ -18,10 +18,14 @@ Evidence: `NavierStokesReview/src/audit/priority_203_internal_to_endpoint_crossf
 This review is governed by
 [`REVIEW_DOCUMENT_CONTROL.md`](REVIEW_DOCUMENT_CONTROL.md) and
 [`DOCUMENTATION_RECONCILIATION_2026-09-30.md`](DOCUMENTATION_RECONCILIATION_2026-09-30.md).
-Current endpoint findings must be checked against the Priority 186–201 source
+Current endpoint findings must be checked against the Priority 186–204 source
 reviews and matching evidence JSON files in `NavierStokesReview/src/audit/`
 and `NavierStokesReview/evidence/`. Dated tranche notes are historical
-evidence, not competing live verdicts.
+evidence, not competing live verdicts. Priority 204 is scope control only: it
+reconciles the repository census, effective fork register, indexed-file count,
+and selected endpoint closure. Its 29-row disposition ledger is not a count
+of currently Git-untracked files; the live Git state has one protected
+untracked author-side file, recorded separately in document control.
 
 This review is the decision document accompanying the [research paper](OpenAI_NavierStokes_Research_Paper.md). The paper presents the publication-level argument; this file records the review decision, source-level findings, corrections to earlier objections, and questions that remain open. The detailed evidence is retained in the [NavierStokesReview evidence dossier](../NavierStokesReview/evidence/evidence_tree.md) and the linked source reviews.
 
