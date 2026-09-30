@@ -5,7 +5,7 @@
 This reader-facing paper is controlled by
 [`REVIEW_DOCUMENT_CONTROL.md`](REVIEW_DOCUMENT_CONTROL.md) and
 [`DOCUMENTATION_RECONCILIATION_2026-09-30.md`](DOCUMENTATION_RECONCILIATION_2026-09-30.md).
-The current evidence boundary is recorded in the Priority 186–198 source
+The current evidence boundary is recorded in the Priority 186–201 source
 reviews under `NavierStokesReview/src/audit/` and their matching JSON records
 under `NavierStokesReview/evidence/`. The paper is not a chronological log and
 must not be updated from a historical register count.
@@ -1276,10 +1276,10 @@ but it is not by itself a proof that the selected force is nonsmooth or that a
 connected CMI alternative is false.
 # Live control checkpoint: 2026-09-30 continuation
 
-The latest connected CMI and manuscript crosswalk is Priority 200:
-`../NavierStokesReview/src/audit/priority_200_connected_cmi_manuscript_crosswalk_2026-09-30.md`.
-It must be read with the raw CMI, manuscript, and R3 endpoint source ranges
-listed there.
+The latest connected CMI and manuscript crosswalk is Priority 201:
+`../NavierStokesReview/src/audit/priority_201_selected_closure_census_2026-09-30.md`.
+It must be read with Priority 200 and the raw CMI, manuscript, and R3
+endpoint source ranges listed there.
 
 This paper is a reader-facing synthesis, not a chronological agent log. The
 current source-of-truth control is
@@ -1310,3 +1310,14 @@ Current control evidence:
 
 Older counts, queued-module totals, and branch names embedded in dated
 sections are historical audit snapshots, not current status.
+## Live audit result: Priority 201 closure census (2026-09-30)
+
+The source census and review-side compilation record are maintained in
+`NavierStokesReview/src/audit/priority_201_selected_closure_census_2026-09-30.md`
+and
+`NavierStokesReview/evidence/source_tranche_priority_201_selected_closure_census_2026-09-30.json`.
+The result preserves the paper's connected five-moment dependency as
+load-bearing, but records that the inspected selected endpoint still lacks a
+named final moment-identification theorem. This is `CTR-005: NOT ESTABLISHED`
+for exact manuscript-to-selected-endpoint correspondence, not a claim that
+the selected physical field has a proved nonzero defect.

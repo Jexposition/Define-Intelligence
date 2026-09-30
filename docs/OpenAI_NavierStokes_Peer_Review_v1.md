@@ -5,7 +5,7 @@
 This review is governed by
 [`REVIEW_DOCUMENT_CONTROL.md`](REVIEW_DOCUMENT_CONTROL.md) and
 [`DOCUMENTATION_RECONCILIATION_2026-09-30.md`](DOCUMENTATION_RECONCILIATION_2026-09-30.md).
-Current endpoint findings must be checked against the Priority 186–198 source
+Current endpoint findings must be checked against the Priority 186–201 source
 reviews and matching evidence JSON files in `NavierStokesReview/src/audit/`
 and `NavierStokesReview/evidence/`. Dated tranche notes are historical
 evidence, not competing live verdicts.
@@ -4384,10 +4384,10 @@ semantic scope and the exact evidence boundary are controlled by
 [`CMI_OpenAI_Full_Semantic_Crosswalk.md`](CMI_OpenAI_Full_Semantic_Crosswalk.md).
 # Live control checkpoint: 2026-09-30 continuation
 
-The latest connected source crosswalk is Priority 200:
-`../NavierStokesReview/src/audit/priority_200_connected_cmi_manuscript_crosswalk_2026-09-30.md`.
-It confirms the positive literal result and the remaining correspondence
-boundary described below.
+The latest connected source crosswalk is Priority 201:
+`../NavierStokesReview/src/audit/priority_201_selected_closure_census_2026-09-30.md`.
+It incorporates Priority 200's positive literal result and records the
+current full closure census and compiled review-side candidate disposition.
 
 This checkpoint supersedes any older header count or branch description in
 this document. The active private review branch is
@@ -4423,3 +4423,14 @@ compiler-cheat finding, or `False`. Current adjudication links are:
 
 Older register counts and earlier branch names remain historical snapshots;
 they are not live workspace state.
+## Live audit result: Priority 201 closure census (2026-09-30)
+
+The current full-source census and compiled candidate disposition are linked
+at
+`NavierStokesReview/src/audit/priority_201_selected_closure_census_2026-09-30.md`.
+It confirms zero missing local imports in the 588-module selected closure and
+finds no active production declaration that identifies the final selected
+Cartesian fields with `(M,I,J,S,Cp)`. Two review-side `barMoment` identities
+compile only with caller-supplied pullback data. This strengthens `CTR-005`
+as a paper-to-endpoint correspondence finding, while not proving a selected
+field defect or literal CMI failure.

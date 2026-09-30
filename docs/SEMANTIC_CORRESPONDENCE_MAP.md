@@ -754,3 +754,14 @@ The four-module review [`priority_110_cycle_initial_particular_pressure_source_r
 `HeatedOutgoing`, `ModeSolenoidalReindex`, and `ShapedWaitBounds` add positive correspondence for reduced compensation rows, local mode-level solenoidal reindexing, and temporal hold/wait and decay estimates. These remain intermediate edges and do not close the final selected Cartesian localisation/periodisation-to-`barMoment` composition. The authoritative register reports 2,790 indexed, 588 reachable, 605 evidence-inspected, 8 reachable-open, and 0 missing project import edges. No nonzero defect, impossibility theorem, or `False` result is asserted.
 
 `ActualCoreSupport`, the signed/unmasked and uniform-block bound layers, `TimeLocalization`, `ConservativeDifference`, `PressureFluxTest`, `PressureRecovery`, `RieszTestOperators`, `SchedulePressure`, and `TailCone` provide source-level correspondence for concrete support, switched residuals, comparative weak pressure/Poisson identities, compact pressure tests, Riesz regularity, reduced axis pressure, tail/cone bounds, and uniform rate classes. The authoritative register now reports 2,790 indexed, 588 reachable, 558 evidence-inspected, 55 reachable-open, and 0 missing project import edges. These results do not provide an absolute selected pressure representative or the complete selected Cartesian `(M,I,S,J,C_p)` equality at `Witness`. Evidence: `NavierStokesReview/src/audit/priority_96_core_support_pressure_recovery_localization_source_review_2026-09-28.md`.
+## Priority 201 selected-closure census (2026-09-30)
+
+The current census and candidate disposition are recorded in
+`NavierStokesReview/src/audit/priority_201_selected_closure_census_2026-09-30.md`.
+The selected closure contains 588 local modules with no missing local imports.
+The seven active production co-occurrence rows are rates, germs, schedules,
+or axis results, not a final five-moment identity. Compiled review-side
+`barMoment` lemmas require explicit pullback data and therefore do not close
+the selected Cartesian transport theorem. The controlled status remains
+`CTR-005: NOT ESTABLISHED`, with no selected defect or literal CMI refutation
+claimed.

@@ -1,0 +1,40 @@
+{
+  "priority": 201,
+  "date": "2026-09-30",
+  "status": "source_checked_review_candidates_compiled",
+  "instrument": {
+    "source_census": "NavierStokesReview/src/audit/selected_endpoint_source_census.py",
+    "transport_audit": "NavierStokesReview/src/audit/selected_transport_audit.py",
+    "toolchain": "leanprover/lean4:v4.34.0-rc2 via lake env lean"
+  },
+  "census": {
+    "repository_lean_files": 2796,
+    "repository_source_lines": 649713,
+    "parsed_declarations": 50205,
+    "active_declarations": 31882,
+    "selected_endpoint_closure_modules": 588,
+    "selected_endpoint_active_source_lines": 380791,
+    "selected_endpoint_import_edges": 2378,
+    "missing_local_imports": 0,
+    "external_mathlib_roots": 209,
+    "active_lexical_moment_endpoint_candidates": 7
+  },
+  "compiled_review_candidates": [
+    "NavierStokesReview/src/completions/SelectedBarMomentInterface.lean",
+    "NavierStokesReview/src/completions/SelectedPhysicalPointTransport.lean",
+    "NavierStokesReview/src/completions/PeriodicGlobalIntegral.lean",
+    "NavierStokesReview/src/completions/SelectedR3PackagingBoundary.lean",
+    "NavierStokesReview/src/probes/FiveRowCollisionBoundaryProbe.lean"
+  ],
+  "findings": {
+    "active_source_final_moment_identity_found": false,
+    "review_side_interface_identities_compiled": true,
+    "selected_field_transport_proved": false,
+    "selected_nonzero_moment_defect_proved": false,
+    "force_nonsmoothness_proved": false,
+    "kernel_false_or_compiler_escape_found": false,
+    "literal_forced_cmi_shaped_endpoint_supported": true
+  },
+  "verdict": "CTR-005: NOT ESTABLISHED for complete manuscript-to-selected-endpoint correspondence",
+  "scope_warning": "The census is source triage, and the review-side interface lemmas require caller-supplied transport data. Neither absence of a named equality nor abstract debt non-entailment proves a physical field defect or literal CMI failure."
+}

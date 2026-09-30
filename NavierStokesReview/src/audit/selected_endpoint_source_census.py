@@ -21,6 +21,7 @@ import json
 import re
 from collections import Counter, defaultdict, deque
 from dataclasses import dataclass
+from datetime import date
 from pathlib import Path
 from typing import Iterable
 
@@ -329,8 +330,9 @@ def main() -> None:
         args.json.write_text(encoded, encoding="utf-8")
     if args.markdown:
         args.markdown.parent.mkdir(parents=True, exist_ok=True)
+        report_date = date.today().isoformat()
         rows = [
-            "# Selected-endpoint source census (2026-09-27)",
+            f"# Selected-endpoint source census ({report_date})",
             "",
             "This report is generated from every current Lean file under `NavierStokes/`.",
             "It is lexical source evidence for audit triage, not a proof of theorem transport.",

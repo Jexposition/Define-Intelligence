@@ -1,0 +1,32 @@
+{
+  "environment": null,
+  "environment_rows": 0,
+  "environment_rows_detail": [],
+  "environment_status": "not_supplied",
+  "environment_supplied": false,
+  "instrument": "selected_transport_audit",
+  "missing_environment_roots": [],
+  "repo_root": "D:/Research Lab/Jexposition/Define Intelligence/Define-Intelligence-github",
+  "roots": [
+    "NavierStokesR3.theorem_1_1",
+    "NavierStokes.ActualCandidateAssembly.selected_witness"
+  ],
+  "source_candidates": [],
+  "source_declarations": 31472,
+  "source_files_with_audit_terms": 591,
+  "source_joint_candidates": 0,
+  "source_joint_candidates_by_origin": {},
+  "source_manual_candidates": 0,
+  "source_manual_candidates_by_origin": {},
+  "source_roots": [
+    "D:/Research Lab/Jexposition/Define Intelligence/Define-Intelligence-github/NavierStokes"
+  ],
+  "status": "conservative source and optional Lean-environment triage; not a theorem",
+  "verdict": {
+    "absence_claim_permitted": false,
+    "kernel_false_proved": false,
+    "selected_delta_m_proved": false,
+    "selected_transport_disproved": false,
+    "selected_transport_proved": false
+  }
+}

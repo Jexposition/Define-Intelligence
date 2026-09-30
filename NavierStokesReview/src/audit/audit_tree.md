@@ -1,5 +1,6 @@
 ```markdown
 . 📂 audit
+├── 📄 priority_201_selected_closure_census_2026-09-30.md
 ├── 📄 EnvironmentApiCheck.lean
 ├── 📄 EnvironmentDependencyExport.lean
 ├── 📄 RepositoryAdmissionAudit.lean

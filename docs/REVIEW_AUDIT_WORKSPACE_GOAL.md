@@ -1,5 +1,20 @@
 # Review audit workspace goal
 
+## Priority 201 closure census: 2026-09-30
+
+The current full-source census and compiled review-side candidate disposition
+are recorded in
+`NavierStokesReview/src/audit/priority_201_selected_closure_census_2026-09-30.md`
+and
+`NavierStokesReview/evidence/source_tranche_priority_201_selected_closure_census_2026-09-30.json`.
+It covers 2,796 Lean files, 588 modules in the selected endpoint closure,
+zero missing local imports, and seven active source-level co-occurrence rows.
+Those rows are rates, germs, schedules, or axis results, not a final
+`(M,I,J,S,Cp)` identity. Review-side `barMoment` lemmas compile, but require
+caller-supplied pullback data and do not prove selected-field transport.
+Keep `CTR-005: NOT ESTABLISHED`; do not convert this into a selected-field
+defect or literal CMI refutation without a value-level theorem.
+
 ## Priority 200 scientific control: 2026-09-30
 
 The connected CMI crosswalk is now recorded in

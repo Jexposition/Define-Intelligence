@@ -1,5 +1,17 @@
 # CMI-first review plan: OpenAI Navier–Stokes claim
 
+## Priority 201 closure census and candidate disposition: 2026-09-30
+
+Run record:
+`NavierStokesReview/src/audit/priority_201_selected_closure_census_2026-09-30.md`.
+The source census is now complete for the current tree and the five review-side
+candidate modules compile under `lake env lean` with the pinned 4.34.0-rc2
+toolchain. Continue the actual audit from this result: manually close any
+remaining selected-path theorem candidates, while preserving the distinction
+between a conditional interface identity and a theorem about the activated
+Cartesian field. Do not report a nonzero defect, force nonsmoothness, or CMI
+failure unless a concrete source-backed proof establishes it.
+
 ## Priority 200 continuation state: 2026-09-30
 
 The connected crosswalk has been completed for the current source tranche.
