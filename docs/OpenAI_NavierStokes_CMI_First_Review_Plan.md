@@ -4601,7 +4601,7 @@ value-level theorem.
 
 ## Release checkpoint after Priority 205 control update (2026-09-30)
 
-The current private audit branch is review/cmi-first-navier-stokes-reconciled-2026-09-30 at local commit 3b6c467. The separate public review branch is review/cmi-first-navier-stokes-disposition-public-2026-09-30 at remote-confirmed commit 5561354.
+The current private audit branch is review/cmi-first-navier-stokes-reconciled-2026-09-30 at local commit 23dfddc. The separate public review branch is review/cmi-first-navier-stokes-disposition-public-2026-09-30 at remote-confirmed commit 06a0774.
 
 The three-file control update records the current evidence pointers, fixes the Priority 205 prose insertion, and preserves the archive gate. The protected untracked OpenAI-side path NavierStokes/R3/TestPressure.lean remains untouched, unstaged, and excluded. The next work remains full cross-reference and structural-lint verification, followed by a parent-folder SHA-256 manifest before any non-destructive archive move. No deletion or bulk staging is authorised.
 
