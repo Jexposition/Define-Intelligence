@@ -4847,3 +4847,29 @@ The live closure removes the stale-environment qualification for these six NS
 roots. It does not change `CTR-005: NOT ESTABLISHED` and does not support a
 selected-field nonzero defect, impossibility theorem, force nonsmoothness,
 literal CMI failure, compiler escape, or `False`.
+
+## Priority 216: document/evidence consolidation gate (2026-10-01)
+
+The current census is recorded in
+`../NavierStokesReview/src/audit/priority_216_document_consolidation_census_2026-10-01.md`
+and
+`../NavierStokesReview/evidence/document_consolidation_census_2026-10-01.md`.
+
+- [x] Re-read the controlling docs, current paper and peer review, evidence
+  tree, audit tree, and current source tranches together.
+- [x] Preserve the corrected positive result: the selected path contains
+  genuine internal invariant, physical-data, residual-rate, force-extension,
+  and axis-blow-up machinery.
+- [x] Preserve the corrected CTR-005 result: the bounded production census
+  has not located a consumed theorem for the complete selected-field
+  `(M,I,J,S,C_p)` composition.
+- [x] Record exact duplicate groups and SHA-256 values without deleting or
+  moving files.
+- [ ] Run active-reference, generator-provenance, link, and parent-manifest
+  checks before any non-destructive archive move.
+- [ ] Continue the value-level selected-field transport calculation and keep
+  it separate from the document-cleanup gate.
+
+The current status remains `CTR-005: NOT ESTABLISHED`. Do not upgrade it to a
+nonzero defect, force nonsmoothness, literal CMI failure, impossibility,
+compiler escape, or `False` without a direct source-backed result.

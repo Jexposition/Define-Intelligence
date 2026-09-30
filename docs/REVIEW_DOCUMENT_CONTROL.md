@@ -1,5 +1,29 @@
 # Navier–Stokes review document control
 
+## Priority 216 consolidation census (2026-10-01)
+
+The current corpus was re-read against the live source, manuscript and CMI
+mirrors, current paper and peer review, evidence tree, audit tree, and latest
+Priorities 203, 210, 211, and 212 records. The resulting consolidation census
+is recorded in
+`../NavierStokesReview/src/audit/priority_216_document_consolidation_census_2026-10-01.md`
+and
+`../NavierStokesReview/evidence/document_consolidation_census_2026-10-01.md`.
+
+The corrected scientific reading is locked: the selected path contains a
+real invariant-to-physical-data-to-residual-rate-to-force/blow-up route, while
+the bounded production census has not located a consumed theorem identifying
+the completed selected field with the manuscript's complete
+`(M,I,J,S,C_p)` composition. The status remains `CTR-005: NOT ESTABLISHED`.
+No nonzero defect, force nonsmoothness, sole-cancellation claim, literal CMI
+failure, compiler escape, impossibility theorem, or `False` is asserted.
+
+The census found exact duplicate groups and recorded their SHA-256 values,
+but performed no deletion or archive move. The archive gate remains closed
+until active references, generator provenance, and parent-folder manifests
+are checked together. The two intentional untracked paths and protected
+source state remain unchanged.
+
 ## Priority 214 tree-reconciliation correction (2026-09-30)
 
 The current tree evidence is

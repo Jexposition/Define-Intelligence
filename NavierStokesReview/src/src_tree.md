@@ -11,6 +11,7 @@ current review artefacts must be treated as live and discoverable:
 - `audit/priority_203_internal_to_endpoint_crossfile_trace_2026-09-30.md`
 - `audit/priority_204_workspace_source_record_reconciliation_2026-09-30.md`
 - `audit/priority_210_selected_endpoint_probe_replay_2026-09-30.md`
+- `audit/priority_216_document_consolidation_census_2026-10-01.md`
 - `probes/ActualMomentPreservationTrace.lean`
 - `probes/SelectedMomentBridgeAudit.lean`
 - `probes/SelectedWitnessPathProbe.lean`

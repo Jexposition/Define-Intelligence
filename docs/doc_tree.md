@@ -1,5 +1,14 @@
 ```markdown
 . 📂 docs
+
+Current reconciliation pointer: `REVIEW_DOCUMENT_CONTROL.md` Priority 216,
+with the consolidation audit at
+`../NavierStokesReview/src/audit/priority_216_document_consolidation_census_2026-10-01.md`
+and evidence at
+`../NavierStokesReview/evidence/document_consolidation_census_2026-10-01.md`.
+The tree below remains a navigation snapshot and is not a substitute for the
+current control record.
+
 ├── 📄 archive/Define inteligence tree_2026-09-30.md  (historical archive)
 ├── 📄 Define intelligence Tree.md
 ├── 📄 Euler_Parent_Child_Interval_Audit.md

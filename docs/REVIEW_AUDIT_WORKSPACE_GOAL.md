@@ -3821,3 +3821,26 @@ and is not used as evidence about the NS endpoint. The environment replay is
 closed; the consolidation, cross-reference, source fact-check, and
 non-destructive archive gate remain open, as does the selected-field
 value-level transport calculation.
+
+## Priority 216: corpus consolidation and finding lock (2026-10-01)
+
+The current document/evidence census is recorded in
+`../NavierStokesReview/src/audit/priority_216_document_consolidation_census_2026-10-01.md`
+and
+`../NavierStokesReview/evidence/document_consolidation_census_2026-10-01.md`.
+
+- [x] Re-read the live source, CMI/manuscript mirrors, current paper, peer
+  review, evidence tree, audit tree, and latest selected-path tranches.
+- [x] Lock the corrected positive finding: internal moment/rank machinery is
+  active and feeds the residual-rate, smooth-force, and blow-up route.
+- [x] Lock the corrected adverse finding: no consumed production theorem has
+  been located for the complete selected-field `(M,I,J,S,C_p)` composition.
+- [x] Record exact duplicate groups and SHA-256 values without deletion or
+  movement.
+- [ ] Complete active-reference, generator-provenance, and parent-manifest
+  checks before any archive move.
+- [ ] Continue the selected-field value-level transport calculation.
+
+This checkpoint does not authorise stronger scientific labels. `CTR-005`
+remains `NOT ESTABLISHED`; no nonzero defect, force nonsmoothness, literal CMI
+failure, impossibility theorem, compiler escape, or `False` is claimed.

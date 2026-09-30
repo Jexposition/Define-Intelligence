@@ -1,5 +1,6 @@
 ```markdown
 . 📂 audit
+├── 📄 priority_216_document_consolidation_census_2026-10-01.md
 ├── 📄 priority_210_selected_endpoint_probe_replay_2026-09-30.md
 ├── 📄 priority_203_internal_to_endpoint_crossfile_trace_2026-09-30.md
 ├── 📄 priority_202_actual_moment_invariant_trace_2026-09-30.md

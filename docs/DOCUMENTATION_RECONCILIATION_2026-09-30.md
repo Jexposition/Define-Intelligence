@@ -8,6 +8,27 @@ full register mirrors, the evidence tree, the audit tree, and the latest source
 tranches through Priority 198. It is a navigation and state-control document.
 It does not replace raw Lean source or the frozen source texts.
 
+## Current supersession checkpoint: Priority 216 (2026-10-01)
+
+The current document and evidence consolidation census is
+`../NavierStokesReview/src/audit/priority_216_document_consolidation_census_2026-10-01.md`,
+with its evidence companion at
+`../NavierStokesReview/evidence/document_consolidation_census_2026-10-01.md`.
+This dated ledger remains historical for its earlier pass; Priority 216 and
+`REVIEW_DOCUMENT_CONTROL.md` are the current navigation authority.
+
+The scientific reading is unchanged and explicitly corrected: internal
+moment/rank machinery is active on the selected route and feeds finite
+identities, physical data, residual rates, force extension, and blow-up. The
+bounded production census has not located a consumed theorem identifying the
+completed selected field with the manuscript's complete
+`(M,I,J,S,C_p)` composition. This remains `CTR-005: NOT ESTABLISHED`, not a
+nonzero-defect or literal-CMI-failure result.
+
+Priority 216 found exact duplicate groups by SHA-256 and recorded them
+without moving or deleting files. The archive gate remains closed pending
+active-reference, generator-provenance, and parent-manifest checks.
+
 ## Post-disposition workspace state
 
 The pre-disposition inventory has been reconciled. Thirty-six artefacts were
