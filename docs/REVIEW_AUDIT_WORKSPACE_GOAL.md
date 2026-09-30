@@ -1,5 +1,35 @@
 # Review audit workspace goal
 
+## Priority 203: internal invariant to selected endpoint: 2026-09-30
+
+The source-bound cross-file trace is recorded in
+`NavierStokesReview/src/audit/priority_203_internal_to_endpoint_crossfile_trace_2026-09-30.md`,
+with machine-readable evidence at
+`NavierStokesReview/evidence/source_tranche_priority_203_internal_to_endpoint_crossfile_trace_2026-09-30.json`.
+The compiled review-side probe is
+`NavierStokesReview/src/probes/ActualMomentPreservationTrace.lean`.
+
+This tranche establishes a positive result that must be preserved: the actual
+cycle carries two preserved mean-mass identities and three residual-debt
+classes, and those data feed the physical-data, residual-rate, smooth-force,
+and selected-candidate route. It corrects any earlier wording that the
+selected path is moment-free or that `NativeBounds` is an unsupported shell.
+
+The remaining adverse finding is narrower but still material. The inspected
+selected closure contains no production declaration consumed by `Witness` or
+`selected_witness` that identifies those internal coordinates with the
+manuscript's final `(M,I,J,S,C_p)` observables after Cartesian field
+construction, pressure conventions, localisation, periodisation, summation,
+radial integration, and force export. The controlled status therefore remains
+`CTR-005: NOT ESTABLISHED` for complete manuscript-to-selected-endpoint
+correspondence.
+
+This is not evidence of a selected nonzero defect, force nonsmoothness,
+literal CMI failure, compiler deception, an impossibility theorem, or `False`.
+The next required work is a direct selected-field identification or mismatch
+proof. No result may be inferred solely from an omitted tuple field or an
+interface non-implication.
+
 ## Priority 202 correction: actual internal moment invariant: 2026-09-30
 
 The compiled positive trace is recorded in
