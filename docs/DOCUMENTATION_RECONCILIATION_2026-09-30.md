@@ -217,3 +217,42 @@ any artefact.
 - `NavierStokesReview/src/audit/priority_195_four_operation_force_smoothness_adjudication_2026-09-30.md`
 - `NavierStokesReview/src/audit/priority_198_latest_rebuttal_adjudication_2026-09-30.md`
 - `NavierStokesReview/evidence/selected_endpoint_compile_boundary_reaudit_2026-09-29.md`
+
+## Authoritative workspace checkpoint: 2026-09-30 continuation
+
+This checkpoint records the full documentation pass across `docs/`, the CMI
+and manuscript source mirrors, the review evidence and results trees, the
+audit/source indexes, the probe, completion, extension, refutation, and
+external-semantic folders, and `scratch_space/notes3.md` and
+`scratch_space/notes4.md`. The scratch notes are historical task-intake
+material. They do not override raw Lean source or the current Priority
+198--204 source adjudications. Their CUDA/3D diagnostics remain
+declared-profile evidence, not selected-field theorems.
+
+The current scientific record is two-sided. The actual selected cycle has two
+preserved mean-mass identities and three residual-debt classes. Those data
+feed physical data, residual-rate estimates, residual limits, force extension,
+candidate consequences, and the axis blow-up route. The inspected selected
+closure still has no located production declaration identifying the completed
+Cartesian, localised, periodised, summed fields, pressure, residual, and force
+with the manuscript's named `(M,I,J,S,C_p)` observables. The controlled status
+remains `CTR-005: NOT ESTABLISHED` for complete
+manuscript-to-selected-endpoint correspondence. This does not prove a
+selected nonzero defect, force nonsmoothness, literal forced-CMI failure,
+impossibility theorem, compiler escape, or `False`.
+
+The live Git state is explicit. The private branch is
+`review/cmi-first-navier-stokes-reconciled-2026-09-30`; its local tip is
+verified by Git, but its push was not confirmed after two timed-out attempts.
+The public
+mirror branch is
+`review/cmi-first-navier-stokes-disposition-public-2026-09-30` at `3ea3cc1`,
+and its remote push is confirmed. The private worktree contains exactly one
+untracked protected file, `NavierStokes/R3/TestPressure.lean`; it has not been
+edited or staged. No OpenAI source file is part of the review tranche.
+
+The next gates are ordered: record or resolve the private push state; complete
+the live cross-reference and structural-lint pass; prepare only a scoped
+review commit; and only then consider further archive moves. Any archive move
+must be non-destructive and manifested with old path, new path, reason, and
+SHA-256. No deletion is permitted.

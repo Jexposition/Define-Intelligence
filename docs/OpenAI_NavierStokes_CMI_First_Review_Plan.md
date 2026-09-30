@@ -4530,3 +4530,40 @@ Current cross-reference anchors for that gate are the exact files
 dated full registers for 2026-09-27, 2026-09-28, and 2026-09-29. Braced
 filename notation in older historical paragraphs is shorthand, not a literal
 path.
+
+## Workspace reconciliation checkpoint: 2026-09-30
+
+The source-first read has now covered the controlling `docs/` files, CMI and
+OpenAI source mirrors, review evidence and results, audit/source indexes,
+probe/completion/extension/refutation/external-semantic folders, and
+`scratch_space/notes3.md` and `scratch_space/notes4.md`. The scratch notes are
+historical intake. They preserve the requirement for a genuinely 3D, plotted,
+CUDA-capable profile diagnostic, but they do not establish a selected Lean
+field defect. Priority 198--204 controls the current scientific wording.
+
+The plan must preserve this exact disposition. The selected construction has
+real internal moment/debt invariants and a real residual-to-force/blow-up
+route. The remaining `CTR-005` task is to close or refute, by direct source
+and value-level work, the identification of those internal data with the
+manuscript's final `(M,I,J,S,C_p)` observables. The plan must not describe the
+moment branch as absent, `NativeBounds` as unsupported, the five equations as
+the sole cancellation mechanism, or the CUDA profile diagnostic as a
+selected-field theorem.
+
+Source and workspace state for this checkpoint:
+
+- private branch: `review/cmi-first-navier-stokes-reconciled-2026-09-30`; local
+  tip verified by Git, private push not confirmed after timed-out attempts;
+- public branch: `review/cmi-first-navier-stokes-disposition-public-2026-09-30`,
+  HEAD `3ea3cc1`; remote push confirmed;
+- private worktree: one protected untracked path only,
+  `NavierStokes/R3/TestPressure.lean`; no OpenAI source edits or staging;
+- inventory control: the 2,794 register rows, 817-file `NavierStokes/` census,
+  588 selected closure modules, and unresolved 2,796 Priority-201 field remain
+  separate scopes until the root-explicit register refresh.
+
+The next ordered steps are private push-state resolution, full live
+cross-reference and structural-lint verification, a scoped review commit, and
+only then any archive move. Archive operations remain non-destructive and
+require a parent-folder manifest containing old path, new path, reason, and
+SHA-256. No deletion or bulk staging is allowed.

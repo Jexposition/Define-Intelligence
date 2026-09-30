@@ -2385,3 +2385,35 @@ The effective register remains
 with its root mirror in `docs/REPOSITORY_SEMANTIC_COVERAGE_REGISTER.json`.
 Its unresolved seven-versus-ten `sorry`-token metric discrepancy remains
 open and is not silently resolved by this documentation update.
+
+## Live control override: full workspace read and branch state, 2026-09-30
+
+The current authority pass has read the `docs/` corpus, raw CMI and manuscript
+mirrors, review evidence and results, audit/source indexes, probe/completion/
+extension/refutation/external-semantic folders, and `scratch_space/notes3.md`
+and `scratch_space/notes4.md`. Scratch notes and archived reports are retained
+as historical provenance. They do not override raw source or the current
+Priority 198--204 adjudications. Their CUDA/3D plots remain declared-profile
+diagnostics with `selected_delta_m_proved: false` and
+`selected_field_bound: false`.
+
+The live scientific control is unchanged but more precise: actual selected
+cycle invariants and residual/force construction are present; the inspected
+selected closure does not expose a named final identity connecting the
+completed selected Cartesian construction to `(M,I,J,S,C_p)`. Thus
+`CTR-005: NOT ESTABLISHED` applies to complete manuscript-to-endpoint
+correspondence. No selected mismatch, force nonsmoothness, literal CMI
+failure, impossibility theorem, compiler escape, or kernel `False` has been
+proved.
+
+The current Git facts are: private branch
+`review/cmi-first-navier-stokes-reconciled-2026-09-30` at a local tip verified
+by Git, private push unconfirmed after timed-out attempts; public branch
+`review/cmi-first-navier-stokes-disposition-public-2026-09-30` at `3ea3cc1`,
+remote push confirmed. The private worktree has one protected untracked file,
+`NavierStokes/R3/TestPressure.lean`, which remains untouched and unstaged.
+
+The next release gate is a live cross-reference and structural-lint pass,
+followed by a scoped commit. No deletion, bulk staging, or archive movement is
+permitted until consolidation is cross-checked and a parent-folder SHA-256
+archive manifest is updated.

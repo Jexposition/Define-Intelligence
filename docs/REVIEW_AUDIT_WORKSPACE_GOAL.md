@@ -3540,3 +3540,44 @@ Current exact evidence anchors are recorded in
 `NavierStokesReview/evidence/hardened_source_map_2026-09-29.md`, and the
 2026-09-29 full semantic register. Older brace or wildcard filename notation
 is historical shorthand and must not be treated as a missing-file finding.
+
+## Current authoritative state after full workspace read: 2026-09-30
+
+This goal is governed by raw source and the current control ledger, not by the
+strongest wording in an older scratch note or historical challenge report. The
+full read covered the `docs/` corpus, CMI and manuscript mirrors, review
+evidence and results, audit/source indexes, probe/completion/extension/
+refutation/external-semantic folders, and `scratch_space/notes3.md` and
+`scratch_space/notes4.md`. The notes preserve the requested 3D plotted CUDA
+diagnostic lane and strategic follow-on work, but their profile-level results
+are not selected-field theorems.
+
+The current goal finding is two-sided:
+
+- the selected path contains genuine two-mass plus three-debt invariant
+  mathematics and a connected physical-data, residual-rate, smooth-force,
+  candidate-consequence, and blow-up route;
+- the inspected selected closure has not supplied a production theorem
+  identifying that internal structure with the manuscript's final
+  `(M,I,J,S,C_p)` observables after the Cartesian, localisation, periodisation,
+  summation, radial, pressure, residual, and force transformations.
+
+Therefore `CTR-005` remains `NOT ESTABLISHED` for complete
+manuscript-to-selected-endpoint fidelity. The goal does not claim a field
+defect, force nonsmoothness, failure of the forced CMI alternative, an
+impossibility theorem, a compiler escape, or `False`. Those are separate
+field-level results, not consequences of the absence of a named exported
+identity.
+
+The live control state is: private branch
+`review/cmi-first-navier-stokes-reconciled-2026-09-30`, with its local tip
+verified by Git and its push unconfirmed after timed-out attempts; public branch
+`review/cmi-first-navier-stokes-disposition-public-2026-09-30`, HEAD `3ea3cc1`,
+remote push confirmed. The only private untracked path is the protected
+`NavierStokes/R3/TestPressure.lean`, which remains untouched and unstaged.
+
+The next work order is mandatory: first resolve or document the private push;
+then complete the live cross-reference and structural-lint pass; then make a
+scoped commit; only after consolidation is confirmed may redundant material be
+moved to a parent-folder archive with a SHA-256 manifest. No deletion, bulk
+staging, or OpenAI-source edit is authorised.
