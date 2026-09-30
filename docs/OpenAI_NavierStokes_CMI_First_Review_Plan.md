@@ -4760,3 +4760,29 @@ failure. The same three review-side manual candidates compiled with exit codes
 That result validates the interface files only; it does not establish the
 production selected-field five-observable transport. The fresh environment
 closure and endpoint replay remain the next open control task.
+
+## Priority 212: current Navier--Stokes environment closure (2026-09-30)
+
+- [x] Export the six selected Navier--Stokes roots from the live checkout with
+  the pinned `leanprover/lean4:v4.34.0-rc2` toolchain.
+- [x] Record 30,919 declarations, 329,127 declaration edges, zero missing
+  names, and zero `sorryAx` nodes.
+- [x] Record the raw graph digest and keep the generated 366 MB graph out of
+  the scoped public commit; retain its path and SHA-256 in the evidence.
+- [x] Separate the incomplete Euler root build from the successful NS closure;
+  do not use the Euler build limitation as NS evidence.
+- [x] Preserve the Priority 211 semantic result: environment coverage does
+  not establish `barMoment(u_selected) = (M,I,J,S,C_p)`.
+- [ ] Complete the full document-by-document consolidation, source
+  cross-reference, and primary-source fact-check before any further archive
+  move.
+
+Control records:
+`../NavierStokesReview/src/audit/priority_212_ns_environment_closure_2026-09-30.md`
+and
+`../NavierStokesReview/evidence/lean_environment_closure_ns_3d_2026-09-30_summary.md`.
+
+The live closure removes the stale-environment qualification for these six NS
+roots. It does not change `CTR-005: NOT ESTABLISHED` and does not support a
+selected-field nonzero defect, impossibility theorem, force nonsmoothness,
+literal CMI failure, compiler escape, or `False`.

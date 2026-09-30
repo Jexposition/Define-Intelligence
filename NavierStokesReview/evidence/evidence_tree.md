@@ -461,3 +461,16 @@ The combined source census indexed 31,831 declarations. Production
 declaration rule; three review-side caller-supplied `barMoment` interfaces
 remain manual review records. This does not prove impossibility and does not
 change `CTR-005: NOT ESTABLISHED`.
+
+## Priority 212 live Navier--Stokes environment closure
+
+`lean_environment_closure_ns_3d_2026-09-30_summary.md` records the fresh
+six-root closure exported from the current checkout. The pinned
+`v4.34.0-rc2` environment resolved 30,919 declarations and 329,127 edges,
+with zero missing names and zero `sorryAx` nodes. The raw graph and SHA-256
+are recorded in
+`../src/audit/priority_212_ns_environment_closure_2026-09-30.md`.
+
+This closes the stale-environment coverage issue for the six selected
+Navier--Stokes roots. It does not prove selected-field transport of
+`(M,I,J,S,C_p)` and does not alter `CTR-005: NOT ESTABLISHED`.

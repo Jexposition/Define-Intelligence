@@ -2575,3 +2575,15 @@ attempt failed with `.olean` header incompatibility because the checkout is
 pinned to `leanprover/lean4:v4.34.0-rc2`; the pinned replay returned
 `0,0,0`. This is evidence that the review interfaces compile under the correct
 toolchain, not evidence of a production `selected_witness` transport theorem.
+
+## Live environment closure: Priority 212 (2026-09-30)
+
+The current six-root Navier--Stokes environment closure is recorded in
+`NavierStokesReview/src/audit/priority_212_ns_environment_closure_2026-09-30.md`
+and
+`NavierStokesReview/evidence/lean_environment_closure_ns_3d_2026-09-30_summary.md`.
+The pinned `v4.34.0-rc2` export resolved 30,919 declarations and 329,127
+edges, with zero missing names and zero `sorryAx` nodes. This closes the stale
+environment coverage qualification for those NS roots only. It does not close
+the selected-field `(M,I,J,S,C_p)` transport gap, and `CTR-005` remains
+`NOT ESTABLISHED`.

@@ -3752,3 +3752,20 @@ have incompatible headers. Replaying with the pinned
 validates those review interfaces, not the missing production
 `selected_witness` five-observable transport theorem. The environment-closure
 replay remains open.
+
+## Priority 212 live Navier--Stokes closure
+
+The current checkout now has a fresh six-root Navier--Stokes environment
+closure under the pinned `leanprover/lean4:v4.34.0-rc2` toolchain: 30,919
+declarations, 329,127 edges, zero missing names, and zero `sorryAx` nodes.
+This resolves the stale-environment bookkeeping issue for the selected NS
+roots. It does not resolve the mathematical correspondence question. The
+whole-tree source census still has no production declaration identifying the
+selected final field with `(M,I,J,S,C_p)`, so the controlled scientific status
+remains `CTR-005: NOT ESTABLISHED`.
+
+The raw generated graph is recorded by digest rather than blindly staged as a
+large public artefact. The Euler root build limitation is tracked separately
+and is not used as evidence about the NS endpoint. The consolidation,
+cross-reference, source fact-check, and non-destructive archive gate remains
+open.

@@ -1,6 +1,6 @@
 import NavierStokes.R3.Theorem
-import Euler.EulerSingularity
-import Euler.Solution
+import NavierStokes.ComparatorR3Theorem
+import NavierStokes.PeriodicPaperTheorem
 
 open Lean Elab Command
 
@@ -9,7 +9,6 @@ namespace NavierStokesReview.Audit
 private def projectName (name : Name) : Bool :=
   let text := name.toString
   text.startsWith "NavierStokes" ||
-    text.startsWith "Euler" ||
     text.startsWith "ComparatorChallenges" ||
     text.startsWith "NavierStokesReview"
 
@@ -35,7 +34,7 @@ private def jsonNode (name : Name) (info : ConstantInfo) : Json :=
     ("uses", jsonNames (refs.filter projectName))
   ]
 
-elab "exportReviewEnvironmentClosure " output:str : command => do
+elab "exportReviewNavierStokesEnvironmentClosure " output:str : command => do
   let output := output.getString
   let env ← getEnv
   let roots : Array Name := #[
@@ -43,11 +42,8 @@ elab "exportReviewEnvironmentClosure " output:str : command => do
     ``NavierStokesR3.theorem_1_1_with_initial_rest,
     ``NavierStokesR3.theorem_1_1_with_dissipation,
     ``NavierStokes.ActualCandidateAssembly.selected_witness,
-    ``NavierStokes.Comparator.navier_stokes_breakdown_R3,
-    ``NavierStokes.Comparator.navier_stokes_breakdown_periodic,
-    ``Euler.euler_breakdown_R3,
-    ``Euler.exists_compact_smooth_euler_singularity,
-    ``EulerPacketInduction.exists_compact_smooth_euler_singularity
+    ``NavierStokes.ComparatorBridge.navier_stokes_breakdown_R3,
+    ``NavierStokes.PeriodicPaper.periodic_corollary
   ]
   let mut queue : Array Name := roots
   let mut cursor := 0
@@ -79,8 +75,8 @@ elab "exportReviewEnvironmentClosure " output:str : command => do
     ("edges", Json.arr edges)
   ]
   liftIO <| IO.FS.writeFile output (Json.compress payload ++ "\n")
-  logInfo m!"Exported {roots.size} roots, {nodes.size} project declarations, and {edges.size} edges to {output}"
+  logInfo m!"Exported {roots.size} Navier-Stokes roots, {nodes.size} project declarations, and {edges.size} edges to {output}"
 
 end NavierStokesReview.Audit
 
-exportReviewEnvironmentClosure "NavierStokesReview/evidence/lean_environment_closure_all_public_roots_2026-09-30.json"
+exportReviewNavierStokesEnvironmentClosure "NavierStokesReview/evidence/lean_environment_closure_ns_3d_2026-09-30.json"

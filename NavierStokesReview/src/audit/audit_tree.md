@@ -313,3 +313,15 @@ production pass found no positive selected transport declaration. Three
 review-side caller-supplied `barMoment` interfaces were manually inspected and
 do not export a final `(M,I,J,S,C_p)` identity. The result preserves
 `CTR-005: NOT ESTABLISHED`; it is not an impossibility proof.
+
+## Priority 212 live environment closure
+
+`priority_212_ns_environment_closure_2026-09-30.md` records the successful
+current-checkout export from `EnvironmentDependencyExportNS.lean`. Six
+selected Navier--Stokes roots resolved to 30,919 declarations and 329,127
+edges, with no missing names and no `sorryAx` nodes. The raw graph digest is
+recorded in the report and its compact evidence summary.
+
+This is environment coverage, not a semantic transport result. The Priority
+211 production census remains controlling for the selected-field question,
+and `CTR-005` remains `NOT ESTABLISHED`; no stronger refutation is claimed.

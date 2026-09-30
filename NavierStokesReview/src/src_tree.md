@@ -358,3 +358,9 @@ register are `completions/SelectedFeffermanAlternativeCProof.lean`,
 `probes/ActualMomentPreservationTrace.lean`. They are now covered by the
 2,797-row current register. Generated `__pycache__` and `.pyc` entries in the
 older snapshot are excluded artefacts, not source omissions.
+
+`audit/EnvironmentDependencyExport.lean` is the all-public exporter and
+`audit/EnvironmentDependencyExportNS.lean` is the bounded six-root
+Navier--Stokes exporter used for the current environment closure. The latter
+is paired with Priority 212 evidence. Neither exporter is a substitute for a
+selected-field five-observable transport theorem.
