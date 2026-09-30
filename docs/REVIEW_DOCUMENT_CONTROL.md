@@ -1,5 +1,14 @@
 # Navier–Stokes review document control
 
+## Priority 219 live release state (2026-10-01)
+
+The current private source-of-truth tip is `4e5954d` on
+`review/cmi-first-navier-stokes-reconciled-2026-09-30`. The current public
+review tip is `f6d8d56` on
+`review/cmi-first-navier-stokes-disposition-public-2026-09-30`, and the remote
+ref matches. These tips include the Priority 218 selected-endpoint crosswalk
+replay. Earlier commit IDs in this control file are historical snapshots.
+
 ## Priority 218 source crosswalk replay (2026-10-01)
 
 The live source replay is recorded in
