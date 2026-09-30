@@ -29,9 +29,9 @@ inspected production closure.
 
 ## Release record
 
-Private: `2979784`.
+Private: `3cc2274`.
 
-Public mirror: `104b641`, pushed to
+Public mirror: `a13b0ae`, pushed to
 `review/cmi-first-navier-stokes-disposition-public-2026-09-30`.
 
 The archive gate remains closed for additional moves until the full

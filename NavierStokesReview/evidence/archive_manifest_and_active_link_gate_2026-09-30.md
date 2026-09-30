@@ -41,9 +41,9 @@ The only private untracked path remains
 unmoved, and excluded from the archive and review commits. No Lean, Lake,
 Elan, Git, or dotnet build process was running in the final process check.
 
-Private commit: `2979784` (`Complete archive manifest inventory`).
+Private commit: `3cc2274` (`Repair active evidence links and record archive gate`).
 
-Public mirror commit: `104b641` (`Complete archive manifest inventory`), pushed
+Public mirror commit: `a13b0ae` (`Repair active evidence links and record archive gate`), pushed
 to `review/cmi-first-navier-stokes-disposition-public-2026-09-30`.
 
 ## Scientific disposition unchanged
