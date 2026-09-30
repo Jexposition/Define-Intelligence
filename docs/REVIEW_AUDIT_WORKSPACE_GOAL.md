@@ -3616,3 +3616,14 @@ calculation or impossibility theorem.
 The current private audit branch is review/cmi-first-navier-stokes-reconciled-2026-09-30 at local commit 3b6c467. The separate public review branch is review/cmi-first-navier-stokes-disposition-public-2026-09-30 at remote-confirmed commit 5561354.
 
 The three-file control update records the current evidence pointers, fixes the Priority 205 prose insertion, and preserves the archive gate. The protected untracked OpenAI-side path NavierStokes/R3/TestPressure.lean remains untouched, unstaged, and excluded. The next work remains full cross-reference and structural-lint verification, followed by a parent-folder SHA-256 manifest before any non-destructive archive move. No deletion or bulk staging is authorised.
+
+## Priority 206 control update (2026-09-30)
+
+The active evidence dossier links have been repaired and the archive manifest
+has been reconciled against recomputed SHA-256 hashes. The control result is
+recorded in the evidence and audit trees. No source deletion, archive movement,
+bulk staging, or protected-file change occurred. The next required work is the
+full document-consolidation cross-reference and fact-check pass, followed by a
+fresh structural-lint check. The scientific finding remains
+`CTR-005: NOT ESTABLISHED` for complete manuscript-to-selected-endpoint
+correspondence.

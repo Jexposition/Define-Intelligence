@@ -40,19 +40,19 @@ the manuscript observables `(M,I,J,S,C_p)`, so the classification remains
 **NOT ESTABLISHED (CTR-005)** without asserting a selected mismatch or force
 nonsmoothness.
 
-Evidence: `../NavierStokesReview/src/audit/priority_179_latest_force_smoothness_rebuttal_2026-09-29.md`;
-`../NavierStokesReview/evidence/source_tranche_priority_179_latest_force_smoothness_rebuttal_2026-09-29.json`.
+Evidence: `../src/audit/priority_179_latest_force_smoothness_rebuttal_2026-09-29.md`;
+`../evidence/source_tranche_priority_179_latest_force_smoothness_rebuttal_2026-09-29.json`.
 
 ### Audit evidence update: Priority 154–155 source tranches (2026-09-29)
 
 The latest source reviews and machine-readable evidence are part of the
 paper-to-code record:
 
-- [Priority 154: Euler transport, frame, and heat-source review](../NavierStokesReview/src/audit/priority_154_euler_transport_frame_heat_source_review_2026-09-29.md)
-- [Priority 154 machine-readable evidence](../NavierStokesReview/evidence/source_tranche_euler_transport_frame_heat_2026-09-29.json)
-- [Priority 155: Euler Gaussian and Gevrey review](../NavierStokesReview/src/audit/priority_155_euler_gaussian_gevrey_source_review_2026-09-29.md)
-- [Priority 155 machine-readable evidence](../NavierStokesReview/evidence/source_tranche_euler_gaussian_gevrey_2026-09-29.json)
-- [Current semantic coverage register](../NavierStokesReview/evidence/semantic_coverage_register_full_2026-09-29.md)
+- [Priority 154: Euler transport, frame, and heat-source review](../src/audit/priority_154_euler_transport_frame_heat_source_review_2026-09-29.md)
+- [Priority 154 machine-readable evidence](../evidence/source_tranche_euler_transport_frame_heat_2026-09-29.json)
+- [Priority 155: Euler Gaussian and Gevrey review](../src/audit/priority_155_euler_gaussian_gevrey_source_review_2026-09-29.md)
+- [Priority 155 machine-readable evidence](../evidence/source_tranche_euler_gaussian_gevrey_2026-09-29.json)
+- [Current semantic coverage register](../evidence/semantic_coverage_register_full_2026-09-29.md)
 
 The two tranches add positive evidence for conditional Euler transport,
 Gaussian heat, composition, continuation, compactness, and flow/Gevrey bounds.
@@ -2939,7 +2939,7 @@ and
 
 The manuscript is not to be reduced to a log of isolated declarations or to
 the endpoint's existential wrapper. The complete section and appendix map is
-[`CMI_OpenAI_Full_Semantic_Crosswalk.md`](CMI_OpenAI_Full_Semantic_Crosswalk.md).
+[`CMI_OpenAI_Full_Semantic_Crosswalk.md`](../../docs/CMI_OpenAI_Full_Semantic_Crosswalk.md).
 It must be read together with Fefferman's complete CMI specification, not as
 a substitute for it.
 
@@ -3343,7 +3343,7 @@ transport of the manuscript's complete five-moment consequences remains
 optional, nor a claim that literal C/D failure has already been proved.
 
 Full record:
-[`priority_179_fefferman_full_semantic_dependency_network_2026-09-29.md`](../NavierStokesReview/src/audit/priority_179_fefferman_full_semantic_dependency_network_2026-09-29.md).
+[`priority_179_fefferman_full_semantic_dependency_network_2026-09-29.md`](../src/audit/priority_179_fefferman_full_semantic_dependency_network_2026-09-29.md).
 
 ## Priority 177: Fefferman's connected semantic requirements
 
@@ -3544,8 +3544,8 @@ connected failed CMI condition. The dossier must not label the manuscript's
 literal C/D target false solely from the missing endpoint identity.
 
 Evidence:
-`../NavierStokesReview/src/audit/priority_183_force_smoothness_moment_rebuttal_adjudication_2026-09-29.md`;
-`../NavierStokesReview/evidence/source_tranche_priority_183_force_smoothness_moment_rebuttal_adjudication_2026-09-29.json`.
+`../src/audit/priority_183_force_smoothness_moment_rebuttal_adjudication_2026-09-29.md`;
+`../evidence/source_tranche_priority_183_force_smoothness_moment_rebuttal_adjudication_2026-09-29.json`.
 
 ### Priority 184 source correction: smooth-force route versus moment transport
 
@@ -3567,8 +3567,8 @@ selected force is nonsmooth or that the selected moments are wrong; those
 stronger conclusions require a value-level mismatch or impossibility result.
 
 Evidence:
-`../NavierStokesReview/src/audit/priority_184_selected_path_foundation_audit_2026-09-29.md`;
-`../NavierStokesReview/evidence/source_tranche_priority_184_selected_path_foundation_audit_2026-09-29.json`.
+`../src/audit/priority_184_selected_path_foundation_audit_2026-09-29.md`;
+`../evidence/source_tranche_priority_184_selected_path_foundation_audit_2026-09-29.json`.
 
 ### Priority 185 source correction: moments, residual cancellation, and force smoothness
 
@@ -3600,15 +3600,15 @@ alternative is false. Those require a selected mismatch, failed condition,
 impossibility theorem, or contradiction.
 
 Evidence:
-`../NavierStokesReview/src/audit/priority_185_rebuttal_adjudication_2026-09-30.md`;
-`../NavierStokesReview/evidence/source_tranche_priority_185_rebuttal_adjudication_2026-09-30.json`.
+`../src/audit/priority_185_rebuttal_adjudication_2026-09-30.md`;
+`../evidence/source_tranche_priority_185_rebuttal_adjudication_2026-09-30.json`.
 
 ### Priority 186: source-preserving Fefferman semantic closure
 
 The full word-to-condition network is consolidated in
-[`priority_186_fefferman_full_word_connection_closure_2026-09-30.md`](../NavierStokesReview/src/audit/priority_186_fefferman_full_word_connection_closure_2026-09-30.md)
+[`priority_186_fefferman_full_word_connection_closure_2026-09-30.md`](../src/audit/priority_186_fefferman_full_word_connection_closure_2026-09-30.md)
 and its evidence record
-[`source_tranche_priority_186_fefferman_full_word_connection_closure_2026-09-30.json`](../NavierStokesReview/evidence/source_tranche_priority_186_fefferman_full_word_connection_closure_2026-09-30.json).
+[`source_tranche_priority_186_fefferman_full_word_connection_closure_2026-09-30.json`](../evidence/source_tranche_priority_186_fefferman_full_word_connection_closure_2026-09-30.json).
 
 The audit reads Fefferman's text as a connected mathematical specification.
 “May look for” permits a periodic branch; it does not waive that branch's
@@ -3686,7 +3686,7 @@ manuscript-to-selected-endpoint fidelity. This does not, by itself, prove that
 the connected formal C/D proposition is false. A literal C/D failure requires a
 selected failed condition, selected value mismatch, impossibility theorem, or
 contradiction. See
-[`CMI_OpenAI_Full_Semantic_Crosswalk.md`](CMI_OpenAI_Full_Semantic_Crosswalk.md),
+[`CMI_OpenAI_Full_Semantic_Crosswalk.md`](../../docs/CMI_OpenAI_Full_Semantic_Crosswalk.md),
 Priority 188.
 
 ## Priority 189: source correction on physical wording

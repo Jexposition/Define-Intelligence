@@ -86,3 +86,11 @@ docs-only tree and are linked here for control:
 These are current evidence and audit records, not archive candidates. The
 Priority 205 conclusion is CTR-005: NOT ESTABLISHED, with no selected defect
 or literal CMI failure claimed.
+
+## Current documentation-control pointer: Priority 206 (2026-09-30)
+
+- ../NavierStokesReview/evidence/archive_manifest_and_active_link_gate_2026-09-30.md
+- ../NavierStokesReview/src/audit/priority_206_archive_manifest_and_active_link_gate_2026-09-30.md
+
+Priority 206 records the current archive-manifest and active-link gate. It is
+not a scientific verdict and does not authorise further archive movement.

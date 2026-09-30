@@ -395,3 +395,13 @@ Cartesian observable equality with `(M,I,J,S,C_p)`. The review completion
 selected-witness transport theorem. The controlled status remains
 `CTR-005: NOT ESTABLISHED`; no selected defect, force nonsmoothness, literal
 CMI failure, impossibility, compiler cheat, or `False` is asserted.
+
+## Documentation-control gate: Priority 206 (2026-09-30)
+
+- `archive_manifest_and_active_link_gate_2026-09-30.md`
+- `../src/audit/priority_206_archive_manifest_and_active_link_gate_2026-09-30.md`
+
+This gate records archive-manifest coverage, SHA-256 agreement, repaired
+active evidence links, false-positive parser triage, and the protected-source
+boundary. It is documentation control only and does not change the scientific
+finding `CTR-005: NOT ESTABLISHED`.

@@ -4604,3 +4604,21 @@ value-level theorem.
 The current private audit branch is review/cmi-first-navier-stokes-reconciled-2026-09-30 at local commit 3b6c467. The separate public review branch is review/cmi-first-navier-stokes-disposition-public-2026-09-30 at remote-confirmed commit 5561354.
 
 The three-file control update records the current evidence pointers, fixes the Priority 205 prose insertion, and preserves the archive gate. The protected untracked OpenAI-side path NavierStokes/R3/TestPressure.lean remains untouched, unstaged, and excluded. The next work remains full cross-reference and structural-lint verification, followed by a parent-folder SHA-256 manifest before any non-destructive archive move. No deletion or bulk staging is authorised.
+
+## Priority 206: Archive and active-link control gate (2026-09-30)
+
+- [x] Repair the current evidence dossier's stale relative paths.
+- [x] Recompute SHA-256 hashes for every non-manifest artefact in
+  `docs/archive/` and reconcile them with the archive manifest.
+- [x] Record the gate in the evidence and audit trees.
+- [x] Confirm that `NavierStokes/R3/TestPressure.lean` remains untouched,
+  unstaged, unmoved, and excluded.
+- [ ] Complete the full document-by-document consolidation, cross-reference,
+  source fact-check, and structural-lint pass before any further archive move.
+
+Control records:
+`NavierStokesReview/evidence/archive_manifest_and_active_link_gate_2026-09-30.md`
+and
+`NavierStokesReview/src/audit/priority_206_archive_manifest_and_active_link_gate_2026-09-30.md`.
+This gate changes no scientific disposition: `CTR-005` remains
+`NOT ESTABLISHED`, and no selected defect or literal CMI failure is asserted.

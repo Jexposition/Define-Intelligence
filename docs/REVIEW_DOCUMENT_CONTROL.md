@@ -2462,3 +2462,20 @@ at 3c93afe. The sole untracked path remains the protected
 NavierStokes/R3/TestPressure.lean. It is untouched, unstaged, and excluded.
 No archive move is authorised until the consolidation cross-reference, link/lint
 checks, and parent-folder SHA-256 archive manifest are complete.
+
+## Documentation-control gate: Priority 206 (2026-09-30)
+
+The archive manifest now covers all four non-manifest artefacts currently in
+`docs/archive/`, with recomputed SHA-256 matches. The active evidence dossier
+had nine stale `../NavierStokesReview/...` references; these are now relative
+to its actual `NavierStokesReview/evidence/` location. The remaining
+conservative-checker hits are documented parser false positives from
+angle-bracket absolute Windows paths and LaTeX notation. No deletion or archive
+movement occurred.
+
+The live control records are
+`NavierStokesReview/evidence/archive_manifest_and_active_link_gate_2026-09-30.md`
+and
+`NavierStokesReview/src/audit/priority_206_archive_manifest_and_active_link_gate_2026-09-30.md`.
+The archive gate remains closed until the full document consolidation,
+cross-reference, and fact-check is complete.

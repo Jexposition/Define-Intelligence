@@ -259,3 +259,11 @@ Cartesian velocity, pressure, residual, or force with the manuscript tuple
 pullback identity rather than a selected-witness transport theorem. The
 controlled finding is `CTR-005: NOT ESTABLISHED`, with no stronger refutation
 claim.
+
+## Documentation-control audit: Priority 206 (2026-09-30)
+
+`priority_206_archive_manifest_and_active_link_gate_2026-09-30.md` records
+the archive SHA-256 gate, active-link repair, parser false-positive triage,
+protected-source status, and release pointers. It is a control audit rather
+than a mathematical disposition and leaves `CTR-005: NOT ESTABLISHED`
+unchanged.
