@@ -3244,3 +3244,38 @@ remain for provenance.
   manuscript-to-selected-endpoint fidelity. The current record does not yet
   prove a selected-field moment mismatch, impossibility theorem, failed
   connected CMI condition, or contradiction.
+
+## Priority 197 goal control: source adjudication and safe consolidation
+
+The goal is to falsify unsupported correspondence claims, not to manufacture
+either a defence or a refutation. The current source adjudication is:
+
+- `(M,I,J,S,C_p)` are substantive and load-bearing in the manuscript's
+  profile/correction architecture;
+- the selected exported `Witness` does not yet expose a final selected-field
+  theorem identifying those observables;
+- the manuscript describes several coupled residual-control operations, so the
+  five moments cannot be called the sole cancellation mechanism from the
+  current source;
+- velocity blow-up alone does not prove summandwise divergence, and the
+  selected Lean route derives `force_smooth` through concrete residual-rate,
+  jet, recurrence, limit, and extension declarations;
+- consequently `CTR-005` remains `NOT ESTABLISHED` for complete
+  paper-to-selected-endpoint fidelity, without yet proving a failed literal
+  CMI condition, force nonsmoothness, impossibility, or contradiction.
+
+The untracked corpus is now controlled by a full-worktree reference scan and
+an integrity/disposition matrix:
+
+- `NavierStokesReview/src/audit/untracked_content_inventory.py`;
+- `NavierStokesReview/src/audit/untracked_consolidation_matrix.py`;
+- `NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json`;
+- `NavierStokesReview/evidence/untracked_consolidation_matrix_2026-09-30.json`;
+- `NavierStokesReview/evidence/untracked_consolidation_matrix_2026-09-30.md`.
+
+All 60 entries are integrity-verified and remain on
+`HOLD_NO_STAGE_NO_MOVE`. Before any cleanup, the work must fetch and read the
+documents, compare claims against the canonical paper and audit ledgers,
+record retain/merge/supersede decisions, and update the parent-folder archive
+manifest with old path, new path, reason, and SHA-256. No deletions and no
+bulk staging are permitted.

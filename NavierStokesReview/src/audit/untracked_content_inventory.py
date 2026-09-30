@@ -48,7 +48,7 @@ def category(relative: str) -> tuple[str, str]:
     return "unclassified", "manual-classification-required"
 
 
-def references(repo: Path, basename: str) -> list[str]:
+def tracked_references(repo: Path, basename: str) -> list[str]:
     result = subprocess.run(
         ["git", "-C", str(repo), "grep", "-l", "-F", "--", basename],
         check=False,
@@ -59,6 +59,31 @@ def references(repo: Path, basename: str) -> list[str]:
     if result.returncode not in (0, 1):
         return []
     return [line for line in result.stdout.splitlines() if line]
+
+
+def worktree_references(repo: Path, basename: str) -> list[str]:
+    """Search the complete worktree, including untracked text files.
+
+    The earlier inventory used ``git grep`` only.  That is deliberately kept
+    as a separate compatibility field, but it is insufficient for a
+    consolidation gate because untracked evidence can reference another
+    untracked report.  ripgrep skips binary files and respects the worktree
+    path filter below, so the result is a read-only textual cross-reference.
+    """
+    result = subprocess.run(
+        ["rg", "-l", "-F", "--hidden", "-g", "!.git/**", "--", basename],
+        cwd=repo,
+        check=False,
+        capture_output=True,
+        text=True,
+        errors="replace",
+    )
+    if result.returncode not in (0, 1):
+        return []
+    return sorted(
+        (line.replace("/", "\\") for line in result.stdout.splitlines() if line),
+        key=str.lower,
+    )
 
 
 def main() -> None:
@@ -82,7 +107,8 @@ def main() -> None:
             "binary": is_binary,
             "category": kind,
             "disposition": disposition,
-            "referenced_by_tracked_files": references(repo, Path(relative).name),
+            "referenced_by_tracked_files": tracked_references(repo, Path(relative).name),
+            "referenced_by_worktree_files": worktree_references(repo, Path(relative).name),
         }
         if not is_binary:
             record["line_count"] = data.decode("utf-8", "replace").count("\n") + (1 if data else 0)
@@ -90,7 +116,7 @@ def main() -> None:
 
     records.sort(key=lambda item: item["path"].lower())
     payload = {
-        "schema": "navier-stokes-untracked-content-inventory/v1",
+        "schema": "navier-stokes-untracked-content-inventory/v2",
         "repository": str(repo),
         "git_revision": subprocess.run(
             ["git", "-C", str(repo), "rev-parse", "HEAD"],
@@ -112,15 +138,17 @@ def main() -> None:
         f"Untracked entries: **{len(records)}**",
         "",
         "This is a read-only SHA-256 inventory. It authorises no staging, deletion, or archive move.",
+        "Tracked references preserve the earlier git-only view; worktree references include untracked text evidence.",
         "",
-        "| Path | Bytes | SHA-256 | Category | Disposition | Tracked references |",
-        "| --- | ---: | --- | --- | --- | ---: |",
+        "| Path | Bytes | SHA-256 | Category | Disposition | Tracked refs | Worktree refs |",
+        "| --- | ---: | --- | --- | --- | ---: | ---: |",
     ]
     for item in records:
         lines.append(
             f"| `{item['path']}` | {item['size_bytes']} | `{item['sha256']}` | "
             f"{item['category']} | {item['disposition']} | "
-            f"{len(item['referenced_by_tracked_files'])} |"
+            f"{len(item['referenced_by_tracked_files'])} | "
+            f"{len(item['referenced_by_worktree_files'])} |"
         )
     args.markdown.parent.mkdir(parents=True, exist_ok=True)
     args.markdown.write_text("\n".join(lines) + "\n", encoding="utf-8")

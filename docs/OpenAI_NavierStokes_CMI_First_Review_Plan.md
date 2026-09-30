@@ -4244,3 +4244,42 @@ embedded here as self-invalidating hashes.
   substantive and unresolved at the selected-field boundary, while the
   selected residual-jet route must not be misreported as a free generic-rate
   assumption or as a proven CMI failure.
+
+## Priority 197: rebuttal adjudication and consolidation gate hardening
+
+The latest adversarial rebuttal is not accepted wholesale. The source record
+supports the following precise split:
+
+1. The manuscript treats the five radial equations as load-bearing within its
+   correction architecture. The final selected Lean `Witness` still exports
+   no theorem identifying the complete activated Cartesian fields with
+   `(M,I,J,S,C_p)`.
+2. The manuscript also lists wave-amplitude, covariance/stress,
+   auxiliary-time/angular-mean, pressure, localisation, summation, and
+   higher-order residual operations. Therefore the claim that the five
+   moments are the sole cancellation mechanism is not source-established.
+3. `||u||_infty -> infinity` does not entail divergence of each residual
+   summand. The relevant question is cancellation in the total residual and
+   the proof of its smooth extension.
+4. On the inspected selected path, `force_smooth` is derived through concrete
+   `PhysicalData`, actual stage estimates, finite residual rates,
+   `VanishingJointJets`, residual recurrence, locally uniform limits, and
+   smooth extension. It must not be described as a free `NativeBounds`
+   assumption. This does not close the separate manuscript-fidelity gap.
+5. Keep `CTR-005 = NOT ESTABLISHED` for complete paper-to-selected-endpoint
+   fidelity. Do not promote it to force nonsmoothness, failed CMI compliance,
+   impossibility, or `False` without a connected value-level or mandatory-
+   condition theorem.
+
+The consolidation gate is now hardened by:
+
+- `NavierStokesReview/src/audit/untracked_content_inventory.py`, which records
+  both tracked-only and complete-worktree textual references;
+- `NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json`;
+- `NavierStokesReview/evidence/untracked_consolidation_matrix_2026-09-30.json`;
+- `NavierStokesReview/evidence/untracked_consolidation_matrix_2026-09-30.md`;
+- `NavierStokesReview/src/audit/untracked_consolidation_matrix.py`.
+
+All 60 entries remain `HOLD_NO_STAGE_NO_MOVE` pending manual content review,
+canonical cross-reference, supersession decisions, and SHA-256 manifest
+updates. No deletion, archive move, or bulk staging is authorised.

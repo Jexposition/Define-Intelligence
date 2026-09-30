@@ -1,7 +1,7 @@
 {
-  "schema": "navier-stokes-untracked-content-inventory/v1",
+  "schema": "navier-stokes-untracked-content-inventory/v2",
   "repository": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Define-Intelligence-github",
-  "git_revision": "b122f9258d42de35408569023e86253fc63d8c14",
+  "git_revision": "66fc4b3c685953e412c72d8ae087cb58abffddc3",
   "count": 60,
   "records": [
     {
@@ -20,6 +20,15 @@
         "docs/OpenAI_NavierStokes_CMI_First_Review_Plan.md",
         "docs/REVIEW_AUDIT_WORKSPACE_GOAL.md"
       ],
+      "referenced_by_worktree_files": [
+        "docs\\OpenAI_NavierStokes_CMI_First_Review_Plan.md",
+        "docs\\REVIEW_AUDIT_WORKSPACE_GOAL.md",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md",
+        "NavierStokesReview\\evidence\\worktree_triage_2026-09-29.md",
+        "NavierStokesReview\\src\\audit\\direct_lean_closure.ps1",
+        "NavierStokesReview\\src\\audit\\untracked_content_inventory.py"
+      ],
       "line_count": 4
     },
     {
@@ -32,6 +41,10 @@
       "referenced_by_tracked_files": [
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
+      ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
       ],
       "line_count": 689
     },
@@ -71,6 +84,37 @@
         "docs/REVIEW_MAPPING_METHOD.md",
         "docs/doc_tree.md"
       ],
+      "referenced_by_worktree_files": [
+        "docs\\doc_tree.md",
+        "docs\\OpenAI_NavierStokes_Audit_Tracker.md",
+        "docs\\OpenAI_NavierStokes_CMI_First_Review_Plan.md",
+        "docs\\REPOSITORY_MAP_GUIDE.md",
+        "docs\\REVIEW_AUDIT_WORKSPACE_GOAL.md",
+        "docs\\REVIEW_DOCUMENT_CONTROL.md",
+        "docs\\REVIEW_MAPPING_METHOD.md",
+        "NavierStokesReview\\evidence\\hardened_audit_bundle_2026-09-26.json",
+        "NavierStokesReview\\evidence\\hardened_audit_bundle_2026-09-27.json",
+        "NavierStokesReview\\evidence\\hardened_mapping_method_2026-09-26.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-26.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-27.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-27.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.md",
+        "NavierStokesReview\\evidence\\repository_map_2026-09-26.md",
+        "NavierStokesReview\\evidence\\source_tree_full_logic_map_2026-09-26.json",
+        "NavierStokesReview\\evidence\\source_tree_logic_map_2026-09-26.json",
+        "NavierStokesReview\\evidence\\source_tree_logic_map_2026-09-26.md",
+        "NavierStokesReview\\evidence\\tree_reconciliation_2026-09-26.json",
+        "NavierStokesReview\\evidence\\tree_reconciliation_2026-09-26.md",
+        "NavierStokesReview\\evidence\\tree_reconciliation_2026-09-27.json",
+        "NavierStokesReview\\evidence\\tree_reconciliation_2026-09-27.md",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md",
+        "NavierStokesReview\\evidence\\worktree_triage_2026-09-29.md",
+        "NavierStokesReview\\src\\audit\\run_hardened_audit.ps1"
+      ],
       "line_count": 3044
     },
     {
@@ -84,6 +128,11 @@
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md",
         "NavierStokesReview/evidence/worktree_triage_2026-09-29.md"
+      ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md",
+        "NavierStokesReview\\evidence\\worktree_triage_2026-09-29.md"
       ],
       "line_count": 272
     },
@@ -102,6 +151,18 @@
         "NavierStokesReview/evidence/worktree_triage_2026-09-29.md",
         "docs/REVIEW_AUDIT_WORKSPACE_GOAL.md",
         "docs/doc_tree.md"
+      ],
+      "referenced_by_worktree_files": [
+        "docs\\Define inteligence tree.md",
+        "docs\\doc_tree.md",
+        "docs\\REVIEW_AUDIT_WORKSPACE_GOAL.md",
+        "NavierStokesReview\\evidence\\hardened_audit_bundle_2026-09-26.json",
+        "NavierStokesReview\\evidence\\hardened_audit_bundle_2026-09-27.json",
+        "NavierStokesReview\\evidence\\tree_reconciliation_2026-09-26.json",
+        "NavierStokesReview\\evidence\\tree_reconciliation_2026-09-27.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md",
+        "NavierStokesReview\\evidence\\worktree_triage_2026-09-29.md"
       ],
       "line_count": 51
     },
@@ -156,6 +217,59 @@
         "docs/REVIEW_DOCUMENT_CONTROL.md",
         "docs/oai_nav_strokes_tree.md"
       ],
+      "referenced_by_worktree_files": [
+        "docs\\CMI_OpenAI_Full_Semantic_Crosswalk.md",
+        "docs\\Define inteligence tree.md",
+        "docs\\LEAN_DECLARATION_INDEX.md",
+        "docs\\LEAN_MODULE_EXPLANATIONS.md",
+        "docs\\oai_nav_strokes_tree.md",
+        "docs\\OpenAI_NavierStokes_Audit_Tracker.md",
+        "docs\\OpenAI_NavierStokes_CMI_First_Review_Plan.md",
+        "docs\\REPOSITORY_ARCHITECTURE_ATLAS.md",
+        "docs\\REPOSITORY_ARCHITECTURE_MAP.html",
+        "docs\\REPOSITORY_ARCHITECTURE_MAP.tex",
+        "docs\\REPOSITORY_MODULE_ATLAS.md",
+        "docs\\REPOSITORY_SEMANTIC_COVERAGE_REGISTER.html",
+        "docs\\REPOSITORY_SEMANTIC_COVERAGE_REGISTER.json",
+        "docs\\REPOSITORY_SEMANTIC_COVERAGE_REGISTER.md",
+        "docs\\REVIEW_AUDIT_WORKSPACE_GOAL.md",
+        "docs\\REVIEW_DOCUMENT_CONTROL.md",
+        "NavierStokesReview\\evidence\\current_lean_docs_audit_2026-09-26.md",
+        "NavierStokesReview\\evidence\\external_source_profile_full_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_audit_bundle_2026-09-26.json",
+        "NavierStokesReview\\evidence\\hardened_audit_bundle_2026-09-27.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-27.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\priority_164_direct_cmi_alternative_c_proof_2026-09-29.json",
+        "NavierStokesReview\\evidence\\priority_164_direct_cmi_alternative_c_proof_2026-09-29.md",
+        "NavierStokesReview\\evidence\\repository_audit_graph_2026-09-26.json",
+        "NavierStokesReview\\evidence\\repository_map_2026-09-26.md",
+        "NavierStokesReview\\evidence\\repository_map_2026-09-26.tex",
+        "NavierStokesReview\\evidence\\selected_endpoint_source_census_2026-09-27.json",
+        "NavierStokesReview\\evidence\\semantic_coverage_register_2026-09-27.html",
+        "NavierStokesReview\\evidence\\semantic_coverage_register_2026-09-27.json",
+        "NavierStokesReview\\evidence\\semantic_coverage_register_2026-09-27.md",
+        "NavierStokesReview\\evidence\\semantic_coverage_register_full_2026-09-27.html",
+        "NavierStokesReview\\evidence\\semantic_coverage_register_full_2026-09-27.json",
+        "NavierStokesReview\\evidence\\semantic_coverage_register_full_2026-09-27.md",
+        "NavierStokesReview\\evidence\\semantic_coverage_register_full_2026-09-28.html",
+        "NavierStokesReview\\evidence\\semantic_coverage_register_full_2026-09-28.json",
+        "NavierStokesReview\\evidence\\semantic_coverage_register_full_2026-09-28.md",
+        "NavierStokesReview\\evidence\\semantic_coverage_register_full_2026-09-29.html",
+        "NavierStokesReview\\evidence\\semantic_coverage_register_full_2026-09-29.json",
+        "NavierStokesReview\\evidence\\semantic_coverage_register_full_2026-09-29.md",
+        "NavierStokesReview\\evidence\\source_tranche_full_cmi_dependency_crosswalk_2026-09-29.json",
+        "NavierStokesReview\\evidence\\source_tree_full_logic_map_2026-09-26.json",
+        "NavierStokesReview\\evidence\\source_tree_logic_map_2026-09-26.json",
+        "NavierStokesReview\\evidence\\tree_reconciliation_2026-09-26.json",
+        "NavierStokesReview\\evidence\\tree_reconciliation_2026-09-27.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md",
+        "NavierStokesReview\\evidence\\worktree_triage_2026-09-29.md",
+        "NavierStokesReview\\src\\audit\\priority_163_full_cmi_dependency_crosswalk_adjudication_2026-09-29.md",
+        "NavierStokesReview\\src\\audit\\untracked_content_inventory.py"
+      ],
       "line_count": 19
     },
     {
@@ -174,6 +288,16 @@
         "docs/OpenAI_NavierStokes_Audit_Tracker.md",
         "docs/OpenAI_NavierStokes_CMI_First_Review_Plan.md",
         "docs/REVIEW_AUDIT_WORKSPACE_GOAL.md"
+      ],
+      "referenced_by_worktree_files": [
+        "docs\\OpenAI_NavierStokes_Audit_Tracker.md",
+        "docs\\OpenAI_NavierStokes_CMI_First_Review_Plan.md",
+        "docs\\REVIEW_AUDIT_WORKSPACE_GOAL.md",
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
       ],
       "line_count": 91
     },
@@ -197,6 +321,21 @@
         "docs/OpenAI_NavierStokes_Peer_Review_v1.md",
         "docs/archive/OpenAI_NavierStokes_Research_Paper_with_dossier_2026-09-30.md"
       ],
+      "referenced_by_worktree_files": [
+        "docs\\archive\\OpenAI_NavierStokes_Research_Paper_with_dossier_2026-09-30.md",
+        "docs\\OpenAI_NavierStokes_Audit_Tracker.md",
+        "docs\\OpenAI_NavierStokes_CMI_First_Review_Plan.md",
+        "docs\\OpenAI_NavierStokes_Peer_Review_v1.md",
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_audit_bundle_2026-09-27.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-27.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\research_paper_evidence_dossier_2026-09-30.md",
+        "NavierStokesReview\\evidence\\tree_reconciliation_2026-09-27.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
+      ],
       "line_count": 210
     },
     {
@@ -212,6 +351,12 @@
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
       ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
+      ],
       "line_count": 0
     },
     {
@@ -226,6 +371,12 @@
         "NavierStokesReview/evidence/hardened_source_map_2026-09-29.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
+      ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
       ],
       "line_count": 3490
     },
@@ -243,6 +394,13 @@
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
       ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
+      ],
       "line_count": 119
     },
     {
@@ -259,6 +417,13 @@
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
       ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
+      ],
       "line_count": 37
     },
     {
@@ -274,6 +439,15 @@
         "NavierStokesReview/evidence/hardened_source_map_2026-09-29.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
+      ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\cutoff_commutator_debug2_2026-09-27.json",
+        "NavierStokesReview\\evidence\\cutoff_commutator_debug2_2026-09-27.md",
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
       ]
     },
     {
@@ -289,6 +463,13 @@
         "NavierStokesReview/evidence/hardened_source_map_2026-09-29.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
+      ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
       ],
       "line_count": 6
     },
@@ -306,6 +487,13 @@
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
       ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
+      ],
       "line_count": 136
     },
     {
@@ -322,6 +510,13 @@
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
       ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
+      ],
       "line_count": 38
     },
     {
@@ -337,6 +532,15 @@
         "NavierStokesReview/evidence/hardened_source_map_2026-09-29.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
+      ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\cutoff_commutator_debug3_2026-09-27.json",
+        "NavierStokesReview\\evidence\\cutoff_commutator_debug3_2026-09-27.md",
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
       ]
     },
     {
@@ -352,6 +556,13 @@
         "NavierStokesReview/evidence/hardened_source_map_2026-09-29.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
+      ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
       ],
       "line_count": 5
     },
@@ -369,6 +580,13 @@
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
       ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
+      ],
       "line_count": 119
     },
     {
@@ -385,6 +603,13 @@
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
       ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
+      ],
       "line_count": 37
     },
     {
@@ -400,6 +625,15 @@
         "NavierStokesReview/evidence/hardened_source_map_2026-09-29.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
+      ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\cutoff_commutator_debug_2026-09-27.json",
+        "NavierStokesReview\\evidence\\cutoff_commutator_debug_2026-09-27.md",
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
       ]
     },
     {
@@ -415,6 +649,13 @@
         "NavierStokesReview/evidence/hardened_source_map_2026-09-29.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
+      ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
       ],
       "line_count": 20
     },
@@ -432,6 +673,13 @@
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
       ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
+      ],
       "line_count": 616
     },
     {
@@ -447,6 +695,13 @@
         "NavierStokesReview/evidence/hardened_source_map_2026-09-29.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
+      ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
       ],
       "line_count": 64
     },
@@ -465,6 +720,17 @@
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md",
         "NavierStokesReview/src/audit/cutoff_commutator_scan.py",
         "docs/OpenAI_NavierStokes_Audit_Tracker.md"
+      ],
+      "referenced_by_worktree_files": [
+        "docs\\OpenAI_NavierStokes_Audit_Tracker.md",
+        "NavierStokesReview\\evidence\\cutoff_commutator_deep_2026-09-27.json",
+        "NavierStokesReview\\evidence\\cutoff_commutator_deep_2026-09-27.md",
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md",
+        "NavierStokesReview\\src\\audit\\cutoff_commutator_scan.py"
       ]
     },
     {
@@ -480,6 +746,13 @@
         "NavierStokesReview/evidence/hardened_source_map_2026-09-29.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
+      ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
       ],
       "line_count": 10
     },
@@ -497,6 +770,13 @@
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
       ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
+      ],
       "line_count": 240
     },
     {
@@ -513,6 +793,13 @@
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
       ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
+      ],
       "line_count": 40
     },
     {
@@ -528,6 +815,15 @@
         "NavierStokesReview/evidence/hardened_source_map_2026-09-29.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
+      ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\cutoff_commutator_deep_test.json",
+        "NavierStokesReview\\evidence\\cutoff_commutator_deep_test.md",
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
       ]
     },
     {
@@ -543,6 +839,15 @@
         "NavierStokesReview/evidence/hardened_source_map_2026-09-29.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
+      ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\cutoff_commutator_profile_scan_2026-09-27.json",
+        "NavierStokesReview\\evidence\\cutoff_commutator_profile_scan_2026-09-27.md",
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
       ]
     },
     {
@@ -558,6 +863,13 @@
         "NavierStokesReview/evidence/hardened_source_map_2026-09-29.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
+      ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
       ],
       "line_count": 34
     },
@@ -575,6 +887,13 @@
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
       ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
+      ],
       "line_count": 776
     },
     {
@@ -590,6 +909,13 @@
         "NavierStokesReview/evidence/hardened_source_map_2026-09-29.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
+      ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
       ],
       "line_count": 36
     },
@@ -607,6 +933,13 @@
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
       ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
+      ],
       "line_count": 17045
     },
     {
@@ -623,6 +956,13 @@
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
       ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
+      ],
       "line_count": 35
     },
     {
@@ -637,6 +977,12 @@
         "NavierStokesReview/evidence/hardened_source_map_2026-09-29.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
+      ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
       ],
       "line_count": 106
     },
@@ -661,6 +1007,24 @@
         "docs/REVIEW_DOCUMENT_CONTROL.md",
         "docs/archive/OpenAI_NavierStokes_Research_Paper_with_dossier_2026-09-30.md"
       ],
+      "referenced_by_worktree_files": [
+        "docs\\archive\\OpenAI_NavierStokes_Research_Paper_with_dossier_2026-09-30.md",
+        "docs\\OpenAI_NavierStokes_Audit_Tracker.md",
+        "docs\\OpenAI_NavierStokes_CMI_First_Review_Plan.md",
+        "docs\\OpenAI_NavierStokes_Peer_Review_v1.md",
+        "docs\\REVIEW_AUDIT_WORKSPACE_GOAL.md",
+        "docs\\REVIEW_DOCUMENT_CONTROL.md",
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\global_cross_layer_audit_2026-09-27.md",
+        "NavierStokesReview\\evidence\\hardened_audit_bundle_2026-09-27.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-27.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\research_paper_evidence_dossier_2026-09-30.md",
+        "NavierStokesReview\\evidence\\tree_reconciliation_2026-09-27.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
+      ],
       "line_count": 47
     },
     {
@@ -681,6 +1045,18 @@
         "docs/OpenAI_NavierStokes_CMI_First_Review_Plan.md",
         "docs/REVIEW_DOCUMENT_CONTROL.md",
         "docs/archive/OpenAI_NavierStokes_Research_Paper_with_dossier_2026-09-30.md"
+      ],
+      "referenced_by_worktree_files": [
+        "docs\\archive\\OpenAI_NavierStokes_Research_Paper_with_dossier_2026-09-30.md",
+        "docs\\OpenAI_NavierStokes_Audit_Tracker.md",
+        "docs\\OpenAI_NavierStokes_CMI_First_Review_Plan.md",
+        "docs\\REVIEW_DOCUMENT_CONTROL.md",
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\research_paper_evidence_dossier_2026-09-30.md",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
       ],
       "line_count": 54
     },
@@ -704,6 +1080,20 @@
         "docs/REVIEW_DOCUMENT_CONTROL.md",
         "docs/archive/OpenAI_NavierStokes_Research_Paper_with_dossier_2026-09-30.md"
       ],
+      "referenced_by_worktree_files": [
+        "docs\\archive\\OpenAI_NavierStokes_Research_Paper_with_dossier_2026-09-30.md",
+        "docs\\OpenAI_NavierStokes_Audit_Tracker.md",
+        "docs\\OpenAI_NavierStokes_CMI_First_Review_Plan.md",
+        "docs\\OpenAI_NavierStokes_Peer_Review_v1.md",
+        "docs\\REVIEW_DOCUMENT_CONTROL.md",
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-27.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\research_paper_evidence_dossier_2026-09-30.md",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
+      ],
       "line_count": 138
     },
     {
@@ -720,6 +1110,14 @@
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
       ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-27.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
+      ],
       "line_count": 304
     },
     {
@@ -735,6 +1133,14 @@
         "NavierStokesReview/evidence/hardened_source_map_2026-09-29.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
+      ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-27.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
       ],
       "line_count": 47
     },
@@ -758,6 +1164,22 @@
         "docs/REVIEW_AUDIT_WORKSPACE_GOAL.md",
         "docs/REVIEW_DOCUMENT_CONTROL.md"
       ],
+      "referenced_by_worktree_files": [
+        "docs\\OpenAI_NavierStokes_CMI_First_Review_Plan.md",
+        "docs\\REVIEW_AUDIT_WORKSPACE_GOAL.md",
+        "docs\\REVIEW_DOCUMENT_CONTROL.md",
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_audit_bundle_2026-09-27.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-27.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\tree_reconciliation_2026-09-27.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md",
+        "NavierStokesReview\\src\\audit\\priority_0_1_source_review_2026-09-27.md",
+        "NavierStokesReview\\src\\audit\\priority_93_limits_debt_lifespan_reindex_pulse_flux_source_review_2026-09-28.md",
+        "NavierStokesReview\\src\\audit\\priority_96_core_support_pressure_recovery_localization_source_review_2026-09-28.md"
+      ],
       "line_count": 1556340
     },
     {
@@ -773,6 +1195,16 @@
         "NavierStokesReview/evidence/hardened_source_map_2026-09-29.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
+      ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_audit_bundle_2026-09-27.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-27.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\tree_reconciliation_2026-09-27.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
       ],
       "line_count": 28
     },
@@ -792,6 +1224,15 @@
         "docs/OpenAI_NavierStokes_Audit_Tracker.md",
         "docs/REVIEW_DOCUMENT_CONTROL.md"
       ],
+      "referenced_by_worktree_files": [
+        "docs\\OpenAI_NavierStokes_Audit_Tracker.md",
+        "docs\\REVIEW_DOCUMENT_CONTROL.md",
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
+      ],
       "line_count": 31
     },
     {
@@ -807,6 +1248,13 @@
         "NavierStokesReview/evidence/hardened_source_map_2026-09-29.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
+      ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
       ],
       "line_count": 3340
     },
@@ -825,6 +1273,14 @@
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md",
         "docs/OpenAI_NavierStokes_Audit_Tracker.md"
       ],
+      "referenced_by_worktree_files": [
+        "docs\\OpenAI_NavierStokes_Audit_Tracker.md",
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
+      ],
       "line_count": 23
     },
     {
@@ -842,6 +1298,14 @@
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md",
         "docs/OpenAI_NavierStokes_Audit_Tracker.md"
       ],
+      "referenced_by_worktree_files": [
+        "docs\\OpenAI_NavierStokes_Audit_Tracker.md",
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
+      ],
       "line_count": 34
     },
     {
@@ -858,6 +1322,14 @@
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md",
         "NavierStokesReview/src/audit/transformation_pipeline_audit_2026-09-27.md"
+      ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md",
+        "NavierStokesReview\\src\\audit\\transformation_pipeline_audit_2026-09-27.md"
       ],
       "line_count": 311440
     },
@@ -880,6 +1352,18 @@
         "NavierStokesReview/src/audit/semantic_coverage_register.py",
         "docs/REPOSITORY_SEMANTIC_COVERAGE_REGISTER.json"
       ],
+      "referenced_by_worktree_files": [
+        "docs\\REPOSITORY_SEMANTIC_COVERAGE_REGISTER.json",
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\semantic_coverage_register_full_2026-09-29.json",
+        "NavierStokesReview\\evidence\\source_tranche_priority_175_lexical_bridge_candidate_classification_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md",
+        "NavierStokesReview\\src\\audit\\priority_175_lexical_bridge_candidate_classification_2026-09-29.md",
+        "NavierStokesReview\\src\\audit\\semantic_coverage_register.py"
+      ],
       "line_count": 34
     },
     {
@@ -896,6 +1380,13 @@
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
       ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
+      ],
       "line_count": 298
     },
     {
@@ -911,6 +1402,13 @@
         "NavierStokesReview/evidence/hardened_source_map_2026-09-29.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
+      ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
       ],
       "line_count": 37
     },
@@ -935,6 +1433,22 @@
         "docs/REVIEW_DOCUMENT_CONTROL.md",
         "docs/archive/OpenAI_NavierStokes_Research_Paper_with_dossier_2026-09-30.md"
       ],
+      "referenced_by_worktree_files": [
+        "docs\\archive\\OpenAI_NavierStokes_Research_Paper_with_dossier_2026-09-30.md",
+        "docs\\OpenAI_NavierStokes_Audit_Tracker.md",
+        "docs\\OpenAI_NavierStokes_CMI_First_Review_Plan.md",
+        "docs\\OpenAI_NavierStokes_Peer_Review_v1.md",
+        "docs\\REVIEW_DOCUMENT_CONTROL.md",
+        "NavierStokesReview\\evidence\\claim_cross_examination_2026-09-27.md",
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-27.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\research_paper_evidence_dossier_2026-09-30.md",
+        "NavierStokesReview\\evidence\\source_tranche_priority_180_selected_field_boundary_rebuttal_adjudication_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
+      ],
       "line_count": 352
     },
     {
@@ -950,6 +1464,13 @@
         "NavierStokesReview/evidence/hardened_source_map_2026-09-29.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
+      ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
       ],
       "line_count": 1
     },
@@ -969,6 +1490,15 @@
         "docs/OpenAI_NavierStokes_CMI_First_Review_Plan.md",
         "docs/REVIEW_DOCUMENT_CONTROL.md"
       ],
+      "referenced_by_worktree_files": [
+        "docs\\OpenAI_NavierStokes_CMI_First_Review_Plan.md",
+        "docs\\REVIEW_DOCUMENT_CONTROL.md",
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
+      ],
       "line_count": 66961
     },
     {
@@ -984,6 +1514,13 @@
         "NavierStokesReview/evidence/hardened_source_map_2026-09-29.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
+      ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
       ],
       "line_count": 2876
     },
@@ -1003,6 +1540,16 @@
         "NavierStokesReview/src/audit/r3_analytical_module_classification_2026-09-27.md",
         "NavierStokesReview/src/audit/review_side_completion_bridge_reaudit_2026-09-27.md",
         "docs/OpenAI_NavierStokes_CMI_First_Review_Plan.md"
+      ],
+      "referenced_by_worktree_files": [
+        "docs\\OpenAI_NavierStokes_CMI_First_Review_Plan.md",
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md",
+        "NavierStokesReview\\src\\audit\\r3_analytical_module_classification_2026-09-27.md",
+        "NavierStokesReview\\src\\audit\\review_side_completion_bridge_reaudit_2026-09-27.md"
       ],
       "line_count": 1
     },
@@ -1033,6 +1580,26 @@
         "docs/SEMANTIC_CORRESPONDENCE_MAP.md",
         "docs/archive/OpenAI_NavierStokes_Research_Paper_with_dossier_2026-09-30.md"
       ],
+      "referenced_by_worktree_files": [
+        "docs\\archive\\OpenAI_NavierStokes_Research_Paper_with_dossier_2026-09-30.md",
+        "docs\\OpenAI_NavierStokes_Audit_Tracker.md",
+        "docs\\OpenAI_NavierStokes_CMI_First_Review_Plan.md",
+        "docs\\OpenAI_NavierStokes_Peer_Review_v1.md",
+        "docs\\REPOSITORY_ARCHITECTURE_MAP.md",
+        "docs\\REVIEW_AUDIT_WORKSPACE_GOAL.md",
+        "docs\\REVIEW_DOCUMENT_CONTROL.md",
+        "docs\\SEMANTIC_CORRESPONDENCE_MAP.md",
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\research_paper_evidence_dossier_2026-09-30.md",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md",
+        "NavierStokesReview\\src\\audit\\priority_69_annular_axis_copy_flux_reset_cone_propagator_source_review_2026-09-28.md",
+        "NavierStokesReview\\src\\audit\\priority_89_moment_repair_stress_alias_curl_source_review_2026-09-28.md",
+        "NavierStokesReview\\src\\audit\\r3_analytical_module_classification_2026-09-27.md",
+        "NavierStokesReview\\src\\audit\\review_side_completion_bridge_reaudit_2026-09-27.md"
+      ],
       "line_count": 70580
     },
     {
@@ -1052,6 +1619,16 @@
         "NavierStokesReview/src/audit/review_side_completion_bridge_reaudit_2026-09-27.md",
         "docs/OpenAI_NavierStokes_CMI_First_Review_Plan.md"
       ],
+      "referenced_by_worktree_files": [
+        "docs\\OpenAI_NavierStokes_CMI_First_Review_Plan.md",
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md",
+        "NavierStokesReview\\src\\audit\\r3_analytical_module_classification_2026-09-27.md",
+        "NavierStokesReview\\src\\audit\\review_side_completion_bridge_reaudit_2026-09-27.md"
+      ],
       "line_count": 2864
     },
     {
@@ -1070,6 +1647,17 @@
         "docs/OpenAI_NavierStokes_Audit_Tracker.md",
         "docs/OpenAI_NavierStokes_CMI_First_Review_Plan.md"
       ],
+      "referenced_by_worktree_files": [
+        "docs\\OpenAI_NavierStokes_Audit_Tracker.md",
+        "docs\\OpenAI_NavierStokes_CMI_First_Review_Plan.md",
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_audit_bundle_2026-09-27.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-27.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
+      ],
       "line_count": 39609
     },
     {
@@ -1085,6 +1673,15 @@
         "NavierStokesReview/evidence/hardened_source_map_2026-09-29.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
         "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md"
+      ],
+      "referenced_by_worktree_files": [
+        "NavierStokesReview\\evidence\\evidence_tree.md",
+        "NavierStokesReview\\evidence\\hardened_audit_bundle_2026-09-27.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-27.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-28.json",
+        "NavierStokesReview\\evidence\\hardened_source_map_2026-09-29.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.json",
+        "NavierStokesReview\\evidence\\untracked_content_inventory_2026-09-30.md"
       ],
       "line_count": 48
     }
