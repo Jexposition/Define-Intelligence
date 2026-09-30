@@ -41,10 +41,9 @@ The only private untracked path remains
 unmoved, and excluded from the archive and review commits. No Lean, Lake,
 Elan, Git, or dotnet build process was running in the final process check.
 
-Private commit: `3cc2274` (`Repair active evidence links and record archive gate`).
-
-Public mirror commit: `a13b0ae` (`Repair active evidence links and record archive gate`), pushed
-to `review/cmi-first-navier-stokes-disposition-public-2026-09-30`.
+The private and public branch names are recorded above. Exact commit tips are
+deliberately read from Git during release checks rather than duplicated in a
+living evidence record.
 
 ## Scientific disposition unchanged
 

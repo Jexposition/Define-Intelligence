@@ -29,10 +29,9 @@ inspected production closure.
 
 ## Release record
 
-Private: `3cc2274`.
-
-Public mirror: `a13b0ae`, pushed to
-`review/cmi-first-navier-stokes-disposition-public-2026-09-30`.
+Private and public branch names are recorded in the control documents. Exact
+commit tips are read from Git during release checks rather than duplicated in
+this audit record.
 
 The archive gate remains closed for additional moves until the full
 document-consolidation cross-reference and fact-check is complete.

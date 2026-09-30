@@ -2455,10 +2455,10 @@ does not establish a selected nonzero defect, force nonsmoothness, literal CMI
 failure, impossibility, a compiler escape, or False.
 
 Release control is current: private branch
-review/cmi-first-navier-stokes-reconciled-2026-09-30 is locally at 23dfddc
-with private push still unconfirmed; public branch
-review/cmi-first-navier-stokes-disposition-public-2026-09-30 is remote-confirmed
-at 06a0774. The sole untracked path remains the protected
+`review/cmi-first-navier-stokes-reconciled-2026-09-30` remains local with its
+private push unconfirmed; public branch
+`review/cmi-first-navier-stokes-disposition-public-2026-09-30` is remote-confirmed.
+Exact tips are recorded by the release check. The sole untracked path remains the protected
 NavierStokes/R3/TestPressure.lean. It is untouched, unstaged, and excluded.
 No archive move is authorised until the consolidation cross-reference, link/lint
 checks, and parent-folder SHA-256 archive manifest are complete.
