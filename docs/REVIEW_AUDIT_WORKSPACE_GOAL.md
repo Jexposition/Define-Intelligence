@@ -3279,3 +3279,32 @@ documents, compare claims against the canonical paper and audit ledgers,
 record retain/merge/supersede decisions, and update the parent-folder archive
 manifest with old path, new path, reason, and SHA-256. No deletions and no
 bulk staging are permitted.
+
+## Priority 198 goal control: no circularity claim without a source theorem
+
+The latest adversarial claim is source-adjudicated in
+`NavierStokesReview/src/audit/priority_198_latest_rebuttal_adjudication_2026-09-30.md`.
+The goal is not to defend OpenAI and not to manufacture a refutation. It is to
+test the complete connected mathematical claim against the manuscript and the
+selected Lean path.
+
+Preserve these distinctions in every future report:
+
+- `(M,I,J,S,Cp)` are real load-bearing manuscript correction data;
+- their final selected Cartesian-field identification is not exported by the
+  inspected `Witness` contract;
+- the manuscript describes four coupled residual-control operations, so the
+  five moments are not source-proven to be the sole cancellation mechanism;
+- `||u||∞ → ∞` does not prove that each residual summand diverges;
+- `force_smooth` is not shown to be a free `NativeBounds` assumption on the
+  selected path, because the source derives it through actual physical data,
+  residual rates, vanishing jets, recurrence, locally uniform limits, and smooth
+  extension;
+- the current verdict is `CTR-005: NOT ESTABLISHED` for complete
+  manuscript-to-selected-endpoint fidelity, not a proven failed CMI condition.
+
+The eight manually reviewed evidence entries are listed in
+`NavierStokesReview/evidence/latest_rebuttal_manual_review_tranche_2026-09-30.md`.
+The remaining untracked corpus must be reviewed and cross-referenced before
+any archive move or scoped staging. No deletion, bulk staging, or OpenAI source
+edit is authorised.

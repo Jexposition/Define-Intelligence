@@ -1,0 +1,28 @@
+{
+  "schema": "navier-stokes-latest-rebuttal-manual-review/v1",
+  "date": "2026-09-30",
+  "status": "reviewed_no_stage_no_move",
+  "source_adjudication": {
+    "valid": [
+      "The manuscript treats (M,I,J,S,Cp) as substantive correction data.",
+      "The exported Witness lacks an explicit final selected-field equality identifying those observables.",
+      "Complete manuscript-to-selected-endpoint fidelity remains CTR-005 NOT ESTABLISHED."
+    ],
+    "unsupported_strengthenings": [
+      "The five moments are the sole cancellation mechanism.",
+      "Velocity blow-up implies divergence of every residual summand.",
+      "force_smooth is circular merely because Witness lacks a named moment tuple.",
+      "The selected force or connected CMI proposition is thereby already disproved."
+    ]
+  },
+  "entries": [
+    {"path":"NavierStokesReview/evidence/selected_transport_audit_2026-09-28.md","sha256":"c34bb2f8d61372c1e1c7890b71c08e3fd052b3e5ffcaef93e638f869b9a6fec6","disposition":"retain_pending_final_crossref"},
+    {"path":"NavierStokesReview/evidence/selected_transport_bridge_inventory_2026-09-27.md","sha256":"bbaf99d854234298242c175318092c597a5a591bea88f78425b9cd550aef0bfd","disposition":"retain_pending_final_crossref"},
+    {"path":"NavierStokesReview/evidence/selected_endpoint_source_census_2026-09-27.md","sha256":"6aebb21e85ad42a1c4aa47dfdd02706fed50e422ef6f1218fc3bd9be16d30bec","disposition":"retain_pending_final_crossref"},
+    {"path":"NavierStokesReview/evidence/global_cross_layer_audit_2026-09-27.md","sha256":"dcc6aa215b49ae97f3f27c9d157cf9a86bfee634702325a6398fb91bff16b1d0","disposition":"retain_pending_final_crossref"},
+    {"path":"NavierStokesReview/evidence/reachable_moment_transport_declarations_2026-09-27.txt","sha256":"e7c8e908f8868adc63ab511f71c515dd6eee349a4aa86786d61475052f92eb3f","disposition":"retain_as_triage_only"},
+    {"path":"NavierStokesReview/evidence/claim_cross_examination_2026-09-27.md","sha256":"4e4245fa076ff0ea6b4547b92573eb28464265939f6b6855cdb843f441f5f46e","disposition":"retain_pending_final_crossref"},
+    {"path":"NavierStokesReview/evidence/cutoff_commutator_deep_2026-09-27.md","sha256":"65232e9179cbdfff92885da415f99a75e814d7e236595be0d6f027697ac4b44b","disposition":"retain_diagnostic_only"},
+    {"path":"NavierStokesReview/evidence/hardened_source_map_2026-09-27.md","sha256":"e615f33a63103538cb90735f38f580c7193a38f9437cfa3dd79883b6c467f433","disposition":"retain_pending_environment_check"}
+  ]
+}

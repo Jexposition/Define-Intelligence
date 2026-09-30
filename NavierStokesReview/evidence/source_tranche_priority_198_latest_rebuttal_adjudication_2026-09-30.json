@@ -1,0 +1,35 @@
+{
+  "schema": "navier-stokes-source-tranche/v1",
+  "priority": 198,
+  "date": "2026-09-30",
+  "status": "source_adjudicated_no_final_refutation",
+  "question": "Whether omission of a final selected-field five-moment equality proves circular force smoothness or failed CMI compliance",
+  "sources": {
+    "manuscript": "docs/navier-stokes openai.txt:109-124,253-261,695-735",
+    "endpoint": "NavierStokes/ActualCandidateAssembly.lean:1079-1098,1121-1151,1177-1185",
+    "residual_rates": "NavierStokes/ActualCycleResidualBounds.lean:1015-1037,1142-1171,1190-1206",
+    "force_extension": "NavierStokes/CandidateFromLimits.lean:39-55,80-112",
+    "assembly": "NavierStokes/GermCandidateAssembly.lean:146-158,164-304"
+  },
+  "supported": [
+    "The manuscript gives (M,I,J,S,Cp) a substantive role in its correction architecture.",
+    "The exported Witness lacks a final selected-field equality identifying those observables.",
+    "Complete manuscript-to-selected-endpoint fidelity remains CTR-005 NOT ESTABLISHED."
+  ],
+  "not_supported": [
+    "The five moments are the sole residual-cancellation mechanism.",
+    "Velocity blow-up implies divergence of every residual summand.",
+    "force_smooth is circular merely because Witness lacks a named moment tuple.",
+    "The selected force is nonsmooth or the connected CMI proposition is false."
+  ],
+  "selected_path": [
+    "PhysicalData",
+    "actualStageEstimates",
+    "finite_residual_rates",
+    "VanishingJointJets",
+    "boundaryLimits_locallyUniform",
+    "tracedResidual_smooth",
+    "force_smooth"
+  ],
+  "verdict": "CTR-005 NOT ESTABLISHED; no selected mismatch, impossibility theorem, failed connected CMI condition, or False established"
+}

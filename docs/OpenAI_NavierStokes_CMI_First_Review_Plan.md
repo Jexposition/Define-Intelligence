@@ -4283,3 +4283,31 @@ The consolidation gate is now hardened by:
 All 60 entries remain `HOLD_NO_STAGE_NO_MOVE` pending manual content review,
 canonical cross-reference, supersession decisions, and SHA-256 manifest
 updates. No deletion, archive move, or bulk staging is authorised.
+
+## Priority 198: latest rebuttal source adjudication
+
+The latest source-checked rebuttal is recorded in
+`NavierStokesReview/src/audit/priority_198_latest_rebuttal_adjudication_2026-09-30.md`
+and
+`NavierStokesReview/evidence/source_tranche_priority_198_latest_rebuttal_adjudication_2026-09-30.json`.
+The reviewed evidence tranche is recorded in
+`NavierStokesReview/evidence/latest_rebuttal_manual_review_tranche_2026-09-30.md`
+and its JSON companion.
+
+The controlled conclusion is deliberately two-sided:
+
+1. `(M,I,J,S,Cp)` are substantive and load-bearing manuscript correction data;
+2. the selected `Witness` still lacks a final selected-field identification
+   with those observables;
+3. the manuscript lists several coupled residual-control operations, so the
+   five moments must not be called the sole cancellation route;
+4. velocity blow-up does not imply divergence of every residual summand;
+5. the inspected Lean path derives `force_smooth` through concrete physical
+   data, residual rates, vanishing jets, recurrence, limits, and smooth
+   extension;
+6. `CTR-005: NOT ESTABLISHED` remains the correct complete-fidelity status,
+   without a proven force nonsmoothness result, failed connected CMI condition,
+   impossibility theorem, or `False`.
+
+The remaining 60-entry corpus stays on `HOLD_NO_STAGE_NO_MOVE`. Manual review
+must continue from the tranche ledger before any archive move or scoped staging.
