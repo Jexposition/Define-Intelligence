@@ -26,18 +26,30 @@ be read as a theorem or import-graph result.
 
 ## Index update after the snapshot
 
-The top-level `NavierStokesReview/src/src_tree.md` now explicitly indexes five
-live artefacts that were absent from the snapshot comparison:
+The top-level `NavierStokesReview/src/src_tree.md` now explicitly indexes the
+earlier five live artefacts that were absent from the snapshot comparison,
+plus the Priority 210 selected-endpoint replay and its five direct probes:
 
 - `src/audit/priority_201_selected_closure_census_2026-09-30.md`
 - `src/audit/priority_202_actual_moment_invariant_trace_2026-09-30.md`
 - `src/audit/priority_203_internal_to_endpoint_crossfile_trace_2026-09-30.md`
 - `src/audit/priority_204_workspace_source_record_reconciliation_2026-09-30.md`
 - `src/probes/ActualMomentPreservationTrace.lean`
+- `src/audit/priority_210_selected_endpoint_probe_replay_2026-09-30.md`
+- `src/probes/SelectedMomentBridgeAudit.lean`
+- `src/probes/SelectedWitnessPathProbe.lean`
+- `src/probes/SelectedWitnessEndpointResidualProbe.lean`
+- `src/probes/SelectedForceOriginCompositionProbe.lean`
+- `src/probes/SelectedDependencyAxiomProbe.lean`
 
 The snapshot counts above remain historical counts from the reconciliation run;
 this delta records the deliberate index correction without rewriting the older
 comparison lists.
+
+Priority 210 is a direct replay record, not a new semantic escalation. Its
+five probes compile after the missing cached closure module is restored, and
+the resulting scientific status remains `CTR-005: NOT ESTABLISHED` for the
+complete paper-to-selected-endpoint correspondence.
 
 ## Evidence files not represented in `evidence_tree.md`
 

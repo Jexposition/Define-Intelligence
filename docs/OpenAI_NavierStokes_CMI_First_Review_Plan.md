@@ -1,5 +1,20 @@
 # CMI-first review plan: OpenAI Navier–Stokes claim
 
+## Probe replay checkpoint: Priority 210 (2026-09-30)
+
+The current selected-path replay is documented in
+`NavierStokesReview/evidence/priority_210_selected_endpoint_probe_replay_2026-09-30.md`
+and
+`NavierStokesReview/src/audit/priority_210_selected_endpoint_probe_replay_2026-09-30.md`.
+The probes now compile after direct closure compilation of
+`NavierStokes.LocalScheduleWitness`. The result must be carried forward as a
+paired finding: the selected construction genuinely composes internal
+invariants, physical data, residual/force regularity, R3 properties, and axis
+blow-up, while the reviewed public export still does not state the final
+selected-field identity with `(M,I,J,S,C_p)`. `CTR-005` remains
+`NOT ESTABLISHED`, with no promotion to a selected defect or literal CMI
+failure without a stronger field-level theorem.
+
 ## Current authority override: Priority 209 (2026-09-30)
 
 The live source/register authority is now

@@ -10,12 +10,22 @@ current review artefacts must be treated as live and discoverable:
 - `audit/priority_202_actual_moment_invariant_trace_2026-09-30.md`
 - `audit/priority_203_internal_to_endpoint_crossfile_trace_2026-09-30.md`
 - `audit/priority_204_workspace_source_record_reconciliation_2026-09-30.md`
+- `audit/priority_210_selected_endpoint_probe_replay_2026-09-30.md`
 - `probes/ActualMomentPreservationTrace.lean`
+- `probes/SelectedMomentBridgeAudit.lean`
+- `probes/SelectedWitnessPathProbe.lean`
+- `probes/SelectedWitnessEndpointResidualProbe.lean`
+- `probes/SelectedForceOriginCompositionProbe.lean`
+- `probes/SelectedDependencyAxiomProbe.lean`
 
 The exact current-index reconciliation is recorded in
 `NavierStokesReview/evidence/review_tree_reconciliation_2026-09-30.md`.
 These additions are bookkeeping only. They do not change the source closure,
 semantic coverage, or the scientific status of `CTR-005`.
+Priority 210 records direct replay of the selected-path probes after restoring
+the missing cached closure module; all five probes compiled with no
+`sorryAx`, and the result remains a bounded `CTR-005` non-establishment
+finding rather than a value-level defect theorem.
 
 └── 📂 audit/
 │  ├── 📄 EnvironmentApiCheck.lean

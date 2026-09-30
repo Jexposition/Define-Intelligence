@@ -1,5 +1,13 @@
 # Navier–Stokes review document control
 
+## Probe replay control: Priority 210 (2026-09-30)
+
+The selected endpoint replay is recorded in the Priority 210 evidence and
+audit records. Its role is evidentiary, not a replacement for the Priority
+209 scope authority. It confirms the selected residual/force/R3/axis route and
+the bounded absence of a reviewed final `(M,I,J,S,C_p)` equality. It does not
+authorise a stronger scientific label.
+
 ## Live continuation override: 2026-09-30
 
 This override is the current control state. Older 29-, 60-, and 61-row

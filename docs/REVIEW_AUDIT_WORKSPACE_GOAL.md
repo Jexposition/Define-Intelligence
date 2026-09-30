@@ -1,5 +1,20 @@
 # Review audit workspace goal
 
+## Current probe replay: Priority 210 (2026-09-30)
+
+The selected endpoint probe replay is recorded in
+`NavierStokesReview/evidence/priority_210_selected_endpoint_probe_replay_2026-09-30.md`
+and
+`NavierStokesReview/src/audit/priority_210_selected_endpoint_probe_replay_2026-09-30.md`.
+All selected-path probes replayed successfully after the missing
+`NavierStokes.LocalScheduleWitness` dependency was compiled with the direct
+closure utility. The replay confirms genuine selected residual/force/R3/axis
+blow-up composition and preserves the bounded `CTR-005` result: no final
+selected Cartesian equality with `(M,I,J,S,C_p)` was located in the reviewed
+export. It does not promote that gap to a selected defect, force
+nonsmoothness, literal CMI failure, impossibility theorem, compiler escape, or
+`False`.
+
 ## Current authority override: Priority 209 (2026-09-30)
 
 The current source/register authority is
