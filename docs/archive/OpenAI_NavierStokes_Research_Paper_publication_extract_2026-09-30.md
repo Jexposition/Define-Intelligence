@@ -12,10 +12,10 @@ corrections without turning the paper into a chronological work log.
 
 ### Companion review and control documents
 
-- [Companion peer review](OpenAI_NavierStokes_Peer_Review_v1.md)
-- [CMI first-review plan](OpenAI_NavierStokes_CMI_First_Review_Plan.md)
-- [Workspace goal and control rules](REVIEW_AUDIT_WORKSPACE_GOAL.md)
-- [Semantic correspondence map](SEMANTIC_CORRESPONDENCE_MAP.md)
+- [Companion peer review](../OpenAI_NavierStokes_Peer_Review_v1.md)
+- [CMI first-review plan](../OpenAI_NavierStokes_CMI_First_Review_Plan.md)
+- [Workspace goal and control rules](../REVIEW_AUDIT_WORKSPACE_GOAL.md)
+- [Semantic correspondence map](../SEMANTIC_CORRESPONDENCE_MAP.md)
 
 ### Main manuscript route
 
@@ -34,7 +34,7 @@ Read the following sections in order for the publication-level argument:
 11. [References and evidence](#references-and-evidence)
 12. [Technical appendices](#appendix-a-technical-findings-supporting-the-verdict)
 
-The separate [Evidence dossier](../NavierStokesReview/evidence/research_paper_evidence_dossier_2026-09-30.md)
+The separate [Evidence dossier](../../NavierStokesReview/evidence/research_paper_evidence_dossier_2026-09-30.md)
 supports, qualifies, and records revisions to the main argument. The paper
 states the argument in manuscript order; the dossier records provenance and
 does not silently change the verdict.
@@ -187,7 +187,7 @@ in `NavierStokesReview/evidence/paper_nuance_crosswalk_2026-09-27.md`.
 
 ### Source-to-claim correspondence map
 
-The accompanying [`SEMANTIC_CORRESPONDENCE_MAP.md`](SEMANTIC_CORRESPONDENCE_MAP.md)
+The accompanying [`SEMANTIC_CORRESPONDENCE_MAP.md`](../SEMANTIC_CORRESPONDENCE_MAP.md)
 is part of the evidence presentation, not a build-status appendix. It maps the
 paper's base profile, pulse/correction mechanism, five moments, pressure,
 residual force, localisation, and R3 packaging to the declarations that
@@ -578,10 +578,10 @@ endpoint.
 4. OpenAI, [Finite Time Blowup for Navier–Stokes](https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf).
 5. OpenAI, [On the Navier–Stokes Millennium Prize Problem](https://openai.com/index/navier-stokes-solution/).
 6. OpenAI, [Finite Time Blowup for the Euler Equation](https://cdn.openai.com/pdf/315b36cd-ec98-4023-8342-93345194ece1/euler.pdf).
-7. [`SelectedResidualLowerBoundObstructionProbe.lean`](../NavierStokesReview/src/probes/SelectedResidualLowerBoundObstructionProbe.lean).
-8. [`SelectedWitnessAttackBoundaryProbe.lean`](../NavierStokesReview/src/probes/SelectedWitnessAttackBoundaryProbe.lean).
-9. [`FiveRowPositiveOrderBridgeProbe.lean`](../NavierStokesReview/src/probes/FiveRowPositiveOrderBridgeProbe.lean).
-10. [`PressureRecoveryAbsolutePremiseProbe.lean`](../NavierStokesReview/src/probes/PressureRecoveryAbsolutePremiseProbe.lean).
+7. [`SelectedResidualLowerBoundObstructionProbe.lean`](../../NavierStokesReview/src/probes/SelectedResidualLowerBoundObstructionProbe.lean).
+8. [`SelectedWitnessAttackBoundaryProbe.lean`](../../NavierStokesReview/src/probes/SelectedWitnessAttackBoundaryProbe.lean).
+9. [`FiveRowPositiveOrderBridgeProbe.lean`](../../NavierStokesReview/src/probes/FiveRowPositiveOrderBridgeProbe.lean).
+10. [`PressureRecoveryAbsolutePremiseProbe.lean`](../../NavierStokesReview/src/probes/PressureRecoveryAbsolutePremiseProbe.lean).
 
 ## Appendix A. Technical findings supporting the verdict
 
@@ -683,6 +683,5 @@ Evidence: `global_germ_transport_audit_2026-09-24.md`,
 
 ## Evidence dossier
 
-The complete provenance record is maintained separately in [research paper evidence dossier](../NavierStokesReview/evidence/research_paper_evidence_dossier_2026-09-30.md). It is not part of the publication argument.
-
+The complete provenance record is maintained separately in [research paper evidence dossier](../../NavierStokesReview/evidence/research_paper_evidence_dossier_2026-09-30.md). It is not part of the publication argument.
 

@@ -416,3 +416,12 @@ complete manuscript-to-selected-endpoint correspondence. It also records that
 the apparent `docs/doc_tree.md` archive-navigation drift was a false alarm:
 the archive paths were already explicit. No scientific promotion, deletion,
 archive move, protected-source edit, or protected-source staging occurred.
+
+## Documentation-control closure: Priority 208 (2026-09-30)
+
+`priority_208_archive_link_lint_closure_2026-09-30.md` records the corrected
+full-corpus link/lint result: 413 Markdown files checked, 0 broken local links,
+98 evidence JSON files parsed, and 0 archive-manifest SHA-256 mismatches. It
+closes only the link/lint sub-gate. The broader consolidation and
+cross-reference gate remains open, and `CTR-005` remains
+`NOT ESTABLISHED`.

@@ -2498,3 +2498,18 @@ paths. No paper rewrite, deletion, archive move, protected-source edit, or
 protected-source staging was performed. The archive gate remains closed until
 the full consolidation cross-reference, link/lint checks, and parent-folder
 SHA-256 manifest are complete.
+
+## Archive-link relocation repair: Priority 208 (2026-09-30)
+
+The first full Markdown-link pass identified genuine relocation breakage in the
+two archived manuscript artefacts. Their links still targeted the former
+`docs/` parent even though the files now live in `docs/archive/`. The targets
+were verified to exist in the active corpus, and only the relative link paths
+were repaired. No file was deleted, moved, staged, or added to the OpenAI source
+tree. The archive manifest was updated with the post-repair SHA-256 values. A
+corrected link/lint pass remains required before the archive gate can close.
+
+The completed sub-gate is recorded in
+`../NavierStokesReview/evidence/priority_208_archive_link_lint_closure_2026-09-30.md`
+and
+`../NavierStokesReview/src/audit/priority_208_archive_link_lint_closure_2026-09-30.md`.

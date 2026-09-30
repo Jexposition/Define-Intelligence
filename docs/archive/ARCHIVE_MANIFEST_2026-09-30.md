@@ -21,9 +21,9 @@ inventing an original path.
 
 | Archive path | Provenance commit | Reason | SHA-256 |
 | --- | --- | --- | --- |
-| `docs/archive/OpenAI_NavierStokes_Research_Paper_with_dossier_2026-09-30.md` | `75d7e7f` | Superseded pre-consolidation manuscript retained as an audit dossier; the current publication manuscript is the active authority. | `427a24e6dcea70eca9c1aea07f008ffa806e5acb0a6e592f94a04d4012f9ea49` |
+| `docs/archive/OpenAI_NavierStokes_Research_Paper_with_dossier_2026-09-30.md` | `75d7e7f` | Superseded pre-consolidation manuscript retained as an audit dossier; the current publication manuscript is the active authority. Archive-relative links were repaired after relocation. | `2600a54de045ab68a2607fa0276d9ffb87dd1bef2ebb24eec59ca0e8b1e7bffe` |
 | `docs/archive/OpenAI_NavierStokes_Final_Falsification_Report_2026-09-30.md` | `96041c1` | Historical falsification intake retained for provenance; its blanket wording is not current authority. | `d9fc1cfbe2c6805af13b697e15ca2f71d367f76d83a0972a91800cbf1d3ac813` |
-| `docs/archive/OpenAI_NavierStokes_Research_Paper_publication_extract_2026-09-30.md` | `96041c1` | Dated publication extract retained for provenance; current claims are controlled by the active manuscript and evidence dossier. | `92dc55e8995fcbae67ea999d3aa57a5f98287e762fa509f6f85a9fe7de990064` |
+| `docs/archive/OpenAI_NavierStokes_Research_Paper_publication_extract_2026-09-30.md` | `96041c1` | Dated publication extract retained for provenance; current claims are controlled by the active manuscript and evidence dossier. Archive-relative links were repaired after relocation. | `15cbe82453229463969cb90ba45118bf653db37c4b508d1e9445b41ef1562378` |
 
 No new archive move is implied by this section. It closes the manifest gap for
 artefacts already present in the parent-folder archive.

@@ -102,3 +102,20 @@ review branch remains the publication surface; the legacy
 
 The archive gate remains closed until the full consolidation cross-reference,
 link/lint checks, and parent-folder SHA-256 manifest are complete.
+
+## Follow-up: archived-link relocation repair
+
+The first full Markdown-link pass found genuine broken relative links in the two
+archived manuscript artefacts because they had been moved one directory below
+their original `docs/` location. The targets were present in the active corpus;
+the defect was path relocation, not missing evidence. The links were repaired
+without moving or deleting any file. The archive manifest now records the
+post-repair hashes:
+
+- `docs/archive/OpenAI_NavierStokes_Research_Paper_publication_extract_2026-09-30.md`:
+  `15cbe82453229463969cb90ba45118bf653db37c4b508d1e9445b41ef1562378`
+- `docs/archive/OpenAI_NavierStokes_Research_Paper_with_dossier_2026-09-30.md`:
+  `2600a54de045ab68a2607fa0276d9ffb87dd1bef2ebb24eec59ca0e8b1e7bffe`
+
+The full link audit remains open until the corrected tree is rerun and any
+remaining parser false positives are separated from genuine broken targets.

@@ -3647,3 +3647,16 @@ false alarm. No deletion, archive movement, protected OpenAI-source edit, or
 protected-source staging is authorised. Full consolidation, cross-reference,
 fact-check, link/lint verification, and the parent-folder SHA-256 archive gate
 remain open work.
+
+## Priority 208 continuity update (2026-09-30)
+
+The first full Markdown-link audit exposed relocation defects in two archived
+manuscript artefacts. Their targets were present in the active documentation,
+evidence, and source trees; the links were repaired and the affected archive
+hashes were updated in `docs/archive/ARCHIVE_MANIFEST_2026-09-30.md`. The
+remaining gate is a corrected full-corpus link/lint and cross-reference pass.
+No deletion, source-tree edit, or additional archive move is authorised before
+that gate closes. The scientific status remains `CTR-005: NOT ESTABLISHED`.
+
+Control records: `../NavierStokesReview/evidence/priority_208_archive_link_lint_closure_2026-09-30.md`
+and `../NavierStokesReview/src/audit/priority_208_archive_link_lint_closure_2026-09-30.md`.

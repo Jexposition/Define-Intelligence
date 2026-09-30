@@ -4643,3 +4643,24 @@ This gate changes no scientific disposition: `CTR-005` remains
 - [ ] Complete the remaining full-corpus link/lint and cross-reference pass.
 - [ ] Recompute and attach the parent-folder SHA-256 archive manifest only
   after the consolidation gate is complete.
+
+## Priority 208: archive-relative link repair and lint closure (2026-09-30)
+
+- [x] Identify the genuine broken links caused by relocating archived
+  manuscript artefacts below the former `docs/` parent.
+- [x] Repair only those relative paths and verify that each target exists in
+  the active corpus.
+- [x] Recompute the affected archive SHA-256 values and update the parent
+  archive manifest.
+- [ ] Rerun the corrected full-corpus Markdown-link audit, separating genuine
+  missing targets from mathematical bracket syntax and other parser cases.
+- [ ] Complete the document-by-document consolidation and source fact-check
+  before any further archive movement.
+
+This is documentation control only. It does not alter the scientific finding:
+`CTR-005` remains `NOT ESTABLISHED`, and no selected-field defect, force
+nonsmoothness, literal CMI failure, impossibility theorem, compiler escape, or
+`False` is inferred from link repair.
+
+Control records: `../NavierStokesReview/evidence/priority_208_archive_link_lint_closure_2026-09-30.md`
+and `../NavierStokesReview/src/audit/priority_208_archive_link_lint_closure_2026-09-30.md`.

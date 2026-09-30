@@ -14,10 +14,10 @@ order.
 
 ### Companion review and control documents
 
-- [Companion peer review](OpenAI_NavierStokes_Peer_Review_v1.md)
-- [CMI first-review plan](OpenAI_NavierStokes_CMI_First_Review_Plan.md)
-- [Workspace goal and control rules](REVIEW_AUDIT_WORKSPACE_GOAL.md)
-- [Semantic correspondence map](SEMANTIC_CORRESPONDENCE_MAP.md)
+- [Companion peer review](../OpenAI_NavierStokes_Peer_Review_v1.md)
+- [CMI first-review plan](../OpenAI_NavierStokes_CMI_First_Review_Plan.md)
+- [Workspace goal and control rules](../REVIEW_AUDIT_WORKSPACE_GOAL.md)
+- [Semantic correspondence map](../SEMANTIC_CORRESPONDENCE_MAP.md)
 
 ### Main manuscript route
 
@@ -119,11 +119,11 @@ Evidence: `../NavierStokesReview/src/audit/priority_179_latest_force_smoothness_
 The latest source reviews and machine-readable evidence are part of the
 paper-to-code record:
 
-- [Priority 154: Euler transport, frame, and heat-source review](../NavierStokesReview/src/audit/priority_154_euler_transport_frame_heat_source_review_2026-09-29.md)
-- [Priority 154 machine-readable evidence](../NavierStokesReview/evidence/source_tranche_euler_transport_frame_heat_2026-09-29.json)
-- [Priority 155: Euler Gaussian and Gevrey review](../NavierStokesReview/src/audit/priority_155_euler_gaussian_gevrey_source_review_2026-09-29.md)
-- [Priority 155 machine-readable evidence](../NavierStokesReview/evidence/source_tranche_euler_gaussian_gevrey_2026-09-29.json)
-- [Current semantic coverage register](../NavierStokesReview/evidence/semantic_coverage_register_full_2026-09-29.md)
+- [Priority 154: Euler transport, frame, and heat-source review](../../NavierStokesReview/src/audit/priority_154_euler_transport_frame_heat_source_review_2026-09-29.md)
+- [Priority 154 machine-readable evidence](../../NavierStokesReview/evidence/source_tranche_euler_transport_frame_heat_2026-09-29.json)
+- [Priority 155: Euler Gaussian and Gevrey review](../../NavierStokesReview/src/audit/priority_155_euler_gaussian_gevrey_source_review_2026-09-29.md)
+- [Priority 155 machine-readable evidence](../../NavierStokesReview/evidence/source_tranche_euler_gaussian_gevrey_2026-09-29.json)
+- [Current semantic coverage register](../../NavierStokesReview/evidence/semantic_coverage_register_full_2026-09-29.md)
 
 The two tranches add positive evidence for conditional Euler transport,
 Gaussian heat, composition, continuation, compactness, and flow/Gevrey bounds.
@@ -291,7 +291,7 @@ in `NavierStokesReview/evidence/paper_nuance_crosswalk_2026-09-27.md`.
 
 ### Source-to-claim correspondence map
 
-The accompanying [`SEMANTIC_CORRESPONDENCE_MAP.md`](SEMANTIC_CORRESPONDENCE_MAP.md)
+The accompanying [`SEMANTIC_CORRESPONDENCE_MAP.md`](../SEMANTIC_CORRESPONDENCE_MAP.md)
 is part of the evidence presentation, not a build-status appendix. It maps the
 paper's base profile, pulse/correction mechanism, five moments, pressure,
 residual force, localisation, and R3 packaging to the declarations that
@@ -485,7 +485,7 @@ $$
 $$
 
 The active document map is controlled by
-[`REVIEW_DOCUMENT_CONTROL.md`](REVIEW_DOCUMENT_CONTROL.md). The evidence
+[`REVIEW_DOCUMENT_CONTROL.md`](../REVIEW_DOCUMENT_CONTROL.md). The evidence
 directory contains the compiler outputs and source ledgers; this paper states
 the mathematical conclusions rather than reproducing the audit log.
 
@@ -540,12 +540,12 @@ $$
 
 then residual flatness at $t=1$ would contradict origin blow-up. The
 zero-sorry probe
-[`SelectedResidualLowerBoundObstructionProbe.lean`](../NavierStokesReview/src/probes/SelectedResidualLowerBoundObstructionProbe.lean)
+[`SelectedResidualLowerBoundObstructionProbe.lean`](../../NavierStokesReview/src/probes/SelectedResidualLowerBoundObstructionProbe.lean)
 proves exactly this conditional contradiction on the actual one-sided
 endpoint filter.
 
 The selected-path extraction and the zero residual limit are recorded in
-[`SelectedWitnessEndpointResidualProbe.lean`](../NavierStokesReview/src/probes/SelectedWitnessEndpointResidualProbe.lean).
+[`SelectedWitnessEndpointResidualProbe.lean`](../../NavierStokesReview/src/probes/SelectedWitnessEndpointResidualProbe.lean).
 
 The selected source, however, also contains explicit core cancellation:
 `FinalSlowBase.stressForce_core_germ` and its jet theorem make the stress-force
@@ -663,7 +663,7 @@ the selected residual, or the force. The source audit has not located that
 selected-path theorem.
 
 The zero-sorry probe
-[`SelectedWitnessAttackBoundaryProbe.lean`](../NavierStokesReview/src/probes/SelectedWitnessAttackBoundaryProbe.lean)
+[`SelectedWitnessAttackBoundaryProbe.lean`](../../NavierStokesReview/src/probes/SelectedWitnessAttackBoundaryProbe.lean)
 proves the precise interface statement
 
 $$
@@ -709,10 +709,10 @@ The current status is therefore **not established**, not `False`.
 | Correction cycle | Preserves two rows and cancels three defects `(P,J_θ,J_z)` | Runtime three-debt repair is present; its identification with the paper's five selected-field identities is unproved |
 
 Source-level evidence for this distinction is retained in the [selected
-endpoint moment transport obstruction](../NavierStokesReview/evidence/selected_endpoint_moment_transport_obstruction_2026-09-25.md),
-the [selected moment transport source trace](../NavierStokesReview/evidence/selected_moment_transport_source_trace_2026-09-25.md),
-the [full selected transport audit](../NavierStokesReview/evidence/selected_transport_audit_full_2026-09-28.md),
-and the [load-bearing paper dependency matrix](../NavierStokesReview/evidence/paper_moment_dependency_matrix_2026-09-29.md).
+endpoint moment transport obstruction](../../NavierStokesReview/evidence/selected_endpoint_moment_transport_obstruction_2026-09-25.md),
+the [selected moment transport source trace](../../NavierStokesReview/evidence/selected_moment_transport_source_trace_2026-09-25.md),
+the [full selected transport audit](../../NavierStokesReview/evidence/selected_transport_audit_full_2026-09-28.md),
+and the [load-bearing paper dependency matrix](../../NavierStokesReview/evidence/paper_moment_dependency_matrix_2026-09-29.md).
 
 ### The profile-tail collision route and its exact limit
 
@@ -813,7 +813,7 @@ therefore the full residual, not a separate term that the pressure equation
 must cancel.
 
 The zero-sorry probe
-[`PressureResidualNonCancellationProbe.lean`](../NavierStokesReview/src/probes/PressureResidualNonCancellationProbe.lean)
+[`PressureResidualNonCancellationProbe.lean`](../../NavierStokesReview/src/probes/PressureResidualNonCancellationProbe.lean)
 compiles the exact perturbation identity
 
 $$
@@ -874,13 +874,13 @@ interpretation and to any claim that the code reproduces a prescribed-force
 evolution. It is not, without an additional admissibility theorem or a false
 mandatory endpoint predicate, a formal disproof of the literal existential C/D
 proposition. The official-source adjudication is recorded in
-[`cmi_force_independence_adjudication_2026-09-24.md`](../NavierStokesReview/evidence/cmi_force_independence_adjudication_2026-09-24.md).
+[`cmi_force_independence_adjudication_2026-09-24.md`](../../NavierStokesReview/evidence/cmi_force_independence_adjudication_2026-09-24.md).
 
 The fixed-data test makes this objection mathematically sharper. Let (e) be
 an independently chosen smooth perturbation, keep (p) and the spacetime
 force (f) fixed, and require both (u) and (u+e) to satisfy the same
 residual equation. The compiled theorem
-[`IndependentDataPerturbationProbe.lean`](../NavierStokesReview/src/probes/IndependentDataPerturbationProbe.lean)
+[`IndependentDataPerturbationProbe.lean`](../../NavierStokesReview/src/probes/IndependentDataPerturbationProbe.lean)
 derives the necessary identity
 
 $$
@@ -927,7 +927,7 @@ existential statement. A formal CMI disproof requires either an independence
 condition in the theorem being claimed or a selected-path theorem that supplies
 an admissible perturbation with nonzero defect. The exact proof and its limits
 are recorded in
-[`independent_data_perturbation_2026-09-24.md`](../NavierStokesReview/evidence/independent_data_perturbation_2026-09-24.md).
+[`independent_data_perturbation_2026-09-24.md`](../../NavierStokesReview/evidence/independent_data_perturbation_2026-09-24.md).
 
 The perturbation test was then strengthened so that it preserves the selected
 zero initial datum. The new field is
@@ -945,7 +945,7 @@ negate the literal existential C/D proposition, which does not quantify over
 such perturbations or encode force independence.
 
 Evidence:
-[`same_datum_fixed_force_obstruction_2026-09-24.md`](../NavierStokesReview/evidence/same_datum_fixed_force_obstruction_2026-09-24.md).
+[`same_datum_fixed_force_obstruction_2026-09-24.md`](../../NavierStokesReview/evidence/same_datum_fixed_force_obstruction_2026-09-24.md).
 
 Other proposed objections remain outside the CMI disproof threshold unless a
 selected-path theorem supplies their missing premise: active forcing, nonzero
@@ -1215,10 +1215,10 @@ endpoint.
 4. OpenAI, [Finite Time Blowup for Navier–Stokes](https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf).
 5. OpenAI, [On the Navier–Stokes Millennium Prize Problem](https://openai.com/index/navier-stokes-solution/).
 6. OpenAI, [Finite Time Blowup for the Euler Equation](https://cdn.openai.com/pdf/315b36cd-ec98-4023-8342-93345194ece1/euler.pdf).
-7. [`SelectedResidualLowerBoundObstructionProbe.lean`](../NavierStokesReview/src/probes/SelectedResidualLowerBoundObstructionProbe.lean).
-8. [`SelectedWitnessAttackBoundaryProbe.lean`](../NavierStokesReview/src/probes/SelectedWitnessAttackBoundaryProbe.lean).
-9. [`FiveRowPositiveOrderBridgeProbe.lean`](../NavierStokesReview/src/probes/FiveRowPositiveOrderBridgeProbe.lean).
-10. [`PressureRecoveryAbsolutePremiseProbe.lean`](../NavierStokesReview/src/probes/PressureRecoveryAbsolutePremiseProbe.lean).
+7. [`SelectedResidualLowerBoundObstructionProbe.lean`](../../NavierStokesReview/src/probes/SelectedResidualLowerBoundObstructionProbe.lean).
+8. [`SelectedWitnessAttackBoundaryProbe.lean`](../../NavierStokesReview/src/probes/SelectedWitnessAttackBoundaryProbe.lean).
+9. [`FiveRowPositiveOrderBridgeProbe.lean`](../../NavierStokesReview/src/probes/FiveRowPositiveOrderBridgeProbe.lean).
+10. [`PressureRecoveryAbsolutePremiseProbe.lean`](../../NavierStokesReview/src/probes/PressureRecoveryAbsolutePremiseProbe.lean).
 
 ## Appendix A. Technical findings supporting the verdict
 
@@ -4152,7 +4152,7 @@ and
 
 The manuscript is not to be reduced to a log of isolated declarations or to
 the endpoint's existential wrapper. The complete section and appendix map is
-[`CMI_OpenAI_Full_Semantic_Crosswalk.md`](CMI_OpenAI_Full_Semantic_Crosswalk.md).
+[`CMI_OpenAI_Full_Semantic_Crosswalk.md`](../CMI_OpenAI_Full_Semantic_Crosswalk.md).
 It must be read together with Fefferman's complete CMI specification, not as
 a substitute for it.
 
@@ -4556,7 +4556,7 @@ transport of the manuscript's complete five-moment consequences remains
 optional, nor a claim that literal C/D failure has already been proved.
 
 Full record:
-[`priority_179_fefferman_full_semantic_dependency_network_2026-09-29.md`](../NavierStokesReview/src/audit/priority_179_fefferman_full_semantic_dependency_network_2026-09-29.md).
+[`priority_179_fefferman_full_semantic_dependency_network_2026-09-29.md`](../../NavierStokesReview/src/audit/priority_179_fefferman_full_semantic_dependency_network_2026-09-29.md).
 
 ## Priority 177: Fefferman's connected semantic requirements
 
@@ -4819,9 +4819,9 @@ Evidence:
 ### Priority 186: source-preserving Fefferman semantic closure
 
 The full word-to-condition network is consolidated in
-[`priority_186_fefferman_full_word_connection_closure_2026-09-30.md`](../NavierStokesReview/src/audit/priority_186_fefferman_full_word_connection_closure_2026-09-30.md)
+[`priority_186_fefferman_full_word_connection_closure_2026-09-30.md`](../../NavierStokesReview/src/audit/priority_186_fefferman_full_word_connection_closure_2026-09-30.md)
 and its evidence record
-[`source_tranche_priority_186_fefferman_full_word_connection_closure_2026-09-30.json`](../NavierStokesReview/evidence/source_tranche_priority_186_fefferman_full_word_connection_closure_2026-09-30.json).
+[`source_tranche_priority_186_fefferman_full_word_connection_closure_2026-09-30.json`](../../NavierStokesReview/evidence/source_tranche_priority_186_fefferman_full_word_connection_closure_2026-09-30.json).
 
 The audit reads Fefferman's text as a connected mathematical specification.
 “May look for” permits a periodic branch; it does not waive that branch's
@@ -4899,7 +4899,7 @@ manuscript-to-selected-endpoint fidelity. This does not, by itself, prove that
 the connected formal C/D proposition is false. A literal C/D failure requires a
 selected failed condition, selected value mismatch, impossibility theorem, or
 contradiction. See
-[`CMI_OpenAI_Full_Semantic_Crosswalk.md`](CMI_OpenAI_Full_Semantic_Crosswalk.md),
+[`CMI_OpenAI_Full_Semantic_Crosswalk.md`](../CMI_OpenAI_Full_Semantic_Crosswalk.md),
 Priority 188.
 
 ## Priority 189: source correction on physical wording

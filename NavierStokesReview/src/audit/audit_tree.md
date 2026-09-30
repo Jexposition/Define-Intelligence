@@ -281,3 +281,10 @@ identifies the completed selected Cartesian observables with
 defect, impossibility, literal CMI failure, compiler escape, or `False` is
 claimed. The archive-navigation concern was checked and found to be a false
 alarm because `docs/doc_tree.md` already uses explicit archive paths.
+
+## Documentation-control audit: Priority 208 (2026-09-30)
+
+`priority_208_archive_link_lint_closure_2026-09-30.md` records the corrected
+link/lint pass and archive-hash verification. It is a documentation-control
+closure, not a mathematical disposition. The broader consolidation gate stays
+open; the controlled scientific finding remains `CTR-005: NOT ESTABLISHED`.
