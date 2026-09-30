@@ -1,5 +1,21 @@
 ```markdown
 . 📂 src
+
+## Current live-index additions: 2026-09-30
+
+The compact tree below is a historical navigation snapshot. The following
+current review artefacts must be treated as live and discoverable:
+
+- `audit/priority_201_selected_closure_census_2026-09-30.md`
+- `audit/priority_202_actual_moment_invariant_trace_2026-09-30.md`
+- `audit/priority_203_internal_to_endpoint_crossfile_trace_2026-09-30.md`
+- `probes/ActualMomentPreservationTrace.lean`
+
+The exact current-index reconciliation is recorded in
+`NavierStokesReview/evidence/review_tree_reconciliation_2026-09-30.md`.
+These additions are bookkeeping only. They do not change the source closure,
+semantic coverage, or the scientific status of `CTR-005`.
+
 └── 📂 audit/
 │  ├── 📄 EnvironmentApiCheck.lean
 │  ├── 📄 EnvironmentDependencyExport.lean

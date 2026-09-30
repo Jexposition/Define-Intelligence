@@ -24,6 +24,20 @@ top-level `src_tree.md` and the nested `audit_tree.md` use different historical
 tree snapshots, and the comparison is deliberately basename-based. It must not
 be read as a theorem or import-graph result.
 
+## Index update after the snapshot
+
+The top-level `NavierStokesReview/src/src_tree.md` now explicitly indexes four
+live artefacts that were absent from the snapshot comparison:
+
+- `src/audit/priority_201_selected_closure_census_2026-09-30.md`
+- `src/audit/priority_202_actual_moment_invariant_trace_2026-09-30.md`
+- `src/audit/priority_203_internal_to_endpoint_crossfile_trace_2026-09-30.md`
+- `src/probes/ActualMomentPreservationTrace.lean`
+
+The snapshot counts above remain historical counts from the reconciliation run;
+this delta records the deliberate index correction without rewriting the older
+comparison lists.
+
 ## Evidence files not represented in `evidence_tree.md`
 
 These are current files whose basenames were absent from the tree snapshot:

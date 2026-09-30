@@ -1,5 +1,29 @@
 # CMI-first review plan: OpenAI Navier–Stokes claim
 
+## Priority 203 internal-to-endpoint cross-file trace: 2026-09-30
+
+The latest source-bound trace is recorded in
+`NavierStokesReview/src/audit/priority_203_internal_to_endpoint_crossfile_trace_2026-09-30.md`,
+with machine-readable evidence at
+`NavierStokesReview/evidence/source_tranche_priority_203_internal_to_endpoint_crossfile_trace_2026-09-30.json`.
+
+It corrects the earlier overstatement that the selected path has no moment or
+rank machinery. The actual cycle preserves two mean-mass identities and
+three residual-debt classes, and those data feed coefficient matching,
+finite residual identities, residual rates, selected physical data, and the
+force route. The remaining finding is narrower and still material: no
+production declaration was found in the inspected selected closure that
+identifies those internal coordinates with the manuscript's final
+`(M, I, J, S, C_p)` observables after the selected Cartesian, pressure,
+localisation, summation, residual, and force transformations.
+
+Accordingly, the controlled status remains `CTR-005: NOT ESTABLISHED` for
+complete manuscript-to-selected-endpoint correspondence. This is not a
+nonzero-defect theorem, an impossibility theorem, a force-nonsmoothness
+theorem, a compiler-cheat claim, or `False`. The next task is to close or
+falsify the remaining selected-field identification with direct declarations,
+not to infer it from the absence of a repeated tuple in `Witness`.
+
 ## Priority 202 actual invariant correction: 2026-09-30
 
 The current source trace is recorded in
