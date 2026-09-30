@@ -11,11 +11,12 @@ remain dated snapshots and must not be quoted as current totals. The selected
 scientific disposition remains `CTR-005: NOT ESTABLISHED`.
 
 The private source-of-truth branch is
-`review/cmi-first-navier-stokes-reconciled-2026-09-30` at local commit
-`c3df226`; its remote push timed out and is not claimed as published. The
-separate public branch is
-`review/cmi-first-navier-stokes-disposition-public-2026-09-30` at remote
-commit `080daa1`. The protected untracked
+`review/cmi-first-navier-stokes-reconciled-2026-09-30`; its remote push timed
+out and is not claimed as published. The separate public branch is
+`review/cmi-first-navier-stokes-disposition-public-2026-09-30`, whose remote
+tip is verified during the publication gate. Exact commit IDs are retained in
+Git history and gate evidence rather than duplicated here, so this control
+document cannot become stale when the mirror advances. The protected untracked
 `NavierStokes/R3/TestPressure.lean` remains untouched and unstaged.
 
 ## Priority 203 internal-to-endpoint cross-file trace: 2026-09-30
