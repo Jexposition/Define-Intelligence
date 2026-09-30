@@ -85,26 +85,58 @@ def reconcile(repo: Path, tree: Path) -> dict[str, Any]:
     resolved: list[dict[str, str]] = []
     ambiguous: list[dict[str, Any]] = []
     missing: list[dict[str, Any]] = []
-    for entry in tree_files:
-        # Tree entries may include a rendered relative prefix such as
-        # `archive/`.  Reconcile by the actual basename while retaining the
-        # original tree label in the evidence record.
-        basename = Path(entry["name"]).name
-        candidates = by_basename.get(basename, [])
-        if len(candidates) == 1:
+    directory_stack: list[tuple[int, str]] = []
+    for entry in entries:
+        # The tree is a rendered hierarchy.  Retain its directory context so
+        # a child such as `ARCHIVE_MANIFEST_2026-09-30.md` is resolved below
+        # the preceding `archive` directory rather than as a repository-wide
+        # basename.
+        while directory_stack and entry["display_indent"] <= directory_stack[-1][0]:
+            directory_stack.pop()
+        context = Path(*[name for _, name in directory_stack])
+
+        if entry["kind"] == "directory":
+            # The first rendered directory is the tree's own root (`docs` in
+            # `docs/doc_tree.md`), so the tree path already supplies it.
+            if not directory_stack and entry["name"] == tree.parent.name:
+                continue
+            directory_stack.append((entry["display_indent"], entry["name"]))
+            continue
+
+        # Prefer an explicit path relative to the tree's directory and its
+        # rendered directory context.  This avoids turning a known path into
+        # a false basename ambiguity.
+        tree_relative = (tree.parent / context / entry["name"]).resolve()
+        if tree_relative.is_file() and repo.resolve() in tree_relative.parents:
             resolved.append(
                 {
                     "tree_line": str(entry["line"]),
                     "tree_name": entry["name"],
-                    "basename": basename,
-                    "current_path": candidates[0],
-                    "resolution": "unique-current-basename",
+                    "basename": Path(entry["name"]).name,
+                    "current_path": tree_relative.relative_to(repo).as_posix(),
+                    "resolution": "explicit-tree-relative-path",
                 }
             )
-        elif not candidates:
-            missing.append(entry)
         else:
-            ambiguous.append({**entry, "current_candidates": candidates})
+            # Otherwise, reconcile by the actual basename while retaining the
+            # original tree label in the evidence record.  This is deliberately
+            # conservative for entries that do not carry a resolvable path.
+            basename = Path(entry["name"]).name
+            candidates = by_basename.get(basename, [])
+            if len(candidates) == 1:
+                resolved.append(
+                    {
+                        "tree_line": str(entry["line"]),
+                        "tree_name": entry["name"],
+                        "basename": basename,
+                        "current_path": candidates[0],
+                        "resolution": "unique-current-basename",
+                    }
+                )
+            elif not candidates:
+                missing.append(entry)
+            else:
+                ambiguous.append({**entry, "current_candidates": candidates})
 
     current_paths = {path.relative_to(repo).as_posix() for path in files}
     return {
@@ -157,14 +189,14 @@ def markdown(payload: dict[str, Any]) -> str:
         f"| Tree entries | `{counts['tree_entries']}` |",
         f"| Tree file entries | `{counts['tree_file_entries']}` |",
         f"| Current checkout files | `{counts['current_files']}` |",
-        f"| Unique-basename resolutions | `{counts['uniquely_resolved_tree_files']}` |",
-        f"| Ambiguous basename entries | `{counts['ambiguous_tree_files']}` |",
-        f"| Missing current basenames | `{counts['missing_tree_files']}` |",
+        f"| Resolved tree entries | `{counts['uniquely_resolved_tree_files']}` |",
+        f"| Ambiguous tree entries | `{counts['ambiguous_tree_files']}` |",
+        f"| Missing tree entries | `{counts['missing_tree_files']}` |",
         f"| Duplicate current basenames | `{counts['duplicate_current_basenames']}` |",
         "",
         "## Interpretation",
         "",
-        "A resolved entry establishes only that the named file exists at the unique current path. It does not establish import reachability or theorem use. Ambiguous and missing entries are retained as review obligations.",
+        "A resolved entry establishes only that the named file exists at the resolved current path. It does not establish import reachability or theorem use. Explicit tree-relative paths are preferred; basename fallback remains conservative. Ambiguous and missing entries are retained as review obligations.",
         "",
     ]
     if payload["ambiguous"]:

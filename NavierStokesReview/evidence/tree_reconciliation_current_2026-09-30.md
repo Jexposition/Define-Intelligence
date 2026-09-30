@@ -13,17 +13,12 @@ The extracted tree is an inventory snapshot. Current checkout paths are authorit
 |---|---:|
 | Tree entries | `49` |
 | Tree file entries | `47` |
-| Current checkout files | `3466` |
-| Unique-basename resolutions | `45` |
-| Ambiguous basename entries | `2` |
-| Missing current basenames | `0` |
+| Current checkout files | `3468` |
+| Resolved tree entries | `47` |
+| Ambiguous tree entries | `0` |
+| Missing tree entries | `0` |
 | Duplicate current basenames | `15` |
 
 ## Interpretation
 
-A resolved entry establishes only that the named file exists at the unique current path. It does not establish import reachability or theorem use. Ambiguous and missing entries are retained as review obligations.
-
-## Ambiguous entries
-
-- line `18` `ARCHIVE_MANIFEST_2026-09-30.md`: `archive/ARCHIVE_MANIFEST_2026-09-30.md, docs/archive/ARCHIVE_MANIFEST_2026-09-30.md, NavierStokesReview/evidence/archive/ARCHIVE_MANIFEST_2026-09-30.md`
-- line `40` `deep_semantics_audit.md`: `docs/deep_semantics_audit.md, NavierStokesReview/src/external-semantic/deep_semantics_audit.md`
+A resolved entry establishes only that the named file exists at the resolved current path. It does not establish import reachability or theorem use. Explicit tree-relative paths are preferred; basename fallback remains conservative. Ambiguous and missing entries are retained as review obligations.

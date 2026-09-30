@@ -10,7 +10,7 @@ The corrected parser is
 annotations as display metadata, retains rendered labels for auditability, and
 refuses to infer a path when a basename is ambiguous. The live result is 49
 tree entries, 47 file entries, 3,466 checkout files, 45 unique resolutions, 0
-missing basenames, and 2 ambiguities. The historical reconciliation report is
+missing entries, and 0 ambiguities. The historical reconciliation report is
 not overwritten.
 
 Next control action: rerun the full document cross-reference, active-link,

@@ -5,8 +5,8 @@
 The current tree reconciliation is
 `../NavierStokesReview/evidence/tree_reconciliation_current_2026-09-30.md`.
 It supersedes the dated tree snapshot for current bookkeeping only: 49 tree
-entries, 47 file entries, 3,466 checkout files, 45 unique basename
-resolutions, 0 missing basenames, and 2 explicit ambiguities. The older
+entries, 47 file entries, 3,466 checkout files, 47 explicit tree-relative
+resolutions, 0 missing entries, and 0 ambiguities. The older
 report remains historical evidence. The current Git inventory contains two
 intentional untracked rows: the protected `NavierStokes/R3/TestPressure.lean`
 source file and the raw 366 MB environment-closure JSON, which remains local

@@ -6,7 +6,7 @@ The current tree evidence is
 `NavierStokesReview/evidence/tree_reconciliation_current_2026-09-30.md`.
 The parser correction removes only rendered archive annotations and retains
 ambiguous basename matches as unresolved obligations. The live replay found
-zero missing tree basenames, 45 unique resolutions, and two explicit
+zero missing tree entries, 47 explicit tree-relative resolutions, and zero
 ambiguities. The older tree reconciliation report is historical and remains
 unchanged. This bookkeeping result does not alter `CTR-005: NOT ESTABLISHED`
 or authorise an archive move.

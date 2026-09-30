@@ -5,10 +5,10 @@
 The corrected live tree reconciliation is recorded in
 `NavierStokesReview/evidence/tree_reconciliation_current_2026-09-30.md` and
 its JSON companion. The parser correction removes only rendered
-`(historical archive)` labels and handles displayed relative prefixes by
-basename; it does not manufacture paths from ambiguous names. The live
-result is 49 tree entries, 47 file entries, 3,466 checkout files, 45 unique
-resolutions, 0 missing basenames, and 2 explicit ambiguities. The older
+`(historical archive)` labels, resolves displayed directory context before
+using basename fallback, and does not manufacture paths from ambiguous names. The live
+result is 49 tree entries, 47 file entries, 3,466 checkout files, 47 explicit
+tree-relative resolutions, 0 missing entries, and 0 ambiguities. The older
 `review_tree_reconciliation_2026-09-30.md` remains historical evidence.
 
 This closes the tree-parser false-missing issue, not the scientific audit.

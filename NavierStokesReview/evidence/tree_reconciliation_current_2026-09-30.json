@@ -15,9 +15,9 @@
     "tree_entries": 49,
     "tree_file_entries": 47,
     "tree_unique_file_basenames": 47,
-    "current_files": 3466,
-    "uniquely_resolved_tree_files": 45,
-    "ambiguous_tree_files": 2,
+    "current_files": 3468,
+    "uniquely_resolved_tree_files": 47,
+    "ambiguous_tree_files": 0,
     "missing_tree_files": 0,
     "duplicate_current_basenames": 15
   },
@@ -323,340 +323,332 @@
       "tree_name": "archive/Define inteligence tree_2026-09-30.md",
       "basename": "Define inteligence tree_2026-09-30.md",
       "current_path": "docs/archive/Define inteligence tree_2026-09-30.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "4",
       "tree_name": "Define intelligence Tree.md",
       "basename": "Define intelligence Tree.md",
       "current_path": "docs/Define intelligence Tree.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "5",
       "tree_name": "Euler_Parent_Child_Interval_Audit.md",
       "basename": "Euler_Parent_Child_Interval_Audit.md",
       "current_path": "docs/Euler_Parent_Child_Interval_Audit.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "6",
       "tree_name": "LEAN_DECLARATION_INDEX.md",
       "basename": "LEAN_DECLARATION_INDEX.md",
       "current_path": "docs/LEAN_DECLARATION_INDEX.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "7",
       "tree_name": "LEAN_MODULE_EXPLANATIONS.md",
       "basename": "LEAN_MODULE_EXPLANATIONS.md",
       "current_path": "docs/LEAN_MODULE_EXPLANATIONS.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "8",
       "tree_name": "MATHEMATICAL_SPECIFICATION.md",
       "basename": "MATHEMATICAL_SPECIFICATION.md",
       "current_path": "docs/MATHEMATICAL_SPECIFICATION.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "9",
       "tree_name": "OpenAI_NavierStokes_Audit_Tracker.md",
       "basename": "OpenAI_NavierStokes_Audit_Tracker.md",
       "current_path": "docs/OpenAI_NavierStokes_Audit_Tracker.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "10",
       "tree_name": "OpenAI_NavierStokes_Axiom_Ledger.md",
       "basename": "OpenAI_NavierStokes_Axiom_Ledger.md",
       "current_path": "docs/OpenAI_NavierStokes_Axiom_Ledger.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "11",
       "tree_name": "OpenAI_NavierStokes_CMI_First_Review_Plan.md",
       "basename": "OpenAI_NavierStokes_CMI_First_Review_Plan.md",
       "current_path": "docs/OpenAI_NavierStokes_CMI_First_Review_Plan.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "12",
       "tree_name": "archive/OpenAI_NavierStokes_Final_Falsification_Report_2026-09-30.md",
       "basename": "OpenAI_NavierStokes_Final_Falsification_Report_2026-09-30.md",
       "current_path": "docs/archive/OpenAI_NavierStokes_Final_Falsification_Report_2026-09-30.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "13",
       "tree_name": "CMI_OpenAI_Full_Semantic_Crosswalk.md",
       "basename": "CMI_OpenAI_Full_Semantic_Crosswalk.md",
       "current_path": "docs/CMI_OpenAI_Full_Semantic_Crosswalk.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "14",
       "tree_name": "OpenAI_NavierStokes_Input_Document_Synthesis.md",
       "basename": "OpenAI_NavierStokes_Input_Document_Synthesis.md",
       "current_path": "docs/OpenAI_NavierStokes_Input_Document_Synthesis.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "15",
       "tree_name": "OpenAI_NavierStokes_Peer_Review_v1.md",
       "basename": "OpenAI_NavierStokes_Peer_Review_v1.md",
       "current_path": "docs/OpenAI_NavierStokes_Peer_Review_v1.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "16",
       "tree_name": "OpenAI_NavierStokes_Research_Paper.md",
       "basename": "OpenAI_NavierStokes_Research_Paper.md",
       "current_path": "docs/OpenAI_NavierStokes_Research_Paper.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
+    },
+    {
+      "tree_line": "18",
+      "tree_name": "ARCHIVE_MANIFEST_2026-09-30.md",
+      "basename": "ARCHIVE_MANIFEST_2026-09-30.md",
+      "current_path": "docs/archive/ARCHIVE_MANIFEST_2026-09-30.md",
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "19",
       "tree_name": "OpenAI_NavierStokes_Research_Paper_with_dossier_2026-09-30.md",
       "basename": "OpenAI_NavierStokes_Research_Paper_with_dossier_2026-09-30.md",
       "current_path": "docs/archive/OpenAI_NavierStokes_Research_Paper_with_dossier_2026-09-30.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "20",
       "tree_name": "OpenAI_NavierStokes_Source_Context_Register.md",
       "basename": "OpenAI_NavierStokes_Source_Context_Register.md",
       "current_path": "docs/OpenAI_NavierStokes_Source_Context_Register.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "21",
       "tree_name": "DOCUMENTATION_RECONCILIATION_2026-09-30.md",
       "basename": "DOCUMENTATION_RECONCILIATION_2026-09-30.md",
       "current_path": "docs/DOCUMENTATION_RECONCILIATION_2026-09-30.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "22",
       "tree_name": "REPOSITORY_ARCHITECTURE_ATLAS.md",
       "basename": "REPOSITORY_ARCHITECTURE_ATLAS.md",
       "current_path": "docs/REPOSITORY_ARCHITECTURE_ATLAS.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "23",
       "tree_name": "REPOSITORY_ARCHITECTURE_MAP.dot",
       "basename": "REPOSITORY_ARCHITECTURE_MAP.dot",
       "current_path": "docs/REPOSITORY_ARCHITECTURE_MAP.dot",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "24",
       "tree_name": "REPOSITORY_ARCHITECTURE_MAP.html",
       "basename": "REPOSITORY_ARCHITECTURE_MAP.html",
       "current_path": "docs/REPOSITORY_ARCHITECTURE_MAP.html",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "25",
       "tree_name": "REPOSITORY_ARCHITECTURE_MAP.md",
       "basename": "REPOSITORY_ARCHITECTURE_MAP.md",
       "current_path": "docs/REPOSITORY_ARCHITECTURE_MAP.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "26",
       "tree_name": "REPOSITORY_ARCHITECTURE_MAP.tex",
       "basename": "REPOSITORY_ARCHITECTURE_MAP.tex",
       "current_path": "docs/REPOSITORY_ARCHITECTURE_MAP.tex",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "27",
       "tree_name": "REPOSITORY_MAP_GUIDE.md",
       "basename": "REPOSITORY_MAP_GUIDE.md",
       "current_path": "docs/REPOSITORY_MAP_GUIDE.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "28",
       "tree_name": "REPOSITORY_MODULE_ATLAS.md",
       "basename": "REPOSITORY_MODULE_ATLAS.md",
       "current_path": "docs/REPOSITORY_MODULE_ATLAS.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "29",
       "tree_name": "REPOSITORY_SEMANTIC_COVERAGE_REGISTER.html",
       "basename": "REPOSITORY_SEMANTIC_COVERAGE_REGISTER.html",
       "current_path": "docs/REPOSITORY_SEMANTIC_COVERAGE_REGISTER.html",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "30",
       "tree_name": "REPOSITORY_SEMANTIC_COVERAGE_REGISTER.json",
       "basename": "REPOSITORY_SEMANTIC_COVERAGE_REGISTER.json",
       "current_path": "docs/REPOSITORY_SEMANTIC_COVERAGE_REGISTER.json",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "31",
       "tree_name": "REPOSITORY_SEMANTIC_COVERAGE_REGISTER.md",
       "basename": "REPOSITORY_SEMANTIC_COVERAGE_REGISTER.md",
       "current_path": "docs/REPOSITORY_SEMANTIC_COVERAGE_REGISTER.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "32",
       "tree_name": "REVIEW_AUDIT_WORKSPACE_GOAL.md",
       "basename": "REVIEW_AUDIT_WORKSPACE_GOAL.md",
       "current_path": "docs/REVIEW_AUDIT_WORKSPACE_GOAL.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "33",
       "tree_name": "REVIEW_DOCUMENT_CONTROL.md",
       "basename": "REVIEW_DOCUMENT_CONTROL.md",
       "current_path": "docs/REVIEW_DOCUMENT_CONTROL.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "34",
       "tree_name": "REVIEW_MAPPING_METHOD.md",
       "basename": "REVIEW_MAPPING_METHOD.md",
       "current_path": "docs/REVIEW_MAPPING_METHOD.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "35",
       "tree_name": "SEMANTIC_CORRESPONDENCE_MAP.md",
       "basename": "SEMANTIC_CORRESPONDENCE_MAP.md",
       "current_path": "docs/SEMANTIC_CORRESPONDENCE_MAP.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "36",
       "tree_name": "axisymmetric_rank_interface.md",
       "basename": "axisymmetric_rank_interface.md",
       "current_path": "docs/axisymmetric_rank_interface.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "37",
       "tree_name": "base_profile_diagnostic.md",
       "basename": "base_profile_diagnostic.md",
       "current_path": "docs/base_profile_diagnostic.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "38",
       "tree_name": "cmi_review_verdict_.md",
       "basename": "cmi_review_verdict_.md",
       "current_path": "docs/cmi_review_verdict_.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "39",
       "tree_name": "core_realization_bridge_audit.md",
       "basename": "core_realization_bridge_audit.md",
       "current_path": "docs/core_realization_bridge_audit.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
+    },
+    {
+      "tree_line": "40",
+      "tree_name": "deep_semantics_audit.md",
+      "basename": "deep_semantics_audit.md",
+      "current_path": "docs/deep_semantics_audit.md",
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "41",
       "tree_name": "dependency_closure_validation.md",
       "basename": "dependency_closure_validation.md",
       "current_path": "docs/dependency_closure_validation.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "42",
       "tree_name": "euler.pdf",
       "basename": "euler.pdf",
       "current_path": "docs/euler.pdf",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "43",
       "tree_name": "germ_geometry_extraction.md",
       "basename": "germ_geometry_extraction.md",
       "current_path": "docs/germ_geometry_extraction.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "44",
       "tree_name": "implementation_plan.md",
       "basename": "implementation_plan.md",
       "current_path": "docs/implementation_plan.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "45",
       "tree_name": "navier-stokes openai.pdf",
       "basename": "navier-stokes openai.pdf",
       "current_path": "docs/navier-stokes openai.pdf",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "46",
       "tree_name": "navier-stokes openai.txt",
       "basename": "navier-stokes openai.txt",
       "current_path": "docs/navier-stokes openai.txt",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "47",
       "tree_name": "navierstokes.pdf",
       "basename": "navierstokes.pdf",
       "current_path": "docs/navierstokes.pdf",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "48",
       "tree_name": "navierstokes.txt",
       "basename": "navierstokes.txt",
       "current_path": "docs/navierstokes.txt",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "49",
       "tree_name": "pressure_moment_blindness_sweep.md",
       "basename": "pressure_moment_blindness_sweep.md",
       "current_path": "docs/pressure_moment_blindness_sweep.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     },
     {
       "tree_line": "50",
       "tree_name": "solenoidal_assembly_collapse.md",
       "basename": "solenoidal_assembly_collapse.md",
       "current_path": "docs/solenoidal_assembly_collapse.md",
-      "resolution": "unique-current-basename"
+      "resolution": "explicit-tree-relative-path"
     }
   ],
-  "ambiguous": [
-    {
-      "line": 18,
-      "kind": "file",
-      "name": "ARCHIVE_MANIFEST_2026-09-30.md",
-      "display_indent": 8,
-      "current_candidates": [
-        "archive/ARCHIVE_MANIFEST_2026-09-30.md",
-        "docs/archive/ARCHIVE_MANIFEST_2026-09-30.md",
-        "NavierStokesReview/evidence/archive/ARCHIVE_MANIFEST_2026-09-30.md"
-      ]
-    },
-    {
-      "line": 40,
-      "kind": "file",
-      "name": "deep_semantics_audit.md",
-      "display_indent": 4,
-      "current_candidates": [
-        "docs/deep_semantics_audit.md",
-        "NavierStokesReview/src/external-semantic/deep_semantics_audit.md"
-      ]
-    }
-  ],
+  "ambiguous": [],
   "missing": [],
   "current_paths": [
     ".gitignore",
@@ -3661,6 +3653,8 @@
     "NavierStokesReview/evidence/temporal_patching_audit_2026-09-24.md",
     "NavierStokesReview/evidence/tree_reconciliation_2026-09-26.json",
     "NavierStokesReview/evidence/tree_reconciliation_2026-09-26.md",
+    "NavierStokesReview/evidence/tree_reconciliation_current_2026-09-30.json",
+    "NavierStokesReview/evidence/tree_reconciliation_current_2026-09-30.md",
     "NavierStokesReview/evidence/untracked_consolidation_matrix_2026-09-30.json",
     "NavierStokesReview/evidence/untracked_consolidation_matrix_2026-09-30.md",
     "NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json",
