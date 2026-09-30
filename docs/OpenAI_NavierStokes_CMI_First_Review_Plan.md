@@ -4800,11 +4800,12 @@ and
 - [x] Manually inspect all three positive-looking transport candidates.
 - [x] Record that none exports the production selected-field identity
   `barMoment(u_selected) = (M,I,J,S,C_p)`.
-- [ ] Rebuild the current Lean environment closure from the live checkout and
-  rerun the endpoint declaration-type pass. Do not use the 2026-09-28 snapshot
-  as current proof evidence.
-- [ ] Only after that replay, inspect any newly surfaced production declaration
-  candidates and compile them zero-sorry before changing the disposition.
+- [x] Rebuild the current Lean environment closure from the live checkout and
+  rerun the endpoint declaration-type pass. The 2026-09-30 closure supersedes
+  the 2026-09-28 environment snapshot for the six selected NS roots.
+- [x] After the fresh replay, inspect any newly surfaced production declaration
+  candidates. No new production selected-field transport declaration was
+  surfaced; the disposition therefore remains unchanged.
 
 Evidence and method:
 `NavierStokesReview/evidence/selected_transport_audit_2026-09-30_review_sources.json`,
@@ -4818,7 +4819,8 @@ failure. The same three review-side manual candidates compiled with exit codes
 `0,0,0` under the repository-pinned `leanprover/lean4:v4.34.0-rc2` toolchain.
 That result validates the interface files only; it does not establish the
 production selected-field five-observable transport. The fresh environment
-closure and endpoint replay remain the next open control task.
+closure and endpoint replay are now complete; the selected-field transport
+calculation remains open.
 
 ## Priority 212: current Navier--Stokes environment closure (2026-09-30)
 

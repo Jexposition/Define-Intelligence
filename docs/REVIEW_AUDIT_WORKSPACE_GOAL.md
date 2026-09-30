@@ -3817,6 +3817,7 @@ remains `CTR-005: NOT ESTABLISHED`.
 
 The raw generated graph is recorded by digest rather than blindly staged as a
 large public artefact. The Euler root build limitation is tracked separately
-and is not used as evidence about the NS endpoint. The consolidation,
-cross-reference, source fact-check, and non-destructive archive gate remains
-open.
+and is not used as evidence about the NS endpoint. The environment replay is
+closed; the consolidation, cross-reference, source fact-check, and
+non-destructive archive gate remain open, as does the selected-field
+value-level transport calculation.

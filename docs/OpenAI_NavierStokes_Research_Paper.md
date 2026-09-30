@@ -1381,4 +1381,31 @@ after a caller supplies a pullback and a scalar-profile equality. It therefore
 does not close the selected-witness correspondence. The paper should be read
 as containing genuine internal moment machinery and an unresolved final
 observable identification, not as either empty code or a proven selected-field
-defect. The controlled review status remains \`CTR-005: NOT ESTABLISHED\`.
+defect. The controlled review status remains `CTR-005: NOT ESTABLISHED`.
+
+## Current environment and whole-tree control checkpoint
+
+The live Navier--Stokes closure was rebuilt with the pinned
+`leanprover/lean4:v4.34.0-rc2` toolchain. It records 30,919 declarations,
+329,127 declaration edges, zero missing names, and zero `sorryAx` nodes for
+the six selected Navier--Stokes roots. The raw 366 MB graph is retained by
+digest outside the scoped public commit. The source record is
+[`priority_212_ns_environment_closure_2026-09-30.md`](../NavierStokesReview/src/audit/priority_212_ns_environment_closure_2026-09-30.md),
+with the compact closure summary at
+[`lean_environment_closure_ns_3d_2026-09-30_summary.md`](../NavierStokesReview/evidence/lean_environment_closure_ns_3d_2026-09-30_summary.md).
+
+The closure removes the stale-environment qualification for those roots. It
+does not establish the missing final observable identity. The controlling
+whole-tree declaration census is
+[`selected_transport_audit_2026-09-30_review_sources.md`](../NavierStokesReview/evidence/selected_transport_audit_2026-09-30_review_sources.md),
+and its source-level interpretation is
+[`priority_211_selected_transport_whole_tree_2026-09-30.md`](../NavierStokesReview/src/audit/priority_211_selected_transport_whole_tree_2026-09-30.md).
+The production source census found no declaration identifying the completed
+selected Cartesian field with `(M,I,J,S,C_p)`; the review-side candidates are
+conditional caller-supplied interfaces rather than an instantiation of
+`selected_witness`.
+
+The active scientific disposition remains `CTR-005: NOT ESTABLISHED` for
+complete manuscript-to-selected-endpoint correspondence. This is not a claim
+of a selected nonzero defect, force nonsmoothness, literal CMI failure,
+impossibility theorem, compiler escape, or `False`.

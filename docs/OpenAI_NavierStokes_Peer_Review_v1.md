@@ -4428,8 +4428,8 @@ This checkpoint supersedes any older header count or branch description in
 this document. The active private review branch is
 `review/cmi-first-navier-stokes-reconciled-2026-09-30` at the current scoped
 review commit. The separate public review branch is
-`review/cmi-first-navier-stokes-disposition-public-2026-09-30`; its remote
-the remote branch was verified after the latest scoped review push.
+`review/cmi-first-navier-stokes-disposition-public-2026-09-30`; the remote
+branch was verified after the latest scoped review push.
 
 The current worktree inventory contains two intentional untracked rows: the
 protected `NavierStokes/R3/TestPressure.lean` source and the local raw 366 MB
@@ -4497,3 +4497,28 @@ not an empty or disconnected Lean shell, and the complete paper-to-selected
 field correspondence is still CTR-005: NOT ESTABLISHED. This does not prove a
 nonzero selected defect, nonsmooth force, literal CMI failure, impossibility,
 compiler cheat, or False.
+
+## Current environment and whole-tree control checkpoint
+
+The fresh Navier--Stokes environment closure was exported from the live
+checkout with the pinned `leanprover/lean4:v4.34.0-rc2` toolchain. It records
+30,919 declarations, 329,127 declaration edges, zero missing names, and zero
+`sorryAx` nodes across the six selected Navier--Stokes roots. The raw 366 MB
+graph is retained locally by SHA-256 rather than staged as a public artefact;
+the summary is linked at
+[`lean_environment_closure_ns_3d_2026-09-30_summary.md`](../NavierStokesReview/evidence/lean_environment_closure_ns_3d_2026-09-30_summary.md)
+and the audit record is
+[`priority_212_ns_environment_closure_2026-09-30.md`](../NavierStokesReview/src/audit/priority_212_ns_environment_closure_2026-09-30.md).
+
+This closure removes the stale-environment qualification for the selected NS
+roots. It does not prove the missing selected-field observable identity. The
+whole-tree transport census and its manual candidate review remain the
+controlling evidence for that question:
+[`selected_transport_audit_2026-09-30_review_sources.md`](../NavierStokesReview/evidence/selected_transport_audit_2026-09-30_review_sources.md)
+and
+[`priority_211_selected_transport_whole_tree_2026-09-30.md`](../NavierStokesReview/src/audit/priority_211_selected_transport_whole_tree_2026-09-30.md).
+
+The active disposition therefore remains `CTR-005: NOT ESTABLISHED` for
+complete manuscript-to-selected-endpoint correspondence. No selected nonzero
+moment defect, force nonsmoothness, literal CMI failure, impossibility
+theorem, compiler escape, or `False` is claimed.
