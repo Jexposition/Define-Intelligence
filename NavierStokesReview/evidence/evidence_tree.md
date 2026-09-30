@@ -405,3 +405,14 @@ This gate records archive-manifest coverage, SHA-256 agreement, repaired
 active evidence links, false-positive parser triage, and the protected-source
 boundary. It is documentation control only and does not change the scientific
 finding `CTR-005: NOT ESTABLISHED`.
+
+## Current corpus reconciliation: Priority 207 (2026-09-30)
+
+`priority_207_workspace_corpus_reconciliation_2026-09-30.md` records the
+workspace-wide authority pass across the controlling documents, manuscript,
+peer review, scratch notes, evidence, results, and audit indexes. It confirms
+that the active scientific status remains `CTR-005: NOT ESTABLISHED` for the
+complete manuscript-to-selected-endpoint correspondence. It also records that
+the apparent `docs/doc_tree.md` archive-navigation drift was a false alarm:
+the archive paths were already explicit. No scientific promotion, deletion,
+archive move, protected-source edit, or protected-source staging occurred.

@@ -2479,3 +2479,22 @@ and
 `NavierStokesReview/src/audit/priority_206_archive_manifest_and_active_link_gate_2026-09-30.md`.
 The archive gate remains closed until the full document consolidation,
 cross-reference, and fact-check is complete.
+
+## Workspace corpus reconciliation: Priority 207 (2026-09-30)
+
+The workspace-wide authority pass is recorded in
+`NavierStokesReview/evidence/priority_207_workspace_corpus_reconciliation_2026-09-30.md`.
+It checked the controlling docs, manuscript, peer-review draft, `notes3.md`,
+`notes4.md`, evidence, results, and audit/probe/completion/extension/refutation
+indexes. The active finding remains `CTR-005: NOT ESTABLISHED` for complete
+manuscript-to-selected-endpoint correspondence. The selected path has genuine
+internal invariants, physical data, residual/force machinery, and a blow-up
+route, but the inspected production closure still lacks a named final identity
+connecting the completed selected Cartesian observables to `(M,I,J,S,C_p)`.
+
+The apparent `docs/doc_tree.md` archive-navigation problem was checked and was
+a false alarm: its archived artefacts already have explicit `docs/archive/...`
+paths. No paper rewrite, deletion, archive move, protected-source edit, or
+protected-source staging was performed. The archive gate remains closed until
+the full consolidation cross-reference, link/lint checks, and parent-folder
+SHA-256 manifest are complete.

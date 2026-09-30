@@ -4622,3 +4622,24 @@ and
 `NavierStokesReview/src/audit/priority_206_archive_manifest_and_active_link_gate_2026-09-30.md`.
 This gate changes no scientific disposition: `CTR-005` remains
 `NOT ESTABLISHED`, and no selected defect or literal CMI failure is asserted.
+
+## Priority 207 workspace corpus reconciliation: 2026-09-30
+
+- [x] Re-read the controlling plan, goal, document-control ledger, manuscript,
+  peer-review draft, `notes3.md`, `notes4.md`, evidence tree, results tree, and
+  audit/probe/completion/extension/refutation indexes.
+- [x] Confirm the active interpretation from raw-source-backed records:
+  genuine selected internal invariants and residual/force/blow-up machinery are
+  present; the inspected production closure still has no named final identity
+  connecting the completed selected Cartesian observables to
+  `(M,I,J,S,C_p)`.
+- [x] Preserve `CTR-005: NOT ESTABLISHED` and reject unsupported upgrades to
+  selected defect, force nonsmoothness, literal CMI failure, impossibility,
+  compiler escape, or `False`.
+- [x] Check the suspected `docs/doc_tree.md` archive-navigation issue; it was a
+  false alarm because the archived paths were already explicit.
+- [x] Record the reconciliation in
+  `NavierStokesReview/evidence/priority_207_workspace_corpus_reconciliation_2026-09-30.md`.
+- [ ] Complete the remaining full-corpus link/lint and cross-reference pass.
+- [ ] Recompute and attach the parent-folder SHA-256 archive manifest only
+  after the consolidation gate is complete.

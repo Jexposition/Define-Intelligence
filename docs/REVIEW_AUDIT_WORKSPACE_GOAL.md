@@ -3627,3 +3627,23 @@ full document-consolidation cross-reference and fact-check pass, followed by a
 fresh structural-lint check. The scientific finding remains
 `CTR-005: NOT ESTABLISHED` for complete manuscript-to-selected-endpoint
 correspondence.
+
+## Priority 207 continuity checkpoint: 2026-09-30
+
+The full workspace corpus was re-read against the current authority order:
+raw Lean source and current declarations first, CMI/manuscript mirrors next,
+current evidence tranches after that, and scratch notes or archived reports as
+historical provenance only. The result is not a new theorem. It confirms that
+the selected path contains real internal invariant, physical-data,
+residual-rate, force-extension, and blow-up machinery, while the inspected
+production closure still does not expose a named final identity transporting
+the completed selected Cartesian fields to `(M,I,J,S,C_p)`.
+
+The active goal therefore remains `CTR-005: NOT ESTABLISHED` for complete
+paper-to-endpoint correspondence. No selected mismatch, force nonsmoothness,
+literal CMI failure, impossibility theorem, compiler escape, or `False` has
+been proved. The `docs/doc_tree.md` archive-path concern was checked and was a
+false alarm. No deletion, archive movement, protected OpenAI-source edit, or
+protected-source staging is authorised. Full consolidation, cross-reference,
+fact-check, link/lint verification, and the parent-folder SHA-256 archive gate
+remain open work.

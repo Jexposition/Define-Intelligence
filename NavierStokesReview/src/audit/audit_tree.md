@@ -267,3 +267,17 @@ the archive SHA-256 gate, active-link repair, parser false-positive triage,
 protected-source status, and release pointers. It is a control audit rather
 than a mathematical disposition and leaves `CTR-005: NOT ESTABLISHED`
 unchanged.
+
+## Workspace corpus reconciliation: Priority 207 (2026-09-30)
+
+The companion evidence record
+`evidence/priority_207_workspace_corpus_reconciliation_2026-09-30.md`
+reconciles the active docs, manuscript, peer-review draft, scratch notes,
+evidence, results, and audit indexes. It preserves the bounded source finding
+that the inspected selected closure has genuine internal invariants and
+residual/force/blow-up machinery, while no inspected production declaration
+identifies the completed selected Cartesian observables with
+`(M,I,J,S,C_p)`. The status remains `CTR-005: NOT ESTABLISHED`; no stronger
+defect, impossibility, literal CMI failure, compiler escape, or `False` is
+claimed. The archive-navigation concern was checked and found to be a false
+alarm because `docs/doc_tree.md` already uses explicit archive paths.
