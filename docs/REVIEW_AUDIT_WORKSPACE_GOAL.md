@@ -1,5 +1,30 @@
 # Review audit workspace goal
 
+## Current publication and environment authority: Priority 213 (2026-09-30)
+
+The live six-root Navier–Stokes environment closure is recorded in
+`NavierStokesReview/src/audit/priority_212_ns_environment_closure_2026-09-30.md`
+and
+`NavierStokesReview/evidence/lean_environment_closure_ns_3d_2026-09-30_summary.md`.
+The pinned replay resolved six declared roots, 30,919 project declarations,
+329,127 declaration edges, zero missing root names, and zero `sorry` nodes in
+the exported closure. This closes environment capture, not the
+paper-to-selected-field moment correspondence.
+
+The scoped control updates were committed privately as `e63a511` on
+`review/cmi-first-navier-stokes-reconciled-2026-09-30` and mirrored publicly
+as `d8f379f` on
+`review/cmi-first-navier-stokes-disposition-public-2026-09-30`; the remote ref
+was verified. The legacy branch remains untouched. The raw 366 MB closure
+JSON and protected `NavierStokes/R3/TestPressure.lean` remain intentionally
+uncommitted.
+
+The goal remains active. `CTR-005` is controlled as `NOT ESTABLISHED`: the
+record contains genuine internal invariant, residual-rate, force-extension,
+and axis-blow-up routes, but no located production theorem identifying the
+final selected Cartesian fields with `(M,I,J,S,C_p)`. No stronger refutation
+claim is authorised without a direct field-level proof.
+
 ## Current probe replay: Priority 210 (2026-09-30)
 
 The selected endpoint probe replay is recorded in

@@ -2587,3 +2587,28 @@ edges, with zero missing names and zero `sorryAx` nodes. This closes the stale
 environment coverage qualification for those NS roots only. It does not close
 the selected-field `(M,I,J,S,C_p)` transport gap, and `CTR-005` remains
 `NOT ESTABLISHED`.
+
+## Publication and control reconciliation: Priority 213 (2026-09-30)
+
+The Priority 212 environment closure and its navigation updates were
+committed privately as `e63a511` on
+`review/cmi-first-navier-stokes-reconciled-2026-09-30` and mirrored publicly
+as `d8f379f` on
+`review/cmi-first-navier-stokes-disposition-public-2026-09-30`. The remote
+public ref was verified after the push. This supersedes older historical
+wording that described the public mirror as pending or the private push as
+unconfirmed.
+
+The raw 366 MB closure JSON is retained locally with its recorded SHA-256 but
+is not committed. `NavierStokes/R3/TestPressure.lean` remains a protected,
+untouched, unstaged source file. The archive and consolidation gate remains
+open: no further non-destructive archive move is authorised until the current
+cross-reference, active-link, and SHA-256 checks are rerun against the live
+tree.
+
+The scientific disposition is unchanged. The selected endpoint has genuine
+internal invariant, residual-rate, force-extension, and axis-blow-up routes,
+but no located production theorem identifying the final selected Cartesian
+fields with `(M,I,J,S,C_p)`. `CTR-005` remains `NOT ESTABLISHED`; this record
+does not assert a nonzero defect, force nonsmoothness, literal CMI failure,
+impossibility theorem, compiler escape, or `False`.

@@ -1,5 +1,32 @@
 # CMI-first review plan: OpenAI Navier–Stokes claim
 
+## Current publication and environment authority: Priority 213 (2026-09-30)
+
+The live six-root Navier–Stokes environment closure is recorded in
+`NavierStokesReview/src/audit/priority_212_ns_environment_closure_2026-09-30.md`
+and
+`NavierStokesReview/evidence/lean_environment_closure_ns_3d_2026-09-30_summary.md`.
+The pinned replay resolved six declared roots, 30,919 project declarations,
+329,127 declaration edges, zero missing root names, and zero `sorry` nodes in
+the exported closure. This closes the environment-capture subtask only. It
+does not establish the selected-field transport of `(M,I,J,S,C_p)`.
+
+The scoped control and navigation updates were committed privately as
+`e63a511` on `review/cmi-first-navier-stokes-reconciled-2026-09-30` and
+mirrored publicly as `d8f379f` on
+`review/cmi-first-navier-stokes-disposition-public-2026-09-30`. The remote
+public ref was verified after the push. The legacy branch remains untouched.
+The raw 366 MB closure JSON and protected `NavierStokes/R3/TestPressure.lean`
+remain uncommitted by design.
+
+The controlled scientific status is unchanged:
+`CTR-005: NOT ESTABLISHED`. The current record shows genuine internal
+invariant, residual-rate, force-extension, and axis-blow-up routes, but no
+located production theorem identifying the final selected Cartesian fields
+with the manuscript's named five observables. No nonzero defect,
+impossibility theorem, force-nonsmoothness result, literal CMI failure,
+compiler-escape claim, or `False` is asserted.
+
 ## Probe replay checkpoint: Priority 210 (2026-09-30)
 
 The current selected-path replay is documented in
@@ -192,21 +219,26 @@ reason, and SHA-256 manifest. Commit only scoped, reviewed tranches; never
 stage the whole worktree; leave `NavierStokes/` and user scratch material
 untouched.
 
-## Current cleanup gate: completed disposition, pending scoped release
+## Current cleanup gate: disposition and scoped release completed; consolidation remains open
 
 The canonical inventory and disposition scripts are:
 
 - `NavierStokesReview/src/audit/untracked_content_inventory.py`
 - `NavierStokesReview/src/audit/untracked_consolidation_matrix.py`
 
-The next action is to stage only the 24 `STAGE_RETAINED` rows plus the
-controlling documentation, matrix, disposition manifest, and archive
-manifests. `$null` remains held for provenance review. The protected
-`NavierStokes/R3/TestPressure.lean` file remains outside the commit. The
-selected scientific finding is unchanged: upstream moment/rank machinery is
-real and active, but the full paper-to-selected-endpoint moment identification
-remains `CTR-005: NOT ESTABLISHED`; no nonzero selected-field defect or `False`
-has been proved.
+The 24 `STAGE_RETAINED` rows and their controlling documentation were
+reviewed and released in scoped commits; the public mirror is recorded in the
+Priority 213 authority block above. `$null` remains held for provenance
+review. The protected `NavierStokes/R3/TestPressure.lean` file remains
+outside the commit. The selected scientific finding is unchanged: upstream
+moment/rank machinery is real and active, but the full
+paper-to-selected-endpoint moment identification remains
+`CTR-005: NOT ESTABLISHED`; no nonzero selected-field defect or `False` has
+been proved.
+
+The broader documentation consolidation gate remains open. No further file
+may be moved to a parent-folder archive until the current cross-reference,
+active-link, and SHA-256 checks are rerun against the live tree.
 
 ## Controlling input and execution lock
 
