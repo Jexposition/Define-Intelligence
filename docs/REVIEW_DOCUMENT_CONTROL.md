@@ -2275,20 +2275,18 @@ authorised.
 ## Priority 196: authoritative live state after inventory publication (2026-09-30)
 
 The current private source-of-truth branch is
-`review/cmi-first-navier-stokes-2026-09-29`, at the verified local revision
-`163664463bd5a9dd673c47d3f319ad8326abe5c5`. The dated public branch is
-`review/cmi-first-navier-stokes-public-2026-09-30`, at
-`dc2e686047620521ee08940e1eaaf1df7f829173`; its remote ref matches the local
-public revision. The legacy `review/cmi-first-navier-stokes-2026-09-22` branch
-has not been modified.
+`review/cmi-first-navier-stokes-2026-09-29`. The dated public branch is
+`review/cmi-first-navier-stokes-public-2026-09-30`, and its remote ref was
+verified to match the local public revision during this control update. The
+legacy `review/cmi-first-navier-stokes-2026-09-22` branch has not been
+modified. Exact refs are intentionally obtained from Git verification rather
+than embedded as self-invalidating hashes.
 
-The current private worktree has 62 untracked entries. The latest committed
-content-addressed inventory records the earlier 60-entry snapshot at
-`NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json`;
-the two subsequent untracked paths must be included in the next inventory
-refresh before any archive decision. There are no tracked source edits in the
-OpenAI `NavierStokes/` or `Euler/` trees, and no deletion, bulk staging, or
-archive move is authorised.
+The current private worktree has 60 untracked entries, matching the refreshed
+content-addressed inventory at
+`NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json`.
+There are no tracked source edits in the OpenAI `NavierStokes/` or `Euler/`
+trees, and no deletion, bulk staging, or archive move is authorised.
 
 The controlling scientific finding remains `CTR-005`: the selected endpoint
 does not identify the final Cartesian fields and residual construction with

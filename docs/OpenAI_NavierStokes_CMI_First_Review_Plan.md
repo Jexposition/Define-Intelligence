@@ -4222,27 +4222,22 @@ must be resolved after document consolidation and cross-reference checks.
 
 ## Priority 196: authoritative live state after inventory publication (2026-09-30)
 
-This block supersedes earlier live-state paragraphs that cite older commit
-hashes or say that the dated public branch has not been pushed. Historical
-entries remain unchanged for provenance.
+This block supersedes earlier live-state paragraphs that say that the dated
+public branch has not been pushed. Historical entries remain unchanged for
+provenance. Exact current refs are obtained from Git verification rather than
+embedded here as self-invalidating hashes.
 
-- Private source-of-truth branch: `review/cmi-first-navier-stokes-2026-09-29`
-  at `163664463bd5a9dd673c47d3f319ad8326abe5c5`.
+- Private source-of-truth branch: `review/cmi-first-navier-stokes-2026-09-29`.
 - Public review branch:
-  `review/cmi-first-navier-stokes-public-2026-09-30` at
-  `dc2e686047620521ee08940e1eaaf1df7f829173`; the remote ref matches this
-  commit.
+  `review/cmi-first-navier-stokes-public-2026-09-30`; its remote ref was
+  verified to match the local public revision during this update.
 - The legacy `review/cmi-first-navier-stokes-2026-09-22` branch is untouched.
-- The latest committed inventory records 60 untracked entries at
+- The refreshed inventory records 60 untracked entries at
   `NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json`
-  and its Markdown companion, generated from private revision `e0b8a68`.
-  The live worktree now has 62 untracked entries because `$null` and the dated
-  publication extract appeared after that snapshot; refresh the inventory
-  before any archive decision.
-- The 60-entry snapshot comprised 54 review-evidence artefacts, 3 review
-  documents, 1 protected OpenAI source file, 1 archive candidate, and 1
-  unknown artefact. They are not a staging queue. No bulk staging, deletion,
-  or archive move is authorised.
+  and its Markdown companion. The entries comprise 54 review-evidence
+  artefacts, 3 review documents, 1 protected OpenAI source file, 1 archive
+  candidate, and 1 unknown artefact. They are not a staging queue. No bulk
+  staging, deletion, or archive move is authorised.
 - Any later archive move must use the archive belonging to the entry's parent
   folder and record old path, new path, reason, and SHA-256 in the manifest.
 - Priority 195 remains the scientific control: the five-moment repair is
