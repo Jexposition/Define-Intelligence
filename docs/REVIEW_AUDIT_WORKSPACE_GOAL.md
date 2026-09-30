@@ -1,5 +1,16 @@
 # Review audit workspace goal
 
+## Priority 222: selected-path probe replay (2026-10-01)
+
+The fresh pinned-toolchain replay is recorded in
+`NavierStokesReview/src/audit/priority_222_selected_probe_replay_2026-10-01.md`
+and `NavierStokesReview/evidence/selected_probe_replay_2026-10-01.md`.
+The three endpoint-adjacent probes compiled with exit code 0 under
+`leanprover/lean4:v4.34.0-rc2` and contain no admission tokens. Their abstract
+debt and force-provenance results are confirmed, but they do not prove a
+physical selected-field mismatch or literal CMI failure. Keep the goal active
+at `CTR-005: NOT ESTABLISHED` and continue the value-level transport work.
+
 ## Priority 221: Fefferman comparator crosswalk (2026-10-01)
 
 The current CMI crosswalk is recorded in

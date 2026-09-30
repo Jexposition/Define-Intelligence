@@ -1,5 +1,20 @@
 # Navier–Stokes review document control
 
+## Priority 222 selected-probe replay (2026-10-01)
+
+The fresh pinned-toolchain replay is recorded in
+`../NavierStokesReview/src/audit/priority_222_selected_probe_replay_2026-10-01.md`
+and
+`../NavierStokesReview/evidence/selected_probe_replay_2026-10-01.md`.
+The selected endpoint obstruction, selected-path, and global transport probes
+all returned exit code 0 under `leanprover/lean4:v4.34.0-rc2`, with no
+`sorry`, `admit`, or `axiom` token in those probe files.
+
+The replay validates endpoint-contract and force-provenance diagnostics. It
+does not identify abstract `Debt` with physical selected-field integrals and
+does not establish a nonzero defect, force nonsmoothness, literal CMI failure,
+impossibility theorem, or `False`. `CTR-005` remains `NOT ESTABLISHED`.
+
 ## Priority 221 Fefferman comparator crosswalk (2026-10-01)
 
 The CMI crosswalk is recorded in

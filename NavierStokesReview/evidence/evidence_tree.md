@@ -1,5 +1,6 @@
 ```markdown
 . 📂 evidence
+├── 📄 selected_probe_replay_2026-10-01.md
 ├── 📄 fefferman_comparator_crosswalk_2026-10-01.md
 ├── 📄 selected_endpoint_crosswalk_replay_2026-10-01.md
 ├── 📄 document_consolidation_census_2026-10-01.md
