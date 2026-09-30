@@ -1,5 +1,15 @@
 # CMI-first review plan: OpenAI Navier–Stokes claim
 
+## Current authority override: Priority 209 (2026-09-30)
+
+The live source/register authority is now
+`NavierStokesReview/evidence/priority_209_scope_and_index_reconciliation_2026-09-30.md`.
+It reports 2,797 current Lean files, 588 modules in the selected endpoint
+closure, 2,209 rows outside that closure, 817 files under `NavierStokes/`,
+and 137 review-side Lean files. The earlier 2,794 and 2,796 figures below
+remain dated snapshots and must not be quoted as current totals. The selected
+scientific disposition remains `CTR-005: NOT ESTABLISHED`.
+
 ## Priority 203 internal-to-endpoint cross-file trace: 2026-09-30
 
 The latest source-bound trace is recorded in
@@ -4558,9 +4568,14 @@ Source and workspace state for this checkpoint:
   remote tip verified by Git and push confirmed;
 - private worktree: one protected untracked path only,
   `NavierStokes/R3/TestPressure.lean`; no OpenAI source edits or staging;
-- inventory control: the 2,794 register rows, 817-file `NavierStokes/` census,
-  588 selected closure modules, and unresolved 2,796 Priority-201 field remain
-  separate scopes until the root-explicit register refresh.
+- historical inventory control: the 2,794 register rows and unresolved 2,796
+  Priority-201 field were superseded by the root-explicit Priority-209 refresh.
+  The current control totals are 2,797 indexed Lean files, 588 selected
+  endpoint-closure modules, 2,209 modules outside that closure, 906
+  evidence-inspected rows, 1,884 source-indexed rows queued for semantic
+  review, zero missing project import edges, and 86 supplemental evidence
+  records. The 817-file `NavierStokes/` census remains a separate declared
+  source scope.
 
 The next ordered steps are private push-state resolution, full live
 cross-reference and structural-lint verification, a scoped review commit, and

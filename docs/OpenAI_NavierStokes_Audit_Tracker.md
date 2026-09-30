@@ -1,6 +1,14 @@
 # OpenAI Navier–Stokes Counter-Paper Evidence Tracker
 
-## Register state snapshot (2026-09-29)
+## Current scope authority: Priority 209 (2026-09-30)
+
+The current register and source-map counts are 2,797 Lean files, 588 modules
+in the selected endpoint closure, 2,209 rows outside that closure, 817 files
+under `NavierStokes/`, and 137 review-side Lean files. Earlier counts in this
+chronological tracker are historical evidence. The selected scientific status
+remains `CTR-005: NOT ESTABLISHED`.
+
+## Historical register state snapshot (2026-09-29; superseded by Priority 209)
 
 The authoritative register currently records 2,794 indexed modules, 588
 modules in the directly captured `NavierStokes.R3.Theorem` closure, 904

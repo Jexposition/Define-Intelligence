@@ -1,5 +1,12 @@
 # Research paper evidence dossier
 
+> Current authority override (Priority 209, 2026-09-30): the live register
+> records 2,797 indexed Lean files, 588 selected endpoint-closure modules,
+> 2,209 modules outside that closure, 906 evidence-inspected rows, 1,884
+> source-indexed rows queued for semantic review, zero missing project import
+> edges, and 86 supplemental evidence records. The dated control snapshot
+> below is historical and must not be read as the current repository total.
+
 This file preserves the audit-control and source-dossier material removed from the publication manuscript. The exact pre-consolidation manuscript is archived at docs/archive/OpenAI_NavierStokes_Research_Paper_with_dossier_2026-09-30.md.
 
 ## Preserved audit-control record

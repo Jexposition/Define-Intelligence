@@ -41,11 +41,12 @@ defect, force nonsmoothness, impossibility, a compiler escape, or `False`.
 ## Effective register and reconciliation control: 2026-09-30
 
 Use [`DOCUMENTATION_RECONCILIATION_2026-09-30.md`](DOCUMENTATION_RECONCILIATION_2026-09-30.md)
-and the 2026-09-29 full register as the live state. The current counts are
-2,794 indexed modules, 588 captured endpoint modules, 906 evidence-inspected
-rows, 1,881 queued rows, 0 missing project import edges, and 86 supplemental
-records. The dated coverage sections below preserve review chronology and must
-not be read as current totals.
+and the regenerated 2026-09-30 full register as the live state. The current
+counts are 2,797 indexed modules, 588 captured endpoint modules, 2,209 rows
+outside that selected closure, 906 evidence-inspected rows, 1,884 queued rows,
+0 missing project import edges, and 86 supplemental records. The dated
+coverage sections below preserve review chronology and must not be read as
+current totals.
 
 **Updated:** 2026-09-30
 **Purpose:** make the mathematical content of the Lean source reviewable without

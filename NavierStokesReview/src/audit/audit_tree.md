@@ -225,7 +225,7 @@ comparator, selected assembly, residual-rate route, and fresh axiom replay.
 It is the current control against isolating Alternative (C) or treating the
 missing named moment identity as either irrelevant or already refuted.
 
-## Current source tranches: Priorities 201--204 (2026-09-30)
+## Historical source tranches: Priorities 201--204 (superseded by Priority 209)
 
 - `priority_201_selected_closure_census_2026-09-30.md`
 - `priority_202_actual_moment_invariant_trace_2026-09-30.md`

@@ -30,12 +30,14 @@ nonsmooth-force, compiler-cheat, and `False` claims remain unproved.
 
 The current documentation reconciliation is
 [`DOCUMENTATION_RECONCILIATION_2026-09-30.md`](DOCUMENTATION_RECONCILIATION_2026-09-30.md).
-The effective register is the 2026-09-29 full JSON mirror and its root copy:
-2,794 indexed modules, 588 captured endpoint modules, 906 evidence-inspected
-rows, 1,881 queued rows, 0 missing project import edges, and 86 supplemental
-records. Historical 2,790 and 2,792 counts below are dated records, not live
-counts. The register also contains an unresolved ten-versus-seven `sorry`
-token field discrepancy.
+The effective register is the regenerated 2026-09-30 full JSON mirror and its
+root copy: 2,797 indexed modules, 588 captured endpoint modules, 2,209 rows
+outside that selected closure, 906 evidence-inspected rows, 1,884 queued rows,
+0 missing project import edges, and 86 supplemental records. The lexical
+ten-versus-seven `sorry` distinction is resolved as 10 source rows containing
+the token, of which 7 carry the specific queued status and 3 are already
+evidence-inspected. Historical 2,790, 2,792, 2,794, and 2,796 counts below
+are dated records, not live counts.
 
 **Status:** active source-of-truth map  
 **Updated:** 2026-09-30

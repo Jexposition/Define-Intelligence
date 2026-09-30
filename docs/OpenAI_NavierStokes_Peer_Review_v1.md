@@ -31,15 +31,17 @@ This review is the decision document accompanying the [research paper](OpenAI_Na
 
 Read the [research paper's Executive Verdict](OpenAI_NavierStokes_Research_Paper.md#executive-verdict) for the argument in manuscript order. Do not treat the dated audit state below as a substitute for that argument.
 
-## Live audit state (2026-09-29)
+## Live audit state: Priority 209 (2026-09-30)
 
-The authoritative register currently records 2,794 indexed modules, 588
-modules in the captured Navier–Stokes endpoint closure, 906
-evidence-inspected rows, 1,881 source-indexed rows still queued for semantic
-review, 0 missing project import edges, 10 source rows containing a `sorry`
-token, and 86 supplemental evidence records. “Outside the captured endpoint
-closure” is a scope label, not a claim that a module is dead or unreachable
-in OpenAI’s own build graph. The full-repository review remains active.
+The authoritative register currently records 2,797 indexed modules, 588
+modules in the captured Navier–Stokes endpoint closure, 2,209 rows outside
+that closure, 906 evidence-inspected rows, 1,884 source-indexed rows still
+queued for semantic review, 0 missing project import edges, 10 source rows
+containing a `sorry` token, and 86 supplemental evidence records. Seven rows
+carry the specific `source_indexed_sorry_token` status; three lexical rows are
+already evidence-inspected. “Outside the captured endpoint closure” is a
+scope label, not a claim that a module is dead or unreachable in OpenAI’s own
+build graph. The full-repository review remains active.
 
 ### Superseding source adjudication: moment/rank restoration (2026-09-29)
 

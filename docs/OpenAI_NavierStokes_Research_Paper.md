@@ -14,6 +14,12 @@ disposition ledger is historical review-artifact state, not a claim that 29
 files are currently untracked; the live Git state has one protected
 untracked author-side file, as recorded in document control.
 
+Priority 209 is now the current scope and index authority. It records 2,797
+current Lean files, 588 modules in the selected endpoint closure, 2,209 rows
+outside that closure, 817 files under `NavierStokes/`, and 137 review-side
+Lean files. Earlier register counts remain historical evidence. The current
+scientific finding remains `CTR-005: NOT ESTABLISHED`.
+
 The latest cross-file trace confirms that the actual cycle carries two
 preserved mean-mass identities and three residual-debt classes which feed the
 physical-data, residual-rate, force-extension, and blow-up route. The remaining

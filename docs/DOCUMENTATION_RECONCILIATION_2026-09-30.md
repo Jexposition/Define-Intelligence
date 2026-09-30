@@ -26,31 +26,30 @@ commit.
 
 ## Effective authority snapshot
 
-The effective machine-readable register is:
+The effective machine-readable register is now:
 
-`NavierStokesReview/evidence/semantic_coverage_register_full_2026-09-29.json`
+`NavierStokesReview/evidence/semantic_coverage_register_full_2026-09-30.json`
 
 The matching root mirror is:
 
 `docs/REPOSITORY_SEMANTIC_COVERAGE_REGISTER.json`
 
-Their current counts are:
+The current counts are:
 
 | Metric | Current value | Interpretation |
 | --- | ---: | --- |
-| Indexed Lean modules | 2,794 | Repository inventory in the register scope |
+| Indexed Lean modules | 2,797 | Repository inventory in the current register scope |
 | Captured endpoint modules | 588 | Membership in the captured `NavierStokes.R3.Theorem` closure only |
+| Rows outside selected closure | 2,209 | Outside the chosen audit roots; not a dead-code claim |
 | Evidence-inspected rows | 906 | Register rows with an evidence inspection record |
-| Source-indexed rows queued | 1,881 | Rows not yet semantically classified at declaration level |
+| Source-indexed rows queued | 1,884 | Rows not yet semantically classified at declaration level |
 | Missing project import edges | 0 | Import-resolution diagnostic |
 | Supplemental evidence records | 86 | Additional review-side records |
 | Source rows containing a `sorry` token | 10 | Register field `source_rows_with_sorry_token` |
 
 The register's nested status field reports seven `source_indexed_sorry_token`
-rows while its top-level source-row field reports ten. That metric discrepancy
-is unresolved and must not be silently collapsed. The next register refresh
-must explain whether the two fields count different scopes or whether one is
-stale.
+rows while its top-level source-row field reports ten. This is now reconciled:
+three of the ten lexical rows are already `evidence_inspected`, so `10 = 7 + 3`.
 
 ## Findings that are currently locked
 
@@ -99,14 +98,11 @@ in one proposition.
      and periodic endpoints. This is an axiom-footprint result, not evidence
      that the complete manuscript correspondence is proved.
 
-11. The inventory scope requires one further reconciliation. The effective
-    fork register reports 2,794 rows, the direct `NavierStokes/` source census
-    reports 817 files, and the Priority 201 JSON contains a separate
-    `repository_lean_files: 2796` field whose scope is not defined sufficiently
-    to reconcile it with those records. This is recorded in
-    `NavierStokesReview/src/audit/priority_204_workspace_source_record_reconciliation_2026-09-30.md`.
-    Until a root-explicit rerun is complete, these figures must not be merged
-    into one headline count.
+11. Priority 209 resolves the inventory scope. The current whole-checkout
+    register has 2,797 rows, the direct `NavierStokes/` source census has 817
+    files, and the review-side Lean census has 137 files. The Priority 201
+    `repository_lean_files: 2796` value is retained as a historical snapshot,
+    not a current headline count.
 
 ## Historical counts and supersession rule
 
@@ -123,7 +119,7 @@ Historical material is not deleted. Any future archive move requires a
 cross-reference, a parent-folder manifest, the old and new paths, a reason,
 and the original SHA-256.
 
-## Tree-index drift found
+## Historical tree-index drift and current control
 
 The tree files are navigation aids, but they currently omit live files:
 
@@ -136,24 +132,25 @@ The tree files are navigation aids, but they currently omit live files:
   source reviews, Priority 185, the direct-closure scripts, and the current
   consolidation utility.
 
-These are index defects, not evidence that the omitted files are dead. The
-trees must be regenerated or patched after the full corpus review, with the
-current authority snapshot linked at the top of each tree.
+These were index defects in the historical snapshots, not evidence that the
+omitted files are dead. Priority 209 patched the current appendices and linked
+the regenerated source map/register. The older omission lists remain below as
+provenance; the current register and source map, not basename snapshots,
+control scope and reachability.
 
-## Required reconciliation order
+## Remaining reconciliation order
 
-1. Make `REVIEW_DOCUMENT_CONTROL.md`, the active plan, the workspace goal,
-   `SEMANTIC_CORRESPONDENCE_MAP.md`, and both reader-facing manuscripts point
-   to this ledger and the 2026-09-29 register.
-2. Patch all three tree files from the actual directory contents, preserving
-   historical names and marking generated/build artefacts by role.
-3. Reconcile the ten-versus-seven `sorry`-token metric before presenting it as
-   a current result.
-4. Read and cross-reference all 61 untracked entries. Keep them on
-   `HOLD_NO_STAGE_NO_MOVE` until each has a retain, merge, supersede, or
-   archive decision.
-5. Only then prepare a scoped private commit and a separately curated public
-   branch. Never stage the entire worktree.
+1. Continue document-by-document consolidation and source-first fact-checking
+   of the active manuscript, peer review, evidence dossier, and audit records.
+2. Keep current tree appendices and generated registers synchronized whenever
+   new review artefacts are added.
+3. Keep the 2,797/817/137/588 scope table and the ten-versus-seven lexical
+   status distinction synchronized with generated outputs.
+4. Keep the protected `NavierStokes/R3/TestPressure.lean` outside all commits,
+   archive moves, and source edits.
+5. Only after the consolidation gate is complete may a further non-destructive
+   archive move be considered, with a parent-folder SHA-256 manifest. Never
+   stage the entire worktree.
 
 ## Historical untracked-file control snapshot: 2026-09-30
 

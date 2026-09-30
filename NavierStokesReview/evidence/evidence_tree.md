@@ -371,7 +371,7 @@ identification at `CTR-005: NOT ESTABLISHED`. They do not assert a selected
 nonzero defect, force nonsmoothness, literal CMI failure, impossibility, or
 `False`.
 
-## Current control tranche: Priority 204 (2026-09-30)
+## Historical control tranche: Priority 204 (superseded by Priority 209)
 
 - `source_tranche_priority_204_workspace_source_record_reconciliation_2026-09-30.json`
 - `../src/audit/priority_204_workspace_source_record_reconciliation_2026-09-30.md`

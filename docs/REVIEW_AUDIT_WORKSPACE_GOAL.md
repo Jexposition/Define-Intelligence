@@ -1,5 +1,14 @@
 # Review audit workspace goal
 
+## Current authority override: Priority 209 (2026-09-30)
+
+The current source/register authority is
+`NavierStokesReview/evidence/priority_209_scope_and_index_reconciliation_2026-09-30.md`.
+It reports 2,797 current Lean files, 588 modules in the selected endpoint
+closure, 2,209 rows outside that closure, 817 `NavierStokes/` files, and 137
+review-side Lean files. Earlier 2,794, 2,796, and 2,790 figures below are
+historical snapshots. The scientific status remains `CTR-005: NOT ESTABLISHED`.
+
 ## Priority 203: internal invariant to selected endpoint: 2026-09-30
 
 The source-bound cross-file trace is recorded in
