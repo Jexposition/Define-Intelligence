@@ -380,3 +380,18 @@ This tranche records an inventory-scope discrepancy between the 2,794-row
 effective register, the 817-file `NavierStokes/` source census, and the
 unresolved 2,796 field in the Priority 201 JSON. It changes no scientific
 verdict and requires a root-explicit count rerun before totals are quoted.
+
+## Current source-tranche index: Priority 205 (2026-09-30)
+
+- `source_tranche_priority_205_endpoint_census_and_completion_adjudication_2026-09-30.md`
+- `source_tranche_priority_205_endpoint_census_and_completion_adjudication_2026-09-30.json`
+- `../src/audit/priority_205_endpoint_census_and_completion_adjudication_2026-09-30.md`
+
+The Priority 205 census checked the selected endpoint closure and seven lexical
+production candidates. The candidates establish schedules, residual rates,
+eventual germ equalities, and axis blow-up, but none states the final selected
+Cartesian observable equality with `(M,I,J,S,C_p)`. The review completion
+`SelectedBarMomentInterface` is a caller-supplied pullback identity, not a
+selected-witness transport theorem. The controlled status remains
+`CTR-005: NOT ESTABLISHED`; no selected defect, force nonsmoothness, literal
+CMI failure, impossibility, compiler cheat, or `False` is asserted.

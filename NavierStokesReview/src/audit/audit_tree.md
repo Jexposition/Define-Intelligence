@@ -247,3 +247,15 @@ sole-mechanism, and bare-interface claims are not established. The selected
 route has a concrete residual-rate and smooth-force chain, but the complete
 selected-field identification with `(M,I,J,S,C_p)` remains
 `CTR-005: NOT ESTABLISHED`.
+
+## Indexed source tranche: Priority 205 (2026-09-30)
+
+`priority_205_endpoint_census_and_completion_adjudication_2026-09-30.md`
+records the selected-closure census and manual adjudication of seven lexical
+production candidates. They prove or package schedules, residual-rate bounds,
+eventual germ equalities, and axis blow-up, but do not identify the final
+Cartesian velocity, pressure, residual, or force with the manuscript tuple
+`(M,I,J,S,C_p)`. `SelectedBarMomentInterface` remains a caller-supplied
+pullback identity rather than a selected-witness transport theorem. The
+controlled finding is `CTR-005: NOT ESTABLISHED`, with no stronger refutation
+claim.

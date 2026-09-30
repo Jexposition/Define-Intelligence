@@ -4580,3 +4580,21 @@ historical reviewed-set records. The older 61-entry hold is historical as
 well. They must not be read as the current untracked count. The regenerated
 inventory and matrix are the current bookkeeping authority; they do not alter
 the scientific finding or open the archive gate.
+
+## Priority 205 source-census adjudication
+
+The Priority 205 endpoint census and completion adjudication is recorded in
+\`../NavierStokesReview/evidence/source_tranche_priority_205_endpoint_census_and_completion_adjudication_2026-09-30.md\`
+and its JSON companion. It checked the 588-module selected closure, seven
+lexical production candidates, and the review-side bar-moment completion.
+
+The result is deliberately two-sided. The selected path is real: schedules,
+physical data, residual-rate estimates, eventual germ equalities, smooth-force
+limits, and axis blow-up are connected. The bounded negative result is also
+real: no inspected production declaration identifies the final selected
+Cartesian velocity, pressure, residual, or force with the manuscript tuple
+\`(M,I,J,S,C_p)\`. The review completion supplies a caller-chosen pullback
+identity and is not that missing transport theorem. Keep \`CTR-005\` at
+\`NOT ESTABLISHED\`; do not upgrade it to a defect, force nonsmoothness, literal
+CMI failure, impossibility, compiler cheat, or \`False\` without a separate
+value-level theorem.

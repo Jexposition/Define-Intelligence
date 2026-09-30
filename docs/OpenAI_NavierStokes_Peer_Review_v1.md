@@ -4458,5 +4458,22 @@ The latest positive source correction is recorded in
 The actual correction cycle carries two preserved mean-mass identities and
 three residual-debt classes. The review therefore does not claim that the
 selected path lacks moment machinery. The unresolved correspondence question
+
+### Priority 205 endpoint-census adjudication
+
+The source-controlled result is documented in
+../NavierStokesReview/evidence/source_tranche_priority_205_endpoint_census_and_completion_adjudication_2026-09-30.md.
+The selected closure was searched and seven production candidates were read
+manually. They provide real schedule, residual-rate, germ, and blow-up
+statements. None provides the final selected Cartesian identification with the
+paper's five observables. The review completion SelectedBarMomentInterface is
+conditional on caller-supplied pullback data and is not evidence that the
+selected witness transports those observables.
+
+Accordingly, the review must state both sides together: the selected proof is
+not an empty or disconnected Lean shell, and the complete paper-to-selected
+field correspondence is still CTR-005: NOT ESTABLISHED. This does not prove a
+nonzero selected defect, nonsmooth force, literal CMI failure, impossibility,
+compiler cheat, or False.
 is whether those internal coordinates are explicitly identified with the
 paper's `(M,I,J,S,Cp)` after the final Cartesian transformations and export.

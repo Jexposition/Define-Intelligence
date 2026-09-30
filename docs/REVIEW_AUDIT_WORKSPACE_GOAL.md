@@ -3595,3 +3595,18 @@ historical. Neither number is the current untracked count. The current
 one-entry state is recorded in the regenerated inventory and consolidation
 matrix, which are evidence of bookkeeping state only and do not authorise
 staging, movement, deletion, or a scientific upgrade.
+
+## Priority 205 source-census control
+
+The latest selected-closure census is controlled by
+\`NavierStokesReview/evidence/source_tranche_priority_205_endpoint_census_and_completion_adjudication_2026-09-30.md\`
+and \`.json\`, indexed in both the evidence and audit trees. It confirms the
+connected selected route and seven production candidates, but it does not
+locate a final selected-field identity with \`(M,I,J,S,C_p)\`.
+
+This is the current calibrated finding: genuine internal invariant and
+residual-to-force machinery exists; complete manuscript-to-selected-field
+transport remains \`CTR-005: NOT ESTABLISHED\`. Review probes and caller-supplied
+bar-moment identities must not be promoted to a physical defect or a proof of
+CMI failure. Any stronger conclusion requires a separately checked value-level
+calculation or impossibility theorem.

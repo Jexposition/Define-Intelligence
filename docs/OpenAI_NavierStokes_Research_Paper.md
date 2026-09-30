@@ -1342,3 +1342,23 @@ masses and carries three residual-debt components. This is genuine internal
 moment-related mathematics. The paper-to-endpoint gap remains the missing
 explicit identification with `(M,I,J,S,Cp)` for the final Cartesian field,
 not the absence of all internal moment machinery.
+
+### Priority 205 source-census correction
+
+The selected-closure census and manual candidate adjudication are recorded in
+\`../NavierStokesReview/evidence/source_tranche_priority_205_endpoint_census_and_completion_adjudication_2026-09-30.md\`.
+It checked seven production declarations that lexically join endpoint,
+field, rate, transformation, or moment vocabulary. These declarations
+establish actual schedules, residual-rate bounds, eventual germ equalities,
+and the axis blow-up route. They do not state the final observable identity
+\[
+\operatorname{Moments}(u_{\mathrm{selected}},p_{\mathrm{selected}},f_{\mathrm{selected}})
+=(M,I,J,S,C_p).
+\]
+
+The review-side \`SelectedBarMomentInterface\` defines a valid identity only
+after a caller supplies a pullback and a scalar-profile equality. It therefore
+does not close the selected-witness correspondence. The paper should be read
+as containing genuine internal moment machinery and an unresolved final
+observable identification, not as either empty code or a proven selected-field
+defect. The controlled review status remains \`CTR-005: NOT ESTABLISHED\`.
