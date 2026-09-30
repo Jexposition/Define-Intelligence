@@ -3647,10 +3647,12 @@ field-level results, not consequences of the absence of a named exported
 identity.
 
 The live control state is: private branch
-`review/cmi-first-navier-stokes-reconciled-2026-09-30`, local tip `0c0700f`
-before the next documentation-only commit; public branch
+`review/cmi-first-navier-stokes-reconciled-2026-09-30`, local tip `0a79e6f`
+(`Refresh live documentation control state`); its push was rejected by
+GitHub because the existing branch history contains oversized evidence blobs.
+The public branch
 `review/cmi-first-navier-stokes-disposition-public-2026-09-30`, with remote tip
-`e8599b4` verified and push confirmed. The private worktree has two intentional
+`aab38d7` verified and push confirmed. The private worktree has two intentional
 untracked paths: protected `NavierStokes/R3/TestPressure.lean` and the raw
 `NavierStokesReview/evidence/lean_environment_closure_ns_3d_2026-09-30.json`
 closure export. Both remain untouched and unstaged.

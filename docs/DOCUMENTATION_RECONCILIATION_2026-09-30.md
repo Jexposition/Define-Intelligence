@@ -251,10 +251,12 @@ impossibility theorem, compiler escape, or `False`.
 
 The live Git state is explicit. The private branch is
 `review/cmi-first-navier-stokes-reconciled-2026-09-30`; its local tip is
-`0c0700f` (`Reconcile tree hierarchy resolution evidence`). The separate public
+`0a79e6f` (`Refresh live documentation control state`). Its push was rejected
+by GitHub because the existing branch history contains oversized evidence blobs.
+The separate public
 mirror branch is
 `review/cmi-first-navier-stokes-disposition-public-2026-09-30`; its remote tip
-is verified by Git and its push is confirmed at `e8599b4`. The private worktree
+is verified by Git and its push is confirmed at `aab38d7`. The private worktree
 contains exactly two intentional untracked paths: the protected
 `NavierStokes/R3/TestPressure.lean` source and the local raw environment-closure
 JSON. Neither is staged or edited. No OpenAI source file is part of the review

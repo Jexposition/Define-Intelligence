@@ -4644,9 +4644,10 @@ selected-field theorem.
 Source and workspace state for this checkpoint:
 
 - private branch: `review/cmi-first-navier-stokes-reconciled-2026-09-30`; local
-  tip `0c0700f` verified by Git;
+  tip `0a79e6f` verified by Git; its push was rejected by GitHub because the
+  existing branch history contains oversized evidence blobs;
 - public branch: `review/cmi-first-navier-stokes-disposition-public-2026-09-30`;
-  remote tip `e8599b4` verified by Git and push confirmed;
+  remote tip `aab38d7` verified by Git and push confirmed;
 - private worktree: two intentional untracked paths, the protected
   `NavierStokes/R3/TestPressure.lean` source and the local generated 366 MB
   environment-closure JSON; neither is staged, and no OpenAI source edits

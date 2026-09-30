@@ -2439,10 +2439,12 @@ failure, impossibility theorem, compiler escape, or kernel `False` has been
 proved.
 
 The current Git facts are: private branch
-`review/cmi-first-navier-stokes-reconciled-2026-09-30` at local tip `0c0700f`
-before the next documentation-only commit; public branch
+`review/cmi-first-navier-stokes-reconciled-2026-09-30` at local tip `0a79e6f`
+(`Refresh live documentation control state`); its push was rejected by GitHub
+because the existing branch history contains oversized evidence blobs. Public
+branch
 `review/cmi-first-navier-stokes-disposition-public-2026-09-30` with remote tip
-`e8599b4` verified by Git and push confirmed. The private worktree has two
+`aab38d7` verified by Git and push confirmed. The private worktree has two
 intentional untracked rows: the protected `NavierStokes/R3/TestPressure.lean`
 source and the local generated 366 MB environment-closure JSON. Both remain
 unstaged; the source file remains untouched.
@@ -2488,9 +2490,10 @@ failure, impossibility, a compiler escape, or False.
 
 Release control is current: private branch
 `review/cmi-first-navier-stokes-reconciled-2026-09-30` is local at tip
-`0c0700f` before the next documentation-only commit; public branch
+`0a79e6f`; its push was rejected by GitHub because the existing branch history
+contains oversized evidence blobs. Public branch
 `review/cmi-first-navier-stokes-disposition-public-2026-09-30` is remote-confirmed
-at `e8599b4`. The two intentional untracked paths remain the protected
+at `aab38d7`. The two intentional untracked paths remain the protected
 NavierStokes/R3/TestPressure.lean and the raw closure export JSON. Both are
 untouched, unstaged, and excluded.
 No archive move is authorised until the consolidation cross-reference, link/lint
