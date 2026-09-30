@@ -4394,7 +4394,7 @@ this document. The active private review branch is
 `review/cmi-first-navier-stokes-reconciled-2026-09-30` at the current scoped
 review commit. The separate public review branch is
 `review/cmi-first-navier-stokes-disposition-public-2026-09-30`; its remote
-state was verified against commit `96041c10894f9a81b4e97ff5ccb238e812806315`.
+state was verified against commit `c999e7ecc9ccd6161791bb4b06c4ed7d852e7e62`.
 
 The current worktree inventory contains one untracked row only:
 `NavierStokes/R3/TestPressure.lean`. It is protected OpenAI-side source and
