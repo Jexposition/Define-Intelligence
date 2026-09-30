@@ -1,0 +1,43 @@
+{
+  "priority": 203,
+  "date": "2026-09-30",
+  "status": "bounded_cross_file_trace_complete",
+  "roots": [
+    "NavierStokes.R3.Theorem",
+    "NavierStokes.ActualCandidateAssembly"
+  ],
+  "positive_path": {
+    "internal_invariant": [
+      "NavierStokes/CorrectionState.lean:226-250",
+      "NavierStokes/GaugeMassPreservation.lean:140-142",
+      "NavierStokes/CorrectionStep.lean:9408-9448",
+      "NavierStokes/ActualCyclePreservation.lean:826-828",
+      "NavierStokes/ActualInitialization.lean:1427-1458",
+      "NavierStokes/DefectIncrementBounds.lean:714-870"
+    ],
+    "physical_data_and_rates": [
+      "NavierStokes/ActualCandidateAssembly.lean:1079-1098",
+      "NavierStokes/ActualCycleResidualBounds.lean:1087-1123",
+      "NavierStokes/ActualCycleResidualBounds.lean:1156-1172",
+      "NavierStokes/GluedStageEstimates.lean:684-744"
+    ],
+    "force_and_endpoint": [
+      "NavierStokes/CandidateFromLimits.lean:45-112",
+      "NavierStokes/GermCandidateAssembly.lean:146-271",
+      "NavierStokes/ActualCandidateAssembly.lean:1121-1151",
+      "NavierStokes/ActualCandidateAssembly.lean:1177-1185"
+    ]
+  },
+  "cross_file_result": {
+    "actual_internal_two_plus_three_invariant_found": true,
+    "actual_invariant_feeds_physical_data_and_rates": true,
+    "final_selected_cartesian_M_I_J_S_Cp_identity_located": false,
+    "internal_invariant_mapped_to_paper_tuple": false,
+    "identity_consumed_by_witness": false,
+    "selected_nonzero_moment_defect_proved": false,
+    "force_nonsmoothness_proved": false,
+    "literal_forced_cmi_endpoint_refuted": false
+  },
+  "verdict": "CTR-005: NOT ESTABLISHED for complete manuscript-to-selected-endpoint correspondence",
+  "scope_note": "This is a bounded source-search result, not a repository-wide impossibility theorem or a value-level mismatch proof."
+}

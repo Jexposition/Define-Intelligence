@@ -1,5 +1,18 @@
 # Independent peer review of the OpenAI Navier–Stokes formalisation
 
+## Current source correction: Priority 203 (2026-09-30)
+
+The latest cross-file trace confirms that the selected construction contains a
+real internal invariant: two preserved mean-mass identities and three
+residual-debt classes. Those data feed actual physical fields, residual-rate
+estimates, force extension, and the exported candidate. The unresolved
+`CTR-005` finding is narrower than “moment machinery is absent”: the inspected
+selected closure still does not expose a production theorem identifying that
+internal structure with the manuscript’s named `(M,I,J,S,C_p)` observables
+after the final Cartesian/periodic/localised/summed field construction.
+
+Evidence: `NavierStokesReview/src/audit/priority_203_internal_to_endpoint_crossfile_trace_2026-09-30.md`.
+
 ## Document control and current evidence
 
 This review is governed by

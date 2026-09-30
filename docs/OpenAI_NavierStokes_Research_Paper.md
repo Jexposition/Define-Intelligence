@@ -5,10 +5,18 @@
 This reader-facing paper is controlled by
 [`REVIEW_DOCUMENT_CONTROL.md`](REVIEW_DOCUMENT_CONTROL.md) and
 [`DOCUMENTATION_RECONCILIATION_2026-09-30.md`](DOCUMENTATION_RECONCILIATION_2026-09-30.md).
-The current evidence boundary is recorded in the Priority 186–201 source
+The current evidence boundary is recorded in the Priority 186–203 source
 reviews under `NavierStokesReview/src/audit/` and their matching JSON records
 under `NavierStokesReview/evidence/`. The paper is not a chronological log and
 must not be updated from a historical register count.
+
+The latest cross-file trace confirms that the actual cycle carries two
+preserved mean-mass identities and three residual-debt classes which feed the
+physical-data, residual-rate, force-extension, and blow-up route. The remaining
+`CTR-005` question is whether a production theorem identifies that internal
+invariant with the manuscript's named `(M,I,J,S,C_p)` observables after the
+final Cartesian, periodic, localised, summed, radial, and force transformations.
+Evidence: `NavierStokesReview/src/audit/priority_203_internal_to_endpoint_crossfile_trace_2026-09-30.md`.
 
 **Independent source-level review and formal audit**
 **Jexposition, 26 September 2026**

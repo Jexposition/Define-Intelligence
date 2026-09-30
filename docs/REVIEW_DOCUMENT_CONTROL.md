@@ -65,18 +65,19 @@ the JSON/Markdown/HTML trio under
 with the generated Markdown/HTML/JSON mirrors under `docs/`. Historical counts
 below remain unchanged for audit provenance.
 
-**Current control state (2026-09-30):** 2,794 indexed modules; 588 captured
-endpoint modules; 906 evidence-inspected rows; 1,881 source-indexed review-
-queued rows; 0 missing project import edges; 86 supplemental evidence records;
-and an unresolved seven-versus-ten `sorry`-token metric discrepancy. The
-current worktree has 61 untracked entries, all held pending consolidation.
+**Historical control state (2026-09-30, superseded):** 2,794 indexed modules;
+588 captured endpoint modules; 906 evidence-inspected rows; 1,881
+source-indexed review-queued rows; 0 missing project import edges; 86
+supplemental evidence records; and an unresolved seven-versus-ten
+`sorry`-token metric discrepancy. The earlier 61-entry untracked hold was
+reviewed and dispositioned non-destructively.
 
-The manual consolidation ledger has now reviewed all 61 entries and records 0
-remaining. The JSON and Markdown consolidation matrices are synchronised to
-that ledger with 61 reviewed rows and 0 pending rows. This changes only
-evidence bookkeeping: all entries remain `HOLD_NO_STAGE_NO_MOVE` until
-document cross-reference checks, explicit retain/merge/supersede decisions,
-and release approval are complete.
+**Effective worktree state:** the live disposition matrix now records 29
+rows: 24 retained, 3 archive-confirmed, 1 provenance hold, and 1 protected
+OpenAI-source row. Git currently reports only
+`NavierStokes/R3/TestPressure.lean` as untracked. It is protected and must not
+be edited, staged, moved, or archived. This paragraph supersedes the earlier
+61-entry hold; the historical matrix remains available for provenance.
 
 ## Authority
 

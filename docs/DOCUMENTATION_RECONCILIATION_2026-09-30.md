@@ -143,10 +143,14 @@ current authority snapshot linked at the top of each tree.
 5. Only then prepare a scoped private commit and a separately curated public
    branch. Never stage the entire worktree.
 
-## Untracked-file control snapshot: 2026-09-30
+## Historical untracked-file control snapshot: 2026-09-30
 
-The current private worktree contains 61 untracked path entries. They are not
-one commit set:
+The following 61-entry snapshot is retained for provenance and is superseded
+by the 29-row disposition matrix described above. It must not be read as the
+current Git state.
+
+The pre-disposition private worktree contained 61 untracked path entries. They
+were not one commit set:
 
 | Class | Count | Control decision |
 |---|---:|---|
@@ -156,10 +160,12 @@ one commit set:
 | Other/root entries | 2 | Hold outside the formal commit until their exact paths and provenance are verified. |
 
 The untracked set therefore remains intentionally uncommitted. A quoted path
-reported by Git requires exact filename verification before any filesystem
-operation. No deletion or archive move is authorised by this snapshot.
+reported by Git required exact filename verification before any filesystem
+operation. The later disposition moved 36 artefacts without deletion; the
+current worktree has only the protected `NavierStokes/R3/TestPressure.lean`
+row untracked.
 
-## Manual tranche update: CUDA diagnostics and controlled build records
+## Historical manual tranche update: CUDA diagnostics and controlled build records
 
 The manual-review ledger now covers 35 of the 61 held entries, leaving 26
 entries for the next tranche. The newly reviewed build pair records a
@@ -181,9 +187,10 @@ route scan. The numerical records still have `selected_delta_m_proved: false`
 or `selected_field_bound: false`; the source scan is lexical triage, not a
 transport theorem. Evidence and hashes are recorded in
 `NavierStokesReview/evidence/latest_rebuttal_manual_review_tranche_2026-09-30.md`.
-All 61 entries remain `HOLD_NO_STAGE_NO_MOVE`; the manual content-review gate
-has 0 remaining entries. The next gate is cross-reference and tree-index
-reconciliation.
+At that historical checkpoint, all 61 entries remained
+`HOLD_NO_STAGE_NO_MOVE`; the manual content-review gate had 0 remaining
+entries. The later disposition matrix supersedes that hold without deleting
+any artefact.
 
 ## Source anchors
 

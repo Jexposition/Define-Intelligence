@@ -1,5 +1,17 @@
 # Semantic correspondence map: OpenAI paper to Lean endpoint
 
+## Priority 203 cross-file closure: 2026-09-30
+
+The latest source tranche
+[`priority_203_internal_to_endpoint_crossfile_trace_2026-09-30.md`](../NavierStokesReview/src/audit/priority_203_internal_to_endpoint_crossfile_trace_2026-09-30.md)
+traces the actual internal two-mass plus three-debt invariant into
+`physicalData`, residual-rate estimates, residual limits, force extension, and
+the selected `Witness`. The selected closure still has no production theorem
+whose result identifies those internal coordinates with the manuscript tuple
+`(M,I,J,S,C_p)` after the activated Cartesian field, periodisation, torus
+average, radial integration, infinite sum, and force export. This is a
+bounded correspondence result, not a nonzero-defect or impossibility proof.
+
 ## Connected CMI crosswalk: Priority 200 (2026-09-30)
 
 Priority 200 confirms that the Lean R3 theorem and comparator prove a formal
