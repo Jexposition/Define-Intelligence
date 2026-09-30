@@ -2552,3 +2552,26 @@ and
 `../NavierStokesReview/src/audit/priority_209_scope_and_index_reconciliation_2026-09-30.md`.
 No scientific finding changed and no deletion, archive move, or protected-file
 operation occurred.
+
+## Selected transport census: Priority 211 (2026-09-30)
+
+The current whole-tree declaration census is controlled by
+`NavierStokesReview/evidence/selected_transport_audit_2026-09-30_review_sources.json`
+and its Markdown companion, with interpretation recorded in
+`NavierStokesReview/src/audit/priority_211_selected_transport_whole_tree_2026-09-30.md`.
+It covers 31,831 declarations across `NavierStokes/` and
+`NavierStokesReview/src/`. The production-only pass found zero positive
+transport candidates. Three review-side manual candidates were inspected and
+were confirmed to be caller-supplied `barMoment` interfaces, not exported
+selected-field five-observable equalities.
+
+This is a source triage result, not a claim of impossibility. The current
+scientific disposition remains `CTR-005: NOT ESTABLISHED`. The next control
+step is a fresh Lean environment closure from the live checkout; the
+2026-09-28 environment snapshot is explicitly stale for that purpose.
+
+The three review-side manual candidates were replayed separately. A v4.32.0
+attempt failed with `.olean` header incompatibility because the checkout is
+pinned to `leanprover/lean4:v4.34.0-rc2`; the pinned replay returned
+`0,0,0`. This is evidence that the review interfaces compile under the correct
+toolchain, not evidence of a production `selected_witness` transport theorem.

@@ -304,3 +304,12 @@ The 10 lexical `sorry_token` rows versus 7
 `source_indexed_sorry_token` statuses are reconciled as `10 = 7 + 3`, because
 three lexical rows are already evidence-inspected. This is bookkeeping only;
 `CTR-005` remains `NOT ESTABLISHED`.
+
+## Priority 211 selected transport whole-tree audit
+
+`priority_211_selected_transport_whole_tree_2026-09-30.md` records the
+31,831-declaration source census over production and review-side Lean. The
+production pass found no positive selected transport declaration. Three
+review-side caller-supplied `barMoment` interfaces were manually inspected and
+do not export a final `(M,I,J,S,C_p)` identity. The result preserves
+`CTR-005: NOT ESTABLISHED`; it is not an impossibility proof.

@@ -4731,3 +4731,32 @@ Control records:
 `../NavierStokesReview/evidence/source_tranche_priority_209_scope_and_index_reconciliation_2026-09-30.json`,
 and
 `../NavierStokesReview/src/audit/priority_209_scope_and_index_reconciliation_2026-09-30.md`.
+
+## Priority 211: whole-tree selected transport census
+
+- [x] Run the hardened declaration-level census over production
+  `NavierStokes/` and review-side `NavierStokesReview/src/`.
+- [x] Separate production declarations from review-side caller-supplied
+  interfaces, conditional gates, and obstruction probes.
+- [x] Manually inspect all three positive-looking transport candidates.
+- [x] Record that none exports the production selected-field identity
+  `barMoment(u_selected) = (M,I,J,S,C_p)`.
+- [ ] Rebuild the current Lean environment closure from the live checkout and
+  rerun the endpoint declaration-type pass. Do not use the 2026-09-28 snapshot
+  as current proof evidence.
+- [ ] Only after that replay, inspect any newly surfaced production declaration
+  candidates and compile them zero-sorry before changing the disposition.
+
+Evidence and method:
+`NavierStokesReview/evidence/selected_transport_audit_2026-09-30_review_sources.json`,
+`NavierStokesReview/evidence/selected_transport_audit_2026-09-30_review_sources.md`,
+and
+`NavierStokesReview/src/audit/priority_211_selected_transport_whole_tree_2026-09-30.md`.
+
+Replay note: the first direct compile used v4.32.0 and produced `.olean`
+header incompatibility errors. This was a toolchain mismatch, not a theorem
+failure. The same three review-side manual candidates compiled with exit codes
+`0,0,0` under the repository-pinned `leanprover/lean4:v4.34.0-rc2` toolchain.
+That result validates the interface files only; it does not establish the
+production selected-field five-observable transport. The fresh environment
+closure and endpoint replay remain the next open control task.

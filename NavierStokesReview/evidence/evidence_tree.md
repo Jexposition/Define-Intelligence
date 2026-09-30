@@ -449,3 +449,15 @@ selected closure” is an audit-root scope label, not a dead-code or OpenAI-buil
 claim. Older tree entries and generated `__pycache__`/`.pyc` entries are
 navigation history; no deletion was performed. `CTR-005` remains
 `NOT ESTABLISHED`.
+
+## Priority 211 current selected-transport audit
+
+- `selected_transport_audit_2026-09-30_review_sources.json`
+- `selected_transport_audit_2026-09-30_review_sources.md`
+- `../src/audit/priority_211_selected_transport_whole_tree_2026-09-30.md`
+
+The combined source census indexed 31,831 declarations. Production
+`NavierStokes/` yielded zero positive candidates under the conservative joint
+declaration rule; three review-side caller-supplied `barMoment` interfaces
+remain manual review records. This does not prove impossibility and does not
+change `CTR-005: NOT ESTABLISHED`.

@@ -3724,3 +3724,31 @@ Control records:
 `../NavierStokesReview/evidence/source_tranche_priority_209_scope_and_index_reconciliation_2026-09-30.json`,
 and
 `../NavierStokesReview/src/audit/priority_209_scope_and_index_reconciliation_2026-09-30.md`.
+
+## Priority 211 selected transport census (2026-09-30)
+
+The whole-tree selected transport audit is recorded in
+`../NavierStokesReview/src/audit/priority_211_selected_transport_whole_tree_2026-09-30.md`
+and
+`../NavierStokesReview/evidence/selected_transport_audit_2026-09-30_review_sources.md`.
+It indexed 31,831 declarations across production and review-side Lean source.
+The production `NavierStokes/` pass found zero positive transport candidates;
+the combined pass found three manual candidates, all in review-side
+caller-supplied `barMoment` interfaces. They do not instantiate the production
+`selected_witness` or establish the five-observable identity.
+
+This closes the current whole-tree declaration triage, not the mathematical
+question. The scientific status remains `CTR-005: NOT ESTABLISHED` for the
+complete manuscript-to-selected-endpoint correspondence. No selected defect,
+force nonsmoothness, literal CMI failure, impossibility theorem, compiler
+escape, or `False` is inferred. The next work is direct Lean environment
+closure replay from the current checkout; the stale 2026-09-28 environment
+snapshot must not be presented as current evidence.
+
+The three review-side manual candidate files were replayed separately. An
+initial v4.32.0 attempt failed only because the checkout's `.olean` artefacts
+have incompatible headers. Replaying with the pinned
+`leanprover/lean4:v4.34.0-rc2` toolchain returned exit codes `0,0,0`. This
+validates those review interfaces, not the missing production
+`selected_witness` five-observable transport theorem. The environment-closure
+replay remains open.
