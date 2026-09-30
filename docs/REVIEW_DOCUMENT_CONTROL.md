@@ -18,6 +18,13 @@ the completed selected field with the manuscript's complete
 No nonzero defect, force nonsmoothness, sole-cancellation claim, literal CMI
 failure, compiler escape, impossibility theorem, or `False` is asserted.
 
+The consolidation census was committed privately as `2a7ed42` on
+`review/cmi-first-navier-stokes-reconciled-2026-09-30` and mirrored publicly as
+`d5be2ba` on
+`review/cmi-first-navier-stokes-disposition-public-2026-09-30`; the public
+remote ref was verified after the push. This control entry is updated by the
+follow-up release-control commit recorded below.
+
 The census found exact duplicate groups and recorded their SHA-256 values,
 but performed no deletion or archive move. The archive gate remains closed
 until active references, generator provenance, and parent-folder manifests
