@@ -170,10 +170,13 @@ The prior disposition cleanup is complete, but the overall audit goal remains
 active. The current primary branch is
 `review/cmi-first-navier-stokes-reconciled-2026-09-30`; the public release
 branch is `review/cmi-first-navier-stokes-disposition-public-2026-09-30`.
-The current untracked inventory has one protected row,
-`NavierStokes/R3/TestPressure.lean`, which must not be edited or staged. The
-accidental `$null` diagnostic is preserved only in the local ignored parent
-archive `archive/$null_2026-09-30.txt`, with its hash in
+The current untracked inventory has two intentional rows: the protected
+`NavierStokes/R3/TestPressure.lean` source file, which must not be edited or
+staged, and the local raw environment-closure JSON
+`NavierStokesReview/evidence/lean_environment_closure_ns_3d_2026-09-30.json`,
+which is intentionally not committed because it is a 366 MB generated
+closure artefact. The accidental `$null` diagnostic is preserved only in the
+local ignored parent archive `archive/$null_2026-09-30.txt`, with its hash in
 `archive/ARCHIVE_MANIFEST_2026-09-30.md`.
 
 The controlling live evidence is:

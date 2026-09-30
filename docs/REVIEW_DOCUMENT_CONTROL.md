@@ -99,10 +99,12 @@ reviewed and dispositioned non-destructively.
 
 **Effective worktree state:** the live disposition matrix now records 29
 rows: 24 retained, 3 archive-confirmed, 1 provenance hold, and 1 protected
-OpenAI-source row. Git currently reports only
-`NavierStokes/R3/TestPressure.lean` as untracked. It is protected and must not
-be edited, staged, moved, or archived. This paragraph supersedes the earlier
-61-entry hold; the historical matrix remains available for provenance.
+OpenAI-source row. The current Git inventory separately reports two intentional
+untracked rows: `NavierStokes/R3/TestPressure.lean`, which is protected and
+must not be edited, staged, moved, or archived, and the local 366 MB generated
+environment-closure JSON, which is excluded from the public release. This
+paragraph supersedes the earlier 61-entry hold; the historical matrix remains
+available for provenance.
 
 ## Authority
 
@@ -2435,8 +2437,10 @@ The current Git facts are: private branch
 `review/cmi-first-navier-stokes-reconciled-2026-09-30` at a local tip verified
 by Git, private push unconfirmed after timed-out attempts; public branch
 `review/cmi-first-navier-stokes-disposition-public-2026-09-30` with remote tip
-verified by Git and push confirmed. The private worktree has one protected untracked file,
-`NavierStokes/R3/TestPressure.lean`, which remains untouched and unstaged.
+verified by Git and push confirmed. The private worktree has two intentional
+untracked rows: the protected `NavierStokes/R3/TestPressure.lean` source and
+the local generated 366 MB environment-closure JSON. Both remain unstaged; the
+source file remains untouched.
 
 The next release gate is a live cross-reference and structural-lint pass,
 followed by a scoped commit. No deletion, bulk staging, or archive movement is

@@ -158,9 +158,13 @@ The cleanup tranche is complete and the scientific audit continues. Work is
 controlled by the current primary branch
 `review/cmi-first-navier-stokes-reconciled-2026-09-30`; the public review
 branch is `review/cmi-first-navier-stokes-disposition-public-2026-09-30`.
-The only current untracked row is the protected OpenAI source file
-`NavierStokes/R3/TestPressure.lean`; never edit or stage it. The local root
-archive is ignored and is not part of the public release.
+The current untracked inventory has two intentional rows. The protected
+OpenAI source file `NavierStokes/R3/TestPressure.lean` must never be edited,
+staged, moved, or archived. The generated
+`NavierStokesReview/evidence/lean_environment_closure_ns_3d_2026-09-30.json`
+is a 366 MB local closure artefact and is intentionally excluded from the
+public release. The local root archive is ignored and is not part of the
+public release.
 
 Next ordered work:
 
@@ -4642,8 +4646,10 @@ Source and workspace state for this checkpoint:
   tip verified by Git, private push not confirmed after timed-out attempts;
 - public branch: `review/cmi-first-navier-stokes-disposition-public-2026-09-30`;
   remote tip verified by Git and push confirmed;
-- private worktree: one protected untracked path only,
-  `NavierStokes/R3/TestPressure.lean`; no OpenAI source edits or staging;
+- private worktree: two intentional untracked paths, the protected
+  `NavierStokes/R3/TestPressure.lean` source and the local generated 366 MB
+  environment-closure JSON; neither is staged, and no OpenAI source edits
+  have been made;
 - historical inventory control: the 2,794 register rows and unresolved 2,796
   Priority-201 field were superseded by the root-explicit Priority-209 refresh.
   The current control totals are 2,797 indexed Lean files, 588 selected

@@ -23,8 +23,10 @@ under `NavierStokesReview/evidence/`. The paper is not a chronological log and
 must not be updated from a historical register count. Priority 204 is scope
 control only and does not change the scientific disposition. Its 29-row
 disposition ledger is historical review-artifact state, not a claim that 29
-files are currently untracked; the live Git state has one protected
-untracked author-side file, as recorded in document control.
+files are currently untracked. The current Git state has two intentional
+untracked rows, as recorded in document control: the protected author-side
+source file and the local generated 366 MB environment-closure JSON excluded
+from the public release.
 
 Priority 209 is now the current scope and index authority. It records 2,797
 current Lean files, 588 modules in the selected endpoint closure, 2,209 rows

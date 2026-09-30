@@ -38,8 +38,10 @@ and `NavierStokesReview/evidence/`. Dated tranche notes are historical
 evidence, not competing live verdicts. Priority 204 is scope control only: it
 reconciles the repository census, effective fork register, indexed-file count,
 and selected endpoint closure. Its 29-row disposition ledger is not a count
-of currently Git-untracked files; the live Git state has one protected
-untracked author-side file, recorded separately in document control.
+of currently Git-untracked files. The current Git state has two intentional
+untracked rows, recorded separately in document control: the protected
+author-side `NavierStokes/R3/TestPressure.lean` file and the local generated
+366 MB environment-closure JSON excluded from the public release.
 
 This review is the decision document accompanying the [research paper](OpenAI_NavierStokes_Research_Paper.md). The paper presents the publication-level argument; this file records the review decision, source-level findings, corrections to earlier objections, and questions that remain open. The detailed evidence is retained in the [NavierStokesReview evidence dossier](../NavierStokesReview/evidence/evidence_tree.md) and the linked source reviews.
 
