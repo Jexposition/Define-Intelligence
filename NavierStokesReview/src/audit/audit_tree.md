@@ -237,3 +237,13 @@ the positive internal invariant and connected selected route, then record the
 bounded negative result that no final named `(M,I,J,S,C_p)` identity was
 located in the inspected selected closure. The controlled status is
 `CTR-005: NOT ESTABLISHED`; stronger refutation claims remain unproved.
+
+## Indexed source tranche: Priority 185 (2026-09-30)
+
+`priority_185_rebuttal_adjudication_2026-09-30.md` is the source-checked
+adjudication of the five-moment smoothness rebuttal. It records that the
+manuscript treats the moments as load-bearing, while termwise divergence,
+sole-mechanism, and bare-interface claims are not established. The selected
+route has a concrete residual-rate and smooth-force chain, but the complete
+selected-field identification with `(M,I,J,S,C_p)` remains
+`CTR-005: NOT ESTABLISHED`.
