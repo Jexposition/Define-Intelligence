@@ -1,5 +1,30 @@
 # CMI-first review plan: OpenAI Navier–Stokes claim
 
+## Live control override: Priority 217 release state (2026-10-01)
+
+This section overrides older publication snapshots below. The current private
+source-of-truth branch is
+`review/cmi-first-navier-stokes-reconciled-2026-09-30` at `802e971`.
+The current public review branch is
+`review/cmi-first-navier-stokes-disposition-public-2026-09-30` at `2f910c8`,
+and the remote ref matches that public tip. The release contains only curated
+documentation/control work; the protected `NavierStokes/R3/TestPressure.lean`
+and the raw generated environment-closure JSON remain local, untouched, and
+unstaged.
+
+The scientific control finding is unchanged: the selected path has genuine
+invariant, physical-data, residual-rate, smooth-force, candidate-consequence,
+and axis-blow-up machinery, but the inspected production tree has not yielded
+a consumed theorem identifying the completed selected Cartesian construction
+with the manuscript's full `(M,I,J,S,C_p)` composition. `CTR-005` therefore
+remains `NOT ESTABLISHED` for complete paper-to-endpoint correspondence. This
+does not assert a nonzero defect, force nonsmoothness, literal CMI failure,
+impossibility theorem, compiler escape, or `False`.
+
+No archive movement or deletion is authorised. The next work remains the
+selected-field value-level transport calculation and the active-reference,
+generator-provenance, and parent-manifest checks.
+
 ## Priority 214: corrected tree and documentation-control replay (2026-09-30)
 
 The current tree reconciliation is recorded in

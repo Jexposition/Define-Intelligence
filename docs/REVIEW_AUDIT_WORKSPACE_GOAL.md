@@ -1,5 +1,30 @@
 # Review audit workspace goal
 
+## Live control override: Priority 217 release state (2026-10-01)
+
+This section overrides older branch and commit snapshots below. The private
+source-of-truth branch is
+`review/cmi-first-navier-stokes-reconciled-2026-09-30` at `802e971`.
+The public review branch is
+`review/cmi-first-navier-stokes-disposition-public-2026-09-30` at `2f910c8`,
+with the remote ref verified to match. Only curated documentation/control
+files were released. The protected OpenAI-tree source file and raw generated
+environment closure remain local, untouched, and unstaged.
+
+The current scientific objective is unchanged: test the complete connected
+paper-to-selected-endpoint claim. The selected route contains genuine
+invariant, physical-data, residual-rate, smooth-force, candidate-consequence,
+and axis-blow-up machinery. The inspected production tree still has no
+located consumed theorem identifying the completed selected Cartesian field
+with the manuscript's full `(M,I,J,S,C_p)` composition. The controlled status
+is therefore `CTR-005: NOT ESTABLISHED`, not a proved field defect, force
+nonsmoothness, literal CMI failure, impossibility theorem, compiler escape, or
+`False`.
+
+No deletion or archive move is authorised. Continue with source-bound
+selected-field transport work, current-reference checks, and evidence-linked
+documentation updates.
+
 ## Current tree authority: Priority 214 (2026-09-30)
 
 The corrected live tree reconciliation is recorded in
