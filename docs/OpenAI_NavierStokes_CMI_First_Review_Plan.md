@@ -4567,3 +4567,16 @@ cross-reference and structural-lint verification, a scoped review commit, and
 only then any archive move. Archive operations remain non-destructive and
 require a parent-folder manifest containing old path, new path, reason, and
 SHA-256. No deletion or bulk staging is allowed.
+
+## Live untracked-state correction: 2026-09-30
+
+The regenerated current-worktree inventory contains exactly one untracked
+path, the protected `NavierStokes/R3/TestPressure.lean`. Its current hash is
+verified. It is not part of the review commit, must not be staged, and must
+not be moved or archived.
+
+The 29-row consolidation matrix and disposition manifest are retained as
+historical reviewed-set records. The older 61-entry hold is historical as
+well. They must not be read as the current untracked count. The regenerated
+inventory and matrix are the current bookkeeping authority; they do not alter
+the scientific finding or open the archive gate.

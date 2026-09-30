@@ -3581,3 +3581,17 @@ then complete the live cross-reference and structural-lint pass; then make a
 scoped commit; only after consolidation is confirmed may redundant material be
 moved to a parent-folder archive with a SHA-256 manifest. No deletion, bulk
 staging, or OpenAI-source edit is authorised.
+
+## Live untracked-state correction: 2026-09-30
+
+The current private worktree has one untracked path only:
+`NavierStokes/R3/TestPressure.lean`. It is a protected OpenAI-tree file, its
+current SHA-256 is verified by the regenerated inventory, and it remains
+untouched, unstaged, and outside the archive workflow.
+
+The 29-row `untracked_disposition_manifest` and the 29-row consolidation
+matrix describe a historical reviewed set. The earlier 61-entry hold is also
+historical. Neither number is the current untracked count. The current
+one-entry state is recorded in the regenerated inventory and consolidation
+matrix, which are evidence of bookkeeping state only and do not authorise
+staging, movement, deletion, or a scientific upgrade.

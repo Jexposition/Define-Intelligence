@@ -2417,3 +2417,16 @@ The next release gate is a live cross-reference and structural-lint pass,
 followed by a scoped commit. No deletion, bulk staging, or archive movement is
 permitted until consolidation is cross-checked and a parent-folder SHA-256
 archive manifest is updated.
+
+## Live inventory correction: 2026-09-30
+
+The regenerated current-worktree inventory contains one untracked path:
+protected `NavierStokes/R3/TestPressure.lean`. Its hash is verified. It is
+untouched, unstaged, and excluded from review commits and archive operations.
+
+The 29-row disposition/consolidation records are historical reviewed-set
+records, and the older 61-entry hold is historical evidence. Neither is the
+current untracked count. The current bookkeeping authority is the regenerated
+one-entry inventory and matrix listed in the reconciliation ledger. This
+correction changes no scientific conclusion and does not authorise staging,
+movement, deletion, or publication of the protected file.

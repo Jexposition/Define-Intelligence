@@ -1,16 +1,15 @@
 # Untracked consolidation matrix
 
-Repository: `D:\Research Lab\Jexposition\Define Intelligence\Define-Intelligence-github`
-Inventory revision: `afe63fd3f6f44a811e134bf402eddc1627e986cf`
-Generated at revision: `afe63fd3f6f44a811e134bf402eddc1627e986cf`
-Entries: **1**
-Current hashes verified: **1 / 1**
+Repository: `D:\Research Lab\Jexposition\Define Intelligence\Define-Intelligence-github-public-2026-09-29`
+Inventory revision: `d26d3064fb46f965059214f764a0487c97822297`
+Generated at revision: `d26d3064fb46f965059214f764a0487c97822297`
+Entries: **0**
+Current hashes verified: **0 / 0**
 
 This is a consolidation gate. Rows marked `STAGE_RETAINED`, `ARCHIVE_CONFIRMED`, or `PROTECTED_DO_NOT_STAGE` have an explicit reviewed disposition; rows marked `HOLD_PROVENANCE_REVIEW` remain open.
 
 | Path | Category | Integrity | Tracked refs | Worktree refs | Duplicate paths | Content review | Gate |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| `NavierStokes/R3/TestPressure.lean` | protected-source | verified_current_hash | 49 | 47 | 0 | protected_source | PROTECTED_DO_NOT_STAGE |
 
 ## Disposition rules
 

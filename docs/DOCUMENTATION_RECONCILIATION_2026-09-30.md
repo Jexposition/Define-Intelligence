@@ -263,3 +263,22 @@ the live cross-reference and structural-lint pass; prepare only a scoped
 review commit; and only then consider further archive moves. Any archive move
 must be non-destructive and manifested with old path, new path, reason, and
 SHA-256. No deletion is permitted.
+
+## Live untracked-state reconciliation: 2026-09-30
+
+The regenerated read-only inventory and consolidation matrix now describe the
+current private worktree, not the historical review tranche. They contain one
+live untracked path: the protected `NavierStokes/R3/TestPressure.lean` file.
+Its hash is current and verified. The 29-row disposition manifest and the
+older 61-entry hold remain historical content-addressed records of earlier
+review states; neither is a count of the current worktree and neither
+authorises staging, movement, or deletion.
+
+Current generated records:
+
+- `NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.json`
+- `NavierStokesReview/evidence/untracked_content_inventory_2026-09-30.md`
+- `NavierStokesReview/evidence/untracked_consolidation_matrix_2026-09-30.json`
+- `NavierStokesReview/evidence/untracked_consolidation_matrix_2026-09-30.md`
+
+The protected file remains outside every review commit and archive operation.
