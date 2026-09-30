@@ -1,5 +1,12 @@
 # Independent peer review of the OpenAI Navier–Stokes formalisation
 
+## Current release correction: Priority 226 (2026-10-01)
+
+The verified private/public release state is
+[`priority_226_release_state_2026-10-01.md`](../NavierStokesReview/src/audit/priority_226_release_state_2026-10-01.md).
+It records the curated public tip `6199aab`; the scientific disposition is
+unchanged.
+
 ## Current evidence correction: Priority 225 (2026-10-01)
 
 The latest selected-field gate is

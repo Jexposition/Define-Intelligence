@@ -1,9 +1,9 @@
 ```markdown
 . 📂 docs
 
-Current reconciliation pointer: `REVIEW_DOCUMENT_CONTROL.md` Priority 224,
+Current reconciliation pointer: `REVIEW_DOCUMENT_CONTROL.md` Priority 226,
 with the consolidation audit at
-`../NavierStokesReview/src/audit/priority_224_workspace_corpus_regrounding_2026-10-01.md`
+`../NavierStokesReview/src/audit/priority_226_release_state_2026-10-01.md`
 and evidence at
 `../NavierStokesReview/evidence/document_consolidation_census_2026-10-01.md`.
 The tree below remains a navigation snapshot and is not a substitute for the

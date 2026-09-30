@@ -1,5 +1,9 @@
 ```markdown
 . 📂 evidence
+## Current release record: Priority 226 (2026-10-01)
+
+- `../src/audit/priority_226_release_state_2026-10-01.md`
+
 ## Current control record: Priority 224 (2026-10-01)
 
 - `selected_mixed_barmoment_shell_gate_2026-10-01.md`

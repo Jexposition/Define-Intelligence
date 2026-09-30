@@ -1,5 +1,12 @@
 # CMI-first review plan: OpenAI Navier–Stokes claim
 
+## Priority 226: curated release state (2026-10-01)
+
+The private/public release state is recorded in
+`../NavierStokesReview/src/audit/priority_226_release_state_2026-10-01.md`.
+The private curated tip is `0fbd409`; the verified public remote tip is
+`6199aab`.
+
 ## Priority 225: selected mixed `barMoment` shell gate (2026-10-01)
 
 The six-file pinned-toolchain completion replay is recorded in

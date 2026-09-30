@@ -1,5 +1,11 @@
 # Review audit workspace goal
 
+## Priority 226: curated release state (2026-10-01)
+
+The verified private/public branch state is recorded in
+`../NavierStokesReview/src/audit/priority_226_release_state_2026-10-01.md`.
+Private curated tip: `0fbd409`. Public remote tip: `6199aab`.
+
 ## Priority 225: selected mixed `barMoment` shell gate (2026-10-01)
 
 The compiled finite-prefix and conditional-linearity result is recorded in
