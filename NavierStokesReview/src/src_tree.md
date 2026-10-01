@@ -467,3 +467,15 @@ The semantic integration adjudication is in
 
 - `audit/priority_240_submission_ab_contract_findings_2026-10-01.md` records
   the first source-backed A/B route and candidate-contract findings.
+
+## Current A/B declaration closure measurement: Priority 241 (2026-10-01)
+
+The reproducible source/environment measurement is
+`audit/ab_declaration_closure.py`, with evidence in
+`../evidence/priority_241_ab_declaration_closure_2026-10-01.json` and the
+human-readable interpretation in
+`audit/priority_241_ab_declaration_closure_and_semantic_seams_2026-10-01.md`.
+It records 579 Submission-A route modules, 605 Submission-B route modules,
+578 shared modules, 1 A-only module, and 27 B-only modules. It separates raw
+Git source/import closure from current elaborated declaration-use closure and
+does not promote either to proof-term or paper correspondence.

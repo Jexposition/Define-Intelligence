@@ -5384,3 +5384,77 @@ Control record:
 
 Control record:
 `../NavierStokesReview/src/audit/priority_236_public_release_provenance_delta_2026-10-01.md`.
+
+## Priority 241: A/B declaration closure, semantic seams, and audit hardening
+
+- [x] Treat the 8 September object `8937a8f4` and the 10 September object
+  `f9e8bc5` as immutable Submission A and Submission B. Do not infer the A
+  proof from the current B checkout.
+- [x] Export source/import and current-B declaration-use closures for the C and D roots in
+  both submissions. Label these as environment/declaration closures unless a
+  proof-term-specific export is independently available; do not call an
+  import closure a proof-term closure.
+- [x] Compute the shared source/import core (A\cap B), the A-only and B-only
+  module sets. Graph dominators and route declaration classification remain
+  open.
+  Classify every B-only load-bearing declaration as already proved, true but
+  unstated, absent in A, strengthened, witness-changing, paper-facing,
+  convention/domain-changing, or unresolved.
+- [ ] Maintain an object-identity ledger for the exact
+  ((u^\circ,u,p,f)) witnesses, reduced profiles, Cartesian curls,
+  localised fields, periodised fields, R3 fields, pressure representatives,
+  residuals, and competitor solutions. Record global, local, germ, a.e., and
+  supportwise equality separately.
+- [ ] Build a typed dependency hypergraph in which a conjunction of premises
+  is one hyperedge. Annotate each edge with domain, boundary, quantifier,
+  finite/infinite status, premise direction, convention, and E1/E2/E3/E4
+  evidence tier. Verify arrows rather than granting credit because both
+  endpoints compile.
+- [ ] Audit semantic seams: profile-to-Cartesian lifting, axis crossing,
+  curl/cutoff commutators, localisation-to-periodisation, finite-prefix to
+  `tsum`, derivative/sum and integral/sum interchange, endpoint extension,
+  pressure gauge/non-locality, force smoothness, uniform energy, viscosity
+  scaling, and uniqueness-class conversion.
+- [ ] Run systematic vacuity/explosion and witness-choice checks for empty
+  filters/supports, `NeBot`, impossible subtypes, `False.elim`, totalised
+  integrals, fresh existential choices, and caller-supplied rate or
+  smoothness contracts.
+- [ ] Add review-side mutation tests for load-bearing interfaces. A surviving
+  mutation is diagnostic only; it is not a refutation without a selected
+  semantic contradiction.
+- [ ] Keep the CUDA-first deep 3D `cutoff_commutator_scan.py` lane active.
+  It must remain a plotted, declared-profile numerical diagnostic, not a
+  toy model and not evidence about the selected Lean field until its exact
+  selected inputs and interpretation are discharged.
+- [ ] Keep `scratch_space/notes3.md` and `scratch_space/notes4.md` linked as
+  historical recovery inputs. Notes3's earlier “zero upstream use” and
+  “generic endpoint only” claims are superseded by Priorities 232--233;
+  retain the notes, but never use those superseded claims as current evidence.
+- [ ] After semantic closure, complete the document consolidation,
+  cross-reference, source-first fact-check, and archive gate. Move only
+  confirmed redundant files to the archive belonging to their parent folder,
+  record old path/new path/reason/SHA-256, delete nothing, and keep archives
+  outside commits unless separately authorised.
+- [ ] Make scoped private commits, mirror only curated review artefacts to the
+  dated public branch, verify the remote ref, and leave protected OpenAI
+  source files and protected untracked files untouched.
+
+Working locations:
+
+- OpenAI source and Lean toolchain: repository `NavierStokes/` and its pinned
+  `elan` environment, read-only to this review.
+- Audit records and dependency ledgers: `NavierStokesReview/src/audit/`.
+- Lean completions and independent probes:
+  `NavierStokesReview/src/completions/`, `extensions/`, `probes/`, and
+  `refutations/`.
+- External semantic and CMI crosswalks:
+  `NavierStokesReview/src/external_semantic/` and
+  `NavierStokesReview/src/external-semantic/`.
+- Machine-readable evidence, plots, and run manifests:
+  `NavierStokesReview/evidence/` and `NavierStokesReview/results/`.
+- Source and evidence navigation indexes:
+  `NavierStokesReview/src/src_tree.md`, `src/audit/audit_tree.md`,
+  `evidence/evidence_tree.md`, and `results/results_tree.md`.
+
+Executed control record:
+`../NavierStokesReview/src/audit/priority_241_ab_declaration_closure_and_semantic_seams_2026-10-01.md`.

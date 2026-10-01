@@ -77,6 +77,31 @@ separate from full Fefferman semantics, and `CTR-005` remains
 
 Evidence: `NavierStokesReview/src/audit/priority_240_submission_ab_contract_findings_2026-10-01.md`.
 
+## Priority 241: source closure result and remaining semantic work
+
+The executed immutable-object source census finds 579 route modules in the
+8 September submission and 605 in the 10 September submission: 578 are
+shared, one is A-only, and 27 are B-only. The later additions are concentrated
+in the R3 and periodic-paper route, parabolic scaling, force, energy, support,
+and viscous-balance layers.
+
+The report deliberately separates this source/import closure from the current
+Lean elaborated declaration-use closure. Neither should be called a proof-term
+closure without a proof-term-specific export, and neither establishes the
+paper's final selected-field observable identity. The result is useful because
+it reduces the provenance question to a small B-only route expansion while
+preserving the 578-module common core for adversarial auditing.
+
+The next step is to trace exact declaration references and witness identity
+through those route roots, then audit the semantic seams: local versus global
+field equality, axis crossing, cutoff/curl, periodisation, finite-to-infinite
+passage, pressure, force, energy, uniqueness, and the complete CMI adapter.
+The CUDA-first 3D cutoff diagnostic and the selected five-observable transport
+lane continue in parallel. `CTR-005` remains `NOT ESTABLISHED`; no selected
+mismatch or literal CMI failure is claimed.
+
+Evidence: `NavierStokesReview/src/audit/priority_241_ab_declaration_closure_and_semantic_seams_2026-10-01.md`.
+
 ## Current public-release provenance result: Priority 236 (2026-10-01)
 
 The public history requires separate archaeology. The raw Git comparison of

@@ -107,6 +107,90 @@ this finding.
 Evidence:
 `../NavierStokesReview/src/audit/priority_240_submission_ab_contract_findings_2026-10-01.md`.
 
+## Priority 241: active continuation, not a replacement of existing lanes
+
+The current objective is an adversarial end-to-end audit of the mathematical
+construction claimed by the manuscript and the CMI endpoint. The review must
+continue all existing lanes in parallel: selected-field observable transport,
+five-row/radial repair usage, CUDA-first 3D cutoff/curl diagnostics, force and
+pressure semantics, limits and `tsum`, energy, uniqueness, CMI crosswalk, and
+document consolidation. The A/B provenance work below extends that objective;
+it does not replace or close those lanes.
+
+### A/B proof archaeology
+
+Treat `8937a8f4` (8 September) and `f9e8bc5` (10 September) as separate
+formal submissions. Reproduce their C and D routes from immutable source
+objects, export declaration-reference closures, and explicitly distinguish
+those closures from proof-term closures. Compute the shared core, A-only and
+B-only sets, and dominators. For each B-only declaration classify whether it
+was already derivable in A, true but unstated, absent in A, strengthened,
+witness-changing, paper-facing, convention/domain-changing, or a genuine
+analytic repair.
+
+The exact witness ledger must track
+
+\[
+(u^\circ,u,p,f)_{A},\qquad (u^\circ,u,p,f)_{B}
+\]
+
+through profiles, Cartesian lifting, curl, cutoff/localisation, periodisation,
+finite sums, `tsum`, residual, force, pressure, and the comparator. Existence
+of two witnesses is not identity of one witness.
+
+### Typed dependency and semantic seam audit
+
+Replace file-count confidence with a typed proof-dependency hypergraph. A
+conjunctive premise is one hyperedge, annotated with exact objects, domains,
+boundaries, equality strength, quantifier direction, finite/infinite passage,
+conventions, and evidence tier. Verify each arrow, not merely its endpoints.
+
+Audit the high-risk seams: axis versus positive-radius charts; local, germ,
+a.e., supportwise, and global equality; curl/cutoff commutators;
+localisation-to-periodisation; finite-prefix to `tsum`; derivative/integral
+interchanges; endpoint smooth extension; pressure gauge and non-locality;
+force smoothness; uniform energy; viscosity/sign/Jacobian/Fourier factors; and
+the conversion from the comparator competitor class to Fefferman's complete
+specification.
+
+Run vacuity and explosion checks for empty filters/supports, impossible
+subtypes, `NeBot`, `False.elim`, totalised integrals, fresh `Classical.choice`
+witnesses, and caller-supplied rate or smoothness interfaces. Review-side
+mutation tests are diagnostic only and may not be reported as refutations
+without a selected contradiction.
+
+### Historical recovery and workspace control
+
+`scratch_space/notes3.md` and `scratch_space/notes4.md` are historical inputs,
+not current authority. Notes3's earlier claims that the repair machinery was
+absent from the selected route are superseded by Priorities 232--233, which
+establish production consumption while retaining the unresolved final
+observable bridge. Preserve the notes and their plots, but report the corrected
+source result.
+
+OpenAI source folders remain read-only. All review work belongs in
+`NavierStokesReview/src/audit`, `completions`, `extensions`,
+`external_semantic`, `external-semantic`, `probes`, or `refutations`, with
+evidence in `NavierStokesReview/evidence` and results in
+`NavierStokesReview/results`. Keep all four navigation indexes current. Do not
+archive until consolidation, cross-reference, source fact-checking,
+SHA-256-manifesting, and link checks are complete. Move only confirmed
+redundant files to the archive belonging to their parent folder; delete
+nothing.
+
+The controlled scientific status remains:
+
+\[
+\texttt{CTR-005: NOT ESTABLISHED},
+\]
+
+with positive evidence that the internal repair engine is consumed, but no
+claim yet of a selected mismatch, force nonsmoothness, literal CMI failure,
+impossibility theorem, compiler escape, or `False`.
+
+Executed control record:
+`../NavierStokesReview/src/audit/priority_241_ab_declaration_closure_and_semantic_seams_2026-10-01.md`.
+
 ## Priority 236: public proof-route provenance
 
 Treat the public Git history as mathematical provenance evidence. Reproduce

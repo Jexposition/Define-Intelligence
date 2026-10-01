@@ -53,6 +53,27 @@ sources.
 Control record:
 `NavierStokesReview/src/audit/priority_239_two_submission_semantic_differential_2026-10-01.md`.
 
+## Priority 241 A/B declaration closure and semantic seams
+
+The first executed measurement under the expanded provenance programme is
+recorded in
+`../NavierStokesReview/src/audit/priority_241_ab_declaration_closure_and_semantic_seams_2026-10-01.md`
+with machine-readable output in
+`../NavierStokesReview/evidence/priority_241_ab_declaration_closure_2026-10-01.json`.
+It found 579 Submission-A route modules, 605 Submission-B route modules, 578
+shared modules, one A-only module, and 27 B-only modules. It keeps the raw
+source/import census separate from the current elaborated declaration-use
+closure. No proof-term or manuscript-semantics claim is inferred from these
+counts.
+
+The measurement tool is
+`../NavierStokesReview/src/audit/ab_declaration_closure.py`. It is now part of
+the active review control surface. The next task is exact declaration-reference
+and witness-identity tracing, while selected-field transport, CUDA 3D,
+pressure, energy, limit/interchange, mutation, CMI, and consolidation lanes
+remain active. `CTR-005` remains `NOT ESTABLISHED`. No deletion, OpenAI-source
+edit, or archive move is authorised by this result.
+
 ## Priority 236 control
 
 The public proof-route provenance record is

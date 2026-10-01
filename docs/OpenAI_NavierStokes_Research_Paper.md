@@ -102,6 +102,41 @@ selected-field equality
 Evidence:
 `NavierStokesReview/src/audit/priority_240_submission_ab_contract_findings_2026-10-01.md`.
 
+## Priority 241: executed A/B declaration-closure measurement
+
+The first executed measurement under the expanded provenance programme reads
+the two public source objects directly. The source/import route closure is 579
+modules for Submission A and 605 for Submission B, with 578 shared modules,
+one A-only module, and 27 B-only modules. The B-only set is concentrated in
+the later R3, periodic-paper, parabolic-scaling, force, energy, support, and
+viscous-balance layers.
+
+The current B Lean environment export was also queried separately. The four
+headline root declaration-use closures contain 30,721, 30,771, 30,840, and
+29,785 declarations respectively, with no `sorryAx` nodes in the recorded
+closures. These are not interchangeable measurements: the A/B result is a
+raw Git source/import census, while the B result follows elaborated
+declaration-use edges. Neither is a proof-term semantic closure or a theorem
+that the final selected field realises the manuscript observables.
+
+This narrows the audit rather than resolving it. It confirms a large shared
+construction base and a targeted B-only route expansion, but does not show
+that A was false, that B repaired a known failure, or that the A and B witness
+tuples are identical. The selected-field observable bridge remains
+
+\[
+\operatorname{Obs}_{\rm paper}(u_{\rm selected},p_{\rm selected},f_{\rm selected})
+=(M,I,J,S,C_p),
+\]
+
+unestablished. The positive production finding also remains: the internal
+five-row/radial repair engine is consumed and was not bypassed wholesale.
+
+Evidence:
+[`priority_241_ab_declaration_closure_and_semantic_seams_2026-10-01.md`](../NavierStokesReview/src/audit/priority_241_ab_declaration_closure_and_semantic_seams_2026-10-01.md),
+[`priority_241_ab_declaration_closure_2026-10-01.json`](../NavierStokesReview/evidence/priority_241_ab_declaration_closure_2026-10-01.json),
+and [`ab_declaration_closure.py`](../NavierStokesReview/src/audit/ab_declaration_closure.py).
+
 ## Current public-release provenance result: Priority 236 (2026-10-01)
 
 The repository history is itself part of the audit evidence. The raw Git

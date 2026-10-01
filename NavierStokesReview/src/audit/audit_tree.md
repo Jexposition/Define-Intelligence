@@ -442,3 +442,14 @@ and `CTR-005` remains `NOT ESTABLISHED`; no stronger refutation is claimed.
 
 - `priority_240_submission_ab_contract_findings_2026-10-01.md` records the
   first source-backed A/B route and candidate-contract findings.
+
+## Priority 241
+
+- `priority_241_ab_declaration_closure_and_semantic_seams_2026-10-01.md`
+  records the executed 579-versus-605 source/import closure measurement,
+  the 578-module shared base, the 27 B-only route modules, and the strict
+  distinction between source closures and elaborated declaration-use
+  closures.
+- `ab_declaration_closure.py` is the reproducible immutable-Git-object and
+  current-B-environment measurement tool. It is a census tool, not a proof
+  of paper correspondence.

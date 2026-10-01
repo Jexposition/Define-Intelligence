@@ -630,3 +630,10 @@ asserted.
 
 - `priority_240_submission_ab_contract_findings_2026-10-01.json` records the
   source anchors, contract strengthening, and controlled dispositions.
+
+## Priority 241
+
+- `priority_241_ab_declaration_closure_2026-10-01.json` records the immutable
+  A/B source/import closure, shared/A-only/B-only module sets, declaration
+  census, and current-B elaborated declaration-use root closures. The report
+  explicitly does not call these proof-term semantics or a manuscript bridge.
