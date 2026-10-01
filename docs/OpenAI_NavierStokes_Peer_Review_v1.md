@@ -57,6 +57,26 @@ unverified leads until primary-source checks.
 
 Evidence: `NavierStokesReview/src/audit/priority_239_two_submission_semantic_differential_2026-10-01.md`.
 
+## Priority 240: contract strengthening found in the A/B source comparison
+
+The direct source comparison now establishes one concrete difference rather
+than relying on provenance impressions. The September 8
+`R3CompactCandidate.Properties` contract did not explicitly include
+`UniformFiniteEnergy (Ico 0 1) u`, and its force regularity was
+`ContDiffOn` on the future domain. The September 10 R3 candidate contract
+explicitly includes pre-singularity uniform energy, global force `ContDiff`,
+and compact positive-time force support.
+
+This is positive evidence that the later public object strengthened or
+aggregated the paper-facing contract. It is not yet evidence that the earlier
+route was false, because the old proof may establish related facts outside that
+record. The next audit must trace the old proof term and compare the concrete
+selected witnesses. The established one-way comparator inclusion remains
+separate from full Fefferman semantics, and `CTR-005` remains
+`NOT ESTABLISHED` rather than a selected mismatch claim.
+
+Evidence: `NavierStokesReview/src/audit/priority_240_submission_ab_contract_findings_2026-10-01.md`.
+
 ## Current public-release provenance result: Priority 236 (2026-10-01)
 
 The public history requires separate archaeology. The raw Git comparison of

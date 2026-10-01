@@ -77,6 +77,29 @@ five-moment, force, limit, pressure, energy, uniqueness, and mutation work.
 Evidence:
 `../NavierStokesReview/src/audit/priority_239_two_submission_semantic_differential_2026-10-01.md`.
 
+## Priority 240: source-backed A/B contract findings
+
+- [x] Confirm the September 8 C route through
+  `R3CompactCandidate.selected_compact_candidate` and the September 10 route
+  through `NavierStokesR3.theorem_1_1`.
+- [x] Confirm the September 8 D route through
+  `ActualCandidateAssembly.selected_candidate` and the later periodic route
+  through `PeriodicPaper.periodic_corollary`.
+- [x] Record that the later R3 candidate contract explicitly adds
+  `UniformFiniteEnergy (Ico 0 1)`, global force `ContDiff`, and compact
+  positive-time force support.
+- [ ] Determine whether those stronger B properties were already derivable in
+  A, merely unstated, or genuinely absent from the A proof term.
+- [ ] Extract A/B declaration-level closures and compare the actual witness
+  tuple `(u°,u,p,f)`, not only theorem and record names.
+
+This is a real contract-level strengthening, not evidence by itself that A was
+false. It extends, rather than replaces, the selected-field, five-moment,
+force, pressure, limit, energy, uniqueness, and mutation lanes.
+
+Evidence:
+`../NavierStokesReview/src/audit/priority_240_submission_ab_contract_findings_2026-10-01.md`.
+
 ## Priority 233: semantic moment-hierarchy closure (2026-10-01)
 
 - [x] Search beyond tuple names for radial-integral, pressure, flux, torus,

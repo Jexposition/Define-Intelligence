@@ -437,3 +437,8 @@ and `CTR-005` remains `NOT ESTABLISHED`; no stronger refutation is claimed.
 - `priority_239_two_submission_semantic_differential_2026-10-01.md` records
   the two-submission proof-term, witness, totalisation, and contract
   differential programme.
+
+## Priority 240
+
+- `priority_240_submission_ab_contract_findings_2026-10-01.md` records the
+  first source-backed A/B route and candidate-contract findings.

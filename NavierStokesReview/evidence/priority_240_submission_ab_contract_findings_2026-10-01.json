@@ -1,0 +1,46 @@
+{
+  "priority": 240,
+  "date": "2026-10-01",
+  "title": "Submission A/B contract findings",
+  "submissions": {
+    "A": "8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538",
+    "B": "f9e8bc5b38b6e212696e8a30e3e91517af887bbd"
+  },
+  "source_anchors": {
+    "A_c_route": "NavierStokes/ComparatorR3Theorem.lean:19,36",
+    "A_d_route": "NavierStokes/ComparatorTheorem.lean:26,48",
+    "A_candidate_contract": "NavierStokes/R3CompactCandidate.lean:24",
+    "B_c_route": "NavierStokes/R3/Theorem.lean:26,46; NavierStokes/ComparatorR3Theorem.lean",
+    "B_d_route": "NavierStokes/PeriodicPaperTheorem.lean:155; NavierStokes/PeriodicPaperComparator.lean:29",
+    "B_candidate_contract": "NavierStokes/R3/ProblemStatement.lean:92-108",
+    "B_comparator_bridge": "NavierStokes/R3/ComparatorBridge.lean:51-83"
+  },
+  "established": [
+    "A C endpoint is routed through selected_compact_candidate.",
+    "B C endpoint is routed through NavierStokesR3.theorem_1_1 and comparator_of_breakdown.",
+    "A D endpoint is routed through ActualCandidateAssembly.selected_candidate.",
+    "B D-facing endpoint is routed through PeriodicPaper.periodic_corollary and same-force adapters.",
+    "A inspected R3 Properties record has no explicit candidate UniformFiniteEnergy (Ico 0 1) field.",
+    "B R3 CandidateProperties explicitly contains pre-singularity uniform energy, global force ContDiff, and compact positive-time force support.",
+    "The comparator-to-R3 global finite-energy class inclusion compiles in the independent review probe."
+  ],
+  "not_established": [
+    "A is false.",
+    "A and B use the same selected witness tuple definitionally or extensionally.",
+    "The B strengthening was required to repair an A failure rather than to align or aggregate the paper-facing theorem.",
+    "Reverse class inclusion or full Fefferman semantic equivalence.",
+    "Selected five-observable transport through the final Cartesian/localised/periodised/summed field."
+  ],
+  "disposition": {
+    "ctr_005": "NOT ESTABLISHED",
+    "selected_mismatch": "not_proved",
+    "force_nonsmoothness": "not_proved",
+    "literal_cmi_failure": "not_proved",
+    "compiler_escape": "not_claimed",
+    "false": "not_claimed"
+  },
+  "verification": {
+    "class_inclusion_probe": "NavierStokesReview/src/probes/CMIComparatorClassInclusionProbe.lean",
+    "class_inclusion_exit_code": 0
+  }
+}

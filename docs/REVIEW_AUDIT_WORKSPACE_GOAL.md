@@ -79,6 +79,34 @@ obligation while this archaeology runs.
 Evidence:
 `../NavierStokesReview/src/audit/priority_239_two_submission_semantic_differential_2026-10-01.md`.
 
+## Priority 240: source-backed contract differential
+
+The first A/B source comparison establishes a genuine type-level difference:
+the old `R3CompactCandidate.Properties` record did not explicitly carry
+pre-singularity uniform candidate energy, and its force smoothness was stated
+on the future domain; the later R3 `CandidateProperties` explicitly carries
+
+\[
+\texttt{UniformFiniteEnergy (Ico\ 0\ 1)\ u},
+\]
+
+global force `ContDiff`, and compact positive-time force support. Treat this as
+a verified strengthening of the public contract. Do not silently promote it to
+“the old proof was false”: trace the old proof term first and classify the
+change as already proved, unstated, absent, strengthened, witness-changing,
+paper-facing, or unresolved.
+
+The goal remains to compare the same concrete \((u^\circ,u,p,f)\) across both
+routes, identify the shared proof core and added route, and audit all arrows
+through energy, force regularity, integrability, pressure, uniqueness,
+localisation, periodisation, limits, and the selected five-observable bridge.
+`CTR-005` remains `NOT ESTABLISHED`; no selected mismatch, force
+nonsmoothness, literal CMI failure, compiler escape, or `False` is claimed by
+this finding.
+
+Evidence:
+`../NavierStokesReview/src/audit/priority_240_submission_ab_contract_findings_2026-10-01.md`.
+
 ## Priority 236: public proof-route provenance
 
 Treat the public Git history as mathematical provenance evidence. Reproduce

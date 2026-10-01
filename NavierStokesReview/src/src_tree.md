@@ -462,3 +462,8 @@ The semantic integration adjudication is in
 
 - `audit/priority_239_two_submission_semantic_differential_2026-10-01.md`
   defines the A/B proof archaeology and semantic strengthening ledger.
+
+## Priority 240
+
+- `audit/priority_240_submission_ab_contract_findings_2026-10-01.md` records
+  the first source-backed A/B route and candidate-contract findings.

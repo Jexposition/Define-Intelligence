@@ -625,3 +625,8 @@ asserted.
 - `priority_239_two_submission_semantic_differential_2026-10-01.json` records
   the measured A/B delta, semantic differential lanes, external-lead boundary,
   and controlled non-claims.
+
+## Priority 240
+
+- `priority_240_submission_ab_contract_findings_2026-10-01.json` records the
+  source anchors, contract strengthening, and controlled dispositions.

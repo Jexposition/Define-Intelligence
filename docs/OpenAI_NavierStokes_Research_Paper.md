@@ -75,6 +75,33 @@ It does not replace the selected-field and five-observable transport audit.
 
 Evidence: `NavierStokesReview/src/audit/priority_239_two_submission_semantic_differential_2026-10-01.md`.
 
+## Priority 240: first source-backed A/B contract result
+
+The first direct comparison of the two public source snapshots establishes a
+specific strengthening in the later R3 contract. The 8 September
+`R3CompactCandidate.Properties` record contains the candidate's local
+smoothness, support, residual, incompressibility, initial-data, and blow-up
+fields, but the inspected record has no explicit pre-singularity uniform
+energy field and states force smoothness as `ContDiffOn` on the future domain.
+The 10 September `R3.ProblemStatement.CandidateProperties` record explicitly
+adds `UniformFiniteEnergy (Ico 0 1) u`, global `ContDiff` force regularity, and
+compact positive-time force support.
+
+Mathematically, this proves a contract difference, not the reason for the
+difference. It does not show that the earlier route is false: the stronger
+facts may have been derivable elsewhere or may be part of later paper-facing
+aggregation. The review therefore keeps the required A/B proof-term and
+witness-identity investigation open. This result also does not resolve the
+selected-field equality
+
+\[
+\operatorname{Obs}_{\rm paper}(u_{\rm selected},p_{\rm selected},f_{\rm selected})
+=(M,I,J,S,C_p).
+\]
+
+Evidence:
+`NavierStokesReview/src/audit/priority_240_submission_ab_contract_findings_2026-10-01.md`.
+
 ## Current public-release provenance result: Priority 236 (2026-10-01)
 
 The repository history is itself part of the audit evidence. The raw Git
