@@ -4812,3 +4812,4 @@ component. This is not a contradiction of the full-vector blow-up theorem;
 it corrects the proposed route for proving the gate's off-axis nonzero
 premise. The off-axis transport calculation remains open and the controlled
 disposition remains `CTR-005: NOT ESTABLISHED`.
+The selected-route identity audit changes the wording required here. The current source positively supports one coherent selected tuple \((u,p,f,K)\) through `ActualCandidateAssembly.selected_witness`, R3 viscosity scaling, `ComparatorBridge`, and the periodic route. This rules out the broad claim that the headline theorem is assembled from unrelated existential witnesses. It does not establish the separate manuscript correspondence theorem for \((M,I,J,S,C_p)\), which remains the open CTR-005 edge. Evidence: `NavierStokesReview/evidence/priority_241_selected_route_identity_2026-10-01.md`.

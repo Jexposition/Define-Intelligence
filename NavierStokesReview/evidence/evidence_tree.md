@@ -637,3 +637,4 @@ asserted.
   A/B source/import closure, shared/A-only/B-only module sets, declaration
   census, and current-B elaborated declaration-use root closures. The report
   explicitly does not call these proof-term semantics or a manuscript bridge.
+- `priority_241_selected_route_identity_2026-10-01.md` — positive source trace for one coherent selected `(u,p,f,K)` tuple through the R3 and periodic headline routes; keeps the five-observable bridge open.

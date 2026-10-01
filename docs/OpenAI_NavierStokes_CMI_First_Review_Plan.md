@@ -5458,3 +5458,13 @@ Working locations:
 
 Executed control record:
 `../NavierStokesReview/src/audit/priority_241_ab_declaration_closure_and_semantic_seams_2026-10-01.md`.
+## Priority 241A: selected-route object identity
+
+- [x] Trace `ActualCandidateAssembly.selected_witness` into `ActualCandidate.selected_candidate_one_with_initial_rest`.
+- [x] Confirm that the R3 theorem scales one common `(u,p,f,K)` tuple and that `ComparatorBridge` reuses its force rather than selecting a separate force.
+- [x] Confirm that the periodic route starts from the same theorem tuple before compression, parabolic scaling, and periodisation.
+- [ ] Build the typed object ledger for each arrow from activated fields to R3-scaled and periodised fields.
+- [ ] Search every arrow for a production theorem transporting the manuscript five-observable payload `(M,I,J,S,C_p)`.
+- [ ] Keep the positive common-witness finding separate from the unresolved field-level observable correspondence.
+
+Evidence: `../NavierStokesReview/evidence/priority_241_selected_route_identity_2026-10-01.md`.

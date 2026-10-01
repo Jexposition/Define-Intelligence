@@ -4411,3 +4411,8 @@ proved CMI failure.
 
 Primary evidence:
 `NavierStokesReview/src/audit/priority_232_repair_engine_usage_and_observable_boundary_2026-10-01.md`.
+## Priority 241A: coherent witness versus semantic observable transport
+
+The current goal must preserve both sides of the result. The source trace positively supports a single selected tuple `(u,p,f,K)` through the R3 and periodic headline routes, including coherent viscosity scaling and reuse of the same force in the comparator. That finding prevents an overclaim that the endpoint is assembled from unrelated witnesses. It does not prove that the final selected Cartesian/localised/periodised/summed fields realise the manuscript observables `(M,I,J,S,C_p)`. The next work item is therefore an arrow-level object ledger and five-observable transport search, not another interface-only scan.
+
+Evidence: `../NavierStokesReview/evidence/priority_241_selected_route_identity_2026-10-01.md`.
