@@ -19,6 +19,11 @@ composition. The controlled scientific disposition remains
 `CTR-005: NOT ESTABLISHED`; no selected defect, force nonsmoothness, literal
 CMI failure, impossibility theorem, compiler escape, or `False` is claimed.
 
+Release references: private review commit `296319d`; mirrored public review
+commit `7a663ed`. The private worktree still contains the previously
+protected, intentionally untracked OpenAI source test file and local closure
+JSON; neither is part of this release.
+
 ## Priority 227 selected periodic-support gate replay (2026-10-01)
 
 The selected periodic-support gate replay is recorded in
