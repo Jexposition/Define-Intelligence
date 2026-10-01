@@ -29,4 +29,3 @@
   ],
   "required_next_theorem": "Moments_profile(U,E,Pi) -> Moments_paper(u_selected,p_selected,f_selected) = (M,I,J,S,Cp) after selected tsum, curl, cutoff, periodisation, torus average, radial integration, pressure, residual and force composition"
 }
-

@@ -85,4 +85,3 @@ The controlled conclusion remains:
 - \`priority_203_internal_to_endpoint_crossfile_trace_2026-09-30.md\`
 - \`priority_211_selected_transport_whole_tree_2026-09-30.md\`
 - \`docs/navier-stokes openai.txt:470-735,1426-1588,2190-2347,2379-3065,4622-4915,5521-6240,6655-6990,8091-8530\`
-
