@@ -1,5 +1,25 @@
 # CMI-first review plan: OpenAI Navier–Stokes claim
 
+## Priority 227: selected periodic-support gate replay (2026-10-01)
+
+- [x] Compile the selected periodic-support contradiction gate under the
+  pinned Lean 4.34.0-rc2 toolchain.
+- [x] Confirm that the gate uses the exact selected mixed radial pullback and
+  is not an abstract debt or toy-profile countermodel.
+- [x] Separate compact R3 support, local periodic/compact equality, and the
+  global radial-support premise required by `barMoment`.
+- [ ] Transport the proved angular-growth nonzero value to the exact
+  periodised first-component radial pullback, with all time, plateau, section,
+  and activation equalities explicit.
+- [ ] Derive or formally block the selected `RadiallySupported` premise. Do
+  not infer it from compact support of the non-periodic representative.
+
+Evidence:
+`../NavierStokesReview/src/audit/priority_227_selected_periodic_support_gate_replay_2026-10-01.md`
+and
+`../NavierStokesReview/evidence/selected_periodic_support_gate_replay_2026-10-01.md`.
+The controlled disposition remains `CTR-005: NOT ESTABLISHED`.
+
 ## Priority 226: curated release state (2026-10-01)
 
 The private/public release state is recorded in

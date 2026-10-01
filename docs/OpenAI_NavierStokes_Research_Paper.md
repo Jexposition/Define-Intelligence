@@ -1,5 +1,16 @@
 # Selected-field correspondence in the OpenAI Navier–Stokes formalisation
 
+## Current selected-support correction: Priority 227 (2026-10-01)
+
+The selected periodic-support gate replay is
+[`priority_227_selected_periodic_support_gate_replay_2026-10-01.md`](../NavierStokesReview/src/audit/priority_227_selected_periodic_support_gate_replay_2026-10-01.md),
+with evidence in
+[`selected_periodic_support_gate_replay_2026-10-01.md`](../NavierStokesReview/evidence/selected_periodic_support_gate_replay_2026-10-01.md).
+It verifies a conditional contradiction for the exact selected periodic radial
+pullback. It does not transfer compact R3 support to the periodised field and
+does not yet prove a nonzero value for the exact pullback. The scientific
+disposition remains `CTR-005: NOT ESTABLISHED`.
+
 ## Current release correction: Priority 226 (2026-10-01)
 
 The verified private/public release state is

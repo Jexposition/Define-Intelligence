@@ -1,11 +1,11 @@
 ```markdown
 . 📂 docs
 
-Current reconciliation pointer: `REVIEW_DOCUMENT_CONTROL.md` Priority 226,
+Current reconciliation pointer: `REVIEW_DOCUMENT_CONTROL.md` Priority 227,
 with the consolidation audit at
-`../NavierStokesReview/src/audit/priority_226_release_state_2026-10-01.md`
+`../NavierStokesReview/src/audit/priority_227_selected_periodic_support_gate_replay_2026-10-01.md`
 and evidence at
-`../NavierStokesReview/evidence/document_consolidation_census_2026-10-01.md`.
+`../NavierStokesReview/evidence/selected_periodic_support_gate_replay_2026-10-01.md`.
 The tree below remains a navigation snapshot and is not a substitute for the
 current control record.
 
@@ -60,6 +60,14 @@ current control record.
 ```
 
 ## Reconciliation additions: 2026-09-30
+
+## Current selected-support gate: Priority 227 (2026-10-01)
+
+The current scientific gate is linked from
+`REVIEW_DOCUMENT_CONTROL.md`. It is a compiled conditional contradiction for
+the exact selected periodic radial pullback. It does not transfer compact R3
+support to the periodised field and does not yet derive nonzero transport.
+`CTR-005: NOT ESTABLISHED` remains the controlled disposition.
 
 The compact tree above is historical. The current documentation-control entry
 points are:

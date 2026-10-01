@@ -1,5 +1,15 @@
 # Independent peer review of the OpenAI Navier–Stokes formalisation
 
+## Current selected-support correction: Priority 227 (2026-10-01)
+
+The selected periodic-support gate replay is
+[`priority_227_selected_periodic_support_gate_replay_2026-10-01.md`](../NavierStokesReview/src/audit/priority_227_selected_periodic_support_gate_replay_2026-10-01.md),
+with evidence in
+[`selected_periodic_support_gate_replay_2026-10-01.md`](../NavierStokesReview/evidence/selected_periodic_support_gate_replay_2026-10-01.md).
+It is a compiled conditional gate, not a selected-field refutation. The exact
+support and nonzero transport premises remain open, so the controlled status
+stays `CTR-005: NOT ESTABLISHED`.
+
 ## Current release correction: Priority 226 (2026-10-01)
 
 The verified private/public release state is

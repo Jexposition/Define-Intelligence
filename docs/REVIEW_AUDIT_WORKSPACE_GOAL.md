@@ -1,5 +1,19 @@
 # Review audit workspace goal
 
+## Priority 227: selected periodic-support gate replay (2026-10-01)
+
+The current selected-field gate replay is recorded in
+`../NavierStokesReview/src/audit/priority_227_selected_periodic_support_gate_replay_2026-10-01.md`
+with evidence at
+`../NavierStokesReview/evidence/selected_periodic_support_gate_replay_2026-10-01.md`.
+The existing review-side Lean gate now compiles under the pinned
+`leanprover/lean4:v4.34.0-rc2` toolchain. It proves a contradiction only from
+the exact selected periodic pullback's bounded radial support and a nonzero
+value. Neither premise is exported by the selected endpoint. Compact R3
+support and local periodic/compact equality must not be conflated with global
+radial support. Continue the value-level nonzero transport test without
+upgrading the gate to `False`.
+
 ## Priority 226: curated release state (2026-10-01)
 
 The verified private/public branch state is recorded in

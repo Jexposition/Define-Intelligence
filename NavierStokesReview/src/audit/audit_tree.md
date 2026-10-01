@@ -1,5 +1,13 @@
 ```markdown
 . 📂 audit
+## Current selected-support gate: Priority 227 (2026-10-01)
+
+├── 📄 priority_227_selected_periodic_support_gate_replay_2026-10-01.md
+└── 📄 ../evidence/selected_periodic_support_gate_replay_2026-10-01.md
+
+The gate is compiler-verified but conditional. It does not establish a
+selected contradiction, nonzero moment defect, or `False`.
+
 ## Current release record: Priority 226 (2026-10-01)
 
 ├── 📄 priority_226_release_state_2026-10-01.md

@@ -1,5 +1,13 @@
 ```markdown
 . 📂 evidence
+## Current selected-support gate: Priority 227 (2026-10-01)
+
+- `selected_periodic_support_gate_replay_2026-10-01.md`
+- `../src/audit/priority_227_selected_periodic_support_gate_replay_2026-10-01.md`
+
+The compiled gate is conditional on exact selected-field radial support and
+nonzero transport premises. It is not a selected-field contradiction.
+
 ## Current release record: Priority 226 (2026-10-01)
 
 - `../src/audit/priority_226_release_state_2026-10-01.md`

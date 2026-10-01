@@ -1,6 +1,14 @@
 ```markdown
 . 📂 src
 
+## Current selected-support gate: Priority 227 (2026-10-01)
+
+The active audit record is
+`audit/priority_227_selected_periodic_support_gate_replay_2026-10-01.md`.
+The corresponding compiled review-side gate is
+`refutations/SelectedPeriodicSupportTransportGate.lean`.
+It is conditional on selected-field support and nonzero transport premises.
+
 ## Current live-index additions: 2026-09-30
 
 The current corpus-control addition is

@@ -1,5 +1,15 @@
 # Navier–Stokes review document control
 
+## Priority 227 selected periodic-support gate replay (2026-10-01)
+
+The selected periodic-support gate replay is recorded in
+`../NavierStokesReview/src/audit/priority_227_selected_periodic_support_gate_replay_2026-10-01.md`
+and
+`../NavierStokesReview/evidence/selected_periodic_support_gate_replay_2026-10-01.md`.
+The gate compiles under the pinned toolchain and remains conditional on exact
+selected-field bounded radial support and nonzero transport premises. It does
+not establish a selected contradiction or change `CTR-005: NOT ESTABLISHED`.
+
 ## Priority 226 curated release state (2026-10-01)
 
 The verified private/public branch state is recorded in
