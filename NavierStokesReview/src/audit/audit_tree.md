@@ -454,3 +454,4 @@ and `CTR-005` remains `NOT ESTABLISHED`; no stronger refutation is claimed.
   current-B-environment measurement tool. It is a census tool, not a proof
   of paper correspondence.
 - `../evidence/priority_241_selected_route_identity_2026-10-01.md` — selected-route object-identity audit: common witness tuple confirmed; final five-observable transport remains unresolved.
+| `comparator_trust_and_totalization_audit.py` | Records challenge/solution source separation, trust-boundary tokens, and proof-relevant totalisation/choice sites | Active instrument; lexical triage only | 2026-10-01 |

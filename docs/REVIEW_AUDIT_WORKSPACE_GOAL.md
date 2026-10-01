@@ -4416,3 +4416,39 @@ Primary evidence:
 The current goal must preserve both sides of the result. The source trace positively supports a single selected tuple `(u,p,f,K)` through the R3 and periodic headline routes, including coherent viscosity scaling and reuse of the same force in the comparator. That finding prevents an overclaim that the endpoint is assembled from unrelated witnesses. It does not prove that the final selected Cartesian/localised/periodised/summed fields realise the manuscript observables `(M,I,J,S,C_p)`. The next work item is therefore an arrow-level object ledger and five-observable transport search, not another interface-only scan.
 
 Evidence: `../NavierStokesReview/evidence/priority_241_selected_route_identity_2026-10-01.md`.
+## Priority 242: Proof boundary and semantic provenance extension
+
+The audit must distinguish the challenge specification from the submitted proof. A `sorry` in `ComparatorChallenges` is not automatically a `sorry` in the submitted C/D theorem. The solution’s imports, Comparator configuration, elaborated proof-term closure, and recursive axioms must be checked before any trust-boundary conclusion is made.
+
+The audit must also treat kernel validity and semantic validity as separate evidence layers:
+
+\[
+\Gamma\vdash T
+\quad\not\Rightarrow\quad
+T=\text{the intended Fefferman/PDE claim}.
+\]
+
+The active programme therefore includes:
+
+1. exact challenge/solution separation and proof-term trust audit;
+2. asymmetric Fefferman-to-Comparator class-inclusion checks, with special priority on the direction needed to transfer comparator nonexistence to all admissible Fefferman competitors;
+3. A/B elaborated proof-term differential, normalised theorem-type hashes, and witness comparison;
+4. constructor-field provenance for every load-bearing property, stopping only when the chain reaches primitive analytic definitions rather than another interface;
+5. noncomputability, fallback-totalisation, arbitrary-extension, choice-independence, and totalised-integral/derivative audits on the proof-relevant closure;
+6. a dependency-ordered human-readable dossier containing exact Lean types, mathematical renderings, source lines, dependencies, axioms, and paper/CMI correspondence status.
+
+This extension does not narrow or supersede the existing moment-transport, CUDA 3-D curl/cutoff, force/pressure, limits/interchanges, pressure, uniqueness, CMI, A/B provenance, and document-consolidation objectives. The current status remains `NOT ESTABLISHED` for the complete paper-to-endpoint correspondence unless the missing semantic arrows are actually verified; it does not assert a selected-field mismatch or literal CMI failure without a direct theorem.
+
+## Priority 243: Asymmetric CMI class transfer
+
+The audit must not treat the Comparator predicates as equivalent to Fefferman's connected specification merely because the endpoint theorem has matching existential syntax. The critical nonexistence arrow is:
+
+\[
+\text{Fefferman-admissible competitor}
+\Longrightarrow
+\text{Comparator competitor}.
+\]
+
+The active checks are finite-energy integral (Rightarrow) `MemLp`, coordinate derivative bounds (Rightarrow) iterated Fréchet norm bounds, domain/boundary semantics, pressure gauge and regularity, spatial decay/support, viscosity, and same-force identity. The constructed-data inclusion is recorded separately. An internal adapter from Comparator solutions to `GlobalFiniteEnergySolution` is positive evidence about one direction only; it does not settle the CMI class transfer.
+
+Evidence: `NavierStokesReview/evidence/priority_243_fefferman_comparator_variance_2026-10-01.md`.

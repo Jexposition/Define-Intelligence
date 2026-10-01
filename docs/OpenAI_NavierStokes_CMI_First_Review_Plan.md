@@ -5468,3 +5468,26 @@ Executed control record:
 - [ ] Keep the positive common-witness finding separate from the unresolved field-level observable correspondence.
 
 Evidence: `../NavierStokesReview/evidence/priority_241_selected_route_identity_2026-10-01.md`.
+## Priority 242: Comparator boundary, variance, and totalisation provenance
+
+- [ ] Keep `ComparatorChallenges/NavierStokes.lean` challenge placeholders separate from `NavierStokes/ComparatorSolution.lean`; record exact imports, theorem statements, configuration, Comparator result, and recursive proof-term axioms.
+- [ ] Run the exact trust-boundary audit over the selected proof-term closure, not only the import closure. Include build files, generated Lean, pinned dependencies, native proof admission, metaprogramming, and custom axioms.
+- [ ] Prove the asymmetric Fefferman-to-Comparator variance obligations: constructed-data inclusion and, critically, `FeffermanSolution → ComparatorSolution` for every hypothetical competitor.
+- [ ] Independently audit finite-energy integral versus `MemLp`, coordinate derivatives versus iterated Fréchet derivative norms, pressure gauge/regularity, initial data, force identity, viscosity, and time-domain scope.
+- [ ] Compute the elaborated proof-term sets for Submission A (`8937a8f4`) and Submission B (`f9e8bc5b`) and classify (P_A\cap P_B), (P_A\setminus P_B), and (P_B\setminus P_A). Do not substitute source/import closure for proof-term closure.
+- [ ] Hash normalised C/D headline types and comparator predicate definitions across A/B; classify each B-only strengthening as CMI-required, manuscript-only, semantic hardening, explanatory, or unresolved.
+- [ ] Build constructor-field provenance for `CandidateProperties`, `Witness`, comparison records, and selected (u,p,f,K): field → constructor → exact theorem → primitive analytic source.
+- [ ] Add the targeted noncomputability/totalisation lane: `Classical.choice`, conditional fallback, `Function.extend`, arbitrary representatives, endpoint extensions, totalised derivatives/integrals, `sInf`/`sSup`, and `Filter.bot`; prove branch validity or choice-independence at every selected use.
+- [ ] Preserve the existing selected-field moment transport, CUDA 3-D curl/cutoff, force/pressure, limit/interchange, pressure, uniqueness, and document-consolidation lanes. This priority expands the audit; it does not replace them.
+
+Evidence and instrument: `NavierStokesReview/evidence/priority_242_comparator_boundary_and_totalization_2026-10-01.md` and `NavierStokesReview/src/audit/comparator_trust_and_totalization_audit.py`.
+
+## Priority 243: Fefferman-to-Comparator class variance
+
+- [ ] Prove the direction needed for nonexistence transfer: every Fefferman-admissible hypothetical competitor satisfies the Comparator competitor predicate.
+- [ ] Independently prove finite energy expressed by the CMI integral implies the Comparator `MemLp` requirement at every (tge0), with all integrability hypotheses explicit.
+- [ ] Translate coordinate/multi-index derivative bounds into the Comparator iterated Fréchet-derivative norm bounds in the required direction.
+- [ ] Audit `derivWithin` at (t=0), future-domain versus whole-domain smoothness, pointwise versus a.e. equality, pressure gauge, spatial decay/support, viscosity, and same-force identity.
+- [ ] Keep the separate constructed-data inclusion and competitor-class inclusion distinct; do not infer equivalence from one adapter.
+
+Evidence: `NavierStokesReview/evidence/priority_243_fefferman_comparator_variance_2026-10-01.md`.

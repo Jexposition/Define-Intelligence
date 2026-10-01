@@ -4813,3 +4813,31 @@ it corrects the proposed route for proving the gate's off-axis nonzero
 premise. The off-axis transport calculation remains open and the controlled
 disposition remains `CTR-005: NOT ESTABLISHED`.
 The selected-route identity audit changes the wording required here. The current source positively supports one coherent selected tuple \((u,p,f,K)\) through `ActualCandidateAssembly.selected_witness`, R3 viscosity scaling, `ComparatorBridge`, and the periodic route. This rules out the broad claim that the headline theorem is assembled from unrelated existential witnesses. It does not establish the separate manuscript correspondence theorem for \((M,I,J,S,C_p)\), which remains the open CTR-005 edge. Evidence: `NavierStokesReview/evidence/priority_241_selected_route_identity_2026-10-01.md`.
+## Review control update: challenge/solution separation and semantic trust
+
+The presence of `sorry` in `ComparatorChallenges/NavierStokes.lean` must not be reported as a hole in OpenAI's submitted theorem without checking the separate `ComparatorSolution` module and its transitive proof-term closure. The current source inspection finds challenge placeholders at the C/D declarations and no `sorry` in `NavierStokes/ComparatorSolution.lean`, which imports `ComparatorR3Theorem` and `ComparatorTheorem`. This is positive source evidence, not yet a complete proof-term independence result.
+
+The review therefore distinguishes:
+
+- kernel/proof-term evidence: Comparator configuration, recursive axioms, and challenge independence;
+- mathematical correspondence: whether the formal predicates match Fefferman's connected specification;
+- construction provenance: whether every load-bearing structure field is proved for the same selected (u,p,f,K);
+- totalisation provenance: whether conditional fallbacks, arbitrary representatives, extensions, choices, and totalised operations are used only under their intended hypotheses.
+
+The selected B route has positive same-witness evidence. The remaining audit does not infer a false selected identity from a missing named field. It asks whether the exact semantic arrows needed by the manuscript and CMI specification are present, including the five-observable transport, force regularity, pressure semantics, energy class, uniqueness transfer, and periodisation/localisation limits.
+
+Linked evidence: `NavierStokesReview/evidence/priority_242_comparator_boundary_and_totalization_2026-10-01.md` and `NavierStokesReview/evidence/comparator_trust_totalization_audit_2026-10-01.json`.
+
+## Class-transfer control
+
+The comparator-to-internal-solution adapter is positive evidence for the repository's internal logic, but it does not settle whether the comparator solution class is at least as broad as Fefferman's admissible competitor class. The required audit direction is:
+
+\[
+\text{Fefferman competitor}
+\Longrightarrow
+\text{Comparator competitor}.
+\]
+
+The review must independently check the `MemLp` strengthening, derivative norm translation, time-boundary semantics, pressure treatment, spatial decay, viscosity, and same-force identity. Until this is established, the endpoint's formal nonexistence result and the CMI nonexistence claim remain separate evidence layers.
+
+Linked evidence: `NavierStokesReview/evidence/priority_243_fefferman_comparator_variance_2026-10-01.md`.

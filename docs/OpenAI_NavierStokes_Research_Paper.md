@@ -1770,3 +1770,34 @@ samples component `1`. This does not prove that the off-axis pullback is zero
 or nonzero, and it does not replace the missing final five-observable
 identification. `CTR-005` therefore remains `NOT ESTABLISHED`.
 The route-level audit now supplies a positive qualification to the endpoint finding. `ActualCandidateAssembly.selected_witness` feeds `ActualCandidate.selected_candidate_one_with_initial_rest`, and `R3.Theorem` scales one common tuple `(u,p,f,K)` before the comparator and periodic routes consume it. Thus the review does not claim that the endpoint chooses unrelated fields for velocity, pressure, force, and blow-up. The unresolved issue remains narrower and more exact: no production theorem has been located identifying those final selected fields with the manuscript's five observables \((M,I,J,S,C_p)\), or proving their transport through the complete selected transformation chain. See `NavierStokesReview/evidence/priority_241_selected_route_identity_2026-10-01.md`.
+## Comparator boundary and semantic provenance audit update (2026-10-01)
+
+The review now separates the Comparator challenge specification from the submitted solution. The `sorry` bodies in `ComparatorChallenges/NavierStokes.lean` are challenge placeholders; `NavierStokes/ComparatorSolution.lean` imports the solution theorem modules and contains no `sorry` body in the inspected source. This source distinction is not treated as proof of independence by itself. The exact Comparator configuration, elaborated proof-term closure, and recursive axiom traversal remain required.
+
+The audit also adds a proof-relevant totalisation and witness-provenance lane. Conditional fallback definitions, chart representatives, endpoint extensions, `Classical.choice`, totalised integrals or derivatives, and similar constructions are not labelled unsound merely because they are noncomputable. They are traced to the selected (u,p,f,K) and checked for branch validity, coverage, choice-independence, integrability, and domain preservation.
+
+This matters to the paper claim because kernel validity establishes a formal proposition, not automatically the proposition intended by Fefferman or by the manuscript:
+
+\[
+\Gamma\vdash T
+\quad\not\Rightarrow\quad
+T=\text{the intended PDE/CMI statement}.
+\]
+
+The current positive finding remains that the B route carries one coherent selected tuple and the same force through the R³ theorem and comparator. The current unresolved findings remain the selected-field observable transport, Fefferman-to-Comparator class variance, proof-term A/B differential, constructor-field provenance, and high-risk limits/interchanges. No challenge-file `sorry`, `noncomputable` definition, or interface omission is treated as a concrete selected-path contradiction without the corresponding dependency evidence.
+
+Evidence: `NavierStokesReview/evidence/priority_242_comparator_boundary_and_totalization_2026-10-01.md`, `NavierStokesReview/evidence/comparator_trust_totalization_audit_2026-10-01.json`, and `NavierStokesReview/src/audit/comparator_trust_and_totalization_audit.py`.
+
+### Fefferman-to-Comparator variance
+
+The nonexistence transfer requires an asymmetric class inclusion, not merely similar theorem syntax:
+
+\[
+\text{Fefferman-admissible competitor}
+\Longrightarrow
+\text{Comparator competitor}.
+\]
+
+The current source trace positively establishes an internal adapter from Comparator solutions to the repository's `GlobalFiniteEnergySolution`, including explicit `MemLp` and energy transport (`NavierStokes/R3/ComparatorBridge.lean:48–70`). That is not the critical reverse inclusion. The review therefore keeps finite-energy integral versus `MemLp`, coordinate versus Fréchet derivative bounds, `derivWithin` and endpoint semantics, pressure gauge, spatial decay, viscosity, and same-force identity open until checked in the required direction.
+
+Evidence: `NavierStokesReview/evidence/priority_243_fefferman_comparator_variance_2026-10-01.md`.

@@ -1,0 +1,403 @@
+{
+  "challenge_solution": {
+    "challenge": {
+      "exists": true,
+      "headline_declarations": [
+        {
+          "line": 45,
+          "text": "- `navier_stokes_breakdown_R3`: (C) Existence of breakdown scenario on \u211d\u00b3"
+        },
+        {
+          "line": 46,
+          "text": "- `navier_stokes_breakdown_periodic`: (D) Existence of breakdown scenario on \u211d\u00b3/\u2124\u00b3"
+        },
+        {
+          "line": 273,
+          "text": "theorem navier_stokes_breakdown_R3 (nu : \u211d) (hnu : nu > 0) :"
+        },
+        {
+          "line": 280,
+          "text": "theorem navier_stokes_breakdown_periodic (nu : \u211d) (hnu : nu > 0) :"
+        }
+      ],
+      "imports": [
+        {
+          "line": 20,
+          "text": "import Mathlib"
+        }
+      ],
+      "path": "ComparatorChallenges/NavierStokes.lean",
+      "sorry_lines": [
+        29,
+        277,
+        284
+      ]
+    },
+    "solution": {
+      "exists": true,
+      "headline_declarations": [
+        {
+          "line": 16,
+          "text": "theorem navier_stokes_breakdown_R3 (nu : \u211d) (hnu : nu > 0) :"
+        },
+        {
+          "line": 20,
+          "text": "exact ComparatorBridge.navier_stokes_breakdown_R3 nu hnu"
+        },
+        {
+          "line": 23,
+          "text": "theorem navier_stokes_breakdown_periodic (nu : \u211d) (hnu : nu > 0) :"
+        },
+        {
+          "line": 27,
+          "text": "exact ComparatorBridge.navier_stokes_breakdown_periodic nu hnu"
+        },
+        {
+          "line": 31,
+          "text": "#print axioms NavierStokes.Comparator.navier_stokes_breakdown_R3"
+        },
+        {
+          "line": 32,
+          "text": "#print axioms NavierStokes.Comparator.navier_stokes_breakdown_periodic"
+        }
+      ],
+      "imports": [
+        {
+          "line": 1,
+          "text": "import NavierStokes.ComparatorR3Theorem"
+        },
+        {
+          "line": 2,
+          "text": "import NavierStokes.ComparatorTheorem"
+        }
+      ],
+      "path": "NavierStokes/ComparatorSolution.lean",
+      "sorry_lines": []
+    }
+  },
+  "configuration": {
+    "configuration_hits": []
+  },
+  "counts": {
+    "files_with_hits": 8,
+    "totalisation_hits": 46,
+    "trust_boundary_hits": 5
+  },
+  "files_scanned": 18,
+  "hits": [
+    {
+      "category": "noncomputable_declaration",
+      "line": 36,
+      "path": "NavierStokes/ActualCandidateAssembly.lean",
+      "text": "noncomputable def initialPotential (B N0 : \u2115) : VelocityField :="
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 39,
+      "path": "NavierStokes/ActualCandidateAssembly.lean",
+      "text": "noncomputable def initialPressure (B N0 : \u2115) : PressureField :="
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 42,
+      "path": "NavierStokes/ActualCandidateAssembly.lean",
+      "text": "noncomputable def initialDirect (B N0 : \u2115) : VelocityField :="
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 45,
+      "path": "NavierStokes/ActualCandidateAssembly.lean",
+      "text": "noncomputable def initialDirectData (B N0 : \u2115) :"
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 204,
+      "path": "NavierStokes/ActualCandidateAssembly.lean",
+      "text": "noncomputable def zerothPotential (B N0 : \u2115) : VelocityField :="
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 207,
+      "path": "NavierStokes/ActualCandidateAssembly.lean",
+      "text": "noncomputable def zerothPressure (B N0 : \u2115) : PressureField :="
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 237,
+      "path": "NavierStokes/ActualCandidateAssembly.lean",
+      "text": "noncomputable def particularPotential (B N0 j : \u2115) : VelocityField :="
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 241,
+      "path": "NavierStokes/ActualCandidateAssembly.lean",
+      "text": "noncomputable def particularPressure (B N0 j : \u2115) : PressureField :="
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 476,
+      "path": "NavierStokes/ActualCandidateAssembly.lean",
+      "text": "noncomputable def runData (B N0 : \u2115)"
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 501,
+      "path": "NavierStokes/ActualCandidateAssembly.lean",
+      "text": "noncomputable def signedPotential (B N0 : \u2115)"
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 508,
+      "path": "NavierStokes/ActualCandidateAssembly.lean",
+      "text": "noncomputable def signedPressure (B N0 : \u2115)"
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 515,
+      "path": "NavierStokes/ActualCandidateAssembly.lean",
+      "text": "noncomputable def positivePotential (B N0 : \u2115)"
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 520,
+      "path": "NavierStokes/ActualCandidateAssembly.lean",
+      "text": "noncomputable def positivePressure (B N0 : \u2115)"
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 525,
+      "path": "NavierStokes/ActualCandidateAssembly.lean",
+      "text": "noncomputable def directData (B N0 : \u2115)"
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 531,
+      "path": "NavierStokes/ActualCandidateAssembly.lean",
+      "text": "noncomputable def potentialStages (B N0 : \u2115)"
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 536,
+      "path": "NavierStokes/ActualCandidateAssembly.lean",
+      "text": "noncomputable def directStages (B N0 : \u2115)"
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 540,
+      "path": "NavierStokes/ActualCandidateAssembly.lean",
+      "text": "noncomputable def pressureStages (B N0 : \u2115)"
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 1090,
+      "path": "NavierStokes/ActualCandidateAssembly.lean",
+      "text": "noncomputable def estimates (B N0 : \u2115)"
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 1165,
+      "path": "NavierStokes/ActualCandidateAssembly.lean",
+      "text": "noncomputable def selectedPotentialStages : \u2115 \u2192 VelocityField :="
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 1169,
+      "path": "NavierStokes/ActualCandidateAssembly.lean",
+      "text": "noncomputable def selectedDirectStages : \u2115 \u2192 VelocityField :="
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 1173,
+      "path": "NavierStokes/ActualCandidateAssembly.lean",
+      "text": "noncomputable def selectedPressureStages : \u2115 \u2192 PressureField :="
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 29,
+      "path": "NavierStokes/CompactSmoothFamily.lean",
+      "text": "noncomputable def family (K : Set Z) (F : P \u00d7 Z \u2192 E) (p : P) : C(K, E) := by"
+    },
+    {
+      "category": "conditional_branch",
+      "line": 31,
+      "path": "NavierStokes/CompactSmoothFamily.lean",
+      "text": "exact if h : Continuous (fun z : K => F (p, z)) then \u27e8_, h\u27e9 else 0"
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 60,
+      "path": "NavierStokes/CompactSmoothFamily.lean",
+      "text": "noncomputable def flipLinear (K : Set Z) :"
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 78,
+      "path": "NavierStokes/CompactSmoothFamily.lean",
+      "text": "noncomputable def flipCLM (K : Set Z) [CompactSpace K] :"
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 142,
+      "path": "NavierStokes/CompactSmoothFamily.lean",
+      "text": "noncomputable def parameterDerivative (F : P \u00d7 Z \u2192 E) (z : P \u00d7 Z) : P \u2192L[\u211d] E :="
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 120,
+      "path": "NavierStokes/JointResidualLimits.lean",
+      "text": "noncomputable def boundaryLimits (f : SpaceTime \u2192 V) (hext : AwayExtensions f)"
+    },
+    {
+      "category": "classical_choice",
+      "line": 124,
+      "path": "NavierStokes/JointResidualLimits.lean",
+      "text": "ftaylorSeries \u211d (Classical.choice (hext x hx)).value (1, x)"
+    },
+    {
+      "category": "classical_choice",
+      "line": 139,
+      "path": "NavierStokes/JointResidualLimits.lean",
+      "text": "exact (Classical.choice (hext x hx)).jet_tendsto n"
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 257,
+      "path": "NavierStokes/JointResidualLimits.lean",
+      "text": "noncomputable def extendedResidual (f : SpaceTime \u2192 V) (hext : AwayExtensions f) : SpaceTime \u2192 V :="
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 119,
+      "path": "NavierStokes/PreparedOutgoing.lean",
+      "text": "noncomputable def prepared : PreparedProfile := Classical.choice exists_prepared"
+    },
+    {
+      "category": "classical_choice",
+      "line": 119,
+      "path": "NavierStokes/PreparedOutgoing.lean",
+      "text": "noncomputable def prepared : PreparedProfile := Classical.choice exists_prepared"
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 29,
+      "path": "NavierStokes/SmoothPathFamily.lean",
+      "text": "noncomputable def pathFamily (F : P \u00d7 \u211d \u2192 E) (p : P) : C(Icc a b, E) := by"
+    },
+    {
+      "category": "conditional_branch",
+      "line": 31,
+      "path": "NavierStokes/SmoothPathFamily.lean",
+      "text": "exact if h : Continuous (fun t : Icc a b => F (p, t)) then \u27e8_, h\u27e9 else 0"
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 63,
+      "path": "NavierStokes/SmoothPathFamily.lean",
+      "text": "noncomputable def flipLinear : C(Icc a b, P \u2192L[\u211d] E) \u2192\u2097[\u211d] P \u2192\u2097[\u211d] C(Icc a b, E) where"
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 81,
+      "path": "NavierStokes/SmoothPathFamily.lean",
+      "text": "noncomputable def flipPath : C(Icc a b, P \u2192L[\u211d] E) \u2192L[\u211d] P \u2192L[\u211d] C(Icc a b, E) :="
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 148,
+      "path": "NavierStokes/SmoothPathFamily.lean",
+      "text": "noncomputable def parameterDerivative (F : P \u00d7 \u211d \u2192 E) (z : P \u00d7 \u211d) : P \u2192L[\u211d] E :="
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 239,
+      "path": "NavierStokes/SmoothPathFamily.lean",
+      "text": "noncomputable def odeFamily (A : P \u00d7 \u211d \u2192 E \u2192L[\u211d] E) (x\u2080 : P \u2192 E)"
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 27,
+      "path": "NavierStokes/ValidBandGluing.lean",
+      "text": "noncomputable def representative [Zero E] (U : \u03b9 \u2192 Set D) (f : \u03b9 \u2192 D \u2192 E) (x : D) : E := by"
+    },
+    {
+      "category": "conditional_branch",
+      "line": 29,
+      "path": "NavierStokes/ValidBandGluing.lean",
+      "text": "exact if h : \u2203 i, x \u2208 U i then f (Classical.choose h) x else 0"
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 48,
+      "path": "ComparatorChallenges/Euler.lean",
+      "text": "noncomputable def divergence (v : \u211d\u00b3 \u2192 \u211d\u00b3) (x : \u211d\u00b3) : \u211d :="
+    },
+    {
+      "category": "sorry_token",
+      "line": 88,
+      "path": "ComparatorChallenges/Euler.lean",
+      "text": "sorry"
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 114,
+      "path": "ComparatorChallenges/Euler.lean",
+      "text": "noncomputable def toL2 {V : Type*} [NormedAddCommGroup V] (f : \u211d\u00b3 \u2192 V) :"
+    },
+    {
+      "category": "conditional_branch",
+      "line": 117,
+      "path": "ComparatorChallenges/Euler.lean",
+      "text": "exact if h : MemLp f 2 volume then h.toLp f else 0"
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 151,
+      "path": "ComparatorChallenges/Euler.lean",
+      "text": "noncomputable def vorticity (v : \u211d\u00b3 \u2192 \u211d\u00b3) (x : \u211d\u00b3) : \u211d\u00b3 :="
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 157,
+      "path": "ComparatorChallenges/Euler.lean",
+      "text": "noncomputable def velocityC1Norm (v : \u211d\u00b3 \u2192 \u211d\u00b3) : \u211d\u22650\u221e :="
+    },
+    {
+      "category": "noncomputable_declaration",
+      "line": 161,
+      "path": "ComparatorChallenges/Euler.lean",
+      "text": "noncomputable def vorticityNorm (v : \u211d\u00b3 \u2192 \u211d\u00b3) : \u211d\u22650\u221e :="
+    },
+    {
+      "category": "sorry_token",
+      "line": 184,
+      "path": "ComparatorChallenges/Euler.lean",
+      "text": "sorry"
+    },
+    {
+      "category": "sorry_token",
+      "line": 29,
+      "path": "ComparatorChallenges/NavierStokes.lean",
+      "text": "are retained, including their intentional `sorry` challenge placeholders. The"
+    },
+    {
+      "category": "sorry_token",
+      "line": 277,
+      "path": "ComparatorChallenges/NavierStokes.lean",
+      "text": "sorry"
+    },
+    {
+      "category": "sorry_token",
+      "line": 284,
+      "path": "ComparatorChallenges/NavierStokes.lean",
+      "text": "sorry"
+    }
+  ],
+  "interpretation": {
+    "challenge_sorry": "A challenge placeholder is not evidence that the submitted solution has a sorry dependency.",
+    "solution_dependency": "Must be established by import/proof-term/Comparator checks; this lexical report only records source-level evidence.",
+    "totalisation": "Each fallback, choice, extension, or noncomputable constructor requires a same-object and branch-validity follow-up."
+  },
+  "root": "D:\\Research Lab\\Jexposition\\Define Intelligence\\Define-Intelligence-github",
+  "schema": "ns-comparator-trust-totalization-audit/v1",
+  "scope": "selected-route source triage; not AST closure and not a kernel proof"
+}
