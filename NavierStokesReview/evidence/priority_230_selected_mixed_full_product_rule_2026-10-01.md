@@ -74,4 +74,3 @@ Related evidence:
   SelectedMixedProductionTorusAverage.lean
 - selected_potential_production_radial_scalar_eq in
   SelectedPotentialProductionRadialScalar.lean
-

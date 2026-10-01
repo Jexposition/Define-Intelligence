@@ -54,4 +54,3 @@ theorem selected_mixed_production_scalar_full_composition
     a p hcoord hA]
 
 end NavierStokesReview.SelectedMixedProductionFullProductRule
-
