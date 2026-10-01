@@ -1,6 +1,15 @@
 ```markdown
 . 📂 src
 
+## Current declaration-level dependency ledger: Priority 229 (2026-10-01)
+
+The active declaration ledger is
+`audit/priority_229_manuscript_dependency_declaration_ledger_2026-10-01.md`.
+It records the exact production theorem chain and the remaining final
+selected-field observable edge. The corresponding machine-readable record is
+`../evidence/priority_229_manuscript_dependency_declaration_ledger_2026-10-01.json`.
+This is a navigation and provenance pointer, not a proof of a selected defect.
+
 ## Current selected-support gate: Priority 227 (2026-10-01)
 
 The active audit record is
