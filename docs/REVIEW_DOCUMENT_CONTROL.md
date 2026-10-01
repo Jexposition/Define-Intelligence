@@ -2818,8 +2818,9 @@ base-axis blow-up direction is `coordinateVector 2`. It does not prove global
 vanishing, an off-axis nonzero value, a five-observable transport theorem, a
 selected defect, or literal CMI failure.
 
-The public mirror remains at its previous clean revision until this controlled
-tracked change is mirrored and pushed. The two protected untracked paths
+The tracked change set is mirrored publicly as `979af65` on
+`review/cmi-first-navier-stokes-disposition-public-2026-09-30`, and the remote
+ref was verified after the push. The two protected untracked paths
 remain untouched, unstaged, and excluded from publication:
 `NavierStokes/R3/TestPressure.lean` and
 `NavierStokesReview/evidence/lean_environment_closure_ns_3d_2026-09-30.json`.
