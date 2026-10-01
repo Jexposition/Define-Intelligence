@@ -1,5 +1,23 @@
 # Selected-field correspondence in the OpenAI Navier–Stokes formalisation
 
+## Current declaration-level dependency ledger: Priority 229 (2026-10-01)
+
+The declaration-level ledger
+[`priority_229_manuscript_dependency_declaration_ledger_2026-10-01.md`](../NavierStokesReview/src/audit/priority_229_manuscript_dependency_declaration_ledger_2026-10-01.md)
+records the exact production chain from five-row corrections and cycle
+invariants to residual rates, flatness, force extension, and
+`ActualCandidateAssembly.selected_witness`. This is affirmative evidence
+that the repair engine is integrated internally, not evidence of wholesale
+bypass.
+
+The same ledger records the unresolved edge: no inspected consumed production
+declaration identifies the completed selected Cartesian, localised,
+periodised, summed, radially integrated, pressure-coupled, residual-defined
+fields with the manuscript's `(M,I,J,S,C_p)` observables. The complete
+paper-to-endpoint correspondence therefore remains `CTR-005: NOT
+ESTABLISHED`. The ledger does not claim a nonzero defect or a false selected
+identity.
+
 ## Current coupled-dependency adjudication: Priority 228 (2026-10-01)
 
 The new source adjudication is

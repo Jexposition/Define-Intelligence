@@ -1,5 +1,25 @@
 # CMI-first review plan: OpenAI Navier–Stokes claim
 
+## Priority 229: declaration-level manuscript dependency ledger (2026-10-01)
+
+- [x] Build a source-linked ledger recording each manuscript mechanism,
+  exact production declaration, hypotheses, output object, next transformation,
+  and endpoint status.
+- [x] Separate reduced-profile certificates, actual rank-stage consumption,
+  residual-rate construction, smooth-force extension, and the public
+  `Witness` proposition.
+- [ ] Use the ledger to drive the value-level selected-field composition test:
+  `tsum` -> curl-before-cutoff -> periodisation -> torus average -> radial
+  integration -> pressure convention -> residual -> force export.
+- [ ] Prove the final five-observable identity or prove a concrete mismatch;
+  retain `CTR-005: NOT ESTABLISHED` until one of those value-level outcomes is
+  obtained.
+
+Evidence:
+`../NavierStokesReview/src/audit/priority_229_manuscript_dependency_declaration_ledger_2026-10-01.md`
+and
+`../NavierStokesReview/evidence/priority_229_manuscript_dependency_declaration_ledger_2026-10-01.json`.
+
 ## Priority 228: coupled manuscript-to-Lean dependency adjudication (2026-10-01)
 
 - [x] Re-read the manuscript dependency chain as a whole: profile matching,

@@ -1,7 +1,7 @@
 ```markdown
 . 📂 docs
 
-Current reconciliation pointer: `REVIEW_DOCUMENT_CONTROL.md` Priority 227,
+Current reconciliation pointer: `REVIEW_DOCUMENT_CONTROL.md` Priority 229,
 with the consolidation audit at
 `../NavierStokesReview/src/audit/priority_227_selected_periodic_support_gate_replay_2026-10-01.md`
 and evidence at

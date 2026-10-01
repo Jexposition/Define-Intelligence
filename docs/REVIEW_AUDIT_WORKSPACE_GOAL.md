@@ -1,5 +1,23 @@
 # Review audit workspace goal
 
+## Priority 229: declaration-level manuscript dependency ledger (2026-10-01)
+
+The declaration-level ledger is now recorded at
+`../NavierStokesReview/src/audit/priority_229_manuscript_dependency_declaration_ledger_2026-10-01.md`
+with machine-readable evidence at
+`../NavierStokesReview/evidence/priority_229_manuscript_dependency_declaration_ledger_2026-10-01.json`.
+
+It positively records the production chain from five-row corrections through
+the actual cycle invariant, physical data, residual rates, stage estimates,
+flatness, force extension, and `selected_witness`. It separately records the
+unclosed theorem required to identify that internal chain with the manuscript
+observables `(M,I,J,S,C_p)` after the completed selected-field composition.
+
+The next work is the value-level composition calculation, not another import
+or name scan. Keep `CTR-005: NOT ESTABLISHED` until the exact identity or a
+direct selected-field mismatch is proved. No archive movement or deletion is
+authorised before the consolidation and cross-reference gates pass.
+
 ## Priority 228: coupled manuscript-to-Lean dependency adjudication (2026-10-01)
 
 The current source adjudication is recorded in

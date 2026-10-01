@@ -1,0 +1,32 @@
+{
+  "priority": 229,
+  "date": "2026-10-01",
+  "status": "source_checked_endpoint_semantic_edge_open",
+  "disposition": "CTR-005: NOT ESTABLISHED",
+  "source_scope": {
+    "production_root": "NavierStokes/",
+    "endpoint": "NavierStokes.ActualCandidateAssembly.selected_witness",
+    "manuscript": "docs/navier-stokes openai.txt"
+  },
+  "adjudication": {
+    "repair_engine_wholesale_bypass": false,
+    "internal_repair_consumption_established": true,
+    "full_selected_field_observable_transport_established": false,
+    "selected_delta_m_proved": false,
+    "kernel_failure_or_compiler_trick_proved": false
+  },
+  "ledger_rows": [
+    {"id":"D1","declaration":"NominalProfile.FiveMomentCertificate; NominalProfile.Witness.five_moments","role":"reduced_profile_moments","output":"five identities for U,E and pressure datum","next":"identify with selected Cartesian cylindrical fields","status":"profile_level_only"},
+    {"id":"D2","declaration":"FiveRowRank.FiveRows; FiveRowRank.exists_five_row_repair","role":"five_row_correction","output":"two mass rows and three defect rows","next":"instantiate in selected cycle","status":"upstream_correction_algebra"},
+    {"id":"D3","declaration":"DefectIncrementBounds.fiveRows_preserve_masses; DefectIncrementBounds.RankGeometry.solved_rows","role":"actual_rank_stage","output":"mass preservation and solved linear rows","next":"identify with completed selected observables","status":"consumed_internally"},
+    {"id":"D4","declaration":"CorrectionStep.CycleAnalyticInvariant; ActualCyclePreservation.state_runInvariant","role":"cycle_invariant","output":"masses, debt, residual, representation, regularity","next":"prove final observable identity","status":"consumed_internally_semantic_edge_open"},
+    {"id":"D5","declaration":"ActualCandidateAssembly.physicalData","role":"physical_data","output":"PhysicalData for every cycle","next":"derive and identify selected observables","status":"consumed_internally"},
+    {"id":"D6","declaration":"ActualCycleResidualBounds.Invariant.residual_jetRate","role":"residual_rate","output":"actual residual JetRate","next":"connect rate to manuscript moment mechanism","status":"residual_consequence_proved"},
+    {"id":"D7","declaration":"ActualCycleResidualBounds.finite_residual_rates","role":"all_cycle_rates","output":"rates for every cycle and derivative order","next":"transport through summation/localisation","status":"consumed_internally"},
+    {"id":"D8","declaration":"ActualStageEstimates.stageEstimates_of_representations; GluedStageEstimates.actualStageEstimates","role":"stage_estimates","output":"concrete StageEstimates","next":"prove named moment identities for actual sums","status":"concrete_semantic_edge_open"},
+    {"id":"D9","declaration":"LocalResidualFlatness.exists_schedule_all_jetRates; MixedPeriodicAssembly.exists_candidate_force; CandidateFromLimits.force_smooth","role":"flatness_and_force","output":"smooth force, limits, consequences, blowup","next":"identify inputs with manuscript corrected field","status":"endpoint_consequences_proved"},
+    {"id":"D10","declaration":"ActualCandidateAssembly.Witness; selected_witness; selected_candidate","role":"public_endpoint","output":"encoded selected candidate proposition","next":"production theorem for final (M,I,J,S,Cp)","status":"final_named_equality_not_found"}
+  ],
+  "required_next_theorem": "Moments_profile(U,E,Pi) -> Moments_paper(u_selected,p_selected,f_selected) = (M,I,J,S,Cp) after selected tsum, curl, cutoff, periodisation, torus average, radial integration, pressure, residual and force composition"
+}
+

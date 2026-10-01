@@ -1,5 +1,15 @@
 ```markdown
 . 📂 evidence
+## Current declaration-level dependency ledger: Priority 229 (2026-10-01)
+
+- `priority_229_manuscript_dependency_declaration_ledger_2026-10-01.json`
+- `../src/audit/priority_229_manuscript_dependency_declaration_ledger_2026-10-01.md`
+
+The ledger ties manuscript mechanisms to exact production declarations,
+hypotheses, outputs, and required next transformations. It confirms internal
+repair-engine consumption while preserving the unresolved final selected-field
+observable bridge. `CTR-005: NOT ESTABLISHED` remains controlled.
+
 ## Current coupled manuscript-to-Lean adjudication: Priority 228 (2026-10-01)
 
 - `priority_228_coupled_manuscript_lean_dependency_adjudication_2026-10-01.md`

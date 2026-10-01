@@ -1,5 +1,16 @@
 # Navier–Stokes review document control
 
+## Priority 229 declaration-level manuscript dependency ledger (2026-10-01)
+
+The current ledger is
+`../NavierStokesReview/src/audit/priority_229_manuscript_dependency_declaration_ledger_2026-10-01.md`
+with machine-readable evidence at
+`../NavierStokesReview/evidence/priority_229_manuscript_dependency_declaration_ledger_2026-10-01.json`.
+It records positive theorem-signature evidence for internal repair-engine
+consumption and the separate final observable-identification edge that remains
+unestablished. The controlled status is unchanged:
+`CTR-005: NOT ESTABLISHED`.
+
 ## Priority 228 coupled manuscript-to-Lean dependency adjudication (2026-10-01)
 
 The current source/evidence pair is recorded in

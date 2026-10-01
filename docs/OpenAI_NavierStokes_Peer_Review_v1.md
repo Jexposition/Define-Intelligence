@@ -1,5 +1,16 @@
 # Independent peer review of the OpenAI Navier–Stokes formalisation
 
+## Current declaration-level dependency ledger: Priority 229 (2026-10-01)
+
+The source-linked ledger
+[`priority_229_manuscript_dependency_declaration_ledger_2026-10-01.md`](../NavierStokesReview/src/audit/priority_229_manuscript_dependency_declaration_ledger_2026-10-01.md)
+now records hypotheses, outputs, and required next transformations for each
+load-bearing manuscript mechanism. It confirms internal repair-engine use and
+separately records that the final selected-field `(M,I,J,S,C_p)` identity is
+not established in the inspected production endpoint. The review therefore
+retains `CTR-005: NOT ESTABLISHED` without converting the missing edge into a
+proved selected defect or literal CMI failure.
+
 ## Current coupled-dependency adjudication: Priority 228 (2026-10-01)
 
 The source/evidence pair is

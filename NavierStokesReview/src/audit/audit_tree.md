@@ -1,5 +1,13 @@
 ```markdown
 . 📂 audit
+## Current declaration-level dependency ledger: Priority 229 (2026-10-01)
+
+├── 📄 priority_229_manuscript_dependency_declaration_ledger_2026-10-01.md
+└── 📄 ../evidence/priority_229_manuscript_dependency_declaration_ledger_2026-10-01.json
+
+This ledger records the exact production declaration chain and the remaining
+selected-field observable edge. It is not a proof of a selected defect.
+
 ## Current coupled manuscript-to-Lean adjudication: Priority 228 (2026-10-01)
 
 ├── 📄 priority_228_coupled_manuscript_lean_dependency_adjudication_2026-10-01.md
