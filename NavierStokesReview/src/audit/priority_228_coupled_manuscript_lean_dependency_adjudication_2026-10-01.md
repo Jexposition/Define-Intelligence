@@ -1,7 +1,7 @@
 # Priority 228: coupled manuscript-to-Lean dependency adjudication
 
-Date: 2026-10-01  
-Status: source-checked; endpoint semantic edge remains open  
+Date: 2026-10-01
+Status: source-checked; endpoint semantic edge remains open
 Scientific disposition: `CTR-005: NOT ESTABLISHED`
 
 ## Question
