@@ -1,0 +1,42 @@
+{
+  "priority": 236,
+  "date": "2026-10-01",
+  "title": "Public release provenance delta",
+  "commits": [
+    {
+      "sha": "8937a8f4cbc7abaab5e9e97d1cc7f5d2319d9538",
+      "date": "2026-09-08T06:57:25-04:00",
+      "message": "."
+    },
+    {
+      "sha": "f9e8bc5b38b6e212696e8a30e3e91517af887bbd",
+      "date": "2026-09-10T07:51:24-04:00",
+      "message": "."
+    }
+  ],
+  "measured_diff": {
+    "changed_files": 188,
+    "insertions": 25143,
+    "deletions": 81,
+    "source": "git diff --stat 8937a8f4 f9e8bc5"
+  },
+  "route_changes": {
+    "alternative_C": {
+      "earlier": "R3CompactCandidate.selected_compact_candidate -> option_C_of_compact_candidate",
+      "later": "NavierStokesR3.theorem_1_1 -> NavierStokesR3.comparator_of_breakdown"
+    },
+    "alternative_D": {
+      "earlier": "ActualCandidateAssembly.selected_candidate -> option_D_of_candidate",
+      "later": "PeriodicPaper.periodic_corollary -> option_D_of_paper_candidate"
+    }
+  },
+  "required_followup": [
+    "independent declaration-level proof-term closures for both commits",
+    "semantic classification of every changed load-bearing declaration",
+    "object-identity comparison of candidate, force, pressure, and initial data",
+    "comparison of energy, pressure, uniqueness, moment, and force obligations",
+    "record whether added modules are active proof dependencies or only reachable imports"
+  ],
+  "interpretation": "Provenance opacity increases audit priority but is not itself evidence of a mathematical defect.",
+  "controlled_disposition": "CTR-005: NOT ESTABLISHED"
+}

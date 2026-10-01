@@ -1,5 +1,66 @@
 # Review audit workspace goal
 
+## Priority 236: public proof-route provenance
+
+Treat the public Git history as mathematical provenance evidence. Reproduce
+the 8 September object `8937a8f4` and the 10 September object `f9e8bc5`, then
+compare declaration-level proof terms, not only file lists. The measured
+delta is 188 changed files, 25,143 insertions, and 81 deletions. The C route
+changes from `R3CompactCandidate.selected_compact_candidate` to
+`NavierStokesR3.theorem_1_1`; the periodic route changes from
+`ActualCandidateAssembly.selected_candidate` to
+`PeriodicPaper.periodic_corollary`.
+
+Classify every changed load-bearing declaration as a wrapper, stronger or
+weaker premise, changed witness, domain/convention change, or genuine analytic
+repair. Determine whether added energy, pressure, uniqueness, moment, force,
+and R3 modules occur in the active proof term or only in the import closure.
+Terse commit messages reduce provenance transparency and raise audit priority;
+they do not prove concealment or error. Keep that provenance result separate
+from the scientific dispositions and preserve `CTR-005: NOT ESTABLISHED`.
+
+Control record:
+`../NavierStokesReview/src/audit/priority_236_public_release_provenance_delta_2026-10-01.md`.
+
+## Priority 235: dependency edges, provenance, and semantic integrity
+
+The goal is not to count compiling files or grant credit because a named
+mechanism exists. The goal is to determine whether the complete mathematical
+object claimed by the manuscript is the object proved at the CMI endpoint.
+The current positive result must be retained: the five-row/radial repair
+engine is consumed in the selected production route and was not bypassed
+wholesale. The unresolved result is separate: the final selected
+Cartesian/localised/periodised/summed fields have not yet been identified
+with the manuscript observables
+
+\[
+\operatorname{Obs}_{\rm paper}(u_{\rm selected},p_{\rm selected},f_{\rm selected})
+=(M,I,J,S,C_p).
+\]
+
+This goal therefore audits arrows, not just endpoints. Add and maintain:
+
+1. a manuscript equation-to-lemma ledger;
+2. a declaration-level proof-term hypergraph and graph-dominator report;
+3. an object-identity ledger for every transformation of \(u_0,u,p,f\);
+4. premise-direction, vacuity, explosion, and witness-choice audits;
+5. a limit/interchange register for `tsum`, derivatives, integrals, endpoints,
+   the axis, and spatial infinity;
+6. independent pressure, energy, uniqueness, force-smoothness, localisation,
+   convention, and domain checks;
+7. review-side mutation tests for supposedly load-bearing interfaces;
+8. a semantic diff of the public September proof routes;
+9. an independently defined CMI adapter and evidence-tier matrix.
+
+Do not infer final observable transport from internal repair use. Do not infer
+a mismatch from non-entailment. Do not infer complete CMI compliance from a
+comparator theorem or a green Lean build. The active controlled disposition
+remains `CTR-005: NOT ESTABLISHED` until the selected semantic arrows are
+closed or a direct value-level failure is proved.
+
+Control record:
+`../NavierStokesReview/src/audit/priority_235_dependency_graph_provenance_and_semantic_integrity_2026-10-01.md`.
+
 ## Priority 233: semantic depth before endpoint judgement (2026-10-01)
 
 The audit must not treat a short named equation or a public `Witness` field as
@@ -27,6 +88,37 @@ name-only search, or interface countermodel.
 
 Evidence:
 `../NavierStokesReview/src/audit/priority_233_moment_hierarchy_semantic_boundary_2026-10-01.md`.
+
+## Priority 234: coupled semantic reconstruction
+
+The audit must not decide paper-to-code correspondence from imports, names,
+or compilation alone. Reconstruct the manuscript's coupled mathematical
+dependency system and trace each load-bearing quantity through its actual
+selected value. Preserve the positive finding that the five-row/radial repair
+engine is used in production, while keeping the separate question of whether
+the completed selected Cartesian/localised/periodised/summed fields realise
+the manuscript observables open until directly discharged.
+
+The controlling target is
+
+\[
+\mathrm{Obs}_{\rm paper}(u_{\rm selected},p_{\rm selected},f_{\rm selected})
+  =(M,I,J,S,C_p).
+\]
+
+Complete in order: (1) manuscript equation-to-lemma ledger; (2) declaration-
+level value-flow graph; (3) premise-direction audit for smoothness, decay,
+support, integrability, flatness, pressure, and force regularity; (4) exact
+selected-field composition through curl, cutoffs, periodisation, finite sums,
+and `tsum`; (5) alternate-name, generated-module, and history search; and
+(6) pinned Lean verification with evidence JSON. Do not call the repair engine
+bypassed when production source proves that it feeds the selected path, and do
+not call the final identity established until the selected-field observable
+theorem is found or proved.
+
+Current controlled disposition: `CTR-005: NOT ESTABLISHED`. This is a
+paper-to-endpoint correspondence status, not a claim of a nonzero selected
+defect, force nonsmoothness, literal CMI failure, compiler escape, or `False`.
 
 ## Priority 231: conditional selected mixed radial integral composition (2026-10-01)
 

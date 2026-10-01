@@ -5168,3 +5168,119 @@ The controlling records are
 and
 `../NavierStokesReview/evidence/selected_periodic_support_gate_replay_2026-10-01.md`.
 This priority does not alter `CTR-005: NOT ESTABLISHED`.
+
+## Priority 234: coupled semantic integration closure
+
+The remaining audit must treat the manuscript as a coupled mathematical
+construction. A short displayed equation is not treated as self-contained:
+each profile, integral, correction, residual estimate, localisation,
+periodisation, pressure identity, force claim, and endpoint consequence must
+be traced to the declarations that give it mathematical meaning. A compact
+master equation can summarise a much larger system of coupled differential
+identities; symbol presence and compilation are therefore not semantic
+equivalence.
+
+Execute this in order:
+
+1. Build a manuscript equation-to-lemma ledger for every load-bearing claim,
+   including the five-moment repair, residual regularity, pressure
+   reconstruction, localisation, periodisation, summation, force smoothness,
+   energy, and blow-up claims.
+2. For each ledger edge, locate the exact Lean declaration and classify it as
+   definition, proved identity, caller premise, derived estimate, endpoint
+   packaging, or absent. Do not treat an import, alias, `noncomputable`
+   definition, or compiling file as a bridge.
+3. Follow values through the actual selected route:
+   `profile -> correction rows -> cycle state -> radial/state moments ->
+   Cartesian potential -> curl -> cutoff/localisation -> periodisation ->
+   finite sums/tsum -> selected velocity, pressure, residual, force ->
+   endpoint consequences`.
+4. Discharge the exact preservation obligation
+   `Obs_paper(u_selected,p_selected,f_selected) = (M,I,J,S,C_p)` for the
+   selected production objects. The existing three-term product rule and
+   radial-integral completion remain conditional evidence until their
+   pointwise, support, integrability, and endpoint hypotheses are discharged.
+5. Audit premise directionality. Record whether smoothness, decay, support,
+   integrability, flatness, pressure identities, and force regularity are
+   proved from the constructed field or supplied as interface premises.
+6. Search the complete selected closure, generated modules, aliases, and Git
+   history for alternate endpoint declarations before retaining the phrase
+   “no theorem”. Record searched roots, commit ranges, declaration patterns,
+   and negative-search limits in evidence JSON.
+7. Keep separate dispositions for repair-engine use, final-observable
+   identity, selected mismatch, force smoothness from the selected field, and
+   literal CMI compliance. None may be inferred from another.
+8. Only after this closure may the review choose `VERIFIED`,
+   `NOT_ESTABLISHED`, or a proved refutation. The current controlled result is
+   `CTR-005: NOT ESTABLISHED`, with positive evidence against wholesale
+   bypass and no claim of a selected defect or `False`.
+
+Required outputs are a declaration-level ledger, value-flow graph,
+premise-direction table, complete searched-root manifest, and pinned Lean
+build logs. Work remains in the review-side `src/audit`, `completions`,
+`extensions`, `external_semantic`, `external-semantic`, `probes`, and
+`refutations` folders. OpenAI source files remain read-only. Consolidation and
+non-destructive archive operations happen only after semantic closure,
+cross-reference, fact-checking, SHA-256 manifesting, and commit review. No
+deletion is permitted.
+
+## Priority 235: dependency-graph provenance and semantic integrity
+
+- [ ] Replace module-only coverage with declaration-level proof-term closures
+  and typed dependency hyperedges for the headline C and D theorems.
+- [ ] Reproduce and semantically diff the public September proof routes,
+  including the `R3CompactCandidate` route and the later `NavierStokesR3` /
+  `PeriodicPaper` route. Classify every changed obligation as explanatory,
+  assumption-strengthening, witness-changing, paper-alignment, or analytic
+  repair.
+- [ ] Maintain an object-identity ledger for reduced profiles, Cartesian
+  fields, localised fields, periodised fields, R3 fields, pressure, residual,
+  force, and endpoint witnesses. Record whether each equality is global,
+  local, germ, almost-everywhere, or supportwise.
+- [ ] Audit premise direction and vacuity: empty filters, impossible subtype
+  premises, empty supports, `False.elim`, denominator conditions, `NeBot`,
+  integrability, and caller-supplied smoothness or rate contracts.
+- [ ] Create a limit/interchange register covering `tsum`, finite-to-infinite
+  passage, derivative/sum, integral/sum, differentiation/integration,
+  axis limits, endpoint limits, and spatial infinity.
+- [ ] Independently check pressure gauge/non-locality, uniform energy,
+  uniqueness-class conversion, force smoothness, localisation to R3, and
+  sign/Jacobian/viscosity/Fourier conventions.
+- [ ] Run review-side mutation tests on load-bearing interfaces and record
+  whether the endpoint notices each mutation. Treat survival as diagnostic,
+  not as an automatic refutation.
+- [ ] Build an independent CMI adapter from the official specification and
+  keep literal predicate compliance, physical/data provenance, and complete
+  manuscript correspondence as separate dispositions.
+- [ ] Keep the positive result explicit: the internal five-row/radial repair
+  engine is consumed by the selected route. Keep the unresolved result
+  explicit: the final observable bridge is not established. Do not write
+  “bypassed” or “proved false” without a direct source-backed result.
+
+Control record:
+`../NavierStokesReview/src/audit/priority_235_dependency_graph_provenance_and_semantic_integrity_2026-10-01.md`.
+
+## Priority 236: public proof-route provenance delta
+
+- [ ] Reproduce the raw 8 September commit `8937a8f4` and 10 September commit
+  `f9e8bc5` in isolated review worktrees or equivalent immutable snapshots.
+- [ ] Record the measured 188-file, +25,143/−81 delta and do not reuse
+  conflicting secondary counts without raw-object reconciliation.
+- [ ] Compare the C route
+  `R3CompactCandidate.selected_compact_candidate -> option_C_of_compact_candidate`
+  with
+  `NavierStokesR3.theorem_1_1 -> NavierStokesR3.comparator_of_breakdown`.
+- [ ] Compare the periodic route
+  `ActualCandidateAssembly.selected_candidate -> option_D_of_candidate`
+  with
+  `PeriodicPaper.periodic_corollary -> option_D_of_paper_candidate`.
+- [ ] Compute declaration-level proof-term closures and classify changed
+  load-bearing declarations as wrappers, premise changes, witness changes,
+  domain/convention changes, or analytic repairs.
+- [ ] Determine whether the added R3 energy, pressure, uniqueness, moment, and
+  force modules occur in the active proof term or only in reachable imports.
+- [ ] Keep provenance opacity as an audit-priority fact, not as evidence of
+  concealment, compiler escape, or mathematical falsehood.
+
+Control record:
+`../NavierStokesReview/src/audit/priority_236_public_release_provenance_delta_2026-10-01.md`.

@@ -1,0 +1,36 @@
+{
+  "priority": 235,
+  "date": "2026-10-01",
+  "title": "Dependency-graph provenance and semantic integrity",
+  "status": "active_methodological_control",
+  "controlled_disposition": "CTR-005: NOT ESTABLISHED",
+  "positive_findings": [
+    "The five-row/radial repair machinery is consumed by the selected production route; it was not bypassed wholesale.",
+    "The connected radial/state-moment hierarchy feeds physical data, residual-rate estimates, flatness, force extension, and selected-witness construction."
+  ],
+  "unresolved_edges": [
+    "No inspected production declaration closes Obs_paper(u_selected,p_selected,f_selected) = (M,I,J,S,C_p) after the complete selected transformations.",
+    "Declaration-level proof-term closure and semantic edge validation remain incomplete.",
+    "The September 8 to September 10 public proof-route delta requires independent provenance and obligation classification."
+  ],
+  "required_lanes": [
+    "proof-term dependency closure and graph dominators",
+    "object identity ledger",
+    "vacuity and explosion audit",
+    "limit/interchange register",
+    "pressure, energy, uniqueness, force smoothness, localisation, convention audits",
+    "review-side mutation testing",
+    "independent CMI adapter"
+  ],
+  "prohibited_inferences": [
+    "endpoint packaging omission implies wholesale bypass",
+    "internal repair use implies final observable identity",
+    "non-entailment implies selected mismatch",
+    "Lean compilation alone implies complete paper proof or CMI acceptance"
+  ],
+  "linked_records": [
+    "NavierStokesReview/src/audit/priority_232_repair_engine_usage_and_observable_boundary_2026-10-01.md",
+    "NavierStokesReview/src/audit/priority_233_moment_hierarchy_semantic_boundary_2026-10-01.md",
+    "NavierStokesReview/src/audit/priority_234_semantic_integration_closure_2026-10-01.md"
+  ]
+}

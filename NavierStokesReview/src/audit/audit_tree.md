@@ -403,3 +403,18 @@ recorded in the report and its compact evidence summary.
 This is environment coverage, not a semantic transport result. The Priority
 211 production census remains controlling for the selected-field question,
 and `CTR-005` remains `NOT ESTABLISHED`; no stronger refutation is claimed.
+## Priority 234
+
+- `priority_234_semantic_integration_closure_2026-10-01.md`
+  records the positive production proof that the repair engine feeds the
+  selected route and the separate unresolved final-observable bridge.
+## Priority 235
+
+- `priority_235_dependency_graph_provenance_and_semantic_integrity_2026-10-01.md`
+  records the positive production-use finding, the unresolved final semantic
+  arrow, and the new proof-dependency/provenance audit lanes.
+
+## Priority 236
+
+- `priority_236_public_release_provenance_delta_2026-10-01.md`
+  records the raw September proof-route delta and required archaeology.

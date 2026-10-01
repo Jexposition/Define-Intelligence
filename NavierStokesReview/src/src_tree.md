@@ -430,3 +430,16 @@ older snapshot are excluded artefacts, not source omissions.
 Navier--Stokes exporter used for the current environment closure. The latter
 is paired with Priority 212 evidence. Neither exporter is a substitute for a
 selected-field five-observable transport theorem.
+## Priority 234
+
+The semantic integration adjudication is in
+`audit/priority_234_semantic_integration_closure_2026-10-01.md`.
+## Priority 235
+
+- `audit/priority_235_dependency_graph_provenance_and_semantic_integrity_2026-10-01.md`
+  is the active dependency-graph and provenance control record.
+
+## Priority 236
+
+- `audit/priority_236_public_release_provenance_delta_2026-10-01.md`
+  records the two-commit proof-route provenance investigation.

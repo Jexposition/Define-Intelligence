@@ -1,5 +1,60 @@
 # Selected-field correspondence in the OpenAI Navier–Stokes formalisation
 
+## Current public-release provenance result: Priority 236 (2026-10-01)
+
+The repository history is itself part of the audit evidence. The raw Git
+objects `8937a8f4` (8 September) and `f9e8bc5` (10 September) both have the
+commit message `.`. The measured diff is 188 files, with 25,143 insertions and
+81 deletions. The C route changes from
+`R3CompactCandidate.selected_compact_candidate` to
+`NavierStokesR3.theorem_1_1`; the periodic route changes from
+`ActualCandidateAssembly.selected_candidate` to
+`PeriodicPaper.periodic_corollary`.
+
+This does not prove that either route is false. It does prove that the later
+formal object cannot be treated as a transparent continuation of the earlier
+announcement route without declaration-level proof-term reconstruction. The
+audit must determine which added modules change the witness, strengthen
+hypotheses, close analytic obligations, or merely provide paper-facing
+wrappers. Provenance opacity increases the required scrutiny; it is not by
+itself evidence of concealment or mathematical error.
+
+Evidence: [`priority_236_public_release_provenance_delta_2026-10-01.md`](../NavierStokesReview/src/audit/priority_236_public_release_provenance_delta_2026-10-01.md)
+and its [`JSON record`](../NavierStokesReview/evidence/priority_236_public_release_provenance_delta_2026-10-01.json).
+
+## Current dependency-graph and provenance control: Priority 235 (2026-10-01)
+
+The wording “the packaging fact is not evidence that the repair engine was
+bypassed” is now replaced by a positive source-backed finding. The engine was
+not bypassed wholesale: `FiveRowRank` and its mass-preservation lemmas feed
+the actual cycle invariant; the radial/state-moment hierarchy feeds physical
+data and residual-rate estimates; those estimates feed flatness, force
+extension, and the selected-witness route. This is evidence of internal
+production use, not a concession based on silence.
+
+The remaining issue is a different edge. The audit has not yet proved the
+completed selected-field identity
+
+\[
+\operatorname{Obs}_{\rm paper}(u_{\rm selected},p_{\rm selected},f_{\rm selected})
+=(M,I,J,S,C_p)
+\]
+
+after Cartesian lifting, curl, localisation, periodisation, finite summation,
+`tsum`, pressure/residual composition, and the endpoint limits. Internal use
+of the repair engine therefore cannot be substituted for verification of that
+final arrow, and the missing arrow cannot be treated as a proved mismatch.
+
+The audit method is being widened accordingly. It now requires a typed
+proof-dependency hypergraph, an object-identity ledger, premise-direction and
+vacuity audits, a limit/interchange register, pressure/energy/uniqueness and
+convention checks, review-side mutation tests, and a semantic comparison of
+the public September proof routes. The controlling rule is: **verify the
+arrow, not merely its endpoints**.
+
+Evidence: [`priority_235_dependency_graph_provenance_and_semantic_integrity_2026-10-01.md`](../NavierStokesReview/src/audit/priority_235_dependency_graph_provenance_and_semantic_integrity_2026-10-01.md)
+and its [`JSON record`](../NavierStokesReview/evidence/priority_235_dependency_graph_provenance_and_semantic_integrity_2026-10-01.json).
+
 ## Current moment-hierarchy adjudication: Priority 233 (2026-10-01)
 
 The audit has now checked the moment mathematics under its structural roles,
@@ -1055,11 +1110,16 @@ The formal review establishes the following.
 2. The force is selected from the candidate residual and remains active near
    the singular time.
 3. The repository contains genuine five-row and profile-moment repair
-   mathematics, and raw source tracing shows that it feeds coefficient
-   matching, finite Cartesian residual identities, residual estimates, and
-   selected candidate data. The public `Witness` does not repeat the named
-   profile tuple as a field, but that packaging fact is not evidence that the
-   repair engine was bypassed.
+   mathematics, and raw source tracing gives positive evidence that it is
+   used in the selected production route. `FiveRowRank` and the mass-
+   preservation lemmas feed the actual cycle invariant; the connected
+   radial/state-moment hierarchy feeds physical data and residual-rate
+   estimates; those estimates feed the flatness, force-extension, and
+   selected-witness path. The public `Witness` does not repeat the named
+   profile tuple as a field, but this is not merely an argument from silence:
+   the source trace positively rules out a wholesale bypass of the repair
+   engine. It does not, however, prove the separate final-observable
+   identity described in item 4.
 4. The force-smoothness attack has a proved conditional contradiction, but its
    required selected-field lower bound is missing.
 5. The pressure chain has comparison infrastructure, but compact support alone

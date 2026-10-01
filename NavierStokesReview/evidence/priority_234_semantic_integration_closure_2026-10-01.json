@@ -1,0 +1,39 @@
+{
+  "priority": 234,
+  "date": "2026-10-01",
+  "disposition": "CTR-005: NOT ESTABLISHED",
+  "question": "Was the repair engine bypassed, and is the final selected observable bridge established?",
+  "repair_engine_wholesale_bypass": {
+    "status": "rejected",
+    "basis": [
+      "ActualCandidateAssembly.physicalData and estimates feed the actual selected route",
+      "GluedStageEstimates.actualStageEstimates consumes actual cycle coherence, representations, and PhysicalData",
+      "MixedCandidateAssembly.StageEstimates.exists_schedule derives a schedule and VanishingJointJets",
+      "GermCandidateAssembly.exists_candidate_witness_of_finite_stages consumes the contract to construct force, residual consequences, and blow-up",
+      "IntegratedMeanBalances, StateMomentBalances, and CorrectionInitialization provide a connected intermediate moment hierarchy"
+    ]
+  },
+  "final_observable_bridge": {
+    "status": "not_established",
+    "target": "Obs_paper(u_selected,p_selected,f_selected) = (M,I,J,S,C_p)",
+    "basis": [
+      "Witness packages the selected values and consequences but has no consumed production equality identifying the completed fields with the manuscript tuple",
+      "The inspected production declaration closure has not located that equality under an alternate name"
+    ]
+  },
+  "selected_mismatch": "not_established",
+  "force_nonsmoothness": "not_established",
+  "literal_cmi_failure": "not_established",
+  "required_next": [
+    "Trace selected ASum, BSum, PSum through curl, localisation, periodisation, finite sums, and tsum",
+    "Discharge selected support, integrability, and pointwise composition hypotheses",
+    "Compare final selected radial/state observables with manuscript definitions",
+    "Search alternate declarations, generated modules, and Git history and record the bounded search manifest"
+  ],
+  "evidence": [
+    "NavierStokesReview/src/audit/priority_234_semantic_integration_closure_2026-10-01.md",
+    "NavierStokesReview/evidence/priority_232_repair_engine_usage_and_observable_boundary_2026-10-01.json",
+    "NavierStokesReview/evidence/priority_233_moment_hierarchy_semantic_boundary_2026-10-01.json",
+    "NavierStokesReview/evidence/priority_232_symbol_search_raw_2026-10-01.txt"
+  ]
+}

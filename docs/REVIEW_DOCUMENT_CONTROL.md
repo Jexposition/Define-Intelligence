@@ -1,5 +1,25 @@
 # Navier–Stokes review document control
 
+## Priority 236 control
+
+The public proof-route provenance record is
+`../NavierStokesReview/src/audit/priority_236_public_release_provenance_delta_2026-10-01.md`.
+It records the raw two-commit delta, the changed C/D routes, and the required
+declaration-level archaeology. It must not be interpreted as a mathematical
+refutation merely because the commit messages are terse or the later delta is
+large.
+
+## Priority 235 control
+
+The active semantic-integrity control is
+`../NavierStokesReview/src/audit/priority_235_dependency_graph_provenance_and_semantic_integrity_2026-10-01.md`.
+It records that internal repair-engine use is established, while the final
+selected-field observable identity remains unestablished. It also controls the
+proof-term dependency, object-identity, provenance-delta, vacuity,
+limit/interchange, pressure, energy, uniqueness, convention, mutation, and
+independent-CMI-adapter lanes. These lanes must close before consolidation or
+archive work is treated as scientific closure.
+
 ## Priority 233 moment hierarchy and semantic boundary (2026-10-01)
 
 The source adjudication is
@@ -2911,3 +2931,13 @@ remain untouched, unstaged, and excluded from publication:
 `NavierStokes/R3/TestPressure.lean` and
 `NavierStokesReview/evidence/lean_environment_closure_ns_3d_2026-09-30.json`.
 The current scientific disposition remains `CTR-005: NOT ESTABLISHED`.
+# Priority 234 semantic integration closure (2026-10-01)
+
+The current source adjudication is
+`../NavierStokesReview/src/audit/priority_234_semantic_integration_closure_2026-10-01.md`.
+It positively establishes that the repair engine feeds the selected
+production route through actual cycle coherence, physical data, residual-rate
+estimates, stage scheduling, force extension, and the selected witness. It
+separately records that the final selected-field identity with
+`(M,I,J,S,C_p)` remains unestablished. The controlled status remains
+`CTR-005: NOT ESTABLISHED`.

@@ -1,5 +1,59 @@
 # Independent peer review of the OpenAI Navier–Stokes formalisation
 
+## Current public-release provenance result: Priority 236 (2026-10-01)
+
+The public history requires separate archaeology. The raw Git comparison of
+the 8 September object `8937a8f4` and the 10 September object `f9e8bc5` reports
+188 changed files, 25,143 insertions, and 81 deletions; both messages are `.`.
+The C proof route changes from `R3CompactCandidate.selected_compact_candidate`
+to `NavierStokesR3.theorem_1_1`, and the periodic route changes from
+`ActualCandidateAssembly.selected_candidate` to
+`PeriodicPaper.periodic_corollary`.
+
+That is not a mathematical refutation. It is a provenance fact showing that a
+current compile cannot be treated as evidence that the announcement-day proof
+and the later paper-facing proof are the same object. The review must reproduce
+both routes and classify changed declarations by witness identity, premise
+strength, analytic obligation, domain/convention change, or wrapper status.
+
+Evidence: [`priority_236_public_release_provenance_delta_2026-10-01.md`](../NavierStokesReview/src/audit/priority_236_public_release_provenance_delta_2026-10-01.md)
+and its [`JSON record`](../NavierStokesReview/evidence/priority_236_public_release_provenance_delta_2026-10-01.json).
+
+## Current dependency-graph and provenance control: Priority 235 (2026-10-01)
+
+The audit now answers the “bypassed or not?” question positively and
+separately. The five-row/radial repair engine was not bypassed wholesale:
+source tracing shows its rows and preserved masses entering the actual cycle
+invariant, then the physical-data, residual-rate, flatness, force-extension,
+and selected-witness route. The conclusion is based on consumed production
+declarations, not on the absence of a field in `Witness`.
+
+That positive result does not close the final semantic arrow. The review still
+has not established
+
+\[
+\operatorname{Obs}_{\rm paper}(u_{\rm selected},p_{\rm selected},f_{\rm selected})
+=(M,I,J,S,C_p)
+\]
+
+for the completed selected Cartesian/localised/periodised/summed fields. Nor
+has it established a concrete mismatch. These are different propositions:
+internal mechanism use is established, final observable identification is not,
+and a false selected identity is not proved. The controlled status remains
+`CTR-005: NOT ESTABLISHED`.
+
+The review method is therefore being upgraded from module inspection to
+coupled edge verification. It will compare the public proof routes, construct
+declaration-level proof-term closures and dominators, track object identity
+through every transformation, audit premise direction and vacuity, record
+all limit/interchange steps, and independently check pressure, energy,
+uniqueness, force smoothness, localisation, and convention changes. A
+compiling endpoint is kernel evidence, not by itself semantic evidence that
+the entire manuscript has been reproduced.
+
+Evidence: [`priority_235_dependency_graph_provenance_and_semantic_integrity_2026-10-01.md`](../NavierStokesReview/src/audit/priority_235_dependency_graph_provenance_and_semantic_integrity_2026-10-01.md)
+and its [`JSON record`](../NavierStokesReview/evidence/priority_235_dependency_graph_provenance_and_semantic_integrity_2026-10-01.json).
+
 ## Current moment-hierarchy adjudication: Priority 233 (2026-10-01)
 
 The wider production trace found more than named profile certificates. The
@@ -68,9 +122,11 @@ and
 The review now states the positive and negative findings separately. The
 five-row/rank repair engine is genuinely integrated into the actual selected
 construction: its local rows and preserved masses feed the actual cycle
-invariant, residual-rate estimates, flatness schedule, force extension, and
-selected witness. The evidence does **not** support saying that it was
-bypassed wholesale.
+invariant, while the connected radial/state-moment hierarchy feeds physical
+data, residual-rate estimates, flatness, force extension, and the selected
+witness. This is positive source evidence that the repair engine was not
+bypassed wholesale, rather than a conclusion drawn only from the absence of a
+field in `Witness`.
 
 The unresolved adverse finding is different. The inspected production source
 does not establish a theorem identifying that internal invariant with the

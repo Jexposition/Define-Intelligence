@@ -594,3 +594,16 @@ selected-field identification with the manuscript's `(M,I,J,S,C_p)` remains
 `CTR-005: NOT ESTABLISHED`. No selected-field defect, impossibility theorem,
 force nonsmoothness, literal CMI failure, compiler-cheat claim, or `False` is
 asserted.
+## Priority 234
+
+- `priority_234_semantic_integration_closure_2026-10-01.json`
+  records the bounded status, source basis, and required closure work.
+## Priority 235
+
+- `priority_235_dependency_graph_provenance_and_semantic_integrity_2026-10-01.json`
+  records the machine-readable semantic-integrity control and dispositions.
+
+## Priority 236
+
+- `priority_236_public_release_provenance_delta_2026-10-01.json`
+  records the measured two-commit diff and changed proof routes.
