@@ -4841,3 +4841,30 @@ The comparator-to-internal-solution adapter is positive evidence for the reposit
 The review must independently check the `MemLp` strengthening, derivative norm translation, time-boundary semantics, pressure treatment, spatial decay, viscosity, and same-force identity. Until this is established, the endpoint's formal nonexistence result and the CMI nonexistence claim remain separate evidence layers.
 
 Linked evidence: `NavierStokesReview/evidence/priority_243_fefferman_comparator_variance_2026-10-01.md`.
+## Review control: arrow identity is distinct from endpoint correspondence
+
+The current record supports a coherent selected tuple \((u,p,f,K)\) through
+the B R3 route and a same-force comparator construction. It also supports a
+named D route through compression, post-one truncation, and periodisation.
+Those are positive findings against witness-fragmentation claims.
+
+They do not settle whether the final transformed fields satisfy the manuscript
+observable identity
+
+\[
+\mathcal M(u_{\mathrm{final}},p_{\mathrm{final}},f_{\mathrm{final}})
+ =(M,I,J,S,C_p).
+\]
+
+The review therefore keeps three questions separate: (i) same-object reuse,
+(ii) Fefferman-to-Comparator class variance, and (iii) manuscript five-moment
+transport. The first is source-trace positive for B; the second remains an
+independent inclusion check; the third remains not located. This is a calibrated
+correspondence finding, not a value-level defect or literal CMI refutation.
+
+The review programme also now requires proof-term rather than import-closure
+comparison for the two public submissions, constructor-field provenance, and a
+proof-relevant audit of conditional fallbacks, `Classical.choice`, arbitrary
+extensions, totalised integrals/derivatives, and witness identity. These checks
+are required alongside, not instead of, the CUDA three-dimensional
+curl/cutoff/moment analysis.

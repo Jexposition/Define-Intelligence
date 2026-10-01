@@ -1801,3 +1801,38 @@ The nonexistence transfer requires an asymmetric class inclusion, not merely sim
 The current source trace positively establishes an internal adapter from Comparator solutions to the repository's `GlobalFiniteEnergySolution`, including explicit `MemLp` and energy transport (`NavierStokes/R3/ComparatorBridge.lean:48–70`). That is not the critical reverse inclusion. The review therefore keeps finite-energy integral versus `MemLp`, coordinate versus Fréchet derivative bounds, `derivWithin` and endpoint semantics, pressure gauge, spatial decay, viscosity, and same-force identity open until checked in the required direction.
 
 Evidence: `NavierStokesReview/evidence/priority_243_fefferman_comparator_variance_2026-10-01.md`.
+## Object identity and class-transfer control update
+
+The selected September 10 route now has positive source evidence for one
+coherent tuple \((u,p,f,K)\) through the R3 theorem and the same-force
+comparator bridge. The periodic route begins from the R3 tuple and then applies
+compression, `beforeOne`, and periodisation through explicit transport lemmas.
+This corrects any description of the production route as unrelated existential
+pieces.
+
+That positive result must not be overstated. The object ledger records no
+production theorem identifying the final transformed fields with
+
+\[
+\mathcal M(u,p,f)=(M,I,J,S,C_p).
+\]
+
+The remaining review question is therefore an arrow-level correspondence
+question, not a claim that the upstream repair engine is dead or bypassed.
+The ledger also separates the literal Lean inclusion already visible in
+`globalSolutionOfComparator` from the independent semantic question whether
+every Fefferman-admissible competitor lies in the Comparator class. The required
+direction, not an assumed equivalence, is:
+
+\[
+\text{Fefferman competitor}\Rightarrow\text{Comparator competitor}.
+\]
+
+The A/B proof-term differential, constructor-field provenance, and targeted
+fallback/choice/totalisation checks are now part of the evidence programme.
+CUDA-first three-dimensional cutoff/curl plots remain an independent numerical
+diagnostic and are not treated as a proof of the final observable identity.
+
+Evidence: `NavierStokesReview/evidence/priority_241_object_identity_ledger_2026-10-01.md`,
+`priority_243_fefferman_comparator_variance_2026-10-01.md`, and
+`priority_242_comparator_boundary_and_totalization_2026-10-01.md`.

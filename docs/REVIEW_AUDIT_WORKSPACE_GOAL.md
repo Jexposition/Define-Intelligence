@@ -4452,3 +4452,26 @@ The audit must not treat the Comparator predicates as equivalent to Fefferman's 
 The active checks are finite-energy integral (Rightarrow) `MemLp`, coordinate derivative bounds (Rightarrow) iterated Fréchet norm bounds, domain/boundary semantics, pressure gauge and regularity, spatial decay/support, viscosity, and same-force identity. The constructed-data inclusion is recorded separately. An internal adapter from Comparator solutions to `GlobalFiniteEnergySolution` is positive evidence about one direction only; it does not settle the CMI class transfer.
 
 Evidence: `NavierStokesReview/evidence/priority_243_fefferman_comparator_variance_2026-10-01.md`.
+## Active goal extension: arrow-level semantics and independent class transfer (2026-10-01)
+
+The goal now explicitly requires an object-identity audit, not only import or
+module coverage. Track `(u,p,f,K)` through selected activation, R3 scaling,
+`toComparator`, `beforeOne`, compression, and periodisation, recording exact
+source/target declarations and whether the five-observable payload is consumed,
+produced, transported, or absent. Evidence:
+`NavierStokesReview/evidence/priority_241_object_identity_ledger_2026-10-01.md`.
+
+The CMI lane must check the variance direction needed for nonexistence:
+
+\[
+\text{Fefferman-admissible competitor}
+\Longrightarrow
+\text{Comparator competitor}.
+\]
+
+This includes finite-energy integral to `MemLp`, coordinate derivative decay to
+iterated Fréchet-derivative norm decay, pressure and force identity, viscosity,
+and domain/boundary semantics. The A/B proof-term differential, constructor
+field provenance, proof-relevant choice/fallback audit, literate proof dossier,
+and CUDA plotted curl/cutoff analysis remain concurrent required lanes. No
+current result is upgraded to a literal CMI failure without a direct theorem.

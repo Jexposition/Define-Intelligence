@@ -1,0 +1,33 @@
+{
+  "schema": "ns-selected-object-identity-ledger/v1",
+  "date": "2026-10-01",
+  "status": "partial_source_trace_arrow_semantics_open",
+  "commit_scope": "September 10 checkout / review-cmi-first-navier-stokes-reconciled-2026-09-30",
+  "objects": ["u", "p", "f", "K", "M", "I", "J", "S", "C_p"],
+  "rows": [
+    {"id":"OI-001","source":"ActualCandidateAssembly.selected_witness","target":"activated velocity, pressure, forcing","evidence":"ActualCandidateAssembly.lean:1121-1151,1177-1185","status":"source_trace_positive"},
+    {"id":"OI-002","source":"selected witness tuple","target":"selected_candidate_one_with_early_zero","evidence":"R3/ActualCandidate.lean:127-135","status":"source_trace_positive"},
+    {"id":"OI-003","source":"selected witness tuple","target":"selected_candidate_one_with_initial_rest","evidence":"R3/ActualCandidate.lean:143-153","status":"source_trace_positive"},
+    {"id":"OI-004","source":"(u,p,f,K)","target":"(scaledVelocity_nu u, scaledPressure_nu p, scaledVelocity_nu f, K_nu)","evidence":"R3/Theorem.lean:26-42","status":"source_trace_positive_scaling_review_open"},
+    {"id":"OI-005","source":"scaled R3 tuple","target":"NavierStokesR3.theorem_1_1","evidence":"R3/Theorem.lean:46-49,62","status":"source_trace_positive"},
+    {"id":"OI-006","source":"candidate force f","target":"toComparator f","evidence":"R3/ComparatorBridge.lean:77-88","status":"source_trace_positive_representation_review_open"},
+    {"id":"OI-007","source":"Comparator solution","target":"GlobalFiniteEnergySolution nu f","evidence":"R3/ComparatorBridge.lean:48-70","status":"lean_inclusion_present_semantic_variance_open"},
+    {"id":"OI-008","source":"R3 tuple","target":"beforeOne u, beforeOne p, f","evidence":"PeriodicPaperTheorem.lean:92-100,124-145","status":"source_trace_positive_endpoint_review_open"},
+    {"id":"OI-009","source":"compressed candidate","target":"periodize(beforeOne u), periodize(beforeOne p), periodize f","evidence":"PeriodicPaperTheorem.lean:92-145","status":"source_trace_positive_observable_transport_open"},
+    {"id":"OI-010","source":"R3 theorem tuple","target":"periodic corollary tuple","evidence":"PeriodicPaperTheorem.lean:155-162","status":"source_trace_positive_D_bridge_open"},
+    {"id":"OI-011","source":"upstream physical cycle/profile data","target":"physicalData and estimates","evidence":"ActualCandidateAssembly.lean:1079-1098","status":"source_trace_positive"},
+    {"id":"OI-012","source":"upstream moment/repair machinery","target":"final Moments(u,p,f)=(M,I,J,S,C_p)","evidence":"selected endpoint trace; no production declaration located","status":"not_located_CTR005_not_established"}
+  ],
+  "nonclaims": [
+    "No nonzero selected moment defect is proved.",
+    "No impossibility theorem or kernel contradiction is proved.",
+    "The ledger does not by itself establish or refute literal CMI compliance."
+  ],
+  "next": [
+    "A/B elaborated proof-term set differential and normalised headline-type hashes",
+    "Fefferman-to-Comparator variance checks",
+    "constructor-field provenance",
+    "proof-relevant fallback/choice/totalisation audit",
+    "independent final observable transport analysis"
+  ]
+}

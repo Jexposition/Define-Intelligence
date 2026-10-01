@@ -5491,3 +5491,28 @@ Evidence and instrument: `NavierStokesReview/evidence/priority_242_comparator_bo
 - [ ] Keep the separate constructed-data inclusion and competitor-class inclusion distinct; do not infer equivalence from one adapter.
 
 Evidence: `NavierStokesReview/evidence/priority_243_fefferman_comparator_variance_2026-10-01.md`.
+## Active control update: object identity, variance, and proof-relevant semantics (2026-10-01)
+
+The audit now treats every selected-field transformation as an arrow that must
+be checked for the same object, domain, regularity, support, time boundary, and
+observable payload. The new ledger is
+`NavierStokesReview/evidence/priority_241_object_identity_ledger_2026-10-01.md`
+with a machine-readable companion `.json`.
+
+The current evidence is intentionally asymmetric:
+
+\[
+\begin{aligned}
+&\text{B selected tuple identity and same-force comparator route: source-trace positive},\\
+&\text{D compression/`beforeOne`/periodisation route: source-trace positive},\\
+&\text{Fefferman competitor}\Rightarrow\text{Comparator competitor: still to be independently checked},\\
+&\mathcal M(u_{\mathrm{final}},p_{\mathrm{final}},f_{\mathrm{final}})=(M,I,J,S,C_p):\text{ not located}.
+\end{aligned}
+\]
+
+The next work therefore includes the elaborated A/B proof-term differential,
+normalised headline-type hashes, constructor-field provenance, targeted
+fallback/choice/totalisation checks, and the asymmetric Fefferman variance
+checks. These additions do not replace the CUDA-first three-dimensional
+cutoff/curl diagnostic or the selected moment-transport lane; both remain
+active and must be cross-linked to the same object ledger.

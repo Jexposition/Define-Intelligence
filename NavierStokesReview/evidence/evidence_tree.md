@@ -638,6 +638,7 @@ asserted.
   census, and current-B elaborated declaration-use root closures. The report
   explicitly does not call these proof-term semantics or a manuscript bridge.
 - `priority_241_selected_route_identity_2026-10-01.md` — positive source trace for one coherent selected `(u,p,f,K)` tuple through the R3 and periodic headline routes; keeps the five-observable bridge open.
+- `priority_241_object_identity_ledger_2026-10-01.md` and `.json` — typed arrow ledger for the selected `(u,p,f,K)` tuple through activation, R3 scaling, comparator representation, `beforeOne`, compression, and periodisation. It separates source-trace-positive object reuse from unresolved observable transport.
 | `priority_242_comparator_boundary_and_totalization_2026-10-01.md` | Comparator challenge/solution separation, Fefferman variance, A/B proof-term scope, constructor provenance, and totalisation audit plan | Active audit evidence | 2026-10-01 |
 | `comparator_trust_totalization_audit_2026-10-01.json` | Machine-readable selected-route source triage for challenge placeholders and totalisation/choice sites | Source triage; not AST/proof-term closure | 2026-10-01 |
 | `priority_243_fefferman_comparator_variance_2026-10-01.md` | Asymmetric Fefferman-to-Comparator class crosswalk and required inclusion checks | Active semantic correspondence evidence | 2026-10-01 |
