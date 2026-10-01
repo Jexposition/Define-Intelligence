@@ -1,5 +1,24 @@
 # Navier–Stokes review document control
 
+## Priority 228 coupled manuscript-to-Lean dependency adjudication (2026-10-01)
+
+The current source/evidence pair is recorded in
+`../NavierStokesReview/src/audit/priority_228_coupled_manuscript_lean_dependency_adjudication_2026-10-01.md`
+and
+`../NavierStokesReview/evidence/priority_228_coupled_manuscript_lean_dependency_adjudication_2026-10-01.md`.
+The hardened census is
+`../NavierStokesReview/evidence/priority_228_selected_transport_census_2026-10-01.md`.
+
+The positive result is now explicit: actual five-row/rank repair results feed
+the actual invariant, residual-rate construction, flatness schedule, force
+extension, and selected witness. Wholesale bypass is not supported. The
+negative result is also explicit: no inspected production theorem identifies
+that internal invariant with the manuscript's final `(M,I,J,S,C_p)` after the
+selected Cartesian/curl/localisation/periodisation/radial/pressure/force
+composition. The controlled scientific disposition remains
+`CTR-005: NOT ESTABLISHED`; no selected defect, force nonsmoothness, literal
+CMI failure, impossibility theorem, compiler escape, or `False` is claimed.
+
 ## Priority 227 selected periodic-support gate replay (2026-10-01)
 
 The selected periodic-support gate replay is recorded in

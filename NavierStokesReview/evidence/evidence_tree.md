@@ -1,5 +1,18 @@
 ```markdown
 . 📂 evidence
+## Current coupled manuscript-to-Lean adjudication: Priority 228 (2026-10-01)
+
+- `priority_228_coupled_manuscript_lean_dependency_adjudication_2026-10-01.md`
+- `priority_228_selected_transport_census_2026-10-01.md`
+- `priority_228_selected_transport_census_2026-10-01.json`
+- `../src/audit/priority_228_coupled_manuscript_lean_dependency_adjudication_2026-10-01.md`
+
+The live source trace establishes internal repair-engine integration into the
+actual invariant, residual rates, force extension, and selected witness. It
+does not establish the final semantic transport of that invariant to the
+manuscript's `(M,I,J,S,C_p)` after the completed selected-field composition.
+The controlled status remains `CTR-005: NOT ESTABLISHED`.
+
 ## Current selected-support gate: Priority 227 (2026-10-01)
 
 - `selected_periodic_support_gate_replay_2026-10-01.md`

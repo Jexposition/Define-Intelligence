@@ -1,5 +1,15 @@
 ```markdown
 . 📂 audit
+## Current coupled manuscript-to-Lean adjudication: Priority 228 (2026-10-01)
+
+├── 📄 priority_228_coupled_manuscript_lean_dependency_adjudication_2026-10-01.md
+└── 📄 ../evidence/priority_228_selected_transport_census_2026-10-01.md
+
+The positive source trace establishes internal repair-engine integration into
+the actual invariant, residual-rate, force, and selected-witness route. The
+final semantic transport to the manuscript's `(M,I,J,S,C_p)` remains
+unestablished. `CTR-005: NOT ESTABLISHED` remains controlled.
+
 ## Current selected-support gate: Priority 227 (2026-10-01)
 
 ├── 📄 priority_227_selected_periodic_support_gate_replay_2026-10-01.md

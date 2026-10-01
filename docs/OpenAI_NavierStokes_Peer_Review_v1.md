@@ -1,5 +1,28 @@
 # Independent peer review of the OpenAI Navier–Stokes formalisation
 
+## Current coupled-dependency adjudication: Priority 228 (2026-10-01)
+
+The source/evidence pair is
+[`priority_228_coupled_manuscript_lean_dependency_adjudication_2026-10-01.md`](../NavierStokesReview/src/audit/priority_228_coupled_manuscript_lean_dependency_adjudication_2026-10-01.md)
+and
+[`priority_228_coupled_manuscript_lean_dependency_adjudication_2026-10-01.md`](../NavierStokesReview/evidence/priority_228_coupled_manuscript_lean_dependency_adjudication_2026-10-01.md).
+
+The review now states the positive and negative findings separately. The
+five-row/rank repair engine is genuinely integrated into the actual selected
+construction: its local rows and preserved masses feed the actual cycle
+invariant, residual-rate estimates, flatness schedule, force extension, and
+selected witness. The evidence does **not** support saying that it was
+bypassed wholesale.
+
+The unresolved adverse finding is different. The inspected production source
+does not establish a theorem identifying that internal invariant with the
+manuscript's named \((M,I,J,S,C_p)\) after the complete selected Cartesian,
+curl/localisation, periodisation, radial, pressure, residual, and force route.
+Therefore the advertised complete manuscript-to-selected-endpoint
+correspondence remains `CTR-005: NOT ESTABLISHED`. This is not a claim that a
+concrete selected moment defect, force nonsmoothness, literal CMI failure, or
+Lean contradiction has already been proved.
+
 ## Current selected-support correction: Priority 227 (2026-10-01)
 
 The selected periodic-support gate replay is

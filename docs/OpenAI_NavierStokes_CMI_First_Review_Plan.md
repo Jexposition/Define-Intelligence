@@ -1,5 +1,37 @@
 # CMI-first review plan: OpenAI Navier–Stokes claim
 
+## Priority 228: coupled manuscript-to-Lean dependency adjudication (2026-10-01)
+
+- [x] Re-read the manuscript dependency chain as a whole: profile matching,
+  modulation restoration, two-plus-three correction rows, curl/cutoff terms,
+  locally finite summation, residual flatness, force extension, and the CMI
+  endpoint.
+- [x] Trace positive production use of the repair engine through
+  `FiveRowRank`, `DefectIncrementBounds`, `ActualCyclePreservation.Invariant`,
+  `ActualCycleResidualBounds.finite_residual_rates`, stage estimates, force
+  extension, and `ActualCandidateAssembly.Witness`.
+- [x] Replace the ambiguous “not evidence of bypass” wording with the precise
+  status: internal repair integration is established; final semantic
+  transport to the manuscript's `(M,I,J,S,C_p)` remains unestablished.
+- [ ] Build a declaration-level manuscript dependency ledger that records the
+  exact Lean theorem, its hypotheses, its output object, and the next
+  transformation required by the paper.
+- [ ] Prove the selected-field value-level composition through `tsum`,
+  curl-before-cutoff, periodisation, torus average, radial integration,
+  pressure convention, residual, and force. Do not infer this from names or
+  imports.
+- [ ] If the exact five identities fail, prove the mismatch directly. If they
+  hold, prove the full bridge and update the disposition. Until then keep
+  `CTR-005: NOT ESTABLISHED`.
+- [ ] Audit repository provenance separately: current branch history, public
+  branch history, authoring/commit record, generated closure artefacts, and
+  any claimed human-review boundary. Do not infer provenance from compilation.
+
+Evidence:
+`../NavierStokesReview/src/audit/priority_228_coupled_manuscript_lean_dependency_adjudication_2026-10-01.md`
+and
+`../NavierStokesReview/evidence/priority_228_coupled_manuscript_lean_dependency_adjudication_2026-10-01.md`.
+
 ## Priority 227: selected periodic-support gate replay (2026-10-01)
 
 - [x] Compile the narrower raw-field nonzero completion. It proves that the

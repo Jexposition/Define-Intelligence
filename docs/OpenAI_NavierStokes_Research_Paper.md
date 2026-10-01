@@ -1,5 +1,30 @@
 # Selected-field correspondence in the OpenAI Navier–Stokes formalisation
 
+## Current coupled-dependency adjudication: Priority 228 (2026-10-01)
+
+The new source adjudication is
+[`priority_228_coupled_manuscript_lean_dependency_adjudication_2026-10-01.md`](../NavierStokesReview/src/audit/priority_228_coupled_manuscript_lean_dependency_adjudication_2026-10-01.md),
+with evidence in
+[`priority_228_coupled_manuscript_lean_dependency_adjudication_2026-10-01.md`](../NavierStokesReview/evidence/priority_228_coupled_manuscript_lean_dependency_adjudication_2026-10-01.md).
+
+It resolves the wording problem in the earlier verdict. The repository does
+not merely contain moment code that happens to be reachable: the actual
+five-row/rank corrections are consumed by the actual cycle invariant, and the
+invariant is consumed by the residual-rate, stage-estimate, flatness, force,
+and selected-witness route. The repair engine was therefore **not bypassed
+wholesale**.
+
+That positive result is not the same as a completed paper-to-endpoint bridge.
+The inspected production source still does not provide a theorem identifying
+the internal invariant with the manuscript's named
+\((M,I,J,S,C_p)\) observables after the selected Cartesian,
+curl/localisation, periodisation, radial, pressure, residual, and force
+composition. The correct status is therefore **partially integrated; endpoint
+semantic correspondence unresolved**. `CTR-005: NOT ESTABLISHED` remains the
+controlled disposition for the complete manuscript claim. This is not a claim
+of a nonzero selected defect, force nonsmoothness, literal CMI failure,
+compiler escape, or `False`.
+
 ## Current selected-support correction: Priority 227 (2026-10-01)
 
 The selected periodic-support gate replay is
@@ -168,7 +193,8 @@ repair machinery is used internally to obtain coefficient matching, finite
 Cartesian residual identities, residual estimates, selected physical data,
 and candidate properties.
 
-The remaining issue is not that the repair engine is absent. The exported
+The remaining issue is not that the repair engine is absent or wholly
+bypassed. The exported
 `selected_witness` does not expose a separate named theorem identifying the
 paper's five cumulative quantities
 
@@ -177,10 +203,14 @@ $$
 $$
 
 with the final Cartesian velocity, pressure, residual, and force used by the
-whole-space endpoint. That absence is a packaging and correspondence question,
-not evidence that the five-moment engine was bypassed. It becomes adverse
-only if a specific paper or CMI condition requires a stronger whole-space
-identity than the proved finite-residual and candidate consequences provide.
+whole-space endpoint. The source positively shows internal integration of the
+repair engine into residual estimates and candidate data, but the final
+semantic identification remains unlocated. This is therefore a
+correspondence question at the selected-field boundary, not a claim that the
+engine was bypassed or that the selected field is wrong. It is adverse to the
+advertised complete paper-to-code claim because the manuscript's downstream
+five-observable conclusions have not been shown to apply to the exported
+fields.
 It is distinct from a kernel-level refutation: the review has not proved
 `False` from the selected endpoint and does not describe the literal
 existential C/D proposition as formally refuted.

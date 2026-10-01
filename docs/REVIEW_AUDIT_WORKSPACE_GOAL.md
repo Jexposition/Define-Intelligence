@@ -1,5 +1,29 @@
 # Review audit workspace goal
 
+## Priority 228: coupled manuscript-to-Lean dependency adjudication (2026-10-01)
+
+The current source adjudication is recorded in
+`../NavierStokesReview/src/audit/priority_228_coupled_manuscript_lean_dependency_adjudication_2026-10-01.md`
+with evidence at
+`../NavierStokesReview/evidence/priority_228_coupled_manuscript_lean_dependency_adjudication_2026-10-01.md`.
+
+This corrects the incomplete phrase “not evidence that the repair engine was
+bypassed”. The live production trace positively establishes that the actual
+five-row/rank repair results feed the actual cycle invariant, residual-rate
+construction, selected schedule, smooth force extension, and `selected_witness`.
+The source therefore does not support a wholesale-bypass claim. It also does
+not locate a production theorem identifying that internal invariant with the
+manuscript's `(M,I,J,S,C_p)` after the completed selected Cartesian,
+curl/localisation, periodisation, radial, pressure, residual, and force route.
+
+The controlled classification is **partially integrated; endpoint semantic
+correspondence unresolved**. Keep `CTR-005: NOT ESTABLISHED` for the complete
+manuscript-to-selected-endpoint claim. Do not convert the missing edge into a
+selected nonzero defect, force nonsmoothness, literal CMI failure,
+impossibility theorem, compiler escape, or `False` without a direct
+value-level theorem. The next task is a coupled manuscript-to-Lean ledger and
+field-level transport calculation, not another import or name scan.
+
 ## Priority 227: selected periodic-support gate replay (2026-10-01)
 
 The current selected-field gate replay is recorded in
