@@ -443,3 +443,22 @@ The semantic integration adjudication is in
 
 - `audit/priority_236_public_release_provenance_delta_2026-10-01.md`
   records the two-commit proof-route provenance investigation.
+
+## Priority 237
+
+- `audit/priority_237_adversarial_cmi_comparator_and_fixed_data_program_2026-10-01.md`
+  records the comparator, fixed-data, force-smoothness, quantifier, and
+  solution-class audit programme.
+
+## Priority 238
+
+- `probes/CMIComparatorClassInclusionProbe.lean` independently restates the
+  one-way adapter from the comparator solution class to the R3
+  `GlobalFiniteEnergySolution` class.
+- `audit/priority_238_cmi_comparator_class_inclusion_2026-10-01.md` records
+  the pinned compile and the unresolved reverse/equivalence questions.
+
+## Priority 239
+
+- `audit/priority_239_two_submission_semantic_differential_2026-10-01.md`
+  defines the A/B proof archaeology and semantic strengthening ledger.

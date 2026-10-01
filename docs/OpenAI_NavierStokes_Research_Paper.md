@@ -1,5 +1,80 @@
 # Selected-field correspondence in the OpenAI Navier–Stokes formalisation
 
+## Priority 237: what the audit must now test
+
+The review is not one claim about one interface. It separates three arrows:
+
+\[
+\text{Fefferman specification}\leftrightarrow\text{Lean comparator},
+\qquad
+\text{manuscript}\leftrightarrow\text{Lean construction},
+\qquad
+\text{Lean construction}\leftrightarrow\text{selected endpoint}.
+\]
+
+The current record positively traces the five-row/radial repair engine into
+the selected production route; it does not support the obsolete claim that
+the machinery was bypassed wholesale. It still lacks the completed selected
+observable identity after Cartesian lifting, curl, localisation,
+periodisation, summation, pressure/residual composition, and endpoint limits.
+That remains `CTR-005: NOT ESTABLISHED`, not a proved mismatch.
+
+The next adversarial work therefore reconstructs the CMI comparator
+independently, checks class inclusion and quantifier order, freezes only
+\((u^\circ,f)\), and tests whether the nonexistence proof remains valid without
+privileged knowledge of how the residual force was designed. It also follows
+force smoothness derivative-by-derivative, expands all selected product-rule
+remainders, audits limits and infinite sums, checks uniform energy and
+uniqueness against the weakest admissible competitor, and mutates comparator
+conditions to identify the proof's real load-bearing assumptions.
+
+This is an adversarial programme, not assistance to OpenAI. It also avoids
+unsupported conclusions: backward force construction alone does not refute C,
+public commit opacity does not prove an error, and compilation does not prove
+whole-document CMI or manuscript correspondence.
+
+## Priority 238: one comparator edge established; proof differential remains open
+
+The review-side probe independently compiles the one-way adapter
+
+\[
+  \text{ComparatorSolution}(v,p,f)
+  \Longrightarrow
+  \text{R3 GlobalFiniteEnergySolution}(v,p,f).
+\]
+
+This is substantive positive evidence: it supports transferring R3 global
+nonexistence into comparator nonexistence and is not merely a theorem-name
+match. It does not establish reverse inclusion, equality of the solution
+classes, complete connected Fefferman semantics, or the final selected
+Cartesian/localised/periodised/summed identification with
+\((M,I,J,S,C_p)\). The controlled paper disposition remains
+`CTR-005: NOT ESTABLISHED` for complete manuscript-to-selected-endpoint
+correspondence.
+
+The audit now treats the September 8 and September 10 public objects as two
+submissions. The next provenance task is to compute their proof-term closures,
+identify their shared core, compare same-witness and fixed-force claims, and
+classify added energy, force-regularity, integrability, pressure,
+competitor-class, parameter-range, and paper-facing modules. The provenance
+delta raises scrutiny; it does not itself prove error or concealment.
+
+Evidence: `NavierStokesReview/src/probes/CMIComparatorClassInclusionProbe.lean`,
+`NavierStokesReview/src/audit/priority_238_cmi_comparator_class_inclusion_2026-10-01.md`.
+
+## Priority 239: two submissions, not one opaque current tree
+
+The 8 September and 10 September public objects are treated as separate
+formal submissions. The audit compares their declaration-level proof closures
+and shared core, then tests whether later additions establish or only restate
+same-witness identity, fixed force and initial data, candidate energy,
+all-order force regularity, genuine integrability, pressure semantics, the
+weakest competitor class, and the manuscript parameter range. This is a
+provenance and semantic-differential programme, not an accusation of intent.
+It does not replace the selected-field and five-observable transport audit.
+
+Evidence: `NavierStokesReview/src/audit/priority_239_two_submission_semantic_differential_2026-10-01.md`.
+
 ## Current public-release provenance result: Priority 236 (2026-10-01)
 
 The repository history is itself part of the audit evidence. The raw Git

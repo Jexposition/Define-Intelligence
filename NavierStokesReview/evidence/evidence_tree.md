@@ -607,3 +607,21 @@ asserted.
 
 - `priority_236_public_release_provenance_delta_2026-10-01.json`
   records the measured two-commit diff and changed proof routes.
+
+## Priority 237
+
+- `priority_237_adversarial_cmi_comparator_and_fixed_data_program_2026-10-01.json`
+  records the ordered adversarial programme, evidence-layer separation, and
+  non-claims.
+
+## Priority 238
+
+- `priority_238_cmi_comparator_class_inclusion_2026-10-01.json` records the
+  pinned compile of `CMIComparatorClassInclusionProbe.lean` and the exact
+  one-way class-inclusion disposition.
+
+## Priority 239
+
+- `priority_239_two_submission_semantic_differential_2026-10-01.json` records
+  the measured A/B delta, semantic differential lanes, external-lead boundary,
+  and controlled non-claims.

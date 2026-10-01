@@ -1,0 +1,49 @@
+{
+  "priority": 239,
+  "date": "2026-10-01",
+  "title": "Two-submission semantic differential programme",
+  "submissions": {
+    "A": "8937a8f4",
+    "B": "f9e8bc5"
+  },
+  "measured_delta": {
+    "changed_files": 188,
+    "insertions": 25143,
+    "deletions": 81,
+    "commit_messages": [".", "."],
+    "c_route_before": "R3CompactCandidate.selected_compact_candidate",
+    "c_route_after": "NavierStokesR3.theorem_1_1",
+    "periodic_route_before": "ActualCandidateAssembly.selected_candidate",
+    "periodic_route_after": "PeriodicPaper.periodic_corollary"
+  },
+  "established_current_edge": {
+    "statement": "ComparatorSolution -> R3 GlobalFiniteEnergySolution",
+    "probe": "NavierStokesReview/src/probes/CMIComparatorClassInclusionProbe.lean",
+    "status": "proved_inclusion",
+    "scope": "one_way_adapter_only"
+  },
+  "semantic_differential_lanes": [
+    "same_witness_identity",
+    "fixed_force_and_initial_datum",
+    "candidate_pre_singularity_energy",
+    "global_force_regularisation",
+    "integrability_vs_totalised_integrals",
+    "pressure_semantics",
+    "weakest_competitor_class",
+    "parameter_range",
+    "proof_term_dominators",
+    "selected_five_observable_bridge"
+  ],
+  "external_leads": {
+    "status": "not_primary_source_fact_checked",
+    "note": "Any claim about external benchmark metadata or outside project references remains a lead until independently verified from the primary source."
+  },
+  "disposition": {
+    "ctr_005": "NOT ESTABLISHED",
+    "selected_mismatch": "not_proved",
+    "force_nonsmoothness": "not_proved",
+    "literal_cmi_failure": "not_proved",
+    "compiler_escape": "not_claimed",
+    "false": "not_claimed"
+  }
+}

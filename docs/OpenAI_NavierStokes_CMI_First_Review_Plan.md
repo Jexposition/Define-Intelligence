@@ -1,5 +1,82 @@
 # CMI-first review plan: OpenAI Navier–Stokes claim
 
+## Priority 237: adversarial CMI comparator and fixed-data programme
+
+- [ ] Build a review-owned Fefferman specification and compare it extensionally
+  with the Lean comparator, including quantifier order, smoothness at \(t=0\),
+  force decay, pressure, periodicity, uniform energy, and global solution
+  requirements.
+- [ ] Record both inclusions between the Fefferman-admissible class and the
+  Lean comparator class; do not infer equivalence from names or compilation.
+- [ ] Freeze only the selected \((u^\circ,f)\) and reconstruct the C/D
+  nonexistence argument without the original construction history.
+- [ ] Trace every derivative order of the selected residual through the actual
+  endpoint, proving compatibility of the \(t\to1\) limits with one smooth
+  force extension.
+- [ ] Prove or test all-order flatness transport through `tsum`, curl,
+  cutoffs, periodisation, time activation, and \(\mathbb R^3\) localisation.
+- [ ] Create a selected-operation remainder census for product rules, pressure,
+  nonlinear convection, Jacobians, boundary terms, and cutoff commutators.
+- [ ] Audit quantifier order, `lim`/`tsum`/integral interchanges, nonempty
+  filters, support/chart coverage, denominators, and integrability.
+- [ ] Independently audit uniform energy and the weakest Fefferman competitor
+  class accepted by the uniqueness theorem.
+- [ ] Mutate comparator conditions one at a time and record the first failing
+  proof edge.
+- [ ] Keep the three dispositions separate: comparator fidelity,
+  manuscript-to-Lean correspondence, and internal Lean correctness.
+
+Evidence and routing:
+`../NavierStokesReview/src/audit/priority_237_adversarial_cmi_comparator_and_fixed_data_program_2026-10-01.md`;
+review specifications/probes belong in `NavierStokesReview/src/probes` or
+`src/refutations`, positive completions in `src/completions`, semantic source
+mapping in `src/external_semantic`, and machine-readable results in
+`NavierStokesReview/evidence`. OpenAI source remains read-only. No toy scan may
+be promoted to evidence. The current selected-field and five-moment work
+continues in parallel.
+
+## Priority 238: comparator edge and September proof differential
+
+- [x] Independently restate and compile the one-way map from a comparator
+  solution to the R3 `GlobalFiniteEnergySolution` class.
+- [ ] Test reverse inclusion and distinguish Lean class inclusion from
+  equivalence with the full Fefferman admissible class.
+- [ ] Freeze the same selected \((u^\circ,f)\) for the September 8 and
+  September 10 routes and determine whether the nonexistence argument uses
+  only those data, the PDE, and valid facts about a hypothetical competitor.
+- [ ] Reproduce both public proof objects as Submission A and Submission B;
+  compute declaration-level proof-term closures and classify the shared core
+  \(A\cap B\) and the added route \(B\setminus A\).
+- [ ] Compare old/new candidate contracts field by field: energy, global force
+  regularity, same-witness aggregation, pressure, integrability versus
+  totalised integrals, parameter ranges, and competitor assumptions.
+- [ ] Trace comments about “same fields”, “same force”, no extra competitor
+  support, and genuine integrability back to September 8 and mark each as
+  proved, unstated, absent, or repaired.
+- [ ] Continue the independent fixed-data, all-order force-smoothness,
+  product-rule/remainder, limit/interchange, pressure, energy, uniqueness,
+  mutation, and selected five-observable lanes in parallel.
+
+The established comparator arrow is positive evidence, not proof of the whole
+CMI claim. Keep separate statuses for `PROVED INCLUSION`, `PROVED
+NON-INCLUSION`, and `INCLUSION PROVED BUT SPEC SEMANTICS OPEN`. Evidence:
+`../NavierStokesReview/src/audit/priority_238_cmi_comparator_class_inclusion_2026-10-01.md`.
+
+## Priority 239: two-submission semantic differential
+
+The September 8 and September 10 objects are separate active audit targets.
+Their raw file delta is already measured; the remaining work is the
+mathematical differential: proof-term closures, shared core, witness identity,
+fixed force and initial datum, candidate energy, global force regularity,
+integrability versus totalised integrals, pressure semantics, competitor
+class, parameter range, and which added declarations dominate the new theorem.
+External benchmark or commentary claims remain leads until primary-source
+fact-checking. This extends, rather than replaces, the selected-field,
+five-moment, force, limit, pressure, energy, uniqueness, and mutation work.
+
+Evidence:
+`../NavierStokesReview/src/audit/priority_239_two_submission_semantic_differential_2026-10-01.md`.
+
 ## Priority 233: semantic moment-hierarchy closure (2026-10-01)
 
 - [x] Search beyond tuple names for radial-integral, pressure, flux, torus,

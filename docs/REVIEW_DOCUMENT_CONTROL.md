@@ -1,5 +1,58 @@
 # Navier–Stokes review document control
 
+## Priority 237 control: adversarial CMI comparator programme
+
+This tranche adds the attached adversarial programme without closing any
+scientific disposition. It requires independent comparator reconstruction,
+fixed-data reconstruction, derivative-level force smoothness tracing,
+all-order flatness transport, remainder/convention census, quantifier and
+vacuity checks, uniform-energy verification, weakest-class uniqueness, and
+comparator mutation tests.
+
+The source note is evidence of proposed audit methods, not primary-source
+confirmation of every external claim it mentions. Fact-check those claims
+before promoting them. Keep the source folders separated: `src/audit` for
+ledgers and graph reports, `src/probes`/`src/refutations` for review-owned
+tests, `src/completions` for positive Lean completions,
+`src/external_semantic` for CMI/manuscript mappings, and `evidence` for
+machine-readable records. Do not modify OpenAI source, delete material, or
+archive anything before the existing consolidation gate is closed.
+
+Control record:
+`NavierStokesReview/src/audit/priority_237_adversarial_cmi_comparator_and_fixed_data_program_2026-10-01.md`.
+
+## Priority 238 comparator class-inclusion result
+
+`NavierStokesReview/src/probes/CMIComparatorClassInclusionProbe.lean` was
+compiled with `leanprover/lean4:v4.34.0-rc2`. The probe confirms the one-way
+implication
+
+\[
+  \text{ComparatorSolution}(v,p,f)
+  \Longrightarrow
+  \text{R3 GlobalFiniteEnergySolution}(v,p,f).
+\]
+
+This supports the source-level direction transferring R3 global nonexistence
+into comparator nonexistence. It does not prove reverse inclusion, class
+equivalence, complete connected CMI interpretation, or the selected
+five-observable transport bridge. It narrows the active audit rather than
+closing it. Evidence:
+`NavierStokesReview/src/audit/priority_238_cmi_comparator_class_inclusion_2026-10-01.md`.
+
+## Priority 239 two-submission semantic differential
+
+The September 8 and September 10 public objects are tracked as separate
+submissions. The differential record compares proof-term closures, shared
+core, witness identity, fixed force and initial datum, candidate energy, force
+regularity, integrability versus totalised integrals, pressure, competitor
+class, parameter range, and selected-observable bridge. External claims
+supplied as research leads remain unverified until checked against primary
+sources.
+
+Control record:
+`NavierStokesReview/src/audit/priority_239_two_submission_semantic_differential_2026-10-01.md`.
+
 ## Priority 236 control
 
 The public proof-route provenance record is

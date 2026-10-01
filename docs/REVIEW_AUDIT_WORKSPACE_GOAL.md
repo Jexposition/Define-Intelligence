@@ -1,5 +1,84 @@
 # Review audit workspace goal
 
+## Priority 237: adversarial comparator and fixed-data programme
+
+The active goal now has three separate audit trees:
+
+1. Fefferman's complete official specification versus the Lean comparator;
+2. the manuscript's mathematical construction versus the Lean construction;
+3. the internal Lean construction versus the exported endpoint.
+
+Do not infer the first two from compilation of the third. Reconstruct the
+CMI predicate independently, checking quantifier order, global smoothness,
+initial data, force decay, pressure, periodicity, uniform energy, and the
+weakest admissible competitor class. Record both class inclusions rather than
+assuming that similarly named predicates are equivalent.
+
+Run the fixed-data test: freeze only the selected \((u^\circ,f)\), remove
+construction history, and determine whether the nonexistence argument uses
+only those fixed data, the PDE, and valid facts about a hypothetical
+competitor. Trace force smoothness derivative-by-derivative through the
+selected residual and through every sum, curl, cutoff, periodisation, time
+switch, and \(\mathbb R^3\) localisation. Register every product-rule
+remainder, quantifier movement, limit interchange, convention change,
+vacuity risk, energy estimate, and uniqueness-class conversion.
+
+The repair engine remains positively classified as not bypassed wholesale;
+the selected observable bridge remains `CTR-005: NOT ESTABLISHED`. Neither
+inverse residual forcing alone nor public-history opacity is a refutation.
+Likewise, an external report is not local evidence until independently
+fact-checked. Use E1 kernel, E2 correspondence, E3 independent reconstruction,
+and E4 numerical evidence as separate labels.
+
+Control record:
+`../NavierStokesReview/src/audit/priority_237_adversarial_cmi_comparator_and_fixed_data_program_2026-10-01.md`.
+
+## Priority 238: comparator edge and two-submission archaeology
+
+The review probe establishes the one-way implication from the repository's
+comparator solution class into the R3 `GlobalFiniteEnergySolution` class. The
+active goal is to audit arrows, not infer meaning from matching names:
+
+\[
+\text{selected }(u^\circ,f)
+\to \text{candidate class}
+\to \text{comparator class}
+\to \text{R3 global class}
+\to \text{nonexistence}.
+\]
+
+Treat the September 8 object (`8937a8f4`) and September 10 object (`f9e8bc5`)
+as two submissions. Reconstruct both C/D routes, compute declaration-level
+proof closures, identify \(A\cap B\), and classify every added field or
+theorem in \(B\setminus A\) as paper alignment, semantic clarification,
+stronger premise, witness change, analytic repair, or wrapper. Test
+same-witness identity, fixed-force identity, candidate energy, global force
+regularity, integrability versus Lean totalisation, parameter-range changes,
+competitor-class assumptions, and the comments asserting same-field
+conclusions.
+
+The comparator inclusion is positive evidence for one arrow. It is not reverse
+class equivalence, complete Fefferman compliance, full manuscript
+correspondence, or resolution of `CTR-005`. Preserve the selected-field,
+force, moment, pressure, limit, energy, and uniqueness lanes in parallel.
+Evidence:
+`../NavierStokesReview/src/audit/priority_238_cmi_comparator_class_inclusion_2026-10-01.md`.
+
+## Priority 239: treat September 8 and September 10 as two submissions
+
+The goal includes a semantic A/B differential, not merely a file-count
+comparison. Compute the shared proof core and added proof route, then trace
+same-witness identity, fixed force and initial datum, candidate energy, force
+regularity, actual integrability, pressure, weakest competitor class,
+parameter range, and proof-term dominators. Classify each later addition as
+already proved, true but unstated, absent, strengthened, witness-changing,
+paper-facing, or unresolved. External reports are leads until independently
+fact-checked. Preserve every existing selected-field and five-observable
+obligation while this archaeology runs.
+
+Evidence:
+`../NavierStokesReview/src/audit/priority_239_two_submission_semantic_differential_2026-10-01.md`.
+
 ## Priority 236: public proof-route provenance
 
 Treat the public Git history as mathematical provenance evidence. Reproduce

@@ -1,0 +1,46 @@
+{
+  "priority": 238,
+  "date": "2026-10-01",
+  "title": "CMI comparator class inclusion",
+  "status": {
+    "adapter_edge": "ESTABLISHED",
+    "reverse_inclusion": "NOT_TESTED_THOROUGHLY",
+    "class_equivalence": "NOT_TESTED_THOROUGHLY",
+    "cmi_failure_from_this_edge": "NOT_INFERRED"
+  },
+  "review_probe": "NavierStokesReview/src/probes/CMIComparatorClassInclusionProbe.lean",
+  "compile": {
+    "command": "elan run leanprover/lean4:v4.34.0-rc2 lake env lean NavierStokesReview/src/probes/CMIComparatorClassInclusionProbe.lean",
+    "exit_code": 0,
+    "admission_tokens_added": false
+  },
+  "source_declaration": "NavierStokesR3.globalSolutionOfComparator",
+  "source_files": [
+    "NavierStokes/R3/ComparatorBridge.lean",
+    "NavierStokes/ComparatorDefinitions.lean",
+    "NavierStokes/R3/ProblemStatement.lean"
+  ],
+  "established_implication": "Comparator.NavierStokesExistenceAndSmoothnessRn -> GlobalFiniteEnergySolution",
+  "established_nonexistence_transfer": "not Nonempty GlobalFiniteEnergySolution -> not exists Comparator solution",
+  "transported_fields": [
+    "smooth velocity",
+    "smooth pressure",
+    "zero initial datum",
+    "incompressibility",
+    "Navier-Stokes residual equation",
+    "timewise square-integrability",
+    "uniform kinetic-energy bound"
+  ],
+  "not_claimed": [
+    "bidirectional class equivalence",
+    "CMI whole-document semantic closure",
+    "selected five-moment transport",
+    "force provenance admissibility beyond the formal predicate"
+  ],
+  "evidence_layers": {
+    "E1_kernel": "review probe is intended for pinned zero-sorry compilation",
+    "E2_correspondence": "one-way adapter correspondence established",
+    "E3_reconstruction": "reverse class translation remains open",
+    "E4_numerical": "not applicable"
+  }
+}

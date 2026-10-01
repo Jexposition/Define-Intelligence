@@ -1,5 +1,62 @@
 # Independent peer review of the OpenAI Navier–Stokes formalisation
 
+## Priority 237: independent comparator and fixed-data audit
+
+The review now treats the formal comparator as a claim requiring its own
+translation audit. A successful Lean theorem proves only the predicate that
+the comparator states. The review must independently reconstruct Fefferman's
+full specification and check quantifier order, smoothness, force and pressure
+conditions, decay, uniform energy, initial data, periodicity, and the weakest
+global-solution class ruled out by the nonexistence argument.
+
+The force-provenance question is tested by freezing only \((u^\circ,f)\) and
+rebuilding the argument without access to the original selected singular
+trajectory. This avoids the unsupported claim that residual-defined forcing
+automatically disqualifies C while still detecting any proof step that relies
+on privileged construction history. The actual selected residual must also be
+audited at every derivative order and through every sum, curl, cutoff,
+periodisation, time switch, and localisation operation.
+
+The positive repair-engine finding and the unresolved selected-observable
+bridge remain distinct. The former is source-backed production use; the latter
+is `CTR-005: NOT ESTABLISHED`. Neither compilation nor a public-history delta
+can substitute for an independently verified semantic arrow.
+
+## Priority 238: comparator inclusion and two-submission audit
+
+The compiled review probe establishes the one-way inclusion from the
+repository's comparator solution class to the R3 global finite-energy class.
+That supports the corresponding nonexistence-transfer direction. It does not
+establish reverse class equivalence or show that either internal class is
+identical to Fefferman's complete admissible class.
+
+The September 8 and September 10 objects remain separate review targets. The
+audit will compare their proof-term closures and shared core, then inspect
+whether the later additions genuinely establish, strengthen, or only restate:
+same selected fields, fixed force and initial datum, candidate energy, global
+force regularity, actual integrability rather than totalised integrals,
+pressure semantics, the weakest competitor class, and the broader paper
+parameter range. This supplements rather than replaces the selected-field,
+five-moment, force, limit, pressure, energy, and uniqueness lanes.
+
+Evidence: `NavierStokesReview/src/probes/CMIComparatorClassInclusionProbe.lean`
+and `NavierStokesReview/src/audit/priority_238_cmi_comparator_class_inclusion_2026-10-01.md`.
+
+## Priority 239: semantic differential of the two public submissions
+
+The later 10 September expansion is audited as a separate submission, not
+silently merged into the announcement-day result. The comparison is
+declaration-level and mathematical: shared proof core, same selected fields,
+fixed force and initial datum, candidate energy, global force regularity,
+actual integrability rather than totalised integrals, pressure, competitor
+class, parameter range, and proof-term dominators. Each result is classified
+as already proved, unstated, absent, strengthened, changed, paper-facing, or
+unresolved. This preserves the existing five-moment, selected-field, force,
+limit, pressure, energy, and uniqueness lanes. External reports remain
+unverified leads until primary-source checks.
+
+Evidence: `NavierStokesReview/src/audit/priority_239_two_submission_semantic_differential_2026-10-01.md`.
+
 ## Current public-release provenance result: Priority 236 (2026-10-01)
 
 The public history requires separate archaeology. The raw Git comparison of

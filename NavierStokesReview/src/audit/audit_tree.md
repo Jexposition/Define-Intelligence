@@ -418,3 +418,22 @@ and `CTR-005` remains `NOT ESTABLISHED`; no stronger refutation is claimed.
 
 - `priority_236_public_release_provenance_delta_2026-10-01.md`
   records the raw September proof-route delta and required archaeology.
+
+## Priority 237
+
+- `priority_237_adversarial_cmi_comparator_and_fixed_data_program_2026-10-01.md`
+  records the independent comparator, fixed-data, force-smoothness,
+  quantifier, solution-class, mutation, and semantic-edge programme.
+
+## Priority 238
+
+- `priority_238_cmi_comparator_class_inclusion_2026-10-01.md` records the
+  compiled one-way comparator-to-R3 class inclusion. It does not establish
+  reverse class equivalence, complete CMI semantic closure, or resolve
+  `CTR-005`.
+
+## Priority 239
+
+- `priority_239_two_submission_semantic_differential_2026-10-01.md` records
+  the two-submission proof-term, witness, totalisation, and contract
+  differential programme.
