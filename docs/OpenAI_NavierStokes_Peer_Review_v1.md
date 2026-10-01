@@ -1,5 +1,14 @@
 # Independent peer review of the OpenAI Navier–Stokes formalisation
 
+## Current selected-field composition result: Priority 230 (2026-10-01)
+
+The compiled completion
+[`SelectedMixedProductionFullProductRule.lean`](../NavierStokesReview/src/completions/SelectedMixedProductionFullProductRule.lean)
+proves the exact selected radial product-rule composition, retaining the
+cutoff-gradient commutator and direct periodised branch. It does not assign a
+moment value or close the final `(M,I,J,S,C_p)` identity. The controlled
+status remains `CTR-005: NOT ESTABLISHED`.
+
 ## Current declaration-level dependency ledger: Priority 229 (2026-10-01)
 
 The source-linked ledger

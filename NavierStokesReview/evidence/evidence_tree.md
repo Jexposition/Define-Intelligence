@@ -1,5 +1,15 @@
 ```markdown
 . 📂 evidence
+## Current selected-field composition result: Priority 230 (2026-10-01)
+
+- `priority_230_selected_mixed_full_product_rule_2026-10-01.md`
+- `priority_230_selected_mixed_full_product_rule_2026-10-01.json`
+- `../src/completions/SelectedMixedProductionFullProductRule.lean`
+
+The compiled theorem retains the exact cutoff-gradient commutator and direct
+periodised branch. It does not calculate a radial integral or prove a final
+five-observable identity.
+
 ## Current declaration-level dependency ledger: Priority 229 (2026-10-01)
 
 - `priority_229_manuscript_dependency_declaration_ledger_2026-10-01.json`

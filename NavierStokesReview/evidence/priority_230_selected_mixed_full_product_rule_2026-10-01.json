@@ -1,0 +1,19 @@
+{
+  "priority": 230,
+  "date": "2026-10-01",
+  "status": "compiled_integral_bridge_open",
+  "disposition": "CTR-005: NOT ESTABLISHED",
+  "file": "NavierStokesReview/src/completions/SelectedMixedProductionFullProductRule.lean",
+  "toolchain": "leanprover/lean4:v4.34.0-rc2",
+  "command": "elan run leanprover/lean4:v4.34.0-rc2 lake env lean NavierStokesReview/src/completions/SelectedMixedProductionFullProductRule.lean",
+  "exit_code": 0,
+  "theorem": "NavierStokesReview.SelectedMixedProductionFullProductRule.selected_mixed_production_scalar_full_composition",
+  "formula": "mixed first component = cutoff * curl(selected potential) first component + curlLinear((fderiv cutoff).smulRight(selected potential)) first component + periodize(cut selected direct) first component",
+  "uses_actual_selected_definitions": true,
+  "toy_profile": false,
+  "proves_commutator_value": false,
+  "proves_barMoment_value": false,
+  "proves_final_five_observable_transport": false,
+  "next_gate": "Apply exact torus-average and radial-integral definitions to all three terms, then prove the advertised identity or a concrete selected mismatch."
+}
+

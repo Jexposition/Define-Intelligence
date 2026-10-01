@@ -1,6 +1,13 @@
 ```markdown
 . 📂 src
 
+## Current selected-field composition result: Priority 230 (2026-10-01)
+
+The compiled completion is
+`completions/SelectedMixedProductionFullProductRule.lean`. It exposes the
+actual selected cutoff-curl, commutator, and direct periodised terms before
+radial integration. It does not establish a moment value.
+
 ## Current declaration-level dependency ledger: Priority 229 (2026-10-01)
 
 The active declaration ledger is

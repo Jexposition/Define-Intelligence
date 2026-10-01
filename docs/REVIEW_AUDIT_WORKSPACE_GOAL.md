@@ -1,5 +1,28 @@
 # Review audit workspace goal
 
+## Priority 230: selected mixed radial full product-rule composition (2026-10-01)
+
+The pinned zero-sorry completion
+`../NavierStokesReview/src/completions/SelectedMixedProductionFullProductRule.lean`
+now compiles and composes the actual selected potential and direct branches:
+
+\[
+u_{\mathrm{mixed},1}=c(\nabla\times A)_1+((\nabla c)\times A)_1
+ +(\operatorname{periodise}(\operatorname{cutDirect}))_1.
+\]
+
+This is a genuine selected-field identity, not a toy profile. It does not
+assign a value to the commutator, establish radial integrability, or prove
+the manuscript's `(M,I,J,S,C_p)` transport. The next gate is the exact
+torus-average and radial-integral calculation with all three terms retained.
+Keep `CTR-005: NOT ESTABLISHED` until that gate yields either a full bridge or
+a direct selected mismatch.
+
+Evidence:
+`../NavierStokesReview/evidence/priority_230_selected_mixed_full_product_rule_2026-10-01.md`
+and
+`../NavierStokesReview/evidence/priority_230_selected_mixed_full_product_rule_2026-10-01.json`.
+
 ## Priority 229: declaration-level manuscript dependency ledger (2026-10-01)
 
 The declaration-level ledger is now recorded at

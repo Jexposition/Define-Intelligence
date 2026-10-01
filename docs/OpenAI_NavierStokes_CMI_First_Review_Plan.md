@@ -1,5 +1,22 @@
 # CMI-first review plan: OpenAI Navier–Stokes claim
 
+## Priority 230: selected mixed radial full product-rule composition (2026-10-01)
+
+- [x] Compose the actual selected potential and direct branches at the radial
+  section into one zero-sorry product-rule theorem.
+- [x] Retain the cutoff-curl term, the cutoff-gradient commutator, and the
+  separately cut/periodised direct branch.
+- [ ] Apply the exact torus-average and radial-integral definitions to all
+  three terms.
+- [ ] Prove the final five-observable identity or a concrete selected mismatch;
+  do not infer either result from the presence of the commutator.
+
+Evidence:
+`../NavierStokesReview/src/completions/SelectedMixedProductionFullProductRule.lean`,
+`../NavierStokesReview/evidence/priority_230_selected_mixed_full_product_rule_2026-10-01.md`,
+and
+`../NavierStokesReview/evidence/priority_230_selected_mixed_full_product_rule_2026-10-01.json`.
+
 ## Priority 229: declaration-level manuscript dependency ledger (2026-10-01)
 
 - [x] Build a source-linked ledger recording each manuscript mechanism,

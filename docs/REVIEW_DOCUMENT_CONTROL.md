@@ -1,5 +1,16 @@
 # Navier–Stokes review document control
 
+## Priority 230 selected mixed radial product-rule composition (2026-10-01)
+
+The compiled review-side completion is
+`../NavierStokesReview/src/completions/SelectedMixedProductionFullProductRule.lean`.
+Its evidence is
+`../NavierStokesReview/evidence/priority_230_selected_mixed_full_product_rule_2026-10-01.md`
+with JSON metadata alongside it. It exposes the actual cutoff-gradient
+commutator and direct periodised branch, but does not yet calculate the
+radial integral or the manuscript's five observables. `CTR-005: NOT
+ESTABLISHED` remains controlled.
+
 ## Priority 229 declaration-level manuscript dependency ledger (2026-10-01)
 
 The current ledger is

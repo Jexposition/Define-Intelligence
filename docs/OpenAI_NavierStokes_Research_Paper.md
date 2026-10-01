@@ -1,5 +1,18 @@
 # Selected-field correspondence in the OpenAI Navier–Stokes formalisation
 
+## Current selected-field composition result: Priority 230 (2026-10-01)
+
+The pinned review completion
+[`SelectedMixedProductionFullProductRule.lean`](../NavierStokesReview/src/completions/SelectedMixedProductionFullProductRule.lean)
+now composes the actual selected radial scalar into the cutoff-curl term,
+the cutoff-gradient commutator, and the separately cut/periodised direct
+branch. This is affirmative selected-field composition evidence.
+
+It deliberately stops before assigning a value to the commutator or radial
+integral. It therefore does not establish the manuscript's
+`(M,I,J,S,C_p)` transport and does not prove a selected mismatch. The current
+disposition remains `CTR-005: NOT ESTABLISHED`.
+
 ## Current declaration-level dependency ledger: Priority 229 (2026-10-01)
 
 The declaration-level ledger

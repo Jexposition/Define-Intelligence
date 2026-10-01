@@ -1,5 +1,13 @@
 ```markdown
 . 📂 audit
+## Current selected-field composition result: Priority 230 (2026-10-01)
+
+├── 📄 ../completions/SelectedMixedProductionFullProductRule.lean
+└── 📄 ../evidence/priority_230_selected_mixed_full_product_rule_2026-10-01.md
+
+The zero-sorry theorem composes the selected radial field before integration;
+the five-observable value remains open.
+
 ## Current declaration-level dependency ledger: Priority 229 (2026-10-01)
 
 ├── 📄 priority_229_manuscript_dependency_declaration_ledger_2026-10-01.md
