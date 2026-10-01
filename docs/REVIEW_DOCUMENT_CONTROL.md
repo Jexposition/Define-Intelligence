@@ -19,8 +19,9 @@ composition. The controlled scientific disposition remains
 `CTR-005: NOT ESTABLISHED`; no selected defect, force nonsmoothness, literal
 CMI failure, impossibility theorem, compiler escape, or `False` is claimed.
 
-Release references: private review commit `296319d`; mirrored public review
-commit `7a663ed`. The private worktree still contains the previously
+Release references: scientific record private commit `296319d` and mirrored
+public commit `7a663ed`; metadata cleanup private commit `74d5254` and
+mirrored public commit `446b4b5`. The private worktree still contains the previously
 protected, intentionally untracked OpenAI source test file and local closure
 JSON; neither is part of this release.
 
