@@ -58,6 +58,12 @@ schedule. It still leaves the support and nonzero assumptions explicit.
    pointwise equality with the correct time, radial section, cutoff plateau,
    and activation hypotheses.
 
+8. `completions/SelectedRawVelocityNonzero.lean` now compiles a narrower
+   selected-path result: the selected schedule has a spacetime point at which
+   the full raw mixed velocity is nonzero. This closes the weaker norm-to-value
+   step for the raw field, but it does not identify the nonzero component with
+   the first-component periodised radial pullback used by the gate.
+
 ## Compiler record
 
 The following file compiled with exit code 0 under
@@ -65,6 +71,12 @@ The following file compiled with exit code 0 under
 
 ```text
 NavierStokesReview/src/refutations/SelectedPeriodicSupportTransportGate.lean
+```
+
+The following narrower completion also compiled with exit code 0:
+
+```text
+NavierStokesReview/src/completions/SelectedRawVelocityNonzero.lean
 ```
 
 No `sorry`, `admit`, or new axiom was introduced. No Lean, Lake, Elan, or

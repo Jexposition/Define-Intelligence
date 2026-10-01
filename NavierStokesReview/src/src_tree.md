@@ -19,6 +19,10 @@ trees; this index is a navigation aid, not a semantic clearance record.
 The current selected mixed `barMoment` gate is
 `audit/priority_225_selected_mixed_barmoment_shell_gate_2026-10-01.md`.
 
+The current P2 completion proving only raw mixed-velocity nonvanishing is
+`completions/SelectedRawVelocityNonzero.lean`. It must not be read as a proof
+that the exact periodised first-component radial pullback is nonzero.
+
 The compact tree below is a historical navigation snapshot. The following
 current review artefacts must be treated as live and discoverable:
 

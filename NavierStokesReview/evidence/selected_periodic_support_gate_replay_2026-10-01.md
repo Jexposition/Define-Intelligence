@@ -18,7 +18,13 @@ periodised field and proves only local equality in the inner cube. It also
 does not derive a nonzero value for the exact first-component radial pullback
 from the full-velocity norm blow-up. The existing angular-growth result is a
 promising route, but the required pointwise transport equality remains to be
-proved.
+proved. A separate compiled completion now proves the weaker statement that
+the selected raw mixed velocity is nonzero at some spacetime point. That result
+does not identify the point, component, or periodised radial pullback required
+by this gate.
+
+Evidence for the narrower result:
+`../src/completions/SelectedRawVelocityNonzero.lean`.
 
 ## Status
 

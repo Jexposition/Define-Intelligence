@@ -2,6 +2,10 @@
 
 ## Priority 227: selected periodic-support gate replay (2026-10-01)
 
+- [x] Compile the narrower raw-field nonzero completion. It proves that the
+  selected raw mixed velocity is nonzero somewhere, but does not yet prove
+  nonzero of the exact first-component periodised radial pullback.
+
 - [x] Compile the selected periodic-support contradiction gate under the
   pinned Lean 4.34.0-rc2 toolchain.
 - [x] Confirm that the gate uses the exact selected mixed radial pullback and
