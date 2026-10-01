@@ -69,4 +69,3 @@ declaration was added.
 
 Related evidence is Priority 230 and the exact torus-average reduction in
 SelectedMixedProductionTorusAverage.lean.
-
