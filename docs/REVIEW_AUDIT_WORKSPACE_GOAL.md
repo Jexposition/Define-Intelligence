@@ -3980,3 +3980,19 @@ and
 This checkpoint does not authorise stronger scientific labels. `CTR-005`
 remains `NOT ESTABLISHED`; no nonzero defect, force nonsmoothness, literal CMI
 failure, impossibility theorem, compiler escape, or `False` is claimed.
+
+## Priority 227 selected-axis correction
+
+The exact selected periodised radial pullback has now been checked on the
+axis. The compiled review theorem proves eventual vanishing of its sampled
+first component near `t = 1`; it does not prove global vanishing. The separate
+full-velocity blow-up is axial and therefore cannot supply this pullback's
+first-component nonzero premise. Keep these statements separate:
+
+1. the full raw mixed velocity is nonzero somewhere;
+2. the selected periodised radial pullback is nonzero off-axis;
+3. the selected Cartesian field transports the paper's five observables.
+
+Only the first is currently established among these three value-level
+statements. The remaining off-axis transport calculation is active, and the
+workspace goal does not authorise a stronger verdict before it is resolved.

@@ -2805,3 +2805,22 @@ Neither was staged, modified, moved, deleted, or published. No Lean/Lake/Elan
 processes were running at the final check. Full document consolidation,
 source-first fact-checking, link/lint verification, and the non-destructive
 archive gate remain open.
+
+## Publication and control reconciliation: Priority 227 (2026-10-01)
+
+The Priority 227 selected-axis completion and its linked evidence, audit,
+plan, goal, paper, peer-review, and tree-index updates are committed privately
+as `8231d60` on
+`review/cmi-first-navier-stokes-reconciled-2026-09-30`. The private commit
+records a compiled theorem for the exact selected first-component radial
+pullback on the axis: it is eventually zero near `t = 1` because the verified
+base-axis blow-up direction is `coordinateVector 2`. It does not prove global
+vanishing, an off-axis nonzero value, a five-observable transport theorem, a
+selected defect, or literal CMI failure.
+
+The public mirror remains at its previous clean revision until this controlled
+tracked change is mirrored and pushed. The two protected untracked paths
+remain untouched, unstaged, and excluded from publication:
+`NavierStokes/R3/TestPressure.lean` and
+`NavierStokesReview/evidence/lean_environment_closure_ns_3d_2026-09-30.json`.
+The current scientific disposition remains `CTR-005: NOT ESTABLISHED`.

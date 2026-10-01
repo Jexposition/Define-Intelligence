@@ -8,6 +8,11 @@
 The gate is compiler-verified but conditional. It does not establish a
 selected contradiction, nonzero moment defect, or `False`.
 
+The companion axis completion is
+`../completions/SelectedMixedRadialAxisZero.lean`. It proves eventual zero
+of the sampled first component on the axis, so the remaining gate premise is
+specifically off-axis transport rather than norm blow-up at the origin.
+
 ## Current release record: Priority 226 (2026-10-01)
 
 ├── 📄 priority_226_release_state_2026-10-01.md

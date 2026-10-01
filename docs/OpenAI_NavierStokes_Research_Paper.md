@@ -1443,3 +1443,17 @@ The active scientific disposition remains `CTR-005: NOT ESTABLISHED` for
 complete manuscript-to-selected-endpoint correspondence. This is not a claim
 of a selected nonzero defect, force nonsmoothness, literal CMI failure,
 impossibility theorem, compiler escape, or `False`.
+
+## Priority 227 selected-axis result
+
+The selected-field audit adds a narrower result. A zero-sorry completion proves
+that the exact first-component radial pullback used by the review-side
+periodic-support gate is eventually zero on the axis as `t` approaches `1`.
+This follows from the selected origin germ equality and
+\[
+u(t,0)=c(t)\,e_2,
+\]
+where the blow-up is in the axial component `e_2`, whereas the pullback
+samples component `1`. This does not prove that the off-axis pullback is zero
+or nonzero, and it does not replace the missing final five-observable
+identification. `CTR-005` therefore remains `NOT ESTABLISHED`.

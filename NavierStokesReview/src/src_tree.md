@@ -23,6 +23,11 @@ The current P2 completion proving only raw mixed-velocity nonvanishing is
 `completions/SelectedRawVelocityNonzero.lean`. It must not be read as a proof
 that the exact periodised first-component radial pullback is nonzero.
 
+The axis correction is
+`completions/SelectedMixedRadialAxisZero.lean`. It compiles and proves
+eventual zero of that exact first-component pullback on the axis near `t = 1`.
+It does not prove global zero or settle the off-axis nonzero premise.
+
 The compact tree below is a historical navigation snapshot. The following
 current review artefacts must be treated as live and discoverable:
 

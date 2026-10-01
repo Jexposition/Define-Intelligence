@@ -8,6 +8,10 @@
 The compiled gate is conditional on exact selected-field radial support and
 nonzero transport premises. It is not a selected-field contradiction.
 
+The axis companion is `SelectedMixedRadialAxisZero.lean`; it records the
+compiled eventual axis-zero result and leaves the off-axis nonzero transport
+premise open.
+
 ## Current release record: Priority 226 (2026-10-01)
 
 - `../src/audit/priority_226_release_state_2026-10-01.md`

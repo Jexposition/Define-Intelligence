@@ -5021,3 +5021,22 @@ and
 The current status remains `CTR-005: NOT ESTABLISHED`. Do not upgrade it to a
 nonzero defect, force nonsmoothness, literal CMI failure, impossibility,
 compiler escape, or `False` without a direct source-backed result.
+
+## Priority 227: exact selected radial component gate
+
+- [x] Compile the selected raw mixed-velocity nonzero completion.
+- [x] Test the exact selected periodised radial pullback on the axis rather
+  than infer its nonzero value from full-velocity norm blow-up.
+- [x] Record that the axis result is eventually zero in the sampled first
+  component because the base-axis asymptotic is along `coordinateVector 2`.
+- [ ] Prove or refute the exact off-axis nonzero premise required by the
+  selected periodic-support gate.
+- [ ] Only then evaluate whether the gate yields a selected contradiction.
+
+The compiled axis completion is
+`../NavierStokesReview/src/completions/SelectedMixedRadialAxisZero.lean`.
+The controlling records are
+`../NavierStokesReview/src/audit/priority_227_selected_periodic_support_gate_replay_2026-10-01.md`
+and
+`../NavierStokesReview/evidence/selected_periodic_support_gate_replay_2026-10-01.md`.
+This priority does not alter `CTR-005: NOT ESTABLISHED`.

@@ -122,3 +122,25 @@ rather than asserting a nonzero selected moment.
 - `../../evidence/selected_mixed_barmoment_shell_gate_2026-10-01.md`
 - `priority_117_periodic_compact_field_identity_review_2026-09-28.md`
 - `priority_225_selected_mixed_barmoment_shell_gate_2026-10-01.md`
+
+## Axis component check
+
+The completion
+`NavierStokesReview/src/completions/SelectedMixedRadialAxisZero.lean` compiles
+with exit code 0 under `leanprover/lean4:v4.34.0-rc2`. It proves
+
+\[
+\exists a\;[\mathrm{Selected}(a)\land
+  \forall^{\mathrm{eventually}}_{t\to1^-},
+  g_a(0,(1-t,0))=0],
+\]
+
+for the exact selected radial pullback `g_a`. This is a correction to the
+invalid inference \(\|u(t,0)\|\to\infty\Rightarrow g_a(0,(1-t,0))\ne0\):
+the source asymptotic is in `coordinateVector 2`, whereas `g_a` samples
+component `1`.
+
+The result does not prove global vanishing, bounded radial support, an off-axis
+nonzero value, or a five-moment defect. The next value-level test must
+transport the selected angular-growth route to the exact periodised
+first-component radial pullback off-axis. `CTR-005` remains unchanged.

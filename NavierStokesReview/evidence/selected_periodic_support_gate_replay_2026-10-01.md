@@ -31,3 +31,18 @@ Evidence for the narrower result:
 This is a verified conditional obstruction, not a selected-field refutation.
 `CTR-005: NOT ESTABLISHED` remains the controlled disposition for the complete
 manuscript-to-selected-endpoint correspondence.
+
+## Priority 227 axis completion
+
+`../src/completions/SelectedMixedRadialAxisZero.lean` also compiles under
+`leanprover/lean4:v4.34.0-rc2`. It proves that the exact selected mixed radial
+pullback has sampled first component zero on the axis eventually as `t` tends
+to `1` from below. The proof uses the selected schedule,
+`GermCandidateAssembly.origin_eventually_base`, `FinalSlowBase.origin`, and
+`MixedPeriodicAssembly.periodicVelocity_origin`.
+
+The base-axis blow-up is proportional to `coordinateVector 2`, while this
+pullback samples component `1`. Therefore the norm blow-up cannot be reused
+as the gate's off-axis first-component nonzero premise. This is not a global
+vanishing result, a nonzero defect, or a five-observable transport theorem.
+The exact off-axis premise remains open and `CTR-005` is unchanged.

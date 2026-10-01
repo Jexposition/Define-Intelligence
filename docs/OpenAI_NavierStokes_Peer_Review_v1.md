@@ -4556,3 +4556,20 @@ The active disposition therefore remains `CTR-005: NOT ESTABLISHED` for
 complete manuscript-to-selected-endpoint correspondence. No selected nonzero
 moment defect, force nonsmoothness, literal CMI failure, impossibility
 theorem, compiler escape, or `False` is claimed.
+
+## Priority 227: correction to the blow-up-to-pullback inference
+
+The selected-path check now compiles a more precise axis statement. The
+periodised radial pullback samples Cartesian component `1`, while the
+base-axis asymptotic used by the blow-up route is proportional to
+`coordinateVector 2`. Consequently,
+\[
+\|u(t,0)\|\to\infty
+\quad\text{does not imply}\quad
+g_a(0,(1-t,0))\ne0.
+\]
+The selected pullback is eventually zero on that axis in the sampled
+component. This is not a contradiction of the full-vector blow-up theorem;
+it corrects the proposed route for proving the gate's off-axis nonzero
+premise. The off-axis transport calculation remains open and the controlled
+disposition remains `CTR-005: NOT ESTABLISHED`.
