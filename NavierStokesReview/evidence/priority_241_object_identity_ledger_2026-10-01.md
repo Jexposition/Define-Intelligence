@@ -1,7 +1,7 @@
 # Priority 241: Selected Object-Identity Ledger
 
-**Date:** 2026-10-01  
-**Status:** `PARTIAL SOURCE TRACE / ARROW SEMANTICS OPEN`  
+**Date:** 2026-10-01
+**Status:** `PARTIAL SOURCE TRACE / ARROW SEMANTICS OPEN`
 **Scope:** current September 10 checkout, branch `review/cmi-first-navier-stokes-reconciled-2026-09-30`
 
 ## Purpose
