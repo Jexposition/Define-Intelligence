@@ -1836,3 +1836,22 @@ diagnostic and are not treated as a proof of the final observable identity.
 Evidence: `NavierStokesReview/evidence/priority_241_object_identity_ledger_2026-10-01.md`,
 `priority_243_fefferman_comparator_variance_2026-10-01.md`, and
 `priority_242_comparator_boundary_and_totalization_2026-10-01.md`.
+
+### Audit update: source trust versus semantic provenance
+
+The corrected nested-comment-aware scan now covers 2,658 Lean files. It finds
+no executable trust-escape keyword under `NavierStokes/`; the four executable
+`sorry` declarations are the intentional Comparator challenge placeholders.
+This is positive source-level evidence only. It does not prove that the
+Comparator predicates encode the complete Fefferman specification, nor that
+the final selected fields transport the paper's five observables.
+
+The companion provenance scan records 18 fallback-to-zero patterns, 151
+classical-choice occurrences, and 28 structures with proof-like fields.
+Repeated selections and missing nearby `choose_spec` are audit candidates,
+not established witness divergence. The required next step is proof-term
+closure restriction, followed by branch-validity, choice-independence, and
+constructor-field provenance checks for the actual C/D theorem.
+
+Evidence: `NavierStokesReview/evidence/deep_semantic_audit_evidence.md` and
+`NavierStokesReview/evidence/witness_provenance_evidence.md`.

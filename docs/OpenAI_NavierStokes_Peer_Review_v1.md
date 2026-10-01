@@ -4868,3 +4868,24 @@ proof-relevant audit of conditional fallbacks, `Classical.choice`, arbitrary
 extensions, totalised integrals/derivatives, and witness identity. These checks
 are required alongside, not instead of, the CUDA three-dimensional
 curl/cutoff/moment analysis.
+
+## Finding 42: source trust scan is clean for NavierStokes, semantic provenance remains open
+
+The corrected nested-comment-aware scan covers 2,658 Lean files and reports
+zero executable trust-escape keywords under `NavierStokes/`. Four executable
+`sorry` declarations remain in the Comparator challenge templates, as expected
+for the challenge/solution protocol; the submitted `NavierStokes/` solution
+does not import those challenge declarations. This is positive evidence about
+the source-level trust boundary, not evidence that the formal predicates match
+Fefferman or that the paper's analytic mechanism has been transported.
+
+The same scan records 18 fallback-to-zero patterns, 151 classical-choice
+occurrences, and 28 structures with proof-like fields. The companion ledger
+flags repeated selections and 31 selections without a nearby `choose_spec`, but
+these are static review candidates, not proofs of unrelated selected witnesses.
+They must be restricted to the elaborated C/D proof-term closure and checked for
+branch validity, choice independence, and constructor-field provenance.
+
+Evidence: [`deep_semantic_audit_evidence.md`](../NavierStokesReview/evidence/deep_semantic_audit_evidence.md),
+[`witness_provenance_evidence.md`](../NavierStokesReview/evidence/witness_provenance_evidence.md),
+and the machine-readable records under `../NavierStokesReview/results/`.

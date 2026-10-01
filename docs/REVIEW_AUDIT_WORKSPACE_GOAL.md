@@ -4475,3 +4475,22 @@ and domain/boundary semantics. The A/B proof-term differential, constructor
 field provenance, proof-relevant choice/fallback audit, literate proof dossier,
 and CUDA plotted curl/cutoff analysis remain concurrent required lanes. No
 current result is upgraded to a literal CMI failure without a direct theorem.
+
+## Priority 244: proof-relevant trust and witness provenance
+
+The goal now includes a corrected source-level scan and a separate witness-
+provenance lane. The scan finds no executable trust-escape keyword under
+`NavierStokes/`; the four executable `sorry` occurrences are in the
+intentionally admitted Comparator challenge templates. This is only a
+source-level trust result, not a proof-term or semantic-validity result.
+
+The current static inventory is 18 fallback-to-zero patterns, 151 classical
+choice occurrences, and 28 structures with proof-like fields. Repeated
+existential selections are recorded as candidates for identity review, not as
+established witness divergence. The next required step is to restrict this
+inventory to declarations actually used by the elaborated C/D proof terms and
+prove the relevant good-branch and choice-independence obligations.
+
+Evidence:
+`../NavierStokesReview/evidence/deep_semantic_audit_evidence.md`,
+`../NavierStokesReview/evidence/witness_provenance_evidence.md`.

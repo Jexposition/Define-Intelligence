@@ -5463,7 +5463,7 @@ Executed control record:
 - [x] Trace `ActualCandidateAssembly.selected_witness` into `ActualCandidate.selected_candidate_one_with_initial_rest`.
 - [x] Confirm that the R3 theorem scales one common `(u,p,f,K)` tuple and that `ComparatorBridge` reuses its force rather than selecting a separate force.
 - [x] Confirm that the periodic route starts from the same theorem tuple before compression, parabolic scaling, and periodisation.
-- [ ] Build the typed object ledger for each arrow from activated fields to R3-scaled and periodised fields.
+- [x] Build the typed object ledger for each arrow from activated fields to R3-scaled and periodised fields.
 - [ ] Search every arrow for a production theorem transporting the manuscript five-observable payload `(M,I,J,S,C_p)`.
 - [ ] Keep the positive common-witness finding separate from the unresolved field-level observable correspondence.
 
@@ -5491,6 +5491,28 @@ Evidence and instrument: `NavierStokesReview/evidence/priority_242_comparator_bo
 - [ ] Keep the separate constructed-data inclusion and competitor-class inclusion distinct; do not infer equivalence from one adapter.
 
 Evidence: `NavierStokesReview/evidence/priority_243_fefferman_comparator_variance_2026-10-01.md`.
+
+## Priority 244: proof-relevant trust, choice, and totalisation scan
+
+- [x] Correct the lexical scanner so nested Lean block-documentation comments
+  are not counted as executable trust escapes.
+- [x] Scan the pinned source tree and record the four remaining executable
+  `sorry` occurrences as Comparator challenge placeholders; no executable
+  trust-escape hit was found under `NavierStokes/`.
+- [ ] Trace the proof-relevant closure of the 18 fallback-to-zero patterns,
+  151 `Classical.choice`/`Classical.choose` sites, and 28 structures with
+  proof-like fields. Static repeated-choice matches are audit candidates, not
+  proof of a defect or witness mismatch.
+- [ ] Re-run the choice ledger on the elaborated C/D proof-term closure and
+  establish branch selection or choice independence for each selected use.
+
+Evidence and instruments:
+`NavierStokesReview/evidence/deep_semantic_audit_evidence.md`,
+`NavierStokesReview/results/deep_semantic_audit.json`,
+`NavierStokesReview/evidence/witness_provenance_evidence.md`,
+`NavierStokesReview/results/witness_provenance_audit.json`,
+`NavierStokesReview/tools/deep_semantic_audit.py`, and
+`NavierStokesReview/tools/witness_provenance_audit.py`.
 ## Active control update: object identity, variance, and proof-relevant semantics (2026-10-01)
 
 The audit now treats every selected-field transformation as an arrow that must
