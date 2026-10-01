@@ -1,5 +1,23 @@
 # Review audit workspace goal
 
+## Priority 231: conditional selected mixed radial integral composition (2026-10-01)
+
+The exact weighted radial-integral transport theorem is recorded in
+`../NavierStokesReview/src/completions/SelectedMixedProductionBarMomentProductRule.lean`.
+It applies the torus-average/radial reduction to all three selected terms,
+but deliberately requires the pointwise composition formula as an explicit
+hypothesis. It does not assume radial support, integrability, a sign, a
+nonzero commutator, or the manuscript's `(M,I,J,S,C_p)` identity.
+
+The next task is to discharge or refute those hypotheses from the actual
+selected construction. Keep `CTR-005: NOT ESTABLISHED` until a value-level
+bridge or mismatch is proved.
+
+Evidence:
+`../NavierStokesReview/evidence/priority_231_selected_mixed_radial_integral_composition_2026-10-01.md`
+and
+`../NavierStokesReview/evidence/priority_231_selected_mixed_radial_integral_composition_2026-10-01.json`.
+
 ## Priority 230: selected mixed radial full product-rule composition (2026-10-01)
 
 The pinned zero-sorry completion

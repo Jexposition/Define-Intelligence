@@ -1,0 +1,19 @@
+{
+  "priority": 231,
+  "date": "2026-10-01",
+  "status": "compiled_conditional_radial_integral",
+  "disposition": "CTR-005: NOT ESTABLISHED",
+  "file": "NavierStokesReview/src/completions/SelectedMixedProductionBarMomentProductRule.lean",
+  "toolchain": "leanprover/lean4:v4.34.0-rc2",
+  "dependency_compile_exit_code": 0,
+  "target_compile_exit_code": 0,
+  "theorem": "NavierStokesReview.SelectedMixedProductionBarMomentProductRule.selected_mixed_barMoment_product_rule",
+  "uses_actual_selected_definitions": true,
+  "pointwise_composition_is_caller_supplied": true,
+  "proves_radial_integral_formula": true,
+  "proves_radial_integrability": false,
+  "proves_commutator_value": false,
+  "proves_final_five_observable_transport": false,
+  "next_gate": "Discharge or refute the pointwise composition and support/integrability hypotheses using the actual selected construction."
+}
+

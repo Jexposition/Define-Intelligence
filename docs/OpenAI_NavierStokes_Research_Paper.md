@@ -1,5 +1,15 @@
 # Selected-field correspondence in the OpenAI Navier–Stokes formalisation
 
+## Current conditional radial-integral result: Priority 231 (2026-10-01)
+
+The compiled review completion
+[`SelectedMixedProductionBarMomentProductRule.lean`](../NavierStokesReview/src/completions/SelectedMixedProductionBarMomentProductRule.lean)
+transports the exact three-term selected formula under the weighted radial
+integral. Its pointwise composition hypothesis and integration-side
+requirements remain explicit, so this result does not silently claim that the
+exported endpoint supplies them. It strengthens the value-level audit while
+leaving `CTR-005: NOT ESTABLISHED` unchanged.
+
 ## Current selected-field composition result: Priority 230 (2026-10-01)
 
 The pinned review completion

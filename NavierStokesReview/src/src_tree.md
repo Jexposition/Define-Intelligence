@@ -1,6 +1,13 @@
 ```markdown
 . 📂 src
 
+## Current conditional radial-integral result: Priority 231 (2026-10-01)
+
+The completion is
+`completions/SelectedMixedProductionBarMomentProductRule.lean`. It applies
+the selected three-term formula under the weighted radial integral while
+retaining its pointwise and integration hypotheses.
+
 ## Current selected-field composition result: Priority 230 (2026-10-01)
 
 The compiled completion is

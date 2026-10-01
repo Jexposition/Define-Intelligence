@@ -1,5 +1,14 @@
 # Navier–Stokes review document control
 
+## Priority 231 selected mixed radial integral composition (2026-10-01)
+
+The compiled conditional theorem is
+`../NavierStokesReview/src/completions/SelectedMixedProductionBarMomentProductRule.lean`.
+It transports the actual three-term selected formula under the weighted radial
+integral while keeping pointwise composition and integration-side conditions
+explicit. It does not prove the final five-observable identity. The controlled
+status remains `CTR-005: NOT ESTABLISHED`.
+
 ## Priority 230 selected mixed radial product-rule composition (2026-10-01)
 
 The compiled review-side completion is

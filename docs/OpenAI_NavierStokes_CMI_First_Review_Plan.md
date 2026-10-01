@@ -1,5 +1,22 @@
 # CMI-first review plan: OpenAI Navier–Stokes claim
 
+## Priority 231: conditional selected mixed radial integral composition (2026-10-01)
+
+- [x] Apply the exact torus-average/radial reduction to the three-term
+  selected product-rule formula.
+- [x] Keep the pointwise composition hypothesis explicit rather than treating
+  it as exported by `selected_witness`.
+- [ ] Discharge or refute the pointwise composition and support/integrability
+  hypotheses from the actual selected construction.
+- [ ] Prove the final five-observable identity or a concrete selected mismatch;
+  keep `CTR-005: NOT ESTABLISHED` until then.
+
+Evidence:
+`../NavierStokesReview/src/completions/SelectedMixedProductionBarMomentProductRule.lean`,
+`../NavierStokesReview/evidence/priority_231_selected_mixed_radial_integral_composition_2026-10-01.md`,
+and
+`../NavierStokesReview/evidence/priority_231_selected_mixed_radial_integral_composition_2026-10-01.json`.
+
 ## Priority 230: selected mixed radial full product-rule composition (2026-10-01)
 
 - [x] Compose the actual selected potential and direct branches at the radial

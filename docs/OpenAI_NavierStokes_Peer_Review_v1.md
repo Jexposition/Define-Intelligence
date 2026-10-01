@@ -1,5 +1,14 @@
 # Independent peer review of the OpenAI Navier–Stokes formalisation
 
+## Current conditional radial-integral result: Priority 231 (2026-10-01)
+
+The compiled completion
+[`SelectedMixedProductionBarMomentProductRule.lean`](../NavierStokesReview/src/completions/SelectedMixedProductionBarMomentProductRule.lean)
+applies the exact selected three-term formula under the weighted radial
+integral. The pointwise composition and integration hypotheses remain
+caller-supplied, so the final `(M,I,J,S,C_p)` bridge is still not established.
+The controlled status remains `CTR-005: NOT ESTABLISHED`.
+
 ## Current selected-field composition result: Priority 230 (2026-10-01)
 
 The compiled completion

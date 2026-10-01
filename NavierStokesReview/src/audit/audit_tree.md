@@ -1,5 +1,13 @@
 ```markdown
 . 📂 audit
+## Current conditional radial-integral result: Priority 231 (2026-10-01)
+
+├── 📄 ../completions/SelectedMixedProductionBarMomentProductRule.lean
+└── 📄 ../evidence/priority_231_selected_mixed_radial_integral_composition_2026-10-01.md
+
+The theorem is conditional on the exact pointwise composition and leaves the
+final observable value open.
+
 ## Current selected-field composition result: Priority 230 (2026-10-01)
 
 ├── 📄 ../completions/SelectedMixedProductionFullProductRule.lean

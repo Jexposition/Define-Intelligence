@@ -1,5 +1,15 @@
 ```markdown
 . 📂 evidence
+## Current conditional radial-integral result: Priority 231 (2026-10-01)
+
+- `priority_231_selected_mixed_radial_integral_composition_2026-10-01.md`
+- `priority_231_selected_mixed_radial_integral_composition_2026-10-01.json`
+- `../src/completions/SelectedMixedProductionBarMomentProductRule.lean`
+
+The theorem transports the exact selected three-term formula under the
+weighted radial integral while keeping pointwise composition and integration
+conditions explicit. It does not establish a five-observable value.
+
 ## Current selected-field composition result: Priority 230 (2026-10-01)
 
 - `priority_230_selected_mixed_full_product_rule_2026-10-01.md`
