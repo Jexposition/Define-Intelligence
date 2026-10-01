@@ -4494,3 +4494,29 @@ prove the relevant good-branch and choice-independence obligations.
 Evidence:
 `../NavierStokesReview/evidence/deep_semantic_audit_evidence.md`,
 `../NavierStokesReview/evidence/witness_provenance_evidence.md`.
+
+## Current authority block: 2026-10-01
+
+This block supersedes older embedded branch snapshots in this living goal
+document. The private review checkout is
+`review/cmi-first-navier-stokes-reconciled-2026-09-30` at `abfbfca`. The public
+review checkout is
+`review/cmi-first-navier-stokes-disposition-public-2026-10-01` at `5b091bf`,
+and that branch has been pushed to the `Jexposition/Define-Intelligence`
+remote.
+
+OpenAI's source tree remains protected and is not edited. Review work is
+confined to `NavierStokesReview/src/{audit,completions,extensions,external_semantic,external-semantic,probes,refutations}`,
+`NavierStokesReview/evidence`, `NavierStokesReview/results`,
+`NavierStokesReview/tools`, and the review documents. The pinned Lean checks
+use the repository's `lake env lean` environment. The current protected
+untracked files are `NavierStokes/R3/TestPressure.lean` and
+`NavierStokesReview/evidence/lean_environment_closure_ns_3d_2026-09-30.json`;
+they are deliberately excluded from commits and archive moves.
+
+The current bounded result is: the selected `(u,p,f,K)` route and the five
+review-side witness-provenance probes are source/compile positive; the
+elaborated A/B proof-term differential, the Fefferman-admissible competitor to
+Comparator inclusion, and the final selected-field transport of
+`(M,I,J,S,C_p)` remain open. No literal CMI failure or selected value-level
+moment mismatch is claimed without a direct theorem.

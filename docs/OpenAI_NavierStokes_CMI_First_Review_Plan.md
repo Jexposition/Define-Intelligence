@@ -5513,6 +5513,26 @@ Evidence and instruments:
 `NavierStokesReview/results/witness_provenance_audit.json`,
 `NavierStokesReview/tools/deep_semantic_audit.py`, and
 `NavierStokesReview/tools/witness_provenance_audit.py`.
+
+## Current release control: 2026-10-01
+
+Private review branch: `review/cmi-first-navier-stokes-reconciled-2026-09-30`
+at `abfbfca`. Public review branch:
+`review/cmi-first-navier-stokes-disposition-public-2026-10-01` at `5b091bf`,
+pushed to the public remote. Review-only edits belong under
+`NavierStokesReview/src/{audit,completions,extensions,external_semantic,external-semantic,probes,refutations}`,
+`NavierStokesReview/evidence`, `NavierStokesReview/results`, and
+`NavierStokesReview/tools`; OpenAI source folders are read-only. Lean probes
+must be run with the pinned checkout environment using `lake env lean`.
+
+The five witness-identity probes now pass. This is positive review evidence,
+not a proof of endpoint semantic completeness. The next highest-priority
+tasks remain the elaborated A/B proof-term differential, asymmetric
+Fefferman-to-Comparator class transfer, constructor/choice/fallback
+provenance, independent selected-field moment/curl/cutoff/tsum analysis, and
+the CUDA-first plotted three-dimensional diagnostic. Document consolidation
+and parent-local archive moves remain gated on cross-reference and source
+fact-checking; no deletions are permitted.
 ## Active control update: object identity, variance, and proof-relevant semantics (2026-10-01)
 
 The audit now treats every selected-field transformation as an arrow that must
