@@ -1,6 +1,23 @@
 ```markdown
 . 📂 src
 
+## Current semantic moment-hierarchy result: Priority 233 (2026-10-01)
+
+The audit
+`audit/priority_233_moment_hierarchy_semantic_boundary_2026-10-01.md`
+records the deeper production roles in `IntegratedMeanBalances`,
+`StateMomentBalances`, and `CorrectionInitialization`. The internal hierarchy
+is genuine; the completed final selected-field identity with `(M,I,J,S,C_p)`
+remains unestablished.
+
+## Current repair-engine usage boundary: Priority 232 (2026-10-01)
+
+The source adjudication is
+`audit/priority_232_repair_engine_usage_and_observable_boundary_2026-10-01.md`.
+It establishes that the actual five-row/rank repair route is consumed by the
+selected production path, while the final selected-field observable identity
+with `(M,I,J,S,C_p)` remains unestablished.
+
 ## Current conditional radial-integral result: Priority 231 (2026-10-01)
 
 The completion is

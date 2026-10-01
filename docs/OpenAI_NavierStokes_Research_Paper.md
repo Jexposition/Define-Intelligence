@@ -1,5 +1,38 @@
 # Selected-field correspondence in the OpenAI Navier–Stokes formalisation
 
+## Current moment-hierarchy adjudication: Priority 233 (2026-10-01)
+
+The audit has now checked the moment mathematics under its structural roles,
+not only under the named profile tuple. `IntegratedMeanBalances` proves actual
+radial integral, integration-by-parts, viscosity, pressure, parameter, and
+torus-average identities. `StateMomentBalances` identifies correction-state
+radial moments with averaged state fields and derives angular, axial, pressure,
+and flux balances. `CorrectionInitialization` imports this machinery into the
+actual primary construction. This is affirmative evidence of a connected
+intermediate moment hierarchy, not merely imported vocabulary.
+
+That finding strengthens, rather than removes, the unresolved endpoint issue.
+The inspected production graph still does not contain the completed semantic
+identification
+
+\[
+\operatorname{Obs}_{\mathrm{paper}}
+(u_{\mathrm{selected}},p_{\mathrm{selected}},f_{\mathrm{selected}})
+=(M,I,J,S,C_p)
+\]
+
+after the selected Cartesian potential/direct/pressure sums, curl and
+localisation, periodisation, averaging, and the final limiting/support
+operations. The evidence therefore supports two precise statements at once:
+the repair and state-balance machinery is used; the complete paper-to-endpoint
+observable correspondence remains `CTR-005: NOT ESTABLISHED`. It does not prove
+wholesale bypass or a concrete mismatch.
+
+Evidence:
+[`priority_233_moment_hierarchy_semantic_boundary_2026-10-01.md`](../NavierStokesReview/src/audit/priority_233_moment_hierarchy_semantic_boundary_2026-10-01.md)
+and its
+[machine-readable record](../NavierStokesReview/evidence/priority_233_moment_hierarchy_semantic_boundary_2026-10-01.json).
+
 ## Current conditional radial-integral result: Priority 231 (2026-10-01)
 
 The compiled review completion
@@ -30,8 +63,12 @@ The declaration-level ledger
 records the exact production chain from five-row corrections and cycle
 invariants to residual rates, flatness, force extension, and
 `ActualCandidateAssembly.selected_witness`. This is affirmative evidence
-that the repair engine is integrated internally, not evidence of wholesale
-bypass.
+that the repair engine is integrated internally. The stronger statement is now
+source-checked in Priority 232: the actual rank-stage lemmas are consumed by
+the cycle invariant and then by physical data, residual rates, stage estimates,
+and the selected witness. Thus the repair engine was not bypassed wholesale.
+This is a positive dependency finding, not a conclusion that the final
+manuscript observables have already been transported.
 
 The same ledger records the unresolved edge: no inspected consumed production
 declaration identifies the completed selected Cartesian, localised,
@@ -40,6 +77,13 @@ fields with the manuscript's `(M,I,J,S,C_p)` observables. The complete
 paper-to-endpoint correspondence therefore remains `CTR-005: NOT
 ESTABLISHED`. The ledger does not claim a nonzero defect or a false selected
 identity.
+
+The distinction is recorded in
+[`priority_232_repair_engine_usage_and_observable_boundary_2026-10-01.md`](../NavierStokesReview/src/audit/priority_232_repair_engine_usage_and_observable_boundary_2026-10-01.md)
+and its machine-readable evidence
+[`priority_232_repair_engine_usage_and_observable_boundary_2026-10-01.json`](../NavierStokesReview/evidence/priority_232_repair_engine_usage_and_observable_boundary_2026-10-01.json):
+internal repair use is established; the completed selected-field observable
+identity is not established; a selected mismatch is also not established.
 
 ## Current coupled-dependency adjudication: Priority 228 (2026-10-01)
 

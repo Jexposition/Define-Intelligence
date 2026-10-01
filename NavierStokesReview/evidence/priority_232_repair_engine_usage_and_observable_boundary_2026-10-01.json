@@ -1,0 +1,43 @@
+{
+  "priority": 232,
+  "date": "2026-10-01",
+  "question": "Was the five-row repair engine bypassed, and is the final manuscript-observable identity established?",
+  "status": "source_checked",
+  "disposition": "internal_repair_integration_established_final_observable_correspondence_not_established",
+  "propositions": {
+    "repair_engine_used_in_selected_production_route": {
+      "status": "established",
+      "evidence": [
+        "NavierStokes/FiveRowRank.lean",
+        "NavierStokes/DefectIncrementBounds.lean:635-682",
+        "NavierStokes/DefectIncrementBounds.lean:773-823",
+        "NavierStokes/ActualCyclePreservation.lean:826-912",
+        "NavierStokes/ActualCandidateAssembly.lean:1079-1098"
+      ]
+    },
+    "final_selected_observable_identity": {
+      "status": "not_established",
+      "target": "Obs_paper(u_selected,p_selected,f_selected) = (M,I,J,S,C_p)",
+      "evidence": [
+        "NavierStokesReview/src/completions/SelectedMixedProductionFullProductRule.lean",
+        "NavierStokesReview/src/completions/SelectedMixedProductionBarMomentProductRule.lean",
+        "NavierStokes/ActualCandidateAssembly.lean:1121-1185"
+      ],
+      "reason": "The selected-field completions retain explicit pointwise, coordinate, support, and integrability hypotheses and do not assign the completed observable value."
+    },
+    "concrete_selected_mismatch": {
+      "status": "not_established"
+    },
+    "wholesale_bypass": {
+      "status": "rejected",
+      "reason": "The actual rank and mass-preservation declarations feed the cycle invariant, physical data, residual rates, stage estimates, and selected witness."
+    }
+  },
+  "controlled_disposition": "CTR-005: NOT ESTABLISHED",
+  "nonclaims": [
+    "No nonzero selected moment defect is claimed.",
+    "No force nonsmoothness is claimed.",
+    "No literal CMI failure is claimed from this record alone.",
+    "No impossibility theorem or False is claimed."
+  ]
+}

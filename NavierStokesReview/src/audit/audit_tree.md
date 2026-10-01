@@ -1,5 +1,23 @@
 ```markdown
 . 📂 audit
+## Current semantic moment-hierarchy result: Priority 233 (2026-10-01)
+
+├── 📄 priority_233_moment_hierarchy_semantic_boundary_2026-10-01.md
+└── 📄 ../evidence/priority_233_moment_hierarchy_semantic_boundary_2026-10-01.json
+
+The production tree contains connected radial, pressure, flux, torus-average,
+and state-to-mean moment identities. The final selected-field manuscript
+observable identity remains unestablished.
+
+## Current repair-engine usage boundary: Priority 232 (2026-10-01)
+
+├── 📄 priority_232_repair_engine_usage_and_observable_boundary_2026-10-01.md
+└── 📄 ../evidence/priority_232_repair_engine_usage_and_observable_boundary_2026-10-01.json
+
+The source trace establishes actual repair-engine consumption in the selected
+production route. It does not establish the final selected-field identity
+with `(M,I,J,S,C_p)`, and it does not claim a concrete mismatch.
+
 ## Current conditional radial-integral result: Priority 231 (2026-10-01)
 
 ├── 📄 ../completions/SelectedMixedProductionBarMomentProductRule.lean

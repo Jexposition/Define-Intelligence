@@ -1,5 +1,33 @@
 # Review audit workspace goal
 
+## Priority 233: semantic depth before endpoint judgement (2026-10-01)
+
+The audit must not treat a short named equation or a public `Witness` field as
+the whole mathematical claim. It must trace the deeper production roles of
+each load-bearing quantity: profile repair, rank rows, radial integration,
+pressure reconstruction, torus averaging, state-to-mean identification, flux
+balances, Cartesian lifting, localisation, periodisation, summation, and the
+final endpoint consequences.
+
+The current source result is explicit. `IntegratedMeanBalances`,
+`StateMomentBalances`, and `CorrectionInitialization` establish a connected
+intermediate moment hierarchy, and Priority 232 establishes that repair data
+feeds the selected production route. The unresolved proposition is narrower:
+the inspected production endpoint does not yet contain the completed theorem
+
+\[
+\operatorname{Obs}_{\mathrm{paper}}(u_{\mathrm{selected}},p_{\mathrm{selected}},f_{\mathrm{selected}})
+=(M,I,J,S,C_p).
+\]
+
+This is `CTR-005: NOT ESTABLISHED`, not evidence that the repair engine was
+bypassed and not evidence of a concrete mismatch. The next work must close or
+refute that semantic edge using actual production definitions, not a toy model,
+name-only search, or interface countermodel.
+
+Evidence:
+`../NavierStokesReview/src/audit/priority_233_moment_hierarchy_semantic_boundary_2026-10-01.md`.
+
 ## Priority 231: conditional selected mixed radial integral composition (2026-10-01)
 
 The exact weighted radial-integral transport theorem is recorded in
@@ -4079,3 +4107,24 @@ first-component nonzero premise. Keep these statements separate:
 Only the first is currently established among these three value-level
 statements. The remaining off-axis transport calculation is active, and the
 workspace goal does not authorise a stronger verdict before it is resolved.
+## Current source-grounded adjudication: Priority 232
+
+The five-row/rank repair engine is positively integrated into the selected
+production route. `FiveRowRank` and `DefectIncrementBounds` feed the actual
+cycle invariant; `ActualCandidateAssembly.physicalData` and the residual-rate
+declarations consume that state; `GluedStageEstimates.actualStageEstimates`
+and `ActualCandidateAssembly.Witness` then consume the concrete estimates.
+Therefore the review must not call the repair engine dead, generic, or
+bypassed wholesale.
+
+The unresolved issue is narrower and still load-bearing for the advertised
+paper correspondence: the inspected production endpoint does not expose a
+completed theorem identifying the selected Cartesian, localised, periodised,
+summed, pressure-coupled and residual-defined fields with the manuscript's
+`(M,I,J,S,C_p)` observables. The value-level review completions preserve the
+remaining hypotheses rather than silently assuming them. The current status is
+therefore `CTR-005: NOT ESTABLISHED`, not a proved selected mismatch or a
+proved CMI failure.
+
+Primary evidence:
+`NavierStokesReview/src/audit/priority_232_repair_engine_usage_and_observable_boundary_2026-10-01.md`.

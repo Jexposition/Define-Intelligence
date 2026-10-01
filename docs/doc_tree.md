@@ -1,14 +1,24 @@
 ```markdown
 . 📂 docs
 
-Current reconciliation pointer: `REVIEW_DOCUMENT_CONTROL.md` Priority 231,
+Current reconciliation pointer: `REVIEW_DOCUMENT_CONTROL.md` Priority 233,
+with the semantic moment-hierarchy audit at
+`../NavierStokesReview/src/audit/priority_233_moment_hierarchy_semantic_boundary_2026-10-01.md`
+and evidence at
+`../NavierStokesReview/evidence/priority_233_moment_hierarchy_semantic_boundary_2026-10-01.md`.
+The tree below remains a navigation snapshot and is not a substitute for the
+current control record.
+
+Previous reconciliation pointer: Priority 232,
+with the repair-engine usage and final-observable boundary audit at
+`../NavierStokesReview/src/audit/priority_232_repair_engine_usage_and_observable_boundary_2026-10-01.md`
+and evidence at
+`../NavierStokesReview/evidence/priority_232_repair_engine_usage_and_observable_boundary_2026-10-01.md`.
+Previous reconciliation pointer: Priority 231,
 with the consolidation audit at
 `../NavierStokesReview/src/audit/priority_227_selected_periodic_support_gate_replay_2026-10-01.md`
 and evidence at
 `../NavierStokesReview/evidence/selected_periodic_support_gate_replay_2026-10-01.md`.
-The tree below remains a navigation snapshot and is not a substitute for the
-current control record.
-
 ├── 📄 archive/Define inteligence tree_2026-09-30.md  (historical archive)
 ├── 📄 Define intelligence Tree.md
 ├── 📄 Euler_Parent_Child_Interval_Audit.md

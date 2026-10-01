@@ -1,5 +1,29 @@
 # Navier–Stokes review document control
 
+## Priority 233 moment hierarchy and semantic boundary (2026-10-01)
+
+The source adjudication is
+`../NavierStokesReview/src/audit/priority_233_moment_hierarchy_semantic_boundary_2026-10-01.md`.
+It records connected radial-integral, pressure, flux, torus-average, and
+state-to-mean identities in the production tree. Those identities confirm
+deeper internal integration of the repair machinery. The completed
+selected-field identity with `(M,I,J,S,C_p)` remains unestablished. The
+controlled disposition remains `CTR-005: NOT ESTABLISHED`.
+
+## Priority 232 repair-engine usage and final-observable boundary (2026-10-01)
+
+The source adjudication is
+`../NavierStokesReview/src/audit/priority_232_repair_engine_usage_and_observable_boundary_2026-10-01.md`.
+Its machine-readable evidence is
+`../NavierStokesReview/evidence/priority_232_repair_engine_usage_and_observable_boundary_2026-10-01.json`.
+The production trace establishes that the five-row/rank repair engine is
+consumed by the selected cycle, residual-rate, stage-estimate, and Witness
+route. It does not establish the separate final identity of the completed
+Cartesian/localised/periodised/summed observables with
+`(M,I,J,S,C_p)`. The controlled disposition remains
+`CTR-005: NOT ESTABLISHED`; wholesale bypass and concrete mismatch are not
+claimed.
+
 ## Priority 231 selected mixed radial integral composition (2026-10-01)
 
 The compiled conditional theorem is

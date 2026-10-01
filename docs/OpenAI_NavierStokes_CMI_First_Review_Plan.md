@@ -1,5 +1,47 @@
 # CMI-first review plan: OpenAI Navier–Stokes claim
 
+## Priority 233: semantic moment-hierarchy closure (2026-10-01)
+
+- [x] Search beyond tuple names for radial-integral, pressure, flux, torus,
+  state-to-mean, and parameter-transport declarations.
+- [x] Record `IntegratedMeanBalances`, `StateMomentBalances`, and
+  `CorrectionInitialization` as connected production evidence.
+- [x] Reject the shallow claim that the moment machinery is disconnected or
+  bypassed wholesale.
+- [ ] Trace the state-level observables through the completed selected
+  Cartesian/localised/periodised/summed field and prove the manuscript-level
+  `(M,I,J,S,C_p)` identity or a direct mismatch.
+
+Evidence:
+`../NavierStokesReview/src/audit/priority_233_moment_hierarchy_semantic_boundary_2026-10-01.md`
+and
+`../NavierStokesReview/evidence/priority_233_moment_hierarchy_semantic_boundary_2026-10-01.json`.
+
+The controlled disposition remains `CTR-005: NOT ESTABLISHED`. No concrete
+selected mismatch, force nonsmoothness, impossibility theorem, or `False` is
+being asserted.
+
+## Priority 232: repair-engine usage versus final observable boundary (2026-10-01)
+
+- [x] Trace the actual five-row/rank declarations into the selected cycle
+  invariant, physical data, residual rates, stage estimates, and `Witness`.
+- [x] Replace the ambiguous “not evidence of bypass” wording with the
+  positive finding: the repair engine was not bypassed wholesale.
+- [x] Keep the separate endpoint proposition explicit: no inspected production
+  theorem identifies the completed selected field with the manuscript's
+  `(M,I,J,S,C_p)` observables.
+- [ ] Discharge the remaining selected-field pointwise, support, integrability,
+  pressure, and observable-value obligations, or prove a direct mismatch.
+
+Evidence:
+`../NavierStokesReview/src/audit/priority_232_repair_engine_usage_and_observable_boundary_2026-10-01.md`
+and
+`../NavierStokesReview/evidence/priority_232_repair_engine_usage_and_observable_boundary_2026-10-01.json`.
+
+The controlled disposition remains `CTR-005: NOT ESTABLISHED`. This priority
+does not claim a selected defect, force nonsmoothness, literal CMI failure,
+impossibility theorem, or `False`.
+
 ## Priority 231: conditional selected mixed radial integral composition (2026-10-01)
 
 - [x] Apply the exact torus-average/radial reduction to the three-term

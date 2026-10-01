@@ -1,0 +1,44 @@
+{
+  "priority": 233,
+  "date": "2026-10-01",
+  "question": "Does the production tree contain deeper connected moment mathematics beyond the named profile tuple, and does it reach the final selected-field observable identity?",
+  "status": "source_checked",
+  "propositions": {
+    "deeper_moment_hierarchy_exists": {
+      "status": "established",
+      "evidence": [
+        "NavierStokes/IntegratedMeanBalances.lean:22-211",
+        "NavierStokes/IntegratedMeanBalances.lean:237-520",
+        "NavierStokes/StateMomentBalances.lean:738-740",
+        "NavierStokes/StateMomentBalances.lean:767-820",
+        "NavierStokes/CorrectionInitialization.lean:1-15"
+      ]
+    },
+    "repair_engine_used_in_selected_route": {
+      "status": "established",
+      "evidence": [
+        "NavierStokes/DefectIncrementBounds.lean:635-682",
+        "NavierStokes/ActualCyclePreservation.lean:826-912",
+        "NavierStokes/ActualCandidateAssembly.lean:1079-1185"
+      ]
+    },
+    "final_selected_cartesian_observable_identity": {
+      "status": "not_established",
+      "target": "Obs_paper(u_selected,p_selected,f_selected) = (M,I,J,S,C_p)",
+      "reason": "The inspected production declarations establish intermediate state/radial/pressure identities but do not provide the completed selected Cartesian/localised/periodised/summed observable identification."
+    },
+    "wholesale_bypass": {
+      "status": "rejected"
+    },
+    "concrete_selected_mismatch": {
+      "status": "not_established"
+    }
+  },
+  "controlled_disposition": "CTR-005: NOT ESTABLISHED",
+  "nonclaims": [
+    "No nonzero selected moment defect is claimed.",
+    "No force nonsmoothness is claimed.",
+    "No literal CMI failure is claimed from this record alone.",
+    "No impossibility theorem or False is claimed."
+  ]
+}

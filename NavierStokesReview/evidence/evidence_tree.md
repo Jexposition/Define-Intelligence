@@ -1,5 +1,24 @@
 ```markdown
 . 📂 evidence
+## Current semantic moment-hierarchy result: Priority 233 (2026-10-01)
+
+- `priority_233_moment_hierarchy_semantic_boundary_2026-10-01.md`
+- `priority_233_moment_hierarchy_semantic_boundary_2026-10-01.json`
+- `../src/audit/priority_233_moment_hierarchy_semantic_boundary_2026-10-01.md`
+
+This evidence records connected intermediate moment identities and keeps the
+final selected-field `(M,I,J,S,C_p)` identity separate and unestablished.
+
+## Current repair-engine usage boundary: Priority 232 (2026-10-01)
+
+- `priority_232_repair_engine_usage_and_observable_boundary_2026-10-01.md`
+- `priority_232_repair_engine_usage_and_observable_boundary_2026-10-01.json`
+- `../src/audit/priority_232_repair_engine_usage_and_observable_boundary_2026-10-01.md`
+
+The evidence establishes that the repair engine is used in the selected
+production route. It separately records that the final selected-field
+observable identity with `(M,I,J,S,C_p)` remains unestablished.
+
 ## Current conditional radial-integral result: Priority 231 (2026-10-01)
 
 - `priority_231_selected_mixed_radial_integral_composition_2026-10-01.md`

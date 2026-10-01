@@ -1,5 +1,25 @@
 # Independent peer review of the OpenAI Navier–Stokes formalisation
 
+## Current moment-hierarchy adjudication: Priority 233 (2026-10-01)
+
+The wider production trace found more than named profile certificates. The
+`IntegratedMeanBalances` and `StateMomentBalances` modules prove radial,
+parameter, torus-average, pressure, flux, and state-to-mean identities, and
+`CorrectionInitialization` imports them into the actual construction. The
+repair engine therefore was not bypassed wholesale.
+
+The remaining finding is not that these identities are absent. It is that the
+inspected production endpoint still lacks the completed semantic theorem
+identifying the final selected Cartesian/localised/periodised/summed fields
+with the manuscript's `(M,I,J,S,C_p)` observables. That is the controlled
+`CTR-005: NOT ESTABLISHED` correspondence finding. It is not a proved selected
+mismatch, impossibility theorem, or literal CMI failure.
+
+Evidence:
+[`priority_233_moment_hierarchy_semantic_boundary_2026-10-01.md`](../NavierStokesReview/src/audit/priority_233_moment_hierarchy_semantic_boundary_2026-10-01.md)
+and its
+[JSON record](../NavierStokesReview/evidence/priority_233_moment_hierarchy_semantic_boundary_2026-10-01.json).
+
 ## Current conditional radial-integral result: Priority 231 (2026-10-01)
 
 The compiled completion
@@ -28,6 +48,15 @@ separately records that the final selected-field `(M,I,J,S,C_p)` identity is
 not established in the inspected production endpoint. The review therefore
 retains `CTR-005: NOT ESTABLISHED` without converting the missing edge into a
 proved selected defect or literal CMI failure.
+
+Priority 232 makes the adjudication explicit. The actual `FiveRows`, rank-stage
+mass-preservation, cycle-invariant, physical-data, residual-rate, and selected
+stage-estimate declarations form a positive production dependency chain. The
+repair engine was therefore not bypassed wholesale. That finding is distinct
+from the unresolved semantic edge: no inspected production declaration proves
+that the completed selected Cartesian, localised, periodised, summed fields
+realise the manuscript's `(M,I,J,S,C_p)` observables. The evidence is linked in
+[`priority_232_repair_engine_usage_and_observable_boundary_2026-10-01.md`](../NavierStokesReview/src/audit/priority_232_repair_engine_usage_and_observable_boundary_2026-10-01.md).
 
 ## Current coupled-dependency adjudication: Priority 228 (2026-10-01)
 
