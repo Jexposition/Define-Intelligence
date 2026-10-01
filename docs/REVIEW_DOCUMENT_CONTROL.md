@@ -25,6 +25,11 @@ mirrored public commit `446b4b5`. The private worktree still contains the previo
 protected, intentionally untracked OpenAI source test file and local closure
 JSON; neither is part of this release.
 
+The public mirror branch is pushed at `f8827d9`. The private commits are
+present locally at `8dc6503`; pushing that historical branch was rejected by
+the remote size gate because older history contains oversized audit JSON
+objects. No files were deleted or rewritten to work around that rejection.
+
 ## Priority 227 selected periodic-support gate replay (2026-10-01)
 
 The selected periodic-support gate replay is recorded in
